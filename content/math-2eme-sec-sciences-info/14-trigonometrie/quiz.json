@@ -1,0 +1,125 @@
+{
+  "title": "Test de compréhension ⭐ : Trigonométrie et mesure de grandeurs",
+  "questions": [
+    {
+      "prompt": "Le point M du demi-cercle trigonométrique ci-dessous correspond à un angle α de [0 ; π]. Quelle est la valeur de cos α ?\n<svg viewBox=\"0 60 340 176\"><path d=\"M60 200 A110 110 0 0 1 280 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M36 200 H304 M170 200 V74\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M304 200 L296 204 L296 196 Z\" fill=\"#0f172a\"/><path d=\"M170 74 L174 82 L166 82 Z\" fill=\"#0f172a\"/><path d=\"M60 195 L60 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M115 195 L115 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M225 195 L225 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M280 195 L280 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 200 L115 104.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M115 104.7 L115 200\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M198 200 A28 28 0 0 0 156 175.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"115\" cy=\"104.7\" r=\"4.5\" fill=\"#6d28d9\"/><circle cx=\"170\" cy=\"200\" r=\"3.5\" fill=\"#0f172a\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"60\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">−1</text><text x=\"115\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">−0,5</text><text x=\"225\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0,5</text><text x=\"280\" y=\"220\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">1</text><text x=\"158\" y=\"217\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">O</text><text x=\"101\" y=\"96.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#6d28d9\">M</text><text x=\"206\" y=\"186\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">α</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,87"
+        },
+        {
+          "id": "b",
+          "text": "−0,5"
+        },
+        {
+          "id": "c",
+          "text": "0,5"
+        },
+        {
+          "id": "d",
+          "text": "0,87"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "cos α est l'abscisse de M. Le pied de la verticale issue de M tombe sur la graduation −0,5, donc cos α = −0,5 ✓. La valeur 0,87 est l'ordonnée de M, c'est-à-dire sin α, pas son abscisse. La valeur 0,5 est la longueur OP privée de son signe, alors que M est à gauche de l'axe des ordonnées. La valeur −0,87 mélange le signe de l'abscisse et la grandeur de l'ordonnée.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la valeur exacte de cos(π/4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "√3/2"
+        },
+        {
+          "id": "c",
+          "text": "√2/2"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le demi-carré de côté 1, l'hypoténuse vaut √2 et l'angle π/4 a pour côté adjacent 1 : cos π/4 = 1/√2 = √2/2 ✓. La valeur 1/2 est celle de cos π/3, la valeur √3/2 celle de cos π/6, et 1 celle de cos 0 : ce sont les autres lignes de la table des angles remarquables.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un angle α de [0 ; π] vérifie cos α = −4/5 et sin α = 3/5. Que vaut tan α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4/3"
+        },
+        {
+          "id": "b",
+          "text": "−3/4"
+        },
+        {
+          "id": "c",
+          "text": "3/4"
+        },
+        {
+          "id": "d",
+          "text": "4/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par définition tan α = sin α / cos α = (3/5)/(−4/5) = −3/4 ✓. La valeur −4/3 est cot α, obtenue en inversant le quotient. Les valeurs 3/4 et 4/3 sont les mêmes quotients privés de leur signe, alors que le cosinus est négatif et le sinus positif : le quotient est négatif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sachant que cos(π/4) = √2/2, que vaut cos(3π/4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/2"
+        },
+        {
+          "id": "b",
+          "text": "−√2/2"
+        },
+        {
+          "id": "c",
+          "text": "−1/2"
+        },
+        {
+          "id": "d",
+          "text": "−√3/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 3π/4 = π − π/4, donc cos(3π/4) = −cos(π/4) = −√2/2 ✓ : un angle obtus a un cosinus négatif. La valeur √2/2 oublie le changement de signe, comme si le cosinus se comportait comme le sinus. Les valeurs −1/2 et −√3/2 sont celles de cos(2π/3) et de cos(5π/6) : elles confondent π/4 avec un autre angle remarquable.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le triangle ABC ci-dessous, Â = 45°, B̂ = 60° et BC = 6. Quelle est la longueur AC ?\n<svg viewBox=\"0 0 342 202\"><path d=\"M52.7 176 L289.3 176 L202.7 26 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M52.7 176 L289.3 176 L202.7 26 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"52.7\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"289.3\" cy=\"176\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"202.7\" cy=\"26\" r=\"4\" fill=\"#0f172a\"/><path d=\"M74.7 176 A22 22 0 0 0 68.3 160.4\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M278.3 156.9 A22 22 0 0 0 267.3 176\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"37.8\" y=\"186.8\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"303.8\" y=\"187.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"206\" y=\"15.3\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"258.1\" y=\"99\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">6</text><text x=\"89.7\" y=\"164.7\" text-anchor=\"middle\" font-size=\"12\" fill=\"#b45309\">45°</text><text x=\"254.7\" y=\"160\" text-anchor=\"middle\" font-size=\"12\" fill=\"#b45309\">60°</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√2"
+        },
+        {
+          "id": "b",
+          "text": "2√6"
+        },
+        {
+          "id": "c",
+          "text": "3√3"
+        },
+        {
+          "id": "d",
+          "text": "3√6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "AC est le côté en face de B̂ et BC le côté en face de Â, donc AC/sin 60° = BC/sin 45°. Alors AC = 6 × sin 60° / sin 45° = 6 × (√3/2)/(√2/2) = 6√3/√2 = 3√6 ✓, soit environ 7,35. La valeur 2√6 vient de l'association inverse, 6 × sin 45° / sin 60°. Les valeurs 3√2 = 6 × sin 45° et 3√3 = 6 × sin 60° oublient la division par le sinus de l'angle opposé à BC.",
+      "difficulty": 2
+    }
+  ]
+}

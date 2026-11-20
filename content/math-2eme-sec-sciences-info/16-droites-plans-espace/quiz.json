@@ -1,0 +1,131 @@
+{
+  "title": "Test de compréhension ⭐ : Droites et plans de l'espace",
+  "questions": [
+    {
+      "prompt": "Combien d'arêtes possède un tétraèdre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4",
+          "misconceptionTag": "math.geo.solide-faces-aretes-sommets-confondus"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un tétraèdre a 4 sommets ; de chacun partent 3 arêtes, et chaque arête est comptée par ses deux extrémités : 4 × 3 / 2 = 6 ✓. Le nombre 4 est celui de ses faces et de ses sommets, pas de ses arêtes ; 8 est le nombre d'arêtes d'une pyramide à base carrée et 12 celui d'un cube.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les points A, B et C sont distincts et alignés. Combien de plans contiennent ces trois points ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun plan"
+        },
+        {
+          "id": "b",
+          "text": "Un seul plan"
+        },
+        {
+          "id": "c",
+          "text": "Exactement deux plans"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité de plans"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les trois points sont sur une même droite D, et tout plan contenant D les contient : il y en a une infinité, comme les pages d'un livre ouvert autour de son dos ✓. L'unicité d'un plan exige trois points non alignés ; « aucun plan » est faux puisque tout plan contenant D convient ; et s'il y avait deux plans, on en obtiendrait d'autres en tournant autour de D.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le point I est sur la droite (AB), et la droite (AB) est dans le plan P. Laquelle de ces écritures est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I ⊂ P",
+          "misconceptionTag": "math.esp.appartenance-et-inclusion-confondues"
+        },
+        {
+          "id": "b",
+          "text": "(AB) ∈ P",
+          "misconceptionTag": "math.esp.appartenance-et-inclusion-confondues"
+        },
+        {
+          "id": "c",
+          "text": "(AB) ⊂ P"
+        },
+        {
+          "id": "d",
+          "text": "I ⊂ (AB)",
+          "misconceptionTag": "math.esp.appartenance-et-inclusion-confondues"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le symbole ∈ relie un point à une droite ou à un plan, et ⊂ relie une droite à un plan. Ici (AB) est une droite contenue dans le plan P : on écrit (AB) ⊂ P ✓. Les écritures I ⊂ P et I ⊂ (AB) emploient ⊂ pour un point, et (AB) ∈ P emploie ∈ pour une droite ; les écritures correctes pour le point seraient I ∈ P et I ∈ (AB).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une droite D a deux points distincts dans un plan P. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D perce le plan P"
+        },
+        {
+          "id": "b",
+          "text": "D est contenue dans P"
+        },
+        {
+          "id": "c",
+          "text": "D et P sont sécants suivant une droite"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut conclure qu'avec un troisième point de D"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Si un plan contient deux points distincts d'une droite, il contient toute la droite : D ⊂ P (axiome 2) ✓. Une droite qui perce un plan n'a qu'un seul point commun avec lui, donc pas deux ; « sécants suivant une droite » décrit deux plans, pas une droite et un plan ; et un troisième point n'est pas nécessaire, deux suffisent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le cube ci-dessous, quelle est la position relative des droites (AC) et (BB′) ?\n<svg viewBox=\"0 5 300 240\"><path d=\"M223.6 177.4 L87.6 177.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L87.6 177.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M87.6 177.4 L87.6 41.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 225 L176 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 225 L223.6 177.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 89 L176 89\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 89 L223.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M223.6 41.4 L87.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 89 L87.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M176 225 L176 89\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 225 L40 89\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M223.6 177.4 L223.6 41.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 225 L223.6 177.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M176 225 L176 89\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"225\" r=\"3.8\"/><circle cx=\"176\" cy=\"225\" r=\"3.8\"/><circle cx=\"223.6\" cy=\"177.4\" r=\"3.8\"/><circle cx=\"87.6\" cy=\"177.4\" r=\"3.8\"/><circle cx=\"40\" cy=\"89\" r=\"3.8\"/><circle cx=\"176\" cy=\"89\" r=\"3.8\"/><circle cx=\"223.6\" cy=\"41.4\" r=\"3.8\"/><circle cx=\"87.6\" cy=\"41.4\" r=\"3.8\"/><circle cx=\"40\" cy=\"225\" r=\"3.8\"/><circle cx=\"223.6\" cy=\"177.4\" r=\"3.8\"/><circle cx=\"176\" cy=\"225\" r=\"3.8\"/><circle cx=\"176\" cy=\"89\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"237\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"187\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"236.6\" y=\"181.4\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"76.6\" y=\"175.4\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"28\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"180\" y=\"80\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"236.6\" y=\"36.4\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"83.6\" y=\"31.4\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sécantes : leurs images se croisent sur le dessin",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "b",
+          "text": "Parallèles : elles n'ont aucun point commun",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "c",
+          "text": "Non coplanaires : aucun plan ne contient les deux"
+        },
+        {
+          "id": "d",
+          "text": "Sécantes en B : le point B est sur les deux droites"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La droite (AC) est dans le plan de la base, et (BB′) ne rencontre ce plan qu'en B, qui n'est pas sur (AC) : aucun point commun. Le seul plan contenant (AC) et B est la base, qui ne contient pas B′ : aucun plan ne contient les deux droites, elles sont non coplanaires ✓. Les images se croisent sur le dessin à cause de la perspective, ce qui ne prouve rien dans l'espace ; elles ne sont pas parallèles puisqu'elles ne sont pas coplanaires ; et B n'est pas sur (AC), qui passe par le centre de la base.",
+      "difficulty": 2
+    }
+  ]
+}

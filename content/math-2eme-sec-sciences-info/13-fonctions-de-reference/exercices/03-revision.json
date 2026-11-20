@@ -1,0 +1,139 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Paraboles, racines et hyperboles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle transformation envoie la parabole d'équation y = x² sur la courbe d'équation y = (x − 3)² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La translation de vecteur −3i⃗"
+        },
+        {
+          "id": "b",
+          "text": "La translation de vecteur 3j⃗"
+        },
+        {
+          "id": "c",
+          "text": "L'homothétie de centre O et de rapport 3"
+        },
+        {
+          "id": "d",
+          "text": "La translation de vecteur 3i⃗"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "M(x ; y) est sur la courbe de (x − 3)² ⟺ y = (x − 3)² ⟺ N(x − 3 ; y) est sur y = x² : la courbe est décalée de 3 vers la droite, donc de vecteur 3i⃗. Le sommet passe de O à S(3 ; 0). Le vecteur −3i⃗ la décalerait vers la gauche (formule (x + 3)²) ; 3j⃗ la monterait (formule x² + 3) ; une homothétie de rapport 3 garderait le sommet en O.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'extremum de f(x) = −x² + 6x − 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum 4, atteint en 3"
+        },
+        {
+          "id": "b",
+          "text": "Maximum 3, atteint en 4"
+        },
+        {
+          "id": "c",
+          "text": "Maximum 4, atteint en −3"
+        },
+        {
+          "id": "d",
+          "text": "Maximum −5, atteint en 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici a = −1 < 0 : il y a un maximum. On calcule α = −6/(2 × (−1)) = 3 puis β = f(3) = −9 + 18 − 5 = 4 : maximum 4, atteint en 3. Le maximum 3 atteint en 4 échange la valeur et la position ; « atteint en −3 » se trompe de signe pour α ; le maximum −5 en 0 prend f(0) = c, qui n'est pas le sommet.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la solution de l'équation √(x + 3) = 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On élève au carré : x + 3 = 4, donc x = 1. Contrôle : √(1 + 3) = √4 = 2. La valeur −1 vient de x + 3 = 2, où l'on a oublié d'élever 2 au carré ; la valeur 7 vient de x = 4 + 3 ; la valeur 4 est le carré du second membre, pas la solution.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble de définition de f(x) = 3/(x + 5) + 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℝ \\ {5}"
+        },
+        {
+          "id": "b",
+          "text": "ℝ \\ {−5}"
+        },
+        {
+          "id": "c",
+          "text": "ℝ \\ {1}"
+        },
+        {
+          "id": "d",
+          "text": "ℝ \\ {−5 ; 1}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le dénominateur x + 5 s'annule pour x = −5 : l'ensemble de définition est ℝ \\ {−5}. Le nombre 1, ajouté à la fin, n'est pas une valeur interdite : f(1) = 3/6 + 1 = 3/2 existe. Ce 1 donne l'asymptote horizontale y = 1. Et 5 se trompe de signe : f(5) = 3/10 + 1 existe.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit f(x) = 2x² − 12x + 13. Le nombre −3 a deux antécédents par f. Donne le plus grand des deux.",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "On résout 2x² − 12x + 13 = −3, soit 2x² − 12x + 16 = 0, donc x² − 6x + 8 = 0, soit (x − 2)(x − 4) = 0. Les antécédents sont 2 et 4 : le plus grand est 4. Contrôle par la forme a(x − α)² + β : f(x) = 2(x − 3)² − 5, de sommet S(3 ; −5) ; −3 est au-dessus du minimum −5, donc deux antécédents, symétriques par rapport à x = 3 : 2 et 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelles sont les abscisses des points communs de l'hyperbole y = (x + 1)/(x − 1) et de la droite y = x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − √2 et 1 + √2"
+        },
+        {
+          "id": "b",
+          "text": "−1 − √2 et −1 + √2"
+        },
+        {
+          "id": "c",
+          "text": "−1 et 2"
+        },
+        {
+          "id": "d",
+          "text": "0 et 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On résout (x + 1)/(x − 1) = x avec x ≠ 1 : x + 1 = x(x − 1), soit x² − 2x − 1 = 0. Avec (x − 1)² − 2 = 0, on obtient x = 1 ± √2, deux valeurs différentes de 1. Le piège courant est de se tromper de signe en ramenant l'équation, ce qui donne −1 ± √2 ; −1 et 2 viennent de x² − x − 2 = 0, et 0 et 2 de x² − 2x = 0, où la constante −1 a été oubliée.",
+      "difficulty": 3
+    }
+  ]
+}

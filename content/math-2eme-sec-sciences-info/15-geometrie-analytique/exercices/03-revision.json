@@ -1,0 +1,139 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Équations réduites, distances et cercles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle est l'équation réduite de la droite D : 5x − 2y + 8 = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = −(5/2)x + 4"
+        },
+        {
+          "id": "b",
+          "text": "y = (2/5)x + 4"
+        },
+        {
+          "id": "c",
+          "text": "y = (5/2)x − 4"
+        },
+        {
+          "id": "d",
+          "text": "y = (5/2)x + 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On isole y : −2y = −5x − 8, donc y = (5/2)x + 4, avec m = −a/b = 5/2 et p = −c/b = 4. Contrôle : le point (0 ; 4) donne 0 − 8 + 8 = 0. L'équation y = (5/2)x − 4 passe par (0 ; −4) qui n'est pas sur D ; y = −(5/2)x + 4 se trompe de signe pour la pente ; y = (2/5)x + 4 renverse la pente.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une droite est perpendiculaire à D : y = (2/3)x + 1, dans un repère orthonormé. Quelle est sa pente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3/2"
+        },
+        {
+          "id": "b",
+          "text": "−2/3"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "3/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux droites de pentes m et m′ sont perpendiculaires si mm′ = −1. Ici m = 2/3, donc m′ = −1/(2/3) = −3/2. Contrôle : (2/3) × (−3/2) = −1. La pente −2/3 n'est que l'opposée (produit −4/9) ; la pente 3/2 n'est que l'inverse (produit 1) ; la pente 2/3 est celle de D elle-même, donc d'une parallèle.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un repère orthonormé, calculer d(A ; D) pour A(1 ; −2) et D : 8x − 6y + 5 = 0.",
+      "answerKey": {
+        "value": 2.5
+      },
+      "explanation": "On applique d(A ; D) = |axA + byA + c|/√(a² + b²). Le numérateur vaut |8 × 1 − 6 × (−2) + 5| = |8 + 12 + 5| = 25 et le dénominateur √(64 + 36) = 10, donc d = 25/10 = 2,5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x < 2, quelle expression est égale à |3x − 6| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−3x − 6"
+        },
+        {
+          "id": "b",
+          "text": "−3x + 6"
+        },
+        {
+          "id": "c",
+          "text": "3x − 6"
+        },
+        {
+          "id": "d",
+          "text": "3x + 6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x < 2, 3x − 6 est négatif, donc |3x − 6| est son opposé : −(3x − 6) = −3x + 6. Contrôle avec x = 1 : |3 − 6| = 3 et −3 + 6 = 3. L'expression 3x − 6 vaut −3 pour x = 1, ce qui est négatif ; les expressions −3x − 6 et 3x + 6 ne changent le signe que d'un terme, et valent −9 et 9 pour x = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces équations de la forme x² + y² + px + qy + r = 0, une seule décrit un cercle. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + y² − 2x + 4y + 7 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x² + y² + 2x + 2y + 5 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x² + y² + 6x − 2y + 10 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x² + y² − 4x + 2y − 4 = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On complète les carrés : x² + y² − 4x + 2y − 4 = 0 s'écrit (x − 2)² + (y + 1)² = 9, cercle de centre (2 ; −1) et de rayon 3. Les trois autres donnent un second membre qui ne convient pas : x² + y² − 2x + 4y + 7 = 0 donne (x − 1)² + (y + 2)² = −2 et x² + y² + 2x + 2y + 5 = 0 donne (x + 1)² + (y + 1)² = −3, impossibles ; x² + y² + 6x − 2y + 10 = 0 donne (x + 3)² + (y − 1)² = 0, le seul point (−3 ; 1) : un rayon nul n'est pas un cercle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelles sont les solutions de l'équation |x − 4| = 2x − 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 et 3"
+        },
+        {
+          "id": "b",
+          "text": "1 seulement"
+        },
+        {
+          "id": "c",
+          "text": "3 seulement"
+        },
+        {
+          "id": "d",
+          "text": "aucune solution"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [4 ; +∞[, |x − 4| = x − 4 et x − 4 = 2x − 5 donne x = 1, qui n'est pas dans [4 ; +∞[ : valeur rejetée. Sur ]−∞ ; 4[, |x − 4| = −x + 4 et −x + 4 = 2x − 5 donne x = 3, qui est dans ]−∞ ; 4[ : valeur acceptée. Contrôle : |3 − 4| = 1 = 2 × 3 − 5, alors que |1 − 4| = 3 et 2 × 1 − 5 = −3. La seule solution est 3 : la valeur 1 vient de la première branche, hors de son intervalle.",
+      "difficulty": 3
+    }
+  ]
+}
