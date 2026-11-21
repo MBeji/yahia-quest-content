@@ -35,7 +35,7 @@
     },
     {
       "matiere": "mathematiques",
-      "statut": "partielle",
+      "statut": "validee-r7",
       "profondeur": "generation",
       "sources": [
         {
@@ -63,12 +63,12 @@
       ],
       "sourcesLibres": [],
       "r7": {
-        "date": "2026-11-20",
-        "portee": "sondage",
-        "corrections": 13,
-        "verdict": "CONFORME AVEC RESERVE sur le tome 2 ch.4-10 (sections T2.4-T2.10, p.48-199) : deux auditeurs opus en contexte vierge, 115/115 encadres compares mot pour mot a l'image (0 ecart), chapitrage conforme, 70 pages auditees hors sondage des lecteurs (20 % et 68 % selon le lot, 0 ecart de donnee), ch.19 recalcule. 2 substantiels (renvoi de borne de la valeur absolue en T2.6 ; Assimiler ex.3 p.188, 17 garcons annonces pour 16 au tableau) et 11 mineurs, tous corriges. RESERVE : le tome 1 et le tome 2 ch.1-3 (sections T1.1-T2.3, transcrits en juillet) n'ont jamais eu de R-7 ; le statut reste partielle pour ce seul motif, la generation est ouverte chapitre par chapitre (chapitresGeneration, 19 chapitres)."
+        "date": "2026-11-21",
+        "portee": "integrale",
+        "corrections": 143,
+        "verdict": "CONFORME AVEC RESERVE, fiche entiere (19 chapitres + complement 20). Tome 2 ch.4-10 le 2026-11-20 (2 auditeurs opus : 115/115 encadres, 70 pages hors sondage, 2 substantiels + 11 mineurs). Tome 1 et tome 2 ch.1-3 le 2026-11-21 (3 auditeurs opus : 116/116 encadres a l'image, 0 formule fausse, 69 pages denses confrontees, couverture des activites verifiee ; 18 substantiels - synthese tronquees p.29/49/61, conditions omises (vecteurs orthogonaux non nuls, n >= 3, points distincts, p premier different de 2, reels positifs), rapport -4 de l'Act.5 du ch.8, activites manquantes p.135, constructions du barycentre p.95-96, vocabulaire non imprime presente comme officiel - et ~40 mineurs). Tous corriges dans la fiche. Coquilles de la source signalees [sic]. Chapitres publies 02, 03, 04, 05, 06, 08, 11 a realigner sur les points substantiels (reprise du 2026-11-21)."
       },
-      "maj": "2026-11-20",
+      "maj": "2026-11-21",
       "par": "claude/campagne",
       "notes": "⚠️ GÉNÉRATION RESTREINTE (statut partielle) : depuis la décision du 2026-07-29 (R-5 lu au chapitre), les 12 chapitres listés dans `chapitresGeneration` — tome 1 ch.1–9 + tome 2 ch.1–3, tous transcrits à profondeur de génération — SONT générables ; les 7 autres (13–19) restent interdits tant que le tome 2 p.48–200 n'est pas lu. PILOTE lycée 2ème sec sciences (première classe manquante du lycée). Manuel élève seul, 2 tomes (pas de guide au corpus). Langue CONSTATÉE : français (page de titre + corps, conforme lycee-architecture §4). TOME 1 INTÉGRALEMENT TRANSCRIT : les 9 chapitres du tome 1 (222231, p.7–164) à PROFONDEUR DE GÉNÉRATION (chaque activité/exercice décrit, encadrés Définition/Retenir/Synthèse verbatim, vocabulaire, bornes ✅/⛔) : calcul dans ℝ, problèmes 1er/2nd degré, polynômes, arithmétique, calcul vectoriel, barycentre, translations, homothéties, rotations. Tome 2 (222232) ch.1–3 également transcrits à profondeur de génération (Suites arithmétiques p.7–20, Suites géométriques p.21–31, Généralités sur les fonctions p.32–47). Reste à transcrire : tome 2 ch.4–10 (222232, p.48–200 : fonctions de référence, trigonométrie, géométrie analytique, droites/plans/parallélisme/orthogonalité de l'espace, statistiques). Chapitrage complet (19 ch.) codifié dans manifest/2eme-sec-sciences.json + fiche §4 (plages dérivées du sommaire). Reprise : transcrire le tome 2 à partir de la p.48 sans refaire le tome 1 ni le tome 2 ch.1–3 (R-4). Vision 150 dpi via render.sh ; couche-texte propre pour la prose mais notation maths aplatie ⇒ vision requise. Ce manuel dessert aussi 2eme-sec-info (compileTo, étude 16 D-4). Pas de R-7 formelle (fiche non complète). ▸ STATUT PUBLICATION au 2026-07-19 : RIEN N'EST VISIBLE CÔTÉ ÉLÈVE — content/math-2eme-sec-sciences/ n'existe pas (aucun LOT B), aucune migration produite, et le parcours 2eme-sec-sciences est encore `coming_soon` (seed 20260704235000, aucune migration open_*_parcours). La transcription est une couche INTERNE : elle ne touche jamais la DB. ▸ DÉCISION Mohamed 2026-07-19 — VOIE CONFORME : ne pas publier une matière trouée ; chaîne = (1) finir tome 2 ch.4-10 → registre `complete` ; (2) LOT B (contenu + migration auto-appliquée) ; (3) migration open_*_parcours → `available` = visible élève. Paquet de relance clé-en-main : D:/11-coding/YahiaAcademy/RELANCE-tome2-2eme-sec-sciences.md. ▸ MAJ 2026-07-29 : la levée R-5 au chapitre est portée par le moteur (`chapitresGeneration` au registre, vérifié contre le chapitrage du manifeste par `programme:check`, lu par `programme:etat` qui prescrit alors un LOT B2 restreint). La décision du 2026-07-19 « ne pas publier une matière trouée » est SUPERSÉDÉE par la consigne du 2026-07-29 : ouvrir toute classe encore fermée avec au moins un chapitre de sa matière emblématique — R-8 dit déjà qu'on n'attend pas la matière complète. Le tome 2 ch.4–10 reste à transcrire, et le paquet de relance reste valable. ▸ 2026-11-20 — TOME 2 CH.4–10 LU (p.48–199 ; p.200 blanche, « OMEGA EDITIONS 2007 », ni corrigés ni annexes) : quatre lecteurs opus, couche texte `pdftotext -layout` sur toutes les pages, image `pdftoppm` 110 dpi pour toute formule, encadré, tableau, figure (134/152 pages vues aussi à l'image), ~115 encadrés verbatim. SONDAGE IMAGE (règle du 2026-11-03) : 21 pages confrontées en entier au PNG (p.49, 63, 69, 83, 89, 90, 105, 119, 120, 124, 125, 134, 143, 146, 157, 163, 164, 172, 178, 190, 197) — 0 écart de prose ; écarts de notation seulement (radicaux, |a|σ, u⃗ = u⃗′), toutes les formules transcrites d'après l'image, ch.10 lu en entier à l'image. Plages confirmées : ch.13 p.48–71, ch.14 p.72–91, ch.15 p.92–117, ch.16 p.118–126 (le sommaire du manuel dit p.113 : faux), ch.17 p.127–145, ch.18 p.146–166, ch.19 p.167–199. Coquilles source à ne pas reprendre listées en fiche §6. RELECTURE R-7 (2026-11-20, deux auditeurs opus en contexte vierge) : 115/115 encadrés comparés mot pour mot à l'image (46 ch.13–15, 69 ch.16–19), 0 écart ; chapitrage conforme ; pages auditées hors sondage : 14/70 (20 %) et 56/82 (68 %), 0 écart de donnée ; ch.19 recalculé (totaux, moyennes, variances, écarts types). Écarts corrigés : 2 substantiels (renvoi de borne de la valeur absolue en T2.6 ; incohérence non signalée Assimiler ex.3 p.188, 17 garçons annoncés pour 16 au tableau) et 11 mineurs. Verdict : validée R-7 avec réserve sur le tome 2 ch.4–10 ; le tome 1 et le tome 2 ch.1–3 n'ont pas de R-7, d'où le statut `partielle` maintenu et la levée R-5 chapitre par chapitre (chapitresGeneration = 19 chapitres).",
       "chapitresGeneration": [
@@ -90,7 +90,8 @@
         "16-droites-plans-espace",
         "17-parallelisme-espace",
         "18-orthogonalite-espace",
-        "19-statistiques"
+        "19-statistiques",
+        "20-geometrie-du-triangle"
       ]
     }
   ]

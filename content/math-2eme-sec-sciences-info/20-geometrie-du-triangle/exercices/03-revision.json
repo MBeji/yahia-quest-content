@@ -1,0 +1,138 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Triangles, bissectrices et relations métriques",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un fronton en forme de triangle isocèle a une base de 16 m et deux côtés de 17 m. Quelle surface de bois, en m², faut-il pour le recouvrir entièrement ?",
+      "answerKey": {
+        "value": 120,
+        "unit": "m²"
+      },
+      "explanation": "Le demi-périmètre est p = (17 + 17 + 16) / 2 = 25, donc S = √(25 × 8 × 8 × 9) = √14400 = 120 ✓, soit 120 m² de bois. On le vérifie avec la hauteur sur la base, qui vaut √(17² − 8²) = 15 par Pythagore : ½ × 16 × 15 = 120.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le triangle ABC est isocèle en A. Que peut-on dire de la bissectrice de l'angle extérieur en A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est la médiatrice du segment [BC]"
+        },
+        {
+          "id": "b",
+          "text": "Elle est confondue avec la médiane issue de A"
+        },
+        {
+          "id": "c",
+          "text": "Elle est parallèle à (BC) et ne la coupe pas"
+        },
+        {
+          "id": "d",
+          "text": "Elle coupe (BC) en un point J extérieur à [BC]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans un triangle isocèle, AB = AC : le théorème donnerait JB / JC = 1, ce qui est impossible pour un point J de (BC) extérieur à [BC], car JB et JC diffèrent alors de BC. La bissectrice extérieure ne coupe donc pas (BC) : elle lui est parallèle ✓ (elle est perpendiculaire à la bissectrice intérieure, elle-même perpendiculaire à (BC)). Être la médiatrice de [BC], ou être confondue avec la médiane issue de A, sont des propriétés de la bissectrice intérieure. Un point J extérieur à [BC] n'existe que si AB ≠ AC.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les triangles de côtés 4, 6, 9 et 6, 9, x sont semblables, les côtés étant rangés du plus petit au plus grand dans chaque triangle. Que vaut x ?",
+      "answerKey": {
+        "value": 13.5
+      },
+      "explanation": "En rangeant les côtés dans le même ordre, 6/4 = 9/6 = 3/2 : le rapport est 3/2, donc x = 9 × 3/2 = 13,5 ✓. Les trois quotients 6/4, 9/6 et 13,5/9 valent bien 3/2, ce qui assure que les triangles sont semblables.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABC est rectangle en A, avec AB = 18 et AC = 24 ; H est le pied de la hauteur issue de A. Que vaut AH ?\n<svg viewBox=\"10 40 330 196\"><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 70.4 L137.2 200\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131.2 78.4 L139.2 84.4 L145.2 76.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 189 L126.2 189 L126.2 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"137.2\" cy=\"70.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"310\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"137.2\" cy=\"200\" r=\"3.5\" fill=\"#b45309\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"131.2\" y=\"61.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"25.7\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"324.3\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"137.2\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#b45309\">H</text><text x=\"74.9\" y=\"137.1\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">18</text><text x=\"236.7\" y=\"135.3\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">24</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10,8",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "14,4"
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "d",
+          "text": "19,2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "BC² = 18² + 24² = 900 donc BC = 30. En écrivant l'aire de deux façons, AH × BC = AB × AC, donc AH = 18 × 24 / 30 = 14,4 ✓. La valeur 15 est BC/2, la longueur de la médiane issue de A, qui n'est pas la hauteur (H n'est pas le milieu de [BC] : BH = 10,8 et CH = 19,2). Les valeurs 10,8 et 19,2 sont BH et CH, les deux segments que la hauteur découpe sur [BC] : elles répondent à une autre question.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Dans le triangle ABC rectangle en A, H est le pied de la hauteur issue de A. Remettre dans l'ordre les étapes de la preuve de AB² = BH × BC.\n<svg viewBox=\"10 40 330 196\"><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 70.4 L137.2 200\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131.2 78.4 L139.2 84.4 L145.2 76.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 189 L126.2 189 L126.2 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"137.2\" cy=\"70.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"310\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"137.2\" cy=\"200\" r=\"3.5\" fill=\"#b45309\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"131.2\" y=\"61.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"25.7\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"324.3\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"137.2\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#b45309\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "c",
+          "text": "Dans les triangles semblables ABH et ABC, les côtés homologues sont proportionnels : AB / BC = BH / AB"
+        },
+        {
+          "id": "a",
+          "text": "Les triangles ABH et ABC ont chacun un angle droit, en H et en A"
+        },
+        {
+          "id": "d",
+          "text": "Le produit en croix donne AB × AB = BH × BC, soit AB² = BH × BC"
+        },
+        {
+          "id": "b",
+          "text": "Les triangles ABH et ABC ont aussi l'angle B̂ en commun, donc ils sont semblables"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "On commence par relever ce que les deux triangles ont en commun, les angles droits puis l'angle B̂ : ce sont les conditions de la similitude. Ce n'est qu'ensuite que l'on peut écrire la proportionnalité des côtés homologues, puis le produit en croix qui donne AB² = BH × BC. Écrire la proportion avant d'avoir établi la similitude reviendrait à utiliser un résultat avant d'en avoir vérifié la condition.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces situations, lesquelles garantissent que les triangles ABC et A′B′C′ sont isométriques ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB = A′B′, AC = A′C′ et Â = Â′"
+        },
+        {
+          "id": "b",
+          "text": "BC = B′C′, Â = Â′ et B̂ = B̂′"
+        },
+        {
+          "id": "c",
+          "text": "AB = A′B′, AC = A′C′ et B̂ = B̂′"
+        },
+        {
+          "id": "d",
+          "text": "AB = A′B′, BC = B′C′ et Ĉ = Ĉ′"
+        },
+        {
+          "id": "e",
+          "text": "Â = Â′, B̂ = B̂′ et Ĉ = Ĉ′"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "Deux côtés et l'angle compris (AB, AC et Â) : c'est le 2ᵉ cas d'isométrie. Avec BC = B′C′, Â = Â′ et B̂ = B̂′, le troisième angle est aussi égal (la somme des angles vaut 180°) : on est dans le 1ᵉʳ cas, un côté et ses deux angles voisins. Dans « AB = A′B′, AC = A′C′ et B̂ = B̂′ » et dans « AB = A′B′, BC = B′C′ et Ĉ = Ĉ′ », l'angle égal n'est pas compris entre les deux côtés égaux : deux triangles différents peuvent convenir, comme le montre le cas à deux solutions de la loi du sinus. Trois angles égaux donnent seulement des triangles semblables, de tailles éventuellement différentes.",
+      "difficulty": 3
+    }
+  ]
+}

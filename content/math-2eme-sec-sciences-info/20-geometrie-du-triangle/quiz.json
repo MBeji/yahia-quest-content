@@ -1,0 +1,154 @@
+{
+  "title": "Test de compréhension ⭐ : Géométrie du triangle",
+  "questions": [
+    {
+      "prompt": "Dans le triangle ABC ci-dessous, la bissectrice de l'angle Â coupe [BC] en I. Que vaut IB ?\n<svg viewBox=\"10 55 330 181\"><path d=\"M127 85.3 L40 200 L310 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M127 85.3 L40 200 L310 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M127 85.3 L148 200\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.7 102.8 A22 22 0 0 0 131 106.9\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M110.7 106.8 A27 27 0 0 0 131.9 111.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131 106.9 A22 22 0 0 0 145.6 96.9\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131.9 111.8 A27 27 0 0 0 149.9 99.6\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"127\" cy=\"85.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"310\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"148\" cy=\"200\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"121.2\" y=\"76.4\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"25.7\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"324.5\" y=\"208.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"161\" y=\"191\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">I</text><text x=\"69.9\" y=\"144.2\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">8</text><text x=\"231.8\" y=\"143.3\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">12</text><text x=\"175\" y=\"222\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">15</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "7,5",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La bissectrice donne IB / IC = AB / AC = 8/12 = 2/3. Avec IB + IC = BC = 15, on pose IB = 2k et IC = 3k : 5k = 15, k = 3, donc IB = 6 ✓ (et IC = 9). La valeur 7,5 est le milieu de [BC] : la bissectrice a été prise pour la médiane, alors qu'elle coupe l'angle en deux et non le côté. La valeur 9 est IC : le rapport a été renversé. La valeur 10 vient de IB / BC = AB / AC, un rapport mal posé : IB et IC se comparent entre eux, pas à BC entier.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un triangle a pour côtés 9 cm, 10 cm et 17 cm. Quelle est son aire, en cm² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "45"
+        },
+        {
+          "id": "c",
+          "text": "144"
+        },
+        {
+          "id": "d",
+          "text": "1296"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le demi-périmètre est p = (9 + 10 + 17) / 2 = 18, donc S = √(18 × 9 × 8 × 1) = √1296 = 36 ✓. La valeur 1296 est le nombre sous la racine : la racine carrée a été oubliée. La valeur 144 est le quadruple de l'aire : c'est √((a + b + c)(a + b − c)(b + c − a)(c + a − b)) = √(36 × 2 × 18 × 16) = √20736, les quatre facteurs pris sans leurs moitiés. La valeur 45 est ½ × 9 × 10, l'aire d'un triangle rectangle de côtés 9 et 10 ; or ce triangle n'a pas d'angle droit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les triangles ABC et A′B′C′ vérifient AB = A′B′ et AC = A′C′. Quelle donnée supplémentaire garantit toujours qu'ils sont isométriques ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les angles B̂ et B̂′ sont égaux"
+        },
+        {
+          "id": "b",
+          "text": "Les angles Â et Â′ sont égaux"
+        },
+        {
+          "id": "c",
+          "text": "Les angles Ĉ et Ĉ′ sont égaux"
+        },
+        {
+          "id": "d",
+          "text": "Les deux triangles ont la même aire"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les côtés égaux AB et AC enferment l'angle Â : avec Â = Â′, le 2ᵉ cas d'isométrie s'applique (El-Kashi donne BC = B′C′) ✓. L'angle B̂ n'est pas compris entre AB et AC : deux triangles différents peuvent avoir deux côtés et cet angle égaux ; il en va de même pour Ĉ. Des aires égales donnent sin Â = sin Â′, donc Â = Â′ ou Â′ = 180° − Â : avec 50° et 130° les aires sont égales sans que BC = B′C′.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les triangles ABC et A′B′C′ sont semblables, avec Â = Â′, B̂ = B̂′ et Ĉ = Ĉ′. On donne BC = 12, B′C′ = 8 et AC = 9. Que vaut A′C′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "9"
+        },
+        {
+          "id": "d",
+          "text": "13,5",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "BC et B′C′ sont opposés à Â et Â′ : ce sont des côtés homologues, donc k = BC / B′C′ = 12/8 = 3/2. Comme AC / A′C′ = 3/2, A′C′ = 9 × 2/3 = 6 ✓. La valeur 13,5 vient du rapport renversé (9 × 3/2). La valeur 5 retire à AC l'écart 4 de BC et B′C′ ; mais des angles égaux imposent le même rapport, pas le même écart. La valeur 9 suppose des côtés homologues égaux, c'est-à-dire des triangles isométriques.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un triangle a pour côtés 6, 8 et 10 ; un autre a pour côtés 9, 12 et 16. Ces deux triangles sont-ils semblables ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, de rapport 3/2"
+        },
+        {
+          "id": "b",
+          "text": "Oui, car deux rapports sur trois sont égaux"
+        },
+        {
+          "id": "c",
+          "text": "Non, car 10/16 est différent de 2/3"
+        },
+        {
+          "id": "d",
+          "text": "Non, car les côtés ne sont pas égaux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On range les côtés dans le même ordre : 6/9 = 2/3 et 8/12 = 2/3, mais 10/16 = 5/8, qui n'est pas 2/3. Les trois quotients ne sont pas égaux, donc les triangles ne sont pas semblables ✓. Deux rapports égaux sur trois ne suffisent pas : il faut les trois. Répondre « oui, de rapport 3/2 » suppose les trois quotients égaux, ce qui est faux pour le dernier (il aurait fallu 15 au lieu de 16). Exiger des côtés égaux confond la similitude avec l'isométrie : la similitude demande des quotients égaux, pas des côtés égaux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABC est rectangle en A et H est le pied de la hauteur issue de A. On donne HB = 1 et HC = 4. Que vaut AH ?\n<svg viewBox=\"10 62 330 174\"><path d=\"M94 92 L40 200 L310 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M94 92 L40 200 L310 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M94 92 L94 200\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M89.5 100.9 L98.5 105.4 L102.9 96.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M94 189 L83 189 L83 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"94\" cy=\"92\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"310\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"94\" cy=\"200\" r=\"3.5\" fill=\"#b45309\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"82.8\" y=\"87\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"25.5\" y=\"208.9\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"324.5\" y=\"208.9\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"94\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#b45309\">H</text><text x=\"67\" y=\"224\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">1</text><text x=\"202\" y=\"224\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4",
+          "misconceptionTag": "math.geo.relation-hauteur-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "2,5",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        },
+        {
+          "id": "c",
+          "text": "√5",
+          "misconceptionTag": "math.geo.relation-hauteur-somme-au-lieu-de-produit"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans le triangle rectangle ABC, AH² = HB × HC = 1 × 4 = 4, donc AH = 2 ✓ (BC = 5, AB² = 1 × 5 = 5 et AC² = 4 × 5 = 20, dont la somme fait 25 = 5²). La valeur 4 est AH² : la racine carrée a été oubliée. La valeur √5 additionne HB et HC (AH² = 1 + 4) alors que la relation est un produit. La valeur 2,5 est BC/2, la longueur de la médiane issue de A et non celle de la hauteur.",
+      "difficulty": 2
+    }
+  ]
+}

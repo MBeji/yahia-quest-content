@@ -1,0 +1,8 @@
+# 📜 Résumé : Géométrie du triangle
+
+- **Bissectrices** : la bissectrice intérieure de l'angle Â coupe [BC] en I avec IB / IC = AB / AC : chaque segment se compare au côté qui a la même extrémité. La bissectrice extérieure coupe la droite (BC) en un point J extérieur à [BC], avec JB / JC = AB / AC, à condition que AB ≠ AC. I n'est le milieu de [BC] que si AB = AC.
+- **Formule de Héron** : avec p = (a + b + c) / 2, le demi-périmètre, l'aire vaut S = √(p (p − a)(p − b)(p − c)) : les trois côtés suffisent. p est la moitié du périmètre, pas le périmètre ; p − c = 0 signale un triangle aplati, et p − c négatif aucun triangle.
+- **Triangles isométriques** : leurs côtés sont deux à deux égaux. Trois cas suffisent : un côté et les deux angles voisins, deux côtés et l'angle compris, ou trois côtés. Un angle qui n'est pas compris entre les côtés égaux ne suffit pas, et trois angles égaux non plus.
+- **Triangles semblables** : leurs angles sont deux à deux égaux (deux angles égaux suffisent) et leurs côtés homologues, opposés à des angles égaux, sont proportionnels : a / a′ = b / b′ = c / c′ = k, le rapport de similitude. Avec k = 1, on retrouve l'isométrie.
+- **Critères de similitude** : trois côtés proportionnels, ou un angle égal compris entre deux côtés proportionnels. On range les côtés dans le même ordre et les trois quotients doivent être égaux, pas seulement deux sur trois.
+- **Relations métriques** : dans le triangle ABC rectangle en A, de hauteur [AH], AB² = BH × BC, AC² = CH × CB, AH² = BH × CH et AH × BC = AB × AC. La relation sur AH est un produit, pas une somme, et BC² = AB² + AC² en découle.
