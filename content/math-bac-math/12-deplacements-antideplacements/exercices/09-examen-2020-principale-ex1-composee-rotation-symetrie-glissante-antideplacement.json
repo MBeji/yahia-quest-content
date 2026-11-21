@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 1 ⭐⭐⭐ : composée de rotations et de symétrie centrale, milieux, symétrie glissante et antidéplacement",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. On note r₁ et r₂ les rotations d'angle π/2 de centres G et E, et S_L la symétrie centrale de centre L. Que vaut r₂∘S_L∘r₁(A), et quelle est la nature de r₂∘S_L∘r₁ ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ; la composée est une rotation d'angle π de centre A"
+        },
+        {
+          "id": "b",
+          "text": "A ; la composée est l'identité"
+        },
+        {
+          "id": "c",
+          "text": "B ; la composée est une translation de vecteur BA"
+        },
+        {
+          "id": "d",
+          "text": "C ; la composée est une rotation d'angle −π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans GAC direct, rectangle isocèle en G, r₁(A) = C (rotation de centre G et d'angle π/2). Puis S_L(C) = B car L est le milieu de [BC]. Enfin, dans EBA direct, rectangle isocèle en E, r₂(B) = A. Donc r₂∘S_L∘r₁(A) = A. C'est un déplacement d'angle π/2 + π + π/2 ≡ 0 [2π], donc une translation, qui a un point fixe A : c'est l'identité ✓. Piège classique : oublier l'angle π de la symétrie centrale (on trouve une rotation d'angle π), se tromper sur l'image de A (elle revient en A), ou croire qu'une translation peut avoir un point fixe sans être l'identité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. On note r₁ et r₂ les rotations d'angle π/2 de centres G et E, et S_L la symétrie centrale de centre L. On a r₂∘S_L∘r₁ = Id. Comment en déduit-on la nature du triangle EFG ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "r₂(F) = G donne EF = EG et (EF, EG) ≡ π/2, donc EFG est rectangle isocèle en F"
+        },
+        {
+          "id": "b",
+          "text": "r₂(F) = G donne EF = EG et (EF, EG) ≡ π/3, donc EFG est équilatéral"
+        },
+        {
+          "id": "c",
+          "text": "r₂(F) = G donne EF = EG et (EF, EG) ≡ π/2 : EFG est rectangle isocèle en E"
+        },
+        {
+          "id": "d",
+          "text": "r₂(F) = G donne FG = EG et (FG, FE) ≡ π/2, donc EFG est rectangle isocèle en G"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "r₁ a pour centre G donc r₁(G) = G ; S_L(G) = F (F est le symétrique de G par rapport à L) ; l'identité donne alors r₂(F) = G. La rotation r₂ de centre E et d'angle π/2 envoie F sur G : EF = EG et (EF, EG) ≡ π/2. Le triangle EFG est rectangle isocèle en E ✓ (le sommet est le centre de la rotation). Piège classique : placer l'angle droit en F ou en G (c'est au centre E), remplacer π/2 par un autre angle, ou changer les côtés égaux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. On sait que EFG est rectangle isocèle en E, et L est le milieu de [GF]. Comment démontre-t-on que LJKI est un carré ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "LJKI est un parallélogramme dont les diagonales se coupent en leur milieu, donc c'est un carré"
+        },
+        {
+          "id": "b",
+          "text": "LJ = LI, donc LJKI est un parallélogramme à côtés consécutifs égaux, donc c'est un carré"
+        },
+        {
+          "id": "c",
+          "text": "(EL) ⟂ (GF) donne un angle droit en L, donc LJKI est un carré"
+        },
+        {
+          "id": "d",
+          "text": "ELG est rectangle isocèle en L (EL médiane et hauteur) ; J, I, K milieux : LJ = LI, angle droit en L : LJKI est un carré"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans EFG isocèle en E, la médiane [EL] est aussi hauteur : (EL) ⟂ (GF), et comme EFG est rectangle isocèle, EL = GF/2 = GL. Le triangle ELG est donc rectangle isocèle en L. Les milieux J de [GL] et I de [EL] donnent LJ = LI = GL/2, et l'angle JLI est droit ; K, milieu de [GE], complète le quadrilatère LJKI par la droite des milieux : c'est un parallélogramme avec deux côtés consécutifs égaux et un angle droit, donc un carré ✓. Piège classique : s'arrêter au parallélogramme (les diagonales d'un parallélogramme se coupent toujours en leur milieu), oublier l'angle droit (côtés consécutifs égaux : c'est un losange), ou oublier l'égalité des côtés (un angle droit : c'est un rectangle).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. LJKI est un carré. Soit φ la symétrie glissante de vecteur LK⃗ et d'axe Δ passant par I. Comment montre-t-on que Δ = (IH) ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "LK⃗ = LJ⃗ + LI⃗ et LH⃗ = −LJ⃗ donnent IH⃗ = −LI⃗ − LJ⃗ = −LK⃗ : (IH) est parallèle à LK et passe par I, donc (IH) = Δ"
+        },
+        {
+          "id": "b",
+          "text": "IH⃗ = LK⃗ (symétrie de centre L), donc (IH) est parallèle à LK et passe par I : c'est bien la droite Δ, axe de φ"
+        },
+        {
+          "id": "c",
+          "text": "IH est perpendiculaire à LK, donc (IH) est la perpendiculaire à l'axe en I"
+        },
+        {
+          "id": "d",
+          "text": "(IH) est la médiatrice de [LK], donc c'est l'axe de φ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le carré LJKI, la diagonale vérifie LK⃗ = LJ⃗ + LI⃗. H est le symétrique de J par rapport à L : LH⃗ = −LJ⃗. Donc IH⃗ = IL⃗ + LH⃗ = −LI⃗ − LJ⃗ = −(LI⃗ + LJ⃗) = −LK⃗. Le vecteur IH⃗ est colinéaire à LK⃗, direction de l'axe de φ, et (IH) passe par I : c'est la droite Δ ✓. Piège classique : se tromper de signe (IH⃗ = −LK⃗), confondre diagonale LK et diagonale JI, ou croire que l'axe est perpendiculaire à LK.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. LJKI est un carré, φ est la symétrie glissante de vecteur LK⃗ et d'axe Δ = (IH), et g = φ∘S_(LE). Comment établit-on que g(J) = I ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "S_(LE)(J) = J, car J est sur l'axe de la symétrie ; φ(J) = I, puisque J est sur Δ"
+        },
+        {
+          "id": "b",
+          "text": "S_(LE)(J) = H car (LE) = (LI) ⟂ (LJ) ; H ∈ Δ donc φ(H) = H + LK⃗ = I"
+        },
+        {
+          "id": "c",
+          "text": "S_(LE)(J) = I, car J et I sont symétriques par rapport à (LE)"
+        },
+        {
+          "id": "d",
+          "text": "S_(LE)(J) = H ; H ∈ Δ et φ(H) = H − LK⃗, qui est le symétrique de I par rapport à H"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'axe (LE) est la droite (LI) du carré, perpendiculaire à (LJ) : le symétrique de J par rapport à cette droite est le point de (LJ) symétrique de J par rapport à L, c'est-à-dire H. Ensuite H est sur Δ = (IH), donc φ(H) = H + LK⃗ = H − IH⃗ = I ✓. Donc g(J) = φ(S_(LE)(J)) = φ(H) = I. Piège classique : croire J sur l'axe (LE) alors que (LJ) ⟂ (LE), prendre I pour symétrique de J, ou se tromper de sens de translation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. On sait que g = φ∘S_(LE), g(J) = I et g(L) = E, avec LJKI carré et E tel que I est le milieu de [EL]. Quelle est la nature de g, et comment le prouve-t-on ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est la composée de deux antidéplacements, donc un déplacement ; (JL, IE) ≡ π/2, donc g est la rotation d'angle π/2, de centre K (sens direct)"
+        },
+        {
+          "id": "b",
+          "text": "g est la composée d'une symétrie glissante et d'une symétrie orthogonale : c'est un antidéplacement"
+        },
+        {
+          "id": "c",
+          "text": "g est la composée de deux antidéplacements : un déplacement ; (JL, IE) ≡ −π/2, donc rotation d'angle −π/2, de centre K"
+        },
+        {
+          "id": "d",
+          "text": "g envoie J sur I et L sur E : c'est la translation de vecteur JI"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "φ est un antidéplacement (symétrie glissante) et S_(LE) en est un autre : leur composée est un déplacement. Elle envoie J sur I et L sur E ; le vecteur JL tourne en IE, avec JL perpendiculaire à IE et un sens indirect : (JL, IE) ≡ −π/2. C'est donc une rotation d'angle −π/2 (et non une translation, l'angle n'est pas nul), de centre le point équidistant de J et I, de L et E, c'est-à-dire K ✓. Piège classique : se tromper de signe d'angle, croire que deux antidéplacements composent un antidéplacement, ou conclure à une translation alors que JL et IE ne sont pas égaux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. LJKI est un carré, f est l'antidéplacement qui envoie J sur I et L sur E (E tel que I est le milieu de [EL]). Quelle est la nature de f et quels sont ses éléments caractéristiques ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est une symétrie glissante, d'axe (LK) et de vecteur LK"
+        },
+        {
+          "id": "b",
+          "text": "f est la symétrie orthogonale d'axe (LK)"
+        },
+        {
+          "id": "c",
+          "text": "f est une symétrie glissante, d'axe (IJ) et de vecteur IJ"
+        },
+        {
+          "id": "d",
+          "text": "f est une symétrie glissante, d'axe (IJ) et de vecteur JI"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f n'est pas une symétrie orthogonale : l'axe devrait être la médiatrice de [JI] (la droite (LK)) et aussi celle de [LE] (la perpendiculaire à (LE) en I), qui sont différentes. C'est donc une symétrie glissante. Son axe contient les milieux de [JI] (le centre du carré) et de [LE] (le point I) : c'est la droite (IJ). Comme J est sur l'axe, f(J) = J + u = I donne u = JI ✓. Piège classique : prendre la médiatrice de [JI] pour axe (elle ne contient pas J), choisir une symétrie orthogonale alors que les médiatrices diffèrent, ou donner le vecteur IJ au lieu de JI.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct. GAC et EBA sont des triangles directs, rectangles et isocèles respectivement en G et en E. L, K, I et J sont les milieux de [BC], [GE], [EL] et [GL] ; F et H sont les symétriques de G et de J par rapport à L. f est la symétrie glissante d'axe (IJ) et de vecteur JI qui envoie J sur I et L sur E ; g est la rotation de centre K et d'angle −π/2 qui envoie aussi J sur I et L sur E. Soit M un point, M′ = f(M) et M″ = g(M). Quelle droite fixe fait de M′ et M″ deux points symétriques ? <svg viewBox=\"0 0 300 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><polygon points=\"110.0,100.0 50.0,220.0 230.0,40.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"140.0,10.0 110.0,100.0 230.0,40.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 50.0,220.0 110.0,100.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"20.0,130.0 140.0,250.0 140.0,10.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><polygon points=\"140.0,130.0 140.0,70.0 80.0,70.0 80.0,130.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"2 3\"/><g fill=\"#0f172a\"><circle cx=\"140.0\" cy=\"10.0\" r=\"3\"/><circle cx=\"110.0\" cy=\"100.0\" r=\"3\"/><circle cx=\"230.0\" cy=\"40.0\" r=\"3\"/><circle cx=\"50.0\" cy=\"220.0\" r=\"3\"/><circle cx=\"20.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"80.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"70.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"250.0\" r=\"3\"/><circle cx=\"140.0\" cy=\"190.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"148.0\" y=\"8.0\">G</text><text x=\"116.0\" y=\"92.0\">A</text><text x=\"238.0\" y=\"36.0\">C</text><text x=\"32.0\" y=\"236.0\">B</text><text x=\"4.0\" y=\"144.0\">E</text><text x=\"146.0\" y=\"146.0\">L</text><text x=\"76.0\" y=\"62.0\">K</text><text x=\"74.0\" y=\"146.0\">I</text><text x=\"146.0\" y=\"66.0\">J</text><text x=\"148.0\" y=\"264.0\">F</text><text x=\"146.0\" y=\"204.0\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (LE) : f∘g⁻¹ est un antidéplacement fixant I et E, donc S_(IE) = S_(LE)"
+        },
+        {
+          "id": "b",
+          "text": "Aucune : f∘g⁻¹ est un déplacement qui fixe I et E, c'est l'identité, donc M′ = M″"
+        },
+        {
+          "id": "c",
+          "text": "La droite (IJ) : f∘g⁻¹ est un antidéplacement d'axe (IJ)"
+        },
+        {
+          "id": "d",
+          "text": "La droite (LK) : f∘g⁻¹ est la symétrie d'axe (LK)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g⁻¹(I) = J et f(J) = I : f∘g⁻¹ fixe I ; g⁻¹(E) = L et f(L) = E : f∘g⁻¹ fixe E. De plus f est un antidéplacement et g⁻¹ un déplacement : leur composée est un antidéplacement. Un antidéplacement qui fixe deux points distincts est la symétrie orthogonale d'axe la droite qui les joint : f∘g⁻¹ = S_(IE) = S_(LE). Donc M′ = f(M) = S_(LE)(g(M)) = S_(LE)(M″) ✓. Piège classique : composer un antidéplacement et un déplacement et conclure à un déplacement, choisir l'axe de f ou la médiatrice de [JI] sans vérifier les points fixes, ou croire que M′ et M″ coïncident.",
+      "difficulty": 3
+    }
+  ]
+}

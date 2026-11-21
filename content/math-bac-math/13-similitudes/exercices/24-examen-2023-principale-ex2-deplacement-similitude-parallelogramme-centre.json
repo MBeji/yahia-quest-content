@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2023 · session principale · Exercice 2 ⭐⭐⭐⭐ : Déplacement, similitude directe, parallélogramme et centre",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 24,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. Quelle suite d'égalités établit que AB = BE, condition d'existence d'un déplacement envoyant A sur B et B sur E ? <svg viewBox=\"0 0 250 250\"><path d=\"M45.4 224 L151.5 224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 224 L45.4 117.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M151.5 224 L45.4 117.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 117.9 L98.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 26 L204.6 132.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M204.6 132.1 L151.5 224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 117.9 L204.6 132.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M151.5 224 L98.5 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"45.4\" cy=\"224\" r=\"3.6\"/><circle cx=\"151.5\" cy=\"224\" r=\"3.6\"/><circle cx=\"45.4\" cy=\"117.9\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"26\" r=\"3.6\"/><circle cx=\"204.6\" cy=\"132.1\" r=\"3.6\"/><circle cx=\"125\" cy=\"125\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"36.4\" y=\"236\" text-anchor=\"middle\">A</text><text x=\"161.5\" y=\"236\" text-anchor=\"middle\">B</text><text x=\"35.4\" y=\"119.9\" text-anchor=\"middle\">C</text><text x=\"92.5\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"216.6\" y=\"136.1\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"123\" text-anchor=\"middle\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "BE = CD (côtés opposés du parallélogramme CBED), CD = CA (donné) et CA = AB (triangle isocèle en A)"
+        },
+        {
+          "id": "b",
+          "text": "BE = CB (côtés consécutifs du parallélogramme CBED), CB = CA (donné) et CA = AB (triangle isocèle en A)"
+        },
+        {
+          "id": "c",
+          "text": "BE = CD (côtés opposés du parallélogramme CBED), CD = CB (donné) et CB = AB (triangle isocèle en A)"
+        },
+        {
+          "id": "d",
+          "text": "BE = CD (côtés opposés du parallélogramme CBED), CD = CA (donné) et CA = BC (triangle isocèle en A)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les côtés opposés [BE] et [CD] du parallélogramme CBED sont égaux : BE = CD. L'énoncé donne CD = CA. Le triangle ABC est isocèle en A : AB = AC. Donc AB = AC = CA = CD = BE. Les côtés consécutifs CB et BE ne sont pas égaux en général ; CB (l'hypoténuse) vaut AB√2 et non AB ; et CA = BC serait faux. Vérification : AB = BE ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. f est la rotation d'angle π/3 de centre O qui envoie A sur B et B sur E, et OABE est un losange. Quel argument établit que (OD) est parallèle à (AC) ? <svg viewBox=\"0 0 250 250\"><path d=\"M45.4 224 L151.5 224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 224 L45.4 117.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M151.5 224 L45.4 117.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 117.9 L98.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 26 L204.6 132.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M204.6 132.1 L151.5 224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 117.9 L204.6 132.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M151.5 224 L98.5 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"45.4\" cy=\"224\" r=\"3.6\"/><circle cx=\"151.5\" cy=\"224\" r=\"3.6\"/><circle cx=\"45.4\" cy=\"117.9\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"26\" r=\"3.6\"/><circle cx=\"204.6\" cy=\"132.1\" r=\"3.6\"/><circle cx=\"125\" cy=\"125\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"36.4\" y=\"236\" text-anchor=\"middle\">A</text><text x=\"161.5\" y=\"236\" text-anchor=\"middle\">B</text><text x=\"35.4\" y=\"119.9\" text-anchor=\"middle\">C</text><text x=\"92.5\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"216.6\" y=\"136.1\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"123\" text-anchor=\"middle\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OABE est un losange : OE⃗ = BA⃗ ; CBED est un parallélogramme : ED⃗ = BC⃗ ; donc OD⃗ = OE⃗ + ED⃗ = BA⃗ + BC⃗, colinéaire à AC⃗"
+        },
+        {
+          "id": "b",
+          "text": "OABE est un losange : OE⃗ = AB⃗ ; CBED est un parallélogramme : ED⃗ = BC⃗ ; donc OD⃗ = OE⃗ + ED⃗ = AB⃗ + BC⃗ = AC⃗, et (OD) ∥ (AC)"
+        },
+        {
+          "id": "c",
+          "text": "OABE est un losange : OE⃗ = AB⃗ ; CBED est un parallélogramme : ED⃗ = CB⃗ ; donc OD⃗ = OE⃗ + ED⃗ = AB⃗ + CB⃗, colinéaire à AC⃗"
+        },
+        {
+          "id": "d",
+          "text": "OA = OE et ED = BC par le losange et le parallélogramme ; donc OD = OA + BC, et (OD) est parallèle à (AC)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le losange OABE, les côtés opposés [OE] et [AB] sont parallèles de même sens : OE⃗ = AB⃗. Dans le parallélogramme CBED, CB⃗ = DE⃗, donc ED⃗ = BC⃗. Par Chasles, OD⃗ = OE⃗ + ED⃗ = AB⃗ + BC⃗ = AC⃗ : (OD) est parallèle à (AC). Écrire OE⃗ = BA⃗ ou ED⃗ = CB⃗ inverse un sens et donne BA⃗ + BC⃗ ou AB⃗ + CB⃗, qui ne sont pas colinéaires à AC⃗ ; une égalité de longueurs ne donne pas d'égalité de vecteurs, donc ne prouve aucun parallélisme. Vérification : OD⃗ = AC⃗ signifie que ACDO est un parallélogramme ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. Soit f le déplacement tel que f(A) = B et f(B) = E. Quelle est une mesure de (AB⃗, BE⃗) ? <svg viewBox=\"0 0 250 250\"><path d=\"M45.4 224 L151.5 224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 224 L45.4 117.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M151.5 224 L45.4 117.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 117.9 L98.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 26 L204.6 132.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M204.6 132.1 L151.5 224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M45.4 117.9 L204.6 132.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M151.5 224 L98.5 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"45.4\" cy=\"224\" r=\"3.6\"/><circle cx=\"151.5\" cy=\"224\" r=\"3.6\"/><circle cx=\"45.4\" cy=\"117.9\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"26\" r=\"3.6\"/><circle cx=\"204.6\" cy=\"132.1\" r=\"3.6\"/><circle cx=\"125\" cy=\"125\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"36.4\" y=\"236\" text-anchor=\"middle\">A</text><text x=\"161.5\" y=\"236\" text-anchor=\"middle\">B</text><text x=\"35.4\" y=\"119.9\" text-anchor=\"middle\">C</text><text x=\"92.5\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"216.6\" y=\"136.1\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"123\" text-anchor=\"middle\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/3"
+        },
+        {
+          "id": "b",
+          "text": "π/3"
+        },
+        {
+          "id": "c",
+          "text": "π/2"
+        },
+        {
+          "id": "d",
+          "text": "5π/6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'angle de f est (AB⃗, f(A)f(B)⃗) = (AB⃗, BE⃗). Or BE⃗ = CD⃗ (parallélogramme). Par Chasles, (AB⃗, CD⃗) = (AB⃗, AC⃗) + (AC⃗, CD⃗). On a (AB⃗, AC⃗) = π/2 (triangle direct rectangle en A) et (AC⃗, CD⃗) = (CA⃗, CD⃗) − π = 5π/6 − π = −π/6 (AC⃗ = −CA⃗). Donc (AB⃗, BE⃗) = π/2 − π/6 = π/3. Oublier de retourner CA⃗ donnerait π/2 + 5π/6 = 4π/3 ; 5π/6 est l'angle donné, non celui de f. Vérification : π/3 − π/2 = −π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. f est la rotation d'angle π/3 qui envoie A sur B et B sur E. Où se trouve son centre O ? <svg viewBox=\"0 0 250 260\"><path d=\"M41.4 234 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.9 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L97.1 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 26 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M208.6 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L41.4 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L208.6 137.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M152.9 234 L97.1 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"41.4\" cy=\"234\" r=\"3.6\"/><circle cx=\"152.9\" cy=\"234\" r=\"3.6\"/><circle cx=\"41.4\" cy=\"122.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"26\" r=\"3.6\"/><circle cx=\"208.6\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"130\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"81.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"32.4\" y=\"246\" text-anchor=\"middle\">A</text><text x=\"162.9\" y=\"246\" text-anchor=\"middle\">B</text><text x=\"31.4\" y=\"124.5\" text-anchor=\"middle\">C</text><text x=\"91.1\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"220.6\" y=\"141.5\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"140\" text-anchor=\"middle\">I</text><text x=\"85.1\" y=\"143.5\" text-anchor=\"middle\">O</text><text x=\"85.1\" y=\"85.7\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le milieu du segment [AB]"
+        },
+        {
+          "id": "b",
+          "text": "Le centre I du parallélogramme"
+        },
+        {
+          "id": "c",
+          "text": "Le sommet du triangle équilatéral OAB situé du même côté de (AB) que C"
+        },
+        {
+          "id": "d",
+          "text": "Le sommet du triangle équilatéral OAB situé de l'autre côté de (AB) que C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le centre O d'une rotation d'angle π/3 qui envoie A sur B vérifie OA = OB et (OA⃗, OB⃗) ≡ π/3 : OAB est un triangle équilatéral direct. Pour que l'angle orienté (OA⃗, OB⃗) soit +π/3, O doit être à gauche du vecteur AB⃗, c'est-à-dire du même côté de (AB) que C (le triangle ABC est direct). De l'autre côté, l'angle serait −π/3. Le milieu de [AB] ne convient pas (l'angle AOB y est plat) et I n'est pas équidistant de A et de B. Comme f(B) = E, OB = OE aussi, et BE = AB : OABE est un losange. Vérification : OA = OB = AB, triangle équilatéral ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. O est le centre de f (OABE est un losange), J est le milieu de [OD] et S est la similitude directe qui envoie A sur I et O sur J. Quel argument établit que le rapport de S est 1/2 ? <svg viewBox=\"0 0 250 260\"><path d=\"M41.4 234 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.9 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L97.1 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 26 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M208.6 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L41.4 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L208.6 137.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M152.9 234 L97.1 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"41.4\" cy=\"234\" r=\"3.6\"/><circle cx=\"152.9\" cy=\"234\" r=\"3.6\"/><circle cx=\"41.4\" cy=\"122.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"26\" r=\"3.6\"/><circle cx=\"208.6\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"130\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"81.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"32.4\" y=\"246\" text-anchor=\"middle\">A</text><text x=\"162.9\" y=\"246\" text-anchor=\"middle\">B</text><text x=\"31.4\" y=\"124.5\" text-anchor=\"middle\">C</text><text x=\"91.1\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"220.6\" y=\"141.5\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"140\" text-anchor=\"middle\">I</text><text x=\"85.1\" y=\"143.5\" text-anchor=\"middle\">O</text><text x=\"85.1\" y=\"85.7\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "I et J sont les milieux de [BD] et [OD] : IJ = OB, et OB = OA, donc IJ/AO = 1"
+        },
+        {
+          "id": "b",
+          "text": "I et J sont les milieux de [BD] et [OD] : IJ = BD/2, et BD = OA, donc IJ/AO = 1/2"
+        },
+        {
+          "id": "c",
+          "text": "I et J sont les milieux de [BD] et [OD] : IJ = 2·OB, et OB = OA, donc IJ/AO = 2"
+        },
+        {
+          "id": "d",
+          "text": "I et J sont les milieux de [BD] et [OD] : IJ = OB/2, et OB = OA, donc IJ/AO = 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le rapport de S est IJ/AO (S(A) = I, S(O) = J). I est le milieu de [BD] (centre du parallélogramme CBED, diagonale [BD]) et J le milieu de [OD] : dans le triangle OBD, la droite des milieux (IJ) est parallèle à (OB) et IJ = OB/2. OABE étant un losange, OB = OA, donc IJ/AO = 1/2. La droite des milieux vaut la moitié (non le tout, non le double) du côté parallèle (OB) ; la moitié de la diagonale [BD] ne convient pas, car BD ≠ OA : le côté parallèle à (IJ) dans le triangle OBD est [OB], et non [BD]. Vérification : IJ = AO/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. f est le déplacement qui envoie A sur B et B sur E, et S la similitude directe qui envoie A sur I et O sur J (O est le centre de f, f(O) = O). Quelles sont les images de O et de B par h = S∘f⁻¹ ? <svg viewBox=\"0 0 250 260\"><path d=\"M41.4 234 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.9 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L97.1 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 26 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M208.6 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L41.4 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L208.6 137.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M152.9 234 L97.1 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"41.4\" cy=\"234\" r=\"3.6\"/><circle cx=\"152.9\" cy=\"234\" r=\"3.6\"/><circle cx=\"41.4\" cy=\"122.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"26\" r=\"3.6\"/><circle cx=\"208.6\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"130\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"81.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"32.4\" y=\"246\" text-anchor=\"middle\">A</text><text x=\"162.9\" y=\"246\" text-anchor=\"middle\">B</text><text x=\"31.4\" y=\"124.5\" text-anchor=\"middle\">C</text><text x=\"91.1\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"220.6\" y=\"141.5\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"140\" text-anchor=\"middle\">I</text><text x=\"85.1\" y=\"143.5\" text-anchor=\"middle\">O</text><text x=\"85.1\" y=\"85.7\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "h(O) = J et h(B) = I"
+        },
+        {
+          "id": "b",
+          "text": "h(O) = J et h(B) = J"
+        },
+        {
+          "id": "c",
+          "text": "h(O) = O et h(B) = I"
+        },
+        {
+          "id": "d",
+          "text": "h(O) = I et h(B) = J"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "h(O) = S(f⁻¹(O)) = S(O) = J, car f⁻¹(O) = O (O est le centre de f). h(B) = S(f⁻¹(B)) = S(A) = I, car f(A) = B. Ces deux relations font de h l'homothétie de centre D de rapport 1/2 : J est le milieu de [OD] et I celui de [BD]. Les autres couples oublient que f⁻¹(O) = O ou que f⁻¹(B) = A. Vérification : f(A) = B donne f⁻¹(B) = A ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. On a (CA⃗, CD⃗) ≡ 5π/6 [2π] et (OD) ∥ (AC), avec DO⃗ de même sens que CA⃗. Quelle est une mesure de (DC⃗, DO⃗) ? <svg viewBox=\"0 0 250 260\"><path d=\"M41.4 234 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.9 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L97.1 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 26 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M208.6 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L41.4 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L208.6 137.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M152.9 234 L97.1 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"41.4\" cy=\"234\" r=\"3.6\"/><circle cx=\"152.9\" cy=\"234\" r=\"3.6\"/><circle cx=\"41.4\" cy=\"122.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"26\" r=\"3.6\"/><circle cx=\"208.6\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"130\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"81.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"32.4\" y=\"246\" text-anchor=\"middle\">A</text><text x=\"162.9\" y=\"246\" text-anchor=\"middle\">B</text><text x=\"31.4\" y=\"124.5\" text-anchor=\"middle\">C</text><text x=\"91.1\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"220.6\" y=\"141.5\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"140\" text-anchor=\"middle\">I</text><text x=\"85.1\" y=\"143.5\" text-anchor=\"middle\">O</text><text x=\"85.1\" y=\"85.7\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/6"
+        },
+        {
+          "id": "b",
+          "text": "π/6"
+        },
+        {
+          "id": "c",
+          "text": "5π/6"
+        },
+        {
+          "id": "d",
+          "text": "π/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "DO⃗ a la direction et le sens de CA⃗, donc (DC⃗, DO⃗) = (DC⃗, CA⃗). Or DC⃗ = −CD⃗, donc (DC⃗, CA⃗) = (CD⃗, CA⃗) + π = −5π/6 + π = π/6 (car (CD⃗, CA⃗) = −(CA⃗, CD⃗) = −5π/6). Garder −5π/6 oublierait le demi-tour dû à DC⃗ = −CD⃗ ; −π/6 serait l'opposé. Vérification : −5π/6 + π = π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. f est le déplacement qui envoie A sur B et B sur E ; S = h∘f, où h est l'homothétie de centre D et de rapport 1/2. Quelle est l'image de B par S ? <svg viewBox=\"0 0 250 260\"><path d=\"M41.4 234 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.9 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L97.1 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 26 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M208.6 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L41.4 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L208.6 137.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M152.9 234 L97.1 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"41.4\" cy=\"234\" r=\"3.6\"/><circle cx=\"152.9\" cy=\"234\" r=\"3.6\"/><circle cx=\"41.4\" cy=\"122.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"26\" r=\"3.6\"/><circle cx=\"208.6\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"130\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"81.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"32.4\" y=\"246\" text-anchor=\"middle\">A</text><text x=\"162.9\" y=\"246\" text-anchor=\"middle\">B</text><text x=\"31.4\" y=\"124.5\" text-anchor=\"middle\">C</text><text x=\"91.1\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"220.6\" y=\"141.5\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"140\" text-anchor=\"middle\">I</text><text x=\"85.1\" y=\"143.5\" text-anchor=\"middle\">O</text><text x=\"85.1\" y=\"85.7\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le centre I"
+        },
+        {
+          "id": "b",
+          "text": "Le milieu de [BE]"
+        },
+        {
+          "id": "c",
+          "text": "Le milieu de [DE]"
+        },
+        {
+          "id": "d",
+          "text": "Le point J"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "S = h∘f et f(B) = E, donc S(B) = h(E) : le point de [DE] tel que DS(B) = DE/2, c'est-à-dire le milieu K de [DE] (h a pour centre D et pour rapport 1/2). Le centre I est S(A) ; J est S(O) ; et le milieu de [BE] n'est pas sur [DE]. Vérification : h(E) est le milieu de [DE] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. Ω est le centre de S (S(Ω) = Ω, rapport 1/2, S(A) = I). On a cos(∠AΩI) = 1/2. Que vaut ΩA⃗·ΩI⃗ en fonction de ΩI ? <svg viewBox=\"0 0 250 260\"><path d=\"M41.4 234 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.9 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L97.1 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 26 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M208.6 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L41.4 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L208.6 137.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M152.9 234 L97.1 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"41.4\" cy=\"234\" r=\"3.6\"/><circle cx=\"152.9\" cy=\"234\" r=\"3.6\"/><circle cx=\"41.4\" cy=\"122.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"26\" r=\"3.6\"/><circle cx=\"208.6\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"130\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"81.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"32.4\" y=\"246\" text-anchor=\"middle\">A</text><text x=\"162.9\" y=\"246\" text-anchor=\"middle\">B</text><text x=\"31.4\" y=\"124.5\" text-anchor=\"middle\">C</text><text x=\"91.1\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"220.6\" y=\"141.5\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"140\" text-anchor=\"middle\">I</text><text x=\"85.1\" y=\"143.5\" text-anchor=\"middle\">O</text><text x=\"85.1\" y=\"85.7\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ΩI²/2"
+        },
+        {
+          "id": "b",
+          "text": "2ΩI²"
+        },
+        {
+          "id": "c",
+          "text": "ΩI²"
+        },
+        {
+          "id": "d",
+          "text": "ΩI²/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ΩI = (1/2)ΩA puisque S(Ω) = Ω, S(A) = I et le rapport est 1/2 : ΩA = 2ΩI. Alors ΩA⃗·ΩI⃗ = ΩA·ΩI·cos(∠AΩI) = 2ΩI × ΩI × 1/2 = ΩI². Oublier le facteur 2 de ΩA = 2ΩI donne ΩI²/2 ; prendre cos = 1 donne 2ΩI² (2ΩI × ΩI × 1), et prendre ΩA = ΩI/2 avec cos = 1/2 donne ΩI²/4 ((ΩI/2) × ΩI × 1/2). Vérification : 2 × 1/2 = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle isocèle en A (direct) ; CBED est un parallélogramme de centre I tel que CA = CD et (CA⃗, CD⃗) ≡ 5π/6 [2π]. G est le point de (BE) tel que (IG) ⊥ (IA) en I, et ΩA⃗·ΩI⃗ = ΩI². Quel argument établit que Ω appartient à (IG) ? <svg viewBox=\"0 0 250 260\"><path d=\"M41.4 234 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M152.9 234 L41.4 122.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L97.1 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 26 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M208.6 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L41.4 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L152.9 234\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97.1 137.5 L208.6 137.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M41.4 122.5 L208.6 137.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M152.9 234 L97.1 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"41.4\" cy=\"234\" r=\"3.6\"/><circle cx=\"152.9\" cy=\"234\" r=\"3.6\"/><circle cx=\"41.4\" cy=\"122.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"26\" r=\"3.6\"/><circle cx=\"208.6\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"130\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"137.5\" r=\"3.6\"/><circle cx=\"97.1\" cy=\"81.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"32.4\" y=\"246\" text-anchor=\"middle\">A</text><text x=\"162.9\" y=\"246\" text-anchor=\"middle\">B</text><text x=\"31.4\" y=\"124.5\" text-anchor=\"middle\">C</text><text x=\"91.1\" y=\"18\" text-anchor=\"middle\">D</text><text x=\"220.6\" y=\"141.5\" text-anchor=\"middle\">E</text><text x=\"113\" y=\"140\" text-anchor=\"middle\">I</text><text x=\"85.1\" y=\"143.5\" text-anchor=\"middle\">O</text><text x=\"85.1\" y=\"85.7\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ΩI⃗·(ΩA⃗ + ΩI⃗) = 0 : (ΩI) ⊥ (IA), donc Ω est sur la perpendiculaire à (IA) en I, soit (IG)"
+        },
+        {
+          "id": "b",
+          "text": "ΩA⃗·ΩI⃗ = ΩI² donne ΩA = ΩI : le triangle ΩAI est isocèle en Ω, donc Ω est sur la médiatrice de [AI], donc sur (IG)"
+        },
+        {
+          "id": "c",
+          "text": "ΩA⃗·ΩI⃗ = ΩI² donne ΩA⃗ = ΩI⃗ : Ω est le milieu de [AI], donc sur la droite (IG) par alignement"
+        },
+        {
+          "id": "d",
+          "text": "ΩI⃗·(ΩA⃗ − ΩI⃗) = ΩI⃗·IA⃗ = 0 : (ΩI) ⊥ (IA), donc Ω est sur la perpendiculaire à (IA) en I, soit (IG)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ΩA⃗·ΩI⃗ = ΩI² s'écrit ΩI⃗·ΩA⃗ − ΩI⃗·ΩI⃗ = 0, soit ΩI⃗·(ΩA⃗ − ΩI⃗) = 0. Or ΩA⃗ − ΩI⃗ = IA⃗ (Chasles : ΩA⃗ = ΩI⃗ + IA⃗). Donc ΩI⃗·IA⃗ = 0 : (ΩI) ⊥ (IA). Ω est donc sur la droite perpendiculaire à (IA) en I, qui est (IG) par définition de G. Le produit scalaire ne donne pas ΩA = ΩI, ni ΩA⃗ = ΩI⃗. Vérification : ΩA⃗ − ΩI⃗ = IA⃗ ✓.",
+      "difficulty": 3
+    }
+  ]
+}

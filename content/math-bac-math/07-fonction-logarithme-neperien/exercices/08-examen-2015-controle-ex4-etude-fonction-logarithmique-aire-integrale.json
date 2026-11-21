@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2015 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : fonction x³[ln(1 + x) − ln x], tangentes à deux courbes, primitive et aire par intégration par parties",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Soit u la fonction définie sur ]0 ; +∞[ par u(t) = 3 ln(1 + t) − t/(1 + t). Quelle est l'expression de u′(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3t + 2)/(1 + t)²"
+        },
+        {
+          "id": "b",
+          "text": "(3t + 4)/(1 + t)²"
+        },
+        {
+          "id": "c",
+          "text": "(2 − t)/(1 + t)"
+        },
+        {
+          "id": "d",
+          "text": "(3(1 + t)² − t)/(t(1 + t)²)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La dérivée de 3 ln(1 + t) est 3/(1 + t). Celle du quotient t/(1 + t) est (1 × (1 + t) − t × 1)/(1 + t)² = 1/(1 + t)². Donc u′(t) = 3/(1 + t) − 1/(1 + t)² = (3(1 + t) − 1)/(1 + t)² = (3t + 2)/(1 + t)² ✓, strictement positive sur ]0 ; +∞[. Piège classique : garder le signe + devant la dérivée du quotient (on trouve (3t + 4)/(1 + t)²), dériver seulement le numérateur du quotient (on trouve 3/(1 + t) − 1), ou dériver ln(1 + t) en 1/t en oubliant que l'intérieur est 1 + t.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit u(t) = 3 ln(1 + t) − t/(1 + t) sur ]0 ; +∞[. On a u(0) = 0 (valeur en 0 de l'expression) et u′(t) = (3t + 2)/(1 + t)². Que peut-on dire du signe de u sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u′(t) > 0 sur ]0 ; +∞[, donc u est décroissante et u(t) < 0 pour t > 0"
+        },
+        {
+          "id": "b",
+          "text": "u est strictement croissante à partir de u(0) = 0 : u(t) > 0 pour tout t > 0"
+        },
+        {
+          "id": "c",
+          "text": "u′ est positive mais seul u(1) permet de conclure : le signe de u reste inconnu"
+        },
+        {
+          "id": "d",
+          "text": "u′(t) > 0 donc u(t) > 0, sans avoir besoin de la valeur de u(0)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le numérateur 3t + 2 et le dénominateur (1 + t)² sont strictement positifs pour t > 0, donc u est strictement croissante sur [0 ; +∞[. Comme u(0) = 3 ln 1 − 0 = 0, on a u(t) > u(0) = 0 pour tout t > 0 ✓. Piège classique : lire une dérivée positive comme une fonction positive (le signe de u′ donne le SENS de variation de u, pas son signe : sans la valeur de départ u(0) = 0, une fonction croissante peut très bien rester négative), ou lire la croissance à l'envers.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; 1] par f(x) = x³[ln(1 + x) − ln x] pour x ∈ ]0 ; 1], et f(0) = 0. Quelles sont les limites en 0⁺ de f(x) et du taux d'accroissement (f(x) − f(0))/x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et (f(x) − f(0))/x → +∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et (f(x) − f(0))/x → 0"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → 0 et (f(x) − f(0))/x → +∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → 0 et (f(x) − f(0))/x → 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On développe f(x) = x³ ln(1 + x) − x³ ln x. Le premier terme tend vers 0. Le second est une forme indéterminée 0 × (−∞), levée par les croissances comparées : x³ ln x → 0 quand x → 0⁺. Donc f(x) → 0 = f(0) : f est continue à droite en 0. Pour x > 0, (f(x) − f(0))/x = x² ln(1 + x) − x² ln x, qui tend aussi vers 0 (x² ln x → 0) : f est dérivable à droite en 0 avec f′_d(0) = 0, donc la courbe a une demi-tangente horizontale en O ✓. Piège classique : croire ln x négligeable ou borné près de 0 (ln x → −∞ n'est pas borné), voir −ln x → +∞ en oubliant le facteur x² qui l'écrase, ou négliger x³ ln x sans le justifier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x³[ln(1 + x) − ln x] = x³ ln(1 + 1/x) sur ]0 ; 1]. Quelle est l'expression de f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 3x² ln(1 + 1/x) − x²/(x + 1)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 3x² ln(1 + 1/x) + x²/(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 3x² ln(1 + 1/x) + x⁴/(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 3x² ln(1 + x) − x³/(1 + x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive le produit x³ × ln(1 + 1/x). La dérivée de x³ donne 3x² ln(1 + 1/x). La dérivée de ln(1 + 1/x) est u′/u avec u = 1 + 1/x et u′ = −1/x² : (−1/x²)/((x + 1)/x) = −1/(x(x + 1)). Le second terme est donc x³ × (−1/(x(x + 1))) = −x²/(x + 1) ✓. On reconnaît f′(x) = x²[3 ln(1 + 1/x) − 1/(x + 1)] = x² u(1/x) en posant u(t) = 3 ln(1 + t) − t/(1 + t), car (1/x)/(1 + 1/x) = 1/(x + 1). Piège classique : oublier le signe moins de (1/x)′, oublier le facteur intérieur u′, ou dériver comme si la variable était x et non 1/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x³[ln(1 + x) − ln x] sur ]0 ; 1], f(0) = 0, avec f′(x) = x² u(1/x) où u est strictement positive sur ]0 ; +∞[. Quel est le tableau de variation de f sur [0 ; 1] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est croissante sur [0 ; 1/e], puis décroissante sur [1/e ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement croissante sur [0 ; 1], de f(0) = 0 à f(1) = ln 2"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante sur [0 ; 1], de f(0) = 0 à f(1) = 2 ln 2"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur [0 ; 1], de f(0) = 0 à f(1) = ln 3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x ∈ ]0 ; 1], 1/x > 0 donc u(1/x) > 0 et x² > 0 : f′(x) > 0, et f est strictement croissante sur ]0 ; 1], donc sur [0 ; 1] puisqu'elle est continue en 0. Les valeurs aux bornes : f(0) = 0 et f(1) = 1³[ln 2 − ln 1] = ln 2 ✓. Piège classique : chercher un changement de signe en 1/e (point où ln s'annule pour la fonction h, pas pour f), ou mal calculer f(1) (ln 1 = 0 laisse ln 2, ni 2 ln 2 ni ln 3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit h la fonction définie sur ]0 ; 1] par h(x) = x³ ln x. En quelle abscisse la courbe de h admet-elle une tangente horizontale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = e^(1/3)"
+        },
+        {
+          "id": "b",
+          "text": "x = e^(−3), soit 1/e³"
+        },
+        {
+          "id": "c",
+          "text": "x = e^(−1/3)"
+        },
+        {
+          "id": "d",
+          "text": "x = 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "h′(x) = 3x² ln x + x³ × (1/x) = x²(3 ln x + 1). Sur ]0 ; 1], x² > 0, donc h′(x) = 0 ⟺ 3 ln x + 1 = 0 ⟺ ln x = −1/3 ⟺ x = e^(−1/3) ✓ (et e^(−1/3) ∈ ]0 ; 1[). Piège classique : se tromper de signe en isolant ln x (e^(1/3) n'est pas dans ]0 ; 1]), isoler ln x = −3 au lieu de −1/3, ou croire que ln 1 = 0 suffit à annuler h′ (h′(1) = 1 ≠ 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose g(x) = x³ ln(1 + x) et h(x) = x³ ln x (h(0) = 0) sur [0 ; 1], et f(x) = x³[ln(1 + x) − ln x]. Quelle est la position relative des courbes de f et de g sur [0 ; 1] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La courbe de f est en dessous de celle de g, avec un point commun en x = 0 et en x = 1"
+        },
+        {
+          "id": "b",
+          "text": "La courbe de f est au-dessus de celle de g, avec un seul point commun, en x = 0"
+        },
+        {
+          "id": "c",
+          "text": "Les courbes se croisent en x = e^(−1/3) : f passe de dessous à dessus de g"
+        },
+        {
+          "id": "d",
+          "text": "La courbe de f est au-dessus de celle de g, avec un point commun en x = 0 et en x = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f = g − h, donc f(x) − g(x) = −h(x) = −x³ ln x. Pour x ∈ ]0 ; 1], ln x ≤ 0 et x³ > 0, donc −x³ ln x ≥ 0, avec égalité si et seulement si ln x = 0, c'est-à-dire x = 1 ; en x = 0 les deux valent 0. Donc la courbe de f est au-dessus de celle de g, et elles se touchent en x = 0 et en x = 1 ✓. Piège classique : inverser le signe de −h, oublier que ln 1 = 0 donne un second contact, ou confondre le point où h′ s'annule (e^(−1/3), tangente horizontale de h) avec un croisement de f et g.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a = e^(−1/3). On sait que h′(a) = 0 pour h(x) = x³ ln x, et que f = g − h. Soit T et T′ les tangentes à la courbe de f et à la courbe de g au point d'abscisse a. Quelle justification établit que T et T′ sont parallèles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(a) = g′(a) − h′(a) = g′(a) : les deux tangentes ont le même coefficient directeur"
+        },
+        {
+          "id": "b",
+          "text": "f(a) = g(a) : les deux courbes ont le même point d'abscisse a, donc les tangentes sont confondues"
+        },
+        {
+          "id": "c",
+          "text": "f′(a) = g′(a) × h′(a) = 0 : les deux tangentes sont horizontales"
+        },
+        {
+          "id": "d",
+          "text": "f − g = −h est positive sur [0 ; 1], donc les courbes sont « parallèles »"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Des tangentes sont parallèles si et seulement si leurs coefficients directeurs sont égaux. La dérivée est linéaire : f′ = g′ − h′, donc f′(a) = g′(a) − h′(a) = g′(a) − 0 = g′(a) ✓. Elles ne sont pas confondues, car f(a) − g(a) = −h(a) = a³/3 ≠ 0. Piège classique : confondre « tangentes parallèles » et « tangentes confondues », utiliser une règle du produit pour une différence, ou raisonner sur la position des courbes plutôt que sur les pentes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a = e^(−1/3), donc ln a = −1/3. Avec f(x) = x³ ln(1 + x) − x³ ln x, quelle est l'ordonnée du point de la courbe de f d'abscisse a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a³ ln(1 + a) − a³/3"
+        },
+        {
+          "id": "b",
+          "text": "a³ ln(1 + a) + a³/3"
+        },
+        {
+          "id": "c",
+          "text": "a³ ln(1 + a) + 3a³"
+        },
+        {
+          "id": "d",
+          "text": "a³ ln(1 + a)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(a) = a³ ln(1 + a) − a³ ln a. Comme ln a = −1/3, le second terme vaut −a³ × (−1/3) = +a³/3. Donc f(a) = a³ ln(1 + a) + a³/3 ✓ : on construit ce point en partant du point de la courbe de g d'abscisse a et en le montant de a³/3. Piège classique : perdre le signe de ln a (on trouve −a³/3), remplacer ln a = −1/3 par ln a = −3, ou oublier le terme −x³ ln x (on retombe sur g(a)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h la fonction définie sur [0 ; 1] par h(x) = x³ ln x pour x > 0 et h(0) = 0. Quelle justification établit que h admet une unique primitive H sur [0 ; 1] qui s'annule en 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h est positive sur [0 ; 1] : une fonction positive admet toujours une primitive, donc H existe et est unique"
+        },
+        {
+          "id": "b",
+          "text": "h est strictement monotone sur [0 ; 1] : on peut donc fixer une primitive en 1, qui est alors unique"
+        },
+        {
+          "id": "c",
+          "text": "h est continue sur [0 ; 1] (x³ ln x → 0 en 0) : elle a des primitives, et H(1) = 0 fixe la constante"
+        },
+        {
+          "id": "d",
+          "text": "h(1) = 0 : la fonction h elle-même est la primitive qui s'annule en 1, donc H = h sur [0 ; 1]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Toute fonction continue sur un intervalle y admet des primitives. Ici h est continue sur ]0 ; 1] (produit de fonctions continues) et en 0 car x³ ln x → 0 = h(0). Deux primitives diffèrent d'une constante, et la condition H(1) = 0 fixe cette constante : la primitive est unique ✓. Piège classique : invoquer le signe de h (sans rapport avec l'existence), sa monotonie (h décroît puis croît, et ce n'est pas la bonne condition), ou confondre h avec sa primitive H.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = x³ ln x sur [0 ; 1] (h(0) = 0), H la primitive de h sur [0 ; 1] qui s'annule en 1, et α ∈ ]0 ; 1]. Comment s'exprime A_α = ∫ de α à 1 de x³ ln x dx en fonction de H ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A_α = H(α) − H(1) = H(α)"
+        },
+        {
+          "id": "b",
+          "text": "A_α = h(1) − h(α) = −α³ ln α"
+        },
+        {
+          "id": "c",
+          "text": "A_α = H′(α) = α³ ln α"
+        },
+        {
+          "id": "d",
+          "text": "A_α = H(1) − H(α) = −H(α)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une intégrale de h entre α et 1 se calcule avec une primitive : ∫ de α à 1 de h(x) dx = H(1) − H(α) (borne supérieure moins borne inférieure). Comme H(1) = 0, A_α = −H(α) ✓. Piège classique : inverser les bornes (on trouve H(α)), utiliser h au lieu de H, ou confondre primitive et dérivée en écrivant H′(α).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α ∈ ]0 ; 1]. Quelle est la valeur de A_α = ∫ de α à 1 de x³ ln x dx, calculée par une intégration par parties ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/16 − (α⁴/4) ln α + α⁴/16"
+        },
+        {
+          "id": "b",
+          "text": "1/16 + (α⁴/4) ln α − (α⁴/16)"
+        },
+        {
+          "id": "c",
+          "text": "−(α⁴/4) ln α"
+        },
+        {
+          "id": "d",
+          "text": "−1/4 − (α⁴/4) ln α + α⁴/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose u(x) = ln x et v′(x) = x³, donc u′(x) = 1/x et v(x) = x⁴/4. Alors ∫ x³ ln x dx = (x⁴/4) ln x − ∫ (x⁴/4)(1/x) dx = (x⁴/4) ln x − ∫ x³/4 dx = (x⁴/4) ln x − x⁴/16. Entre α et 1 : [0 − 1/16] − [(α⁴/4) ln α − α⁴/16] = −1/16 − (α⁴/4) ln α + α⁴/16 ✓. Piège classique : inverser les bornes (signe opposé), oublier l'intégrale restante de la partie (on garde seulement le terme crochet), ou primitiver x³/4 en x⁴/4 au lieu de x⁴/16.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit H la primitive de h(x) = x³ ln x sur [0 ; 1] qui s'annule en 1. On a H(α) = −A_α = 1/16 + (α⁴/4) ln α − α⁴/16 pour tout α ∈ ]0 ; 1]. Quelle est la valeur de H(0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/16"
+        },
+        {
+          "id": "b",
+          "text": "1/16"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "H est continue en 0 (elle est dérivable sur [0 ; 1] puisque h est continue), donc H(0) = lim de H(α) quand α → 0⁺. Or α⁴ ln α → 0 (croissances comparées) et α⁴ → 0, donc H(α) → 1/16 : H(0) = 1/16 ✓. Piège classique : conclure H(0) = 0 parce que H(1) = 0, se tromper de signe en passant de A_α à H(α), ou oublier que α⁴ ln α tend vers 0 et non vers −∞.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (C_f) et (C_g) les courbes de f(x) = x³[ln(1 + x) − ln x] et g(x) = x³ ln(1 + x) sur [0 ; 1], avec f ≥ g, et H la primitive de h(x) = x³ ln x sur [0 ; 1] qui s'annule en 1 (H(0) = 1/16). Quelle est l'aire, en unités d'aire, du domaine limité par (C_f), (C_g) et les droites x = 0 et x = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/16"
+        },
+        {
+          "id": "b",
+          "text": "1/8"
+        },
+        {
+          "id": "c",
+          "text": "1/16"
+        },
+        {
+          "id": "d",
+          "text": "ln 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La courbe de f est au-dessus de celle de g, donc l'aire est ∫ de 0 à 1 de (f(x) − g(x)) dx = ∫ de 0 à 1 de −h(x) dx = −[H(1) − H(0)] = H(0) − H(1) = 1/16 − 0 = 1/16 ✓. Piège classique : un signe moins oublié donne une aire négative (−1/16), ce qui est impossible ; primitiver x³/4 en x⁴/8 au lieu de x⁴/16 donne 1/8 ; la valeur f(1) = ln 2 est une ordonnée, pas une aire.",
+      "difficulty": 3
+    }
+  ]
+}

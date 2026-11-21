@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 3 ⭐⭐⭐⭐ : étude de g(x) = 1 − x + x ln x, fonction 1/(1 + x ln x), encadrement d'une intégrale et suite définie par équation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Soit g la fonction définie sur ]0 ; +∞[ par g(x) = 1 − x + x ln x. Quelle est l'étude de g ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) = 1 + ln x : g admet un minimum en x = 1/e, égal à 1 − 2/e"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = ln x − 1 : g admet un minimum en x = e, égal à 1"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) = ln x : g décroît sur ]0 ; 1], croît sur [1 ; +∞[, et admet un minimum g(1) = 0"
+        },
+        {
+          "id": "d",
+          "text": "g′(x) = ln x : g croît sur ]0 ; 1], décroît sur [1 ; +∞[, et admet un maximum g(1) = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La dérivée de x ln x est ln x + x × (1/x) = ln x + 1. Donc g′(x) = −1 + ln x + 1 = ln x. Cette dérivée est négative sur ]0 ; 1[ et positive sur ]1 ; +∞[ : g décroît puis croît, et son minimum est g(1) = 1 − 1 + 1 × ln 1 = 0 ✓. Piège classique : oublier le −1 de la dérivée de −x (on trouve 1 + ln x), oublier le +1 de la dérivée de x ln x (on trouve ln x − 1), ou lire le signe de ln x à l'envers (maximum au lieu de minimum).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La fonction g(x) = 1 − x + x ln x définie sur ]0 ; +∞[ admet un minimum égal à 0, atteint en x = 1. Quelle conclusion en tire-t-on pour 1 + x ln x et x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) ≥ 0 seulement pour x ≥ 1, donc 1 + x ln x ≥ x sur [1 ; +∞[ uniquement"
+        },
+        {
+          "id": "b",
+          "text": "g(x) ≤ 0 pour tout x > 0, donc 1 + x ln x ≤ x"
+        },
+        {
+          "id": "c",
+          "text": "g(1) = 0 donc g s'annule : 1 + x ln x = x pour tout x > 0"
+        },
+        {
+          "id": "d",
+          "text": "g(x) ≥ 0 pour tout x > 0, donc 1 + x ln x ≥ x pour tout x > 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un minimum de g égal à 0 signifie g(x) ≥ g(1) = 0 pour TOUT x > 0 (sur les deux côtés de 1). Or g(x) ≥ 0 s'écrit 1 − x + x ln x ≥ 0, soit 1 + x ln x ≥ x ✓. L'égalité n'a lieu qu'en x = 1. Piège classique : limiter l'inégalité à la branche croissante, confondre minimum et maximum (g ≤ 0), ou prendre la valeur du minimum pour une identité vraie partout.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = 1/(1 + x ln x) pour x > 0 et f(0) = 1. Quelle justification établit que f est continue à droite en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ln x tend vers 0 (croissances comparées), donc f(x) tend vers 1 = f(0)"
+        },
+        {
+          "id": "b",
+          "text": "ln x tend vers −∞, donc 1 + x ln x tend vers −∞ et f(x) tend vers 0"
+        },
+        {
+          "id": "c",
+          "text": "f est dérivable à droite en 0, donc continue à droite en 0"
+        },
+        {
+          "id": "d",
+          "text": "1 + x ln x tend vers 0 (dénominateur nul), donc f(x) tend vers +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par croissances comparées, x ln x → 0 quand x → 0⁺ (le facteur x l'emporte sur ln x). Donc 1 + x ln x → 1, et f(x) = 1/(1 + x ln x) → 1 = f(0) ✓ : f est continue à droite en 0. Piège classique : appliquer ln x → −∞ sans tenir compte du facteur x (forme indéterminée 0 × (−∞)), ou invoquer la dérivabilité à droite en 0, qui est fausse ici (le taux d'accroissement tend vers +∞), ou croire que le dénominateur s'annule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/(1 + x ln x) pour x > 0 et f(0) = 1. Quelle est la limite en 0⁺ de (f(x) − 1)/x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "−∞"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(f(x) − 1)/x = (1 − (1 + x ln x))/(x(1 + x ln x)) = −x ln x/(x(1 + x ln x)) = −ln x/(1 + x ln x). Quand x → 0⁺, le numérateur −ln x tend vers +∞ et le dénominateur vers 1 : la limite est +∞ ✓ (f est continue en 0 mais non dérivable à droite : demi-tangente verticale). Piège classique : simplifier x ln x par x puis oublier le signe moins (on trouve −∞), ou conclure 0 parce que f(x) → 1 = f(0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/(1 + x ln x) pour x > 0. Quelle est la limite de f en +∞ et quelle interprétation graphique en donne-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 : la droite d'équation y = 1 est asymptote horizontale à la courbe"
+        },
+        {
+          "id": "b",
+          "text": "+∞ : la courbe admet une branche parabolique de direction (Oy)"
+        },
+        {
+          "id": "c",
+          "text": "0 : la droite d'équation y = 0 est asymptote horizontale à la courbe"
+        },
+        {
+          "id": "d",
+          "text": "0 : la droite d'équation x = 0 est asymptote verticale à la courbe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand x → +∞, x ln x → +∞ (produit de deux facteurs qui tendent vers +∞), donc 1 + x ln x → +∞ et f(x) → 0 ✓. La droite y = 0 (l'axe des abscisses) est asymptote horizontale en +∞. Piège classique : croire que x ln x → 0 comme en 0⁺, ou nommer verticale une droite d'équation y = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/(1 + x ln x) pour x > 0. Quelle est l'expression de f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = +(1 + ln x)/(1 + x ln x)²"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = −ln x/(1 + x ln x)²"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = −(1 + ln x)/(1 + x ln x)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = −(1 + ln x)/(1 + x ln x)²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour f = 1/u, f′ = −u′/u². Ici u(x) = 1 + x ln x, u′(x) = ln x + x × (1/x) = 1 + ln x. D'où f′(x) = −(1 + ln x)/(1 + x ln x)² ✓. Piège classique : oublier le signe moins de la dérivée de l'inverse, dériver x ln x en ln x seulement, ou oublier d'élever le dénominateur au carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/(1 + x ln x) pour x > 0, f(0) = 1, avec f′(x) = −(1 + ln x)/(1 + x ln x)² et lim₊∞ f = 0. Quel est le tableau de variation de f sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît de f(0) = 1 jusqu'au maximum f(1/e) = e/(e − 1), puis décroît vers 0"
+        },
+        {
+          "id": "b",
+          "text": "f décroît de f(0) = 1 jusqu'au minimum f(1/e) = e/(e − 1), puis croît"
+        },
+        {
+          "id": "c",
+          "text": "f croît de f(0) = 1 jusqu'au maximum f(1/e) = e/(e + 1), puis décroît vers 0"
+        },
+        {
+          "id": "d",
+          "text": "f croît de f(0) = 1 jusqu'au maximum f(1) = 1, puis décroît vers 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le dénominateur de f′ est strictement positif (1 + x ln x ≥ x > 0), donc f′ est du signe de −(1 + ln x) : positive si ln x < −1, c'est-à-dire x < 1/e, négative ensuite. Le maximum est f(1/e) = 1/(1 + (1/e) × (−1)) = 1/(1 − 1/e) = e/(e − 1) ✓. Piège classique : lire le signe de f′ sans le moins (croissance et décroissance échangées), prendre ln(1/e) = 1 au lieu de −1 (valeur e/(e + 1)), ou placer le maximum en 1 où ln s'annule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur le repère, on a tracé la courbe C₁ de x ↦ ln x et la courbe C₂ de x ↦ 1/x. A est le point de C₁ d'abscisse 1/e et B le point de C₂ d'abscisse 1 − 1/e. Comment obtient-on le point C de la courbe de f(x) = 1/(1 + x ln x) d'abscisse 1/e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C a pour abscisse 1/e et pour ordonnée celle de A, car f(1/e) = ln(1/e) = −1"
+        },
+        {
+          "id": "b",
+          "text": "C a pour abscisse 1/e et pour ordonnée celle de B : f(1/e) = 1/(1 − 1/e)"
+        },
+        {
+          "id": "c",
+          "text": "C a pour abscisse 1 − 1/e et pour ordonnée celle de A, car 1 + x ln x = 1 − 1/e"
+        },
+        {
+          "id": "d",
+          "text": "C a pour abscisse 1/e et pour ordonnée l'abscisse de B, car f(1/e) = 1 − 1/e"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En x = 1/e, ln(1/e) = −1 (ordonnée de A), donc 1 + x ln x = 1 − 1/e et f(1/e) = 1/(1 − 1/e). Or le point B de C₂ d'abscisse 1 − 1/e a pour ordonnée 1/(1 − 1/e) : C a donc l'abscisse de A (1/e) et l'ordonnée de B ✓. Piège classique : confondre f(1/e) avec ln(1/e), échanger les rôles des abscisses, ou prendre l'abscisse de B comme ordonnée (1 − 1/e est le dénominateur, pas la valeur de f).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/(1 + x ln x) pour x > 0 et C₂ la courbe de x ↦ 1/x. On sait que 1 + x ln x ≥ x pour tout x > 0, avec égalité si et seulement si x = 1. Quelle est la position relative de la courbe de f et de C₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) ≥ 1/x : la courbe de f est au-dessus de C₂, avec un seul point commun, en x = 1, comme pour une tangente"
+        },
+        {
+          "id": "b",
+          "text": "f(x) ≤ 1/x : la courbe de f est au-dessous de C₂, sans point commun"
+        },
+        {
+          "id": "c",
+          "text": "f(x) ≤ 1/x : la courbe de f est au-dessous de C₂, avec un unique point commun en x = 1"
+        },
+        {
+          "id": "d",
+          "text": "f(x) ≤ 1/x pour x ≤ 1/e et f(x) ≥ 1/x ensuite : les courbes se croisent en 1/e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme 1 + x ln x ≥ x > 0, la fonction inverse (décroissante sur ]0 ; +∞[) renverse l'inégalité : 1/(1 + x ln x) ≤ 1/x, soit f(x) ≤ 1/x ✓. L'égalité n'a lieu qu'en x = 1 (où ln 1 = 0 et 1 + 0 = 1), point commun unique : les courbes se touchent en (1 ; 1). Piège classique : conserver le sens de l'inégalité en passant aux inverses, oublier le cas d'égalité en x = 1, ou confondre le croisement avec le point 1/e où f change de sens de variation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour t ≥ 1, f(t) = 1/(1 + t ln t). Quelle comparaison établit que 1/(t + t ln t) ≤ f(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "t + t ln t ≤ 1 + t ln t car t ≥ 1 ; donc 1/(t + t ln t) ≤ f(t) en conservant l'ordre"
+        },
+        {
+          "id": "b",
+          "text": "t + t ln t ≥ 1 + t ln t car t ≥ 1 ; donc 1/(t + t ln t) ≥ f(t) sans renverser l'ordre"
+        },
+        {
+          "id": "c",
+          "text": "ln t ≥ 0 sur [1 ; +∞[ donc 1/(t + t ln t) ≤ 1/t ≤ f(t) (on intercale 1/t)"
+        },
+        {
+          "id": "d",
+          "text": "t + t ln t ≥ 1 + t ln t car t ≥ 1 ; les inverses se rangent en sens contraire"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour t ≥ 1, t ≥ 1 donc t + t ln t ≥ 1 + t ln t > 0. La fonction inverse est décroissante sur ]0 ; +∞[ : 1/(t + t ln t) ≤ 1/(1 + t ln t) = f(t) ✓. Piège classique : comparer les dénominateurs à l'envers, oublier que passer aux inverses renverse l'inégalité, ou intercaler 1/t, qui est au contraire un MAJORANT de f(t) (f(t) ≤ 1/t).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F(x) = ∫ de 1 à x de f(t) dt pour x ≥ 1, avec f(t) = 1/(1 + t ln t). On sait que 1/(t + t ln t) ≤ f(t) ≤ 1/t pour t ≥ 1. Quel encadrement de F(x) en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(1 + ln x) ≤ F(x) ≤ ln x"
+        },
+        {
+          "id": "b",
+          "text": "ln x ≤ F(x) ≤ ln(1 + ln x)"
+        },
+        {
+          "id": "c",
+          "text": "−1/(1 + ln x)² ≤ F(x) ≤ ln x"
+        },
+        {
+          "id": "d",
+          "text": "ln x ≤ F(x) ≤ x − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction t ↦ 1/(t(1 + ln t)) est de la forme u′/u avec u(t) = 1 + ln t, de dérivée 1/t : sa primitive est ln(1 + ln t), qui vaut 0 en 1. La fonction t ↦ 1/t a pour primitive ln t. En intégrant l'encadrement de 1 à x (borne supérieure x ≥ 1) : ln(1 + ln x) ≤ F(x) ≤ ln x ✓. Piège classique : inverser les deux membres, se tromper de primitive pour u′/u (on ne trouve pas −1/u²), ou majorer par la longueur x − 1 de l'intervalle sans exploiter f(t) ≤ 1/t.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F(x) = ∫ de 1 à x de f(t) dt avec ln(1 + ln x) ≤ F(x) ≤ ln x pour tout x ≥ 1. Que valent les limites de F(x) et de F(x)/x quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) → 0 et F(x)/x → 0, car f(t) → 0"
+        },
+        {
+          "id": "b",
+          "text": "F(x) → +∞ et F(x)/x → 0"
+        },
+        {
+          "id": "c",
+          "text": "F(x) → +∞ et F(x)/x → +∞"
+        },
+        {
+          "id": "d",
+          "text": "F(x) → +∞ et F(x)/x → 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme ln(1 + ln x) → +∞, la minoration donne F(x) → +∞. Pour le quotient, on divise l'encadrement par x > 0 : ln(1 + ln x)/x ≤ F(x)/x ≤ (ln x)/x. Les deux bornes tendent vers 0 (croissances comparées), donc F(x)/x → 0 ✓. Piège classique : croire que F tend vers 0 parce que f tend vers 0 (l'intégrale cumule), croire que F(x)/x → +∞ parce que F(x) → +∞ sans comparer la vitesse à celle de x, ou penser que F(x)/x → 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F(x) = ∫ de 1 à x de f(t) dt, avec f(t) = 1/(1 + t ln t), et h(x) = x − F(x) sur [1 ; +∞[. On a F(x) ≤ ln x. Quelle justification établit que h réalise une bijection de [1 ; +∞[ sur [1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h′(x) = 1 + f(x) > 0 ; h est strictement croissante donc bijective sur [1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "h(x) ≥ x − ln x ≥ 1 : h est minorée par 1, donc bijective sur [1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "h′(x) = 1 − f(x) ≥ 0, nulle seulement en 1 ; h(1) = 1 et h(x) ≥ x − ln x → +∞"
+        },
+        {
+          "id": "d",
+          "text": "h est continue et h(1) = 1 ; elle est donc bijective sur [1 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour x ≥ 1, h′(x) = 1 − F′(x) = 1 − f(x), et f(x) ≤ 1 (car x ln x ≥ 0), avec égalité seulement en 1 : h est continue et strictement croissante. Elle part de h(1) = 1 − 0 = 1 et h(x) ≥ x − ln x → +∞, donc elle prend toutes les valeurs de [1 ; +∞[ une seule fois ✓. Piège classique : dériver −F en +f (signe), invoquer une minoration ou la continuité seules (il manque la stricte monotonie pour l'unicité et les limites pour la surjectivité).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, α_n est la solution de h(x) = n, soit α_n − F(α_n) = n, avec α_n → +∞ et F(x)/x → 0 quand x → +∞. Que vaut la limite de α_n/n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞, car α_n et n tendent tous deux vers +∞, donc le quotient diverge"
+        },
+        {
+          "id": "b",
+          "text": "0, car F(α_n)/α_n tend vers 0 et α_n/n a la même limite"
+        },
+        {
+          "id": "c",
+          "text": "e/(e − 1), valeur maximale de f"
+        },
+        {
+          "id": "d",
+          "text": "1, car α_n/n = 1/(1 − F(α_n)/α_n) et F(α_n)/α_n tend vers 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On divise α_n − F(α_n) = n par α_n : 1 − F(α_n)/α_n = n/α_n, d'où α_n/n = 1/(1 − F(α_n)/α_n). Comme α_n → +∞ et F(x)/x → 0, F(α_n)/α_n → 0, donc α_n/n → 1/(1 − 0) = 1 ✓. Piège classique : conclure à +∞ sur la seule vue de deux quantités infinies (forme indéterminée ∞/∞), transférer la limite 0 du terme F(α_n)/α_n au quotient entier, ou confondre avec le maximum de f.",
+      "difficulty": 3
+    }
+  ]
+}

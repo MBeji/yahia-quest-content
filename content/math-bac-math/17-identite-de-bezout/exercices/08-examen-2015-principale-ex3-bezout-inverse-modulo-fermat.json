@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2015 · session principale · Exercice 3 ⭐⭐⭐ : équation de Bézout, inverse modulo un nombre premier et petit théorème de Fermat",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "On considère dans ℤ × ℤ l'équation (E) : 47x + 53y = 1, dont (−9 ; 8) est une solution. Quel est l'ensemble de ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(−9 + 53k ; 8 − 47k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(−9 + 47k ; 8 − 53k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(−9 + 53k ; 8 + 47k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(9 + 53k ; −8 − 47k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Soit (x ; y) une solution. En soustrayant 47x + 53y = 1 et 47(−9) + 53·8 = 1, on obtient 47(x + 9) = −53(y − 8) = 53(8 − y). Comme 47 ∧ 53 = 1 (53 est premier et ne divise pas 47), le lemme de Gauss donne 53 | x + 9, soit x = −9 + 53k, puis 47·53k = 53(8 − y) donne y = 8 − 47k ✓. Réciproquement 47(−9 + 53k) + 53(8 − 47k) = −423 + 424 + (47·53 − 53·47)k = 1 ✓. L'erreur classique est d'échanger les rôles des coefficients (le pas de x est 53, le coefficient de y, et non 47) ou de garder le même signe dans les deux composantes : avec 8 + 47k, 47·53k + 53·47k = 4982k ne s'annule pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sachant que 47 × (−9) + 53 × 8 = 1, quel est l'ensemble des entiers u tels que 47u ≡ 1 (mod 53), c'est-à-dire des inverses de 47 modulo 53 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{8 + 47k, k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{−9 + 47k, k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{−9 + 53k, k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{9 + 53k, k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'égalité 47 × (−9) + 53 × 8 = 1 donne 47 × (−9) ≡ 1 (mod 53) : −9 est un inverse de 47. Si u en est un autre, 47u ≡ 47(−9) (mod 53), donc 53 divise 47(u + 9) ; comme 47 ∧ 53 = 1, le lemme de Gauss donne 53 | u + 9. Les inverses sont donc exactement les entiers −9 + 53k, k ∈ ℤ ✓. On ne confond pas le multiplicateur de 47 (ici −9) avec celui de 53 (ici 8), qui ne sert qu'à compenser ; on ne change pas le signe de −9 (47 × 9 = 423 = 53 × 8 − 1 ≡ −1) ; et le pas est le module 53, pas 47.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sachant que 47 × (−9) + 53 × 8 = 1, quel est le plus petit entier strictement positif qui est un inverse de 47 modulo 53 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "38"
+        },
+        {
+          "id": "d",
+          "text": "44"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un inverse de 47 modulo 53 est −9, et les autres s'obtiennent en ajoutant des multiples de 53. Le plus petit strictement positif est −9 + 53 = 44. Vérification : 47 × 44 = 2068 = 53 × 39 + 1 ✓. Les autres valeurs viennent chacune d'une erreur et échouent : 8 est le coefficient de 53 pris pour l'inverse (47 × 8 = 376 = 53 × 7 + 5 ≡ 5) ; 9 oublie le signe de −9 (47 × 9 = 423 = 53 × 7 + 52 ≡ −1, ce n'est pas 1) ; 38 vient de −9 + 47 au lieu de −9 + 53 (47 × 38 = 1786 = 53 × 33 + 37 ≡ 37).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi peut-on affirmer que 45^52 ≡ 1 (mod 53) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "53 est premier, donc 45^53 ≡ 1 (mod 53), puis on simplifie par 45 des deux côtés"
+        },
+        {
+          "id": "b",
+          "text": "53 est premier et ne divise pas 45, donc Fermat donne 45^52 ≡ 1 (mod 53)"
+        },
+        {
+          "id": "c",
+          "text": "45 ≡ −1 (mod 53), donc 45^52 ≡ (−1)^52 = 1 (mod 53) car l'exposant est pair"
+        },
+        {
+          "id": "d",
+          "text": "45 et 52 sont premiers entre eux, donc d'après le théorème de Fermat 45^52 ≡ 1 (mod 53)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le petit théorème de Fermat : si p est premier et si a n'est pas multiple de p, alors a^(p−1) ≡ 1 (mod p). Ici p = 53 est premier, 45 n'est pas multiple de 53, donc 45^52 ≡ 1 (mod 53) ✓. Les autres arguments sont faux : Fermat donne a^p ≡ a (mod p), pas a^p ≡ 1 ; 45 n'est pas congru à −1 modulo 53 (45 + 1 = 46 n'est pas multiple de 53) ; et c'est la primalité de 53 avec a non multiple de 53 qui compte, pas la relation entre 45 et l'exposant 52.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose N = 1 + 45 + 45² + … + 45^105 (somme des 45^k pour k de 0 à 105). Quelle égalité relie 44N à une puissance de 45 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "44N = 45^106 − 1"
+        },
+        {
+          "id": "b",
+          "text": "44N = 45^105 − 1"
+        },
+        {
+          "id": "c",
+          "text": "44N = 45^107 − 1"
+        },
+        {
+          "id": "d",
+          "text": "44N = 45^106 − 45"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "N est la somme de 106 termes d'une suite géométrique de raison 45 (k de 0 à 105). Pour une raison q ≠ 1, (q − 1)(1 + q + … + q^(n−1)) = q^n − 1. Ici q = 45, n = 106, et q − 1 = 44, d'où 44N = 45^106 − 1 ✓. Contrôle sur une somme courte : avec 3 termes, 44(1 + 45 + 45²) = 44 × 2071 = 91124 = 45³ − 1 = 91125 − 1 ✓. L'erreur d'indice est la plus fréquente : la somme de 0 à 105 compte 106 termes, donc l'exposant final est 106, et le dernier terme retranché est 1, pas 45.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℤ, on sait que 45^52 ≡ 1 (mod 53). Quel est le reste de la division euclidienne de 45^106 par 53 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "42"
+        },
+        {
+          "id": "c",
+          "text": "11"
+        },
+        {
+          "id": "d",
+          "text": "45"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit 106 = 2 × 52 + 2, donc 45^106 = (45^52)² × 45² ≡ 1² × 45² = 45² (mod 53). Puis 45² = 2025 = 53 × 38 + 11, d'où 45^106 ≡ 11 (mod 53) ✓. Autre chemin : 45 ≡ −8 (mod 53), donc 45² ≡ 64 = 53 + 11 ≡ 11 ✓. Les erreurs : réduire l'exposant modulo 53 au lieu de 52 (106 ≡ 0, d'où 1) ; oublier le facteur 45² (reste 1) ; garder l'exposant 1 (45) ; ou perdre le signe de 64, ce qui donne −11 ≡ 42.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit N = 1 + 45 + 45² + … + 45^105. On rappelle que 44N = 45^106 − 1, que 45^52 ≡ 1 (mod 53) et que 47 × 44 ≡ 1 (mod 53). Quel est le reste de N modulo 53 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "46"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "43"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "D'abord 45^106 = (45^52)² × 45² ≡ 45² = 2025 ≡ 11 (mod 53), donc 44N = 45^106 − 1 ≡ 10 (mod 53). Comme 47 est un inverse de 44, on multiplie par 47 : N ≡ 47 × 44N ≡ 47 × 10 = 470 = 53 × 8 + 46, donc N ≡ 46 (mod 53) ✓. Vérification ✓ : 44 × 46 = 2024 = 53 × 38 + 10, qui est bien le reste attendu pour 44N. L'erreur classique est de s'arrêter à 44N ≡ 10 (reste 10) ou de multiplier par 44 au lieu de son inverse 47 (440 ≡ 16) ; et 43 correspond à un signe perdu (−10 ≡ 43).",
+      "difficulty": 3
+    }
+  ]
+}

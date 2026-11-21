@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2024 · session principale · Exercice 4 ⭐⭐⭐ : équation de Bézout, congruences quadratiques et système modulo 5 et 53",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 18,
+  "questions": [
+    {
+      "prompt": "On considère dans ℤ² l'équation (E) : 5u − 53v = 24, dont (26 ; 2) est une solution. Quel est l'ensemble de ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(26 + 53k ; 2 + 5k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(26 + 5k ; 2 + 53k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(26 + 53k ; 2 − 5k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(26 − 53k ; 2 + 5k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si (u ; v) est solution, 5u − 53v = 5 × 26 − 53 × 2 donne 5(u − 26) = 53(v − 2). Comme 5 ∧ 53 = 1 (53 est premier), le lemme de Gauss donne 53 | u − 26, soit u = 26 + 53k, puis v = 2 + 5k ✓. Vérification : 5(26 + 53k) − 53(2 + 5k) = 130 − 106 + (265 − 265)k = 24 ✓. L'erreur classique est d'échanger les pas (le pas de u est 53, le coefficient de v) ou de changer le signe d'une seule composante, ce qui laisse un terme en k non nul (530k).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est l'ensemble des restes possibles de x² − x dans la division euclidienne par 5, lorsque x décrit ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, 1 ou 4"
+        },
+        {
+          "id": "b",
+          "text": "0, 1 ou 2"
+        },
+        {
+          "id": "c",
+          "text": "1 ou 2"
+        },
+        {
+          "id": "d",
+          "text": "0, 1, 2, 3 ou 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le reste de x² − x modulo 5 ne dépend que du reste de x. On calcule : x ≡ 0 donne 0 ; x ≡ 1 donne 0 ; x ≡ 2 donne 4 − 2 = 2 ; x ≡ 3 donne 9 − 3 = 6 ≡ 1 ; x ≡ 4 donne 16 − 4 = 12 ≡ 2. Les restes obtenus sont 0, 1 et 2 ✓. Les erreurs : ne regarder que les carrés (0, 1, 4) en oubliant le terme −x, oublier que x ≡ 0 et x ≡ 1 donnent 0, ou croire que tous les restes sont possibles.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℤ, pourquoi a-t-on (x − 27)² ≡ x² − x − 13 (mod 53) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 27)² = x² − 54x + 729 ≡ x² − x + 13, car 54 ≡ 1 et 729 ≡ 13 (mod 53)"
+        },
+        {
+          "id": "b",
+          "text": "(x − 27)² = x² − 729 ≡ x² − x − 13, car 729 ≡ 40 et 40 ≡ x (mod 53)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 27)² = x² − 54x + 729 ≡ x² − x − 13, car 54 ≡ 1 et 729 ≡ −13"
+        },
+        {
+          "id": "d",
+          "text": "(x − 27)² = x² − 54x + 54 ≡ x² − x + 1, car 54 ≡ 1 et 27² = 54 (mod 53)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe : (x − 27)² = x² − 2 × 27x + 27² = x² − 54x + 729. Modulo 53, 54 ≡ 1, donc −54x ≡ −x ; et 729 = 13 × 53 + 40, d'où 729 ≡ 40 = 53 − 13 ≡ −13. Donc (x − 27)² ≡ x² − x − 13 (mod 53) ✓. Contrôle avec x = 0 : 27² = 729 ≡ 40 et −13 ≡ 40 ✓. Les erreurs : écrire 729 ≡ +13 (le reste est 40, qui vaut −13 et non 13), oublier le terme −54x par l'identité fausse (a − b)² = a² − b², ou prendre 27² = 54 (c'est 729).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℤ, on a (x − 27)² ≡ x² − x − 13 (mod 53), et 53 est premier. Quelle condition équivaut à x² − x ≡ 13 (mod 53) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 27)² ≡ 0 (mod 53), donc x ≡ 0 (mod 53)"
+        },
+        {
+          "id": "b",
+          "text": "(x − 27)² ≡ 0 (mod 53), donc x ≡ 27 ou x ≡ −27 (mod 53)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 27)² ≡ 13 (mod 53), donc x ≡ 27 ± √13 (mod 53)"
+        },
+        {
+          "id": "d",
+          "text": "(x − 27)² ≡ 0 (mod 53), donc x ≡ 27 (mod 53)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "x² − x ≡ 13 équivaut à x² − x − 13 ≡ 0, soit (x − 27)² ≡ 0 (mod 53). Donc 53 divise (x − 27)(x − 27) ; 53 étant premier, 53 divise x − 27 (lemme d'Euclide), c'est-à-dire x ≡ 27 (mod 53) ✓, racine double unique. Vérification : x = 27 donne 27² − 27 = 702 = 13 × 53 + 13 ✓. Les erreurs : lire 27 comme terme à supprimer (x ≡ 0), croire qu'un carré nul modulo un nombre premier a deux racines opposées (le seul entier dont le carré est nul modulo 53 est 0), ou oublier que (x − 27)² ≡ x² − x − 13 ≡ 0, non 13.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (S) le système x² − x ≡ 1 (mod 5) et x² − x ≡ 13 (mod 53), avec x ∈ ℤ, sachant que la première équation équivaut à x ≡ 3 (mod 5) et la seconde à x ≡ 27 (mod 53). Quel système équivaut à (S) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il existe (u ; v) ∈ ℤ² tel que x = 1 + 5u et x = 13 + 53v"
+        },
+        {
+          "id": "b",
+          "text": "Il existe (u ; v) ∈ ℤ² tel que x = 3 + 5u et x = 27 + 53v"
+        },
+        {
+          "id": "c",
+          "text": "Il existe (u ; v) ∈ ℤ² tel que x = 3 + 5u et x = 13 + 53v"
+        },
+        {
+          "id": "d",
+          "text": "Il existe (u ; v) ∈ ℤ² tel que x = 3 + 53u et x = 27 + 5v"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dire x ≡ 3 (mod 5) revient à écrire x = 3 + 5u avec u entier, et x ≡ 27 (mod 53) à écrire x = 27 + 53v avec v entier ✓. Les deux écritures décrivent le même x, d'où 3 + 5u = 27 + 53v, soit 5u − 53v = 24. Les erreurs : prendre les seconds membres 1 et 13 comme restes (c'est la valeur de x² − x, pas celle de x) ; garder 13 au lieu de 27 pour le second reste ; ou échanger les modules (x = 3 + 53u donne x ≡ 3 modulo 53, non modulo 5).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℤ le système { x = 3 + 5u ; x = 27 + 53v } avec (u ; v) ∈ ℤ², sachant que les solutions de 5u − 53v = 24 sont (26 + 53k ; 2 + 5k), k ∈ ℤ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 133 (mod 58), avec la somme des modules en guise de module"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 30 (mod 265), en additionnant les deux restes"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 133 (mod 265), avec le produit des modules"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 81 (mod 265), en multipliant les deux restes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'égalité 3 + 5u = 27 + 53v donne 5u − 53v = 24, dont les solutions sont u = 26 + 53k. Alors x = 3 + 5(26 + 53k) = 133 + 265k ✓. Vérification : 133 = 5 × 26 + 3 ✓ et 133 = 53 × 2 + 27 ✓. Le module est le produit 5 × 53 = 265 (5 et 53 sont premiers entre eux) et non la somme 58. Les erreurs : additionner les restes (3 + 27 = 30 : 30 ≡ 0 modulo 5 et 30 ≢ 27 modulo 53) ou les multiplier (3 × 27 = 81 : 81 ≡ 1 modulo 5).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pourquoi l'équation x² − x − 66 ≡ 0 (mod 265) équivaut-elle au système x² − x ≡ 1 (mod 5) et x² − x ≡ 13 (mod 53) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "66 ≡ 1 (mod 5) et 66 ≡ 13 (mod 53) ; 265 = 5 × 53 avec 5 ∧ 53 = 1, donc 265 divise si 5 et 53 divisent"
+        },
+        {
+          "id": "b",
+          "text": "66 ≡ 1 (mod 5) et 66 ≡ −13 (mod 53) ; 265 divise un entier dès que 5 ou 53 le divise"
+        },
+        {
+          "id": "c",
+          "text": "66 ≡ 1 (mod 5) et 66 ≡ −13 (mod 53) ; 265 = 5 × 53 avec 5 ∧ 53 = 1, donc 265 divise si 5 et 53 divisent"
+        },
+        {
+          "id": "d",
+          "text": "66 ≡ 1 (mod 5) et 66 ≡ 13 (mod 53) ; 265 divise un entier dès que 5 ou 53 le divise"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Modulo 5 : 66 = 13 × 5 + 1, donc 66 ≡ 1. Modulo 53 : 66 = 53 + 13, donc 66 ≡ 13 ✓. L'équation x² − x − 66 ≡ 0 (mod 265) signifie que 265 divise x² − x − 66 ; comme 265 = 5 × 53 avec 5 ∧ 53 = 1, 265 divise un entier si et seulement si 5 et 53 le divisent (théorème du cours). On obtient donc x² − x ≡ 66 ≡ 1 (mod 5) et x² − x ≡ 66 ≡ 13 (mod 53) ✓. Les erreurs : un signe (66 − 53 = +13 et non −13), un « ou » à la place du « et » (un entier divisible par 5 n'est pas forcément divisible par 265), ou les deux à la fois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Combien de solutions l'équation x² − x − 66 ≡ 0 (mod 265) possède-t-elle dans {0, 1, …, 264} ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux, comme toute équation du second degré, qui a au plus deux racines"
+        },
+        {
+          "id": "b",
+          "text": "Quatre, car il y a deux solutions modulo 5 et deux modulo 53, qu'on combine"
+        },
+        {
+          "id": "c",
+          "text": "Aucune, car 66 n'est pas un carré dans ℤ, donc pas de racine modulo 265"
+        },
+        {
+          "id": "d",
+          "text": "Une seule, car chaque congruence a une unique solution et 5 ∧ 53 = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'équation équivaut au système x ≡ 3 (mod 5) et x ≡ 27 (mod 53). Chacune de ces deux congruences a une seule solution dans son module (x² − x ≡ 1 modulo 5 n'est vérifié que pour x ≡ 3, et (x − 27)² ≡ 0 modulo 53 que pour x ≡ 27). Comme 5 ∧ 53 = 1, le système a une unique solution modulo 265 : x ≡ 133 ✓ (133 = 5 × 26 + 3 = 53 × 2 + 27). Les autres affirmations sont fausses : le nombre de racines d'une équation du second degré modulo un entier n'est pas toujours deux (modulo 53 le carré nul a une racine double, et modulo 265 on combine deux congruences), le produit 2 × 2 = 4 n'est pas pertinent ici puisqu'il n'y a qu'une racine par module, et la solution 133 existe bien (133² − 133 − 66 = 17556 − 66 = 17490 = 265 × 66).",
+      "difficulty": 3
+    }
+  ]
+}

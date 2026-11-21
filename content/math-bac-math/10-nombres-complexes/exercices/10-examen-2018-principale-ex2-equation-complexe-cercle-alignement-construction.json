@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 2 ⭐⭐⭐ : équation du second degré, relation métrique dans un demi-cercle, alignement et quotient de deux vecteurs",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Dans le repère orthonormé direct (O, u, v), F et G sont les points d'affixes −1 et 1 + √2, Γ est le demi-cercle de diamètre [FG] et D est son point d'intersection avec l'axe (O, v), comme sur la figure. Quelle est la valeur de OD ?\n<svg viewBox=\"0 0 270 130\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\"><line x1=\"10\" y1=\"112\" x2=\"260\" y2=\"112\" stroke=\"#1f2937\"/><line x1=\"70\" y1=\"120\" x2=\"70\" y2=\"8\" stroke=\"#1f2937\"/><polyline points=\"214.9,112.0 214.7,106.6 214.3,101.3 213.6,96.0 212.6,90.7 211.4,85.5 209.8,80.3 208.0,75.3 206.0,70.3 203.7,65.5 201.1,60.8 198.3,56.2 195.3,51.8 192.0,47.5 188.5,43.5 184.9,39.6 181.0,35.9 176.9,32.4 172.6,29.1 168.2,26.1 163.6,23.3 158.9,20.7 154.1,18.4 149.1,16.4 144.1,14.6 138.9,13.1 133.7,11.8 128.4,10.8 123.1,10.1 117.8,9.7 112.4,9.6 107.1,9.7 101.7,10.1 96.4,10.8 91.1,11.8 85.9,13.1 80.8,14.6 75.7,16.4 70.8,18.4 65.9,20.7 61.2,23.3 56.6,26.1 52.2,29.1 48.0,32.4 43.9,35.9 40.0,39.6 36.3,43.5 32.8,47.5 29.6,51.8 26.5,56.2 23.7,60.8 21.2,65.5 18.9,70.3 16.8,75.3 15.0,80.3 13.5,85.5 12.2,90.7 11.3,96.0 10.6,101.3 10.1,106.6 10.0,112.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"10.0\" y1=\"112\" x2=\"70\" y2=\"18.8\" stroke=\"#6b7280\"/><line x1=\"214.9\" y1=\"112\" x2=\"70\" y2=\"18.8\" stroke=\"#6b7280\"/><g fill=\"#0f172a\"><circle cx=\"10.0\" cy=\"112\" r=\"3\"/><circle cx=\"214.9\" cy=\"112\" r=\"3\"/><circle cx=\"70\" cy=\"18.8\" r=\"3\"/></g><text x=\"4.0\" y=\"126\">F</text><text x=\"212.9\" y=\"126\">G</text><text x=\"56\" y=\"125\">O</text><text x=\"76\" y=\"15.8\">D</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + √2/2"
+        },
+        {
+          "id": "b",
+          "text": "√(4 + 2√2)"
+        },
+        {
+          "id": "c",
+          "text": "√(1 + √2)"
+        },
+        {
+          "id": "d",
+          "text": "√(2 + √2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "D est sur le cercle de diamètre [FG], donc FDG est rectangle en D. O est le pied de la hauteur issue de D sur l'hypoténuse [FG] (D est sur la perpendiculaire à (FG) en O). La relation métrique donne OD² = OF × OG = 1 × (1 + √2) = 1 + √2, donc OD = √(1 + √2) ✓. Piège classique : prendre OD pour la médiane, c'est-à-dire FG/2 = 1 + √2/2 (le milieu de [FG] n'est pas O), appliquer Pythagore à OFG qui est plat (on trouve √(4 + 2√2)), ou multiplier par la longueur FG au lieu de OG (on trouve √(2 + √2)).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit θ un réel non nul, D(i·OD) le point de l'axe (O, v) tel que OD² = 1 + √2, et A le point d'affixe z_A = i√(1 + √2) e^(iθ). E est le point du cercle unité tel que (u⃗, OE⃗) ≡ θ [2π]. Comment construit-on A à partir de D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A est l'image de D par la rotation de centre O et d'angle θ + π/2"
+        },
+        {
+          "id": "b",
+          "text": "A est l'image du point E du cercle unité par la rotation de centre O et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "A est le point de la demi-droite [OE) tel que OA = OD"
+        },
+        {
+          "id": "d",
+          "text": "A est l'image de D par la rotation de centre O et d'angle θ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme i = e^(iπ/2) et OD = √(1 + √2), z_A = OD e^(i(θ + π/2)) = e^(iθ) × (i·OD) = e^(iθ) z_D : multiplier z_D par e^(iθ), c'est tourner D d'un angle θ autour de O, sans changer la distance ✓. Piège classique : ajouter π/2 une seconde fois (D a déjà l'argument π/2), partir de E (de module 1, alors que |z_A| = OD = √(1 + √2) > 1), ou placer A sur [OE) (argument θ au lieu de θ + π/2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (E) l'équation z² + (√2/(i√(1 + √2))) e^(iθ) z + e^(2iθ) = 0 et z_A = i√(1 + √2) e^(iθ). Que vaut z_A² + (√2/(i√(1 + √2))) e^(iθ) z_A + e^(2iθ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 : z_A² = −(1 + √2)e^(2iθ) et le terme linéaire vaut √2 e^(2iθ)"
+        },
+        {
+          "id": "b",
+          "text": "2(1 + √2)e^(2iθ) : on prend z_A² = (1 + √2)e^(2iθ), sans le signe de i²"
+        },
+        {
+          "id": "c",
+          "text": "−2√2 e^(2iθ) : le terme linéaire vaut −√2 e^(2iθ)"
+        },
+        {
+          "id": "d",
+          "text": "−√2 e^(2iθ) : on oublie le terme linéaire"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "z_A² = i²(1 + √2)e^(2iθ) = −(1 + √2)e^(2iθ). Le terme linéaire est (√2/(i√(1 + √2))) e^(iθ) × i√(1 + √2) e^(iθ) = √2 e^(2iθ) (les facteurs i√(1 + √2) se simplifient). La somme vaut [−(1 + √2) + √2 + 1] e^(2iθ) = 0 ✓ : z_A est solution de (E). Piège classique : oublier i² = −1 (on trouve +(1 + √2)e^(2iθ)), calculer (1/i) × i = −1, ou oublier le terme linéaire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "z_A = i√(1 + √2) e^(iθ) est une solution de (E) : z² + (√2/(i√(1 + √2))) e^(iθ) z + e^(2iθ) = 0. Quelle est la deuxième solution z_B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_B = i e^(iθ)/√(1 + √2), car 1/i = i"
+        },
+        {
+          "id": "b",
+          "text": "z_B = −i e^(iθ)/√(1 + √2), car z_A z_B = e^(2iθ)"
+        },
+        {
+          "id": "c",
+          "text": "z_B = i√(1 + √2) e^(3iθ), car z_B = z_A × e^(2iθ)"
+        },
+        {
+          "id": "d",
+          "text": "z_B = −i√(1 + √2) e^(iθ), car z_A + z_B = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le produit des solutions vaut le terme constant : z_A z_B = e^(2iθ). Donc z_B = e^(2iθ)/(i√(1 + √2) e^(iθ)) = e^(iθ)/(i√(1 + √2)) = −i e^(iθ)/√(1 + √2), car 1/i = −i ✓. On vérifie la somme : z_A + z_B = i e^(iθ)[√(1 + √2) − 1/√(1 + √2)] = i e^(iθ) √2/√(1 + √2) = −(√2/(i√(1 + √2))) e^(iθ) ✓. Piège classique : écrire 1/i = i (c'est −i), multiplier par e^(2iθ) au lieu de diviser, ou croire la somme nulle (le coefficient de z n'est pas nul).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit z_A = i√(1 + √2) e^(iθ) et z_B = −i e^(iθ)/√(1 + √2). Que dit le quotient z_B/z_A sur les points O, A et B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_B/z_A = −i/(1 + √2) est un imaginaire pur : les droites (OA) et (OB) sont perpendiculaires"
+        },
+        {
+          "id": "b",
+          "text": "z_B/z_A = 1/(1 + √2) est un réel positif : O, A et B sont alignés, avec A et B du même côté de O"
+        },
+        {
+          "id": "c",
+          "text": "z_B/z_A = −1/(1 + √2) est un réel : O, A et B sont alignés, avec O entre A et B"
+        },
+        {
+          "id": "d",
+          "text": "|z_A| = |z_B| : le point O est le milieu du segment [AB]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "z_B/z_A = (−i/√(1 + √2))/(i√(1 + √2)) = −1/(1 + √2) = 1 − √2 (réel strictement négatif). Un quotient réel signifie que les vecteurs OB et OA sont colinéaires : O, A, B sont alignés ✓ ; étant négatif, il place O entre A et B. Piège classique : perdre le signe (−i/i = −1), confondre quotient réel (alignement) et imaginaire pur (orthogonalité), ou croire |z_A| = |z_B| (|z_A| = √(1 + √2) et |z_B| = 1/√(1 + √2)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit C le point d'affixe z_C = √(1 + √2) e^(iθ), A(z_A) avec z_A = i√(1 + √2) e^(iθ) et B(z_B) avec z_B = (1 − √2)z_A. Quelle est la valeur de (z_C − z_A)/(z_B − z_A), et que dit-elle du triangle ABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√2/2)(1 − i), de module 1 et d'argument −π/4 : ABC est isocèle en A et (AB, AC) ≡ −π/4 [2π]"
+        },
+        {
+          "id": "b",
+          "text": "1 + i, de module √2 : ABC n'est pas isocèle, mais AC = √2 AB"
+        },
+        {
+          "id": "c",
+          "text": "(√2/2)(1 + i), de module √2/2 : AC = (√2/2)AB et (AB, AC) ≡ π/4 [2π]"
+        },
+        {
+          "id": "d",
+          "text": "(√2/2)(1 + i), de module 1 et d'argument π/4 : ABC est isocèle en A et (AB, AC) ≡ π/4 [2π]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec s = √(1 + √2) : z_C − z_A = s e^(iθ)(1 − i) et z_B − z_A = (1 − √2 − 1) z_A = −√2 × i s e^(iθ). Le quotient vaut (1 − i)/(−i√2) = (1 − i) × i/√2 = (i + 1)/√2 = (√2/2)(1 + i) ✓. Son module est (√2/2) × √2 = 1 : AC = AB ; son argument est π/4 : (AB, AC) ≡ π/4. Piège classique : mal calculer 1/(−i) (c'est +i), oublier le facteur 1/√2, ou lire un module √2/2 alors que |1 + i| = √2 compense le facteur √2/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le triangle ABC est isocèle en A avec (AB, AC) ≡ π/4 [2π], les points O, A, B sont alignés avec O entre A et B, et C est déjà placé. Comment construit-on B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B est sur (OA), au-delà de O par rapport à A, avec AB = AC"
+        },
+        {
+          "id": "b",
+          "text": "B est le point de la droite (OA) tel que OB = OC, c'est-à-dire à la même distance de O que C"
+        },
+        {
+          "id": "c",
+          "text": "B est le symétrique de C par rapport à la droite (OA)"
+        },
+        {
+          "id": "d",
+          "text": "B est le milieu du segment [AC]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "B est sur la droite (OA) et vérifie AB = AC (isocèle en A) : il est donc à l'intersection de (OA) et du cercle de centre A passant par C. Parmi les deux points obtenus, on garde celui situé du côté de O, au-delà de O, ce qui correspond à l'angle π/4 entre (AB) et (AC) ✓. Piège classique : imposer OB = OC (les modules sont |z_B| = s(√2 − 1) et |z_C| = s), prendre le symétrique de C par rapport à (OA), qui est le point d'affixe −z_C et non z_B, ou le milieu de [AC].",
+      "difficulty": 3
+    }
+  ]
+}

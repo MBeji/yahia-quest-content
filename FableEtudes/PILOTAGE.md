@@ -29,7 +29,7 @@ Drive, **validée par Mohamed le 2026-11-03**) et état mesuré par `programme:e
 | Sciences techniques | technologie (génie électrique) | `228461` P01-P03 | ❌ aucune | — | A1 |
 | Sciences techniques | mathématiques | `222451` | ✅ validée R-7 (2026-11-04) | 16/16 chapitres — matière complète (2026-11-05) | — (missions d'examen du Bac à ajouter : sujets au Drive depuis le 2026-11-20 (`examens-nationaux/bac/`, `campagne` étape 3)) |
 | Sciences techniques | physique | `223451` | ❌ aucune | — | A1 |
-| Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 | — (gisement possible) |
+| Mathématiques | mathématiques | `222445` + `222446` | ✅ validée R-7 | 19/19 + 77 missions d'examen du Bac (sessions 2015-2024, 2026-11-21 ; registre `web-bac-math-mathematiques`) | sessions 2009-2014 si besoin ; corrigés officiels quand bacweb répondra |
 | Mathématiques | physique | `223432` | ✅ validée R-7 (2026-11-08) | 11/11 chapitres — matière complète (2026-11-08) | fiche différentielle + adaptation de `physique-bac-sciences-exp` (même collection CNP) ; choix de Mohamed du 2026-11-06 |
 | Mathématiques | chimie | `224432` | ❌ aucune | — | A1 |
 | Sciences expérimentales | SVT | `225432` | 🔄 en cours (`claude/sciences-bac-sciences-exp`, 2026-11-05) — PDF de 13 Mo à récupérer | 0 chapitre | choix de Mohamed du 2026-11-05 (physique + chimie + SVT) |

@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 3 ⭐⭐⭐ : équation du second degré à coefficients complexes, milieu et angles orientés, cercle circonscrit",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Soit dans ℂ l'équation (E) :\nz² − (3/2 + i√3/2) z + 1 = 0\nQuelle est la valeur de son discriminant Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δ = −1"
+        },
+        {
+          "id": "b",
+          "text": "Δ = −5/2 + i·3√3/2"
+        },
+        {
+          "id": "c",
+          "text": "Δ = −5/2"
+        },
+        {
+          "id": "d",
+          "text": "Δ = 11/2 + i·3√3/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Δ = b² − 4ac = (3/2 + i√3/2)² − 4. On développe : (3/2)² + 2 × (3/2)(i√3/2) + (i√3/2)² = 9/4 + i·3√3/2 − 3/4 = 3/2 + i·3√3/2. Donc Δ = 3/2 − 4 + i·3√3/2 = −5/2 + i·3√3/2 ✓. Ce nombre n'est pas nul : (E) a deux solutions distinctes. Piège classique : additionner les carrés de la partie réelle et de la partie imaginaire (on trouve 9/4 + 3/4 − 4 = −1), oublier le double produit, qui est imaginaire pur (on trouve −5/2), ou ajouter 4 à b² au lieu de le retrancher (on trouve 11/2 + i·3√3/2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les solutions z₁ et z₂ de l'équation z² − (3/2 + i√3/2) z + 1 = 0 sont-elles conjuguées ? Quelle justification donne-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non : leur produit vaut 1, réel, alors que le produit de deux conjugués est imaginaire pur"
+        },
+        {
+          "id": "b",
+          "text": "Non : le discriminant Δ n'est pas un réel négatif, donc il n'y a pas de solutions conjuguées"
+        },
+        {
+          "id": "c",
+          "text": "Non : leur somme 3/2 + i√3/2 n'est pas réelle, alors que la somme de deux conjugués est réelle"
+        },
+        {
+          "id": "d",
+          "text": "Non : la somme z₁ + z₂ a une partie réelle non nulle, alors que celle de deux conjugués est nulle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme des solutions est z₁ + z₂ = −b/a = 3/2 + i√3/2. Si z₂ = z̄₁, la somme z₁ + z̄₁ = 2Re(z₁) serait réelle. Or elle a pour partie imaginaire √3/2 ≠ 0 : les solutions ne sont pas conjuguées ✓. Piège classique : croire que le produit de deux conjugués est imaginaire pur (z z̄ = |z|² est réel positif, donc un produit réel ne dit rien), appliquer à des coefficients complexes un critère valable seulement pour des coefficients réels, ou exiger une somme nulle (la somme de deux conjugués est 2Re(z), pas 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit A et B les points d'affixes les solutions z₁ et z₂ de z² − (3/2 + i√3/2) z + 1 = 0, et C le milieu du segment [AB]. Quelle est l'écriture exponentielle de z_C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_C = √3 e^(iπ/6)"
+        },
+        {
+          "id": "b",
+          "text": "z_C = (√3/2) e^(iπ/3)"
+        },
+        {
+          "id": "c",
+          "text": "z_C = (3/4) e^(iπ/6)"
+        },
+        {
+          "id": "d",
+          "text": "z_C = (√3/2) e^(iπ/6)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "z_C = (z₁ + z₂)/2 = (3/2 + i√3/2)/2 = 3/4 + i√3/4. Son module est √(9/16 + 3/16) = √(12/16) = √3/2 ; en factorisant, z_C = (√3/2)(√3/2 + i/2) = (√3/2)(cos π/6 + i sin π/6) = (√3/2) e^(iπ/6) ✓. Piège classique : oublier de diviser par 2 (module √3), confondre l'argument π/6 (tan = 1/√3) avec π/3, ou prendre pour module la partie réelle 3/4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit z₁ et z₂ les solutions de z² − (3/2 + i√3/2) z + 1 = 0, z_C = (z₁ + z₂)/2. En utilisant (z₂ − z₁)² = (z₂ + z₁)² − 4z₁z₂, quelle expression de (z₂ − z₁)² obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4(z_C² − 1)"
+        },
+        {
+          "id": "b",
+          "text": "2z_C² − 4"
+        },
+        {
+          "id": "c",
+          "text": "z_C² − 4"
+        },
+        {
+          "id": "d",
+          "text": "4(z_C² + 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La somme z₁ + z₂ = 2z_C et le produit z₁z₂ = 1 (terme constant). Donc (z₂ − z₁)² = (2z_C)² − 4 × 1 = 4z_C² − 4 = 4(z_C² − 1) ✓. Piège classique : oublier le carré du 2 dans (2z_C)², oublier le facteur 4 du produit, ou se tromper de signe en retranchant 4z₁z₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "I, J et C ont pour affixes 1, −1 et z_C, A et B ont pour affixes z₁ et z₂, avec (z₂ − z₁)² = 4(z_C² − 1). Comment montre-t-on que (AB⃗, CI⃗) + (AB⃗, CJ⃗) ≡ 0 [2π], c'est-à-dire que (AB) porte une bissectrice de l'angle ICJ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le produit des quotients vaut −1/4, réel strictement négatif : la somme des arguments vaut π modulo 2π"
+        },
+        {
+          "id": "b",
+          "text": "Le produit des quotients vaut (z_C² − 1)/(4(z_C² − 1)) = 1/4 > 0 : somme des arguments nulle modulo 2π"
+        },
+        {
+          "id": "c",
+          "text": "La somme des deux quotients (1 − z_C)/(z₂ − z₁) et (−1 − z_C)/(z₂ − z₁) vaut 0 : la somme des arguments est nulle"
+        },
+        {
+          "id": "d",
+          "text": "Le quotient (1 − z_C)/(−1 − z_C) est réel : les points C, I et J sont alignés"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La somme des angles orientés se lit comme l'argument du produit des quotients : (1 − z_C)(−1 − z_C)/(z₂ − z₁)². Le numérateur vaut −(1 − z_C)(1 + z_C) = −(1 − z_C²) = z_C² − 1, et le dénominateur est 4(z_C² − 1), donc le produit vaut 1/4 > 0 : son argument est 0 et (AB, CI) + (AB, CJ) ≡ 0 [2π] ✓. Les angles (AB, CI) et (AB, CJ) sont opposés : (AB) est bissectrice de l'angle ICJ. Piège classique : se tromper de signe dans le numérateur ((1 − z_C)(−1 − z_C) = z_C² − 1 et non 1 − z_C²), additionner les quotients au lieu de les multiplier (les arguments s'additionnent par produit), ou confondre somme d'angles nulle et alignement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le cercle (C) est circonscrit au triangle IAJ, avec I(1) et J(−1). Pourquoi son centre K est-il sur l'axe (O, v) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "K est équidistant de A et de B, donc il est sur la médiatrice de [AB], qui est l'axe (O, v)"
+        },
+        {
+          "id": "b",
+          "text": "I et J sont sur l'axe réel, donc K est lui aussi sur l'axe (O, u)"
+        },
+        {
+          "id": "c",
+          "text": "K est équidistant de I et de J, donc il est sur la médiatrice de [IJ], qui est l'axe (O, v)"
+        },
+        {
+          "id": "d",
+          "text": "K est le milieu de [IJ], donc K est le point O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "I et J sont sur le cercle de centre K : KI = KJ. K est donc sur la médiatrice de [IJ]. Comme I(1) et J(−1) sont symétriques par rapport à O sur l'axe réel, leur médiatrice est la perpendiculaire à (Ou) en O, c'est-à-dire l'axe (O, v) ✓. On peut donc écrire z_K = iy avec y réel non nul. Piège classique : confondre l'axe qui porte I et J avec leur médiatrice, utiliser A et B alors que la médiatrice de [AB] n'est pas l'axe (O, v), ou prendre K au milieu de [IJ] (K = O n'est pas équidistant de A).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit K le point d'affixe iy (y réel non nul) et (C) le cercle de centre K passant par I(1). Comment établit-on que M(z) ∈ (C) équivaut à z z̄ + iy(z − z̄) = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|z − iy|² = |1 − iy|² s'écrit (z − iy)(z̄ − iy) = 1 + y², soit z z̄ − iy(z + z̄) − y² = 1 + y²"
+        },
+        {
+          "id": "b",
+          "text": "|z − iy|² = |1 − iy|² s'écrit z z̄ + y² = 1 + y², donc z z̄ = 1"
+        },
+        {
+          "id": "c",
+          "text": "|z − iy|² = |1 − iy|² s'écrit (z − iy)(z̄ + iy) = 1 + y², soit z z̄ + iy(z − z̄) = 1 + y²"
+        },
+        {
+          "id": "d",
+          "text": "(z − iy)(z̄ + iy) = 1 + y², soit z z̄ + iy z − iy z̄ + y² = 1 + y², donc z z̄ + iy(z − z̄) = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "M est sur le cercle si et seulement si KM = KI, soit |z − iy|² = |1 − iy|² = 1 + y². Comme |w|² = w w̄ et que le conjugué de z − iy est z̄ + iy : (z − iy)(z̄ + iy) = z z̄ + iy z − iy z̄ + y² = z z̄ + iy(z − z̄) + y². En égalant à 1 + y² on obtient z z̄ + iy(z − z̄) = 1 ✓. Piège classique : conjuguer iy en −iy lors du produit (le conjugué de −iy est +iy), oublier le terme croisé, ou ne pas simplifier y² des deux côtés.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A(z₁) est sur le cercle (C) : z₁z̄₁ + iy(z₁ − z̄₁) = 1, avec z₂ = 1/z₁. Comment montre-t-on que B(z₂) appartient aussi à (C) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z₂z̄₂ + iy(z₂ − z̄₂) = [1 + iy(z̄₁ − z₁)]/(z₁z̄₁) = z₁z̄₁/(z₁z̄₁) = 1, d'après la relation de A"
+        },
+        {
+          "id": "b",
+          "text": "B est le symétrique de A par rapport à O, donc il est sur le cercle"
+        },
+        {
+          "id": "c",
+          "text": "z₂ est le conjugué de z₁, donc B est le symétrique de A par rapport à l'axe (O, u) et il est sur (C)"
+        },
+        {
+          "id": "d",
+          "text": "|z₂| = 1/|z₁|, donc B est à la même distance de K que A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec z₂ = 1/z₁ : z₂z̄₂ = 1/(z₁z̄₁) et z₂ − z̄₂ = 1/z₁ − 1/z̄₁ = (z̄₁ − z₁)/(z₁z̄₁). Donc z₂z̄₂ + iy(z₂ − z̄₂) = [1 + iy(z̄₁ − z₁)]/(z₁z̄₁). La relation de A donne 1 − iy(z₁ − z̄₁) = z₁z̄₁, donc le numérateur vaut z₁z̄₁ et l'expression vaut 1 : B vérifie l'équation de (C) ✓. Piège classique : supposer B symétrique de A par rapport à O ou par rapport à l'axe réel (z₁ + z₂ n'est pas nul, z₂ n'est pas z̄₁), ou comparer les modules à O alors que le centre est K.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le cercle (C) passe par I(1), J(−1), A et B ; C est le milieu de [AB], et (AB) est la bissectrice de l'angle ICJ passant par C. Comment construit-on A et B à partir de C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A et B sont les points d'intersection de (AB) avec le cercle de centre O passant par I et J, c'est-à-dire le cercle unité de rayon 1 centré à l'origine"
+        },
+        {
+          "id": "b",
+          "text": "A et B sont les intersections de (AB) avec le cercle de centre K passant par I et J, où K ∈ (O, v) est sur la perpendiculaire à (AB) en C"
+        },
+        {
+          "id": "c",
+          "text": "A et B sont les points d'intersection de (AB) avec le cercle de centre C passant par I, de rayon CI, puis symétrisé par rapport à O"
+        },
+        {
+          "id": "d",
+          "text": "A et B sont les points d'intersection de (AB) avec la médiatrice de [IJ], c'est-à-dire avec l'axe (O, v) lui-même, qui porte A et B"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On trace C (module √3/2, argument π/6), puis la bissectrice (AB) de l'angle ICJ passant par C, puis la médiatrice de [AB], perpendiculaire à (AB) en C. Elle coupe l'axe (O, v) en K, centre de (C) (K est sur (O, v) et sur la médiatrice de [AB] puisque KA = KB). Le cercle de centre K passant par I et J coupe (AB) en A et B ✓. Piège classique : tracer le cercle de centre O (le cercle unité passe par I et J mais |z₁| > 1 : A n'y est pas), centrer sur C, ou croire que la médiatrice de [IJ] porte A et B.",
+      "difficulty": 3
+    }
+  ]
+}

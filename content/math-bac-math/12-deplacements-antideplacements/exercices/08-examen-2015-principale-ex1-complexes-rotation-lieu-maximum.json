@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2015 · session principale · Exercice 1 ⭐⭐⭐ : équation complexe, rotation et milieux, nature d'un triangle, distance maximale",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "On note B et C les points d'affixes 1 + i√3 et 1 − i√3 (les solutions de z² − 2z + 4 = 0) dans le repère orthonormé direct (O, u, v). Quelles sont la distance OB et une mesure de l'angle (OB⃗, OC⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OB = 2 et (OB⃗, OC⃗) ≡ −2π/3 [2π]"
+        },
+        {
+          "id": "b",
+          "text": "OB = 2 et (OB⃗, OC⃗) ≡ −π/3 [2π]"
+        },
+        {
+          "id": "c",
+          "text": "OB = 4 et (OB⃗, OC⃗) ≡ −2π/3 [2π]"
+        },
+        {
+          "id": "d",
+          "text": "OB = 4 et (OB⃗, OC⃗) ≡ −π/3 [2π]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "OB = |1 + i√3| = √(1 + 3) = 2, et cos θ = 1/2, sin θ = √3/2 donnent arg(z_B) = π/3 ; C est le symétrique de B par rapport à (O, u), donc arg(z_C) = −π/3 et OC = 2. Alors (OB⃗, OC⃗) ≡ arg(z_C) − arg(z_B) = −π/3 − π/3 = −2π/3 [2π] ✓ (B et C sont sur le cercle de centre O et de rayon 2). Piège classique : oublier la racine du module (√4 = 2, pas 4), ne retenir que l'argument de C (−π/3) au lieu de la différence des arguments, ou confondre les deux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit θ ∈ ]−π ; π], M le point du cercle (Γ) de centre O et de rayon 2 d'affixe 2e^(iθ), et N le point de (Γ) tel que (OM, ON) ≡ π/3 [2π]. Quelle est l'affixe de N, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_N = e^(iπ/3) + 2e^(iθ) : on ajoute l'affixe d'un vecteur de direction π/3 à celle de M"
+        },
+        {
+          "id": "b",
+          "text": "z_N = 2e^(i(θ + π/3)) : N est l'image de M par la rotation de centre O et d'angle π/3"
+        },
+        {
+          "id": "c",
+          "text": "z_N = e^(i(θ + π/3)) : N est sur le cercle unité"
+        },
+        {
+          "id": "d",
+          "text": "z_N = 2e^(i(θ − π/3)) : l'angle (OM, ON) se retranche à θ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "N est sur (Γ), donc ON = 2 = OM, et l'angle orienté (OM, ON) vaut π/3 : arg(z_N) ≡ arg(z_M) + π/3 = θ + π/3. Donc z_N = 2e^(i(θ + π/3)) = e^(iπ/3) z_M ✓. Piège classique : additionner des affixes au lieu de composer des arguments, oublier le module 2, ou retrancher l'angle au lieu de l'ajouter.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit r la rotation de centre A d'affixe 2 et d'angle π/3. Quelle est son expression complexe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z′ = e^(iπ/3) z + 2e^(iπ/3) − 2"
+        },
+        {
+          "id": "b",
+          "text": "z′ = e^(iπ/3) z + 2 + 2e^(iπ/3)"
+        },
+        {
+          "id": "c",
+          "text": "z′ = e^(iπ/3) z + 2 − 2e^(iπ/3)"
+        },
+        {
+          "id": "d",
+          "text": "z′ = e^(iπ/3) z + 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une rotation de centre Ω d'affixe ω et d'angle α s'écrit z′ − ω = e^(iα)(z − ω). Avec ω = 2 et α = π/3 : z′ − 2 = e^(iπ/3)(z − 2), soit z′ = e^(iπ/3) z + 2 − 2e^(iπ/3) ✓. Contrôle : z = 2 donne z′ = 2e^(iπ/3) + 2 − 2e^(iπ/3) = 2 (le centre est fixe). Piège classique : se tromper de signe sur la constante (le centre doit rester fixe), ou oublier le terme 2 − 2e^(iπ/3) et obtenir une rotation de centre O.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit B(2e^(iπ/3)), C(2e^(−iπ/3)), M(2e^(iθ)), N(2e^(i(θ + π/3))) et r la rotation de centre A(2) et d'angle π/3, d'expression z′ = e^(iπ/3) z + 2 − 2e^(iπ/3). Que valent r(B) et r(M) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r(B) = A, centre de la rotation, et r(M) = N"
+        },
+        {
+          "id": "b",
+          "text": "r(B) = C, et r(M) = N, car r conserve le cercle"
+        },
+        {
+          "id": "c",
+          "text": "r(B) = O, et r(M) = N (comme pour la rotation de centre O)"
+        },
+        {
+          "id": "d",
+          "text": "r(B) = O et r(M) d'affixe z_N + z_C"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "r(B) a pour affixe e^(iπ/3) × 2e^(iπ/3) + 2 − 2e^(iπ/3) = 2(e^(i2π/3) − e^(iπ/3)) + 2 = 2 × (−1) + 2 = 0 : r(B) = O. Ensuite r(M) a pour affixe e^(iπ/3) × 2e^(iθ) + 2 − 2e^(iπ/3) = z_N + (2 − 2e^(iπ/3)) = z_N + (1 − i√3) = z_N + z_C ✓. Piège classique : prendre r(M) = N (c'est la rotation de centre O, pas de centre A), ou croire que le centre A est l'image de B.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "F est le milieu de [BM], K le milieu de [CN], et r est la rotation de centre A et d'angle π/3, avec r(B) = O et r(M) d'affixe z_N + z_C. Comment montre-t-on que r(F) = K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r conserve les milieux : r(F) est le milieu de [r(B)r(M)], soit (0 + z_N + z_C)/2 = z_K"
+        },
+        {
+          "id": "b",
+          "text": "r conserve les milieux : r(F) = F, puisque F est le milieu de [BM]"
+        },
+        {
+          "id": "c",
+          "text": "r(F) a pour affixe (r(B) − r(M))/2 = −(z_N + z_C)/2, qui est l'affixe de K (milieu par différence)"
+        },
+        {
+          "id": "d",
+          "text": "r(F) a pour affixe r(B) + r(M) = z_N + z_C, qui est l'affixe de K"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une rotation est une isométrie, donc elle conserve les milieux : r(F) est le milieu de [r(B)r(M)]. L'affixe de ce milieu est (z_{r(B)} + z_{r(M)})/2 = (0 + z_N + z_C)/2 = (z_C + z_N)/2, qui est celle du milieu K de [CN] ✓. Piège classique : croire que F reste fixe (seul le centre A est fixe), retrancher au lieu d'additionner pour un milieu, ou oublier de diviser par 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La rotation r de centre A et d'angle π/3 vérifie r(F) = K et r(A) = A. Quelle est la nature du triangle AFK ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AFK est isocèle et rectangle en A : AF = AK et (AF, AK) ≡ π/2"
+        },
+        {
+          "id": "b",
+          "text": "AFK est équilatéral : AF = AK et (AF, AK) ≡ π/3"
+        },
+        {
+          "id": "c",
+          "text": "AFK est isocèle en A mais non équilatéral : seule la distance AF = AK est conservée"
+        },
+        {
+          "id": "d",
+          "text": "AFK est rectangle en K : AF = AK et (KA, KF) ≡ π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "r(A) = A et r(F) = K : une rotation conserve les distances, donc AK = AF, et son angle π/3 est celui de (AF, AK). Un triangle isocèle en A dont l'angle au sommet vaut π/3 est équilatéral ✓. Piège classique : confondre l'angle π/3 avec l'angle droit, oublier que l'angle de la rotation donne l'angle au sommet, ou ne retenir que l'égalité des longueurs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "B(2e^(iπ/3)) et M(2e^(iθ)) ont pour milieu F, d'affixe e^(iπ/3) + e^(iθ). Quelle est l'expression de AF², avec A(2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AF² = 4 + 2√3 cos(θ + π/6)"
+        },
+        {
+          "id": "b",
+          "text": "AF² = 4 − 2√3 cos(θ − π/6)"
+        },
+        {
+          "id": "c",
+          "text": "AF² = 4 − 2√3 cos(θ + π/6)"
+        },
+        {
+          "id": "d",
+          "text": "AF² = 4 − 2√3 sin(θ + π/6)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "z_F − 2 = (cos θ − 3/2) + i(sin θ + √3/2), car cos(π/3) = 1/2 et sin(π/3) = √3/2. Son carré du module vaut (cos θ − 3/2)² + (sin θ + √3/2)² = cos²θ + sin²θ − 3 cos θ + √3 sin θ + 9/4 + 3/4 = 4 − 3 cos θ + √3 sin θ. Or −3 cos θ + √3 sin θ = −2√3(cos θ cos(π/6) − sin θ sin(π/6)) = −2√3 cos(θ + π/6). Donc AF² = 4 − 2√3 cos(θ + π/6) ✓. Piège classique : se tromper de signe devant le cosinus ou de signe dans l'angle (θ − π/6), ou confondre cos(θ + π/6) et sin(θ + π/6).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que AF² = 4 − 2√3 cos(θ + π/6), avec θ ∈ ]−π ; π]. Pour quelle valeur de θ la distance AF est-elle maximale, et quelle est alors sa valeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ = −π/6 : cos(θ + π/6) = 1 et AF = √3 − 1"
+        },
+        {
+          "id": "b",
+          "text": "θ = π/3 : AF = 2, car AFK est équilatéral de côté 2"
+        },
+        {
+          "id": "c",
+          "text": "θ = 5π/6 : AF = 4 + 2√3"
+        },
+        {
+          "id": "d",
+          "text": "θ = 5π/6 : cos(θ + π/6) = −1 et AF = √(4 + 2√3) = 1 + √3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "AF² est maximal lorsque cos(θ + π/6) = −1, soit θ + π/6 ≡ π [2π], donc θ = 5π/6 ∈ ]−π ; π]. Alors AF² = 4 + 2√3 = (1 + √3)² et AF = 1 + √3 ✓ ; M a pour affixe 2e^(i5π/6). Piège classique : confondre maximum et minimum (cos = 1 donne le minimum AF = √3 − 1), prendre un angle sans rapport avec l'équation, ou donner AF² au lieu de AF.",
+      "difficulty": 3
+    }
+  ]
+}

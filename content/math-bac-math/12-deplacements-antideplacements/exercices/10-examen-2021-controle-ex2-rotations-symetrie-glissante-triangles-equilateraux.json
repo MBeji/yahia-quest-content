@@ -1,0 +1,274 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 2 ⭐⭐⭐⭐ : triangles équilatéraux, rotations et symétrie orthogonale, déplacements et antidéplacements envoyant un segment sur un autre",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Soit r₁ la rotation de centre A et d'angle 5π/6. Quelle justification établit que r₁(B) = F et r₁(E) = C ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"150\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB = AC = AF = AE, (AB, AF) ≡ π/2 − π/3 = π/6 et (AE, AC) ≡ π/3 − π/2 = −π/6"
+        },
+        {
+          "id": "b",
+          "text": "AB = AC = AF = AE, (AB, AF) ≡ π/2 + 2π/3 = 7π/6 et (AE, AC) ≡ π/3 + π/2 = 5π/6"
+        },
+        {
+          "id": "c",
+          "text": "AB = AC = AF = AE, (AB, AF) ≡ π/2 + π/3 = 5π/6 et (AE, AC) ≡ π/3 + π/2 = 5π/6"
+        },
+        {
+          "id": "d",
+          "text": "AB = AC = AF = AE, (AB, AF) ≡ π/3 + π/3 = 2π/3 et (AE, AC) ≡ π/3 + π/3 = 2π/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ABC est isocèle en A : AB = AC ; ACF est équilatéral : AC = AF ; AEB est équilatéral : AE = AB. Donc AB = AC = AF = AE. Par la relation de Chasles, (AB, AF) ≡ (AB, AC) + (AC, AF) : le triangle ABC est direct rectangle en A, donc (AB, AC) ≡ π/2, et ACF est équilatéral direct, donc (AC, AF) ≡ π/3 ; la somme vaut 5π/6. De même (AE, AC) ≡ (AE, AB) + (AB, AC) ≡ π/3 + π/2 = 5π/6. La rotation de centre A et d'angle 5π/6 envoie donc B sur F et E sur C ✓. Piège classique : soustraire au lieu d'additionner (on trouve ±π/6), compter 2π/3 au lieu de π/3 pour un triangle équilatéral (7π/6), ou additionner deux fois π/3 alors que ABC est rectangle (2π/3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Soit S la symétrie orthogonale d'axe (OA). Quelle justification établit que S([BE]) = [CF] ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"150\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "S(B) = C car (OA) est médiatrice de [BC] ; S renverse l'orientation donc (A, S(E), C) est indirect, or ACF direct : S(E) = F"
+        },
+        {
+          "id": "b",
+          "text": "S(B) = C, car (OA) est la médiatrice de [BC] ; S conserve l'orientation, donc (A, S(E), C) est direct, comme ACF : alors S(E) = F"
+        },
+        {
+          "id": "c",
+          "text": "S(B) = C ; AE = AF suffit pour affirmer que S(E) = F"
+        },
+        {
+          "id": "d",
+          "text": "S(B) = B et S(E) = E, car B et E sont sur l'axe de la symétrie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ABC est isocèle en A et O est le milieu de [BC] : (AO) est la médiatrice de [BC], donc S(B) = C (et S(A) = A). L'image du triangle équilatéral direct AEB est un triangle équilatéral indirect A S(E) C, c'est-à-dire (A, C, S(E)) direct : or ACF est direct équilatéral de même base [AC], donc S(E) = F ✓. Ainsi S([BE]) = [CF]. Piège classique : oublier qu'une symétrie renverse l'orientation, croire qu'une égalité de distances à A suffit (il y a deux points possibles), ou supposer B et E sur l'axe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Les droites (BE) et (CF) se coupent en un point Ω, et S([BE]) = [CF] où S est la symétrie orthogonale d'axe (OA). Pourquoi A, O et Ω sont-ils alignés ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(BE) et (CF) sont perpendiculaires, donc leur point d'intersection est forcément sur (OA)"
+        },
+        {
+          "id": "b",
+          "text": "(BE) et (CF) sont symétriques par rapport à (OA) : leur point commun est sur l'axe"
+        },
+        {
+          "id": "c",
+          "text": "Ω est le milieu de [EF], donc il est sur (OA)"
+        },
+        {
+          "id": "d",
+          "text": "(BE) coupe (BC) en B, donc Ω est sur (BC) et A, O, Ω sont alignés"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un point commun à une droite et à sa symétrique par rapport à (OA) est invariant par S (il est sur son image) : il est donc sur l'axe (OA). Ici Ω appartient à (BE) et à (CF) = S((BE)) : il est sur (OA) ✓. Donc A, O et Ω sont alignés. Piège classique : invoquer une perpendicularité sans fondement, identifier Ω au milieu de [EF] (qui est aussi sur l'axe mais n'est pas le point d'intersection), ou confondre (OA) avec (BC).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Soit f un déplacement qui envoie le segment [BE] sur le segment [CF]. Que peut-on affirmer sur f ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f = r₁ dans tous les cas : un déplacement est unique"
+        },
+        {
+          "id": "b",
+          "text": "f est la translation de vecteur BC"
+        },
+        {
+          "id": "c",
+          "text": "Si f(B) = F et f(E) = C, alors f = r₁ ; si f(B) = C et f(E) = F, f est une rotation de centre Ω"
+        },
+        {
+          "id": "d",
+          "text": "Si f(B) = C et f(E) = F, alors f est la rotation de centre O qui envoie B sur C, puisque O est le milieu de [BC]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un déplacement envoyant [BE] sur [CF] peut associer B à F et E à C (alors f = r₁ par unicité du déplacement qui envoie deux points sur deux points) ou B à C et E à F. Dans ce second cas, c'est un déplacement non translation (BE et CF ne sont pas parallèles) : c'est une rotation, dont le centre est équidistant de B et C et de E et F, soit Ω, intersection de (BE) et (CF) alignée avec A et O ✓. Piège classique : oublier l'une des deux associations, croire à une translation, ou placer le centre en O.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Soit r₂ le déplacement qui envoie B sur C et E sur F, de centre Ω. On sait que r₂ = S_(OA)∘S_(BE) et que l'angle orienté ((BE), (OA)) vaut −π/12 modulo π. Quel est l'angle de r₂ ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/6, car l'angle de la composée est le double de l'angle orienté ((OA), (BE)) = π/12"
+        },
+        {
+          "id": "b",
+          "text": "−π/12, car l'angle de la composée est égal à l'angle ((BE), (OA))"
+        },
+        {
+          "id": "c",
+          "text": "5π/6, car r₂ = r₁"
+        },
+        {
+          "id": "d",
+          "text": "−π/6, car l'angle de S_(OA)∘S_(BE) est le double de l'angle ((BE), (OA)) = −π/12"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La composée de deux symétries orthogonales d'axes sécants est une rotation dont le centre est leur point d'intersection (Ω) et dont l'angle est le double de l'angle orienté (axe₁, axe₂). Ici la composée S_(OA)∘S_(BE) applique d'abord S_(BE) : l'angle est 2 × ((BE), (OA)) = 2 × (−π/12) = −π/6 ✓ (la droite (BE) monte de 15° vers la droite, donc on tourne dans le sens indirect pour la ramener sur (OA)). Piège classique : oublier le doublement de l'angle (−π/12), échanger l'ordre des axes (on trouve π/6), ou croire que r₂ = r₁ (ces deux rotations ont des centres et des angles différents).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Soit r₂ la rotation d'angle −π/6 de centre Ω qui envoie B sur C et E sur F, et A′ = r₂(A). Pourquoi ACA′F est-il un losange ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A′FC est équilatéral direct comme ACF : A′ est le symétrique de A par rapport à (CF) et ACA′F a quatre côtés égaux à CF"
+        },
+        {
+          "id": "b",
+          "text": "r₂(A) est le symétrique de A par rapport à Ω, donc ACA′F est un parallélogramme dont les diagonales se coupent en Ω (centre de r₂)"
+        },
+        {
+          "id": "c",
+          "text": "A′ = A, car A est sur la droite (OΩ)"
+        },
+        {
+          "id": "d",
+          "text": "A′ est le milieu de [AΩ], donc ACA′F est un trapèze"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le triangle AEB est équilatéral direct : son image par la rotation r₂ est le triangle équilatéral direct A′FC, de côté FC. Mais ACF est un triangle équilatéral direct de côté AC = CF aussi ; les deux triangles équilatéraux de base [CF] sont de part et d'autre de (CF), donc A et A′ sont symétriques par rapport à (CF). Les quatre segments AC, CA′, A′F, FA ont la même longueur CF : ACA′F est un losange ✓. Piège classique : confondre r₂ avec la symétrie centrale de centre Ω, croire A fixe, ou confondre le symétrique par rapport à (CF) avec une image du type milieu.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Soit g l'antidéplacement qui envoie B sur F et E sur C. Pourquoi g est-il une symétrie glissante et non une symétrie orthogonale ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est une symétrie orthogonale d'axe (OA), car il échange B et C, comme la symétrie S d'axe (OA) étudiée plus haut"
+        },
+        {
+          "id": "b",
+          "text": "Une symétrie orthogonale aurait pour axe les médiatrices de [BF] et de [EC] ; elles ne sont pas confondues : g est glissante"
+        },
+        {
+          "id": "c",
+          "text": "g est un déplacement, puisqu'il envoie un segment sur un segment de même longueur : toute isométrie est un déplacement, quelle que soit l'orientation"
+        },
+        {
+          "id": "d",
+          "text": "g est une symétrie glissante, car g = r₁∘r₂"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un antidéplacement est soit une symétrie orthogonale, soit une symétrie glissante de vecteur non nul. Si g était la symétrie d'axe Δ, Δ serait à la fois la médiatrice de [BF] (g(B) = F) et celle de [EC] (g(E) = C). Or ces médiatrices ne sont pas parallèles : elles sont distinctes, donc g n'est pas une symétrie orthogonale. C'est une symétrie glissante ✓. Piège classique : confondre antidéplacement et déplacement (la conservation des longueurs ne décide pas du sens), prendre (OA) comme axe (g(B) = F, pas C), ou invoquer une composée de deux rotations (un déplacement).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. Soit g l'antidéplacement qui envoie B sur F et E sur C, et A′ le point tel que A′FC est équilatéral direct. Pourquoi g(A) = A′ ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g renverse l'orientation : (g(A), C, F) est indirect, donc g(A) = F"
+        },
+        {
+          "id": "b",
+          "text": "g(A) = A, car A est équidistant de B et de E"
+        },
+        {
+          "id": "c",
+          "text": "g renverse l'orientation : (A, E, B) équilatéral direct a pour image (g(A), C, F) indirect, donc (g(A), F, C) est direct : g(A) = A′"
+        },
+        {
+          "id": "d",
+          "text": "g(A) = F, car g envoie B sur F"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un antidéplacement transforme un triangle équilatéral direct en triangle équilatéral indirect. L'image de (A, E, B) est (g(A), C, F), indirect équilatéral, c'est-à-dire (g(A), F, C) direct : c'est la définition de A′ (A′FC direct) ✓. Piège classique : conclure g(A) = F en lisant « (g(A), C, F) indirect » sans le renverser en « (g(A), F, C) direct » (g(A) ne peut pas être F, car F est image de B), supposer A fixe parce qu'il est équidistant de B et E, ou confondre l'image de A avec celle de B.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. I est le milieu de [BE], et J = g(I), où g est l'antidéplacement qui envoie B sur F et E sur C. Que représente le point J ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/><circle cx=\"55.8\" cy=\"189.2\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text><text x=\"52.0\" y=\"207.0\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le milieu de [BC], car g conserve les milieux"
+        },
+        {
+          "id": "b",
+          "text": "Le symétrique de I par rapport à O"
+        },
+        {
+          "id": "c",
+          "text": "Le milieu de [BF], car J = g(I)"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu de [FC], car g conserve les milieux"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une isométrie conserve les milieux : l'image du milieu I de [BE] est le milieu de [g(B)g(E)] = [FC]. Donc J est le milieu de [FC] ✓. Piège classique : prendre le milieu de [BC] (B et C ne sont pas les images de B et E), le symétrique de I par rapport à O sans justification, ou le milieu de [BF] (un segment « de départ »).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. g est l'antidéplacement qui envoie B sur F et E sur C, c'est une symétrie glissante ; I est le milieu de [BE] et J celui de [FC]. Où se trouve son axe ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/><circle cx=\"55.8\" cy=\"189.2\" r=\"3\"/><circle cx=\"55.8\" cy=\"70.8\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text><text x=\"52.0\" y=\"207.0\">I</text><text x=\"52.0\" y=\"63.0\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'axe passe par les milieux de [BF] et de [EC] ; c'est la droite (IJ), perpendiculaire à (OA)"
+        },
+        {
+          "id": "b",
+          "text": "L'axe est (OA), car g est lié à la symétrie d'axe (OA) qui échange B et C, et (OA) est l'axe de symétrie de la figure"
+        },
+        {
+          "id": "c",
+          "text": "L'axe est la médiatrice de [BF]"
+        },
+        {
+          "id": "d",
+          "text": "L'axe est la droite (BC)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour une symétrie glissante, le milieu de [M g(M)] appartient à l'axe quel que soit M. Avec M = B et M = E, les milieux de [BF] et de [EC] sont sur l'axe. Les milieux de [BF] et de [EC] ont la même projection sur (OA), et I, J aussi (x_I = x_J par la symétrie S) : les quatre points sont sur une même perpendiculaire à (OA), qui est donc (IJ) ✓. Piège classique : confondre l'axe de g avec l'axe de la symétrie S, avec la médiatrice d'un seul segment ou avec (BC).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. g est la symétrie glissante d'axe (IJ) qui envoie B sur F et E sur C, avec I milieu de [BE] et J = g(I) milieu de [FC]. Quelle est son écriture comme composée ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/><circle cx=\"55.8\" cy=\"189.2\" r=\"3\"/><circle cx=\"55.8\" cy=\"70.8\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text><text x=\"52.0\" y=\"207.0\">I</text><text x=\"52.0\" y=\"63.0\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g = S_(IJ)∘t_JI : on prend le vecteur JI"
+        },
+        {
+          "id": "b",
+          "text": "g = S_(IJ)∘t_IJ : I est sur l'axe, donc u = IJ"
+        },
+        {
+          "id": "c",
+          "text": "g = S_(IJ)∘t_BF : le vecteur est celui de B vers F"
+        },
+        {
+          "id": "d",
+          "text": "g = S_(IJ)∘t_CE : le vecteur est celui de C vers E"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une symétrie glissante s'écrit g = t_u∘S_D = S_D∘t_u où D est l'axe et u un vecteur directeur de D. Comme I est sur l'axe (IJ), S_(IJ)(I) = I et g(I) = I + u. Or g(I) = J, donc u = IJ ✓ et g = S_(IJ)∘t_IJ. Piège classique : se tromper de sens du vecteur (JI), choisir le vecteur BF qui n'est pas porté par l'axe, ou un vecteur d'une autre paire de points.",
+      "difficulty": 3
+    }
+  ]
+}

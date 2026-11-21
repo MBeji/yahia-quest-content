@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 3 ⭐⭐⭐ : deux urnes, arbre, loi d'une variable aléatoire et épreuves répétées",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "On dispose d'une urne U₁ contenant deux boules noires et deux boules blanches, et d'une urne U₂ contenant une boule noire et trois boules blanches ; toutes les boules sont indiscernables au toucher. On tire au hasard une boule de U₁ : si elle est blanche, on la remet dans U₁ et on tire simultanément deux boules de U₂ ; si elle est noire, on la met dans U₂ et on tire simultanément deux boules de U₂. On note A « la boule tirée de U₁ est blanche », B « on tire deux boules blanches de U₂ », C « on tire deux boules noires de U₂ » et D « on tire deux boules de couleurs différentes de U₂ ». Quelles sont les probabilités p(B/A), p(C/A) et p(D/A) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(B/A) = 1/2 ; p(C/A) = 0 ; p(D/A) = 1/2"
+        },
+        {
+          "id": "b",
+          "text": "p(B/A) = 3/4 ; p(C/A) = 0 ; p(D/A) = 1/4"
+        },
+        {
+          "id": "c",
+          "text": "p(B/A) = 9/16 ; p(C/A) = 1/16 ; p(D/A) = 6/16"
+        },
+        {
+          "id": "d",
+          "text": "p(B/A) = 1/3 ; p(C/A) = 0 ; p(D/A) = 2/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sachant A, la boule blanche est remise dans U₁ et U₂ reste inchangée : une noire et trois blanches, soit 4 boules. Un tirage simultané de 2 boules a C₄² = 6 issues équiprobables. B : deux blanches parmi 3, soit C₃² = 3 issues, d'où p(B/A) = 3/6 = 1/2. C : deux noires alors qu'il n'y en a qu'une, impossible, p(C/A) = 0. D : une noire et une blanche, 1 × 3 = 3 issues, p(D/A) = 3/6 = 1/2 ✓. Contrôle : 1/2 + 0 + 1/2 = 1. Les erreurs : 3/4 est la probabilité qu'une SEULE boule tirée soit blanche (un seul tirage au lieu de deux), 9/16 correspond à deux tirages avec remise (un tirage simultané n'en autorise pas), et 1/3, 2/3 correspondraient à une urne de trois boules seulement (une noire, deux blanches), en oubliant une blanche.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dispose d'une urne U₁ contenant deux boules noires et deux boules blanches, et d'une urne U₂ contenant une boule noire et trois boules blanches ; toutes les boules sont indiscernables au toucher. On tire au hasard une boule de U₁ : si elle est blanche, on la remet dans U₁ et on tire simultanément deux boules de U₂ ; si elle est noire, on la met dans U₂ et on tire simultanément deux boules de U₂. On note A « la boule tirée de U₁ est blanche », B « on tire deux boules blanches de U₂ », C « on tire deux boules noires de U₂ » et D « on tire deux boules de couleurs différentes de U₂ ». Quelles sont les probabilités p(B/Ā), p(C/Ā) et p(D/Ā) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(B/Ā) = 1/2 ; p(C/Ā) = 0 ; p(D/Ā) = 1/2"
+        },
+        {
+          "id": "b",
+          "text": "p(B/Ā) = 3/10 ; p(C/Ā) = 1/10 ; p(D/Ā) = 3/5"
+        },
+        {
+          "id": "c",
+          "text": "p(B/Ā) = 9/25 ; p(C/Ā) = 4/25 ; p(D/Ā) = 12/25"
+        },
+        {
+          "id": "d",
+          "text": "p(B/Ā) = 3/10 ; p(C/Ā) = 1/5 ; p(D/Ā) = 1/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sachant Ā, la boule tirée de U₁ est noire et passe dans U₂, qui contient alors deux noires et trois blanches, soit 5 boules. Un tirage simultané de 2 boules a C₅² = 10 issues. B : deux blanches parmi 3, C₃² = 3 issues, p(B/Ā) = 3/10. C : les deux noires, C₂² = 1 issue, p(C/Ā) = 1/10. D : une noire et une blanche, 2 × 3 = 6 issues, p(D/Ā) = 6/10 = 3/5 ✓. Contrôle : 3/10 + 1/10 + 6/10 = 1. Les erreurs : oublier d'ajouter la boule noire (les valeurs de A), traiter le tirage comme deux tirages avec remise (9/25, 4/25, 12/25), ou mal compter C₂² (2 au lieu de 1) et déduire D par complément.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dispose d'une urne U₁ contenant deux boules noires et deux boules blanches, et d'une urne U₂ contenant une boule noire et trois boules blanches ; toutes les boules sont indiscernables au toucher. On tire au hasard une boule de U₁ : si elle est blanche, on la remet dans U₁ et on tire simultanément deux boules de U₂ ; si elle est noire, on la met dans U₂ et on tire simultanément deux boules de U₂. On note A « la boule tirée de U₁ est blanche », B « on tire deux boules blanches de U₂ », C « on tire deux boules noires de U₂ » et D « on tire deux boules de couleurs différentes de U₂ ». Sachant que p(A) = 1/2, p(B/A) = 1/2, p(D/A) = 1/2, p(B/Ā) = 3/10, p(C/Ā) = 1/10 et p(D/Ā) = 3/5, quelles sont les probabilités p(B) et p(D) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(B) = 4/5 ; p(D) = 11/10"
+        },
+        {
+          "id": "b",
+          "text": "p(B) = 3/10 ; p(D) = 3/5"
+        },
+        {
+          "id": "c",
+          "text": "p(B) = 2/5 ; p(D) = 11/20"
+        },
+        {
+          "id": "d",
+          "text": "p(B) = 1/2 ; p(D) = 1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A et Ā forment une partition : p(B) = p(A) p(B/A) + p(Ā) p(B/Ā) = (1/2)(1/2) + (1/2)(3/10) = 1/4 + 3/20 = 5/20 + 3/20 = 8/20 = 2/5 ✓. De même p(D) = (1/2)(1/2) + (1/2)(3/5) = 1/4 + 3/10 = 5/20 + 6/20 = 11/20 ✓. Contrôle : p(B) + p(D) + p(C) = 2/5 + 11/20 + 1/20 = 8/20 + 11/20 + 1/20 = 1 ✓ (p(C) = (1/2)(1/10) = 1/20). Les erreurs : additionner les conditionnelles sans pondérer (4/5 et 11/10 : 11/10 dépasse même 1, ce qui est impossible), ne garder que la branche Ā (3/10 et 3/5) ou que la branche A (1/2 et 1/2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On dispose d'une urne U₁ contenant deux boules noires et deux boules blanches, et d'une urne U₂ contenant une boule noire et trois boules blanches ; toutes les boules sont indiscernables au toucher. On tire au hasard une boule de U₁ : si elle est blanche, on la remet dans U₁ et on tire simultanément deux boules de U₂ ; si elle est noire, on la met dans U₂ et on tire simultanément deux boules de U₂. On note A « la boule tirée de U₁ est blanche », B « on tire deux boules blanches de U₂ », C « on tire deux boules noires de U₂ » et D « on tire deux boules de couleurs différentes de U₂ ». Quelle est la probabilité qu'il ne reste aucune boule noire dans U₂ à la fin de l'expérience ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/10"
+        },
+        {
+          "id": "b",
+          "text": "11/20"
+        },
+        {
+          "id": "c",
+          "text": "1/20"
+        },
+        {
+          "id": "d",
+          "text": "2/5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Il ne reste aucune noire dans U₂ dans deux cas : premier cas : la boule de U₁ est blanche, événement A, et le tirage sort l'unique noire de U₂ avec une blanche, événement D, on a : p(A ∩ D) = (1/2)(1/2) = 1/4 ; second cas : la boule de U₁ est noire (Ā), U₂ en contient deux, et le tirage les sort toutes les deux, événement C, on a : p(Ā ∩ C) = (1/2)(1/10) = 1/20. Ces cas sont incompatibles, donc p = 1/4 + 1/20 = 5/20 + 1/20 = 6/20 = 3/10 ✓. Les erreurs : 11/20 = p(D) confond « deux couleurs différentes » avec « plus de noire », 1/20 ne garde que le second cas, et 2/5 = p(B) est la probabilité de deux blanches (qui laisse toutes les noires).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On dispose d'une urne U₁ contenant deux boules noires et deux boules blanches, et d'une urne U₂ contenant une boule noire et trois boules blanches ; toutes les boules sont indiscernables au toucher. On tire au hasard une boule de U₁ : si elle est blanche, on la remet dans U₁ et on tire simultanément deux boules de U₂ ; si elle est noire, on la met dans U₂ et on tire simultanément deux boules de U₂. On note A « la boule tirée de U₁ est blanche », B « on tire deux boules blanches de U₂ », C « on tire deux boules noires de U₂ » et D « on tire deux boules de couleurs différentes de U₂ ». Soit X la variable aléatoire égale au nombre de boules noires restant dans U₂ à la fin de l'expérience. Quelle est sa loi de probabilité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(X = 0) = 3/10 ; p(X = 1) = 11/20 ; p(X = 2) = 3/20"
+        },
+        {
+          "id": "b",
+          "text": "p(X = 0) = 3/10 ; p(X = 1) = 3/20 ; p(X = 2) = 11/20"
+        },
+        {
+          "id": "c",
+          "text": "p(X = 0) = 2/5 ; p(X = 1) = 11/20 ; p(X = 2) = 1/20"
+        },
+        {
+          "id": "d",
+          "text": "p(X = 0) = 3/10 ; p(X = 1) = 3/10 ; p(X = 2) = 2/5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "X prend les valeurs 0, 1, 2. (X = 0) : p = 1/4 + 1/20 = 3/10, somme des cas A ∩ D et Ā ∩ C. (X = 2) : U₂ avait deux noires (Ā) et on a tiré deux blanches, événement B, on a : p(Ā ∩ B) = (1/2)(3/10) = 3/20. (X = 1) : deux cas incompatibles, A ∩ B (une noire dans U₂, deux blanches tirées) de probabilité (1/2)(1/2) = 1/4, et Ā ∩ D (deux noires, une tirée) de probabilité (1/2)(3/5) = 3/10 ; donc p(X = 1) = 1/4 + 3/10 = 11/20 ✓. Contrôle : 3/10 + 11/20 + 3/20 = 6/20 + 11/20 + 3/20 = 1 ✓. Les erreurs : échanger les valeurs de X (X = 1 et X = 2), compter les boules noires TIRÉES (loi 2/5, 11/20, 1/20 de la variable Y = nombre de noires sorties, et non restantes), ou réduire X = 1 au seul cas Ā ∩ D (3/10) en reportant le complément sur X = 2 (loi 3/10, 3/10, 2/5, de somme 1 mais fausse).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On dispose d'une urne U₁ contenant deux boules noires et deux boules blanches, et d'une urne U₂ contenant une boule noire et trois boules blanches ; toutes les boules sont indiscernables au toucher. On tire au hasard une boule de U₁ : si elle est blanche, on la remet dans U₁ et on tire simultanément deux boules de U₂ ; si elle est noire, on la met dans U₂ et on tire simultanément deux boules de U₂. On note A « la boule tirée de U₁ est blanche », B « on tire deux boules blanches de U₂ », C « on tire deux boules noires de U₂ » et D « on tire deux boules de couleurs différentes de U₂ ». Quelle est la probabilité qu'il reste au moins une boule noire dans U₂ à la fin de l'expérience ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/10"
+        },
+        {
+          "id": "b",
+          "text": "11/20"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "7/10"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'événement « au moins une noire restante » est le contraire de « aucune noire restante ». Comme p(aucune noire) = 1/4 + 1/20 = 3/10, la probabilité cherchée est 1 − 3/10 = 7/10 ✓. Vérification directe : p(X = 1) + p(X = 2) = 11/20 + 3/20 = 14/20 = 7/10 ✓. Les erreurs : donner 3/10, qui est la probabilité de l'événement contraire ; 11/20, qui ne compte que X = 1 en oubliant X = 2 ; ou 1/2, qui revient à croire les deux issues équiprobables.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une expérience aléatoire consiste à tirer, puis à regarder si une boule noire reste dans une urne : la probabilité qu'il ne reste aucune boule noire est 3/10, donc la probabilité qu'il en reste au moins une est 7/10. On répète n fois cette expérience de façon indépendante (n > 1). Soit F_n l'événement « il ne reste aucune boule noire lors des n − 1 premières épreuves et il en reste au moins une lors de la n-ième ». Quelle est la probabilité p_n de F_n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p_n = (7/10)^(n−1) × (3/10)"
+        },
+        {
+          "id": "b",
+          "text": "p_n = (3/10)^(n−1) × (7/10)"
+        },
+        {
+          "id": "c",
+          "text": "p_n = (3/10)^n × (7/10)"
+        },
+        {
+          "id": "d",
+          "text": "p_n = 1 − (3/10)^n"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les épreuves sont indépendantes, donc la probabilité de la suite d'événements est le produit des probabilités : n − 1 épreuves « aucune noire », de probabilité 3/10 chacune, puis une épreuve « au moins une noire », de probabilité 7/10 : p_n = (3/10)^(n−1) × (7/10) ✓. Contrôle pour n = 2 : p₂ = (3/10)(7/10) = 21/100 ; pour n = 3 : (3/10)²(7/10) = 63/1000. Les erreurs : échanger les rôles des deux probabilités, élever 3/10 à la puissance n (n − 1 épreuves seulement sont « aucune noire »), ou confondre avec l'événement contraire de « aucune noire à toutes les épreuves ».",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "title": "🏛️ Bac 2022 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : fonction e^x/(1 + e^(2x)), intégrale à borne logarithmique, arctangente, aire et suite d'intégrales",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 18,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = e^x/(1 + e^(2x)), de courbe (ζ). Que peut-on dire de la parité de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est impaire : f(−x) = −e^x/(e^(2x) + 1) = −f(x), donc (ζ) est symétrique par rapport à l'origine du repère orthonormé"
+        },
+        {
+          "id": "b",
+          "text": "f est paire : f(−x) = e^x/(e^(2x) + 1) = f(x), donc (ζ) est symétrique par rapport à l'origine du repère orthonormé"
+        },
+        {
+          "id": "c",
+          "text": "f n'est ni paire ni impaire, car f(0) = 1/2 n'est pas nul et f(−x) ≠ f(x) en général, d'après le calcul de f(−x)"
+        },
+        {
+          "id": "d",
+          "text": "f est paire : f(−x) = e^(−x)/(1 + e^(−2x)) = e^x/(e^(2x) + 1) = f(x), donc (ζ) est symétrique par rapport à (Oy)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le domaine ℝ est symétrique par rapport à 0. On calcule f(−x) = e^(−x)/(1 + e^(−2x)) et on multiplie numérateur et dénominateur par e^(2x) : f(−x) = e^(x)/(e^(2x) + 1) = f(x). Donc f est paire, et sa courbe est symétrique par rapport à l'axe des ordonnées ✓. Piège classique : ne pas multiplier par e^(2x) et conclure trop vite que f(−x) diffère de f(x), confondre parité et imparité, ou associer la symétrie centrale à une fonction paire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = e^x/(1 + e^(2x)), de courbe (ζ). Quelle est la limite de f en +∞, et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : (ζ) admet une branche infinie, car e^x tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "0 : l'axe des abscisses est asymptote à (ζ) en +∞"
+        },
+        {
+          "id": "c",
+          "text": "1 : la droite d'équation y = 1 est asymptote à (ζ) en +∞"
+        },
+        {
+          "id": "d",
+          "text": "1/2 : la droite d'équation y = 1/2 est asymptote à (ζ) en +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On divise numérateur et dénominateur par e^(2x) : f(x) = e^(−x)/(e^(−2x) + 1). Quand x → +∞, e^(−x) → 0 et e^(−2x) → 0, donc f(x) → 0/1 = 0 ✓ : l'axe des abscisses est asymptote horizontale en +∞ (et, par parité, en −∞). Piège classique : ne regarder que le numérateur (qui tend vers +∞), alors que le dénominateur 1 + e^(2x) croît plus vite, ou confondre limite et valeur f(0) = 1/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = e^x/(1 + e^(2x)), de courbe (ζ). Quelle est la dérivée de f sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = (1 + 3e^(2x)) e^x/(1 + e^(2x))²"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = e^(−x)/2"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = (1 − e^(2x)) e^x/(1 + e^(2x))"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (1 − e^(2x)) e^x/(1 + e^(2x))²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On dérive le quotient de u(x) = e^x par v(x) = 1 + e^(2x), avec u′ = e^x et v′ = 2e^(2x) : f′ = (u′v − uv′)/v² = (e^x(1 + e^(2x)) − e^x · 2e^(2x))/(1 + e^(2x))² = e^x(1 − e^(2x))/(1 + e^(2x))² ✓. Piège classique : dériver numérateur et dénominateur séparément (on trouve e^x/(2e^(2x)) = e^(−x)/2), permuter le signe du quotient (u′v + uv′), ou oublier d'élever le dénominateur au carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = e^x/(1 + e^(2x)), de courbe (ζ). Sachant que f′(x) = (1 − e^(2x)) e^x/(1 + e^(2x))², quel est le tableau de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f décroît sur ]−∞ ; 0] puis croît sur [0 ; +∞[, avec minimum f(0) = 1/2 et limite 0 en −∞ et en +∞"
+        },
+        {
+          "id": "b",
+          "text": "f croît sur ]−∞ ; 0] puis décroît sur [0 ; +∞[, avec maximum f(0) = 1/2 et limite 0 en −∞ et en +∞"
+        },
+        {
+          "id": "c",
+          "text": "f croît sur ]−∞ ; 0] puis décroît sur [0 ; +∞[, avec maximum f(0) = 1 et limite 0 en −∞ et en +∞"
+        },
+        {
+          "id": "d",
+          "text": "f décroît sur ℝ tout entier, de +∞ en −∞ à 0 en +∞, avec f(0) = 1/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les facteurs e^x et (1 + e^(2x))² sont strictement positifs : f′ a le signe de 1 − e^(2x), positif pour x < 0 (e^(2x) < 1), nul en 0, négatif pour x > 0. Donc f croît jusqu'en 0 puis décroît, avec maximum f(0) = e^0/(1 + e^0) = 1/2, et tend vers 0 en ±∞ ✓. Piège classique : lire le signe à l'envers, oublier le dénominateur 1 + 1 = 2 dans f(0) (on trouve 1), ou ne pas utiliser la parité pour la limite en −∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit F la fonction définie sur ]0 ; +∞[ par F(x) = ∫ de 0 à ln x de f(t) dt, avec f(t) = e^t/(1 + e^(2t)). Quelle est la dérivée de F ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F′(x) = x/(1 + x²)"
+        },
+        {
+          "id": "b",
+          "text": "F′(x) = 1/(x(1 + x²))"
+        },
+        {
+          "id": "c",
+          "text": "F′(x) = 1/(1 + x²)"
+        },
+        {
+          "id": "d",
+          "text": "F′(x) = 1/(1 + x)²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "F est la composée de la fonction Φ(y) = ∫ de 0 à y de f(t) dt (de dérivée f) et de x ↦ ln x. Donc F′(x) = f(ln x) × (1/x). Or f(ln x) = e^(ln x)/(1 + e^(2 ln x)) = x/(1 + x²). Ainsi F′(x) = (x/(1 + x²)) × (1/x) = 1/(1 + x²) ✓. Piège classique : oublier la dérivée 1/x de la borne ln x (on trouve x/(1 + x²)), ou la multiplier deux fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = tan x, bijection de ]0 ; π/2[ sur ]0 ; +∞[, et g⁻¹ sa réciproque. Que valent g⁻¹(1) et la limite de g⁻¹(x) quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g⁻¹(1) = π/4 et la limite vaut π/2"
+        },
+        {
+          "id": "b",
+          "text": "g⁻¹(1) = π/2 et la limite vaut π/4"
+        },
+        {
+          "id": "c",
+          "text": "g⁻¹(1) = π/4 et la limite vaut +∞"
+        },
+        {
+          "id": "d",
+          "text": "g⁻¹(1) = 1 et la limite vaut π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g⁻¹(1) est l'unique x de ]0 ; π/2[ tel que tan x = 1, soit x = π/4. Quand x → +∞, g⁻¹(x) tend vers la borne de ]0 ; π/2[ où tan tend vers +∞, c'est-à-dire π/2 ✓. Piège classique : intervertir les deux valeurs, penser que la réciproque tend vers +∞ alors qu'elle est à valeurs dans ]0 ; π/2[, ou confondre g⁻¹(1) avec 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F(x) = ∫ de 0 à ln x de f(t) dt avec f(t) = e^t/(1 + e^(2t)), de dérivée F′(x) = 1/(1 + x²) sur ]0 ; +∞[, et g⁻¹ la réciproque de tan, de dérivée (g⁻¹)′(x) = 1/(1 + x²), avec g⁻¹(1) = π/4. Quelle est l'expression de F(x) pour x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = g⁻¹(x) − π/4"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = g⁻¹(x) + π/4"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = g⁻¹(x)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = g⁻¹(x) − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "F et g⁻¹ ont la même dérivée sur l'intervalle ]0 ; +∞[ : elles diffèrent d'une constante k, F(x) = g⁻¹(x) + k. En x = 1, F(1) = ∫ de 0 à ln 1 = 0 de f = 0, donc 0 = g⁻¹(1) + k = π/4 + k, soit k = −π/4 ✓. Piège classique : oublier la constante, ou la déterminer avec une valeur de x différente de 1 (là où les bornes de l'intégrale coïncident).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit λ > 0 et A(λ) l'aire du domaine limité par (ζ), l'axe des abscisses et les droites x = −λ et x = λ, avec f paire et F(x) = ∫ de 0 à ln x de f(t) dt. Quelle est l'expression de A(λ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A(λ) = F(e^λ)"
+        },
+        {
+          "id": "b",
+          "text": "A(λ) = 2F(λ)"
+        },
+        {
+          "id": "c",
+          "text": "A(λ) = 2F(e^λ)"
+        },
+        {
+          "id": "d",
+          "text": "A(λ) = F(e^λ) + F(e^(−λ))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme f > 0, A(λ) = ∫ de −λ à λ de f(t) dt, et comme f est paire, A(λ) = 2∫ de 0 à λ de f(t) dt. Or F(e^λ) = ∫ de 0 à ln(e^λ) = λ de f(t) dt, donc A(λ) = 2F(e^λ) ✓. Piège classique : oublier le facteur 2 de la parité, confondre F(λ) (borne ln λ) avec F(e^λ) (borne λ), ou additionner F(e^λ) et F(e^(−λ)) : cette somme est nulle, car F(e^(−λ)) = −∫ de 0 à λ de f.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A(λ) = 2F(e^λ) avec F(x) = g⁻¹(x) − π/4, g⁻¹ la réciproque de tan, qui tend vers π/2 en +∞. Quelle est la limite de A(λ) quand λ tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4"
+        },
+        {
+          "id": "b",
+          "text": "π/2"
+        },
+        {
+          "id": "c",
+          "text": "π"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand λ → +∞, e^λ → +∞ et g⁻¹(e^λ) → π/2, donc F(e^λ) → π/2 − π/4 = π/4. Alors A(λ) = 2F(e^λ) → 2 × π/4 = π/2 ✓. Le domaine, bien que non borné, a une aire finie. Piège classique : oublier le facteur 2 (π/4), doubler la mauvaise quantité (π) ou croire qu'une région non bornée a une aire infinie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F(x) = g⁻¹(x) − π/4 avec g⁻¹ la réciproque de tan à valeurs dans ]0 ; π/2[. Quel encadrement de F(e^t) obtient-on pour tout réel t ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4 ≤ F(e^t) ≤ π/2"
+        },
+        {
+          "id": "b",
+          "text": "−π/4 ≤ F(e^t) ≤ 0"
+        },
+        {
+          "id": "c",
+          "text": "0 ≤ F(e^t) ≤ 1/2"
+        },
+        {
+          "id": "d",
+          "text": "0 ≤ F(e^t) ≤ π/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour t ≥ 0, e^t ≥ 1. La réciproque g⁻¹ est croissante et à valeurs dans ]0 ; π/2[, donc π/4 = g⁻¹(1) ≤ g⁻¹(e^t) < π/2. En retranchant π/4, on obtient 0 ≤ F(e^t) < π/4, donc 0 ≤ F(e^t) ≤ π/4 ✓. Piège classique : oublier de retrancher π/4 (encadrement de g⁻¹ et non de F), ou croire que F(e^t) est négatif parce que e^t > 1 donne ln > 0 : le signe est positif.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, soit I_n = ∫ de 0 à 1 de t^n F(e^t) dt, avec 0 ≤ F(e^t) ≤ π/4 pour t ≥ 0. Quelle est la limite de I_n quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4"
+        },
+        {
+          "id": "b",
+          "text": "F(e)"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour t ∈ [0 ; 1], 0 ≤ t^n F(e^t) ≤ (π/4) t^n. En intégrant, 0 ≤ I_n ≤ (π/4) ∫ de 0 à 1 de t^n dt = π/(4(n + 1)). Ce majorant tend vers 0, donc I_n → 0 par le théorème des gendarmes ✓. Piège classique : remplacer t^n par sa valeur 1 en t = 1 sur tout l'intervalle (c'est vrai seulement en un point), ce qui donne F(e) ou π/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, I_n = ∫ de 0 à 1 de t^n F(e^t) dt, avec F(e^t) de dérivée f(t) en t. On intègre par parties avec u(t) = F(e^t) et v′(t) = t^n. Quelle est l'expression de I_n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I_n = F(e)/(n + 1) − (1/(n + 1)) ∫ de 0 à 1 de t^(n+1) f(t) dt"
+        },
+        {
+          "id": "b",
+          "text": "I_n = F(e)/(n + 1) + (1/(n + 1)) ∫ de 0 à 1 de t^(n+1) f(t) dt"
+        },
+        {
+          "id": "c",
+          "text": "I_n = F(e)/(n + 1) − ∫ de 0 à 1 de t^(n+1) f(t) dt"
+        },
+        {
+          "id": "d",
+          "text": "I_n = F(e)/n − (1/n) ∫ de 0 à 1 de t^n f(t) dt"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction t ↦ F(e^t) a pour dérivée e^t F′(e^t) = e^t/(1 + e^(2t)) = f(t). Avec u(t) = F(e^t) et v(t) = t^(n+1)/(n + 1), ∫ de 0 à 1 de u v′ = [u v] de 0 à 1 − ∫ de 0 à 1 de u′ v = F(e)/(n + 1) − F(1) × 0 − (1/(n + 1)) ∫ de 0 à 1 de t^(n+1) f(t) dt ✓, car F(e^0) = F(1) = 0 et 1^(n+1) = 1. Piège classique : oublier le facteur 1/(n + 1) de la primitive de t^n, se tromper de signe devant l'intégrale, ou garder l'exposant n au lieu de n + 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, I_n = F(e)/(n + 1) − (1/(n + 1)) ∫ de 0 à 1 de t^(n+1) f(t) dt, avec 0 ≤ f ≤ 1/2, F(e) = g⁻¹(e) − π/4 et g⁻¹ la réciproque de tan. Quelle est la limite de n I_n quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g⁻¹(e) + π/4"
+        },
+        {
+          "id": "b",
+          "text": "g⁻¹(e) − π/4"
+        },
+        {
+          "id": "c",
+          "text": "g⁻¹(e) − 1"
+        },
+        {
+          "id": "d",
+          "text": "π/4 − g⁻¹(e)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On multiplie par n : nI_n = (n/(n + 1))F(e) − (n/(n + 1)) ∫ de 0 à 1 de t^(n+1) f(t) dt. Comme 0 ≤ ∫ de 0 à 1 de t^(n+1) f(t) dt ≤ (1/2)/(n + 2) → 0 et n/(n + 1) → 1, on obtient nI_n → F(e) − 0 = g⁻¹(e) − π/4 ✓. Piège classique : oublier le signe du terme −π/4 contenu dans F(e), ou croire que le facteur n n'agit pas : il compense exactement le 1/(n + 1), ce qui évite que la limite soit nulle comme celle de I_n.",
+      "difficulty": 3
+    }
+  ]
+}

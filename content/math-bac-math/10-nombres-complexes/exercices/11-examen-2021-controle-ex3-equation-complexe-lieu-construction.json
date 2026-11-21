@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 3 ⭐⭐⭐⭐ : équation à coefficients réels, forme exponentielle, puissances, alignement et lieu de points",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Résoudre dans ℂ l'équation\nz² + z + 1/3 = 0\nOn note z₁ la solution de partie imaginaire strictement positive et z₂ l'autre solution. Que valent z₁ et z₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z₁ = (−1 + i√3)/2 et z₂ = (−1 − i√3)/2"
+        },
+        {
+          "id": "b",
+          "text": "z₁ = (−1 + i/3)/2 et z₂ = (−1 − i/3)/2"
+        },
+        {
+          "id": "c",
+          "text": "z₁ = 1/2 + i/(2√3) et z₂ = 1/2 − i/(2√3)"
+        },
+        {
+          "id": "d",
+          "text": "z₁ = −1/2 + i/(2√3) et z₂ = −1/2 − i/(2√3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le discriminant est Δ = 1 − 4 × 1/3 = −1/3 < 0, donc δ = i/√3 vérifie δ² = −1/3. Les solutions sont z = (−1 ± i/√3)/2 = −1/2 ± i/(2√3). Celle de partie imaginaire positive est z₁ = −1/2 + i/(2√3) ✓. Contrôle : z₁ + z₂ = −1 et z₁z₂ = 1/4 + 1/12 = 1/3 ✓. Piège classique : prendre δ = i/3 (au lieu de i/√3) ou δ = i√3 (Δ = −3 correspond à z² + z + 1), ou se tromper de signe sur −b/2a.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit z₁ = −1/2 + i/(2√3). Quelle est son écriture exponentielle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z₁ = (1/√3) e^(i5π/6)"
+        },
+        {
+          "id": "b",
+          "text": "z₁ = (1/√3) e^(iπ/6)"
+        },
+        {
+          "id": "c",
+          "text": "z₁ = (1/3) e^(i5π/6)"
+        },
+        {
+          "id": "d",
+          "text": "z₁ = (1/√3) e^(i2π/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le module est |z₁| = √(1/4 + 1/12) = √(1/3) = 1/√3. Alors cos θ = (−1/2)/(1/√3) = −√3/2 et sin θ = (1/(2√3))/(1/√3) = 1/2 : θ = 5π/6 (deuxième quadrant). Donc z₁ = (1/√3) e^(i5π/6) ✓. Piège classique : ne pas placer l'argument dans le bon quadrant (π/6 correspond à une partie réelle positive), donner pour module |z₁|² = 1/3, ou confondre tan θ = −1/√3 (θ = 5π/6) avec 2π/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan complexe, A et B sont les points d'affixes 1 et e^(i5π/6), et Δ est la droite d'équation x = −1/2. Comment montre-t-on que Δ coupe la droite (OB) au point C d'affixe z₁ = −1/2 + i/(2√3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un point de (OB) d'affixe r e^(i5π/6) a pour partie réelle −r√3/2 ; elle vaut −1/2 pour r = 2/√3, d'où z_C = (2/√3)e^(i5π/6)"
+        },
+        {
+          "id": "b",
+          "text": "Un point de (OB) d'affixe r e^(i5π/6) a pour partie réelle −r√3/2 = −1/2 pour r = 1/√3, d'où z_C = (1/√3)e^(i5π/6) = z₁"
+        },
+        {
+          "id": "c",
+          "text": "Un point de (OB) d'affixe r e^(i5π/6) a pour partie réelle −r/2 ; elle vaut −1/2 pour r = 1, d'où z_C = e^(i5π/6)"
+        },
+        {
+          "id": "d",
+          "text": "Un point de (OB) d'affixe r e^(i5π/6) a pour partie réelle −r√3/2 ; elle vaut −1/2 pour r = 1/√3, d'où z_C = (1/√3)e^(iπ/6)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La droite (OB) est l'ensemble des points d'affixe r e^(i5π/6), r réel. Leur partie réelle est r cos(5π/6) = −r√3/2. Elle vaut −1/2 si et seulement si r = 1/√3 : le point d'intersection a pour affixe (1/√3)e^(i5π/6) = z₁ ✓. Piège classique : prendre cos(5π/6) = −1/2 (c'est −√3/2 ; cela donnerait r = 1), mal diviser −1/2 par −√3/2 (r = 2/√3 vient d'une division mal faite), ou changer l'argument en π/6 (on obtient le symétrique de C par rapport à l'axe imaginaire).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit z₁ = (1/√3) e^(i5π/6) et z_D = i/(3√3). Comment vérifie-t-on que z_D = z₁³ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z₁³ = (1/√3)³ e^(i5π/2) = (1/(3√3)) e^(i3π/2) = −i/(3√3)"
+        },
+        {
+          "id": "b",
+          "text": "z₁³ = (1/√3) e^(i5π/2) = i/√3"
+        },
+        {
+          "id": "c",
+          "text": "z₁³ = (1/√3)³ e^(i5π/2) = (1/(3√3)) e^(iπ/2) = i/(3√3)"
+        },
+        {
+          "id": "d",
+          "text": "z₁³ = (1/(3√3)) e^(i5π/18), qui n'est pas imaginaire pur"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour une puissance, on élève le module à la puissance 3 et on multiplie l'argument par 3 : |z₁³| = (1/√3)³ = 1/(3√3) et arg z₁³ ≡ 3 × 5π/6 = 5π/2 ≡ π/2 [2π]. Donc z₁³ = (1/(3√3)) e^(iπ/2) = i/(3√3) = z_D ✓. Piège classique : réduire 5π/2 en 3π/2 au lieu de π/2, oublier d'élever le module au cube, ou diviser l'argument par 3 au lieu de le multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit z₁ une solution de z² + z + 1/3 = 0 et z_D = z₁³. Quelle valeur obtient-on pour (z_D − 1)/(z₁ − 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2/3"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "2/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "De z₁² = −z₁ − 1/3, on tire z₁³ = z₁ × z₁² = −z₁² − z₁/3 = z₁ + 1/3 − z₁/3 = (2/3)z₁ + 1/3. Donc z_D − 1 = (2/3)z₁ − 2/3 = (2/3)(z₁ − 1), et le quotient vaut 2/3 ✓. Il est réel : les points A, C et D sont alignés. Piège classique : se tromper de signe en remplaçant z₁² (z₁³ = −(2/3)z₁ − 1/3 donne −2/3), inverser le quotient (3/2), ou oublier de réduire −z₁/3 avec z₁.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A(1) et C(z₁) sont deux points, et D(z_D) vérifie (z_D − 1)/(z₁ − 1) = 2/3. Comment construit-on D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D est le point du segment [AC] tel que AD = (2/3)AC"
+        },
+        {
+          "id": "b",
+          "text": "D est le milieu du segment [AC]"
+        },
+        {
+          "id": "c",
+          "text": "D est le point de la droite (AC), au-delà de C, tel que AD = (3/2)AC"
+        },
+        {
+          "id": "d",
+          "text": "D est le point du segment [OC] tel que OD = (2/3)OC"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le quotient (z_D − 1)/(z₁ − 1) = 2/3 signifie que le vecteur AD est égal à (2/3) du vecteur AC : D est sur la droite (AC), du même côté de A que C (le rapport est positif), aux deux tiers de la distance. Comme 2/3 < 1, D est sur le segment [AC] ✓. Piège classique : prendre le milieu (rapport 1/2), inverser le rapport (3/2 placerait D au-delà de C), ou changer l'origine du vecteur (A au lieu de O).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit z un nombre complexe, z = x + iy avec x et y réels. Comment établit-on l'équivalence entre « z² + z est réel » et « z est réel ou Re(z) = −1/2 » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Im(z² + z) = 2xy, nulle si et seulement si x = 0 ou y = 0"
+        },
+        {
+          "id": "b",
+          "text": "Im(z² + z) = 2xy + y = y(2x + 1) = 0 si et seulement si y = 0 ou x = −1/2"
+        },
+        {
+          "id": "c",
+          "text": "Re(z² + z) = x² − y² + x, nulle si et seulement si z est imaginaire pur"
+        },
+        {
+          "id": "d",
+          "text": "Im(z² + z) = 2xy + y = y(2x + 1), nulle si et seulement si y = 0 ou x = 1/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "z² + z = (x² − y² + x) + i(2xy + y). Ce nombre est réel si et seulement si sa partie imaginaire est nulle : 2xy + y = y(2x + 1) = 0, soit y = 0 (z réel) ou 2x + 1 = 0 (Re z = −1/2) ✓. Piège classique : oublier la partie imaginaire de z lui-même (le terme + y), annuler la partie réelle au lieu de la partie imaginaire, ou se tromper de signe en résolvant 2x + 1 = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour z ≠ 1, M et N sont les points d'affixes z et z³ et A est le point d'affixe 1. Quel est l'ensemble des points M tels que les vecteurs AM et AN soient colinéaires ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite d'équation x = −1/2 seulement"
+        },
+        {
+          "id": "b",
+          "text": "La droite (O, u) tout entière, réunie à la droite d'équation x = −1/2"
+        },
+        {
+          "id": "c",
+          "text": "La droite (O, u) privée du point A, réunie à la droite d'équation x = −1/2"
+        },
+        {
+          "id": "d",
+          "text": "La droite (O, u) privée du point A, réunie à la droite d'équation y = −1/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AM et AN sont colinéaires si et seulement si (z³ − 1)/(z − 1) est réel. Or z³ − 1 = (z − 1)(z² + z + 1), donc le quotient vaut z² + z + 1, réel si et seulement si z² + z l'est : z réel ou Re(z) = −1/2. Comme z ≠ 1, on retire A de l'axe réel : l'ensemble est (O, u) \\ {A} ∪ {x = −1/2} ✓. Piège classique : oublier la droite réelle (le cas y = 0), garder le point A (z = 1 est exclu, le quotient n'est pas défini), ou écrire y = −1/2 au lieu de x = −1/2 (c'est la partie réelle qui vaut −1/2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit P le point de la droite Δ d'équation x = −1/2 d'affixe a, et Q le point d'affixe a³. Que peut-on dire des points A, P et Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P et Q sont symétriques par rapport à A, car (a³ − 1)/(a − 1) = −1"
+        },
+        {
+          "id": "b",
+          "text": "A, P et Q sont alignés, car (a³ − 1)/(a − 1) = a² + a + 1 est imaginaire pur"
+        },
+        {
+          "id": "c",
+          "text": "O, P et Q sont alignés, car a³/a = a² est réel pour tout a de partie réelle −1/2"
+        },
+        {
+          "id": "d",
+          "text": "A, P et Q sont alignés : (a³ − 1)/(a − 1) = a² + a + 1 est réel si Re(a) = −1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme a = x + iy avec x = −1/2, Im(a² + a) = y(2x + 1) = 0, donc a² + a est réel, et (a³ − 1)/(a − 1) = a² + a + 1 est réel : les vecteurs AP et AQ sont colinéaires, c'est-à-dire A, P, Q alignés ✓. Piège classique : parler de symétrie (le rapport n'est pas −1 en général), confondre réel et imaginaire pur (un quotient réel donne l'alignement, un imaginaire pur l'orthogonalité), ou vérifier l'alignement avec O alors que a² n'est pas réel pour a non réel de partie réelle −1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec a = −1/2 + iy (y réel non nul), P est le point d'affixe a et Q celui d'affixe a³. Quelle relation vectorielle lie AQ et AP ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AQ = (3/4 − y²) AP"
+        },
+        {
+          "id": "b",
+          "text": "AQ = (3/4 + y²) AP"
+        },
+        {
+          "id": "c",
+          "text": "AQ = (1/4 − y²) AP"
+        },
+        {
+          "id": "d",
+          "text": "AQ = (3/4 − y) AP"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a (a³ − 1)/(a − 1) = a² + a + 1. Pour a = −1/2 + iy, a² + a = a(a + 1) = (−1/2 + iy)(1/2 + iy) = −1/4 − y² (les termes en iy se compensent). Donc a² + a + 1 = 3/4 − y², et AQ = (3/4 − y²) AP ✓. Pour y² = 1/12 (cas de z₁), on retrouve 2/3. Piège classique : mal développer le produit (−1/2)(1/2) ou i²y² (on obtient +y²), oublier le + 1 de a² + a + 1 (on trouve 1/4 − y²), ou écrire y au lieu de y².",
+      "difficulty": 3
+    }
+  ]
+}

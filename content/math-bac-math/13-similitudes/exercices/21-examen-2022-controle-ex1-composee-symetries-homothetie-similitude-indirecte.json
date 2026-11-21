@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2022 · session de contrôle · Exercice 1 ⭐⭐⭐⭐ : Composée de symétries, homothétie, similitude directe et similitude indirecte",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 21,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. Soit R = S_(OE)∘S_(OB), composée des symétries orthogonales d'axes (OB) puis (OE). Quelle est la nature de R ? <svg viewBox=\"0 0 260 220\"><path d=\"M67.6 158 L67.6 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 62 L234 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 158 L234 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 158 L26 86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 86 L67.6 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"158\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"62\" r=\"3.6\"/><circle cx=\"234\" cy=\"62\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"110\" r=\"3.6\"/><circle cx=\"26\" cy=\"86\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"174\" text-anchor=\"middle\">O</text><text x=\"67.6\" y=\"54\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"56\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"120\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"88\" text-anchor=\"middle\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une rotation de centre O et d'angle π/3"
+        },
+        {
+          "id": "b",
+          "text": "Une rotation de centre O et d'angle −π/3"
+        },
+        {
+          "id": "c",
+          "text": "Une rotation de centre O et d'angle −π/6"
+        },
+        {
+          "id": "d",
+          "text": "Une rotation de centre B et d'angle −π/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux axes sécants en O : la composée S_(OE)∘S_(OB) est la rotation de centre O dont l'angle est le double de l'angle orienté (OB⃗, OE⃗) des axes pris dans l'ordre. Comme (OE⃗, OB⃗) ≡ π/6, on a (OB⃗, OE⃗) ≡ −π/6, donc l'angle de R est 2 × (−π/6) = −π/3. Garder π/3 inverse l'ordre des axes ; −π/6 oublie le facteur 2 ; le centre est le point commun aux axes, O et non B. Vérification : −π/3 = 2 × (−π/6) ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. R est la rotation de centre O et d'angle −π/3. Quelle est l'image de E par R ? <svg viewBox=\"0 0 260 220\"><path d=\"M67.6 158 L67.6 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 62 L234 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 158 L234 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 158 L26 86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 86 L67.6 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"158\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"62\" r=\"3.6\"/><circle cx=\"234\" cy=\"62\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"110\" r=\"3.6\"/><circle cx=\"26\" cy=\"86\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"174\" text-anchor=\"middle\">O</text><text x=\"67.6\" y=\"54\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"56\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"120\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"88\" text-anchor=\"middle\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le sommet F"
+        },
+        {
+          "id": "b",
+          "text": "Le point B"
+        },
+        {
+          "id": "c",
+          "text": "Le milieu de [OF]"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu de [EF]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le triangle OEF rectangle en E avec ∠OFE = π/6, on a OE = OF·sin(π/6) = OF/2, et l'angle ∠EOF vaut π/2 − π/6 = π/3. Comme I est le milieu de [OF], OI = OF/2 = OE. Le point R(E) vérifie OR(E) = OE et (OE⃗, OR(E)⃗) ≡ −π/3 ; I vérifie OI = OE et (OE⃗, OI⃗) ≡ −π/3 (OI est à π/3 de (OE), dans le sens horaire, E étant à gauche de F). Donc R(E) = I. Le point F est à OF = 2OE de O, il n'a pas la bonne distance. Vérification : le triangle OEI est équilatéral ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. A est le point d'intersection de la médiatrice de [IE] et de (BE). Les segments [EA], [EI], [IF] et [FA] sont tous égaux à [OE] en longueur. Que peut-on dire du quadrilatère AEIF ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est un losange"
+        },
+        {
+          "id": "b",
+          "text": "C'est un carré"
+        },
+        {
+          "id": "c",
+          "text": "C'est un rectangle"
+        },
+        {
+          "id": "d",
+          "text": "C'est un trapèze isocèle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un quadrilatère dont les quatre côtés ont la même longueur est un losange. Il n'est pas forcément un carré : il faudrait de plus un angle droit, or l'angle ∠AEI du losange vaut π/3 et non π/2. Ce n'est pas un rectangle (il n'a pas d'angle droit) ni un trapèze isocèle (ses côtés opposés sont parallèles deux à deux et non seulement une paire). Vérification : quatre côtés égaux à OE ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. Une similitude s de rapport 3 transforme un triangle d'aire 𝒜 en un triangle. Quelle est l'aire du triangle image ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "3𝒜"
+        },
+        {
+          "id": "b",
+          "text": "9𝒜"
+        },
+        {
+          "id": "c",
+          "text": "27𝒜"
+        },
+        {
+          "id": "d",
+          "text": "𝒜/9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une similitude de rapport k multiplie les longueurs par k et les aires par k². Avec k = 3, l'aire image est 3² × 𝒜 = 9𝒜. Multiplier par 3 est l'erreur la plus courante ; 27𝒜 serait un rapport au cube ; 𝒜/9 correspondrait au rapport 1/3. Vérification : si les deux dimensions triplent, l'aire est multipliée par 3 × 3 = 9 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. R est la rotation de centre O et d'angle −π/3 (R(E) = I) et h l'homothétie de centre O et de rapport 2. Quels sont les éléments caractéristiques de f = h∘R ? <svg viewBox=\"0 0 260 220\"><path d=\"M67.6 158 L67.6 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 62 L234 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 158 L234 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 158 L26 86\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 86 L67.6 62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"158\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"62\" r=\"3.6\"/><circle cx=\"234\" cy=\"62\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"110\" r=\"3.6\"/><circle cx=\"26\" cy=\"86\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"174\" text-anchor=\"middle\">O</text><text x=\"67.6\" y=\"54\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"56\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"120\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"88\" text-anchor=\"middle\">B</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Similitude directe de centre O, de rapport 2 et d'angle π/3"
+        },
+        {
+          "id": "b",
+          "text": "Similitude directe de centre O, de rapport 1/2 et d'angle −π/3"
+        },
+        {
+          "id": "c",
+          "text": "Similitude directe de centre I, de rapport 2 et d'angle −π/3"
+        },
+        {
+          "id": "d",
+          "text": "Similitude directe de centre O, de rapport 2 et d'angle −π/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(E) = h(R(E)) = h(I) = F car I est le milieu de [OF]. f est la composée d'une rotation de centre O et d'une homothétie de même centre O et de rapport positif 2 : c'est la similitude directe de centre O, de rapport 2 et d'angle celui de R, soit −π/3. Le rapport est 2 et non 1/2 (l'homothétie multiplie les distances) ; le centre est O, point fixe commun, non I. Vérification : OF = 2·OI = 2·OE, d'où f(E) = F avec le rapport 2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. f est la similitude directe de centre O, de rapport 2 et d'angle −π/3, avec f(E) = F. La médiatrice de [IE] coupe la droite (BE) en A. Quel point est l'image de B par f ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point I"
+        },
+        {
+          "id": "b",
+          "text": "Le point F"
+        },
+        {
+          "id": "c",
+          "text": "Le point E"
+        },
+        {
+          "id": "d",
+          "text": "Le point A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "OB = OE·cos(π/6) = OE√3/2 et (OE⃗, OB⃗) ≡ π/6. L'image de B est le point M tel que OM = 2·OB = OE√3 et (OE⃗, OM⃗) ≡ π/6 − π/3 = −π/6. Or la médiatrice de [IE] passe par O (OE = OI) et est la bissectrice de l'angle EOI = −π/3, donc elle fait −π/6 avec (OE) ; et A, intersection avec (BE), vérifie OA = OE√3 (calcul dans le triangle rectangle ou dans un repère). Donc f(B) = A. E a pour image F par f, et non A ; I est R(E). Vérification : f((BE)) passe par f(E) = F et f(B) = A, et AF = 2·BE ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. f(B) = A et f(E) = F, avec f de rapport 2 ; g est la similitude indirecte telle que g(B) = A et g(E) = F. Quel argument établit que son rapport est 2 ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(B) = A = f(B) et g(E) = F = f(E), donc son rapport AF/BE est celui de f, soit 2"
+        },
+        {
+          "id": "b",
+          "text": "g est indirecte, donc son rapport est l'opposé de celui de f, c'est-à-dire −2"
+        },
+        {
+          "id": "c",
+          "text": "g est indirecte, donc son rapport est l'inverse de celui de f, c'est-à-dire 1/2, plus petit que 2"
+        },
+        {
+          "id": "d",
+          "text": "g est indirecte, donc c'est une isométrie : son rapport est égal à 1, comme celui d'une symétrie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le rapport d'une similitude se lit sur un couple de points : k = g(B)g(E)/BE = AF/BE. Or f envoie B sur A et E sur F, donc AF = 2·BE et k = 2. Être indirecte ne change pas le rapport : un rapport est toujours strictement positif (donc jamais −2), il n'est pas inversé par le sens, et une similitude indirecte n'est pas une isométrie. Vérification : AF/BE = 1/(1/2) = 2 avec AF = OE = 1 et BE = OE/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. Le quadrilatère AEIF est un losange, donc AE = AF. Pourquoi a-t-on (FE⃗, FA⃗) ≡ (EA⃗, EF⃗) [2π] ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le triangle AEF est équilatéral, donc tous ses angles orientés sont égaux"
+        },
+        {
+          "id": "b",
+          "text": "Le triangle AEF est rectangle en A, donc ses deux angles aigus sont complémentaires"
+        },
+        {
+          "id": "c",
+          "text": "Le triangle AEF est isocèle en A : ses angles à la base E et F sont égaux, avec des orientations compatibles"
+        },
+        {
+          "id": "d",
+          "text": "Le triangle AEF est isocèle en E : ses angles à la base A et F sont égaux, avec des orientations compatibles"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AE = AF (côtés du losange) : le triangle AEF est isocèle en A, de base [EF]. Ses angles à la base ∠AEF et ∠AFE sont égaux, et, pour la mesure orientée, l'angle de F vers A en partant de (FE⃗) vaut celui de E en revenant de (EA⃗) vers (EF⃗) : (FE⃗, FA⃗) ≡ (EA⃗, EF⃗). Ce n'est pas E le sommet (AE ≠ EF en général), le triangle AEF n'est pas équilatéral, et un angle droit en A ne ferait pas deux angles égaux. Vérification : les deux angles de base sont égaux à ∠AEF = π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. g est la similitude indirecte de rapport 2, de centre Ω, avec g(E) = F et K = g(F). On sait que F est sur le segment [EK]. Quel argument établit que Ω est sur la droite (EF), hors du segment [EF] ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g∘g est une homothétie de centre Ω et de rapport positif : K = g(g(E)) est aligné avec Ω et E, du même côté"
+        },
+        {
+          "id": "b",
+          "text": "g∘g est la rotation de centre Ω et d'angle π : K = g(g(E)) est le symétrique de E par rapport à Ω"
+        },
+        {
+          "id": "c",
+          "text": "g∘g est l'homothétie de centre Ω et de rapport −4 : Ω est entre E et K, et K = g(g(E)) est aligné avec Ω et E"
+        },
+        {
+          "id": "d",
+          "text": "g∘g est une translation : (EK) ne contient aucun point fixe, et K = g(g(E)) est aligné avec E"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le carré d'une similitude indirecte de centre Ω est une homothétie de centre Ω dont le rapport est k², donc positif. Ainsi K = g(g(E)) est l'image de E par cette homothétie : il est aligné avec Ω et E, du même côté de Ω que E. Comme K est sur la droite (EF) (F ∈ [EK]), Ω est sur (EF), et Ω n'est pas entre E et F. Un rapport négatif est impossible pour un carré (k² > 0), et placerait Ω entre E et K ; une translation n'est pas possible non plus, car g∘g fixe Ω ; une rotation de demi-tour a un rapport 1, alors que g n'est pas une isométrie. Vérification : K et E sont alignés avec Ω et du même côté de Ω ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. g est la similitude indirecte de centre Ω telle que g(E) = F, avec Ω sur la droite (EF) hors du segment [EF]. Quel est l'axe de g ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La perpendiculaire à (EF) passant par Ω"
+        },
+        {
+          "id": "b",
+          "text": "La droite (EF)"
+        },
+        {
+          "id": "c",
+          "text": "La droite (ΩA)"
+        },
+        {
+          "id": "d",
+          "text": "La droite (ΩI)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'axe d'une similitude indirecte de centre Ω est la bissectrice de l'angle (ΩM⃗, ΩM′⃗). Avec M = E et M′ = F : Ω, E et F sont alignés avec E et F du même côté de Ω (Ω hors de [EF]), donc l'angle (ΩE⃗, ΩF⃗) est nul et sa bissectrice est la droite (ΩE) = (EF). La perpendiculaire à (EF) en Ω serait l'axe pour un angle plat (Ω entre E et F), ce qui n'est pas le cas ; (ΩI) et (ΩA) passent bien par Ω mais sont deux droites distinctes images l'une de l'autre : elles sont symétriques par rapport à l'axe, aucune n'est l'axe. Vérification : l'axe passe par le centre Ω, et (EF) le contient ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. g est une similitude indirecte de rapport 2 et de centre Ω. Quelle est la nature de g∘g ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une rotation de centre Ω et d'angle π"
+        },
+        {
+          "id": "b",
+          "text": "Une homothétie de centre Ω et de rapport 1/4"
+        },
+        {
+          "id": "c",
+          "text": "Une homothétie de centre Ω et de rapport 4"
+        },
+        {
+          "id": "d",
+          "text": "Une homothétie de centre Ω et de rapport 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le carré d'une similitude indirecte de centre Ω et de rapport k est l'homothétie de centre Ω et de rapport k². Ici k² = 4. Garder 2 oublie le carré ; 1/4 serait celui de g⁻¹∘g⁻¹ ; une rotation n'apparaît pas car g n'a pas d'angle. Vérification : (g∘g)(z) = |a|² z + a·b̄ + b, de coefficient |a|² = 4 réel ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. Le triangle OEB est rectangle en B avec (OE⃗, OB⃗) ≡ π/6 [2π] ; le triangle OEF est rectangle en E avec (FE⃗, FO⃗) ≡ π/6 [2π] ; I est le milieu de [OF]. g est la similitude indirecte de centre Ω avec g(B) = A, et on suppose g((ΩI)) = (ΩA). Quel argument montre que Ω, B et I sont alignés ? <svg viewBox=\"0 0 260 230\"><path d=\"M67.6 187.1 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 187.1 L26 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115 L67.6 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 42.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150.8 42.9 L234 91\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M67.6 91 L150.8 139\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"67.6\" cy=\"187.1\" r=\"3.6\"/><circle cx=\"67.6\" cy=\"91\" r=\"3.6\"/><circle cx=\"234\" cy=\"91\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"139\" r=\"3.6\"/><circle cx=\"26\" cy=\"115\" r=\"3.6\"/><circle cx=\"150.8\" cy=\"42.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.6\" y=\"203.1\" text-anchor=\"middle\">O</text><text x=\"63.6\" y=\"83\" text-anchor=\"middle\">E</text><text x=\"244\" y=\"93\" text-anchor=\"middle\">F</text><text x=\"162.8\" y=\"149\" text-anchor=\"middle\">I</text><text x=\"14\" y=\"117\" text-anchor=\"middle\">B</text><text x=\"154.8\" y=\"34.9\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g conserve les angles, donc (ΩB) et (ΩI) forment un angle nul et sont parallèles"
+        },
+        {
+          "id": "b",
+          "text": "g conserve les distances, donc ΩB = ΩI et B, I, Ω sont alignés"
+        },
+        {
+          "id": "c",
+          "text": "g est indirecte, donc elle échange les droites (ΩB) et (ΩI)"
+        },
+        {
+          "id": "d",
+          "text": "g((ΩB)) = (ΩA) aussi ; g est bijective, donc (ΩB) = (ΩI) et Ω, B, I sont alignés"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "g(Ω) = Ω et g(B) = A donnent g((ΩB)) = (ΩA). On a aussi g((ΩI)) = (ΩA). Deux droites ayant la même image par une bijection sont confondues : (ΩB) = (ΩI), donc Ω, B et I sont alignés. Conserver les angles ou les distances n'est pas la bonne propriété (g multiplie les distances par 2 et n'a pas d'angle commun à utiliser ici), et une similitude indirecte n'échange pas ces droites. Vérification : g est bijective, donc injective sur les droites ✓.",
+      "difficulty": 3
+    }
+  ]
+}

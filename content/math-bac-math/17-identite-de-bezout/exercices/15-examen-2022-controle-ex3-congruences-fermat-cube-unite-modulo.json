@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2022 · session de contrôle · Exercice 3 ⭐⭐⭐ : congruence x³ ≡ 1, petit théorème de Fermat et racines modulo 43",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "Soit p un nombre premier tel que p > 3 et p ≡ 2 (mod 3), et x un entier tel que x³ ≡ 1 (mod p). Pourquoi a-t-on x^(p−1) ≡ 1 (mod p) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x³ ≡ 1 interdit que p divise x ; Fermat donne alors x^(p−1) ≡ 1 (mod p)"
+        },
+        {
+          "id": "b",
+          "text": "x³ ≡ 1 donne x ≡ 1 (mod p) directement, donc toute puissance de x vaut 1"
+        },
+        {
+          "id": "c",
+          "text": "3 divise p − 1, donc x^(p−1) = (x³)^((p−1)/3) ≡ 1 (mod p)"
+        },
+        {
+          "id": "d",
+          "text": "p est premier, donc tout entier x vérifie x^(p−1) ≡ 1 (mod p)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si p divisait x, on aurait x³ ≡ 0 (mod p), contradiction avec x³ ≡ 1. Donc p ne divise pas x ; comme p est premier, le petit théorème de Fermat donne x^(p−1) ≡ 1 (mod p) ✓. Les autres arguments sont faux : x³ ≡ 1 n'entraîne pas x ≡ 1 sans démonstration : on ne prend pas la racine cubique d'une congruence ; 3 ne divise pas p − 1, puisque p ≡ 2 (mod 3) donne p − 1 ≡ 1 (mod 3) ; enfin Fermat exige que p ne divise pas x (pour x = p, x^(p−1) ≡ 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (E₄₃) l'équation x³ ≡ 1 (mod 43), d'inconnue x ∈ ℤ. Pourquoi x³ ≡ 1 (mod 43) équivaut-il à x ≡ 1 (mod 43) ou x² + x + 1 ≡ 0 (mod 43) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x³ − 1 = (x − 1)(x² + x + 1), et 43 divise un produit seulement s'il divise tous ses facteurs"
+        },
+        {
+          "id": "b",
+          "text": "x³ − 1 = (x − 1)(x² + x + 1), et 43 premier divise un produit s'il divise un facteur"
+        },
+        {
+          "id": "c",
+          "text": "x³ − 1 = (x − 1)(x² + x + 1), et il suffit d'annuler le premier facteur modulo 43"
+        },
+        {
+          "id": "d",
+          "text": "x³ − 1 = (x − 1)(x² + x + 1), donc 43 ∧ (x − 1) = 1 ou 43 ∧ (x² + x + 1) = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "x³ ≡ 1 (mod 43) équivaut à 43 | x³ − 1 = (x − 1)(x² + x + 1). Comme 43 est premier, s'il divise un produit de deux entiers, il divise l'un des deux (lemme d'Euclide, cas particulier de Gauss) : 43 | x − 1 ou 43 | x² + x + 1 ✓. La réciproque est immédiate : si l'un des facteurs est multiple de 43, le produit l'est aussi. Il ne faut pas exiger que 43 divise tous les facteurs (x = 1 annule x − 1 mais x² + x + 1 = 3 n'est pas multiple de 43, et pourtant 1 est solution), ni se limiter au premier facteur (on perd les solutions de x² + x + 1 ≡ 0), ni parler de PGCD égal à 1 : c'est la divisibilité qui compte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le reste de 30² dans la division euclidienne par 43 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3, soit +3 modulo 43"
+        },
+        {
+          "id": "b",
+          "text": "4, soit −39 modulo 43"
+        },
+        {
+          "id": "c",
+          "text": "40, soit −3 modulo 43"
+        },
+        {
+          "id": "d",
+          "text": "17, soit −26 modulo 43"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule 30² = 900. Comme 43 × 20 = 860 et 900 − 860 = 40, le reste est 40. Or 40 = 43 − 3, donc 30² ≡ −3 (mod 43) ✓ ; on vérifie aussi 43 × 21 = 903 = 900 + 3, donc 900 = 903 − 3. Les erreurs : perdre le signe (3 au lieu de −3), ou des réductions fausses : prendre 30² pour 90 = 2 × 43 + 4 donne le reste 4 (soit −39 modulo 43), et prendre 30² pour 2 × 30 = 60 = 43 + 17 donne 17 (soit −26 modulo 43) ; or 43 × 20 + 4 = 864 et 43 × 20 + 17 = 877 ne valent pas 900, donc 4 et 17 ne sont pas des restes de 900.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℤ, on a (2x + 1)² + 3 = 4(x² + x + 1). Pourquoi x² + x + 1 ≡ 0 (mod 43) équivaut-il à (2x + 1)² ≡ −3 (mod 43) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que 4 est un multiple de 43, donc 4(x² + x + 1) ≡ 0 (mod 43) toujours"
+        },
+        {
+          "id": "b",
+          "text": "Parce que (2x + 1)² + 3 est toujours un multiple de 43, quel que soit x"
+        },
+        {
+          "id": "c",
+          "text": "Parce que 43 est premier, donc premier avec tout entier : on peut toujours diviser une congruence par n'importe quel facteur"
+        },
+        {
+          "id": "d",
+          "text": "Parce que 4 est premier avec 43 : 4(x² + x + 1) ≡ 0 équivaut à x² + x + 1 ≡ 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'identité s'écrit (2x + 1)² + 3 = 4(x² + x + 1). Donc (2x + 1)² ≡ −3 (mod 43) équivaut à 43 | (2x + 1)² + 3 = 4(x² + x + 1). Or 43 est premier avec 4 : par le lemme de Gauss, 43 | 4(x² + x + 1) équivaut à 43 | x² + x + 1 ✓. Les autres affirmations sont fausses : 4 n'est pas un multiple de 43 ; (2x + 1)² + 3 n'est un multiple de 43 que pour certaines valeurs de x (x = 0 donne 4) ; et diviser par 4 n'est licite que parce que 4 ∧ 43 = 1, non parce que 4 est pair ni parce que 43 serait « premier avec tout entier » (43 ∧ 86 = 43). Contrôle : x = 1 donne 3² + 3 = 12 = 4 × 3 ✓ (identité).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit p premier, p > 3, p ≡ 2 (mod 3), et x un entier tel que x³ ≡ 1 (mod p). On sait que x^(p−1) ≡ 1 (mod p). Que peut-on dire de x modulo p ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p − 1 = 3k + 1, donc x^(p−1) = (x³)^k × x ≡ x ; ainsi x ≡ 1 (mod p)"
+        },
+        {
+          "id": "b",
+          "text": "p − 1 est un multiple de 3, donc x^(p−1) ≡ 1 est compatible avec toute valeur de x"
+        },
+        {
+          "id": "c",
+          "text": "p − 1 = 3k + 2, donc x^(p−1) = (x³)^k × x² ≡ x², d'où x² ≡ 1 puis x ≡ 1"
+        },
+        {
+          "id": "d",
+          "text": "p − 1 = 3k + 1, donc x^(p−1) ≡ x, et comme x^(p−1) ≡ 1 on obtient x ≡ −1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme p ≡ 2 (mod 3), p − 1 ≡ 1 (mod 3), donc p − 1 = 3k + 1 avec k entier. Alors x^(p−1) = (x³)^k × x ≡ 1^k × x = x (mod p). Or x^(p−1) ≡ 1, donc x ≡ 1 (mod p) ✓. Contrôle avec p = 5 (5 ≡ 2 mod 3) : x³ ≡ 1 (mod 5) n'a que x ≡ 1 pour solution (2³ = 8 ≡ 3, 3³ = 27 ≡ 2, 4³ = 64 ≡ 4) ✓. Les erreurs : croire que p − 1 est multiple de 3 (alors qu'il est ≡ 1) ou qu'il vaut 3k + 2, et conclure x ≡ −1 par une erreur de signe : x ≡ 1 est seule à vérifier x³ ≡ 1 parmi ces valeurs (pour x = −1, x³ = −1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit x un entier tel que (2x + 1)² ≡ −3 (mod 43). On sait que 30² ≡ −3 (mod 43). Quelle conclusion obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2x + 1)² ≡ 30² donne 2x + 1 ≡ 30, donc 43 divise 2x − 29 uniquement"
+        },
+        {
+          "id": "b",
+          "text": "(2x + 1)² − 30² = (2x − 29)(2x + 31) ≡ 0, donc 43 divise 2x − 29 ou 2x + 31"
+        },
+        {
+          "id": "c",
+          "text": "(2x + 1)² − 30² = (2x − 29)² ≡ 0, donc 43 divise 2x − 29"
+        },
+        {
+          "id": "d",
+          "text": "(2x + 1)² − 30² = (2x − 29)(2x + 31), mais on ne peut rien conclure car 43 est impair"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On soustrait : (2x + 1)² − 30² ≡ −3 − (−3) = 0 (mod 43). L'identité a² − b² = (a − b)(a + b) donne (2x + 1 − 30)(2x + 1 + 30) = (2x − 29)(2x + 31) ≡ 0 (mod 43). Comme 43 est premier, 43 divise l'un des facteurs : 2x − 29 ≡ 0 ou 2x + 31 ≡ 0 ✓. Les erreurs : prendre une seule racine carrée (on perd 2x + 1 ≡ −30), écrire a² − b² = (a − b)² (identité fausse), ou refuser de conclure alors que 43 est premier (c'est la primalité qui permet la conclusion).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit x un entier tel que 2x ≡ 29 (mod 43). Sachant que 22 est un inverse de 2 modulo 43, quel est le reste de x dans la division par 43 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "36"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme 2 × 22 = 44 ≡ 1 (mod 43), 22 est un inverse de 2. On multiplie 2x ≡ 29 par 22 : x ≡ 29 × 22 = 638 (mod 43). Or 43 × 14 = 602, donc 638 − 602 = 36 : x ≡ 36 ✓. Vérification : 2 × 36 = 72 = 43 + 29 ✓. Les erreurs : utiliser 21 comme inverse (on trouve 7, mais 2 × 7 = 14 ≠ 29), diviser 29 par 2 en arrondissant au-dessous (14, 2 × 14 = 28), ou arrondir 29/2 au-dessus (15, mais 2 × 15 = 30 ≢ 29).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (E₄₃) l'équation x³ ≡ 1 (mod 43). On sait que x³ ≡ 1 équivaut à x ≡ 1, ou 2x ≡ 29, ou 2x ≡ −31 (mod 43), et que 22 est un inverse de 2 modulo 43. Quel est l'ensemble des solutions de (E₄₃) dans ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 1 (mod 43) seulement"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 1, x ≡ 29 ou x ≡ −31 (mod 43)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 1, x ≡ 6 ou x ≡ 36 (mod 43)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 1, x ≡ 7 ou x ≡ 37 (mod 43)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il y a trois cas. x ≡ 1 convient. Si 2x ≡ 29, x ≡ 29 × 22 = 638 ≡ 36 (mod 43). Si 2x ≡ −31, x ≡ −31 × 22 = −682 ≡ 6 (mod 43) (car −682 + 688 = 6). Donc x ≡ 1, 36 ou 6 (mod 43) ✓. Vérification : 6³ = 216 = 5 × 43 + 1 ✓ et 36³ = (−7)³ = −343 = −8 × 43 + 1 ✓. Les erreurs : se limiter à x ≡ 1 (en oubliant l'équation x² + x + 1 ≡ 0), oublier de diviser par 2 (29 et −31 ne sont pas solutions : 29³ ≡ 8 (mod 43)), ou utiliser 21 comme inverse de 2 (7³ = 343 ≡ −1, non 1).",
+      "difficulty": 3
+    }
+  ]
+}

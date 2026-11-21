@@ -1,0 +1,394 @@
+{
+  "title": "🏛️ Bac 2017 · session principale · Exercice 4 ⭐⭐⭐⭐ : racine de e^x − 1, réciproque de la tangente, aires et suite d'aires",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = √(e^x − 1), de courbe C_f. Quelles sont les limites de f(x) et de f(x)/x quand x tend vers +∞, et l'interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → 0 : branche parabolique de direction l'axe des abscisses en +∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et f(x)/x → 1/2 : asymptote oblique de pente 1/2"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → +∞ et f(x)/x → +∞ : branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → 1 : la droite d'équation y = 1 est asymptote horizontale"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour x grand, e^x − 1 ≥ e^x/2, donc f(x) ≥ e^(x/2)/√2, qui tend vers +∞. De plus f(x)/x ≥ e^(x/2)/(√2 x), et e^(x/2)/x tend vers +∞ par croissances comparées : f(x)/x → +∞ ✓. La courbe monte plus vite que toute droite : branche parabolique de direction (Oy). Piège classique : croire que la racine carrée « casse » l'exponentielle et ramène f(x)/x vers une limite finie ; √(e^x) vaut e^(x/2), toujours une exponentielle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = √(e^x − 1), de courbe C_f. Quelle est la limite de f(x)/x quand x tend vers 0⁺, et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 : C_f admet à l'origine une demi-tangente de pente 1"
+        },
+        {
+          "id": "b",
+          "text": "0 : C_f admet à l'origine une tangente horizontale"
+        },
+        {
+          "id": "c",
+          "text": "+∞ : C_f admet à l'origine une demi-tangente verticale"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : la droite d'équation x = 0 est asymptote verticale à C_f"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a f(0) = 0 et f(x)/x = √((e^x − 1)/x · 1/x). Quand x → 0⁺, (e^x − 1)/x → 1 (nombre dérivé de exp en 0) et 1/x → +∞, donc f(x)/x → +∞ ✓. Le taux d'accroissement en 0 étant infini, f n'est pas dérivable à droite en 0 et C_f a une demi-tangente verticale en O. Il n'y a pas d'asymptote verticale : f(x) tend vers f(0) = 0. Piège classique : recopier la limite 1 de (e^x − 1)/x en oubliant que la racine place un 1/x de plus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = √(e^x − 1), de courbe C_f. Quelle est la dérivée de f sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = e^x / (2√(e^x − 1))"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 1 / (2√(e^x − 1))"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = e^x / √(e^x − 1)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = e^x / (2 × (e^x − 1))"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive √u avec u(x) = e^x − 1 : (√u)′ = u′/(2√u), donc f′(x) = e^x/(2√(e^x − 1)) ✓. Piège classique : oublier le facteur u′ = e^x, oublier le 2 au dénominateur, ou perdre la racine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = √(e^x − 1), de courbe C_f. Sachant que f(0) = 0 et que f′(x) = e^x/(2√(e^x − 1)) sur ]0 ; +∞[, quel est le tableau de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur [0 ; +∞[, de f(0) = 1 à +∞"
+        },
+        {
+          "id": "b",
+          "text": "f est croissante sur [0 ; ln 2] puis décroissante sur [ln 2 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f est strictement décroissante sur [0 ; +∞[, de f(0) = 0 à −∞"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur [0 ; +∞[, de f(0) = 0 à +∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 0, e^x > 0 et √(e^x − 1) > 0, donc f′(x) > 0 : f est strictement croissante sur [0 ; +∞[ (elle est continue en 0). Sa valeur initiale est f(0) = √(e^0 − 1) = 0 et sa limite en +∞ est +∞ ✓. Piège classique : oublier le « − 1 » en calculant f(0), ou voir dans ln 2 un changement de variation alors qu'il n'indique qu'un croisement avec la courbe de x ↦ e^x − 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x ≥ 0, quelles sont les valeurs de x vérifiant e^x − 1 ≤ √(e^x − 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≥ ln 2"
+        },
+        {
+          "id": "b",
+          "text": "x ≤ ln 2"
+        },
+        {
+          "id": "c",
+          "text": "x ≤ 1"
+        },
+        {
+          "id": "d",
+          "text": "x ≤ 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Posons s = e^x − 1 ≥ 0. Alors s ≤ √s équivaut à s = 0 ou (s > 0 et √s ≤ 1), donc à s ≤ 1. Cela donne e^x ≤ 2, soit x ≤ ln 2 puisque ln est strictement croissante ✓. Piège classique : prendre s ≤ 1 pour x ≤ 1 (on a oublié que s = e^x − 1, pas x), ou inverser le sens de l'inégalité : pour s > 1, c'est au contraire s > √s.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = √(e^x − 1), de courbe C_f. Quelle justification établit que B(ln 2 ; 1) est un point d'inflexion de C_f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′ s'annule en ln 2 en changeant de signe, donc la courbe traverse sa tangente horizontale en B : c'est un point d'inflexion"
+        },
+        {
+          "id": "b",
+          "text": "f(ln 2) = 1 : le point B appartient à C_f, et le tracé montre que la courbe y traverse sa tangente, ce qui suffit"
+        },
+        {
+          "id": "c",
+          "text": "f est concave sur [0 ; +∞[ puisque f′ est strictement positive : B est un point d'inflexion à tangente non horizontale"
+        },
+        {
+          "id": "d",
+          "text": "f″(x) = e^x(e^x − 2)/(4(e^x − 1)^(3/2)) s'annule en ln 2 en passant de négative à positive, et f(ln 2) = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En dérivant f′(x) = e^x/(2√(e^x − 1)), on obtient f″(x) = e^x(e^x − 2)/(4(e^x − 1)^(3/2)) : son signe est celui de e^x − 2, négatif avant ln 2 et positif après. f″ s'annule donc en ln 2 en changeant de signe, et f(ln 2) = √(2 − 1) = 1 ✓. Piège classique : confondre monotonie (signe de f′) et concavité (signe de f″), ou croire que f′ s'annule : ici f′ ne s'annule jamais.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √(e^x − 1) sur [0 ; +∞[, de courbe C_f, et Γ la courbe de x ↦ e^x − 1. On sait que, pour x ≥ 0, e^x − 1 ≤ √(e^x − 1) équivaut à x ≤ ln 2. Que peut-on en déduire pour la position relative de C_f par rapport à Γ et pour leurs points communs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_f est en dessous de Γ sur [0 ; ln 2] et au-dessus sur [ln 2 ; +∞[ ; elles se coupent en O et en B(ln 2 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "C_f est au-dessus de Γ sur [0 ; ln 2] et en dessous sur [ln 2 ; +∞[ ; elles se coupent en O et en B(ln 2 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "C_f est au-dessus de Γ sur [0 ; +∞[ tout entier ; elles se coupent seulement en O"
+        },
+        {
+          "id": "d",
+          "text": "C_f est au-dessus de Γ sur [0 ; 1] et en dessous sur [1 ; +∞[ ; elles se coupent en O et au point d'abscisse 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec s = e^x − 1, on compare f(x) = √s et s : √s − s = √s(1 − √s) ≥ 0 si et seulement si s ≤ 1, c'est-à-dire x ≤ ln 2. Donc C_f est au-dessus de Γ sur [0 ; ln 2] (avec égalité en 0 et en ln 2, où les deux valent 0 et 1) puis en dessous ✓. Piège classique : inverser les positions, ou couper en x = 1 au lieu de x = ln 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction tangente restreinte à [0 ; π/2[ : c'est une bijection de [0 ; π/2[ sur [0 ; +∞[, de réciproque g⁻¹. Quelle est la dérivée de g⁻¹ sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(g⁻¹)′(x) = 1/(1 − x²)"
+        },
+        {
+          "id": "b",
+          "text": "(g⁻¹)′(x) = 1 + x²"
+        },
+        {
+          "id": "c",
+          "text": "(g⁻¹)′(x) = 1/(1 + x²)"
+        },
+        {
+          "id": "d",
+          "text": "(g⁻¹)′(x) = 1/√(1 + x²)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour une réciproque, (g⁻¹)′(x) = 1/g′(g⁻¹(x)). Comme g′ = 1 + tan², g′(g⁻¹(x)) = 1 + tan²(g⁻¹(x)) = 1 + x². Donc (g⁻¹)′(x) = 1/(1 + x²) ✓. Piège classique : ne pas inverser (écrire g′(g⁻¹(x)) au lieu de son inverse), écrire 1 − x² au lieu de 1 + x² (cos et sin interverties) ou ajouter une racine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g⁻¹ la réciproque de la tangente sur [0 ; π/2[, avec g⁻¹(0) = 0 et (g⁻¹)′(x) = 1/(1 + x²). Que vaut la limite de g⁻¹(x)/x quand x tend vers 0⁺ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1, car c'est le nombre dérivé de g⁻¹ en 0"
+        },
+        {
+          "id": "b",
+          "text": "0, car g⁻¹(0) = 0"
+        },
+        {
+          "id": "c",
+          "text": "+∞, car le numérateur et le dénominateur tendent vers 0"
+        },
+        {
+          "id": "d",
+          "text": "π/4, car g⁻¹(1) = π/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme g⁻¹(0) = 0, le quotient g⁻¹(x)/x = (g⁻¹(x) − g⁻¹(0))/(x − 0) est un taux d'accroissement : il tend vers (g⁻¹)′(0) = 1/(1 + 0²) = 1 ✓. Piège classique : conclure 0 ou +∞ sur la seule vue de « 0/0 » : cette forme est indéterminée, et ici on la lève en reconnaissant un nombre dérivé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = √(e^x − 1) et G(x) = 2(f(x) − g⁻¹(f(x))) pour x > 0, où g⁻¹ est la réciproque de la tangente, avec (g⁻¹)′(t) = 1/(1 + t²). On a f′(x) = e^x/(2f(x)) et f(x)² = e^x − 1. Que vaut G′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G′(x) = √(e^x − 1)"
+        },
+        {
+          "id": "b",
+          "text": "G′(x) = e^x/√(e^x − 1)"
+        },
+        {
+          "id": "c",
+          "text": "G′(x) = 2√(e^x − 1)"
+        },
+        {
+          "id": "d",
+          "text": "G′(x) = e^x − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive la composée : G′(x) = 2(f′(x) − f′(x)/(1 + f(x)²)) = 2f′(x) · f(x)²/(1 + f(x)²). Or 1 + f(x)² = e^x et f(x)² = e^x − 1, donc G′(x) = 2 × e^x/(2f(x)) × (e^x − 1)/e^x = (e^x − 1)/f(x) = f(x)²/f(x) = f(x) = √(e^x − 1) ✓. Piège classique : ne dériver que 2f (on obtient 2f′ = e^x/√(e^x − 1)) en oubliant la dérivée de la composée g⁻¹ ∘ f, ou laisser le facteur 2 non compensé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F(x) = ∫ de 0 à x de f(t) dt et G(x) = 2(f(x) − g⁻¹(f(x))), avec F′(x) = G′(x) = f(x) sur ]0 ; +∞[, f(0) = 0 et g⁻¹(0) = 0. Quelle conclusion tire-t-on pour tout x ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F = G sur [0 ; +∞[, car elles ont même dérivée sur ]0 ; +∞[, donc leur différence est nulle partout"
+        },
+        {
+          "id": "b",
+          "text": "F = G sur [0 ; +∞[, car F(0) = G(0) = 0, donc elles coïncident aussi pour tout x > 0"
+        },
+        {
+          "id": "c",
+          "text": "F = G sur [0 ; +∞[, car elles sont continues en 0, ont même dérivée sur ]0 ; +∞[ et F(0) = G(0) = 0"
+        },
+        {
+          "id": "d",
+          "text": "F = G sur [0 ; +∞[, car G′ = f sur ]0 ; +∞[ et f est continue, donc G est la primitive de f"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux fonctions continues sur [0 ; +∞[ qui ont même dérivée sur ]0 ; +∞[ diffèrent d'une constante. Cette constante vaut F(0) − G(0) = 0 − 2(f(0) − g⁻¹(f(0))) = 0 − 0 = 0 ✓, donc F = G. Piège classique : s'arrêter à l'égalité des dérivées (il manque la valeur en un point) ou à l'égalité en 0 (elle ne dit rien pour x > 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A l'aire du domaine limité par C_f (f(x) = √(e^x − 1)), la courbe Γ de x ↦ e^x − 1 et les droites x = 0 et x = ln 2 ; on sait que C_f est au-dessus de Γ sur [0 ; ln 2], que ∫ de 0 à x de f(t) dt = 2(f(x) − g⁻¹(f(x))), que f(ln 2) = 1 et que g⁻¹(1) = π/4. Que vaut A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A = 3 − ln 2 − π/2"
+        },
+        {
+          "id": "b",
+          "text": "A = 1 + ln 2 − π/2"
+        },
+        {
+          "id": "c",
+          "text": "A = 1 + ln 2 − π/4"
+        },
+        {
+          "id": "d",
+          "text": "A = 2 − π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A = ∫ de 0 à ln 2 de (f(x) − (e^x − 1)) dx = ∫ f − [e^x − x] entre 0 et ln 2. D'une part ∫ de 0 à ln 2 de f = 2(f(ln 2) − g⁻¹(f(ln 2))) = 2(1 − π/4) = 2 − π/2. D'autre part [e^x − x] entre 0 et ln 2 = (2 − ln 2) − 1 = 1 − ln 2. Donc A = 2 − π/2 − 1 + ln 2 = 1 + ln 2 − π/2 ✓. Piège classique : oublier de retrancher l'aire sous Γ (on obtient 2 − π/2), changer le signe de l'intégrale de e^x − 1, ou oublier le facteur 2 devant π/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier avec n ≥ 2 et f_n(x) = √(e^x − n) sur [ln n ; +∞[. On pose G_n(x) = 2(f_n(x) − √n g⁻¹(f_n(x)/√n)), avec g⁻¹ la réciproque de la tangente et G_n(x) = ∫ de ln n à x de f_n(t) dt. Que vaut G_n(ln(n + 1)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G_n(ln(n + 1)) = 2(1 − g⁻¹(1))"
+        },
+        {
+          "id": "b",
+          "text": "G_n(ln(n + 1)) = 2(√(n + 1) − √n g⁻¹(√(n + 1)/√n))"
+        },
+        {
+          "id": "c",
+          "text": "G_n(ln(n + 1)) = 2(1 − √n g⁻¹(√n))"
+        },
+        {
+          "id": "d",
+          "text": "G_n(ln(n + 1)) = 2(1 − √n g⁻¹(1/√n))"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En x = ln(n + 1), e^x = n + 1 et f_n(x) = √(n + 1 − n) = 1. Donc f_n(x)/√n = 1/√n et G_n(ln(n + 1)) = 2(1 − √n g⁻¹(1/√n)) ✓. Piège classique : oublier la mise à l'échelle par √n (on retombe sur le cas n = 1 : 2(1 − π/4)), prendre f_n(x) = √(n + 1) (c'est f(x) = √(e^x − 1) qui vaut √n, pas f_n), ou inverser le rapport en √n/1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour x ≥ ln n avec n ≥ 2, on compare f_n(x) = √(e^x − n) avec e^x − 1, sachant que √s ≤ s dès que s ≥ 1. Quelle est la bonne justification de f_n(x) ≤ e^x − 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^x − n < e^x − 1 donne f_n(x) < √(e^x − 1) ≤ e^x − 1, car √s ≤ s est vraie pour tout s ≥ 0 sans aucune condition"
+        },
+        {
+          "id": "b",
+          "text": "e^x − n ≥ e^x − 1 donne f_n(x) ≥ √(e^x − 1), et √(e^x − 1) ≤ e^x − 1 permet de conclure f_n(x) ≤ e^x − 1"
+        },
+        {
+          "id": "c",
+          "text": "e^x − n < e^x − 1 donne f_n(x) < √(e^x − 1), et √(e^x − 1) ≤ e^x − 1 car e^x − 1 ≥ n − 1 ≥ 1 (x ≥ ln n ≥ ln 2)"
+        },
+        {
+          "id": "d",
+          "text": "f_n(x)² = e^x − n ≤ e^x − 1, donc f_n(x) ≤ e^x − 1 en simplifiant par un carré, comme pour toute inégalité de carrés"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme n ≥ 2, e^x − n < e^x − 1, et la racine est croissante : f_n(x) < √(e^x − 1). Pour passer à e^x − 1, on utilise √s ≤ s, vraie seulement si s ≥ 1 : ici s = e^x − 1 ≥ n − 1 ≥ 1 car x ≥ ln n, et e^x − 1 ≥ 1 ⟺ x ≥ ln 2 ✓. Piège classique : appliquer √s ≤ s sans condition (elle est fausse pour 0 < s < 1), ou comparer f_n² ≤ e^x − 1 et en conclure f_n ≤ e^x − 1 : comparer des carrés ne compare pas un nombre à son carré.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit Aₙ l'aire du domaine limité par la courbe de f_n(x) = √(e^x − n), la courbe Γ de x ↦ e^x − 1 et les droites x = ln n et x = ln(n + 1), où f_n ≤ e^x − 1. On a ∫ de ln n à x de f_n(t) dt = 2(f_n(x) − √n g⁻¹(f_n(x)/√n)), et f_n(ln(n + 1)) = 1. Quelle est l'expression de Aₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aₙ = 2√n g⁻¹(1/√n) + ln(n/(n + 1)) − 1"
+        },
+        {
+          "id": "b",
+          "text": "Aₙ = 2√n g⁻¹(1/√n) − ln(n/(n + 1)) − 1"
+        },
+        {
+          "id": "c",
+          "text": "Aₙ = 2√n g⁻¹(1/√n) − 1"
+        },
+        {
+          "id": "d",
+          "text": "Aₙ = 3 + ln(n/(n + 1)) − 2√n g⁻¹(1/√n)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Aₙ = ∫ de ln n à ln(n + 1) de (e^x − 1 − f_n(x)) dx = [e^x − x] − G_n(ln(n + 1)). Le crochet vaut (n + 1 − ln(n + 1)) − (n − ln n) = 1 − ln((n + 1)/n) = 1 + ln(n/(n + 1)), et G_n(ln(n + 1)) = 2 − 2√n g⁻¹(1/√n). Donc Aₙ = 1 + ln(n/(n + 1)) − 2 + 2√n g⁻¹(1/√n) = 2√n g⁻¹(1/√n) + ln(n/(n + 1)) − 1 ✓. Piège classique : oublier le terme − x de la primitive de e^x − 1 (disparition du logarithme) ou changer le signe de l'intégrale de f_n, qui doit être retranchée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit Aₙ = 2√n g⁻¹(1/√n) + ln(n/(n + 1)) − 1 pour n ≥ 2, où g⁻¹ est la réciproque de la tangente sur [0 ; π/2[, avec g⁻¹(t)/t → 1 quand t → 0⁺. Quelle est la limite de Aₙ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit 2√n g⁻¹(1/√n) = 2 × g⁻¹(t)/t avec t = 1/√n → 0⁺ : ce terme tend vers 2 × 1 = 2. Ensuite ln(n/(n + 1)) = −ln(1 + 1/n) → 0. Donc Aₙ → 2 + 0 − 1 = 1 ✓. Piège classique : traiter √n × g⁻¹(1/√n) comme « ∞ × 0 » sans le lever (ici on reconnaît un nombre dérivé), ou oublier le « − 1 » final et répondre 2, ou perdre le facteur 2 et répondre 1/2.",
+      "difficulty": 3
+    }
+  ]
+}

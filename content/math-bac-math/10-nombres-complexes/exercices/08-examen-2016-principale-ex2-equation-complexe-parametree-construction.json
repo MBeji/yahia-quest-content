@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 2 ⭐⭐⭐ : équation du second degré à paramètre complexe, argument d'un produit, relation métrique et construction de points",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Soit m un nombre complexe non nul. On considère dans ℂ l'équation (E) :\nz² − (1 + 2i)m z − (1 − i)m² = 0\nQuelles sont ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 + i)m et i m"
+        },
+        {
+          "id": "b",
+          "text": "2(1 + i)m et 2i m"
+        },
+        {
+          "id": "c",
+          "text": "−(1 + i)m et −i m"
+        },
+        {
+          "id": "d",
+          "text": "m et 2i m"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le discriminant est Δ = (1 + 2i)²m² + 4(1 − i)m² = m²[(1 + 4i − 4) + 4 − 4i] = m² = (m)². Donc les solutions sont z = ((1 + 2i)m ± m)/2, soit (2 + 2i)m/2 = (1 + i)m et 2i m/2 = i m ✓. Contrôle : la somme (1 + i)m + i m = (1 + 2i)m et le produit (1 + i)i m² = (−1 + i)m² = −(1 − i)m² ✓. Piège classique : oublier la division par 2 (on trouve 2(1 + i)m et 2i m), se tromper de signe sur −b (on trouve les opposés), ou choisir deux nombres de bonne somme mais de mauvais produit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit m non nul d'argument θ ∈ ]0 ; π[, et z₁ = (1 + i)m, z₂ = i m les solutions de (E). Pour quelle valeur de θ le produit z₁z₂ est-il un réel strictement positif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ = 3π/8"
+        },
+        {
+          "id": "b",
+          "text": "θ = 5π/8"
+        },
+        {
+          "id": "c",
+          "text": "θ = π/8"
+        },
+        {
+          "id": "d",
+          "text": "θ = 7π/8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z₁z₂ = (1 + i)i m² = (−1 + i)m², avec −1 + i = √2 e^(i3π/4) et m² = |m|² e^(2iθ). Donc z₁z₂ = √2|m|² e^(i(3π/4 + 2θ)). Ce nombre est un réel strictement positif si et seulement si 3π/4 + 2θ ≡ 0 [2π], soit θ ≡ −3π/8 [π]. Dans ]0 ; π[, la seule valeur est θ = −3π/8 + π = 5π/8 ✓. Piège classique : oublier le signe de −3π/8 (θ = 3π/8 donne un argument 3π/2), viser un réel négatif (3π/4 + 2θ ≡ π donne θ = π/8), ou viser un imaginaire pur (3π/4 + 2θ ≡ π/2 donne θ = 7π/8).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit m d'argument θ = 5π/8 et z₁ = (1 + i)m, z₂ = i m. Quelle est la valeur de z₁z₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z₁z₂ = −√2|m|², car l'argument vaut 3π/4 + π/4 = π"
+        },
+        {
+          "id": "b",
+          "text": "z₁z₂ = 2|m|², car |1 + i| = 2"
+        },
+        {
+          "id": "c",
+          "text": "z₁z₂ = √2|m|², car l'argument vaut 3π/4 + 5π/4 = 2π"
+        },
+        {
+          "id": "d",
+          "text": "z₁z₂ = √2|m|² i, car l'argument vaut π/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "z₁z₂ = (1 + i) i m² = (−1 + i)m² = √2 e^(i3π/4) |m|² e^(i5π/4) = √2|m|² e^(i2π) = √2|m|² ✓. Le module est |1 + i| × |i| × |m|² = √2|m|². Piège classique : se tromper dans la somme des arguments (3π/4 + 5π/4 = 2π, et non 3π/4 + π/4 = π), prendre |1 + i| = 2 au lieu de √2, ou oublier le doublement de θ dans m².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le repère orthonormé direct (O, u, v), B et C sont les points d'abscisses −√2/2 et t > 0 sur l'axe des abscisses, et E est le point d'intersection du demi-cercle de diamètre [BC] avec l'axe (O, v), comme sur la figure. Quelle égalité relie OE, OB et OC, et pourquoi ?\n<svg viewBox=\"0 0 260 130\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\"><line x1=\"10\" y1=\"110\" x2=\"250\" y2=\"110\" stroke=\"#1f2937\"/><line x1=\"60\" y1=\"118\" x2=\"60\" y2=\"8\" stroke=\"#1f2937\"/><polyline points=\"210.0,110.0 209.9,105.0 209.5,99.9 208.8,94.9 207.9,90.0 206.7,85.1 205.3,80.3 203.6,75.5 201.7,70.9 199.5,66.3 197.1,61.9 194.5,57.6 191.6,53.4 188.6,49.5 185.3,45.6 181.8,42.0 178.2,38.5 174.3,35.2 170.3,32.2 166.2,29.3 161.9,26.7 157.5,24.3 152.9,22.1 148.3,20.2 143.5,18.5 138.7,17.1 133.8,15.9 128.8,15.0 123.8,14.3 118.8,13.9 113.8,13.8 108.8,13.9 103.7,14.3 98.7,15.0 93.8,15.9 88.9,17.1 84.1,18.5 79.3,20.2 74.7,22.1 70.1,24.3 65.7,26.7 61.4,29.3 57.2,32.2 53.2,35.2 49.4,38.5 45.8,42.0 42.3,45.6 39.0,49.5 35.9,53.4 33.1,57.6 30.5,61.9 28.1,66.3 25.9,70.9 24.0,75.5 22.3,80.3 20.9,85.1 19.7,90.0 18.8,94.9 18.1,99.9 17.7,105.0 17.6,110.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"17.6\" y1=\"110\" x2=\"60\" y2=\"30.2\" stroke=\"#6b7280\"/><line x1=\"210.0\" y1=\"110\" x2=\"60\" y2=\"30.2\" stroke=\"#6b7280\"/><g fill=\"#0f172a\"><circle cx=\"17.6\" cy=\"110\" r=\"3\"/><circle cx=\"210.0\" cy=\"110\" r=\"3\"/><circle cx=\"60\" cy=\"30.2\" r=\"3\"/></g><text x=\"11.6\" y=\"124\">B</text><text x=\"208.0\" y=\"124\">C</text><text x=\"46\" y=\"123\">O</text><text x=\"66\" y=\"27.2\">E</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OE = BC/2 : OE est la médiane issue de E dans le triangle rectangle BEC, donc la moitié de l'hypoténuse"
+        },
+        {
+          "id": "b",
+          "text": "OE² = OB² + OC² : on applique le théorème de Pythagore au triangle OBC, rectangle en O"
+        },
+        {
+          "id": "c",
+          "text": "OE² = OB × BC : le triangle BEC est rectangle en E, avec BC pour hypoténuse"
+        },
+        {
+          "id": "d",
+          "text": "OE² = OB × OC : BEC est rectangle en E (E sur le cercle de diamètre [BC]) et OE est la hauteur"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un point du cercle de diamètre [BC] voit [BC] sous un angle droit : le triangle BEC est rectangle en E. Le point O est le pied de la hauteur issue de E (E est sur la perpendiculaire à (BC) passant par O). Dans un triangle rectangle, le carré de la hauteur est le produit des segments qu'elle découpe sur l'hypoténuse : OE² = OB × OC ✓. Piège classique : confondre la hauteur avec la médiane (le centre du cercle n'est pas O), appliquer Pythagore à un triangle qui n'est pas rectangle en O, ou écrire OB × BC.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec OB = √2/2 et OC = t, on a OE² = OB × OC. Soit m = (√t/⁴√2) e^(i5π/8). Quelle est la relation entre |m| et OE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|m|² = t/√2 = (√2/2) × t = OE², donc |m| = OE"
+        },
+        {
+          "id": "b",
+          "text": "|m|² = t√2 = OE², donc |m| = OE"
+        },
+        {
+          "id": "c",
+          "text": "|m|² = t/⁴√2, qui n'est pas égal à OB × OC : on ne peut pas conclure"
+        },
+        {
+          "id": "d",
+          "text": "|m| = √t/√2 = OB × OC, donc |m| = OE²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a |m| = √t/⁴√2 donc |m|² = t/(⁴√2)² = t/√2 = (√2/2)t = OB × OC = OE². Comme |m| et OE sont positifs, |m| = OE ✓. Piège classique : multiplier au lieu de diviser par √2 (|m|² = t√2), oublier que le carré de ⁴√2 est √2, ou confondre |m| avec OE².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que |m| = OE et arg(m) = 5π/8. Comment construit-on le point A d'affixe m ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A est le point à la distance OC de O sur la demi-droite faisant l'angle 5π/8 avec (O, u)"
+        },
+        {
+          "id": "b",
+          "text": "A est le point à la distance OE de O sur la demi-droite faisant l'angle 5π/8 avec (O, u)"
+        },
+        {
+          "id": "c",
+          "text": "A est le point à la distance OE de O sur la demi-droite faisant l'angle 5π/4 avec (O, u)"
+        },
+        {
+          "id": "d",
+          "text": "A est le point du demi-cercle de diamètre [BC] situé sur la demi-droite d'angle 5π/8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un point d'affixe m = |m|e^(iθ) se place par son module et son argument : |m| = OE donne la distance à O, que l'on reporte au compas avec le cercle de centre O passant par E ; arg m = 5π/8 donne la direction (un angle un peu supérieur à un quart de tour) ✓. Piège classique : reporter la distance OC (c'est t, et |m|² = OB × OC), doubler l'angle, ou chercher A sur le demi-cercle (E est sur le demi-cercle, pas A).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On convient que |z₁| < |z₂| pour les solutions z₁ = i m et z₂ = (1 + i)m de (E), A étant le point d'affixe m. Comment construit-on M₁ et M₂ à partir de A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M₁ est l'image de A par la rotation de centre O et d'angle π/2 ; M₂ est le milieu de [AM₁]"
+        },
+        {
+          "id": "b",
+          "text": "M₁ est l'image de A par la rotation de centre O et d'angle π/4 ; M₂ est le symétrique de M₁ par rapport à O"
+        },
+        {
+          "id": "c",
+          "text": "M₁ est l'image de A par la rotation de centre O et d'angle π/2 ; M₂ est le quatrième sommet du carré OAM₂M₁"
+        },
+        {
+          "id": "d",
+          "text": "M₁ est le symétrique de A par rapport à l'axe (O, v) ; M₂ est le symétrique de A par rapport à O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Multiplier m par i, c'est tourner le point A d'un quart de tour autour de O, sans changer la distance : M₁ d'affixe i m vérifie OM₁ = OA et (OA, OM₁) = π/2. Ensuite z₂ = (1 + i)m = m + i m : c'est la somme des vecteurs OA et OM₁, donc M₂ est le quatrième sommet du parallélogramme OAM₂M₁, qui est ici un carré ✓ (|z₂| = √2|m| > |m| = |z₁|). Piège classique : prendre le milieu (qui correspond à (1 + i)m/2), tourner de π/4 sans changer le module (alors que |1 + i| = √2), ou utiliser des symétries au lieu de rotations.",
+      "difficulty": 3
+    }
+  ]
+}

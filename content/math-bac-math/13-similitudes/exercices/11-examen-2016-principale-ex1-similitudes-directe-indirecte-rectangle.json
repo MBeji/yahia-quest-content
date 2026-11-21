@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 1 ⭐⭐⭐ : Similitudes directe et indirecte, cercles de diamètres [BC] et [EF], rectangle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F. Quel est l'angle de f ? <svg viewBox=\"0 0 250 220\"><path d=\"M144.8 189.2 L224 189.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M144.8 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 189.2 L184.4 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"144.8\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"224\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"30.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"129.8\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"110\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"140.8\" y=\"205.2\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"205.2\" text-anchor=\"middle\">B</text><text x=\"144.8\" y=\"22.8\" text-anchor=\"middle\">C</text><text x=\"22\" y=\"205.2\" text-anchor=\"middle\">E</text><text x=\"131.8\" y=\"133.8\" text-anchor=\"middle\">F</text><text x=\"196.4\" y=\"108\" text-anchor=\"middle\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/2"
+        },
+        {
+          "id": "b",
+          "text": "π/4"
+        },
+        {
+          "id": "c",
+          "text": "π/2"
+        },
+        {
+          "id": "d",
+          "text": "π"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'angle d'une similitude directe de centre A est (AM⃗, AM′⃗) pour tout point M distinct de A. Avec M = B et M′ = f(B) = F, c'est (AB⃗, AF⃗). Le point F est sur [AC], donc AF⃗ a la direction et le sens de AC⃗ ; le triangle est direct et rectangle en A, donc (AB⃗, AC⃗) ≡ π/2 [2π]. L'angle de f est π/2. Une mesure −π/2 supposerait un triangle indirect ; π/4 ou π ne correspondent à aucune direction de la figure. Vérification : (AB) et (AF) = (AC) sont perpendiculaires, ce qui est cohérent ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F. Quel quotient est égal au rapport de f ? <svg viewBox=\"0 0 250 220\"><path d=\"M144.8 189.2 L224 189.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M144.8 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 189.2 L184.4 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"144.8\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"224\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"30.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"129.8\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"110\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"140.8\" y=\"205.2\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"205.2\" text-anchor=\"middle\">B</text><text x=\"144.8\" y=\"22.8\" text-anchor=\"middle\">C</text><text x=\"22\" y=\"205.2\" text-anchor=\"middle\">E</text><text x=\"131.8\" y=\"133.8\" text-anchor=\"middle\">F</text><text x=\"196.4\" y=\"108\" text-anchor=\"middle\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB/AF"
+        },
+        {
+          "id": "b",
+          "text": "AF/AC"
+        },
+        {
+          "id": "c",
+          "text": "AF/AB"
+        },
+        {
+          "id": "d",
+          "text": "BF/BC"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rapport d'une similitude directe de centre A est le quotient AM′/AM pour tout point M distinct de A. Avec M = B et M′ = f(B) = F, on obtient k = AF/AB. Le quotient AB/AF est l'inverse, c'est le rapport de f⁻¹ ; AF/AC mélange le point image F avec le point C, qui n'est pas son antécédent ; BF/BC compare des distances entre points qui ne se correspondent pas par f. Vérification : (AB⃗, AF⃗) ≡ π/2 et AF/AB sont bien le module et l'argument de l'image de B ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F. Quelle est l'image de la droite (BC) par f ? <svg viewBox=\"0 0 250 220\"><path d=\"M144.8 189.2 L224 189.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M144.8 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 189.2 L184.4 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"144.8\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"224\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"30.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"129.8\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"110\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"140.8\" y=\"205.2\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"205.2\" text-anchor=\"middle\">B</text><text x=\"144.8\" y=\"22.8\" text-anchor=\"middle\">C</text><text x=\"22\" y=\"205.2\" text-anchor=\"middle\">E</text><text x=\"131.8\" y=\"133.8\" text-anchor=\"middle\">F</text><text x=\"196.4\" y=\"108\" text-anchor=\"middle\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La parallèle à (BC) passant par F"
+        },
+        {
+          "id": "b",
+          "text": "La droite (GF)"
+        },
+        {
+          "id": "c",
+          "text": "La droite (AF)"
+        },
+        {
+          "id": "d",
+          "text": "La droite (BF)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(B) = F ∈ f((BC)). Une similitude directe d'angle π/2 transforme une droite en une droite qui lui est perpendiculaire. L'image de (BC) est donc la perpendiculaire à (BC) passant par F. Or (GF) est la médiatrice de [BC], perpendiculaire à (BC), et F lui appartient : l'image est (GF). La parallèle à (BC) passant par F serait l'image par une homothétie (angle 0) ; la droite (AF) passe par le centre mais n'est pas perpendiculaire à (BC). Vérification : (GF) ⊥ (BC) car (GF) est la médiatrice de [BC] ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F. Quelle est l'image de C par f ? <svg viewBox=\"0 0 250 220\"><path d=\"M144.8 189.2 L224 189.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M144.8 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 189.2 L184.4 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"144.8\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"224\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"30.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"129.8\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"110\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"140.8\" y=\"205.2\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"205.2\" text-anchor=\"middle\">B</text><text x=\"144.8\" y=\"22.8\" text-anchor=\"middle\">C</text><text x=\"22\" y=\"205.2\" text-anchor=\"middle\">E</text><text x=\"131.8\" y=\"133.8\" text-anchor=\"middle\">F</text><text x=\"196.4\" y=\"108\" text-anchor=\"middle\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point E"
+        },
+        {
+          "id": "b",
+          "text": "Le point F"
+        },
+        {
+          "id": "c",
+          "text": "Le point G"
+        },
+        {
+          "id": "d",
+          "text": "Le point A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C appartient à (AC) et à (BC). f((AC)) est la perpendiculaire à (AC) passant par A (angle π/2 et f(A) = A), c'est-à-dire (AB) = (AE). f((BC)) = (GF) : image d'une droite perpendiculaire, passant par F. Le point f(C) est donc à l'intersection de (AB) et de (GF), c'est E. Le point F est f(B), pas f(C) ; G est le milieu de [BC] et reste sur (BC) ; A est fixe. Vérification : AE/AC = AF/AB ≠ 1 est le rapport de f, et (AC⃗, AE⃗) ≡ π/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F. Les cercles 𝒞₁ de diamètre [BC] et 𝒞₂ de diamètre [EF] se coupent en A et H ; on pose I = f(H). Quelle est la meilleure justification de « [HI] est un diamètre de 𝒞₂ » ? <svg viewBox=\"0 0 250 220\"><circle cx=\"155\" cy=\"99.3\" r=\"69\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"77.8\" cy=\"137.9\" r=\"51.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M124.1 161.1 L185.8 161.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M124.1 161.1 L124.1 37.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M185.8 161.1 L124.1 37.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31.5 161.1 L124.1 114.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"124.1\" cy=\"161.1\" r=\"3.6\"/><circle cx=\"185.8\" cy=\"161.1\" r=\"3.6\"/><circle cx=\"124.1\" cy=\"37.6\" r=\"3.6\"/><circle cx=\"31.5\" cy=\"161.1\" r=\"3.6\"/><circle cx=\"124.1\" cy=\"114.8\" r=\"3.6\"/><circle cx=\"87\" cy=\"87\" r=\"3.6\"/><circle cx=\"68.5\" cy=\"188.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"134.1\" y=\"155.1\" text-anchor=\"middle\">A</text><text x=\"193.8\" y=\"177.1\" text-anchor=\"middle\">B</text><text x=\"124.1\" y=\"29.6\" text-anchor=\"middle\">C</text><text x=\"25.5\" y=\"153.1\" text-anchor=\"middle\">E</text><text x=\"136.1\" y=\"118.8\" text-anchor=\"middle\">F</text><text x=\"75\" y=\"85\" text-anchor=\"middle\">H</text><text x=\"56.5\" y=\"200.9\" text-anchor=\"middle\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = f(H) est le symétrique de H par rapport à A, donc [HI] passe par le centre"
+        },
+        {
+          "id": "b",
+          "text": "I = f(H) est sur 𝒞₂ car f conserve 𝒞₂ ; H et I sont donc sur 𝒞₂, et [HI] en est un diamètre"
+        },
+        {
+          "id": "c",
+          "text": "A, H, I sont sur 𝒞₂ et (AH⃗, AI⃗) ≡ π/4 (l'angle de f) : l'angle inscrit HAI caractérise alors un diamètre"
+        },
+        {
+          "id": "d",
+          "text": "A, H, I sont sur 𝒞₂ et (AH⃗, AI⃗) ≡ π/2 : l'angle inscrit HAI est droit"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(𝒞₁) = 𝒞₂ car f envoie B sur F et C sur E, donc le diamètre [BC] sur le diamètre [FE] ; ainsi I = f(H) est sur 𝒞₂. A est aussi sur 𝒞₂ (angle EAF droit). Comme f est de centre A et d'angle π/2, (AH⃗, AI⃗) ≡ π/2 : l'angle inscrit HAI intercepte l'arc HI et est droit, donc [HI] est un diamètre de 𝒞₂. Dire que f conserve 𝒞₂ est faux : f(𝒞₂) est un autre cercle, et I est sur 𝒞₂ parce que H est sur 𝒞₁ ; l'angle de f est π/2, non π/4, et seul un angle inscrit droit donne un diamètre ; I n'est pas le symétrique de H par rapport à A (il en serait ainsi pour un angle π). Vérification : le centre de 𝒞₂ est le milieu de [EF], image du milieu de [BC] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F. [HI] et [EF] sont deux diamètres du cercle 𝒞₂ ; on cherche à prouver que HEIF est un rectangle. Quelle propriété des diagonales [HI] et [EF] permet de conclure ? <svg viewBox=\"0 0 250 220\"><circle cx=\"155\" cy=\"99.3\" r=\"69\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"77.8\" cy=\"137.9\" r=\"51.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M124.1 161.1 L185.8 161.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M124.1 161.1 L124.1 37.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M185.8 161.1 L124.1 37.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31.5 161.1 L124.1 114.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"124.1\" cy=\"161.1\" r=\"3.6\"/><circle cx=\"185.8\" cy=\"161.1\" r=\"3.6\"/><circle cx=\"124.1\" cy=\"37.6\" r=\"3.6\"/><circle cx=\"31.5\" cy=\"161.1\" r=\"3.6\"/><circle cx=\"124.1\" cy=\"114.8\" r=\"3.6\"/><circle cx=\"87\" cy=\"87\" r=\"3.6\"/><circle cx=\"68.5\" cy=\"188.9\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"134.1\" y=\"155.1\" text-anchor=\"middle\">A</text><text x=\"193.8\" y=\"177.1\" text-anchor=\"middle\">B</text><text x=\"124.1\" y=\"29.6\" text-anchor=\"middle\">C</text><text x=\"25.5\" y=\"153.1\" text-anchor=\"middle\">E</text><text x=\"136.1\" y=\"118.8\" text-anchor=\"middle\">F</text><text x=\"75\" y=\"85\" text-anchor=\"middle\">H</text><text x=\"56.5\" y=\"200.9\" text-anchor=\"middle\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles ont le même milieu et sont perpendiculaires"
+        },
+        {
+          "id": "b",
+          "text": "Elles ont la même longueur et sont perpendiculaires"
+        },
+        {
+          "id": "c",
+          "text": "Elles ont la même longueur et un point commun"
+        },
+        {
+          "id": "d",
+          "text": "Elles ont le même milieu et la même longueur"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un quadrilatère dont les diagonales ont le même milieu est un parallélogramme ; si, de plus, ses diagonales ont la même longueur, c'est un rectangle. Deux diamètres d'un même cercle réunissent les deux conditions : même milieu (le centre du cercle) et même longueur (le double du rayon). Des diagonales de même milieu et perpendiculaires feraient un losange ; de même longueur et perpendiculaires, ou de même longueur avec un simple point commun, elles ne suffisent pas à fournir un parallélogramme. Vérification : l'angle EHF est droit car H est sur le cercle de diamètre [EF] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit g la similitude indirecte de centre A telle que g(B) = F et f la similitude directe de centre A telle que f(B) = F. Quel argument établit que g = S_(AC)∘f ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "S_(AC)∘f est indirecte, de centre A, et envoie B sur S_(AC)(F) = F car F est sur l'axe (AC) ; une telle similitude est unique"
+        },
+        {
+          "id": "b",
+          "text": "S_(AC)∘f est directe, de centre A, et envoie B sur S_(AC)(F) = F car F est sur l'axe (AC) ; une telle similitude est unique"
+        },
+        {
+          "id": "c",
+          "text": "S_(AC)∘f est indirecte, de centre A, et envoie B sur S_(AC)(F) = F car F est le centre de la symétrie S_(AC) ; une telle similitude est unique"
+        },
+        {
+          "id": "d",
+          "text": "S_(AC)∘f est directe, de centre A, et envoie B sur S_(AC)(F) = F car F est le centre de la symétrie S_(AC) ; une telle similitude est unique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "S_(AC)∘f est la composée d'une isométrie indirecte et d'une similitude directe : elle est indirecte. Elle fixe A (f(A) = A et A ∈ (AC)). Enfin f(B) = F et F est sur l'axe (AC), donc S_(AC)(F) = F : elle envoie B sur F. Or il n'existe qu'une seule similitude indirecte de centre A envoyant B sur F : c'est g. Une symétrie orthogonale n'a pas de centre mais un axe : un point est fixe parce qu'il est sur l'axe, non parce qu'il serait « centre » ; et le mot « directe » est faux car une symétrie renverse l'orientation. Vérification : S_(AC)∘f et g ont le même rapport, celui de f ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F, E′ = f(E) (E′ est sur (AC)) et g = S_(AC)∘f. Quelle est l'image de E par g ? <svg viewBox=\"0 0 250 220\"><path d=\"M144.8 189.2 L224 189.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M144.8 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 189.2 L184.4 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"144.8\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"224\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"30.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"129.8\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"110\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"140.8\" y=\"205.2\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"205.2\" text-anchor=\"middle\">B</text><text x=\"144.8\" y=\"22.8\" text-anchor=\"middle\">C</text><text x=\"22\" y=\"205.2\" text-anchor=\"middle\">E</text><text x=\"131.8\" y=\"133.8\" text-anchor=\"middle\">F</text><text x=\"196.4\" y=\"108\" text-anchor=\"middle\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point A"
+        },
+        {
+          "id": "b",
+          "text": "Le point E′"
+        },
+        {
+          "id": "c",
+          "text": "Le symétrique de E par rapport à (AC)"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu de [EE′]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g(E) = S_(AC)(f(E)) = S_(AC)(E′). Comme E′ appartient à l'axe (AC), il est invariant par S_(AC) : g(E) = E′. Le symétrique de E par rapport à (AC) serait l'image par S_(AC) seule, sans passer par f ; le point A est fixe mais E n'est pas A ; le milieu de [EE′] n'a pas de raison particulière d'être l'image. Vérification : g et f coïncident en E, comme il se doit pour un point dont l'image par f est sur l'axe ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit f la similitude directe de centre A telle que f(B) = F, g = S_(AC)∘f, et J = f(F) (J est sur (AE)). À quelle droite appartient g(F) ? <svg viewBox=\"0 0 250 220\"><path d=\"M144.8 189.2 L224 189.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M144.8 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 189.2 L184.4 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"144.8\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"224\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"30.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"129.8\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"110\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"140.8\" y=\"205.2\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"205.2\" text-anchor=\"middle\">B</text><text x=\"144.8\" y=\"22.8\" text-anchor=\"middle\">C</text><text x=\"22\" y=\"205.2\" text-anchor=\"middle\">E</text><text x=\"131.8\" y=\"133.8\" text-anchor=\"middle\">F</text><text x=\"196.4\" y=\"108\" text-anchor=\"middle\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AC)"
+        },
+        {
+          "id": "b",
+          "text": "(BC)"
+        },
+        {
+          "id": "c",
+          "text": "(GF)"
+        },
+        {
+          "id": "d",
+          "text": "(AE)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "g(F) = S_(AC)(f(F)) = S_(AC)(J). La droite (AE) est perpendiculaire à l'axe (AC) : une droite perpendiculaire à l'axe d'une symétrie orthogonale est globalement invariante. J étant sur (AE), son symétrique est aussi sur (AE). Les droites (AC), (BC) et (GF) ne sont pas invariantes de cette façon ou ne contiennent pas J. Vérification : le symétrique de J par rapport à (AC) est de l'autre côté de A sur (AE), à la même distance ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct, rectangle en A, tel que AB < AC. La médiatrice de [BC] coupe les droites (AB), (AC) et (BC) respectivement en E, F et G ; E, A, B sont dans cet ordre sur (AB) et F est sur [AC]. Soit g la similitude indirecte de centre A telle que g(B) = F. Quel est son axe ? <svg viewBox=\"0 0 250 220\"><path d=\"M144.8 189.2 L224 189.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M144.8 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 189.2 L144.8 30.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 189.2 L184.4 110\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"144.8\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"224\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"30.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"189.2\" r=\"3.6\"/><circle cx=\"144.8\" cy=\"129.8\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"110\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"140.8\" y=\"205.2\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"205.2\" text-anchor=\"middle\">B</text><text x=\"144.8\" y=\"22.8\" text-anchor=\"middle\">C</text><text x=\"22\" y=\"205.2\" text-anchor=\"middle\">E</text><text x=\"131.8\" y=\"133.8\" text-anchor=\"middle\">F</text><text x=\"196.4\" y=\"108\" text-anchor=\"middle\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (AB), côté de l'angle"
+        },
+        {
+          "id": "b",
+          "text": "La droite (AC), côté de l'angle"
+        },
+        {
+          "id": "c",
+          "text": "La bissectrice de l'angle BAC"
+        },
+        {
+          "id": "d",
+          "text": "La médiatrice du côté [BC]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'axe d'une similitude indirecte de centre A est la bissectrice de l'angle (AM⃗, AM′⃗) pour tout M. Avec M = B et M′ = F, c'est la bissectrice de l'angle BAF, et comme F est sur [AC], de l'angle BAC. Les droites (AB) et (AC) sont les côtés de l'angle, pas sa bissectrice, et la médiatrice de [BC] ne passe pas par le centre A (AB ≠ AC). Vérification : l'axe passe par A, le centre de g ✓.",
+      "difficulty": 3
+    }
+  ]
+}

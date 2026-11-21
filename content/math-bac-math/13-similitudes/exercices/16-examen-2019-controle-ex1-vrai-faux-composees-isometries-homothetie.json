@@ -1,0 +1,130 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 1 ⭐⭐⭐ : Vrai ou faux, composées de symétries, de translations et d'homothétie",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "prompt": "Soit ABC un triangle rectangle en A et Δ la médiatrice du segment [AB]. On note S_d la symétrie orthogonale d'axe d, t_u⃗ la translation de vecteur u⃗ et h_(A,k) l'homothétie de centre A et de rapport k. Les droites (AB) et (AC) sont perpendiculaires en A. Quelle est la nature de S_(AB)∘S_(AC) ? <svg viewBox=\"0 0 220 170\"><path d=\"M26 134 L194 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M194 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M110 134 L110 43\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><text x=\"150\" y=\"30\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">Δ</text><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"134\" r=\"3.6\"/><circle cx=\"194\" cy=\"134\" r=\"3.6\"/><circle cx=\"26\" cy=\"36\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"16\" y=\"146\" text-anchor=\"middle\">A</text><text x=\"204\" y=\"146\" text-anchor=\"middle\">B</text><text x=\"16\" y=\"38\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une symétrie centrale de centre A"
+        },
+        {
+          "id": "b",
+          "text": "Une rotation de centre A et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "Une translation de vecteur AB⃗"
+        },
+        {
+          "id": "d",
+          "text": "Une symétrie orthogonale d'axe la bissectrice de BAC"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La composée de deux symétries orthogonales d'axes sécants en A est la rotation de centre A dont l'angle est le double de l'angle des axes : ici 2 × π/2 = π. Une rotation d'angle π est la symétrie centrale de centre A, c'est-à-dire l'homothétie h_(A,−1). Garder π/2 oublierait le facteur 2 ; une composée de deux symétries d'axes sécants n'est jamais une translation, ni une symétrie orthogonale (c'est un déplacement). Vérification : M(x ; y) devient (−x ; −y) ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit ABC un triangle rectangle en A et Δ la médiatrice du segment [AB]. On note S_d la symétrie orthogonale d'axe d, t_u⃗ la translation de vecteur u⃗ et h_(A,k) l'homothétie de centre A et de rapport k. Si f est une isométrie qui fixe les points A et B, quelles sont les possibilités pour f ? <svg viewBox=\"0 0 220 170\"><path d=\"M26 134 L194 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M194 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M110 134 L110 43\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><text x=\"150\" y=\"30\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">Δ</text><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"134\" r=\"3.6\"/><circle cx=\"194\" cy=\"134\" r=\"3.6\"/><circle cx=\"26\" cy=\"36\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"16\" y=\"146\" text-anchor=\"middle\">A</text><text x=\"204\" y=\"146\" text-anchor=\"middle\">B</text><text x=\"16\" y=\"38\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f = id ou f = h_(A,−1)"
+        },
+        {
+          "id": "b",
+          "text": "f = id ou f = S_(AB)"
+        },
+        {
+          "id": "c",
+          "text": "f = id uniquement"
+        },
+        {
+          "id": "d",
+          "text": "f = id ou f = S_Δ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une isométrie qui fixe deux points distincts A et B fixe tous les points de la droite (AB) : c'est l'identité, ou la symétrie orthogonale d'axe (AB) (un antidéplacement). Une rotation d'un autre centre ou une symétrie centrale de centre A ne fixerait pas B. S_Δ échange A et B (Δ est la médiatrice de [AB]) et h_(A,−1) envoie B sur le symétrique de B par rapport à A. Vérification : l'identité et S_(AB) fixent bien A et B ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit ABC un triangle rectangle en A et Δ la médiatrice du segment [AB]. On note S_d la symétrie orthogonale d'axe d, t_u⃗ la translation de vecteur u⃗ et h_(A,k) l'homothétie de centre A et de rapport k. Peut-on affirmer t_BC⃗∘S_Δ = t_AC⃗∘S_(AC) ? Quelle est la bonne réponse ? <svg viewBox=\"0 0 220 170\"><path d=\"M26 134 L194 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M194 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M110 134 L110 43\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><text x=\"150\" y=\"30\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">Δ</text><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"134\" r=\"3.6\"/><circle cx=\"194\" cy=\"134\" r=\"3.6\"/><circle cx=\"26\" cy=\"36\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"16\" y=\"146\" text-anchor=\"middle\">A</text><text x=\"204\" y=\"146\" text-anchor=\"middle\">B</text><text x=\"16\" y=\"38\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faux : t_BA⃗∘S_Δ = S_(AB) puisque BA⃗ est porté par (AB), donc le membre de gauche vaut t_AC⃗∘S_(AB) et non t_AC⃗∘S_(AC)"
+        },
+        {
+          "id": "b",
+          "text": "Vrai : S_Δ = S_(AC), car Δ et (AC) sont parallèles, donc il reste à comparer t_BC⃗ et t_AC⃗, qui sont égales"
+        },
+        {
+          "id": "c",
+          "text": "Vrai : t_BC⃗ = t_AC⃗∘t_BA⃗ et t_BA⃗∘S_Δ = S_(AC), car BA⃗ ⟂ Δ et BA⃗ est le double de l'écart entre Δ et (AC)"
+        },
+        {
+          "id": "d",
+          "text": "Faux : t_BA⃗∘S_Δ est une symétrie glissante, alors que t_AC⃗∘S_(AC) est une symétrie orthogonale : natures différentes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "t_BC⃗ = t_AC⃗∘t_BA⃗ (relation de Chasles). Composer S_Δ avec une translation de vecteur perpendiculaire à Δ et de norme double de la distance entre Δ et (AC) revient à une symétrie d'axe (AC) : en repère (A ; AB⃗, AC⃗) avec B(b ; 0), S_Δ envoie (x ; y) sur (b − x ; y) puis t_BA⃗ donne (−x ; y), qui est S_(AC). Ainsi t_BC⃗∘S_Δ = t_AC⃗∘t_BA⃗∘S_Δ = t_AC⃗∘S_(AC). Les deux membres ont même nature et même expression : l'égalité est vraie. Les axes Δ et (AC) sont distincts (Δ est parallèle à (AC), à distance AB/2). Vérification : les deux membres envoient (x ; y) sur (−x ; y + AC) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit ABC un triangle rectangle en A et Δ la médiatrice du segment [AB]. On note S_d la symétrie orthogonale d'axe d, t_u⃗ la translation de vecteur u⃗ et h_(A,k) l'homothétie de centre A et de rapport k. Peut-on affirmer S_(AB)∘h_(A,2)∘S_(AC) = h_(A,−2) ? Quelle est la bonne réponse ? <svg viewBox=\"0 0 220 170\"><path d=\"M26 134 L194 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M194 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M110 134 L110 43\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><text x=\"150\" y=\"30\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">Δ</text><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"134\" r=\"3.6\"/><circle cx=\"194\" cy=\"134\" r=\"3.6\"/><circle cx=\"26\" cy=\"36\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"16\" y=\"146\" text-anchor=\"middle\">A</text><text x=\"204\" y=\"146\" text-anchor=\"middle\">B</text><text x=\"16\" y=\"38\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faux : S_(AB)∘S_(AC) est une rotation d'angle π/2, donc le membre de gauche est une similitude directe d'angle π/2 et de rapport 2"
+        },
+        {
+          "id": "b",
+          "text": "Faux : h_(A,2) ne commute pas avec les symétries orthogonales, donc on ne peut rien conclure sur la nature du membre de gauche"
+        },
+        {
+          "id": "c",
+          "text": "Faux : S_(AB)∘S_(AC) est l'identité du plan, donc le membre de gauche se réduit à h_(A,2), différente de h_(A,−2)"
+        },
+        {
+          "id": "d",
+          "text": "Vrai : h_(A,2) commute avec S_(AB) et S_(AC), donc le membre de gauche vaut h_(A,2)∘S_(AB)∘S_(AC) = h_(A,2)∘h_(A,−1) = h_(A,−2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une homothétie de centre A commute avec une symétrie orthogonale dont l'axe passe par A. Donc S_(AB)∘h_(A,2)∘S_(AC) = h_(A,2)∘S_(AB)∘S_(AC). Or S_(AB)∘S_(AC) est la symétrie centrale de centre A, soit h_(A,−1) (axes perpendiculaires en A), et h_(A,2)∘h_(A,−1) = h_(A,−2). L'égalité est vraie. La composée de deux symétries d'axes perpendiculaires est d'angle π, pas π/2, et n'est pas l'identité. Vérification : M(x ; y) ↦ (−x ; y) ↦ (−2x ; 2y) ↦ (−2x ; −2y), image de M par h_(A,−2) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit ABC un triangle rectangle en A et Δ la médiatrice du segment [AB]. On note S_d la symétrie orthogonale d'axe d, t_u⃗ la translation de vecteur u⃗ et h_(A,k) l'homothétie de centre A et de rapport k. Soit f une isométrie fixant A et B. Peut-on affirmer que f⁻¹∘S_Δ∘f est une symétrie glissante d'axe Δ ? Quelle est la bonne réponse ? <svg viewBox=\"0 0 220 170\"><path d=\"M26 134 L194 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M194 134 L26 36\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M110 134 L110 43\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><text x=\"116\" y=\"40\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">Δ</text><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"134\" r=\"3.6\"/><circle cx=\"194\" cy=\"134\" r=\"3.6\"/><circle cx=\"26\" cy=\"36\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"16\" y=\"146\" text-anchor=\"middle\">A</text><text x=\"204\" y=\"146\" text-anchor=\"middle\">B</text><text x=\"16\" y=\"38\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faux : f⁻¹∘S_Δ∘f = S_Δ, une symétrie orthogonale, car f vaut id ou S_(AB) et S_(AB) conserve globalement Δ"
+        },
+        {
+          "id": "b",
+          "text": "Vrai : f⁻¹∘S_Δ∘f est un conjugué de S_Δ, donc de même nature qu'une symétrie glissante d'axe Δ de vecteur non nul"
+        },
+        {
+          "id": "c",
+          "text": "Vrai : f⁻¹∘S_Δ∘f = t_AB⃗∘S_Δ, symétrie glissante dont le vecteur est AB⃗ puisque f fixe A et B"
+        },
+        {
+          "id": "d",
+          "text": "Faux : f⁻¹∘S_Δ∘f = S_(AB), car S_Δ échange A et B et que f fixe ces deux points, ce qui impose l'axe (AB)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f vaut id ou S_(AB). Si f = id, f⁻¹∘S_Δ∘f = S_Δ. Si f = S_(AB) : (AB) et Δ sont perpendiculaires en M, milieu de [AB], donc S_(AB)∘S_Δ est la symétrie centrale de centre M ; et comme S_M = S_Δ∘S_(AB) aussi, S_(AB)∘S_Δ∘S_(AB) = S_M∘S_(AB) = S_Δ∘S_(AB)∘S_(AB) = S_Δ. Dans les deux cas, on obtient S_Δ : une symétrie orthogonale (donc d'axe Δ, mais pas glissante, car son vecteur est nul). L'affirmation « symétrie glissante » est donc fausse. Un conjugué d'une symétrie orthogonale reste une symétrie orthogonale, et la composée n'est pas S_(AB) (elle fixe Δ point par point). Vérification : S_Δ∘S_Δ = id, ce qui est impossible pour une symétrie glissante de vecteur non nul ✓.",
+      "difficulty": 3
+    }
+  ]
+}

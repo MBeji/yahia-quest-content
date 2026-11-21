@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : étude de x ln(1 + x)/(1 + x), intégrales dépendant d'un paramètre et limites",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x ln(1 + x)/(1 + x), de courbe 𝒞. Quelle est la limite de f en −1⁺, et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : la droite d'équation x = −1 est asymptote verticale à 𝒞"
+        },
+        {
+          "id": "b",
+          "text": "−∞ : la droite d'équation x = −1 est asymptote verticale à 𝒞"
+        },
+        {
+          "id": "c",
+          "text": "0 : la courbe 𝒞 aboutit au point de coordonnées (−1 ; 0), sans asymptote"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : la droite d'équation y = −1 est asymptote horizontale à 𝒞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand x → −1⁺, ln(1 + x) tend vers −∞ et x/(1 + x) = x × 1/(1 + x) tend vers (−1) × (+∞) = −∞, car 1 + x → 0⁺. Le produit de deux quantités qui tendent vers −∞ tend vers +∞ ✓. Une limite infinie en un réel fini donne une asymptote verticale : la droite x = −1. Piège classique : se tromper sur la règle des signes dans (−∞) × (−∞), ou négliger le facteur 1/(1 + x) qui explose et conclure que le produit s'annule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x ln(1 + x)/(1 + x), de courbe 𝒞. En +∞, que deviennent f(x), puis la pente moyenne f(x)/x, et que traduisent ces comportements pour la direction de 𝒞 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → +∞ : branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et f(x)/x → 1 : asymptote oblique d'équation y = x"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → +∞ et f(x)/x → 0 : branche parabolique de direction l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → 0 : l'axe des abscisses est asymptote à 𝒞 en +∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit f(x) = ln(1 + x) × x/(1 + x), où x/(1 + x) → 1 : f se comporte comme ln(1 + x) et tend vers +∞. De plus f(x)/x = ln(1 + x)/(1 + x), qui tend vers 0 par croissances comparées (ln(1 + x) est négligeable devant 1 + x) ✓. La courbe monte à l'infini mais plus lentement que n'importe quelle droite : branche parabolique de direction (Ox). Piège classique : oublier que ln croît moins vite qu'une droite et annoncer une asymptote oblique ou une direction verticale.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x ln(1 + x)/(1 + x), de courbe 𝒞. Quelle est la dérivée de f sur ]−1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = (1 + ln(1 + x))/(1 + x)²"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = (x + ln(1 + x))/(1 + x)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = (x + ln(1 + x))/(1 + x)²"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (x − ln(1 + x))/(1 + x)²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive le quotient de u(x) = x ln(1 + x) par v(x) = 1 + x. On a u′(x) = ln(1 + x) + x/(1 + x), puis f′ = (u′v − uv′)/v² = [(1 + x)ln(1 + x) + x − x ln(1 + x)]/(1 + x)² = (ln(1 + x) + x)/(1 + x)² ✓. Piège classique : oublier la dérivée x/(1 + x) du facteur ln(1 + x) dans le produit u, ne pas élever le dénominateur au carré, ou commettre une erreur de signe en développant u′v − uv′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour quelles valeurs de x > −1 a-t-on x + ln(1 + x) > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x > 0"
+        },
+        {
+          "id": "b",
+          "text": "x > −1"
+        },
+        {
+          "id": "c",
+          "text": "x > 1"
+        },
+        {
+          "id": "d",
+          "text": "x < 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction h(x) = x + ln(1 + x) est strictement croissante sur ]−1 ; +∞[ (h′(x) = 1 + 1/(1 + x) > 0) et h(0) = 0 + ln 1 = 0 : h(x) > 0 si et seulement si x > 0 ✓. On peut aussi remarquer que x et ln(1 + x) ont le même signe, celui de x. Piège classique : confondre avec ln(x) > 0 ⟺ x > 1 (ici l'argument est 1 + x), prendre tout le domaine ou inverser le sens de l'inégalité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x ln(1 + x)/(1 + x), de courbe 𝒞. Sachant que f′(x) = (x + ln(1 + x))/(1 + x)², qui est du signe de x + ln(1 + x), et que f(0) = 0, quel est le tableau de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît de −∞ à f(0) = 0 sur ]−1 ; 0], puis décroît de 0 à −∞ sur [0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f est strictement décroissante sur ]−1 ; +∞[, de +∞ à 0"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante sur ]−1 ; +∞[, de 0 à +∞"
+        },
+        {
+          "id": "d",
+          "text": "f décroît de +∞ à f(0) = 0 sur ]−1 ; 0], puis croît de 0 à +∞ sur [0 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le dénominateur (1 + x)² est positif : f′ a le signe de x + ln(1 + x), négatif sur ]−1 ; 0[ et positif sur ]0 ; +∞[. Donc f décroît de lim_{−1⁺} f = +∞ jusqu'à f(0) = 0, puis croît de 0 jusqu'à lim_{+∞} f = +∞ ✓. Le minimum de f vaut 0, atteint en x = 0. Piège classique : lire le signe de f′ à l'envers, ou ne retenir qu'une seule branche monotone.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit G la fonction définie sur [1 ; +∞[ par G(x) = ∫ de 1 à x de f(t)/t dt, avec f(t) = t ln(1 + t)/(1 + t). Quelle est l'expression de G(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(x) = ln²(1 + x) − ln²2"
+        },
+        {
+          "id": "b",
+          "text": "G(x) = (1/2)ln²(1 + x) − (1/2)ln²2"
+        },
+        {
+          "id": "c",
+          "text": "G(x) = ln(ln(1 + x)) − ln(ln 2)"
+        },
+        {
+          "id": "d",
+          "text": "G(x) = (1/2)ln²(1 + x) + (1/2)ln²2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On simplifie : f(t)/t = ln(1 + t)/(1 + t) = u′(t) u(t) avec u(t) = ln(1 + t), car u′(t) = 1/(1 + t). Une primitive de u′u est u²/2, donc G(x) = [ln²(1 + t)/2] entre 1 et x = (1/2)ln²(1 + x) − (1/2)ln²2 ✓. Contrôle : G(1) = 0. Piège classique : oublier le facteur 1/2 d'une primitive de u′u, confondre avec la primitive de u′/u (qui est ln u), ou additionner la valeur en 1 au lieu de la retrancher.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(t) positive, F_n(x) = ∫ de 1 à x^n de (f(t)/t)·ⁿ√t dt pour x ≥ 1, et G(y) = ∫ de 1 à y de f(t)/t dt. Quel encadrement de ⁿ√t pour t ∈ [1 ; x^n] mène à G(x^n) ≤ F_n(x) ≤ xG(x^n) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 ≤ ⁿ√t ≤ x^n"
+        },
+        {
+          "id": "b",
+          "text": "1/x ≤ ⁿ√t ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "x ≤ ⁿ√t ≤ x^n"
+        },
+        {
+          "id": "d",
+          "text": "1 ≤ ⁿ√t ≤ x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour 1 ≤ t ≤ x^n, la racine n-ième est croissante : ⁿ√1 = 1 ≤ ⁿ√t ≤ ⁿ√(x^n) = x. Comme f(t)/t ≥ 0 sur [1 ; x^n], on multiplie : f(t)/t ≤ (f(t)/t)ⁿ√t ≤ x f(t)/t. On intègre sur [1 ; x^n] : G(x^n) ≤ F_n(x) ≤ xG(x^n) ✓. Piège classique : majorer ⁿ√t par x^n (c'est t lui-même, pas sa racine), ou oublier de vérifier que f(t)/t est positive avant de multiplier les inégalités.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F_n(x) = ∫ de 1 à x^n de (f(t)/t)·ⁿ√t dt sur [1 ; +∞[, avec f(t) = t ln(1 + t)/(1 + t). Que vaut F_n′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F_n′(x) = n x^(n − 1) f(x^n)"
+        },
+        {
+          "id": "b",
+          "text": "F_n′(x) = n f(x^n)"
+        },
+        {
+          "id": "c",
+          "text": "F_n′(x) = f(x^n)"
+        },
+        {
+          "id": "d",
+          "text": "F_n′(x) = n f(x^n)/x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit F_n(x) = Φ(x^n) avec Φ(y) = ∫ de 1 à y de (f(t)/t)t^(1/n) dt, donc Φ′(y) = f(y)y^(1/n)/y. Alors F_n′(x) = n x^(n − 1) × Φ′(x^n) = n x^(n − 1) × f(x^n) (x^n)^(1/n)/x^n = n x^(n − 1) × f(x^n) × x/x^n = n f(x^n) ✓. Piège classique : s'arrêter à n x^(n − 1) f(x^n), en oubliant que l'intégrande contient lui-même un facteur (x^n)^(1/n)/x^n = x^(1 − n) qui annule le x^(n − 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, soit V_n = ∫ de 1 à (n + 1)/n de f(t^n) dt et F_n(x) = ∫ de 1 à x^n de (f(t)/t)·ⁿ√t dt, avec F_n′(x) = n f(x^n). Comment relie-t-on V_n à F_n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F_n(1) = 1, donc F_n(x) = 1 + n ∫ de 1 à x de f(t^n) dt, et F_n((n + 1)/n) = nV_n + 1"
+        },
+        {
+          "id": "b",
+          "text": "F_n(1) = 0, donc F_n(x) = ∫ de 1 à x de f(t^n) dt, et F_n((n + 1)/n) = V_n, la constante n disparaissant"
+        },
+        {
+          "id": "c",
+          "text": "F_n(1) = 0 (bornes égales), donc F_n(x) = n ∫ de 1 à x de f(t^n) dt, et F_n((n + 1)/n) = nV_n"
+        },
+        {
+          "id": "d",
+          "text": "F_n est la primitive de n f(x^n) sur [0 ; +∞[, donc nV_n = F_n((n + 1)/n) − F_n(0)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En x = 1, les deux bornes de F_n valent 1 (1^n = 1) : F_n(1) = 0. Comme F_n′(x) = n f(x^n), F_n(x) = F_n(1) + ∫ de 1 à x de n f(t^n) dt = n ∫ de 1 à x de f(t^n) dt. En x = (n + 1)/n, on obtient F_n((n + 1)/n) = n V_n ✓. Piège classique : oublier que F_n s'annule en 1 (et non en 0, où elle n'est pas définie) ou perdre le facteur n qui sort de l'intégrale.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour x ≥ 1, G(x^n) ≤ F_n(x) ≤ xG(x^n), et F_n((n + 1)/n) = nV_n. Quel encadrement de nV_n obtient-on avec x = (n + 1)/n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(((n + 1)/n)^n) ≤ nV_n ≤ ((n + 1)/n) G(((n + 1)/n)^n)"
+        },
+        {
+          "id": "b",
+          "text": "G(((n + 1)/n)^n) ≤ nV_n ≤ ((n + 1)/n)^n G(((n + 1)/n)^n)"
+        },
+        {
+          "id": "c",
+          "text": "G(((n + 1)/n)^n) ≤ V_n ≤ ((n + 1)/n) G(((n + 1)/n)^n)"
+        },
+        {
+          "id": "d",
+          "text": "((n + 1)/n) G(((n + 1)/n)^n) ≤ nV_n ≤ G(((n + 1)/n)^n)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On remplace x par (n + 1)/n, avec x ≥ 1, dans G(x^n) ≤ F_n(x) ≤ xG(x^n), et F_n((n + 1)/n) par nV_n : G(((n + 1)/n)^n) ≤ nV_n ≤ ((n + 1)/n) G(((n + 1)/n)^n) ✓. Piège classique : multiplier la borne haute par x^n au lieu de x (on se trompe de facteur), remplacer nV_n par V_n, ou inverser l'ordre (G(...) est le plus petit des deux, car (n + 1)/n > 1 et G ≥ 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans l'étude de V_n = ∫ de 1 à (n + 1)/n de f(t^n) dt, le nombre ((n + 1)/n)^n intervient comme argument de G. Vers quoi tend-il quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit ((n + 1)/n)^n = e^(n ln(1 + 1/n)). Avec t = 1/n → 0⁺, n ln(1 + 1/n) = ln(1 + t)/t, qui tend vers ln′(1) = 1 (nombre dérivé de ln en 1). Donc ((n + 1)/n)^n → e^1 = e ✓. Piège classique : conclure 1 parce que la base (n + 1)/n tend vers 1 : on a une forme indéterminée 1^∞, que l'écriture exponentielle permet de lever.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit G(y) = (1/2)ln²(1 + y) − (1/2)ln²2 sur [1 ; +∞[, avec G(((n + 1)/n)^n) ≤ nV_n ≤ ((n + 1)/n)G(((n + 1)/n)^n), ((n + 1)/n)^n → e et (n + 1)/n → 1. Que valent les limites de nV_n et de V_n quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "nV_n tend vers (1/2)ln²(1 + e) − (1/2)ln²2, et V_n tend vers la même limite"
+        },
+        {
+          "id": "b",
+          "text": "nV_n tend vers ln²(1 + e) − ln²2, et V_n tend vers 0"
+        },
+        {
+          "id": "c",
+          "text": "nV_n tend vers (1/2)ln²(1 + e) − (1/2)ln²2, et V_n tend vers 0"
+        },
+        {
+          "id": "d",
+          "text": "nV_n tend vers (1/2)ln²(1 + e), et V_n tend vers 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "G est continue, donc G(((n + 1)/n)^n) → G(e) = (1/2)ln²(1 + e) − (1/2)ln²2, et ((n + 1)/n)G(...) → 1 × G(e). Par le théorème des gendarmes, nV_n → G(e). Alors V_n = (nV_n)/n est le quotient d'une suite convergente par n qui tend vers +∞ : V_n → 0 ✓. Piège classique : croire que V_n a la même limite que nV_n (on oublie la division par n), perdre le facteur 1/2 de G, ou oublier de retrancher (1/2)ln²2 (la valeur de G en 1).",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : nombres complexes, transformation homographique, cercle et ellipse",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Dans ℂ, on considère l'équation (E) : z² − (1 + i)z − i = 0. Quelles sont ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z₁ = (1 + √3)(1 + i)/2 et z₂ = (1 − √3)(1 + i)/2"
+        },
+        {
+          "id": "b",
+          "text": "z₁ = 1 et z₂ = i"
+        },
+        {
+          "id": "c",
+          "text": "z₁ = (1 + √2)(1 + i)/2 et z₂ = (1 − √2)(1 + i)/2"
+        },
+        {
+          "id": "d",
+          "text": "z₁ = (1 + i + √6)/2 et z₂ = (1 + i − √6)/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le discriminant vaut Δ = (1 + i)² − 4·1·(−i) = 2i + 4i = 6i. Une racine carrée de 6i est δ = √3(1 + i), car δ² = 3(1 + i)² = 3·2i = 6i. Les solutions sont z = (1 + i ± √3(1 + i))/2 = (1 ± √3)(1 + i)/2 ✓. Vérification par la somme et le produit : la somme est 1 + i ✓ et le produit (1 + i)²(1 − 3)/4 = 2i·(−2)/4 = −i ✓, comme le veulent −b/a = 1 + i et c/a = −i. L'erreur classique est de reconnaître trop vite z² − (1 + i)z + i = (z − 1)(z − i) : le terme constant est ici −i et non +i, et 1 ou i ne vérifient pas (E) (pour z = 1 on trouve 1 − (1 + i) − i = −2i). Les autres couples ont une somme correcte mais un produit faux : (1 + √2)... donne −i/2, et (1 + i ± √6)/2 donne (2i − 6)/4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit z un nombre complexe distinct de i, et M, M' les points d'affixes z et z' = (z + i)/(z − i). On suppose de plus que z n'est ni z₁ = (1 + √3)(1 + i)/2 ni z₂ = (1 − √3)(1 + i)/2. Pourquoi M et M' sont-ils distincts ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que z' = z équivaut à z² − (1 + i)z + i = 0, que z ne vérifie pas"
+        },
+        {
+          "id": "b",
+          "text": "Parce que z' = z équivaut à z² − (1 − i)z − i = 0, que z ne vérifie pas"
+        },
+        {
+          "id": "c",
+          "text": "Parce que z' = z équivaut à z² − (1 + i)z − i = 0, que z ne vérifie pas"
+        },
+        {
+          "id": "d",
+          "text": "Parce que z ≠ i garantit que z' est défini, donc différent de z"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour z ≠ i, l'égalité z' = z s'écrit (z + i)/(z − i) = z. On multiplie par z − i ≠ 0 : z + i = z(z − i) = z² − iz, soit z² − iz − z − i = 0, c'est-à-dire z² − (1 + i)z − i = 0 ✓. Son discriminant vaut 6i et ses seules solutions sont z₁ et z₂, que l'énoncé exclut. Donc z' ≠ z : M et M' sont distincts. Un signe faux dans le développement de z(z − i) − (z + i) donne z² − (1 + i)z + i = 0 ou z² − (1 − i)z − i = 0, deux autres équations dont les solutions ne sont pas z₁ et z₂ : l'hypothèse ne permet alors pas de conclure. Quant à z ≠ i, c'est la condition d'existence de z', pas la preuve que z' diffère de z.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan complexe est rapporté à un repère orthonormé direct (O, u, v). Soit A(1), B(i), θ un réel, et M le point d'affixe z = i + 2e^(iθ). Quel est l'ensemble décrit par M quand θ décrit ℝ ?\n<svg viewBox=\"0 0 300 210\"><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"><path d=\"M10 130 L290 130\"/><path d=\"M90 200 L90 8\"/></g><path d=\"M90 90 L141.4 28.7\" stroke=\"#2563eb\" stroke-width=\"2\" fill=\"none\"/><path d=\"M90 90 L138.0 90\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\" fill=\"none\"/><g fill=\"#0f172a\"><circle cx=\"130\" cy=\"130\" r=\"3.5\"/><circle cx=\"90\" cy=\"90\" r=\"3.5\"/><circle cx=\"141.4\" cy=\"28.7\" r=\"4\" fill=\"#dc2626\"/></g><g font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\"><text x=\"126\" y=\"146\">A</text><text x=\"74\" y=\"86\">B</text><text x=\"147.4\" y=\"24.7\">M</text><text x=\"78\" y=\"146\">O</text><text x=\"126\" y=\"76\" fill=\"#2563eb\">θ</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre S(−i) et de rayon 2"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre B et de rayon 2"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre O et de rayon 3"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre B et de rayon 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On isole l'exponentielle : z − i = 2e^(iθ). Le module donne |z − i| = |2||e^(iθ)| = 2·1 = 2, c'est-à-dire BM = 2, où B est le point d'affixe i. Quand θ décrit ℝ, 2e^(iθ) décrit tout le cercle de centre O et de rayon 2, donc M décrit le cercle Γ de centre B et de rayon 2 ✓. Contrôle : pour θ = 0, M(2 + i) à la distance 2 de B(i) ✓ ; pour θ = π/2, M(3i), à la distance 2 de B ✓. L'erreur de signe consiste à lire |z + i| au lieu de |z − i| (centre d'affixe −i) ; le rayon 3 additionne |i| et 2, et le rayon 4 élève 2 au carré : aucun n'est exact, car en θ = π/2 on trouve M(3i) à distance 3 de O mais seulement 2 de B.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le point P est le milieu du segment [MM'], d'affixe z_P, et Q est le point d'affixe z_Q = e^(iπ/4) z_P. Quelle suite de constructions donne Q à partir de M et de M' ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Placer P milieu de [MM'], puis l'image de P par la rotation de centre O et d'angle −π/4"
+        },
+        {
+          "id": "b",
+          "text": "Placer P milieu de [MM'], puis l'image de P par la rotation de centre A et d'angle π/4"
+        },
+        {
+          "id": "c",
+          "text": "Placer P milieu de [MM'], puis l'image de P par l'homothétie de centre O et de rapport √2/2"
+        },
+        {
+          "id": "d",
+          "text": "Placer P milieu de [MM'], puis l'image de P par la rotation de centre O et d'angle π/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'écriture complexe d'une rotation de centre O et d'angle α est z → e^(iα)z. Ici z_Q = e^(iπ/4)z_P, donc Q est l'image de P par la rotation de centre O et d'angle π/4, et non −π/4 (qui correspondrait à e^(−iπ/4)z_P) ✓. Le facteur e^(iπ/4) est de module 1 : ce n'est pas une homothétie, qui aurait un facteur réel comme √2/2. Une rotation de centre A(1) aurait pour écriture z → 1 + e^(iπ/4)(z − 1), et non e^(iπ/4)z. Contrôle : O est invariant, car 0 donne 0 ; et OQ = OP puisque |e^(iπ/4)| = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour θ réel, soit z = i + 2e^(iθ). Quelle est la forme de z' = (z + i)/(z − i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z' = 1 + i e^(iθ)"
+        },
+        {
+          "id": "b",
+          "text": "z' = 1 + i e^(−iθ)"
+        },
+        {
+          "id": "c",
+          "text": "z' = 1 + (i/2) e^(−iθ)"
+        },
+        {
+          "id": "d",
+          "text": "z' = 1 + 2i e^(−iθ)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule séparément : z − i = 2e^(iθ) et z + i = 2i + 2e^(iθ). Donc z' = (2i + 2e^(iθ))/(2e^(iθ)) = 2i/(2e^(iθ)) + 2e^(iθ)/(2e^(iθ)) = i e^(−iθ) + 1 ✓, puisque 1/e^(iθ) = e^(−iθ). Contrôle en θ = 0 : z = 2 + i et z' = (2 + 2i)/2 = 1 + i ; la formule donne 1 + i·1 = 1 + i ✓. Les autres écritures confondent 1/e^(iθ) avec e^(iθ) (inverse mal pris), oublient que z contient déjà i en écrivant z + i = 2e^(iθ) + i (ce qui produit i/2), ou ne divisent pas le numérateur 2i par le 2 du dénominateur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour θ réel, le point M' a pour affixe z' = 1 + i e^(−iθ) et A est le point d'affixe 1. Que valent AM' et l'angle (u, AM') modulo 2π ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AM' = 1 et (u, AM') ≡ π/2 + θ [2π]"
+        },
+        {
+          "id": "b",
+          "text": "AM' = 1 et (u, AM') ≡ θ − π/2 [2π]"
+        },
+        {
+          "id": "c",
+          "text": "AM' = 1 et (u, AM') ≡ π/2 − θ [2π]"
+        },
+        {
+          "id": "d",
+          "text": "AM' = |z'|, qui dépend de θ, et (u, AM') ≡ −θ [2π]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le vecteur AM' a pour affixe z' − 1 = i e^(−iθ). Comme i = e^(iπ/2), z' − 1 = e^(iπ/2)e^(−iθ) = e^(i(π/2 − θ)). Donc AM' = |z' − 1| = 1 et (u, AM') ≡ arg(z' − 1) ≡ π/2 − θ [2π] ✓. Contrôle en θ = π/2 : z' = 1 + i·e^(−iπ/2) = 1 + i(−i) = 2, donc AM' = 1 et le vecteur AM' est horizontal, d'angle 0 = π/2 − π/2 ✓. Le signe de θ est l'erreur typique : e^(−iθ) a pour argument −θ, pas +θ (le choix π/2 + θ), et θ − π/2 est l'opposé de l'angle cherché (avec θ = π/2 il vaudrait aussi 0, mais en θ = 0 il donne −π/2 alors que z' − 1 = i est d'angle +π/2). Enfin AM' mesure |z' − 1|, pas |z'| qui est la distance OM'.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct. Pour un réel θ, les points A(1) et M' sont tels que z_M' − 1 = e^(i(π/2 − θ)). Quel est l'ensemble décrit par M' quand θ décrit ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre A et de rayon 1"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre O et de rayon 1"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre B(i) et de rayon 1"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre A et de rayon 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'égalité z_M' − 1 = e^(i(π/2 − θ)) signifie que AM' = |e^(i(π/2 − θ))| = 1 : M' est à la distance 1 du point A d'affixe 1. Quand θ décrit ℝ, l'angle π/2 − θ décrit ℝ, donc e^(i(π/2 − θ)) décrit tout le cercle trigonométrique, et M' décrit le cercle de centre A et de rayon 1 ✓. Contrôle : θ = π/2 donne z_M' = 2, θ = 0 donne z_M' = 1 + i, à la distance 1 de A dans les deux cas ; ni O(0) ni B(i) n'est à la distance 1 de ces deux points à la fois (OA = 1 mais la distance de O à 2 est 2). Le cercle centré en O oublie la translation de 1 qui sépare z_M' de e^(i(π/2 − θ)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit φ = θ + π/4 et z_P = (1 + i + 2e^(iθ) + i e^(−iθ))/2 l'affixe de P. On pose z_Q = e^(iπ/4) z_P. Quelle est l'écriture de z_Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_Q = (i√2 + 2e^(iφ) − e^(−iφ))/2"
+        },
+        {
+          "id": "b",
+          "text": "z_Q = (i√2 + 2e^(iφ) + e^(−iφ))/2"
+        },
+        {
+          "id": "c",
+          "text": "z_Q = (√2 + 2e^(iφ) − e^(−iφ))/2"
+        },
+        {
+          "id": "d",
+          "text": "z_Q = (i√2 + 2e^(iφ) + e^(i(π/4 − θ)))/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On multiplie chaque terme de z_P par e^(iπ/4). D'abord 1 + i = √2 e^(iπ/4), donc e^(iπ/4)(1 + i) = √2 e^(iπ/2) = i√2. Ensuite e^(iπ/4)·2e^(iθ) = 2e^(i(θ + π/4)) = 2e^(iφ). Enfin e^(iπ/4)·i e^(−iθ) = e^(i(π/4 + π/2 − θ)) = e^(i(3π/4 − θ)) = e^(iπ)·e^(−i(π/4 + θ)) = −e^(−iφ), car 3π/4 − θ = π − (π/4 + θ). Ainsi z_Q = (i√2 + 2e^(iφ) − e^(−iφ))/2 ✓. Contrôle en θ = 0 (φ = π/4) : z_P = (1 + i + 2 + i)/2 = (3 + 2i)/2 et le produit e^(iπ/4)z_P a pour module |z_P| = √13/2 ; la formule donne x = √2/4 et y = 5√2/4, soit un carré de module 2/16 + 50/16 = 13/4 = (√13/2)² ✓ (la rotation conserve le module). Le signe + vient d'un oubli de e^(iπ) = −1, et √2 sans i d'un argument π/2 oublié pour e^(iπ/4)(1 + i).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec φ = θ + π/4, on a z_Q = (i√2 + 2e^(iφ) − e^(−iφ))/2. Quelles sont la partie réelle et la partie imaginaire de z_Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Re(z_Q) = (3/2)cos φ et Im(z_Q) = √2/2 + (1/2)sin φ"
+        },
+        {
+          "id": "b",
+          "text": "Re(z_Q) = (1/2)cos φ et Im(z_Q) = √2/2 + (1/2)sin φ"
+        },
+        {
+          "id": "c",
+          "text": "Re(z_Q) = (3/2)cos φ et Im(z_Q) = √2/2 + (3/2)sin φ"
+        },
+        {
+          "id": "d",
+          "text": "Re(z_Q) = (1/2)cos φ et Im(z_Q) = √2/2 + (3/2)sin φ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On développe avec la formule d'Euler : e^(iφ) = cos φ + i sin φ et e^(−iφ) = cos φ − i sin φ. Alors 2e^(iφ) − e^(−iφ) = 2cos φ + 2i sin φ − cos φ + i sin φ = cos φ + 3i sin φ. Donc z_Q = (i√2 + cos φ + 3i sin φ)/2 = (1/2)cos φ + i(√2/2 + (3/2)sin φ) ✓. Contrôle en φ = π/2 : z_Q = (i√2 + 2i + i)/2 = i(√2 + 3)/2, et la formule donne Re = 0, Im = √2/2 + 3/2 ✓. Les erreurs portent sur e^(−iφ) : l'écrire cos φ + i sin φ (au lieu de cos φ − i sin φ) donne Im = √2/2 + (1/2)sin φ ; additionner au lieu de soustraire (2e^(iφ) + e^(−iφ) = 3cos φ + i sin φ) donne Re = (3/2)cos φ et Im = √2/2 + (1/2)sin φ ; et prendre e^(−iφ) pour −e^(iφ) fait de la différence 3e^(iφ), d'où (3/2)cos φ et (3/2)sin φ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec φ = θ + π/4, le point Q a pour coordonnées x = (1/2)cos φ et y = √2/2 + (3/2)sin φ. Quand θ décrit ℝ, Q décrit quelle courbe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La courbe d'équation x²/4 + (9/4)(y − √2/2)² = 1"
+        },
+        {
+          "id": "b",
+          "text": "La courbe d'équation 4x² + (4/9)(y − √2/2)² = 1"
+        },
+        {
+          "id": "c",
+          "text": "La courbe d'équation 4x² + (4/9)y² = 1"
+        },
+        {
+          "id": "d",
+          "text": "L'hyperbole d'équation 4x² − (4/9)(y − √2/2)² = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On isole cos φ = 2x et sin φ = (2/3)(y − √2/2). La relation cos²φ + sin²φ = 1 donne 4x² + (4/9)(y − √2/2)² = 1 ✓. C'est l'équation d'une ellipse de centre (0 ; √2/2), de demi-axes 1/2 (horizontal) et 3/2 (vertical). Contrôle en φ = 0 : x = 1/2, y = √2/2 et 4·(1/4) + 0 = 1 ✓. L'erreur classique est d'oublier la translation de √2/2 sur y (centre en O) ; une autre est de renverser les coefficients (cos φ = x/2), ce qui change les demi-axes ; enfin, une différence au lieu d'une somme de carrés donnerait une hyperbole, alors que cos²φ + sin²φ = 1 est une somme.",
+      "difficulty": 3
+    }
+  ]
+}

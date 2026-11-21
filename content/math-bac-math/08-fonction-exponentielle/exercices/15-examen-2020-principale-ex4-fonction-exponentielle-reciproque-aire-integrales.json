@@ -1,0 +1,394 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 4 ⭐⭐⭐⭐ : fonction 1/√(1 + e^(2x)), point fixe, aire et intégrales de puissances",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = 1/√(1 + e^(2x)), de courbe (ζ). Quelles sont les limites de f en +∞ et en −∞, et leurs interprétations graphiques ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → 1 en +∞ : la droite d'équation y = 1 est asymptote ; f(x) → 0 en −∞ : l'axe des abscisses est asymptote"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → 0 en +∞ : l'axe des abscisses est asymptote ; f(x) → 1 en −∞ : la droite d'équation y = 1 est asymptote"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → 0 en +∞ et en −∞ : l'axe des abscisses est asymptote des deux côtés"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → 0 en +∞ : l'axe des abscisses est asymptote ; f(x) → 1/√2 en −∞ : la droite y = 1/√2 est asymptote"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En +∞, e^(2x) → +∞, donc 1 + e^(2x) → +∞ et f(x) = 1/√(1 + e^(2x)) → 0 : asymptote horizontale y = 0. En −∞, e^(2x) → 0, donc 1 + e^(2x) → 1 et f(x) → 1/√1 = 1 : asymptote horizontale y = 1 ✓. Piège classique : intervertir les deux côtés, faire tendre e^(2x) vers +∞ aussi en −∞, ou remplacer e^(2x) par 1 (valeur en 0) au lieu de sa limite 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = 1/√(1 + e^(2x)), de courbe (ζ). Quel est le tableau de variation de f sur ℝ, sachant que f′(x) = −e^(2x)/((1 + e^(2x))√(1 + e^(2x))) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur ℝ, de 0 (limite en −∞) à 1 (limite en +∞)"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement décroissante sur ℝ, de +∞ (limite en −∞) à 0 (limite en +∞)"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement décroissante sur ℝ, de 1 (limite en −∞) à 0 (limite en +∞)"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement décroissante sur ]−∞ ; 0] puis croissante sur [0 ; +∞[, de minimum f(0)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le numérateur −e^(2x) est strictement négatif et le dénominateur strictement positif, donc f′(x) < 0 pour tout réel x : f est strictement décroissante sur ℝ. Ses limites sont 1 en −∞ et 0 en +∞ ✓ (f décroît donc de 1 vers 0). Piège classique : prendre f(0) pour un extremum (f′ ne s'annule jamais) ou mélanger les limites des deux côtés.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = 1/√(1 + e^(2x)), de courbe (ζ). Sachant que f est continue et strictement décroissante sur ℝ, de limite 1 en −∞ et de limite 0 en +∞, quel est l'intervalle J sur lequel f réalise une bijection de ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J = ]0 ; 1["
+        },
+        {
+          "id": "b",
+          "text": "J = [0 ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "J = ]0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "J = ]−∞ ; 1["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une fonction continue strictement décroissante sur ℝ réalise une bijection de ℝ sur l'intervalle ouvert ]lim_{+∞} f ; lim_{−∞} f[ = ]0 ; 1[ ✓. Les bornes 0 et 1 sont des limites jamais atteintes (f(x) > 0 et f(x) < 1 pour tout x), donc les crochets sont ouverts. Piège classique : fermer les bornes, ou prendre pour borne une valeur de x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = 1/√(1 + e^(2x)), de courbe (ζ). Pourquoi l'équation f(x) = x admet-elle une unique solution α dans ]0,5 ; 0,6[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ(x) = f(x) − x est continue et strictement décroissante, avec φ(0,5) > 0 (car f(0,5) > 0,5) et φ(0,6) < 0"
+        },
+        {
+          "id": "b",
+          "text": "φ(x) = f(x) − x est continue, avec φ(0,5) < 0 et φ(0,6) > 0 : le théorème des valeurs intermédiaires s'applique, et la solution est unique car f est dérivable"
+        },
+        {
+          "id": "c",
+          "text": "f(0,5) et f(0,6) appartiennent à J = ]0 ; 1[, donc f(x) = x admet une unique solution entre 0,5 et 0,6"
+        },
+        {
+          "id": "d",
+          "text": "f est dérivable et décroissante, donc l'équation f′(x) = 1 admet une solution unique entre 0,5 et 0,6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose φ(x) = f(x) − x : elle est continue, et strictement décroissante car f décroît et −x aussi. De plus φ(0,5) = 1/√(1 + e) − 0,5 > 0, car 1 + e < 4 donne √(1 + e) < 2 et donc f(0,5) > 1/2 ; et φ(0,6) = f(0,6) − 0,6 < 0, car 1 + e^(1,2) > 4 donne f(0,6) < 1/2 < 0,6. Le théorème de la bijection donne alors une unique solution α dans ]0,5 ; 0,6[ ✓. Piège classique : lire un changement de signe à l'envers, invoquer la dérivabilité pour l'unicité (c'est la stricte monotonie), ou chercher f′(x) = 1 au lieu de f(x) = x.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = 1/√(1 + e^(2x)), de courbe (ζ). Soit α l'unique solution de f(x) = x, avec 0,5 < α < 0,6. Quel est le signe de f(x) − x, et que traduit-il graphiquement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) − x < 0 pour x < α et f(x) − x > 0 pour x > α : (ζ) est en dessous de la droite y = x avant α et au-dessus après, avec un seul point commun A(α ; α)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) − x > 0 pour tout réel x, car f est strictement positive : (ζ) est toujours au-dessus de la droite y = x"
+        },
+        {
+          "id": "c",
+          "text": "f(x) − x > 0 pour x < α et f(x) − x < 0 pour x > α : (ζ) est au-dessus de la droite y = x avant α et en dessous après, avec un seul point commun A(α ; α)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) − x > 0 pour x < α et f(x) − x < 0 pour x > α : (ζ) et la droite y = x ont deux points communs, dont A(α ; α)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "φ(x) = f(x) − x est strictement décroissante et s'annule en α : elle est positive avant α et négative après. Donc (ζ) est au-dessus de la droite Δ : y = x pour x < α, en dessous pour x > α, et elle la coupe en un seul point, A(α ; α) ✓. Piège classique : lire le sens de variation à l'envers, croire que la positivité de f suffit à placer (ζ) au-dessus de la droite (pour x > 1, x > f(x)), ou parler de deux points communs alors que φ est strictement monotone.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = x − ln(1 + √(1 + e^(2x))) sur ℝ. Que vaut h′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h′(x) = 1/(1 + √(1 + e^(2x)))"
+        },
+        {
+          "id": "b",
+          "text": "h′(x) = 1/√(1 + e^(2x))"
+        },
+        {
+          "id": "c",
+          "text": "h′(x) = −e^(2x)/((1 + e^(2x))√(1 + e^(2x)))"
+        },
+        {
+          "id": "d",
+          "text": "h′(x) = 1 − 1/√(1 + e^(2x))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Posons s(x) = √(1 + e^(2x)). Alors s′(x) = e^(2x)/s(x) = (s² − 1)/s, et h′(x) = 1 − s′/(1 + s) = 1 − (s² − 1)/(s(1 + s)) = 1 − (s − 1)/s = 1/s ✓ car s² − 1 = (s − 1)(s + 1). Donc h est une primitive de f. Piège classique : oublier le facteur s′ de la dérivée intérieure, confondre h′ avec la dérivée f′ de f, ou ne pas simplifier (s − 1)/s : on obtient alors 1 − f(x) à la place de f(x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A l'aire du domaine limité par (ζ), l'axe des abscisses et les droites x = 0 et x = α, où α est la solution de f(x) = x, f(x) = 1/√(1 + e^(2x)) et h(x) = x − ln(1 + √(1 + e^(2x))) est une primitive de f. Quelle est l'expression de A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A = α + ln((1 + √2)/(1 + α))"
+        },
+        {
+          "id": "b",
+          "text": "A = α + ln(α/(α + 1))"
+        },
+        {
+          "id": "c",
+          "text": "A = α − ln(α(1 + √2)/(α + 1))"
+        },
+        {
+          "id": "d",
+          "text": "A = α + ln(α(1 + √2)/(α + 1))"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme f > 0, A = h(α) − h(0) = α − ln(1 + √(1 + e^(2α))) + ln(1 + √2). Or f(α) = α donne 1/√(1 + e^(2α)) = α, donc √(1 + e^(2α)) = 1/α et 1 + 1/α = (α + 1)/α. Ainsi A = α + ln(1 + √2) − ln((α + 1)/α) = α + ln(α(1 + √2)/(α + 1)) ✓. Piège classique : remplacer √(1 + e^(2α)) par α au lieu de 1/α, oublier h(0) = −ln(1 + √2), ou changer le signe du logarithme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour t ≥ 0 et k entier non nul, f(t) = 1/√(1 + e^(2t)). Quelle justification donne 0 ≤ (f(t))^k ≤ e^(−kt) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + e^(2t) ≥ 1 donne f(t) ≤ 1, et comme 1 ≤ e^(−t) pour t ≥ 0, f(t) ≤ e^(−t) ; on élève à la puissance k"
+        },
+        {
+          "id": "b",
+          "text": "1 + e^(2t) ≥ e^(2t) donne √(1 + e^(2t)) ≥ e^t, donc f(t) ≥ e^(−t), puis on élève à la puissance k"
+        },
+        {
+          "id": "c",
+          "text": "1 + e^(2t) ≥ e^(2t) donne √(1 + e^(2t)) ≥ e^t, donc 0 < f(t) ≤ e^(−t), puis on élève à la puissance k"
+        },
+        {
+          "id": "d",
+          "text": "f(t) ≤ f(0) = 1/√2 ≤ e^(−t) pour t ≥ 0, puis on élève à la puissance k"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour tout t, 1 + e^(2t) > e^(2t) > 0, donc par croissance de la racine, √(1 + e^(2t)) > e^t, et par décroissance de l'inverse sur ]0 ; +∞[, 0 < f(t) < e^(−t). Les nombres 0 < f(t) ≤ e^(−t) s'élèvent à la puissance k (croissante sur les positifs) : 0 ≤ f(t)^k ≤ e^(−kt) ✓. Piège classique : inverser l'inégalité en passant à l'inverse, ou majorer par 1, qui ne suffit pas car e^(−t) ≤ 1 pour t ≥ 0 (la comparaison va dans l'autre sens).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F_k(x) = ∫ de 0 à x de f(t)^k dt, avec 0 ≤ f(t)^k ≤ e^(−kt) pour t ≥ 0. En intégrant sur [0 ; x], on majore F_k(x) par ∫ de 0 à x de e^(−kt) dt. Quelle est la valeur de cette intégrale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 − e^(−kx))/k"
+        },
+        {
+          "id": "b",
+          "text": "(e^(−kx) − 1)/k"
+        },
+        {
+          "id": "c",
+          "text": "k(1 − e^(−kx))"
+        },
+        {
+          "id": "d",
+          "text": "(1 − e^(kx))/k"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de t ↦ e^(−kt) est −e^(−kt)/k, donc ∫ de 0 à x de e^(−kt) dt = −e^(−kx)/k + 1/k = (1 − e^(−kx))/k ✓. Comme 0 ≤ e^(−kx) ≤ 1, cette quantité est comprise entre 0 et 1/k, d'où 0 ≤ F_k(x) ≤ 1/k pour tout x ≥ 0. Piège classique : perdre un signe en primitivant e^(−kt) (le facteur −1/k), multiplier par k au lieu de diviser, ou écrire e^(kx) au lieu de e^(−kx).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F_k(x) = ∫ de 0 à x de f(t)^k dt pour x ≥ 0, avec f(t)^k ≥ 0 et 0 ≤ F_k(x) ≤ 1/k. Pourquoi F_k possède-t-elle une limite finie I_k en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F_k est positive, donc elle a une limite finie en +∞"
+        },
+        {
+          "id": "b",
+          "text": "F_k est croissante (F_k′ = f^k ≥ 0) et majorée par 1/k : limite finie"
+        },
+        {
+          "id": "c",
+          "text": "F_k est bornée, donc elle a une limite finie en +∞, même si elle n'est pas monotone"
+        },
+        {
+          "id": "d",
+          "text": "F_k est croissante, donc elle a une limite finie en +∞, quel que soit son comportement"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "F_k′(x) = f(x)^k ≥ 0 : F_k est croissante sur [0 ; +∞[. Elle est de plus majorée par 1/k. Le théorème de la limite monotone affirme qu'une fonction croissante et majorée admet en +∞ une limite finie I_k, avec 0 ≤ I_k ≤ 1/k ✓. Piège classique : invoquer une seule des deux hypothèses : positive ou bornée ne suffit pas (x ↦ sin x est bornée et n'a pas de limite), et croissante seule peut tendre vers +∞.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout k ≥ 1, I_k est la limite finie de F_k(x) quand x tend vers +∞, avec 0 ≤ F_k(x) ≤ 1/k pour tout x ≥ 0. Que dire de la limite de (I_k) quand k tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F_k(x) ≤ 1/k donne I_k = 1/k, qui tend vers 0"
+        },
+        {
+          "id": "b",
+          "text": "I_k ≥ 0 pour tout k, donc I_k tend vers +∞"
+        },
+        {
+          "id": "c",
+          "text": "I_k ≤ 1/k, donc I_k tend vers 0 sans avoir besoin de minorer I_k"
+        },
+        {
+          "id": "d",
+          "text": "0 ≤ I_k ≤ 1/k, donc I_k tend vers 0 (gendarmes)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En faisant tendre x vers +∞ dans 0 ≤ F_k(x) ≤ 1/k, les inégalités larges se conservent : 0 ≤ I_k ≤ 1/k. Comme 1/k → 0 quand k → +∞, le théorème des gendarmes donne I_k → 0 ✓. Piège classique : transformer une majoration en égalité (I_k n'est pas forcément égale à 1/k), ou omettre la minoration 0 ≤ I_k, sans laquelle le majorant seul ne force pas la limite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit I_1 = lim de F_1(x) quand x tend vers +∞, où F_1(x) = ∫ de 0 à x de f(t) dt, avec h primitive de f, h(x) = x − ln(1 + √(1 + e^(2x))) et h(x) tend vers 0 quand x tend vers +∞. Que vaut I_1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I_1 = −ln(1 + √2)"
+        },
+        {
+          "id": "b",
+          "text": "I_1 = ln(1 + √2)"
+        },
+        {
+          "id": "c",
+          "text": "I_1 = ln 2"
+        },
+        {
+          "id": "d",
+          "text": "I_1 = ln(1 + √2) − 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a F_1(x) = h(x) − h(0). Quand x → +∞, h(x) → 0 (on écrit h(x) = −ln(e^(−x) + √(1 + e^(−2x))), qui tend vers −ln(0 + 1) = 0), donc I_1 = −h(0). Or h(0) = 0 − ln(1 + √(1 + 1)) = −ln(1 + √2), donc I_1 = ln(1 + √2) ✓. Piège classique : prendre I_1 = h(0) (signe opposé), ou oublier le terme h(0) en confondant intégrale et limite d'une primitive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(t) = 1/√(1 + e^(2t)). Pour t ≥ 0, laquelle de ces égalités est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(t)³ − f(t) = −f′(t)"
+        },
+        {
+          "id": "b",
+          "text": "f(t)³ + f(t) = f′(t)"
+        },
+        {
+          "id": "c",
+          "text": "f(t)² − f(t) = f′(t)"
+        },
+        {
+          "id": "d",
+          "text": "f(t)³ − f(t) = f′(t)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(t)² = 1/(1 + e^(2t)), donc f(t)² − 1 = −e^(2t)/(1 + e^(2t)) = −e^(2t) f(t)². Ainsi f³ − f = f(f² − 1) = −e^(2t) f(t)³. Or f′(t) = −e^(2t)/((1 + e^(2t))√(1 + e^(2t))) = −e^(2t) f(t)² × f(t) = −e^(2t) f(t)³ ✓ : f³ − f = f′. Piège classique : se tromper de signe dans f² − 1 (il est négatif, puisque f < 1) ou confondre f² et f³ dans la dérivée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit F_k(x) = ∫ de 0 à x de f(t)^k dt, avec f³ = f + f′ sur [0 ; +∞[, I_1 = ln(1 + √2), f(x) → 0 quand x → +∞ et f(0) = 1/√2. Que vaut I_3 = lim de F_3(x) quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I_3 = ln(1 + √2) − √2/2"
+        },
+        {
+          "id": "b",
+          "text": "I_3 = ln(1 + √2) + √2/2"
+        },
+        {
+          "id": "c",
+          "text": "I_3 = ln(1 + √2) − 1"
+        },
+        {
+          "id": "d",
+          "text": "I_3 = ln(1 + √2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En intégrant f³ = f + f′ sur [0 ; x], F_3(x) = F_1(x) + f(x) − f(0). En +∞, F_1(x) → I_1 = ln(1 + √2) et f(x) → 0, avec f(0) = 1/√(1 + 1) = 1/√2 = √2/2. Donc I_3 = ln(1 + √2) − √2/2 ✓. Piège classique : oublier que f(x) tend vers 0 mais f(0) ne s'annule pas (on perd le terme −f(0)), prendre f(0) = 1 en oubliant le dénominateur √2, ou changer le signe de f(0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour k ≥ 2, F_(2k+1)(x) − F_(2k−1)(x) = (1/(2k − 1)) (f(x)^(2k−1) − f(0)^(2k−1)), et f(x) → 0 quand x → +∞, avec f(0) = 1/√2. Que vaut I_(2k+1) − I_(2k−1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I_(2k+1) − I_(2k−1) = 1/((2k − 1)(√2)^(2k−1))"
+        },
+        {
+          "id": "b",
+          "text": "I_(2k+1) − I_(2k−1) = −1/((2k − 1)√2)"
+        },
+        {
+          "id": "c",
+          "text": "I_(2k+1) − I_(2k−1) = −1/((2k − 1)(√2)^(2k−1))"
+        },
+        {
+          "id": "d",
+          "text": "I_(2k+1) − I_(2k−1) = −1/((2k + 1)(√2)^(2k+1))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On fait tendre x vers +∞ : f(x)^(2k−1) → 0 car 2k − 1 ≥ 1, et f(0)^(2k−1) = (1/√2)^(2k−1) = 1/(√2)^(2k−1). Donc I_(2k+1) − I_(2k−1) = (1/(2k − 1))(0 − 1/(√2)^(2k−1)) = −1/((2k − 1)(√2)^(2k−1)) ✓. Piège classique : changer le signe du terme −f(0)^(2k−1), oublier d'élever √2 à la puissance 2k − 1 (on laisse √2), ou décaler l'indice.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour k ≥ 2, I_(2k+1) = I_3 − Σ de m = 2 à k de 1/((2m − 1)(√2)^(2m−1)), avec I_3 = ln(1 + √2) − √2/2 et I_k → 0 quand k → +∞. Quelle est la limite de la somme Σ de m = 2 à k de 1/((2m − 1)(√2)^(2m−1)) quand k tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "ln(1 + √2) − √2/2"
+        },
+        {
+          "id": "c",
+          "text": "−ln(1 + √2) + √2/2"
+        },
+        {
+          "id": "d",
+          "text": "ln(1 + √2)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On isole la somme : Σ de m = 2 à k de 1/((2m − 1)(√2)^(2m−1)) = I_3 − I_(2k+1). Quand k → +∞, I_(2k+1) → 0 (suite extraite de (I_k), qui tend vers 0), donc la somme tend vers I_3 = ln(1 + √2) − √2/2 ✓. Piège classique : croire que la somme tend vers 0 parce que ses termes tendent vers 0 (une somme infinie de termes positifs peut avoir une limite non nulle), ou oublier de retrancher √2/2.",
+      "difficulty": 3
+    }
+  ]
+}

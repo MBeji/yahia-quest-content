@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 3 ⭐⭐⭐⭐ : fonction x ln x, aire entre une courbe et deux droites, intégrales à paramètre et suites",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x ln x pour x > 0 et f(0) = 0. Quelle est la limite de f(x) quand x tend vers 0⁺ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le produit x ln x est une forme indéterminée 0 × (−∞) en 0⁺, levée par les croissances comparées : x ln x → 0 quand x → 0⁺ ✓. Cette limite vaut f(0) = 0, donc f est continue à droite en 0. Piège classique : retenir seulement ln x → −∞, utiliser la « règle » 0 × ln 0 = 0 (ln 0 n'existe pas), ou mal lire les croissances comparées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x ln x pour x > 0 et f(0) = 0. Que peut-on dire de la dérivabilité de f à droite en 0, et quelle est l'interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(f(x) − f(0))/x = ln x → −∞ : f n'est pas dérivable à droite en 0 ; demi-tangente verticale en O"
+        },
+        {
+          "id": "b",
+          "text": "(f(x) − f(0))/x = ln x tend vers −∞ : f est dérivable à droite en 0, avec f′ᵈ(0) = −∞ (tangente verticale)"
+        },
+        {
+          "id": "c",
+          "text": "(f(x) − f(0))/x tend vers 0 : f est dérivable à droite en 0 ; la courbe a en O une demi-tangente horizontale"
+        },
+        {
+          "id": "d",
+          "text": "(f(x) − f(0))/x = ln x tend vers +∞ : la courbe a en O une demi-tangente verticale dirigée vers le haut"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x > 0, (f(x) − f(0))/x = x ln x/x = ln x, qui tend vers −∞ quand x → 0⁺. La limite n'est pas finie : f n'est pas dérivable à droite en 0, et la courbe admet en O une demi-tangente verticale (dirigée vers le bas, car f(x) < 0 près de 0) ✓. Piège classique : dire « dérivable de dérivée −∞ » (une dérivée est un réel), simplifier x ln x/x en 0, ou se tromper de signe de ln x au voisinage de 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x ln x pour x > 0 et f(0) = 0, avec f′(x) = 1 + ln x. Quel est le tableau de variation de f sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît sur [0 ; 1/e], avec un maximum f(1/e) = −1/e, puis décroît sur [1/e ; +∞[ vers −∞"
+        },
+        {
+          "id": "b",
+          "text": "f décroît sur [0 ; 1/e] jusqu'au minimum f(1/e) = −1/e, puis croît sur [1/e ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f décroît sur [0 ; 1], avec un minimum f(1) = 0, puis croît sur [1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "f décroît sur [0 ; 1/e], avec un minimum f(1/e) = 1/e, puis croît sur [1/e ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′(x) = 1 + ln x s'annule en x = 1/e (ln x = −1), est négative avant (ln x < −1) et positive après. Donc f décroît sur [0 ; 1/e] puis croît sur [1/e ; +∞[, avec f(1/e) = (1/e) × ln(1/e) = (1/e) × (−1) = −1/e ✓. Quand x → +∞, x ln x → +∞. Piège classique : inverser le sens de variation, placer le minimum en 1 (où ln s'annule, c'est le zéro de f et non de f′), ou oublier le signe de ln(1/e) = −1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x ln x (f(0) = 0), Δ la droite d'équation y = x et Δ′ la droite d'équation y = −x. Quelle est la position de la courbe de f par rapport à Δ et à Δ′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au-dessous de Δ sur ]0 ; e[ et au-dessus sur ]e ; +∞[ ; au-dessus de Δ′ sur ]0 ; 1/e[ et au-dessous sur ]1/e ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "Au-dessus de Δ sur ]0 ; e[ et au-dessous sur ]e ; +∞[ ; au-dessous de Δ′ sur ]0 ; 1/e[ et au-dessus sur ]1/e ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "Au-dessous de Δ sur ]0 ; e[ et au-dessus sur ]e ; +∞[ ; au-dessous de Δ′ sur ]0 ; 1/e[ et au-dessus sur ]1/e ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "Au-dessus de Δ sur ]0 ; e[ et au-dessous sur ]e ; +∞[ ; au-dessus de Δ′ sur ]0 ; 1/e[ et au-dessous sur ]1/e ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x) − x = x(ln x − 1), du signe de ln x − 1 pour x > 0 : négatif pour x < e, positif pour x > e. Donc la courbe est au-dessous de Δ sur ]0 ; e[ et au-dessus sur ]e ; +∞[. De même f(x) − (−x) = x(ln x + 1), du signe de ln x + 1 : négatif pour x < 1/e, positif pour x > 1/e : la courbe est au-dessous de Δ′ sur ]0 ; 1/e[ et au-dessus ensuite ✓. Piège classique : se tromper de signe en factorisant (ln x − 1 contre 1 − ln x), ou confondre les seuils e et 1/e des deux droites.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x ln x (f(0) = 0), Δ : y = x et Δ′ : y = −x. La courbe de f est au-dessous de Δ sur ]0 ; e[, coupe Δ en (e ; e), est au-dessous de Δ′ sur ]0 ; 1/e[ et coupe Δ′ en (1/e ; −1/e). Soit S la partie du plan limitée par la courbe de f, Δ et Δ′. Quelle est son aire, en unités d'aire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/4)(e² + 1/e²)"
+        },
+        {
+          "id": "b",
+          "text": "e²/4"
+        },
+        {
+          "id": "c",
+          "text": "(1/2)(e² − 1/e²)"
+        },
+        {
+          "id": "d",
+          "text": "(1/4)(e² − 1/e²)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une primitive de x ln x est (x²/2) ln x − x²/4 (intégration par parties avec u = ln x, v′ = x). Sur [0 ; 1/e], S est comprise entre Δ′ (dessous) et Δ (dessus) : ∫ de 0 à 1/e de 2x dx = 1/e². Sur [1/e ; e], elle est comprise entre la courbe (dessous) et Δ (dessus) : ∫ de 1/e à e de (x − x ln x) dx = [3x²/4 − (x²/2) ln x] de 1/e à e = (3e²/4 − e²/2) − (3/(4e²) + 1/(2e²)) = e²/4 − 5/(4e²). Au total e²/4 − 5/(4e²) + 1/e² = (1/4)(e² − 1/e²) ✓. Piège classique : oublier la tranche au-dessus de Δ′ sur [0 ; 1/e] ou la compter à l'envers (on trouve e²/4 ou (1/4)(e² + 1/e²)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ∈ ℕ, on pose uₙ = ∫ de 1/e à 1 de tⁿ eᵗ dt (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e). Quel encadrement de uₙ obtient-on, et quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 < uₙ ≤ e/(n + 1), car eᵗ ≤ e sur [1/e ; 1] ; uₙ tend vers 0"
+        },
+        {
+          "id": "b",
+          "text": "uₙ ≥ e/(n + 1), car eᵗ ≥ e sur [1/e ; 1] ; uₙ ne tend pas vers 0"
+        },
+        {
+          "id": "c",
+          "text": "0 < uₙ ≤ e/(n + 1) ; uₙ tend vers e"
+        },
+        {
+          "id": "d",
+          "text": "0 < uₙ ≤ e^(1/e)/(n + 1), car eᵗ ≤ e^(1/e) sur [1/e ; 1] ; uₙ tend vers 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur [1/e ; 1], tⁿ eᵗ > 0 donc uₙ > 0 (borne inférieure < borne supérieure). Comme eᵗ est croissante, eᵗ ≤ e¹ = e, donc uₙ ≤ e ∫ de 1/e à 1 de tⁿ dt = e(1 − e^(−(n+1)))/(n + 1) ≤ e/(n + 1). Le gendarme donne uₙ → 0 ✓. Piège classique : prendre e^(1/e) (le minimum de eᵗ) comme majorant, inverser l'inégalité, ou confondre la limite de la borne e/(n + 1) (qui est 0) avec la constante e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit uₙ = ∫ de 1/e à 1 de tⁿ eᵗ dt (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e). Une intégration par parties, avec les fonctions t ↦ tⁿ⁺¹ et t ↦ eᵗ, exprime uₙ₊₁ en fonction de uₙ. Quel est le résultat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ₊₁ = e + e^(1/e)/eⁿ⁺¹ − (n + 1)uₙ"
+        },
+        {
+          "id": "b",
+          "text": "uₙ₊₁ = e − e^(1/e)/eⁿ⁺¹ − (n + 1)uₙ"
+        },
+        {
+          "id": "c",
+          "text": "uₙ₊₁ = e − e^(1/e)/eⁿ⁺¹ + (n + 1)uₙ"
+        },
+        {
+          "id": "d",
+          "text": "uₙ₊₁ = e − e^(1/e)/eⁿ⁺¹ − uₙ/(n + 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose a(t) = tⁿ⁺¹ et b′(t) = eᵗ, donc a′(t) = (n + 1)tⁿ et b(t) = eᵗ. Alors uₙ₊₁ = [tⁿ⁺¹ eᵗ] de 1/e à 1 − (n + 1) ∫ de 1/e à 1 de tⁿ eᵗ dt = (e − (1/e)ⁿ⁺¹ e^(1/e)) − (n + 1)uₙ = e − e^(1/e)/eⁿ⁺¹ − (n + 1)uₙ ✓. Piège classique : se tromper de signe sur le crochet (borne inférieure retranchée) ou sur l'intégrale restante, ou diviser par n + 1 au lieu de multiplier (la dérivée de tⁿ⁺¹ fait apparaître le facteur n + 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit uₙ = ∫ de 1/e à 1 de tⁿ eᵗ dt, avec uₙ → 0 et uₙ₊₁ = e − e^(1/e)/eⁿ⁺¹ − (n + 1)uₙ. Quelle est la limite de (n + 1)uₙ quand n tend vers +∞ ? (e^(1/e) est la valeur en 1/e de la fonction exponentielle t ↦ eᵗ, strictement positive et strictement croissante, avec e¹ = e > 1 ; ainsi eⁿ tend vers +∞)",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "e"
+        },
+        {
+          "id": "d",
+          "text": "e^(1/e)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "De la relation, (n + 1)uₙ = e − e^(1/e)/eⁿ⁺¹ − uₙ₊₁. Quand n → +∞, e^(1/e)/eⁿ⁺¹ → 0 (car eⁿ⁺¹ → +∞) et uₙ₊₁ → 0, donc (n + 1)uₙ → e ✓. Piège classique : conclure 0 parce que uₙ → 0 (forme indéterminée ∞ × 0 : le facteur n + 1 compense), conclure +∞ à cause de n + 1, ou garder le terme e^(1/e), qui est divisé par eⁿ⁺¹ et disparaît.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(t) = t ln t sur [1/e ; 1], avec −1/e ≤ f(t) ≤ 0 (minimum f(1/e) = −1/e), et vₙ = ∫ de 1/e à 1 de tⁿ eᵗ f(t) dt avec uₙ = ∫ de 1/e à 1 de tⁿ eᵗ dt et uₙ → 0 (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e). Quel encadrement de vₙ en déduit-on, et que devient vₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 ≤ vₙ ≤ uₙ/e ; vₙ tend vers 0"
+        },
+        {
+          "id": "b",
+          "text": "−1/e ≤ vₙ ≤ 0 ; vₙ tend vers −1/e"
+        },
+        {
+          "id": "c",
+          "text": "vₙ ≤ 0 ; vₙ tend vers −∞"
+        },
+        {
+          "id": "d",
+          "text": "−uₙ/e ≤ vₙ ≤ 0 ; vₙ tend vers 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour t ∈ [1/e ; 1], tⁿ eᵗ > 0, donc en multipliant −1/e ≤ f(t) ≤ 0 par tⁿ eᵗ et en intégrant : −(1/e)uₙ ≤ vₙ ≤ 0. Comme uₙ → 0, le théorème des gendarmes donne vₙ → 0 ✓. Piège classique : oublier que le poids tⁿ eᵗ multiplie l'encadrement (la borne devient −uₙ/e et non −1/e), échanger les signes des bornes, ou croire qu'une suite négative tend vers −∞.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(t) = t ln t sur ]0 ; +∞[, de dérivée f′(t) = 1 + ln t, et vₙ = ∫ de 1/e à 1 de tⁿ eᵗ f(t) dt, uₙ₊₁ = ∫ de 1/e à 1 de tⁿ⁺¹ eᵗ dt (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e). Quelle écriture de vₙ obtient-on en utilisant une relation entre f(t), t f′(t) et t ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "vₙ = ∫ de 1/e à 1 de tⁿ⁺¹ eᵗ f′(t) dt − uₙ₊₁"
+        },
+        {
+          "id": "b",
+          "text": "vₙ = ∫ de 1/e à 1 de tⁿ⁺¹ eᵗ f′(t) dt + uₙ₊₁"
+        },
+        {
+          "id": "c",
+          "text": "vₙ = ∫ de 1/e à 1 de tⁿ⁺¹ eᵗ f′(t) dt − uₙ"
+        },
+        {
+          "id": "d",
+          "text": "vₙ = ∫ de 1/e à 1 de tⁿ eᵗ f′(t) dt − uₙ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a t f′(t) − t = t(1 + ln t) − t = t ln t = f(t). Donc f(t) = t f′(t) − t, et tⁿ eᵗ f(t) = tⁿ⁺¹ eᵗ f′(t) − tⁿ⁺¹ eᵗ. En intégrant : vₙ = ∫ de 1/e à 1 de tⁿ⁺¹ eᵗ f′(t) dt − uₙ₊₁ ✓. Piège classique : se tromper de signe devant t, oublier un facteur t en passant de tⁿ à tⁿ⁺¹ (ce qui change l'indice de u), ou garder l'indice n au lieu de n + 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose vₙ = ∫ de 1/e à 1 de tⁿ eᵗ f(t) dt avec f(t) = t ln t, f′(t) = 1 + ln t, f(1) = 0 et f(1/e) = −1/e. On sait que vₙ = ∫ de 1/e à 1 de tⁿ⁺¹ eᵗ f′(t) dt − uₙ₊₁. Une intégration par parties sur l'intégrale restante conduit à quelle relation ? (e^(1/e) est la valeur en 1/e de la fonction exponentielle t ↦ eᵗ, strictement positive et strictement croissante, avec e¹ = e > 1 ; ainsi eⁿ tend vers +∞)",
+      "options": [
+        {
+          "id": "a",
+          "text": "(n + 2)vₙ = −e^(1/e)/eⁿ⁺² − vₙ₊₁ − uₙ₊₁"
+        },
+        {
+          "id": "b",
+          "text": "(n + 2)vₙ = e^(1/e)/eⁿ⁺² − vₙ₊₁ − uₙ₊₁"
+        },
+        {
+          "id": "c",
+          "text": "(n + 1)vₙ = e^(1/e)/eⁿ⁺² − vₙ₊₁ − uₙ₊₁"
+        },
+        {
+          "id": "d",
+          "text": "(n + 2)vₙ = e^(1/e)/eⁿ⁺² + vₙ₊₁ − uₙ₊₁"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On intègre par parties avec g(t) = tⁿ⁺¹ eᵗ, de dérivée g′(t) = (n + 1)tⁿ eᵗ + tⁿ⁺¹ eᵗ : ∫ g f′ = [g f] − ∫ g′ f, soit ∫ tⁿ⁺¹ eᵗ f′(t) dt = [tⁿ⁺¹ eᵗ f(t)] − ∫ f(t)((n + 1)tⁿ eᵗ + tⁿ⁺¹ eᵗ) dt = [tⁿ⁺¹ eᵗ f(t)] − (n + 1)vₙ − vₙ₊₁. Le crochet vaut 0 − (1/e)ⁿ⁺¹ e^(1/e) × (−1/e) = e^(1/e)/eⁿ⁺². Donc vₙ = e^(1/e)/eⁿ⁺² − (n + 1)vₙ − vₙ₊₁ − uₙ₊₁, soit (n + 2)vₙ = e^(1/e)/eⁿ⁺² − vₙ₊₁ − uₙ₊₁ ✓. Piège classique : oublier que f(1/e) = −1/e est négatif (le crochet change de signe), compter n + 1 au lieu de n + 2 (le vₙ du premier membre s'ajoute), ou se tromper de signe sur vₙ₊₁.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit vₙ et uₙ avec vₙ → 0, uₙ₊₁ → 0 et (n + 2)vₙ = e^(1/e)/eⁿ⁺² − vₙ₊₁ − uₙ₊₁. Quelle est la limite de (n + 2)vₙ quand n tend vers +∞ ? (e^(1/e) est la valeur en 1/e de la fonction exponentielle t ↦ eᵗ, strictement positive et strictement croissante, avec e¹ = e > 1 ; ainsi eⁿ tend vers +∞)",
+      "options": [
+        {
+          "id": "a",
+          "text": "e"
+        },
+        {
+          "id": "b",
+          "text": "−∞"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "−1/e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le second membre, e^(1/e)/eⁿ⁺² → 0 (dénominateur qui tend vers +∞), vₙ₊₁ → 0 et uₙ₊₁ → 0. Donc (n + 2)vₙ → 0 ✓ : vₙ tend vers 0 plus vite que 1/(n + 2). Piège classique : traiter ∞ × 0 comme ∞ (on conclut −∞ car vₙ ≤ 0), ou recopier la limite e de (n + 1)uₙ, qui vient d'un autre calcul.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(t) = t ln t sur [1/e ; 1], de dérivée f′(t) = 1 + ln t ≥ 0, avec f(1/e) = −1/e et f(1) = 0. Pour tout n ≥ 1, −uₙ/e ≤ vₙ ≤ 0 avec uₙ > 0. Quelle justification établit qu'il existe un seul réel αₙ ∈ [1/e ; 1] tel que f(αₙ) = vₙ/uₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement décroissante de 0 à −1/e : bijection de [1/e ; 1] sur [−1/e ; 0]"
+        },
+        {
+          "id": "b",
+          "text": "f est continue sur [1/e ; 1] : elle prend toute valeur de [−1/e ; 0], et une seule fois (théorème des valeurs intermédiaires)"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante sur [0 ; 1], donc bijection de [1/e ; 1] sur [−1/e ; 0]"
+        },
+        {
+          "id": "d",
+          "text": "f est continue et strictement croissante : bijection de [1/e ; 1] sur [−1/e ; 0], qui contient vₙ/uₙ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(t) = 1 + ln t ≥ 0 sur [1/e ; 1] et ne s'annule qu'en 1/e : f est continue et strictement croissante, donc bijective de [1/e ; 1] sur [f(1/e) ; f(1)] = [−1/e ; 0]. L'encadrement −uₙ/e ≤ vₙ ≤ 0 divisé par uₙ > 0 donne vₙ/uₙ ∈ [−1/e ; 0] : cette valeur a un unique antécédent αₙ ✓. Piège classique : inverser le sens de variation (f(1/e) < f(1)), croire que la continuité seule donne l'unicité, ou étendre la croissance à [0 ; 1] alors que f décroît sur [0 ; 1/e].",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit αₙ ∈ [1/e ; 1] tel que f(αₙ) = vₙ/uₙ, avec f(t) = t ln t, f(1) = 0, f continue strictement croissante sur [1/e ; 1], (n + 2)vₙ → 0 et (n + 1)uₙ → e. Quelle est la limite de αₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1, car vₙ/uₙ → 0, donc f(αₙ) → 0 = f(1) et la réciproque de f est continue"
+        },
+        {
+          "id": "b",
+          "text": "1/e, car vₙ/uₙ est négatif et f(1/e) = −1/e est le minimum de f sur l'intervalle"
+        },
+        {
+          "id": "c",
+          "text": "0, car f(αₙ) tend vers 0 = f(0), donc αₙ tend vers 0, antécédent de 0 par f"
+        },
+        {
+          "id": "d",
+          "text": "e, car vₙ/uₙ tend vers e (comme (n + 1)uₙ), donc f(αₙ) tend vers e et αₙ aussi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit vₙ/uₙ = (n + 2)vₙ/((n + 2)uₙ). Le numérateur tend vers 0, et (n + 2)uₙ = (n + 1)uₙ + uₙ tend vers e ≠ 0, donc vₙ/uₙ → 0. Ainsi f(αₙ) → 0 = f(1). La réciproque de f, bijection continue de [−1/e ; 0] sur [1/e ; 1], est continue : αₙ → 1 ✓. Piège classique : confondre f(1) = 0 avec f(0) = 0 (mais 0 n'est pas dans [1/e ; 1]), prendre l'extrémité où f est négative, ou reprendre e comme limite d'un quotient dont le numérateur tend vers 0.",
+      "difficulty": 3
+    }
+  ]
+}

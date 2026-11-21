@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 2 ⭐⭐⭐ : ellipse paramétrée, tangente et fonction d'une distance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé direct, on considère l'ellipse (E) d'équation x² + 9y² = 9. Les cercles (C₁) et (C₂) sont centrés en O, de rayons 1 et 3 ; pour θ ∈ ]0 ; π/2[, les points N(cos θ ; sin θ) et P(3cos θ ; 3sin θ) sont sur (C₁) et (C₂). On pose M(3cos θ ; sin θ), l'abscisse de P et l'ordonnée de N.\n<svg viewBox=\"0 0 300 220\"><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.2\"><path d=\"M12 110 L288 110\"/><path d=\"M150 205 L150 12\"/></g><g fill=\"none\" stroke-width=\"2\"><circle cx=\"150\" cy=\"110\" r=\"36\" stroke=\"#2563eb\"/><circle cx=\"150\" cy=\"110\" r=\"108\" stroke=\"#16a34a\"/><ellipse cx=\"150\" cy=\"110\" rx=\"108\" ry=\"36\" stroke=\"#dc2626\"/></g><path d=\"M150 110 L238.5 48.1\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\" fill=\"none\"/><g fill=\"#0f172a\"><circle cx=\"179.5\" cy=\"89.4\" r=\"3.5\"/><circle cx=\"238.5\" cy=\"48.1\" r=\"3.5\"/><circle cx=\"238.5\" cy=\"89.4\" r=\"4\" fill=\"#dc2626\"/></g><g font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\"><text x=\"165.5\" y=\"105.4\">N</text><text x=\"244.5\" y=\"44.1\">P</text><text x=\"244.5\" y=\"83.4\">M</text><text x=\"140\" y=\"124\">O</text><text x=\"268\" y=\"102\">3</text><text x=\"156\" y=\"72\">1</text></g><g font-size=\"12\" font-weight=\"700\"><text x=\"18\" y=\"30\" fill=\"#2563eb\">(C₁)</text><text x=\"18\" y=\"46\" fill=\"#16a34a\">(C₂)</text><text x=\"18\" y=\"62\" fill=\"#dc2626\">(E)</text></g></svg>\nQue vaut l'expression x² + 9y² lorsque x = 3cos θ et y = sin θ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9cos²θ + sin²θ, qui dépend de θ, donc M n'appartient pas toujours à (E)"
+        },
+        {
+          "id": "b",
+          "text": "6cos²θ + 9sin²θ, qui dépend de θ, donc M n'appartient pas toujours à (E)"
+        },
+        {
+          "id": "c",
+          "text": "9, quel que soit θ, donc M appartient à (E)"
+        },
+        {
+          "id": "d",
+          "text": "3cos²θ + 9sin²θ, qui dépend de θ, donc M n'appartient pas toujours à (E)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On remplace x par 3cos θ et y par sin θ : x² + 9y² = (3cos θ)² + 9(sin θ)² = 9cos²θ + 9sin²θ = 9(cos²θ + sin²θ) = 9. Cette valeur est celle du second membre pour tout θ, donc M(3cos θ ; sin θ) est un point de (E) ✓. Contrôle par un cas : θ = 0 donne M(3 ; 0) et 3² + 0 = 9 ✓. Les autres écritures viennent de deux erreurs : le coefficient 9 de y² oublié (9cos²θ + sin²θ), ou le carré de 3cos θ mal calculé, pris pour 6cos²θ ou pour 3cos²θ. Dans les deux cas l'expression n'est plus constante : par exemple, 9cos²θ + sin²θ vaut 9 en θ = 0 mais 1 en θ = π/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, (E) est l'ellipse d'équation x² + 9y² = 9, et M le point de coordonnées (3cos θ ; sin θ), avec θ ∈ ]0 ; π/2[. Quelle est une équation de la tangente T à (E) en M ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3x cos θ + y sin θ = 9"
+        },
+        {
+          "id": "b",
+          "text": "x cos θ + 3y sin θ = 9"
+        },
+        {
+          "id": "c",
+          "text": "x cos θ + 3y sin θ = 3"
+        },
+        {
+          "id": "d",
+          "text": "x cos θ + y sin θ = 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'équation de (E) se lit x²/9 + y²/1 = 1, donc a² = 9 et b² = 1. La tangente en M₀(x₀ ; y₀) est x₀x/9 + y₀y = 1. Avec x₀ = 3cos θ et y₀ = sin θ : (3cos θ)x/9 + (sin θ)y = 1, soit (cos θ/3)x + (sin θ)y = 1. On multiplie par 3 : x cos θ + 3y sin θ = 3 ✓. Vérification : M vérifie l'équation, car 3cos θ·cos θ + 3sin θ·sin θ = 3cos²θ + 3sin²θ = 3 ✓. Les autres droites ne passent pas par M : pour x cos θ + 3y sin θ = 9, le premier membre vaut 3 en M, pas 9 ; pour x cos θ + y sin θ = 1, il vaut 3cos²θ + sin²θ = 1 + 2cos²θ, différent de 1 ; pour 3x cos θ + y sin θ = 9, il vaut 9cos²θ + sin²θ, différent de 9 dès que sin θ ≠ 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La tangente T à l'ellipse (E) en M(3cos θ ; sin θ) a pour équation x cos θ + 3y sin θ = 3, avec θ ∈ ]0 ; π/2[. T coupe l'axe des abscisses en H et l'axe des ordonnées en K. Quelles sont les coordonnées de H et de K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H(3/cos θ ; 0) et K(0 ; 3/sin θ)"
+        },
+        {
+          "id": "b",
+          "text": "H(3/cos θ ; 0) et K(0 ; 1/sin θ)"
+        },
+        {
+          "id": "c",
+          "text": "H(1/cos θ ; 0) et K(0 ; 1/sin θ)"
+        },
+        {
+          "id": "d",
+          "text": "H(cos θ/3 ; 0) et K(0 ; sin θ)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un point de l'axe des abscisses a pour ordonnée 0. Pour H, y = 0 donne x cos θ = 3, donc x = 3/cos θ (cos θ ≠ 0 sur ]0 ; π/2[). Un point de l'axe des ordonnées a pour abscisse 0. Pour K, x = 0 donne 3y sin θ = 3, donc y = 1/sin θ. Ainsi H(3/cos θ ; 0) et K(0 ; 1/sin θ) ✓. Vérification : en H, x cos θ = (3/cos θ)·cos θ = 3 ✓ ; en K, 3y sin θ = 3·(1/sin θ)·sin θ = 3 ✓. Les erreurs viennent du second membre ou du coefficient traités de travers : oublier de diviser par 3 dans K donne 3/sin θ ; prendre 1 comme second membre dans H donne 1/cos θ ; inverser les deux divisions donne cos θ/3 et sin θ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé, la tangente à l'ellipse x² + 9y² = 9 en M(3cos θ ; sin θ), avec θ ∈ ]0 ; π/2[, a pour équation x cos θ + 3y sin θ = 3. Elle coupe les axes en deux points H (sur l'axe des abscisses) et K (sur l'axe des ordonnées). Quelle est l'expression de HK² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3/cos θ + 1/sin θ)²"
+        },
+        {
+          "id": "b",
+          "text": "9/cos²θ − 1/sin²θ"
+        },
+        {
+          "id": "c",
+          "text": "3/cos²θ + 1/sin²θ"
+        },
+        {
+          "id": "d",
+          "text": "9/cos²θ + 1/sin²θ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On cherche d'abord les points d'intersection avec les axes : H(3/cos θ ; 0) et K(0 ; 1/sin θ). Le triangle OHK est rectangle en O, donc HK² = OH² + OK² (Pythagore, ou formule de distance) : HK² = (3/cos θ)² + (1/sin θ)² = 9/cos²θ + 1/sin²θ ✓. Contrôle en θ = π/4 : cos² = sin² = 1/2, d'où HK² = 18 + 2 = 20 ; avec H(3√2 ; 0) et K(0 ; √2), HK² = 18 + 2 = 20 ✓. L'erreur classique est de prendre HK = OH + OK : on obtient (3/cos θ + 1/sin θ)², qui vaut (3√2 + √2)² = 32 en θ = π/4, bien plus que 20 — une distance entre deux points n'est jamais la somme de leurs distances à l'origine. La différence 9/cos²θ − 1/sin²θ est un signe fautif et 3/cos²θ oublie le carré de 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose f(θ) = 9/cos²θ + 1/sin²θ pour θ ∈ ]0 ; π/2[. Quelle est l'expression de f'(θ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18 sin θ/cos³θ − 2cos θ/sin³θ"
+        },
+        {
+          "id": "b",
+          "text": "18 sin θ/cos³θ + 2cos θ/sin³θ"
+        },
+        {
+          "id": "c",
+          "text": "−18 sin θ/cos³θ − 2cos θ/sin³θ"
+        },
+        {
+          "id": "d",
+          "text": "−9/cos⁴θ − 1/sin⁴θ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit f = 9u⁻¹ + v⁻¹ avec u = cos²θ et v = sin²θ, de dérivées u' = −2cos θ sin θ et v' = 2sin θ cos θ. La dérivée de 1/w est −w'/w². Donc (1/cos²θ)' = 2cos θ sin θ/cos⁴θ = 2sin θ/cos³θ et (1/sin²θ)' = −2sin θ cos θ/sin⁴θ = −2cos θ/sin³θ. D'où f'(θ) = 18 sin θ/cos³θ − 2cos θ/sin³θ ✓. Contrôle en θ = π/4 : sin = cos = √2/2, donc sin/cos³ = 1/cos² = 2 et cos/sin³ = 2, soit f' = 36 − 4 = 32 ✓ ; la forme factorisée donne 2(4·1/2 − 1)(1/2 + 3/2)/(√2/2)⁶ = 2·1·2/(1/8) = 32 ✓, le même nombre. Le signe + vient d'une dérivée de 1/sin²θ prise positive ; la forme −9/cos⁴θ − 1/sin⁴θ oublie la dérivée intérieure de cos²θ et de sin²θ ; la forme −18 sin θ/cos³θ − 2cos θ/sin³θ prend aussi la dérivée de 1/cos²θ négative.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; π/2[ par f(θ) = HK², et supposons que f'(θ) = 2(4sin²θ − 1)(cos²θ + 3sin²θ)/(cos³θ sin³θ). La distance HK est minimale pour quelle valeur de θ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ = π/6, car f' passe du positif au négatif"
+        },
+        {
+          "id": "b",
+          "text": "θ = π/3, car sin θ = 1/2 donne θ = π/3"
+        },
+        {
+          "id": "c",
+          "text": "θ = π/4, car c'est le milieu de ]0 ; π/2["
+        },
+        {
+          "id": "d",
+          "text": "θ = π/6, car f' passe du négatif au positif"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur ]0 ; π/2[, cos θ et sin θ sont strictement positifs, donc cos³θ sin³θ > 0 et cos²θ + 3sin²θ > 0. Le signe de f'(θ) est donc celui de 4sin²θ − 1. Or 4sin²θ − 1 = 0 équivaut à sin θ = 1/2 (sin θ > 0), soit θ = π/6. Pour θ < π/6, sin θ < 1/2 donc f'(θ) < 0 et f décroît ; pour θ > π/6, f'(θ) > 0 et f croît. f admet un minimum en π/6, et comme HK = √f(θ) avec √ croissante, HK est minimale exactement en π/6 ✓. Contrôle : f(π/6) = 9/(3/4) + 1/(1/4) = 12 + 4 = 16, tandis que f(π/4) = 20 > 16 et f(π/3) = 9/(1/4) + 1/(3/4) = 36 + 4/3 > 16 ✓. L'erreur à éviter : lire sin θ = 1/2 comme π/3 (c'est sin π/3 = √3/2), ou deviner le milieu de l'intervalle sans étudier le signe de f'.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé, (E) est l'ellipse d'équation x² + 9y² = 9. Le point D de (E) correspond à θ = π/6 dans la paramétrisation M(3cos θ ; sin θ). Quels sont les coordonnées de D et une équation de la tangente à (E) en D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D(3√3/2 ; 1/2) et 3√3 x + y = 6"
+        },
+        {
+          "id": "b",
+          "text": "D(3√3/2 ; 1/2) et √3 x + 3y = 6"
+        },
+        {
+          "id": "c",
+          "text": "D(3/2 ; √3/2) et √3 x + 3y = 6"
+        },
+        {
+          "id": "d",
+          "text": "D(3/2 ; √3/2) et 3√3 x + y = 6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour θ = π/6, cos θ = √3/2 et sin θ = 1/2, donc D(3√3/2 ; 1/2). On vérifie : x² + 9y² = 27/4 + 9/4 = 9 ✓. La tangente en M(3cos θ ; sin θ) est x cos θ + 3y sin θ = 3, soit ici (√3/2)x + (3/2)y = 3, et en multipliant par 2 : √3 x + 3y = 6 ✓ ; elle passe par D car √3·(3√3/2) + 3·(1/2) = 9/2 + 3/2 = 6 ✓. Deux erreurs se combinent dans les autres choix : échanger cos et sin, ce qui donne D(3/2 ; √3/2), le point de paramètre π/3 ; ou écrire la tangente 3x cos θ + y sin θ = 3, formule où les coefficients 1 et 9 sont mal placés, qui devient 3√3 x + y = 6 et ne passe pas par D (le premier membre vaut 27/2 + 1/2 = 14 en D).",
+      "difficulty": 3
+    }
+  ]
+}
