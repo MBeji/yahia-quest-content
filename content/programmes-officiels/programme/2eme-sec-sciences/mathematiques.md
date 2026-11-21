@@ -539,7 +539,7 @@ Chapitre de **consolidation** (calcul numérique et algébrique) présenté comm
 
 ## 4. Chapitrage retenu (→ alimente `manifest/2eme-sec-sciences.json`)
 
-Chapitrage complet du manuel (19 chapitres, deux tomes) codifié dans `manifest/2eme-sec-sciences.json`.
+Chapitrage complet du manuel (19 chapitres, deux tomes) codifié dans `manifest/2eme-sec-sciences.json`, plus un chapitre 20 de complément (décision du 2026-11-21) : le ch.14 tient au plafond de 8 notions et laisse au ch.20 les notions ✅ du §T2.5 qu'il ne couvre pas (bissectrices, formule de Héron, triangles isométriques et semblables, relations métriques — Act.23, 33–36, Synthèse p.86) ; même source, même section de la fiche.
 Colonne **transcription** : ✅ = transcrit à profondeur de génération dans la présente fiche ; ⏳ = à
 transcrire (chapitre listé du sommaire, non encore transcrit — cf. §6).
 
@@ -564,6 +564,7 @@ transcrire (chapitre listé du sommaire, non encore transcrit — cf. §6).
 | 17  | `17-parallelisme-espace`            | Parallélisme dans l'espace                                                                       | `222232` · p.127–145        | ✅            |
 | 18  | `18-orthogonalite-espace`           | Orthogonalité dans l'espace                                                                      | `222232` · p.146–166        | ✅            |
 | 19  | `19-statistiques`                   | Statistiques                                                                                     | `222232` · p.167–199        | ✅            |
+| 20  | `20-geometrie-du-triangle`         | Géométrie du triangle (bissectrices, Héron, isométrie, similitude, relations métriques)          | `222232` · p.72–91 (§T2.5)  | ✅            |
 
 > Plages du tome 2 confirmées à la page près à la lecture du 2026-11-20. Le sommaire du manuel place
 > le ch.7 « Droites et plans de l'espace » en p.113 : c'est faux, la p.113 est au milieu de
