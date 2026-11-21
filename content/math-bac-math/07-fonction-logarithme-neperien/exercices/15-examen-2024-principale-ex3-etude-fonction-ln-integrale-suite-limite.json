@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2024 · session principale · Exercice 3 ⭐⭐⭐⭐ : étude de x − (x − 1) ln(x + 1), équation f′ = 0, aire par parties et limite d'une suite d'intégrales",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x − (x − 1) ln(x + 1). Quelle est la limite de f(x)/x quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "−∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 0, f(x)/x = 1 − (1 − 1/x) ln(x + 1). Quand x → +∞, (1 − 1/x) ln(x + 1) → +∞, donc f(x)/x → −∞ ✓ (de même f(x) → −∞ : la courbe a une branche parabolique de direction (Oy)). Piège classique : croire que ln est négligeable devant x (ce n'est vrai que pour (ln x)/x : ici le terme en ln n'est pas divisé par x), ne garder que le terme x (on trouve 1), ou se tromper de signe sur −(x − 1) ln(x + 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x − (x − 1) ln(x + 1) sur ]−1 ; +∞[. Quelle justification établit que la droite d'équation x = −1 est asymptote à la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(x + 1) → −∞ et −(x − 1) → 2 quand x → −1⁺, donc f(x) → −∞"
+        },
+        {
+          "id": "b",
+          "text": "(x − 1) ln(x + 1) → +∞ (produit de deux quantités négatives), donc f(x) → +∞"
+        },
+        {
+          "id": "c",
+          "text": "ln(x + 1) tend vers 0 quand x tend vers −1, donc f(x) tend vers −1"
+        },
+        {
+          "id": "d",
+          "text": "f(x) tend vers −∞ quand x tend vers −1⁺, donc la droite y = −1 est asymptote horizontale"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand x → −1⁺, x + 1 → 0⁺ donc ln(x + 1) → −∞, et le facteur −(x − 1) = 1 − x tend vers 2 > 0 ; le produit tend vers −∞, et le terme x tend vers −1. Donc f(x) → −∞ : la droite x = −1 est asymptote verticale ✓. Piège classique : oublier le signe moins devant (x − 1) ln(x + 1) (on trouve +∞), confondre ln(x + 1) → 0 (c'est en x = 0) avec ln(x + 1) → −∞ (en x = −1), ou nommer horizontale la droite associée à une limite infinie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x − (x − 1) ln(x + 1) sur ]−1 ; +∞[. Quelle est l'expression de f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − ln(x + 1) − 1/(x + 1)"
+        },
+        {
+          "id": "b",
+          "text": "2/(x + 1) − ln(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "2x/(x + 1) − ln(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "2/(x + 1) + ln(x + 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive le produit (x − 1) ln(x + 1) : ln(x + 1) + (x − 1)/(x + 1). Donc f′(x) = 1 − ln(x + 1) − (x − 1)/(x + 1) = ((x + 1) − (x − 1))/(x + 1) − ln(x + 1) = 2/(x + 1) − ln(x + 1) ✓. Piège classique : dériver ln(x + 1) en 1/(x + 1) sans le facteur (x − 1) du produit, se tromper de signe en réduisant 1 − (x − 1)/(x + 1) (on trouve 2x/(x + 1)), ou perdre le signe moins devant le terme en ln.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f′(x) = 2/(x + 1) − ln(x + 1) sur ]−1 ; +∞[, strictement décroissante de +∞ à −∞. On donne ln 2,3 ≈ 0,8329 et ln 2,4 ≈ 0,8755. Quelles valeurs approchées de f′(1,3) et f′(1,4) obtient-on, pour situer l'unique solution α de f′(x) = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(1,3) ≈ −0,04 et f′(1,4) ≈ 0,04"
+        },
+        {
+          "id": "b",
+          "text": "f′(1,3) ≈ 0,71 et f′(1,4) ≈ 0,55"
+        },
+        {
+          "id": "c",
+          "text": "f′(1,3) ≈ 0,04 et f′(1,4) ≈ −0,04"
+        },
+        {
+          "id": "d",
+          "text": "f′(1,3) ≈ 1,70 et f′(1,4) ≈ 1,71"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′ est continue et strictement décroissante, de limite +∞ en −1⁺ et −∞ en +∞ : elle s'annule une seule fois, en α. On calcule f′(1,3) = 2/2,3 − ln 2,3 ≈ 0,8696 − 0,8329 = 0,0367 ≈ 0,04 et f′(1,4) = 2/2,4 − ln 2,4 ≈ 0,8333 − 0,8755 = −0,0422 ≈ −0,04. Le signe change entre 1,3 et 1,4, donc 1,3 < α < 1,4 ✓. Piège classique : échanger les signes (la décroissance impose f′(1,3) > f′(1,4)), écrire 2/x au lieu de 2/(x + 1) (on trouve ≈ 0,71 et ≈ 0,55), ou ajouter ln(x + 1) au lieu de le retrancher (on trouve ≈ 1,70 et ≈ 1,71).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = x − (x − 1) ln(x + 1) sur ]−1 ; +∞[, de dérivée f′ positive sur ]−1 ; α[ et négative sur ]α ; +∞[ avec 1,3 < α < 1,4 et lim f = −∞ aux deux bornes. Quel est le tableau de variation de f, avec f(0) et f(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît sur ]−1 ; α] de −∞ à f(α), puis décroît vers −∞ ; f(0) = 1 et f(1) = 1 − ln 2"
+        },
+        {
+          "id": "b",
+          "text": "f croît sur ]−1 ; α] de −∞ à f(α), puis décroît vers −∞ ; f(0) = 1 et f(1) = 1"
+        },
+        {
+          "id": "c",
+          "text": "f croît sur ]−1 ; α] de −∞ à f(α), puis décroît vers −∞ ; f(0) = 0 et f(1) = 1 − ln 2"
+        },
+        {
+          "id": "d",
+          "text": "f croît sur ]−1 ; α] de −∞ à f(α), puis décroît vers −∞ ; f(0) = 0 et f(1) = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le signe de f′ donne : f croissante sur ]−1 ; α] (maximum f(α)), puis décroissante sur [α ; +∞[. Les valeurs : f(0) = 0 − (−1) ln 1 = 0 (ln 1 = 0) et f(1) = 1 − 0 × ln 2 = 1 ✓ ; comme 0 < 1 < α, f est croissante entre ces points. Piège classique : inverser les variations, croire que ln 1 = 1 (on trouve f(0) = 1), ou oublier que le facteur x − 1 s'annule en 1 (on trouve 1 − ln 2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour calculer ∫ de 0 à x de (t − 1) ln(t + 1) dt par parties, avec u(t) = ln(t + 1) et v′(t) = t − 1, on choisit la primitive v de t ↦ t − 1 pour que v(t)/(t + 1) se simplifie. Quel choix convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "v(t) = (t² − 2t − 3)/2 = (t − 3)(t + 1)/2"
+        },
+        {
+          "id": "b",
+          "text": "v(t) = (t² − 2t)/2 = t(t − 2)/2, primitive choisie sans constante"
+        },
+        {
+          "id": "c",
+          "text": "v(t) = t²/2 − 1, en ajoutant la constante −1"
+        },
+        {
+          "id": "d",
+          "text": "v(t) = (t² − 2t + 3)/2 = (t² − 2t)/2 + 3/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Toute primitive de t − 1 s'écrit t²/2 − t + c = (t² − 2t + 2c)/2. Le choix 2c = −3 donne v(t) = (t² − 2t − 3)/2 = (t − 3)(t + 1)/2, qui s'annule en t = −1 : alors v(t)/(t + 1) = (t − 3)/2 est un polynôme, et l'intégrale restante ∫ v(t)/(t + 1) dt se calcule sans effort ✓. Avec ce choix : ∫ de 0 à x de (t − 1) ln(t + 1) dt = (1/2)(x² − 2x − 3) ln(x + 1) + (1/4)(6x − x²). Piège classique : prendre la primitive sans constante (le quotient v(t)/(t + 1) ne se simplifie pas), ou une expression dont la dérivée n'est pas t − 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x − (x − 1) ln(x + 1), avec f ≥ 0 sur [0 ; 1], et ∫ de 0 à x de (t − 1) ln(t + 1) dt = (1/2)(x² − 2x − 3) ln(x + 1) + (1/4)(6x − x²). Quelle est l'aire, en unités d'aire, de la partie du plan limitée par la courbe de f, les droites x = 0, x = 1 et l'axe des abscisses ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ln 2 + 3/4"
+        },
+        {
+          "id": "b",
+          "text": "2 ln 2 − 3/4"
+        },
+        {
+          "id": "c",
+          "text": "7/4 − 2 ln 2"
+        },
+        {
+          "id": "d",
+          "text": "2 ln 2 − 5/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme f ≥ 0 sur [0 ; 1], l'aire est ∫ de 0 à 1 de f(x) dx = ∫ de 0 à 1 de x dx − ∫ de 0 à 1 de (x − 1) ln(x + 1) dx. Le premier terme vaut 1/2 ; le second vaut (1/2)(1 − 2 − 3) ln 2 + (1/4)(6 − 1) = −2 ln 2 + 5/4. Donc l'aire vaut 1/2 − (−2 ln 2 + 5/4) = 2 ln 2 − 3/4 ✓ (≈ 0,64). Piège classique : ne pas retrancher l'intégrale du terme en ln (on trouve 7/4 − 2 ln 2), oublier l'intégrale de x (on trouve 2 ln 2 − 5/4), ou se tromper de signe sur la constante finale (on trouve 2 ln 2 + 3/4).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, on étudie aₙ = ∫ de 0 à 1 de f(x)ⁿ dx avec f′(x) = 2/(x + 1) − ln(x + 1) strictement décroissante sur ]−1 ; +∞[. Quelle justification établit que f′(x) ≥ 1 − ln 2 pour tout x ∈ ]−1 ; 1] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′ est strictement décroissante et f′(1) = 2 − ln 2, donc f′(x) ≤ 2 − ln 2 pour x ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "f′ est strictement décroissante et f′(1) = 2 − ln 2, donc f′(x) ≥ 2 − ln 2 pour x ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "f′ est strictement décroissante et f′(1) = 1 − ln 2, donc f′(x) ≥ 1 − ln 2 pour x ≤ 1"
+        },
+        {
+          "id": "d",
+          "text": "f′ est strictement décroissante et f′(1) = 1 − ln 2, donc f′(x) ≤ 1 − ln 2 pour x ≤ 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′ est strictement décroissante sur ]−1 ; +∞[ : pour x ≤ 1, f′(x) ≥ f′(1). Or f′(1) = 2/(1 + 1) − ln 2 = 1 − ln 2 ✓. Piège classique : renverser le sens de l'inégalité (une fonction décroissante est plus grande à gauche), se tromper dans f′(1) (2/2 = 1 et non 2), ou supposer f′ croissante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n ≥ 2 et x = 1 − 1/√n, avec f(1) = 1 et f′(t) ≥ 1 − ln 2 sur ]−1 ; 1]. Quelle inégalité en déduit-on pour f(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(1 − 1/√n) ≥ 1 − (1 − ln 2)/√n"
+        },
+        {
+          "id": "b",
+          "text": "f(1 − 1/√n) ≤ 1 − (1 − ln 2)√n"
+        },
+        {
+          "id": "c",
+          "text": "f(1 − 1/√n) ≥ 1 − (1 − ln 2)√n"
+        },
+        {
+          "id": "d",
+          "text": "f(1 − 1/√n) ≤ 1 − (1 − ln 2)/√n"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′ ≥ 1 − ln 2 sur [x ; 1] donne, en intégrant, f(1) − f(x) ≥ (1 − ln 2)(1 − x). Avec 1 − x = 1/√n et f(1) = 1 : f(x) ≤ 1 − (1 − ln 2)/√n ✓. Piège classique : renverser le sens de l'inégalité, se tromper sur la longueur 1 − x = 1/√n (c'est 1/√n, pas √n), ou oublier que f(1) = 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x − (x − 1) ln(x + 1), avec 1 < α, f(0) = 0 et f(1) = 1. Que peut-on dire de f sur [0 ; 1] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur [0 ; 1] (car 1 < α), donc 0 ≤ f(x) ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement décroissante sur [0 ; 1], donc 0 ≤ f(x) ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante sur [0 ; 1] mais f(1) = 1 − ln 2, donc 0 ≤ f(x) ≤ 1 − ln 2"
+        },
+        {
+          "id": "d",
+          "text": "f(x) ≤ 1 car x ≤ 1 et le terme −(x − 1) ln(x + 1) est négatif sur [0 ; 1]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f est croissante sur ]−1 ; α] et [0 ; 1] ⊂ ]−1 ; α] puisque α > 1 : f est strictement croissante sur [0 ; 1], de f(0) = 0 à f(1) = 1. Donc 0 ≤ f(x) ≤ 1 sur [0 ; 1] ✓, ce qui permet d'écrire 0 ≤ f(x)ⁿ ≤ 1. Piège classique : inverser la monotonie, mal calculer f(1) (1 − 0 × ln 2 = 1), ou majorer en jugeant le signe du terme en ln (sur [0 ; 1], −(x − 1) ln(x + 1) est positif, car x − 1 ≤ 0 et ln(x + 1) ≥ 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, soit x₀ = 1 − 1/√n. On sait que f est croissante sur [0 ; 1], f(0) = 0 et f(x₀) ≤ 1 − (1 − ln 2)/√n. Quelle justification établit que ∫ de 0 à x₀ de f(x)ⁿ dx ≤ (1 − (1 − ln 2)/√n)ⁿ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour x ∈ [0 ; x₀], f(x) ≥ f(x₀) car f est croissante, donc f(x)ⁿ ≥ (1 − (1 − ln 2)/√n)ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "0 ≤ f(x) ≤ f(x₀) ≤ 1 − (1 − ln 2)/√n pour x ∈ [0 ; x₀], donc f(x)ⁿ ≤ (…)ⁿ ; longueur de l'intervalle ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "Pour x ∈ [0 ; x₀], f(x)ⁿ ≤ (1 − (1 − ln 2)/√n)ⁿ ; l'intervalle est de longueur 1/√n, d'où la borne (…)ⁿ/√n"
+        },
+        {
+          "id": "d",
+          "text": "f(x₀)ⁿ est la valeur moyenne de f(x)ⁿ, donc l'intégrale est égale à (1 − (1 − ln 2)/√n)ⁿ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f est croissante et positive sur [0 ; x₀] : 0 ≤ f(x) ≤ f(x₀) ≤ 1 − (1 − ln 2)/√n. En élevant à la puissance n (fonction croissante sur [0 ; +∞[) : f(x)ⁿ ≤ (1 − (1 − ln 2)/√n)ⁿ. On intègre sur [0 ; x₀], de longueur x₀ ≤ 1, ce qui donne la borne annoncée ✓. Piège classique : renverser l'inégalité (f est croissante, donc f(x) ≤ f(x₀) à gauche de x₀), prendre 1/√n pour la longueur de l'intervalle (c'est la longueur du morceau [x₀ ; 1]), ou confondre majorant et valeur moyenne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, ∫ de 0 à x₀ de f(x)ⁿ dx ≤ (1 − (1 − ln 2)/√n)ⁿ avec x₀ = 1 − 1/√n, et 0 ≤ f ≤ 1 sur [0 ; 1]. Quel encadrement de aₙ = ∫ de 0 à 1 de f(x)ⁿ dx en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 ≤ aₙ ≤ (1 − (1 − ln 2)/√n)ⁿ + 1"
+        },
+        {
+          "id": "b",
+          "text": "0 ≤ aₙ ≤ (1 − (1 − ln 2)/√n)ⁿ/√n"
+        },
+        {
+          "id": "c",
+          "text": "0 ≤ aₙ ≤ (1 − (1 − ln 2)/√n)ⁿ + 1/√n"
+        },
+        {
+          "id": "d",
+          "text": "0 ≤ aₙ ≤ (1 − (1 − ln 2)/√n)ⁿ − 1/√n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On découpe aₙ = ∫ de 0 à x₀ + ∫ de x₀ à 1. Le premier morceau est majoré par (1 − (1 − ln 2)/√n)ⁿ. Sur [x₀ ; 1], 0 ≤ f ≤ 1 donc 0 ≤ f(x)ⁿ ≤ 1, et la longueur de l'intervalle est 1 − x₀ = 1/√n : le second morceau est majoré par 1/√n. Donc 0 ≤ aₙ ≤ (1 − (1 − ln 2)/√n)ⁿ + 1/√n ✓. Piège classique : majorer le second morceau par 1 en oubliant la longueur 1/√n, multiplier au lieu d'additionner les deux majorations, ou soustraire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la limite de n ln(1 − (1 − ln 2)/√n) quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, car ln(1 − (1 − ln 2)/√n) tend vers 0, donc n ln(...) tend vers 0 aussi"
+        },
+        {
+          "id": "b",
+          "text": "−(1 − ln 2), car n × (1/√n) vaut 1 et ln(1 − u) vaut −u"
+        },
+        {
+          "id": "c",
+          "text": "+∞, car n tend vers +∞ et le logarithme est ignoré"
+        },
+        {
+          "id": "d",
+          "text": "−∞, car en posant u = (1 − ln 2)/√n, n ln(1 − u) = −(1 − ln 2)√n × ln(1 − u)/(−u), avec ln(1 − u)/(−u) → 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Posons u = (1 − ln 2)/√n, qui tend vers 0. Alors n ln(1 − u) = −nu × ln(1 − u)/(−u) = −(1 − ln 2)√n × ln(1 − u)/(−u), car nu = n(1 − ln 2)/√n = (1 − ln 2)√n. Or ln(1 − u)/(−u) tend vers 1 (c'est la limite de (ln x)/(x − 1) en x = 1, avec x = 1 − u). Comme 1 − ln 2 > 0, le produit tend vers −∞ ✓. Piège classique : traiter la forme n × 0 comme 0, simplifier n/√n en 1 au lieu de √n, ou oublier le signe moins devant u.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, 0 ≤ aₙ ≤ (1 − (1 − ln 2)/√n)ⁿ + 1/√n, et n ln(1 − (1 − ln 2)/√n) tend vers −∞. Quelle est la limite de aₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, car ln((1 − (1 − ln 2)/√n)ⁿ) = n ln(1 − (1 − ln 2)/√n) → −∞, donc (1 − (1 − ln 2)/√n)ⁿ → 0, et 1/√n → 0"
+        },
+        {
+          "id": "b",
+          "text": "1, car la base 1 − (1 − ln 2)/√n tend vers 1, donc sa puissance n tend vers 1"
+        },
+        {
+          "id": "c",
+          "text": "1 − ln 2, valeur de f′(1) qui apparaît dans la base"
+        },
+        {
+          "id": "d",
+          "text": "+∞, car l'exposant n tend vers +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Posons bₙ = (1 − (1 − ln 2)/√n)ⁿ > 0. Alors ln bₙ = n ln(1 − (1 − ln 2)/√n) tend vers −∞, donc bₙ tend vers 0 (un réel strictement positif dont le logarithme tend vers −∞ tend vers 0). Avec 1/√n → 0, la majoration de aₙ tend vers 0 ; comme aₙ ≥ 0, le théorème des gendarmes donne aₙ → 0 ✓. Piège classique : appliquer « 1ⁿ = 1 » à une base qui tend vers 1 sans être égale à 1 (forme indéterminée 1^∞, levée ici par le logarithme), ou retenir la constante 1 − ln 2 comme limite.",
+      "difficulty": 3
+    }
+  ]
+}

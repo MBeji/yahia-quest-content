@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : étude d'une fonction avec ln et racine, réciproque du sinus, aire par intégration par parties",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [e^(−√2) ; e^(√2)] par f(x) = √(2 − ln²x) / x. Quelle est la limite de (ln x − √2)/(x − e^(√2)) quand x tend vers e^(√2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−√2)"
+        },
+        {
+          "id": "b",
+          "text": "e^(√2)"
+        },
+        {
+          "id": "c",
+          "text": "−e^(−√2)"
+        },
+        {
+          "id": "d",
+          "text": "e^(−√2)/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme ln(e^(√2)) = √2, le quotient s'écrit (ln x − ln x₀)/(x − x₀) avec x₀ = e^(√2) : c'est un taux d'accroissement de ln en x₀. Sa limite est donc le nombre dérivé ln′(x₀) = 1/x₀ = 1/e^(√2) = e^(−√2) ✓. Piège classique : prendre x₀ au lieu de 1/x₀, ou conclure 0 parce que le numérateur tend vers 0, alors que le dénominateur tend aussi vers 0 (forme 0/0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [e^(−√2) ; e^(√2)] par f(x) = √(2 − ln²x) / x. Pour x < e^(√2), on écrit f(x)/(x − e^(√2)) = [−(ln x + √2)/(x√(2 − ln²x))] · [(ln x − √2)/(x − e^(√2))]. Quelle est la limite du premier facteur quand x tend vers e^(√2) par valeurs inférieures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "−2√2 e^(−√2)"
+        },
+        {
+          "id": "d",
+          "text": "−∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand x → e^(√2), ln x → √2 : le numérateur −(ln x + √2) tend vers −2√2 < 0, alors que 2 − ln²x tend vers 0 par valeurs positives, donc le dénominateur x√(2 − ln²x) tend vers 0⁺. Un nombre négatif non nul divisé par une quantité qui tend vers 0⁺ tend vers −∞ ✓. Le second facteur tend vers e^(−√2) > 0, donc le produit tend aussi vers −∞. Piège classique : perdre le signe moins du numérateur, ou croire que le dénominateur ne s'annule pas parce que x ≠ 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [e^(−√2) ; e^(√2)] par f(x) = √(2 − ln²x) / x. Sachant que f(e^(√2)) = 0 et que f(x)/(x − e^(√2)) tend vers −∞ quand x tend vers e^(√2) par valeurs inférieures, quelle est l'interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_f admet la droite d'équation x = e^(√2) pour asymptote verticale"
+        },
+        {
+          "id": "b",
+          "text": "C_f admet au point (e^(√2) ; 0) une demi-tangente verticale"
+        },
+        {
+          "id": "c",
+          "text": "C_f admet au point (e^(√2) ; 0) une demi-tangente horizontale"
+        },
+        {
+          "id": "d",
+          "text": "C_f admet au point (e^(√2) ; 0) une tangente de pente −∞ qui est aussi une asymptote"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rapport [f(x) − f(x₀)]/(x − x₀), avec x₀ = e^(√2) et f(x₀) = 0, est la pente de la sécante entre (x₀ ; 0) et le point d'abscisse x. Cette pente tend vers −∞ : f n'est pas dérivable à gauche en x₀ et C_f a, en (x₀ ; 0), une demi-tangente verticale ✓. Il n'y a pas d'asymptote verticale : f(x) tend vers f(x₀) = 0, qui est une limite finie. Piège classique : confondre limite infinie du taux d'accroissement (tangente verticale) et limite infinie de la fonction (asymptote verticale).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [e^(−√2) ; e^(√2)] par f(x) = √(2 − ln²x) / x. On étudie la dérivabilité à droite de f en e^(−√2), où f(e^(−√2)) = 0. Quelle est la limite de f(x)/(x − e^(−√2)) quand x tend vers e^(−√2) par valeurs supérieures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "e^(√2)"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(x) = √((√2 − ln x)(√2 + ln x))/x. Quand x → e^(−√2)⁺, √2 + ln x tend vers 0⁺, tandis que √2 − ln x tend vers 2√2. Donc f(x) se comporte comme √(c(x − e^(−√2))) avec c > 0, et f(x)/(x − e^(−√2)) est de l'ordre de 1/√(x − e^(−√2)) : cette quantité est positive (numérateur et dénominateur positifs) et tend vers +∞ ✓. Piège classique : annoncer 0 parce que f(x) tend vers 0, sans comparer la vitesse avec celle du dénominateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [e^(−√2) ; e^(√2)] par f(x) = √(2 − ln²x) / x. Le quotient [f(x) − f(e^(−√2))]/(x − e^(−√2)) tend vers +∞ quand x tend vers e^(−√2) par valeurs supérieures. Quelle conclusion en tire-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est dérivable à droite en e^(−√2), avec un nombre dérivé égal à +∞, d'où une demi-tangente verticale"
+        },
+        {
+          "id": "b",
+          "text": "f n'est pas dérivable à droite en e^(−√2) : C_f admet en ce point une demi-tangente verticale"
+        },
+        {
+          "id": "c",
+          "text": "f est dérivable à droite en e^(−√2) : la tangente est horizontale"
+        },
+        {
+          "id": "d",
+          "text": "f n'est pas dérivable à droite en e^(−√2) : C_f admet la droite x = e^(−√2) pour asymptote"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une fonction est dérivable en un point si le taux d'accroissement admet une limite FINIE. Ici la limite est +∞ : f n'est pas dérivable à droite en e^(−√2), et la courbe admet une demi-tangente verticale en (e^(−√2) ; 0) ✓. Piège classique : parler de « nombre dérivé +∞ », qui n'est pas un réel, ou parler d'asymptote alors que f reste bornée près de ce point.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le tableau de f(x) = √(2 − ln²x)/x sur [e^(−√2) ; e^(√2)] indique : f″ est négative sur [e^(−√2) ; α[, positive sur ]α ; β[ et négative sur ]β ; e^(√2)], et f″ s'annule en α et en β. Quelle justification établit que les points C(α ; f(α)) et D(β ; f(β)) sont des points d'inflexion de C_f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′ s'annule en e^(−1) et change de signe, donc il y a un point d'inflexion"
+        },
+        {
+          "id": "b",
+          "text": "f″ s'annule en α et en β : cela suffit, le signe avant et après n'a pas d'importance"
+        },
+        {
+          "id": "c",
+          "text": "f″ s'annule en α et en β en changeant de signe, ce qui change la concavité de C_f"
+        },
+        {
+          "id": "d",
+          "text": "f est croissante avant α et décroissante après β"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un point d'inflexion est un point où la courbe traverse sa tangente, c'est-à-dire où la concavité change : f″ doit s'annuler en changeant de signe. Ici f″ passe de − à + en α (concave puis convexe) et de + à − en β (convexe puis concave) ✓. Piège classique : confondre l'extremum (f′ s'annule en changeant de signe, ici en e^(−1)) avec le point d'inflexion (f″ s'annule en changeant de signe), ou croire qu'une simple annulation de f″ suffit : x ↦ x⁴ a f″(0) = 0 sans inflexion.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi la fonction g(x) = sin x réalise-t-elle une bijection de [−π/4 ; π/4] sur [−√2/2 ; √2/2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est continue et strictement croissante (g′(x) = cos x > 0 sur cet intervalle), avec g(−π/4) = −√2/2 et g(π/4) = √2/2"
+        },
+        {
+          "id": "b",
+          "text": "g est continue et g(−π/4) × g(π/4) < 0, donc g s'annule une seule fois sur [−π/4 ; π/4] et réalise alors une bijection sur [−√2/2 ; √2/2]"
+        },
+        {
+          "id": "c",
+          "text": "g est impaire et continue sur [−π/4 ; π/4], ce qui suffit à la rendre bijective de [−π/4 ; π/4] sur [−√2/2 ; √2/2]"
+        },
+        {
+          "id": "d",
+          "text": "g est dérivable sur [−π/4 ; π/4] et g′(0) = 1, donc g est bijective de [−π/4 ; π/4] sur [−√2/2 ; √2/2]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur [−π/4 ; π/4], cos x ≥ √2/2 > 0, donc g est strictement croissante et continue : elle réalise une bijection de [−π/4 ; π/4] sur [g(−π/4) ; g(π/4)] = [−√2/2 ; √2/2] ✓. Piège classique : invoquer la parité ou la dérivabilité, qui ne donnent pas l'injectivité, ou confondre avec le théorème de la valeur intermédiaire, qui ne parle que d'existence d'une solution.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit h la fonction réciproque de g(x) = sin x, de [−π/4 ; π/4] sur [−√2/2 ; √2/2]. Pour x dans ]−√2/2 ; √2/2[, que vaut h′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/√(1 − x²)"
+        },
+        {
+          "id": "b",
+          "text": "1/√(1 + x²)"
+        },
+        {
+          "id": "c",
+          "text": "1/(1 − x²)"
+        },
+        {
+          "id": "d",
+          "text": "−1/√(1 − x²)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour une réciproque, h′(x) = 1/g′(h(x)) = 1/cos(h(x)). Or cos(h(x)) ≥ 0 sur [−π/4 ; π/4] et cos² + sin² = 1 avec sin(h(x)) = x : cos(h(x)) = √(1 − x²). Donc h′(x) = 1/√(1 − x²) ✓. Piège classique : écrire cos² = 1 + sin², oublier la racine, ou prendre le signe − (cos est positif sur cet intervalle, h est croissante comme g).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit h la fonction réciproque de sin sur [−π/4 ; π/4], avec h′(x) = 1/√(1 − x²), et u la fonction définie sur [e^(−1) ; e] par u(x) = h(ln x/√2). Que vaut u′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(x√2 · √(2 − ln²x))"
+        },
+        {
+          "id": "b",
+          "text": "1/√(2 − ln²x)"
+        },
+        {
+          "id": "c",
+          "text": "1/(x√(2 − ln²x))"
+        },
+        {
+          "id": "d",
+          "text": "1/(x√(1 − ln²x))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive la composée : u′(x) = (ln x/√2)′ · h′(ln x/√2) = 1/(x√2) × 1/√(1 − ln²x/2). Or √(1 − ln²x/2) = √((2 − ln²x)/2) = √(2 − ln²x)/√2. Donc u′(x) = 1/(x√2) × √2/√(2 − ln²x) = 1/(x√(2 − ln²x)) ✓. Piège classique : oublier de simplifier le facteur √2, oublier la dérivée 1/x de ln, ou ne pas diviser ln x par √2 avant de l'injecter dans 1 − t².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u(x) = h(ln x/√2) définie sur [e^(−1) ; e], où h est la réciproque de sin sur [−π/4 ; π/4] (h(√2/2) = π/4 et h(−√2/2) = −π/4). On a u′(x) = 1/(x√(2 − ln²x)). Que vaut ∫ de e^(−1) à e de dx/(x√(2 − ln²x)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/4"
+        },
+        {
+          "id": "b",
+          "text": "π/2"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "π"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme u est une primitive de x ↦ 1/(x√(2 − ln²x)), l'intégrale vaut u(e) − u(e^(−1)). Or u(e) = h(1/√2) = h(√2/2) = π/4 et u(e^(−1)) = h(−√2/2) = −π/4. Donc l'intégrale vaut π/4 − (−π/4) = π/2 ✓. Piège classique : s'arrêter à u(e), ou croire que la borne basse donne la même valeur que la borne haute (on obtiendrait 0) ; h est impaire, la borne basse donne −π/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit 𝒜 l'aire du domaine limité par C_f (f(x) = √(2 − ln²x)/x), l'axe des abscisses et les droites x = e^(−1) et x = e. On intègre par parties ∫ de e^(−1) à e de (1/x)√(2 − ln²x) dx avec v(x) = ln x et w(x) = √(2 − ln²x). Quelle expression de 𝒜 obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜 = 2 − ∫ de e^(−1) à e de ln²x/(x√(2 − ln²x)) dx"
+        },
+        {
+          "id": "b",
+          "text": "𝒜 = 1 + ∫ de e^(−1) à e de ln²x/(x√(2 − ln²x)) dx"
+        },
+        {
+          "id": "c",
+          "text": "𝒜 = 0 + ∫ de e^(−1) à e de ln²x/(x√(2 − ln²x)) dx"
+        },
+        {
+          "id": "d",
+          "text": "𝒜 = 2 + ∫ de e^(−1) à e de ln²x/(x√(2 − ln²x)) dx"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'intégration par parties donne ∫ v′w = [vw] − ∫ v w′. Ici w′(x) = −ln x/(x√(2 − ln²x)), donc −∫ v w′ = +∫ ln²x/(x√(2 − ln²x)) dx. Le crochet vaut [ln x · √(2 − ln²x)] entre e^(−1) et e = 1 × 1 − (−1) × 1 = 2, d'où 𝒜 = 2 + ∫ … ✓. Piège classique : perdre le signe de w′ (on obtient 2 − ∫) ou mal évaluer ln(e^(−1)) = −1 dans le crochet (on obtient 0 ou 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout x de [e^(−1) ; e], où f(x) = √(2 − ln²x)/x, laquelle de ces égalités est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln²x/(x√(2 − ln²x)) = 2/(x√(2 − ln²x)) + f(x)"
+        },
+        {
+          "id": "b",
+          "text": "ln²x/(x√(2 − ln²x)) = 1/(x√(2 − ln²x)) − f(x)"
+        },
+        {
+          "id": "c",
+          "text": "ln²x/(x√(2 − ln²x)) = 2/(x√(2 − ln²x)) − f(x)"
+        },
+        {
+          "id": "d",
+          "text": "ln²x/(x√(2 − ln²x)) = 2/(x√(2 − ln²x)) − √(2 − ln²x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit ln²x = 2 − (2 − ln²x). Alors ln²x/(x√(2 − ln²x)) = 2/(x√(2 − ln²x)) − (2 − ln²x)/(x√(2 − ln²x)) = 2/(x√(2 − ln²x)) − √(2 − ln²x)/x, car (2 − ln²x)/√(2 − ln²x) = √(2 − ln²x). Le dernier terme est exactement f(x) ✓. Piège classique : oublier le facteur 1/x dans le dernier terme, ou se tromper de signe en séparant 2 − (2 − ln²x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Sachant que ∫ de e^(−1) à e de dx/(x√(2 − ln²x)) = π/2, que vaut ∫ de e^(−1) à e de 2/(x√(2 − ln²x)) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π"
+        },
+        {
+          "id": "b",
+          "text": "π/2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par linéarité de l'intégrale, on sort le facteur 2 : ∫ 2/(x√(2 − ln²x)) dx = 2 × ∫ 1/(x√(2 − ln²x)) dx = 2 × π/2 = π ✓. Piège classique : oublier le facteur 2 du numérateur et recopier π/2, ou doubler la mauvaise quantité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'aire 𝒜 du domaine sous C_f entre x = e^(−1) et x = e vérifie 𝒜 = 2 + ∫ ln²x/(x√(2 − ln²x)) dx, avec ln²x/(x√(2 − ln²x)) = 2/(x√(2 − ln²x)) − f(x) et ∫ 2/(x√(2 − ln²x)) dx = π. Quelle est la valeur de 𝒜 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + π"
+        },
+        {
+          "id": "b",
+          "text": "1 + π/2"
+        },
+        {
+          "id": "c",
+          "text": "1 + π/4"
+        },
+        {
+          "id": "d",
+          "text": "2 + π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En remplaçant, 𝒜 = 2 + ∫ [2/(x√(2 − ln²x)) − f(x)] dx = 2 + π − ∫ f(x) dx = 2 + π − 𝒜, car ∫ f(x) dx est justement l'aire 𝒜. Donc 2𝒜 = 2 + π et 𝒜 = 1 + π/2 ✓. Piège classique : oublier que l'intégrale de f est 𝒜 elle-même et s'arrêter à 2 + π ; prendre ∫ 2/(x√(2 − ln²x)) dx = π/2 au lieu de π, ce qui donne 2𝒜 = 2 + π/2 et 1 + π/4 (π/2 pris pour π) ; diviser par 2 le seul terme π après avoir regroupé les deux 𝒜, ce qui donne 2 + π/2 (𝒜 = (2 + π)/2 et non 2 + π/2).",
+      "difficulty": 3
+    }
+  ]
+}

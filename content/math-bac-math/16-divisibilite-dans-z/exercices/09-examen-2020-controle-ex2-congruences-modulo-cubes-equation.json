@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 2 ⭐⭐⭐ : restes des cubes modulo 7, sommes de deux cubes et équation en entiers",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Soit k un entier naturel non nul et r le reste de k modulo 7. Quel tableau donne le reste de k³ modulo 7 selon r ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r ∈ {1, 2, 3} donne k³ ≡ 1 ; r ∈ {4, 5, 6} donne k³ ≡ 6 ; r = 0 donne k³ ≡ 0"
+        },
+        {
+          "id": "b",
+          "text": "r ∈ {1, 2, 4} donne k³ ≡ 1 ; r ∈ {3, 5, 6} donne k³ ≡ 3 ; r = 0 donne k³ ≡ 0"
+        },
+        {
+          "id": "c",
+          "text": "r ∈ {1, 2, 4} donne k³ ≡ 1 ; r ∈ {3, 5, 6} donne k³ ≡ 6 ; r = 0 donne k³ ≡ 0"
+        },
+        {
+          "id": "d",
+          "text": "r ∈ {1, 6} donne k³ ≡ 1 ; r ∈ {2, 3, 4, 5} donne k³ ≡ 6 ; r = 0 donne k³ ≡ 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a k ≡ r (mod 7), donc k³ ≡ r³ (mod 7). On calcule : 1³ = 1 ; 2³ = 8 ≡ 1 ; 3³ = 27 = 21 + 6 ≡ 6 ; 4³ = 64 = 63 + 1 ≡ 1 ; 5³ = 125 = 119 + 6 ≡ 6 ; 6³ = 216 = 210 + 6 ≡ 6 ; 0³ = 0. Donc k³ ≡ 1 si r ∈ {1, 2, 4}, k³ ≡ 6 si r ∈ {3, 5, 6}, k³ ≡ 0 si r = 0 ✓. Piège classique : deviner un motif régulier (les trois premiers restes, les trois suivants) au lieu de calculer chaque cube, ou garder r au lieu de r³ pour une des valeurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soient x et y deux entiers naturels non nuls, avec x³ ≡ 0, 1 ou 6 (mod 7) et y³ ≡ 0, 1 ou 6 (mod 7). Quels sont les restes possibles de x³ + y³ modulo 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, 1, 2, 5 et 6"
+        },
+        {
+          "id": "b",
+          "text": "0, 1, 2 et 6"
+        },
+        {
+          "id": "c",
+          "text": "0, 1, 2, 5, 6 et 7"
+        },
+        {
+          "id": "d",
+          "text": "1, 2, 5 et 6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On additionne tous les couples de restes possibles : 0 + 0 = 0 ; 0 + 1 = 1 ; 0 + 6 = 6 ; 1 + 1 = 2 ; 1 + 6 = 7 ≡ 0 ; 6 + 6 = 12 ≡ 5. Les restes obtenus sont donc 0, 1, 2, 5 et 6 ✓. Piège classique : oublier la somme 6 + 6 = 12 ≡ 5, écrire 7 comme reste (un reste modulo 7 est dans {0, …, 6}) ou oublier que 0 est aussi obtenu par 0 + 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour x, y entiers naturels non nuls, les restes de x³ et de y³ modulo 7 valent 0, 1 ou 6. Quel argument montre que les équations x³ + y³ ≡ 3 (mod 7) et x³ + y³ ≡ 4 (mod 7) n'ont pas de solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le reste d'un cube est 0, 1 ou 6 ; 3 et 4 n'en font pas partie, donc la somme x³ + y³ ne peut valoir ni 3 ni 4"
+        },
+        {
+          "id": "b",
+          "text": "3 + 4 = 7 ≡ 0 (mod 7), donc les deux équations s'excluent mutuellement"
+        },
+        {
+          "id": "c",
+          "text": "3 et 4 sont premiers avec 7, donc ces équations sont impossibles"
+        },
+        {
+          "id": "d",
+          "text": "3 et 4 ne figurent pas parmi les restes possibles 0, 1, 2, 5, 6 de x³ + y³ modulo 7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les restes de x³ et y³ étant dans {0, 1, 6}, la somme vaut 0+0=0, 0+1=1, 0+6=6, 1+1=2, 1+6=7≡0, 6+6=12≡5 : x³ + y³ ne prend que les restes {0, 1, 2, 5, 6}. Or 3 et 4 n'y sont pas : aucune solution ✓. Piège classique : comparer 3 et 4 aux restes d'un seul cube (0, 1, 6) : c'est la somme de deux cubes qui compte, et son ensemble de restes est plus large (il contient 2 et 5 que l'on n'obtient pas avec un seul cube) ; ou invoquer des propriétés de 3, 4 et 7 qui n'ont aucun rapport.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour a ∈ ℕ*, on note E_a l'ensemble des couples (x ; y) d'entiers non nuls vérifiant x³ + y³ = a. On suppose que (x ; y) ∈ E_9990. Que peut-on dire de x et y modulo 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9990 ≡ 3 (mod 7) ; l'équation x³ + y³ ≡ 3 (mod 7) est impossible, donc E_9990 est vide"
+        },
+        {
+          "id": "b",
+          "text": "9990 ≡ 1 (mod 7) ; seule la somme 0 + 1 donne 1 ; donc l'un des cubes est ≡ 0, soit x ou y ≡ 0 (mod 7)"
+        },
+        {
+          "id": "c",
+          "text": "9990 ≡ 0 (mod 7) ; donc x³ ≡ 0 et y³ ≡ 0, et x et y sont tous deux multiples de 7, par somme de restes"
+        },
+        {
+          "id": "d",
+          "text": "9990 ≡ 1 (mod 7) ; 1 = 1 + 1, donc x et y ont chacun un cube congru à 1 (mod 7), sans multiple de 7"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 9990 = 7 × 1427 + 1, donc 9990 ≡ 1 (mod 7), et x³ + y³ ≡ 1. Les cubes ont pour restes 0, 1 ou 6, et parmi les sommes 0, 1, 2, 0, 6, 5 (sommes de deux restes pris parmi 0, 1, 6), seule 0 + 1 (ou 1 + 0) vaut 1 : l'un des cubes est ≡ 0, donc x ≡ 0 ou y ≡ 0 (mod 7) ✓. Piège classique : mal calculer le reste de 9990 (7 × 1427 = 9989), croire que 1 + 1 donne 1 (1 + 1 = 2), ou exiger que x et y soient tous deux multiples de 7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soient x et y deux entiers naturels non nuls tels que x³ + y³ = 9990, et x ou y est un multiple de 7. Quel est l'ensemble E_9990 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E_9990 = {(21 ; 9)}"
+        },
+        {
+          "id": "b",
+          "text": "E_9990 = ∅"
+        },
+        {
+          "id": "c",
+          "text": "E_9990 = {(10 ; 21), (21 ; 10)}"
+        },
+        {
+          "id": "d",
+          "text": "E_9990 = {(9 ; 21), (21 ; 9)}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme 22³ = 10648 > 9990, x et y sont inférieurs ou égaux à 21. Supposons x multiple de 7 : x ∈ {7, 14, 21}. Pour x = 7, y³ = 9990 − 343 = 9647 n'est pas un cube (21³ = 9261 < 9647 < 22³) ; pour x = 14, y³ = 9990 − 2744 = 7246 n'est pas un cube (19³ = 6859 < 7246 < 20³) ; pour x = 21, y³ = 9990 − 9261 = 729 = 9³ : y = 9 ✓. Le cas « y multiple de 7 » est symétrique, donc E_9990 = {(9 ; 21), (21 ; 9)}. Piège classique : oublier le couple symétrique, conclure à l'absence de solution (la condition modulo 7 est nécessaire, pas suffisante) ou ne pas tester x = 21, le plus grand multiple de 7 possible.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour k ∈ ℕ*, k³ a pour reste 0, 1 ou 6 modulo 7. Quel est le rôle de cette étude de restes dans l'exercice, si l'on veut décider si l'équation x³ + y³ = a admet des solutions entières ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle fournit une condition nécessaire et suffisante : l'équation a des solutions si et seulement si le reste de a est dans {0, 1, 2, 5, 6}"
+        },
+        {
+          "id": "b",
+          "text": "Elle donne une condition nécessaire sur a (reste dans {0, 1, 2, 5, 6}) : elle peut prouver l'absence de solution, pas leur existence"
+        },
+        {
+          "id": "c",
+          "text": "Elle fournit toutes les solutions de l'équation, puisque les restes de x et de y sont alors connus"
+        },
+        {
+          "id": "d",
+          "text": "Elle fournit une condition suffisante : si le reste de a est dans {0, 1, 2, 5, 6}, l'équation a toujours au moins une solution"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une congruence est une conséquence d'une égalité : si x³ + y³ = a, alors x³ + y³ ≡ a (mod 7). Donc le reste de a modulo 7 doit être l'un des restes possibles d'une somme de deux cubes. Cette condition est nécessaire. Elle est insuffisante : par exemple, 9990 ≡ 1 passe le test, mais il faut ensuite chercher les couples ; et un reste interdit (3 ou 4) prouve qu'il n'y a pas de solution ✓. Piège classique : prendre une condition nécessaire pour une équivalence, ou croire qu'un balayage de restes donne les solutions elles-mêmes.",
+      "difficulty": 3
+    }
+  ]
+}

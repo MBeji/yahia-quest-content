@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 4 ⭐⭐⭐⭐ : exponentielle de racine, bijections, suites de solutions et aire limite",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = e^(√x)/√x, de courbe C_f. Quelle est la limite de f en 0⁺, et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : l'axe des ordonnées est asymptote verticale à C_f"
+        },
+        {
+          "id": "b",
+          "text": "1 : la droite d'équation y = 1 est asymptote horizontale à C_f"
+        },
+        {
+          "id": "c",
+          "text": "0 : C_f aboutit à l'origine du repère"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : C_f admet en 0 une demi-tangente verticale"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand x → 0⁺, e^(√x) tend vers e^0 = 1 et √x tend vers 0⁺ : le quotient 1/0⁺ tend vers +∞ ✓. Une limite infinie en un réel fini donne une asymptote verticale : ici la droite x = 0, c'est-à-dire l'axe des ordonnées. Piège classique : ne regarder que le numérateur (limite 1), ou confondre asymptote verticale (limite de f infinie) et tangente verticale (limite infinie du taux d'accroissement).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = e^(√x)/√x, de courbe C_f. Étudier la branche infinie de C_f en +∞ : que valent la limite de f(x) et celle de f(x)/x, et que signifient-elles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → +∞ : branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et f(x)/x → 0 : branche parabolique de direction l'axe des abscisses en +∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → 0 : l'axe des abscisses est asymptote à C_f en +∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et f(x)/x → +∞ : C_f admet une asymptote oblique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose t = √x, qui tend vers +∞ : f(x) = e^t/t tend vers +∞ par croissances comparées, et f(x)/x = e^t/t³ tend aussi vers +∞ (l'exponentielle l'emporte sur toute puissance). Quand f(x) → +∞ et f(x)/x → +∞, la courbe s'éloigne plus vite que n'importe quelle droite : branche parabolique de direction (Oy) ✓. Piège classique : croire que la racine carrée freine l'exponentielle (limite 0 pour le quotient) ou conclure à une asymptote oblique alors que la pente f(x)/x n'a pas de limite finie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(√x)/√x sur ]0 ; +∞[, de dérivée f′(x) = (√x − 1) e^(√x) / (2x√x). Quel est son tableau de variation, sachant que f(x) tend vers +∞ en 0⁺ et en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f décroît sur ]0 ; 1] de +∞ à f(1) = 1, puis croît sur [1 ; +∞[ de 1 à +∞"
+        },
+        {
+          "id": "b",
+          "text": "f croît sur ]0 ; 1] jusqu'à un maximum f(1) = e, puis décroît sur [1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f décroît sur ]0 ; 1] de +∞ à f(1) = e, puis croît sur [1 ; +∞[ de e à +∞"
+        },
+        {
+          "id": "d",
+          "text": "f décroît sur ]0 ; +∞[, de +∞ à e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le facteur e^(√x)/(2x√x) est strictement positif : f′(x) a le signe de √x − 1, négatif pour x < 1 et positif pour x > 1. Donc f décroît sur ]0 ; 1] puis croît sur [1 ; +∞[, avec minimum f(1) = e^(√1)/√1 = e ✓. Piège classique : oublier l'exponentielle en calculant f(1) (on retombe sur 1) ou lire le signe de f′ à l'envers.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(√x)/√x sur ]0 ; +∞[, et λ un réel de ]0 ; 1[. Quelle est l'aire S_λ du domaine limité par C_f, l'axe des abscisses et les droites x = λ et x = 1 ? (On rappelle que x ↦ e^(√x) a pour dérivée e^(√x)/(2√x).)",
+      "options": [
+        {
+          "id": "a",
+          "text": "S_λ = e − e^(√λ)"
+        },
+        {
+          "id": "b",
+          "text": "S_λ = 2e − 2e^(√λ)"
+        },
+        {
+          "id": "c",
+          "text": "S_λ = 2e^(√λ) − 2e"
+        },
+        {
+          "id": "d",
+          "text": "S_λ = 2(e − e^λ)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme (e^(√x))′ = e^(√x)/(2√x), une primitive de f(x) = e^(√x)/√x est F(x) = 2e^(√x). Puisque f > 0, S_λ = ∫ de λ à 1 de f(x) dx = F(1) − F(λ) = 2e − 2e^(√λ) ✓. Piège classique : oublier le facteur 2 (celui de 1/(2√x)), inverser les bornes (aire négative alors que f > 0) ou remplacer √λ par λ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'aire S_λ du domaine limité par C_f (f(x) = e^(√x)/√x), l'axe des abscisses et les droites x = λ et x = 1 vaut S_λ = 2e − 2e^(√λ) pour λ ∈ ]0 ; 1[. Quelle est la limite de S_λ quand λ tend vers 0⁺ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2e"
+        },
+        {
+          "id": "b",
+          "text": "e − 1"
+        },
+        {
+          "id": "c",
+          "text": "2 − 2e"
+        },
+        {
+          "id": "d",
+          "text": "2e − 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand λ → 0⁺, √λ → 0 et e^(√λ) → e^0 = 1, donc S_λ → 2e − 2 ✓. L'aire reste finie bien que f tende vers +∞ en 0 : la divergence de f en 0 est trop lente pour rendre l'aire infinie. Piège classique : oublier de retrancher 2e^0 = 2 (on obtient 2e), oublier le facteur 2, ou inverser les bornes (2 − 2e est négatif alors qu'une aire est positive).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(√x)/√x, décroissante sur ]0 ; 1] de +∞ à f(1) = e, puis croissante sur [1 ; +∞[ de e à +∞. Soit g₁ et g₂ les restrictions de f à ]0 ; 1] et à [1 ; +∞[. Quel est l'intervalle I tel que g₁ et g₂ réalisent chacune une bijection sur I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = ]e ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "I = ]0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "I = [e ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "I = [1 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g₁ est continue et strictement décroissante sur ]0 ; 1] : elle réalise une bijection sur [g₁(1) ; lim_{0⁺} f[ = [e ; +∞[. g₂ est continue et strictement croissante sur [1 ; +∞[ : elle réalise une bijection sur [g₂(1) ; lim_{+∞} f[ = [e ; +∞[ ✓. La borne e est atteinte (f(1) = e), donc le crochet est fermé. Piège classique : ouvrir la borne atteinte, ou prendre pour bornes des valeurs de x (1) au lieu des valeurs de f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(√x)/√x, avec g₁ (restriction à ]0 ; 1]) et g₂ (restriction à [1 ; +∞[) qui réalisent chacune une bijection sur I = [e ; +∞[. Soit n un entier non nul. Que peut-on dire des solutions de f(x) = e + 1/n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles sont exactement deux, αₙ et βₙ, avec 0 < αₙ < 1 < βₙ : e + 1/n ∈ I a un unique antécédent par chaque bijection, et aucun n'est 1 car f(1) = e"
+        },
+        {
+          "id": "b",
+          "text": "Il n'y en a qu'une, car f est continue et le théorème des valeurs intermédiaires donne une solution unique sur ]0 ; +∞[, puisque e + 1/n est une valeur atteinte par f"
+        },
+        {
+          "id": "c",
+          "text": "Elles sont exactement deux, αₙ et βₙ, avec αₙ = 1 pour n assez grand, car e + 1/n se rapproche de f(1) = e quand n augmente"
+        },
+        {
+          "id": "d",
+          "text": "Il y en a deux, car e + 1/n est atteinte une fois par chaque branche, mais l'une d'elles peut être égale à 1 selon la valeur de n choisie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme e + 1/n > e, ce réel appartient à I = [e ; +∞[ : g₁ lui donne un unique antécédent αₙ ∈ ]0 ; 1], g₂ un unique antécédent βₙ ∈ [1 ; +∞[. Aucun ne vaut 1 puisque f(1) = e ≠ e + 1/n, d'où 0 < αₙ < 1 < βₙ ✓. Piège classique : appliquer le théorème des valeurs intermédiaires sur ]0 ; +∞[ tout entier : il donne l'existence, jamais l'unicité, et f n'est pas monotone.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = e^(√x)/√x, avec f(1) = e. Pour tout entier n ≥ 1, f(x) = e + 1/n a deux solutions αₙ ∈ ]0 ; 1[ et βₙ ∈ ]1 ; +∞[. Que dire de la convergence des suites (αₙ) et (βₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "αₙ tend vers 0 et βₙ tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "Elles convergent toutes les deux vers 1"
+        },
+        {
+          "id": "c",
+          "text": "αₙ tend vers 1 et βₙ tend vers +∞"
+        },
+        {
+          "id": "d",
+          "text": "Elles divergent, car f n'est pas monotone"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a f(αₙ) = f(βₙ) = e + 1/n, qui tend vers e = f(1). Les réciproques g₁⁻¹ et g₂⁻¹ sont continues en e (comme réciproques de bijections continues strictement monotones sur un intervalle) : αₙ = g₁⁻¹(e + 1/n) → g₁⁻¹(e) = 1 et βₙ = g₂⁻¹(e + 1/n) → g₂⁻¹(e) = 1 ✓. Piège classique : prendre les limites de f aux bornes (0 et +∞) au lieu de regarder vers quoi tend la valeur e + 1/n, qui reste voisine de e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier non nul, et h la fonction définie sur [0 ; +∞[ par h(x) = √x (f(x) − (e + 1/n)) si x > 0 et h(0) = 1, où f(x) = e^(√x)/√x. Pourquoi h est-elle continue à droite en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h(x) tend vers 0 quand x tend vers 0⁺, car √x tend vers 0, et h(0) = 1 est une valeur choisie"
+        },
+        {
+          "id": "b",
+          "text": "h(x) tend vers +∞ car f(x) tend vers +∞ : h n'est pas continue en 0"
+        },
+        {
+          "id": "c",
+          "text": "h(x) tend vers 1 − e − 1/n quand x tend vers 0⁺, car e^(√x) tend vers 1"
+        },
+        {
+          "id": "d",
+          "text": "Pour x > 0, h(x) = e^(√x) − (e + 1/n)√x, qui tend vers 1 − 0 = 1 = h(0) quand x tend vers 0⁺"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En développant, √x · f(x) = e^(√x), donc h(x) = e^(√x) − (e + 1/n)√x pour x > 0. Quand x → 0⁺, e^(√x) → 1 et (e + 1/n)√x → 0, d'où h(x) → 1 = h(0) : h est continue à droite en 0 ✓. Piège classique : traiter √x × f(x) comme « 0 × ∞ » et conclure 0, ou oublier que le terme −(e + 1/n)√x contient lui aussi le facteur qui tend vers 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = √x (f(x) − (e + 1/n)) pour x > 0, avec f(x) = e^(√x)/√x décroissante sur ]0 ; 1] puis croissante sur [1 ; +∞[, et f(αₙ) = f(βₙ) = e + 1/n avec αₙ < 1 < βₙ. Quel est le signe de h(x) pour x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h(x) < 0 sur ]0 ; αₙ[ et sur ]βₙ ; +∞[, h(x) > 0 sur ]αₙ ; βₙ[, et h s'annule en αₙ et βₙ"
+        },
+        {
+          "id": "b",
+          "text": "h(x) > 0 sur ]0 ; αₙ[ et sur ]βₙ ; +∞[, h(x) < 0 sur ]αₙ ; βₙ[, et h s'annule en αₙ et βₙ"
+        },
+        {
+          "id": "c",
+          "text": "h(x) > 0 sur ]0 ; 1[ et h(x) < 0 sur ]1 ; +∞[, car f change de variation en 1, et h s'annule en 1"
+        },
+        {
+          "id": "d",
+          "text": "h(x) > 0 sur ]0 ; +∞[ tout entier, car f(x) ≥ e pour tout x > 0 et h s'annule seulement en 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme √x > 0, h(x) a le signe de f(x) − (e + 1/n). Or f décroît de +∞ à e sur ]0 ; 1] : elle dépasse e + 1/n avant αₙ et reste en dessous après. Elle croît de e à +∞ sur [1 ; +∞[ : elle reste sous e + 1/n jusqu'à βₙ puis le dépasse. Donc h > 0 sur ]0 ; αₙ[ et ]βₙ ; +∞[, h < 0 sur ]αₙ ; βₙ[ ✓. Piège classique : couper le signe en 1, le point où f change de sens de variation, au lieu des deux solutions αₙ et βₙ, ou oublier que f ≥ e n'implique pas f ≥ e + 1/n.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u(x) = ∫ de 0 à x de e^(√t) dt et v(x) = 2 + 2(√x − 1)e^(√x) sur [0 ; +∞[. Quel argument établit que u(x) = v(x) pour tout x ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u′(x) = v′(x) sur ]0 ; +∞[ : deux fonctions de même dérivée sont égales, sans qu'il faille comparer leurs valeurs"
+        },
+        {
+          "id": "b",
+          "text": "u(0) = v(0) = 0 : deux fonctions qui coïncident en un point sont égales sur tout [0 ; +∞[, sans regarder leurs dérivées"
+        },
+        {
+          "id": "c",
+          "text": "u et v tendent toutes deux vers +∞ en +∞, ce qui suffit à les identifier sur [0 ; +∞[ tout entier"
+        },
+        {
+          "id": "d",
+          "text": "u et v sont continues sur [0 ; +∞[, dérivables sur ]0 ; +∞[ avec u′(x) = v′(x) = e^(√x), et u(0) = v(0) = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On calcule v′(x) = 2 × e^(√x)/(2√x) + 2(√x − 1) × e^(√x)/(2√x) = e^(√x)/√x + (√x − 1)e^(√x)/√x = e^(√x) = u′(x) pour x > 0. Deux fonctions continues sur [0 ; +∞[ de même dérivée sur ]0 ; +∞[ diffèrent d'une constante, et u(0) = 0 = 2 + 2(−1)e^0 = v(0) fixe cette constante à 0 ✓. Piège classique : s'arrêter à l'égalité des dérivées (oubli de la constante) ou à l'égalité en un point (cela ne dit rien ailleurs).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec h(x) = e^(√x) − (e + 1/n)√x pour x ≥ 0, et ∫ de 0 à x de e^(√t) dt = 2 + 2(√x − 1)e^(√x), quelle est l'expression de la primitive H de h qui s'annule en 0 ? (On rappelle que ∫ de 0 à x de √t dt = (2/3)x√x.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "H(x) = 2 + 2(√x − 1)e^(√x) − (2/3)(e + 1/n) x√x"
+        },
+        {
+          "id": "b",
+          "text": "H(x) = 2 + 2(√x − 1)e^(√x) − (e + 1/n) x√x"
+        },
+        {
+          "id": "c",
+          "text": "H(x) = 2(√x − 1)e^(√x) − (2/3)(e + 1/n) x√x"
+        },
+        {
+          "id": "d",
+          "text": "H(x) = 2 + 2(√x − 1)e^(√x) − (2/3)(e + 1/n) x²√x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La primitive qui s'annule en 0 est H(x) = ∫ de 0 à x de h(t) dt = ∫ e^(√t) dt − (e + 1/n)∫ √t dt = 2 + 2(√x − 1)e^(√x) − (2/3)(e + 1/n) x√x ✓. Contrôle de H(0) : 2 + 2(−1)e^0 − 0 = 0. Piège classique : oublier le facteur 2/3 de la primitive de √t, écrire x²√x au lieu de x√x (exposant 3/2), ou omettre la constante 2, qui est indispensable pour que H(0) = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = √x (f(x) − (e + 1/n)), positive sur [0 ; αₙ], négative sur [αₙ ; βₙ], et H sa primitive nulle en 0. Soit 𝒜ₙ l'aire du domaine limité par C_h, l'axe des abscisses et les droites x = 0 et x = βₙ. Que vaut 𝒜ₙ en fonction de H ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜ₙ = H(βₙ)"
+        },
+        {
+          "id": "b",
+          "text": "𝒜ₙ = H(βₙ) − 2H(αₙ)"
+        },
+        {
+          "id": "c",
+          "text": "𝒜ₙ = 2H(αₙ) − H(βₙ)"
+        },
+        {
+          "id": "d",
+          "text": "𝒜ₙ = 2H(βₙ) − H(αₙ)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'aire compte positivement la partie où h ≥ 0 et, changée de signe, la partie où h ≤ 0 : 𝒜ₙ = ∫ de 0 à αₙ de h − ∫ de αₙ à βₙ de h = H(αₙ) − (H(βₙ) − H(αₙ)) = 2H(αₙ) − H(βₙ) ✓. Piège classique : calculer H(βₙ) (l'intégrale algébrique), où la partie négative vient en déduction de la partie positive au lieu de s'y ajouter, ou inverser le rôle des deux bornes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec H(x) = 2 + 2(√x − 1)e^(√x) − (2/3)(e + 1/n) x√x, et 𝒜ₙ = 2H(αₙ) − H(βₙ), où αₙ et βₙ tendent vers 1 quand n tend vers +∞, quelle est la limite de 𝒜ₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 − (4/3)e"
+        },
+        {
+          "id": "b",
+          "text": "2 − (2/3)e"
+        },
+        {
+          "id": "c",
+          "text": "2 − e"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand n → +∞, e + 1/n → e et αₙ, βₙ → 1. Par continuité, H(αₙ) et H(βₙ) tendent vers H(1) = 2 + 0 − (2/3)e = 2 − (2/3)e. Donc 𝒜ₙ → 2H(1) − H(1) = H(1) = 2 − (2/3)e ✓. Piège classique : croire que l'aire tend vers 0 parce que l'intervalle [αₙ ; βₙ] se réduit au point 1, en oubliant la partie [0 ; αₙ] qui garde une aire finie ; ou ne garder que 2H(1).",
+      "difficulty": 3
+    }
+  ]
+}

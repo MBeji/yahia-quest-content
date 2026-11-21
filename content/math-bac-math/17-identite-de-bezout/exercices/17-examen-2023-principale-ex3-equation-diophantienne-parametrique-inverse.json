@@ -1,0 +1,130 @@
+{
+  "title": "🏛️ Bac 2023 · session principale · Exercice 3 ⭐⭐ : équation de Bézout à paramètre et inverse modulaire",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 17,
+  "questions": [
+    {
+      "prompt": "Soit a un entier strictement supérieur à 1 et d un entier, d ≥ 2, qui divise a + 2. Quelle est la valeur de a² + a − 1 modulo d ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "−7"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme d divise a + 2, a ≡ −2 (mod d). On remplace : a² + a − 1 ≡ (−2)² + (−2) − 1 = 4 − 2 − 1 = 1 (mod d) ✓. Contrôle avec a = 3 et d = 5 (5 divise a + 2 = 5) : a² + a − 1 = 11 = 2 × 5 + 1 ✓. Les erreurs : prendre a ≡ +2 donne 4 + 2 − 1 = 5 ; élever −2 au carré en −4 donne −4 − 2 − 1 = −7 ; oublier le terme en a donne 4 − 1 = 3.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit a un entier strictement supérieur à 1. Que vaut (a² + a − 1) × 1 − (a + 2)(a − 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2a + 1"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "−3"
+        },
+        {
+          "id": "d",
+          "text": "1 − a"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On développe (a + 2)(a − 1) = a² − a + 2a − 2 = a² + a − 2. Alors (a² + a − 1) − (a² + a − 2) = 1 ✓. Le couple (1 ; a − 1) est donc solution de (a² + a − 1)x − (a + 2)y = 1. Contrôle avec a = 2 : 5 × 1 − 4 × 1 = 1 ✓. Les erreurs de développement : lire (a + 2)(a − 1) = a² − a − 2 donne 2a + 1 ; lire a² + a + 2 donne −3 ; lire a² + 2a − 2 donne 1 − a.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit a un entier strictement supérieur à 1. On sait que si un entier d ≥ 2 divise a + 2, alors a² + a − 1 ≡ 1 (mod d). Pourquoi a² + a − 1 et a + 2 sont-ils premiers entre eux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² + a − 1 ≡ 1 (mod d) montre que d est le PGCD des deux nombres en question"
+        },
+        {
+          "id": "b",
+          "text": "a² + a − 1 et a + 2 sont de même parité, donc leur PGCD vaut 2 dans tous les cas"
+        },
+        {
+          "id": "c",
+          "text": "Un diviseur commun d ≥ 2 donnerait 0 ≡ 1 (mod d), absurde : le PGCD est 1"
+        },
+        {
+          "id": "d",
+          "text": "a² + a − 1 = a(a + 1) − 1 est un nombre premier, donc premier avec a + 2 sans calcul"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Soit d ≥ 2 un diviseur commun de a + 2 et de a² + a − 1. Comme d divise a + 2, a² + a − 1 ≡ 1 (mod d). Mais d divise aussi a² + a − 1, donc a² + a − 1 ≡ 0 (mod d) : on obtient 0 ≡ 1 (mod d), c'est-à-dire d | 1, absurde puisque d ≥ 2. Le PGCD est donc 1 ✓. Contrôle : a = 2 donne 5 et 4, de PGCD 1 ; a = 3 donne 11 et 5, de PGCD 1. Les autres réponses sont fausses : la congruence ne désigne pas d comme PGCD (c'est la contradiction qui exclut d ≥ 2), les deux nombres n'ont pas la même parité en général (a = 3 donne 11 impair et 5 impair, mais a = 2 donne 5 impair et 4 pair), et a² + a − 1 n'est pas toujours premier (a = 5 donne 29, a = 7 donne 55 = 5 × 11).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un entier strictement supérieur à 1. Le couple (1 ; a − 1) est solution de (E_a) : (a² + a − 1)x − (a + 2)y = 1, où a² + a − 1 et a + 2 sont premiers entre eux. Quel est l'ensemble des solutions de (E_a) dans ℤ × ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(1 + (a² + a − 1)k ; a − 1 + (a + 2)k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(1 + (a + 2)k ; a − 1 − (a² + a − 1)k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(1 − (a + 2)k ; a − 1 + (a² + a − 1)k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(1 + (a + 2)k ; a − 1 + (a² + a − 1)k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Soit (x ; y) une solution. En soustrayant (a² + a − 1) × 1 − (a + 2)(a − 1) = 1, on obtient (a² + a − 1)(x − 1) = (a + 2)(y − (a − 1)). Comme a² + a − 1 ∧ (a + 2) = 1, le lemme de Gauss donne (a + 2) | x − 1, soit x = 1 + (a + 2)k, puis y − (a − 1) = (a² + a − 1)k ✓. Vérification avec a = 2 : l'équation est 5x − 4y = 1, les solutions annoncées sont (1 + 4k ; 1 + 5k), et 5(1 + 4k) − 4(1 + 5k) = 1 ✓. Les erreurs : échanger les pas (le pas de x est le coefficient de y, a + 2), ou changer le signe d'une seule composante, qui détruit la compensation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un entier strictement supérieur à 1, avec (a² + a − 1) × 1 − (a + 2)(a − 1) = 1 et a² + a − 1 ∧ (a + 2) = 1. Quels sont les entiers n tels que (a + 2)n ≡ 1 (mod a² + a − 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 1 − a + k(a² + a − 1), avec k ∈ ℤ"
+        },
+        {
+          "id": "b",
+          "text": "n = a − 1 + k(a² + a − 1), avec k ∈ ℤ"
+        },
+        {
+          "id": "c",
+          "text": "n = 1 + k(a + 2), avec k ∈ ℤ"
+        },
+        {
+          "id": "d",
+          "text": "n = a − 1 + k(a + 2), avec k ∈ ℤ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "De (a² + a − 1) × 1 − (a + 2)(a − 1) = 1, on tire (a + 2) × (−(a − 1)) = 1 − (a² + a − 1), donc (a + 2) × (1 − a) ≡ 1 (mod a² + a − 1) : n₀ = 1 − a est un inverse de a + 2. Les autres inverses sont n₀ + k(a² + a − 1), car le module est a² + a − 1 ✓. Vérification avec a = 2 : on cherche 4n ≡ 1 (mod 5) ; n₀ = −1 donne −4 ≡ 1 ✓ (−4 + 5 = 1). Les erreurs : oublier le signe (y = a − 1 est le coefficient de −(a + 2) dans l'équation, donc l'inverse est son opposé), ou prendre a + 2 comme pas au lieu du module a² + a − 1.",
+      "difficulty": 2
+    }
+  ]
+}

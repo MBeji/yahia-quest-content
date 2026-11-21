@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 4 ⭐⭐⭐⭐ : fonction 1/ln x, équation à solution unique, changement de variable dans une intégrale et suites d'intégrales",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]1 ; +∞[ par f(x) = 1/ln x. Quelles sont ses limites en +∞ et en 1⁺, et quelles interprétations graphiques en donne-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 en +∞ : asymptote horizontale y = 0 ; −∞ en 1⁺ : asymptote verticale x = 1"
+        },
+        {
+          "id": "b",
+          "text": "0 en +∞ : asymptote horizontale y = 0 ; +∞ en 1⁺ : asymptote verticale x = 1"
+        },
+        {
+          "id": "c",
+          "text": "1 en +∞ : asymptote horizontale y = 1 ; +∞ en 1⁺ : asymptote verticale x = 1"
+        },
+        {
+          "id": "d",
+          "text": "1 en +∞ : asymptote horizontale y = 1 ; −∞ en 1⁺ : asymptote verticale x = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand x → +∞, ln x → +∞ donc 1/ln x → 0 : l'axe des abscisses est asymptote horizontale. Quand x → 1⁺, ln x → 0 par valeurs strictement positives (x > 1), donc 1/ln x → +∞ : la droite x = 1 est asymptote verticale ✓. Piège classique : prendre −∞ en 1⁺ (ln x est positif pour x > 1, pas négatif), ou croire que le quotient tend vers 1 en +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/ln x sur ]1 ; +∞[. Quelle est l'expression de f′(x), et quel est le sens de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 1/(x ln²x) > 0 : f est strictement croissante de 0 à +∞"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = −1/ln²x < 0 : f est strictement décroissante de +∞ à 0"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = −1/(x ln²x) < 0 : f est strictement décroissante de +∞ à 0"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = −1/(x ln x) < 0 : f est strictement décroissante de +∞ à 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour f = 1/u, f′ = −u′/u². Ici u = ln x et u′ = 1/x, donc f′(x) = −(1/x)/(ln x)² = −1/(x ln²x). Cette dérivée est strictement négative sur ]1 ; +∞[ : f décroît, de lim₁⁺ f = +∞ à lim₊∞ f = 0 ✓. Piège classique : oublier le signe moins, oublier la dérivée 1/x de ln x, ou oublier d'élever ln x au carré.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = 1/ln x sur ]1 ; +∞[, strictement décroissante de +∞ à 0. Quelle justification établit que l'équation f(x) = x a une unique solution α sur ]1 ; +∞[, avec α < e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) = f(x) − x est continue et strictement décroissante de +∞ à −∞ : un seul zéro α ; g(e) = 1 − e > 0 donc α > e"
+        },
+        {
+          "id": "b",
+          "text": "f est décroissante et x ↦ x est croissante, donc f(x) = x a au plus une solution ; comme f(e) = 1 < e, α < e"
+        },
+        {
+          "id": "c",
+          "text": "g(x) = f(x) − x tend vers +∞ en 1⁺ et vers 0 en +∞, donc s'annule une seule fois ; g(e) = 1 − e < 0 donc α < e"
+        },
+        {
+          "id": "d",
+          "text": "g(x) = f(x) − x est continue et strictement décroissante de +∞ à −∞ : un seul zéro α ; g(e) = 1 − e < 0 donc α < e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Posons g(x) = 1/ln x − x. Elle est continue, strictement décroissante comme somme de deux fonctions strictement décroissantes, de limite +∞ en 1⁺ et −∞ en +∞ : elle s'annule exactement une fois, en α. Comme g(e) = 1/ln e − e = 1 − e < 0 = g(α) et que g décroît, α < e ✓. Piège classique : se tromper de signe sur g(e) (1 − e est négatif), oublier de prouver l'existence (la monotonie donne seulement l'unicité), ou prendre 0 pour limite de g en +∞ (le terme −x tend vers −∞).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On note Hₙ(x) = ∫ de ln α à ln x de eᵗ/tⁿ dt pour x > 1 (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e, et e^(ln x) = x pour tout x > 0). Quelle est la dérivée H′ₙ(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H′ₙ(x) = (1/x) × e^(ln x)/(ln x)ⁿ = 1/(ln x)ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "H′ₙ(x) = e^(ln x)/(ln x)ⁿ = x/(ln x)ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "H′ₙ(x) = e^(ln x)/(ln x)ⁿ − e^(ln α)/(ln α)ⁿ (deux bornes)"
+        },
+        {
+          "id": "d",
+          "text": "H′ₙ(x) = (ln x)ⁿ/x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si Φ est une primitive de t ↦ eᵗ/tⁿ, alors Hₙ(x) = Φ(ln x) − Φ(ln α), de dérivée (ln x)′ × Φ′(ln x) = (1/x) × e^(ln x)/(ln x)ⁿ. Comme e^(ln x) = x, on obtient H′ₙ(x) = 1/(ln x)ⁿ = f(x)ⁿ ✓. Piège classique : oublier le facteur (ln x)′ = 1/x de la composée, dériver aussi la borne fixe (sa contribution est une constante, de dérivée nulle), ou inverser le quotient.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1 et x > 1, soit Fₙ(x) = ∫ de α à x de f(t)ⁿ dt et Hₙ(x) = ∫ de ln α à ln x de eᵗ/tⁿ dt. On sait que H′ₙ(x) = f(x)ⁿ = F′ₙ(x). (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e) Comment conclut-on que Hₙ = Fₙ sur ]1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles ont la même dérivée sur ]1 ; +∞[ : elles sont donc égales sur tout l'intervalle"
+        },
+        {
+          "id": "b",
+          "text": "Elles ont la même dérivée sur ]1 ; +∞[ et la même valeur 0 en α : elles sont égales"
+        },
+        {
+          "id": "c",
+          "text": "Les intégrandes (1/ln t)ⁿ et eᵗ/tⁿ sont égaux : les deux intégrales sont égales"
+        },
+        {
+          "id": "d",
+          "text": "Hₙ(α) = 0 : donc Hₙ est la fonction nulle"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux fonctions de même dérivée sur un intervalle diffèrent d'une constante. Ici Fₙ(α) = ∫ de α à α = 0 et Hₙ(α) = ∫ de ln α à ln α = 0 : la constante est nulle, donc Hₙ = Fₙ ✓. Piège classique : oublier la constante d'intégration (même dérivée ne suffit pas), comparer les intégrandes qui ne sont pas égaux (le changement de variable les transforme), ou confondre une valeur nulle en un point avec la fonction nulle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α l'unique solution de f(x) = x sur ]1 ; +∞[, avec f(x) = 1/ln x. Quelle relation vérifie ln α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln α = α, car 1/ln α = α"
+        },
+        {
+          "id": "b",
+          "text": "ln α = −1/α, car 1/ln α = α"
+        },
+        {
+          "id": "c",
+          "text": "ln α = 1/α, car 1/ln α = α"
+        },
+        {
+          "id": "d",
+          "text": "α ln α = 1 − α, car 1/ln α = α"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Par définition de α, f(α) = α, c'est-à-dire 1/ln α = α. En passant aux inverses (α > 1, ln α > 0, tout est non nul) : ln α = 1/α ✓. On a aussi α ln α = 1. Piège classique : oublier de passer à l'inverse (on garde ln α = α), se tromper de signe (ln α est strictement positif car α > 1), ou mal factoriser.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, Uₙ = ∫ de α à e de f(t)ⁿ dt = ∫ de ln α à 1 de eᵗ/tⁿ dt, avec ln α = 1/α. Quel encadrement de Uₙ obtient-on, en encadrant eᵗ sur [ln α ; 1] ? (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e, et e^(ln x) = x pour tout x > 0)",
+      "options": [
+        {
+          "id": "a",
+          "text": "(e/(n − 1))(αⁿ⁻¹ − 1) ≤ Uₙ ≤ (αⁿ − α)/(n − 1)"
+        },
+        {
+          "id": "b",
+          "text": "(α − αⁿ)/(n − 1) ≤ Uₙ ≤ (e/(n − 1))(1 − αⁿ⁻¹)"
+        },
+        {
+          "id": "c",
+          "text": "αⁿ − α ≤ Uₙ ≤ e(αⁿ⁻¹ − 1)"
+        },
+        {
+          "id": "d",
+          "text": "(αⁿ − α)/(n − 1) ≤ Uₙ ≤ (e/(n − 1))(αⁿ⁻¹ − 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur [ln α ; 1], eᵗ est croissante : e^(ln α) = α ≤ eᵗ ≤ e. Il reste ∫ de ln α à 1 de t⁻ⁿ dt = [t¹⁻ⁿ/(1 − n)] = ((ln α)¹⁻ⁿ − 1)/(n − 1) = (αⁿ⁻¹ − 1)/(n − 1), car (ln α)⁻¹ = α. D'où α(αⁿ⁻¹ − 1)/(n − 1) ≤ Uₙ ≤ e(αⁿ⁻¹ − 1)/(n − 1), soit (αⁿ − α)/(n − 1) ≤ Uₙ ≤ (e/(n − 1))(αⁿ⁻¹ − 1) ✓. Piège classique : échanger minorant et majorant (eᵗ croît de α à e), se tromper de signe en primitivant t⁻ⁿ (la primitive est t¹⁻ⁿ/(1 − n)), ou oublier la division par n − 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, α > 1 et (αⁿ − α)/(n − 1) ≤ Uₙ, avec Uₙ = ∫ de α à e de f(t)ⁿ dt. Quelle est la limite de Uₙ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞, car αⁿ/n tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "0, car 1/ln t < 1 sur ]α ; e[ et l'intégrande tend vers 0"
+        },
+        {
+          "id": "c",
+          "text": "e − α, la longueur de l'intervalle d'intégration"
+        },
+        {
+          "id": "d",
+          "text": "1, car f(t)ⁿ = (1/ln t)ⁿ vaut 1 en t = e"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme α > 1, αⁿ/n → +∞ par croissances comparées, donc (αⁿ − α)/(n − 1) → +∞ et Uₙ → +∞ ✓. Cela est cohérent avec l'intégrande : pour t ∈ ]α ; e[, ln t ∈ ]1/α ; 1[ est inférieur à 1, donc 1/ln t > 1 et (1/ln t)ⁿ tend vers +∞. Piège classique : croire que 1/ln t < 1 (c'est le contraire), prendre la longueur de l'intervalle pour la limite, ou se fier à la valeur isolée en t = e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, (αⁿ − α)/(n − 1) ≤ Uₙ ≤ (e/(n − 1))(αⁿ⁻¹ − 1) avec α > 1. Quelle est la limite de Uₙ/αⁿ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞, car Uₙ tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "0, car les deux bornes divisées par αⁿ tendent vers 0"
+        },
+        {
+          "id": "c",
+          "text": "1, car Uₙ est équivalent à αⁿ"
+        },
+        {
+          "id": "d",
+          "text": "e/α, car la borne supérieure divisée par αⁿ vaut bien e/α"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On divise l'encadrement par αⁿ > 0 : (1 − α¹⁻ⁿ)/(n − 1) ≤ Uₙ/αⁿ ≤ (e/α)(1 − α¹⁻ⁿ)/(n − 1). Comme α > 1, α¹⁻ⁿ → 0 et 1/(n − 1) → 0 : les deux bornes tendent vers 0, donc Uₙ/αⁿ → 0 ✓. Piège classique : conclure +∞ parce que Uₙ → +∞ (αⁿ croît bien plus vite : forme ∞/∞), oublier le facteur 1/(n − 1) qui fait tendre la borne vers 0, ou supposer Uₙ équivalent à αⁿ sans preuve.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, Uₙ = ∫ de α à e de (1/ln t)ⁿ dt, avec ln α = 1/α et ln e = 1. Une intégration par parties avec les fonctions t ↦ t et t ↦ (ln t)⁻ⁿ relie Uₙ à Uₙ₊₁. Quel est le résultat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uₙ = e − αⁿ⁺¹ − n Uₙ₊₁"
+        },
+        {
+          "id": "b",
+          "text": "Uₙ = e − αⁿ + n Uₙ₊₁"
+        },
+        {
+          "id": "c",
+          "text": "Uₙ = e − αⁿ⁺¹ + n Uₙ₊₁"
+        },
+        {
+          "id": "d",
+          "text": "Uₙ = e − αⁿ⁺¹ + Uₙ₊₁/n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose a(t) = (ln t)⁻ⁿ, de dérivée a′(t) = −n(ln t)⁻ⁿ⁻¹ × (1/t), et b′(t) = 1, b(t) = t. Alors Uₙ = [t(ln t)⁻ⁿ] de α à e − ∫ de α à e de t × (−n)(ln t)⁻ⁿ⁻¹/t dt = e × 1 − α(ln α)⁻ⁿ + n Uₙ₊₁. Comme (ln α)⁻¹ = α, α(ln α)⁻ⁿ = αⁿ⁺¹ : Uₙ = e − αⁿ⁺¹ + n Uₙ₊₁ ✓. Piège classique : perdre le signe de la dérivée de (ln t)⁻ⁿ (le moins disparaît et le terme change de signe), oublier le facteur α dans le crochet (αⁿ au lieu de αⁿ⁺¹), ou diviser par n au lieu de multiplier.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose Sₙ = Σ de k = 1 à n de (k − 2)Uₖ, et on veut montrer par récurrence que Sₙ = (αⁿ⁺¹ − α²)/(α − 1) + (1 − n)e − Uₙ. Que vérifie-t-on dans l'hérédité, après avoir contrôlé S₁ = −U₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sₙ₊₁ = Sₙ + (n + 1)Uₙ₊₁ ; on remplace Sₙ par la formule puis Uₙ par e − αⁿ⁺¹ + nUₙ₊₁"
+        },
+        {
+          "id": "b",
+          "text": "Sₙ₊₁ = Sₙ + (n − 2)Uₙ₊₁ ; on remplace Sₙ par la formule puis Uₙ par e − αⁿ⁺¹ + nUₙ₊₁"
+        },
+        {
+          "id": "c",
+          "text": "Sₙ₊₁ = Sₙ + (n − 1)Uₙ ; on remplace Sₙ par la formule puis Uₙ par e − αⁿ⁺¹ + nUₙ₊₁"
+        },
+        {
+          "id": "d",
+          "text": "Sₙ₊₁ = Sₙ + (n − 1)Uₙ₊₁ ; on remplace Sₙ par la formule puis Uₙ par e − αⁿ⁺¹ + nUₙ₊₁"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le terme d'indice n + 1 de la somme est (n + 1 − 2)Uₙ₊₁ = (n − 1)Uₙ₊₁, donc Sₙ₊₁ = Sₙ + (n − 1)Uₙ₊₁. En remplaçant Sₙ par la formule de rang n, puis Uₙ par e − αⁿ⁺¹ + nUₙ₊₁, on obtient (αⁿ⁺² − α²)/(α − 1) + (1 − (n + 1))e − Uₙ₊₁ : c'est la formule de rang n + 1 ✓. Au rang 1, S₁ = (1 − 2)U₁ = −U₁ et la formule donne 0 + 0 − U₁ ✓. Piège classique : mal indexer le terme ajouté ((k − 2) en k = n + 1 donne n − 1), ou ajouter Uₙ au lieu de Uₙ₊₁.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, Sₙ = (αⁿ⁺¹ − α²)/(α − 1) + (1 − n)e − Uₙ, avec α > 1 et Uₙ/αⁿ → 0. Quelle est la limite de Sₙ/αⁿ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α/(α − 1)"
+        },
+        {
+          "id": "b",
+          "text": "1/(α − 1)"
+        },
+        {
+          "id": "c",
+          "text": "α²/(α − 1)"
+        },
+        {
+          "id": "d",
+          "text": "−∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On divise chaque terme par αⁿ : (αⁿ⁺¹ − α²)/((α − 1)αⁿ) = (α − α²⁻ⁿ)/(α − 1) → α/(α − 1) ; (1 − n)e/αⁿ → 0 (croissances comparées, α > 1) ; Uₙ/αⁿ → 0. Donc Sₙ/αⁿ → α/(α − 1) ✓. Piège classique : simplifier αⁿ⁺¹/αⁿ en 1 ou en α² au lieu de α, ou conclure −∞ à cause du terme (1 − n)e sans le comparer à αⁿ, qui l'emporte.",
+      "difficulty": 3
+    }
+  ]
+}

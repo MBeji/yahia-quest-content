@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2024 · session principale · Exercice 2 ⭐⭐⭐⭐ : Rotation, homothétie, similitudes directe et indirecte",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 25,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. Quelle justification établit que h∘R = R∘h ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "h et R ont le même centre A : en complexes, ce sont z ↦ (√2/2)z et z ↦ e^(i5π/6)z, deux multiplications qui commutent"
+        },
+        {
+          "id": "b",
+          "text": "Deux similitudes commutent toujours, quels que soient leurs centres"
+        },
+        {
+          "id": "c",
+          "text": "Une rotation conserve les longueurs et une homothétie les multiplie, donc l'ordre n'a pas d'effet sur les distances seulement"
+        },
+        {
+          "id": "d",
+          "text": "h et R ont des centres différents, donc elles ne commutent pas"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "h et R ont le même centre A. En prenant A pour origine, h : z ↦ (√2/2)z et R : z ↦ e^(i5π/6)z ; le produit de deux nombres complexes est commutatif, donc h∘R(z) = (√2/2)e^(i5π/6)z = R∘h(z). Deux similitudes de centres différents ne commutent pas en général ; et le fait que seules les distances ne dépendent pas de l'ordre ne prouve pas l'égalité des applications. Vérification : les centres sont bien tous deux A ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. Quelle est l'image de B par h∘R ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point J"
+        },
+        {
+          "id": "b",
+          "text": "Le point K"
+        },
+        {
+          "id": "c",
+          "text": "Le point C"
+        },
+        {
+          "id": "d",
+          "text": "Le point I"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "R(B) est le point tel que AR(B) = AB et (AB⃗, AR(B)⃗) ≡ 5π/6 : comme (AB⃗, AC⃗) ≡ 5π/6 et AC = AB, R(B) = C. Puis h(C) est le point de [AC] tel que Ah(C) = (√2/2)AC = AC/√2, c'est-à-dire I (AC⃗ = √2·AI⃗). Donc h∘R(B) = I. Le point J est le milieu de [AC], K est plus loin dans l'orientation. Vérification : AI = AC/√2 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. Quelle est l'image de I par h ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point C"
+        },
+        {
+          "id": "b",
+          "text": "Le point B"
+        },
+        {
+          "id": "c",
+          "text": "Le point K"
+        },
+        {
+          "id": "d",
+          "text": "Le point J"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "I est sur [AC] avec AI = AC/√2. L'homothétie h de centre A et de rapport √2/2 envoie I sur le point de [AC] tel que A·h(I) = (√2/2)(AC/√2) = AC/2 : c'est le milieu J de [AC]. Les points C et B ne sont pas sur la bonne demi-droite à la bonne distance, et K n'est pas sur (AC). Vérification : (√2/2) × (1/√2) = 1/2 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. Soit g la similitude indirecte telle que g(B) = I et g(I) = K. Quel est son rapport ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3/2"
+        },
+        {
+          "id": "b",
+          "text": "√2"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "√2/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le rapport de g est g(B)g(I)/BI = IK/BI. Les triangles ABI et AIK sont semblables : AI/AB = (AC/√2)/AB = √2/2 (car AB = AC), AK/AI = (AC/2)/(AC/√2) = √2/2, et (AB⃗, AI⃗) = (AI⃗, AK⃗) = 5π/6. Donc IK/BI = AI/AB = √2/2 et g est de rapport √2/2. Le rapport 1/2 serait le carré ; √2 l'inverse ; √3/2 ne correspond à aucun quotient de la figure. Vérification : le rapport de g est √2/2, et son carré 1/2 est celui de g∘g ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. Quelle est l'image de I par h∘R ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point K"
+        },
+        {
+          "id": "b",
+          "text": "Le point J"
+        },
+        {
+          "id": "c",
+          "text": "Le point C"
+        },
+        {
+          "id": "d",
+          "text": "Le point B"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "h∘R(I) = R(h(I)) car h et R commutent, et h(I) = J. Donc h∘R(I) = R(J). R est la rotation de centre A et d'angle 5π/6, J est tel que AJ = AC/2 : R(J) est le point tel que AR(J) = AJ et (AJ⃗, AR(J)⃗) ≡ 5π/6, c'est exactement la définition de K. Donc h∘R(I) = K. Le point J est h(I), non l'image par h∘R. Vérification : AK = AJ et (AJ⃗, AK⃗) ≡ 5π/6 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. S est la similitude directe de centre A et de rapport √2/2 telle que S(B) = I et S(I) = K, et E = S(K). Pour construire E, quelle longueur AE faut-il reporter ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√2/2)·AB"
+        },
+        {
+          "id": "b",
+          "text": "(1/2)·AB"
+        },
+        {
+          "id": "c",
+          "text": "(√2/4)·AB"
+        },
+        {
+          "id": "d",
+          "text": "(1/4)·AB"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E = S(K) = S(S(I)) = S(S(S(B))) : E est l'image de B par S∘S∘S, similitude de centre A et de rapport (√2/2)³ = 2√2/8 = √2/4. Comme A est le centre, AE = (√2/4)·AB. Le rapport √2/2 serait celui d'un seul passage par S, 1/2 celui de deux passages (k²), et 1/4 celui de quatre (k⁴). Vérification : (√2/2)² × (√2/2) = (1/2)(√2/2) = √2/4 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. S = h∘R est la similitude directe qui envoie B sur I et I sur K (S est de centre A, de rapport √2/2 et d'angle 5π/6). Quelle est une mesure de (IB⃗, IK⃗) ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/6"
+        },
+        {
+          "id": "b",
+          "text": "π/6"
+        },
+        {
+          "id": "c",
+          "text": "5π/6"
+        },
+        {
+          "id": "d",
+          "text": "−5π/6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "S envoie le vecteur BI⃗ sur IK⃗ : (BI⃗, IK⃗) ≡ 5π/6 (angle de S). Or IB⃗ = −BI⃗, donc (IB⃗, IK⃗) = (IB⃗, BI⃗) + (BI⃗, IK⃗) = π + 5π/6 = 11π/6 ≡ −π/6 [2π]. Garder 5π/6 oublierait le demi-tour dû à IB⃗ = −BI⃗ ; π/6 et −5π/6 sont des erreurs de signe. Vérification : 11π/6 − 2π = −π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. S = h∘R est la similitude directe de centre A et d'angle 5π/6 telle que S(B) = I, S(I) = K, et E = S(K). Quelle est une mesure de (AB⃗, AE⃗) ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5π/6"
+        },
+        {
+          "id": "b",
+          "text": "−π/2"
+        },
+        {
+          "id": "c",
+          "text": "π/2"
+        },
+        {
+          "id": "d",
+          "text": "5π/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E = S(K) = S(S(I)) = S(S(S(B))) : E est l'image de B par S∘S∘S, similitude directe de centre A et d'angle 3 × 5π/6 = 5π/2 ≡ π/2 [2π]. Donc (AB⃗, AE⃗) ≡ π/2 : (AB) ⊥ (AE). L'angle 5π/6 est celui d'un seul passage, 5π/3 celui de deux, et −π/2 est l'opposé. Vérification : 5π/2 − 2π = π/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. g est la similitude indirecte de centre Ω telle que g(B) = I et g(I) = K, de rapport √2/2. Quel argument établit que Ω est le symétrique de B par rapport à K ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g∘g est l'homothétie de centre Ω et de rapport −1/2 ; g∘g(B) = g(I) = K : K est le milieu de [BΩ]"
+        },
+        {
+          "id": "b",
+          "text": "g∘g est l'homothétie de centre Ω et de rapport 1/2 ; g∘g(B) = g(I) = K : K est le milieu de [BΩ]"
+        },
+        {
+          "id": "c",
+          "text": "g∘g est l'homothétie de centre Ω et de rapport √2/2 ; g∘g(B) = g(I) = K : K est le milieu de [BΩ]"
+        },
+        {
+          "id": "d",
+          "text": "g∘g est l'homothétie de centre Ω et de rapport 1/2 ; g∘g(B) = g(I) = K : Ω est le milieu de [BK]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le carré d'une similitude indirecte de centre Ω et de rapport k est l'homothétie de centre Ω et de rapport k² = 1/2. Alors g∘g(B) = g(g(B)) = g(I) = K, donc ΩK⃗ = (1/2)ΩB⃗ : K est le milieu de [ΩB], et Ω est le symétrique de B par rapport à K. Utiliser k = √2/2 au lieu de k², ou un rapport négatif −1/2 (le carré d'une similitude est de rapport k² > 0), ne ferait pas de K le milieu ; enfin dire que Ω est le milieu de [BK] renverse les rôles : ΩK⃗ = (1/2)ΩB⃗ place K entre Ω et B, c'est K le milieu de [BΩ]. Vérification : ΩK = ΩB/2, donc K est bien le milieu de [ΩB] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. g est la similitude indirecte de centre Ω, de rapport √2/2, avec g(B) = I, g(I) = K et g∘g de rapport 1/2. F désigne g(K). Quel argument établit que F est le milieu de [IΩ] ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(K) = g(g(I)) = (g∘g)(I) est l'image de I par l'homothétie de centre B et de rapport 1/2, donc le milieu de [BI]"
+        },
+        {
+          "id": "b",
+          "text": "g(K) = g(g(I)) = (g∘g)(I) est l'image de I par l'homothétie de centre Ω et de rapport 1/2, donc le milieu de [ΩI]"
+        },
+        {
+          "id": "c",
+          "text": "g(K) = g(g(I)) = (g∘g)(I) est l'image de I par l'homothétie de centre Ω et de rapport √2/2, donc le milieu de [ΩI]"
+        },
+        {
+          "id": "d",
+          "text": "g(K) = g(g(I)) = (g∘g)(I) est l'image de I par l'homothétie de centre Ω et de rapport −1/2, donc le milieu de [IΩ]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "K = g(I), donc F = g(K) = g(g(I)) = (g∘g)(I). Or g∘g est l'homothétie de centre Ω et de rapport 1/2 : F est le point de [ΩI] tel que ΩF⃗ = (1/2)ΩI⃗, c'est-à-dire le milieu de [IΩ]. Un rapport √2/2 ne donne pas un milieu, un rapport négatif −1/2 (impossible pour un carré, k² > 0) placerait F de l'autre côté de Ω, et un centre B au lieu de Ω donnerait le milieu de [BI], non de [IΩ] (Ω est le seul point fixe de g). Vérification : ΩF = ΩI/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. g est la similitude indirecte avec g(B) = I, g(I) = K, F = g(K), et (BI⃗, IK⃗) ≡ 5π/6 [2π]. Quelle est une mesure de (KI⃗, KF⃗) ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5π/6"
+        },
+        {
+          "id": "b",
+          "text": "−5π/6"
+        },
+        {
+          "id": "c",
+          "text": "π/3"
+        },
+        {
+          "id": "d",
+          "text": "π/6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "g est indirecte : elle change l'angle orienté en son opposé. Elle envoie BI⃗ sur IK⃗ et IK⃗ sur KF⃗ : (IK⃗, KF⃗) ≡ −(BI⃗, IK⃗) = −5π/6. Alors (KI⃗, KF⃗) = (KI⃗, IK⃗) + (IK⃗, KF⃗) = π − 5π/6 = π/6 [2π]. Garder 5π/6 oublierait le changement de signe d'une indirecte, −5π/6 le demi-tour de KI⃗ = −IK⃗ ; π/3 viendrait d'un angle π/6 compté deux fois. Vérification : π − 5π/6 = π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. On a (KI⃗, KE⃗) ≡ −π/6 et (KI⃗, KF⃗) ≡ π/6 [2π], où E = S(K) et F = g(K), S et g de même rapport. Quel argument montre que le triangle KEF est équilatéral ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(KF⃗, KE⃗) ≡ 0 par Chasles ; KE = KF (rapports égaux) : K, E, F sont alignés sur une droite"
+        },
+        {
+          "id": "b",
+          "text": "(KF⃗, KE⃗) ≡ −π/3 par Chasles ; KE = KF (rapports égaux) : isocèle avec un angle de π/3"
+        },
+        {
+          "id": "c",
+          "text": "(KF⃗, KE⃗) ≡ −π/3 par Chasles ; KE ≠ KF, mais un angle de π/3 suffit pour conclure"
+        },
+        {
+          "id": "d",
+          "text": "(KF⃗, KE⃗) ≡ −π/6 par Chasles ; KE = KF (rapports égaux) : isocèle avec un angle de π/6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par Chasles, (KF⃗, KE⃗) = (KF⃗, KI⃗) + (KI⃗, KE⃗) = −π/6 − π/6 = −π/3. D'autre part KE = S(I)S(K) = k·IK et KF = g(I)g(K) = k·IK : KE = KF. Un triangle isocèle en K avec un angle de π/3 en K est équilatéral. Un seul angle ne suffit pas sans l'égalité de deux côtés ; −π/6 est mal calculé (c'est −π/3) ; et 0 supposerait E, K, F alignés alors que l'angle vaut π/3. Vérification : KE = KF et (KF⃗, KE⃗) ≡ −π/3 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

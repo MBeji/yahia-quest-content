@@ -1,0 +1,229 @@
+{
+  "title": "🏛️ Bac 2015 · session principale · Exercice 2 ⭐⭐⭐⭐ : Similitudes directe et indirecte de centre A, axe et bissectrice",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. Soit f la similitude directe de centre A qui envoie B sur C. Quel est son rapport ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "√3/3"
+        },
+        {
+          "id": "c",
+          "text": "√3"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une similitude de centre A qui envoie B sur C a pour rapport k = AC/AB. Dans le triangle ABC rectangle en A, l'angle en B vaut π/3 et tan(π/3) = côté opposé / côté adjacent = AC/AB = √3. Donc k = √3. Le quotient inverse AB/AC = √3/3 serait le rapport de la similitude qui envoie C sur B, et 1/2 est le rapport AB/BC (cosinus de B), qui ne relie pas B à C par une similitude de centre A. Vérification : AB = 1 et AC = √3 donnent bien AC = √3·AB ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. Soit f la similitude directe de centre A qui envoie B sur C. Quel est son angle ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/2"
+        },
+        {
+          "id": "b",
+          "text": "π/6"
+        },
+        {
+          "id": "c",
+          "text": "π/3"
+        },
+        {
+          "id": "d",
+          "text": "π/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'angle d'une similitude directe de centre A est (AM⃗, AM′⃗) pour tout point M distinct de A. Avec M = B et M′ = C, l'angle est (AB⃗, AC⃗) ≡ π/2 [2π], donné par l'énoncé. L'angle −π/2 s'obtiendrait en intervertissant les rôles de B et C ; π/3 est l'angle en B du triangle, qui n'est pas l'angle de f. Vérification : f est la similitude de centre A, de rapport √3 et d'angle π/2, qui envoie le côté [AB] sur [AC] ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. Soit g la similitude indirecte de centre A qui envoie C sur B. Quel est son rapport ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3"
+        },
+        {
+          "id": "b",
+          "text": "√3/2"
+        },
+        {
+          "id": "c",
+          "text": "√3/3"
+        },
+        {
+          "id": "d",
+          "text": "√3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rapport de g est k = AB/AC puisque g(A) = A et g(C) = B. Avec AB = 1 et AC = √3 (voir le rapport de la similitude f), k = 1/√3 = √3/3. Le nombre 1/3 est k², c'est-à-dire le rapport de g∘g ; le nombre √3 est le rapport de f et donc l'inverse de celui de g. Vérification : g∘f est une similitude de rapport √3 × √3/3 = 1 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. Soit g la similitude indirecte de centre A qui envoie C sur B. Quelle droite est l'axe Δ de g ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La bissectrice de l'angle A"
+        },
+        {
+          "id": "b",
+          "text": "La médiane issue du sommet A",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "La hauteur issue du sommet A",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "d",
+          "text": "La médiatrice du côté [BC]",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour une similitude indirecte de centre I et d'axe Δ, la droite Δ porte la bissectrice de l'angle (IM⃗, IM′⃗) pour tout point M distinct de I. Ici I = A, M = C et M′ = g(C) = B : l'axe Δ est la bissectrice de l'angle BAC (qui passe par A, comme l'exige l'axe). La médiane, la hauteur et la médiatrice ne coïncident avec elle que dans un triangle isocèle ; ce triangle ne l'est pas, puisque AB = 1 et AC = √3. Vérification : Δ passe par le centre A de g ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. g est la similitude indirecte de centre A qui envoie C sur B, et D est le point tel que AD⃗ = (1/3)AC⃗. Quel argument établit que g(B) = D ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"66.5\" y=\"143\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g∘g est l'identité du plan, et g(B) = g(g(C)) = C"
+        },
+        {
+          "id": "b",
+          "text": "g∘g est l'homothétie de centre A et de rapport 1/3, et g(B) = g(g(C))"
+        },
+        {
+          "id": "c",
+          "text": "g∘g est l'homothétie de centre A et de rapport √3/3, et g(B) = g(g(C))"
+        },
+        {
+          "id": "d",
+          "text": "g∘g est la rotation de centre A et d'angle π/2, et g(B) = g(g(C))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le carré d'une similitude indirecte de centre A et de rapport k est l'homothétie de centre A et de rapport k². Ici k = √3/3 et k² = 1/3. Alors g(B) = g(g(C)) = h(A, 1/3)(C), c'est-à-dire le point D tel que AD⃗ = (1/3)AC⃗. Utiliser k au lieu de k² placerait D en un autre point de [AC] (au rapport √3/3) ; une similitude indirecte n'a pas d'angle donc g∘g n'est jamais une rotation de ce type ; enfin g∘g ne serait l'identité que pour un rapport 1. Vérification : AD = (1/3)AC, ce qui correspond bien au rapport k² = 1/3 de g∘g ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. Avec g(C) = B et g(B) = D, où D est sur [AC] avec AD⃗ = (1/3)AC⃗, on cherche la mesure de l'angle géométrique ABD. Quelle est-elle ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"66.5\" y=\"143\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/12"
+        },
+        {
+          "id": "b",
+          "text": "π/6"
+        },
+        {
+          "id": "c",
+          "text": "π/4"
+        },
+        {
+          "id": "d",
+          "text": "π/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g conserve les angles géométriques et envoie les points A, C, B sur A, B, D. L'angle ACB (au sommet C) a donc pour image l'angle ABD (au sommet B) : ABD = ACB. Dans le triangle rectangle ABC, ACB = π/2 − π/3 = π/6. Ainsi ABD = π/6, soit la moitié de l'angle ABC = π/3 : la demi-droite [BD) est la bissectrice intérieure de l'angle ABC. Une mesure de π/3 serait celle de ABC lui-même ; π/12 serait la moitié de la bonne valeur. Vérification : tan(ABD) = AD/AB = √3/3 = tan(π/6) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. Avec f la similitude directe de centre A qui envoie B sur C, de rapport √3 et d'angle π/2, et g la similitude indirecte de centre A qui envoie C sur B, de rapport √3/3. Quelle est la nature de f∘g ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une symétrie orthogonale d'axe (AC)"
+        },
+        {
+          "id": "b",
+          "text": "Une symétrie orthogonale d'axe (AB)"
+        },
+        {
+          "id": "c",
+          "text": "Une symétrie orthogonale d'axe Δ (l'axe de g)"
+        },
+        {
+          "id": "d",
+          "text": "Une rotation de centre A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le rapport de f∘g est √3 × √3/3 = 1 : c'est une isométrie, indirecte puisque f est directe et g indirecte. Elle fixe A (centre commun) et aussi C : f(g(C)) = f(B) = C. Un antidéplacement qui fixe deux points distincts A et C est la symétrie orthogonale d'axe (AC). L'axe de g n'est pas celui de f∘g, car f modifie les images ; et une rotation serait un déplacement, ce que f∘g n'est pas. Vérification : (AC) contient les deux points fixes A et C ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. D est le point de [AC] tel que AD⃗ = (1/3)AC⃗, avec D = g(B), et D′ = f(D). Sachant que f∘g est la symétrie orthogonale d'axe (AC), quelle conclusion tire-t-on pour D′ ? <svg viewBox=\"0 0 250 220\"><path d=\"M76.5 194 L173.5 194 L76.5 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M76.5 194 L173.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M76.5 26 L76.5 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M173.5 194 L76.5 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"76.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"173.5\" cy=\"194\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"26\" r=\"3.6\"/><circle cx=\"76.5\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"66.5\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"183.5\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"76.5\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"66.5\" y=\"143\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "D′ = S_(AC)(B), donc D′ est le symétrique de B par rapport à C, car (AB) ⊥ (AC)"
+        },
+        {
+          "id": "b",
+          "text": "D′ = S_(AB)(B), donc D′ est le symétrique de B par rapport à A, car (AB) ⊥ (AC)"
+        },
+        {
+          "id": "c",
+          "text": "D′ = S_(AB)(B), donc D′ est le symétrique de B par rapport à C, car (AB) ⊥ (AC)"
+        },
+        {
+          "id": "d",
+          "text": "D′ = S_(AC)(B), donc D′ est le symétrique de B par rapport à A, car (AB) ⊥ (AC)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "D′ = f(D) = f(g(B)) = (f∘g)(B) = S_(AC)(B), le symétrique orthogonal de B par rapport à (AC). Comme (AB) ⊥ (AC) en A, la perpendiculaire à l'axe menée par B est (AB), qui coupe l'axe en A : A est le milieu de [BD′], c'est-à-dire que D′ est le symétrique de B par rapport à A. Le point C n'est pas sur (AB), donc il ne peut pas être le centre de cette symétrie centrale ; et B appartient à (AB), donc S_(AB)(B) = B ne définit pas D′. Vérification : AD′ = AB = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan orienté, ABC est un triangle tel que (AB⃗, AC⃗) ≡ π/2 [2π] et (BC⃗, BA⃗) ≡ π/3 [2π]. f est la similitude directe de centre A qui envoie B sur C ; (BD) est la bissectrice intérieure de l'angle ABC (D est sur [AC]) et D′ = f(D). I est le centre du cercle inscrit dans ABC et J le point d'intersection de la droite (CD′) avec la bissectrice intérieure de l'angle CAD′. Quel argument justifie f(I) = J ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 194 L222 194 L125 26 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M125 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"160.5\" cy=\"158.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"115\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"143\" text-anchor=\"middle\">D</text><text x=\"168.5\" y=\"150.5\" text-anchor=\"middle\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "I est le point commun des bissectrices ; f envoie (BD) sur (CD′) et la bissectrice de BAC sur celle de CAD′, donc f(I) = J"
+        },
+        {
+          "id": "b",
+          "text": "I est le point commun des bissectrices ; f envoie (BD) sur (AD′) et la bissectrice de BAC sur celle de CAD′, donc f(I) = J"
+        },
+        {
+          "id": "c",
+          "text": "I est le point commun des bissectrices ; f envoie (BD) sur (CD′) et la bissectrice de BAC sur la droite (AC), donc f(I) = J"
+        },
+        {
+          "id": "d",
+          "text": "I est le point commun des bissectrices ; f envoie (BD) sur (CD′) et la bissectrice de BAC sur celle de CAD′ parce qu'elle conserve les longueurs, donc f(I) = J"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre du cercle inscrit est le point commun des bissectrices intérieures : I ∈ (BD) et I appartient à la bissectrice de l'angle BAC. f est une similitude directe de centre A : f(A) = A, f(B) = C, et D′ = f(D) ; elle envoie donc (BD) sur (CD′), et non sur (AD′) qui ne contient pas C = f(B). Comme D′ est sur la demi-droite d'origine A opposée à [AB) et que f(C) est aligné avec A et D′ (rotation d'angle π/2 de [AC) donne la même demi-droite), l'image de la bissectrice de BAC est la bissectrice de CAD′, et non la droite (AC), qui n'est pas une bissectrice de cet angle. Le point f(I), commun à ces deux images, est J. Ce n'est pas la conservation des longueurs qui transforme une bissectrice en bissectrice (f les multiplie par k), mais la conservation des angles. Vérification : f conserve les angles orientés, donc elle transforme une bissectrice en une bissectrice ✓.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2023 · session de contrôle · Exercice 2 ⭐⭐⭐ : dé et cartes, probabilités totales, probabilité des causes, loi et espérance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Un jeu consiste à lancer deux fois de suite un dé cubique équilibré dont les faces sont marquées −2 ; −2 ; 1 ; 1 ; 1 ; 1, et à considérer le produit des deux nombres obtenus. Une boîte contient deux cartes vertes et trois cartes rouges, indiscernables au toucher. Si le produit est positif, on tire simultanément trois cartes de la boîte ; s'il est négatif, on tire simultanément deux cartes. On note A l'événement « le produit des nombres obtenus est positif ». Quelle est sa probabilité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5/9"
+        },
+        {
+          "id": "b",
+          "text": "4/9"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "1/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le dé porte deux faces −2 (probabilité 1/3) et quatre faces 1 (probabilité 2/3). Le produit est positif si les deux nombres sont de même signe : deux fois 1, de probabilité (2/3)² = 4/9, ou deux fois −2, de probabilité (1/3)² = 1/9. Ces cas sont incompatibles : p(A) = 4/9 + 1/9 = 5/9 ✓. Contrôle par le contraire : produit négatif (−2 puis 1, ou 1 puis −2) : 2 × (1/3)(2/3) = 4/9, et 5/9 + 4/9 = 1 ✓. Les erreurs : 4/9 est la probabilité du produit négatif, ou du seul cas (1 ; 1) si l'on oublie (−2 ; −2) ; 2/3 est la probabilité d'un seul lancer qui donne 1 ; 1/3 celle de −2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un jeu consiste à lancer deux fois de suite un dé cubique équilibré dont les faces sont marquées −2 ; −2 ; 1 ; 1 ; 1 ; 1, et à considérer le produit des deux nombres obtenus. Une boîte contient deux cartes vertes et trois cartes rouges, indiscernables au toucher. Si le produit est positif, on tire simultanément trois cartes de la boîte ; s'il est négatif, on tire simultanément deux cartes. On note A « le produit est positif » et B « avoir deux cartes vertes ». Quelles sont les probabilités p(B/A) et p(B/Ā) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(B/A) = 1/10 ; p(B/Ā) = 3/10"
+        },
+        {
+          "id": "b",
+          "text": "p(B/A) = 3/10 ; p(B/Ā) = 1/10"
+        },
+        {
+          "id": "c",
+          "text": "p(B/A) = 1/10 ; p(B/Ā) = 1/10"
+        },
+        {
+          "id": "d",
+          "text": "p(B/A) = 3/10 ; p(B/Ā) = 2/5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sachant A, on tire 3 cartes parmi 5 : C₅³ = 10 tirages. Avoir les deux vertes, c'est tirer les deux cartes vertes et une rouge parmi les trois : C₃¹ = 3 tirages, donc p(B/A) = 3/10. Sachant Ā, on tire 2 cartes parmi 5 : C₅² = 10 tirages, et un seul tirage donne les deux vertes : p(B/Ā) = 1/10 ✓. Les erreurs : échanger les deux cas (le tirage de trois cartes est plus favorable, pas moins), oublier la troisième carte du tirage de trois (1/10 dans les deux cas), ou prendre 2/5, probabilité qu'UNE carte tirée seule soit verte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un jeu consiste à lancer deux fois de suite un dé cubique équilibré dont les faces sont marquées −2 ; −2 ; 1 ; 1 ; 1 ; 1, et à considérer le produit des deux nombres obtenus. Une boîte contient deux cartes vertes et trois cartes rouges, indiscernables au toucher. Si le produit est positif, on tire simultanément trois cartes de la boîte ; s'il est négatif, on tire simultanément deux cartes. Quelles valeurs la variable aléatoire X, égale à la réduction totale obtenue en dinars (20 dinars par carte verte tirée, rien pour une rouge), peut-elle prendre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, 20, 40 et 60"
+        },
+        {
+          "id": "b",
+          "text": "20 et 40"
+        },
+        {
+          "id": "c",
+          "text": "0, 20 et 40"
+        },
+        {
+          "id": "d",
+          "text": "0 et 20"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La boîte ne contient que deux cartes vertes. Selon le tirage, on peut obtenir 0 carte verte (X = 0), 1 carte verte (X = 20) ou 2 cartes vertes (X = 40) : les valeurs possibles ✓ sont 0, 20 et 40. Les erreurs : croire que trois cartes tirées peuvent toutes être vertes (X = 60), alors qu'il n'y a que deux vertes dans la boîte ; oublier X = 0 (tirer deux ou trois cartes rouges est possible : 3 cartes rouges sur 5 existent) ; oublier X = 40 (les deux vertes peuvent sortir ensemble).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un jeu consiste à lancer deux fois de suite un dé cubique équilibré dont les faces sont marquées −2 ; −2 ; 1 ; 1 ; 1 ; 1, et à considérer le produit des deux nombres obtenus. Une boîte contient deux cartes vertes et trois cartes rouges, indiscernables au toucher. Si le produit est positif, on tire simultanément trois cartes de la boîte ; s'il est négatif, on tire simultanément deux cartes. Sachant que p(A) = 5/9, p(B/A) = 3/10 et p(B/Ā) = 1/10, quelle est la probabilité de B « avoir deux cartes vertes » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18/90"
+        },
+        {
+          "id": "b",
+          "text": "36/90"
+        },
+        {
+          "id": "c",
+          "text": "27/90"
+        },
+        {
+          "id": "d",
+          "text": "19/90"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "A et Ā forment une partition : p(B) = p(A) × p(B/A) + p(Ā) × p(B/Ā). Avec p(Ā) = 1 − 5/9 = 4/9 : p(B) = (5/9)(3/10) + (4/9)(1/10) = 15/90 + 4/90 = 19/90 ✓. Contrôle : 19/90 ≈ 0,211 se situe entre 1/10 et 3/10, plus près de 3/10 puisque A est plus probable. Les erreurs : la moyenne simple (3/10 + 1/10)/2 = 1/5 = 18/90 oublie de pondérer ; la somme 3/10 + 1/10 = 2/5 = 36/90 additionne des conditionnelles ; et 3/10 = 27/90 ne garde que la branche A.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un jeu consiste à lancer deux fois de suite un dé cubique équilibré dont les faces sont marquées −2 ; −2 ; 1 ; 1 ; 1 ; 1, et à considérer le produit des deux nombres obtenus. Une boîte contient deux cartes vertes et trois cartes rouges, indiscernables au toucher. Si le produit est positif, on tire simultanément trois cartes de la boîte ; s'il est négatif, on tire simultanément deux cartes. On sait que p(A) = 5/9, p(B/A) = 3/10 et p(B) = 19/90. On a obtenu deux cartes vertes. Quelle est la probabilité qu'on ait obtenu un produit positif, c'est-à-dire p(A/B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15/19"
+        },
+        {
+          "id": "b",
+          "text": "4/19"
+        },
+        {
+          "id": "c",
+          "text": "15/90"
+        },
+        {
+          "id": "d",
+          "text": "5/9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "p(A/B) = p(A ∩ B)/p(B). On a p(A ∩ B) = p(A) × p(B/A) = (5/9)(3/10) = 15/90 = 1/6 et p(B) = 19/90. Donc p(A/B) = (15/90)/(19/90) = 15/19 ✓. Contrôle : p(Ā/B) = p(Ā ∩ B)/p(B) = (4/90)/(19/90) = 4/19 et 15/19 + 4/19 = 1 ✓. Les erreurs : 4/19 est la probabilité de l'autre cause (produit négatif), 15/90 est p(A ∩ B) qu'on oublie de diviser par p(B), et 5/9 est p(A) sans tenir compte de B (on oublie de conditionner).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un jeu consiste à lancer deux fois de suite un dé cubique équilibré dont les faces sont marquées −2 ; −2 ; 1 ; 1 ; 1 ; 1, et à considérer le produit des deux nombres obtenus. Une boîte contient deux cartes vertes et trois cartes rouges, indiscernables au toucher. Si le produit est positif, on tire simultanément trois cartes de la boîte ; s'il est négatif, on tire simultanément deux cartes. Quelle est la probabilité qu'aucune carte verte ne soit tirée, c'est-à-dire p(X = 0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "27/90"
+        },
+        {
+          "id": "b",
+          "text": "17/90"
+        },
+        {
+          "id": "c",
+          "text": "5/90"
+        },
+        {
+          "id": "d",
+          "text": "36/90"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Aucune verte signifie que toutes les cartes tirées sont rouges. Si le produit est positif (probabilité 5/9), on tire 3 cartes parmi 5 : il n'y a qu'un tirage composé des trois rouges, donc la probabilité est 1/10. Si le produit est négatif (probabilité 4/9), on tire 2 cartes : C₃² = 3 tirages sur 10, donc 3/10. Par probabilités totales : p(X = 0) = (5/9)(1/10) + (4/9)(3/10) = 5/90 + 12/90 = 17/90 ✓. Les erreurs : 3/10 = 27/90 ne garde que le cas du produit négatif, 5/90 = (5/9)(1/10) ne garde que le cas du produit positif, et 36/90 = 1/10 + 3/10 additionne les deux conditionnelles sans les pondérer par 5/9 et 4/9.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un jeu consiste à lancer deux fois de suite un dé cubique équilibré dont les faces sont marquées −2 ; −2 ; 1 ; 1 ; 1 ; 1, et à considérer le produit des deux nombres obtenus. Une boîte contient deux cartes vertes et trois cartes rouges, indiscernables au toucher. Si le produit est positif, on tire simultanément trois cartes de la boîte ; s'il est négatif, on tire simultanément deux cartes. Quelle est la loi de probabilité de la variable aléatoire X égale à la réduction totale en dinars (20 dinars par carte verte tirée) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 : 17/90 ; 20 : 19/90 ; 40 : 3/5"
+        },
+        {
+          "id": "b",
+          "text": "0 : 3/5 ; 20 : 17/90 ; 40 : 19/90"
+        },
+        {
+          "id": "c",
+          "text": "0 : 17/90 ; 20 : 3/5 ; 40 : 19/90"
+        },
+        {
+          "id": "d",
+          "text": "0 : 19/90 ; 20 : 3/5 ; 40 : 17/90"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "X = 0 : aucune carte verte, probabilité 17/90 (voir le calcul des tirages de rouges). X = 40 : les deux vertes sont tirées, c'est l'événement « avoir deux cartes vertes » de probabilité 19/90. X = 20 : exactement une verte, probabilité 1 − 17/90 − 19/90 = 54/90 = 3/5 ✓. Vérification directe de p(X = 20) : sachant A, une verte et deux rouges : 2 × 3 = 6 tirages sur 10 ; sachant Ā, une verte et une rouge : 2 × 3 = 6 sur 10 ; donc (5/9)(6/10) + (4/9)(6/10) = 30/90 + 24/90 = 54/90 ✓. Les erreurs : échanger les valeurs, décaler les valeurs (3/5 attribué à X = 0 et 17/90 à X = 20), ou échanger p(X = 0) et p(X = 40).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une variable aléatoire X prend les valeurs 0, 20 et 40 avec les probabilités 17/90, 3/5 et 19/90. Quelle est son espérance mathématique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "184/9, soit environ 20,4 dinars"
+        },
+        {
+          "id": "b",
+          "text": "20 dinars, la moyenne des trois valeurs"
+        },
+        {
+          "id": "c",
+          "text": "76/9, soit environ 8,4 dinars"
+        },
+        {
+          "id": "d",
+          "text": "254/9, soit environ 28,2 dinars"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E(X) = 0 × 17/90 + 20 × 3/5 + 40 × 19/90 = 12 + 760/90 = 12 + 76/9 = 108/9 + 76/9 = 184/9 ≈ 20,4 dinars ✓. Contrôle : 184/9 est compris entre 20 et 40 et proche de 20, comme la valeur centrale 20 est la plus probable. Les erreurs : la moyenne simple (0 + 20 + 40)/3 = 20 suppose les trois valeurs équiprobables ; 76/9 oublie le terme 20 × 3/5 = 12 ; 254/9 échange les probabilités de 20 et de 40.",
+      "difficulty": 3
+    }
+  ]
+}

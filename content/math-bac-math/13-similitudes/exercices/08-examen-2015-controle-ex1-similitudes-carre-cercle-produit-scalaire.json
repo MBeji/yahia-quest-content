@@ -1,0 +1,252 @@
+{
+  "title": "🏛️ Bac 2015 · session de contrôle · Exercice 1 ⭐⭐⭐⭐ : Similitudes, carré inscrit dans un cercle et produit scalaire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. Soit f la similitude directe qui envoie A sur B et I sur O. Quels sont son rapport et son angle ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M65.6 169.4 L184.4 169.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M184.4 169.4 L184.4 50.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M184.4 50.6 L65.6 50.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M65.6 50.6 L65.6 169.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M65.6 169.4 L184.4 50.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M184.4 169.4 L65.6 50.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M184.4 50.6 L125 169.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"65.6\" cy=\"169.4\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"169.4\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"50.6\" r=\"3.6\"/><circle cx=\"65.6\" cy=\"50.6\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"65.6\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"169.4\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"56.6\" y=\"183.4\" text-anchor=\"middle\">A</text><text x=\"194.4\" y=\"183.4\" text-anchor=\"middle\">B</text><text x=\"194.4\" y=\"46.6\" text-anchor=\"middle\">C</text><text x=\"56.6\" y=\"46.6\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"104\" text-anchor=\"middle\">O</text><text x=\"55.6\" y=\"114\" text-anchor=\"middle\">I</text><text x=\"125\" y=\"185.4\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rapport √2 et angle π/4"
+        },
+        {
+          "id": "b",
+          "text": "Rapport √2 et angle −π/4"
+        },
+        {
+          "id": "c",
+          "text": "Rapport √2/2 et angle π/4"
+        },
+        {
+          "id": "d",
+          "text": "Rapport √2/2 et angle −π/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une similitude directe qui envoie A sur B et I sur O a pour rapport k = BO/AI et pour angle (AI⃗, BO⃗). Notons a le côté du carré : AI = a/2 et BO = a√2/2 (demi-diagonale), donc k = (a√2/2)/(a/2) = √2. Pour l'angle, AI⃗ a la direction de AD⃗ et BO⃗ celle de BD⃗ ; dans le triangle ABD rectangle isocèle en A, l'angle (AD⃗, BD⃗) vaut +π/4 (on tourne dans le sens direct, de la direction de AD⃗ vers celle de BD⃗, puisque (AB⃗, AD⃗) ≡ π/2). L'erreur classique est de calculer le rapport « à l'envers » (AI/BO = √2/2) ou d'oublier l'orientation (−π/4). Vérification : √2 > 1 car la demi-diagonale dépasse le demi-côté ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. f désigne la similitude directe de rapport √2 et d'angle π/4 qui envoie A sur B et I sur O. Quel point est le centre de f ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M65.6 169.4 L184.4 169.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M184.4 169.4 L184.4 50.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M184.4 50.6 L65.6 50.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M65.6 50.6 L65.6 169.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M65.6 169.4 L184.4 50.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M184.4 169.4 L65.6 50.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M184.4 50.6 L125 169.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"65.6\" cy=\"169.4\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"169.4\" r=\"3.6\"/><circle cx=\"184.4\" cy=\"50.6\" r=\"3.6\"/><circle cx=\"65.6\" cy=\"50.6\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"65.6\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"169.4\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"56.6\" y=\"183.4\" text-anchor=\"middle\">A</text><text x=\"194.4\" y=\"183.4\" text-anchor=\"middle\">B</text><text x=\"194.4\" y=\"46.6\" text-anchor=\"middle\">C</text><text x=\"56.6\" y=\"46.6\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"104\" text-anchor=\"middle\">O</text><text x=\"55.6\" y=\"114\" text-anchor=\"middle\">I</text><text x=\"125\" y=\"185.4\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le sommet C"
+        },
+        {
+          "id": "b",
+          "text": "Le sommet D"
+        },
+        {
+          "id": "c",
+          "text": "Le centre O"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu J"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le centre Ω de f est son unique point fixe : il vérifie ΩB = √2·ΩA et (ΩA⃗, ΩB⃗) ≡ π/4, et de même ΩO = √2·ΩI. Pour Ω = D : DA = a, DB = a√2 donc DB = √2·DA ; DI = a/2, DO = a√2/2 donc DO = √2·DI ; et (DA⃗, DB⃗) = +π/4 car DB est la diagonale du carré issue de D (angle de π/4 avec le côté DA, dans le sens direct). Les deux couples (A, B) et (I, O) satisfont donc les conditions : le centre est D. Pour C, en revanche, CB = a et CA = a√2, ce qui donne le rapport √2/2 et non √2. Vérification : f(D) = D, car D reste fixe puisque DD = 0 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. La droite (CJ) recoupe (C) en E, et H est le projeté orthogonal de B sur (AE). Quelle chaîne d'arguments établit que E est le milieu de [AH] ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AE) ⊥ (CE) car [BD] est un diamètre de (C) ; (BH) ⊥ (AE) donc (BH) ∥ (JE) ; J milieu de [AB] donne E milieu de [AH]"
+        },
+        {
+          "id": "b",
+          "text": "(AE) ⊥ (CE) car [BD] est un diamètre de (C) ; (BH) ⊥ (AE) donc (BH) ∥ (JE) ; O milieu de [AC] donne E milieu de [AH]"
+        },
+        {
+          "id": "c",
+          "text": "(AE) ⊥ (CE) car [AC] est un diamètre de (C) ; (BH) ⊥ (AE) donc (BH) ∥ (JE) ; J milieu de [AB] donne E milieu de [AH]"
+        },
+        {
+          "id": "d",
+          "text": "(AE) ⊥ (CE) car [AC] est un diamètre de (C) ; (BH) ⊥ (AE) donc (BH) ∥ (JE) ; O milieu de [AC] donne E milieu de [AH]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un angle inscrit qui intercepte un diamètre est droit : E étant sur (C) et [AC] un diamètre, le triangle AEC est rectangle en E, donc (AE) ⊥ (EC) = (CJ). Comme (BH) ⊥ (AE) aussi, (BH) ∥ (CJ) = (JE). Dans le triangle ABH, la parallèle à (BH) menée par J, milieu de [AB], coupe [AH] en son milieu : c'est E (réciproque de la droite des milieux). Le diamètre qui compte est celui dont E et A sont deux extrémités du triangle rectangle, soit [AC] ; [BD] ne donnerait pas d'angle droit en E dans le triangle AEC. Quant à O, il ne se trouve pas sur la droite (JE), il ne peut donc pas servir de milieu dans le triangle ABH. Vérification : E appartient bien à [AH] et la parallèle (JE) passe par J ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. E est le milieu de [AH], où H est le projeté orthogonal de B sur la droite (AE). Quelle égalité vérifie le produit scalaire EA⃗·EB⃗ ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "EA⃗·EB⃗ = 0"
+        },
+        {
+          "id": "b",
+          "text": "EA⃗·EB⃗ = EA²"
+        },
+        {
+          "id": "c",
+          "text": "EA⃗·EB⃗ = −2EA²"
+        },
+        {
+          "id": "d",
+          "text": "EA⃗·EB⃗ = −EA²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour un projeté orthogonal, EA⃗·EB⃗ = EA⃗·EH⃗ : seule la composante de EB⃗ le long de (AE) intervient, et c'est EH⃗. Or E est le milieu de [AH], donc EH⃗ = −EA⃗, d'où EA⃗·EB⃗ = EA⃗·(−EA⃗) = −EA². Garder EH⃗ = EA⃗ donnerait +EA² (oubli de l'orientation) ; confondre EH avec AH donnerait −2EA² ; l'annulation du produit exigerait que (EB) soit perpendiculaire à (EA), ce qui n'est pas le cas puisque H est distinct de E. Vérification : EA⃗·EB⃗ est négatif car les vecteurs forment un angle obtus ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. E est un point du cercle (C) situé sur l'arc [AB] qui ne contient ni C ni D. Quel coefficient k vérifie EA⃗·EB⃗ = k·EA·EB ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "k = −√2/2"
+        },
+        {
+          "id": "b",
+          "text": "k = −√3/2"
+        },
+        {
+          "id": "c",
+          "text": "k = 0",
+          "misconceptionTag": "math.geo.angle-inscrit-egal-au-centre"
+        },
+        {
+          "id": "d",
+          "text": "k = √2/2",
+          "misconceptionTag": "math.geo.angle-inscrit-arc-oppose-ignore"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "EA⃗·EB⃗ = EA·EB·cos(AEB), donc k = cos(AEB). L'angle au centre AOB vaut π/2 (le carré est inscrit, [AB] est un côté) ; E est du côté du petit arc AB, donc l'angle inscrit AEB vaut π − π/4 = 3π/4 et non π/4 (sommet sur le petit arc : on prend le supplémentaire de la moitié). Ainsi k = cos(3π/4) = −√2/2. Garder la moitié π/4 donnerait √2/2 ; garder l'angle au centre π/2 donnerait 0. Vérification : le signe négatif est cohérent avec un angle AEB obtus ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. On sait que EA⃗·EB⃗ = −EA² et que EA⃗·EB⃗ = −(√2/2)·EA·EB. La similitude indirecte g de centre E envoie B sur A. Quel est son rapport ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/2"
+        },
+        {
+          "id": "b",
+          "text": "√2"
+        },
+        {
+          "id": "c",
+          "text": "√3/2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme g(E) = E et g(B) = A, le rapport vaut k = EA/EB. En égalant les deux expressions du produit scalaire : EA² = (√2/2)·EA·EB, donc EA = (√2/2)·EB (EA ≠ 0) et k = EA/EB = √2/2. Le quotient inverse EB/EA = √2 est le rapport de g⁻¹, pas de g ; √3/2 est le cosinus d'un autre angle (π/6) pris pour le rapport, et 2 vaut 1/k², l'inverse du carré du rapport. Vérification : k < 1 car A est plus proche de E que B ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. g est la similitude indirecte de centre E, de rapport k, qui envoie B sur A ; on pose O′ = g(O). Quel argument établit que le triangle O′EA est isocèle ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "O′ est le symétrique de O par rapport à (EA), donc O′E = OE et O′A = OA"
+        },
+        {
+          "id": "b",
+          "text": "O′E = k·OE et O′A = k·OB, avec OE = OB (rayons de (C))"
+        },
+        {
+          "id": "c",
+          "text": "g conserve les longueurs : O′E = OE et O′A = OA, avec OE = OA (rayons de (C))"
+        },
+        {
+          "id": "d",
+          "text": "g renverse les angles orientés, donc l'angle en O′ est égal à l'angle en O"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g envoie E sur E, B sur A et O sur O′ : le triangle EBO a pour image le triangle EAO′ dans le rapport k. Donc O′E = k·OE et O′A = k·OB. Comme E et B sont sur (C), OE = OB, et ainsi O′E = O′A : le triangle O′EA est isocèle en O′. Une similitude de rapport différent de 1 ne conserve pas les longueurs (le rapport est √2/2 ici), et ce n'est pas non plus une symétrie orthogonale par rapport à (EA). Vérification : les deux côtés O′E et O′A se déduisent des rayons OE et OB multipliés par le même facteur k ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. Avec les mêmes notations, g(O) = O′ et g est de rapport √2/2. Que vaut le quotient O′A/AI ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "√2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "O′A = k·OB avec k = √2/2. Si a désigne le côté du carré, OB = a√2/2, donc O′A = (√2/2)(a√2/2) = a/2. Or AI = a/2 (I est le milieu de [AD]), donc O′A = AI et le quotient vaut 1. Prendre OB = a donnerait O′A = a√2/2, soit un quotient √2 ; utiliser le rapport √2 au lieu de √2/2 donnerait un quotient 2. Vérification : (√2/2)·(√2/2) = 2/4 = 1/2, d'où O′A = a/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. f est la similitude directe de rapport √2 qui envoie A sur B et I sur O ; g est la similitude indirecte de rapport √2/2 qui envoie B sur A ; S = g∘f. Quelle est la nature de S ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une rotation de centre A"
+        },
+        {
+          "id": "b",
+          "text": "Une symétrie glissante"
+        },
+        {
+          "id": "c",
+          "text": "Une symétrie orthogonale"
+        },
+        {
+          "id": "d",
+          "text": "Une translation"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rapport de S est √2 × √2/2 = 1 : S est une isométrie. f est directe et g indirecte, donc S est indirecte, c'est-à-dire un antidéplacement. Enfin S(A) = g(f(A)) = g(B) = A : S possède un point fixe. Une translation ou une rotation sont des déplacements, et une symétrie glissante de vecteur non nul n'a aucun point fixe : S est donc une symétrie orthogonale, dont l'axe passe par A. Vérification : S∘S = id pour une symétrie orthogonale, ce qui est cohérent avec k = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un carré inscrit dans le cercle (C) de centre O, avec (AB⃗, AD⃗) ≡ π/2 [2π] ; I et J sont les milieux respectifs de [AD] et de [AB]. S = g∘f est une symétrie orthogonale. On a S(A) = A, S(I) = O′ et AI = AO′. Quel est l'axe de S ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"99.9\" r=\"73.9\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M72.7 152.2 L177.3 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M177.3 47.7 L72.7 47.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 47.7 L72.7 152.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M72.7 152.2 L177.3 47.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 47.7 L114.5 173.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M72.7 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M177.3 152.2 L156.4 194\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"72.7\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"177.3\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"72.7\" cy=\"47.7\" r=\"3.6\"/><circle cx=\"125\" cy=\"99.9\" r=\"3.6\"/><circle cx=\"125\" cy=\"152.2\" r=\"3.6\"/><circle cx=\"114.5\" cy=\"173.1\" r=\"3.6\"/><circle cx=\"156.4\" cy=\"194\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"63.7\" y=\"148.2\" text-anchor=\"middle\">A</text><text x=\"188.3\" y=\"158.2\" text-anchor=\"middle\">B</text><text x=\"187.3\" y=\"43.7\" text-anchor=\"middle\">C</text><text x=\"63.7\" y=\"43.7\" text-anchor=\"middle\">D</text><text x=\"135\" y=\"93.9\" text-anchor=\"middle\">O</text><text x=\"119\" y=\"144.2\" text-anchor=\"middle\">J</text><text x=\"102.5\" y=\"179.1\" text-anchor=\"middle\">E</text><text x=\"168.4\" y=\"206\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (AO′) passant par A"
+        },
+        {
+          "id": "b",
+          "text": "La droite (AE) passant par E"
+        },
+        {
+          "id": "c",
+          "text": "La droite (IO′) elle-même"
+        },
+        {
+          "id": "d",
+          "text": "La médiatrice de [IO′]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'axe d'une symétrie orthogonale est la médiatrice de tout segment [MM′] joignant un point M à son image M′ distincts. Ici S(I) = O′ et I ≠ O′, donc l'axe est la médiatrice de [IO′] ; elle passe par A puisque AI = AO′ (A est fixe, donc sur l'axe). La droite (IO′) est au contraire perpendiculaire à l'axe, et la symétrie d'axe (AO′) fixerait O′ au lieu de l'envoyer sur I. Vérification : un point de l'axe est équidistant de I et O′, et A l'est ✓.",
+      "difficulty": 3
+    }
+  ]
+}

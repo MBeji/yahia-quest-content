@@ -1,0 +1,322 @@
+{
+  "title": "🏛️ Bac 2023 · session principale · Exercice 4 ⭐⭐⭐⭐ : fonction √x(1 − ln x), tangente et position, intégrales à bornes variables, suites de sommes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = √x (1 − ln x) pour x > 0 et f(0) = 0. Quelles sont les limites en 0⁺ de f(x) et du taux d'accroissement (f(x) − f(0))/x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → 0 et (f(x) − f(0))/x → 0"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → 0 et (f(x) − f(0))/x → +∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → +∞ et (f(x) − f(0))/x → +∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et (f(x) − f(0))/x → 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit f(x) = √x − √x ln x. Le premier terme tend vers 0 ; le second, √x ln x, est une forme indéterminée 0 × (−∞) levée par les croissances comparées (xᵃ ln x → 0 pour a > 0). Donc f(x) → 0 = f(0) : f est continue à droite en 0. Pour x > 0, (f(x) − f(0))/x = (1 − ln x)/√x : le numérateur tend vers +∞ et le dénominateur vers 0⁺, donc le quotient tend vers +∞ ✓. La courbe a en O une demi-tangente verticale, et elle monte (f(x) > 0 près de 0). Piège classique : traiter 0 × ∞ comme ∞, croire que la limite finie f(0) = 0 impose une tangente horizontale, ou perdre le signe de −ln x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √x (1 − ln x). Quelles sont les limites en +∞ de f(x) et de f(x)/x, et quelle branche infinie en résulte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → −∞ et f(x)/x → 0 : branche parabolique de direction (Ox)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → −∞ et f(x)/x → −∞ : branche parabolique de direction (Oy)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → +∞ et f(x)/x → 0 : branche parabolique de direction (Ox)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et f(x)/x → −∞ : branche parabolique de direction (Oy)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand x → +∞, √x → +∞ et 1 − ln x → −∞ : le produit tend vers −∞. De plus f(x)/x = (1 − ln x)/√x = 1/√x − (ln x)/√x tend vers 0 par croissances comparées. Limite infinie et pente nulle : branche parabolique de direction l'axe (Ox) ✓. Piège classique : se tromper de signe du facteur 1 − ln x (négatif pour x > e), ou croire que f(x)/x tend aussi vers −∞ sans comparer √x à ln x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √x (1 − ln x) pour x > 0. Quelle est l'expression de f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 − ln x)/(2√x)"
+        },
+        {
+          "id": "b",
+          "text": "−(1 + ln x)/(2√x)"
+        },
+        {
+          "id": "c",
+          "text": "−(1 + ln x)/√x"
+        },
+        {
+          "id": "d",
+          "text": "(1 − ln x)/(2√x) − 1/x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive le produit √x × (1 − ln x) : (1/(2√x))(1 − ln x) + √x × (−1/x) = (1 − ln x)/(2√x) − 1/√x = (1 − ln x − 2)/(2√x) = −(1 + ln x)/(2√x) ✓. Piège classique : oublier le second terme du produit (on garde (1 − ln x)/(2√x)), perdre le facteur 2 du dénominateur, ou oublier que √x × (1/x) vaut 1/√x et non 1/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √x (1 − ln x), f(0) = 0, avec f′(x) = −(1 + ln x)/(2√x) et lim₊∞ f = −∞. Quel est le tableau de variation de f sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f décroît sur [0 ; 1/e] jusqu'au minimum f(1/e) = 2/√e, puis croît"
+        },
+        {
+          "id": "b",
+          "text": "f croît sur [0 ; 1/e] de 0 au maximum f(1/e) = 1/√e, puis décroît vers −∞"
+        },
+        {
+          "id": "c",
+          "text": "f croît sur [0 ; 1/e] de 0 au maximum f(1/e) = 2/√e, puis décroît vers −∞"
+        },
+        {
+          "id": "d",
+          "text": "f croît sur [0 ; 1] de 0 au maximum f(1) = 1, puis décroît vers −∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′(x) est du signe de −(1 + ln x) : positive si ln x < −1, c'est-à-dire x < 1/e, négative ensuite. Le maximum est f(1/e) = √(1/e) × (1 − ln(1/e)) = (1/√e) × 2 = 2/√e ✓ ; f(0) = 0 et f(x) → −∞ en +∞ (f s'annule en x = e). Piège classique : lire le signe de f′ sans le moins, oublier que ln(1/e) = −1 (donc 1 − ln(1/e) = 2), ou placer le maximum en 1 où ln s'annule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √x (1 − ln x), de maximum f(1/e) = 2/√e. Que représente le point K(1/e ; 2/√e) pour la courbe ξ de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point de ξ d'abscisse 1/e, où la tangente a pour coefficient directeur 2/√e"
+        },
+        {
+          "id": "b",
+          "text": "Le point d'inflexion de ξ, où la courbe traverse sa tangente"
+        },
+        {
+          "id": "c",
+          "text": "Le point où ξ coupe l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "Le point de ξ d'abscisse 1/e, où la tangente est horizontale"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(1/e) = 2/√e, donc K est bien sur ξ, et il correspond au maximum de f : f′(1/e) = −(1 + ln(1/e))/(2√(1/e)) = 0, donc la tangente en K est horizontale ✓. La courbe coupe l'axe des abscisses en I(e ; 0) (1 − ln x = 0), pas en K, et le point d'inflexion est d'abscisse e. Piège classique : confondre un extremum (f′ = 0) avec un zéro de f ou avec un point d'inflexion (f″ = 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √x (1 − ln x), de dérivée f′(x) = −(1 + ln x)/(2√x), et I(e ; 0) le point de la courbe d'abscisse e. Quelle est l'équation de la tangente T à la courbe en I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = −(1/√e)(x − e)"
+        },
+        {
+          "id": "b",
+          "text": "y = (1/√e)(x − e)"
+        },
+        {
+          "id": "c",
+          "text": "y = −(1/(2√e))(x − e)"
+        },
+        {
+          "id": "d",
+          "text": "y = −(1/√e)(x + e)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(e) = √e(1 − 1) = 0. Le coefficient directeur est f′(e) = −(1 + ln e)/(2√e) = −2/(2√e) = −1/√e. La tangente est y = f′(e)(x − e) + f(e) = −(1/√e)(x − e) ✓. Piège classique : se tromper de signe de f′(e), oublier que 1 + ln e vaut 2 (on divise 1 par 2√e), ou écrire x + e à la place de x − e.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit T la tangente à la courbe de f(x) = √x (1 − ln x) au point I(e ; 0), d'équation y = −(1/√e)(x − e). La dérivée f′ est décroissante sur ]0 ; e], croissante sur [e ; +∞[, avec pour minimum f′(e) = −1/√e. Quelle justification établit que f(x) ≥ −(1/√e)(x − e) si et seulement si x ≥ e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) ≥ −1/√e donc f(x) ≥ T(x) pour tout x > 0, sans regarder la valeur en e"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) ≥ −1/√e donc f − T est croissante, nulle en e : f ≥ T si et seulement si x ≥ e"
+        },
+        {
+          "id": "c",
+          "text": "f est convexe sur ]0 ; +∞[, donc elle est au-dessus de toutes ses tangentes, en particulier de T"
+        },
+        {
+          "id": "d",
+          "text": "f′ est décroissante sur ]0 ; e], donc f est au-dessus de T sur ]0 ; e], et en dessous ensuite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Posons d(x) = f(x) − T(x). Sa dérivée est d′(x) = f′(x) + 1/√e ≥ 0, puisque −1/√e est le minimum de f′ : d est croissante. Comme d(e) = f(e) − 0 = 0, on a d(x) ≥ 0 si et seulement si x ≥ e ✓. Piège classique : conclure f ≥ T partout (il faut la valeur d(e) = 0 pour situer le signe), parler de convexité alors que f′ n'est pas croissante sur tout l'intervalle (f est concave sur ]0 ; e]), ou confondre le sens de variation de f′ avec la position de f.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, soit Gₙ(x) = ∫ de x à e de √t (1 − ln t)ⁿ dt et Hₙ(x) = ∫ de ln x à 1 de e^(3t/2)(1 − t)ⁿ dt pour x > 0. Comment établit-on que Gₙ = Hₙ ? (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e, et e^((3/2) ln x) = x√x pour x > 0)",
+      "options": [
+        {
+          "id": "a",
+          "text": "H′ₙ(x) = +√x(1 − ln x)ⁿ = G′ₙ(x), et Gₙ(e) = 0 = Hₙ(e) (signe + pour une borne inférieure)"
+        },
+        {
+          "id": "b",
+          "text": "H′ₙ(x) = −e^((3/2) ln x)(1 − ln x)ⁿ = −x√x(1 − ln x)ⁿ, qui diffère de G′ₙ(x)"
+        },
+        {
+          "id": "c",
+          "text": "H′ₙ(x) = −(1/x) e^((3/2) ln x)(1 − ln x)ⁿ = −√x(1 − ln x)ⁿ = G′ₙ(x), et Gₙ(e) = Hₙ(e) = 0"
+        },
+        {
+          "id": "d",
+          "text": "Gₙ et Hₙ ont la même dérivée −√x(1 − ln x)ⁿ, donc elles sont égales"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "G′ₙ(x) = −√x(1 − ln x)ⁿ (la borne variable est la borne inférieure). Pour Hₙ, la borne inférieure est ln x : H′ₙ(x) = −(ln x)′ × e^((3/2) ln x)(1 − ln x)ⁿ = −(1/x) × x√x (1 − ln x)ⁿ = −√x(1 − ln x)ⁿ. Même dérivée, et Gₙ(e) = 0 (bornes égales), Hₙ(e) = ∫ de ln e = 1 à 1 = 0 : la constante est nulle, donc Gₙ = Hₙ ✓. Piège classique : oublier le signe moins d'une borne inférieure, oublier le facteur (ln x)′ = 1/x, ou conclure sans comparer les valeurs en un point.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose Uₙ = ∫ de 1 à e de √t (1 − ln t)ⁿ dt, soit Uₙ = Gₙ(1), avec Gₙ = Hₙ où Hₙ(x) = ∫ de ln x à 1 de e^(3t/2)(1 − t)ⁿ dt. Comment s'écrit Uₙ avec Hₙ ? (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uₙ = ∫ de 1 à e de e^(3t/2)(1 − t)ⁿ dt"
+        },
+        {
+          "id": "b",
+          "text": "Uₙ = ∫ de 0 à e de e^(3t/2)(1 − t)ⁿ dt"
+        },
+        {
+          "id": "c",
+          "text": "Uₙ = ∫ de 1 à 0 de e^(3t/2)(1 − t)ⁿ dt"
+        },
+        {
+          "id": "d",
+          "text": "Uₙ = ∫ de 0 à 1 de e^(3t/2)(1 − t)ⁿ dt"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Uₙ = Gₙ(1) = Hₙ(1) = ∫ de ln 1 à 1 de e^(3t/2)(1 − t)ⁿ dt, et ln 1 = 0 : Uₙ = ∫ de 0 à 1 de e^(3t/2)(1 − t)ⁿ dt ✓. Piège classique : recopier les bornes de Uₙ (1 et e) alors que le changement de variable t ↦ ln t les transforme en ln 1 = 0 et ln e = 1, mélanger l'ordre des bornes, ou prendre e comme borne.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, Uₙ = ∫ de 0 à 1 de e^(3t/2)(1 − t)ⁿ dt. Quel encadrement de Uₙ obtient-on et quelle est la limite de Uₙ ? (eᵗ désigne la fonction exponentielle t ↦ eᵗ, strictement positive, strictement croissante, égale à sa propre dérivée, avec e⁰ = 1 et e¹ = e ; e^(3/2) est sa valeur en 3/2)",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(n + 1) ≤ Uₙ ≤ e^(3/2)/(n + 1), car 1 ≤ e^(3t/2) ≤ e^(3/2) sur [0 ; 1] ; Uₙ tend vers 0"
+        },
+        {
+          "id": "b",
+          "text": "1/n ≤ Uₙ ≤ e^(3/2)/n, en prenant 1/n pour l'intégrale de (1 − t)ⁿ (comme pour tⁿ) ; Uₙ tend vers 0"
+        },
+        {
+          "id": "c",
+          "text": "e^(3/2)/(n + 1) ≤ Uₙ ≤ 1/(n + 1) ; Uₙ tend vers 0"
+        },
+        {
+          "id": "d",
+          "text": "1/(n + 1) ≤ Uₙ ≤ e^(3/2)/(n + 1) ; Uₙ tend vers e^(3/2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour t ∈ [0 ; 1], eᵗ est croissante donc 1 = e⁰ ≤ e^(3t/2) ≤ e^(3/2), et (1 − t)ⁿ ≥ 0. On intègre : ∫ de 0 à 1 de (1 − t)ⁿ dt = [−(1 − t)ⁿ⁺¹/(n + 1)] = 1/(n + 1), d'où 1/(n + 1) ≤ Uₙ ≤ e^(3/2)/(n + 1) ✓. Les deux bornes tendent vers 0 : Uₙ → 0. Piège classique : prendre 1/n pour l'intégrale (la primitive de (1 − t)ⁿ est −(1 − t)ⁿ⁺¹/(n + 1)), inverser minorant et majorant, ou confondre la limite avec la constante e^(3/2) du majorant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour k ≥ 1, on pose Tₖ = Σ de n = 1 à k de 1/(n(n + 1)). Quelle écriture permet de calculer Tₖ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(n(n + 1)) = 1/n + 1/(n + 1), donc Tₖ = 1 + 1/(k + 1)"
+        },
+        {
+          "id": "b",
+          "text": "1/(n(n + 1)) = 1/n − 1/(n + 1), les termes se télescopent : Tₖ = 1 − 1/(k + 1)"
+        },
+        {
+          "id": "c",
+          "text": "1/(n(n + 1)) = 1/n − 1/(n + 1), les termes se télescopent : Tₖ = 1 − 1/k"
+        },
+        {
+          "id": "d",
+          "text": "1/(n(n + 1)) = 1/n − 1/(n + 1), les termes se télescopent : Tₖ = 1/(k(k + 1)), dernier terme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On vérifie que 1/n − 1/(n + 1) = ((n + 1) − n)/(n(n + 1)) = 1/(n(n + 1)). La somme de n = 1 à k devient (1 − 1/2) + (1/2 − 1/3) + … + (1/k − 1/(k + 1)) : tout se simplifie sauf le premier et le dernier terme, soit Tₖ = 1 − 1/(k + 1) ✓. Piège classique : décomposer avec un signe + (la somme ne se simplifie pas), ou compter un indice de trop ou de moins dans le terme restant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit Sₖ = Σ de n = 1 à k de Uₙ/n et Tₖ = Σ de n = 1 à k de 1/(n(n + 1)) = 1 − 1/(k + 1), avec Uₙ ≤ e^(3/2)/(n + 1). Quelle justification établit que Sₖ ≤ e^(3/2) pour tout k ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uₙ/n ≤ e^(3/2)/(n + 1), donc Sₖ ≤ e^(3/2) Σ 1/(n + 1), qui est toujours borné par e^(3/2)"
+        },
+        {
+          "id": "b",
+          "text": "Uₙ/n ≥ 1/(n(n + 1)), donc Sₖ ≥ Tₖ, d'où Sₖ ≤ e^(3/2)"
+        },
+        {
+          "id": "c",
+          "text": "Uₙ/n ≤ e^(3/2)/(n(n + 1)), donc Sₖ ≤ e^(3/2) Tₖ = e^(3/2)(1 − 1/(k + 1)) ≤ e^(3/2)"
+        },
+        {
+          "id": "d",
+          "text": "Uₙ/n ≤ e^(3/2)/n, donc Sₖ ≤ e^(3/2) Σ 1/n ≤ e^(3/2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En divisant Uₙ ≤ e^(3/2)/(n + 1) par n > 0 : Uₙ/n ≤ e^(3/2)/(n(n + 1)). En sommant de 1 à k : Sₖ ≤ e^(3/2) Tₖ = e^(3/2)(1 − 1/(k + 1)) < e^(3/2) ✓. Piège classique : oublier le facteur 1/n lors de la division (les sommes Σ 1/(n + 1) et Σ 1/n divergent et ne sont pas bornées), ou utiliser la minoration pour obtenir une majoration.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit Sₖ = Σ de n = 1 à k de Uₙ/n avec Uₙ > 0, Sₖ ≤ e^(3/2) pour tout k, et Uₙ ≥ 1/(n + 1) (donc Sₖ ≥ Tₖ = 1 − 1/(k + 1)). Que peut-on affirmer de la suite (Sₖ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(Sₖ) est majorée par e^(3/2), donc elle converge vers un réel a tel que a ≤ e^(3/2) (suite bornée)"
+        },
+        {
+          "id": "b",
+          "text": "(Sₖ) est croissante et minorée par Tₖ, donc elle converge vers un réel a tel que a ≥ 1"
+        },
+        {
+          "id": "c",
+          "text": "(Sₖ) est croissante et majorée par e^(3/2), donc elle converge vers a = e^(3/2)"
+        },
+        {
+          "id": "d",
+          "text": "(Sₖ) est croissante et majorée, donc elle converge vers un réel a tel que 1 ≤ a ≤ e^(3/2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sₖ₊₁ − Sₖ = Uₖ₊₁/(k + 1) > 0 : la suite est croissante. Majorée par e^(3/2), elle converge vers un réel a ≤ e^(3/2). Comme Sₖ ≥ Tₖ et Tₖ → 1, on a a ≥ 1. Donc 1 ≤ a ≤ e^(3/2) ✓. Piège classique : invoquer la majoration sans la monotonie (une suite majorée ne converge pas forcément), appliquer la minoration seule, ou croire que la limite égale la borne qui la majore.",
+      "difficulty": 3
+    }
+  ]
+}

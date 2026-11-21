@@ -1,0 +1,394 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : fonction x e^x et f = g − g², aire, intégrales de puissances et racine n-ième",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x e^x, de courbe 𝒞_g tracée ci-dessous. Quel est le tableau de signe de la dérivée g′ ?\n<svg viewBox=\"0 0 260 190\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"9\"><line x1=\"28\" y1=\"142.3\" x2=\"252\" y2=\"142.3\" stroke=\"#1f2937\" stroke-width=\"1\"/><line x1=\"203.7\" y1=\"170\" x2=\"203.7\" y2=\"8\" stroke=\"#1f2937\" stroke-width=\"1\"/><line x1=\"71.9\" y1=\"140.3\" x2=\"71.9\" y2=\"144.3\" stroke=\"#1f2937\"/><text x=\"71.9\" y=\"153.3\" text-anchor=\"middle\" fill=\"#1f2937\">−3</text><line x1=\"115.8\" y1=\"140.3\" x2=\"115.8\" y2=\"144.3\" stroke=\"#1f2937\"/><text x=\"115.8\" y=\"153.3\" text-anchor=\"middle\" fill=\"#1f2937\">−2</text><line x1=\"159.8\" y1=\"140.3\" x2=\"159.8\" y2=\"144.3\" stroke=\"#1f2937\"/><text x=\"159.8\" y=\"153.3\" text-anchor=\"middle\" fill=\"#1f2937\">−1</text><line x1=\"247.6\" y1=\"140.3\" x2=\"247.6\" y2=\"144.3\" stroke=\"#1f2937\"/><text x=\"247.6\" y=\"153.3\" text-anchor=\"middle\" fill=\"#1f2937\">1</text><line x1=\"201.7\" y1=\"102.8\" x2=\"205.7\" y2=\"102.8\" stroke=\"#1f2937\"/><text x=\"199.7\" y=\"105.8\" text-anchor=\"end\" fill=\"#1f2937\">1</text><line x1=\"201.7\" y1=\"63.3\" x2=\"205.7\" y2=\"63.3\" stroke=\"#1f2937\"/><text x=\"199.7\" y=\"66.3\" text-anchor=\"end\" fill=\"#1f2937\">2</text><line x1=\"201.7\" y1=\"23.8\" x2=\"205.7\" y2=\"23.8\" stroke=\"#1f2937\"/><text x=\"199.7\" y=\"26.8\" text-anchor=\"end\" fill=\"#1f2937\">3</text><polyline points=\"28.0,145.2 29.4,145.3 30.8,145.4 32.2,145.5 33.6,145.5 35.0,145.6 36.4,145.7 37.8,145.8 39.2,145.8 40.6,145.9 42.0,146.0 43.4,146.1 44.8,146.2 46.2,146.3 47.6,146.4 49.0,146.5 50.4,146.5 51.8,146.6 53.2,146.7 54.6,146.8 56.0,146.9 57.4,147.0 58.8,147.2 60.2,147.3 61.6,147.4 63.0,147.5 64.4,147.6 65.8,147.7 67.2,147.8 68.6,148.0 70.0,148.1 71.4,148.2 72.8,148.3 74.2,148.4 75.6,148.6 77.0,148.7 78.4,148.8 79.8,149.0 81.2,149.1 82.6,149.3 84.0,149.4 85.4,149.5 86.8,149.7 88.2,149.8 89.6,150.0 91.0,150.1 92.4,150.3 93.8,150.4 95.2,150.6 96.6,150.8 98.0,150.9 99.4,151.1 100.8,151.2 102.2,151.4 103.6,151.6 105.0,151.7 106.4,151.9 107.8,152.1 109.2,152.2 110.6,152.4 112.0,152.6 113.4,152.7 114.8,152.9 116.2,153.1 117.6,153.3 119.0,153.4 120.4,153.6 121.8,153.8 123.2,153.9 124.6,154.1 126.0,154.3 127.4,154.4 128.8,154.6 130.2,154.7 131.6,154.9 133.0,155.1 134.4,155.2 135.8,155.4 137.2,155.5 138.6,155.6 140.0,155.8 141.4,155.9 142.8,156.0 144.2,156.2 145.6,156.3 147.0,156.4 148.4,156.5 149.8,156.6 151.2,156.6 152.6,156.7 154.0,156.8 155.4,156.8 156.8,156.8 158.2,156.9 159.6,156.9 161.0,156.9 162.4,156.8 163.8,156.8 165.2,156.8 166.6,156.7 168.0,156.6 169.4,156.5 170.8,156.3 172.2,156.2 173.6,156.0 175.0,155.8 176.4,155.5 177.8,155.3 179.2,155.0 180.6,154.6 182.0,154.2 183.4,153.8 184.8,153.4 186.2,152.9 187.6,152.4 189.0,151.8 190.4,151.2 191.8,150.5 193.2,149.8 194.6,149.0 196.0,148.1 197.4,147.2 198.8,146.3 200.2,145.2 201.6,144.1 203.0,142.9 204.4,141.7 205.8,140.3 207.2,138.9 208.6,137.4 210.0,135.8 211.4,134.1 212.8,132.3 214.2,130.3 215.6,128.3 217.0,126.1 218.4,123.8 219.8,121.4 221.2,118.9 222.6,116.2 224.0,113.3 225.4,110.3 226.8,107.1 228.2,103.8 229.6,100.3 231.0,96.6 232.4,92.7 233.8,88.6 235.2,84.2 236.6,79.7 238.0,74.9 239.4,69.9 240.8,64.6 242.2,59.1 243.6,53.2 245.0,47.1 246.4,40.7 247.8,34.0 249.2,26.9 250.6,19.5 252.0,11.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"1.8\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) > 0 sur ]−∞ ; −1[, g′(−1) = 0 et g′(x) < 0 sur ]−1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "g′(x) < 0 sur ]−∞ ; 0[, g′(0) = 0 et g′(x) > 0 sur ]0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "g′(x) < 0 sur ]−∞ ; −1[, g′(−1) = 0 et g′(x) > 0 sur ]−1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "g′(x) > 0 sur ℝ tout entier, car g est croissante sur ℝ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le sens de variation se lit sur la courbe : g décroît tant que la courbe descend, jusqu'à son point le plus bas d'abscisse −1, puis elle remonte. Donc g′ < 0 avant −1, g′(−1) = 0 et g′ > 0 après ✓. On le confirme par le calcul : g′(x) = e^x + x e^x = (1 + x)e^x, du signe de 1 + x. Piège classique : lire le signe de g′ à l'envers, confondre le point où la courbe passe par l'origine (g(0) = 0) avec celui où elle change de sens de variation, ou croire que g est croissante parce qu'elle l'est sur la partie droite du graphique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x e^x. Soit α et β les réels tels que g(α) = 1 et g(β) = 1/2. On sait que g décroît sur ]−∞ ; −1] (en restant négative, car g(x) = x e^x < 0 pour x < 0) puis croît sur [−1 ; +∞[. Résoudre dans ℝ les inéquations g(x) < 1/2 et g(x) < 1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) < 1/2 ⟺ x < β et g(x) < 1 ⟺ x < α"
+        },
+        {
+          "id": "b",
+          "text": "g(x) < 1/2 ⟺ x > β et g(x) < 1 ⟺ x > α"
+        },
+        {
+          "id": "c",
+          "text": "g(x) < 1/2 ⟺ −1 < x < β et g(x) < 1 ⟺ −1 < x < α"
+        },
+        {
+          "id": "d",
+          "text": "g(x) < 1/2 ⟺ x < α et g(x) < 1 ⟺ x < β"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur ]−∞ ; 0], g est négative, donc g(x) < 1/2 et g(x) < 1 y sont vraies. Sur [−1 ; +∞[, g est continue, strictement croissante, avec g(β) = 1/2 et g(α) = 1 : alors g(x) < 1/2 ⟺ x < β, et g(x) < 1 ⟺ x < α. Les solutions sont donc ]−∞ ; β[ et ]−∞ ; α[ ✓. Comme 1/2 < 1, on a β < α. Piège classique : oublier la branche décroissante où g est négative (on borne alors l'ensemble à gauche par −1), inverser le sens de l'inégalité, ou échanger α et β.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x e^x. Soit α et β les réels tels que g(α) = 1 et g(β) = 1/2. On sait que g est strictement croissante sur [−1 ; +∞[. Quelle justification établit que α > 1/2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(1/2) = √e/2 < 1 = g(α), et g est croissante sur ℝ tout entier : donc 1/2 < α"
+        },
+        {
+          "id": "b",
+          "text": "g(1/2) = √e > 1 = g(α), et g est strictement croissante sur [−1 ; +∞[ : donc α < 1/2"
+        },
+        {
+          "id": "c",
+          "text": "g(1/2) = √e/2 > 1/2 = g(β), et g est strictement croissante sur [−1 ; +∞[ : donc α > 1/2"
+        },
+        {
+          "id": "d",
+          "text": "g(1/2) = √e/2 < 1 = g(α), et g est strictement croissante sur [−1 ; +∞[ : donc 1/2 < α"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a g(1/2) = (1/2)e^(1/2) = √e/2, et comme e < 4, √e < 2 donc g(1/2) < 1 = g(α). Comme 1/2 et α sont dans [−1 ; +∞[ où g est strictement croissante, g(1/2) < g(α) entraîne 1/2 < α ✓. Piège classique : oublier le facteur 1/2 de x dans g(1/2) (on trouve √e > 1), appliquer la croissance sur ℝ tout entier (g décroît avant −1), ou comparer avec g(β) au lieu de g(α).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = x e^x et f = g − g² sur ℝ. On a g(α) = 1 et g(β) = 1/2. Quelles sont les valeurs de f(α) et f(β) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(α) = 0 et f(β) = 1/2"
+        },
+        {
+          "id": "b",
+          "text": "f(α) = 0 et f(β) = 1/4"
+        },
+        {
+          "id": "c",
+          "text": "f(α) = 1 et f(β) = 1/2"
+        },
+        {
+          "id": "d",
+          "text": "f(α) = 0 et f(β) = 3/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(α) = g(α) − g(α)² = 1 − 1 = 0, et f(β) = g(β) − g(β)² = 1/2 − 1/4 = 1/4 ✓. Piège classique : oublier de retrancher le carré (on retrouve f = g), ou additionner 1/2 et 1/4 au lieu de les soustraire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f = g − g² avec g(x) = x e^x. Quelle est la limite de f en −∞, et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞ : la courbe de f n'a pas d'asymptote en −∞"
+        },
+        {
+          "id": "b",
+          "text": "0 : mais la courbe de f n'a pas d'asymptote, car f ne s'annule qu'en α"
+        },
+        {
+          "id": "c",
+          "text": "−1/e − 1/e² : la droite horizontale d'ordonnée −1/e − 1/e² est asymptote"
+        },
+        {
+          "id": "d",
+          "text": "0 : l'axe des abscisses est asymptote à la courbe de f en −∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par croissances comparées, g(x) = x e^x tend vers 0 quand x → −∞ (l'exponentielle écrase x). Donc g(x)² → 0 et f(x) = g(x) − g(x)² → 0 ✓. Une limite finie ℓ en −∞ donne l'asymptote horizontale y = ℓ : ici l'axe des abscisses. Piège classique : traiter « −∞ × 0 » comme −∞, confondre la limite avec la valeur minimale de g (−1/e) ou croire qu'une asymptote ne peut pas être coupée : le fait que f s'annule en α n'empêche pas l'asymptote en −∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f = g − g² avec g(x) = x e^x. Que valent les limites de f(x) et de f(x)/x quand x tend vers +∞, et quelle est la branche infinie de la courbe de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ car g(x) → +∞, et f(x)/x → +∞ : branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → −∞ et f(x)/x → −∞ : branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → −∞ et f(x)/x → 0 : branche parabolique de direction l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → −∞ et f(x)/x → −1 : asymptote oblique de pente −1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On factorise f(x) = g(x)(1 − g(x)). Quand x → +∞, g(x) → +∞, donc 1 − g(x) → −∞ et le produit tend vers −∞. De plus f(x)/x = e^x(1 − g(x)) avec e^x → +∞ et 1 − g(x) → −∞ : le quotient tend vers −∞ ✓. La courbe s'éloigne plus vite que toute droite : branche parabolique de direction (Oy). Piège classique : croire que g domine g² (c'est l'inverse), ou croire que f(x)/x a une limite finie alors que le facteur e^x la rend infinie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f = g − g² avec g(x) = x e^x. Quelle est la dérivée de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = g′(x)(1 − g(x))"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = g′(x)(1 − 2g′(x))"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 2g′(x)(1/2 − g(x))"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 2g′(x)(1/2 + g(x))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive f = g − g² : (g²)′ = 2g g′, donc f′ = g′ − 2g g′ = g′(1 − 2g) = 2g′(1/2 − g) ✓. Piège classique : dériver g² en g g′ (oubli du facteur 2), en 2g′ (oubli du facteur g) ou changer le signe de g dans la factorisation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f = g − g² avec g(x) = x e^x, f′(x) = 2g′(x)(1/2 − g(x)), g décroissante sur ]−∞ ; −1] et croissante sur [−1 ; +∞[, g(x) < 1/2 ⟺ x < β. Quel est le tableau de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f décroît sur ]−∞ ; −1], croît sur [−1 ; β], puis décroît sur [β ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f croît sur ]−∞ ; −1], décroît sur [−1 ; β], puis croît sur [β ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f croît sur ]−∞ ; β] puis décroît sur [β ; +∞[, sans changement de sens en −1"
+        },
+        {
+          "id": "d",
+          "text": "f décroît sur ]−∞ ; −1], croît sur [−1 ; α], puis décroît sur [α ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le signe de f′ est celui du produit g′(x) × (1/2 − g(x)). Pour x < −1 : g′ < 0 et g < 0 donc 1/2 − g > 0, d'où f′ < 0. Pour −1 < x < β : g′ > 0 et g < 1/2 donc f′ > 0. Pour x > β : g′ > 0 et g > 1/2 donc f′ < 0 ✓. Ainsi f décroît, croît, puis décroît, avec les changements de sens en −1 et en β (maximum f(β) = 1/4). Piège classique : ne pas voir que g′ change de signe en −1 (le facteur 1/2 − g, lui, ne change pas de signe là), ou écrire α à la place de β (g(α) = 1 annule 1 − g, pas 1/2 − g).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f = g − g² avec g(x) = x e^x, de courbe 𝒞_f, et 𝒞_g la courbe de g. Sachant que g − f = g², l'aire 𝒜 du domaine limité par 𝒞_f, 𝒞_g et les droites x = 0 et x = α (avec g(α) = 1) est 𝒜 = ∫ de 0 à α de x²e^(2x) dx. Quelle expression obtient-on en intégrant par parties ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜 = 1/2 − ∫ de 0 à α de x e^(2x) dx"
+        },
+        {
+          "id": "b",
+          "text": "𝒜 = 1 − ∫ de 0 à α de x e^(2x) dx"
+        },
+        {
+          "id": "c",
+          "text": "𝒜 = 1/2 + ∫ de 0 à α de x e^(2x) dx"
+        },
+        {
+          "id": "d",
+          "text": "𝒜 = 1/2 − 2∫ de 0 à α de x e^(2x) dx"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose u(x) = x² et v′(x) = e^(2x), donc u′(x) = 2x et v(x) = e^(2x)/2. Alors ∫ de 0 à α de x²e^(2x) dx = [x²e^(2x)/2] entre 0 et α − ∫ de 0 à α de x e^(2x) dx. Le crochet vaut α²e^(2α)/2 = (αe^α)²/2 = g(α)²/2 = 1/2, d'où 𝒜 = 1/2 − ∫ de 0 à α de x e^(2x) dx ✓. Piège classique : oublier le /2 de la primitive de e^(2x) dans le crochet (on trouve 1), perdre le signe moins de l'intégration par parties, ou mal reporter le facteur 2 de u′ et du 1/2 de v.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α le réel tel que αe^α = 1, et 𝒜 = 1/2 − ∫ de 0 à α de x e^(2x) dx. On rappelle qu'une primitive de x e^(2x) est x e^(2x)/2 − e^(2x)/4. Quelle est la valeur de 𝒜 en fonction de α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜 = 1/2 − 1/(2α) + 1/(4α²)"
+        },
+        {
+          "id": "b",
+          "text": "𝒜 = −1/4 + 1/(4α)"
+        },
+        {
+          "id": "c",
+          "text": "𝒜 = 1/4 − 1/(2α) + 1/(4α²)"
+        },
+        {
+          "id": "d",
+          "text": "𝒜 = 1/4 + 1/(2α) − 1/(4α²)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "De αe^α = 1, on tire e^α = 1/α et e^(2α) = 1/α². Alors ∫ de 0 à α de x e^(2x) dx = [x e^(2x)/2 − e^(2x)/4] entre 0 et α = (α/(2α²) − 1/(4α²)) − (0 − 1/4) = 1/(2α) − 1/(4α²) + 1/4. Donc 𝒜 = 1/2 − 1/(2α) + 1/(4α²) − 1/4 = 1/4 − 1/(2α) + 1/(4α²) ✓. Piège classique : oublier la valeur de la primitive en 0, qui vaut −1/4 (et se retranche en +1/4), écrire e^(2α) = 1/α au lieu de 1/α², ou changer le signe de l'intégrale.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, soit J_n = ∫ de 0 à α de (g(x))^n dx avec g(x) = x e^x et αe^α = 1. Quelle justification donne 0 ≤ J_n ≤ α/(n + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur [0 ; α], 0 ≤ g(x) ≤ g(α) = 1, donc g(x)^n ≤ 1 et J_n ≤ α, ce qui donne bien la majoration annoncée"
+        },
+        {
+          "id": "b",
+          "text": "Sur [0 ; α], 0 ≤ e^x ≤ e^α = 1/α, donc 0 ≤ g(x) ≤ x/α et g(x)^n ≤ (x/α)^n, d'intégrale α/(n + 1)"
+        },
+        {
+          "id": "c",
+          "text": "Sur [0 ; α], e^x ≤ 1, donc g(x) ≤ x et g(x)^n ≤ x^n, d'intégrale α^(n + 1)/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "Sur [0 ; α], g(x)^n ≤ g(α)^n = 1, d'intégrale 1/(n + 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur [0 ; α], l'exponentielle est croissante : 1 ≤ e^x ≤ e^α = 1/α (car αe^α = 1). Donc 0 ≤ g(x) = x e^x ≤ x/α, puis 0 ≤ g(x)^n ≤ (x/α)^n. Par croissance de l'intégrale, 0 ≤ J_n ≤ ∫ de 0 à α de (x/α)^n dx = [x^(n + 1)/(α^n (n + 1))] entre 0 et α = α/(n + 1) ✓. Piège classique : majorer g par 1 (on obtient α, trop grossier), croire que e^x ≤ 1 sur [0 ; α] (c'est e^x ≥ 1 pour x ≥ 0) ou intégrer la constante 1 sur [0 ; α] en oubliant la longueur α.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, J_n = ∫ de 0 à α de g(x)^n dx. Que vaut lim J_n, sachant que l'on a établi 0 ≤ J_n ≤ α/(n + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J_n tend vers α, car g(α) = 1"
+        },
+        {
+          "id": "b",
+          "text": "J_n tend vers 1"
+        },
+        {
+          "id": "c",
+          "text": "J_n tend vers 1/2"
+        },
+        {
+          "id": "d",
+          "text": "J_n tend vers 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme α/(n + 1) → 0 quand n → +∞ et 0 ≤ J_n ≤ α/(n + 1), le théorème des gendarmes donne J_n → 0 ✓. Piège classique : se laisser guider par g(α) = 1 et croire que g^n reste proche de 1 : c'est seulement au voisinage immédiat de α, sur un intervalle de longueur qui tend vers 0, donc avec une contribution négligeable à l'intégrale.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit J_n = ∫ de 0 à α de g(x)^n dx pour n ≥ 2, avec g(x) = x e^x ≥ 0 sur [0 ; α] et α > 1/2. Pourquoi ∫ de α − 1/n à α de g(x)^n dx ≤ J_n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que g^n ≥ 0 sur [0 ; α] et que [α − 1/n ; α] ⊂ [0 ; α], puisque α < 1, sans condition sur n"
+        },
+        {
+          "id": "b",
+          "text": "Parce que g^n est croissante sur [0 ; α] et que l'intégrale d'une croissante est maximale sur le dernier intervalle"
+        },
+        {
+          "id": "c",
+          "text": "Parce que g^n ≥ 0 sur [0 ; α] et que [α − 1/n ; α] ⊂ [0 ; α], puisque α − 1/n > 0 pour n ≥ 2"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'intervalle [α − 1/n ; α] est plus court que [0 ; α], donc l'intégrale y est toujours plus petite, quel que soit le signe de g^n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour n ≥ 2, α − 1/n ≥ α − 1/2 > 0 car α > 1/2 : le segment [α − 1/n ; α] est inclus dans [0 ; α]. Comme g^n ≥ 0, la relation de Chasles donne J_n = ∫ de 0 à α − 1/n de g^n + ∫ de α − 1/n à α de g^n, et le premier terme est positif ✓. Piège classique : invoquer seulement la longueur de l'intervalle (sans la positivité, une intégrale plus courte pourrait être plus grande) ou oublier de vérifier que α − 1/n est bien positif, ce qui vient de α > 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = x e^x, strictement croissante et positive sur [0 ; α], avec g(α) = 1, et J_n = ∫ de 0 à α de g(x)^n dx pour n ≥ 2. Quelle minoration de J_n obtient-on avec l'intervalle [α − 1/n ; α] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J_n ≥ (1/n) g(α − 1/n)^n, car g(x) ≥ g(α − 1/n) sur un intervalle de longueur 1/n"
+        },
+        {
+          "id": "b",
+          "text": "J_n ≥ (1/n) g(α)^n = 1/n, car g(x) ≥ g(α) sur tout l'intervalle [α − 1/n ; α]"
+        },
+        {
+          "id": "c",
+          "text": "J_n ≥ (1/n) g(α − 1/n), car g(x)^n ≥ g(α − 1/n) sur [α − 1/n ; α]"
+        },
+        {
+          "id": "d",
+          "text": "J_n ≥ n g(α − 1/n)^n, car g(x) ≥ g(α − 1/n) sur un intervalle de longueur égale à n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g est croissante et positive : pour x ∈ [α − 1/n ; α], g(x) ≥ g(α − 1/n) ≥ 0, donc g(x)^n ≥ g(α − 1/n)^n. En intégrant sur un intervalle de longueur 1/n : ∫ de α − 1/n à α de g^n ≥ (1/n) g(α − 1/n)^n, et J_n ≥ cette quantité ✓. Piège classique : minorer par la valeur à droite g(α) (c'est le maximum de g sur l'intervalle), oublier l'exposant n ou prendre la longueur n au lieu de 1/n.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour minorer ⁿ√(J_n) par un quotient, on rencontre la suite des racines n-ièmes (ⁿ√n)_n, avec ⁿ√n = n^(1/n). Vers quoi tend ⁿ√n quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "e"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit ⁿ√n = n^(1/n) = e^((ln n)/n). Par croissances comparées, (ln n)/n → 0, donc ⁿ√n → e^0 = 1 ✓. Piège classique : conclure +∞ parce que n tend vers +∞ alors que l'exposant 1/n tend vers 0 (forme 1/∞ en exposant), ou confondre avec la limite de (1 + 1/n)^n qui vaut e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, J_n = ∫ de 0 à α de g(x)^n dx vérifie (1/n) g(α − 1/n)^n ≤ J_n ≤ 1, avec g continue, g(α) = 1, et ⁿ√n → 1. Que vaut la limite de ⁿ√(J_n) quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "α"
+        },
+        {
+          "id": "c",
+          "text": "1/e"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On prend la racine n-ième (croissante) de l'encadrement : g(α − 1/n)/ⁿ√n ≤ ⁿ√(J_n) ≤ 1. Quand n → +∞, α − 1/n → α et g est continue, donc g(α − 1/n) → g(α) = 1 ; avec ⁿ√n → 1, le membre de gauche tend vers 1/1 = 1. Le théorème des gendarmes donne ⁿ√(J_n) → 1 ✓. Piège classique : croire que ⁿ√(J_n) tend vers 0 parce que J_n tend vers 0 : une racine n-ième d'un nombre qui tend lentement vers 0 peut très bien tendre vers 1 (ici J_n ≥ (1/n)·(quelque chose proche de 1)^n, de l'ordre de 1/n).",
+      "difficulty": 3
+    }
+  ]
+}

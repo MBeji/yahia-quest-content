@@ -1,0 +1,370 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : fonction ln d'un quotient, bijection, tangente, intégrale à paramètre et limite d'une suite",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = ln(x²/(x + 1)). Quelle est la limite de f en 0⁺, et quelle interprétation graphique en donne-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : la droite d'équation x = 0 est asymptote verticale"
+        },
+        {
+          "id": "b",
+          "text": "−∞ : la droite d'équation x = 0 est asymptote verticale"
+        },
+        {
+          "id": "c",
+          "text": "0 : la courbe est prolongeable par continuité en O"
+        },
+        {
+          "id": "d",
+          "text": "−∞ : la droite d'équation y = 0 est asymptote horizontale"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand x → 0⁺, x²/(x + 1) → 0⁺ (numérateur 0, dénominateur 1). Comme ln t → −∞ quand t → 0⁺, f(x) → −∞. Une limite infinie en un réel fini 0 donne une asymptote verticale : la droite x = 0 ✓. Piège classique : se tromper de signe (ln d'un nombre proche de 0 est très négatif), croire que x² → 0 impose f(x) → 0, ou confondre asymptote verticale (limite infinie en un point) et horizontale (limite finie en l'infini).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = ln(x²/(x + 1)) sur ]0 ; +∞[. Quelle est la limite de f(x)/x quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour x > 0, f(x) = 2 ln x − ln(x + 1), donc f(x)/x = 2(ln x)/x − (ln(x + 1))/x. Les deux termes tendent vers 0 par croissances comparées, donc f(x)/x → 0 ✓ (alors que f(x) → +∞ : la courbe a une branche parabolique de direction (Ox)). Piège classique : remplacer x²/(x + 1) par x et oublier le ln (on trouve 1), conclure +∞ parce que f(x) → +∞, ou garder le coefficient 2 de 2 ln x sans diviser par x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = ln(x²/(x + 1)) sur ]0 ; +∞[. Quelle est l'expression de f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x² + 2x)/(x + 1)²"
+        },
+        {
+          "id": "b",
+          "text": "(3x + 2)/(x(x + 1))"
+        },
+        {
+          "id": "c",
+          "text": "1/x"
+        },
+        {
+          "id": "d",
+          "text": "(x + 2)/(x(x + 1))"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On écrit f(x) = 2 ln x − ln(x + 1) pour x > 0. Alors f′(x) = 2/x − 1/(x + 1) = (2(x + 1) − x)/(x(x + 1)) = (x + 2)/(x(x + 1)) ✓. Piège classique : ne dériver que le quotient u = x²/(x + 1) sans diviser par u (u′/u est la bonne dérivée de ln u), se tromper de signe sur ln(x + 1) (on trouve (3x + 2)/(x(x + 1))), ou dériver ln(x + 1) en 1/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = ln(x²/(x + 1)) sur ]0 ; +∞[, avec f′(x) = (x + 2)/(x(x + 1)), lim₀⁺ f = −∞ et lim₊∞ f = +∞. Que peut-on affirmer de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante et réalise une bijection de ]0 ; +∞[ sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement croissante et réalise une bijection de ]0 ; +∞[ sur ]0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante et réalise une bijection de ]0 ; +∞[ sur [ln(1/2) ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "f est décroissante sur ]0 ; 1], croissante sur [1 ; +∞[ : elle n'est pas bijective"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x > 0, x + 2 > 0, x > 0 et x + 1 > 0 : f′(x) > 0, donc f est continue et strictement croissante. Elle réalise alors une bijection de ]0 ; +∞[ sur l'intervalle image, dont les bornes sont les limites −∞ (en 0⁺) et +∞ (en +∞) : J = ℝ ✓. Piège classique : prendre ]0 ; +∞[ comme intervalle image (c'est l'ensemble de départ), le fermer en une valeur comme f(1) = ln(1/2) qui n'est pas une borne, ou chercher un changement de variation inexistant (f′ ne s'annule jamais).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit α la solution positive de l'équation x² = x + 1, soit α = (1 + √5)/2. Quelle est l'autre solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√5 − 1)/2, égale à 1/α car α × (√5 − 1)/2 = 1"
+        },
+        {
+          "id": "b",
+          "text": "(1 − √5)/2 = −1/α : le produit des solutions vaut −1"
+        },
+        {
+          "id": "c",
+          "text": "−(1 + √5)/2, égale à −α car les solutions sont opposées"
+        },
+        {
+          "id": "d",
+          "text": "(1 − √5)/4, car Δ = 5 et les solutions sont (1 ± √5)/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'équation x² − x − 1 = 0 a pour discriminant Δ = 1 + 4 = 5, donc ses solutions sont (1 ± √5)/2. L'autre solution est (1 − √5)/2. Le produit des deux solutions vaut c/a = −1, donc l'autre solution est −1/α ✓ : α × (1 − √5)/2 = (1 − 5)/4 = −1. Piège classique : prendre l'inverse 1/α au lieu de son opposé (le nombre (√5 − 1)/2 n'est pas solution : son carré (3 − √5)/2 est différent de x + 1), croire que les solutions sont opposées (leur somme vaut 1, pas 0), ou oublier le facteur 2 du dénominateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit α la solution positive de x² = x + 1 et f(x) = ln(x²/(x + 1)). Quelle justification montre que la courbe de f coupe l'axe des abscisses au point A d'abscisse α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α² = α + 1, donc f(α) = ln(α² − α − 1) = ln 0, qui est nul"
+        },
+        {
+          "id": "b",
+          "text": "α²/(α + 1) = α, donc f(α) = ln α = 0"
+        },
+        {
+          "id": "c",
+          "text": "α² = α + 1, donc α²/(α + 1) = 1 et f(α) = ln 1 = 0"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante et α est la solution positive, donc f(α) = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'égalité α² = α + 1 donne α²/(α + 1) = 1 (α + 1 ≠ 0). Donc f(α) = ln 1 = 0 : le point A(α ; 0) est sur la courbe ✓. Comme f est strictement croissante, A est même le seul point d'intersection avec l'axe des abscisses. Piège classique : transformer un quotient en différence sous le ln (ln 0 n'existe pas), simplifier α²/(α + 1) en α (faux), ou invoquer la croissance, qui ne dit pas que la valeur 0 est atteinte en α.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit α la solution positive de x² = x + 1 et f(x) = ln(x²/(x + 1)), avec f′(x) = (x + 2)/(x(x + 1)). Quel est le coefficient directeur de la tangente T à la courbe de f au point A(α ; 0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/α − 1/α³"
+        },
+        {
+          "id": "b",
+          "text": "1 + 1/α²"
+        },
+        {
+          "id": "c",
+          "text": "α + 2"
+        },
+        {
+          "id": "d",
+          "text": "1/α + 1/α³"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(α) = (α + 2)/(α(α + 1)). Comme α + 1 = α², le dénominateur vaut α × α² = α³. Comme α² = α + 1, on a α² + 1 = α + 2, donc f′(α) = (α² + 1)/α³ = 1/α + 1/α³ ✓. Piège classique : mal simplifier le dénominateur (α(α + 1) = α × α² = α³, pas α² : on trouve 1 + 1/α²), se tromper de signe en séparant (α² + 1)/α³, ou oublier le dénominateur et garder α + 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "T est la tangente en A(α ; 0) à la courbe de f, de coefficient directeur 1/α + 1/α³, donc d'équation y = (1/α + 1/α³)(x − α). Quelle est l'ordonnée du point B où T coupe l'axe des ordonnées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 − 1/α²"
+        },
+        {
+          "id": "b",
+          "text": "1 + 1/α²"
+        },
+        {
+          "id": "c",
+          "text": "−1/α − 1/α³"
+        },
+        {
+          "id": "d",
+          "text": "−1 − 1/α⁴"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En x = 0 : y = (1/α + 1/α³)(0 − α) = −α × (1/α) − α × (1/α³) = −1 − 1/α² ✓. Piège classique : oublier le facteur −α qui multiplie le coefficient directeur (on garde −1/α − 1/α³), se tromper de signe (1 + 1/α²), ou écrire α × 1/α³ = 1/α⁴ au lieu de 1/α².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé, on a tracé la droite D d'équation y = x + 2 et la parabole Γ d'équation y = x² + 1. Que représentent les abscisses de leurs points d'intersection, et comment en déduit-on le point A(α ; 0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ce sont les solutions de x² = x + 2 : A a pour abscisse celle du point d'intersection situé à droite de l'axe des ordonnées"
+        },
+        {
+          "id": "b",
+          "text": "Ce sont les solutions de x² = x + 1, soit α et −1/α : A a pour abscisse celle du point d'intersection de droite"
+        },
+        {
+          "id": "c",
+          "text": "Ce sont les solutions de x² = x + 1 : A est le point d'intersection de D et Γ situé à droite de l'axe des ordonnées"
+        },
+        {
+          "id": "d",
+          "text": "Ce sont les solutions de x² = x + 1 : A a pour ordonnée l'abscisse du point d'intersection situé à droite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les points communs vérifient x² + 1 = x + 2, c'est-à-dire x² = x + 1 : leurs abscisses sont les deux solutions α et −1/α. Le point A est sur l'axe des abscisses avec pour abscisse α : on projette sur l'axe (Ox) le point d'intersection de droite, d'abscisse α ✓. Ce point d'intersection lui-même n'est pas A, puisque son ordonnée vaut α + 2 ≠ 0. Piège classique : oublier le terme 1 de la parabole (x² = x + 2 a d'autres solutions), confondre le point d'intersection avec sa projection sur l'axe, ou reporter l'abscisse sur l'axe des ordonnées.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1 et x ≥ 1, on pose Gₙ(x) = ∫ de 1 à x de f(tⁿ) dt, avec f(s) = ln(s²/(s + 1)) strictement croissante sur ]0 ; +∞[ et f(1) = ln(1/2). Quel encadrement de Gₙ(x) est valable pour tout x ≥ 1, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(xⁿ)(x − 1) ≤ Gₙ(x) ≤ ln(1/2)(x − 1), car f est décroissante sur [1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "ln(1/2)(x − 1) ≤ Gₙ(x) ≤ f(x)(x − 1), car f(1) ≤ f(tⁿ) ≤ f(x) pour t ∈ [1 ; x]"
+        },
+        {
+          "id": "c",
+          "text": "ln(1/2)(x − 1) ≤ Gₙ(x) ≤ f(xⁿ)(x − 1), car f(1) ≤ f(tⁿ) ≤ f(xⁿ) sur [1 ; x]"
+        },
+        {
+          "id": "d",
+          "text": "ln(1/2) ≤ Gₙ(x) ≤ f(xⁿ), car f(1) ≤ f(tⁿ) ≤ f(xⁿ) pour t ∈ [1 ; x]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour t ∈ [1 ; x], on a 1 ≤ tⁿ ≤ xⁿ ; f étant croissante, f(1) ≤ f(tⁿ) ≤ f(xⁿ). On intègre cet encadrement sur [1 ; x], de longueur x − 1 : (x − 1) f(1) ≤ Gₙ(x) ≤ (x − 1) f(xⁿ), avec f(1) = ln(1/2) ✓. Piège classique : renverser les inégalités (f est croissante), majorer par f(x) alors que la variable de f est tⁿ (donc xⁿ), ou oublier la longueur x − 1 de l'intervalle d'intégration.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, f(s) = ln(s²/(s + 1)) a pour dérivée f′(s) = (s + 2)/(s(s + 1)). Dans l'intégration par parties de ∫ de 1 à x de f(tⁿ) dt, intervient t × (f(tⁿ))′ = t × n tⁿ⁻¹ f′(tⁿ). Que vaut cette expression ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n − n/(1 + tⁿ)"
+        },
+        {
+          "id": "b",
+          "text": "n/(1 + tⁿ)"
+        },
+        {
+          "id": "c",
+          "text": "n + 2n/(1 + tⁿ)"
+        },
+        {
+          "id": "d",
+          "text": "n + n/(1 + tⁿ)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a (f(tⁿ))′ = n tⁿ⁻¹ f′(tⁿ), donc t × n tⁿ⁻¹ f′(tⁿ) = n tⁿ f′(tⁿ) = n tⁿ (tⁿ + 2)/(tⁿ(tⁿ + 1)) = n(tⁿ + 2)/(tⁿ + 1) = n(1 + 1/(tⁿ + 1)) = n + n/(1 + tⁿ). L'intégration par parties donne alors Gₙ(x) = x f(xⁿ) − f(1) − n(x − 1) − ∫ de 1 à x de n/(1 + tⁿ) dt, avec f(1) = ln(1/2). Piège classique : écrire (s + 2)/(s + 1) = 1 − 1/(s + 1) (c'est 1 + 1/(s + 1)), oublier la partie entière 1, ou doubler le numérateur résiduel.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On fixe α = (1 + √5)/2, solution positive de x² = x + 1. Quelle est la limite de ⁿ√α quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1, car ln(ⁿ√α) = (ln α)/n tend vers 0"
+        },
+        {
+          "id": "b",
+          "text": "+∞, car α > 1 et on multiplie α par lui-même de plus en plus"
+        },
+        {
+          "id": "c",
+          "text": "α, car ⁿ√α est une racine de α"
+        },
+        {
+          "id": "d",
+          "text": "0, car l'exposant 1/n tend vers 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a ln(ⁿ√α) = (1/n) ln α → 0 quand n → +∞, donc ⁿ√α → 1 (ln est une bijection continue de ]0 ; +∞[ sur ℝ qui s'annule seulement en 1) ✓. Piège classique : croire que la racine n-ième d'un nombre plus grand que 1 grossit (elle se rapproche de 1), oublier qu'une racine n-ième tend vers α⁰ = 1 et non vers 0, ou la laisser égale à α.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour x = ⁿ√α, on a xⁿ = α avec f(α) = 0, et Gₙ(x) vérifie ln(1/2)(x − 1) ≤ Gₙ(x) ≤ f(xⁿ)(x − 1). Quelle est la limite de Gₙ(ⁿ√α) quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−ln 2, car la minorante de l'encadrement vaut ln(1/2) = −ln 2, quelle que soit la valeur de n"
+        },
+        {
+          "id": "b",
+          "text": "0 : Gₙ(ⁿ√α) est encadrée par ln(1/2)(ⁿ√α − 1), de limite 0, et par f(α)(ⁿ√α − 1) = 0"
+        },
+        {
+          "id": "c",
+          "text": "+∞, car f(xⁿ) tend vers +∞ quand n tend vers +∞ et multiplie le facteur (x − 1)"
+        },
+        {
+          "id": "d",
+          "text": "ln α, car ⁿ√α − 1 est équivalent à (ln α)/n, donc Gₙ(ⁿ√α) tend vers ln α"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec x = ⁿ√α, xⁿ = α et f(α) = 0 : la majorante f(α)(ⁿ√α − 1) est nulle. La minorante ln(1/2)(ⁿ√α − 1) tend vers 0 car ⁿ√α → 1. Le théorème des gendarmes donne lim Gₙ(ⁿ√α) = 0 ✓. Piège classique : oublier le facteur (x − 1) de l'encadrement (la minorante serait la constante −ln 2), croire que f(xⁿ) varie avec n (xⁿ vaut toujours α ici), ou confondre Gₙ(ⁿ√α) avec une quantité du type n(ⁿ√α − 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On fixe α = (1 + √5)/2 et on pose t = ⁿ√α, de sorte que ln t = (ln α)/n et t → 1. Quelle est la limite de (ⁿ√α − 1)/(1/n) = n(ⁿ√α − 1) quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "ln α"
+        },
+        {
+          "id": "d",
+          "text": "1/ln α"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit n(t − 1) = ln α × (t − 1)/ln t, car n = ln α/ln t. Quand t → 1, ln t/(t − 1) → 1 (c'est la dérivée de ln en 1, égale à 1), donc (t − 1)/ln t → 1 et n(ⁿ√α − 1) → ln α ✓. Piège classique : traiter la forme indéterminée n × 0 comme 0 ou comme 1, ou inverser le quotient et trouver 1/ln α.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour α = (1 + √5)/2 et Jₙ = n ∫ de 1 à ⁿ√α de 1/(1 + tⁿ) dt, la formule d'intégration par parties donne, en x = ⁿ√α et avec f(α) = 0, Jₙ = ln 2 − n(ⁿ√α − 1) − Gₙ(ⁿ√α). On sait que Gₙ(ⁿ√α) tend vers 0. Quelle est la limite de Jₙ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(2α)"
+        },
+        {
+          "id": "b",
+          "text": "ln(α/2)"
+        },
+        {
+          "id": "c",
+          "text": "ln 2"
+        },
+        {
+          "id": "d",
+          "text": "ln(2/α)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans Jₙ = ln 2 − n(ⁿ√α − 1) − Gₙ(ⁿ√α), le terme n(ⁿ√α − 1) tend vers ln α (dérivée de ln en 1 appliquée à t = ⁿ√α) et Gₙ(ⁿ√α) tend vers 0. Donc Jₙ → ln 2 − ln α = ln(2/α) ✓ (soit ln(√5 − 1) puisque 2/α = √5 − 1). Piège classique : se tromper de signe devant n(ⁿ√α − 1) (on trouve ln 2 + ln α), inverser le quotient, ou oublier de calculer la limite de ce terme et garder ln 2.",
+      "difficulty": 3
+    }
+  ]
+}

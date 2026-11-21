@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 1 ⭐⭐⭐ : carrés et puissances modulo 6, récurrence et système de congruences",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Soit a un entier relatif. Quels sont les restes possibles de a² dans la division par 6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0, 1 et 4"
+        },
+        {
+          "id": "b",
+          "text": "0, 1, 2, 3, 4 et 5"
+        },
+        {
+          "id": "c",
+          "text": "0, 1, 4 et 9"
+        },
+        {
+          "id": "d",
+          "text": "0, 1, 3 et 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On balaie les restes de a modulo 6, car a ≡ r (mod 6) entraîne a² ≡ r² (mod 6). Pour r = 0, 1, 2, 3, 4, 5 : r² = 0, 1, 4, 9, 16, 25, soit 0, 1, 4, 3, 4, 1 modulo 6 (9 = 6 + 3, 16 = 12 + 4, 25 = 24 + 1). Les restes possibles de a² sont donc 0, 1, 3 et 4 ✓. Piège classique : oublier le reste de 3² = 9 (qui est 3), ne pas réduire 9 modulo 6, ou croire que tous les restes sont possibles.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un entier relatif. Quelle démarche établit que a³ ≡ a (mod 6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a³ − a = (a − 1)a(a + 1) est un produit de trois entiers consécutifs, donc multiple de 2 et de 3, donc de 6"
+        },
+        {
+          "id": "b",
+          "text": "a³ − a = (a − 1)a(a + 1) est un produit de trois entiers consécutifs, donc multiple de 3, ce qui suffit à conclure"
+        },
+        {
+          "id": "c",
+          "text": "a³ − a = a(a − 1)(a + 1) est multiple de 6 parce que a est multiple de 6"
+        },
+        {
+          "id": "d",
+          "text": "Les restes de a² sont 0, 1, 3, 4 ; comme a³ = a × a², il suffit de vérifier a = 0 et a = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a a³ − a = a(a² − 1) = (a − 1)a(a + 1). Parmi trois entiers consécutifs, l'un au moins est pair et l'un exactement est multiple de 3 : le produit est multiple de 2 et de 3. Comme 2 et 3 n'ont aucun diviseur commun autre que 1, le produit est multiple de 6 : a³ ≡ a (mod 6) ✓. On peut aussi balayer les restes 0 à 5, dont les cubes sont 0, 1, 8, 27, 64, 125 ≡ 0, 1, 2, 3, 4, 5. Piège classique : s'arrêter à la divisibilité par 3 (il faut aussi 2), supposer que a est un multiple de 6, ou ne tester que deux restes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un entier relatif tel que a³ ≡ a (mod 6). On veut montrer par récurrence que a^(2n+1) ≡ a (mod 6) pour tout n. Quelle est l'hérédité correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a^(2(n+1)+1) = a^(2n+1) + a² ≡ a + a² (mod 6), par somme des restes"
+        },
+        {
+          "id": "b",
+          "text": "a^(2(n+1)+1) = a^(2n+1) × a ≡ a × a = a² (mod 6), en ajoutant 1 à l'exposant"
+        },
+        {
+          "id": "c",
+          "text": "a^(2(n+1)+1) = a^(2n+1) × a² ≡ a × a² = a³ ≡ a (mod 6)"
+        },
+        {
+          "id": "d",
+          "text": "a^(2(n+1)+1) = (a^(2n+1))³ ≡ a³ ≡ a (mod 6), par la règle du cube"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour n suivant, 2(n + 1) + 1 = (2n + 1) + 2, donc a^(2(n+1)+1) = a^(2n+1) × a². Par l'hypothèse de récurrence a^(2n+1) ≡ a (mod 6), et la compatibilité avec le produit donne a^(2n+1) × a² ≡ a × a² = a³ ≡ a (mod 6) d'après la question précédente ✓. L'initialisation n = 0 est a¹ ≡ a. Piège classique : additionner au lieu de multiplier, ajouter 1 seulement à l'exposant (on trouve a²), ou mal écrire la puissance (a^(2n+1))³ = a^(6n+3), qui n'est pas a^(2n+3).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier relatif a, on a a^(2n+1) ≡ a (mod 6) pour tout n ∈ ℕ. Comment en déduit-on a^(2n) ≡ a² (mod 6) pour n ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a^(2n) = a^(2n+1)/a ≡ a/a = 1 (mod 6), en divisant"
+        },
+        {
+          "id": "b",
+          "text": "a^(2n) = (a²)^n ≡ a^n (mod 6), car a² ≡ a"
+        },
+        {
+          "id": "c",
+          "text": "a^(2n) = a^(2n−1) × a ≡ a × a = a² (mod 6)"
+        },
+        {
+          "id": "d",
+          "text": "a^(2n) ≡ a^(2n+1) ≡ a (mod 6), même reste"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour n ≥ 1, 2n = 2(n − 1) + 1 + 1, donc a^(2n) = a^(2(n−1)+1) × a. Comme a^(2(n−1)+1) ≡ a (mod 6) d'après la question précédente (avec n − 1 ∈ ℕ), a^(2n) ≡ a × a = a² (mod 6) ✓. Piège classique : diviser une congruence (une division n'est pas compatible avec les congruences), remplacer a² par a sans justification, ou confondre les exposants pairs et impairs.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (x ; y) ∈ ℤ² vérifiant x⁷ − y⁸ ≡ 0 (mod 6) et x³y² ≡ 1 (mod 6), avec a^(2n+1) ≡ a (mod 6) pour tout n, et a^(2n) ≡ a² (mod 6) pour n ≥ 1. Quel système équivalent obtient-on pour x et y ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ y² (mod 6) et x y² ≡ 1 (mod 6)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ y (mod 6) et x y² ≡ 1 (mod 6)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ y² (mod 6) et x³ ≡ 1 (mod 6)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ y⁴ (mod 6) et x y² ≡ 1 (mod 6)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par la propriété des exposants impairs, x⁷ = x^(2×3+1) ≡ x (mod 6), et x³ ≡ x. Par celle des exposants pairs, y⁸ = y^(2×4) ≡ y² (mod 6). La première équation devient x − y² ≡ 0, soit x ≡ y², et la seconde x³y² ≡ x y² ≡ 1 ✓. Piège classique : remplacer y⁸ par y (c'est y² qu'on obtient pour un exposant pair), supprimer y² dans la seconde équation, ou garder y⁴ en réduisant mal l'exposant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (x ; y) ∈ ℤ² vérifiant x ≡ y² (mod 6) et x y² ≡ 1 (mod 6), avec a^(2n) ≡ a² (mod 6) pour n ≥ 1. Quelles sont les solutions, en termes de restes modulo 6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 1 (mod 6) et y ≡ 1 (mod 6) seulement"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 0, 1, 3 ou 4 (mod 6), c'est-à-dire x ≡ y² (mod 6)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 5 (mod 6) et y ≡ 1 ou y ≡ 5 (mod 6)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 1 (mod 6) et y ≡ 1 ou y ≡ 5 (mod 6)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En remplaçant x par y² dans x y² ≡ 1, on obtient y⁴ ≡ 1 ; or y⁴ = y^(2×2) ≡ y² (mod 6), donc y² ≡ 1 (mod 6). Parmi les restes de y, seuls 1 (1² = 1) et 5 (5² = 25 ≡ 1) donnent y² ≡ 1 ; alors x ≡ y² ≡ 1. Les solutions sont les couples (x ; y) avec x = 6k + 1 et y = 6k′ + 1 ou y = 6k′ + 5 (k, k′ ∈ ℤ) ✓. Piège classique : oublier le reste 5 (y ≡ −1 convient aussi), ne vérifier que la première équation (on garde x ≡ y² sans la seconde), ou confondre 1 avec −1 pour x.",
+      "difficulty": 3
+    }
+  ]
+}

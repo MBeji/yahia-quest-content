@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 2 ⭐⭐⭐⭐ : Similitude indirecte en complexes, composée avec elle-même et suite de points",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 17,
+  "questions": [
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. Quel argument établit qu'il existe une unique similitude indirecte g qui transforme I en D et D en K ? <svg viewBox=\"0 0 210 220\"><path d=\"M133 138 L77 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M77 82 L77 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M77 194 L133 138\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M77 194 L77 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"77\" cy=\"194\" r=\"3.6\"/><circle cx=\"133\" cy=\"138\" r=\"3.6\"/><circle cx=\"133\" cy=\"82\" r=\"3.6\"/><circle cx=\"77\" cy=\"82\" r=\"3.6\"/><circle cx=\"77\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"67\" y=\"208\" text-anchor=\"middle\">O</text><text x=\"144\" y=\"142\" text-anchor=\"middle\">I</text><text x=\"144\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"66\" y=\"88\" text-anchor=\"middle\">D</text><text x=\"67\" y=\"23\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "I ≠ D et D ≠ K : le théorème donne une unique similitude indirecte, sans condition sur les longueurs"
+        },
+        {
+          "id": "b",
+          "text": "ID = DK : une similitude n'existe que si les deux segments ont la même longueur, ce qui est le cas ici"
+        },
+        {
+          "id": "c",
+          "text": "I, D et K sont alignés : une similitude indirecte transforme alors I en D et D en K, de façon unique"
+        },
+        {
+          "id": "d",
+          "text": "O est le milieu de [ID] : g est alors la symétrie orthogonale d'axe (OD), unique par construction"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Théorème d'existence et d'unicité : si A ≠ B et C ≠ D, il existe une unique similitude directe et une unique similitude indirecte envoyant A sur C et B sur D. Ici I ≠ D et D ≠ K. Aucune condition sur les longueurs n'est requise : ID = √2 et DK = 1 diffèrent, le rapport s'ajuste (condition qu'on exigerait pour une isométrie). Les points I, D, K ne sont pas alignés et O n'est pas le milieu de [ID]. Vérification : ID ≠ 0 et DK ≠ 0 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. g est la similitude indirecte qui transforme I en D et D en K. Quel est son rapport ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/4"
+        },
+        {
+          "id": "b",
+          "text": "√2/2"
+        },
+        {
+          "id": "c",
+          "text": "√2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rapport de g est k = (distance image)/(distance de départ) = DK/ID. On a ID = |2i − (1 + i)| = |−1 + i| = √2 et DK = |3i − 2i| = 1, donc k = 1/√2 = √2/2. Le quotient inverse √2 serait le rapport de g⁻¹ ; √2/4 s'obtiendrait en doublant à tort le dénominateur ; 2 est le carré de √2. Vérification : DK = (√2/2) × ID = 1 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. Quelle est la distance IK ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2"
+        },
+        {
+          "id": "b",
+          "text": "√5"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "2√5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "I a pour affixe 1 + i et K a pour affixe 3i. IK = |3i − (1 + i)| = |−1 + 2i| = √(1 + 4) = √5. √2 serait la distance ID, 3 la distance OK ; 2√5 le double de la bonne valeur. Vérification : (−1)² + 2² = 5 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. g est la similitude indirecte qui transforme I en D et D en K. Quelle est son écriture complexe z′ = a z̄ + b ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "z′ = −(1/2)(1 + i) z + 1 + 2i"
+        },
+        {
+          "id": "b",
+          "text": "z′ = (1/2)(1 + i) z̄ + 1 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "z′ = −(1/2)(1 − i) z̄ + 1 + 2i"
+        },
+        {
+          "id": "d",
+          "text": "z′ = −(1/2)(1 + i) z̄ + 1 + 2i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "g est indirecte : z′ = a z̄ + b. Les conditions g(I) = D et g(D) = K donnent a(1 − i) + b = 2i et −2i·a + b = 3i. En soustrayant : a(1 + i) = −i, donc a = −i/(1 + i) = −i(1 − i)/2 = −(1 + i)/2. Puis b = 3i + 2i·a = 3i + i(−(1 + i)) = 3i − i + 1 = 1 + 2i. Les autres écritures ne vérifient pas g(I) = D : sans barre, c'est une similitude directe ; avec le coefficient (1/2)(1 + i) on trouve 2 + 2i ; avec −(1/2)(1 − i) on trouve 1 + 3i. Vérification : −(1/2)(1 + i)(1 − i) + 1 + 2i = −1 + 1 + 2i = 2i ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. g est la similitude indirecte d'écriture z′ = −(1/2)(1 + i) z̄ + 1 + 2i. Quel est l'affixe de son centre Ω ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + i"
+        },
+        {
+          "id": "b",
+          "text": "2 + 4i"
+        },
+        {
+          "id": "c",
+          "text": "−1 + 5i"
+        },
+        {
+          "id": "d",
+          "text": "(−1 + 5i)/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour z′ = a z̄ + b avec |a| ≠ 1, le centre a pour affixe (a·b̄ + b)/(1 − |a|²). Ici a = −(1 + i)/2, |a|² = 1/2, b = 1 + 2i et b̄ = 1 − 2i. Alors a·b̄ = −(1 + i)(1 − 2i)/2 = −(3 − i)/2, donc a·b̄ + b = (−3 + i)/2 + 1 + 2i = (−1 + 5i)/2, et en divisant par 1 − 1/2 = 1/2 on obtient −1 + 5i. Appliquer la formule d'une similitude directe, b/(1 − a), donnerait 1 + i ; oublier a·b̄ donnerait b/(1/2) = 2 + 4i. Vérification : −(1/2)(1 + i)(−1 − 5i) + 1 + 2i = (1/2)(1 + i)(1 + 5i) + 1 + 2i = (1/2)(−4 + 6i) + 1 + 2i = −1 + 5i ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. g est la similitude indirecte d'écriture z′ = −(1/2)(1 + i) z̄ + 1 + 2i, avec g(I) = D et g(D) = K. Quelle est l'image du triangle IDO ? <svg viewBox=\"0 0 210 220\"><path d=\"M133 138 L77 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M77 82 L77 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M77 194 L133 138\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M77 194 L77 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"77\" cy=\"194\" r=\"3.6\"/><circle cx=\"133\" cy=\"138\" r=\"3.6\"/><circle cx=\"133\" cy=\"82\" r=\"3.6\"/><circle cx=\"77\" cy=\"82\" r=\"3.6\"/><circle cx=\"77\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"67\" y=\"208\" text-anchor=\"middle\">O</text><text x=\"144\" y=\"142\" text-anchor=\"middle\">I</text><text x=\"144\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"66\" y=\"88\" text-anchor=\"middle\">D</text><text x=\"67\" y=\"23\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le triangle KCI"
+        },
+        {
+          "id": "b",
+          "text": "Le triangle DKO"
+        },
+        {
+          "id": "c",
+          "text": "Le triangle DKC"
+        },
+        {
+          "id": "d",
+          "text": "Le triangle IDC"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g(I) = D et g(D) = K par définition. Pour O, d'affixe 0 : g(O) = b = 1 + 2i, c'est le point C. L'image du triangle IDO est donc le triangle DKC. S'arrêter à O fixe donnerait DKO ; les autres propositions mélangent des sommets qui ne sont pas des images. Vérification : g(O) = −(1/2)(1 + i)·0 + 1 + 2i = 1 + 2i ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. g est une similitude indirecte de centre Ω et de rapport √2/2. Quelle est la nature de g∘g ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une homothétie de centre I et de rapport 1/2"
+        },
+        {
+          "id": "b",
+          "text": "Une rotation de centre Ω et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "Une homothétie de centre Ω et de rapport √2/2"
+        },
+        {
+          "id": "d",
+          "text": "Une homothétie de centre Ω et de rapport 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le carré d'une similitude indirecte de centre Ω et de rapport k est l'homothétie de centre Ω et de rapport k². Ici k² = (√2/2)² = 1/2. Garder k = √2/2 oublierait de mettre au carré ; g∘g n'a pas d'angle, puisque g est indirecte, donc ce n'est pas une rotation ; et son centre est Ω, point fixe de g, non I. Vérification : (g∘g)(z) = a·conj(a z̄ + b) + b = |a|² z + a b̄ + b, de coefficient |a|² = 1/2 réel ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. h est l'homothétie de centre Ω d'affixe −1 + 5i et de rapport 1/2, et la suite (A_n) vérifie A₀ = I et A_(n+2) = h(A_n), avec A₂ = K (affixe 3i). Quel est l'affixe de A₄ ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/2 + 4i"
+        },
+        {
+          "id": "b",
+          "text": "1/2 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "3i/2"
+        },
+        {
+          "id": "d",
+          "text": "−1/2 + 5i/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A₄ = h(A₂) = h(K) : l'affixe est z_Ω + (1/2)(z_K − z_Ω) = (z_Ω + z_K)/2 = (−1 + 5i + 3i)/2 = −1/2 + 4i. Prendre I comme centre (1/2 + 2i), ou l'origine (3i/2), est une confusion sur le centre de l'homothétie ; (−1 + 5i)/2 oublierait l'apport de K. Vérification : A₄ est le milieu de [ΩK], et −1/2 + 4i est bien la demi-somme de −1 + 5i et 3i ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. Avec h l'homothétie de rapport 1/2 et A_(n+2) = h(A_n), les distances d_k = A_(2k)A_(2k+2) vérifient A₀A₂ = √5. Quelle est la nature de la suite (d_k) ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arithmétique de raison 1/2"
+        },
+        {
+          "id": "b",
+          "text": "Géométrique de raison √2/2"
+        },
+        {
+          "id": "c",
+          "text": "Géométrique de raison 1/2"
+        },
+        {
+          "id": "d",
+          "text": "Géométrique de raison 1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "h est une similitude de rapport 1/2 qui envoie A_(2k) sur A_(2k+2) et A_(2k+2) sur A_(2k+4) : d_(k+1) = A_(2k+2)A_(2k+4) = (1/2)·A_(2k)A_(2k+2) = (1/2)·d_k. La suite est géométrique de raison 1/2 (non arithmétique : on multiplie, on n'ajoute pas). La raison √2/2 est celle de g, non de h ; 1/4 serait celle de h∘h. Vérification : d₀ = √5, d₁ = √5/2, d₂ = √5/4 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan muni d'un repère orthonormé direct (O, u⃗, v⃗), on considère les points I, C, D et K d'affixes respectives 1 + i, 1 + 2i, 2i et 3i. Avec d_k = A_(2k)A_(2k+2), suite géométrique de premier terme √5 et de raison 1/2, soit S_n = d₀ + d₁ + … + d_(n−1). Quelle est la limite de S_n quand n tend vers +∞ ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "La suite (S_n) diverge"
+        },
+        {
+          "id": "b",
+          "text": "√5"
+        },
+        {
+          "id": "c",
+          "text": "√5(2 + √2)"
+        },
+        {
+          "id": "d",
+          "text": "2√5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S_n = √5 × (1 − (1/2)ⁿ)/(1 − 1/2) = 2√5(1 − (1/2)ⁿ). Comme −1 < 1/2 < 1, (1/2)ⁿ tend vers 0, donc S_n converge vers 2√5. La valeur √5 serait la limite du seul premier terme ; √5(2 + √2) viendrait d'une raison √2/2 ; la divergence ne se produit que pour une raison de valeur absolue au moins 1. Vérification : 2√5 ≈ 4,47, supérieur à √5 ≈ 2,24 comme il se doit ✓.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 1 ⭐⭐⭐⭐ : Triangle équilatéral, similitude directe, sa réciproque et similitude indirecte",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 19,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. Quel est l'angle de S ? <svg viewBox=\"0 0 250 250\"><circle cx=\"125\" cy=\"151.5\" r=\"72.5\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"83.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M52.5 151.5 L197.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.5 151.5 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L52.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"52.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"197.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"88.8\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"151.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"43.5\" y=\"163.5\" text-anchor=\"middle\">A</text><text x=\"207.5\" y=\"163.5\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"105.7\" text-anchor=\"middle\">O</text><text x=\"173.2\" y=\"86.8\" text-anchor=\"middle\">I</text><text x=\"77.8\" y=\"86.8\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"167.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/6"
+        },
+        {
+          "id": "b",
+          "text": "π/6"
+        },
+        {
+          "id": "c",
+          "text": "−π/3"
+        },
+        {
+          "id": "d",
+          "text": "π/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'angle de S est (BJ⃗, BC⃗). Dans le triangle équilatéral direct, la médiane [BJ] est aussi bissectrice de l'angle en B, qui vaut π/3 : l'angle entre (BJ) et (BC) vaut π/6. Pour le signe : ABC est direct, donc (BC⃗, BA⃗) ≡ π/3 et la bissectrice BJ est obtenue en tournant BC⃗ de +π/6 ; ainsi (BC⃗, BJ⃗) ≡ π/6 et (BJ⃗, BC⃗) ≡ −π/6. Garder +π/6 inverserait les deux vecteurs ; π/3 est l'angle du triangle, non celui de S. Vérification : (BJ⃗, BC⃗) et (BC⃗, BJ⃗) sont opposés ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. Quel est le rapport de S ? <svg viewBox=\"0 0 250 250\"><circle cx=\"125\" cy=\"151.5\" r=\"72.5\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"83.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M52.5 151.5 L197.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.5 151.5 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L52.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"52.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"197.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"88.8\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"151.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"43.5\" y=\"163.5\" text-anchor=\"middle\">A</text><text x=\"207.5\" y=\"163.5\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"105.7\" text-anchor=\"middle\">O</text><text x=\"173.2\" y=\"86.8\" text-anchor=\"middle\">I</text><text x=\"77.8\" y=\"86.8\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"167.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√3/2"
+        },
+        {
+          "id": "b",
+          "text": "2√3/3"
+        },
+        {
+          "id": "c",
+          "text": "√3"
+        },
+        {
+          "id": "d",
+          "text": "3√3/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rapport de S est BC/BJ (S(B) = B et S(J) = C). Notons a le côté : BC = a, et BJ, médiane d'un triangle équilatéral, vaut a√3/2. Donc k = a/(a√3/2) = 2/√3 = 2√3/3. Le quotient inverse BJ/BC = √3/2 serait le rapport de S⁻¹ ; √3 et 3√3/2 ne correspondent à aucun quotient de la figure. Vérification : k > 1 car BC > BJ ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B, de rapport 2√3/3 et d'angle −π/6, qui envoie J sur C. Quelle est l'image de K par S ? <svg viewBox=\"0 0 250 250\"><circle cx=\"125\" cy=\"151.5\" r=\"72.5\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"83.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M52.5 151.5 L197.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.5 151.5 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L52.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"52.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"197.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"88.8\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"151.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"43.5\" y=\"163.5\" text-anchor=\"middle\">A</text><text x=\"207.5\" y=\"163.5\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"105.7\" text-anchor=\"middle\">O</text><text x=\"173.2\" y=\"86.8\" text-anchor=\"middle\">I</text><text x=\"77.8\" y=\"86.8\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"167.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point O"
+        },
+        {
+          "id": "b",
+          "text": "Le point I"
+        },
+        {
+          "id": "c",
+          "text": "Le point A"
+        },
+        {
+          "id": "d",
+          "text": "Le point J"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Calculons BO/BK et l'angle (BK⃗, BO⃗). BK = a/2 ; BO = (2/3)·BJ = a√3/3 (O est aux deux tiers de la médiane [BJ] à partir du sommet B). Donc BO/BK = (a√3/3)/(a/2) = 2√3/3 = k. La droite (BO) est la médiane issue de B, donc aussi la bissectrice de l'angle ABC de π/3 : l'angle entre (BK) = (BA) et (BO) vaut π/6, et son signe est négatif comme pour S, car (BK⃗, BO⃗) = (BA⃗, BO⃗) tourne BA⃗ vers BC⃗, dans le sens inverse de (BC⃗, BA⃗) ≡ π/3 : (BK⃗, BO⃗) ≡ −π/6. Ces deux conditions caractérisent le point O comme image de K. Vérification : BO = k·BK et (BK⃗, BO⃗) ≡ −π/6 comme (BJ⃗, BC⃗) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. Soit (Γ) le cercle de diamètre [AB] et (Γ′) le cercle circonscrit à ABC. On sait que S(K) = O. Quel argument établit que S(Γ) = Γ′ ? <svg viewBox=\"0 0 250 250\"><circle cx=\"125\" cy=\"151.5\" r=\"72.5\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"83.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M52.5 151.5 L197.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.5 151.5 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L52.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"52.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"197.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"88.8\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"151.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"43.5\" y=\"163.5\" text-anchor=\"middle\">A</text><text x=\"207.5\" y=\"163.5\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"105.7\" text-anchor=\"middle\">O</text><text x=\"173.2\" y=\"86.8\" text-anchor=\"middle\">I</text><text x=\"77.8\" y=\"86.8\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"167.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une similitude transforme un cercle en un cercle : S(K) = O et le rayon BK est multiplié par k², soit BK × 4/3, qui est le rayon de Γ′"
+        },
+        {
+          "id": "b",
+          "text": "Une similitude transforme un cercle en un cercle : S(K) = O et le rayon BK est multiplié par 1/k, soit BK × √3/2, rayon de Γ′"
+        },
+        {
+          "id": "c",
+          "text": "Une similitude transforme un cercle en un cercle : S(K) = O et le rayon BK est multiplié par k, soit BK × 2√3/3, le rayon de Γ′"
+        },
+        {
+          "id": "d",
+          "text": "Une similitude conserve les cercles de même rayon : S(K) = O et le rayon BK est conservé, d'où S(Γ) de centre O, égal à Γ′"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une similitude de rapport k transforme le cercle de centre K et de rayon r en le cercle de centre S(K) et de rayon k·r. Ici S(K) = O et le rayon de Γ est BK = a/2 ; le rayon image est (2√3/3)(a/2) = a√3/3, qui est exactement le rayon du cercle circonscrit au triangle équilatéral de côté a. Les deux cercles ont même centre O et même rayon : S(Γ) = Γ′. Le rayon n'est pas conservé (k ≠ 1) et il est multiplié par k, pas par k² (ce sont les aires qui le sont) ; multiplier par 1/k (au lieu de k) donnerait BK × √3/2, qui n'est pas le rayon de Γ′. Vérification : a√3/3 = OA ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. Quelles sont la nature et les éléments caractéristiques de S⁻¹, réciproque de S ? <svg viewBox=\"0 0 250 250\"><circle cx=\"125\" cy=\"151.5\" r=\"72.5\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"83.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M52.5 151.5 L197.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.5 151.5 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L52.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"52.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"197.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"88.8\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"151.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"43.5\" y=\"163.5\" text-anchor=\"middle\">A</text><text x=\"207.5\" y=\"163.5\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"105.7\" text-anchor=\"middle\">O</text><text x=\"173.2\" y=\"86.8\" text-anchor=\"middle\">I</text><text x=\"77.8\" y=\"86.8\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"167.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Similitude directe de centre B, de rapport 2√3/3 et d'angle π/6"
+        },
+        {
+          "id": "b",
+          "text": "Similitude directe de centre B, de rapport √3/2 et d'angle −π/6"
+        },
+        {
+          "id": "c",
+          "text": "Similitude indirecte de centre B, de rapport √3/2"
+        },
+        {
+          "id": "d",
+          "text": "Similitude directe de centre B, de rapport √3/2 et d'angle π/6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La réciproque d'une similitude directe de centre B, de rapport k et d'angle θ est la similitude directe de même centre, de rapport 1/k et d'angle −θ. Ici k = 2√3/3 et θ = −π/6, donc S⁻¹ a pour rapport 3/(2√3) = √3/2 et pour angle π/6. Garder le rapport 2√3/3 ou l'angle −π/6 oublierait l'inversion ; et la réciproque d'une similitude directe est directe. Vérification : (2√3/3) × (√3/2) = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. La droite (OC) recoupe Γ′ en P et (BP) recoupe Γ en Q, avec Q = S⁻¹(A). On a aussi S⁻¹(C) = J. Quelle est la nature du triangle BJQ ? <svg viewBox=\"0 0 250 270\"><circle cx=\"125\" cy=\"164.2\" r=\"79.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"118.1\" r=\"92.1\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M45.2 164.2 L204.8 164.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M204.8 164.2 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L45.2 164.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M204.8 164.2 L125 210.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"45.2\" cy=\"164.2\" r=\"3.6\"/><circle cx=\"204.8\" cy=\"164.2\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"118.1\" r=\"3.6\"/><circle cx=\"85.1\" cy=\"95.1\" r=\"3.6\"/><circle cx=\"125\" cy=\"164.2\" r=\"3.6\"/><circle cx=\"125\" cy=\"210.3\" r=\"3.6\"/><circle cx=\"85.1\" cy=\"233.3\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"36.2\" y=\"176.2\" text-anchor=\"middle\">A</text><text x=\"214.8\" y=\"176.2\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"114.1\" text-anchor=\"middle\">O</text><text x=\"74.1\" y=\"93.1\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"180.2\" text-anchor=\"middle\">K</text><text x=\"133\" y=\"224.3\" text-anchor=\"middle\">P</text><text x=\"73.1\" y=\"245.3\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isocèle non équilatéral"
+        },
+        {
+          "id": "b",
+          "text": "Équilatéral"
+        },
+        {
+          "id": "c",
+          "text": "Rectangle en J"
+        },
+        {
+          "id": "d",
+          "text": "Rectangle en B"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "S⁻¹ fixe B, envoie C sur J et A sur Q : le triangle BJQ est l'image du triangle BCA par S⁻¹. Une similitude transforme un triangle en un triangle semblable (angles conservés, longueurs multipliées par le rapport) : BCA étant équilatéral, BJQ l'est aussi. Il n'est donc ni simplement isocèle ni rectangle. Vérification : BJ = BQ = JQ, tous égaux à (√3/2)·BC ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. S est la similitude directe de centre B, de rapport 2√3/3 et d'angle −π/6, et σ = S∘S_(AB), où S_(AB) est la symétrie orthogonale d'axe (AB). Quelle est la nature de σ ? <svg viewBox=\"0 0 250 250\"><circle cx=\"125\" cy=\"151.5\" r=\"72.5\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"83.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M52.5 151.5 L197.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.5 151.5 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L52.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"52.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"197.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"88.8\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"151.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"43.5\" y=\"163.5\" text-anchor=\"middle\">A</text><text x=\"207.5\" y=\"163.5\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"105.7\" text-anchor=\"middle\">O</text><text x=\"173.2\" y=\"86.8\" text-anchor=\"middle\">I</text><text x=\"77.8\" y=\"86.8\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"167.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Similitude indirecte de centre A et de rapport 2√3/3"
+        },
+        {
+          "id": "b",
+          "text": "Similitude indirecte de centre B et de rapport 1"
+        },
+        {
+          "id": "c",
+          "text": "Similitude indirecte de centre B et de rapport 2√3/3"
+        },
+        {
+          "id": "d",
+          "text": "Similitude directe de centre B et de rapport 2√3/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "S est directe de rapport 2√3/3 et S_(AB) est une isométrie indirecte : σ est indirecte et son rapport est 2√3/3 × 1. Elle fixe B (S_(AB)(B) = B puisque B est sur l'axe, et S(B) = B) : son centre est B, non A. Le rapport n'est pas 1 car S n'est pas une isométrie. Vérification : (−1) × (+1) = −1 pour les signes ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. σ = S∘S_(AB) avec S(J) = C et S(Q) = A, où Q est le symétrique de J par rapport à (AB). Quelles sont les images de Q et de J par σ ? <svg viewBox=\"0 0 250 270\"><circle cx=\"125\" cy=\"164.2\" r=\"79.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"118.1\" r=\"92.1\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M45.2 164.2 L204.8 164.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M204.8 164.2 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L45.2 164.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M204.8 164.2 L125 210.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"45.2\" cy=\"164.2\" r=\"3.6\"/><circle cx=\"204.8\" cy=\"164.2\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"118.1\" r=\"3.6\"/><circle cx=\"85.1\" cy=\"95.1\" r=\"3.6\"/><circle cx=\"125\" cy=\"164.2\" r=\"3.6\"/><circle cx=\"125\" cy=\"210.3\" r=\"3.6\"/><circle cx=\"85.1\" cy=\"233.3\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"36.2\" y=\"176.2\" text-anchor=\"middle\">A</text><text x=\"214.8\" y=\"176.2\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"114.1\" text-anchor=\"middle\">O</text><text x=\"74.1\" y=\"93.1\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"180.2\" text-anchor=\"middle\">K</text><text x=\"133\" y=\"224.3\" text-anchor=\"middle\">P</text><text x=\"73.1\" y=\"245.3\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "σ(Q) = C et σ(J) = Q"
+        },
+        {
+          "id": "b",
+          "text": "σ(Q) = J et σ(J) = A"
+        },
+        {
+          "id": "c",
+          "text": "σ(Q) = J et σ(J) = Q"
+        },
+        {
+          "id": "d",
+          "text": "σ(Q) = C et σ(J) = A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Q est le symétrique de J par rapport à (AB) : S_(AB)(Q) = J et S_(AB)(J) = Q. Donc σ(Q) = S(S_(AB)(Q)) = S(J) = C, et σ(J) = S(S_(AB)(J)) = S(Q) = A. Appliquer seulement S_(AB) donnerait σ(Q) = J et σ(J) = Q ; mélanger une image par la symétrie et une image par S donnerait les options mixtes. Vérification : CA = (2√3/3)·QJ puisque QJ = BJ = (√3/2)·AC et (2√3/3)(√3/2) = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct de centre O ; I, J et K sont les milieux respectifs de [BC], [AC] et [AB]. S est la similitude directe de centre B telle que S(J) = C. σ = S∘S_(AB) est une similitude indirecte de centre B et de rapport 2√3/3. Quelle est la nature de σ∘σ ? <svg viewBox=\"0 0 250 250\"><circle cx=\"125\" cy=\"151.5\" r=\"72.5\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"83.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M52.5 151.5 L197.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.5 151.5 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L52.5 151.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"52.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"197.5\" cy=\"151.5\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"109.7\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"88.8\" cy=\"88.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"151.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"43.5\" y=\"163.5\" text-anchor=\"middle\">A</text><text x=\"207.5\" y=\"163.5\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">C</text><text x=\"135\" y=\"105.7\" text-anchor=\"middle\">O</text><text x=\"173.2\" y=\"86.8\" text-anchor=\"middle\">I</text><text x=\"77.8\" y=\"86.8\" text-anchor=\"middle\">J</text><text x=\"125\" y=\"167.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une homothétie de centre B et de rapport 4/3"
+        },
+        {
+          "id": "b",
+          "text": "Une homothétie de centre B et de rapport 2√3/3"
+        },
+        {
+          "id": "c",
+          "text": "Une rotation de centre B et d'angle π/3"
+        },
+        {
+          "id": "d",
+          "text": "Une homothétie de centre A et de rapport 4/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le carré d'une similitude indirecte de centre B et de rapport k est l'homothétie de centre B et de rapport k². Ici k² = (2√3/3)² = 12/9 = 4/3. Garder 2√3/3 oublierait le carré ; une similitude indirecte n'a pas d'angle donc σ∘σ n'est pas une rotation ; le centre est B, point fixe de σ. Vérification : (2√3/3)² = 4 × 3/9 = 4/3 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

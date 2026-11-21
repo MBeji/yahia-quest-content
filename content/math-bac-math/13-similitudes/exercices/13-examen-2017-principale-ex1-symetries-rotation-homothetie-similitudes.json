@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2017 · session principale · Exercice 1 ⭐⭐⭐⭐ : Symétries, rotation, homothétie et similitudes autour d'un point intérieur",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Quelle est la mesure de l'angle géométrique JΩD ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/6"
+        },
+        {
+          "id": "b",
+          "text": "π/4"
+        },
+        {
+          "id": "c",
+          "text": "π/3"
+        },
+        {
+          "id": "d",
+          "text": "5π/12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le triangle isocèle DAΩ (DA = DΩ), les angles à la base valent ∠DAΩ = ∠DΩA = π/12, car l'angle ∠ΩAC vaut π/3 − π/4 = π/12 (l'angle en A de ABC est π/3, et ∠ΩAB = π/4). L'angle en D vaut donc π − π/6 = 5π/6, et l'angle extérieur ∠ΩDJ (J est le pied de la perpendiculaire à (AC), du côté de C) vaut π/6. Dans le triangle ΩJD, rectangle en J, l'angle en Ω vaut π/2 − π/6 = π/3. L'erreur classique est de prendre π/6 (l'angle en D) pour l'angle en Ω. Vérification : π/3 + π/6 + π/2 = π ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit R = S_(ΩD)∘S_(ΩJ), composée de deux symétries orthogonales d'axes (ΩJ) puis (ΩD), qui se coupent en Ω avec (ΩJ⃗, ΩD⃗) ≡ π/3 [2π]. Quelle est la nature de R ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une rotation de centre Ω et d'angle π/3"
+        },
+        {
+          "id": "b",
+          "text": "Une rotation de centre Ω et d'angle 2π/3"
+        },
+        {
+          "id": "c",
+          "text": "Une rotation de centre Ω et d'angle −2π/3"
+        },
+        {
+          "id": "d",
+          "text": "Une rotation de centre J et d'angle 2π/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La composée de deux symétries orthogonales d'axes sécants en Ω est la rotation de centre Ω dont l'angle est le double de l'angle orienté des axes pris dans l'ordre : ici 2 × (ΩJ⃗, ΩD⃗) = 2π/3. Garder π/3 oublierait le facteur 2. Le signe est + car on passe de (ΩJ) à (ΩD) dans le sens direct. Le centre est le point commun aux deux axes, Ω et non J. Vérification : R∘R n'est pas l'identité puisque 4π/3 n'est pas multiple de 2π ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. On pose F = R(J), où R est la rotation de centre Ω et d'angle 2π/3. Quelle suite d'arguments montre que F est sur la demi-droite [ΩI) ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "∠IΩJ = 2π/3 (le quadrilatère AIΩJ a deux angles droits et un angle π/3) et R tourne [ΩJ) de 2π/3 : F est sur [ΩI)"
+        },
+        {
+          "id": "b",
+          "text": "∠IΩJ = π/3 (le quadrilatère AIΩJ a deux angles droits et un angle π/3) et R tourne [ΩJ) de 2π/3 : F est sur [ΩI)"
+        },
+        {
+          "id": "c",
+          "text": "∠IΩJ = 2π/3 (le quadrilatère AIΩJ a deux angles droits et un angle π/3) et R tourne [ΩJ) de −2π/3 : F est sur [ΩI)"
+        },
+        {
+          "id": "d",
+          "text": "∠IΩJ = π/3 (le quadrilatère AIΩJ a deux angles droits et un angle π/3) et R tourne [ΩJ) de −2π/3 : F est sur [ΩI)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le quadrilatère AIΩJ, les angles en I et en J sont droits (I et J sont des projetés orthogonaux), l'angle en A vaut π/3 (angle du triangle équilatéral), donc l'angle en Ω vaut 2π − π/2 − π/2 − π/3 = 2π/3. La rotation R d'angle 2π/3 envoie la demi-droite [ΩJ) sur la demi-droite qui fait 2π/3 avec elle, du même côté que [ΩI) : donc F = R(J) est sur [ΩI), avec ΩF = ΩJ. Un angle ∠IΩJ égal à π/3 (angle d'un triangle équilatéral recopié sans calcul) ou une rotation de −2π/3 (sens inversé) ne s'accordent pas avec la figure. Vérification : (ΩJ⃗, ΩI⃗) ≡ 2π/3 ≡ angle de R ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit h l'homothétie de centre Ω telle que h(F) = I, où F = R(J) est sur [ΩI), et f = h∘R. Quels sont le centre et l'angle de la similitude directe f ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre Ω et angle π/3"
+        },
+        {
+          "id": "b",
+          "text": "Centre I et angle 2π/3"
+        },
+        {
+          "id": "c",
+          "text": "Centre I et angle π/3"
+        },
+        {
+          "id": "d",
+          "text": "Centre Ω et angle 2π/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f = h∘R est la composée d'une rotation de centre Ω et d'angle 2π/3 et d'une homothétie de même centre Ω et de rapport positif : c'est une similitude directe de centre Ω (point fixe commun), dont l'angle est celui de R, soit 2π/3 (l'homothétie de rapport positif ne tourne pas). Le point I est l'image de J par f, mais pas son centre ; π/3 est l'angle (ΩJ⃗, ΩD⃗) et non celui de R. Vérification : f(J) = h(R(J)) = h(F) = I, et (ΩJ⃗, ΩI⃗) ≡ 2π/3 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit f = h∘R la similitude directe de centre Ω qui envoie J sur I, où R est la rotation d'angle 2π/3 et h l'homothétie telle que h(F) = I. On donne sin(π/12) = (√3 − 1)/(2√2). Quel est le rapport de f ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2/2"
+        },
+        {
+          "id": "b",
+          "text": "(√3 − 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "√2 + √6"
+        },
+        {
+          "id": "d",
+          "text": "1 + √3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le rapport de f est ΩI/ΩJ (f(J) = I). Dans le triangle ΩIA rectangle en I, ∠IAΩ = π/4 donc ΩI = ΩA·sin(π/4) = ΩA·√2/2 ; dans le triangle ΩJA rectangle en J, ∠JAΩ = π/12 donc ΩJ = ΩA·sin(π/12). Alors ΩI/ΩJ = (√2/2) / ((√3−1)/(2√2)) = (√2/2)(2√2/(√3−1)) = 2/(√3−1) = 2(√3+1)/2 = 1 + √3. Le quotient ΩI/ΩA = √2/2 est un facteur seulement, ΩA/ΩJ = √2 + √6 en est l'autre, et (√3−1)/2 est l'inverse. Vérification : (1+√3)(√3−1) = 2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit f la similitude directe de centre Ω qui envoie J sur I, et g la similitude indirecte de centre Ω telle que g(J) = I. Quel argument établit que g = f∘S_(ΩJ) ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "f∘S_(ΩJ) est indirecte, de centre Ω, et envoie J sur f(J) = I car J est sur l'axe (ΩJ) ; la similitude indirecte de centre Ω qui envoie J sur I est unique"
+        },
+        {
+          "id": "b",
+          "text": "f∘S_(ΩJ) est directe, de centre Ω, et envoie J sur f(J) = I car J est sur l'axe (ΩJ) ; la similitude directe de centre Ω qui envoie J sur I est unique"
+        },
+        {
+          "id": "c",
+          "text": "f∘S_(ΩJ) est indirecte, de centre Ω, et envoie J sur f(J) = I car J est le centre de la symétrie S_(ΩJ) ; la similitude indirecte de centre Ω qui envoie J sur I est unique"
+        },
+        {
+          "id": "d",
+          "text": "f∘S_(ΩJ) est directe, de centre Ω, et envoie J sur f(J) = I car J est le centre de la symétrie S_(ΩJ) ; la similitude directe de centre Ω qui envoie J sur I est unique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f est directe et S_(ΩJ) est une isométrie indirecte : f∘S_(ΩJ) est indirecte. Elle a pour centre Ω (S_(ΩJ)(Ω) = Ω et f(Ω) = Ω). Comme J est sur l'axe (ΩJ), S_(ΩJ)(J) = J, donc f∘S_(ΩJ)(J) = f(J) = I. Il n'existe qu'une similitude indirecte de centre Ω envoyant J sur I : c'est g. Une symétrie orthogonale n'a pas de centre : un point est fixe parce qu'il est sur l'axe, non parce qu'il serait « centre » ; et le mot « directe » ne convient pas puisqu'une symétrie renverse l'orientation (l'unicité d'une similitude directe ne dit d'ailleurs rien sur g). Vérification : f∘S_(ΩJ) et g ont le même rapport 1 + √3 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit g la similitude indirecte de centre Ω telle que g(J) = I, avec (ΩJ⃗, ΩI⃗) ≡ 2π/3 [2π] et (ΩJ⃗, ΩD⃗) ≡ π/3 [2π]. Quelle droite est l'axe de g ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (ΩA)"
+        },
+        {
+          "id": "b",
+          "text": "La droite (ΩD)"
+        },
+        {
+          "id": "c",
+          "text": "La droite (ΩJ)"
+        },
+        {
+          "id": "d",
+          "text": "La perpendiculaire en Ω à (ΩD)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'axe d'une similitude indirecte de centre Ω est la bissectrice de l'angle (ΩM⃗, ΩM′⃗) pour tout point M. Avec M = J et M′ = I, cet angle vaut 2π/3, et sa bissectrice fait π/3 avec (ΩJ) : c'est la droite (ΩD) puisque (ΩJ⃗, ΩD⃗) ≡ π/3. La droite (ΩA) coupe l'angle JΩI en deux parties inégales (5π/12 et π/4) ; (ΩJ) est un côté de l'angle ; la perpendiculaire en Ω à l'axe est elle aussi globalement invariante, mais n'est pas l'axe. Vérification : l'axe passe par le centre Ω et partage 2π/3 en π/3 + π/3 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit R = S_(ΩD)∘S_(ΩJ), F = R(J) et h l'homothétie de centre Ω telle que h(F) = I. Quelle est l'image de J par S_(ΩD) ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point D"
+        },
+        {
+          "id": "b",
+          "text": "Le point A"
+        },
+        {
+          "id": "c",
+          "text": "Le point I"
+        },
+        {
+          "id": "d",
+          "text": "Le point F"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "J est sur l'axe (ΩJ), donc S_(ΩJ)(J) = J, et R(J) = S_(ΩD)(S_(ΩJ)(J)) = S_(ΩD)(J). Comme F = R(J), on obtient S_(ΩD)(J) = F. On peut ainsi écrire g = h∘S_(ΩD) : g(J) = h(S_(ΩD)(J)) = h(F) = I. Le point D est sur l'axe (ΩD) : il est invariant, mais J n'est pas D. Le point I est l'image de J par g, pas par S_(ΩD) seule. Vérification : ΩF = ΩJ, car S_(ΩD) conserve les distances ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit g = h∘S_(ΩD) la similitude indirecte de centre Ω et d'axe (ΩD) (h est l'homothétie de centre Ω de rapport 1 + √3). La droite (ΩD) coupe (BC) en K ; on pose K′ = g(K). Que vaut K′ ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "K′ = h⁻¹(K)"
+        },
+        {
+          "id": "b",
+          "text": "K′ = I"
+        },
+        {
+          "id": "c",
+          "text": "K′ = h(K)"
+        },
+        {
+          "id": "d",
+          "text": "K′ = K"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "K est sur la droite (ΩD), c'est-à-dire sur l'axe : S_(ΩD)(K) = K. Donc K′ = h(S_(ΩD)(K)) = h(K), le point de la demi-droite [ΩK) tel que ΩK′ = (1 + √3)·ΩK. Dire K′ = K oublierait l'homothétie ; K′ = h⁻¹(K) la remplacerait par la réduction de rapport 1/(1 + √3) ; le point I n'a pas de raison d'être sur (ΩK). Vérification : K, Ω et K′ sont alignés sur l'axe, puisque l'axe est globalement invariant ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral tel que (BC⃗, BA⃗) ≡ π/3 [2π]. Ω est un point intérieur au triangle tel que (AB⃗, AΩ⃗) ≡ π/4 [2π] ; I et J sont les projetés orthogonaux de Ω sur (AB) et (AC) ; D est le point de (AC) tel que DA = DΩ. Soit g = h∘S_(ΩD) la similitude indirecte de centre Ω, de rapport 1 + √3. Que vaut le rapport de g∘g ? <svg viewBox=\"0 0 250 220\"><path d=\"M125 26 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M155.1 138.4 L83.8 97.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L181.2 123.4\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L155.1 78.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M155.1 138.4 L125 26\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"138.4\" r=\"3.6\"/><circle cx=\"83.8\" cy=\"97.3\" r=\"3.6\"/><circle cx=\"181.2\" cy=\"123.4\" r=\"3.6\"/><circle cx=\"155.1\" cy=\"78.2\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"125\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"19\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"231\" y=\"206\" text-anchor=\"middle\">C</text><text x=\"152.1\" y=\"154.4\" text-anchor=\"middle\">Ω</text><text x=\"71.8\" y=\"99.3\" text-anchor=\"middle\">I</text><text x=\"193.2\" y=\"123.4\" text-anchor=\"middle\">J</text><text x=\"143.1\" y=\"77.2\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + √3"
+        },
+        {
+          "id": "b",
+          "text": "(1 + √3)²"
+        },
+        {
+          "id": "c",
+          "text": "2(1 + √3)"
+        },
+        {
+          "id": "d",
+          "text": "√(1 + √3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le carré d'une similitude indirecte de centre Ω et de rapport k est l'homothétie de centre Ω et de rapport k². Ici k = 1 + √3, donc g∘g a pour rapport (1 + √3)² = 1 + 2√3 + 3 = 4 + 2√3. Garder 1 + √3 oublierait que les rapports se multiplient ; 2(1 + √3) additionnerait au lieu de multiplier ; √(1 + √3) prendrait une racine au lieu d'un carré. Vérification : (1 + √3)² = 4 + 2√3 ≈ 7,46, supérieur à 1 + √3 ≈ 2,73 ✓.",
+      "difficulty": 2
+    }
+  ]
+}

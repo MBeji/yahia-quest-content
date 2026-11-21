@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 3 ⭐⭐⭐ : puissances de 9217, binôme, récurrence et congruences modulo 10⁴",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "On pose b = (9217)⁴. Quel est le reste de la division de b par 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On réduit d'abord la base : 9217 = 9215 + 2 ≡ 2 (mod 5). Par compatibilité avec le produit, 9217⁴ ≡ 2⁴ = 16 ≡ 1 (mod 5), puisque 16 = 3 × 5 + 1 ✓. C'est aussi une conséquence du théorème de Fermat : 5 est premier et ne divise pas 9217, donc 9217⁴ ≡ 1 (mod 5). Piège classique : oublier l'exposant et garder le reste 2 de la base, se tromper dans le reste de 16 (16 ≡ 1 et non 4), ou conclure à une divisibilité par 5 qui n'existe pas, 9217 n'étant pas un multiple de 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose b = (9217)⁴. Quel est le reste de la division de b par 2⁴ = 16 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On remarque que 9216 = 16 × 576, donc 9217 = 16 × 576 + 1 ≡ 1 (mod 16). Par compatibilité avec le produit, b = 9217⁴ ≡ 1⁴ = 1 (mod 16) ✓. Piège classique : multiplier le reste de la base par l'exposant (1 × 4 = 4) au lieu de l'élever, se tromper de 1 sur 9216 (le reste serait alors 15 ≡ −1), ou réduire 9217 modulo 10 au lieu de 16.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier naturel n, on pose bₙ = b^(5ⁿ) − 1. Quelle justification établit que bₙ₊₁ = (bₙ + 1)⁵ − 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "b^(5^(n+1)) = b^(5ⁿ) × b⁵ = (bₙ + 1) b⁵, d'où bₙ₊₁ = (bₙ + 1) b⁵ − 1"
+        },
+        {
+          "id": "b",
+          "text": "b^(5^(n+1)) = (b^(5ⁿ))⁵ = (bₙ + 1)⁵, car 5^(n+1) = 5ⁿ × 5 ; d'où le résultat"
+        },
+        {
+          "id": "c",
+          "text": "b^(5^(n+1)) = 5 × b^(5ⁿ) = 5(bₙ + 1), d'où bₙ₊₁ = 5(bₙ + 1) − 1"
+        },
+        {
+          "id": "d",
+          "text": "b^(5^(n+1)) = (b⁵)^(n+1), d'où bₙ₊₁ = (b⁵)^(n+1) − 1, qui ne fait pas intervenir bₙ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 5^(n+1) = 5ⁿ × 5, donc b^(5^(n+1)) = b^(5ⁿ × 5) = (b^(5ⁿ))⁵ (règle (aᵐ)ᵖ = a^(mp)). Comme b^(5ⁿ) = bₙ + 1, on obtient b^(5^(n+1)) = (bₙ + 1)⁵ et bₙ₊₁ = (bₙ + 1)⁵ − 1 ✓. Piège classique : additionner les exposants (b^(5ⁿ) × b⁵ vaut b^(5ⁿ + 5), pas b^(5ⁿ × 5)), sortir le facteur 5 devant la puissance, ou confondre 5^(n+1) avec 5(n + 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier naturel n, bₙ₊₁ = (bₙ + 1)⁵ − 1. Quelle est la forme développée de bₙ₊₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "bₙ₊₁ = bₙ⁵ + 5bₙ⁴ + 10bₙ³ + 10bₙ² + 5bₙ + 1"
+        },
+        {
+          "id": "b",
+          "text": "bₙ₊₁ = bₙ⁵ + 4bₙ⁴ + 6bₙ³ + 4bₙ² + bₙ"
+        },
+        {
+          "id": "c",
+          "text": "bₙ₊₁ = bₙ⁵ + 5bₙ⁴ + 10bₙ³ + 10bₙ² + 5bₙ"
+        },
+        {
+          "id": "d",
+          "text": "bₙ₊₁ = bₙ⁵ + 5bₙ⁴ + 10bₙ³ + 5bₙ² + bₙ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La formule du binôme donne (x + 1)⁵ = x⁵ + 5x⁴ + 10x³ + 10x² + 5x + 1 (coefficients 1, 5, 10, 10, 5, 1 de la ligne n = 5 du triangle de Pascal). En retranchant 1 et en posant x = bₙ : bₙ₊₁ = bₙ⁵ + 5bₙ⁴ + 10bₙ³ + 10bₙ² + 5bₙ ✓. Piège classique : oublier de retrancher 1 (le terme constant subsiste), utiliser la ligne n = 4 du triangle de Pascal (1, 4, 6, 4, 1), ou écrire des coefficients non symétriques.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier naturel. On suppose que 5^(n+1) divise bₙ. Quelle justification montre que 5^(n+2) divise bₙ⁵ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(5^(n+1))⁵ = 5^(5n+5) divise bₙ⁵, et 5n + 5 ≥ n + 2, donc 5^(n+2) divise bₙ⁵"
+        },
+        {
+          "id": "b",
+          "text": "5^(n+1) divise bₙ, donc divise bₙ⁵, mais rien ne prouve que 5^(n+2) divise aussi bₙ⁵"
+        },
+        {
+          "id": "c",
+          "text": "bₙ⁵ = bₙ × bₙ⁴ et 5 ne divise pas bₙ⁴ : seul 5^(n+1) divise donc bₙ⁵"
+        },
+        {
+          "id": "d",
+          "text": "5^(n+2) divise 5bₙ, donc 5^(n+2) divise aussi bₙ⁵"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si bₙ = 5^(n+1) × k avec k entier, alors bₙ⁵ = 5^(5(n+1)) × k⁵ = 5^(5n+5) × k⁵. Comme 5n + 5 ≥ n + 2 (soit 4n + 3 ≥ 0), 5^(5n+5) = 5^(n+2) × 5^(4n+3) : 5^(n+2) divise bₙ⁵ ✓. Piège classique : s'arrêter à 5^(n+1) en oubliant que l'exposant est multiplié par 5, supposer que bₙ⁴ n'est pas divisible par 5 alors qu'il l'est par hypothèse, ou raisonner sur 5bₙ, qui est un autre terme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier naturel, bₙ = b^(5ⁿ) − 1 avec b = 9217⁴ ≡ 1 (mod 5), et bₙ₊₁ = bₙ⁵ + 5bₙ⁴ + 10bₙ³ + 10bₙ² + 5bₙ. Quelle est la bonne démarche pour montrer par récurrence que bₙ ≡ 0 (mod 5^(n+1)) pour tout n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Initialisation : b₀ ≡ 0 (mod 5) ; hérédité : chaque terme de bₙ₊₁ est multiple de 5^(n+2), donc bₙ₊₁ aussi"
+        },
+        {
+          "id": "b",
+          "text": "Hérédité seule : si 5^(n+1) divise bₙ, alors 5^(n+2) divise bₙ₊₁, ce qui suffit sans vérifier le premier rang"
+        },
+        {
+          "id": "c",
+          "text": "Initialisation seule : b₀ = b − 1 ≡ 0 (mod 5) suffit à établir la propriété pour tout n"
+        },
+        {
+          "id": "d",
+          "text": "Hérédité : si 5^(n+1) divise bₙ, chaque terme de bₙ₊₁ est multiple de 5^(n+1), donc bₙ₊₁ est multiple de 5^(n+2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Initialisation (n = 0) : b₀ = b^(5⁰) − 1 = b − 1 ≡ 1 − 1 = 0 (mod 5) ✓. Hérédité : on suppose 5^(n+1) | bₙ. Alors bₙ⁵ est multiple de 5^(5n+5), donc de 5^(n+2) ; 5bₙ⁴, 10bₙ³ et 10bₙ² sont multiples de 5 × 5^(4n+4), 5 × 5^(3n+3), 5 × 5^(2n+2), tous multiples de 5^(n+2) ; et 5bₙ est multiple de 5 × 5^(n+1) = 5^(n+2). La somme bₙ₊₁ est donc multiple de 5^(n+2) ✓. Piège classique : omettre l'initialisation (une hérédité sans premier rang ne prouve rien), ou dire que la somme de multiples de 5^(n+1) est un multiple de 5^(n+2) : il faut que chaque terme soit multiple de 5^(n+2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n, bₙ = b^(5ⁿ) − 1 avec b = 9217⁴, et bₙ ≡ 0 (mod 5^(n+1)). Pourquoi 9217^500 ≡ 1 (mod 625) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "500 = 4 × 5³, donc 9217^500 = b₂ + 1 ≡ 1 (mod 5³ = 125) seulement, ce qui ne donne rien modulo 625"
+        },
+        {
+          "id": "b",
+          "text": "625 est le carré de 25 et 9217 est premier avec 625, donc le théorème de Fermat donne directement 9217^500 ≡ 1 (mod 625)"
+        },
+        {
+          "id": "c",
+          "text": "500 = 4 × 5³, donc 9217^500 = (9217⁴)^(5³) = b^(5³) = b₃ + 1, et b₃ ≡ 0 (mod 5⁴ = 625)"
+        },
+        {
+          "id": "d",
+          "text": "9217⁴ ≡ 1 (mod 5), donc en élevant à la puissance 125 on obtient (9217⁴)^125 ≡ 1 (mod 625)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a 500 = 4 × 125 = 4 × 5³, donc 9217^500 = (9217⁴)^(5³) = b^(5³) = b₃ + 1. Par la propriété bₙ ≡ 0 (mod 5^(n+1)) donnée dans l'énoncé (avec n = 3), b₃ ≡ 0 (mod 5^(3+1) = 5⁴ = 625). Donc 9217^500 ≡ 1 (mod 625) ✓. Piège classique : décaler l'indice (b₂ n'est divisible que par 5³), appliquer le théorème de Fermat à un module non premier (625 = 5⁴ ne l'est pas), ou croire qu'une congruence modulo 5 se conserve modulo 625 en élevant à une puissance.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On admet : si un entier N vérifie N ≡ 1 (mod m) et N ≡ 1 (mod m′) avec m et m′ sans diviseur commun autre que 1, alors N ≡ 1 (mod mm′). On a N = 9217^500 ≡ 1 (mod 625) et 9217 ≡ 1 (mod 16). Que peut-on conclure modulo 10⁴ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N ≡ 1 (mod 16) et N ≡ 1 (mod 625), donc N ≡ 1 modulo la somme des modules, soit 16 + 625 = 641"
+        },
+        {
+          "id": "b",
+          "text": "N ≡ 1 (mod 16) car 9217 ≡ 1 ; 16 et 625 sans diviseur commun : N ≡ 1 (mod 10⁴)"
+        },
+        {
+          "id": "c",
+          "text": "N ≡ 1 (mod 5) et N ≡ 1 (mod 2), donc N ≡ 1 (mod 10), ce qui est tout ce qu'on peut affirmer ici"
+        },
+        {
+          "id": "d",
+          "text": "N ≡ 1 (mod 625) et 625 > 16, donc N ≡ 1 (mod 10⁴) sans rien vérifier de plus sur le module 16"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme 9217 ≡ 1 (mod 16), N = 9217^500 ≡ 1^500 = 1 (mod 16). Les modules 16 = 2⁴ et 625 = 5⁴ n'ont aucun diviseur commun autre que 1 (2 et 5 sont deux nombres premiers distincts), donc la propriété admise donne N ≡ 1 (mod 16 × 625) ; or 16 × 625 = 10 000 = 10⁴ ✓. Piège classique : additionner les modules au lieu de les multiplier, se contenter d'un module plus petit, ou oublier de vérifier que les deux modules sont premiers entre eux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que 9217^500 ≡ 1 (mod 10⁴). Quel entier x vérifie x³ ≡ 9217 (mod 10⁴) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 9217^166"
+        },
+        {
+          "id": "b",
+          "text": "x = 9217^333"
+        },
+        {
+          "id": "c",
+          "text": "x = 9217^500"
+        },
+        {
+          "id": "d",
+          "text": "x = 9217^167"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On cherche k tel que (9217^k)³ = 9217^(3k) ≡ 9217 (mod 10⁴). Comme 9217^500 ≡ 1, il suffit que 3k = 1 + 500m : avec m = 1, 3k = 501 donc k = 167. Alors x³ = 9217^501 = 9217^500 × 9217 ≡ 1 × 9217 = 9217 (mod 10⁴) ✓ pour x = 9217^167. Piège classique : prendre un exposant au hasard près de 500/3 (3 × 166 = 498 ≡ −2 donne 9217^498 ≡ 9217^(−2)), ou 333 (3 × 333 = 999 ≡ 499), ou croire que le cube de 9217^500 vaut 9217 : il vaut 1.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 2 ⭐⭐⭐⭐ : Rotation, similitude directe, centre et écriture complexe",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 22,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Quelle est une mesure de l'angle orienté (BC⃗, BO⃗) ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/6"
+        },
+        {
+          "id": "b",
+          "text": "−π/12"
+        },
+        {
+          "id": "c",
+          "text": "π/3"
+        },
+        {
+          "id": "d",
+          "text": "−π/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le triangle CBA est isocèle en C : ses angles à la base sont égaux, donc (BA⃗, BC⃗) ≡ (AC⃗, AB⃗) = π/12, soit (BC⃗, BA⃗) ≡ −π/12. De plus (BO⃗, BA⃗) ≡ π/4, donc (BA⃗, BO⃗) ≡ −π/4. Par la relation de Chasles, (BC⃗, BO⃗) = (BC⃗, BA⃗) + (BA⃗, BO⃗) = −π/12 − π/4 = −π/3. Oublier le second terme donnerait −π/12 ; les signes mal orientés donneraient π/3. Vérification : −π/12 − 3π/12 = −4π/12 = −π/3 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Le repère est (O ; OA⃗, OB⃗), orthonormé direct (OA = OB = 1). Quelle justification donne arg(z_C) ≡ π/4 [2π] ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "CA = CB : C est sur la médiatrice de [AB], qui est la droite d'équation y = x ; C est dans le quadrant positif"
+        },
+        {
+          "id": "b",
+          "text": "CA = CB : C est sur la médiatrice de [AB], qui est la droite d'équation y = −x ; C est dans le quadrant positif"
+        },
+        {
+          "id": "c",
+          "text": "CA = CB : C est sur la hauteur issue de O, qui est la droite d'équation x = 0 ; C est dans le quadrant positif"
+        },
+        {
+          "id": "d",
+          "text": "OA = OB : C est sur la médiatrice de [AB], qui est la droite d'équation y = 0 ; C est dans le quadrant positif"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "CA = CB (triangle isocèle en C), donc C est sur la médiatrice de [AB]. Comme OA = OB = 1, O est aussi sur cette médiatrice, qui est la droite (OC) : dans le repère (O ; OA⃗, OB⃗), c'est la première bissectrice y = x (elle passe par O et par le milieu (1/2, 1/2) de [AB]). C est dans le quadrant x > 0, y > 0 (de l'autre côté de (AB) par rapport à O), donc arg(z_C) = π/4. La droite y = −x est la seconde bissectrice ; x = 0 est l'axe (OB) ; y = 0 est l'axe (OA). Vérification : la médiatrice de [AB] contient O et le milieu de [AB] ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Soit f la similitude directe telle que f(B) = A et f(O) = C, d'écriture z′ = az + b dans le repère orthonormé direct (O ; OA⃗, OB⃗). Quelles relations a-t-on ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ai + b = 1 et b = 1"
+        },
+        {
+          "id": "b",
+          "text": "ai + b = 1 et b = z_C"
+        },
+        {
+          "id": "c",
+          "text": "ai + b = i et b = z_C"
+        },
+        {
+          "id": "d",
+          "text": "a + b = i et b = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans ce repère, A a pour affixe 1, B pour affixe i et O pour affixe 0. f(B) = A donne a·i + b = 1. f(O) = C donne a·0 + b = z_C, soit b = z_C. Les autres relations mélangent les affixes : ai + b = i traduirait f(B) = B ; b = 0 ou b = 1 ne correspondent pas à f(O) = C. Vérification : f(O) = b = z_C et f(B) = ai + b = 1 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Soit R la rotation de centre B et d'angle −π/3, D = R(C), avec (BC⃗, BO⃗) ≡ −π/3. Quel argument établit que O, D et B sont alignés ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "R conserve les distances, donc BD = BC et D est le milieu de [BO)"
+        },
+        {
+          "id": "b",
+          "text": "R est une rotation de centre B, donc D est toujours alignée avec B et C"
+        },
+        {
+          "id": "c",
+          "text": "R envoie la demi-droite [BC) sur la demi-droite [BO), donc D = R(C) est sur [BO) : B, D, O sont alignés"
+        },
+        {
+          "id": "d",
+          "text": "R envoie la demi-droite [BC) sur la demi-droite [BA), donc D = R(C) est sur [BA) : B, D, A sont alignés"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "R est la rotation de centre B et d'angle −π/3. Comme (BC⃗, BO⃗) ≡ −π/3, R envoie la demi-droite [BC) sur la demi-droite [BO). Donc D = R(C) est un point de [BO) (avec BD = BC) : B, D et O sont alignés. L'image de [BC) n'est pas [BA) (angle différent) ; la conservation des distances ne place pas D au milieu de quoi que ce soit ; et une rotation d'angle non nul ne laisse pas C sur sa demi-droite. Vérification : (BC⃗, BD⃗) ≡ −π/3 = (BC⃗, BO⃗) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Soit R la rotation de centre B et d'angle −π/3 et D = R(C), point de [BO) tel que BD = BC. Quel argument montre que le triangle ACD est rectangle isocèle en C ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M145.2 94.8 L26 163.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 163.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"163.6\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text><text x=\"16\" y=\"167.6\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "BCD est équilatéral (BC = BD, angle π/3), donc CD = CB = CA, et ∠ACD = ∠ACB − ∠BCD = 5π/6 − π/3 = π/2"
+        },
+        {
+          "id": "b",
+          "text": "BCD est équilatéral (BC = BD, angle π/3), donc CD = CB = CA, et ∠ACD = ∠ACB + ∠BCD = 5π/6 + π/3 = 7π/6, soit 5π/6 en angle géométrique"
+        },
+        {
+          "id": "c",
+          "text": "BCD est équilatéral (BC = BD, angle π/3), donc CD = CB = CA, et ∠ACB = π − 2 × π/6 = 2π/3, d'où ∠ACD = 2π/3 − π/3 = π/3"
+        },
+        {
+          "id": "d",
+          "text": "BCD est équilatéral (BC = BD, angle π/3), donc CD = CB ; ∠ACD = ∠ACB − ∠BCD = 5π/6 − π/3 = π/2, donc ACD est rectangle en C et isocèle en A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "BC = BD et l'angle en B vaut π/3 : le triangle BCD est équilatéral, donc CD = CB. Comme CBA est isocèle en C, CA = CB : ainsi CD = CA et ACD est isocèle en C. L'angle ∠ACB = π − 2 × π/12 = 5π/6 et ∠BCD = π/3, donc, D étant dans l'angle ACB, ∠ACD = 5π/6 − π/3 = π/2. Le triangle ACD est rectangle isocèle en C. Ajouter les deux angles (5π/6 + π/3 = 7π/6) placerait D de l'autre côté de (CA) : ce n'est pas la configuration, D étant dans l'angle ACB. Prendre l'angle de base π/6 au lieu de π/12 donne ∠ACB = 2π/3 au lieu de 5π/6, d'où un angle π/3 faux. Enfin CA = CB = CD fait le triangle ACD isocèle en C, non en A : l'angle droit et les côtés égaux sont en C. Vérification : π/2 + π/4 + π/4 = π ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Soit f la similitude directe telle que f(B) = A et f(O) = C, D le point tel que le triangle ACD est rectangle isocèle en C avec (CA⃗, CD⃗) ≡ −π/2 [2π]. Quelle est l'image de A par f ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M145.2 94.8 L26 163.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 163.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"163.6\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text><text x=\"16\" y=\"167.6\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point B"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le point D"
+        },
+        {
+          "id": "d",
+          "text": "Le point O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f envoie le triangle OBA sur le triangle C A f(A) (O ↦ C, B ↦ A). OBA est rectangle isocèle en O avec (OB⃗, OA⃗) ≡ −π/2. Une similitude directe conserve les angles orientés et multiplie les longueurs par le même rapport : f(A) est le point P tel que CP = CA et (CA⃗, CP⃗) ≡ −π/2. C'est D. Les points B et O sont les antécédents, C est f(O). Vérification : CD = CA et (CA⃗, CD⃗) ≡ −π/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Soit f la similitude directe telle que f(B) = A et f(O) = C. On sait (BO⃗, BA⃗) ≡ π/4 et (AB⃗, AC⃗) ≡ −π/12. Quelle est une mesure de l'angle de f ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−5π/6"
+        },
+        {
+          "id": "b",
+          "text": "5π/6"
+        },
+        {
+          "id": "c",
+          "text": "π/6"
+        },
+        {
+          "id": "d",
+          "text": "7π/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'angle de f est (BO⃗, f(B)f(O)⃗) = (BO⃗, AC⃗). Par la relation de Chasles, (BO⃗, AC⃗) = (BO⃗, BA⃗) + (BA⃗, AB⃗) + (AB⃗, AC⃗) = π/4 + π − π/12 = (3π + 12π − π)/12 = 14π/12 = 7π/6 ≡ −5π/6 [2π]. Oublier le demi-tour (BA⃗, AB⃗) = π donnerait π/4 − π/12 = π/6 ; confondre 7π/6 avec son opposé 5π/6 ferait une erreur de signe ; 7π/12 viendrait de l'addition π/2 + π/12 (l'angle droit en O et l'angle π/12), au lieu de composer π/4, π et −π/12. Vérification : 7π/6 − 2π = −5π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Soit f la similitude directe de centre Ω telle que f(B) = A, f(A) = D et f(D) = E, d'angle −5π/6. Quelle est une mesure de (ΩB⃗, ΩE⃗) ? <svg viewBox=\"0 0 240 240\"><path d=\"M26 214 L214 214\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 26 L145.2 94.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M145.2 94.8 L26 163.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M214 214 L26 163.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"214\" r=\"3.6\"/><circle cx=\"214\" cy=\"214\" r=\"3.6\"/><circle cx=\"26\" cy=\"26\" r=\"3.6\"/><circle cx=\"145.2\" cy=\"94.8\" r=\"3.6\"/><circle cx=\"26\" cy=\"163.6\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"228\" text-anchor=\"middle\">O</text><text x=\"224\" y=\"228\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"28\" text-anchor=\"middle\">B</text><text x=\"157.2\" y=\"90.8\" text-anchor=\"middle\">C</text><text x=\"16\" y=\"167.6\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/2"
+        },
+        {
+          "id": "b",
+          "text": "−5π/6"
+        },
+        {
+          "id": "c",
+          "text": "−5π/3"
+        },
+        {
+          "id": "d",
+          "text": "−π/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "E = f(D) = f(f(A)) = f(f(f(B))) : E est l'image de B par f∘f∘f, de centre Ω et d'angle 3 × (−5π/6) = −5π/2. Donc (ΩB⃗, ΩE⃗) ≡ −5π/2 ≡ −π/2 [2π]. L'angle −5π/6 est celui d'un seul passage ; −5π/3 serait celui de deux passages ; π/2 oublierait le signe. Vérification : −5π/2 + 2π = −π/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OAB est un triangle rectangle isocèle en O tel que (BO⃗, BA⃗) ≡ π/4 [2π] ; CBA est un triangle isocèle en C tel que (AC⃗, AB⃗) ≡ π/12 [2π]. Ω est le centre de f et E = f(f(f(B))). On a (ΩO⃗, ΩB⃗) ≡ −π/2 et (ΩB⃗, ΩE⃗) ≡ −π/2 [2π]. Quel argument montre que Ω est le projeté orthogonal de B sur (OE) ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ΩO⃗, ΩE⃗) ≡ −π : O, Ω, E sont alignés, donc Ω est le milieu du segment [OE] sur (OE)"
+        },
+        {
+          "id": "b",
+          "text": "(ΩO⃗, ΩE⃗) ≡ −π : O, Ω, E alignés, et (ΩB) ⊥ (ΩO), donc Ω est le projeté de B sur (OE)"
+        },
+        {
+          "id": "c",
+          "text": "(ΩO⃗, ΩE⃗) ≡ 0 : O, Ω, E sont confondus, donc Ω est le projeté de B sur (OE) par définition"
+        },
+        {
+          "id": "d",
+          "text": "(ΩO⃗, ΩE⃗) ≡ −π/2 : le triangle OΩE est rectangle en Ω, donc Ω est le projeté de B sur (OE) aussi"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par la relation de Chasles, (ΩO⃗, ΩE⃗) = (ΩO⃗, ΩB⃗) + (ΩB⃗, ΩE⃗) = −π/2 − π/2 = −π : les vecteurs ΩO⃗ et ΩE⃗ sont opposés, donc O, Ω, E sont alignés. Comme (ΩB⃗, ΩO⃗) ≡ π/2, la droite (ΩB) est perpendiculaire à (ΩO) = (OE) : Ω est le pied de la perpendiculaire menée de B à (OE). Un angle nul voudrait dire que les points sont du même côté, pas confondus ; −π/2 est la mauvaise somme ; l'alignement ne suffit pas à faire de Ω le milieu de [OE]. Vérification : −π/2 − π/2 = −π ✓.",
+      "difficulty": 3
+    }
+  ]
+}

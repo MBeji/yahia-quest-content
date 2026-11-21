@@ -1,0 +1,274 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 1 ⭐⭐⭐⭐ : Triangle équilatéral, déplacement, antidéplacement et similitude indirecte",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. Soit f le déplacement tel que f(A) = C et f(B) = A. Quelle est une mesure de son angle ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4π/3"
+        },
+        {
+          "id": "b",
+          "text": "−2π/3"
+        },
+        {
+          "id": "c",
+          "text": "−π/3"
+        },
+        {
+          "id": "d",
+          "text": "π/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'angle d'un déplacement qui envoie A sur C et B sur A est (AB⃗, f(A)f(B)⃗) = (AB⃗, CA⃗). Or CA⃗ = −AC⃗, donc (AB⃗, CA⃗) = (AB⃗, AC⃗) + π = π/3 + π = 4π/3 ≡ −2π/3 [2π]. L'erreur classique est de garder (AB⃗, AC⃗) = π/3 sans le demi-tour, ou de prendre le signe opposé. Vérification : 4π/3 − (−2π/3) = 2π ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. Soit g l'antidéplacement tel que g(A) = C et g(B) = A. Quelle justification montre que g est une symétrie glissante et non une symétrie orthogonale ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une symétrie orthogonale aurait pour axe la médiatrice de [AC] et celle de [AB], deux droites distinctes"
+        },
+        {
+          "id": "b",
+          "text": "Une symétrie orthogonale aurait pour axe la droite (AC) et aussi la droite (AB), deux droites distinctes"
+        },
+        {
+          "id": "c",
+          "text": "Une symétrie orthogonale fixerait A, puisqu'elle envoie B sur A ; or g(A) = C est distinct de A"
+        },
+        {
+          "id": "d",
+          "text": "Une symétrie orthogonale est un déplacement, alors que g renverse les angles orientés du plan"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si g était la symétrie orthogonale d'axe Δ′, Δ′ serait à la fois la médiatrice de [AC] (g(A) = C) et la médiatrice de [BA] (g(B) = A). Or ces deux médiatrices sont distinctes : elles se coupent au centre O du triangle équilatéral. Donc g n'est pas une symétrie orthogonale ; un antidéplacement qui n'est pas une symétrie orthogonale est une symétrie glissante. Les droites (AC) et (AB) ne sont pas des axes de symétrie de ce type, une symétrie orthogonale n'envoie pas B sur A en fixant A, et une symétrie orthogonale est bien un antidéplacement, non un déplacement. Vérification : un antidéplacement a toujours l'une ou l'autre forme ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. Soit h l'homothétie de centre A telle que h(O) = I, f le déplacement tel que f(A) = C et f(B) = A, g l'antidéplacement tel que g(A) = C et g(B) = A, et φ = g∘h∘f. Quelle est l'image de B par φ ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point A"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le point D"
+        },
+        {
+          "id": "d",
+          "text": "Le point I"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "φ(B) = g(h(f(B))). f(B) = A. h a pour centre A : h(A) = A. Enfin g(A) = C. Donc φ(B) = C. S'arrêter après f donnerait A ; D est l'image de O (pas de B) ; I est l'image de O par h. Vérification : φ(B) = g(A) = C, par définition de g ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. f est le déplacement tel que f(A) = C et f(B) = A, d'angle −2π/3. Quel est le centre de f ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point I"
+        },
+        {
+          "id": "b",
+          "text": "Le point D"
+        },
+        {
+          "id": "c",
+          "text": "Le point O"
+        },
+        {
+          "id": "d",
+          "text": "Le sommet A"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le centre d'une rotation est équidistant d'un point et de son image. Pour f : OA = OC (A ↦ C) et OB = OA (B ↦ A), et plus généralement O est le centre du cercle circonscrit, donc OA = OB = OC. De plus (OB⃗, OA⃗) = −2π/3, l'angle de f. Le point O est donc le centre de f. Le milieu I n'est pas équidistant de A et de C ; D non plus ; et A n'est pas fixe puisque f(A) = C. Vérification : f(B) = A, f(A) = C, f(C) = B : f permute circulairement les sommets autour de O ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. Soit g l'antidéplacement tel que g(A) = C et g(B) = A, que l'on écrit g = t_(u⃗)∘S_Δ avec Δ la médiatrice de [AI]. Quel est le vecteur u⃗ ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB⃗"
+        },
+        {
+          "id": "b",
+          "text": "BC⃗"
+        },
+        {
+          "id": "c",
+          "text": "AI⃗"
+        },
+        {
+          "id": "d",
+          "text": "BI⃗"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S_Δ(A) = I, donc g(A) = C impose t_(u⃗)(I) = C, soit u⃗ = IC⃗. Comme I est le milieu de [BC], IC⃗ = BI⃗. Vérification sur B : S_Δ(B) est le symétrique B′ de B par rapport à Δ (Δ est horizontale), et B′ + BI⃗ = A, d'où g(B) = A ✓. Le vecteur AI⃗ est vertical, il ne peut pas envoyer I sur C ; BC⃗ = 2 BI⃗ ferait trop avancer.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. Soit h l'homothétie de centre A telle que h(O) = I, f le déplacement tel que f(A) = C, f(B) = A, g l'antidéplacement tel que g(A) = C, g(B) = A, et φ = g∘h∘f. Quelle est la nature de φ ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une similitude indirecte de rapport 3/2"
+        },
+        {
+          "id": "b",
+          "text": "Une similitude directe de rapport 3/2"
+        },
+        {
+          "id": "c",
+          "text": "Une similitude indirecte de rapport 2/3"
+        },
+        {
+          "id": "d",
+          "text": "Une similitude directe de rapport 2/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le rapport de h est AI/AO (h(O) = I, centre A). O est au deux tiers de [AI] à partir de A (centre de gravité), donc AO = (2/3)AI et AI/AO = 3/2. Le rapport de φ est 1 × 3/2 × 1 = 3/2. f est directe, h directe et g indirecte : le produit des signes est −1, φ est indirecte. Le rapport 2/3 viendrait d'une inversion du quotient. Vérification : AI = (3/2)AO ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. φ = g∘h∘f est une similitude indirecte de rapport 3/2, avec f(O) = O, h(O) = I et g = t_(BI⃗)∘S_Δ, où Δ est la médiatrice de [AI]. Quelle est l'image de O par φ ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point D"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le point I"
+        },
+        {
+          "id": "d",
+          "text": "Le point A"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "φ(O) = g(h(f(O))). f(O) = O (centre de la rotation), h(O) = I par définition, et g(I) = t_(BI⃗)(S_Δ(I)) = t_(BI⃗)(A) = D (S_Δ(I) = A car Δ est la médiatrice de [AI]), puisque AD⃗ = BI⃗ dans le rectangle AICD. Donc φ(O) = D. Le point C est φ(B), et I est seulement h(O). Vérification : AICD est un rectangle, donc A + BI⃗ = D ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. φ est une similitude indirecte de rapport 3/2 avec φ(B) = C, φ(O) = D et E = φ(C). Que vaut le quotient DE/DC ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "DE = φ(O)φ(C) = (3/2)·OC (la distance image est k fois la distance de départ), et OC = (2/3)·AI = (2/3)·DC puisque AICD est un rectangle (DC = AI). Donc DE = (3/2)(2/3)DC = DC : le triangle DCE est isocèle en D. Appliquer 3/2 à DC directement donnerait 3/2 ; utiliser l'inverse 2/3 donnerait 2/3 ; 1/2 ne correspond à aucun quotient de cette figure. Vérification : (3/2) × (2/3) = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. φ est une similitude indirecte avec φ(O) = D, φ(B) = C et E = φ(C). On sait que (OB⃗, OC⃗) ≡ 2π/3 [2π]. Quelle est une mesure de (DC⃗, DE⃗) ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2π/3"
+        },
+        {
+          "id": "b",
+          "text": "−2π/3"
+        },
+        {
+          "id": "c",
+          "text": "π/6"
+        },
+        {
+          "id": "d",
+          "text": "−π/6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "DC⃗ = φ(O)φ(B)⃗ et DE⃗ = φ(O)φ(C)⃗. Une similitude indirecte change les mesures d'angles orientés en leurs opposées : (DC⃗, DE⃗) = −(OB⃗, OC⃗) = −2π/3. La valeur 2π/3 vient de l'oubli du changement de signe dû à la similitude indirecte ; π/6 est l'angle à la base du triangle isocèle DCE (angle géométrique en C ou en E), et −π/6 le même angle compté négativement : ce ne sont pas des mesures de l'angle au sommet D. Vérification : le triangle DCE est isocèle en D avec un angle de 2π/3 au sommet, donc les deux angles à la base valent π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. φ est une similitude indirecte de centre Ω et de rapport 3/2, avec φ(B) = C et E = φ(C). Quelle relation lie ΩB⃗ et BE⃗ ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ΩB⃗ = 2·BE⃗"
+        },
+        {
+          "id": "b",
+          "text": "ΩB⃗ = (4/9)·BE⃗"
+        },
+        {
+          "id": "c",
+          "text": "ΩB⃗ = (2/3)·BE⃗"
+        },
+        {
+          "id": "d",
+          "text": "ΩB⃗ = (4/5)·BE⃗"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "φ∘φ est l'homothétie de centre Ω et de rapport (3/2)² = 9/4. Comme φ(φ(B)) = φ(C) = E, on a ΩE⃗ = (9/4)ΩB⃗. Or ΩE⃗ = ΩB⃗ + BE⃗, donc BE⃗ = (9/4 − 1)ΩB⃗ = (5/4)ΩB⃗, c'est-à-dire ΩB⃗ = (4/5)BE⃗. Utiliser le rapport 3/2 au lieu de 9/4 donnerait ΩB⃗ = 2BE⃗. Vérification : ΩE⃗ = ΩB⃗ + (5/4)ΩB⃗ = (9/4)ΩB⃗ ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. φ est la similitude indirecte de centre Ω et de rapport 3/2 telle que φ(B) = C ; on pose E = φ(C) et 𝒞₂ = φ(𝒞₁). Le cercle 𝒞₂ coupe 𝒞₁ en C et en un autre point M. Quel argument établit que Ω, B et M sont alignés ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ω, B et E = φ∘φ(B) sont alignés (homothétie de centre Ω) ; la puissance de Ω par rapport à 𝒞₂ vaut (3/2)² fois celle par rapport à 𝒞₁, donc (ΩB) recoupe les deux cercles en un même point : M"
+        },
+        {
+          "id": "b",
+          "text": "Ω, B et E = φ∘φ(B) sont alignés (homothétie de centre Ω) ; la puissance de Ω par rapport à 𝒞₂ vaut 3/2 fois celle par rapport à 𝒞₁, donc (ΩB) recoupe les deux cercles en un même point : M"
+        },
+        {
+          "id": "c",
+          "text": "φ(B) = C donne Ω, B et C alignés sur la droite (ΩB) ; M appartient à 𝒞₁ et à 𝒞₂ comme C, donc M est lui aussi sur cette droite, qui porte déjà B"
+        },
+        {
+          "id": "d",
+          "text": "M appartient aux deux cercles, donc à la droite des centres (OD) ; cette droite contient Ω et B, de sorte que les trois points Ω, B et M sont alignés sur (OD)"
+        }
+      ],
+      "correctOption": "a",
+      "difficulty": 3,
+      "explanation": "φ∘φ est l'homothétie h de centre Ω et de rapport (3/2)² = 9/4 ; comme φ(B) = C, h(B) = φ(C) = E : Ω, B et E sont alignés. La droite (ΩB) recoupe 𝒞₁ en un second point T (ΩB·ΩT = p, puissance de Ω par rapport à 𝒞₁, comptée algébriquement) ; elle coupe aussi 𝒞₂ en E, qui appartient à 𝒞₂ puisque E = φ(C) avec C ∈ 𝒞₁. φ multiplie les distances à son centre par 3/2, donc la puissance de Ω par rapport à 𝒞₂ = φ(𝒞₁) vaut (3/2)² p = 9p/4. Avec ΩE = (9/4)ΩB, le second point T′ de (ΩB) sur 𝒞₂ vérifie ΩT′ = (9p/4)/ΩE = p/ΩB = ΩT : T′ = T. T est donc commun à 𝒞₁ et 𝒞₂, et T ≠ C (C n'est pas sur (ΩB)) : T = M, d'où Ω, B, M alignés. Les erreurs : prendre le rapport 3/2 au lieu de son carré pour les puissances (on n'obtiendrait pas T′ = T) ; croire Ω, B, C alignés parce que φ(B) = C (une similitude indirecte ne conserve pas l'alignement avec son centre) ; placer M sur la droite des centres (OD), alors que (CM), corde commune, lui est perpendiculaire. Vérification : dans le repère d'origine O, de rayon OA = 1, B(−√3/2 ; −1/2), Ω(−7√3/10 ; −23/10), M(−5√3/14 ; 11/14), et ΩM⃗ = (12/7)·ΩB⃗ ✓."
+    }
+  ]
+}

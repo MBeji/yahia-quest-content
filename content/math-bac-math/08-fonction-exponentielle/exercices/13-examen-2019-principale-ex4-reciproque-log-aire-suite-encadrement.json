@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2019 · session principale · Exercice 4 ⭐⭐⭐⭐ : fonction √(1 − e^(−x)), réciproque logarithmique, aire entre deux courbes et suite de sommes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = √(1 − e^(−x)). Pourquoi f possède-t-elle une fonction réciproque g définie sur [0 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est continue sur [0 ; +∞[ et prend les valeurs 0 et 1, donc f est bijective de [0 ; +∞[ sur [0 ; 1], et sa réciproque est définie sur [0 ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "f est continue et strictement croissante (f′ > 0 sur ]0 ; +∞[), avec f(0) = 0 et limite 1 en +∞ : bijection de [0 ; +∞[ sur [0 ; 1["
+        },
+        {
+          "id": "c",
+          "text": "f est strictement décroissante, car e^(−x) décroît, donc f réalise une bijection de [0 ; +∞[ sur ]0 ; 1], et sa réciproque est définie sur ]0 ; 1]"
+        },
+        {
+          "id": "d",
+          "text": "f est dérivable sur [0 ; +∞[, donc f est bijective de [0 ; +∞[ sur [0 ; 1[, et sa réciproque g est définie sur ce même intervalle de ℝ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur ]0 ; +∞[, f′(x) = e^(−x)/(2√(1 − e^(−x))) est strictement positive, et f est continue en 0 : f est strictement croissante sur [0 ; +∞[. Elle réalise donc une bijection de [0 ; +∞[ sur [f(0) ; lim_{+∞} f[ = [0 ; 1[ ✓ (la limite 1 n'est pas atteinte, car e^(−x) > 0). Piège classique : croire que f décroît parce que e^(−x) décroît (c'est 1 − e^(−x) qui croît), fermer la borne 1 qui n'est qu'une limite, ou invoquer une dérivabilité qui n'existe pas en 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √(1 − e^(−x)), bijection de [0 ; +∞[ sur [0 ; 1[, et g sa réciproque. Quelle est l'expression de g(x) pour x dans [0 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) = ln(1 − x²)"
+        },
+        {
+          "id": "b",
+          "text": "g(x) = −ln(1 + x²)"
+        },
+        {
+          "id": "c",
+          "text": "g(x) = −ln(1 − √x)"
+        },
+        {
+          "id": "d",
+          "text": "g(x) = −ln(1 − x²)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On résout y = √(1 − e^(−x)) d'inconnue x ≥ 0 : en élevant au carré, y² = 1 − e^(−x), donc e^(−x) = 1 − y² (positif car y < 1), puis −x = ln(1 − y²) et x = −ln(1 − y²). Ainsi g(x) = −ln(1 − x²) ✓. Contrôle : g(0) = −ln 1 = 0 = f⁻¹(0) ✓. Piège classique : perdre le signe moins en passant de −x à x, écrire 1 + y² au lieu de 1 − y², ou confondre le carré et la racine.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur [0 ; 1[ par g(x) = −ln(1 − x²). Quelle est sa dérivée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) = −2x/(1 − x²)"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = 1/(1 − x²)"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) = 2x/(1 − x²)"
+        },
+        {
+          "id": "d",
+          "text": "g′(x) = 2x/(1 + x²)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive −ln u avec u(x) = 1 − x² : (−ln u)′ = −u′/u = −(−2x)/(1 − x²) = 2x/(1 − x²) ✓. Pour x ∈ [0 ; 1[, g′(x) ≥ 0, ce qui est cohérent : g est la réciproque d'une fonction croissante. Piège classique : oublier le signe de u′ = −2x (les deux signes moins s'annulent), oublier le facteur 2x de la dérivée intérieure, ou écrire 1 + x² au dénominateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = −ln(1 − x²) sur [0 ; 1[. Quelle justification établit que l'équation g(x) = x admet une solution α dans [0,7 ; 0,8] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) − x est continue sur [0,7 ; 0,8], négative en 0,7 et positive en 0,8 : théorème des valeurs intermédiaires"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ g(x) − x est continue sur [0,7 ; 0,8], positive en 0,7 et négative en 0,8 : le théorème des valeurs intermédiaires s'applique, sans autre calcul que les signes"
+        },
+        {
+          "id": "c",
+          "text": "g(0,7) et g(0,8) sont de même signe, donc le produit g(0,7) × g(0,8) est positif et le théorème des valeurs intermédiaires s'applique à g sur [0,7 ; 0,8]"
+        },
+        {
+          "id": "d",
+          "text": "g est croissante sur [0,7 ; 0,8], donc g(x) = x admet sur cet intervalle une solution unique, par le théorème de la bijection appliqué à g seule"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On étudie φ(x) = g(x) − x, continue sur [0,7 ; 0,8]. On a φ(0,7) = −ln 0,51 − 0,7 < 0, car 0,51 > e^(−0,7) (≈ 0,497) ; et φ(0,8) = −ln 0,36 − 0,8 > 0, car 0,36 < e^(−0,8) (≈ 0,449). Comme φ change de signe, le théorème des valeurs intermédiaires donne un α de [0,7 ; 0,8] avec φ(α) = 0, soit g(α) = α ✓. Piège classique : appliquer le théorème à g au lieu de g(x) − x (les valeurs g(0,7) et g(0,8) sont toutes deux positives, rien ne s'annule), ou croire que la croissance de g suffit pour un point fixe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = √(1 − e^(−x)), g sa réciproque sur [0 ; 1[ avec g′(x) = 2x/(1 − x²), et φ(x) = ∫ de 0 à g(x) de f(t) dt. Quelle est φ′(x) pour x ∈ [0 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ′(x) = 2x/(1 − x²)"
+        },
+        {
+          "id": "b",
+          "text": "φ′(x) = 2x²/(1 − x²)"
+        },
+        {
+          "id": "c",
+          "text": "φ′(x) = −2x ln(1 − x²)/(1 − x²)"
+        },
+        {
+          "id": "d",
+          "text": "φ′(x) = 2x√(1 − e^(−x))/(1 − x²)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "φ = Φ ∘ g où Φ(y) = ∫ de 0 à y de f(t) dt a pour dérivée f. Donc φ′(x) = g′(x) × f(g(x)). Comme g est la réciproque de f, f(g(x)) = x, d'où φ′(x) = 2x/(1 − x²) × x = 2x²/(1 − x²) ✓. Piège classique : oublier de composer f avec g (calculer f(x) au lieu de f(g(x))), prendre f(g(x)) = g(x) ou oublier tout le facteur f(g(x)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quels réels a, b et c vérifient 2x²/(1 − x²) = a + b/(1 + x) + c/(1 − x) pour tout x de [0 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 2, b = −1, c = −1"
+        },
+        {
+          "id": "b",
+          "text": "a = 0, b = 1, c = 1"
+        },
+        {
+          "id": "c",
+          "text": "a = −2, b = 1/2, c = 1/2"
+        },
+        {
+          "id": "d",
+          "text": "a = −2, b = 1, c = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le degré du numérateur égale celui du dénominateur : on isole d'abord la partie entière, 2x²/(1 − x²) = −2 + 2/(1 − x²), car −2(1 − x²) + 2 = 2x². Puis 2/(1 − x²) = 1/(1 + x) + 1/(1 − x), car (1 − x) + (1 + x) = 2. Donc a = −2, b = 1, c = 1 ✓. Piège classique : omettre la partie entière (a = 0 ne redonne que 2/(1 − x²), pas 2x²/(1 − x²)), ou oublier que (1 − x) + (1 + x) vaut 2 et non 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit φ la primitive de x ↦ 2x²/(1 − x²) = −2 + 1/(1 + x) + 1/(1 − x) qui s'annule en 0, sur [0 ; 1[. Quelle est l'expression de φ(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ(x) = −2x + ln(1 − x²)"
+        },
+        {
+          "id": "b",
+          "text": "φ(x) = −2x + ln((1 + x)/(1 − x))"
+        },
+        {
+          "id": "c",
+          "text": "φ(x) = −2x + ln((1 − x)/(1 + x))"
+        },
+        {
+          "id": "d",
+          "text": "φ(x) = −2x − ln((1 + x)/(1 − x))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les primitives sont −2x, ln(1 + x) (car 1 + x > 0) et −ln(1 − x) (car (ln(1 − x))′ = −1/(1 − x)). Donc φ(x) = −2x + ln(1 + x) − ln(1 − x) + k = −2x + ln((1 + x)/(1 − x)) + k, et φ(0) = 0 impose k = 0 ✓. Piège classique : primitiver 1/(1 − x) en +ln(1 − x) (oubli du signe de la dérivée intérieure −1), qui transforme le quotient en produit ; inverser le signe de 1/(1 − x) dans les deux termes (−ln(1 + x) + ln(1 − x)) donne ln((1 − x)/(1 + x)), l'inverse du bon quotient ; ou oublier de fixer la constante avec φ(0) = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = √(1 − e^(−x)), g sa réciproque, α la solution de g(x) = x, et φ(x) = ∫ de 0 à g(x) de f(t) dt. Soit 𝒜 l'aire entre les courbes de f et de g et les droites x = 0 et x = α. Quelle est la valeur de 𝒜 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜 = 1/2 (φ(α) − α²/2)"
+        },
+        {
+          "id": "b",
+          "text": "𝒜 = φ(α) − α²/2"
+        },
+        {
+          "id": "c",
+          "text": "𝒜 = 2φ(α) − α²/2"
+        },
+        {
+          "id": "d",
+          "text": "𝒜 = 2(φ(α) − α²/2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les courbes de f et de g sont symétriques par rapport à la droite Δ d'équation y = x, qu'elles recoupent en O et en A(α ; α). L'aire entre la courbe de f et Δ sur [0 ; α] vaut ∫ de 0 à α de (f(x) − x) dx = φ(α) − α²/2, puisque g(α) = α donne φ(α) = ∫ de 0 à α de f. L'aire entre les deux courbes est le double, par symétrie : 2(φ(α) − α²/2) ✓. Piège classique : oublier le facteur 2 de la symétrie, oublier de retrancher l'aire sous Δ (α²/2), ou mal distribuer le facteur 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u_n = Σ de k = 1 à n de 1/(k · 3^k) et S_n(t) = 2 Σ de k = 1 à n de t^(2k − 1). Que vaut ∫ de 0 à √3/3 de S_n(t) dt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_n"
+        },
+        {
+          "id": "b",
+          "text": "2u_n"
+        },
+        {
+          "id": "c",
+          "text": "u_n/2"
+        },
+        {
+          "id": "d",
+          "text": "3u_n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On intègre terme à terme : ∫ de 0 à √3/3 de 2t^(2k − 1) dt = 2 × (√3/3)^(2k)/(2k) = (1/3)^k/k = 1/(k · 3^k), puisque (√3/3)² = 1/3. En sommant de k = 1 à n, on obtient u_n ✓. Piège classique : oublier la division par 2k lors de l'intégration ou la compenser deux fois (on trouve 2u_n), ou mal calculer (√3/3)^(2k), qui vaut 3^(−k) et non 3^k.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour t ∈ [0 ; 1[ et n entier non nul, S_n(t) = 2 Σ de k = 1 à n de t^(2k − 1). Quelle est la forme simplifiée de S_n(t) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S_n(t) = 2t(1 − t^(2n + 2))/(1 − t²) = (1 − t^(2n + 2)) g′(t)"
+        },
+        {
+          "id": "b",
+          "text": "S_n(t) = 2(1 − t^(2n))/(1 − t²) = (1 − t^(2n))g′(t)/t"
+        },
+        {
+          "id": "c",
+          "text": "S_n(t) = 2t(1 − t^(2n))/(1 − t²) = (1 − t^(2n)) g′(t)"
+        },
+        {
+          "id": "d",
+          "text": "S_n(t) = 2t(1 − t^(2n))/(1 + t²) = (1 − t^(2n)) g′(t)(1 − t²)/(1 + t²)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On factorise : S_n(t) = 2t Σ de k = 1 à n de (t²)^(k − 1) = 2t × (1 − (t²)^n)/(1 − t²), somme de n termes d'une suite géométrique de raison t² ≠ 1 et de premier terme 1. Comme g′(t) = 2t/(1 − t²), S_n(t) = (1 − t^(2n)) g′(t) ✓. Piège classique : compter n + 1 termes (exposant 2n + 2), oublier le facteur t de 2t^(2k − 1) ou écrire 1 + t² au dénominateur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour 0 ≤ t ≤ √3/3 et n entier non nul, S_n(t) = (1 − t^(2n)) g′(t) avec g′(t) ≥ 0. Quel encadrement de S_n(t) en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(t) ≤ S_n(t) ≤ (1 + 1/3^n) g′(t)"
+        },
+        {
+          "id": "b",
+          "text": "(1 − 1/3^n) g′(t) ≤ S_n(t) ≤ g′(t)"
+        },
+        {
+          "id": "c",
+          "text": "(1 − 3^n) g′(t) ≤ S_n(t) ≤ g′(t)"
+        },
+        {
+          "id": "d",
+          "text": "(1 − 1/3^n) g′(t) ≤ S_n(t) ≤ g′(t)/3^n"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour t ∈ [0 ; √3/3], 0 ≤ t² ≤ 1/3, donc 0 ≤ t^(2n) ≤ 1/3^n, d'où 1 − 1/3^n ≤ 1 − t^(2n) ≤ 1. On multiplie par g′(t) ≥ 0, ce qui conserve le sens des inégalités : (1 − 1/3^n) g′(t) ≤ S_n(t) ≤ g′(t) ✓. Piège classique : écrire 3^n au lieu de 1/3^n (puissance d'un nombre plus petit que 1) ou inverser les bornes parce que t^(2n) est soustrait.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour t ∈ [0 ; √3/3], (1 − 1/3^n) g′(t) ≤ S_n(t) ≤ g′(t), avec g(0) = 0 et ∫ de 0 à √3/3 de S_n = u_n. Quel encadrement de u_n obtient-on en intégrant sur [0 ; √3/3] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 − 1/3^n) g′(√3/3) ≤ u_n ≤ g′(√3/3)"
+        },
+        {
+          "id": "b",
+          "text": "g(√3/3) − 1/3^n ≤ u_n ≤ g(√3/3)"
+        },
+        {
+          "id": "c",
+          "text": "(1 − 1/3^n) g(√3/3) ≥ u_n ≥ g(√3/3)"
+        },
+        {
+          "id": "d",
+          "text": "(1 − 1/3^n) g(√3/3) ≤ u_n ≤ g(√3/3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'intégrale conserve l'ordre. ∫ de 0 à √3/3 de g′ = g(√3/3) − g(0) = g(√3/3), et la constante 1 − 1/3^n sort de l'intégrale : (1 − 1/3^n) g(√3/3) ≤ u_n ≤ g(√3/3) ✓. Piège classique : oublier d'intégrer g′ (on laisse g′ à la place de g), distribuer mal la constante (1 − 1/3^n)g ≠ g − 1/3^n, ou inverser les inégalités.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = −ln(1 − x²) sur [0 ; 1[. Que vaut g(√3/3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(3/2)"
+        },
+        {
+          "id": "b",
+          "text": "ln(2/3)"
+        },
+        {
+          "id": "c",
+          "text": "ln 3"
+        },
+        {
+          "id": "d",
+          "text": "−ln(1 − √3/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a (√3/3)² = 3/9 = 1/3, donc g(√3/3) = −ln(1 − 1/3) = −ln(2/3) = ln(3/2) ✓. Piège classique : oublier le signe moins devant le logarithme (ln(2/3) est négatif alors que g est positive), oublier de mettre au carré (le x de g est élevé au carré avant le calcul), ou calculer 1 − x² comme x².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout n ≥ 1, (1 − 1/3^n) g(√3/3) ≤ u_n ≤ g(√3/3) avec g(√3/3) = ln(3/2). Que dire de la suite (u_n) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle converge vers 0"
+        },
+        {
+          "id": "b",
+          "text": "Elle tend vers +∞, car c'est une somme de termes positifs"
+        },
+        {
+          "id": "c",
+          "text": "Elle converge vers ln(3/2)"
+        },
+        {
+          "id": "d",
+          "text": "Elle converge vers ln 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand n → +∞, 1/3^n → 0, donc (1 − 1/3^n) ln(3/2) → ln(3/2). La suite (u_n) est encadrée entre une suite qui tend vers ln(3/2) et une suite constante égale à ln(3/2) : par le théorème des gendarmes, u_n converge vers ln(3/2) ✓. Piège classique : croire qu'une somme de termes positifs diverge toujours (ici les termes 1/(k·3^k) décroissent très vite), ou confondre avec la limite des termes (qui est 0).",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2017 · session principale · Exercice 3 ⭐⭐⭐⭐ : petit théorème de Fermat, congruence de puissance et système de congruences",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Soit x un entier non nul premier avec 53. Quel est le reste de x^52 dans la division euclidienne par 53 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "52"
+        },
+        {
+          "id": "d",
+          "text": "le reste de x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le nombre 53 est premier et x n'en est pas un multiple (x ∧ 53 = 1). Le petit théorème de Fermat s'applique avec l'exposant p − 1 = 52 : x^52 ≡ 1 (mod 53) ✓. Le reste est donc 1. Contrôle numérique avec x = 2 : 2^52 = (2^26)² ; 2^26 ≡ −1 (mod 53) car 2^13 = 8192 = 53 × 154 + 30 et 30² = 900 = 53 × 17 − 1, donc 2^52 ≡ (−1)² = 1 ✓. Le reste 0 supposerait que 53 divise x ; 52 est la valeur de l'exposant, pas un reste ; et le reste de x serait celui de x^53 (Fermat sous la forme a^p ≡ a), pas celui de x^52.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x un entier premier avec 53. On sait que x^52 ≡ 1 (mod 53). Quelle écriture justifie que x^(52k+1) ≡ x (mod 53) pour tout entier naturel k ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x^(52k+1) = (x^52)^k × x ≡ 1^k × x = x (mod 53)"
+        },
+        {
+          "id": "b",
+          "text": "x^(52k+1) = x^52 × x^(k+1) ≡ x^(k+1) (mod 53), puisque x^52 ≡ 1"
+        },
+        {
+          "id": "c",
+          "text": "x^(52k+1) ≡ x^(1−k) (mod 53), car 52 ≡ −1 (mod 53)"
+        },
+        {
+          "id": "d",
+          "text": "x^(52k+1) = x^(52k) + x ≡ 1 + x (mod 53), puisque x^52 ≡ 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On regroupe les 52k premiers facteurs : x^(52k+1) = x^(52k) × x = (x^52)^k × x. Comme x^52 ≡ 1 (mod 53), (x^52)^k ≡ 1^k = 1, d'où x^(52k+1) ≡ x ✓. Contrôle avec k = 0 : x^1 ≡ x ; avec k = 1 : x^53 ≡ x, c'est le petit théorème de Fermat sous sa forme a^p ≡ a. Les autres écritures sont fausses : 52 + k + 1 n'est pas 52k + 1, une puissance d'exposant 52k est un produit et non une somme, et réduire le coefficient 52 modulo 53 n'est pas permis dans un exposant (c'est l'exposant qu'on réduit modulo 52).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (E1) l'équation x^29 ≡ 2 (mod 53), d'inconnue x ∈ ℤ, et on rappelle que x^52 ≡ 1 (mod 53) pour tout x premier avec 53. Pourquoi l'entier 2^9 est-il solution de (E1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2^9)^29 = 2^(9+29) = 2^38 ≡ 2 (mod 53)"
+        },
+        {
+          "id": "b",
+          "text": "(2^9)^29 = 2^261 = (2^52)^5 × 2 ≡ 2^5 (mod 53)"
+        },
+        {
+          "id": "c",
+          "text": "(2^9)^29 = 2^261 = (2^52)^5 × 2 ≡ 2 (mod 53)"
+        },
+        {
+          "id": "d",
+          "text": "(2^9)^29 = 2^261 = (2^52)^5 ≡ 1 (mod 53)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On élève la puissance : (2^9)^29 = 2^(9 × 29) = 2^261. Or 261 = 52 × 5 + 1, donc 2^261 = (2^52)^5 × 2 ≡ 1^5 × 2 = 2 (mod 53) ✓. Ainsi 2^9 vérifie (E1). Les erreurs : une puissance de puissance se multiplie (9 × 29), on ne l'additionne pas ; (2^52)^5 vaut 1 mais il reste le facteur 2 (sans lui on obtiendrait 1, et non 2) ; et on ne remplace pas 1^5 par 5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℤ × ℤ, on considère (E2) : 71u − 53v = 1, dont (3 ; 4) est une solution (71 × 3 − 53 × 4 = 1). Quel est l'ensemble de ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(3 + 53k ; 4 + 71k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(3 + 71k ; 4 + 53k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(3 + 53k ; 4 − 71k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(3 − 53k ; 4 + 71k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si (u ; v) est solution, 71(u − 3) = 53(v − 4). Comme 71 ∧ 53 = 1 (71 est premier), le lemme de Gauss donne 53 | u − 3, soit u = 3 + 53k, puis 71 × 53k = 53(v − 4) donne v = 4 + 71k ✓. Vérification : 71(3 + 53k) − 53(4 + 71k) = 213 − 212 + (3763 − 3763)k = 1 ✓. L'erreur classique est d'échanger les pas : le pas de u est 53, le coefficient de v. Avec 4 − 71k ou 3 − 53k, les deux pas n'ont plus le même signe et le terme en k vaut ±7526k au lieu de 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x un entier tel que x^29 ≡ 2 (mod 53). Pourquoi x est-il premier avec 53 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comme x^29 ≡ 2 et 2 ∧ 53 = 1, on en déduit que x ∧ 53 = 1 par transitivité"
+        },
+        {
+          "id": "b",
+          "text": "Si 53 divisait x, x^29 ≡ 0 et non 2 ; 53 premier donne x ∧ 53 = 1"
+        },
+        {
+          "id": "c",
+          "text": "Comme x^29 ≡ 2 (mod 53), x ≡ 2 (mod 53), donc x est premier avec 53"
+        },
+        {
+          "id": "d",
+          "text": "Comme 53 est premier, il est premier avec tout entier x, donc avec x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Raisonnons par l'absurde : si 53 divisait x, alors 53 diviserait x^29, donc x^29 ≡ 0 (mod 53), ce qui contredit x^29 ≡ 2. Donc 53 ne divise pas x ; comme 53 est premier, ses seuls diviseurs positifs sont 1 et 53, et le PGCD x ∧ 53 vaut 1 ✓. Les trois autres arguments sont faux : la « transitivité » n'existe pas pour le PGCD ; passer de x^29 ≡ 2 à x ≡ 2 est illégitime (rien n'autorise à « simplifier » l'exposant) ; et un nombre premier n'est pas premier avec tous les entiers, puisque 53 ∧ 106 = 53.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit x un entier tel que x^29 ≡ 2 (mod 53). On sait que x^261 ≡ x (mod 53) (car 261 = 52 × 5 + 1 et x ∧ 53 = 1). Que peut-on en déduire pour x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 2 (mod 53), car x^29 ≡ 2 donne x ≡ 2"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 2^29 (mod 53), car x^261 = x^(29 × 9) ≡ 2^29"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 2^38 (mod 53), car x^261 = x^(29 + 9) ≡ 2^(29 + 9)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 2^9 (mod 53), car x^261 = (x^29)^9 ≡ 2^9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On calcule x^261 de deux manières. D'une part x^261 ≡ x (mod 53). D'autre part x^261 = x^(29 × 9) = (x^29)^9 ≡ 2^9 (mod 53), puisque x^29 ≡ 2. Donc x ≡ 2^9 (mod 53) ✓. Les alternatives sont fausses : x ≡ 2 oublie l'exposant, et ni 2^29 ni 2^38 ne vérifient x^29 ≡ 2. L'erreur classique est de croire que x^29 ≡ 2 entraîne x ≡ 2 ; il faut l'exposant 9, inverse de 29 modulo 52 (29 × 9 = 261 = 5 × 52 + 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Toute solution de (E1) : x^29 ≡ 2 (mod 53) vérifie x ≡ 2^9 (mod 53), et 2^9 est lui-même solution. Quel est l'ensemble des solutions de (E1) dans ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{2 + 53k, k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{9 + 53k, k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{44 + 53k, k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{35 + 53k, k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les solutions sont exactement les entiers congrus à 2^9 modulo 53. Or 2^9 = 512 = 53 × 9 + 35, donc 2^9 ≡ 35 (mod 53). L'ensemble cherché est {35 + 53k, k ∈ ℤ} ✓. Vérification : 512 − 35 = 477 = 53 × 9 ✓. Les erreurs : lire x^29 ≡ 2 comme x ≡ 2 (on ne « simplifie » pas un exposant) ; lire l'exposant 9 comme un reste ; ou réduire 512 modulo 52 au lieu de 53 (512 = 52 × 9 + 44), modulo qui est celui des exposants et non celui des restes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On considère x ≡ 34 (mod 71) et x ≡ a (mod 53), où a est un entier fixé. On écrit x = 34 + 71u = a + 53v avec u et v entiers. Quelle équation en u et v obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "71u + 53v = a − 34"
+        },
+        {
+          "id": "b",
+          "text": "71u − 53v = 34 − a"
+        },
+        {
+          "id": "c",
+          "text": "71u − 53v = a − 34"
+        },
+        {
+          "id": "d",
+          "text": "53u − 71v = a − 34"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'égalité des deux écritures s'écrit 34 + 71u = a + 53v. On regroupe les termes en u et en v à gauche, les constantes à droite : 71u − 53v = a − 34 ✓. Vérification par un cas : avec a = 34, on trouve 71u − 53v = 0, et (u ; v) = (0 ; 0) redonne bien x = 34 dans les deux écritures ✓. L'erreur classique est un signe : passer 53v à gauche demande de le soustraire, et passer 34 à droite change aussi son signe, d'où a − 34 et non 34 − a. Les coefficients restent attachés à leur inconnue : 71 avec u, 53 avec v.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℤ le système { x ≡ 34 (mod 71) ; x^29 ≡ 2 (mod 53) } (on rappelle que x^29 ≡ 2 (mod 53) équivaut à x ≡ 2^9 (mod 53) et que 71 × 3 − 53 × 4 = 1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 247 (mod 3763)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 744 (mod 3763)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 3585 (mod 3763)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 318 (mod 3763)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a 2^9 = 512 ≡ 35 (mod 53), donc le système équivaut à x ≡ 34 (mod 71) et x ≡ 35 (mod 53). On écrit x = 34 + 71u = 35 + 53v, d'où 71u − 53v = 1. Avec (3 ; 4), u = 3 + 53k, donc x = 34 + 71(3 + 53k) = 247 + 3763k ✓ (71 × 53 = 3763). Vérification : 247 = 71 × 3 + 34 ✓ et 247 = 53 × 4 + 35 ✓. Les erreurs : lire x^29 ≡ 2 comme x ≡ 2 donne x ≡ 744 (qui vérifie 744 ≡ 2 (mod 53), mais 744^29 ≡ 45, non 2) ; échanger les restes des deux congruences donne 3585 ; et confondre u et v (x = 34 + 71 × 4 au lieu de 34 + 71 × 3) donne 318, qui vérifie la première congruence mais pas la seconde (318 = 53 × 6, de reste 0 et non 35 modulo 53).",
+      "difficulty": 3
+    }
+  ]
+}

@@ -57,6 +57,14 @@ $$ lim x→+∞ (√(x² + 4x) − x) = lim x→+∞ 4x/(√(x² + 4x) + x) = 4/
 
 - **Limite d'une composée** : si lim x→a v(x) = b et si lim y→b u(y) = ℓ, alors lim x→a u(v(x)) = ℓ. _Exemple_ : lim x→+∞ √(4 + 1/x) = √4 = 2, car 4 + 1/x → 4 et √ est continue en 4.
 
+- **Théorème de la limite monotone** : soit f définie sur [a ; +∞[. Si f est **croissante et majorée**, alors f admet en +∞ une **limite finie** (au plus égale à un majorant) ; si f est croissante et **non majorée**, alors lim x→+∞ f(x) = +∞. (Énoncé analogue pour une fonction décroissante et minorée.) _Contre-exemple_ : x ↦ sin x est bornée sur [0 ; +∞[ mais n'a pas de limite en +∞ : elle n'est pas monotone, et la monotonie est indispensable.
+
+::: verifie
+La fonction f(x) = 1 − 1/x est croissante sur [1 ; +∞[ et majorée par 1. Que peut-on dire de sa limite en +∞ ?
+---
+f est croissante et majorée (1 − 1/x < 1) sur [1 ; +∞[ : par le théorème de la limite monotone, elle admet une limite finie ℓ en +∞, avec ℓ ≤ 1. Ici on retrouve ℓ = 1, car 1/x → 0.
+:::
+
 ## 📐 Asymptotes verticales et horizontales
 
 - Si lim x→a f(x) = +∞ ou −∞ (même seulement à droite ou à gauche de a), la droite d'équation **x = a** est une **asymptote verticale** de la courbe.

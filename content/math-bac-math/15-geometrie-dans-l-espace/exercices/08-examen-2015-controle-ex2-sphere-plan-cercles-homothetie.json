@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2015 · session de contrôle · Exercice 2 ⭐⭐⭐ : sphère, plan sécant, cercles tangents et homothétie de l'espace",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Soit (O, i, j, k) un repère orthonormé de l'espace et S l'ensemble des points M(x, y, z) tels que x² + y² + z² − 6y − 4z + 9 = 0. Quels sont le centre I et le rayon R de la sphère S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I(0 ; 3 ; 2) et R = 2"
+        },
+        {
+          "id": "b",
+          "text": "I(0 ; −3 ; −2) et R = 2"
+        },
+        {
+          "id": "c",
+          "text": "I(0 ; 3 ; 2) et R = 4"
+        },
+        {
+          "id": "d",
+          "text": "I(0 ; 3 ; 2) et R = √13"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On met les carrés en évidence : x² + (y² − 6y) + (z² − 4z) + 9 = x² + (y − 3)² − 9 + (z − 2)² − 4 + 9 = x² + (y − 3)² + (z − 2)² − 4. L'équation devient x² + (y − 3)² + (z − 2)² = 4 : S est la sphère de centre I(0 ; 3 ; 2) et de rayon R = √4 = 2 ✓. Piège classique : changer les signes des coordonnées du centre (on lit y − 3 comme y + 3), oublier la constante 9 (R² = 13) ou prendre R² pour R (R = 4).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit S la sphère de centre I(0 ; 3 ; 2) et de rayon 2, et A(−2 ; 3 ; 2), B(2 ; 3 ; 2) deux points de S. Quelle justification montre que [AB] est un diamètre de S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A et B appartiennent à S, ce qui suffit pour qu'une corde soit un diamètre de S, quelle que soit sa position"
+        },
+        {
+          "id": "b",
+          "text": "AB = 4 et le rayon est 2, donc AB = R², ce qui prouve que [AB] est un diamètre de la sphère S"
+        },
+        {
+          "id": "c",
+          "text": "I appartient à la droite (AB), sans qu'il soit nécessaire de calculer le milieu de [AB] ni de comparer IA à R"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu de [AB] est (0 ; 3 ; 2) = I, et IA = IB = 2 = R : [AB] est une corde passant par le centre"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le milieu de [AB] a pour coordonnées ((−2 + 2)/2 ; 3 ; 2) = (0 ; 3 ; 2), qui sont celles de I. De plus IA = √((−2)² + 0 + 0) = 2 = R, donc A et B sont sur S et symétriques par rapport à I : [AB] est un diamètre ✓ (de longueur AB = 4 = 2R). Piège classique : croire que deux points de la sphère suffisent à définir un diamètre, ou que le centre sur la droite (AB) est suffisant sans être au milieu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit S la sphère de centre I(0 ; 3 ; 2) et de rayon 2, P le plan d'équation z = 2 et A(−2 ; 3 ; 2), B(2 ; 3 ; 2) les extrémités d'un diamètre de S. Que peut-on dire de l'intersection de S et de P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I n'appartient pas à P, donc P coupe S suivant un cercle de rayon strictement inférieur à 2"
+        },
+        {
+          "id": "b",
+          "text": "I vérifie z = 2, donc I ∈ P : S ∩ P est le cercle Γ de centre I et de rayon 2, de diamètre [AB]"
+        },
+        {
+          "id": "c",
+          "text": "La distance de I à P est nulle, donc P est tangent à S en I"
+        },
+        {
+          "id": "d",
+          "text": "I appartient à P, donc S ∩ P est le cercle de centre I et de rayon 4, soit le double du rayon de S"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les coordonnées de I(0 ; 3 ; 2) vérifient z = 2 : I ∈ P, et la distance de I au plan est d = 0. L'intersection est alors un grand cercle, de centre I et de rayon √(R² − d²) = √(4 − 0) = 2. Comme A et B sont dans P (leur cote vaut 2) et sont diamétralement opposés, [AB] est un diamètre de ce cercle Γ ✓. Piège classique : confondre « plan passant par le centre » et « plan tangent » (le plan tangent est à distance R du centre), ou doubler le rayon.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan P d'équation z = 2, Γ est le cercle de centre I(0 ; 3 ; 2) et de rayon 2, et Γ′ le cercle de centre J(−6 ; 3 ; 2) et de rayon 4. A(−2 ; 3 ; 2) est un point de Γ. Que peut-on dire de Γ et Γ′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IJ = 6 = 4 + 2 : ils sont tangents intérieurement, au point A qui vérifie IA = 2 et JA = 4"
+        },
+        {
+          "id": "b",
+          "text": "IJ = 6 > 4 − 2 = 2 : ils sont tangents extérieurement, sans qu'on puisse dire en quel point"
+        },
+        {
+          "id": "c",
+          "text": "IJ = 6 = 2 × 3 : ils sont sécants en deux points, dont A, qui vérifie IA = 2 et JA = 4"
+        },
+        {
+          "id": "d",
+          "text": "IJ = 6 = 2 + 4 : ils sont tangents extérieurement, au point A, qui vérifie IA = 2 et JA = 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La distance des centres est IJ = √((0 + 6)² + 0 + 0) = 6, et la somme des rayons est 2 + 4 = 6. Deux cercles dont la distance des centres égale la somme des rayons sont tangents extérieurement, en un unique point situé sur la droite (IJ) : ici A(−2 ; 3 ; 2), car IA = 2 et JA = |−2 + 6| = 4 ✓. Piège classique : confondre tangence extérieure (IJ = r + r′) et intérieure (IJ = |r − r′|), ou croire que IJ > |r − r′| donne la tangence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit E(4 ; 3 ; 0), h l'homothétie de centre E et de rapport 5/2, et S la sphère de centre I(0 ; 3 ; 2) et de rayon 2. Quels sont le rayon R′ et le centre I′ de la sphère S′ = h(S) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R′ = 5 et I′(−10 ; 0 ; 5)"
+        },
+        {
+          "id": "b",
+          "text": "R′ = 5 et I′(−6 ; 3 ; 5)"
+        },
+        {
+          "id": "c",
+          "text": "R′ = 5/2 et I′(−6 ; 3 ; 5)"
+        },
+        {
+          "id": "d",
+          "text": "R′ = 5 et I′(−6 ; 3 ; 2)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une homothétie de rapport k multiplie les longueurs par |k| : R′ = (5/2) × 2 = 5. Le centre est l'image de I : I′ = E + (5/2)·EI avec EI = (0 − 4 ; 0 ; 2 − 0) = (−4 ; 0 ; 2), donc (5/2)·EI = (−10 ; 0 ; 5) et I′ = (4 − 10 ; 3 ; 0 + 5) = (−6 ; 3 ; 5) ✓. Piège classique : donner le vecteur (−10 ; 0 ; 5) au lieu du point (il faut ajouter les coordonnées de E), confondre rapport et rayon, ou oublier d'appliquer le rapport à la troisième coordonnée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit S′ la sphère de centre I′(−6 ; 3 ; 5) et de rayon 5, P le plan d'équation z = 2, J(−6 ; 3 ; 2) et Γ′ le cercle de P de centre J et de rayon 4. Pourquoi P coupe-t-il S′ suivant le cercle Γ′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d(I′ ; P) = 3 < 5 et le cercle a pour centre I′ et pour rayon √(25 − 9) = 4, ce qui donne bien Γ′"
+        },
+        {
+          "id": "b",
+          "text": "d(I′ ; P) = 3 et le rayon du cercle est √(25 + 9) = √34, donc la section est plus grande que Γ′"
+        },
+        {
+          "id": "c",
+          "text": "d(I′ ; P) = 3 < 5, le projeté de I′ sur P est J, et le rayon du cercle est √(25 − 9) = 4"
+        },
+        {
+          "id": "d",
+          "text": "d(I′ ; P) = 5 − 2 = 3 et le rayon du cercle est 5 − 3 = 2, donc la section est plus petite que Γ′"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le plan P : z = 2 est à la distance d = |5 − 2| = 3 du centre I′, avec 3 < 5 : il coupe S′ suivant un cercle de rayon √(R′² − d²) = √(25 − 9) = 4, dont le centre est le projeté orthogonal de I′ sur P, c'est-à-dire (−6 ; 3 ; 2) = J. C'est bien le cercle Γ′ de centre J et de rayon 4 ✓. Piège classique : prendre I′ (qui n'est pas dans P) pour centre du cercle, additionner les carrés au lieu de les soustraire, ou soustraire les longueurs au lieu des carrés.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit S′ = h(S) l'image de S par l'homothétie h de centre E(4 ; 3 ; 0) et de rapport 5/2, avec A(−2 ; 3 ; 2) ∈ S ∩ S′. La droite (EA) recoupe S′ en un second point A′, Quel est ce point ? La figure montre la section par le plan y = 3 et la droite (EA).\n<svg viewBox=\"0 0 270 175\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"9\"><line x1=\"8.0\" y1=\"124.5\" x2=\"264.5\" y2=\"124.5\" stroke=\"#1f2937\" stroke-width=\"1.2\"/><text x=\"253.7\" y=\"121.5\" fill=\"#1f2937\">P</text><circle cx=\"183.5\" cy=\"124.5\" r=\"27.0\" fill=\"#fde68a\" fill-opacity=\"0.5\" stroke=\"#b45309\" stroke-width=\"1.6\"/><circle cx=\"102.5\" cy=\"84.0\" r=\"67.5\" fill=\"#bfdbfe\" fill-opacity=\"0.35\" stroke=\"#1d4ed8\" stroke-width=\"1.6\"/><text x=\"179.5\" y=\"111.0\" fill=\"#b45309\">S</text><text x=\"75.5\" y=\"57.0\" fill=\"#1d4ed8\">S′</text><circle cx=\"156.5\" cy=\"124.5\" r=\"2.4\" fill=\"#1f2937\"/><text x=\"153.5\" y=\"136.5\" fill=\"#1f2937\">A</text><circle cx=\"210.5\" cy=\"124.5\" r=\"2.4\" fill=\"#1f2937\"/><text x=\"210.5\" y=\"118.5\" fill=\"#1f2937\">B</text><circle cx=\"237.5\" cy=\"151.5\" r=\"2.4\" fill=\"#1f2937\"/><text x=\"241.5\" y=\"148.5\" fill=\"#1f2937\">E</text><line x1=\"237.5\" y1=\"151.5\" x2=\"62.0\" y2=\"93.0\" stroke=\"#1f2937\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A′ = h(A), de coordonnées (−11 ; 3 ; 5) : il est sur S′ et sur (EA), et distinct de A"
+        },
+        {
+          "id": "b",
+          "text": "A′ = A, puisque A appartient déjà à S′"
+        },
+        {
+          "id": "c",
+          "text": "A′ = h(B), de coordonnées (−1 ; 3 ; 5), qui est aussi sur S′"
+        },
+        {
+          "id": "d",
+          "text": "A′ = h(A), de coordonnées (−15 ; 0 ; 5), obtenues en multipliant les coordonnées de EA par 5/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme A ∈ S, h(A) ∈ h(S) = S′ ; et h(A) = E + (5/2)·EA appartient à la droite (EA). Cette droite coupe S′ en deux points : A lui-même (A ∈ Γ′ ⊂ S′) et un autre point. Comme h(A) ≠ A (A ≠ E et le rapport est différent de 1), A′ = h(A) = (4 + (5/2)(−6) ; 3 ; 0 + (5/2)(2)) = (−11 ; 3 ; 5) ✓. Piège classique : prendre A lui-même (c'est le premier point d'intersection, pas le second), confondre avec l'image de B, ou donner le vecteur (−15 ; 0 ; 5) sans ajouter E.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit S′ = h(S), avec h l'homothétie de centre E et de rapport 5/2, A′ = h(A) sur S′ et [AB] diamètre de S. B′ est le point diamétralement opposé à A′ sur S′. Pourquoi B′ = h(B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h conserve les milieux : I′ = h(I) est le milieu de [A′h(B)], donc h(B) est le symétrique de A′ par rapport à I′"
+        },
+        {
+          "id": "b",
+          "text": "h conserve les distances, donc h(B) est à la distance 4 de A′, ce qui suffit à le placer sans autre information"
+        },
+        {
+          "id": "c",
+          "text": "B appartient à S′, donc B′ = B, puisque B′ est déjà un point de S′ situé sur la droite (EB)"
+        },
+        {
+          "id": "d",
+          "text": "B′ est le symétrique de A′ par rapport à E, puisque E est le centre de l'homothétie h et de la symétrie cherchée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "I est le milieu de [AB]. Une homothétie conserve les milieux : h(I) = I′ est le milieu de [h(A) h(B)] = [A′ h(B)]. Le point h(B) est donc le symétrique de A′ par rapport au centre I′ de S′, c'est-à-dire le point diamétralement opposé à A′ : B′ = h(B) ✓. Piège classique : croire qu'une homothétie conserve les distances (elles sont multipliées par |k|, ici par 5/2), ou prendre le centre d'homothétie E pour centre de symétrie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h l'homothétie de centre E et de rapport 5/2, B un point et B′ = h(B). Quel argument établit que les points E, B et B′ sont alignés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B et B′ appartiennent tous deux à S′, donc la droite (BB′) passe par E"
+        },
+        {
+          "id": "b",
+          "text": "B′ est diamétralement opposé à A′ sur S′, donc E, B, B′ sont alignés"
+        },
+        {
+          "id": "c",
+          "text": "Par définition de h, EB′ = (5/2)·EB (vecteurs) : B′ est sur la droite (EB)"
+        },
+        {
+          "id": "d",
+          "text": "EB′ = EB, car h conserve les distances, donc B′ est sur le cercle de centre E passant par B"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'image d'un point M par l'homothétie de centre E et de rapport k est le point M′ tel que EM′ = k·EM (égalité de vecteurs). Pour B′ = h(B), EB′ = (5/2)·EB : les vecteurs EB′ et EB sont colinéaires, donc E, B, B′ sont alignés ✓, avec B et B′ du même côté de E puisque le rapport est positif. Piège classique : chercher l'alignement dans des appartenances à la sphère (qui n'impliquent rien sur E), ou croire que h conserve les distances.",
+      "difficulty": 2
+    }
+  ]
+}

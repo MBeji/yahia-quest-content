@@ -1,0 +1,254 @@
+{
+  "title": "🏛️ Bac 2015 · session de contrôle · Exercice 3 ⭐⭐⭐ : Dépenses des ménages, ajustement par la droite de Mayer et par les moindres carrés",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Dans un pays, on a recensé les dépenses Y (en 10⁶ dinars) des ménages en produits informatiques et téléphoniques, de l'année 2004 (rang X = 1) à l'année 2013 (rang X = 10) : pour X = 1, 2, …, 10, Y vaut 0,38 ; 0,46 ; 0,52 ; 0,78 ; 0,86 ; 0,92 ; 0,96 ; 1,02 ; 1,08 ; 1,20. Quel est le point moyen G du nuage de points de la série (X, Y), les coordonnées étant arrondies au centième ? <svg viewBox=\"0 0 260 200\"><path d=\"M38 170 H252 M38 170 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><g font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\"><path d=\"M56.9 170 v4\" stroke=\"#0f172a\"/><text x=\"56.9\" y=\"185\">1</text><path d=\"M94.7 170 v4\" stroke=\"#0f172a\"/><text x=\"94.7\" y=\"185\">3</text><path d=\"M132.5 170 v4\" stroke=\"#0f172a\"/><text x=\"132.5\" y=\"185\">5</text><path d=\"M170.4 170 v4\" stroke=\"#0f172a\"/><text x=\"170.4\" y=\"185\">7</text><path d=\"M208.2 170 v4\" stroke=\"#0f172a\"/><text x=\"208.2\" y=\"185\">9</text></g><g font-size=\"10\" fill=\"#475569\" text-anchor=\"end\"><path d=\"M38 146.3 h-4\" stroke=\"#0f172a\"/><text x=\"31\" y=\"149.3\">0,2</text><path d=\"M38 98.9 h-4\" stroke=\"#0f172a\"/><text x=\"31\" y=\"101.9\">0,6</text><path d=\"M38 51.5 h-4\" stroke=\"#0f172a\"/><text x=\"31\" y=\"54.5\">1,0</text></g><g fill=\"#0f6e56\"><circle cx=\"56.9\" cy=\"125\" r=\"3.5\"/><circle cx=\"75.8\" cy=\"115.5\" r=\"3.5\"/><circle cx=\"94.7\" cy=\"108.4\" r=\"3.5\"/><circle cx=\"113.6\" cy=\"77.6\" r=\"3.5\"/><circle cx=\"132.5\" cy=\"68.1\" r=\"3.5\"/><circle cx=\"151.5\" cy=\"61\" r=\"3.5\"/><circle cx=\"170.4\" cy=\"56.3\" r=\"3.5\"/><circle cx=\"189.3\" cy=\"49.2\" r=\"3.5\"/><circle cx=\"208.2\" cy=\"42.1\" r=\"3.5\"/><circle cx=\"227.1\" cy=\"27.8\" r=\"3.5\"/></g><text x=\"254\" y=\"164\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"end\">X</text><text x=\"44\" y=\"14\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Y</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(5 ; 0,82)"
+        },
+        {
+          "id": "b",
+          "text": "G(5,5 ; 0,82)"
+        },
+        {
+          "id": "c",
+          "text": "G(5,5 ; 8,18)"
+        },
+        {
+          "id": "d",
+          "text": "G(55 ; 0,82)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les rangs vont de 1 à 10 : X̄ = (1 + 2 + … + 10)/10 = 55/10 = 5,5. Les dépenses ont pour somme 0,38 + 0,46 + 0,52 + 0,78 + 0,86 + 0,92 + 0,96 + 1,02 + 1,08 + 1,20 = 8,18, donc Ȳ = 8,18/10 = 0,818 ≈ 0,82. G(5,5 ; 0,82). Prendre 5 oublie le dernier rang ; 8,18 est la somme non divisée par l'effectif 10 ; 55 est la somme des rangs, elle aussi non divisée. Vérification : 5,5 × 10 = 55 et 0,818 × 10 = 8,18 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un pays, on a recensé les dépenses Y (en 10⁶ dinars) des ménages en produits informatiques et téléphoniques, de l'année 2004 (rang X = 1) à l'année 2013 (rang X = 10) : pour X = 1, 2, …, 10, Y vaut 0,38 ; 0,46 ; 0,52 ; 0,78 ; 0,86 ; 0,92 ; 0,96 ; 1,02 ; 1,08 ; 1,20. G₁ est le point moyen des cinq premiers points du nuage (X = 1 à 5). Quelles sont ses coordonnées ? <svg viewBox=\"0 0 260 200\"><path d=\"M38 170 H252 M38 170 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><g font-size=\"10\" fill=\"#475569\" text-anchor=\"middle\"><path d=\"M56.9 170 v4\" stroke=\"#0f172a\"/><text x=\"56.9\" y=\"185\">1</text><path d=\"M94.7 170 v4\" stroke=\"#0f172a\"/><text x=\"94.7\" y=\"185\">3</text><path d=\"M132.5 170 v4\" stroke=\"#0f172a\"/><text x=\"132.5\" y=\"185\">5</text><path d=\"M170.4 170 v4\" stroke=\"#0f172a\"/><text x=\"170.4\" y=\"185\">7</text><path d=\"M208.2 170 v4\" stroke=\"#0f172a\"/><text x=\"208.2\" y=\"185\">9</text></g><g font-size=\"10\" fill=\"#475569\" text-anchor=\"end\"><path d=\"M38 146.3 h-4\" stroke=\"#0f172a\"/><text x=\"31\" y=\"149.3\">0,2</text><path d=\"M38 98.9 h-4\" stroke=\"#0f172a\"/><text x=\"31\" y=\"101.9\">0,6</text><path d=\"M38 51.5 h-4\" stroke=\"#0f172a\"/><text x=\"31\" y=\"54.5\">1,0</text></g><g fill=\"#0f6e56\"><circle cx=\"56.9\" cy=\"125\" r=\"3.5\"/><circle cx=\"75.8\" cy=\"115.5\" r=\"3.5\"/><circle cx=\"94.7\" cy=\"108.4\" r=\"3.5\"/><circle cx=\"113.6\" cy=\"77.6\" r=\"3.5\"/><circle cx=\"132.5\" cy=\"68.1\" r=\"3.5\"/><circle cx=\"151.5\" cy=\"61\" r=\"3.5\"/><circle cx=\"170.4\" cy=\"56.3\" r=\"3.5\"/><circle cx=\"189.3\" cy=\"49.2\" r=\"3.5\"/><circle cx=\"208.2\" cy=\"42.1\" r=\"3.5\"/><circle cx=\"227.1\" cy=\"27.8\" r=\"3.5\"/></g><text x=\"254\" y=\"164\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"end\">X</text><text x=\"44\" y=\"14\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Y</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "G₁(5 ; 0,60)"
+        },
+        {
+          "id": "b",
+          "text": "G₁(2,5 ; 0,60)"
+        },
+        {
+          "id": "c",
+          "text": "G₁(3 ; 0,60)"
+        },
+        {
+          "id": "d",
+          "text": "G₁(3 ; 3,00)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour les cinq premiers points, X̄₁ = (1 + 2 + 3 + 4 + 5)/5 = 15/5 = 3. Ȳ₁ = (0,38 + 0,46 + 0,52 + 0,78 + 0,86)/5 = 3,00/5 = 0,60. Donc G₁(3 ; 0,60). L'ordonnée 3,00 est la somme non divisée par 5 ; l'abscisse 2,5 ou 5 ne correspondent pas à la moyenne de 1, 2, 3, 4 et 5. Vérification : 3 × 5 = 15 et 0,6 × 5 = 3,00 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un pays, on a recensé les dépenses Y (en 10⁶ dinars) des ménages en produits informatiques et téléphoniques, de l'année 2004 (rang X = 1) à l'année 2013 (rang X = 10) : pour X = 1, 2, …, 10, Y vaut 0,38 ; 0,46 ; 0,52 ; 0,78 ; 0,86 ; 0,92 ; 0,96 ; 1,02 ; 1,08 ; 1,20. L'année 2004 correspond au rang X = 1. Quel est le rang X de l'année 2019 ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "16"
+        },
+        {
+          "id": "c",
+          "text": "19"
+        },
+        {
+          "id": "d",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "2004 correspond au rang 1, 2005 au rang 2, …, l'année n correspond au rang n − 2003 : 2019 − 2003 = 16. Soustraire 2004 (2019 − 2004 = 15) oublierait que 2004 est déjà le rang 1 ; 19 ou 2019 ne sont pas des rangs. Vérification : 2013 est le rang 10, et 2019 est 6 ans plus tard : 10 + 6 = 16 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour ajuster le nuage de points de la série (X, Y) par la droite de Mayer, on utilise G(5,5 ; 0,82) et G₁(3 ; 0,60). Quel est le coefficient directeur de la droite (GG₁) ? On donne la valeur exacte, sans arrondir.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 0,088"
+        },
+        {
+          "id": "b",
+          "text": "a = 0,167",
+          "misconceptionTag": "math.fn.pente-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "a = 0,22",
+          "misconceptionTag": "math.fn.pente-sans-quotient"
+        },
+        {
+          "id": "d",
+          "text": "a = 11,36",
+          "misconceptionTag": "math.fn.pente-quotient-inverse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le coefficient directeur de la droite passant par deux points est le quotient des écarts des ordonnées et des abscisses, dans le même ordre : a = (0,82 − 0,60)/(5,5 − 3) = 0,22/2,5 = 0,088. Le seul écart des ordonnées (0,22) n'est pas un quotient ; additionner les coordonnées au lieu de les soustraire donnerait (0,82 + 0,60)/(5,5 + 3) ≈ 0,167 ; le quotient inversé 2,5/0,22 ≈ 11,36 est l'inverse de la pente. Vérification : 0,088 × 2,5 = 0,22 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La droite de Mayer (GG₁) passe par G(5,5 ; 0,82) et G₁(3 ; 0,60) et a pour coefficient directeur 0,088. Quelle est son équation y = ax + b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 0,088x + 0,556"
+        },
+        {
+          "id": "b",
+          "text": "y = 0,088x + 0,82"
+        },
+        {
+          "id": "c",
+          "text": "y = 0,088x + 0,864"
+        },
+        {
+          "id": "d",
+          "text": "y = 0,088x + 0,336"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il reste à déterminer b : G₁ est sur la droite, donc 0,60 = 0,088 × 3 + b, soit b = 0,60 − 0,264 = 0,336. La droite est y = 0,088x + 0,336. Vérification avec G : 0,088 × 5,5 + 0,336 = 0,484 + 0,336 = 0,82 ✓. Mélanger l'ordonnée de G et l'abscisse de G₁ donne 0,82 − 0,264 = 0,556 ; ajouter 0,264 au lieu de le retrancher donne 0,864 ; prendre l'ordonnée de G comme ordonnée à l'origine donne 0,82.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La droite de Mayer a pour équation y = 0,088x + 0,336. En utilisant cet ajustement, quelle est la prévision des dépenses (en 10⁶ dinars, arrondie au centième) pour l'année 2019, de rang 16 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,66"
+        },
+        {
+          "id": "b",
+          "text": "1,74"
+        },
+        {
+          "id": "c",
+          "text": "1,78"
+        },
+        {
+          "id": "d",
+          "text": "2,01"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour l'année 2019, X = 16 : y = 0,088 × 16 + 0,336 = 1,408 + 0,336 = 1,744, soit environ 1,74 million de dinars. Utiliser le rang 15 donnerait 1,656 ≈ 1,66 ; le rang 19 donnerait 2,008 ≈ 2,01 ; arrondir la pente à 0,09 et l'ordonnée à 0,34 avant de calculer donnerait 1,78. Vérification : 1,744 est cohérent avec Y = 1,20 pour le rang 10 et la croissance régulière de 0,088 par an : 1,20 + 6 × 0,088 ≈ 1,73 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose Z = e^Y. Pour la série (X, Z), on donne cov(X, Z) = 1,661, V(X) = 8,25 et V(Z) = 0,3433. Quelle est la valeur du coefficient de corrélation linéaire ρ de (X, Z), arrondie au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,20"
+        },
+        {
+          "id": "b",
+          "text": "0,59"
+        },
+        {
+          "id": "c",
+          "text": "0,99"
+        },
+        {
+          "id": "d",
+          "text": "1,66"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ρ = cov(X, Z)/(σ_X × σ_Z) avec σ_X = √8,25 ≈ 2,872 et σ_Z = √0,3433 ≈ 0,586. Donc ρ ≈ 1,661/(2,872 × 0,586) = 1,661/1,683 ≈ 0,987, soit 0,99 au centième. Le quotient cov/V(X) = 0,20 est le coefficient directeur de la droite de régression, pas ρ ; oublier les racines (1,661/(8,25 × 0,3433) ≈ 0,59) est l'erreur classique ; 1,66 est la covariance seule. Vérification : |ρ| ≤ 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le coefficient de corrélation linéaire de la série (X, Z) est ρ ≈ 0,99. Que peut-on conclure sur l'ajustement affine de Z en X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Justifié, car |ρ| > √3/2 ≈ 0,866"
+        },
+        {
+          "id": "b",
+          "text": "Non justifié, car ρ n'est pas exactement égal à 1"
+        },
+        {
+          "id": "c",
+          "text": "Justifié, car ρ est très proche de zéro"
+        },
+        {
+          "id": "d",
+          "text": "Non justifié, car ρ est de signe positif"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un ajustement affine est accepté lorsque |ρ_XY| > √3/2 ≈ 0,866. Ici 0,99 > 0,866, donc la droite des moindres carrés de Z en X rend bien compte du nuage. Exiger ρ = 1 serait trop strict (cela voudrait dire que les points sont exactement alignés) ; un ρ proche de 0 indiquerait au contraire l'absence de lien linéaire ; le signe de ρ renseigne le sens de variation, pas la qualité de l'ajustement. Vérification : 0,99 > 0,87 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour la série (X, Z), on donne cov(X, Z) = 1,661, V(X) = 8,25, X̄ = 5,5 et Z̄ = 2,342. Quelle est la droite des moindres carrés de Z en X, coefficients arrondis au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Z = 0,20X + 2,34"
+        },
+        {
+          "id": "b",
+          "text": "Z = 4,97X − 24,98",
+          "misconceptionTag": "math.fn.pente-quotient-inverse"
+        },
+        {
+          "id": "c",
+          "text": "Z = 0,20X + 3,44"
+        },
+        {
+          "id": "d",
+          "text": "Z = 0,20X + 1,23"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "a = cov(X, Z)/V(X) = 1,661/8,25 ≈ 0,2013, soit 0,20. b = Z̄ − a·X̄ = 2,342 − 0,2013 × 5,5 ≈ 2,342 − 1,107 = 1,235, soit 1,23 (la droite passe par le point moyen G(5,5 ; 2,342)). Prendre b = Z̄ = 2,34 oublie le terme a·X̄ ; la pente 4,97 est l'inverse V(X)/cov ; 3,44 ajouterait a·X̄ au lieu de le retrancher. Vérification : 0,2013 × 5,5 + 1,2347 = 2,342 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'ajustement affine de Z = e^Y en X par les moindres carrés est Z = 0,20X + 1,23. Quelle est la prévision des dépenses Y (en 10⁶ dinars, arrondie au centième) pour l'année 2019, de rang X = 16 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,49"
+        },
+        {
+          "id": "b",
+          "text": "1,74"
+        },
+        {
+          "id": "c",
+          "text": "4,43"
+        },
+        {
+          "id": "d",
+          "text": "84"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour X = 16 : Z = 0,20 × 16 + 1,23 = 3,20 + 1,23 = 4,43. Or Z = e^Y, donc Y = ln Z = ln 4,43 ≈ 1,49 million de dinars. La valeur 4,43 est celle de Z, pas des dépenses ; appliquer l'exponentielle (e^4,43 ≈ 84) au lieu du logarithme est le piège classique ; 1,74 est la prévision de l'ajustement de Mayer, issue d'un autre modèle. Vérification : ln(4,43) ≈ 1,49 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

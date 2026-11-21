@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 4 ⭐⭐⭐⭐ : équation en entiers, restes modulo 8 et 16, PGCD de deux facteurs",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Soit q un entier impair. Quel argument établit que q² ≡ 1 (mod 8) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q = 2k + 1 donne q² − 1 = 4k(k + 1), et k(k + 1) pair : 8 | q² − 1"
+        },
+        {
+          "id": "b",
+          "text": "q = 2k + 1 donne q² − 1 = 4k², qui est multiple de 4, donc 8 divise q² − 1"
+        },
+        {
+          "id": "c",
+          "text": "q est impair donc q² est impair, d'où q² ≡ 1 modulo 2 et par suite modulo 8"
+        },
+        {
+          "id": "d",
+          "text": "q est impair donc q ≡ 1 (mod 8), d'où q² ≡ 1² = 1 (mod 8)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit q = 2k + 1. Alors q² = 4k² + 4k + 1, donc q² − 1 = 4k(k + 1). Le produit k(k + 1) de deux entiers consécutifs est pair : k(k + 1) = 2j. Donc q² − 1 = 8j, c'est-à-dire q² ≡ 1 (mod 8) ✓. Contrôle : q = 3 donne 9 = 8 + 1 ✓ ; q = 5 donne 25 = 3 × 8 + 1 ✓ ; q = 7 donne 49 = 6 × 8 + 1 ✓. Les erreurs : (2k + 1)² contient le double produit 4k, qu'on ne peut oublier ; un carré impair est ≡ 1 modulo 2 mais cela ne donne rien modulo 8 ; et un impair n'est pas toujours ≡ 1 modulo 8 (3 et 5 sont impairs).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (m ; n ; q) un triplet d'entiers naturels non nuls tel que 2^(2m) + 3^(2n) = q². Pourquoi q est-il impair ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2^(2m) et 3^(2n) sont pairs, donc q² est pair, donc q est pair"
+        },
+        {
+          "id": "b",
+          "text": "2^(2m) est pair et 3^(2n) est impair, donc q² est impair, donc q est pair"
+        },
+        {
+          "id": "c",
+          "text": "2^(2m) pair et 3^(2n) impair : q² est impair, donc q est impair"
+        },
+        {
+          "id": "d",
+          "text": "2^(2m) est pair, donc q² est pair, donc q est pair, comme 2^(2m)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme m ≥ 1, 2^(2m) est un multiple de 2, donc pair. Le nombre 3^(2n) est un produit d'impairs, donc impair. La somme d'un pair et d'un impair est impaire : q² est impair. Or q et q² ont la même parité (un carré pair est le carré d'un pair, un carré impair celui d'un impair), donc q est impair ✓. Les erreurs : croire que 3^(2n) est pair (ce n'est jamais le cas), ne pas regarder 3^(2n) du tout, ou conclure q pair alors que q² est impair.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (m ; n ; q) un triplet d'entiers naturels non nuls tel que 2^(2m) + 3^(2n) = q², avec q impair et m ≥ 2. Pourquoi les entiers q − 3^n et q + 3^n sont-ils pairs ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q est impair et q² − 3^(2n) = 2^(2m) est pair ; un produit pair a ses deux facteurs pairs"
+        },
+        {
+          "id": "b",
+          "text": "q et 3^n sont impairs ; la somme et la différence de deux impairs sont paires"
+        },
+        {
+          "id": "c",
+          "text": "q est impair et m ≥ 2 ; la somme et la différence sont donc multiples de 4"
+        },
+        {
+          "id": "d",
+          "text": "q et 3^n sont premiers entre eux ; leur somme et leur différence sont donc paires"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le nombre q est impair par hypothèse, et 3^n est impair (produit d'impairs). La somme de deux impairs est paire : (2a + 1) + (2b + 1) = 2(a + b + 1) ; de même, la différence (2a + 1) − (2b + 1) = 2(a − b) est paire ✓. L'argument « un produit pair a ses deux facteurs pairs » est faux en général (2 × 3 = 6 n'a qu'un facteur pair), et il ne dit rien de q − 3^n ni de q + 3^n ; m ≥ 2 n'implique aucune divisibilité par 4 sur chacun des deux facteurs (l'un vaut 2 dans la suite) ; et deux nombres premiers entre eux peuvent être tous deux impairs, donc ce n'est pas ce critère qui donne la parité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (n ; q) un couple d'entiers naturels non nuls tel que 2^4 + 3^(2n) = q². Quel est ce couple ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 1 et q = 10"
+        },
+        {
+          "id": "b",
+          "text": "n = 2 et q = 9"
+        },
+        {
+          "id": "c",
+          "text": "n = 1 et q = 3"
+        },
+        {
+          "id": "d",
+          "text": "n = 1 et q = 5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'égalité s'écrit q² − (3^n)² = 16, soit (q − 3^n)(q + 3^n) = 16, avec 0 < q − 3^n < q + 3^n. Les deux facteurs ont même parité et leur produit est pair, donc ils sont pairs ; les décompositions de 16 en deux facteurs pairs sont 2 × 8 et 4 × 4. Le cas 4 × 4 donne 3^n = 0, impossible. Le cas 2 × 8 donne q = (2 + 8)/2 = 5 et 3^n = (8 − 2)/2 = 3, donc n = 1 ✓. Vérification : 16 + 3² = 25 = 5² ✓. Les autres couples ne vérifient pas l'égalité : n = 1 et q = 10 donne 25 ≠ 100 ; n = 2 et q = 9 donne 16 + 81 = 97 ≠ 81 ; n = 1 et q = 3 donne 25 ≠ 9. L'erreur est d'oublier de diviser par 2 pour q, ou de confondre q avec 3^n.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (m ; n ; q) un triplet d'entiers naturels non nuls vérifiant 2^(2m) + 3^(2n) = q², avec q impair. On sait que q² ≡ 1 (mod 8) et que 3^(2n) = 9^n ≡ 1 (mod 8). Quel argument montre que m ≠ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si m = 1, q² − 3^(2n) = 4, qui n'est pas ≡ 0 (mod 8) alors que 1 − 1 = 0"
+        },
+        {
+          "id": "b",
+          "text": "Si m = 1, 2^(2m) = 4 n'est pas ≡ 1 (mod 8), ce qui contredit q² ≡ 1 (mod 8)"
+        },
+        {
+          "id": "c",
+          "text": "Si m = 1, q² − 3^(2n) = 4 n'est pas ≡ 0 (mod 4), alors que 1 − 1 = 0"
+        },
+        {
+          "id": "d",
+          "text": "Si m = 1, q² − 3^(2n) = 2 est ≡ 2 (mod 8), ce qui contredit q² ≡ 1 et 3^(2n) ≡ 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Modulo 8, q² ≡ 1 et 3^(2n) ≡ 1, donc q² − 3^(2n) ≡ 0 (mod 8). Or q² − 3^(2n) = 2^(2m). Si m = 1, cela vaut 2² = 4, et 4 n'est pas un multiple de 8 : contradiction. Donc m ≠ 1 ✓. Contrôle numérique : pour m ≥ 2, 2^(2m) = 16, 64, … est bien multiple de 8, alors que 4 ne l'est pas. Les erreurs : comparer 2^(2m) = 4 lui-même au reste 1 des carrés, alors que c'est la différence q² − 3^(2n) qui vaut 2^(2m) ; raisonner modulo 4 au lieu de modulo 8 (4 ≡ 0 modulo 4, aucune contradiction ne sort) ; ou écrire 2^(2m) = 2 pour m = 1 (alors que c'est 2² = 4).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (m ; n ; q) un triplet d'entiers naturels non nuls vérifiant 2^(2m) + 3^(2n) = q², avec m ≥ 2 et q impair. On pose d = (q − 3^n) ∧ (q + 3^n), où ces deux entiers sont pairs et de produit 2^(2m). Quelle est la valeur de d ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d = 1, car q − 3^n et q + 3^n sont premiers entre eux"
+        },
+        {
+          "id": "b",
+          "text": "d = 2, car d est pair, divise 2^(2m) et divise 2q avec q impair"
+        },
+        {
+          "id": "c",
+          "text": "d = 4, car d divise 2^(2m), avec 2m ≥ 4, et que 2 est trop petit"
+        },
+        {
+          "id": "d",
+          "text": "d = 2q, car d divise la somme 2q des deux facteurs et ne peut être moindre"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux nombres sont pairs, donc d est pair. Comme d divise q − 3^n, qui divise le produit 2^(2m), d est une puissance de 2. De plus d divise leur somme (q − 3^n) + (q + 3^n) = 2q ; q étant impair, 2q n'est pas divisible par 4, donc d ne peut pas être 4 ni plus : d = 2 ✓. Contrôle sur (2 ; 1 ; 5) : 5 − 3 = 2 et 5 + 3 = 8, d'où 2 ∧ 8 = 2 ✓. L'erreur classique est de croire d = 1 ; c'est impossible puisque les deux nombres sont pairs. De même, d = 2q est impossible : d est une puissance de 2 et q est impair.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On suppose que (q − 3^n)(q + 3^n) = 2^(2m), avec m ≥ 2, que les deux facteurs sont pairs et que leur PGCD vaut 2. Quelle est la seule possibilité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q − 3^n = 2^(2m−1) et q + 3^n = 2"
+        },
+        {
+          "id": "b",
+          "text": "q − 3^n = 2 et q + 3^n = 2^(2m)"
+        },
+        {
+          "id": "c",
+          "text": "q − 3^n = 2 et q + 3^n = 2^(2m−1)"
+        },
+        {
+          "id": "d",
+          "text": "q − 3^n = 4 et q + 3^n = 2^(2m−2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les deux facteurs divisent 2^(2m), ce sont donc des puissances de 2 : q − 3^n = 2^a et q + 3^n = 2^b, avec a + b = 2m. Comme q − 3^n < q + 3^n, on a a < b. Leur PGCD est 2^a (le plus petit des deux, car 2^a divise 2^b), et il vaut 2, donc a = 1 et b = 2m − 1 ✓. Vérification : 2 × 2^(2m−1) = 2^(2m) ✓. Les autres choix sont impossibles : l'ordre inverse contredit q − 3^n < q + 3^n ; le choix 2 et 2^(2m) partage mal l'exposant (le produit vaudrait 2^(2m+1), non 2^(2m)) ; et 4 et 2^(2m−2) auraient pour PGCD 4 dès que m ≥ 3, au lieu de 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit m, n, q des entiers naturels non nuls vérifiant 2^(2m) + 3^(2n) = q², avec m ≥ 3, où 3^n = 2^(2m−2) − 1. Quel est le reste de 3^n dans la division euclidienne par 16 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1, car 3^n ≡ 2^(2m−2) + 1 (mod 16)"
+        },
+        {
+          "id": "b",
+          "text": "0, car 3^n = 2^(2m−2) − 1 est multiple de 16"
+        },
+        {
+          "id": "c",
+          "text": "3, car 3^n ≡ 3 (mod 16) pour tout n"
+        },
+        {
+          "id": "d",
+          "text": "15, car 3^n ≡ −1 (mod 16)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme m ≥ 3, l'exposant 2m − 2 vaut au moins 4, donc 2^(2m−2) est un multiple de 2^4 = 16 : 2^(2m−2) ≡ 0 (mod 16). Alors 3^n = 2^(2m−2) − 1 ≡ −1 (mod 16), c'est-à-dire 15 ✓. Contrôle avec m = 3 : 2^4 − 1 = 15, reste 15 dans la division par 16 ✓ (et avec m = 4 : 2^6 − 1 = 63 = 3 × 16 + 15 ✓). Les erreurs : oublier le − 1 (reste 0) ou le prendre pour + 1 (reste 1) ; le reste 3 supposerait 3^n ≡ 3 (mod 16) pour tout n, ce qui est faux (3² = 9).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit k un entier naturel. Quels sont les restes possibles de 3^k dans la division euclidienne par 16, et qu'en conclut-on sur l'équation 3^n ≡ −1 (mod 16) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les restes sont 1, 3, 9 et 11 ; −1 ≡ 15 n'en fait pas partie, donc l'équation n'a aucune solution n"
+        },
+        {
+          "id": "b",
+          "text": "Les restes sont 1, 3, 9 et 27 ; −1 ≡ 15 n'en fait pas partie, donc l'équation n'a aucune solution n"
+        },
+        {
+          "id": "c",
+          "text": "Les restes sont 1, 3, 9 et 15 ; −1 ≡ 15 en fait partie, donc l'équation a des solutions"
+        },
+        {
+          "id": "d",
+          "text": "Les restes sont 1, 3, 9, 11 et 15 ; le reste 15 est atteint, donc l'équation a des solutions n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule les puissances de 3 modulo 16 : 3⁰ = 1 ; 3¹ = 3 ; 3² = 9 ; 3³ = 27 = 16 + 11 ≡ 11 ; 3⁴ = 81 = 5 × 16 + 1 ≡ 1. Le reste 1 revient en k = 4, donc la suite des restes est périodique de période 4 : 1, 3, 9, 11, 1, 3, 9, 11, … ✓. Le nombre −1 est congru à 15 modulo 16, et 15 n'est pas parmi 1, 3, 9, 11 : l'équation 3^n ≡ −1 (mod 16) n'a pas de solution, ce qui exclut m ≥ 3 (puisque 3^n ≡ −1 y serait nécessaire). Le reste 27 n'est pas réduit (27 = 16 + 11), et réduire 3³ = 27 en 15 est une erreur de division (27 − 16 = 11) ; le reste 15 n'apparaît jamais dans la liste.",
+      "difficulty": 3
+    }
+  ]
+}
