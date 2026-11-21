@@ -1,0 +1,133 @@
+{
+  "title": "Test de compréhension ⭐ : Orthogonalité dans l'espace",
+  "questions": [
+    {
+      "prompt": "Dans l'espace, laquelle de ces phrases définit deux droites orthogonales ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles se coupent en un point et forment ensemble un angle droit",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "b",
+          "text": "Leurs parallèles menées par un même point sont perpendiculaires"
+        },
+        {
+          "id": "c",
+          "text": "Elles n'ont aucun point commun et ne sont pas dans un même plan"
+        },
+        {
+          "id": "d",
+          "text": "Leurs parallèles menées par un même point sont toujours confondues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux droites sont orthogonales lorsque leurs parallèles menées par un même point sont perpendiculaires ✓ : on les ramène en un même point pour mesurer leur angle. La phrase « elles se coupent et forment un angle droit » décrit des droites perpendiculaires, un cas particulier ; « aucun point commun et pas dans un même plan » décrit des droites non coplanaires, dont l'angle n'est pas forcément droit ; et des parallèles confondues caractérisent des droites parallèles.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le cube ci-dessous, quelle droite est orthogonale à (AB) sans la couper ?\n<svg viewBox=\"10 6 188 188\"><path d=\"M174.4 134 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70.4 134 L70.4 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L138 170.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L174.4 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 66.4 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 30 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 170.4 L34 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 134 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 170.4 L138 170.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"34\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"30\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"30\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"182.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"149\" y=\"184.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.4\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"59.4\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"22\" y=\"64.4\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"142\" y=\"57.4\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"187.4\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"66.4\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AB′)",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        {
+          "id": "b",
+          "text": "(BB′)"
+        },
+        {
+          "id": "c",
+          "text": "(CC′)"
+        },
+        {
+          "id": "d",
+          "text": "(CD′)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(CC′) est parallèle à (BB′), qui est perpendiculaire à (AB) en B : (CC′) est donc orthogonale à (AB), et elle ne la coupe pas ✓. La droite (BB′) est bien orthogonale à (AB), mais elle la coupe en B ; (AB′) coupe (AB) en A avec un angle de 45° ; (CD′) ne coupe pas (AB), mais elle forme aussi un angle de 45° avec elle.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une droite D est perpendiculaire à un plan P. Laquelle de ces conditions suffit à l'affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D est orthogonale à une droite de P",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "D est orthogonale à deux droites de P qui sont parallèles",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "D est parallèle à une droite de P"
+        },
+        {
+          "id": "d",
+          "text": "D est orthogonale à deux droites de P qui se coupent"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une droite est perpendiculaire à un plan si et seulement si elle est orthogonale à deux droites sécantes de ce plan ✓. Une seule droite ne suffit pas, et deux droites parallèles non plus : elles ne donnent qu'une direction du plan. Être parallèle à une droite de P n'apporte aucune orthogonalité.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Combien de droites passant par un point M sont perpendiculaires à un plan P donné ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune, quand M est déjà dans P",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite"
+        },
+        {
+          "id": "b",
+          "text": "Une seule, que M soit dans P ou non"
+        },
+        {
+          "id": "c",
+          "text": "Deux, une de chaque côté de P",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité, toutes dans un même plan",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-unicite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par un point de l'espace il passe une seule droite perpendiculaire à un plan donné, que ce point soit dans le plan ou hors de lui ✓. Si M est dans P, cette droite existe aussi, et elle coupe P en M. Il n'y en a pas deux, une de chaque côté, car la droite traverse le plan ; et les droites passant par M et perpendiculaires à une droite fixe forment, elles, un plan : c'est une autre propriété.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel est l'ensemble des points de l'espace équidistants de deux points A et B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une droite : la médiatrice de [AB]"
+        },
+        {
+          "id": "b",
+          "text": "Le plan perpendiculaire à (AB) en son milieu"
+        },
+        {
+          "id": "c",
+          "text": "Un plan quelconque passant par le milieu de [AB]",
+          "misconceptionTag": "math.geo.mediatrice-un-seul-critere"
+        },
+        {
+          "id": "d",
+          "text": "La sphère de diamètre [AB]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'ensemble des points équidistants de A et de B est le plan médiateur de [AB], perpendiculaire à (AB) en son milieu ✓. Dans l'espace, la médiatrice ne suffit plus : la droite n'est qu'une partie de ce plan. Un plan qui passe seulement par le milieu n'est pas équidistant (il faut aussi qu'il soit perpendiculaire à (AB)), et la sphère de diamètre [AB] regroupe les points qui voient [AB] sous un angle droit, ce qui est autre chose.",
+      "difficulty": 2
+    }
+  ]
+}

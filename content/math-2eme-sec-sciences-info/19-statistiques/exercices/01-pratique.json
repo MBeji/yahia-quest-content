@@ -1,0 +1,132 @@
+{
+  "title": "⭐ Exercice : Lire et résumer une série",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le diagramme en bâtons ci-dessous donne le nombre de frères et sœurs de chaque élève d'une classe.\n<svg viewBox=\"0 0 300 210\"><title>Diagramme en bâtons du nombre de frères et sœurs</title><path d=\"M38 178 H284 M38 158 H284 M38 138 H284 M38 118 H284 M38 98 H284 M38 78 H284 M38 58 H284 M38 38 H284 M38 18 H284\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.8\" opacity=\"0.55\"/><path d=\"M38 178 H288 M38 178 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M286 174.5 L292 178 L286 181.5 Z M34.5 14 L38 8 L41.5 14 Z\" fill=\"#0f172a\"/><text x=\"32\" y=\"182\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">0</text><text x=\"32\" y=\"162\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">2</text><text x=\"32\" y=\"142\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">4</text><text x=\"32\" y=\"122\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">6</text><text x=\"32\" y=\"102\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">8</text><text x=\"32\" y=\"82\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">10</text><text x=\"32\" y=\"62\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">12</text><text x=\"32\" y=\"42\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">14</text><text x=\"32\" y=\"22\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">16</text><path d=\"M62.6 178 L62.6 138\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"6\" stroke-linecap=\"butt\"/><text x=\"62.6\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">0</text><path d=\"M111.8 178 L111.8 58\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"6\" stroke-linecap=\"butt\"/><text x=\"111.8\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">1</text><path d=\"M161 178 L161 38\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"6\" stroke-linecap=\"butt\"/><text x=\"161\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">2</text><path d=\"M210.2 178 L210.2 118\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"6\" stroke-linecap=\"butt\"/><text x=\"210.2\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">3</text><path d=\"M259.4 178 L259.4 138\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"6\" stroke-linecap=\"butt\"/><text x=\"259.4\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">4</text><text x=\"161\" y=\"206\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">nombre de frères et sœurs</text><text x=\"42\" y=\"10\" font-size=\"11\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">effectif</text></svg>\nQuel pourcentage des élèves de la classe ont exactement 2 frères et sœurs ? Répondre en %.",
+      "answerKey": {
+        "value": 35,
+        "unit": "%"
+      },
+      "explanation": "On lit les effectifs : 4, 12, 14, 6 et 4, soit au total 4 + 12 + 14 + 6 + 4 = 40 élèves. Les élèves qui ont exactement 2 frères et sœurs sont 14, donc la fréquence est 14 / 40 = 0,35, soit 35 % ✓. Rapporter 14 à 100 au lieu de 40 oublierait que la fréquence se calcule sur l'effectif total de la classe.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une enquête relève la couleur des yeux de 120 élèves d'un lycée de 900 élèves. Que représente la couleur des yeux dans cette enquête ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le caractère"
+        },
+        {
+          "id": "b",
+          "text": "La population",
+          "misconceptionTag": "math.stat.population-et-caractere-confondus"
+        },
+        {
+          "id": "c",
+          "text": "L'échantillon"
+        },
+        {
+          "id": "d",
+          "text": "Une modalité"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le caractère est ce que l'on relève sur chaque individu : ici la couleur des yeux, un caractère qualitatif ✓. La population est l'ensemble des 900 élèves du lycée, l'échantillon est l'ensemble des 120 élèves observés, et une modalité est une valeur du caractère, comme « bleu » ou « marron ».",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'indice du prix du pain est 135 en 2020, avec la base 100 en 2015. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le prix a baissé de 35 % depuis 2015"
+        },
+        {
+          "id": "b",
+          "text": "Le prix a augmenté de 35 % depuis 2015"
+        },
+        {
+          "id": "c",
+          "text": "Le prix a augmenté de 135 % depuis 2015",
+          "misconceptionTag": "math.stat.indice-pris-pour-taux-d-evolution"
+        },
+        {
+          "id": "d",
+          "text": "Le prix a été multiplié par 135 depuis 2015"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'indice 135 signifie que le prix vaut 135 pour 100 en 2015 : le coefficient multiplicateur est 1,35, donc la hausse est de 135 − 100 = 35 % ✓. Une hausse de 135 % confond l'indice et le taux d'évolution ; une baisse de 35 % ignorerait que l'indice dépasse 100 ; et 135 est l'indice, pas un facteur de multiplication.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pendant 15 jours de classe, on a compté le nombre de retards par jour : 0 retard (1 jour), 1 retard (2 jours), 2 retards (2 jours), 3 retards (4 jours), 4 retards (6 jours). Quelle est la médiane du nombre de retards par jour ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "misconceptionTag": "math.stat.mediane-sans-tenir-compte-des-effectifs"
+        },
+        {
+          "id": "b",
+          "text": "2,8",
+          "misconceptionTag": "math.stat.moyenne-et-mediane-confondues"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "misconceptionTag": "math.stat.mode-mediane-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'effectif 15 est impair : la médiane est la valeur de rang 8. Les effectifs cumulés sont 1, 3, 5, 9 et 15, donc le rang 8 est atteint à la valeur 3 ✓. La valeur 2 est celle de la colonne du milieu, qui ignore les effectifs ; 2,8 est la moyenne des 15 jours ; 4 est le mode, la valeur la plus fréquente.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'histogramme ci-dessous donne le temps de jeu, en minutes, de 80 joueurs un soir donné.\n<svg viewBox=\"0 0 320 210\"><title>Histogramme du temps de jeu de 80 joueurs</title><path d=\"M38 178 H304 M38 158 H304 M38 138 H304 M38 118 H304 M38 98 H304 M38 78 H304 M38 58 H304 M38 38 H304 M38 18 H304\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.8\" opacity=\"0.55\"/><path d=\"M38 178 H308 M38 178 V12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M306 174.5 L312 178 L306 181.5 Z M34.5 14 L38 8 L41.5 14 Z\" fill=\"#0f172a\"/><text x=\"32\" y=\"182\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">0</text><text x=\"32\" y=\"162\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">4</text><text x=\"32\" y=\"142\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">8</text><text x=\"32\" y=\"122\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">12</text><text x=\"32\" y=\"102\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">16</text><text x=\"32\" y=\"82\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">20</text><text x=\"32\" y=\"62\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">24</text><text x=\"32\" y=\"42\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">28</text><text x=\"32\" y=\"22\" font-size=\"11\" text-anchor=\"end\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">32</text><path d=\"M38 178 V138 H91.2 V178\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M91.2 178 V78 H144.4 V178\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M144.4 178 V38 H197.6 V178\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M197.6 178 V98 H250.8 V178\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M250.8 178 V138 H304 V178\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"38\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">0</text><text x=\"91.2\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">20</text><text x=\"144.4\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">40</text><text x=\"197.6\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">60</text><text x=\"250.8\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">80</text><text x=\"304\" y=\"192\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">100</text><text x=\"171\" y=\"206\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">temps de jeu (min)</text><text x=\"42\" y=\"10\" font-size=\"11\" text-anchor=\"start\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">effectif</text></svg>\nCombien de joueurs ont joué moins de 60 minutes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "28"
+        },
+        {
+          "id": "b",
+          "text": "48",
+          "misconceptionTag": "math.stat.classes-concernees-incompletes"
+        },
+        {
+          "id": "c",
+          "text": "56"
+        },
+        {
+          "id": "d",
+          "text": "72",
+          "misconceptionTag": "math.stat.classe-commencant-au-seuil-comptee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Moins de 60 minutes » regroupe les classes [0 ; 20[, [20 ; 40[ et [40 ; 60[, car la classe [60 ; 80[ commence à 60 : 8 + 20 + 28 = 56 joueurs ✓. La valeur 28 ne compte que la classe la plus haute ; 48 oublie la première classe ; 72 ajoute la classe [60 ; 80[, qui commence au seuil.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les notes de 20 élèves à un devoir se répartissent ainsi : note 8, effectif 2 ; note 10, effectif 6 ; note 12, effectif 6 ; note 14, effectif 4 ; note 16, effectif 2. Quelle est la moyenne de la classe à ce devoir ?",
+      "answerKey": {
+        "value": 11.8
+      },
+      "explanation": "On pondère chaque note par son effectif : 2 × 8 + 6 × 10 + 6 × 12 + 4 × 14 + 2 × 16 = 16 + 60 + 72 + 56 + 32 = 236. On divise par l'effectif total 20 : 236 / 20 = 11,8 ✓. La moyenne simple des cinq notes, 12, ignorerait les effectifs.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Parallélisme, plans et sections",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes de la preuve que deux plans P et Q sont parallèles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choisir dans P deux droites D1 et D2 qui se coupent"
+        },
+        {
+          "id": "b",
+          "text": "Trouver dans Q deux droites D1′ et D2′ avec D1 ∥ D1′ et D2 ∥ D2′"
+        },
+        {
+          "id": "c",
+          "text": "Vérifier que D1′ et D2′ se coupent aussi"
+        },
+        {
+          "id": "d",
+          "text": "Conclure que P et Q sont parallèles grâce au critère"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On part de deux droites sécantes de P : sans elles, il n'y a rien à comparer. On cherche ensuite leurs parallèles dans Q, puis on constate qu'elles se coupent aussi, comme l'exige le critère (si elles étaient parallèles, D1 et D2 le seraient aussi, par transitivité). Le critère de parallélisme de deux plans permet alors de conclure ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces affirmations sur la perspective cavalière, laquelle est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux droites dessinées parallèles sont toujours parallèles dans l'espace",
+          "misconceptionTag": "math.esp.parallelisme-lu-sur-le-dessin"
+        },
+        {
+          "id": "b",
+          "text": "Deux droites parallèles de l'espace sont dessinées parallèles"
+        },
+        {
+          "id": "c",
+          "text": "Les longueurs des arêtes qui fuient sont conservées sur le dessin"
+        },
+        {
+          "id": "d",
+          "text": "Les angles droits de l'espace restent droits sur le dessin"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En perspective cavalière, le parallélisme, l'alignement et les milieux sont conservés : deux droites parallèles de l'espace sont dessinées parallèles ✓. La réciproque est fausse, car deux droites non coplanaires peuvent être dessinées parallèles ; les longueurs des fuyantes sont raccourcies, et les angles droits qui ne sont pas dans le plan de face sont déformés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le cube ABCDEFGH ci-dessous, I, J et K sont les milieux de [AB], [BC] et [BF]. Quel plan est parallèle au plan (IJK) ?\n<svg viewBox=\"30 26 225 225\"><path d=\"M228.8 180.2 L100.8 180.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M56 225 L100.8 180.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M100.8 180.2 L100.8 52.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M56 225 L184 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 225 L228.8 180.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M56 97 L184 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 97 L228.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228.8 52.2 L100.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M56 97 L100.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 225 L184 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M56 225 L56 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228.8 180.2 L228.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"56\" cy=\"225\" r=\"3.8\"/><circle cx=\"184\" cy=\"225\" r=\"3.8\"/><circle cx=\"228.8\" cy=\"180.2\" r=\"3.8\"/><circle cx=\"100.8\" cy=\"180.2\" r=\"3.8\"/><circle cx=\"56\" cy=\"97\" r=\"3.8\"/><circle cx=\"184\" cy=\"97\" r=\"3.8\"/><circle cx=\"228.8\" cy=\"52.2\" r=\"3.8\"/><circle cx=\"100.8\" cy=\"52.2\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"120\" cy=\"225\" r=\"4.2\"/><circle cx=\"206.4\" cy=\"202.6\" r=\"4.2\"/><circle cx=\"184\" cy=\"161\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"45\" y=\"237\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"195\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"241.8\" y=\"186.2\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"88.8\" y=\"182.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"44\" y=\"94\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"180\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"241.8\" y=\"48.2\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"96.8\" y=\"41.2\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"120\" y=\"242\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"220.4\" y=\"214.6\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"172\" y=\"165\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ACH)",
+          "misconceptionTag": "math.esp.plans-paralleles-une-seule-direction"
+        },
+        {
+          "id": "b",
+          "text": "(AFC)"
+        },
+        {
+          "id": "c",
+          "text": "(AFH)",
+          "misconceptionTag": "math.esp.plans-paralleles-une-seule-direction"
+        },
+        {
+          "id": "d",
+          "text": "(BDG)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le triangle ABC, I et J sont les milieux de [AB] et [BC] : (IJ) ∥ (AC). Dans le triangle ABF, I et K sont les milieux de [AB] et [BF] : (IK) ∥ (AF). Les droites (IJ) et (IK) se coupent en I, (AC) et (AF) en A : le critère donne (IJK) ∥ (AFC) ✓. Le plan (ACH) contient (AC), parallèle à (IJ), et le plan (AFH) contient (AF), parallèle à (IK) : mais par le point A ne passe qu'un seul plan parallèle à (IJK), et c'est (AFC) ; (ACH) et (AFH), distincts de (AFC) et passant par A, ne sont donc pas parallèles à (IJK). Le plan (BDG) ne contient ni (AC) ni (AF).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le tétraèdre ABCD ci-dessous, AB = CD et BC = DA. Le quadrilatère ABCD est-il un parallélogramme ?\n<svg viewBox=\"20 -6 276 252\"><path d=\"M272 222 L137.5 174.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M44 222 L137.5 174.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M137.5 174.1 L232.5 18.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M44 222 L272 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M272 222 L232.5 18.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L232.5 18.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\"/><circle cx=\"272\" cy=\"222\" r=\"3.8\"/><circle cx=\"137.5\" cy=\"174.1\" r=\"3.8\"/><circle cx=\"232.5\" cy=\"18.3\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"33\" y=\"234\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"283\" y=\"236\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"125.5\" y=\"170.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"232.5\" y=\"8.3\" text-anchor=\"middle\" fill=\"#0f172a\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui, car ses côtés opposés sont égaux deux à deux",
+          "misconceptionTag": "math.esp.quadrilatere-gauche-pris-pour-parallelogramme"
+        },
+        {
+          "id": "b",
+          "text": "Oui, car les droites (AB) et (CD) sont parallèles"
+        },
+        {
+          "id": "c",
+          "text": "Non, car les quatre sommets ne sont pas coplanaires"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut pas conclure sans connaître les diagonales AC et BD"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les sommets d'un tétraèdre ne sont jamais coplanaires : le quadrilatère ABCD est gauche, et un parallélogramme est plat ✓. Des côtés opposés égaux ne suffisent pas à le rendre plan ; (AB) et (CD) sont des arêtes opposées du tétraèdre, non coplanaires, donc pas parallèles ; et connaître les diagonales ne change rien, puisque les quatre points ne sont pas dans un même plan.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un cube a pour arête 6 cm. Le plan (IJK), où I, J et K sont les milieux de [GH], [BF] et [DH], coupe ce cube suivant l'hexagone ci-dessous, dont les sommets sont les milieux de six arêtes. Quel est le périmètre de cet hexagone, arrondi au dixième, en cm ?\n<svg viewBox=\"30 26 225 225\"><path d=\"M184 161 L120 225 L78.4 202.6 L100.8 116.2 L164.8 52.2 L206.4 74.6 Z\" fill=\"#0f6e56\" opacity=\"0.2\"/><path d=\"M228.8 180.2 L100.8 180.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M56 225 L100.8 180.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M100.8 180.2 L100.8 52.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M56 225 L184 225\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 225 L228.8 180.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M56 97 L184 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 97 L228.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228.8 52.2 L100.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M56 97 L100.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 225 L184 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M56 225 L56 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228.8 180.2 L228.8 52.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 161 L120 225\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120 225 L78.4 202.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M78.4 202.6 L100.8 116.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M100.8 116.2 L164.8 52.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M164.8 52.2 L206.4 74.6\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206.4 74.6 L184 161\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"56\" cy=\"225\" r=\"3.8\"/><circle cx=\"184\" cy=\"225\" r=\"3.8\"/><circle cx=\"228.8\" cy=\"180.2\" r=\"3.8\"/><circle cx=\"100.8\" cy=\"180.2\" r=\"3.8\"/><circle cx=\"56\" cy=\"97\" r=\"3.8\"/><circle cx=\"184\" cy=\"97\" r=\"3.8\"/><circle cx=\"228.8\" cy=\"52.2\" r=\"3.8\"/><circle cx=\"100.8\" cy=\"52.2\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"184\" cy=\"161\" r=\"4.2\"/><circle cx=\"120\" cy=\"225\" r=\"4.2\"/><circle cx=\"78.4\" cy=\"202.6\" r=\"4.2\"/><circle cx=\"100.8\" cy=\"116.2\" r=\"4.2\"/><circle cx=\"164.8\" cy=\"52.2\" r=\"4.2\"/><circle cx=\"206.4\" cy=\"74.6\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"45\" y=\"237\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"195\" y=\"239\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"241.8\" y=\"186.2\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"88.8\" y=\"182.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"44\" y=\"94\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"180\" y=\"86\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"241.8\" y=\"48.2\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"96.8\" y=\"41.2\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"164.8\" y=\"41.2\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"197\" y=\"164\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"88.8\" y=\"122.2\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "answerKey": {
+        "value": 25.5,
+        "tolerance": 0.06,
+        "unit": "cm"
+      },
+      "explanation": "Chaque côté joint les milieux de deux arêtes consécutives d'une même face carrée de côté 6 cm : c'est la droite des milieux dans le triangle formé par ces deux arêtes et la diagonale de la face, donc la moitié de cette diagonale, 6√2/2 = 3√2 ≈ 4,24 cm. Les six côtés sont égaux : 6 × 3√2 = 18√2 ≈ 25,5 cm ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le tétraèdre ABCD ci-dessous, le plan (IJK) est parallèle au plan (ABC), avec I, J et K sur [DA], [DB] et [DC]. Quelle droite est parallèle à (IJ) ?\n<svg viewBox=\"20 -6 276 252\"><path d=\"M138.2 120.2 L252.2 120.2 L185 96.2 Z\" fill=\"#0f6e56\" opacity=\"0.2\"/><path d=\"M272 222 L137.5 174.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M44 222 L137.5 174.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M137.5 174.1 L232.5 18.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M44 222 L272 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M272 222 L232.5 18.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L232.5 18.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138.2 120.2 L252.2 120.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M252.2 120.2 L185 96.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M138.2 120.2 L185 96.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\"/><circle cx=\"272\" cy=\"222\" r=\"3.8\"/><circle cx=\"137.5\" cy=\"174.1\" r=\"3.8\"/><circle cx=\"232.5\" cy=\"18.3\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"138.2\" cy=\"120.2\" r=\"4.2\"/><circle cx=\"252.2\" cy=\"120.2\" r=\"4.2\"/><circle cx=\"185\" cy=\"96.2\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"33\" y=\"234\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"283\" y=\"236\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"125.5\" y=\"170.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"232.5\" y=\"8.3\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"126.2\" y=\"124.2\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"265.2\" y=\"123.2\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"173\" y=\"94.2\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AB)"
+        },
+        {
+          "id": "b",
+          "text": "(AC)",
+          "misconceptionTag": "math.esp.droites-de-coupes-differentes-prises-paralleles"
+        },
+        {
+          "id": "c",
+          "text": "(BC)",
+          "misconceptionTag": "math.esp.droites-de-coupes-differentes-prises-paralleles"
+        },
+        {
+          "id": "d",
+          "text": "(CD)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le plan (DAB) coupe les plans parallèles (ABC) et (IJK) suivant (AB) et (IJ) : ces deux droites sont parallèles ✓. (AC) et (BC) viennent d'autres plans sécants, (DAC) et (DBC) : elles ne sont pas parallèles à (IJ), car (IJ) ∥ (AB) et (AB) coupe chacune d'elles. Enfin (CD) perce le plan (IJK) en K.",
+      "difficulty": 2
+    }
+  ]
+}
