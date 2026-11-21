@@ -1,0 +1,144 @@
+{
+  "title": "⭐ Exercice : Premières parallèles de l'espace",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans le cube ABCDEFGH ci-dessous, laquelle de ces droites est parallèle à (AB) ?\n<svg viewBox=\"26 29 210 210\"><path d=\"M212 173 L92 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M50 215 L92 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M92 173 L92 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M50 215 L170 215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 215 L212 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 95 L170 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 95 L212 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M212 53 L92 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 95 L92 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 215 L170 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 215 L50 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M212 173 L212 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"215\" r=\"3.8\"/><circle cx=\"170\" cy=\"215\" r=\"3.8\"/><circle cx=\"212\" cy=\"173\" r=\"3.8\"/><circle cx=\"92\" cy=\"173\" r=\"3.8\"/><circle cx=\"50\" cy=\"95\" r=\"3.8\"/><circle cx=\"170\" cy=\"95\" r=\"3.8\"/><circle cx=\"212\" cy=\"53\" r=\"3.8\"/><circle cx=\"92\" cy=\"53\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"39\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"181\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"225\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"80\" y=\"175\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"38\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"166\" y=\"84\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"225\" y=\"49\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"88\" y=\"42\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AE)"
+        },
+        {
+          "id": "b",
+          "text": "(BC)"
+        },
+        {
+          "id": "c",
+          "text": "(CG)",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "d",
+          "text": "(EF)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(EF) et (AB) sont deux côtés opposés du carré ABFE : elles sont dans un même plan et parallèles ✓. (AE) et (BC) coupent (AB) en A et en B ; (CG) ne coupe pas (AB), mais aucun plan ne contient (AB) et (CG) : elles sont non coplanaires, donc pas parallèles.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Combien de plans contiennent à la fois deux droites strictement parallèles de l'espace ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun, car elles ne se coupent pas",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "b",
+          "text": "Deux exactement"
+        },
+        {
+          "id": "c",
+          "text": "Un seul"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux droites strictement parallèles sont dans un même plan, par définition, et ce plan est unique : c'est celui que définissent la seconde droite et un point A de la première ✓. Ne pas se couper est normal pour des parallèles ; un autre plan contenant les deux droites contiendrait aussi A et la seconde droite, donc serait le même plan.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour prouver qu'une droite D est parallèle à un plan P, que faut-il établir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que D est parallèle à toutes les droites de P",
+          "misconceptionTag": "math.esp.parallele-au-plan-donc-a-toute-droite"
+        },
+        {
+          "id": "b",
+          "text": "Que D est parallèle à une droite de P"
+        },
+        {
+          "id": "c",
+          "text": "Que D n'a aucun point commun avec une droite de P",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "d",
+          "text": "Que D coupe une droite de P"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par définition, D est parallèle à P lorsqu'elle est parallèle à une droite de P : il suffit d'en trouver une ✓. Exiger le parallélisme avec toutes les droites de P est impossible, ces droites n'ayant pas la même direction ; n'avoir aucun point commun avec une droite de P ne prouve rien, car D et cette droite peuvent être non coplanaires ; et couper une droite de P montre en général que D perce P.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le tétraèdre ABCD ci-dessous, I, J, K et L sont les milieux de [AB], [BC], [CD] et [DA], et IJKL est un parallélogramme. Sachant que AC = 8 cm et BD = 6 cm, quel est son périmètre, en cm ?\n<svg viewBox=\"20 -6 276 252\"><path d=\"M272 222 L137.5 174.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M44 222 L137.5 174.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M137.5 174.1 L232.5 18.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M44 222 L272 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M272 222 L232.5 18.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L232.5 18.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M158 222 L204.7 198.1\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M204.7 198.1 L185 96.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M185 96.2 L138.2 120.2\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M138.2 120.2 L158 222\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\"/><circle cx=\"272\" cy=\"222\" r=\"3.8\"/><circle cx=\"137.5\" cy=\"174.1\" r=\"3.8\"/><circle cx=\"232.5\" cy=\"18.3\" r=\"3.8\"/></g><g fill=\"#0f6e56\"><circle cx=\"158\" cy=\"222\" r=\"4.2\"/><circle cx=\"204.7\" cy=\"198.1\" r=\"4.2\"/><circle cx=\"185\" cy=\"96.2\" r=\"4.2\"/><circle cx=\"138.2\" cy=\"120.2\" r=\"4.2\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"33\" y=\"234\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"283\" y=\"236\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"125.5\" y=\"170.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"232.5\" y=\"8.3\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"158\" y=\"239\" text-anchor=\"middle\" fill=\"#0f6e56\">I</text><text x=\"217.7\" y=\"204.1\" text-anchor=\"middle\" fill=\"#0f6e56\">J</text><text x=\"198\" y=\"92.2\" text-anchor=\"middle\" fill=\"#0f6e56\">K</text><text x=\"126.2\" y=\"118.2\" text-anchor=\"middle\" fill=\"#0f6e56\">L</text></g></svg>",
+      "answerKey": {
+        "value": 14,
+        "unit": "cm"
+      },
+      "explanation": "Dans la face ABC, la droite des milieux donne IJ = AC/2 = 4 cm ; dans la face ACD, KL = AC/2 = 4 cm. Dans les faces BCD et ABD, JK = IL = BD/2 = 3 cm. Le périmètre vaut 2 × (4 + 3) = 14 cm ✓. Le piège est de prendre pour côté la longueur de l'arête entière, ce qui donnerait 2 × (8 + 6) = 28 cm.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le cube ci-dessous, quelle droite est parallèle au plan (BCG) sans y être contenue ?\n<svg viewBox=\"26 29 210 210\"><path d=\"M170 215 L212 173 L212 53 L170 95 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M212 173 L92 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M50 215 L92 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M92 173 L92 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M50 215 L170 215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 215 L212 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 95 L170 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 95 L212 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M212 53 L92 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 95 L92 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 215 L170 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 215 L50 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M212 173 L212 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"215\" r=\"3.8\"/><circle cx=\"170\" cy=\"215\" r=\"3.8\"/><circle cx=\"212\" cy=\"173\" r=\"3.8\"/><circle cx=\"92\" cy=\"173\" r=\"3.8\"/><circle cx=\"50\" cy=\"95\" r=\"3.8\"/><circle cx=\"170\" cy=\"95\" r=\"3.8\"/><circle cx=\"212\" cy=\"53\" r=\"3.8\"/><circle cx=\"92\" cy=\"53\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"39\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"181\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"225\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"80\" y=\"175\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"38\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"166\" y=\"84\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"225\" y=\"49\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"88\" y=\"42\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AB)"
+        },
+        {
+          "id": "b",
+          "text": "(AD)"
+        },
+        {
+          "id": "c",
+          "text": "(CG)"
+        },
+        {
+          "id": "d",
+          "text": "(EF)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(AD) est parallèle à (BC), côtés opposés du carré ABCD, et (BC) est dans (BCG) : (AD) est parallèle au plan ; comme A n'est pas dans (BCG), elle n'y est pas contenue ✓. (CG) est contenue dans le plan, puisque C et G y sont ; (AB) coupe le plan en B et (EF) le coupe en F : elles ne lui sont pas parallèles.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les plans P et Q sont strictement parallèles, et une droite D perce P en un point. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D perce aussi Q"
+        },
+        {
+          "id": "b",
+          "text": "D est parallèle à Q"
+        },
+        {
+          "id": "c",
+          "text": "D est contenue dans Q"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut rien affirmer sans une autre donnée"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si deux plans sont parallèles, toute droite qui perce l'un perce l'autre ✓. D n'est pas parallèle à Q : une droite parallèle à Q serait parallèle à P, ce que D, qui perce P, n'est pas. D n'est pas contenue dans Q non plus : son point de percée dans P serait alors commun à P et à Q, qui n'ont aucun point commun.",
+      "difficulty": 2
+    }
+  ]
+}

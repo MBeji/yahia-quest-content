@@ -1,0 +1,172 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Médiane, quartiles et dispersion",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Les durées de charge, en minutes, de 120 batteries sont regroupées en classes. Les effectifs sont : [100 ; 110[ : 12 ; [110 ; 120[ : 30 ; [120 ; 130[ : 30 ; [130 ; 140[ : 24 ; [140 ; 150[ : 24.\nQuelle est la médiane, par interpolation linéaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "123",
+          "misconceptionTag": "math.stat.interpolation-mal-posee"
+        },
+        {
+          "id": "b",
+          "text": "125",
+          "misconceptionTag": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
+        },
+        {
+          "id": "c",
+          "text": "126"
+        },
+        {
+          "id": "d",
+          "text": "130",
+          "misconceptionTag": "math.stat.mediane-egale-centre-ou-borne-de-la-classe"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "N / 2 = 60. Les cumuls 42 puis 72 encadrent 60 : la médiane est dans la classe [120 ; 130[ et m = 120 + (60 − 42) / 30 × 10 = 120 + 6 = 126 ✓. La valeur 125 est le centre de la classe et 130 sa borne supérieure ; 123 divise par 60 au lieu de l'effectif 30 de la classe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les diagrammes en boîte ci-dessous résument les notes de deux classes, C1 et C2, au même devoir.\n<svg viewBox=\"0 0 330 160\"><title>Diagrammes en boîte des classes C1 et C2</title><path d=\"M44 14 V130 M74 14 V130 M104 14 V130 M134 14 V130 M164 14 V130 M194 14 V130 M224 14 V130 M254 14 V130 M284 14 V130 M314 14 V130\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.8\" opacity=\"0.55\"/><path d=\"M44 130 L318 130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">2</text><text x=\"74\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">4</text><text x=\"104\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">6</text><text x=\"134\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">8</text><text x=\"164\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">10</text><text x=\"194\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">12</text><text x=\"224\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">14</text><text x=\"254\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">16</text><text x=\"284\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">18</text><text x=\"314\" y=\"144\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">20</text><path d=\"M74 48 L134 48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M254 48 L284 48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M74 40 L74 56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M284 40 L284 56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M134 36 H254 V60 H134 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M194 36 L194 60\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\" stroke-linecap=\"butt\"/><text x=\"36\" y=\"52\" font-size=\"11\" text-anchor=\"end\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">C1</text><path d=\"M104 100 L164 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 100 L254 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M104 92 L104 108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M254 92 L254 108\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M164 88 H224 V112 H164 Z\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M194 88 L194 112\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\" stroke-linecap=\"butt\"/><text x=\"36\" y=\"104\" font-size=\"11\" text-anchor=\"end\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">C2</text><text x=\"179\" y=\"157\" font-size=\"11\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">note sur 20</text></svg>\nQuelle affirmation est justifiée par ces diagrammes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La médiane de C2 est plus grande que celle de C1"
+        },
+        {
+          "id": "b",
+          "text": "Les médianes sont égales, C1 est plus dispersée que C2"
+        },
+        {
+          "id": "c",
+          "text": "Au moins 75 % des notes de C1 sont inférieures à 8"
+        },
+        {
+          "id": "d",
+          "text": "L'écart interquartile de C1 est plus petit que celui de C2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux traits de médiane sont à la même abscisse, 12 ; la boîte de C1, de 8 à 16, est deux fois plus longue que celle de C2, de 10 à 14, et ses valeurs extrêmes 4 et 18 sont plus éloignées que 6 et 16 ✓. C2 n'a donc pas la meilleure médiane ; la valeur 8 est le premier quartile de C1, donc au moins 25 % seulement des notes sont inférieures ou égales à 8 ; et l'écart interquartile de C1 vaut 8 contre 4 pour C2, il est plus grand et non plus petit.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Une série de 48 notes a pour premier quartile Q₁ = 7, pour médiane m = 10 et pour troisième quartile Q₃ = 13. Cochez toutes les affirmations certainement vraies.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au moins 12 notes sont inférieures ou égales à 7"
+        },
+        {
+          "id": "b",
+          "text": "Au moins 36 notes sont inférieures ou égales à 13"
+        },
+        {
+          "id": "c",
+          "text": "L'écart interquartile est égal à 6"
+        },
+        {
+          "id": "d",
+          "text": "Exactement 24 notes sont comprises entre 7 et 13"
+        },
+        {
+          "id": "e",
+          "text": "La moyenne des notes est égale à 10"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "Q₁ = 7 : au moins 25 % de 48, soit 12 notes, sont inférieures ou égales à 7 ✓. Q₃ = 13 : au moins 75 % de 48, soit 36 notes, sont inférieures ou égales à 13 ✓. L'écart interquartile est 13 − 7 = 6 ✓. L'intervalle [7 ; 13] contient au moins 24 notes, mais pas obligatoirement exactement 24 ; et la médiane 10 n'impose rien sur la moyenne, qui peut en être très différente.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève calcule la médiane d'une série regroupée de 160 salariés. Les classes [0 ; 10[, [10 ; 20[, [20 ; 30[ et [30 ; 40[ ont pour effectifs 20, 50, 60 et 30.\nLigne 1 : les effectifs cumulés croissants sont 20, 70, 130 et 160.\nLigne 2 : N / 2 = 80 et 70 < 80 ≤ 130, donc la médiane est dans la classe [20 ; 30[.\nLigne 3 : m = 20 + (80 − 70) / 130 × 10 ≈ 20,77.\nLigne 4 : la médiane est donc environ 20,8.\nQuelle est la première ligne fausse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "Ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "Ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "Ligne 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La ligne 3 divise par 130, l'effectif cumulé, au lieu de 60, l'effectif de la classe [20 ; 30[ : il faut m = 20 + (80 − 70) / 60 × 10 = 20 + 1,67 ≈ 21,7 ✓. Les cumuls de la ligne 1 sont exacts, et la classe de la ligne 2 est la bonne puisque 70 < 80 ≤ 130. La ligne 4 arrondit correctement un résultat déjà faux : ce n'est pas la première erreur.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Une série a pour moyenne x̄ = 10 et pour écart type σ = 3. Chaque valeur x est remplacée par y = −2x + 5. Cochez toutes les affirmations vraies pour la nouvelle série.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La moyenne de y est −15"
+        },
+        {
+          "id": "b",
+          "text": "L'écart type de y est 6"
+        },
+        {
+          "id": "c",
+          "text": "L'écart type de y est −6"
+        },
+        {
+          "id": "d",
+          "text": "La variance de y est 36"
+        },
+        {
+          "id": "e",
+          "text": "L'écart type de y est 11"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d"]
+      },
+      "explanation": "Pour y = a x + b avec a = −2 et b = 5 : la moyenne est a x̄ + b = −20 + 5 = −15 ✓ ; l'écart type est |a| σ = 2 × 3 = 6 ✓, le décalage b ne comptant pas ; la variance est a² V = 4 × 9 = 36 ✓. Un écart type est une racine carrée, donc il n'est pas négatif et −6 est impossible ; et 11 ajouterait le décalage 5, qui ne change pas la dispersion.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une classe de 30 élèves a une moyenne générale de 12 à un devoir. Les 20 filles ont une moyenne de 13. Quelle est la moyenne des 10 garçons ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "11",
+          "misconceptionTag": "math.stat.moyenne-des-moyennes-non-ponderee"
+        },
+        {
+          "id": "c",
+          "text": "11,5"
+        },
+        {
+          "id": "d",
+          "text": "14"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le total des points est 30 × 12 = 360 et les filles en rapportent 20 × 13 = 260, donc les garçons en rapportent 360 − 260 = 100, soit une moyenne de 100 / 10 = 10 ✓. La valeur 11 vient de (13 + x) / 2 = 12, qui ignore les effectifs 20 et 10 ; 11,5 inverse les poids ; et 14 place les garçons au-dessus de la moyenne générale alors que les filles y sont déjà.",
+      "difficulty": 3
+    }
+  ]
+}

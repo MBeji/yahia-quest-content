@@ -1,0 +1,122 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Preuves, solides et optimisation dans l'espace",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un pylône [AM] de 5 m est perpendiculaire au plan du sol en A. H est un point du sol, et on mesure MH = 13 m. Quelle est la distance AH, en m ?",
+      "answerKey": {
+        "value": 12
+      },
+      "explanation": "(AM) est perpendiculaire au sol et (AH) est une droite du sol : (AM) ⊥ (AH), donc MAH est rectangle en A. AH² = MH² − AM² = 169 − 25 = 144, donc AH = 12 m ✓.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans le cube ci-dessous, cochez tous les plans perpendiculaires au plan (ABC).\n<svg viewBox=\"10 6 188 188\"><path d=\"M174.4 134 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70.4 134 L70.4 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L138 170.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L174.4 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 66.4 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 30 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 170.4 L34 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 134 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"34\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"30\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"30\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"182.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"149\" y=\"184.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.4\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"59.4\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"22\" y=\"64.4\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"142\" y=\"57.4\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"187.4\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"66.4\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ABB′A′)"
+        },
+        {
+          "id": "b",
+          "text": "(BDD′B′)"
+        },
+        {
+          "id": "c",
+          "text": "(ACC′A′)"
+        },
+        {
+          "id": "d",
+          "text": "(A′BC)"
+        },
+        {
+          "id": "e",
+          "text": "(AB′C)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Les plans (ABB′A′), (BDD′B′) et (ACC′A′) contiennent chacun une arête verticale, (AA′), (BB′) ou (CC′), perpendiculaire à (ABC) ✓. Les plans (A′BC) et (AB′C) ne sont pas perpendiculaires à (ABC). Par exemple, (A′BC) coupe (ABC) suivant (BC), et la droite (BA′) de (A′BC) est perpendiculaire à (BC), car (BC) ⊥ (ABB′A′). Mais (BA′) fait un angle de 45° avec (BA) : elle n'est pas perpendiculaire à (ABC). Or, si les plans étaient perpendiculaires, toute droite de l'un perpendiculaire à l'intersection serait perpendiculaire à l'autre. Le raisonnement est le même pour (AB′C), avec la droite (AC) d'intersection.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un champ plat P, [AM] est un pylône perpendiculaire à P en A, H est le point d'une route D le plus proche de A, avec AM = 7 et AH = 24, et K est un point de D tel que HK = 60. Un élève calcule MK :\nLigne 1 : (AM) est perpendiculaire à P, donc MAH est rectangle en A et MH² = 49 + 576 = 625, donc MH = 25.\nLigne 2 : (AH) est perpendiculaire à D, donc (MH) est perpendiculaire à D.\nLigne 3 : MHK est donc rectangle en H, et MK² = 625 + 3600 = 4225.\nLigne 4 : MK = 65.\nQuelle est la première ligne dont la justification est insuffisante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ligne 1"
+        },
+        {
+          "id": "b",
+          "text": "Ligne 2"
+        },
+        {
+          "id": "c",
+          "text": "Ligne 3"
+        },
+        {
+          "id": "d",
+          "text": "Ligne 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La ligne 2 conclut avec une seule perpendiculaire : (AH) ⊥ D ne suffit pas pour (MH) ⊥ D. Il faut aussi (AM) ⊥ D, grâce au pylône perpendiculaire à P, puis le plan (AHM) ✓ : c'est le théorème des trois perpendiculaires. La ligne 1 est juste (MAH rectangle en A, 49 + 576 = 625), la ligne 3 s'appuie sur la conclusion correcte et la ligne 4 en est la racine, 65.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces affirmations est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux droites perpendiculaires à une même droite sont parallèles"
+        },
+        {
+          "id": "b",
+          "text": "Deux plans perpendiculaires à un même plan sont parallèles",
+          "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan"
+        },
+        {
+          "id": "c",
+          "text": "Si deux plans sont perpendiculaires, toute droite de l'un est perpendiculaire à l'autre"
+        },
+        {
+          "id": "d",
+          "text": "Deux plans distincts perpendiculaires à une même droite sont parallèles"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Deux plans distincts perpendiculaires à une même droite sont parallèles ✓. Les trois autres sont fausses, contre-exemples dans un cube : (AB) et (AD) sont perpendiculaires à (AA′) et se coupent ; (ABB′A′) et (ADD′A′) sont perpendiculaires à (ABC) et se coupent suivant (AA′) ; et dans deux plans perpendiculaires, (AB′), droite de (ABB′A′), n'est pas perpendiculaire à (ABC).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un octaèdre SABCDS′ est formé de deux pyramides régulières SABCD et S′ABCD, de base commune le carré ABCD de côté 6 cm, S et S′ étant symétriques par rapport au centre O du carré. Toutes les arêtes mesurent 6 cm. Quel est son volume, arrondi au centième, en cm³ ?\n<svg viewBox=\"16 38 226 235\"><path d=\"M218.2 132.1 L86.2 132.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M86.2 132.1 L129.1 61.9\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M86.2 132.1 L129.1 248.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 178.3 L86.2 132.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 178.3 L129.1 61.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 178.3 L172 178.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M172 178.3 L129.1 61.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 178.3 L129.1 248.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M172 178.3 L129.1 248.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M172 178.3 L218.2 132.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M218.2 132.1 L129.1 61.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M218.2 132.1 L129.1 248.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"178.3\" r=\"3.8\"/><circle cx=\"172\" cy=\"178.3\" r=\"3.8\"/><circle cx=\"218.2\" cy=\"132.1\" r=\"3.8\"/><circle cx=\"86.2\" cy=\"132.1\" r=\"3.8\"/><circle cx=\"129.1\" cy=\"61.9\" r=\"3.8\"/><circle cx=\"129.1\" cy=\"248.6\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"182.3\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"183\" y=\"192.3\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"231.2\" y=\"136.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"75.2\" y=\"130.1\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"129.1\" y=\"51.9\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"129.1\" y=\"266.6\" text-anchor=\"middle\" fill=\"#0f172a\">S′</text></g></svg>",
+      "answerKey": {
+        "value": 101.82,
+        "tolerance": 0.01
+      },
+      "explanation": "SA = SB = SC = SD : S est sur l'axe du carré, donc (SO) est perpendiculaire à (ABC). AC = 6√2, donc AO² = 18 ; SO² = SA² − AO² = 36 − 18 = 18, donc SO = 3√2. Le volume d'une pyramide vaut 36 × 3√2 / 3 = 36√2 ; l'octaèdre en comprend deux : 72√2 ≈ 101,82 cm³ ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "A, B et C sont trois points tels que (AC) soit perpendiculaire à (AB), avec AB = 6 cm et AC = 8 cm. Π est le plan médiateur de [AB], et M est un point de Π. Quelle est la plus petite valeur possible de MA + MC, en cm ?\n<svg viewBox=\"42 9 159 261\"><path d=\"M106 252 L183 175 L183 27 L106 104 Z\" fill=\"#0f6e56\" opacity=\"0.13\"/><path d=\"M106 252 L183 175 L183 27 L106 104 Z\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 190 L180 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 190 L116 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130.5 89.5 L60 190\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M130.5 89.5 L116 134\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"3.8\"/><circle cx=\"180\" cy=\"190\" r=\"3.8\"/><circle cx=\"116\" cy=\"134\" r=\"3.8\"/></g><g fill=\"#b45309\"><circle cx=\"130.5\" cy=\"89.5\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"48\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"192\" y=\"196\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"104\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"130.5\" y=\"79.5\" text-anchor=\"middle\" fill=\"#b45309\">M</text></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"136\" y=\"256\" text-anchor=\"middle\" fill=\"#0f6e56\">Π</text></g></svg>",
+      "answerKey": {
+        "value": 10
+      },
+      "explanation": "M est dans le plan médiateur de [AB], donc MA = MB et MA + MC = MB + MC ≥ BC par l'inégalité triangulaire. Dans le triangle ABC rectangle en A, BC² = 36 + 64 = 100, donc BC = 10. L'égalité a lieu quand M est sur [BC] et dans Π : (AC) est perpendiculaire à (AB), donc parallèle à Π, et [BC] coupe Π en son milieu. Le minimum vaut 10 cm ✓.",
+      "difficulty": 3
+    }
+  ]
+}
