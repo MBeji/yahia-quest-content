@@ -79,30 +79,6 @@
       "difficulty": 2
     },
     {
-      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. Soit s une similitude de rapport 5/4 et A′B′C′ l'image du triangle ABC par s. Que vaut l'aire de A′B′C′ en fonction de l'aire 𝒜 de ABC ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "16𝒜/25"
-        },
-        {
-          "id": "b",
-          "text": "5𝒜/4"
-        },
-        {
-          "id": "c",
-          "text": "25𝒜/16"
-        },
-        {
-          "id": "d",
-          "text": "5𝒜/16"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "Une similitude de rapport k multiplie les aires par k². Avec k = 5/4, l'aire image vaut 𝒜 × (5/4)² = 25𝒜/16. Multiplier par k seulement (5𝒜/4) est l'erreur la plus fréquente ; 16𝒜/25 serait le résultat pour le rapport 4/5 ; 5𝒜/16 mélange k et k². Vérification : 25/16 ≈ 1,56 > 1,25, l'agrandissement des aires est plus fort que celui des longueurs ✓.",
-      "difficulty": 2
-    },
-    {
       "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. f est le déplacement tel que f(A) = C et f(B) = A, d'angle −2π/3. Quel est le centre de f ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
       "options": [
         {
@@ -269,6 +245,30 @@
       "correctOption": "d",
       "explanation": "φ∘φ est l'homothétie de centre Ω et de rapport (3/2)² = 9/4. Comme φ(φ(B)) = φ(C) = E, on a ΩE⃗ = (9/4)ΩB⃗. Or ΩE⃗ = ΩB⃗ + BE⃗, donc BE⃗ = (9/4 − 1)ΩB⃗ = (5/4)ΩB⃗, c'est-à-dire ΩB⃗ = (4/5)BE⃗. Utiliser le rapport 3/2 au lieu de 9/4 donnerait ΩB⃗ = 2BE⃗. Vérification : ΩE⃗ = ΩB⃗ + (5/4)ΩB⃗ = (9/4)ΩB⃗ ✓.",
       "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle équilatéral direct tel que (AB⃗, AC⃗) ≡ π/3 [2π] ; 𝒞₁ est son cercle circonscrit, de centre O ; I est le milieu de [BC] et AICD est un rectangle direct. φ est la similitude indirecte de centre Ω et de rapport 3/2 telle que φ(B) = C ; on pose E = φ(C) et 𝒞₂ = φ(𝒞₁). Le cercle 𝒞₂ coupe 𝒞₁ en C et en un autre point M. Quel argument établit que Ω, B et M sont alignés ? <svg viewBox=\"0 0 250 220\"><circle cx=\"125\" cy=\"110\" r=\"84\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M125 26 L52.3 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 152 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 152 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L197.7 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M197.7 26 L197.7 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L125 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"152\" r=\"3.6\"/><circle cx=\"125\" cy=\"110\" r=\"3.6\"/><circle cx=\"125\" cy=\"152\" r=\"3.6\"/><circle cx=\"197.7\" cy=\"26\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"117\" y=\"18\" text-anchor=\"middle\">A</text><text x=\"42.3\" y=\"164\" text-anchor=\"middle\">B</text><text x=\"207.7\" y=\"164\" text-anchor=\"middle\">C</text><text x=\"113\" y=\"112\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"168\" text-anchor=\"middle\">I</text><text x=\"207.7\" y=\"20\" text-anchor=\"middle\">D</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ω, B et E = φ∘φ(B) sont alignés (homothétie de centre Ω) ; la puissance de Ω par rapport à 𝒞₂ vaut (3/2)² fois celle par rapport à 𝒞₁, donc (ΩB) recoupe les deux cercles en un même point : M"
+        },
+        {
+          "id": "b",
+          "text": "Ω, B et E = φ∘φ(B) sont alignés (homothétie de centre Ω) ; la puissance de Ω par rapport à 𝒞₂ vaut 3/2 fois celle par rapport à 𝒞₁, donc (ΩB) recoupe les deux cercles en un même point : M"
+        },
+        {
+          "id": "c",
+          "text": "φ(B) = C donne Ω, B et C alignés sur la droite (ΩB) ; M appartient à 𝒞₁ et à 𝒞₂ comme C, donc M est lui aussi sur cette droite, qui porte déjà B"
+        },
+        {
+          "id": "d",
+          "text": "M appartient aux deux cercles, donc à la droite des centres (OD) ; cette droite contient Ω et B, de sorte que les trois points Ω, B et M sont alignés sur (OD)"
+        }
+      ],
+      "correctOption": "a",
+      "difficulty": 3,
+      "explanation": "φ∘φ est l'homothétie h de centre Ω et de rapport (3/2)² = 9/4 ; comme φ(B) = C, h(B) = φ(C) = E : Ω, B et E sont alignés. La droite (ΩB) recoupe 𝒞₁ en un second point T (ΩB·ΩT = p, puissance de Ω par rapport à 𝒞₁, comptée algébriquement) ; elle coupe aussi 𝒞₂ en E, qui appartient à 𝒞₂ puisque E = φ(C) avec C ∈ 𝒞₁. φ multiplie les distances à son centre par 3/2, donc la puissance de Ω par rapport à 𝒞₂ = φ(𝒞₁) vaut (3/2)² p = 9p/4. Avec ΩE = (9/4)ΩB, le second point T′ de (ΩB) sur 𝒞₂ vérifie ΩT′ = (9p/4)/ΩE = p/ΩB = ΩT : T′ = T. T est donc commun à 𝒞₁ et 𝒞₂, et T ≠ C (C n'est pas sur (ΩB)) : T = M, d'où Ω, B, M alignés. Les erreurs : prendre le rapport 3/2 au lieu de son carré pour les puissances (on n'obtiendrait pas T′ = T) ; croire Ω, B, C alignés parce que φ(B) = C (une similitude indirecte ne conserve pas l'alignement avec son centre) ; placer M sur la droite des centres (OD), alors que (CM), corde commune, lui est perpendiculaire. Vérification : dans le repère d'origine O, de rayon OA = 1, B(−√3/2 ; −1/2), Ω(−7√3/10 ; −23/10), M(−5√3/14 ; 11/14), et ΩM⃗ = (12/7)·ΩB⃗ ✓."
     }
   ]
 }

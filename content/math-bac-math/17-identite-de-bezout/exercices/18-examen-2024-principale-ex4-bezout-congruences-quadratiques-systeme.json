@@ -131,23 +131,23 @@
       "options": [
         {
           "id": "a",
-          "text": "x ≡ 133 (mod 58), avec la somme des modules en guise de module"
+          "text": "x ≡ 13 (mod 265)"
         },
         {
           "id": "b",
-          "text": "x ≡ 30 (mod 265), en additionnant les deux restes"
+          "text": "x ≡ 80 (mod 265)"
         },
         {
           "id": "c",
-          "text": "x ≡ 133 (mod 265), avec le produit des modules"
+          "text": "x ≡ 133 (mod 265)"
         },
         {
           "id": "d",
-          "text": "x ≡ 81 (mod 265), en multipliant les deux restes"
+          "text": "x ≡ 17 (mod 58)"
         }
       ],
       "correctOption": "c",
-      "explanation": "L'égalité 3 + 5u = 27 + 53v donne 5u − 53v = 24, dont les solutions sont u = 26 + 53k. Alors x = 3 + 5(26 + 53k) = 133 + 265k ✓. Vérification : 133 = 5 × 26 + 3 ✓ et 133 = 53 × 2 + 27 ✓. Le module est le produit 5 × 53 = 265 (5 et 53 sont premiers entre eux) et non la somme 58. Les erreurs : additionner les restes (3 + 27 = 30 : 30 ≡ 0 modulo 5 et 30 ≢ 27 modulo 53) ou les multiplier (3 × 27 = 81 : 81 ≡ 1 modulo 5).",
+      "explanation": "L'égalité 3 + 5u = 27 + 53v donne 5u − 53v = 24, dont les solutions sont u = 26 + 53k. Alors x = 3 + 5(26 + 53k) = 133 + 265k ✓. Vérification : 133 = 5 × 26 + 3 ✓ et 133 = 53 × 2 + 27 ✓. Le module est le produit 5 × 53 = 265 (5 et 53 sont premiers entre eux), et 133 < 265 est le reste réduit. Les erreurs : lire v = 2 au lieu de u = 26 donne 3 + 5 × 2 = 13, qui vérifie x ≡ 3 (mod 5) mais pas x ≡ 27 (mod 53) ; reporter u = 26 dans x = 27 + 53v donne 27 + 53 × 26 ≡ 80 (mod 265), qui vérifie x ≡ 27 (mod 53) mais pas x ≡ 3 (mod 5) ; prendre la somme 58 des modules comme module donne 133 ≡ 17 (mod 58), qui ne satisfait aucune des deux congruences (17 ≡ 2 (mod 5) et 17 ≢ 27 (mod 53)).",
       "difficulty": 3
     },
     {

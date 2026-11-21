@@ -223,30 +223,6 @@
       "difficulty": 3
     },
     {
-      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. g est l'antidéplacement qui envoie B sur F et E sur C, c'est une symétrie glissante ; I est le milieu de [BE] et J celui de [FC]. Où se trouve son axe ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/><circle cx=\"55.8\" cy=\"189.2\" r=\"3\"/><circle cx=\"55.8\" cy=\"70.8\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text><text x=\"52.0\" y=\"207.0\">I</text><text x=\"52.0\" y=\"63.0\">J</text></g></svg>",
-      "options": [
-        {
-          "id": "a",
-          "text": "L'axe passe par les milieux de [BF] et de [EC] ; c'est la droite (IJ), perpendiculaire à (OA)"
-        },
-        {
-          "id": "b",
-          "text": "L'axe est (OA), car g est lié à la symétrie d'axe (OA) qui échange B et C, et (OA) est l'axe de symétrie de la figure"
-        },
-        {
-          "id": "c",
-          "text": "L'axe est la médiatrice de [BF]"
-        },
-        {
-          "id": "d",
-          "text": "L'axe est la droite (BC)"
-        }
-      ],
-      "correctOption": "a",
-      "explanation": "Pour une symétrie glissante, le milieu de [M g(M)] appartient à l'axe quel que soit M. Avec M = B et M = E, les milieux de [BF] et de [EC] sont sur l'axe. Les milieux de [BF] et de [EC] ont la même projection sur (OA), et I, J aussi (x_I = x_J par la symétrie S) : les quatre points sont sur une même perpendiculaire à (OA), qui est donc (IJ) ✓. Piège classique : confondre l'axe de g avec l'axe de la symétrie S, avec la médiatrice d'un seul segment ou avec (BC).",
-      "difficulty": 3
-    },
-    {
       "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle rectangle et isocèle en A, de sens direct ; O est le milieu de [BC] ; AEB et ACF sont des triangles équilatéraux directs. g est la symétrie glissante d'axe (IJ) qui envoie B sur F et E sur C, avec I milieu de [BE] et J = g(I) milieu de [FC]. Quelle est son écriture comme composée ? <svg viewBox=\"0 0 310 260\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"15\" y1=\"130\" x2=\"288.6\" y2=\"130\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><polygon points=\"40.0,130.0 90.0,180.0 90.0,80.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 21.7,198.3 90.0,180.0\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><polygon points=\"40.0,130.0 90.0,80.0 21.7,61.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"21.7\" y1=\"198.3\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><line x1=\"21.7\" y1=\"61.7\" x2=\"276.6\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 3\"/><g fill=\"#0f172a\"><circle cx=\"40.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"180.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"80.0\" r=\"3\"/><circle cx=\"90.0\" cy=\"130.0\" r=\"3\"/><circle cx=\"21.7\" cy=\"198.3\" r=\"3\"/><circle cx=\"21.7\" cy=\"61.7\" r=\"3\"/><circle cx=\"276.6\" cy=\"130.0\" r=\"3\"/><circle cx=\"55.8\" cy=\"189.2\" r=\"3\"/><circle cx=\"55.8\" cy=\"70.8\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"24.0\" y=\"134.0\">A</text><text x=\"96.0\" y=\"196.0\">B</text><text x=\"96.0\" y=\"72.0\">C</text><text x=\"86.0\" y=\"122.0\">O</text><text x=\"5.7\" y=\"212.3\">E</text><text x=\"5.7\" y=\"55.7\">F</text><text x=\"272.6\" y=\"120.0\">Ω</text><text x=\"52.0\" y=\"207.0\">I</text><text x=\"52.0\" y=\"63.0\">J</text></g></svg>",
       "options": [
         {

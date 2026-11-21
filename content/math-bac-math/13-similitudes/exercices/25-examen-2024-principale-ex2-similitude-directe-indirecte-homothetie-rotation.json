@@ -103,30 +103,6 @@
       "difficulty": 2
     },
     {
-      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. S est la similitude directe de centre A et de rapport √2/2 telle que S(B) = I et S(I) = K, et E = S(K). Pour construire E, quelle longueur AE faut-il reporter ? ",
-      "options": [
-        {
-          "id": "a",
-          "text": "(√2/2)·AB"
-        },
-        {
-          "id": "b",
-          "text": "(1/2)·AB"
-        },
-        {
-          "id": "c",
-          "text": "(√2/4)·AB"
-        },
-        {
-          "id": "d",
-          "text": "(1/4)·AB"
-        }
-      ],
-      "correctOption": "c",
-      "explanation": "E = S(K) = S(S(I)) = S(S(S(B))) : E est l'image de B par S∘S∘S, similitude de centre A et de rapport (√2/2)³ = 2√2/8 = √2/4. Comme A est le centre, AE = (√2/4)·AB. Le rapport √2/2 serait celui d'un seul passage par S, 1/2 celui de deux passages (k²), et 1/4 celui de quatre (k⁴). Vérification : (√2/2)² × (√2/2) = (1/2)(√2/2) = √2/4 ✓.",
-      "difficulty": 2
-    },
-    {
       "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. Quelle est l'image de I par h∘R ? <svg viewBox=\"0 0 290 200\"><path d=\"M136.5 104.3 L264 104.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M264 104.3 L26 40.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M136.5 104.3 L168.3 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M168.3 159.5 L81.2 72.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"136.5\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"264\" cy=\"104.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"40.5\" r=\"3.6\"/><circle cx=\"81.2\" cy=\"72.4\" r=\"3.6\"/><circle cx=\"58.4\" cy=\"59.2\" r=\"3.6\"/><circle cx=\"168.3\" cy=\"159.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"146.5\" y=\"98.3\" text-anchor=\"middle\">A</text><text x=\"274\" y=\"108.3\" text-anchor=\"middle\">B</text><text x=\"20\" y=\"32.5\" text-anchor=\"middle\">C</text><text x=\"83.2\" y=\"62.4\" text-anchor=\"middle\">J</text><text x=\"54.4\" y=\"75.2\" text-anchor=\"middle\">I</text><text x=\"178.3\" y=\"171.5\" text-anchor=\"middle\">K</text></g></svg>",
       "options": [
         {
@@ -148,6 +124,30 @@
       ],
       "correctOption": "a",
       "explanation": "h∘R(I) = R(h(I)) car h et R commutent, et h(I) = J. Donc h∘R(I) = R(J). R est la rotation de centre A et d'angle 5π/6, J est tel que AJ = AC/2 : R(J) est le point tel que AR(J) = AJ et (AJ⃗, AR(J)⃗) ≡ 5π/6, c'est exactement la définition de K. Donc h∘R(I) = K. Le point J est h(I), non l'image par h∘R. Vérification : AK = AJ et (AJ⃗, AK⃗) ≡ 5π/6 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. ABC est un triangle isocèle en A tel que (AB⃗, AC⃗) ≡ 5π/6 [2π] ; J est le milieu de [AC] ; I est le point tel que AC⃗ = √2·AI⃗ ; K est le point tel que AJK est isocèle en A avec (AJ⃗, AK⃗) ≡ 5π/6 [2π]. R est la rotation de centre A et d'angle 5π/6, h l'homothétie de centre A et de rapport √2/2. S est la similitude directe de centre A et de rapport √2/2 telle que S(B) = I et S(I) = K, et E = S(K). Pour construire E, quelle longueur AE faut-il reporter ? ",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√2/2)·AB"
+        },
+        {
+          "id": "b",
+          "text": "(1/2)·AB"
+        },
+        {
+          "id": "c",
+          "text": "(√2/4)·AB"
+        },
+        {
+          "id": "d",
+          "text": "(1/4)·AB"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E = S(K) = S(S(I)) = S(S(S(B))) : E est l'image de B par S∘S∘S, similitude de centre A et de rapport (√2/2)³ = 2√2/8 = √2/4. Comme A est le centre, AE = (√2/4)·AB. Le rapport √2/2 serait celui d'un seul passage par S, 1/2 celui de deux passages (k²), et 1/4 celui de quatre (k⁴). Vérification : (√2/2)² × (√2/2) = (1/2)(√2/2) = √2/4 ✓.",
       "difficulty": 3
     },
     {
@@ -215,11 +215,11 @@
         },
         {
           "id": "d",
-          "text": "g∘g est la rotation de centre Ω et d'angle π ; g∘g(B) = g(I) = K : K est le symétrique de B par rapport à Ω, sans lien avec un milieu"
+          "text": "g∘g est l'homothétie de centre Ω et de rapport 1/2 ; g∘g(B) = g(I) = K : Ω est le milieu de [BK]"
         }
       ],
       "correctOption": "b",
-      "explanation": "Le carré d'une similitude indirecte de centre Ω et de rapport k est l'homothétie de centre Ω et de rapport k² = 1/2. Alors g∘g(B) = g(g(B)) = g(I) = K, donc ΩK⃗ = (1/2)ΩB⃗ : K est le milieu de [ΩB], et Ω est le symétrique de B par rapport à K. Utiliser k = √2/2 au lieu de k², ou un rapport négatif −1/2 (le carré d'une similitude est de rapport k² > 0), ne ferait pas de K le milieu ; g∘g n'est ni une rotation ni l'identité (k² ≠ 1). Vérification : ΩK = ΩB/2, donc K est bien le milieu de [ΩB] ✓.",
+      "explanation": "Le carré d'une similitude indirecte de centre Ω et de rapport k est l'homothétie de centre Ω et de rapport k² = 1/2. Alors g∘g(B) = g(g(B)) = g(I) = K, donc ΩK⃗ = (1/2)ΩB⃗ : K est le milieu de [ΩB], et Ω est le symétrique de B par rapport à K. Utiliser k = √2/2 au lieu de k², ou un rapport négatif −1/2 (le carré d'une similitude est de rapport k² > 0), ne ferait pas de K le milieu ; enfin dire que Ω est le milieu de [BK] renverse les rôles : ΩK⃗ = (1/2)ΩB⃗ place K entre Ω et B, c'est K le milieu de [BΩ]. Vérification : ΩK = ΩB/2, donc K est bien le milieu de [ΩB] ✓.",
       "difficulty": 3
     },
     {

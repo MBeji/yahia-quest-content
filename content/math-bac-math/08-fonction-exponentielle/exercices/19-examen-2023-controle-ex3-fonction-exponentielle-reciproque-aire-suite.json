@@ -7,27 +7,27 @@
   "displayOrder": 19,
   "questions": [
     {
-      "prompt": "Soit f la fonction définie sur [−1 ; +∞[ par f(x) = e^(−1/(x+1)) si x > −1 et f(−1) = 0, de courbe ζ. Pourquoi f est-elle continue à droite en −1 ?",
+      "prompt": "Soit f la fonction définie sur [−1 ; +∞[ par f(x) = e^(−1/(x+1)) si x > −1 et f(−1) = 0, de courbe ζ. Quelle est la limite de f(x) quand x tend vers −1⁺, et que conclut-on pour la continuité de f à droite en −1 ?",
       "options": [
         {
           "id": "a",
-          "text": "Quand x tend vers −1⁺, −1/(x + 1) tend vers +∞, donc e^(−1/(x+1)) tend vers +∞ : f n'a pas de limite finie"
+          "text": "La limite vaut +∞ : f n'a pas de limite finie en −1⁺, donc f n'est pas continue à droite en −1"
         },
         {
           "id": "b",
-          "text": "En calculant la limite quand x tend vers +∞ (et non −1⁺), −1/(x + 1) tend vers 0, donc e^(−1/(x+1)) tend vers 1 ≠ f(−1) : f est discontinue"
+          "text": "La limite vaut 1, différente de f(−1) = 0 : f n'est pas continue à droite en −1"
         },
         {
           "id": "c",
-          "text": "f n'a pas de limite en −1⁺, car x + 1 s'annule en −1 : f est discontinue en ce point"
+          "text": "Il n'y a pas de limite, car x + 1 s'annule en −1 : f n'est pas continue à droite en −1"
         },
         {
           "id": "d",
-          "text": "Quand x tend vers −1⁺, −1/(x + 1) tend vers −∞, donc e^(−1/(x+1)) tend vers 0 = f(−1)"
+          "text": "La limite vaut 0, égale à f(−1) : f est continue à droite en −1"
         }
       ],
       "correctOption": "d",
-      "explanation": "Quand x → −1⁺, x + 1 → 0⁺, donc 1/(x + 1) → +∞ et −1/(x + 1) → −∞. Comme e^t → 0 quand t → −∞, f(x) → 0 = f(−1) ✓ : f est continue à droite en −1. Piège classique : perdre le signe moins de l'exposant (on trouve +∞), ou calculer la limite en +∞ (l'exposant tend alors vers 0 et f vers 1) au lieu de la limite en −1⁺.",
+      "explanation": "Quand x → −1⁺, x + 1 → 0⁺, donc 1/(x + 1) → +∞ et −1/(x + 1) → −∞. Comme e^t → 0 quand t → −∞, f(x) → 0 = f(−1) ✓ : f est continue à droite en −1. Pièges classiques : perdre le signe moins de l'exposant (on trouve +∞ et on conclut à tort à une discontinuité), calculer la limite pour x → +∞ (l'exposant tend vers 0 et f vers 1 ≠ f(−1)) au lieu de x → −1⁺, ou déclarer qu'il n'y a pas de limite parce que le dénominateur s'annule.",
       "difficulty": 2
     },
     {
