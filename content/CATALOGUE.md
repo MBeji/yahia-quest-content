@@ -5,7 +5,7 @@
 > with `chapter.json`; a subject with 0 chapters is a ⚠ stub). Check here whether a subject /
 > grade already exists before creating one, and which slugs are taken.
 
-**107 subjects · 1019 chapters · 5209 exercises · 6 themes · 0 stub(s)**
+**107 subjects · 1019 chapters · 5225 exercises · 6 themes · 0 stub(s)**
 
 ## anglais
 
@@ -51,7 +51,7 @@
 | `english-bac` | English | — | en | 15 | 45 | 15 |
 | `philosophie-bac` | الفلسفة | — | ar | 3 | 8 | 3 |
 | `arabic-1ere` | اللغة العربية | 1ere-base | ar | 8 | 40 | 8 |
-| `math-1ere` | الرياضيات | 1ere-base | ar | 9 | 36 | 9 |
+| `math-1ere` | الرياضيات | 1ere-base | ar | 9 | 38 | 9 |
 | `eveil-scientifique-1ere` | الإيقاظ العلمي | 1ere-base | ar | 9 | 45 | 9 |
 | `education-islamique-1ere` | التربية الإسلامية | 1ere-base | ar | 8 | 40 | 8 |
 | `math-1ere-sec` | Mathématiques | 1ere-sec | fr | 16 | 32 | 16 |
@@ -61,26 +61,26 @@
 | `french-1ere-sec` | Français | 1ere-sec | fr | 7 | 28 | 7 |
 | `english-1ere-sec` | English | 1ere-sec | en | 9 | 27 | 9 |
 | `arabic-2eme` | اللغة العربية | 2eme-base | ar | 8 | 40 | 8 |
-| `math-2eme` | الرياضيات | 2eme-base | ar | 9 | 39 | 9 |
+| `math-2eme` | الرياضيات | 2eme-base | ar | 9 | 42 | 9 |
 | `eveil-scientifique-2eme` | الإيقاظ العلمي | 2eme-base | ar | 10 | 50 | 10 |
 | `education-islamique-2eme` | التربية الإسلامية | 2eme-base | ar | 8 | 40 | 8 |
 | `arabic-2eme-sec-lettres` | اللغة العربيّة | 2eme-sec-lettres | ar | 5 | 15 | 5 |
-| `math-3eme` | الرياضيات | 3eme-base | ar | 8 | 40 | 8 |
+| `math-3eme` | الرياضيات | 3eme-base | ar | 8 | 42 | 8 |
 | `eveil-scientifique-3eme` | الإيقاظ العلمي | 3eme-base | ar | 8 | 40 | 8 |
 | `arabic-3eme` | اللغة العربية | 3eme-base | ar | 8 | 40 | 8 |
 | `education-islamique-3eme` | التربية الإسلامية | 3eme-base | ar | 8 | 40 | 8 |
 | `french-3eme` | Français | 3eme-base | fr | 9 | 25 | 9 |
 | `arabic-4eme` | اللغة العربية | 4eme-base | ar | 8 | 40 | 8 |
-| `math-4eme` | الرياضيات | 4eme-base | ar | 18 | 90 | 18 |
+| `math-4eme` | الرياضيات | 4eme-base | ar | 18 | 93 | 18 |
 | `eveil-scientifique-4eme` | الإيقاظ العلمي | 4eme-base | ar | 8 | 40 | 8 |
 | `education-islamique-4eme` | التربية الإسلامية | 4eme-base | ar | 15 | 75 | 15 |
 | `french-4eme` | Français | 4eme-base | fr | 6 | 18 | 6 |
-| `math-5eme` | الرياضيات | 5eme-base | ar | 12 | 60 | 12 |
+| `math-5eme` | الرياضيات | 5eme-base | ar | 12 | 63 | 12 |
 | `eveil-scientifique-5eme` | الإيقاظ العلمي | 5eme-base | ar | 10 | 50 | 10 |
 | `arabic-5eme` | اللغة العربية | 5eme-base | ar | 8 | 40 | 8 |
 | `french-5eme` | Français | 5eme-base | fr | 8 | 24 | 8 |
 | `education-islamique-5eme` | التربية الإسلامية | 5eme-base | ar | 12 | 60 | 12 |
-| `math-6eme` | الرياضيات | 6eme-base | ar | 26 | 168 | 26 |
+| `math-6eme` | الرياضيات | 6eme-base | ar | 26 | 171 | 26 |
 | `eveil-scientifique-6eme` | إيقاظ علمي | 6eme-base | ar | 12 | 97 | 12 |
 | `arabic-6eme` | اللغة العربية | 6eme-base | ar | 19 | 95 | 19 |
 | `english-6eme` | English | 6eme-base | en | 7 | 57 | 7 |
