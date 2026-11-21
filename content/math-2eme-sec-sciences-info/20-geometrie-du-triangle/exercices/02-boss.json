@@ -1,0 +1,115 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Bissectrices, aires et relations enchaînées",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Un triangle ABC a pour côtés AB = 10, BC = 21 et CA = 17. Quelle est la hauteur issue de A, c'est-à-dire sur la base [BC], en unités de longueur ?",
+      "answerKey": {
+        "value": 8,
+        "unit": "unités de longueur"
+      },
+      "explanation": "Le demi-périmètre est p = (10 + 21 + 17) / 2 = 24, donc S = √(24 × 14 × 3 × 7) = √7056 = 84. L'aire vaut aussi ½ × BC × h = ½ × 21 × h, donc h = 168/21 = 8 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le triangle ABC ci-dessous, (AI) est la bissectrice de l'angle Â, avec I sur [BC]. On donne IB = 3, IC = 6 et AB = 5. Que vaut AC ?\n<svg viewBox=\"10 20 330 216\"><path d=\"M50 50.3 L40 200 L310 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M50 50.3 L40 200 L310 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 50.3 L130 200\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M48.5 72.3 A22 22 0 0 0 60.4 69.7\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M48.2 77.3 A27 27 0 0 0 62.7 74.1\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60.4 69.7 A22 22 0 0 0 69.1 61.3\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M62.7 74.1 A27 27 0 0 0 73.4 63.8\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"50\" cy=\"50.3\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"310\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"130\" cy=\"200\" r=\"4.5\" fill=\"#0f6e56\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"40.4\" y=\"43.8\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"26.8\" y=\"212.1\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"324.4\" y=\"209.1\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"143\" y=\"191\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">I</text><text x=\"31.5\" y=\"126.4\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">5</text><text x=\"85\" y=\"222\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">3</text><text x=\"220\" y=\"222\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">6</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "2,5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La bissectrice donne IB / IC = AB / AC, soit 3/6 = 5 / AC, donc AC = 5 × 6/3 = 10 ✓. La valeur 2,5 vient de AC = 5 × 3/6, le rapport renversé. La valeur 8 ajoute à AB l'écart IC − IB = 3 ; mais le théorème donne un rapport, pas un écart. La valeur 5 suppose AC = AB, donc I milieu de [BC], alors que IB et IC sont différents.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les triangles ABC et A′B′C′ vérifient BC = B′C′ = 4√3, CA = C′A′ = 4 et B̂ = B̂′ = 30°. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont isométriques d'après le 2ᵉ cas (deux côtés, un angle)"
+        },
+        {
+          "id": "b",
+          "text": "Pas forcément isométriques : AB peut valoir 4 ou 8"
+        },
+        {
+          "id": "c",
+          "text": "Ils sont isométriques car AB = 8 dans les deux triangles"
+        },
+        {
+          "id": "d",
+          "text": "Ils sont isométriques car AB = 4 dans les deux triangles"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "El-Kashi avec l'angle B̂ donne CA² = BC² + AB² − 2 × BC × AB × cos 30°, soit 16 = 48 + AB² − 12 AB, donc AB² − 12 AB + 32 = 0, c'est-à-dire (AB − 4)(AB − 8) = 0 : AB = 4 ou AB = 8 ✓. Les deux conviennent : la loi du sinus donne sin Â = √3/2, donc Â = 60° (AB = 8) ou Â = 120° (AB = 4). Deux triangles non isométriques ont donc les mêmes données : l'angle B̂ n'est pas compris entre BC et CA, le 2ᵉ cas ne s'applique pas. Affirmer AB = 8 ou AB = 4 dans les deux triangles oublie l'autre valeur possible.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le triangle ABC a pour côtés AB = 7, BC = 20 et CA = 15. Le triangle MNP est semblable à ABC, avec M̂ = Â, N̂ = B̂ et P̂ = Ĉ, et NP = 10. Quelle est l'aire de MNP, en unités d'aire ?",
+      "answerKey": {
+        "value": 10.5,
+        "unit": "unités d'aire"
+      },
+      "explanation": "NP et BC sont opposés à M̂ = Â : ils sont homologues, donc k = BC / NP = 20/10 = 2, MN = AB / 2 = 3,5 et MP = CA / 2 = 7,5. La formule de Héron avec 3,5 ; 7,5 et 10 donne p = 10,5 et S = √(10,5 × 7 × 3 × 0,5) = √110,25 = 10,5 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est rectangle en A et H est le pied de la hauteur issue de A. On donne AH = 19,2 et BH = 14,4. Que vaut AC ?\n<svg viewBox=\"10 40 330 196\"><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 70.4 L137.2 200\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131.2 78.4 L139.2 84.4 L145.2 76.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 189 L126.2 189 L126.2 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"137.2\" cy=\"70.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"310\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"137.2\" cy=\"200\" r=\"3.5\" fill=\"#b45309\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"131.2\" y=\"61.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"25.7\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"324.3\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"137.2\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#b45309\">H</text><text x=\"88.6\" y=\"224\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">14,4</text><text x=\"123.2\" y=\"140.2\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">19,2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "40",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "32"
+        },
+        {
+          "id": "c",
+          "text": "25,6",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "24",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "AH² = BH × CH donne CH = 19,2² / 14,4 = 368,64 / 14,4 = 25,6, donc BC = 14,4 + 25,6 = 40. Puis AC² = CH × CB = 25,6 × 40 = 1024, donc AC = 32 ✓. La valeur 25,6 est CH, le segment obtenu à l'étape intermédiaire. La valeur 40 est l'hypoténuse BC. La valeur 24 est AB (AB² = BH × BC = 14,4 × 40 = 576), le côté issu de l'autre extrémité.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un terrain triangulaire ABC est clôturé ; on connaît deux de ses côtés : [AB] mesure 12 m et [AC] 20 m. Un chemin suit la bissectrice de l'angle Â et rejoint le troisième côté [BC] en un point I tel que IB = 6 m. Quelle est la surface du terrain, en m² ?",
+      "answerKey": {
+        "value": 96,
+        "unit": "m²"
+      },
+      "explanation": "IB / IC = AB / AC = 12/20 = 3/5 donne IC = 6 × 5/3 = 10, donc BC = 16. La formule de Héron avec 12, 16 et 20 donne p = 24 et S = √(24 × 12 × 8 × 4) = √9216 = 96 ✓. Ici 12² + 16² = 20² : le triangle est rectangle en B, et l'aire ½ × 12 × 16 = 96 le confirme.",
+      "difficulty": 3
+    }
+  ]
+}

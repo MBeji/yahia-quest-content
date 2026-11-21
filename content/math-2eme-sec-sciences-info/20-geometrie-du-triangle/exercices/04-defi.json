@@ -1,0 +1,119 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le cadastre du triangle",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Pour des côtés a, b et c, le nombre sous la racine de la formule de Héron est p (p − a)(p − b)(p − c). Pour lequel de ces triplets de longueurs est-il strictement négatif ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 ; 4 ; 5"
+        },
+        {
+          "id": "b",
+          "text": "3 ; 4 ; 6"
+        },
+        {
+          "id": "c",
+          "text": "3 ; 4 ; 7"
+        },
+        {
+          "id": "d",
+          "text": "3 ; 4 ; 8"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le facteur p − c est négatif exactement quand c > a + b, c'est-à-dire quand l'inégalité triangulaire est violée. Avec 3, 4 et 8 : p = 7,5 et p − 8 = −0,5, donc le produit est négatif ✓ et aucun triangle n'a ces côtés. Avec 3, 4 et 7 : p = 7 et p − 7 = 0, le produit est nul, le triangle est aplati. Avec 3, 4 et 6 : p = 6,5 et les quatre facteurs 6,5 ; 3,5 ; 2,5 et 0,5 sont positifs. Avec 3, 4 et 5 : le produit vaut 6 × 3 × 2 × 1 = 36 et l'aire est 6.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Quel est le rayon du cercle circonscrit au triangle isocèle de côtés 5, 5 et 6, en unités de longueur ?",
+      "answerKey": {
+        "value": 3.125,
+        "unit": "unités de longueur"
+      },
+      "explanation": "Le demi-périmètre est p = (5 + 5 + 6) / 2 = 8, donc S = √(8 × 3 × 3 × 2) = √144 = 12. Avec S = abc / (4R), vu au chapitre de trigonométrie, R = abc / (4S) = 5 × 5 × 6 / (4 × 12) = 150/48 = 25/8 = 3,125 ✓. Vérification par la loi du sinus : le cosinus de l'angle opposé à la base est (25 + 25 − 36)/50 = 0,28, son sinus vaut 0,96 et 2R = 6/0,96 = 6,25.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations, lesquelles sont toujours vraies ? Sélectionner toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux triangles semblables de rapport 1 sont isométriques"
+        },
+        {
+          "id": "b",
+          "text": "Deux triangles isométriques sont semblables"
+        },
+        {
+          "id": "c",
+          "text": "Deux triangles semblables ont leurs côtés deux à deux égaux"
+        },
+        {
+          "id": "d",
+          "text": "Deux triangles semblables qui ont un couple de côtés homologues égaux sont isométriques"
+        },
+        {
+          "id": "e",
+          "text": "Deux triangles qui ont deux côtés proportionnels sont semblables"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "d"]
+      },
+      "explanation": "Un rapport de similitude égal à 1 signifie que les côtés homologues sont égaux : c'est la définition de l'isométrie. Réciproquement, deux triangles isométriques ont les mêmes angles (El-Kashi donne le même cosinus pour chaque angle), donc sont semblables de rapport 1. Si un couple de côtés homologues est égal, le quotient commun vaut 1 et l'on retombe sur le premier cas. En revanche, des triangles semblables ont des côtés proportionnels et non égaux : un fanion et son modèle réduit en sont l'exemple. Et deux côtés proportionnels ne suffisent pas : il faut aussi l'angle compris, ou le troisième côté.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un triangle ABC, AB = 5, AC = 7 et BC = 6. La bissectrice intérieure et la bissectrice extérieure de l'angle Â coupent la droite (BC) en I et J. Quelle est la distance IJ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12,5"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "17,5"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "IB / IC = AB / AC = 5/7 avec IB + IC = 6 donne IB = 6 × 5/12 = 2,5. Pour J, JB / JC = 5/7 et J est au-delà de B puisque AB < AC : JC = JB + 6, donc 7 JB = 5 (JB + 6) et JB = 15. I est entre B et C, J est de l'autre côté de B : IJ = JB + BI = 15 + 2,5 = 17,5 ✓. La valeur 12,5 soustrait BI de JB, comme si I et J étaient du même côté de B. La valeur 15 est JB seul. La valeur 21 est JC.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABC est rectangle en A et H est le pied de la hauteur issue de A. On donne AH = 12 et BC = 25. Quelle est la plus petite des deux longueurs BH et CH, en unités de longueur ?",
+      "answerKey": {
+        "value": 9,
+        "unit": "unités de longueur"
+      },
+      "explanation": "AH² = BH × CH = 144 et BH + CH = BC = 25. BH et CH sont donc les solutions de t² − 25 t + 144 = 0, de discriminant 625 − 576 = 49 : t = (25 ± 7) / 2, soit 9 et 16. La plus petite est 9 ✓ (vérification : 9 × 16 = 144 et 9 + 16 = 25).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le triangle ABC rectangle en A, AB = 21 et AC = 28. H est le pied de la hauteur issue de A et I le point où la bissectrice de l'angle Â coupe [BC]. Quelle est la longueur HI, en unités de longueur ?\n<svg viewBox=\"10 40 330 196\"><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M137.2 70.4 L40 200 L310 200 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 70.4 L137.2 200\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M131.2 78.4 L139.2 84.4 L145.2 76.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 189 L126.2 189 L126.2 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M137.2 70.4 L155.7 200\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"155.7\" cy=\"200\" r=\"4.5\" fill=\"#0f6e56\"/><circle cx=\"137.2\" cy=\"70.4\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"40\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"310\" cy=\"200\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"137.2\" cy=\"200\" r=\"3.5\" fill=\"#b45309\"/><g font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"131.2\" y=\"61.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">A</text><text x=\"25.7\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">B</text><text x=\"324.3\" y=\"209.6\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">C</text><text x=\"128.2\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#b45309\">H</text><text x=\"164.7\" y=\"220\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f6e56\">I</text><text x=\"75\" y=\"137.1\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">21</text><text x=\"236.7\" y=\"135.2\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f6e56\">28</text></g></svg>",
+      "answerKey": {
+        "value": 2.4,
+        "unit": "unités de longueur"
+      },
+      "explanation": "BC² = 21² + 28² = 1225, donc BC = 35. La relation AB² = BH × BC donne BH = 441/35 = 12,6. La bissectrice donne BI / IC = 21/28 = 3/4, donc BI = 35 × 3/7 = 15. Comme 12,6 < 15, H est avant I sur [BC] : HI = BI − BH = 15 − 12,6 = 2,4 ✓.",
+      "difficulty": 3
+    }
+  ]
+}
