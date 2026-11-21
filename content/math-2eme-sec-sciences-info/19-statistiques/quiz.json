@@ -1,0 +1,135 @@
+{
+  "title": "Test de compréhension ⭐ : Statistiques",
+  "questions": [
+    {
+      "prompt": "Dans un échantillon de 80 élèves, 20 ont plus de 17 ans. Quelle est la fréquence de ces élèves dans l'échantillon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,25"
+        },
+        {
+          "id": "b",
+          "text": "0,75"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "misconceptionTag": "math.stat.effectif-frequence-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fréquence est l'effectif divisé par la taille de l'échantillon : 20 / 80 = 0,25, soit 25 % ✓. Le nombre 20 est l'effectif, pas la fréquence ; 0,75 est la fréquence des élèves qui ont 17 ans ou moins ; et 4 est le rapport inverse 80 / 20.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La production d'une usine est de 250 pièces en 2010, année de base, et de 300 pièces en 2014. Quel est le coefficient multiplicateur de 2014 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,83",
+          "misconceptionTag": "math.stat.coefficient-multiplicateur-a-l-envers"
+        },
+        {
+          "id": "b",
+          "text": "1,2"
+        },
+        {
+          "id": "c",
+          "text": "20"
+        },
+        {
+          "id": "d",
+          "text": "120"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le coefficient multiplicateur est la valeur de l'année divisée par la valeur de base : 300 / 250 = 1,2 ✓. Le nombre 0,83 vient de la division inverse 250 / 300 ; 20 est le pourcentage d'augmentation et 120 est l'indice de 2014, pas son coefficient.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Cinq élèves ont obtenu les notes 9, 14, 7, 11 et 12. Quelle est la médiane de ces notes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7",
+          "misconceptionTag": "math.stat.mediane-lue-sans-ranger"
+        },
+        {
+          "id": "b",
+          "text": "10,5",
+          "misconceptionTag": "math.stat.mediane-au-milieu-des-extremes"
+        },
+        {
+          "id": "c",
+          "text": "10,6",
+          "misconceptionTag": "math.stat.moyenne-et-mediane-confondues"
+        },
+        {
+          "id": "d",
+          "text": "11"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On range d'abord : 7, 9, 11, 12, 14. L'effectif 5 est impair, la médiane est la valeur de rang 3, soit 11 ✓. La note 7 est la troisième de la liste non rangée ; 10,5 est le milieu des valeurs extrêmes, (7 + 14) / 2 ; 10,6 est la moyenne des cinq notes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour une série de notes, on trouve Q₃ = 14. Que signifie ce résultat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Au moins 75 % des notes sont supérieures ou égales à 14",
+          "misconceptionTag": "math.stat.cumul-croissant-decroissant-confondus"
+        },
+        {
+          "id": "b",
+          "text": "75 % des élèves ont obtenu exactement la note 14"
+        },
+        {
+          "id": "c",
+          "text": "Au moins 75 % des notes sont inférieures ou égales à 14"
+        },
+        {
+          "id": "d",
+          "text": "La 14ᵉ note de la série rangée est le troisième quartile",
+          "misconceptionTag": "math.stat.quartile-lu-comme-rang"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Q₃ est la plus petite valeur dont l'effectif cumulé atteint au moins 75 % : au moins 75 % des notes lui sont inférieures ou égales ✓. Dire « supérieures » inverse le sens du cumul croissant ; « exactement 14 » confond le quartile avec une fréquence ; et 14 est la valeur du quartile, pas son rang.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un lot, 3 articles coûtent 12 € chacun et 1 article coûte 20 €. Quel est le prix moyen d'un article, en euros ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12",
+          "misconceptionTag": "math.stat.moyenne-et-mode-confondus"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "16",
+          "misconceptionTag": "math.stat.moyenne-sans-ponderation"
+        },
+        {
+          "id": "d",
+          "text": "28",
+          "misconceptionTag": "math.stat.moyenne-divisee-par-le-nombre-de-valeurs"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pondère chaque prix par son effectif : (3 × 12 + 1 × 20) / 4 = 56 / 4 = 14 ✓. Le nombre 12 est le mode ; 16 est la moyenne simple (12 + 20) / 2, qui ignore les effectifs ; et 28 divise la somme 56 par 2, le nombre de prix différents, au lieu de l'effectif total 4.",
+      "difficulty": 2
+    }
+  ]
+}

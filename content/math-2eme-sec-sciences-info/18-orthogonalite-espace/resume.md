@@ -1,0 +1,10 @@
+# 📜 Résumé : Orthogonalité dans l'espace
+
+- **Droites orthogonales** : leurs parallèles menées par un même point sont perpendiculaires ; elles n'ont pas besoin de se couper. Des droites perpendiculaires sont des orthogonales qui se coupent. Si deux droites sont orthogonales, toute parallèle à l'une est orthogonale à l'autre.
+- **Droite perpendiculaire à un plan** : orthogonale à deux droites sécantes du plan (une seule ne suffit pas) ; elle est alors orthogonale à toutes les droites du plan, même celles qui ne la coupent pas.
+- **Projeté orthogonal** : par un point passe une seule perpendiculaire à un plan, et un seul plan perpendiculaire à une droite ; son pied H est le projeté, et MN² = MH² + HN² pour tout point N du plan. Le volume d'une pyramide est le tiers de l'aire de la base par la hauteur MH.
+- **Perpendiculaires et parallèles** : deux droites perpendiculaires à un même plan sont parallèles, deux plans perpendiculaires à une même droite sont parallèles ; un plan perpendiculaire à l'une de deux droites parallèles l'est à l'autre. Deux perpendiculaires à une même droite ne sont pas parallèles en général.
+- **Théorème des trois perpendiculaires** : Δ ⊥ P en A, D une droite de P ne passant pas par A, H le projeté de A sur D, M un point de Δ distinct de A ; alors (MH) ⊥ D.
+- **Plan médiateur** : plan perpendiculaire à (AB) en son milieu ; c'est l'ensemble des points équidistants de A et de B. Il faut les deux conditions, milieu et perpendiculaire. La sphère circonscrite à un tétraèdre a pour centre un point équidistant de ses quatre sommets.
+- **Axe d'un cercle** : droite perpendiculaire à son plan en son centre ; c'est l'ensemble des points équidistants de tous les points du cercle. Un point de l'axe à la distance d du centre est à √(r² + d²) de chaque point du cercle.
+- **Plans perpendiculaires** : l'un contient une droite perpendiculaire à l'autre. Une droite de l'un perpendiculaire à l'intersection est perpendiculaire à l'autre ; deux plans perpendiculaires à un même plan se coupent suivant une droite perpendiculaire à ce plan.

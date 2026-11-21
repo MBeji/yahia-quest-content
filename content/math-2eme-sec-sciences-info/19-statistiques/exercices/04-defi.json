@@ -1,0 +1,126 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Dispersion, transformations et structure",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Les durées, en minutes, de 100 appels sont regroupées en classes de même amplitude : [0 ; 10[ : 10 appels ; [10 ; 20[ : 30 ; [20 ; 30[ : 40 ; [30 ; 40[ : 20. Quel est l'écart type de cette série, en prenant le centre de chaque classe ? Répondre en minutes.",
+      "answerKey": {
+        "value": 9,
+        "unit": "min"
+      },
+      "explanation": "Les centres sont 5, 15, 25 et 35. Moyenne : (10 × 5 + 30 × 15 + 40 × 25 + 20 × 35) / 100 = 2 200 / 100 = 22. Moyenne des carrés : (10 × 25 + 30 × 225 + 40 × 625 + 20 × 1 225) / 100 = (250 + 6 750 + 25 000 + 24 500) / 100 = 565. Donc V = 565 − 22² = 565 − 484 = 81 et σ = √81 = 9 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une série a pour variance V = 5. Chaque valeur x est remplacée par y = 3x − 4. Quelle est la variance de la nouvelle série ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11"
+        },
+        {
+          "id": "b",
+          "text": "15",
+          "misconceptionTag": "math.stat.variance-multipliee-par-a-au-lieu-de-a-carre"
+        },
+        {
+          "id": "c",
+          "text": "41",
+          "misconceptionTag": "math.stat.ecart-type-modifie-par-translation"
+        },
+        {
+          "id": "d",
+          "text": "45"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La variance se multiplie par a² : V' = 3² × 5 = 45 ✓, et la translation −4 ne la change pas. La valeur 15 multiplie par a au lieu de a² ; 41 retranche 4 à 9 × 5, comme si la translation décalait la dispersion ; 11 applique la transformation 3x − 4 à la variance elle-même.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Une série de 9 valeurs est : 1 ; 2 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 70. Cochez toutes les affirmations vraies.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La médiane est égale à 4"
+        },
+        {
+          "id": "b",
+          "text": "La moyenne est supérieure à la médiane"
+        },
+        {
+          "id": "c",
+          "text": "L'écart interquartile est égal à 4"
+        },
+        {
+          "id": "d",
+          "text": "En retirant la valeur 70, la moyenne reste voisine de 11"
+        },
+        {
+          "id": "e",
+          "text": "L'étendue est égale à 70"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La série est déjà rangée et son effectif 9 est impair : la médiane est la valeur de rang 5, soit 4 ✓. La somme vaut 100, donc la moyenne est 100 / 9 ≈ 11,1, supérieure à la médiane ✓. Pour les quartiles, 25 % de 9 font 2,25 : la première valeur dont le cumul atteint au moins 2,25 est la 3ᵉ ; 75 % de 9 font 6,75, atteint à la 7ᵉ valeur : Q₁ = 2, Q₃ = 6, donc l'écart interquartile est 4 ✓. Sans la valeur 70, la somme vaut 30 pour 8 valeurs, soit une moyenne de 3,75 : la valeur isolée tirait la moyenne ; et l'étendue est 70 − 1 = 69, pas 70.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux services de livraison, X et Y, ont chacun livré 100 colis. Colis livrés à l'heure :\nService X : 8 colis légers à l'heure sur 10 ; 18 colis lourds à l'heure sur 90.\nService Y : 39 colis légers à l'heure sur 60 ; 4 colis lourds à l'heure sur 40.\nQuelle affirmation est justifiée par ces données ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X est meilleur pour chaque type de colis, donc X a aussi le meilleur taux global",
+          "misconceptionTag": "math.stat.effet-de-structure-ignore"
+        },
+        {
+          "id": "b",
+          "text": "X est meilleur pour chaque type de colis, mais Y a le meilleur taux global"
+        },
+        {
+          "id": "c",
+          "text": "Le taux global de X est la moyenne de ses deux taux, soit 50 %",
+          "misconceptionTag": "math.stat.moyenne-des-moyennes-non-ponderee"
+        },
+        {
+          "id": "d",
+          "text": "Y est meilleur pour chaque type de colis et pour le taux global"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour les colis légers, X réussit 8 / 10 = 80 % contre 39 / 60 = 65 % pour Y ; pour les colis lourds, 18 / 90 = 20 % contre 4 / 40 = 10 % ✓. Au global, X réussit (8 + 18) / 100 = 26 % et Y (39 + 4) / 100 = 43 % : X livre surtout des colis lourds, plus difficiles. Dire que X gagne globalement ignore cet effet de structure ; la moyenne simple 50 % ne tient pas compte des 10 colis légers et des 90 colis lourds ; et Y n'est meilleur pour aucun type de colis.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dix relevés de pluie, en mm : 0 ; 0 ; 10 ; 10 ; 11 ; 11 ; 11 ; 15 ; 20 ; 150. Quelle est la moyenne élaguée des huit valeurs restantes après suppression de la plus petite et de la plus grande ?",
+      "answerKey": {
+        "value": 11
+      },
+      "explanation": "On retire 0 et 150 : il reste 0 ; 10 ; 10 ; 11 ; 11 ; 11 ; 15 ; 20, de somme 88, donc la moyenne élaguée est 88 / 8 = 11 ✓. La moyenne brute vaut 238 / 10 = 23,8 : elle est tirée vers le haut par la valeur isolée 150, ce que l'élagage corrige.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Vingt élèves comptent le nombre de messages reçus un jour donné : 1 message (4 élèves), 3 messages (5 élèves), 6 messages (4 élèves), 11 messages (7 élèves). Quel pourcentage de ces élèves ont un nombre de messages dans l'intervalle [x̄ − σ ; x̄ + σ] ? Répondre en %.",
+      "answerKey": {
+        "value": 45,
+        "unit": "%"
+      },
+      "explanation": "Moyenne : (4 × 1 + 5 × 3 + 4 × 6 + 7 × 11) / 20 = 120 / 20 = 6. Moyenne des carrés : (4 × 1 + 5 × 9 + 4 × 36 + 7 × 121) / 20 = 1 040 / 20 = 52, donc V = 52 − 36 = 16 et σ = 4. L'intervalle est [6 − 4 ; 6 + 4] = [2 ; 10] : il contient les élèves de 3 et de 6 messages, soit 5 + 4 = 9 élèves, donc 9 / 20 = 0,45 = 45 % ✓. Les valeurs 1 et 11 sont à l'extérieur.",
+      "difficulty": 3
+    }
+  ]
+}

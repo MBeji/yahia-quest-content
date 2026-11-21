@@ -1,0 +1,112 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Perpendiculaires, plans médiateurs et sphères",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans le cube ABCDA′B′C′D′ d'arête 6 cm, I est le milieu de [BC]. Quelle est la longueur A′I, en cm ?",
+      "answerKey": {
+        "value": 9
+      },
+      "explanation": "(AA′) est perpendiculaire au plan (ABC), donc A′AI est rectangle en A. Dans le carré ABCD, ABI est rectangle en B : AI² = 6² + 3² = 36 + 9 = 45. Puis A′I² = AA′² + AI² = 36 + 45 = 81, donc A′I = 9 cm ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Laquelle de ces affirmations est FAUSSE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une droite perpendiculaire à un plan est orthogonale à toutes les droites de ce plan"
+        },
+        {
+          "id": "b",
+          "text": "Par un point de l'espace passe une seule droite perpendiculaire à un plan donné"
+        },
+        {
+          "id": "c",
+          "text": "Deux droites orthogonales de l'espace se coupent toujours en un point"
+        },
+        {
+          "id": "d",
+          "text": "Une parallèle à l'une de deux droites orthogonales est orthogonale à l'autre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux droites orthogonales n'ont pas besoin de se couper, et l'affirmation est fausse ✓ : dans le cube, (AB) et (CC′) sont orthogonales et n'ont aucun point commun. Les trois autres sont vraies : la perpendiculaire à un plan est orthogonale à toutes ses droites, elle est unique par un point donné, et une parallèle à l'une de deux orthogonales est orthogonale à l'autre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le cube ABCDA′B′C′D′ d'arête 6 cm, O est le centre du carré ABCD. Quelle est la distance du point A′ à la droite (BD) ?\n<svg viewBox=\"10 6 242 242\"><path d=\"M228.4 174 L84.4 174\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 224.4 L84.4 174\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M84.4 174 L84.4 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 224.4 L178 224.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178 224.4 L228.4 174\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 80.4 L178 80.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178 80.4 L228.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228.4 30 L84.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 80.4 L84.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178 224.4 L178 80.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 224.4 L34 80.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M228.4 174 L228.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M178 224.4 L84.4 174\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"224.4\" r=\"3.8\"/><circle cx=\"178\" cy=\"224.4\" r=\"3.8\"/><circle cx=\"228.4\" cy=\"174\" r=\"3.8\"/><circle cx=\"84.4\" cy=\"174\" r=\"3.8\"/><circle cx=\"34\" cy=\"80.4\" r=\"3.8\"/><circle cx=\"178\" cy=\"80.4\" r=\"3.8\"/><circle cx=\"228.4\" cy=\"30\" r=\"3.8\"/><circle cx=\"84.4\" cy=\"30\" r=\"3.8\"/><circle cx=\"131.2\" cy=\"199.2\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"236.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"189\" y=\"238.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"241.4\" y=\"178\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"73.4\" y=\"172\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"22\" y=\"78.4\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"182\" y=\"71.4\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"241.4\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"80.4\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text><text x=\"141.2\" y=\"213.2\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√6 cm"
+        },
+        {
+          "id": "b",
+          "text": "6√2 cm"
+        },
+        {
+          "id": "c",
+          "text": "6 + 3√2 cm",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "54 cm",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point O est le projeté orthogonal de A sur (BD), et (AA′) est perpendiculaire au plan (ABC) : d'après le théorème des trois perpendiculaires, (A′O) ⊥ (BD), donc la distance cherchée est A′O. Avec AO = 3√2 : A′O² = AA′² + AO² = 36 + 18 = 54, donc A′O = 3√6 cm ≈ 7,35 cm ✓. Le piège : 6√2 est la distance de A′ à un sommet de la droite, pas à la droite ; 6 + 3√2 additionne les longueurs au lieu des carrés ; et 54 oublie la racine carrée.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "SABCD est une pyramide dont la base ABCD est un carré de côté 8 cm et dont les quatre arêtes latérales mesurent 9 cm. Quelle est la distance du sommet S au plan (ABC), en cm ?\n<svg viewBox=\"16 41 242 199\"><path d=\"M234.4 166 L90.4 166\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 216.4 L90.4 166\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M90.4 166 L137.2 65.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 216.4 L184 216.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 216.4 L234.4 166\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 216.4 L137.2 65.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M184 216.4 L137.2 65.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M234.4 166 L137.2 65.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 216.4 L234.4 166\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M184 216.4 L90.4 166\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"137.2\" cy=\"191.2\" r=\"3\"/></g><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"216.4\" r=\"3.8\"/><circle cx=\"184\" cy=\"216.4\" r=\"3.8\"/><circle cx=\"234.4\" cy=\"166\" r=\"3.8\"/><circle cx=\"90.4\" cy=\"166\" r=\"3.8\"/><circle cx=\"137.2\" cy=\"65.2\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"229.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"195\" y=\"230.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"247.4\" y=\"170\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"79.4\" y=\"164\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"137.2\" y=\"55.2\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"137.2\" y=\"206.2\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "SA = SB = SC = SD : S est équidistant des quatre sommets, donc sur l'axe du cercle circonscrit au carré, et son projeté sur (ABC) est le centre O du carré. La diagonale AC vaut 8√2, donc AO² = 32. SOA est rectangle en O : SO² = SA² − AO² = 81 − 32 = 49, donc SO = 7 cm ✓.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans le tétraèdre OABC, les arêtes [OA], [OB] et [OC] sont deux à deux perpendiculaires, avec OA = 4 cm, OB = 4 cm et OC = 7 cm. Quel est le rayon de la sphère circonscrite à OABC, en cm ?\n<svg viewBox=\"24 48 148 220\"><path d=\"M146 241.6 L83.6 208\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M83.6 208 L50 241.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M83.6 208 L50 73.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M146 241.6 L50 241.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M146 241.6 L50 73.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 73.6 L50 241.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 227.2 L64.4 227.2 L64.4 241.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 227.2 L55 222.2 L55 236.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"241.6\" r=\"3.8\"/><circle cx=\"146\" cy=\"241.6\" r=\"3.8\"/><circle cx=\"83.6\" cy=\"208\" r=\"3.8\"/><circle cx=\"50\" cy=\"73.6\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"39\" y=\"253.6\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"158\" y=\"254.6\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"95.6\" y=\"204\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"50\" y=\"63.6\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "answerKey": {
+        "value": 4.5
+      },
+      "explanation": "On complète OABC en pavé de dimensions 4, 4 et 7 : son centre est équidistant de O, A, B et C (il est dans les plans médiateurs de [OA], [OB] et [OC]). Son rayon est la moitié de la grande diagonale : √(16 + 16 + 49) = √81 = 9, donc le rayon vaut 9/2 = 4,5 cm ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le cube ci-dessous, les plans (ABB′A′) et (BCC′B′) sont perpendiculaires au plan (ABC). Que peut-on en conclure ?\n<svg viewBox=\"10 6 188 188\"><path d=\"M34 170.4 L138 170.4 L138 66.4 L34 66.4 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M138 170.4 L174.4 134 L174.4 30 L138 66.4 Z\" fill=\"#b45309\" opacity=\"0.14\"/><path d=\"M174.4 134 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70.4 134 L70.4 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L138 170.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L174.4 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 66.4 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 30 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 170.4 L34 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 134 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"34\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"30\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"30\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"182.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"149\" y=\"184.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.4\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"59.4\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"22\" y=\"64.4\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"142\" y=\"57.4\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"187.4\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"66.4\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont parallèles, car perpendiculaires au même plan",
+          "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan"
+        },
+        {
+          "id": "b",
+          "text": "Leur intersection (BB′) est parallèle au plan (ABC)"
+        },
+        {
+          "id": "c",
+          "text": "Leur intersection (BB′) est perpendiculaire à (ABC)"
+        },
+        {
+          "id": "d",
+          "text": "Leur intersection (BB′) est contenue dans le plan (ABC)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux plans sécants perpendiculaires à un même plan se coupent suivant une droite perpendiculaire à ce plan : (BB′) est perpendiculaire à (ABC) ✓. Les deux plans ne sont pas parallèles, puisqu'ils se coupent le long de (BB′) ; et (BB′), qui perce (ABC) en B, n'est ni parallèle à (ABC) ni contenue dans ce plan.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Droites, plans et solides",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 70,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "La pyramide SABCD a pour base un carré ABCD de côté 6 cm, et l'arête [SA] est perpendiculaire au plan (ABC), avec SA = 5 cm. Quel est son volume, en cm³ ?\n<svg viewBox=\"16 54 194 138\"><path d=\"M185.8 130 L77.8 130\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 167.8 L77.8 130\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M77.8 130 L40 77.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M40 167.8 L148 167.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M148 167.8 L185.8 130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M40 167.8 L40 77.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M148 167.8 L40 77.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M185.8 130 L40 77.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"167.8\" r=\"3.8\"/><circle cx=\"148\" cy=\"167.8\" r=\"3.8\"/><circle cx=\"185.8\" cy=\"130\" r=\"3.8\"/><circle cx=\"77.8\" cy=\"130\" r=\"3.8\"/><circle cx=\"40\" cy=\"77.8\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"29\" y=\"180.8\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"159\" y=\"181.8\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"198.8\" y=\"134\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"66.8\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"40\" y=\"67.8\" text-anchor=\"middle\" fill=\"#0f172a\">S</text></g></svg>",
+      "answerKey": {
+        "value": 60
+      },
+      "explanation": "(SA) est perpendiculaire au plan de la base et A est dans ce plan : A est le projeté de S, donc la hauteur vaut SA = 5. L'aire de la base est 6 × 6 = 36. Le volume vaut 36 × 5 / 3 = 60 cm³ ✓.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Deux plans distincts sont perpendiculaires à une même droite D. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont parallèles, sans point commun"
+        },
+        {
+          "id": "b",
+          "text": "Ils sont perpendiculaires entre eux"
+        },
+        {
+          "id": "c",
+          "text": "Ils se coupent suivant une droite parallèle à D",
+          "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan"
+        },
+        {
+          "id": "d",
+          "text": "Ils se coupent suivant une droite perpendiculaire à D",
+          "misconceptionTag": "math.esp.deux-perpendiculaires-au-meme-plan"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux plans perpendiculaires à une même droite sont parallèles : distincts, ils n'ont aucun point commun ✓. S'ils avaient un point commun, il passerait par ce point un seul plan perpendiculaire à D, donc les deux plans seraient confondus ; et deux plans perpendiculaires à D ne sont pas perpendiculaires entre eux.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans le cube ci-dessous, cochez toutes les droites orthogonales à (AB).\n<svg viewBox=\"10 6 188 188\"><path d=\"M174.4 134 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70.4 134 L70.4 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L138 170.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L174.4 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 66.4 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 30 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 170.4 L34 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 134 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 170.4 L138 170.4\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"34\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"30\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"30\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"182.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"149\" y=\"184.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.4\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"59.4\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"22\" y=\"64.4\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"142\" y=\"57.4\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"187.4\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"66.4\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(DD′)"
+        },
+        {
+          "id": "b",
+          "text": "(B′C′)"
+        },
+        {
+          "id": "c",
+          "text": "(A′D)"
+        },
+        {
+          "id": "d",
+          "text": "(AC)"
+        },
+        {
+          "id": "e",
+          "text": "(A′B′)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "(DD′) est parallèle à (AA′), perpendiculaire à (AB) ✓ ; (B′C′) est parallèle à (BC), perpendiculaire à (AB) ✓ ; (A′D) est dans le plan (ADD′A′), auquel (AB) est perpendiculaire, car (AB) est orthogonale à (AD) et à (AA′) ✓. En revanche (AC) forme un angle de 45° avec (AB), et (A′B′) lui est parallèle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le cube ci-dessous, quel est le plan médiateur du segment [BC′] ?\n<svg viewBox=\"10 6 188 188\"><path d=\"M174.4 134 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L70.4 134\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M70.4 134 L70.4 30\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M34 170.4 L138 170.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L174.4 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 66.4 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 30 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 66.4 L70.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L138 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M34 170.4 L34 66.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M174.4 134 L174.4 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M138 170.4 L174.4 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"34\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"170.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"134\" r=\"3.8\"/><circle cx=\"34\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"138\" cy=\"66.4\" r=\"3.8\"/><circle cx=\"174.4\" cy=\"30\" r=\"3.8\"/><circle cx=\"70.4\" cy=\"30\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"23\" y=\"182.4\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"149\" y=\"184.4\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"187.4\" y=\"138\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"59.4\" y=\"132\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"22\" y=\"64.4\" text-anchor=\"middle\" fill=\"#0f172a\">A′</text><text x=\"142\" y=\"57.4\" text-anchor=\"middle\" fill=\"#0f172a\">B′</text><text x=\"187.4\" y=\"25\" text-anchor=\"middle\" fill=\"#0f172a\">C′</text><text x=\"66.4\" y=\"20\" text-anchor=\"middle\" fill=\"#0f172a\">D′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ABC′D′)",
+          "misconceptionTag": "math.geo.mediatrice-un-seul-critere"
+        },
+        {
+          "id": "b",
+          "text": "(AB′C′D)"
+        },
+        {
+          "id": "c",
+          "text": "(A′B′CD)"
+        },
+        {
+          "id": "d",
+          "text": "(A′BCD′)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le plan (A′B′CD) est le plan médiateur de [BC′] ✓ : B′ et C sont chacun à une arête de B et de C′, et A′ et D sont chacun à une diagonale de face de B et de C′. Ces quatre points sont donc équidistants de B et de C′, et le plan qu'ils forment est le plan médiateur. Le plan (ABC′D′) contient la droite (BC′) et donc son milieu, mais il ne lui est pas perpendiculaire ; les plans (AB′C′D) et (A′BCD′) contiennent chacun une extrémité du segment, ce qui est impossible pour un plan médiateur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les plans P et Q sont perpendiculaires et se coupent suivant la droite D. Une droite L de P est perpendiculaire à D. Que peut-on dire de L ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L est parallèle au plan Q"
+        },
+        {
+          "id": "b",
+          "text": "L est contenue dans le plan Q"
+        },
+        {
+          "id": "c",
+          "text": "L est perpendiculaire à Q"
+        },
+        {
+          "id": "d",
+          "text": "L est parallèle à la droite D"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si deux plans sont perpendiculaires, toute droite de l'un qui est perpendiculaire à leur droite d'intersection est perpendiculaire à l'autre plan : L ⊥ Q ✓. L ne peut pas être parallèle à Q, puisqu'elle lui est perpendiculaire, ni contenue dans Q, puisqu'elle est dans P et distincte de D ; et elle n'est pas parallèle à D, à laquelle elle est perpendiculaire.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettre dans l'ordre les étapes de la preuve du théorème des trois perpendiculaires.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Placer H, pied de la perpendiculaire à D issue de A dans le plan P"
+        },
+        {
+          "id": "b",
+          "text": "Voir que D est orthogonale à (AH) et à (AM), car (AM) est perpendiculaire à P"
+        },
+        {
+          "id": "c",
+          "text": "Conclure que D est perpendiculaire au plan (AHM), car (AH) et (AM) sont sécantes"
+        },
+        {
+          "id": "d",
+          "text": "Conclure que D est orthogonale à (MH), qui est une droite du plan (AHM)"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "On place d'abord H, sans quoi (AH) n'existe pas. On vérifie ensuite que D est orthogonale à (AH) et à (AM). Ces deux droites sont sécantes dans le plan (AHM) : la définition donne D ⊥ (AHM). Enfin (MH) est une droite de ce plan, donc orthogonale à D.",
+      "difficulty": 2
+    }
+  ]
+}

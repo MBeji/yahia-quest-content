@@ -1,0 +1,133 @@
+{
+  "title": "Test de compréhension ⭐ : Parallélisme dans l'espace",
+  "questions": [
+    {
+      "prompt": "Quelle condition rend deux droites de l'espace parallèles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles n'ont aucun point commun, où qu'on les prolonge",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "b",
+          "text": "Un même plan les contient et elles y sont parallèles"
+        },
+        {
+          "id": "c",
+          "text": "Elles sont dessinées parallèles en perspective cavalière",
+          "misconceptionTag": "math.esp.parallelisme-lu-sur-le-dessin"
+        },
+        {
+          "id": "d",
+          "text": "Chacune est contenue dans l'un de deux plans parallèles"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux droites de l'espace sont parallèles lorsqu'un même plan les contient et qu'elles y sont parallèles au sens de la géométrie plane ✓. Ne pas avoir de point commun ne suffit pas, car deux droites non coplanaires n'en ont pas non plus ; un dessin aux droites parallèles ne prouve rien, puisqu'il aplatit l'espace ; et deux droites prises chacune dans l'un de deux plans parallèles peuvent être non coplanaires.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Par un point A n'appartenant pas à la droite Δ, combien de droites de l'espace passent par A en étant parallèles à Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune, puisque A n'est pas sur Δ"
+        },
+        {
+          "id": "b",
+          "text": "Deux, une de chaque côté de Δ"
+        },
+        {
+          "id": "c",
+          "text": "Une seule, dans le plan de Δ et de A"
+        },
+        {
+          "id": "d",
+          "text": "Une infinité, une par plan passant par A"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le plan défini par Δ et A contient une parallèle à Δ passant par A, et la géométrie plane n'en donne qu'une ✓. Toute droite parallèle à Δ est coplanaire avec Δ ; si elle passe par A, elle est dans ce plan : il n'y en a donc pas d'autre. Parmi les plans passant par A, un seul contient Δ, donc la parallèle ne varie pas avec le plan choisi.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le cube ABCDEFGH ci-dessous, pourquoi la droite (EH) est-elle parallèle au plan (BCG) ?\n<svg viewBox=\"26 29 210 210\"><path d=\"M170 215 L212 173 L212 53 L170 95 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M212 173 L92 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M50 215 L92 173\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M92 173 L92 53\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M50 215 L170 215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 215 L212 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 95 L170 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 95 L212 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M212 53 L92 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 95 L92 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170 215 L170 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M50 215 L50 95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M212 173 L212 53\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"215\" r=\"3.8\"/><circle cx=\"170\" cy=\"215\" r=\"3.8\"/><circle cx=\"212\" cy=\"173\" r=\"3.8\"/><circle cx=\"92\" cy=\"173\" r=\"3.8\"/><circle cx=\"50\" cy=\"95\" r=\"3.8\"/><circle cx=\"170\" cy=\"95\" r=\"3.8\"/><circle cx=\"212\" cy=\"53\" r=\"3.8\"/><circle cx=\"92\" cy=\"53\" r=\"3.8\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"39\" y=\"227\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"181\" y=\"229\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"225\" y=\"179\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"80\" y=\"175\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"38\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\">E</text><text x=\"166\" y=\"84\" text-anchor=\"middle\" fill=\"#0f172a\">F</text><text x=\"225\" y=\"49\" text-anchor=\"middle\" fill=\"#0f172a\">G</text><text x=\"88\" y=\"42\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est parallèle à toutes les droites de (BCG)",
+          "misconceptionTag": "math.esp.parallele-au-plan-donc-a-toute-droite"
+        },
+        {
+          "id": "b",
+          "text": "Elle est contenue dans (EFG), plan parallèle à (BCG)"
+        },
+        {
+          "id": "c",
+          "text": "Elle n'a aucun point commun avec la droite (CG) du plan",
+          "misconceptionTag": "math.esp.droites-non-coplanaires-crues-secantes"
+        },
+        {
+          "id": "d",
+          "text": "Elle est parallèle à (FG), qui est contenue dans (BCG)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une droite est parallèle à un plan lorsqu'elle est parallèle à l'une de ses droites : (EH) ∥ (FG), côtés opposés du carré EFGH, et (FG) est dans (BCG) ✓. (EH) n'est pas parallèle à toutes les droites du plan : elle ne l'est pas à (BG), par exemple. Le plan (EFG) coupe (BCG) suivant (FG), il ne lui est pas parallèle. Enfin, n'avoir aucun point commun avec (CG) ne prouve rien : (EH) et (CG) sont non coplanaires, et une droite qui perce le plan pourrait aussi éviter (CG).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les droites D et D′ sont parallèles. Les plans P et P′ contiennent respectivement D et D′ et se coupent suivant la droite Δ. Que peut-on dire de Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est parallèle à D et elle est aussi parallèle à D′"
+        },
+        {
+          "id": "b",
+          "text": "Elle passe par le point où D et D′ se rencontrent",
+          "misconceptionTag": "math.esp.toit-sans-parallelisme-des-droites"
+        },
+        {
+          "id": "c",
+          "text": "Elle coupe D en un point et D′ en un autre point"
+        },
+        {
+          "id": "d",
+          "text": "Elle est quelconque : on ne peut rien dire de sa direction"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "C'est le théorème du toit : si deux plans sécants contiennent chacun l'une de deux droites parallèles, leur droite d'intersection Δ est parallèle à ces deux droites ✓. Δ ne passe par aucun point commun à D et D′, puisque deux droites parallèles distinctes n'en ont pas ; parallèle à D et à D′, elle ne peut pas les couper en un seul point ; et sa direction est donc connue.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les droites D1 et D2 du plan P sont parallèles respectivement aux droites D1′ et D2′ du plan Q. Quelle condition sur D1 et D2 permet d'affirmer que P et Q sont parallèles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D1 et D2 sont parallèles entre elles dans P",
+          "misconceptionTag": "math.esp.plans-paralleles-une-seule-direction"
+        },
+        {
+          "id": "b",
+          "text": "D1 et D2 se coupent en un point du plan P"
+        },
+        {
+          "id": "c",
+          "text": "D1 et D2 sont distinctes l'une de l'autre",
+          "misconceptionTag": "math.esp.plans-paralleles-une-seule-direction"
+        },
+        {
+          "id": "d",
+          "text": "D1 et D2 sont strictement parallèles au plan Q",
+          "misconceptionTag": "math.esp.plans-paralleles-une-seule-direction"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il faut deux droites sécantes : D1 et D2 se coupent, D1′ et D2′ aussi, et deux droites sécantes de P parallèles à deux droites sécantes de Q donnent des plans parallèles ✓. Si D1 et D2 sont parallèles entre elles, on n'a qu'une seule direction et les plans peuvent se couper ; être distinctes ne suffit pas pour la même raison ; et être strictement parallèles à Q ne suffit pas : D1 et D2 peuvent encore être parallèles entre elles.",
+      "difficulty": 2
+    }
+  ]
+}
