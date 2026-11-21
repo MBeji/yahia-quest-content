@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 3 ⭐⭐⭐⭐ : équation de Bézout, inverses modulaires et congruence x² ≡ x modulo un produit",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "prompt": "On considère dans ℤ × ℤ l'équation (E) : 19u + 11v = 1, dont (−4 ; 7) est une solution. Quel est l'ensemble de ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(−4 + 11k ; 7 − 19k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(−4 + 19k ; 7 − 11k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(−4 + 11k ; 7 + 19k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(4 + 11k ; −7 − 19k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si (u ; v) est solution, 19(u + 4) = 11(7 − v). Comme 19 ∧ 11 = 1, le lemme de Gauss donne 11 | u + 4, soit u = −4 + 11k, puis v = 7 − 19k ✓. Vérification : 19(−4 + 11k) + 11(7 − 19k) = −76 + 77 + (209 − 209)k = 1 ✓. L'erreur classique est d'échanger les pas (le pas de u est 11, le coefficient de v) ou de garder le même signe : avec 7 + 19k, le terme en k vaut 418k au lieu de 0 ; avec (4 ; −7), on trouve −1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la décomposition de 209 en produit de facteurs premiers ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "209 = 13 × 17"
+        },
+        {
+          "id": "b",
+          "text": "209 = 11 × 19"
+        },
+        {
+          "id": "c",
+          "text": "209 = 7 × 29"
+        },
+        {
+          "id": "d",
+          "text": "209 = 11 × 21"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On teste les petits nombres premiers : 209 n'est divisible ni par 2, 3, 5 (chiffre des unités 9, somme des chiffres 11) ni par 7 (7 × 29 = 203). Par 11 : 209 = 11 × 19 ✓ (11 × 19 = 209). Les deux facteurs 11 et 19 sont premiers, donc 209 = 11 × 19. Les autres produits sont faux : 13 × 17 = 221, 7 × 29 = 203, et 11 × 21 = 231 (de plus 21 = 3 × 7 n'est pas premier).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On sait que 19 × (−4) + 11 × 7 = 1. Quel est le couple (u ; v) où u est l'unique entier de {1, …, 10} tel que 19u ≡ 1 (mod 11), et v l'unique entier de {1, …, 18} tel que 11v ≡ 1 (mod 19) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u = 4 et v = 7"
+        },
+        {
+          "id": "b",
+          "text": "u = 7 et v = 12"
+        },
+        {
+          "id": "c",
+          "text": "u = 4 et v = 12"
+        },
+        {
+          "id": "d",
+          "text": "u = 7 et v = 7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "De 19 × (−4) + 11 × 7 = 1, on lit 19 × (−4) ≡ 1 (mod 11) et 11 × 7 ≡ 1 (mod 19). Pour u, on ramène −4 dans {1, …, 10} : −4 + 11 = 7, et 19 × 7 = 133 = 12 × 11 + 1 ✓. Pour v, 7 est déjà dans {1, …, 18} : 11 × 7 = 77 = 4 × 19 + 1 ✓. Donc u = 7 et v = 7. Les erreurs : perdre le signe de −4 (u = 4 donne 19 × 4 = 76 = 6 × 11 + 10 ≡ −1) ou remplacer v par 19 − 7 = 12 (11 × 12 = 132 = 7 × 19 − 1 ≡ −1). Les deux inverses sont uniques dans leur plage, mais seuls 7 et 7 donnent le reste 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x un entier. Pourquoi x et x − 1 sont-ils premiers entre eux ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x et x − 1 sont consécutifs, donc l'un des deux est premier"
+        },
+        {
+          "id": "b",
+          "text": "x et x − 1 sont consécutifs, donc leur PGCD est 2"
+        },
+        {
+          "id": "c",
+          "text": "Tout diviseur commun de x et x − 1 divise x − (x − 1) = 1"
+        },
+        {
+          "id": "d",
+          "text": "Tout diviseur commun de x et x − 1 divise leur somme 2x − 1, donc vaut 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Soit d un diviseur commun de x et de x − 1. Alors d divise leur différence x − (x − 1) = 1, donc d = 1 (en valeur absolue) : x ∧ (x − 1) = 1 ✓. Contrôle avec x = 9 : 9 ∧ 8 = 1 ; avec x = 15 : 15 ∧ 14 = 1. Deux entiers consécutifs ne sont pas toujours premiers (9 et 8 ne sont pas tous deux premiers) ; leur PGCD n'est pas 2 (l'un est pair, l'autre impair) ; et la somme 2x − 1 n'est pas le bon objet : un diviseur commun divise la somme (2x − 1) mais cela ne force pas d = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x ∈ {2, 3, …, 208} une solution de x² ≡ x (mod 209), avec 209 = 11 × 19. On sait que 19 divise x(x − 1), que 11 divise x(x − 1), et que x ∧ (x − 1) = 1. Pourquoi 19 divise-t-il x ou 11 divise-t-il x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sinon 19 | x − 1 et 11 | x − 1, donc 209 | x − 1, absurde car 0 < x − 1 < 209"
+        },
+        {
+          "id": "b",
+          "text": "19 | x(x − 1) donne 19 | x, et 11 | x(x − 1) donne 11 | x, donc 209 | x"
+        },
+        {
+          "id": "c",
+          "text": "209 | x(x − 1) donne 209 | x ou 209 | x − 1, ce qui est absurde pour x ∈ {2, …, 208}"
+        },
+        {
+          "id": "d",
+          "text": "Sinon 19 | x − 1 et 11 | x, donc 209 | x(x − 1) avec x(x − 1) ≠ 0, ce qui est absurde"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Supposons que 19 ne divise pas x et que 11 ne divise pas x. Comme 19 est premier et divise x(x − 1), 19 divise x − 1 (Gauss : 19 ∧ x = 1) ; de même 11 divise x − 1. Comme 11 ∧ 19 = 1, 209 = 11 × 19 divise x − 1. Mais 1 ≤ x − 1 ≤ 207 < 209 : un entier strictement compris entre 0 et 209 n'est pas multiple de 209, d'où l'absurdité ✓. Donc 19 | x ou 11 | x. Les autres arguments sont faux : on ne peut pas affirmer que 19 | x ET 11 | x (alors 209 | x et x serait 0), et 209 n'étant pas premier, 209 | ab n'entraîne pas 209 | a ou 209 | b (par exemple 209 | 11 × 38 = 418 sans diviser ni 11 ni 38).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit x ∈ {2, 3, …, 208} une solution de x² ≡ x (mod 209), avec x = 19k pour un entier k. On sait que 11 divise x − 1. Quelle est la valeur de x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "76"
+        },
+        {
+          "id": "b",
+          "text": "133"
+        },
+        {
+          "id": "c",
+          "text": "152"
+        },
+        {
+          "id": "d",
+          "text": "57"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme x = 19k et 11 | x − 1, on a 19k ≡ 1 (mod 11). Or 19 ≡ 8 (mod 11) et 8 × 7 = 56 = 5 × 11 + 1, donc k ≡ 7 (mod 11). Avec x ≤ 208, k ≤ 10, donc k = 7 et x = 19 × 7 = 133 ✓. Vérification : 133 − 1 = 132 = 11 × 12 ✓ et 133 × 132 = 17556 = 209 × 84 ✓. Les erreurs : k = 4 (signe de −4 perdu) donne 76, avec 75 non multiple de 11 ; k = 8 (reste 8 de 19 pris pour k) donne 152, avec 151 non multiple de 11 ; k = 3 (11 − 8, on soustrait le reste 8 de 11 au lieu de chercher l'inverse de 8) donne 57, avec 56 non multiple de 11.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit x ∈ {2, 3, …, 208} une solution de x² ≡ x (mod 209), avec x = 11k pour un entier k. On sait que 19 divise x − 1. Quelle est la valeur de x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "77"
+        },
+        {
+          "id": "b",
+          "text": "44"
+        },
+        {
+          "id": "c",
+          "text": "88"
+        },
+        {
+          "id": "d",
+          "text": "132"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme x = 11k et 19 | x − 1, on a 11k ≡ 1 (mod 19). Or 11 × 7 = 77 = 4 × 19 + 1, donc k ≡ 7 (mod 19). Avec x ≤ 208, k ≤ 18, donc k = 7 et x = 11 × 7 = 77 ✓. Vérification : 77 − 1 = 76 = 19 × 4 ✓ et 77 × 76 = 5852 = 209 × 28 ✓. Les autres candidats viennent chacun d'une erreur sur k, et échouent : k = 4 (le signe de −7 est perdu : −7 + 11 = 4) donne 44, et 43 n'est pas multiple de 19 ; k = 8 (19 − 11 = 8, le reste de 11 modulo 19 lu à l'envers) donne 88, et 87 n'est pas multiple de 19 ; k = 12 (19 − 7) donne 132, et 131 n'est pas multiple de 19 (19 × 7 = 133).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que les solutions de x² ≡ x (mod 209) dans {2, 3, …, 208} sont uniquement 77 et 133. Quelles sont les solutions de l'équation x² ≡ x (mod 209) appartenant à {0, 1, …, 208} ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 et 1 seulement"
+        },
+        {
+          "id": "b",
+          "text": "1, 77 et 133"
+        },
+        {
+          "id": "c",
+          "text": "0, 1, 77 et 133"
+        },
+        {
+          "id": "d",
+          "text": "0, 1, 76 et 132"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'ensemble {0, 1, …, 208} est la réunion de {0, 1} et de {2, …, 208}. Les solutions de {2, …, 208} sont 77 et 133, auxquelles s'ajoutent 0 et 1, qui sont bien solutions (0² = 0 et 1² = 1) : l'ensemble est {0, 1, 77, 133} ✓. Vérification : 77 × 76 = 5852 = 209 × 28 ✓, 133 × 132 = 17556 = 209 × 84 ✓, et 0 × (−1) = 0, 1 × 0 = 0 ✓. Les erreurs : oublier les solutions de {2, …, 208} (réponse 0 et 1), oublier 0 (qu'on oublie souvent, 0 ∈ {0, …, 208}), ou remplacer 77 et 133 par leurs prédécesseurs 76 et 132 (76 × 75 = 5700, qui n'est pas multiple de 209).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit y un entier et x son reste modulo 209. Pourquoi y est-il solution de y² ≡ y (mod 209) si et seulement si x l'est ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y ≡ x (mod 209) donne y² ≡ y, donc y = x"
+        },
+        {
+          "id": "b",
+          "text": "y ≡ x (mod 209) donne y² ≡ x (mod 209), donc les solutions sont les mêmes"
+        },
+        {
+          "id": "c",
+          "text": "y ≡ x (mod 209) ne se multiplie pas, donc y² ≢ x² en général"
+        },
+        {
+          "id": "d",
+          "text": "y ≡ x (mod 209) donne y² ≡ x², donc y² − y ≡ x² − x (mod 209)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme y ≡ x (mod 209), on peut multiplier la congruence par elle-même : y² ≡ x² (mod 209), et soustraire y ≡ x : y² − y ≡ x² − x (mod 209). Donc y² − y ≡ 0 si et seulement si x² − x ≡ 0 : y est solution ⟺ x est solution ✓. Contrôle : y = 210 a pour reste 1, et 210² − 210 = 210 × 209 ≡ 0 ✓. Les autres écritures confondent congruence et égalité (y = x seulement si y est déjà un reste), mélangent y² avec x (au lieu de x²), ou nient la compatibilité des congruences avec le produit, qui est pourtant une règle du cours.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solutions de x² ≡ x (mod 209) dans {0, 1, …, 208} sont 0, 1, 77 et 133. Quel est l'ensemble des solutions de x² ≡ x (mod 209) dans ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{0, 1, 77, 133}, c'est-à-dire les quatre restes seulement"
+        },
+        {
+          "id": "b",
+          "text": "{209k, 1 + 209k, k ∈ ℤ}, soit les restes 0 et 1 seulement"
+        },
+        {
+          "id": "c",
+          "text": "{209k, 1 + 209k, 77 + 209k, 133 + 209k}, k ∈ ℤ"
+        },
+        {
+          "id": "d",
+          "text": "{77 + 209k, 133 + 209k, k ∈ ℤ}, soit les restes 77 et 133 seulement"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un entier y est solution si et seulement si son reste r modulo 209 est dans {0, 1, 77, 133}, c'est-à-dire y = 209k, 1 + 209k, 77 + 209k ou 133 + 209k avec k ∈ ℤ ✓. Contrôle avec un grand entier : y = 77 + 209 × 5 = 1122 ; 1122 × 1121 = 1257762 = 209 × 6018 ✓. Les erreurs : se limiter aux quatre restes (il y a une infinité de solutions dans ℤ), ne garder que les solutions triviales 0 et 1, ou oublier 0 et 1 (qui sont solutions, donc leurs classes aussi).",
+      "difficulty": 3
+    }
+  ]
+}

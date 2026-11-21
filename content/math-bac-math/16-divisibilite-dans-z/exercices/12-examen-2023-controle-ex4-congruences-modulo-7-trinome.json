@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2023 · session de contrôle · Exercice 4 ⭐⭐⭐ : carrés modulo 7, théorème de Fermat et congruences du second degré",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Quels sont les restes de a² modulo 7 selon le reste de a modulo 7 (a entier) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 → 0 ; 1 → 1 ; 2 → 4 ; 3 → 2 ; 4 → 2 ; 5 → 4 ; 6 → 1"
+        },
+        {
+          "id": "b",
+          "text": "0 → 0 ; 1 → 1 ; 2 → 4 ; 3 → 9 ; 4 → 16 ; 5 → 25 ; 6 → 36"
+        },
+        {
+          "id": "c",
+          "text": "0 → 0 ; 1 → 1 ; 2 → 4 ; 3 → 2 ; 4 → 4 ; 5 → 4 ; 6 → 1"
+        },
+        {
+          "id": "d",
+          "text": "0 → 0 ; 1 → 1 ; 2 → 4 ; 3 → 3 ; 4 → 2 ; 5 → 4 ; 6 → 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si a ≡ r (mod 7), alors a² ≡ r² (mod 7). On calcule : 0² = 0 ; 1² = 1 ; 2² = 4 ; 3² = 9 = 7 + 2 ≡ 2 ; 4² = 16 = 14 + 2 ≡ 2 ; 5² = 25 = 21 + 4 ≡ 4 ; 6² = 36 = 35 + 1 ≡ 1. Les restes de carrés sont donc 0, 1, 2 et 4 ✓. Piège classique : ne pas réduire 9, 16, 25, 36 modulo 7, ou se tromper dans la réduction (9 ≡ 2 et non 3 ; 16 ≡ 2 et non 4).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier naturel avec n ≡ −1 (mod 7), et Pₙ(x) = x² + 2(n + 1)³x + 1. Que peut-on dire des solutions de Pₙ(x) ≡ 0 (mod 7), sachant que les restes possibles de x² modulo 7 sont 0, 1, 2 et 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pₙ(x) ≡ x² + 1, et x² ≡ 6 (mod 7) est impossible, car 6 n'est pas un reste de carré"
+        },
+        {
+          "id": "b",
+          "text": "Pₙ(x) ≡ x² + 1, et x² ≡ 6 (mod 7) a pour solutions x ≡ 3 et x ≡ 4"
+        },
+        {
+          "id": "c",
+          "text": "Pₙ(x) ≡ x² + 1, et x² ≡ 1 (mod 7) a pour solutions x ≡ 1 et x ≡ 6, en lisant x² + 1 comme x² − 1"
+        },
+        {
+          "id": "d",
+          "text": "Pₙ(x) ≡ x² + 1, et Pₙ(x) ≡ x² + 2x + 1, donc x ≡ −1 ≡ 6 (mod 7)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme n ≡ −1 (mod 7), n + 1 ≡ 0 et 2(n + 1)³x ≡ 0 : Pₙ(x) ≡ x² + 1 (mod 7). L'équation x² + 1 ≡ 0 équivaut à x² ≡ −1 ≡ 6 (mod 7). Or les restes possibles d'un carré sont 0, 1, 2, 4 : 6 n'y est pas, donc l'équation n'a aucune solution dans ℤ ✓. Piège classique : lire x² ≡ +1 au lieu de x² ≡ −1 (le signe se perd), lire le tableau des carrés à l'envers (3² et 4² valent 2, pas 6), ou conserver à tort le terme 2(n + 1)³x (il est ≡ 0 car n + 1 ≡ 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier naturel tel que 7 ne divise pas n + 1. Quel résultat et quel théorème donnent la valeur de (n + 1)⁶ modulo 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(n + 1)⁷ ≡ 1 (mod 7), par le théorème de Fermat : l'exposant est le nombre premier 7"
+        },
+        {
+          "id": "b",
+          "text": "(n + 1)⁶ ≡ 1 (mod 7) pour tout entier n, sans condition sur 7 et n + 1"
+        },
+        {
+          "id": "c",
+          "text": "(n + 1)⁶ ≡ 1 (mod 7), par Fermat : 7 est premier et ne divise pas n + 1"
+        },
+        {
+          "id": "d",
+          "text": "(n + 1)⁶ ≡ n + 1 (mod 7), car aᵖ ≡ a pour p premier"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le théorème de Fermat affirme que si p est premier et ne divise pas a, alors a^(p−1) ≡ 1 (mod p). Ici p = 7 et a = n + 1, que 7 ne divise pas : (n + 1)⁶ ≡ 1 (mod 7) ✓. Piège classique : prendre l'exposant p au lieu de p − 1, oublier l'hypothèse « p ne divise pas a » (si 7 divise n + 1, (n + 1)⁶ ≡ 0), ou écrire aᵖ ≡ a, une variante vraie mais qui ne donne pas la valeur 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier naturel tel que 7 ne divise pas n + 1, avec (n + 1)⁶ ≡ 1 (mod 7). Quelle vérification montre que Pₙ(x) ≡ (x + (n + 1)³)² (mod 7), où Pₙ(x) = x² + 2(n + 1)³x + 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x + (n + 1)³)² = x² + (n + 1)⁶ ≡ x² + 1, et le terme 2(n + 1)³x s'annule modulo 7"
+        },
+        {
+          "id": "b",
+          "text": "(x + (n + 1)³)² = x² + 2(n + 1)³x + (n + 1)⁶ ≡ x² + 2(n + 1)³x + 1 = Pₙ(x)"
+        },
+        {
+          "id": "c",
+          "text": "(x + (n + 1)³)² = x² + 2(n + 1)³x + (n + 1)³ ≡ x² + 2(n + 1)³x + 1 = Pₙ(x), par Fermat"
+        },
+        {
+          "id": "d",
+          "text": "(x + (n + 1)³)² = x² + 2(n + 1)³x + (n + 1)⁵ ≡ x² + 2(n + 1)³x + 1 = Pₙ(x), par Fermat"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On développe l'identité remarquable (u + v)² = u² + 2uv + v² avec u = x et v = (n + 1)³ : (x + (n + 1)³)² = x² + 2(n + 1)³x + ((n + 1)³)². Or ((n + 1)³)² = (n + 1)⁶ ≡ 1 (mod 7), d'où le résultat ✓. Piège classique : oublier le double produit, ou mal calculer le carré de (n + 1)³ (on multiplie les exposants : (n + 1)^(3×2) = (n + 1)⁶, pas (n + 1)³ ni (n + 1)⁵).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit z un entier. Pour quels restes r de z modulo 7 a-t-on z² ≡ 0 (mod 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r ∈ {0, 1, 6}"
+        },
+        {
+          "id": "b",
+          "text": "r ∈ {0, 2, 5}"
+        },
+        {
+          "id": "c",
+          "text": "r ∈ {0, 3, 4}"
+        },
+        {
+          "id": "d",
+          "text": "r ∈ {0}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les carrés modulo 7 des restes r = 0, 1, 2, 3, 4, 5, 6 valent 0, 1, 4, 9 ≡ 2, 16 ≡ 2, 25 ≡ 4, 36 ≡ 1. Le carré n'est congru à 0 que pour r = 0 : donc z² ≡ 0 (mod 7) équivaut à z ≡ 0 (mod 7) ✓. Piège classique : retenir aussi les restes dont le carré n'est pas 0 (on cherche les r dont le carré est 0, pas ceux dont le carré est non nul), ou raisonner comme dans ℝ sans passer par les restes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier naturel tel que 7 ne divise pas n + 1. On a Pₙ(x) ≡ (x + (n + 1)³)² (mod 7), et z² ≡ 0 (mod 7) équivaut à z ≡ 0 (mod 7). Quelles sont les solutions de Pₙ(x) ≡ 0 (mod 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ (n + 1)³ (mod 7)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ −(n + 1)⁶ ≡ −1 (mod 7)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ −(n + 1)³ (mod 7)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ −2(n + 1)³ (mod 7)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pₙ(x) ≡ 0 (mod 7) équivaut à (x + (n + 1)³)² ≡ 0, donc à x + (n + 1)³ ≡ 0 (mod 7), soit x ≡ −(n + 1)³ (mod 7) ✓. L'ensemble des solutions est la classe de −(n + 1)³ modulo 7. Piège classique : perdre le signe moins en passant (n + 1)³ de l'autre côté, remplacer (n + 1)³ par (n + 1)⁶ ≡ 1, ou lire le coefficient 2(n + 1)³ de l'énoncé comme la solution.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℤ l'équation P₂₀₂₃(x) ≡ 0 (mod 7), où Pₙ(x) = x² + 2(n + 1)³x + 1, sachant que si 7 ne divise pas n + 1, les solutions de Pₙ(x) ≡ 0 sont les x ≡ −(n + 1)³ (mod 7).",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 6 (mod 7)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 1 (mod 7)"
+        },
+        {
+          "id": "c",
+          "text": "Aucune solution"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 5 (mod 7)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici n = 2023 = 7 × 289, donc n ≡ 0 et n + 1 = 2024 ≡ 1 (mod 7) : 7 ne divise pas n + 1, on est dans le cas de la question précédente. Alors (n + 1)³ ≡ 1 et x ≡ −1 ≡ 6 (mod 7). Contrôle : P₂₀₂₃(x) ≡ x² + 2x + 1 = (x + 1)², qui s'annule pour x ≡ −1 ✓. Piège classique : confondre n et n + 1 (2023 est multiple de 7, mais ce n'est pas la condition du cas sans solution : c'est 2024 qui compte, et il n'est pas multiple de 7), oublier le signe moins (x ≡ 1), ou utiliser le coefficient 2 (x ≡ −2 ≡ 5).",
+      "difficulty": 3
+    }
+  ]
+}

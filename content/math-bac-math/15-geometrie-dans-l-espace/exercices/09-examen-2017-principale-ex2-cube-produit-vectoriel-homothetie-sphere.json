@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2017 · session principale · Exercice 2 ⭐⭐⭐ : cube, produit vectoriel, volumes, homothétie et sections de sphère",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "L'espace est orienté et ABCDEFGH est un cube d'arête 1, avec (A, AB, AD, AE) repère orthonormé direct (vecteurs notés AB, AD, AE). Quel est le produit vectoriel EC ∧ ED ?\n<svg viewBox=\"0 0 230 160\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"10\"><line x1=\"60\" y1=\"135\" x2=\"130\" y2=\"135\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"130\" y1=\"135\" x2=\"165\" y2=\"100\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"165\" y1=\"100\" x2=\"95\" y2=\"100\" stroke=\"#1f2937\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"95\" y1=\"100\" x2=\"60\" y2=\"135\" stroke=\"#1f2937\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"60\" y1=\"65\" x2=\"130\" y2=\"65\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"130\" y1=\"65\" x2=\"165\" y2=\"30\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"165\" y1=\"30\" x2=\"95\" y2=\"30\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"95\" y1=\"30\" x2=\"60\" y2=\"65\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"60\" y1=\"135\" x2=\"60\" y2=\"65\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"130\" y1=\"135\" x2=\"130\" y2=\"65\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"165\" y1=\"100\" x2=\"165\" y2=\"30\" stroke=\"#1f2937\" stroke-width=\"1.4\"/><line x1=\"95\" y1=\"100\" x2=\"95\" y2=\"30\" stroke=\"#1f2937\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"50\" y=\"145\" fill=\"#1f2937\">A</text><text x=\"134\" y=\"145\" fill=\"#1f2937\">B</text><text x=\"170\" y=\"104\" fill=\"#1f2937\">C</text><text x=\"91\" y=\"96\" fill=\"#1f2937\">D</text><text x=\"50\" y=\"63\" fill=\"#1f2937\">E</text><text x=\"128\" y=\"60\" fill=\"#1f2937\">F</text><text x=\"170\" y=\"30\" fill=\"#1f2937\">G</text><text x=\"91\" y=\"25\" fill=\"#1f2937\">H</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "EC ∧ ED = −AH, de coordonnées (0 ; −1 ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "EC ∧ ED a pour coordonnées (−2 ; 1 ; 1), en changeant le signe du premier terme"
+        },
+        {
+          "id": "c",
+          "text": "EC ∧ ED = AH, de coordonnées (0 ; 1 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "EC ∧ ED = AC, de coordonnées (1 ; 1 ; 0)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le repère (A, AB, AD, AE), E(0 ; 0 ; 1), C(1 ; 1 ; 0), D(0 ; 1 ; 0), donc EC = (1 ; 1 ; −1) et ED = (0 ; 1 ; −1). Avec (a, b, c) = (1, 1, −1) et (a′, b′, c′) = (0, 1, −1), le produit vectoriel vaut (bc′ − cb′ ; ca′ − ac′ ; ab′ − ba′) = (−1 + 1 ; 0 + 1 ; 1 − 0) = (0 ; 1 ; 1), ce sont les coordonnées de H(0 ; 1 ; 1) : EC ∧ ED = AH ✓. Piège classique : intervertir les deux vecteurs (on obtient l'opposé −AH) ou se tromper de signe dans bc′ − cb′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est orienté et ABCDEFGH est un cube d'arête 1, avec (A, AB, AD, AE) repère orthonormé direct (vecteurs notés AB, AD, AE). On a EC ∧ ED = AH, de coordonnées (0 ; 1 ; 1). Quelle est l'aire du triangle ECD ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "√2/2"
+        },
+        {
+          "id": "d",
+          "text": "√3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'aire d'un triangle est la moitié de la norme du produit vectoriel de deux côtés : aire(ECD) = (1/2)‖EC ∧ ED‖ = (1/2)‖AH‖ = (1/2)√(0² + 1² + 1²) = √2/2 ✓. Contrôle : en D, DE = (0 ; −1 ; 1) et DC = (1 ; 0 ; 0) sont orthogonaux, et DE = √2, DC = 1, d'où (1/2)√2 × 1 = √2/2. Piège classique : oublier le facteur 1/2 (on trouve l'aire du parallélogramme, √2), ou confondre avec un triangle équilatéral.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est orienté et ABCDEFGH est un cube d'arête 1, avec (A, AB, AD, AE) repère orthonormé direct (vecteurs notés AB, AD, AE). Quel est le volume du tétraèdre AECD ? On donne EC ∧ ED = AH, de coordonnées (0 ; 1 ; 1).",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/6"
+        },
+        {
+          "id": "b",
+          "text": "1/3"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "1/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume du tétraèdre est (1/6)|(EC ∧ ED) · EA|. Avec EA = (0 ; 0 ; −1) et EC ∧ ED = (0 ; 1 ; 1), le produit scalaire vaut −1, donc V = 1/6 ✓. Contrôle : le triangle ACD, d'aire 1/2, a pour hauteur AE = 1 vers le sommet E, et (1/3) × (1/2) × 1 = 1/6. Piège classique : prendre le facteur 1/2 d'un triangle pour celui d'un tétraèdre (1/6 et non 1/2), ou oublier de diviser par 3 dans la formule base × hauteur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est orienté et ABCDEFGH est un cube d'arête 1, avec (A, AB, AD, AE) repère orthonormé direct (vecteurs notés AB, AD, AE). Soit h l'homothétie de centre A et de rapport 3/4, M = h(D), N le point où le plan passant par M et parallèle au plan (DCG) coupe [AC], et P son point d'intersection avec [AG]. Quelle justification établit que h(C) = N et h(G) = P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h conserve le plan (DCG), donc h(C) est à la fois sur (DCG) et sur (AC), ce qui donne h(C) = C et h(G) = G, sans autre vérification"
+        },
+        {
+          "id": "b",
+          "text": "N et P sont définis par le plan parallèle à (DCG) passant par M, donc h(C) = N et h(G) = P sans aucune justification à fournir"
+        },
+        {
+          "id": "c",
+          "text": "h(C) est à la distance 3/4 de C sur la droite (AC), donc h(C) = N, et de même h(G) = P à la distance 3/4 de G sur (AG)"
+        },
+        {
+          "id": "d",
+          "text": "h((DCG)) est le plan parallèle à (DCG) passant par M, soit (MNP) ; h(C) est sur (AC) et dans ce plan, donc h(C) = N ; idem pour G"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une homothétie transforme un plan en un plan parallèle. h((DCG)) est donc le plan parallèle à (DCG) qui passe par h(D) = M : c'est le plan (MNP). Le point h(C) est sur la droite (AC) (image de la droite (AC) passant par le centre A, elle-même globalement invariante) et dans le plan (MNP) : il est dans leur intersection, réduite au seul point N. Ainsi h(C) = N, et de même h(G) = P ✓. Piège classique : croire que h conserve le plan (DCG) (seuls les plans passant par le centre A sont conservés), ou confondre définition de N et propriété de h.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est orienté et ABCDEFGH est un cube d'arête 1, avec (A, AB, AD, AE) repère orthonormé direct (vecteurs notés AB, AD, AE). Soit h l'homothétie de centre A et de rapport 3/4, et K le point où le plan passant par M = h(D) et parallèle à (ECD) coupe (AE). On a h(E) = K, h(C) = N et h(D) = M, et le volume de AECD est 1/6. Quel est le volume du tétraèdre AKNM ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/32"
+        },
+        {
+          "id": "b",
+          "text": "9/128"
+        },
+        {
+          "id": "c",
+          "text": "1/8"
+        },
+        {
+          "id": "d",
+          "text": "27/64"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le tétraèdre AKNM est l'image de AECD par h (h(A) = A, h(E) = K, h(C) = N, h(D) = M). Une homothétie de rapport k multiplie les volumes par |k|³ : V(AKNM) = (3/4)³ × (1/6) = (27/64) × (1/6) = 27/384 = 9/128 ✓. Piège classique : multiplier par k² (rapport des aires, 3/32) ou par k (1/8), ou s'arrêter à (3/4)³ en oubliant le volume 1/6 de départ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est orienté et ABCDEFGH est un cube d'arête 1, avec (A, AB, AD, AE) repère orthonormé direct (vecteurs notés AB, AD, AE). Soit S la sphère de centre I(1/2 ; 1/2 ; 1/2) et de rayon R = √3/2, et (DCG) le plan d'équation y = 1. Quels sont le centre et le rayon du cercle S ∩ (DCG) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre (1/2 ; 1 ; 1/2) et rayon 1"
+        },
+        {
+          "id": "b",
+          "text": "Centre (1/2 ; 1 ; 1/2) et rayon (√3 − 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "Centre (1/2 ; 1/2 ; 1/2) et rayon √3/2"
+        },
+        {
+          "id": "d",
+          "text": "Centre (1/2 ; 1 ; 1/2) et rayon √2/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La distance de I au plan y = 1 est d = |1/2 − 1| = 1/2 < R : l'intersection est un cercle de rayon √(R² − d²) = √(3/4 − 1/4) = √(1/2) = √2/2. Son centre est le projeté orthogonal de I sur le plan, soit (1/2 ; 1 ; 1/2) ✓. Piège classique : additionner R² et d² (on trouve 1), soustraire les longueurs au lieu des carrés, ou garder le centre I et le rayon de S comme si le plan passait par le centre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est orienté et ABCDEFGH est un cube d'arête 1, avec (A, AB, AD, AE) repère orthonormé direct (vecteurs notés AB, AD, AE). Soit S′ l'image de la sphère S (de centre I(1/2 ; 1/2 ; 1/2) et de rayon √3/2) par l'homothétie h de centre A et de rapport 3/4. Le plan (MNP) est l'image de (DCG) par h, et S ∩ (DCG) est le cercle de centre (1/2 ; 1 ; 1/2) et de rayon √2/2. Quels sont le centre et le rayon du cercle S′ ∩ (MNP) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre (1/2 ; 3/4 ; 1/2) et rayon √2/2"
+        },
+        {
+          "id": "b",
+          "text": "Centre (3/8 ; 3/4 ; 3/8) et rayon 3√2/8"
+        },
+        {
+          "id": "c",
+          "text": "Centre (3/8 ; 3/4 ; 3/8) et rayon √2/2"
+        },
+        {
+          "id": "d",
+          "text": "Centre (3/8 ; 3/4 ; 3/8) et rayon 9√2/32"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme h(S) = S′ et h((DCG)) = (MNP), h transforme le cercle S ∩ (DCG) en le cercle S′ ∩ (MNP). Le centre est l'image (3/4)(1/2 ; 1 ; 1/2) = (3/8 ; 3/4 ; 3/8), le rayon est multiplié par 3/4 : (3/4)(√2/2) = 3√2/8 ✓. Contrôle : S′ a pour centre (3/8 ; 3/8 ; 3/8) et rayon 3√3/8, le plan y = 3/4 est à la distance 3/8 de son centre, et √(27/64 − 9/64) = 3√2/8. Piège classique : ne pas transformer le centre, laisser le rayon inchangé, ou multiplier le rayon par k² comme une aire.",
+      "difficulty": 3
+    }
+  ]
+}

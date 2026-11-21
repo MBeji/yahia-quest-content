@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 3 ⭐⭐⭐ : congruences de puissances, équation diophantienne et chiffre des unités",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Soit a un entier naturel non nul, premier avec 5. En examinant ses restes possibles 1, 2, 3 et 4 dans la division euclidienne par 5, que peut-on affirmer sur a⁴ modulo 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a⁴ ≡ 1 (mod 5) dans les quatre cas, car 16, 81 et 256 sont ≡ 1"
+        },
+        {
+          "id": "b",
+          "text": "a⁴ ≡ 1 si a ≡ 1 ou 4, mais a⁴ ≡ −1 si a ≡ 2 ou 3 (mod 5)"
+        },
+        {
+          "id": "c",
+          "text": "a⁴ ≡ a (mod 5), puisque 5 est premier et que a est quelconque"
+        },
+        {
+          "id": "d",
+          "text": "a⁴ ≡ 0 (mod 5), puisque 4 divise l'exposant et que 5 est premier"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Il suffit de calculer les quatre cas. 1⁴ = 1 ; 2⁴ = 16 = 3 × 5 + 1 ; 3⁴ = 81 = 16 × 5 + 1 ; 4⁴ = 256 = 51 × 5 + 1. Dans tous les cas a⁴ ≡ 1 (mod 5) ✓, ce qui est le petit théorème de Fermat pour p = 5. L'erreur courante est de confondre a² et a⁴ : 2² = 4 ≡ −1 et 3² = 9 ≡ −1, mais élevés encore au carré, (−1)² = 1, donc 2⁴ ≡ 1 et non −1. La forme a⁴ ≡ a est celle de a^p ≡ a (exposant p = 5, pas 4) et a⁴ ≡ 0 contredit 1⁴ = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a un entier naturel non nul, premier avec 5, et p, q deux entiers naturels non nuls avec p ≤ q et q ≡ p (mod 4). On sait que a⁴ ≡ 1 (mod 5). Quel argument établit a^q ≡ a^p (mod 5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q ≡ p (mod 4) donne a^q ≡ a^p (mod 4), puis on change simplement de modulo"
+        },
+        {
+          "id": "b",
+          "text": "q = p + 4m, donc a^q = a^p × (a⁴)^m ≡ a^p × 1 = a^p (mod 5)"
+        },
+        {
+          "id": "c",
+          "text": "a^q = a^p + a^(4m) ≡ a^p + 1 (mod 5) puisque a⁴ ≡ 1 (mod 5)"
+        },
+        {
+          "id": "d",
+          "text": "a^q = a^p × a^(4m) et a^(4m) ≡ 4m (mod 5) puisque a⁴ ≡ 1 (mod 5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme q ≡ p (mod 4) et p ≤ q, il existe un entier m ≥ 0 tel que q = p + 4m. Alors a^q = a^(p + 4m) = a^p × (a⁴)^m. Or a⁴ ≡ 1 (mod 5), donc (a⁴)^m ≡ 1 (mod 5) et a^q ≡ a^p (mod 5) ✓. Les autres raisonnements sont faux : une congruence modulo 4 sur les exposants ne donne rien sur les puissances modulo 4 ; a^(p + 4m) est un produit a^p × a^(4m), pas une somme ; et (a⁴)^m ≡ 1 (mod 5) se lit directement, sans calculer 4m.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℤ × ℤ, on considère (E) : 25x − 21y = 4, dont (1 ; 1) est une solution. Quel est l'ensemble de ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(1 + 25k ; 1 + 21k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(1 + 21k ; 1 − 25k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(1 + 21k ; 1 + 25k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(1 − 21k ; 1 + 25k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si (x ; y) est solution, 25x − 21y = 25 − 21 donne 25(x − 1) = 21(y − 1). Comme 25 ∧ 21 = 1, le lemme de Gauss donne 21 | x − 1, soit x = 1 + 21k, puis 25 × 21k = 21(y − 1) donne y = 1 + 25k ✓. Vérification : 25(1 + 21k) − 21(1 + 25k) = 25 − 21 + (525 − 525)k = 4 ✓. Avec 1 − 25k pour y, on trouve 4 + 1050k, et avec 1 − 21k pour x, on trouve 4 − 1050k : les deux pas doivent avoir le même signe. Échanger 21 et 25 casse le calcul : 25 × 25k − 21 × 21k = 184k.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les solutions de 25x − 21y = 4 dans ℤ × ℤ sont les couples (1 + 21k ; 1 + 25k), k ∈ ℤ. Pour quelles valeurs de k obtient-on les solutions dans ℕ × ℕ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "k ∈ ℕ*, c'est-à-dire k ≥ 1"
+        },
+        {
+          "id": "b",
+          "text": "k ∈ ℤ, toutes les valeurs de k conviennent"
+        },
+        {
+          "id": "c",
+          "text": "k ∈ ℤ*, en excluant seulement k = 0"
+        },
+        {
+          "id": "d",
+          "text": "k ∈ ℕ, c'est-à-dire k ≥ 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il faut 1 + 21k ≥ 0 et 1 + 25k ≥ 0. La première donne k ≥ −1/21, la seconde k ≥ −1/25 ; comme k est entier, les deux conditions équivalent à k ≥ 0 ✓. Donc A = {(1 + 21k ; 1 + 25k), k ∈ ℕ}. Vérification : k = 0 donne (1 ; 1) ∈ ℕ × ℕ, valide ; k = −1 donne (−20 ; −24), négatif. Exclure k = 0 (choisir k ≥ 1) oublie la solution de départ (1 ; 1) ; accepter k ∈ ℤ fait entrer des couples négatifs ; et k ∈ ℤ*, qui n'exclut que k = 0, perd (1 ; 1) tout en gardant les k négatifs (k = −1 donne (−20 ; −24)).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit a, p, q des entiers naturels non nuls. Pourquoi a^q et a^p ont-ils le même reste modulo 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a^k a la parité de a pour k ≥ 1 : a^p et a^q sont pairs ensemble ou impairs ensemble"
+        },
+        {
+          "id": "b",
+          "text": "a⁴ ≡ 1 (mod 2) pour tout entier a, donc a^q ≡ a^p ≡ 1 (mod 2) quels que soient p et q"
+        },
+        {
+          "id": "c",
+          "text": "Parce que a est premier avec 5, donc premier avec 2, donc a est impair et ses puissances aussi"
+        },
+        {
+          "id": "d",
+          "text": "Parce que a^p et a^q sont impairs dès que p ≥ 1, un produit de facteurs non nuls étant impair"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un produit de k facteurs égaux à a est pair si a est pair (un facteur pair suffit) et impair si a est impair (produit d'impairs). Donc, pour p ≥ 1 et q ≥ 1, a^p ≡ a ≡ a^q (mod 2) ✓. L'hypothèse a ∧ 5 = 1 ne dit rien de la parité : a = 2 est premier avec 5 et pair. La relation a⁴ ≡ 1 (mod 2) est fausse pour a pair (2⁴ = 16 ≡ 0), et « impair dès que p ≥ 1 » l'est aussi (2¹ = 2). Contrôle : a = 6, p = 1, q = 5 : 6 et 7776 sont pairs, a = 3 : 3 et 243 sont impairs ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a un entier. On sait que 2 divise a^q − a^p et que 5 divise a^q − a^p, avec 2 ∧ 5 = 1. Que peut-on conclure sur les chiffres des unités de a^q et de a^p ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 divise a^q − a^p, donc a^q et a^p ont les mêmes deux derniers chiffres"
+        },
+        {
+          "id": "b",
+          "text": "10 divise a^q − a^p, donc a^q et a^p ont le même chiffre des unités"
+        },
+        {
+          "id": "c",
+          "text": "10 divise a^q − a^p, donc la somme a^q + a^p a un chiffre des unités nul"
+        },
+        {
+          "id": "d",
+          "text": "10 divise a^q − a^p, donc a^q et a^p ont le même chiffre des dizaines"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Si deux entiers premiers entre eux divisent un même entier, leur produit le divise : 2 ∧ 5 = 1, donc 2 × 5 = 10 divise a^q − a^p, c'est-à-dire a^q ≡ a^p (mod 10). Or le reste modulo 10 d'un entier naturel est son chiffre des unités ; les deux nombres ont donc le même chiffre des unités ✓. Les deux derniers chiffres exigeraient la congruence modulo 100 ; les dizaines ne sont pas contrôlées (3 et 243 ont des dizaines 0 et 4) ; et la somme n'est pas nulle modulo 10 (3 + 243 = 246 finit par 6) : c'est la différence qui est un multiple de 10. Contrôle : a = 3, p = 1, q = 5 : 3 et 243 finissent tous deux par un 3, 243 − 3 = 240 = 10 × 24 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On a α ≡ β (mod 4) lorsque (α ; β) = (1 + 21k ; 1 + 25k) avec k ∈ ℕ. Quelle relation le montre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "β + α = 2 + 46k, donc α ≡ β (mod 46)"
+        },
+        {
+          "id": "b",
+          "text": "β − α = 4, donc α ≡ β (mod 4) seulement pour k = 1"
+        },
+        {
+          "id": "c",
+          "text": "β − α = 4k, donc α ≡ β (mod 4) avec α ≤ β"
+        },
+        {
+          "id": "d",
+          "text": "β − α = 4k, mais α ≡ β (mod 4) seulement si k est pair"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il faut regarder la différence, pas la somme : β − α = (1 + 25k) − (1 + 21k) = 4k, qui est un multiple de 4 pour tout k ∈ ℕ. Donc α ≡ β (mod 4), et β ≥ α ✓. Contrôle : k = 1 donne (22 ; 26), 26 − 22 = 4 ; k = 3 donne (64 ; 76), 76 − 64 = 12 = 4 × 3 ✓. Additionner donne 2 + 46k, qui ne détermine aucun module commun ; oublier k remplace 4k par 4 ; et 4k est multiple de 4 que k soit pair ou non.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le couple (22 ; 26) est solution de 25x − 21y = 4, et pour tout entier naturel n premier avec 5, les puissances n^22 et n^26 ont le même chiffre des unités. Quel est ce chiffre pour n = 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "9"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Modulo 10, les puissances de 7 se répètent avec la période 4 : 7¹ ≡ 7, 7² = 49 ≡ 9, 7³ = 343 ≡ 3, 7⁴ = 2401 ≡ 1. Comme 22 = 4 × 5 + 2, 7^22 = (7⁴)^5 × 7² ≡ 1 × 49 ≡ 9 (mod 10) ; de même 26 = 4 × 6 + 2 donne 7^26 ≡ 9 ✓. Les deux puissances finissent donc par 9. Les erreurs sont des erreurs de reste d'exposant : 1 suppose 22 multiple de 4, 3 lit le reste 3, 7 lit le reste 1.",
+      "difficulty": 3
+    }
+  ]
+}

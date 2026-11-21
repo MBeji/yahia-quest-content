@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2019 · session principale · Exercice 3 ⭐⭐⭐⭐ : équation de Bézout, congruence de puissance et système modulo 29 et 13",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "On considère dans ℤ × ℤ l'équation (E) : 29x − 13y = 6, dont (2 ; 4) est une solution. Quel est l'ensemble de ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(2 + 13k ; 4 + 29k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(2 + 29k ; 4 + 13k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(2 + 13k ; 4 − 29k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(2 − 13k ; 4 + 29k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Soit (x ; y) une solution. En soustrayant 29 × 2 − 13 × 4 = 6, on obtient 29(x − 2) = 13(y − 4). Comme 29 ∧ 13 = 1 (29 est premier), le lemme de Gauss donne 13 | x − 2, soit x = 2 + 13k, puis y − 4 = 29k ✓. Vérification : 29(2 + 13k) − 13(4 + 29k) = 58 − 52 + (377 − 377)k = 6 ✓. L'erreur classique est d'échanger les pas (le pas de x est 13, coefficient de y) ou de changer le signe d'une seule composante : avec 4 − 29k, on trouve 6 + 754k.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (E') l'équation x^19 ≡ −2 (mod 29), d'inconnue x ∈ ℤ. On rappelle que 2^28 ≡ 1 (mod 29) d'après le petit théorème de Fermat. Pourquoi −8 est-il solution de (E') ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−8)^19 = 8^19 = 2^57 ≡ 2 (mod 29), puisque l'exposant 19 est impair"
+        },
+        {
+          "id": "b",
+          "text": "(−8)^19 = −2^22 ≡ −2 (mod 29), car 3 + 19 = 22 et 2^22 ≡ 2"
+        },
+        {
+          "id": "c",
+          "text": "(−8)^19 = −2^57 = −(2^28)² ≡ −1 (mod 29)"
+        },
+        {
+          "id": "d",
+          "text": "(−8)^19 = −2^57 = −(2^28)² × 2 ≡ −2 (mod 29)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On écrit −8 = −2³, donc (−8)^19 = −(2³)^19 = −2^57. Comme 57 = 2 × 28 + 1, 2^57 = (2^28)² × 2 ≡ 1² × 2 = 2 (mod 29), donc (−8)^19 ≡ −2 ✓ : −8 est bien solution. Les erreurs : (−8)^19 est négatif (puissance impaire), on ne peut pas le remplacer par 8^19 ; une puissance de puissance se multiplie (3 × 19 = 57, non 3 + 19) ; et (2^28)² vaut 1 mais il reste le facteur 2 (sans lui, on obtiendrait −1). Contrôle : 2^57 ≡ 2 (mod 29) par la formule, et −2 ≡ 27 est bien le reste de (−8)^19 modulo 29.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x₀ un entier tel que x₀^19 ≡ −2 (mod 29). Quel argument montre que x₀ n'est pas un multiple de 29 et que x₀^28 ≡ 1 (mod 29) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x₀^19 ≡ −2 donne x₀ ≡ −2 (mod 29), donc x₀^28 ≡ (−2)^28 ≡ 1 (mod 29)"
+        },
+        {
+          "id": "b",
+          "text": "29 est premier, donc tout entier x vérifie x^28 ≡ 1 (mod 29), sans condition"
+        },
+        {
+          "id": "c",
+          "text": "Si 29 | x₀, alors x₀^19 ≡ 0 et non −2 ; sinon Fermat donne x₀^28 ≡ 1"
+        },
+        {
+          "id": "d",
+          "text": "x₀^19 est différent de 0 dans ℤ, donc x₀ ≠ 0, donc x₀^28 ≡ 1 (mod 29)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Raisonnement par l'absurde : si 29 divisait x₀, alors 29 diviserait x₀^19, et x₀^19 ≡ 0 (mod 29), contradiction avec x₀^19 ≡ −2 (qui est ≡ 27, non 0). Donc 29 ne divise pas x₀ ; comme 29 est premier, x₀ ∧ 29 = 1 et le petit théorème de Fermat donne x₀^(29−1) = x₀^28 ≡ 1 (mod 29) ✓. Les autres arguments sont fautifs : on ne passe pas de x₀^19 ≡ −2 à x₀ ≡ −2 (on ne « simplifie » pas un exposant) ; Fermat exige que x ne soit pas multiple de 29 (pour x = 29, x^28 ≡ 0) ; et x₀ ≠ 0 dans ℤ n'est pas la même chose que 29 ∤ x₀ (x₀ = 29 est non nul).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x₀ une solution de x^19 ≡ −2 (mod 29), avec x₀^28 ≡ 1 (mod 29). Que vaut x₀ modulo 29 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x₀ ≡ −8 (mod 29)"
+        },
+        {
+          "id": "b",
+          "text": "x₀ ≡ 8 (mod 29)"
+        },
+        {
+          "id": "c",
+          "text": "x₀ ≡ −6 (mod 29)"
+        },
+        {
+          "id": "d",
+          "text": "x₀ ≡ −2 (mod 29)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule x₀^57 de deux façons. D'abord x₀^57 = (x₀^19)^3 ≡ (−2)^3 = −8 (mod 29). Ensuite 57 = 2 × 28 + 1, donc x₀^57 = (x₀^28)² × x₀ ≡ x₀ (mod 29). Donc x₀ ≡ −8 (mod 29) ✓. Contrôle : (−8)^19 ≡ −2 (mod 29), comme on l'a vérifié. Les autres valeurs échouent : (−2)^3 vaut −8 et non 8 (signe) ni −6 (on multiplie 3 fois −2, on n'en fait pas 3 × (−2)) ; et −2 est le résultat de x₀^19, non celui de x₀.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On a montré que toute solution de (E') : x^19 ≡ −2 (mod 29) vérifie x ≡ −8 (mod 29), et que −8 est lui-même solution. Quel est l'ensemble des solutions de (E') dans ℤ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−2 + 29k, k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{−8 + 29k, k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{8 + 29k, k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{−8 + 19k, k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les solutions sont exactement les entiers congrus à −8 modulo 29, soit {−8 + 29k, k ∈ ℤ} (ou 21 + 29k) ✓. Pour la réciproque, si x = −8 + 29k alors x ≡ −8 et x^19 ≡ (−8)^19 ≡ −2 (mod 29). Contrôle : 21^19 ≡ 27 (mod 29), et 27 est bien le reste de −2 ✓. Les erreurs : lire x^19 ≡ −2 comme x ≡ −2 (on ne simplifie pas un exposant), perdre le signe (8 donne 8^19 ≡ 2, non −2), ou prendre l'exposant 19 comme module.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'ensemble des solutions de x^19 ≡ −2 (mod 29) est {−8 + 29k, k ∈ ℤ}. Quel est l'ensemble des entiers x tels que (x − 3)^19 ≡ −2 (mod 29) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−8 + 29k, k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{−11 + 29k, k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{−5 + 29k, k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{5 + 29k, k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'entier y = x − 3 doit vérifier y^19 ≡ −2 (mod 29), donc y ≡ −8, soit x − 3 ≡ −8 (mod 29), c'est-à-dire x ≡ −5 (mod 29) ✓. Vérification : x = −5 donne x − 3 = −8 et (−8)^19 ≡ −2 ✓. Les erreurs : oublier la translation de 3 (on retrouve −8), la faire dans le mauvais sens (x ≡ −8 − 3 = −11) ou changer le signe de −5 (pour x = 5 on a (x − 3)^19 = 2^19 ≡ −3 (mod 29), car 2^19 ≡ 26).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit x un entier. On sait que, pour tout entier y, y^13 ≡ y (mod 13). Quelle condition sur x équivaut à (x − 3)^13 ≡ −2 (mod 13) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 11 (mod 13)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 8 (mod 13)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 5 (mod 13)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 1 (mod 13)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec y = x − 3, la relation y^13 ≡ y (mod 13) (petit théorème de Fermat sous sa forme a^p ≡ a) donne (x − 3)^13 ≡ x − 3 (mod 13). La condition devient x − 3 ≡ −2 (mod 13), c'est-à-dire x ≡ 1 (mod 13) ✓. Vérification : x = 1 donne (−2)^13 = −8192 = −13 × 630 + (−2) ✓ (−8190 = 13 × 630). Les erreurs : oublier la translation (x ≡ −2 ≡ 11), la faire dans le mauvais sens (x + 3 ≡ −2, d'où x ≡ −5 ≡ 8), ou changer le signe (x − 3 ≡ 2, d'où x ≡ 5).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résoudre dans ℤ le système { (x − 3)^19 ≡ −2 (mod 29) ; (x − 3)^13 ≡ −2 (mod 13) }, sachant que la première équation équivaut à x ≡ −5 (mod 29), que la seconde équivaut à x ≡ 1 (mod 13) et que 29 × 2 − 13 × 4 = 6.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 50 (mod 377)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 53 (mod 377)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 24 (mod 377)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 27 (mod 377)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit x = 1 + 13a = −5 + 29b, donc 29b − 13a = 6, équation (E) dont (2 ; 4) est solution (b ; a). Alors a = 4 + 29k, et x = 1 + 13(4 + 29k) = 53 + 377k ✓. Vérification : 53 = 29 × 2 − 5 ✓ (53 ≡ −5 modulo 29) et 53 = 13 × 4 + 1 ✓. Les erreurs : omettre la translation de 3 dans les deux congruences (on obtient x ≡ 50 : −8 modulo 29 et −2 modulo 13) ou dans une seule (x ≡ 24) ; et lire a = 2 dans le couple (2 ; 4), ce qui donne x = 1 + 13 × 2 = 27 : cette valeur vérifie la congruence modulo 13 mais pas celle modulo 29 (27 ≢ −5 modulo 29).",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 2 ⭐⭐⭐ : récurrence modulo 100, deux derniers chiffres et ensemble d'entiers",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "On veut montrer par récurrence que 21ⁿ ≡ 1 + 20n (mod 100) pour tout n ∈ ℕ. Quelle est l'hérédité correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "21(1 + 20n) = 21 + 420n ≡ 21 + 20n = 1 + 20(n + 1) (mod 100), car 420 ≡ 20"
+        },
+        {
+          "id": "b",
+          "text": "21^(n+1) = 21ⁿ + 21 ≡ 1 + 20n + 21 = 22 + 20n (mod 100)"
+        },
+        {
+          "id": "c",
+          "text": "21(1 + 20n) = 21 + 420n, et 420 ≡ 4 (mod 100), donc 21^(n+1) ≡ 21 + 4n (mod 100)"
+        },
+        {
+          "id": "d",
+          "text": "21^(n+1) ≡ (1 + 20n)(1 + 20n) = 1 + 40n + 400n² ≡ 1 + 40n (mod 100)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Initialisation : 21⁰ = 1 ≡ 1 + 20 × 0. Hérédité : si 21ⁿ ≡ 1 + 20n (mod 100), alors, par compatibilité avec le produit, 21^(n+1) = 21 × 21ⁿ ≡ 21(1 + 20n) = 21 + 420n. Comme 420 = 4 × 100 + 20, 420n ≡ 20n (mod 100), donc 21^(n+1) ≡ 21 + 20n = 1 + 20(n + 1) ✓. Piège classique : additionner au lieu de multiplier, mal réduire 420 modulo 100 (c'est 20 et non 4), ou multiplier l'hypothèse par elle-même au lieu de la multiplier par 21.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quels sont les deux derniers chiffres de l'entier 2021^2021, sachant que 21ⁿ ≡ 1 + 20n (mod 100) pour tout n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "41"
+        },
+        {
+          "id": "b",
+          "text": "61"
+        },
+        {
+          "id": "c",
+          "text": "81"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux derniers chiffres d'un entier sont son reste modulo 100. Comme 2021 ≡ 21 (mod 100), 2021^2021 ≡ 21^2021 (mod 100), et la formule donne 21^2021 ≡ 1 + 20 × 2021 = 40 421 ≡ 21 (mod 100) ✓. Les deux derniers chiffres sont donc 2 et 1. Piège classique : prendre un petit exposant à la place de 2021 (la formule donne 41 pour n = 2, 61 pour n = 3, 81 pour n = 4), au lieu de réduire 20 × 2021 = 40 420 ≡ 20 modulo 100.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit E l'ensemble des entiers x tels que, pour tout n ∈ ℕ, xⁿ ≡ 1 + n(x − 1) (mod 100). Pour x ∈ E, quelle valeur de n montre que (x − 1)² ≡ 0 (mod 100) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 1 : x ≡ 1 + (x − 1) = x, ce qui donne immédiatement (x − 1)² ≡ 0 (mod 100)"
+        },
+        {
+          "id": "b",
+          "text": "n = 2 : x² ≡ 1 + 2(x − 1) = 2x − 1, donc x² − 2x + 1 = (x − 1)² ≡ 0 (mod 100)"
+        },
+        {
+          "id": "c",
+          "text": "n = 2 : x² ≡ 1 + 2(x − 1) = 2x + 1, donc x² − 2x − 1 ≡ 0 (mod 100)"
+        },
+        {
+          "id": "d",
+          "text": "n = 0 : x⁰ = 1 ≡ 1, donc (x − 1)² ≡ 0 (mod 100) par un calcul direct"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour n = 2, l'appartenance à E donne x² ≡ 1 + 2(x − 1) = 2x − 1 (mod 100). On passe tout à gauche : x² − 2x + 1 ≡ 0 (mod 100), c'est-à-dire (x − 1)² ≡ 0 ✓. Piège classique : choisir n = 1 ou n = 0 (la relation y est trivialement vérifiée et n'apprend rien), ou faire une erreur de signe : 1 + 2(x − 1) = 2x − 1, pas 2x + 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit x un entier tel que (x − 1)² ≡ 0 (mod 100). Que peut-on en déduire pour x modulo 10 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − 1 ≡ 0 (mod 100), en prenant la racine carrée de chaque membre de la congruence, donc x ≡ 1 (mod 100)"
+        },
+        {
+          "id": "b",
+          "text": "x − 1 ≡ 0 (mod 50), car on divise le module 100 par 2"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 0 (mod 10), car (x − 1)² est un multiple de 100"
+        },
+        {
+          "id": "d",
+          "text": "(x − 1)² ≡ 0 (mod 10) ; seul le reste r = 0 de x − 1 donne r² ≡ 0, donc x ≡ 1 (mod 10)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si 100 divise (x − 1)², alors 10 divise (x − 1)², soit (x − 1)² ≡ 0 (mod 10). On balaie le reste r de x − 1 modulo 10 : r² vaut 0, 1, 4, 9, 6, 5, 6, 9, 4, 1 pour r = 0 à 9, et seul r = 0 donne 0. Donc x − 1 ≡ 0 (mod 10), c'est-à-dire x ≡ 1 (mod 10) ✓. Piège classique : prendre la racine carrée d'une congruence (x = 11 donne (x − 1)² = 100 ≡ 0 sans que x ≡ 1 modulo 100), diviser le module, ou confondre x et x − 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit q un entier relatif. On veut montrer par récurrence que (1 + 10q)ⁿ ≡ 1 + 10nq (mod 100) pour tout n ∈ ℕ. Quelle est l'hérédité correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 + 10q)^(n+1) = (1 + 10q)ⁿ + (1 + 10q) ≡ 2 + 10(n + 1)q (mod 100)"
+        },
+        {
+          "id": "b",
+          "text": "(1 + 10q)^(n+1) ≡ (1 + 10nq)(1 + 10q) = 1 + 10(n + 1)q + 100nq² ≡ 1 + 10(n + 1)q (mod 100)"
+        },
+        {
+          "id": "c",
+          "text": "(1 + 10q)^(n+1) ≡ (1 + 10nq)(1 + 10q) = 1 + 100nq² ≡ 1 (mod 100), en supprimant les termes croisés"
+        },
+        {
+          "id": "d",
+          "text": "(1 + 10q)^(n+1) ≡ (1 + 10nq)(1 + 10q) = 1 + 10nq + 10q² ≡ 1 + 10(n + q²) (mod 100)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Initialisation : (1 + 10q)⁰ = 1 = 1 + 0. Hérédité : en multipliant l'hypothèse par (1 + 10q), (1 + 10q)^(n+1) ≡ (1 + 10nq)(1 + 10q) = 1 + 10q + 10nq + 100nq² = 1 + 10(n + 1)q + 100nq². Le dernier terme est un multiple de 100, donc (1 + 10q)^(n+1) ≡ 1 + 10(n + 1)q ✓. Piège classique : additionner au lieu de multiplier, supprimer les termes croisés 10q + 10nq (seul 100nq² disparaît modulo 100), ou mal développer le produit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit E l'ensemble des entiers x tels que, pour tout n ∈ ℕ, xⁿ ≡ 1 + n(x − 1) (mod 100). On sait que x ∈ E entraîne x ≡ 1 (mod 10), et que (1 + 10q)ⁿ ≡ 1 + 10nq (mod 100). Quel est l'ensemble E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E est l'ensemble des entiers x ≡ 1 (mod 100), c'est-à-dire x = 100q + 1"
+        },
+        {
+          "id": "b",
+          "text": "E est l'ensemble des entiers x ≡ 21 (mod 100), c'est-à-dire x = 100q + 21"
+        },
+        {
+          "id": "c",
+          "text": "E = {x ≡ 1 (mod 10)}, c'est-à-dire x = 10q + 1, avec q ∈ ℤ"
+        },
+        {
+          "id": "d",
+          "text": "E est l'ensemble des entiers x ≡ 1 (mod 5), c'est-à-dire x = 5q + 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si x ∈ E, alors x ≡ 1 (mod 10) : x = 1 + 10q. Réciproquement, si x = 1 + 10q, alors x − 1 = 10q et xⁿ = (1 + 10q)ⁿ ≡ 1 + 10nq = 1 + n(x − 1) (mod 100) pour tout n : x ∈ E. Donc E = {10q + 1, q ∈ ℤ} ✓. Contrôle : 21 = 10 × 2 + 1 ∈ E, comme annoncé, mais 6 ∉ E car 6² = 36 ≢ 1 + 2 × 5 = 11 (mod 100). Piège classique : ne retenir que x ≡ 1 (mod 100) (on perd 21, 11, 31…) ou croire que x ≡ 1 (mod 5) suffit : il faut le module 10, et x = 6 le réfute.",
+      "difficulty": 3
+    }
+  ]
+}

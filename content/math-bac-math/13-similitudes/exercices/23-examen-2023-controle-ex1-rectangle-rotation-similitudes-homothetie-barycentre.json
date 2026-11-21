@@ -1,0 +1,347 @@
+{
+  "title": "🏛️ Bac 2023 · session de contrôle · Exercice 1 ⭐⭐⭐⭐ : Rectangle, rotation, similitudes, homothétie et centre de gravité",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 23,
+  "questions": [
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. Quelle propriété établit qu'il existe un unique déplacement R tel que R(A) = B et R(C) = D ? <svg viewBox=\"0 0 300 180\"><path d=\"M26 64.3 L26 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115.7 L150 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150 115.7 L150 64.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150 64.3 L26 64.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115.7 L274 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 64.3 L150 115.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 115.7 L150 64.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"64.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"115.7\" r=\"3.6\"/><circle cx=\"150\" cy=\"115.7\" r=\"3.6\"/><circle cx=\"150\" cy=\"64.3\" r=\"3.6\"/><circle cx=\"88\" cy=\"90\" r=\"3.6\"/><circle cx=\"274\" cy=\"115.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"60.3\" text-anchor=\"middle\">A</text><text x=\"17\" y=\"129.7\" text-anchor=\"middle\">B</text><text x=\"150\" y=\"131.7\" text-anchor=\"middle\">C</text><text x=\"158\" y=\"58.3\" text-anchor=\"middle\">D</text><text x=\"88\" y=\"82\" text-anchor=\"middle\">I</text><text x=\"282\" y=\"129.7\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AC = BD : un déplacement envoie A sur B et C sur D si et seulement si AC = BD (diagonales d'un rectangle)"
+        },
+        {
+          "id": "b",
+          "text": "AB = CD : un déplacement envoie A sur B et C sur D si et seulement si AB = CD (côtés opposés d'un rectangle)"
+        },
+        {
+          "id": "c",
+          "text": "AB = BC : un déplacement envoie A sur B et C sur D si et seulement si AB = BC (côtés consécutifs)"
+        },
+        {
+          "id": "d",
+          "text": "(AC) ⊥ (BD) : un déplacement envoie A sur B et C sur D si et seulement si ces droites sont perpendiculaires"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Théorème d'existence et d'unicité : il existe un unique déplacement envoyant A sur B et C sur D si et seulement si A ≠ C, B ≠ D et AC = BD, car un déplacement conserve les distances. Dans un rectangle, les diagonales [AC] et [BD] ont même longueur. L'égalité AB = CD est vraie mais ne concerne pas le couple de points (A, C) et son image (B, D) ; un rectangle n'a pas AB = BC en général, et ses diagonales ne sont perpendiculaires que s'il est un carré. Vérification : AC = BD par symétrie du rectangle ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. On pose S′ = S_(CD)∘h, où h est une homothétie de rapport k > 0. Quel énoncé est vrai pour S′ ? <svg viewBox=\"0 0 300 180\"><path d=\"M26 64.3 L26 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115.7 L150 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150 115.7 L150 64.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150 64.3 L26 64.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115.7 L274 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 64.3 L150 115.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 115.7 L150 64.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"64.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"115.7\" r=\"3.6\"/><circle cx=\"150\" cy=\"115.7\" r=\"3.6\"/><circle cx=\"150\" cy=\"64.3\" r=\"3.6\"/><circle cx=\"88\" cy=\"90\" r=\"3.6\"/><circle cx=\"274\" cy=\"115.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"60.3\" text-anchor=\"middle\">A</text><text x=\"17\" y=\"129.7\" text-anchor=\"middle\">B</text><text x=\"150\" y=\"131.7\" text-anchor=\"middle\">C</text><text x=\"158\" y=\"58.3\" text-anchor=\"middle\">D</text><text x=\"88\" y=\"82\" text-anchor=\"middle\">I</text><text x=\"282\" y=\"129.7\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Similitude directe de rapport k"
+        },
+        {
+          "id": "b",
+          "text": "Similitude indirecte de rapport k"
+        },
+        {
+          "id": "c",
+          "text": "Similitude indirecte de rapport k²"
+        },
+        {
+          "id": "d",
+          "text": "Similitude directe de rapport 1/k"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "h est directe de rapport k et S_(CD) est une isométrie indirecte : S′ est indirecte et son rapport est k × 1 = k. Un rapport k² serait celui de S′∘S′ (et S′∘S′ est directe), un rapport 1/k celui de h⁻¹ ; et une composée avec une seule isométrie indirecte n'est pas directe. Vérification : (+1) × (−1) = −1 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. S est la similitude directe qui envoie A sur E et C sur F, où E et F sont les symétriques de I par rapport à B et à D. Quel est son rapport ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le rapport de S est EF/AC. Comme E = 2B − I et F = 2D − I (symétriques de I par rapport à B et D), EF⃗ = 2BD⃗ : EF = 2BD. Or BD = AC (diagonales du rectangle), donc EF = 2AC et k = 2. Le rapport 1/2 serait celui de l'inverse S⁻¹ ; le rapport 4 viendrait de EF = 4·BD en comptant deux fois le facteur 2. Vérification : IE = 2IB = 2IA ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. R est le déplacement tel que R(A) = B et R(C) = D. Quels sont son centre et son angle ? <svg viewBox=\"0 0 300 180\"><path d=\"M26 64.3 L26 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115.7 L150 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150 115.7 L150 64.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M150 64.3 L26 64.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 115.7 L274 115.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 64.3 L150 115.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 115.7 L150 64.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"26\" cy=\"64.3\" r=\"3.6\"/><circle cx=\"26\" cy=\"115.7\" r=\"3.6\"/><circle cx=\"150\" cy=\"115.7\" r=\"3.6\"/><circle cx=\"150\" cy=\"64.3\" r=\"3.6\"/><circle cx=\"88\" cy=\"90\" r=\"3.6\"/><circle cx=\"274\" cy=\"115.7\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"17\" y=\"60.3\" text-anchor=\"middle\">A</text><text x=\"17\" y=\"129.7\" text-anchor=\"middle\">B</text><text x=\"150\" y=\"131.7\" text-anchor=\"middle\">C</text><text x=\"158\" y=\"58.3\" text-anchor=\"middle\">D</text><text x=\"88\" y=\"82\" text-anchor=\"middle\">I</text><text x=\"282\" y=\"129.7\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centre I et angle π/8"
+        },
+        {
+          "id": "b",
+          "text": "Centre I et angle −π/4"
+        },
+        {
+          "id": "c",
+          "text": "Centre B et angle π/4"
+        },
+        {
+          "id": "d",
+          "text": "Centre I et angle π/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "I est le milieu de [AC] et de [BD] ; R conserve les milieux : R(I) est le milieu de [R(A)R(C)] = [BD], c'est-à-dire I. Donc R est une rotation de centre I. Son angle est (IA⃗, IB⃗). Dans le triangle IAB isocèle en I, ∠IAB = π/2 − π/8 = 3π/8 (angle DAC = π/8 et angle droit en A), donc ∠AIB = π − 2 × 3π/8 = π/4, et l'orientation est directe. L'angle π/8 est l'angle donné, non celui de R ; −π/4 inverserait le sens ; B n'est pas fixe. Vérification : π/4 + 3π/8 + 3π/8 = π ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D. Quel est l'angle de la similitude directe S qui envoie A sur E et C sur F ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/8"
+        },
+        {
+          "id": "b",
+          "text": "−π/4"
+        },
+        {
+          "id": "c",
+          "text": "π/2"
+        },
+        {
+          "id": "d",
+          "text": "π/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'angle de S est (AC⃗, EF⃗). Or EF⃗ = 2BD⃗, de même direction et même sens que BD⃗, donc (AC⃗, EF⃗) = (AC⃗, BD⃗). Le déplacement R envoie A sur B et C sur D, donc AC⃗ sur BD⃗ : son angle est (AC⃗, BD⃗) = π/4. Ainsi l'angle de S est π/4. L'angle π/8 est celui du rectangle (AC⃗, AD⃗), non celui des diagonales. Vérification : S et R ont le même angle, car EF⃗ et BD⃗ sont colinéaires de même sens ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D. S est la similitude directe de rapport 2 et d'angle π/4 qui envoie A sur E et C sur F. Quel argument établit que I est le centre de S ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "IE = 2·IA et (IA⃗, IE⃗) ≡ π/4 : les deux relations qui caractérisent le centre de S, de rapport 2 et d'angle π/4"
+        },
+        {
+          "id": "b",
+          "text": "IE = IA/2 et (IA⃗, IE⃗) ≡ π/4 : les deux relations qui caractérisent le centre de S, de rapport 1/2 et d'angle π/4"
+        },
+        {
+          "id": "c",
+          "text": "IE = 2·IA et (IA⃗, IE⃗) ≡ −π/4 : les deux relations qui caractérisent le centre de S, de rapport 2 et d'angle −π/4"
+        },
+        {
+          "id": "d",
+          "text": "I est le milieu de [AE] : le centre d'une similitude est le milieu d'un point et de son image"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour tout point M ≠ I, I est le centre de S si IS(M) = k·IM et (IM⃗, IS(M)⃗) ≡ θ avec k = 2 et θ = π/4. Avec M = A, S(A) = E : IE = 2IB = 2IA (E est le symétrique de I par rapport à B, et IB = IA car I est le milieu de [AC] et [BD], diagonales égales) ; et (IA⃗, IE⃗) = (IA⃗, IB⃗) = π/4. Le rapport 1/2 et l'angle −π/4 ne conviennent pas ; enfin le centre n'est pas le milieu d'un point et de son image (c'est vrai seulement pour une symétrie centrale). Vérification : IF = 2IC de même ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D. S est la similitude directe de centre I, de rapport 2 et d'angle π/4, R la rotation de centre I et d'angle π/4, et h = R∘S⁻¹ (S⁻¹ est la réciproque de S). Quelle est la nature de h ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une homothétie de centre B et de rapport 1/2"
+        },
+        {
+          "id": "b",
+          "text": "Une homothétie de centre I et de rapport 1/2"
+        },
+        {
+          "id": "c",
+          "text": "Une rotation de centre I et d'angle π/4"
+        },
+        {
+          "id": "d",
+          "text": "Une homothétie de centre I et de rapport 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "S⁻¹ est la similitude directe de centre I, de rapport 1/2 et d'angle −π/4 ; R est la rotation de centre I et d'angle π/4 (rapport 1). La composée R∘S⁻¹ est une similitude directe de centre I, de rapport 1 × 1/2 = 1/2 et d'angle π/4 − π/4 = 0 : c'est l'homothétie de centre I et de rapport 1/2. Les angles se compensent donc ce n'est pas une rotation ; le rapport 2 serait celui de S ; le centre commun est I, pas B. Vérification : h(E) = R(A) = B, et B est au milieu de [IE] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D ; h est l'homothétie de centre I et de rapport 1/2, S_(CD) la symétrie orthogonale d'axe (CD), et S′ = S_(CD)∘h. On a h(F) = D (car h = R∘S⁻¹, S(C) = F et R(C) = D). Quelle est l'image de F par S′ = S_(CD)∘h ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "K"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "D"
+        },
+        {
+          "id": "d",
+          "text": "C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "S′(F) = S_(CD)(h(F)) = S_(CD)(D). D est sur l'axe (CD), donc invariant : S′(F) = D. Le point K est S′(E) (S_(CD)(B)), non S′(F) ; B et C ne sont pas D. Vérification : h(F) = D car F est le symétrique de I par rapport à D, donc D est le milieu de [IF] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D ; h est l'homothétie de centre I et de rapport 1/2, S_(CD) la symétrie orthogonale d'axe (CD), et S′ = S_(CD)∘h. J est le milieu de [DK], G le symétrique de I par rapport à C. Quelle est l'image de I par S′ ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le milieu H de [CD]"
+        },
+        {
+          "id": "b",
+          "text": "Le symétrique de I par rapport à C"
+        },
+        {
+          "id": "c",
+          "text": "Le point J"
+        },
+        {
+          "id": "d",
+          "text": "Le point C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "h(I) = I (I est le centre de h), donc S′(I) = S_(CD)(I), le symétrique de I par rapport à (CD). Dans le rectangle, le projeté orthogonal de I sur (CD) est le milieu H de [CD], donc S_(CD)(I) = 2H − I. Or 2H − I = C + D − I et 2I = B + D (I est le milieu de [BD]), donc 2H − I = C + (D − B)/2 = (2C − B + D)/2 = (K + D)/2, puisque K = 2C − B : c'est le milieu J de [DK]. Le milieu H n'est que le projeté de I, non son symétrique ; le symétrique de I par rapport à C est G. Vérification : H est le milieu de [IJ] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D ; h est l'homothétie de centre I et de rapport 1/2, S_(CD) la symétrie orthogonale d'axe (CD), et S′ = S_(CD)∘h. G est le symétrique de I par rapport à C. Quelle est l'image de G par S′ ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point D"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le point K"
+        },
+        {
+          "id": "d",
+          "text": "Le point B"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C est le milieu de [IG], donc h(G) est le point de [IG] tel que h(G) = milieu de [IG] = C. Puis S_(CD)(C) = C car C est sur l'axe (CD). Ainsi S′(G) = C. Le point D est S′(F), K est S′(E). Vérification : h(G) = I + (G − I)/2 = C ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D ; h est l'homothétie de centre I et de rapport 1/2, S_(CD) la symétrie orthogonale d'axe (CD), et S′ = S_(CD)∘h. J est le milieu de [DK] et H le milieu de [CD]. Que vaut h(J) ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point C"
+        },
+        {
+          "id": "b",
+          "text": "Le point D"
+        },
+        {
+          "id": "c",
+          "text": "Le point H"
+        },
+        {
+          "id": "d",
+          "text": "Le point I"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "J est le symétrique de I par rapport à (CD) : [IJ] est perpendiculaire à (CD) et son milieu est le projeté orthogonal de I sur (CD), c'est-à-dire le milieu H de [CD] (I est le centre du rectangle). Or h(J) est le milieu de [IJ] (rapport 1/2, centre I). Donc h(J) = H. Les points C et D sont les extrémités de [CD], pas son milieu. Vérification : IH est perpendiculaire à (CD) en H ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D ; h est l'homothétie de centre I et de rapport 1/2, S_(CD) la symétrie orthogonale d'axe (CD), et S′ = S_(CD)∘h. On sait que h(J) = H, h(F) = D et h(G) = C, où H est le milieu de [CD]. Quel argument établit que J est le milieu de [FG] ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "h conserve les milieux : h(milieu de [FG]) = H = h(J), et h est bijective, donc J est ce milieu"
+        },
+        {
+          "id": "b",
+          "text": "h conserve les distances : FG = DC, donc J est le milieu de [FG] par égalité des longueurs, d'après h"
+        },
+        {
+          "id": "c",
+          "text": "h est une homothétie de rapport 1/2 : J est donc à égale distance de F et de G d'après ce rapport"
+        },
+        {
+          "id": "d",
+          "text": "h(F) = D et h(G) = C : J est le milieu de [DC], donc de [FG] par conservation de l'alignement"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "h est une homothétie, donc elle conserve le milieu : l'image du milieu M de [FG] est le milieu de [h(F)h(G)] = [DC], soit H. Comme h(J) = H = h(M) et que h est bijective, J = M, milieu de [FG]. Conserver les distances n'est pas la bonne propriété (h les divise par 2) ; « à égale distance » n'est pas une conséquence du rapport ; et J n'est pas le milieu de [DC] (c'est H). Vérification : h(J) = H avec H le milieu de [DC] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D ; h est l'homothétie de centre I et de rapport 1/2, S_(CD) la symétrie orthogonale d'axe (CD), et S′ = S_(CD)∘h. J est le milieu de [FG], S′(I) = J et Ω, centre de S′, est sur le segment [IJ] (on l'admet). Quel argument établit que Ω est le centre de gravité du triangle IFG ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "S′(Ω) = Ω et S′(I) = J : ΩJ = ΩI/2, donc Ω est au 1/3 de [IJ] à partir de I",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "S′(Ω) = Ω et S′(I) = J : ΩJ = 2ΩI, donc Ω est aux 2/3 de [IJ] à partir de J"
+        },
+        {
+          "id": "c",
+          "text": "S′(Ω) = Ω et S′(I) = J : ΩJ = ΩI, donc Ω est le milieu de [IJ]"
+        },
+        {
+          "id": "d",
+          "text": "S′(Ω) = Ω et S′(I) = J : ΩJ = ΩI/2, donc Ω est aux 2/3 de [IJ] à partir de I"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ω est fixe et S′ est de rapport 1/2 : de S′(I) = J on tire ΩJ = (1/2)ΩI avec Ω sur le segment [IJ] (donné). Alors IJ = IΩ + ΩJ = IΩ + IΩ/2 = (3/2)IΩ, d'où IΩ = (2/3)IJ : Ω est aux deux tiers de la médiane [IJ] issue de I, et J est le milieu de [FG] : c'est le centre de gravité de IFG. Placer Ω au tiers à partir de I inverserait les tiers ; ΩJ = ΩI mettrait Ω au milieu. Vérification : (2/3) + (1/3) = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un rectangle de centre I tel que (AC⃗, AD⃗) ≡ π/8 [2π] ; A est en haut à gauche, D en haut à droite, B en bas à gauche, C en bas à droite, et K est le symétrique de B par rapport à C. Le plan est orienté dans le sens direct. E et F sont les symétriques de I par rapport à B et D ; h est l'homothétie de centre I et de rapport 1/2, S_(CD) la symétrie orthogonale d'axe (CD), et S′ = S_(CD)∘h. Ω est le centre de S′ et le centre de gravité du triangle IFG, avec J le milieu de [FG] et Ω sur la médiane [IJ] entre I et J. Quel est l'axe de S′ ? <svg viewBox=\"0 0 330 200\"><path d=\"M81.6 77 L81.6 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L192.8 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 123 L192.8 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L81.6 77\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 123 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M192.8 77 L304 123\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M81.6 77 L192.8 123\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M81.6 123 L192.8 77\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M248.4 53.9 L248.4 146.1\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"81.6\" cy=\"77\" r=\"3.6\"/><circle cx=\"81.6\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"123\" r=\"3.6\"/><circle cx=\"192.8\" cy=\"77\" r=\"3.6\"/><circle cx=\"137.2\" cy=\"100\" r=\"3.6\"/><circle cx=\"304\" cy=\"123\" r=\"3.6\"/><circle cx=\"26\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"53.9\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"146.1\" r=\"3.6\"/><circle cx=\"248.4\" cy=\"100\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"72.6\" y=\"73\" text-anchor=\"middle\">A</text><text x=\"72.6\" y=\"137\" text-anchor=\"middle\">B</text><text x=\"190.8\" y=\"139\" text-anchor=\"middle\">C</text><text x=\"184.8\" y=\"71\" text-anchor=\"middle\">D</text><text x=\"133.2\" y=\"92\" text-anchor=\"middle\">I</text><text x=\"314\" y=\"137\" text-anchor=\"middle\">K</text><text x=\"22\" y=\"162.1\" text-anchor=\"middle\">E</text><text x=\"258.4\" y=\"49.9\" text-anchor=\"middle\">F</text><text x=\"258.4\" y=\"160.1\" text-anchor=\"middle\">G</text><text x=\"260.4\" y=\"104\" text-anchor=\"middle\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (IJ)"
+        },
+        {
+          "id": "b",
+          "text": "La parallèle à (BC) passant par Ω"
+        },
+        {
+          "id": "c",
+          "text": "La droite (CD)"
+        },
+        {
+          "id": "d",
+          "text": "La parallèle à (CD) passant par Ω"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'axe d'une similitude indirecte de centre Ω est la bissectrice de l'angle (ΩM⃗, ΩM′⃗). Avec M = I et M′ = J, et Ω entre I et J, cet angle est plat (π) et sa bissectrice est la perpendiculaire à (IJ) en Ω. Or (IJ) est parallèle à (BC) (I et J sont à la même hauteur) et (BC) ⊥ (CD) : l'axe est la parallèle à (CD) passant par Ω. La droite (IJ) est perpendiculaire à l'axe, non l'axe ; (CD) ne passe pas par Ω ; une parallèle à (BC) serait la direction de (IJ). Vérification : l'axe passe par Ω ✓.",
+      "difficulty": 3
+    }
+  ]
+}

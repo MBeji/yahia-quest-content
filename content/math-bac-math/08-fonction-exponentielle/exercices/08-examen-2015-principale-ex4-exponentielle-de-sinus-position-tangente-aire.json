@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2015 · session principale · Exercice 4 ⭐⭐⭐⭐ : exponentielle de sinus, tangente, position relative et encadrement d'une aire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; π] par f(x) = e^(sin x). Quelle est sa dérivée et quel est son tableau de variation sur [0 ; π] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = e^(sin x) ; f est strictement croissante sur [0 ; π]"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = cos x · e^(sin x) ; f croît sur [0 ; π/2] puis décroît sur [π/2 ; π]"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = −cos x · e^(sin x) ; f décroît sur [0 ; π/2] puis croît sur [π/2 ; π]"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = cos x · e^(sin x) ; f décroît sur [0 ; π/2] puis croît sur [π/2 ; π]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive e^u avec u(x) = sin x : (e^u)′ = u′ e^u, donc f′(x) = cos x · e^(sin x). Comme e^(sin x) > 0, le signe de f′ est celui de cos x : positif sur [0 ; π/2[, nul en π/2, négatif sur ]π/2 ; π]. Donc f croît de f(0) = 1 jusqu'à f(π/2) = e, puis décroît jusqu'à f(π) = 1 ✓. Piège classique : oublier le facteur intérieur u′ = cos x et ne garder que e^(sin x), toujours positif, ce qui fait croire à une fonction croissante sur tout l'intervalle ; une autre erreur lit le signe de f′ à l'envers.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(sin x) sur [0 ; π], de courbe C_f. Quelle égalité, vraie pour tout x de [0 ; π], établit que la droite d'équation x = π/2 est un axe de symétrie de C_f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(π/2 − x) = f(x)"
+        },
+        {
+          "id": "b",
+          "text": "f(π − x) = −f(x)"
+        },
+        {
+          "id": "c",
+          "text": "f(−x) = f(x)"
+        },
+        {
+          "id": "d",
+          "text": "f(π − x) = f(x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La droite x = a est axe de symétrie si f(2a − x) = f(x) pour tout x du domaine. Ici 2a = π, et sin(π − x) = sin x, donc f(π − x) = e^(sin(π − x)) = e^(sin x) = f(x) ✓. Piège classique : écrire a − x au lieu de 2a − x. L'égalité f(−x) = f(x) traduirait la symétrie par rapport à l'axe des ordonnées (parité), et f(π − x) = −f(x) est impossible puisque f > 0 : cette dernière caractérise un centre de symétrie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(sin x) sur [0 ; π], de courbe C_f. Quelle est l'équation de la tangente (T) à C_f au point d'abscisse 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x + 1"
+        },
+        {
+          "id": "b",
+          "text": "y = x"
+        },
+        {
+          "id": "c",
+          "text": "y = 1"
+        },
+        {
+          "id": "d",
+          "text": "y = −x + 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'équation est y = f′(0)(x − 0) + f(0). On a f(0) = e^(sin 0) = e^0 = 1 et f′(0) = cos 0 · e^(sin 0) = 1 × 1 = 1, donc y = x + 1 ✓. Piège classique : oublier l'ordonnée f(0) et écrire y = f′(0)x, ce qui donne une droite passant par l'origine, ou confondre avec la tangente horizontale du sommet en π/2, où f′ s'annule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = e^x √(1 − x²) − 1 sur [0 ; 1]. Son tableau de variation montre que g croît de g(0) = 0 jusqu'à g(x₀) > 0, avec x₀ = (√5 − 1)/2, puis décroît jusqu'à g(1) = −1. Que peut-on affirmer sur le nombre de solutions de g(x) = 0 dans ]0 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux, α₁ ∈ ]0 ; x₀[ et α₂ ∈ ]x₀ ; 1[ : chaque branche de monotonie contient un zéro, car g(0) = 0 et g(1) = −1 encadrent la valeur 0"
+        },
+        {
+          "id": "b",
+          "text": "Une seule, car g est continue et strictement monotone sur [0 ; 1], et passe de la valeur 0 à la valeur −1"
+        },
+        {
+          "id": "c",
+          "text": "Une seule, α ∈ ]x₀ ; 1[ : g reste strictement positive sur ]0 ; x₀], puis décroît strictement de g(x₀) > 0 à −1 sur [x₀ ; 1]"
+        },
+        {
+          "id": "d",
+          "text": "Une seule, α ∈ ]0 ; x₀[ : g croît de 0 à g(x₀) > 0 sur cette branche, et s'annule donc une fois avant le maximum"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur ]0 ; x₀], g est strictement croissante à partir de g(0) = 0 : elle y est strictement positive, donc ne s'annule pas (le zéro en 0 est exclu de l'intervalle ouvert). Sur [x₀ ; 1], g est continue et strictement décroissante, de g(x₀) > 0 à g(1) = −1 < 0 ; comme 0 ∈ ]−1 ; g(x₀)[, le théorème de la bijection donne une solution unique α, avec α ∈ ]x₀ ; 1[ ✓. Piège classique : compter le zéro de g(0) = 0 ou croire qu'une branche de monotonie contient forcément un zéro ; g n'est pas monotone sur [0 ; 1] puisqu'elle monte puis descend.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = e^x √(1 − x²) − 1 sur [0 ; 1], qui croît de g(0) = 0 jusqu'à son maximum g(x₀) > 0 puis décroît jusqu'à g(1) = −1. On note α l'unique solution de g(x) = 0 dans ]0 ; 1[, et α > x₀. Quel est le signe de g(x) sur [0 ; 1] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) ≤ 0 sur [0 ; α] et g(x) ≥ 0 sur [α ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "g(x) ≥ 0 sur [0 ; x₀] et g(x) ≤ 0 sur [x₀ ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "g(x) ≥ 0 sur [0 ; α] et g(x) ≤ 0 sur [α ; 1]"
+        },
+        {
+          "id": "d",
+          "text": "g(x) ≥ 0 sur tout [0 ; 1], car g(0) = 0 est son minimum"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [0 ; x₀], g croît à partir de g(0) = 0, donc g ≥ 0. Sur [x₀ ; α], g décroît mais reste supérieure à g(α) = 0, donc g ≥ 0. Au-delà de α, g continue de décroître jusqu'à −1 : g ≤ 0. Ainsi g ≥ 0 sur [0 ; α] et g ≤ 0 sur [α ; 1], avec égalité en 0 et en α ✓. Piège classique : prendre le changement de sens de variation (en x₀) pour le changement de signe, alors que le signe change à la racine α. Lire le signe à l'envers est l'autre erreur courante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit h(x) = e^(sin x) − (x + 1) sur [0 ; π/2] et g(x) = e^x √(1 − x²) − 1 sur [0 ; 1]. Quelle expression est égale à h′(x) pour tout x de [0 ; π/2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(sin x)"
+        },
+        {
+          "id": "b",
+          "text": "g(cos x)"
+        },
+        {
+          "id": "c",
+          "text": "cos x · g(sin x)"
+        },
+        {
+          "id": "d",
+          "text": "g(x) · cos x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a h′(x) = cos x · e^(sin x) − 1. Or sur [0 ; π/2], cos x ≥ 0, donc cos x = √(1 − sin²x). Ainsi h′(x) = e^(sin x) √(1 − sin²x) − 1, qui est g(t) avec t = sin x : h′(x) = g(sin x) ✓. Les autres expressions ne redonnent pas cos x · e^(sin x) − 1 : g(cos x) = e^(cos x) sin x − 1, et cos x · g(sin x) = cos x · (cos x · e^(sin x) − 1). Piège classique : écrire √(1 − sin²x) = sin x ou oublier que cos x ≥ 0 est ce qui autorise la simplification.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi existe-t-il un unique réel β de [0 ; π/2] tel que sin β = α, où α est un réel donné de ]0 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sin est continue sur [0 ; π/2] et prend les valeurs 0 et 1 ; β est unique parce que sin est dérivable"
+        },
+        {
+          "id": "b",
+          "text": "sin est continue et croissante au sens large sur [0 ; π/2], ce qui suffit pour l'existence et l'unicité"
+        },
+        {
+          "id": "c",
+          "text": "sin est continue sur ℝ et son image est [−1 ; 1], qui contient α : β existe et est unique dans ℝ"
+        },
+        {
+          "id": "d",
+          "text": "sin est continue et strictement croissante sur [0 ; π/2], et son image est [0 ; 1], qui contient α"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur [0 ; π/2], sin est continue et sa dérivée cos est strictement positive sur [0 ; π/2[ : sin est strictement croissante, donc réalise une bijection de [0 ; π/2] sur [sin 0 ; sin(π/2)] = [0 ; 1]. Comme α ∈ ]0 ; 1[, α a un unique antécédent β dans [0 ; π/2] ✓. Piège classique : invoquer la dérivabilité pour l'unicité (c'est la stricte monotonie qui la donne) ou travailler sur ℝ, où sin n'est pas injective : sin β = α a alors une infinité de solutions.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit β l'unique réel de [0 ; π/2] tel que sin β = α, avec α ∈ ]0 ; 1[. Quelle est l'image par la fonction sinus de chacun des intervalles [0 ; β] et [β ; π/2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sin([0 ; β]) = [0 ; β] et sin([β ; π/2]) = [β ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "sin([0 ; β]) = [0 ; α] et sin([β ; π/2]) = [α ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "sin([0 ; β]) = [α ; 1] et sin([β ; π/2]) = [0 ; α]"
+        },
+        {
+          "id": "d",
+          "text": "sin([0 ; β]) = [0 ; α] et sin([β ; π/2]) = [α ; π/2]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La fonction sin est continue et strictement croissante sur [0 ; π/2] : l'image d'un intervalle [u ; v] est [sin u ; sin v]. Ainsi sin([0 ; β]) = [sin 0 ; sin β] = [0 ; α] et sin([β ; π/2]) = [sin β ; sin(π/2)] = [α ; 1] ✓. Piège classique : confondre sin β (qui vaut α) avec β, ou écrire π/2 comme borne de l'image au lieu de sin(π/2) = 1, ou inverser l'ordre des deux intervalles images alors que sin est croissante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = e^(sin x) − (x + 1) sur [0 ; π/2], avec h′(x) = g(sin x). On sait que g > 0 sur [0 ; α[ et g < 0 sur ]α ; 1], et que sin β = α pour un β de ]0 ; π/2[. On a h(0) = 0 et h(π/2) = e − 1 − π/2. Quel est le tableau de variation de h ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h croît de 0 à h(β) sur [0 ; β], puis décroît de h(β) à e − π/2 sur [β ; π/2], valeur finale"
+        },
+        {
+          "id": "b",
+          "text": "h décroît de 0 à h(β) sur [0 ; β], puis croît de h(β) à e − 1 − π/2 sur [β ; π/2]"
+        },
+        {
+          "id": "c",
+          "text": "h croît de 0 à e − 1 − π/2 sur [0 ; π/2]"
+        },
+        {
+          "id": "d",
+          "text": "h croît de 0 à h(β) sur [0 ; β], puis décroît de h(β) à e − 1 − π/2 sur [β ; π/2]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur [0 ; β], sin x ∈ [0 ; α[ donc h′(x) = g(sin x) > 0 : h croît de h(0) = 0 à h(β). Sur ]β ; π/2], sin x ∈ ]α ; 1] donc h′(x) < 0 : h décroît de h(β) à h(π/2) = e^1 − (π/2 + 1) = e − 1 − π/2 ✓. Piège classique : oublier le « + 1 » en calculant h(π/2) (on retranche π/2 + 1, pas π/2), ou croire que h reste croissante parce que g est positive au début.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = e^(sin x) − (x + 1) sur [0 ; π/2] : h croît de h(0) = 0 jusqu'à h(β), puis décroît jusqu'à h(π/2) = e − 1 − π/2, qui est strictement positif. Quelle conclusion tire-t-on pour la position de C_f (courbe de f(x) = e^(sin x)) par rapport à sa tangente (T) : y = x + 1 sur [0 ; π/2] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h ≤ h(β) sur [0 ; π/2] : C_f est en dessous de (T)"
+        },
+        {
+          "id": "b",
+          "text": "h ≥ 0 sur [0 ; π/2] : C_f est au-dessus de (T), avec contact en x = 0"
+        },
+        {
+          "id": "c",
+          "text": "h ≥ 0 sur [0 ; β] seulement : C_f passe sous (T) après β"
+        },
+        {
+          "id": "d",
+          "text": "h > 0 sur ]0 ; π/2] : C_f est au-dessus de (T), sans contact avec elle"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur [0 ; β], h est croissante à partir de h(0) = 0, donc h ≥ 0. Sur [β ; π/2], h est décroissante, donc h(x) ≥ h(π/2) > 0. Par conséquent h(x) ≥ 0 sur [0 ; π/2], c'est-à-dire f(x) ≥ x + 1 : C_f est au-dessus de (T), et le contact a lieu en x = 0 puisque h(0) = 0 ✓. Piège classique : oublier de comparer à la valeur finale h(π/2) sur la branche décroissante, ou affirmer qu'il n'y a pas de contact alors que h(0) = 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour établir que sin x ≤ x pour tout réel x ≥ 0, quelle méthode est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étudier φ(x) = x − sin x : φ′(x) = 1 + cos x ≥ 0, donc φ est croissante, et φ(0) = 0 donne φ(x) ≥ 0"
+        },
+        {
+          "id": "b",
+          "text": "Étudier φ(x) = x − sin x : φ′(x) = 1 − cos x ≥ 0, donc φ est croissante, donc φ(x) ≥ 0"
+        },
+        {
+          "id": "c",
+          "text": "Étudier φ(x) = x − sin x : φ′(x) = 1 − cos x ≥ 0, donc φ est croissante, et φ(0) = 0 donne φ(x) ≥ 0"
+        },
+        {
+          "id": "d",
+          "text": "Étudier φ(x) = sin x − x : φ′(x) = cos x − 1 ≤ 0, donc φ est décroissante, donc φ(x) ≥ 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On pose φ(x) = x − sin x. Alors φ′(x) = 1 − cos x ≥ 0 car cos x ≤ 1 : φ est croissante sur [0 ; +∞[. Comme φ(0) = 0, on obtient φ(x) ≥ φ(0) = 0, soit sin x ≤ x ✓. Piège classique : conclure « croissante donc positive » sans la valeur en 0 (une fonction croissante peut être négative), ou dériver −sin x en +cos x. Avec φ(x) = sin x − x, on a φ′ ≤ 0 : φ est décroissante, et comme φ(0) = 0, on obtient φ(x) ≤ 0, soit l'inégalité inverse : un sens de variation mal exploité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que f(x) = e^(sin x) vérifie f(x) ≤ e^x sur [0 ; π/2]. En intégrant cette inégalité sur [0 ; 1], on majore ∫₀¹ f(x) dx par I = ∫₀¹ e^x dx. Quelle est la valeur de I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I = e − 1"
+        },
+        {
+          "id": "b",
+          "text": "I = e"
+        },
+        {
+          "id": "c",
+          "text": "I = e + 1"
+        },
+        {
+          "id": "d",
+          "text": "I = e − 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de e^x est e^x, donc I = [e^x] entre 0 et 1 = e^1 − e^0 = e − 1 ✓. Par croissance de l'intégrale, f(x) ≤ e^x donne ∫₀¹ f(x) dx ≤ e − 1. Piège classique : oublier de retrancher la primitive en 0 (on obtient e), additionner les deux bornes (e + 1) ou retrancher deux fois 1 (e − 2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout x de [1 ; π/2], on a f(x) ≤ e, où f(x) = e^(sin x) atteint son maximum e en π/2. En intégrant cette majoration sur [1 ; π/2], on majore ∫₁^(π/2) f(x) dx par J = ∫₁^(π/2) e dx. Quelle est la valeur de J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J = e(π/2 − 1)"
+        },
+        {
+          "id": "b",
+          "text": "J = e · π/2"
+        },
+        {
+          "id": "c",
+          "text": "J = e(π/2 + 1)"
+        },
+        {
+          "id": "d",
+          "text": "J = e/(π/2 − 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'intégrale d'une constante c sur [a ; b] vaut c(b − a) : J = e(π/2 − 1) ✓. On en déduit ∫₁^(π/2) f(x) dx ≤ e(π/2 − 1). Piège classique : prendre la longueur π/2 de l'intervalle [0 ; π/2] au lieu de celle de [1 ; π/2], additionner les bornes ou diviser par la longueur au lieu de la multiplier.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A l'aire du domaine limité par C_f (f(x) = e^(sin x)), l'axe des abscisses et les droites x = 0 et x = π. La symétrie par rapport à x = π/2 donne A = 2∫₀^(π/2) f(x) dx. On dispose de f(x) ≥ x + 1 sur [0 ; π/2], de ∫₀¹ f ≤ e − 1 et de ∫₁^(π/2) f ≤ e(π/2 − 1). Quel encadrement de A en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "π²/8 + π/2 ≤ A ≤ eπ/2 − 1"
+        },
+        {
+          "id": "b",
+          "text": "π²/4 + π ≤ A ≤ eπ/2 − 1"
+        },
+        {
+          "id": "c",
+          "text": "π²/4 + π ≤ A ≤ eπ − 2"
+        },
+        {
+          "id": "d",
+          "text": "π²/8 + π/2 ≤ A ≤ eπ − 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Minorant : ∫₀^(π/2) (x + 1) dx = [x²/2 + x] entre 0 et π/2 = π²/8 + π/2, donc A ≥ 2(π²/8 + π/2) = π²/4 + π. Majorant : ∫₀^(π/2) f ≤ (e − 1) + e(π/2 − 1) = eπ/2 − 1 (la relation de Chasles recolle [0 ; 1] et [1 ; π/2]), donc A ≤ 2(eπ/2 − 1) = eπ − 2 ✓. Piège classique : oublier le facteur 2 de la symétrie, qui fait perdre la moitié du domaine, et ne doubler qu'une des deux bornes.",
+      "difficulty": 3
+    }
+  ]
+}

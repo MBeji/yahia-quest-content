@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 4 ⭐⭐⭐⭐ : intégrales de e^(−√t), intégration par parties et aire entre deux courbes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 17,
+  "questions": [
+    {
+      "prompt": "Soit F la fonction définie sur [0 ; +∞[ par F(x) = ∫ de 1 à x de e^(−√t) dt. Quelle est sa dérivée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F′(x) = e^(−√x)"
+        },
+        {
+          "id": "b",
+          "text": "F′(x) = −e^(−√x)/(2√x)"
+        },
+        {
+          "id": "c",
+          "text": "F′(x) = e^(−√x) − e^(−1)"
+        },
+        {
+          "id": "d",
+          "text": "F′(x) = e^(−√x)/(2√x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La fonction t ↦ e^(−√t) est continue sur [0 ; +∞[ : elle admet donc des primitives, et F, qui est la primitive de cette fonction s'annulant en 1, est dérivable sur [0 ; +∞[ avec F′(x) = e^(−√x) ✓. Piège classique : dériver l'intégrande e^(−√t) au lieu de la lire comme le résultat (la dérivée d'une intégrale de borne variable est l'intégrande), ou retrancher la valeur à la borne fixe, qui disparaît à la dérivation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit F la fonction définie sur [0 ; +∞[ par F(x) = ∫ de 1 à x de e^(−√t) dt et H la fonction définie sur [0 ; +∞[ par H(x) = 4/e − 2(1 + √x)e^(−√x). Quelle justification établit que F(x) = H(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H′(x) = e^(−√x) = F′(x) sur ]0 ; +∞[, ce qui suffit à conclure F = H"
+        },
+        {
+          "id": "b",
+          "text": "H(1) = 0 = F(1), ce qui suffit à conclure que F = H sur ]0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "H′(x) = e^(−√x) = F′(x) sur ]0 ; +∞[, et H(1) = 4/e − 4/e = 0 = F(1)"
+        },
+        {
+          "id": "d",
+          "text": "H′(x) = e^(−√x)/(2√x) = F′(x) sur ]0 ; +∞[, et H(1) = 0 = F(1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive H : (1 + √x)e^(−√x) a pour dérivée (1/(2√x))e^(−√x) − (1 + √x)(1/(2√x))e^(−√x) = −(1/2)e^(−√x), donc H′(x) = −2 × (−(1/2)e^(−√x)) = e^(−√x) = F′(x). Deux fonctions de même dérivée sur l'intervalle ]0 ; +∞[ diffèrent d'une constante, fixée par H(1) = 4/e − 2(1 + 1)e^(−1) = 0 = F(1) ✓. Piège classique : conclure avec les seules dérivées (la constante reste inconnue), ou seulement avec la valeur en un point, ou se tromper dans la dérivée de H (le facteur 1/(2√x) se simplifie).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit F la fonction définie sur [0 ; +∞[ par F(x) = ∫ de 1 à x de e^(−√t) dt et H la fonction définie sur [0 ; +∞[ par H(x) = 4/e − 2(1 + √x)e^(−√x). On sait que F = H sur ]0 ; +∞[. Que vaut F(0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(0) = H(0) = 2 − 4/e"
+        },
+        {
+          "id": "b",
+          "text": "F(0) = H(0) = 4/e − 2"
+        },
+        {
+          "id": "c",
+          "text": "F(0) = H(0) = 4/e"
+        },
+        {
+          "id": "d",
+          "text": "F(0) = H(0) = 4/e − 4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "F et H sont continues en 0 (F est une intégrale à borne variable d'une fonction continue, H est composée de fonctions continues) et égales sur ]0 ; +∞[ : en passant à la limite quand x → 0⁺, F(0) = H(0) ✓. Alors H(0) = 4/e − 2(1 + 0)e^0 = 4/e − 2. Piège classique : oublier le terme −2(1 + √0)e^0 = −2, ou inverser le signe, ce qui revient à calculer ∫ de 0 à 1 de e^(−√t) dt = −F(0) au lieu de F(0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit G la fonction définie sur [0 ; +∞[ par G(x) = ∫ de 1 à x de √t e^(−√t) dt, et F(x) = ∫ de 1 à x de e^(−√t) dt. En écrivant √t = t/√t, on intègre par parties avec u(t) = t et v′(t) = e^(−√t)/√t. Quelle est l'expression de G(x) pour x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(x) = 2/e + 2x e^(−√x) − 2F(x)"
+        },
+        {
+          "id": "b",
+          "text": "G(x) = −2x e^(−√x) + 2F(x)"
+        },
+        {
+          "id": "c",
+          "text": "G(x) = 2/e − 2x e^(−√x) − 2F(x)"
+        },
+        {
+          "id": "d",
+          "text": "G(x) = 2/e − 2x e^(−√x) + 2F(x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une primitive de v′(t) = e^(−√t)/√t est v(t) = −2e^(−√t). Alors G(x) = [u v] de 1 à x − ∫ de 1 à x de u′ v = [−2t e^(−√t)] de 1 à x + 2∫ de 1 à x de e^(−√t) dt = (−2x e^(−√x) + 2e^(−1)) + 2F(x) = 2/e − 2x e^(−√x) + 2F(x) ✓. Piège classique : oublier la contribution de la borne basse (+2/e), ou se tromper de signe en retranchant ∫ u′v (le signe moins de v s'ajoute à celui de l'intégration par parties).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit G(x) = ∫ de 1 à x de √t e^(−√t) dt, avec G(x) = 2/e − 2x e^(−√x) + 2F(x) pour x > 0, et F(0) = 4/e − 2. Que vaut G(0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(0) = 10/e − 2"
+        },
+        {
+          "id": "b",
+          "text": "G(0) = 10/e"
+        },
+        {
+          "id": "c",
+          "text": "G(0) = 10/e − 4"
+        },
+        {
+          "id": "d",
+          "text": "G(0) = 4 − 6/e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "G est continue en 0 et, quand x → 0⁺, x e^(−√x) → 0, tandis que F(x) → F(0). Donc G(0) = 2/e + 2F(0) = 2/e + 2(4/e − 2) = 2/e + 8/e − 4 = 10/e − 4 ✓. Piège classique : oublier de doubler le −2 de F(0) (on trouve 10/e − 2), oublier ce terme (10/e), ou changer le signe de 2F(0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit 𝒞_f et 𝒞_g les courbes de f(x) = e^(−√x) et g(x) = √x e^(−√x) sur [0 ; +∞[, avec 𝒞_g sous 𝒞_f sur [0 ; 1[, F(x) = ∫ de 1 à x de f, G(x) = ∫ de 1 à x de g, F(0) = 4/e − 2 et G(0) = 10/e − 4. Quelle est l'aire 𝒜₁ du domaine limité par 𝒞_f, 𝒞_g et les droites x = 0 et x = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜₁ = 6/e − 2"
+        },
+        {
+          "id": "b",
+          "text": "𝒜₁ = 2 − 6/e"
+        },
+        {
+          "id": "c",
+          "text": "𝒜₁ = 14/e − 6"
+        },
+        {
+          "id": "d",
+          "text": "𝒜₁ = 2 − 4/e"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur [0 ; 1], f ≥ g, donc 𝒜₁ = ∫ de 0 à 1 de (f − g) dx = (F(1) − F(0)) − (G(1) − G(0)). Comme F(1) = G(1) = 0, 𝒜₁ = −F(0) + G(0) = −(4/e − 2) + (10/e − 4) = 6/e − 2 ✓. Piège classique : inverser f et g (on trouve une aire négative), additionner au lieu de soustraire, ou oublier la courbe 𝒞_g : 2 − 4/e est l'aire sous 𝒞_f seule.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour λ > 1, 𝒞_g est au-dessus de 𝒞_f sur ]1 ; λ] et 𝒞_f est au-dessus de 𝒞_g sur [0 ; 1[. On note 𝒜_λ l'aire du domaine limité par 𝒞_f, 𝒞_g et les droites x = 0 et x = λ, et 𝒜₁ l'aire correspondant à λ = 1. Quelle est l'expression de 𝒜_λ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜_λ = 𝒜₁ + F(λ) − G(λ)"
+        },
+        {
+          "id": "b",
+          "text": "𝒜_λ = 𝒜₁ + G(λ) − F(λ)"
+        },
+        {
+          "id": "c",
+          "text": "𝒜_λ = G(λ) − F(λ)"
+        },
+        {
+          "id": "d",
+          "text": "𝒜_λ = 𝒜₁ + G(λ) + F(λ)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On découpe en 1, point où les courbes se croisent : 𝒜_λ = 𝒜₁ + ∫ de 1 à λ de (g − f) dx, car g ≥ f sur [1 ; λ]. Comme G(1) = F(1) = 0, ∫ de 1 à λ de (g − f) = G(λ) − F(λ), d'où 𝒜_λ = 𝒜₁ + G(λ) − F(λ) ✓. Piège classique : prendre f − g sur [1 ; λ] (l'aire doit être positive), oublier 𝒜₁ ou additionner F et G.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour λ > 1, 𝒜_λ = 𝒜₁ + G(λ) − F(λ), avec 𝒜₁ = 6/e − 2, G(λ) = 2/e − 2λe^(−√λ) + 2F(λ), F = H et H(x) tend vers 4/e quand x tend vers +∞. Quelle est la limite de 𝒜_λ quand λ tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8/e − 2"
+        },
+        {
+          "id": "b",
+          "text": "16/e − 2"
+        },
+        {
+          "id": "c",
+          "text": "6/e − 2"
+        },
+        {
+          "id": "d",
+          "text": "12/e − 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a G(λ) − F(λ) = 2/e − 2λe^(−√λ) + F(λ). Quand λ → +∞, λe^(−√λ) = t²e^(−t) avec t = √λ → +∞ tend vers 0 par croissances comparées, et F(λ) = H(λ) → 4/e. Donc G(λ) − F(λ) → 2/e + 4/e = 6/e, et 𝒜_λ → 6/e − 2 + 6/e = 12/e − 2 ✓. Piège classique : oublier la limite de F (on trouve 8/e − 2), garder seulement G (16/e − 2), ou laisser 𝒜₁ comme limite en oubliant que l'aire continue de croître au-delà de 1.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 1 ⭐⭐⭐⭐ : rectangle de centre I, déplacement et antidéplacement envoyant deux points sur deux points, symétrie glissante et nombres complexes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. Quelle justification établit qu'il existe un unique déplacement f envoyant O sur I et D sur B ?\n<svg viewBox=\"0 0 220 125\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\"><polygon points=\"30.0,100.0 168.6,100.0 168.6,20.0 30.0,20.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"30.0\" y1=\"100.0\" x2=\"168.6\" y2=\"20.0\" stroke=\"#6b7280\" stroke-dasharray=\"3 3\"/><line x1=\"168.6\" y1=\"100.0\" x2=\"30.0\" y2=\"20.0\" stroke=\"#6b7280\" stroke-dasharray=\"3 3\"/><circle cx=\"30.0\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"18.0\" y=\"112.0\">O</text><circle cx=\"168.6\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"172.6\" y=\"113.0\">A</text><circle cx=\"168.6\" cy=\"20.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"172.6\" y=\"15.0\">B</text><circle cx=\"30.0\" cy=\"20.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"18.0\" y=\"16.0\">C</text><circle cx=\"110.0\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"107.0\" y=\"114.0\">D</text><circle cx=\"99.3\" cy=\"60.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"104.3\" y=\"72.0\">I</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "O ≠ D et OD = IB = 1 : I est le milieu de [OB] avec OB = 2"
+        },
+        {
+          "id": "b",
+          "text": "O ≠ D et OD = OB, car OABC est un rectangle et que ses diagonales sont égales"
+        },
+        {
+          "id": "c",
+          "text": "O ≠ D et O, D, I, B sont alignés"
+        },
+        {
+          "id": "d",
+          "text": "O ≠ D et OA = CB, car OABC est un rectangle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un déplacement envoyant A sur A′ et B sur B′ (deux points distincts) existe et est unique si et seulement si AB = A′B′. Ici il faut OD = IB. OD = OC = 1. Le rectangle a OB = √(OA² + OC²) avec tan(π/6) = OC/OA, donc OA = √3 et OB = 2 ; I milieu de [OB] donne IB = 1 ✓. Ainsi OD = IB. Piège classique : comparer OD à OB (qui vaut 2), à un côté opposé du rectangle, ou invoquer un alignement inexistant (D est sur (OA), I n'est pas sur (OA)).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. Soit f l'unique déplacement qui envoie O sur I et D sur B. Quelle justification établit que f est une rotation d'angle π/6 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IB et OB ont même direction, donc (OD, IB) ≡ −π/6 : f est une rotation d'angle −π/6"
+        },
+        {
+          "id": "b",
+          "text": "IB et OB ont même direction, donc (OD, IB) ≡ (OA, OB) ≡ π/6 ≠ 0 : f est une rotation d'angle π/6"
+        },
+        {
+          "id": "c",
+          "text": "(OD, IB) ≡ π/3, car I est le milieu de [OB] : f est une rotation d'angle π/3"
+        },
+        {
+          "id": "d",
+          "text": "OD = IB, donc (OD, IB) ≡ 0 : f est une translation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'angle d'un déplacement qui envoie O sur I et D sur B est (OD, IB). I est le milieu de [OB] : le vecteur IB a la direction et le sens de OB, et OD a la direction et le sens de OA. Donc (OD, IB) ≡ (OA, OB) ≡ π/6. Cet angle est non nul : f n'est pas une translation, c'est une rotation d'angle π/6 ✓. Piège classique : oublier que IB est colinéaire à OB, se tromper de signe d'angle, ou croire que l'égalité des longueurs OD = IB implique une translation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. f est la rotation d'angle π/6 qui envoie O sur I et D sur B. Comment construit-on son centre Ω ?\n<svg viewBox=\"0 0 220 125\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"11\"><polygon points=\"30.0,100.0 168.6,100.0 168.6,20.0 30.0,20.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><line x1=\"30.0\" y1=\"100.0\" x2=\"168.6\" y2=\"20.0\" stroke=\"#6b7280\" stroke-dasharray=\"3 3\"/><line x1=\"168.6\" y1=\"100.0\" x2=\"30.0\" y2=\"20.0\" stroke=\"#6b7280\" stroke-dasharray=\"3 3\"/><circle cx=\"30.0\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"18.0\" y=\"112.0\">O</text><circle cx=\"168.6\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"172.6\" y=\"113.0\">A</text><circle cx=\"168.6\" cy=\"20.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"172.6\" y=\"15.0\">B</text><circle cx=\"30.0\" cy=\"20.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"18.0\" y=\"16.0\">C</text><circle cx=\"110.0\" cy=\"100.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"107.0\" y=\"114.0\">D</text><circle cx=\"99.3\" cy=\"60.0\" r=\"2.6\" fill=\"#0f172a\"/><text x=\"104.3\" y=\"72.0\">I</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ω est l'intersection des droites (OD) et (IB), c'est-à-dire des droites qui portent les segments"
+        },
+        {
+          "id": "b",
+          "text": "Ω est l'intersection des droites (OI) et (DB)"
+        },
+        {
+          "id": "c",
+          "text": "Ω est l'intersection des médiatrices de [OI] et de [DB] : ΩO = ΩI et ΩD = ΩB"
+        },
+        {
+          "id": "d",
+          "text": "Ω est le milieu du segment [OB]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le centre d'une rotation est équidistant d'un point et de son image : ΩO = ΩI et ΩD = ΩB. Il est donc à l'intersection des médiatrices de [OI] et de [DB] (non parallèles, car f n'est pas une translation) ✓. Piège classique : couper les droites qui portent les segments (le centre n'est pas sur ces droites), ou prendre le milieu de [OB], qui est I, et non le centre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. Soit g l'antidéplacement qui envoie O sur I et D sur B ; c'est une symétrie glissante. Où se trouve son axe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La médiatrice de [OI]"
+        },
+        {
+          "id": "b",
+          "text": "La médiatrice de [DB]"
+        },
+        {
+          "id": "c",
+          "text": "La droite (OB)"
+        },
+        {
+          "id": "d",
+          "text": "La droite (JK), où J et K sont les milieux de [OI] et [DB]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour une symétrie glissante, le milieu de [M g(M)] appartient à l'axe quel que soit M. Avec M = O et M = D, le milieu J de [OI] et le milieu K de [DB] sont sur l'axe : c'est la droite (JK) ✓. Ce n'est pas une médiatrice : si l'axe était la médiatrice de [OI] (g(O) = I) et aussi celle de [DB] (g(D) = B), ces deux droites devraient être confondues, or elles ne sont pas parallèles ; g serait alors une symétrie orthogonale, ce qu'elle n'est pas. Piège classique : prendre la médiatrice d'un seul des deux segments, ou la droite (OB), qui porte O, I et B mais n'est pas l'axe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. g est l'antidéplacement qui envoie O sur I et D sur B (symétrie glissante d'axe (JK)), J et K étant les milieux de [OI] et [BD]. Les droites (JK) et (OA) se coupent en E. Comment montre-t-on que g(E) = J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E ∈ (OD) donc g(E) ∈ (IB) = (OB) ; E ∈ (JK), axe, donc g(E) ∈ (JK) : g(E) est le point commun de (OB) et (JK), soit J"
+        },
+        {
+          "id": "b",
+          "text": "E est sur l'axe (JK), donc g(E) = E"
+        },
+        {
+          "id": "c",
+          "text": "E ∈ (OD), donc g(E) ∈ (IB) ; g(E) = I, car I est l'image de O"
+        },
+        {
+          "id": "d",
+          "text": "E ∈ (OD), donc g(E) ∈ (IB) = (OB) ; g(E) est le point commun de (OB) et de (DB), c'est-à-dire K, puisque K ∈ (DB) est le milieu de [DB]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E est sur (OA) = (OD), dont l'image par g est la droite (IB), c'est-à-dire (OB). E est aussi sur l'axe (JK), donc g(E) est sur (JK) (une symétrie glissante transforme son axe en lui-même). Les droites (OB) et (JK) se coupent en J (J est le milieu de [OI] ⊂ (OB)) ; elles sont distinctes, donc g(E) = J ✓. Piège classique : croire que tout point de l'axe est fixe (seule la symétrie orthogonale fixe son axe ; la symétrie glissante le translate), confondre g(E) avec g(O) = I, ou intersecter avec la droite (DB).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. g est la symétrie glissante d'axe (JK) qui envoie O sur I, avec J et K milieux de [OI] et [DB], E ∈ (JK) ∩ (OA) et g(E) = J ; on écrit g = S_(JK)∘t_u avec u vecteur directeur de (JK). Dans le repère orthonormé direct (O, OD, OC), E a pour affixe −1/2 et J a pour affixe e^(iπ/6)/2. Quelle est la norme de u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sin(π/12)"
+        },
+        {
+          "id": "b",
+          "text": "cos(π/12)"
+        },
+        {
+          "id": "c",
+          "text": "cos(π/6)"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E est sur l'axe, donc S_(JK)(E) = E et g(E) = E + u. Or g(E) = J, donc u = EJ⃗. Son affixe est z_J − z_E = e^(iπ/6)/2 + 1/2 = (1/2)(1 + e^(iπ/6)) = cos(π/12) e^(iπ/12), car 1 + e^(iθ) = 2cos(θ/2)e^(iθ/2). La norme de u vaut donc cos(π/12) ✓ (≈ 0,97), et u est bien porté par (JK) (argument π/12). Piège classique : factoriser avec un sinus (sin(π/12)), ne pas diviser l'angle par 2 (cos(π/6)), ou prendre la norme du vecteur OI, qui vaut 1 mais n'est pas porté par l'axe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. f est la rotation d'angle π/6 qui envoie O sur I et D sur B ; g est l'antidéplacement qui envoie O sur I et D sur B. Quelle justification donne f⁻¹∘g = S_(OA), puis f(E) = J pour E ∈ (OA) avec g(E) = J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹∘g est un déplacement qui fixe O et D : c'est l'identité, donc f = g et f(E) = g(E) = J, directement par unicité"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹∘g est un antidéplacement qui fixe O et D, donc c'est S_(JK), l'axe de g ; alors f(E) = g(E) = J"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹∘g est un antidéplacement qui fixe O et D : c'est S_(OA) ; E ∈ (OA) donc f(E) = f(S_(OA)(E)) = g(E) = J"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹∘g = S_(OA) ; mais f(E) = I, car I est l'image de O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f⁻¹∘g envoie O sur f⁻¹(I) = O et D sur f⁻¹(B) = D : il fixe O et D. C'est un antidéplacement (déplacement⁻¹ ∘ antidéplacement), donc la symétrie orthogonale d'axe (OD) = (OA). Donc g = f∘S_(OA). Pour E ∈ (OA), S_(OA)(E) = E et g(E) = f(E) : f(E) = J ✓. Piège classique : conclure f = g alors qu'un déplacement et un antidéplacement ne sont jamais égaux, prendre (JK) pour l'axe (les points fixes O et D sont sur (OA)), ou confondre f(E) avec f(O) = I.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. f est la rotation de centre Ω qui envoie O sur I et E sur J (f(E) = J), avec J et K milieux de [OI] et [BD], E = (JK) ∩ (OA), et OI = 1. Comment établit-on que (OΩ) ⟂ (JK) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OE = IJ = 1 ; donc (OΩ) est la médiatrice de [EJ], perpendiculaire à (JK)"
+        },
+        {
+          "id": "b",
+          "text": "OE = OJ ; donc (OΩ) est parallèle à (EJ)"
+        },
+        {
+          "id": "c",
+          "text": "OE = OJ, mais Ω n'est pas équidistant de E et de J : on ne peut rien conclure"
+        },
+        {
+          "id": "d",
+          "text": "OE = IJ = 1/2 = OJ ; Ω équidistant de E et J (f(E) = J), comme O : (OΩ) est la médiatrice de [EJ], donc ⟂ (JK)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f est une isométrie avec f(O) = I et f(E) = J : OE = IJ. Comme J est le milieu de [OI] avec OI = 1, IJ = 1/2 = OJ : OE = OJ. O est donc équidistant de E et de J, et Ω aussi (ΩE = ΩJ car J = f(E)) : la droite (OΩ) est la médiatrice de [EJ]. Comme E, J ∈ (JK), (OΩ) ⟂ (JK) ✓. Piège classique : oublier que J est le milieu de [OI] (IJ = 1/2 et non 1), confondre médiatrice (perpendiculaire) et parallèle, ou négliger que le centre d'une rotation est équidistant d'un point et de son image.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le repère orthonormé direct (O, OD, OC), on note z_I, z_J, z_K les affixes de I, J, K, avec z_I = e^(iπ/6), J milieu de [OI], K milieu de [BD], B d'affixe 2e^(iπ/6) et D d'affixe 1. Que vaut z_K − z_J, et quelle mesure de (OD, JK) en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_K − z_J = (1/2)(1 + e^(iπ/6)) = cos(π/12) e^(iπ/12), donc (OD, JK) ≡ π/12"
+        },
+        {
+          "id": "b",
+          "text": "z_K − z_J = (1/2)(1 + e^(iπ/6)) = sin(π/12) e^(iπ/12), donc (OD, JK) ≡ π/12"
+        },
+        {
+          "id": "c",
+          "text": "z_K − z_J = (1/2)(1 + e^(iπ/6)) = cos(π/12) e^(iπ/6), donc (OD, JK) ≡ π/6"
+        },
+        {
+          "id": "d",
+          "text": "z_K − z_J = (1/2)(1 − e^(iπ/6)) = −i sin(π/12) e^(iπ/12), donc (OD, JK) ≡ −5π/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "z_J = e^(iπ/6)/2 et z_K = (2e^(iπ/6) + 1)/2 = e^(iπ/6) + 1/2. Donc z_K − z_J = e^(iπ/6)/2 + 1/2 = (1/2)(1 + e^(iπ/6)). Avec 1 + e^(iθ) = 2cos(θ/2)e^(iθ/2) et θ = π/6, on obtient cos(π/12) e^(iπ/12). Comme cos(π/12) > 0, l'argument de z_K − z_J est π/12 : (OD, JK) ≡ π/12 ✓. Piège classique : factoriser avec un sinus, garder l'argument π/6 au lieu de la moitié π/12, ou utiliser 1 − e^(iθ) au lieu de 1 + e^(iθ).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté dans le sens direct. OABC est un rectangle de centre I tel que OC = 1 et (OA, OB) ≡ π/6 [2π] ; D est le point du segment [OA] tel que OD = OC. J et K sont les milieux de [OI] et [DB], et E est le point d'intersection de (JK) et (OA), avec (OD, JK) ≡ π/12. Soit M ∈ (JK) et N = S_(OA)(M). Quelle rotation r de centre E envoie M sur N ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "r de centre E et d'angle π/6 : (EM, EN) ≡ 2 × π/12"
+        },
+        {
+          "id": "b",
+          "text": "r de centre E et d'angle −π/6 : EM = EN et (EM, EN) ≡ 2 × (−π/12) = −π/6"
+        },
+        {
+          "id": "c",
+          "text": "r de centre E et d'angle −π/12 : (EM, EN) ≡ −π/12"
+        },
+        {
+          "id": "d",
+          "text": "r de centre E et d'angle −5π/6 : (EM, EN) ≡ −π + π/6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "E est sur l'axe (OA) de S, donc EM = EN (la symétrie conserve les distances et fixe E). La droite (EM) = (JK) fait l'angle π/12 avec (OA) : l'image de la direction d'angle π/12 par la symétrie est la direction d'angle −π/12. L'angle (EM, EN) est donc −π/12 − π/12 = −π/6 (double de l'écart à l'axe, pris dans le sens indirect). Ainsi r(M) = N pour la rotation de centre E et d'angle −π/6 ✓. Piège classique : oublier le doublement de l'écart à l'axe (on trouve −π/12), se tromper de signe (on trouve π/6), ou compléter par π (on trouve −5π/6).",
+      "difficulty": 3
+    }
+  ]
+}

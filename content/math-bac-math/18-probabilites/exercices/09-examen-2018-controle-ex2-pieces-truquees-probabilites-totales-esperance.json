@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 2 ⭐⭐⭐ : probabilités totales, lancers successifs, loi et espérance, lecture graphique",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Une urne contient six pièces de monnaie : quatre sont équilibrées, les deux autres sont truquées de sorte que la probabilité d'obtenir « FACE » vaut 2/3. On tire une pièce au hasard et on la lance une fois. On note E l'événement « la pièce tirée est équilibrée » et F₁ « on obtient FACE ». Quelles sont les valeurs de p(E), p(F₁/E) et p(F₁/Ē) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(E) = 2/3 ; p(F₁/E) = 1/2 ; p(F₁/Ē) = 2/3"
+        },
+        {
+          "id": "b",
+          "text": "p(E) = 1/3 ; p(F₁/E) = 1/2 ; p(F₁/Ē) = 2/3"
+        },
+        {
+          "id": "c",
+          "text": "p(E) = 2/3 ; p(F₁/E) = 2/3 ; p(F₁/Ē) = 1/2"
+        },
+        {
+          "id": "d",
+          "text": "p(E) = 1/3 ; p(F₁/E) = 2/3 ; p(F₁/Ē) = 1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sur les six pièces, quatre sont équilibrées : p(E) = 4/6 = 2/3. Sachant que la pièce est équilibrée, la probabilité de FACE est 1/2 : p(F₁/E) = 1/2. Sachant qu'elle est truquée (événement Ē, 2 pièces sur 6, de probabilité 1/3), la probabilité de FACE est 2/3 : p(F₁/Ē) = 2/3 ✓. Contrôle : p(E) + p(Ē) = 2/3 + 1/3 = 1 ✓. Les erreurs : prendre la proportion des pièces truquées pour p(E) (1/3), échanger les deux conditionnelles (la pièce équilibrée donne 1/2, la truquée 2/3), ou cumuler les deux erreurs (p(E) = 1/3 et conditionnelles échangées).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient six pièces : quatre équilibrées et deux truquées (probabilité de FACE égale à 2/3). On tire une pièce au hasard et on la lance une fois ; F₁ est l'événement « on obtient FACE ». Quelle est la probabilité de F₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/12"
+        },
+        {
+          "id": "b",
+          "text": "5/9"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "11/18"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les événements E (pièce équilibrée) et Ē (pièce truquée) forment une partition de l'univers. D'après la formule des probabilités totales : p(F₁) = p(E) × p(F₁/E) + p(Ē) × p(F₁/Ē) = (2/3)(1/2) + (1/3)(2/3) = 1/3 + 2/9 = 3/9 + 2/9 = 5/9 ✓. Contrôle : 5/9 ≈ 0,556 se situe entre 1/2 et 2/3, comme une moyenne pondérée des deux conditionnelles. Les erreurs : la moyenne simple (1/2 + 2/3)/2 = 7/12 oublie de pondérer par les proportions de pièces ; 1/3 ne garde que la branche E ; et 11/18 = (1/3)(1/2) + (2/3)(2/3) échange les poids des deux types de pièces.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient six pièces : quatre équilibrées et deux truquées (probabilité de FACE égale à 2/3). On tire une pièce au hasard et on la lance deux fois de suite, indépendamment. Quelle est la probabilité d'obtenir FACE aux deux lancers ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25/81"
+        },
+        {
+          "id": "b",
+          "text": "25/36"
+        },
+        {
+          "id": "c",
+          "text": "17/54"
+        },
+        {
+          "id": "d",
+          "text": "1/6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On conditionne par le type de pièce. Pièce équilibrée (probabilité 2/3) : FACE deux fois a la probabilité (1/2)² = 1/4. Pièce truquée (probabilité 1/3) : (2/3)² = 4/9. Donc p(F₂) = (2/3)(1/4) + (1/3)(4/9) = 1/6 + 4/27 = 9/54 + 8/54 = 17/54 ✓. Les erreurs : élever p(F₁) = 5/9 au carré (25/81) suppose les deux lancers indépendants, alors qu'ils partagent la même pièce ; additionner sans pondérer (1/4 + 4/9 = 25/36 dépasse 1/2 pourtant) ; ou oublier la branche des pièces truquées (1/6).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une pièce est tirée au hasard dans une urne de six pièces, dont quatre équilibrées (FACE avec la probabilité 1/2) et deux truquées (FACE avec la probabilité 2/3). On la lance n fois de suite, n ≥ 1, et on note F_n l'événement « FACE aux n lancers ». Quelle est l'expression de p(F_n) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(F_n) = (1/3)((1/2)^n + (2/3)^n), pour n ≥ 1"
+        },
+        {
+          "id": "b",
+          "text": "p(F_n) = (2/3)(1/2)^n × (1/3)(2/3)^n, pour n ≥ 1"
+        },
+        {
+          "id": "c",
+          "text": "p(F_n) = (5/9)^n"
+        },
+        {
+          "id": "d",
+          "text": "p(F_n) = (1/3)((1/2)^(n−1) + (2/3)^n)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec E « pièce équilibrée » et Ē « pièce truquée », la formule des probabilités totales donne p(F_n) = p(E) × p(F_n/E) + p(Ē) × p(F_n/Ē). Les n lancers sont indépendants sachant la pièce : p(F_n/E) = (1/2)^n et p(F_n/Ē) = (2/3)^n. Donc p(F_n) = (2/3)(1/2)^n + (1/3)(2/3)^n. Comme (2/3)(1/2)^n = (1/3) × 2 × (1/2)^n = (1/3)(1/2)^(n−1), on obtient p(F_n) = (1/3)((1/2)^(n−1) + (2/3)^n) ✓. Contrôle en n = 1 : (1/3)(1 + 2/3) = 5/9 ✓, et en n = 2 : (1/3)(1/2 + 4/9) = 17/54 ✓. Les erreurs : poser p(E) = 1/3 (le facteur (1/3)(1/2)^n) ; multiplier au lieu d'additionner les deux branches ; élever p(F₁) à la puissance n, ce qui suppose les lancers indépendants sans connaître la pièce.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une pièce tirée au hasard est lancée n fois, et F_n est l'événement « FACE aux n lancers » de probabilité p(F_n). On définit X_n = n si F_n est réalisé et X_n = 0 sinon. Quelle est la loi de probabilité de X_n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(X_n = n) = p(F_n) et p(X_n = 0) = 1 − p(F_n)"
+        },
+        {
+          "id": "b",
+          "text": "p(X_n = 0) = p(F_n) et p(X_n = n) = 1 − p(F_n)"
+        },
+        {
+          "id": "c",
+          "text": "p(X_n = 1) = p(F_n) et p(X_n = 0) = 1 − p(F_n)"
+        },
+        {
+          "id": "d",
+          "text": "p(X_n = n) = p(F_n) et p(X_n = 0) = p(F_n)^n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "X_n ne prend que deux valeurs : n quand F_n est réalisé, 0 sinon. L'événement (X_n = n) est donc F_n, de probabilité p(F_n), et l'événement (X_n = 0) est son contraire F̄_n, de probabilité 1 − p(F_n) ✓. Contrôle : la somme des probabilités vaut p(F_n) + 1 − p(F_n) = 1. Les erreurs : échanger les deux valeurs, écrire X_n = 1 au lieu de n (la valeur de X_n quand on réussit est n, pas 1), ou élever p(F_n) à la puissance n (p(F_n) tient déjà compte des n lancers).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit X_n la variable aléatoire valant n lorsque F_n est réalisé et 0 sinon, avec p(F_n) = (1/3)((1/2)^(n−1) + (2/3)^n). Quelle est l'espérance de X_n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E(X_n) = (1/3)((1/2)^(n−1) + (2/3)^n)"
+        },
+        {
+          "id": "b",
+          "text": "E(X_n) = (n/3)((1/2)^(n−1) + (2/3)^n)"
+        },
+        {
+          "id": "c",
+          "text": "E(X_n) = n(1 − p(F_n))"
+        },
+        {
+          "id": "d",
+          "text": "E(X_n) = (n²/3)((1/2)^(n−1) + (2/3)^n)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'espérance est la somme des valeurs pondérées par leurs probabilités : E(X_n) = n × p(X_n = n) + 0 × p(X_n = 0) = n p(F_n) = (n/3)((1/2)^(n−1) + (2/3)^n) ✓. Contrôle pour n = 1 : E(X₁) = 1 × 5/9 = 5/9 ; pour n = 2 : E(X₂) = 2 × 17/54 = 17/27. Les erreurs : oublier le facteur n (c'est alors p(F_n), la probabilité), utiliser la probabilité contraire (n(1 − p(F_n)) pondère la valeur n par la mauvaise probabilité), ou élever n au carré (c'est E(X_n²), non E(X_n)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La courbe (C) ci-dessous représente la fonction f définie sur [0 ; +∞[ par f(x) = (x/3)((1/2)^(x−1) + (2/3)^x), et E(X_n) = f(n) pour tout entier n ≥ 1. D'après le graphique, pour quel entier naturel n l'espérance E(X_n) est-elle maximale ?\n<svg viewBox=\"0 0 300 215\"><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.5\"><path d=\"M40 190 L286 190\"/><path d=\"M40 190 L40 14\"/></g><path d=\"M88 20 L88 190\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M136 20 L136 190\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M184 20 L184 190\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M232 20 L232 190\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><path d=\"M40 167.0 L280 167.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M40 144.0 L280 144.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M40 121.0 L280 121.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M40 98.0 L280 98.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M40 75.0 L280 75.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><path d=\"M40 52.0 L280 52.0\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><polyline points=\"40.0,190.0 42.4,178.8 44.8,168.3 47.2,158.4 49.6,149.2 52.0,140.4 54.4,132.3 56.8,124.6 59.2,117.4 61.6,110.7 64.0,104.5 66.4,98.7 68.8,93.2 71.2,88.2 73.6,83.5 76.0,79.2 78.4,75.2 80.8,71.5 83.2,68.1 85.6,65.0 88.0,62.2 90.4,59.7 92.8,57.3 95.2,55.2 97.6,53.4 100.0,51.7 102.4,50.2 104.8,48.9 107.2,47.8 109.6,46.9 112.0,46.1 114.4,45.4 116.8,45.0 119.2,44.6 121.6,44.4 124.0,44.2 126.4,44.2 128.8,44.3 131.2,44.5 133.6,44.8 136.0,45.2 138.4,45.6 140.8,46.2 143.2,46.8 145.6,47.5 148.0,48.2 150.4,49.0 152.8,49.8 155.2,50.7 157.6,51.7 160.0,52.7 162.4,53.7 164.8,54.8 167.2,55.9 169.6,57.0 172.0,58.2 174.4,59.4 176.8,60.6 179.2,61.8 181.6,63.1 184.0,64.4 186.4,65.6 188.8,66.9 191.2,68.3 193.6,69.6 196.0,70.9 198.4,72.2 200.8,73.6 203.2,74.9 205.6,76.3 208.0,77.6 210.4,79.0 212.8,80.4 215.2,81.7 217.6,83.1 220.0,84.4 222.4,85.8 224.8,87.1 227.2,88.4 229.6,89.8 232.0,91.1 234.4,92.4 236.8,93.7 239.2,95.0 241.6,96.3 244.0,97.6 246.4,98.9 248.8,100.1 251.2,101.4 253.6,102.6 256.0,103.9 258.4,105.1 260.8,106.3 263.2,107.5 265.6,108.7 268.0,109.9 270.4,111.0 272.8,112.2 275.2,113.3 277.6,114.4 280.0,115.6\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><text x=\"40\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">0</text><text x=\"88\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">1</text><text x=\"136\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">2</text><text x=\"184\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">3</text><text x=\"232\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">4</text><text x=\"280\" y=\"206\" text-anchor=\"middle\" font-size=\"12\" fill=\"#0f172a\">5</text><text x=\"34\" y=\"171.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0,1</text><text x=\"34\" y=\"148.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0,2</text><text x=\"34\" y=\"125.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0,3</text><text x=\"34\" y=\"102.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0,4</text><text x=\"34\" y=\"79.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0,5</text><text x=\"34\" y=\"56.0\" text-anchor=\"end\" font-size=\"11\" fill=\"#0f172a\">0,6</text><text x=\"212.8\" y=\"70.4\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\">(C)</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 1"
+        },
+        {
+          "id": "b",
+          "text": "n = 3"
+        },
+        {
+          "id": "c",
+          "text": "n = 2"
+        },
+        {
+          "id": "d",
+          "text": "n = 4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On lit sur la courbe les ordonnées aux abscisses entières : f(1) ≈ 0,56, f(2) ≈ 0,63, f(3) ≈ 0,55 et f(4) ≈ 0,43. Le maximum de la courbe est atteint pour une abscisse x₀ comprise entre 1 et 2, plus proche de 2 ; parmi les entiers, c'est n = 2 qui donne la plus grande ordonnée ✓. Vérification par le calcul : E(X₁) = 5/9 ≈ 0,556, E(X₂) = 17/27 ≈ 0,630, E(X₃) = 3 × 59/324 = 59/108 ≈ 0,546, E(X₄) ≈ 0,43. L'erreur à éviter est de choisir l'entier le plus proche de x₀ sans comparer les ordonnées, ou de prendre n = 1 parce que la courbe est déjà haute au départ (elle monte encore jusqu'à x₀).",
+      "difficulty": 3
+    }
+  ]
+}

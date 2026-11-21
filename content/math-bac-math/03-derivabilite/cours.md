@@ -190,4 +190,16 @@ Une courbe peut aussi posséder un **centre de symétrie** : un point autour duq
 
 _Exemple_ — pour f(x) = x³ − 3x + 1 et le point I(0, 1) : f(2×0 − x) = f(−x) = −x³ + 3x + 1, tandis que 2×1 − f(x) = 2 − (x³ − 3x + 1) = −x³ + 3x + 1. Les deux sont égaux : **I(0, 1) est centre de symétrie** de C_f (et aussi son point d'inflexion).
 
+Une courbe peut enfin être symétrique par rapport à une **droite verticale** : on la replie sur elle-même le long de cette droite.
+
+**Règle — axe de symétrie** : la droite d'équation x = a est un axe de symétrie de C_f si, pour tout x du domaine, 2a − x appartient au domaine et f(2a − x) = f(x).
+
+_Exemple_ — pour f(x) = (x − 1)² et la droite x = 1 : f(2×1 − x) = f(2 − x) = (2 − x − 1)² = (1 − x)² = (x − 1)² = f(x). Les deux sont égaux : **x = 1 est un axe de symétrie** de C_f. Attention à la différence avec le centre de symétrie : ici on compare f(2a − x) à f(x), et non à 2b − f(x).
+
+::: verifie
+Montre que la droite x = 2 est un axe de symétrie de la courbe de f(x) = x² − 4x.
+---
+On calcule f(2×2 − x) = f(4 − x) = (4 − x)² − 4(4 − x) = 16 − 8x + x² − 16 + 4x = x² − 4x = f(x), et le domaine ℝ est stable par x ↦ 4 − x. Donc f(2a − x) = f(x) avec a = 2 : la droite x = 2 est un axe de symétrie.
+:::
+
 > 🏆 Troisième porte franchie, héros : tu sais lire une pente, tracer une tangente, garantir une racine par Rolle, encadrer une variation par le TAF, décrire montée, descente, extrema et inflexions d'une courbe. Ces armes te serviront à étudier n'importe quelle fonction — et à aborder les réciproques, les primitives et les intégrales qui t'attendent.

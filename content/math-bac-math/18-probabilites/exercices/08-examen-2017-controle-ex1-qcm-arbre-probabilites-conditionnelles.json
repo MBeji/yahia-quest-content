@@ -1,0 +1,82 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 1 ⭐⭐ : arbre pondéré, probabilité conditionnelle et probabilités des causes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Une expérience aléatoire est représentée par l'arbre pondéré ci-dessous, dont seules trois probabilités sont imprimées : p(A) = 0,8, la branche de A vers A ∩ B qui porte 0,3, et la branche de Ā vers Ā ∩ B̄ qui porte 0,1. Les autres branches sont à compléter.\n<svg viewBox=\"0 0 340 250\"><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><path d=\"M45 125 L150 65\"/><path d=\"M45 125 L150 185\"/><path d=\"M150 65 L250 35\"/><path d=\"M150 65 L250 95\"/><path d=\"M150 185 L250 155\"/><path d=\"M150 185 L250 215\"/></g><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"125\" r=\"4\"/><circle cx=\"150\" cy=\"65\" r=\"4.5\"/><circle cx=\"150\" cy=\"185\" r=\"4.5\"/><circle cx=\"250\" cy=\"35\" r=\"4\"/><circle cx=\"250\" cy=\"95\" r=\"4\"/><circle cx=\"250\" cy=\"155\" r=\"4\"/><circle cx=\"250\" cy=\"215\" r=\"4\"/></g><g paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"97\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,8</text><text x=\"200\" y=\"42\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,3</text><text x=\"200\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,1</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"150\" y=\"205\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā</text><text x=\"261\" y=\"40\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A ∩ B</text><text x=\"261\" y=\"100\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A ∩ B̄</text><text x=\"261\" y=\"160\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā ∩ B</text><text x=\"261\" y=\"220\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā ∩ B̄</text></g></svg>\nQuelle est la probabilité de B̄ sachant A, notée p(B̄/A) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,7"
+        },
+        {
+          "id": "b",
+          "text": "0,3"
+        },
+        {
+          "id": "c",
+          "text": "0,24"
+        },
+        {
+          "id": "d",
+          "text": "0,56"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux branches issues de A portent des probabilités conditionnelles dont la somme vaut 1 : p(B/A) + p(B̄/A) = 1. Comme la branche A → A ∩ B porte p(B/A) = 0,3, on obtient p(B̄/A) = 1 − 0,3 = 0,7 ✓. Contrôle : 0,3 + 0,7 = 1. Les autres valeurs correspondent à d'autres grandeurs : 0,3 est p(B/A), la branche imprimée ; 0,24 = 0,8 × 0,3 est la probabilité de l'intersection p(A ∩ B) ; 0,56 = 0,8 × 0,7 est celle de p(A ∩ B̄). Une probabilité conditionnelle se lit sur la branche, un produit le long d'un chemin donne une intersection.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une expérience aléatoire est représentée par l'arbre pondéré ci-dessous, dont seules trois probabilités sont imprimées : p(A) = 0,8, la branche de A vers A ∩ B qui porte 0,3, et la branche de Ā vers Ā ∩ B̄ qui porte 0,1. Les autres branches sont à compléter.\n<svg viewBox=\"0 0 340 250\"><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><path d=\"M45 125 L150 65\"/><path d=\"M45 125 L150 185\"/><path d=\"M150 65 L250 35\"/><path d=\"M150 65 L250 95\"/><path d=\"M150 185 L250 155\"/><path d=\"M150 185 L250 215\"/></g><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"125\" r=\"4\"/><circle cx=\"150\" cy=\"65\" r=\"4.5\"/><circle cx=\"150\" cy=\"185\" r=\"4.5\"/><circle cx=\"250\" cy=\"35\" r=\"4\"/><circle cx=\"250\" cy=\"95\" r=\"4\"/><circle cx=\"250\" cy=\"155\" r=\"4\"/><circle cx=\"250\" cy=\"215\" r=\"4\"/></g><g paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"97\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,8</text><text x=\"200\" y=\"42\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,3</text><text x=\"200\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,1</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"150\" y=\"205\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā</text><text x=\"261\" y=\"40\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A ∩ B</text><text x=\"261\" y=\"100\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A ∩ B̄</text><text x=\"261\" y=\"160\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā ∩ B</text><text x=\"261\" y=\"220\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā ∩ B̄</text></g></svg>\nQuelle est la probabilité de l'événement Ā ∩ B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,02"
+        },
+        {
+          "id": "b",
+          "text": "0,18"
+        },
+        {
+          "id": "c",
+          "text": "0,1"
+        },
+        {
+          "id": "d",
+          "text": "0,9"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule d'abord les branches manquantes : p(Ā) = 1 − 0,8 = 0,2 et, sous Ā, p(B/Ā) = 1 − p(B̄/Ā) = 1 − 0,1 = 0,9. La probabilité d'une intersection est le produit le long du chemin : p(Ā ∩ B) = p(Ā) × p(B/Ā) = 0,2 × 0,9 = 0,18 ✓. Contrôle : p(Ā ∩ B) + p(Ā ∩ B̄) = 0,18 + 0,2 × 0,1 = 0,18 + 0,02 = 0,2 = p(Ā) ✓. Les autres réponses oublient une étape : 0,9 est la branche seule (probabilité conditionnelle), 0,1 est la branche imprimée (celle de B̄), et 0,02 = 0,2 × 0,1 est la probabilité de Ā ∩ B̄, l'autre feuille.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une expérience aléatoire est représentée par l'arbre pondéré ci-dessous, dont seules trois probabilités sont imprimées : p(A) = 0,8, la branche de A vers A ∩ B qui porte 0,3, et la branche de Ā vers Ā ∩ B̄ qui porte 0,1. Les autres branches sont à compléter.\n<svg viewBox=\"0 0 340 250\"><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"><path d=\"M45 125 L150 65\"/><path d=\"M45 125 L150 185\"/><path d=\"M150 65 L250 35\"/><path d=\"M150 65 L250 95\"/><path d=\"M150 185 L250 155\"/><path d=\"M150 185 L250 215\"/></g><g fill=\"#0f172a\"><circle cx=\"45\" cy=\"125\" r=\"4\"/><circle cx=\"150\" cy=\"65\" r=\"4.5\"/><circle cx=\"150\" cy=\"185\" r=\"4.5\"/><circle cx=\"250\" cy=\"35\" r=\"4\"/><circle cx=\"250\" cy=\"95\" r=\"4\"/><circle cx=\"250\" cy=\"155\" r=\"4\"/><circle cx=\"250\" cy=\"215\" r=\"4\"/></g><g paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"97\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,8</text><text x=\"200\" y=\"42\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,3</text><text x=\"200\" y=\"212\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f6e56\">0,1</text><text x=\"150\" y=\"53\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A</text><text x=\"150\" y=\"205\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā</text><text x=\"261\" y=\"40\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A ∩ B</text><text x=\"261\" y=\"100\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">A ∩ B̄</text><text x=\"261\" y=\"160\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā ∩ B</text><text x=\"261\" y=\"220\" text-anchor=\"start\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">Ā ∩ B̄</text></g></svg>\nQuelle est la probabilité de A sachant B, notée p(A/B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/7"
+        },
+        {
+          "id": "b",
+          "text": "3/10"
+        },
+        {
+          "id": "c",
+          "text": "4/7"
+        },
+        {
+          "id": "d",
+          "text": "0,24"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Par définition, p(A/B) = p(A ∩ B)/p(B). On a p(A ∩ B) = 0,8 × 0,3 = 0,24. B est la réunion disjointe de A ∩ B et de Ā ∩ B : p(B) = 0,24 + 0,2 × 0,9 = 0,24 + 0,18 = 0,42 (formule des probabilités totales). Donc p(A/B) = 0,24/0,42 = 24/42 = 4/7 ✓. Contrôle : p(Ā/B) = 0,18/0,42 = 3/7 et 4/7 + 3/7 = 1 ✓. Les autres réponses sont d'autres grandeurs : 3/7 est p(Ā/B), la probabilité de l'autre cause ; 3/10 est la branche p(B/A), c'est-à-dire la conditionnelle dans l'autre sens ; 0,24 est p(A ∩ B), qu'on oublie de diviser par p(B).",
+      "difficulty": 2
+    }
+  ]
+}

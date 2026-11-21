@@ -1,0 +1,322 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 2 ⭐⭐⭐⭐ : Similitudes, pieds des hauteurs d'un triangle et composée",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Quelle suite d'arguments montre que le triangle AIE est équilatéral ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "EI = EA (médiane issue de l'angle droit du triangle AIC) et ∠IAC = π/3 : un triangle isocèle avec un angle de π/3"
+        },
+        {
+          "id": "b",
+          "text": "EI = EA (médiane issue de l'angle droit du triangle AIC) et ∠IAC = π/6 : un triangle isocèle avec un angle de π/6"
+        },
+        {
+          "id": "c",
+          "text": "EI = AI (hauteur du triangle ABC) et ∠IAC = π/3 : un triangle isocèle avec un angle de π/3"
+        },
+        {
+          "id": "d",
+          "text": "EI = AI (hauteur du triangle ABC) et ∠IAC = π/6 : un triangle isocèle avec un angle de π/6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AIC est rectangle en I (AI est une hauteur) ; E est le milieu de l'hypoténuse [AC], donc EI = EA = EC (la médiane issue de l'angle droit vaut la moitié de l'hypoténuse). L'angle ∠IAC vaut π/2 − π/6 = π/3 (somme des angles de AIC, avec ∠ACI = π/6). Un triangle isocèle ayant un angle de π/3 est équilatéral. Le sens direct se lit sur la figure. Une hauteur ne donne pas EI = AI, et ∠IAC = π/6 donnerait un triangle isocèle non équilatéral. Vérification : AIE a deux côtés égaux et un angle de π/3 en A ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Soit S la similitude directe de centre A, de rapport √2 et d'angle −π/4. Quelle est l'image de I par S ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point B"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le point E"
+        },
+        {
+          "id": "d",
+          "text": "Le point J"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le triangle ABI est rectangle en I et ∠ABI = π/4 : il est rectangle isocèle, donc AB = √2·AI. De plus (AI⃗, AB⃗) ≡ −π/4 puisque (BC⃗, BA⃗) ≡ π/4 et que AI⃗ est perpendiculaire à (BC). Ainsi S(I) est le point M tel que AM = √2·AI et (AI⃗, AM⃗) ≡ −π/4 : c'est B. Les points C et E sont à d'autres distances de A (AC = 2AI, AE = AI), et J n'est pas sur la même demi-droite. Vérification : AB/AI = √2 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Soit Δ la médiatrice de [IE], S la similitude directe de centre A, de rapport √2 et d'angle −π/4 qui envoie I sur B, et f = S∘S_Δ. Quelle est l'image de E par f ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point A"
+        },
+        {
+          "id": "b",
+          "text": "Le point B"
+        },
+        {
+          "id": "c",
+          "text": "Le point C"
+        },
+        {
+          "id": "d",
+          "text": "Le point I"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "S_Δ envoie E sur I (Δ est la médiatrice de [IE]). Donc f(E) = S(S_Δ(E)) = S(I) = B. Prendre S_Δ(E) = I et s'arrêter là donnerait I (oubli de S) ; le point A est fixe mais n'est pas l'image de E. Vérification : S_Δ(E) = I, puis S(I) = B ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Quel argument montre que le triangle BCK est rectangle isocèle direct, avec l'angle droit en K ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "K est le pied de la hauteur issue de C sur (BA), donc l'angle en K est droit ; l'angle en C vaut π/3 (π/2 − π/6), donc BC = BK"
+        },
+        {
+          "id": "b",
+          "text": "K est le pied de la hauteur issue de C sur (BA), donc l'angle en K est droit ; l'angle en C vaut π/4 (π/2 − π/4), donc BC = BK"
+        },
+        {
+          "id": "c",
+          "text": "K est le pied de la hauteur issue de C sur (BA), donc l'angle en K est droit ; l'angle en C vaut π/4 (π/2 − π/4), donc KB = KC"
+        },
+        {
+          "id": "d",
+          "text": "K est le pied de la hauteur issue de C sur (BA), donc l'angle en K est droit ; l'angle en C vaut π/3 (π/2 − π/6), donc KB = KC"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "K est le pied de la hauteur issue de C sur (BA) : (CK) ⊥ (BA) et le triangle BCK est rectangle en K. L'angle en B est ∠KBC = ∠ABC = π/4 (K est sur la droite (BA)). Les angles aigus d'un triangle rectangle sont complémentaires : l'angle en C vaut π/2 − π/4 = π/4. Un triangle rectangle avec deux angles égaux est isocèle, et les côtés égaux sont ceux qui touchent l'angle droit : KB = KC. L'angle π/3 = π/2 − π/6 viendrait d'avoir pris l'angle π/6 du sommet C du grand triangle pour l'angle en B ; BC = BK est impossible, car BC est l'hypoténuse, donc le plus grand côté. Vérification : π/4 + π/4 + π/2 = π ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Soit Δ la médiatrice de [IE] (A est sur Δ car AI = AE) et f = S∘S_Δ, avec S la similitude directe de centre A, de rapport √2 et d'angle −π/4. Quelle est la nature de f ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une similitude directe de centre A et de rapport √2"
+        },
+        {
+          "id": "b",
+          "text": "Une similitude indirecte de centre A et de rapport 2"
+        },
+        {
+          "id": "c",
+          "text": "Une similitude indirecte de centre I et de rapport √2"
+        },
+        {
+          "id": "d",
+          "text": "Une similitude indirecte de centre A et de rapport √2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S est une similitude directe de rapport √2 et S_Δ est une isométrie indirecte : f est indirecte et son rapport est √2 × 1 = √2. Elle fixe A (S(A) = A et A ∈ Δ, donc S_Δ(A) = A) : le centre est A. Un rapport 2 serait celui de f∘f ; et f est indirecte et non directe car une seule symétrie renverse l'orientation. Vérification : f(E) = B et AB = √2·AE (AE = AI), ce qui confirme le rapport ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. f est la similitude indirecte de centre A et de rapport √2 qui envoie E sur B. Quel énoncé est vrai pour f∘f ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f∘f est l'identité du plan ; f(B) = f(f(E)) = E"
+        },
+        {
+          "id": "b",
+          "text": "f∘f est l'homothétie de centre A et de rapport 2 ; f(B) = f(f(E)) est le point C tel que AC⃗ = 2AE⃗"
+        },
+        {
+          "id": "c",
+          "text": "f∘f est l'homothétie de centre A et de rapport √2 ; f(B) = f(f(E)) est le point M tel que AM⃗ = √2·AE⃗"
+        },
+        {
+          "id": "d",
+          "text": "f∘f est la rotation de centre A et d'angle π/2 ; f(B) = f(f(E)) est le point obtenu en tournant E de π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le carré d'une similitude indirecte de centre A et de rapport k est l'homothétie de centre A et de rapport k². Ici k² = 2. Donc f(B) = f(f(E)) = h(A, 2)(E), c'est-à-dire le point C tel que AC⃗ = 2AE⃗ (E est le milieu de [AC]). Utiliser k au lieu de k² donnerait un point différent de C ; f∘f n'est ni une rotation (f∘f est de rapport 2, pas 1) ni l'identité. Vérification : AC = 2AE puisque E est le milieu de [AC] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. f est la similitude indirecte de centre A qui envoie E sur B et B sur C. f envoie A sur A. Quelle suite d'arguments établit que f((BJ)) = (CK) ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f((AC)) = (AC) ; f conserve l'orthogonalité : f((BJ)) est la perpendiculaire à (AC) passant par f(B) = C, soit la droite (CA)"
+        },
+        {
+          "id": "b",
+          "text": "f((AC)) = (BC) ; f conserve l'orthogonalité : f((BJ)) est la perpendiculaire à (BC) passant par f(B) = C, soit la droite (BA)"
+        },
+        {
+          "id": "c",
+          "text": "f((AC)) = (AB) ; f conserve l'orthogonalité : f((BJ)) est la perpendiculaire à (AB) passant par f(B) = C, soit la droite (CK)"
+        },
+        {
+          "id": "d",
+          "text": "f((AC)) = (AB) ; f conserve le parallélisme : f((BJ)) est la parallèle à (AB) passant par f(B) = C, soit la parallèle à (AB) par C"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(A) = A et f(C) = f(f(B)), qui est l'image de B par l'homothétie f∘f de centre A : f(C) est donc sur (AB), et f((AC)) = (AB). (BJ) est perpendiculaire à (AC) (J est le pied de la hauteur issue de B) ; une similitude conserve l'orthogonalité, donc f((BJ)) est perpendiculaire à f((AC)) = (AB) et passe par f(B) = C : c'est la hauteur issue de C, la droite (CK). La droite (BJ) est orthogonale à (AC), pas parallèle à une droite qui en est l'image : f((BJ)) ne peut pas être la parallèle à (AB) par C ; et (AC) n'est pas globalement invariante, ni envoyée sur (BC), donc les droites (CA) et (BA) ne conviennent pas. Vérification : (CK) est bien perpendiculaire à (AB) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Sachant que f((BJ)) = (CK) et f((AC)) = (AB), quelle est l'image de J par f ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point A"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le point I"
+        },
+        {
+          "id": "d",
+          "text": "Le point K"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "J est le point commun de (BJ) et (AC). Son image est donc commune à f((BJ)) = (CK) et à f((AC)) = (AB). Or (CK) et (AB) se coupent en K (K est le pied de la hauteur issue de C sur (BA)). Donc f(J) = K. Le point A est fixe mais J ≠ A ; C est sur (CK) mais pas sur (AB) ; I n'est ni sur (CK) ni sur (AB). Vérification : K est bien sur (CK) et sur (AB) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Soit g la similitude indirecte telle que g(C) = A et g(K) = I. Le triangle BCK est direct, rectangle isocèle en K, et BAI est rectangle isocèle en I. Quel argument établit que g(B) = B ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est indirecte et BCK est direct : le triangle image est indirect ; BAI est indirect, d'où g(B) = B"
+        },
+        {
+          "id": "b",
+          "text": "g est indirecte et BCK est direct : le triangle image est indirect ; BAI est direct, d'où g(B) = B"
+        },
+        {
+          "id": "c",
+          "text": "g est indirecte et BCK est direct : le triangle image est direct ; BAI est direct, d'où g(B) = B"
+        },
+        {
+          "id": "d",
+          "text": "g est indirecte et BCK est direct : le triangle image est indirect, rectangle isocèle en A ; BAI est indirect, d'où g(B) = B"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une similitude indirecte inverse l'orientation : le triangle image de (B, C, K) est indirect. L'image est un triangle rectangle isocèle en g(K) = I (et non en A), de sommet A = g(C) : il y a deux positions possibles de g(B), symétriques par rapport à la droite (AI), qui donnent un triangle direct ou un triangle indirect. Le triangle BAI, lu dans cet ordre, est indirect puisque (BC⃗, BA⃗) ≡ π/4 signifie que (B, I, A) est direct. Donc g(B) = B, et B est fixe : c'est le centre de g (son rapport BA/BC n'est pas 1). Un triangle image direct contredirait le caractère indirect de g, un triangle BAI direct ne coïncide pas avec l'orientation de la figure, et l'angle droit de l'image est en I, non en A. Vérification : (BA⃗, BI⃗) ≡ −π/4 alors que (BC⃗, BK⃗) ≡ +π/4, orientations opposées comme il se doit ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Soit g la similitude indirecte de centre B telle que g(C) = A, et D = g(A). Quel argument établit que D appartient à la droite (BI) ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "g∘g est une translation de vecteur BC⃗ ; D = g(g(C)) est le translaté de C, donc sur (BC) = (BI)"
+        },
+        {
+          "id": "b",
+          "text": "g∘g est l'homothétie de centre B ; D = g(g(C)) est alignée avec B et C, et (BC) = (BI)"
+        },
+        {
+          "id": "c",
+          "text": "g∘g est la rotation de centre B ; D = g(g(C)) est alignée avec B et A, et (BA) = (BI)"
+        },
+        {
+          "id": "d",
+          "text": "g est une symétrie orthogonale d'axe (BI) ; D est le symétrique de A par rapport à (BI)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le carré d'une similitude indirecte de centre B est l'homothétie de centre B et de rapport k². Donc D = g(A) = g(g(C)) est l'image de C par cette homothétie de centre B : D est aligné avec B et C, et comme I est sur [BC], la droite (BC) est la droite (BI). Une similitude indirecte de rapport différent de 1 n'est pas une symétrie orthogonale, g∘g n'est jamais une rotation, et c'est une homothétie, pas une translation (elle a un point fixe B). Vérification : B, C et D sont alignés par l'homothétie de centre B ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Soit g la similitude indirecte de centre B telle que g(C) = A et g(A) = D. Quelle est une mesure de (AB⃗, AD⃗) ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/6"
+        },
+        {
+          "id": "b",
+          "text": "−π/6"
+        },
+        {
+          "id": "c",
+          "text": "5π/6"
+        },
+        {
+          "id": "d",
+          "text": "−5π/6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g est indirecte : elle change les angles orientés en leurs opposés. g(B) = B, g(C) = A et g(A) = D, donc g envoie le couple de vecteurs (CB⃗, CA⃗) sur (AB⃗, AD⃗). Ainsi (AB⃗, AD⃗) = −(CB⃗, CA⃗) = (CA⃗, CB⃗) = π/6. Oublier le changement de signe donnerait −π/6 ; 5π/6 et −5π/6 résultent d'un demi-tour parasite (π − π/6 ou son opposé). Vérification : (CB⃗, CA⃗) = −π/6, donc −(−π/6) = π/6 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. Soit f la similitude indirecte de centre A qui envoie E sur B et B sur C, et g la similitude indirecte de centre B qui envoie C sur A et A sur D ; on pose φ = g∘f. Quelle affirmation est vraie ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ est directe, φ(A) = A et φ(B) = D"
+        },
+        {
+          "id": "b",
+          "text": "φ est directe, φ(A) = D et φ(B) = C"
+        },
+        {
+          "id": "c",
+          "text": "φ est directe, φ(A) = D et φ(B) = A"
+        },
+        {
+          "id": "d",
+          "text": "φ est indirecte, φ(A) = D et φ(B) = A"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f et g sont indirectes : leur composée est directe (produit des signes (−1)(−1) = +1). φ(A) = g(f(A)) = g(A) = D car A est le centre de f. φ(B) = g(f(B)) = g(C) = A. Dire φ(A) = A oublierait g, et φ(B) = C oublierait aussi g. Vérification : φ envoie A sur D et B sur A, donc le segment [AB] sur [DA] ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABC est un triangle direct tel que (BC⃗, BA⃗) ≡ π/4 [2π] et (CA⃗, CB⃗) ≡ π/6 [2π] ; I, J et K sont les pieds des hauteurs issues de A, B et C, et E est le milieu de [AC]. φ est la similitude directe qui envoie A sur D et B sur A. On sait que (AB⃗, AD⃗) ≡ π/6 [2π]. Quelle est une mesure de l'angle de φ ? <svg viewBox=\"0 0 250 220\"><path d=\"M26 159.5 L224 159.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M26 159.5 L125 60.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M224 159.5 L98.5 87\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L75.5 73.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M98.5 87 L98.5 159.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M26 159.5 L75.5 73.8\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M224 159.5 L125 60.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"98.5\" cy=\"87\" r=\"3.6\"/><circle cx=\"26\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"224\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"98.5\" cy=\"159.5\" r=\"3.6\"/><circle cx=\"161.2\" cy=\"123.3\" r=\"3.6\"/><circle cx=\"75.5\" cy=\"73.8\" r=\"3.6\"/><circle cx=\"125\" cy=\"60.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"86.5\" y=\"83\" text-anchor=\"middle\">A</text><text x=\"16\" y=\"171.5\" text-anchor=\"middle\">B</text><text x=\"234\" y=\"171.5\" text-anchor=\"middle\">C</text><text x=\"98.5\" y=\"175.5\" text-anchor=\"middle\">I</text><text x=\"173.2\" y=\"121.3\" text-anchor=\"middle\">E</text><text x=\"63.5\" y=\"73.8\" text-anchor=\"middle\">J</text><text x=\"137\" y=\"58.5\" text-anchor=\"middle\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/6"
+        },
+        {
+          "id": "b",
+          "text": "π/6"
+        },
+        {
+          "id": "c",
+          "text": "5π/6"
+        },
+        {
+          "id": "d",
+          "text": "7π/6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'angle de φ est (AB⃗, φ(A)φ(B)⃗) = (AB⃗, DA⃗). Or DA⃗ = −AD⃗, donc (AB⃗, DA⃗) = (AB⃗, AD⃗) + (AD⃗, DA⃗) = π/6 + π = 7π/6 [2π]. Garder π/6 oublierait le demi-tour (on prendrait AD⃗ au lieu de DA⃗) ; −π/6 inverserait l'orientation ; 5π/6 est π − π/6, un supplémentaire mal appliqué. Vérification : −5π/6 ≡ 7π/6 [2π], et 7π/6 − π/6 = π (les deux vecteurs AD⃗ et DA⃗ sont opposés) ✓.",
+      "difficulty": 3
+    }
+  ]
+}

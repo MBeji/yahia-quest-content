@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 2 ⭐⭐⭐ : Cercle, alignement, orthogonalité, projeté orthogonal et similitude en complexes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 20,
+  "questions": [
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. R est le point d'affixe a + ā, où ā est le conjugué de a. Que peut-on dire de ce nombre ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est un imaginaire pur égal à 2i·Im(a)"
+        },
+        {
+          "id": "b",
+          "text": "C'est un réel égal à 2·Re(a)"
+        },
+        {
+          "id": "c",
+          "text": "C'est un réel égal à |a|² = 2"
+        },
+        {
+          "id": "d",
+          "text": "C'est un complexe quelconque égal à 2a"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Si a = x + iy, alors ā = x − iy et a + ā = 2x, soit deux fois la partie réelle de a, nombre réel : R appartient à l'axe réel (O, u⃗). C'est la différence a − ā qui est un imaginaire pur égal à 2i fois la partie imaginaire de a ; le produit a·ā vaut |a|² = 2, pas la somme ; et 2a ne serait pas réel en général. Vérification : pour a = 1 + i, a + ā = 2 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. P est le point d'affixe ia. Quelle est la transformation qui envoie Q sur P ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'homothétie de centre O et de rapport i"
+        },
+        {
+          "id": "b",
+          "text": "La rotation de centre O et d'angle −π/2"
+        },
+        {
+          "id": "c",
+          "text": "La rotation de centre O et d'angle π/2"
+        },
+        {
+          "id": "d",
+          "text": "La rotation de centre A et d'angle π/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'application z ↦ iz est la rotation de centre O (le point fixe est 0) et d'angle arg(i) = π/2, puisque |i| = 1. Elle envoie le point Q d'affixe a sur le point P d'affixe ia. L'angle −π/2 correspondrait à z ↦ −iz ; le centre A n'est pas fixe (i·1 ≠ 1) ; et un rapport i n'est pas un réel, donc ce n'est pas une homothétie. Vérification : |ia| = |a| = √2, donc P est aussi sur (Γ) ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. R est le point d'affixe a + ā. Pour quelles valeurs de a les points O, R et Q sont-ils alignés ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = √2 ou a = −√2"
+        },
+        {
+          "id": "b",
+          "text": "a = √2 uniquement"
+        },
+        {
+          "id": "c",
+          "text": "a = 1 + i ou a = 1 − i"
+        },
+        {
+          "id": "d",
+          "text": "a = −1 + i ou a = −1 − i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Posons a = x + iy avec x² + y² = 2. R a pour coordonnées (2x ; 0) : il est sur l'axe réel, et R ≠ O car x ≠ 0 (a ≠ ±i√2). O, R et Q sont alignés si et seulement si Q est sur la droite (OR), c'est-à-dire l'axe réel : y = 0, donc x² = 2 et a = √2 ou a = −√2. Les valeurs 1 ± i ou −1 ± i donnent un point Q hors de l'axe réel ; une seule des deux valeurs ne suffit pas, le cercle coupant l'axe en deux points. Vérification : a = −√2 donne R(−2√2 ; 0) et Q(−√2 ; 0), alignés avec O ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. P est le point d'affixe ia et M un point d'affixe z. Quelle condition équivaut à « A, P et M sont alignés » ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(z − 1)/(ia − 1) est un imaginaire pur"
+        },
+        {
+          "id": "b",
+          "text": "z/(ia − 1) est un réel"
+        },
+        {
+          "id": "c",
+          "text": "(z − 1)(ia − 1) est un réel"
+        },
+        {
+          "id": "d",
+          "text": "(z − 1)/(ia − 1) est un réel"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois points A(1), P(ia), M(z) sont alignés si et seulement si les vecteurs AM⃗ et AP⃗, d'affixes z − 1 et ia − 1, sont colinéaires, c'est-à-dire si le quotient (z − 1)/(ia − 1) est réel. Un quotient imaginaire pur exprimerait l'orthogonalité ; z/(ia − 1) compare le vecteur OM⃗ (origine O et non A) à AP⃗ ; un produit réel ne traduit pas la colinéarité. En développant (z − 1)(−iā − 1) − (z̄ − 1)(ia − 1) = 0 (nombre égal à son conjugué), on obtient (iā + 1)z + (ia − 1)z̄ = i(a + ā). Vérification : pour z = ia, le quotient vaut 1, réel ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. P est le point d'affixe ia et H le projeté orthogonal de O sur (AP) ; son affixe z_H vérifie à la fois (iā + 1)z + (ia − 1)z̄ = i(a + ā) (H est sur (AP)) et (iā + 1)z − (ia − 1)z̄ = 0 ((AP) ⊥ (OH)). Que vaut z_H ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_H = i(a + ā)/(iā + 1)"
+        },
+        {
+          "id": "b",
+          "text": "z_H = (a + ā)/(2(iā + 1))"
+        },
+        {
+          "id": "c",
+          "text": "z_H = i(a − ā)/(2(iā + 1))"
+        },
+        {
+          "id": "d",
+          "text": "z_H = i(a + ā)/(2(iā + 1))"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En additionnant les deux équations, les termes en z̄ s'annulent : 2(iā + 1)z_H = i(a + ā). Donc z_H = i(a + ā)/(2(iā + 1)), à condition que iā + 1 ≠ 0. Oublier le facteur 2 (qui vient de l'addition des deux équations) donne le résultat sans le 2 ; supprimer le i du numérateur oublie le facteur du second membre ; remplacer a + ā par a − ā changerait le second membre. Vérification : en soustrayant les équations on obtiendrait 2(ia − 1)z̄_H = i(a + ā), conjugué cohérent de la première relation ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. Pourquoi iā + 1 ne s'annule-t-il jamais lorsque a décrit le cercle (Γ) ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "iā + 1 = 0 donnerait a = −i, or |−i| = 1 ≠ √2 : ce point n'est pas sur (Γ)"
+        },
+        {
+          "id": "b",
+          "text": "iā + 1 = 0 donnerait a = i, or |i| = 1 ≠ √2 : ce point n'est pas sur (Γ)"
+        },
+        {
+          "id": "c",
+          "text": "iā + 1 = 0 donnerait a = −i, de module √2 : il faut exclure ce point de (Γ)"
+        },
+        {
+          "id": "d",
+          "text": "iā + 1 = 0 donnerait a = 1 : ce point n'est pas sur (Γ) car |1| ≠ √2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Résolvons iā + 1 = 0 : ā = −1/i = i, donc a = ī = −i. Or |−i| = 1 alors que les points de (Γ) vérifient |a| = √2 : le point −i n'est pas sur (Γ), donc iā + 1 ≠ 0 pour tout a de (Γ). Conjuguer i donne −i et non i ; l'équation donne bien a = −i, de module 1 et non √2 (aucun point à exclure) ; a = 1 ne résout pas l'équation, car i·1 + 1 = 1 + i ≠ 0, même si ce point n'est pas non plus sur (Γ). Vérification : iā + 1 = 0 avec a = −i donne i·i + 1 = 0 ✓, et |−i| = 1 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. z_H = i(a + ā)/(2(iā + 1)) et N est le point d'affixe z_N = (a + ā)/(iā + 1). Par quelle transformation N est-il l'image de H ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Similitude directe de centre O, de rapport 2 et d'angle π/2"
+        },
+        {
+          "id": "b",
+          "text": "Similitude directe de centre O, de rapport 2 et d'angle −π/2"
+        },
+        {
+          "id": "c",
+          "text": "Similitude directe de centre O, de rapport 1/2 et d'angle −π/2"
+        },
+        {
+          "id": "d",
+          "text": "Similitude directe de centre A, de rapport 2 et d'angle −π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le quotient z_N/z_H = [(a + ā)/(iā + 1)] × [2(iā + 1)/(i(a + ā))] = 2/i = −2i. Donc z_N = −2i·z_H : c'est l'écriture z ↦ az + b avec a = −2i et b = 0. Le module |−2i| = 2 est le rapport, l'argument −π/2 est l'angle, et le centre est le point fixe 0 = O. Les autres propositions changent le signe de l'angle (2i au lieu de −2i), inversent le rapport (1/2) ou déplacent le centre en A (qui n'est pas fixe). Vérification : 1/i = −i, donc 2/i = −2i ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. P est le point d'affixe ia et H le projeté orthogonal de O sur la droite (AP). Sur lequel de ces ensembles se trouve H lorsque Q décrit (Γ) ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (OA)"
+        },
+        {
+          "id": "b",
+          "text": "La médiatrice de [OA]"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de diamètre [OA]"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre O et de rayon 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "H est le projeté de O sur (AP), donc le triangle OHA est rectangle en H : l'angle OHA est droit. L'ensemble des points H tels que l'angle OHA soit droit est le cercle de diamètre [OA] (réciproque du théorème de l'angle inscrit dans un demi-cercle). H ne décrit pas le cercle de centre O et de rayon 1, puisque OH varie ; il ne reste pas sur la droite (OA) ni sur la médiatrice de [OA]. H est différent de O : O ∈ (AP) exigerait a + ā = 0, soit a = ±i√2, valeurs exclues ; H décrit donc ce cercle privé du point O. Vérification : le centre du cercle est le milieu de [OA], d'affixe 1/2, et son rayon est 1/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan complexe est muni d'un repère orthonormé direct (O, u⃗, v⃗). (Γ) est le cercle de centre O et de rayon √2 ; A, B et C sont les points d'affixes 1, i√2 et −i√2. Q est un point de (Γ), d'affixe a, distinct de B et de C. H décrit le cercle de diamètre [OA] et N est l'image de H par la similitude directe de centre O, de rapport 2 et d'angle −π/2. Sur quel cercle se trouve N ? <svg viewBox=\"0 0 240 240\"><circle cx=\"120\" cy=\"120\" r=\"94\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M120 120 L186.5 53.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"120\" cy=\"120\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"120\" r=\"3.6\"/><circle cx=\"120\" cy=\"26\" r=\"3.6\"/><circle cx=\"120\" cy=\"214\" r=\"3.6\"/><circle cx=\"186.5\" cy=\"53.5\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"110\" y=\"134\" text-anchor=\"middle\">O</text><text x=\"188.5\" y=\"136\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"22\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"226\" text-anchor=\"middle\">C</text><text x=\"198.5\" y=\"49.5\" text-anchor=\"middle\">Q</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre −i/2 et de rayon 1/2"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre i et de rayon 1"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre −i et de rayon 1"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre −2i et de rayon 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une similitude transforme un cercle en un cercle : le cercle de diamètre [OA] a pour centre 1/2 et pour rayon 1/2. Son centre a pour image −2i × 1/2 = −i, et son rayon est multiplié par 2 : 1. N décrit donc le cercle de centre −i et de rayon 1, c'est-à-dire de diamètre [OD] avec D d'affixe −2i. Le centre −i/2 et le rayon 1/2 oublieraient le rapport 2 ; le centre i viendrait d'un angle +π/2 ; et le centre −2i serait l'image de A (point du cercle), pas son centre. N décrit ce cercle privé du point O (H ≠ O, donc N ≠ O). Vérification : pour a = 1 + i, z_N = 0,8 − 0,4i et |z_N + i|² = 0,64 + 0,36 = 1 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

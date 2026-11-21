@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 5 ⭐⭐⭐⭐ : fonction e^(−1/(2x²)) prolongée en 0, réciproque, volume de révolution et limites",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Pourquoi g est-elle continue en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quand x tend vers 0, −1/(2x²) tend vers 0, donc e^(−1/(2x²)) tend vers 1, qui est différent de g(0)"
+        },
+        {
+          "id": "b",
+          "text": "Quand x tend vers 0, −1/(2x²) tend vers −∞, donc e^(−1/(2x²)) tend vers 0 = g(0)"
+        },
+        {
+          "id": "c",
+          "text": "Quand x tend vers 0, −1/(2x²) tend vers +∞, donc e^(−1/(2x²)) tend vers +∞"
+        },
+        {
+          "id": "d",
+          "text": "Les limites à gauche et à droite de 0 diffèrent, donc g n'est pas continue en ce point de ℝ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x ≠ 0, 2x² > 0 et x² → 0⁺, donc 1/(2x²) → +∞ et −1/(2x²) → −∞. Comme e^t tend vers 0 quand t tend vers −∞, g(x) → 0 = g(0) ✓ : g est continue en 0, et en tout autre réel par composée de fonctions continues. Piège classique : perdre le signe moins (on obtient +∞) ou faire tendre l'exposant vers 0, comme si c'était x qui tendait vers l'infini.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Quelle est la parité de g et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est impaire : 𝒞 est symétrique par rapport à l'origine O"
+        },
+        {
+          "id": "b",
+          "text": "g est paire : 𝒞 est symétrique par rapport à l'axe des abscisses"
+        },
+        {
+          "id": "c",
+          "text": "g est paire : 𝒞 est symétrique par rapport à la droite d'équation y = x"
+        },
+        {
+          "id": "d",
+          "text": "g est paire : 𝒞 est symétrique par rapport à l'axe des ordonnées"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le domaine ℝ est symétrique par rapport à 0. Pour x ≠ 0, g(−x) = e^(−1/(2(−x)²)) = e^(−1/(2x²)) = g(x), et g(−0) = g(0) : g est paire ✓. Une fonction paire a une courbe symétrique par rapport à l'axe (Oy). Piège classique : conclure « impaire » parce que g(0) = 0, alors que g(−x) = −g(x) échoue pour tout x ≠ 0 (g est strictement positive), ou confondre les axes de symétrie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Quelle est la limite de g(x)/x quand x tend vers 0⁺, et que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : g n'est pas dérivable en 0, la tangente est verticale"
+        },
+        {
+          "id": "b",
+          "text": "0 : g est dérivable en 0 et g′(0) = 0"
+        },
+        {
+          "id": "c",
+          "text": "1 : g est dérivable en 0 et g′(0) = 1"
+        },
+        {
+          "id": "d",
+          "text": "0 : g est continue en 0 mais n'y est pas dérivable"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x > 0, g(x)/x = e^(−1/(2x²))/x. En posant t = 1/x → +∞, on obtient t e^(−t²/2), qui tend vers 0 par croissances comparées (l'exponentielle de −t²/2 écrase t). Comme g(0) = 0, g(x)/x = (g(x) − g(0))/(x − 0) est le taux d'accroissement en 0 : sa limite 0 est finie, donc g est dérivable à droite en 0, avec g′(0) = 0 ; par parité, aussi à gauche ✓. Piège classique : voir un 1/x qui explose et conclure +∞ sans remarquer que l'exponentielle le domine, ou croire qu'une limite nulle du taux d'accroissement empêche la dérivabilité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Quelle est la dérivée de g sur ℝ* ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) = −g(x)/x³"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = g(x)/(2x³)"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) = g(x)/x³"
+        },
+        {
+          "id": "d",
+          "text": "g′(x) = −g(x)/(2x²)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive e^u avec u(x) = −1/(2x²) = −(1/2)x⁻² : u′(x) = −(1/2) × (−2)x⁻³ = 1/x³. Donc g′(x) = u′(x) e^(u(x)) = e^(−1/(2x²))/x³ = g(x)/x³ ✓. Piège classique : se tromper de signe en dérivant x⁻², garder le 1/2 qui se simplifie avec le −2 de la puissance, ou oublier la dérivée de l'exposant et ne dériver que e^u.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Sachant que g′(x) = g(x)/x³ sur ℝ*, g(0) = 0, et que g(x) tend vers 1 en +∞ et en −∞, quel est le tableau de variation de g ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g décroît sur ]−∞ ; 0] (de 1 à 0), puis croît sur [0 ; +∞[ (de 0 à 1) ; minimum g(0) = 0"
+        },
+        {
+          "id": "b",
+          "text": "g croît sur ]−∞ ; 0] puis décroît sur [0 ; +∞[ ; maximum g(0) = 0 ; limite 1 en −∞ et en +∞"
+        },
+        {
+          "id": "c",
+          "text": "g est strictement croissante sur ℝ tout entier, de 0 en −∞ à 1 en +∞, car g′ est positive"
+        },
+        {
+          "id": "d",
+          "text": "g décroît sur ]−∞ ; 0] puis croît sur [0 ; +∞[ ; minimum g(0) = 0, limite +∞ en ±∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme g(x) > 0 pour x ≠ 0, g′(x) = g(x)/x³ a le signe de x³, donc celui de x : négative sur ]−∞ ; 0[, positive sur ]0 ; +∞[. g décroît donc de lim_{−∞} g = e^0 = 1 jusqu'à g(0) = 0, puis croît de 0 jusqu'à lim_{+∞} g = 1 ✓ (en ±∞, −1/(2x²) tend vers 0). Piège classique : lire g′ > 0 parce que g > 0 (on oublie le facteur x³ qui change de signe en 0), ou faire tendre l'exposant vers +∞ au lieu de 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = e^(−1/(2x²)) pour x ≠ 0 et g(0) = 0 : g est continue et strictement croissante sur [0 ; +∞[, avec g(0) = 0 et lim_{x→+∞} g(x) = 1. Quel est l'intervalle image g([0 ; +∞[) sur lequel g réalise une bijection ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "[0 ; 1["
+        },
+        {
+          "id": "b",
+          "text": "[0 ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "[0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]0 ; 1["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une fonction continue et strictement croissante sur [0 ; +∞[ réalise une bijection sur [g(0) ; lim_{+∞} g[ = [0 ; 1[ ✓. La borne 0 est atteinte (g(0) = 0), donc fermée ; la borne 1 n'est qu'une limite, jamais atteinte puisque −1/(2x²) < 0 donne g(x) < 1, donc ouverte. Piège classique : fermer la borne 1 ou ouvrir la borne 0 : on confond valeur atteinte et valeur limite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = e^(−1/(2x²)) pour x ≠ 0 et g(0) = 0, bijection de [0 ; +∞[ sur [0 ; 1[. Quelle est l'expression de sa réciproque g⁻¹(x) pour x dans ]0 ; 1[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g⁻¹(x) = −1/(2 ln x)"
+        },
+        {
+          "id": "b",
+          "text": "g⁻¹(x) = 1/√(−ln x)"
+        },
+        {
+          "id": "c",
+          "text": "g⁻¹(x) = 1/√(−2 ln x)"
+        },
+        {
+          "id": "d",
+          "text": "g⁻¹(x) = −1/√(−2 ln x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On résout y = e^(−1/(2x²)) avec x > 0 : ln y = −1/(2x²), donc x² = −1/(2 ln y) (positif car ln y < 0 pour y ∈ ]0 ; 1[), et x = 1/√(−2 ln y) ✓. Contrôle en x = e^(−1/2) : −2 ln x = 1, d'où 1/√1 = 1, et g(1) = e^(−1/2) ✓. Piège classique : s'arrêter à x² (oubli de la racine), perdre le facteur 2 en passant au logarithme, ou prendre la racine négative, qui est l'antécédent sur ]−∞ ; 0].",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Quels sont les points d'inflexion de 𝒞 ? On donne g″(x) = (1 − 3x²) e^(−1/(2x²)) / x⁶ sur ℝ*.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A(√3/3 ; e^(−3)) et B(−√3/3 ; e^(−3))"
+        },
+        {
+          "id": "b",
+          "text": "A(√3/3 ; e^(−3/2)) et B(−√3/3 ; e^(−3/2))"
+        },
+        {
+          "id": "c",
+          "text": "A(√3 ; e^(−1/6)) et B(−√3 ; e^(−1/6))"
+        },
+        {
+          "id": "d",
+          "text": "A(√3/3 ; e^(−3/2)) et B(−√3/3 ; −e^(−3/2))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g″ s'annule, en changeant de signe, quand 1 − 3x² = 0, c'est-à-dire pour x = ±1/√3 = ±√3/3 (le reste de l'expression est strictement positif). Pour x² = 1/3, 1/(2x²) = 3/2, donc g(±√3/3) = e^(−3/2). Par parité, les deux points ont la même ordonnée ✓. Piège classique : oublier le facteur 2 de 2x² (exposant −3 au lieu de −3/2), résoudre x² = 3 au lieu de x² = 1/3, ou appliquer une symétrie centrale à une fonction paire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g une fonction positive et croissante sur [0 ; +∞[ et f = g². Quelle justification montre que f est croissante sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g est croissante, donc g² l'est aussi : le carré conserve toujours le sens de variation"
+        },
+        {
+          "id": "b",
+          "text": "f′ = (g′)² est positive, comme un carré"
+        },
+        {
+          "id": "c",
+          "text": "f′ = 2g′ est positive, car g est croissante"
+        },
+        {
+          "id": "d",
+          "text": "f′ = 2 g g′ est positive, car g ≥ 0 et g′ ≥ 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La dérivée d'un carré est (g²)′ = 2 g g′ : c'est un produit de deux facteurs positifs sur [0 ; +∞[ (g ≥ 0 par hypothèse et g′ ≥ 0 car g est croissante), donc f′ ≥ 0 et f est croissante ✓. Piège classique : affirmer que le carré conserve toujours les variations : c'est faux pour une fonction négative (x ↦ x est croissante, mais x ↦ x² décroît sur ]−∞ ; 0]) ; la positivité de g est indispensable. Autres erreurs : dériver g² en (g′)² ou en 2g′.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Soit f = g² et V(n) = π ∫ de 0 à n de f(t) dt pour n ≥ 2. Comment interpréter V(n) graphiquement ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le volume du solide engendré par la rotation du même domaine autour de l'axe des ordonnées"
+        },
+        {
+          "id": "b",
+          "text": "L'aire du domaine limité par 𝒞, l'axe (Ox) et les droites x = 0 et x = n"
+        },
+        {
+          "id": "c",
+          "text": "Le volume du solide engendré par la rotation, autour de l'axe des abscisses, du domaine limité par 𝒞, l'axe (Ox) et les droites x = 0 et x = n"
+        },
+        {
+          "id": "d",
+          "text": "Le volume du solide engendré par la rotation autour de l'axe (Ox) du domaine limité par la courbe de f, l'axe (Ox) et les droites x = 0 et x = n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le volume engendré par la rotation autour de (Ox) de la région sous la courbe d'une fonction φ positive entre 0 et n vaut π ∫ de 0 à n de φ(t)² dt. Ici φ = g et g² = f, donc π ∫ de 0 à n de f(t) dt = π ∫ de 0 à n de g(t)² dt est le volume cherché ✓. Piège classique : oublier le facteur π (on décrit alors une aire), changer d'axe de rotation, ou appliquer la formule à la courbe de f au lieu de celle de g, ce qui mettrait f au carré.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f une fonction positive sur [0 ; +∞[ et n un entier avec n ≥ 2, de sorte que √n ≤ n. Pourquoi a-t-on V(n) = π ∫ de 0 à n de f(t) dt ≥ π ∫ de √n à n de f(t) dt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Par la relation de Chasles, ∫ de 0 à n de f = ∫ de 0 à √n de f + ∫ de √n à n de f, et ∫ de 0 à √n de f ≥ 0 car f ≥ 0"
+        },
+        {
+          "id": "b",
+          "text": "Parce que f est croissante sur [0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "Parce que ∫ de 0 à √n de f est négative lorsque √n < n"
+        },
+        {
+          "id": "d",
+          "text": "Parce que l'intervalle [0 ; n] est plus grand que [√n ; n], donc toute intégrale sur [0 ; n] dépasse celle sur [√n ; n], quel que soit le signe de f"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme 0 ≤ √n ≤ n, la relation de Chasles découpe l'intégrale : ∫₀ⁿ f = ∫₀^(√n) f + ∫_(√n)ⁿ f. Le premier terme est positif, puisqu'il intègre une fonction positive sur un intervalle bien orienté (0 ≤ √n), donc ∫₀ⁿ f ≥ ∫_(√n)ⁿ f ✓. Piège classique : invoquer la croissance de f, qui n'intervient pas ici, ou oublier que la comparaison dépend du signe de f : sur un grand intervalle, une fonction négative donnerait l'inégalité inverse.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f = g² croissante sur [0 ; +∞[, avec f(√n) = e^(−1/n). Pour n ≥ 2, on sait que V(n) ≥ π ∫ de √n à n de f(t) dt. Quelle démarche établit que V(n) tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour t ∈ [√n ; n], f(t) ≥ f(n), donc V(n) ≥ π(n − √n)f(n), minoration qui tend vers +∞ quand n tend vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "Pour t ∈ [√n ; n], f(t) ≥ f(√n) = e^(−1/n), donc V(n) ≥ π(n − √n)e^(−1/n), et cette minoration tend vers +∞"
+        },
+        {
+          "id": "c",
+          "text": "Pour t ∈ [√n ; n], f(t) ≥ 1, donc V(n) ≥ π(n − √n), minoration qui tend vers +∞ quand n tend vers +∞"
+        },
+        {
+          "id": "d",
+          "text": "Pour t ∈ [√n ; n], f(t) ≥ f(0) = 0, donc V(n) ≥ 0, ce qui ne donne qu'une minoration par une limite nulle"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f étant croissante, pour √n ≤ t ≤ n on a f(t) ≥ f(√n) = e^(−1/n). En intégrant, ∫_(√n)ⁿ f ≥ (n − √n) e^(−1/n), d'où V(n) ≥ π(n − √n)e^(−1/n). Quand n → +∞, n − √n = n(1 − 1/√n) → +∞ et e^(−1/n) → 1, donc la minoration tend vers +∞ ✓ et V(n) aussi. Piège classique : minorer par la valeur à la borne droite (f(n) est le plus grand, pas le plus petit des f(t)), ou par 1, alors que f < 1 partout.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = e^(−1/(2x²)) si x ≠ 0 et g(0) = 0, de courbe 𝒞. Soit f = g² et V(n) = π ∫ de 0 à n de f(t) dt. Quelle majoration de f sur [0 ; n] conduit à V(n) ≤ nπ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(t) ≤ 1/2, car g(t) ≤ 1/√2 sur [0 ; n]"
+        },
+        {
+          "id": "b",
+          "text": "f(t) ≤ e^(−1/2), car g(t) ≤ e^(−1/4) sur [0 ; n]"
+        },
+        {
+          "id": "c",
+          "text": "f(t) ≤ f(0) = 0, car f(0) est le maximum de f"
+        },
+        {
+          "id": "d",
+          "text": "f(t) ≤ 1, car 0 ≤ g(t) < 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour tout t, g(t) = e^(−1/(2t²)) ∈ [0 ; 1[, donc f(t) = g(t)² ∈ [0 ; 1[ et ∫₀ⁿ f(t) dt ≤ ∫₀ⁿ 1 dt = n. Donc V(n) ≤ nπ ✓. Les autres majorations sont fausses : f(t) tend vers 1 en +∞, donc dépasse 1/2 et e^(−1/2) pour t grand, et f(0) = 0 est son minimum, pas son maximum. Piège classique : prendre la valeur en 0 pour un majorant d'une fonction croissante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, on a π(n − √n)e^(−1/n) ≤ V(n) ≤ nπ. Quelle est la limite de V(n)/n quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "π"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On divise l'encadrement par n > 0 : π(1 − 1/√n)e^(−1/n) ≤ V(n)/n ≤ π. Quand n → +∞, 1/√n → 0 et e^(−1/n) → 1, donc le membre de gauche tend vers π, comme celui de droite. Le théorème des gendarmes donne V(n)/n → π ✓. Piège classique : conclure +∞ parce que V(n) tend vers +∞ (le quotient par n compense), ou oublier le facteur π.",
+      "difficulty": 3
+    }
+  ]
+}

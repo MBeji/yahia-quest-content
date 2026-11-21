@@ -1,0 +1,490 @@
+{
+  "title": "🏛️ Bac 2023 · session de contrôle · Exercice 3 ⭐⭐⭐⭐ : fonction e^(−1/(x+1)) prolongée en −1, point fixe, encadrement d'aire et suite d'intégrales",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 19,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [−1 ; +∞[ par f(x) = e^(−1/(x+1)) si x > −1 et f(−1) = 0, de courbe ζ. Quelle est la limite de f(x) quand x tend vers −1⁺, et que conclut-on pour la continuité de f à droite en −1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La limite vaut +∞ : f n'a pas de limite finie en −1⁺, donc f n'est pas continue à droite en −1"
+        },
+        {
+          "id": "b",
+          "text": "La limite vaut 0, car e^t tend vers 0 quand t tend vers +∞ et −1/(x + 1) tend vers +∞ : f(x) → 0 = f(−1), donc f est continue à droite en −1"
+        },
+        {
+          "id": "c",
+          "text": "Il n'y a pas de limite, car x + 1 s'annule en −1 : f n'est pas continue à droite en −1"
+        },
+        {
+          "id": "d",
+          "text": "La limite vaut 0, égale à f(−1) : f est continue à droite en −1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand x → −1⁺, x + 1 → 0⁺, donc 1/(x + 1) → +∞ et −1/(x + 1) → −∞. Comme e^t → 0 quand t → −∞, f(x) → 0 = f(−1) ✓ : f est continue à droite en −1. Pièges classiques : perdre le signe moins de l'exposant (on trouve +∞ et on conclut à tort à une discontinuité) ; lire −1/(x + 1) → +∞ puis croire que e^t tend vers 0 quand t → +∞ (la conclusion « continue » tombe juste par hasard, mais la justification est fausse : e^t → +∞ en +∞, c'est en −∞ qu'il tend vers 0) ; ou déclarer qu'il n'y a pas de limite parce que le dénominateur s'annule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [−1 ; +∞[ par f(x) = e^(−1/(x+1)) si x > −1 et f(−1) = 0, de courbe ζ. Quelle est la limite de f(x)/(x + 1) quand x tend vers −1⁺ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "e^(−1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Posons t = 1/(x + 1), qui tend vers +∞ quand x → −1⁺. Alors f(x)/(x + 1) = t e^(−t), qui tend vers 0 par croissances comparées (l'exponentielle l'emporte sur t) ✓. Piège classique : voir la division par x + 1 qui explose et conclure +∞, sans remarquer que l'exponentielle tend vers 0 plus vite que 1/(x + 1) ne tend vers +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [−1 ; +∞[ par f(x) = e^(−1/(x+1)) si x > −1 et f(−1) = 0, de courbe ζ. Sachant que f(x)/(x + 1) tend vers 0 quand x tend vers −1⁺, quelle est l'interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ζ admet au point (−1 ; 0) une demi-tangente verticale, car l'exposant 1/(x + 1) tend vers +∞ en −1⁺"
+        },
+        {
+          "id": "b",
+          "text": "ζ admet la droite d'équation x = −1 pour asymptote verticale, car 1/(x + 1) n'est pas défini en −1"
+        },
+        {
+          "id": "c",
+          "text": "f est dérivable à droite en −1, avec f′(−1) = 0 : ζ admet en (−1 ; 0) une demi-tangente horizontale"
+        },
+        {
+          "id": "d",
+          "text": "f n'est pas dérivable à droite en −1, car une limite nulle du taux d'accroissement ne suffit pas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme f(−1) = 0, le quotient f(x)/(x + 1) = (f(x) − f(−1))/(x − (−1)) est le taux d'accroissement de f en −1. Sa limite 0 est finie : f est dérivable à droite en −1, de nombre dérivé 0, et ζ admet en (−1 ; 0) une demi-tangente horizontale, l'axe des abscisses ✓. Piège classique : confondre limite nulle (tangente horizontale) et limite infinie (tangente verticale), ou parler d'asymptote alors que f reste bornée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [−1 ; +∞[ par f(x) = e^(−1/(x+1)) si x > −1 et f(−1) = 0, de courbe ζ. Quelle est la dérivée de f sur ]−1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = −f(x)/(x + 1)²"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = f(x)/(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = f(x)/(x + 1)²"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = f(x)(x + 1)²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive e^u avec u(x) = −1/(x + 1) : u′(x) = 1/(x + 1)² (dérivée de −1/v : v′/v²). Donc f′(x) = u′(x) e^(u(x)) = f(x)/(x + 1)² ✓. Piège classique : se tromper de signe en dérivant −1/(x + 1) (les deux signes moins s'annulent), oublier le carré du dénominateur, ou multiplier au lieu de diviser.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [−1 ; +∞[ par f(x) = e^(−1/(x+1)) si x > −1 et f(−1) = 0, de courbe ζ. Que devient f(x) quand x tend vers +∞, et de quelle droite la courbe ζ se rapproche-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 : la droite d'équation y = 1 est asymptote à ζ en +∞"
+        },
+        {
+          "id": "b",
+          "text": "0 : l'axe des abscisses est asymptote à ζ en +∞"
+        },
+        {
+          "id": "c",
+          "text": "+∞ : ζ admet une branche infinie en +∞"
+        },
+        {
+          "id": "d",
+          "text": "e : la droite d'équation y = e est asymptote à ζ en +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand x → +∞, x + 1 → +∞, donc −1/(x + 1) → 0⁻ et f(x) = e^(−1/(x+1)) → e^0 = 1 ✓. Comme f(x) < 1 pour tout x, la courbe reste au-dessous de l'asymptote horizontale y = 1. Piège classique : confondre la limite de l'exposant (0) avec celle de f (e^0 = 1), ou croire que e^(0) vaut 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(−1/(x+1)) sur ]−1 ; +∞[, avec f(−1) = 0, f′(x) = f(x)/(x + 1)² et lim_{+∞} f = 1. Quel est le tableau de variation de f sur [−1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement décroissante sur [−1 ; +∞[, de la valeur 1 à la valeur 0"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement croissante sur [−1 ; +∞[, de f(−1) = 0 jusqu'à +∞"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante sur [−1 ; +∞[, de f(−1) = 0 jusqu'à la limite e"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur [−1 ; +∞[, de f(−1) = 0 à la limite 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > −1, f(x) > 0 et (x + 1)² > 0, donc f′(x) > 0 : f est strictement croissante sur ]−1 ; +∞[, et continue en −1. Elle va de f(−1) = 0 à lim_{+∞} f = 1 ✓. Piège classique : lire le signe de f′ à l'envers, ou confondre la limite en +∞ avec +∞ ou avec e.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(−1/(x+1)) sur [−1 ; +∞[, continue et strictement croissante, avec f(−1) = 0 et lim_{+∞} f = 1. Quel est l'intervalle J tel que f réalise une bijection de [−1 ; +∞[ sur J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J = [e^(−1) ; 1["
+        },
+        {
+          "id": "b",
+          "text": "J = [0 ; 1["
+        },
+        {
+          "id": "c",
+          "text": "J = [−1 ; 1["
+        },
+        {
+          "id": "d",
+          "text": "J = [0 ; 1]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une fonction continue strictement croissante sur [−1 ; +∞[ réalise une bijection sur [f(−1) ; lim_{+∞} f[ = [0 ; 1[ ✓. La valeur 0 est atteinte (f(−1) = 0) : crochet fermé. La valeur 1 n'est qu'une limite, jamais atteinte puisque f(x) < 1 : crochet ouvert. Piège classique : fermer la borne 1 (J = [0 ; 1]) ; prendre pour borne inférieure f(0) = e^(−1) au lieu de f(−1) = 0 ; ou prendre la borne −1 du domaine pour une valeur de f (J = [−1 ; 1[).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f(x) = e^(−1/(x+1)). Pourquoi l'équation f(x) = x admet-elle une unique solution α dans [0,4 ; 0,6] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h(x) = f(x) − x vérifie h(0,4) < 0 et h(0,6) > 0 : le théorème des valeurs intermédiaires s'applique, et la solution est unique car h est dérivable"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement croissante, donc f(x) = x admet une unique solution, par le théorème de la bijection appliqué à f seule"
+        },
+        {
+          "id": "c",
+          "text": "f(0,4) et f(0,6) sont dans [0 ; 1[, donc f(x) = x admet une solution dans [0,4 ; 0,6]"
+        },
+        {
+          "id": "d",
+          "text": "h(x) = f(x) − x vérifie h(0,4) > 0 et h(0,6) < 0 et h′(x) = f′(x) − 1 < 0 sur [0,4 ; 0,6], car f′(x) = f(x)/(x + 1)² < 1/1,96 < 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On pose h(x) = f(x) − x, continue sur [0,4 ; 0,6]. On a f(0,4) = e^(−1/1,4) > 0,4 et f(0,6) = e^(−1/1,6) < 0,6, donc h(0,4) > 0 > h(0,6). De plus, comme f(x) < 1 et (x + 1)² ≥ 1,4² = 1,96, f′(x) < 1/1,96 < 1, donc h′ = f′ − 1 < 0 : h est strictement décroissante. Le théorème de la bijection donne une unique solution α ✓. Piège classique : inverser les signes de h aux bornes, croire que la croissance de f suffit à l'unicité d'un point fixe (il faut f′ < 1, car x ↦ x croît aussi), ou se contenter d'être dans l'image de f.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle démarche établit que, pour tout réel u ≥ 0, 1 − u ≤ e^(−u) ≤ 1 − u + u²/2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On étudie φ(u) = e^(−u) − 1 + u, dont la dérivée 1 − e^(−u) est négative pour u ≥ 0, donc φ(u) ≤ φ(0) = 0"
+        },
+        {
+          "id": "b",
+          "text": "On étudie φ(u) = e^(−u) − 1 + u (φ′ ≥ 0, φ(0) = 0), puis ψ(u) = 1 − u + u²/2 − e^(−u) (ψ′ = φ, ψ(0) = 0)"
+        },
+        {
+          "id": "c",
+          "text": "On étudie ψ(u) = 1 − u + u²/2 − e^(−u), de dérivée ψ′(u) = u − 1 + e^(−u) ≥ 0, sans calculer ψ(0)"
+        },
+        {
+          "id": "d",
+          "text": "On vérifie les deux inégalités pour u = 0 et pour u = 1, les valeurs usuelles du calcul"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "φ′(u) = −e^(−u) + 1 ≥ 0 pour u ≥ 0 (car e^(−u) ≤ 1), et φ(0) = 1 − 1 + 0 = 0 : φ est croissante à partir de 0, donc φ ≥ 0, c'est-à-dire e^(−u) ≥ 1 − u. Ensuite ψ′(u) = −1 + u + e^(−u) = φ(u) ≥ 0 et ψ(0) = 1 − 0 + 0 − 1 = 0, donc ψ ≥ 0, c'est-à-dire e^(−u) ≤ 1 − u + u²/2 ✓. Piège classique : se tromper sur le signe de φ′ (1 − e^(−u) est positive pour u > 0), oublier la valeur initiale ψ(0) = 0 (sans elle, la croissance ne donne pas le signe), ou croire qu'on prouve une inégalité pour tout u en testant deux points.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A(λ) = ∫ de 0 à λ de f(x) dx avec f(x) = e^(−1/(x+1)), et u = 1/(x + 1) ≥ 0, qui donne f(x) ≥ 1 − 1/(x + 1). Que vaut ∫ de 0 à λ de (1 − 1/(x + 1)) dx, c'est-à-dire la minoration de A(λ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "λ + ln(λ + 1)"
+        },
+        {
+          "id": "b",
+          "text": "λ − ln λ"
+        },
+        {
+          "id": "c",
+          "text": "λ − ln(λ + 1)"
+        },
+        {
+          "id": "d",
+          "text": "λ − 1/(λ + 1) + 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une primitive de 1 − 1/(x + 1) est x − ln(x + 1) (car x + 1 > 0). Donc l'intégrale vaut [x − ln(x + 1)] entre 0 et λ = λ − ln(λ + 1) − (0 − ln 1) = λ − ln(λ + 1) ✓, et A(λ) ≥ λ − ln(λ + 1). Piège classique : changer le signe du logarithme, oublier le +1 dans ln(x + 1), ou primitiver 1/(x + 1) en −1/(x + 1) au lieu de ln(x + 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit A(λ) = ∫ de 0 à λ de f(x) dx avec f(x) = e^(−1/(x+1)), et u = 1/(x + 1) ≥ 0, qui donne f(x) ≤ 1 − 1/(x + 1) + 1/(2(x + 1)²). Que vaut ∫ de 0 à λ de 1/(2(x + 1)²) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "λ/(2(λ + 1))"
+        },
+        {
+          "id": "b",
+          "text": "1/(2(λ + 1))"
+        },
+        {
+          "id": "c",
+          "text": "ln(λ + 1)/2"
+        },
+        {
+          "id": "d",
+          "text": "λ/(λ + 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de 1/(2(x + 1)²) est −1/(2(x + 1)). L'intégrale vaut donc −1/(2(λ + 1)) + 1/2 = (λ + 1 − 1)/(2(λ + 1)) = λ/(2(λ + 1)) ✓. Ainsi A(λ) ≤ λ − ln(λ + 1) + λ/(2(λ + 1)). Piège classique : oublier la valeur de la primitive en 0 (on trouve ±1/(2(λ + 1))), primitiver 1/(x + 1)² en ln(x + 1) ou oublier le 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout λ > 0, λ − ln(λ + 1) ≤ A(λ) ≤ λ − ln(λ + 1) + λ/(2(λ + 1)). Quelle est la limite de A(λ)/λ quand λ tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On divise l'encadrement par λ > 0 : 1 − ln(λ + 1)/λ ≤ A(λ)/λ ≤ 1 − ln(λ + 1)/λ + 1/(2(λ + 1)). Quand λ → +∞, ln(λ + 1)/λ → 0 (croissances comparées) et 1/(2(λ + 1)) → 0, donc les deux bornes tendent vers 1, et A(λ)/λ → 1 ✓. Piège classique : garder λ/(2(λ + 1)) dans la limite du quotient (il tend vers 1/2 avant division, mais vers 0 après), ou croire que A(λ) = o(λ) comme f(x) tend vers 0 : ici f tend vers 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α l'unique solution de f(x) = x, avec f(x) = e^(−1/(x+1)), f′(x) = f(x)/(x + 1)² et f(0) = e^(−1). On pose u₀ = ∫ de 0 à α de f(x)/(x + 1)² dx. Que vaut u₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u₀ = 1/e − α"
+        },
+        {
+          "id": "b",
+          "text": "u₀ = α"
+        },
+        {
+          "id": "c",
+          "text": "u₀ = α − 1/e"
+        },
+        {
+          "id": "d",
+          "text": "u₀ = α − e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'intégrande f(x)/(x + 1)² est exactement f′(x). Donc u₀ = f(α) − f(0). Or f(α) = α (définition de α) et f(0) = e^(−1/1) = 1/e. Ainsi u₀ = α − 1/e ✓. Piège classique : inverser les bornes (1/e − α), oublier f(0) en prenant f(0) = 0 (c'est f(−1) qui vaut 0), ou écrire f(0) = e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 0, soit u_n = ∫ de 0 à α de f(x)/(x + 1)^(n+2) dx avec f(x) = e^(−1/(x+1)), f croissante, f(α) = α. Quelle justification donne 0 ≤ u_n ≤ α/(n + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur [0 ; α], 0 ≤ f(x) ≤ 1, donc 0 ≤ u_n ≤ ∫ de 0 à α de (x + 1)^(−n−2) dx ≤ 1/(n + 1), ce qui fournit directement le majorant annoncé"
+        },
+        {
+          "id": "b",
+          "text": "Sur [0 ; α], 0 ≤ f(x) ≤ f(α) = α, donc 0 ≤ u_n ≤ α ∫ de 0 à α de (x + 1)^(−n−2) dx = (α/(n + 1))(1 − (α + 1)^(−n−1)) ≤ α/(n + 1)"
+        },
+        {
+          "id": "c",
+          "text": "Sur [0 ; α], 0 ≤ f(x) ≤ f(0) = 1/e, car f est décroissante, donc u_n ≤ (1/e)/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "Sur [0 ; α], (x + 1)^(−n−2) ≤ 1, donc u_n ≤ ∫ de 0 à α de f(x) dx, qui est un majorant indépendant de n"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f est croissante, donc pour 0 ≤ x ≤ α, 0 ≤ f(x) ≤ f(α) = α. Alors 0 ≤ u_n ≤ α ∫ de 0 à α de (x + 1)^(−n−2) dx = α [−1/((n + 1)(x + 1)^(n+1))] entre 0 et α = (α/(n + 1))(1 − (α + 1)^(−n−1)) ≤ α/(n + 1) ✓. Piège classique : majorer f par 1 (on trouve 1/(n + 1), pas α/(n + 1)), croire f décroissante (elle est croissante), ou majorer (x + 1)^(−n−2) par 1, ce qui efface la décroissance en n.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un encadrement 0 ≤ u_n ≤ α/(n + 1) a été établi pour u_n = ∫ de 0 à α de f(x)/(x + 1)^(n+2) dx. Quel est le comportement asymptotique de (u_n) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_n tend vers α"
+        },
+        {
+          "id": "b",
+          "text": "u_n tend vers 1/2"
+        },
+        {
+          "id": "c",
+          "text": "u_n tend vers +∞"
+        },
+        {
+          "id": "d",
+          "text": "u_n tend vers 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme α/(n + 1) → 0 quand n → +∞, l'encadrement 0 ≤ u_n ≤ α/(n + 1) donne u_n → 0 par le théorème des gendarmes ✓. Piège classique : croire que l'intégrale reste proche de α, la valeur de f en α : le facteur (x + 1)^(−n−2) tend vers 0 pour tout x > 0 de [0 ; α].",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour intégrer par parties u_n = ∫ de 0 à α de f(x)/(x + 1)^(n+2) dx, on utilise f′(x) = f(x)/(x + 1)². Quelle égalité vérifie l'intégrande ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x)/(x + 1)^(n+2) = f′(x)(x + 1)^(−n−2)"
+        },
+        {
+          "id": "b",
+          "text": "f(x)/(x + 1)^(n+2) = f′(x)(x + 1)^n"
+        },
+        {
+          "id": "c",
+          "text": "f(x)/(x + 1)^(n+2) = f′(x)(x + 1)^(−n)"
+        },
+        {
+          "id": "d",
+          "text": "f(x)/(x + 1)^(n+2) = f′(x)(x + 1)^(−n−4)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit f(x)/(x + 1)^(n+2) = (f(x)/(x + 1)²) × (x + 1)^(−n) = f′(x)(x + 1)^(−n), car (x + 1)^(n+2) = (x + 1)² (x + 1)^n. On pose alors u = (x + 1)^(−n) et v′ = f′ (donc v = f) ✓. Piège classique : oublier d'absorber le carré (x + 1)² dans f′ et garder l'exposant −n − 2, ou se tromper sur le signe de l'exposant restant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, u_n = ∫ de 0 à α de f′(x)(x + 1)^(−n) dx. On intègre par parties avec v = f et u = (x + 1)^(−n). Quelle est la valeur du crochet [f(x)(x + 1)^(−n)] entre 0 et α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α/(α + 1)^n − 1/e"
+        },
+        {
+          "id": "b",
+          "text": "α/(α + 1)^n + 1/e"
+        },
+        {
+          "id": "c",
+          "text": "α/(α + 1)^(n+2) − 1/e"
+        },
+        {
+          "id": "d",
+          "text": "α/(α + 1)^n − e"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le crochet vaut f(α)(α + 1)^(−n) − f(0) × 1^(−n). Or f(α) = α et f(0) = e^(−1) = 1/e, d'où α/(α + 1)^n − 1/e ✓. Piège classique : retrancher f(0) avec le mauvais signe, garder l'exposant n + 2 de l'énoncé de départ, ou écrire f(0) = e au lieu de 1/e.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, u_n = ∫ de 0 à α de f(x)/(x + 1)^(n+2) dx. Le crochet de l'intégration par parties vaut α/(α + 1)^n − 1/e, et la dérivée de (x + 1)^(−n) est −n(x + 1)^(−n−1). Quelle relation relie u_n à u_(n−1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u_n = α/(α + 1)^n − 1/e − n u_(n−1)"
+        },
+        {
+          "id": "b",
+          "text": "u_n = α/(α + 1)^n − 1/e + n u_(n−1)"
+        },
+        {
+          "id": "c",
+          "text": "u_n = α/(α + 1)^n − 1/e + (n + 1) u_(n−1)"
+        },
+        {
+          "id": "d",
+          "text": "u_n = α/(α + 1)^n + 1/e − n u_(n−1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "∫ f′ (x + 1)^(−n) dx = [f (x + 1)^(−n)] − ∫ f × (−n)(x + 1)^(−n−1) dx = [crochet] + n ∫ f(x)/(x + 1)^(n+1) dx. Or ∫ de 0 à α de f(x)/(x + 1)^((n−1)+2) dx = u_(n−1) : donc u_n = α/(α + 1)^n − 1/e + n u_(n−1) ✓. Piège classique : perdre le signe moins de la dérivée de (x + 1)^(−n), qui se compense avec le signe moins de l'intégration par parties, ou se tromper dans l'indice du facteur (n et non n + 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout n ≥ 1, u_n = α/(α + 1)^n − 1/e + n u_(n−1). En remplaçant n par n + 1, quelle expression obtient-on pour (n + 1)u_n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(n + 1)u_n = u_(n+1) + α/(α + 1)^(n+1) − 1/e"
+        },
+        {
+          "id": "b",
+          "text": "(n + 1)u_n = u_(n+1) − α/(α + 1)^(n+1) − 1/e"
+        },
+        {
+          "id": "c",
+          "text": "(n + 1)u_n = u_n − α/(α + 1)^n + 1/e"
+        },
+        {
+          "id": "d",
+          "text": "(n + 1)u_n = u_(n+1) − α/(α + 1)^(n+1) + 1/e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La relation à l'indice n + 1 s'écrit u_(n+1) = α/(α + 1)^(n+1) − 1/e + (n + 1)u_n. On isole (n + 1)u_n : (n + 1)u_n = u_(n+1) − α/(α + 1)^(n+1) + 1/e ✓. Piège classique : changer le signe d'un terme en le faisant passer de l'autre côté, ou garder l'indice n au lieu de n + 1 dans le terme géométrique.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, (n + 1)u_n = u_(n+1) − α/(α + 1)^(n+1) + 1/e, avec u_n → 0 et α > 0. Que vaut la limite de n u_n quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1/e"
+        },
+        {
+          "id": "c",
+          "text": "α − 1/e"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme α + 1 > 1, α/(α + 1)^(n+1) → 0, et u_(n+1) → 0 : donc (n + 1)u_n → 1/e. Alors n u_n = (n + 1)u_n − u_n → 1/e − 0 = 1/e ✓ : la suite (n u_n) est convergente. Piège classique : conclure 0 puisque u_n → 0 (on oublie le facteur n qui compense), ou garder le terme géométrique α/(α + 1)^(n+1), qui tend vers 0 car sa raison 1/(α + 1) est dans ]0 ; 1[.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "title": "🏛️ Bac 2019 · session principale · Exercice 1 ⭐⭐⭐⭐ : Losange, cercles, similitude directe et tangente",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 18,
+  "questions": [
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. Quel argument établit que (AB) et (HM) sont parallèles ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(HM) ⊥ (HC) car [CM] est un diamètre de ξ′ et H ∈ ξ′, et (AB) ⊥ (AC) : deux perpendiculaires à (AC)"
+        },
+        {
+          "id": "b",
+          "text": "(HM) ⊥ (HC) car [BC] est un diamètre de ξ et H ∈ ξ, et (AB) ⊥ (AC) : deux perpendiculaires à (AC)"
+        },
+        {
+          "id": "c",
+          "text": "(HM) ⊥ (HC) car [CM] est un diamètre de ξ′ et H ∈ ξ′, et (AB) ⊥ (BC) : deux perpendiculaires à (BC)"
+        },
+        {
+          "id": "d",
+          "text": "(HM) ⊥ (HC) car [BC] est un diamètre de ξ et H ∈ ξ, et (AB) ⊥ (BC) : deux perpendiculaires à (BC)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "H appartient au cercle ξ′ de diamètre [CM] : le triangle CHM est rectangle en H, donc (HM) ⊥ (HC) = (AC) (H est sur (AC)). Par ailleurs (AB) ⊥ (AC) d'après (AC⃗, AB⃗) ≡ π/2. Deux droites perpendiculaires à une même droite (AC) sont parallèles : (AB) ∥ (HM). Le cercle qui porte H est ξ′ et non ξ ; et c'est (AC), et non (BC), qui est perpendiculaire à (AB). Vérification : l'angle CHM est droit puisque [CM] est un diamètre ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. Quelle est la valeur du quotient HM/AB ? On rappelle que (HM) ∥ (AB). <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/9"
+        },
+        {
+          "id": "b",
+          "text": "1/3"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "2/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le triangle ABC, M est sur [BC] et H sur [AC] avec (HM) ∥ (AB) : d'après le théorème de Thalès, CM/CB = CH/CA = HM/AB. Comme CM = (1/3)BC, HM/AB = 1/3. 2/3 serait BM/BC (rapport de la partie opposée) ; 1/9 serait le carré du bon rapport. Vérification : CM/CB = 1/3 par construction ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. Le triangle AHM est rectangle en H (puisque (HM) ⊥ (AC)) et AM = AB (côtés du losange). Quelle relation lie HA, AB et HM ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "HA = AB − HM",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "b",
+          "text": "HA² = AB² + HM²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "HA² = HM² − AB²"
+        },
+        {
+          "id": "d",
+          "text": "HA² = AB² − HM²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans le triangle AHM rectangle en H, l'hypoténuse est [AM], opposée à l'angle droit, et AM = AB. Le théorème de Pythagore donne AM² = AH² + HM², soit HA² = AB² − HM². Soustraire des longueurs (HA = AB − HM) oublie les carrés ; additionner (HA² = AB² + HM²) ferait de AB un côté de l'angle droit au lieu de l'hypoténuse ; HM² − AB² serait négatif. Vérification : HA² = AB² − AB²/9 = 8AB²/9 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. S est la similitude directe de centre H qui envoie A sur M. On a HM = AB/3 et HA² = AB² − HM² = 8AB²/9. Quel est le rapport de S ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3"
+        },
+        {
+          "id": "b",
+          "text": "√2/4"
+        },
+        {
+          "id": "c",
+          "text": "2√2/3"
+        },
+        {
+          "id": "d",
+          "text": "2√2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le rapport de S est HM/HA (S(H) = H et S(A) = M). HA = √(8/9)·AB = (2√2/3)·AB et HM = AB/3. Donc k = (1/3)/(2√2/3) = 1/(2√2) = √2/4. Le quotient HM/AB = 1/3 compare deux segments qui ne se correspondent pas ; HA/AB = 2√2/3 n'est pas un rapport de la similitude ; 2√2 est l'inverse de √2/4 : c'est le rapport de S⁻¹, qui envoie M sur A. Vérification : (√2/4) × (2√2/3) = 4/12 = 1/3 = HM/AB ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. Quel argument établit que les points H, M et A′ sont alignés ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(HM) ∥ (AB) et (MA′) ∥ (BA′), car [MA′] et [BA′] sont des côtés consécutifs du losange : deux droites confondues puisqu'elles passent par M"
+        },
+        {
+          "id": "b",
+          "text": "(HM) ⊥ (AB) et (MA′) ∥ (AB), car [A′M] et [AB] sont des côtés opposés du losange : deux droites confondues puisqu'elles passent par M"
+        },
+        {
+          "id": "c",
+          "text": "(HM) ∥ (AB) et (MA′) ∥ (AB), car [A′M] et [AB] sont des côtés opposés du losange : deux droites confondues puisqu'elles passent par M"
+        },
+        {
+          "id": "d",
+          "text": "(HM) ∥ (AB) et (MA′) ⊥ (AB), car les diagonales du losange sont perpendiculaires : deux droites confondues puisqu'elles passent par M"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les côtés opposés [A′M] et [AB] d'un losange (donc d'un parallélogramme) sont parallèles : (MA′) ∥ (AB). On sait aussi que (HM) ∥ (AB). Les droites (HM) et (MA′) sont donc deux parallèles à (AB) passant par le même point M : elles sont confondues, et H, M, A′ sont alignés. Les diagonales sont perpendiculaires entre elles, mais (A′M) est un côté, pas une diagonale ; des côtés consécutifs ne sont pas parallèles. Vérification : un seul parallèle à (AB) passe par M ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. S est la similitude directe de centre H qui envoie A sur M. H est sur [AC] et (HM) ∥ (AB). Quelle est une mesure de l'angle de S ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−π/2"
+        },
+        {
+          "id": "b",
+          "text": "π/2"
+        },
+        {
+          "id": "c",
+          "text": "−π/4"
+        },
+        {
+          "id": "d",
+          "text": "π"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'angle de S est (HA⃗, HM⃗). Comme H est sur le segment [AC], HA⃗ est opposé à AC⃗ : HA⃗ = −AC⃗ en direction ; (HM) étant parallèle à (AB), HM⃗ a la direction de AB⃗ et son sens (M est du même côté de (AC) que B). Ainsi (HA⃗, HM⃗) = (AC⃗, AB⃗) + π = π/2 + π = 3π/2 ≡ −π/2 [2π]. Garder π/2 oublierait que HA⃗ est opposé à AC⃗. Vérification : −π/2 et 3π/2 diffèrent de 2π ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. S est la similitude directe de centre H, de rapport √2/4 et d'angle −π/2, qui envoie A sur M. On a A′ ∈ (AI) ∩ (MH). Quelle est l'image de A′ par S ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "M"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "A"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "A′ est le point commun de (AI) et de (MH). (AI) est une diagonale du losange AMA′B, donc (AI) ⊥ (BM) = (BC) ; S d'angle −π/2 envoie (AI) sur la perpendiculaire à (AI) passant par S(A) = M, c'est-à-dire (BC). H est sur ξ′ de diamètre [CM], donc (MH) ⊥ (AC) ; S fixe H et tourne les directions de −π/2 : S((MH)) est la perpendiculaire à (MH) en H, c'est-à-dire (AC). L'image de A′ est donc le point commun de (BC) et (AC), soit C. Le point M viendrait d'une direction de (MH) non tournée ((BC) ∩ (MH)), B de la confusion de S((MH)) avec (AB), parallèle à (MH), et A de la confusion de S((AI)) avec (AC). Vérification : C est sur (BC) et sur (AC) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. S est la similitude directe de centre H, d'angle −π/2, qui envoie A sur M, et S(I) = I′. Quel argument établit que (HI) est tangente en H au cercle ξ′ ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "S(I) = I′ donne (HI) ∥ (HI′) ; I′ est le centre de ξ′, donc (HI) est perpendiculaire au rayon [HI′] en H"
+        },
+        {
+          "id": "b",
+          "text": "S(I) = I′ donne (HI) ⊥ (HI′) ; I′ est un point de ξ′, donc (HI) est la corde [HI′]"
+        },
+        {
+          "id": "c",
+          "text": "S(I) = I′ donne (HI) ∥ (HI′) ; I′ est un point de ξ′, donc (HI) coupe ξ′ en deux points"
+        },
+        {
+          "id": "d",
+          "text": "S(I) = I′ donne (HI) ⊥ (HI′) ; I′ est le centre de ξ′, donc (HI) est perpendiculaire au rayon [HI′] en H"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S est d'angle −π/2 et envoie I sur I′, donc (HI⃗, HI′⃗) ≡ −π/2 : (HI) ⊥ (HI′). Or I′ est le milieu de [CM], diamètre de ξ′ : c'est le centre de ξ′ et [HI′] est un rayon. Une droite perpendiculaire à un rayon en son extrémité H, point du cercle, est tangente au cercle en H. Si (HI) était parallèle à (HI′), les deux droites seraient confondues et (HI) passerait par le centre, donc couperait ξ′ en deux points. Vérification : (HI) ⊥ (HI′) car l'angle de S n'est pas nul ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un plan muni d'un repère, ξ est le cercle de diamètre [BC] et de centre O ; M est le point de [BC] tel que CM = (1/3)BC ; ξ′ est le cercle de diamètre [CM] ; I et I′ sont les milieux de [BM] et de [CM] ; AMA′B est un losange avec A et A′ sur ξ et (AC⃗, AB⃗) ≡ π/2 [2π] ; la droite (AC) recoupe ξ′ en H. S est la similitude directe de centre H, de rapport √2/4 et d'angle −π/2. On pose S′ = S_(AH)∘S∘S_(AH). Quelle affirmation est vraie ? <svg viewBox=\"0 0 260 250\"><circle cx=\"130\" cy=\"125\" r=\"99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><circle cx=\"196\" cy=\"125\" r=\"33\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M31 125 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L31 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M31 125 L97 31.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 31.7 L163 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M163 125 L97 218.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M97 218.3 L229 125\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"31\" cy=\"125\" r=\"3.6\"/><circle cx=\"229\" cy=\"125\" r=\"3.6\"/><circle cx=\"163\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"125\" r=\"3.6\"/><circle cx=\"196\" cy=\"125\" r=\"3.6\"/><circle cx=\"97\" cy=\"218.3\" r=\"3.6\"/><circle cx=\"97\" cy=\"31.7\" r=\"3.6\"/><circle cx=\"185\" cy=\"156.1\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"22\" y=\"129\" text-anchor=\"middle\">B</text><text x=\"240\" y=\"128\" text-anchor=\"middle\">C</text><text x=\"159\" y=\"117\" text-anchor=\"middle\">M</text><text x=\"89\" y=\"138\" text-anchor=\"middle\">I</text><text x=\"200\" y=\"113\" text-anchor=\"middle\">I′</text><text x=\"91\" y=\"234.3\" text-anchor=\"middle\">A</text><text x=\"91\" y=\"23.7\" text-anchor=\"middle\">A′</text><text x=\"199\" y=\"168.1\" text-anchor=\"middle\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "S′ est une similitude directe de centre H, de rapport √2/4 et d'angle π/2"
+        },
+        {
+          "id": "b",
+          "text": "S′ est une similitude directe de centre H, de rapport √2/4 et d'angle −π/2"
+        },
+        {
+          "id": "c",
+          "text": "S′ est une similitude indirecte de centre H et de rapport √2/4"
+        },
+        {
+          "id": "d",
+          "text": "S′ est une similitude directe de centre A, de rapport √2/4 et d'angle π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "S′ est la composée de deux symétries orthogonales (indirectes) et d'une similitude directe : (−1)(+1)(−1) = +1, S′ est directe. H est sur l'axe (AH), donc S_(AH)(H) = H et S′(H) = S_(AH)(S(S_(AH)(H))) = S_(AH)(S(H)) = S_(AH)(H) = H : H est fixe, c'est le centre. Le rapport est √2/4 (les symétries conservent les longueurs). Quant à l'angle, conjuguer par une symétrie orthogonale change l'angle en son opposé : −(−π/2) = π/2. Garder −π/2 oublierait le renversement ; le centre n'est pas A, qui n'est pas fixe. Vérification : S′(A) = S_(AH)(S(A)) = S_(AH)(M), symétrique de M par rapport à (AC) ✓.",
+      "difficulty": 3
+    }
+  ]
+}

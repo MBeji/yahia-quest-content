@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 3 ⭐⭐⭐ : suite 2 × 5ⁿ + 7, congruences modulo 8 et 1000, PGCD de deux termes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "Soit (aₙ) la suite définie sur ℕ par aₙ = 2 × 5ⁿ + 7. Pourquoi aₙ est-il impair pour tout entier naturel n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 × 5ⁿ est pair et 7 est impair, donc leur somme aₙ est impaire"
+        },
+        {
+          "id": "b",
+          "text": "5ⁿ est impair et 7 est impair, donc leur somme 5ⁿ + 7 est paire, d'où aₙ pair"
+        },
+        {
+          "id": "c",
+          "text": "aₙ est impair seulement lorsque n est pair, car 5ⁿ est alors impair"
+        },
+        {
+          "id": "d",
+          "text": "aₙ est impair parce que 5ⁿ est impair, quelle que soit la valeur de n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le nombre 2 × 5ⁿ est un multiple de 2, donc pair, quel que soit n. Le nombre 7 est impair. La somme d'un pair et d'un impair est impaire, donc aₙ est impair pour tout n ✓. Contrôle : a₀ = 9, a₁ = 17, a₂ = 57, tous impairs. Les autres justifications sont fausses : le facteur 2 rend le terme 2 × 5ⁿ pair (et non impair), la parité de aₙ ne dépend pas de celle de n, et le fait que 5ⁿ soit impair ne suffit pas à conclure (c'est le facteur 2 qui décide).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel est le reste de 5ⁿ modulo 8 selon la valeur de l'entier naturel n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 si n est pair, 1 si n est impair"
+        },
+        {
+          "id": "b",
+          "text": "1 si n est pair, 5 si n est impair"
+        },
+        {
+          "id": "c",
+          "text": "5 pour tout entier n"
+        },
+        {
+          "id": "d",
+          "text": "1 pour tout entier n"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule les premières puissances : 5⁰ = 1, 5¹ = 5, 5² = 25 = 3 × 8 + 1 ≡ 1, 5³ = 125 = 15 × 8 + 5 ≡ 5. Comme 5² ≡ 1 (mod 8), les restes se répètent avec la période 2 : si n = 2p, 5ⁿ = (5²)^p ≡ 1 ; si n = 2p + 1, 5ⁿ = (5²)^p × 5 ≡ 5 ✓. Il en résulte aₙ = 2 × 5ⁿ + 7 ≡ 2 + 7 = 9 ≡ 1 (mod 8) pour n pair, et 10 + 7 = 17 ≡ 1 (mod 8) pour n impair. Les erreurs : inverser les parités (5⁰ = 1, pas 5), ou croire que le reste est constant (5 ou 1) alors qu'il alterne.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit n un entier naturel. Que vaut 5a₂ₙ − a₂ₙ₊₁, où aₖ = 2 × 5ᵏ + 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "35"
+        },
+        {
+          "id": "c",
+          "text": "28"
+        },
+        {
+          "id": "d",
+          "text": "42"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe : 5a₂ₙ = 10 × 5^(2n) + 35, et a₂ₙ₊₁ = 2 × 5^(2n+1) + 7 = 10 × 5^(2n) + 7. La différence est 35 − 7 = 28, et les termes en 5^(2n) s'annulent ✓. Contrôle pour n = 0 : 5a₀ − a₁ = 5 × 9 − 17 = 45 − 17 = 28 ✓. Les erreurs : oublier de multiplier la constante 7 par 5 (on trouve 7 − 7 = 0), additionner au lieu de soustraire (35 + 7 = 42), ou oublier de retrancher le 7 de a₂ₙ₊₁ (35).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit x un entier tel que x ≡ 1 (mod 8) et x ≡ 7 (mod 125). Quelle est la valeur de x modulo 1000 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≡ 751 (mod 1000)"
+        },
+        {
+          "id": "b",
+          "text": "x ≡ 7 (mod 1000)"
+        },
+        {
+          "id": "c",
+          "text": "x ≡ 1 (mod 1000)"
+        },
+        {
+          "id": "d",
+          "text": "x ≡ 257 (mod 1000)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme 8 ∧ 125 = 1, un entier congru à 1 modulo 8 et à 7 modulo 125 est unique modulo 8 × 125 = 1000. On vérifie 257 : 257 = 32 × 8 + 1 ≡ 1 (mod 8) ✓ et 257 = 2 × 125 + 7 ≡ 7 (mod 125) ✓. Donc x ≡ 257 (mod 1000). L'erreur d'échange des restes donne 751 (751 ≡ 7 mod 8, 751 ≡ 1 mod 125) ; garder le reste 7 d'une seule équation (7 ≢ 1 modulo 8) ne vérifie pas la première, et garder le seul reste 1 de la première congruence ne vérifie pas la seconde (1 ≢ 7 modulo 125) ; et le module est le produit 1000 : une congruence modulo 8 seule ne détermine pas x modulo 1000.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout n, aₙ = 2 × 5ⁿ + 7 vérifie aₙ ≡ 1 (mod 8). On sait aussi que si x ≡ 1 (mod 8) et x ≡ 7 (mod 125), alors x ≡ 257 (mod 1000). Pourquoi aₙ ≡ 257 (mod 1000) dès que n ≥ 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour n ≥ 3, 125 divise 5ⁿ, donc aₙ ≡ 7 (mod 125) ; on applique l'implication"
+        },
+        {
+          "id": "b",
+          "text": "Pour n ≥ 2, 125 divise 5ⁿ, donc aₙ ≡ 7 (mod 125) ; on applique ensuite l'implication"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout n, aₙ ≡ 7 (mod 125), car 7 est le terme constant de la suite"
+        },
+        {
+          "id": "d",
+          "text": "Pour n ≥ 3, 8 divise 5ⁿ, donc aₙ ≡ 7 (mod 8) ; on applique ensuite l'implication"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Si n ≥ 3, 5ⁿ = 5³ × 5^(n−3) = 125 × 5^(n−3) est un multiple de 125, donc 2 × 5ⁿ ≡ 0 et aₙ ≡ 7 (mod 125). Avec aₙ ≡ 1 (mod 8), l'implication donne aₙ ≡ 257 (mod 1000) ✓. Contrôle : a₃ = 257, a₄ = 1257 ≡ 257, a₂ = 57 ≢ 257 (n = 2 ne convient pas). Les erreurs : écrire n ≥ 2 (5² = 25 n'est pas un multiple de 125), croire aₙ ≡ 7 (mod 125) pour tout n (a₁ = 17), ou intervertir les modules (5ⁿ est congru à 1 ou 5 modulo 8, pas à 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 3, aₙ = 2 × 5ⁿ + 7 vérifie aₙ ≡ 257 (mod 1000). Quels sont les trois derniers chiffres du produit (2 × 5^2020 + 7)(2 × 5^2021 + 7) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "257"
+        },
+        {
+          "id": "b",
+          "text": "049"
+        },
+        {
+          "id": "c",
+          "text": "514"
+        },
+        {
+          "id": "d",
+          "text": "066"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les deux facteurs sont a₂₀₂₀ et a₂₀₂₁, avec 2020 ≥ 3 et 2021 ≥ 3, donc chacun est congru à 257 modulo 1000. Le produit est congru à 257 × 257 = 66049 ≡ 49 (mod 1000), c'est-à-dire 049 : les trois derniers chiffres sont 0, 4, 9 ✓. Contrôle : 66049 = 66 × 1000 + 49. Les erreurs : oublier de multiplier (257), additionner les deux congruences (257 + 257 = 514), ou lire les premiers chiffres du produit (066) au lieu des derniers.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier naturel et d le PGCD de a₂ₙ et a₂ₙ₊₁, où aₖ = 2 × 5ᵏ + 7. On sait que 5a₂ₙ − a₂ₙ₊₁ = 28. Pourquoi d est-il différent de 7 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 divise 28 = 5a₂ₙ − a₂ₙ₊₁, donc 7 ne peut pas diviser à la fois a₂ₙ et a₂ₙ₊₁"
+        },
+        {
+          "id": "b",
+          "text": "d divise 28 et 7 divise 28, donc d est un multiple de 7, c'est-à-dire d ≠ 7 car d est plus grand"
+        },
+        {
+          "id": "c",
+          "text": "Si 7 divisait a₂ₙ, il diviserait 2 × 5^(2n), donc 5^(2n), absurde car 7 ne divise pas 5"
+        },
+        {
+          "id": "d",
+          "text": "a₂ₙ est impair alors que 7 est impair, donc d est impair et par conséquent différent de 7"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Raisonnons par l'absurde : si d = 7, 7 diviserait a₂ₙ = 2 × 5^(2n) + 7, donc 7 diviserait la différence a₂ₙ − 7 = 2 × 5^(2n). Comme 7 est premier avec 2, le lemme de Gauss donne 7 | 5^(2n), puis 7 | 5 car 7 est premier : c'est absurde. Donc d ≠ 7 ✓. Les autres arguments sont faux : que 7 divise 28 n'exclut rien : 28 = 5a₂ₙ − a₂ₙ₊₁ est aussi divisible par 7 si 7 divise les deux termes, donc cette divisibilité ne dit rien sur a₂ₙ et a₂ₙ₊₁ (et d divise 28, mais n'est pas forcément un multiple de 7) ; et être impair n'exclut pas 7, qui est impair lui aussi.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n un entier naturel, d le PGCD de a₂ₙ et a₂ₙ₊₁ avec aₖ = 2 × 5ᵏ + 7. On sait que 5a₂ₙ − a₂ₙ₊₁ = 28. Que vaut d ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "28"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le nombre d divise a₂ₙ et a₂ₙ₊₁, donc d divise la combinaison 5a₂ₙ − a₂ₙ₊₁ = 28. Les diviseurs de 28 sont 1, 2, 4, 7, 14 et 28. Comme aₖ = 2 × 5ᵏ + 7 est impair pour tout k (un pair plus 7), d divise un entier impair (a₂ₙ), donc d est impair, ce qui élimine 2, 4, 14 et 28 ; reste 1 et 7. Or d ≠ 7 : si 7 divisait a₂ₙ = 2 × 5^(2n) + 7, il diviserait 2 × 5^(2n), donc 5^(2n) (7 est premier avec 2), puis 5 (7 est premier) : absurde. Donc d = 1 ✓ : a₂ₙ et a₂ₙ₊₁ sont premiers entre eux. Contrôle : n = 1, a₂ = 57 et a₃ = 257, et 257 = 4 × 57 + 29, 57 = 29 + 28, 29 = 28 + 1, donc PGCD 1 ✓. L'erreur classique est de conclure d = 28 (la combinaison elle-même) alors que d n'en est qu'un diviseur, ou d = 7 en oubliant l'argument d'absurdité.",
+      "difficulty": 3
+    }
+  ]
+}

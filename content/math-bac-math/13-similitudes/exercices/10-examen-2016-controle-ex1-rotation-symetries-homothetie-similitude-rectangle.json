@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 1 ⭐⭐⭐⭐ : Rotation, composée de symétries, homothétie et similitude sur un rectangle",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. Soit R la rotation de centre I et d'angle π/3. Quelles sont les images de O et de D par R ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "R(O) = C et R(D) = O"
+        },
+        {
+          "id": "b",
+          "text": "R(O) = D et R(D) = A"
+        },
+        {
+          "id": "c",
+          "text": "R(O) = C et R(D) = A"
+        },
+        {
+          "id": "d",
+          "text": "R(O) = D et R(D) = O"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le losange AOID, AO = OI = ID = DA ; dans le losange OCID, OC = CI = ID = DO. Comme AO = OC = OD (demi-diagonales du rectangle), tous ces côtés sont égaux : IO = ID = DO, donc le triangle IOD est équilatéral, et IO = IC = OC, donc le triangle IOC est équilatéral. Reste à lire l'orientation : le rectangle est direct, I est au-dessus de [DC] et on tourne de I dans le sens direct de D vers O, puis de O vers C. Ainsi R(D) = O et R(O) = C. La rotation inverse (d'angle −π/3) enverrait O sur D, ce qui renverse le sens de lecture. Vérification : IO = IC = OC, donc l'angle (IO⃗, IC⃗) vaut bien π/3 ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. R est la rotation de centre I et d'angle π/3, avec R(O) = C et R(D) = O. Quelle est l'image de A par R ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le sommet B"
+        },
+        {
+          "id": "b",
+          "text": "Le sommet C"
+        },
+        {
+          "id": "c",
+          "text": "Le centre O"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu L"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AOID est un losange, donc IA⃗ = IO⃗ + ID⃗. Une rotation conserve les combinaisons linéaires de vecteurs : le vecteur image de IA⃗ est IC⃗ + IO⃗ (images de IO⃗ et de ID⃗). Or, dans le losange OCID, IC⃗ = DO⃗, et DO⃗ = OB⃗ car O est le milieu de [BD] : ICBO est un parallélogramme, donc IC⃗ + IO⃗ = IB⃗. Par conséquent R(A) = B. Prendre l'image d'un seul des deux vecteurs ne donnerait pas B. Vérification : IA = IB, ce qui est nécessaire pour qu'une rotation de centre I envoie A sur B ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. Soit g = S_(OL)∘S_(OI)∘S_(AD), où S_(Δ) est la symétrie orthogonale d'axe Δ. Quelle est la nature de g ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une rotation de centre O"
+        },
+        {
+          "id": "b",
+          "text": "Une symétrie glissante d'axe (OL)"
+        },
+        {
+          "id": "c",
+          "text": "Une symétrie orthogonale d'axe (OL)"
+        },
+        {
+          "id": "d",
+          "text": "Une translation de vecteur AB⃗"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(AD) et (OI) sont parallèles (toutes deux perpendiculaires à (AB)) : S_(OI)∘S_(AD) est une translation, de vecteur perpendiculaire aux axes. Cette translation est ensuite composée avec S_(OL), dont l'axe (OL) est parallèle à (AB) : la composée d'une symétrie orthogonale et d'une translation de direction parallèle à son axe est une symétrie glissante. Ici g est donc une symétrie glissante d'axe (OL). Ce n'est pas une symétrie orthogonale car le vecteur de la translation est non nul, ni une translation seule (g est indirecte), ni une rotation (g est indirecte). Vérification : g(A) = C et g(D) = B, A et D étant envoyés de l'autre côté de (OL) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. Soit g = S_(OL)∘S_(OI)∘S_(AD), une symétrie glissante d'axe (OL). Quel est son vecteur ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AC⃗"
+        },
+        {
+          "id": "b",
+          "text": "AO⃗"
+        },
+        {
+          "id": "c",
+          "text": "AB⃗"
+        },
+        {
+          "id": "d",
+          "text": "(1/2)·AB⃗"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La composée de deux symétries d'axes parallèles est la translation de vecteur égal au double du vecteur qui sépare les deux axes, perpendiculairement à eux. Les axes (AD) et (OI) sont perpendiculaires à (AB) et la droite (OI), qui passe par O et I, coupe [AB] en son milieu : l'écart entre les deux axes est (1/2)AB⃗, donc le vecteur est 2 × (1/2)AB⃗ = AB⃗. Prendre seulement l'écart entre les axes donnerait (1/2)AB⃗, valeur du « demi-chemin ». Vérification : g(A) = S_(OL)(B) = C, car B et C sont symétriques par rapport à (OL) ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. On pose h l'homothétie de centre C et de rapport 1/2, g la symétrie glissante d'axe (OL) telle que g(A) = C et g(D) = B, R la rotation de centre I et d'angle π/3, et φ = R∘h∘g⁻¹. Quelle est la nature de φ ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une similitude directe de rapport 1/2"
+        },
+        {
+          "id": "b",
+          "text": "Une similitude indirecte de rapport 1/4"
+        },
+        {
+          "id": "c",
+          "text": "Une similitude directe de rapport 2"
+        },
+        {
+          "id": "d",
+          "text": "Une similitude indirecte de rapport 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "R et g⁻¹ sont des isométries (rapport 1) et h est une similitude de rapport 1/2 : le rapport de φ est 1 × 1/2 × 1 = 1/2. Pour le sens, g est indirecte (symétrie glissante), donc g⁻¹ aussi ; R et h sont directes. Le produit des signes est (+1)(+1)(−1) = −1 : φ est indirecte. Un rapport 1/4 serait celui de φ∘φ ; un rapport 2 serait celui de h⁻¹ ; une similitude directe supposerait un nombre pair de facteurs indirects. Vérification : φ∘φ sera alors une homothétie de rapport 1/4 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. Soit φ = R∘h∘g⁻¹, similitude indirecte de rapport 1/2, où h est l'homothétie de centre C et de rapport 1/2, R la rotation de centre I et d'angle π/3 (R(O) = C) et g la symétrie glissante qui envoie A sur C. Quel est le centre de φ ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le sommet C"
+        },
+        {
+          "id": "b",
+          "text": "Le point I"
+        },
+        {
+          "id": "c",
+          "text": "Le centre O"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu J"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre de φ est son unique point fixe. Calculons φ(C) = R(h(g⁻¹(C))). Comme g(A) = C, g⁻¹(C) = A ; l'homothétie h de centre C envoie A sur le milieu de [CA], qui est O ; enfin R(O) = C. Donc φ(C) = C : C est fixe, c'est le centre de φ. Le point I est le centre de R, mais R n'est que le dernier facteur : φ(I) ne vaut pas I. Vérification : le centre d'une similitude de rapport différent de 1 est unique, et C convient ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. Soit φ = R∘h∘g⁻¹. On a g⁻¹(B) = D et h(D) = J, donc φ(B) = R(J), où R est la rotation de centre I et d'angle π/3 avec R(O) = C. J est le milieu de [OI]. Quelle est l'image R(J) ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le milieu de [OC]"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le milieu de [IC]"
+        },
+        {
+          "id": "d",
+          "text": "Le point O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "J est le milieu de [OI]. Une rotation conserve le milieu : R(J) est le milieu de [R(O)R(I)]. Comme R(O) = C et que I, centre de R, est fixe, R(J) est le milieu de [CI]. Le milieu de [OC] s'obtiendrait en oubliant que I est fixe (en prenant R(I) = O). Le point C serait R(O), et O serait R(D), des images de points autres que J. Vérification : φ(B) est donc le milieu K de [IC], et KC = IC/2 = 1/2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. Soit φ = R∘h∘g⁻¹, similitude indirecte de centre C et de rapport 1/2, qui envoie B sur le milieu K de [IC]. On sait que φ = h∘S_Δ où Δ est une droite passant par C. Quelle est Δ ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La droite (CD)"
+        },
+        {
+          "id": "b",
+          "text": "La perpendiculaire en C à (AC)"
+        },
+        {
+          "id": "c",
+          "text": "La droite (CI)"
+        },
+        {
+          "id": "d",
+          "text": "La droite (AC)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour une similitude indirecte de centre C, l'axe est la bissectrice de l'angle (CM⃗, CM′⃗) pour tout point M. Avec M = B et M′ = K, l'axe est la bissectrice de l'angle BCK. Or (CK) = (CI) : l'angle BCK est l'angle entre (CB) (verticale) et (CI) (qui fait un angle de π/6 au-dessus de l'horizontale côté gauche) ; sa bissectrice est (AC) puisque S_(AC)(B) = I (A et C sont équidistants de B et de I : AB = AI et CB = CI). La droite (CI) est celle du point image, pas celle de l'axe ; (CD) et la perpendiculaire en C à (AC) passent bien par C mais ne sont pas équidistantes de B et de I, donc ne sont pas la médiatrice de [BI] qu'est l'axe. Vérification : h(S_(AC)(B)) = h(I) = K ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. ABCD est un rectangle direct de centre O ; AOID et OCID sont deux losanges ; J est le milieu de [CD] et L le milieu de [BC]. Soit φ = h∘S_(AC), où h est l'homothétie de centre C et de rapport 1/2, et soit K le milieu de [IC]. Quelle est l'image du rectangle ABCD par φ ? <svg viewBox=\"0 0 250 220\"><path d=\"M28 194 L222 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 194 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M222 82 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 82 L28 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 138 L125 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L28 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M125 26 L222 82\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M28 194 L222 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M222 194 L28 82\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M125 138 L222 138\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"28\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"194\" r=\"3.6\"/><circle cx=\"222\" cy=\"82\" r=\"3.6\"/><circle cx=\"28\" cy=\"82\" r=\"3.6\"/><circle cx=\"125\" cy=\"138\" r=\"3.6\"/><circle cx=\"125\" cy=\"26\" r=\"3.6\"/><circle cx=\"125\" cy=\"82\" r=\"3.6\"/><circle cx=\"222\" cy=\"138\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"18\" y=\"206\" text-anchor=\"middle\">A</text><text x=\"232\" y=\"206\" text-anchor=\"middle\">B</text><text x=\"233\" y=\"80\" text-anchor=\"middle\">C</text><text x=\"18\" y=\"80\" text-anchor=\"middle\">D</text><text x=\"115\" y=\"150\" text-anchor=\"middle\">O</text><text x=\"125\" y=\"17\" text-anchor=\"middle\">I</text><text x=\"114\" y=\"86\" text-anchor=\"middle\">J</text><text x=\"234\" y=\"142\" text-anchor=\"middle\">L</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le rectangle de sommets O, K, C et le milieu de [OD]"
+        },
+        {
+          "id": "b",
+          "text": "Le rectangle de sommets O, K, C et le milieu de [OB]"
+        },
+        {
+          "id": "c",
+          "text": "Le rectangle de sommets O, L, C et le milieu de [OB]"
+        },
+        {
+          "id": "d",
+          "text": "Le rectangle de sommets A, K, C et le milieu de [OB]"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une similitude transforme un rectangle en un rectangle : il suffit de calculer les images des quatre sommets par φ = h∘S_(AC). A et C sont sur l'axe (AC), donc S_(AC) les fixe : φ(A) = h(A) = milieu de [CA] = O et φ(C) = C. Dans les losanges, AB = AI et CB = CI : (AC) est la médiatrice de [BI], donc S_(AC)(B) = I et φ(B) = h(I) = milieu de [IC] = K. O est fixe par S_(AC) et milieu de [BD] : S_(AC)(D) = D′ est le symétrique de I par rapport à O. Avec O pour origine, ICBO est un parallélogramme, donc B⃗ = C⃗ − I⃗, et φ(D) = h(D′) est le milieu de [CD′], d'affixe (C⃗ − I⃗)/2 = B⃗/2 : c'est le milieu de [OB]. L'image du rectangle est donc le rectangle de sommets O, K, C et le milieu de [OB]. Les erreurs : mal placer le symétrique D′ de D (le milieu de [OD] ne résulte d'aucun calcul correct), appliquer h seul à B (on trouve le milieu L de [BC] au lieu de K), ou croire que A est fixé par φ alors que h l'envoie sur O. Vérification : OK⃗ · KC⃗ = 0, côtés consécutifs orthogonaux, et φ(A) = O, φ(D) = milieu de [OB] sont à distance AD/2 ✓.",
+      "difficulty": 3
+    }
+  ]
+}

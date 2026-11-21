@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 4 ⭐⭐⭐ : intersection de deux plans, équation de Bézout et points à coordonnées entières",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Dans l'espace muni d'un repère orthonormé, on considère les plans P₁ : 3x − 2y − 2z = 1 et P₂ : 4x − 11y + 2z = 0. Quel argument établit que P₁ et P₂ se coupent suivant une droite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les vecteurs normaux (3 ; −2 ; −2) et (4 ; −11 ; 2) sont non colinéaires"
+        },
+        {
+          "id": "b",
+          "text": "Le produit scalaire des vecteurs normaux vaut 30, qui est différent de 0"
+        },
+        {
+          "id": "c",
+          "text": "Les deux équations sont différentes, donc les deux plans sont différents"
+        },
+        {
+          "id": "d",
+          "text": "Les seconds membres 1 et 0 sont différents, donc les plans sont sécants"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Deux plans de vecteurs normaux n₁ et n₂ sont parallèles (confondus ou disjoints) si et seulement si n₁ et n₂ sont colinéaires ; sinon ils sont sécants suivant une droite. Ici n₁ = (3 ; −2 ; −2) et n₂ = (4 ; −11 ; 2) ne sont pas colinéaires : 3/4 ≠ −2/−11, donc P₁ et P₂ sont sécants suivant une droite Δ ✓. Les autres arguments ne conviennent pas : le produit scalaire 12 + 22 − 4 = 30 ne renseigne que sur l'orthogonalité (nul, les plans seraient perpendiculaires), deux équations différentes peuvent décrire deux plans parallèles (x + y + z = 0 et x + y + z = 1), et des seconds membres différents ne disent rien non plus (ces deux mêmes plans).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans l'espace muni d'un repère orthonormé, on considère les plans P₁ : 3x − 2y − 2z = 1 et P₂ : 4x − 11y + 2z = 0. Lequel de ces points appartient à la fois à P₁ et à P₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(1/2 ; 0 ; 1/4)"
+        },
+        {
+          "id": "b",
+          "text": "H(1/2 ; 0 ; −1)"
+        },
+        {
+          "id": "c",
+          "text": "E(1/7 ; 0 ; −2/7)"
+        },
+        {
+          "id": "d",
+          "text": "G(1/3 ; 1/2 ; −1/2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un point est sur Δ = P₁ ∩ P₂ si ses coordonnées vérifient les deux équations. Pour E(1/7 ; 0 ; −2/7) : 3/7 − 0 + 4/7 = 1 ✓ (P₁) et 4/7 − 0 − 4/7 = 0 ✓ (P₂). Pour F(1/2 ; 0 ; 1/4) : 3/2 − 1/2 = 1 ✓ (P₁) mais 2 + 1/2 = 5/2 ≠ 0 (P₂). Pour H(1/2 ; 0 ; −1) : 2 − 2 = 0 ✓ (P₂) mais 3/2 + 2 = 7/2 ≠ 1 (P₁). Pour G(1/3 ; 1/2 ; −1/2) : 1 − 1 + 1 = 1 ✓ (P₁) mais 4/3 − 11/2 − 1 ≠ 0 (P₂). Un point n'est sur la droite d'intersection que s'il vérifie les deux équations, et non une seule.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans l'espace muni d'un repère orthonormé, les plans P₁ : 3x − 2y − 2z = 1 et P₂ : 4x − 11y + 2z = 0 se coupent suivant une droite Δ. Quel est un vecteur directeur de Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(7 ; −13 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "(26 ; 14 ; 25)"
+        },
+        {
+          "id": "c",
+          "text": "(−1 ; 9 ; −4)"
+        },
+        {
+          "id": "d",
+          "text": "(26 ; 14 ; −25)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le vecteur directeur de Δ est orthogonal aux deux vecteurs normaux n₁ = (3 ; −2 ; −2) et n₂ = (4 ; −11 ; 2) : on prend leur produit vectoriel n₁ ∧ n₂ = ((−2)(2) − (−2)(−11) ; (−2)(4) − 3 × 2 ; 3 × (−11) − (−2)(4)) = (−26 ; −14 ; −25), colinéaire à (26 ; 14 ; 25) ✓. Vérification : (26 ; 14 ; 25) est orthogonal à n₁ : 78 − 28 − 50 = 0 ✓ et à n₂ : 104 − 154 + 50 = 0 ✓. Les autres vecteurs ne sont pas orthogonaux aux deux normaux : (7 ; −13 ; 0) = n₁ + n₂ et (−1 ; 9 ; −4) = n₁ − n₂ sont dans le plan des normaux, et (26 ; 14 ; −25) a une erreur de signe (n₁ · (26 ; 14 ; −25) = 100 ≠ 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (S) le système 3x − 2y − 2z = 1 et 4x − 11y + 2z = 0, d'inconnues entières x, y, z. Quelle équation obtient-on en additionnant membre à membre les deux équations de (S) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−x + 9y − 4z = 1"
+        },
+        {
+          "id": "b",
+          "text": "7x − 13y = 1"
+        },
+        {
+          "id": "c",
+          "text": "7x − 13y = 0"
+        },
+        {
+          "id": "d",
+          "text": "7x − 9y = 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On additionne terme à terme : les x donnent 3x + 4x = 7x, les y donnent −2y − 11y = −13y, les z donnent −2z + 2z = 0 (ils s'éliminent), et les seconds membres 1 + 0 = 1. On obtient 7x − 13y = 1 ✓, d'où, avec la seconde équation de (S) écrite 2z = 11y − 4x, un système équivalent à (S). La forme −x + 9y − 4z = 1 est le résultat d'une soustraction (qui n'élimine pas z) ; 7x − 13y = 0 oublie le second membre 1 ; et 7x − 9y = 1 additionne mal les coefficients de y (−2 − 11 = −13, non −9).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère dans ℤ × ℤ l'équation (E) : 7x − 13y = 1, dont (2 ; 1) est une solution. Quel est l'ensemble de ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(2 + 7k ; 1 + 13k), k ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(2 + 13k ; 1 − 7k), k ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(2 − 13k ; 1 + 7k), k ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(2 + 13k ; 1 + 7k), k ∈ ℤ}"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si (x ; y) est solution, 7x − 13y = 7 × 2 − 13 × 1 donne 7(x − 2) = 13(y − 1). Comme 7 ∧ 13 = 1, le lemme de Gauss donne 13 | x − 2, soit x = 2 + 13k, puis y − 1 = 7k ✓. Vérification : 7(2 + 13k) − 13(1 + 7k) = 14 − 13 + (91 − 91)k = 1 ✓. Les erreurs : échanger les pas (le pas de x est 13, le coefficient de y, non 7) ou mal signer l'une des composantes : avec 1 − 7k, on trouve 1 + 182k au lieu de 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (x ; y ; z) ∈ ℤ³ solution du système 7x − 13y = 1 et 2z = 11y − 4x. On sait que x = 2 + 13k et y = 1 + 7k, avec k ∈ ℤ. Pour quelles valeurs de k l'entier z est-il un entier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour k impair, car z est entier si et seulement si y est pair"
+        },
+        {
+          "id": "b",
+          "text": "Pour k pair, car z = (11y − 4x)/2 est entier si et seulement si y est pair"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout entier k, car 11y − 4x est toujours pair"
+        },
+        {
+          "id": "d",
+          "text": "Pour k multiple de 7, car y = 1 + 7k doit être multiple de 7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme 2z = 11y − 4x et que 4x est pair, z est entier si et seulement si 11y est pair, c'est-à-dire si et seulement si y est pair (11 est impair). Or y = 1 + 7k est pair si et seulement si 7k est impair, soit k impair ✓. Contrôle : k = 1 donne x = 15, y = 8, z = (88 − 60)/2 = 14 ✓ ; k = 0 donne x = 2, y = 1, z = (11 − 8)/2 = 3/2, non entier. Pour k pair, y est impair, donc 11y − 4x est impair et z n'est pas entier ; 11y − 4x n'est pas toujours pair (k = 0 donne 3) ; et la parité de y ne dépend pas du fait que k soit multiple de 7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les points de la droite Δ intersection des plans 3x − 2y − 2z = 1 et 4x − 11y + 2z = 0 ont des coordonnées (2 + 13k ; 1 + 7k ; z) avec z = (11y − 4x)/2, k décrivant ℤ. Quel est l'ensemble des points de Δ à coordonnées entières ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "{(2 + 26j ; 1 + 14j ; 1 + 25j), j ∈ ℤ}"
+        },
+        {
+          "id": "b",
+          "text": "{(15 + 13j ; 8 + 7j ; 14 + 12j), j ∈ ℤ}"
+        },
+        {
+          "id": "c",
+          "text": "{(15 + 26j ; 8 + 14j ; 14 + 25j), j ∈ ℤ}"
+        },
+        {
+          "id": "d",
+          "text": "{(2 + 13j ; 1 + 7j ; 1 + 12j), j ∈ ℤ}"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'entier z n'existe que pour k impair, donc k = 2j + 1 avec j ∈ ℤ. Alors x = 2 + 13(2j + 1) = 15 + 26j et y = 1 + 7(2j + 1) = 8 + 14j. Puis z = (11y − 4x)/2 = (88 + 154j − 60 − 104j)/2 = (28 + 50j)/2 = 14 + 25j ✓. Vérification pour j = 0 : (15 ; 8 ; 14) vérifie 3 × 15 − 16 − 28 = 1 ✓ et 4 × 15 − 88 + 28 = 0 ✓ ; et pour j = 1 : (41 ; 22 ; 39) donne 123 − 44 − 78 = 1 ✓ et 164 − 242 + 78 = 0 ✓. Les erreurs : poser k = 2j au lieu de 2j + 1 (z non entier) ; garder le pas 13 au lieu de 26 pour x (le pas double quand k varie de 2 en 2), ce qui donne (28 ; 15 ; 26) hors de Δ ; ou garder tous les k (départ (2 ; 1), pas (13 ; 7)) en arrondissant z, ce qui sort de Δ : pour j = 0, (2 ; 1 ; 1) donne 3 × 2 − 2 − 2 = 2 ≠ 1.",
+      "difficulty": 3
+    }
+  ]
+}

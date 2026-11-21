@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 1 ⭐⭐⭐ : équation du second degré à paramètre, milieu et translation, aire maximale d'un triangle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Soit θ ∈ ]0 ; π[. On considère dans ℂ l'équation (E) :\nz² − 2e^(iθ) z + (e^(2iθ) − 4) = 0\nOn note z₁ la solution de partie réelle strictement négative et z₂ l'autre. Que valent z₁ et z₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z₁ = e^(iθ) − 2 et z₂ = e^(iθ) + 2"
+        },
+        {
+          "id": "b",
+          "text": "z₁ = e^(iθ) − 2i et z₂ = e^(iθ) + 2i"
+        },
+        {
+          "id": "c",
+          "text": "z₁ = e^(iθ) − 4 et z₂ = e^(iθ) + 4"
+        },
+        {
+          "id": "d",
+          "text": "z₁ = 2e^(iθ) − 2 et z₂ = 2e^(iθ) + 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le coefficient de z est −2e^(iθ), donc on utilise le discriminant réduit : Δ′ = (e^(iθ))² − (e^(2iθ) − 4) = 4 = 2². Les solutions sont z = e^(iθ) ± 2. La partie réelle de e^(iθ) − 2 est cos θ − 2 < 0, celle de e^(iθ) + 2 est cos θ + 2 > 0 : z₁ = e^(iθ) − 2 et z₂ = e^(iθ) + 2 ✓. Piège classique : se tromper de signe dans Δ′ (e^(2iθ) − e^(2iθ) − 4 = −4 donne ±2i), oublier la racine carrée (±4), ou oublier le facteur 1/2 sur le coefficient (z = e^(iθ) ± δ, pas 2e^(iθ) ± δ).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit I le point d'affixe e^(iθ) et M₁, M₂ les points d'affixes z₁ = e^(iθ) − 2 et z₂ = e^(iθ) + 2. Comment montre-t-on que I est le milieu de [M₁M₂] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|z₁ − z_I| = |z₂ − z_I| = 2 : I est équidistant de M₁ et M₂"
+        },
+        {
+          "id": "b",
+          "text": "(z₁ + z₂)/2 = ((e^(iθ) − 2) + (e^(iθ) + 2))/2 = e^(iθ) = z_I"
+        },
+        {
+          "id": "c",
+          "text": "z₁z₂ = e^(2iθ) − 4, qui vaut z_I²"
+        },
+        {
+          "id": "d",
+          "text": "|z₁| = |z₂|, donc I est équidistant de M₁ et M₂"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'affixe du milieu de [M₁M₂] est la demi-somme (z₁ + z₂)/2. Ici les termes ±2 se compensent : (z₁ + z₂)/2 = 2e^(iθ)/2 = e^(iθ) = z_I ✓. On pouvait aussi l'obtenir par la somme des racines −b/a = 2e^(iθ). Piège classique : se contenter de l'équidistance |z₁ − z_I| = |z₂ − z_I| = 2 (vraie, mais insuffisante : M₁, M₂ et I pourraient ne pas être alignés), prendre la demi-différence (qui donne le demi-écart −2), confondre produit et somme des racines, ou invoquer |z₁| = |z₂| (faux en général : |e^(iθ) − 2| ≠ |e^(iθ) + 2|).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit A(1), B(−1), I(e^(iθ)), M₁(e^(iθ) − 2) et M₂(e^(iθ) + 2). Quelle relation lie les vecteurs IM₁⃗ et AB⃗, et comment en déduit-on la construction de M₁ et de M₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IM₁⃗ a pour affixe 2e^(iθ) − 2, alors que AB⃗ a pour affixe −2 : les vecteurs sont différents"
+        },
+        {
+          "id": "b",
+          "text": "IM₁⃗ a pour affixe −2 et AB⃗ a pour affixe 1 − (−1) = 2 : IM₁⃗ = −AB⃗, donc M₁ est l'image de I par la translation de vecteur AB⃗, avec un sens inversé"
+        },
+        {
+          "id": "c",
+          "text": "IM₁⃗ a pour affixe −2, comme AB⃗ : IM₁⃗ = AB⃗, donc M₁ est l'image de I par la translation de vecteur AB⃗, et M₂ par le vecteur BA⃗"
+        },
+        {
+          "id": "d",
+          "text": "IM₁⃗ = AB⃗ = −2 ; M₁ est l'image de I par la translation de vecteur BA⃗, et M₂ celle par le vecteur AB⃗"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'affixe de IM₁⃗ est z₁ − z_I = (e^(iθ) − 2) − e^(iθ) = −2. L'affixe de AB⃗ est z_B − z_A = −1 − 1 = −2 : IM₁⃗ = AB⃗ ✓. Donc M₁ est l'image de I par la translation de vecteur AB⃗ (vers la gauche de 2 unités), et symétriquement M₂ = I − AB⃗ est l'image de I par la translation de vecteur BA⃗. Piège classique : calculer z₁ + z_I au lieu de z₁ − z_I, se tromper dans l'ordre B − A, ou échanger les deux translations.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit θ ∈ ]0 ; π[, A(1), B(−1), M₁(e^(iθ) − 2), M₂(e^(iθ) + 2) et J le point d'affixe −e^(iθ). Quelle propriété de J établit que J est le point d'intersection des droites (AM₂) et (BM₁) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AJ = AM₁ et BJ = BM₂ : J est le symétrique de M₁ par rapport à A et de M₂ par rapport à B"
+        },
+        {
+          "id": "b",
+          "text": "J est le milieu de [M₁M₂], donc il est sur les deux droites"
+        },
+        {
+          "id": "c",
+          "text": "J est le symétrique de I par rapport à O, donc il est sur toute droite passant par O"
+        },
+        {
+          "id": "d",
+          "text": "AJ = −AM₂ et BJ = −BM₁ : symétrique de M₂ par rapport à A et de M₁ par rapport à B"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'affixe de AJ est −e^(iθ) − 1 et celle de AM₂ est (e^(iθ) + 2) − 1 = e^(iθ) + 1 : AJ = −AM₂, donc J ∈ (AM₂) (A est le milieu de [JM₂]). De même BJ a pour affixe −e^(iθ) + 1 et BM₁ a pour affixe (e^(iθ) − 2) + 1 = e^(iθ) − 1 : BJ = −BM₁, donc J ∈ (BM₁) (B est le milieu de [JM₁]). Les droites étant distinctes, elles se coupent en J ✓. Piège classique : échanger M₁ et M₂, confondre J avec le milieu de [M₁M₂] (c'est I), ou invoquer le symétrique de I par rapport à O sans vérifier l'alignement.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ ∈ ]0 ; π[. Les points M₁(e^(iθ) − 2), M₂(e^(iθ) + 2) et J(−e^(iθ)) forment un triangle ; I(e^(iθ)) est le milieu de [M₁M₂]. Quelle est l'aire de JM₁M₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 sin θ"
+        },
+        {
+          "id": "b",
+          "text": "2 sin θ"
+        },
+        {
+          "id": "c",
+          "text": "8 sin θ"
+        },
+        {
+          "id": "d",
+          "text": "4 cos θ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "M₁M₂ = |z₂ − z₁| = 4, et la droite (M₁M₂) est parallèle à (O, u) (même partie imaginaire sin θ). J a pour partie imaginaire −sin θ : la distance de J à cette droite vaut sin θ − (−sin θ) = 2 sin θ. L'aire est (1/2) × 4 × 2 sin θ = 4 sin θ ✓. Piège classique : prendre sin θ comme hauteur (oublier que J est de l'autre côté de l'axe réel : on trouve 2 sin θ), oublier le 1/2 de l'aire d'un triangle (on trouve 8 sin θ), ou utiliser la partie réelle cos θ au lieu de la partie imaginaire (on trouve 4 cos θ).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'aire du triangle JM₁M₂ vaut 4 sin θ, avec θ ∈ ]0 ; π[. Pour quelle valeur de θ est-elle maximale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ = π/4, car l'aire est maximale quand sin θ = cos θ"
+        },
+        {
+          "id": "b",
+          "text": "θ = π/2, car sin θ ≤ 1 avec égalité en π/2 sur ]0 ; π["
+        },
+        {
+          "id": "c",
+          "text": "θ = π/3, car le triangle JM₁M₂ est alors équilatéral (côté 4)"
+        },
+        {
+          "id": "d",
+          "text": "θ = 2π/3, car sin θ est maximal quand cos θ = −1/2 (valeur remarquable)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur ]0 ; π[, sin θ est positif et atteint son maximum 1 en θ = π/2 uniquement. L'aire maximale est donc 4, obtenue pour θ = π/2 ✓ (alors I = i, J = −i, et JI = 2 = la hauteur). Piège classique : confondre le maximum de sin θ avec celui de cos θ (sin θ = cos θ en π/4 n'est pas un maximum de sin θ : sin(π/4) = √2/2 < 1), invoquer un triangle équilatéral (JM₁ = 4 sin(θ/2) ≠ 4 pour θ ≠ π), ou choisir un angle sur un critère sans rapport avec le maximum.",
+      "difficulty": 3
+    }
+  ]
+}

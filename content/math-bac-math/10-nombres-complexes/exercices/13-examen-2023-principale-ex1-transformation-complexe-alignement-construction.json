@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2023 · session principale · Exercice 1 ⭐⭐⭐⭐ : transformation z ↦ (iz + 2)/(z − i), alignement, module et argument, image d'une demi-droite",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). Que vaut le produit (z − i)(z′ − i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2 − i"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On calcule (z − i)(z′ − i) = (z − i) × [(iz + 2)/(z − i) − i] = (iz + 2) − i(z − i) = iz + 2 − iz + i² = 2 + i² = 2 − 1 = 1 ✓. Les termes en z se compensent, et le résultat est une constante. Piège classique : oublier que i² = −1 (on trouve 3), ne pas distribuer le facteur i sur −i (on trouve 2 − i), ou oublier le terme i² (on trouve 2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). On sait que (z − i)(z′ − i) = 1. Quelle justification établit que z′ ≠ i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z ≠ i, donc z′ ≠ i"
+        },
+        {
+          "id": "b",
+          "text": "z′ est défini par un quotient dont le dénominateur est non nul, donc z′ ≠ i"
+        },
+        {
+          "id": "c",
+          "text": "Si z′ = i, le produit (z − i)(z′ − i) serait nul, alors qu'il vaut 1"
+        },
+        {
+          "id": "d",
+          "text": "|z′ − i| = |z − i|, donc z′ ≠ i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si l'on avait z′ = i, alors z′ − i = 0 et le produit (z − i)(z′ − i) vaudrait 0, ce qui contredit (z − i)(z′ − i) = 1. Donc z′ ≠ i ✓ : le point M′ n'est jamais le point A. Piège classique : déduire z′ ≠ i de z ≠ i sans lien établi, invoquer l'existence du quotient (qui ne dit rien de sa valeur), ou prétendre |z′ − i| = |z − i| (en fait |z′ − i| = 1/|z − i|).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). Quel est l'ensemble des points M tels que M = M′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point A d'affixe i seulement"
+        },
+        {
+          "id": "b",
+          "text": "Les points d'affixes 1 et −1"
+        },
+        {
+          "id": "c",
+          "text": "Les points O et D d'affixe 2i"
+        },
+        {
+          "id": "d",
+          "text": "Les points B(1 + i) et C(−1 + i)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "M = M′ équivaut à z′ = z. Avec z′ − i = 1/(z − i), cela s'écrit z − i = 1/(z − i), soit (z − i)² = 1, donc z − i = 1 ou z − i = −1 : z = 1 + i ou z = −1 + i. L'ensemble est {B ; C} ✓. Piège classique : oublier le décalage de i (on trouve 1 et −1), résoudre (z − i)² = −1 par erreur de signe (on trouve 0 et 2i), ou exclure B et C parce que A est le point exclu.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). Soit K le point d'affixe z_K = i + e^(iπ/4) et K′ le point associé. Que valent la distance AK′ et une mesure de l'angle (AB, AK′) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AK′ = 1 et (AB, AK′) ≡ −π/4 [2π]"
+        },
+        {
+          "id": "b",
+          "text": "AK′ = 1 et (AB, AK′) ≡ π/4 [2π]"
+        },
+        {
+          "id": "c",
+          "text": "AK′ = 1 et (AB, AK′) ≡ 3π/4 [2π]"
+        },
+        {
+          "id": "d",
+          "text": "AK′ = √2/2 et (AB, AK′) ≡ −π/4 [2π]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme (z_K − i)(z′_K − i) = 1 et z_K − i = e^(iπ/4), on a z′_K − i = 1/e^(iπ/4) = e^(−iπ/4). Donc AK′ = |e^(−iπ/4)| = 1, et (AB, AK′) ≡ arg(z′_K − i) − arg(1) = −π/4, puisque le vecteur AB a pour affixe (1 + i) − i = 1 ✓. Piège classique : oublier que l'inverse d'un nombre de module 1 change le signe de l'argument, comparer à un angle de la mauvaise origine, ou confondre le module de e^(iπ/4) (qui est 1) avec √2/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). Quelle condition équivaut à « A, M et M′ sont alignés » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(z′ − i)/(z − i) = 1/(z − i)² est réel, c'est-à-dire z − i est réel"
+        },
+        {
+          "id": "b",
+          "text": "(z′ − i)/(z − i) = 1/(z − i)² est réel, c'est-à-dire (z − i)² est réel"
+        },
+        {
+          "id": "c",
+          "text": "(z′ − i)(z − i) = 1 est réel, donc A, M et M′ sont alignés pour tout M"
+        },
+        {
+          "id": "d",
+          "text": "z′/z est réel, c'est-à-dire O, M et M′ sont alignés"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A, M et M′ sont alignés si et seulement si les vecteurs AM et AM′ sont colinéaires, c'est-à-dire si le quotient (z′ − i)/(z − i) est réel. Or z′ − i = 1/(z − i), donc ce quotient vaut 1/(z − i)². Il est réel si et seulement si (z − i)² est réel ✓. Piège classique : oublier le carré (on exigerait seulement z − i réel), confondre le produit (qui vaut 1) avec le quotient pertinent, ou raisonner avec O au lieu de A.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). On sait que A, M et M′ sont alignés si et seulement si (z − i)² est réel. Quel est l'ensemble des points M tels que A, M et M′ soient alignés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La seule droite horizontale passant par A, privée de A"
+        },
+        {
+          "id": "b",
+          "text": "Les deux bissectrices des axes passant par A, privées de A, d'équations y − 1 = ±x"
+        },
+        {
+          "id": "c",
+          "text": "Les deux droites passant par A et parallèles aux axes, privées de A"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre A et de rayon 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(z − i)² est réel si et seulement si z − i est réel ou imaginaire pur : en effet, pour z − i = x + iy, (z − i)² = x² − y² + 2ixy, réel si et seulement si xy = 0. Le point M est donc sur la droite horizontale (y = 1) ou la verticale (x = 0) passant par A, avec M ≠ A ✓. Piège classique : ne retenir que le cas z − i réel, confondre avec le cas (z − i)² imaginaire pur (qui donnerait les bissectrices, x² = y²), ou confondre ligne de points et module (cercle).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). On sait que (z − i)(z′ − i) = 1. Quelles égalités en déduit-on pour AM, AM′ et les angles orientés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AM · AM′ = 1 et (AB, AM) ≡ (AB, AM′) [2π]"
+        },
+        {
+          "id": "b",
+          "text": "AM + AM′ = 1 et (AB, AM) ≡ (AM′, AB) [2π]"
+        },
+        {
+          "id": "c",
+          "text": "AM + AM′ = 1 et (AB, AM) ≡ (AB, AM′) [2π]"
+        },
+        {
+          "id": "d",
+          "text": "AM · AM′ = 1 et (AB, AM) ≡ (AM′, AB) [2π]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En prenant le module, |z − i| × |z′ − i| = 1, soit AM × AM′ = 1. En prenant l'argument, arg(z − i) + arg(z′ − i) ≡ 0 [2π]. Comme AB a pour affixe 1, (AB, AM) ≡ arg(z − i) et (AM′, AB) ≡ −arg(z′ − i) ≡ arg(z − i) : (AB, AM) ≡ (AM′, AB) ✓. Piège classique : additionner les modules au lieu de les multiplier, supposer les arguments égaux (ils sont opposés), ou croire AM = AM′.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). Quand M décrit la demi-droite [AK) privée de A, avec K d'affixe i + e^(iπ/4), quel ensemble décrit M′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La demi-droite [AK′) privée de A"
+        },
+        {
+          "id": "b",
+          "text": "La demi-droite [AK) privée de A"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre A et de rayon 1"
+        },
+        {
+          "id": "d",
+          "text": "Le segment [AK′]"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "M a pour affixe i + r e^(iπ/4) avec r > 0. Alors z′ − i = 1/(r e^(iπ/4)) = (1/r) e^(−iπ/4). Quand r décrit ]0 ; +∞[, 1/r décrit aussi ]0 ; +∞[, et l'argument −π/4 est constant : M′ décrit la demi-droite d'origine A passant par K′ (|z′_K − i| = 1 et argument −π/4), privée de A ✓. Piège classique : croire que M′ reste sur [AK) (l'argument est changé en son opposé), confondre avec un cercle (le module n'est pas constant), ou ne retenir qu'un segment alors que 1/r parcourt tout ]0 ; +∞[.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est rapporté à un repère orthonormé direct (O, u, v). A, B et C sont les points d'affixes i, 1 + i et −1 + i. À tout point M d'affixe z ≠ i, on associe le point M′ d'affixe z′ = (iz + 2)/(z − i). ζ est le cercle de centre A et de rayon 1 ; Q est un point de la demi-droite [AK) tel que AQ = r > 1 ; H est le point de ζ tel que le triangle AHQ soit rectangle en H ; E est le projeté orthogonal de H sur (AK) (voir la figure). Comment établit-on AQ · AE = 1 et comment en déduit-on le point Q′ ? <svg viewBox=\"0 0 280 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><circle cx=\"90\" cy=\"180\" r=\"60\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"180\" x2=\"204.6\" y2=\"65.4\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"90\" y1=\"180\" x2=\"71.5\" y2=\"122.9\" stroke=\"#475569\" stroke-width=\"1.4\"/><line x1=\"71.5\" y1=\"122.9\" x2=\"183.3\" y2=\"86.7\" stroke=\"#475569\" stroke-width=\"1.4\"/><line x1=\"71.5\" y1=\"122.9\" x2=\"109.3\" y2=\"160.7\" stroke=\"#475569\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><g fill=\"#0f172a\"><circle cx=\"90\" cy=\"180\" r=\"3\"/><circle cx=\"183.3\" cy=\"86.7\" r=\"3\"/><circle cx=\"71.5\" cy=\"122.9\" r=\"3\"/><circle cx=\"109.3\" cy=\"160.7\" r=\"3\"/><circle cx=\"132.4\" cy=\"137.6\" r=\"3\"/></g><g font-weight=\"700\" fill=\"#0f172a\"><text x=\"74\" y=\"196\">A</text><text x=\"191.3\" y=\"84.7\">Q</text><text x=\"53.5\" y=\"118.9\">H</text><text x=\"115.3\" y=\"176.7\">E</text><text x=\"28\" y=\"186\">ζ</text><text x=\"138.4\" y=\"153.6\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AH² = AE × AQ, AH = 1 ; donc AQ · AE = 1 et Q′ est le point de [AK) tel que AQ′ = AE"
+        },
+        {
+          "id": "b",
+          "text": "AH² = AE × AQ (AHQ rectangle en H), AH = 1 : AQ · AE = 1 = AQ · AQ′, donc Q′ ∈ [AK′) avec AQ′ = AE"
+        },
+        {
+          "id": "c",
+          "text": "AH = AE × AQ, et AH = 1 ; Q′ est le point de [AK′) tel que AQ′ = AQ, car AQ · AQ′ = 1"
+        },
+        {
+          "id": "d",
+          "text": "AH² = AE² + AQ², et AH = 1 ; Q′ est le symétrique de Q par rapport à (AB), tel que AQ′ = AQ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "H est sur ζ donc AH = 1. Dans le triangle AHQ rectangle en H, E est le pied de la hauteur issue de H sur l'hypoténuse [AQ] : AH² = AE × AQ, soit AQ · AE = 1. Comme AQ · AQ′ = 1, AQ′ = AE, et Q′ est sur la demi-droite [AK′) (même argument que K′) : on le construit en reportant AE sur [AK′) ✓. Piège classique : oublier le carré dans la relation métrique, appliquer Pythagore (AE² + AQ² n'est pas AH²), ou placer Q′ sur [AK) au lieu de [AK′).",
+      "difficulty": 3
+    }
+  ]
+}

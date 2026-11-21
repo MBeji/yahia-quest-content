@@ -1,0 +1,227 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 1 ⭐⭐⭐⭐ : Rotation, homothétie et similitude dans un triangle rectangle",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. Quelle est la valeur du quotient IH/IB ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "√5/5",
+          "misconceptionTag": "math.geo.fonction-trigo-mal-choisie"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le triangle DBC rectangle en D, tan(∠CBD) = côté opposé / côté adjacent = DC/DB = 1/2. Dans le triangle BIH rectangle en I, le même angle ∠IBH = ∠CBD donne tan(∠IBH) = IH/IB. Donc IH/IB = 1/2. Prendre le sinus √5/5 (opposé sur hypoténuse) est un mauvais choix de rapport ; 2 est l'inverse ; 1/4 est le carré. Vérification : IB = 2 IH, donc IB² = 4 IH², et IH² + IB² = 5 IH² = HB² ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. R est la rotation de centre H et d'angle π/2, h l'homothétie de centre D et de rapport 2, et f = h∘R. Quelle est l'image de H par f ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point B"
+        },
+        {
+          "id": "b",
+          "text": "Le point C"
+        },
+        {
+          "id": "c",
+          "text": "Le point D"
+        },
+        {
+          "id": "d",
+          "text": "Le point I"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "H est le centre de R : R(H) = H. Puis h(H) est le point de la demi-droite [DH) tel que DM = 2DH : comme H est le milieu de [DB], M = B. Donc f(H) = B. Le point D est le centre de h, donc fixe, mais h(H) ne vaut pas D. Vérification : DB = 2DH ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. R est la rotation de centre H et d'angle π/2 avec R(I) = E, h l'homothétie de centre D et de rapport 2, et f = h∘R. Quelle est l'image de I par f ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point D"
+        },
+        {
+          "id": "b",
+          "text": "Le point H"
+        },
+        {
+          "id": "c",
+          "text": "Le point E"
+        },
+        {
+          "id": "d",
+          "text": "Le point I"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(I) = h(R(I)) = h(E). E est le milieu de [ID] et h a pour centre D et pour rapport 2 : h(E) est le point de la demi-droite [DE) tel que DM = 2DE = DI, c'est-à-dire I. Donc f(I) = I. S'arrêter à R(I) = E donnerait E ; D est l'image de lui-même, pas de I. Vérification : DI = 2DE car E est le milieu de [DI] ✓.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. R est la rotation de centre H et d'angle π/2, et IH/IB = 1/2. Quelle suite d'arguments montre que HE = HI et (HI) ⊥ (HE), donc R(I) = E ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "E et H sont les milieux de [DI] et [DB] : (HE) ∥ (DI) et HE = IB ≠ IH ; (IH) ⊥ (IB), donc (IH) ⊥ (HE)"
+        },
+        {
+          "id": "b",
+          "text": "E et H sont les milieux de [DI] et [DB] : (HE) ∥ (IB) et HE = IB/2 = IH ; (IH) ⊥ (IB), donc (IH) ⊥ (HE)"
+        },
+        {
+          "id": "c",
+          "text": "E et H sont les milieux de [DI] et [DB] : (HE) ∥ (IB) et HE = IB ≠ IH ; (IH) ⊥ (IB), donc (IH) ⊥ (HE)"
+        },
+        {
+          "id": "d",
+          "text": "E et H sont les milieux de [DI] et [DB] : (HE) ∥ (DI) et HE = IB/2 = IH ; (IH) ⊥ (IB), donc (IH) ⊥ (HE)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans le triangle DIB, E est le milieu de [DI] et H celui de [DB] : la droite des milieux (EH) est parallèle au troisième côté (IB), et EH = IB/2. Or IH = IB/2 (quotient IH/IB = 1/2), donc HE = HI. Comme (IH) ⊥ (IB) (I est le projeté de H sur (BC)) et (HE) ∥ (IB), on obtient (IH) ⊥ (HE). Les segments HI et HE sont égaux et perpendiculaires : R(I) = E (le sens se lit sur la figure). La droite des milieux est parallèle au côté opposé à D, pas à (DI), et elle vaut la moitié de ce côté, pas le côté entier. Vérification : HE = IB/2 = IH ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. R est la rotation de centre H et d'angle π/2, h l'homothétie de centre D et de rapport 2, et f = h∘R, avec f(H) = B et f(I) = I. Quels sont la nature et les éléments caractéristiques de f ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Similitude directe de centre I, de rapport 2 et d'angle π/2"
+        },
+        {
+          "id": "b",
+          "text": "Similitude directe de centre D, de rapport 2 et d'angle π/2"
+        },
+        {
+          "id": "c",
+          "text": "Similitude directe de centre I, de rapport 2 et d'angle π/4"
+        },
+        {
+          "id": "d",
+          "text": "Similitude directe de centre I, de rapport 1/2 et d'angle π/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f = h∘R est la composée d'une rotation (isométrie directe) et d'une homothétie de rapport 2 : c'est une similitude directe de rapport 2 × 1 = 2, dont l'angle est celui de R, soit π/2 (l'homothétie de rapport positif n'ajoute rien). Le centre est le point fixe : f(I) = I, donc I. D est le centre de h mais pas un point fixe de f (f(D) = h(R(D)) ≠ D). Le rapport 1/2 viendrait de l'inverse de h. Vérification : f(I) = I et f(H) = B donnent IB = 2·IH, cohérent avec le rapport 2 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. f est la similitude directe de centre I, de rapport 2 et d'angle π/2. Quelle est l'image du point C par f ? On rappelle que f = h∘R, où R est la rotation de centre H et d'angle π/2 et h l'homothétie de centre D et de rapport 2. <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le point B"
+        },
+        {
+          "id": "b",
+          "text": "Le point H"
+        },
+        {
+          "id": "c",
+          "text": "Le point A"
+        },
+        {
+          "id": "d",
+          "text": "Le point E"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Calculons dans le repère orthonormé (D ; DB⃗/2, DC⃗) où D(0 ; 0), B(2 ; 0), C(0 ; 1), H(1 ; 0). R(C) est obtenu en tournant HC⃗ = (−1 ; 1) de π/2 : (−1 ; −1), donc R(C) = H + (−1 ; −1) = (0 ; −1). Puis h double les coordonnées (centre D = origine) : f(C) = (0 ; −2). Or A est sur (CD) et sur (IH), au point (0 ; −2). Donc f(C) = A. Les points B et H sont f(H) et H ; E est R(I). Vérification : IA = 2·IC et (IC⃗, IA⃗) ≡ π/2, comme le veut f ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. f est la similitude directe de centre I, de rapport 2 et d'angle π/2, avec f(C) = A et f(H) = B. Quel argument établit que (CH) ⊥ (AB) ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est une similitude d'angle π/2 et f((CH)) = (AI) ; elle tourne les directions de π/2, donc (CH) ⊥ (AB)"
+        },
+        {
+          "id": "b",
+          "text": "f est une similitude d'angle π/2 et f((CH)) = (AB) ; elle tourne les directions de π/2, donc (CH) ⊥ (AB)"
+        },
+        {
+          "id": "c",
+          "text": "f est une similitude d'angle π/2 et f((CH)) = (BH) ; elle tourne les directions de π/2, donc (CH) ⊥ (AB)"
+        },
+        {
+          "id": "d",
+          "text": "f est une similitude d'angle π/2 et f((CH)) = (AB) ; son rapport 2 fait de (AB) l'image de (CH) par une homothétie, donc (CH) ⊥ (AB)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(C) = A et f(H) = B : l'image de la droite (CH) est la droite (AB), et non (AI) ni (BH), qui ne contiennent pas à la fois A et B. Une similitude directe d'angle π/2 transforme toute droite en une droite qui lui est perpendiculaire (elle tourne toutes les directions de π/2). Donc (CH) ⊥ (AB). Le rapport 2 n'intervient pas dans la direction : une homothétie d'image parallèle correspondrait à un angle 0, non π/2. Vérification : le produit scalaire de CH⃗ et AB⃗ est nul ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. On sait que (CH) ⊥ (AB) en F, que B, I, H, F sont sur le cercle de diamètre [BH] et que DA = DB. Quelle est la mesure de l'angle géométrique HIF ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "π/8"
+        },
+        {
+          "id": "b",
+          "text": "π/4"
+        },
+        {
+          "id": "c",
+          "text": "π/3"
+        },
+        {
+          "id": "d",
+          "text": "π/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les angles inscrits HIF et HBF interceptent le même arc [HF] du cercle de diamètre [BH] : ∠HIF = ∠HBF. Or ∠HBF est l'angle entre (BD) et (BA) ; avec DA = DB et (DA) ⊥ (DB), le triangle ADB est rectangle isocèle en D, donc ∠DBA = π/4. Ainsi ∠HIF = π/4. L'angle π/2 est celui en I du triangle BIH (angle BIH), pas celui sur [HF] ; π/8 serait la moitié de la bonne valeur. Vérification : le triangle ADB a deux angles égaux de π/4 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le plan est orienté. DBC est un triangle rectangle en D tel que (DB⃗, DC⃗) ≡ π/2 [2π] et DB = 2DC ; H est le milieu de [DB], I le projeté orthogonal de H sur (BC), E le milieu de [ID], et les droites (IH) et (CD) se coupent en A. f est la similitude directe de centre I, de rapport 2 et d'angle π/2, avec f(C) = A. Quelle est la nature du triangle ICA ? <svg viewBox=\"0 0 230 240\"><path d=\"M52.3 88.7 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L52.3 26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 26 L177.7 88.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M52.3 214 L115 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M115 88.7 L127.5 63.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M52.3 214 L52.3 88.7\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><g fill=\"#0f172a\"><circle cx=\"52.3\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"177.7\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"26\" r=\"3.6\"/><circle cx=\"115\" cy=\"88.7\" r=\"3.6\"/><circle cx=\"127.5\" cy=\"63.6\" r=\"3.6\"/><circle cx=\"89.9\" cy=\"76.1\" r=\"3.6\"/><circle cx=\"52.3\" cy=\"214\" r=\"3.6\"/></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"41.3\" y=\"86.7\" text-anchor=\"middle\">D</text><text x=\"187.7\" y=\"100.7\" text-anchor=\"middle\">B</text><text x=\"42.3\" y=\"28\" text-anchor=\"middle\">C</text><text x=\"115\" y=\"104.7\" text-anchor=\"middle\">H</text><text x=\"139.5\" y=\"59.6\" text-anchor=\"middle\">I</text><text x=\"85.9\" y=\"67.1\" text-anchor=\"middle\">E</text><text x=\"42.3\" y=\"220\" text-anchor=\"middle\">A</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rectangle isocèle en I"
+        },
+        {
+          "id": "b",
+          "text": "Rectangle en C, avec IA = 2·IC"
+        },
+        {
+          "id": "c",
+          "text": "Équilatéral"
+        },
+        {
+          "id": "d",
+          "text": "Rectangle en I, avec IA = 2·IC"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(I) = I et f(C) = A : IA = 2·IC (rapport 2) et (IC⃗, IA⃗) ≡ π/2 (angle de f). Le triangle ICA est donc rectangle en I, avec IA = 2·IC, donc non isocèle. Il ne peut pas être rectangle isocèle (IA ≠ IC) ni équilatéral, et l'angle droit est en I, sommet commun des deux côtés IC et IA. Vérification : IA² + IC² = 5·IC² = CA² ✓.",
+      "difficulty": 3
+    }
+  ]
+}

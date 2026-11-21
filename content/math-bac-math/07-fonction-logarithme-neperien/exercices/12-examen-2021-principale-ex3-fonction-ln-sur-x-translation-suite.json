@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 3 ⭐⭐⭐⭐ : fonction (1 + ln x)/x, translation de courbe, équation à solution unique et étude d'une suite définie par cette équation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Soit φ la fonction définie sur ]0 ; +∞[ par φ(x) = (1 + ln x)/x. Quelles sont ses limites en 0⁺ et en +∞, et quelles interprétations graphiques en donne-t-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞ en 0⁺ : asymptote verticale x = 0 ; 0 en +∞ : asymptote horizontale y = 0"
+        },
+        {
+          "id": "b",
+          "text": "−∞ en 0⁺ : asymptote verticale x = 0 ; +∞ en +∞ : branche parabolique de direction (Oy)"
+        },
+        {
+          "id": "c",
+          "text": "+∞ en 0⁺ : asymptote verticale x = 0 ; 0 en +∞ : asymptote horizontale y = 0"
+        },
+        {
+          "id": "d",
+          "text": "+∞ en 0⁺ : asymptote verticale x = 0 ; +∞ en +∞ : branche parabolique de direction (Oy)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En 0⁺, le numérateur 1 + ln x tend vers −∞ et le dénominateur x vers 0⁺, donc φ(x) → −∞ : la droite x = 0 est asymptote verticale. En +∞, φ(x) = 1/x + (ln x)/x tend vers 0 + 0 = 0 par croissances comparées : la droite y = 0 est asymptote horizontale ✓. Piège classique : se tromper de signe en 0⁺ (ln x est négatif), ou croire que la fonction diverge en +∞ parce que le numérateur diverge (le dénominateur x l'emporte).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit φ(x) = (1 + ln x)/x sur ]0 ; +∞[. Quelle est l'expression de φ′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−(1 + ln x)/x²"
+        },
+        {
+          "id": "b",
+          "text": "−ln x/x²"
+        },
+        {
+          "id": "c",
+          "text": "ln x/x²"
+        },
+        {
+          "id": "d",
+          "text": "1/x²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec u = 1 + ln x, u′ = 1/x, v = x, v′ = 1 : φ′ = (u′v − uv′)/v² = ((1/x) × x − (1 + ln x))/x² = (1 − 1 − ln x)/x² = −ln x/x² ✓. Piège classique : oublier le terme u′v = 1 (on garde −(1 + ln x)/x²), se tromper de signe, ou diviser les dérivées u′/v′ = (1/x)/1 puis par x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit φ(x) = (1 + ln x)/x sur ]0 ; +∞[, avec φ′(x) = −ln x/x², lim₀⁺ φ = −∞ et lim₊∞ φ = 0. Quel est le tableau de variation de φ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ décroît sur ]0 ; 1], atteint un minimum φ(1) = 1, puis croît sur [1 ; +∞[ vers +∞"
+        },
+        {
+          "id": "b",
+          "text": "φ croît sur ]0 ; 1/e] jusqu'au maximum φ(1/e) = 0, puis décroît sur [1/e ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "φ croît sur ]0 ; 1] de −∞ au maximum φ(1) = 1, puis décroît sur [1 ; +∞[ vers 0"
+        },
+        {
+          "id": "d",
+          "text": "φ croît sur ]0 ; 1] de −∞ au maximum φ(1) = 2, puis décroît sur [1 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "φ′(x) = −ln x/x² est du signe de −ln x : positive sur ]0 ; 1[ (ln x < 0), nulle en 1, négative sur ]1 ; +∞[. Donc φ croît jusqu'à φ(1) = (1 + ln 1)/1 = 1, maximum, puis décroît vers 0 ✓. Piège classique : lire −ln x sans le signe moins, placer le changement de variation en 1/e (zéro de φ, pas de φ′), ou calculer ln 1 = 1 (on trouve 2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit φ(x) = (1 + ln x)/x sur ]0 ; +∞[ et, pour n ≥ 1, φₙ(x) = (1 + ln(x + n))/(x + n) = φ(x + n) sur ]−n ; +∞[. Quelle transformation fait passer de la courbe de φ à celle de φₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La translation de vecteur n·i (de n unités vers la droite, dans le sens de i)"
+        },
+        {
+          "id": "b",
+          "text": "La translation de vecteur n·j (de n unités vers le haut)"
+        },
+        {
+          "id": "c",
+          "text": "La translation de vecteur −n·j (de n unités vers le bas)"
+        },
+        {
+          "id": "d",
+          "text": "La translation de vecteur −n·i (de n unités vers la gauche)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le point M(x ; y) est sur la courbe de φₙ si et seulement si y = φ(x + n), c'est-à-dire si le point M′(x + n ; y) est sur la courbe de φ. Donc M = M′ + (−n)·i : la courbe de φₙ est l'image de celle de φ par la translation de vecteur −n·i ✓ (abscisses diminuées de n, ordonnées inchangées). Piège classique : décaler dans le mauvais sens (x + n dans la formule décale vers la GAUCHE), ou décaler verticalement alors que la variable seule est modifiée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit φ(x) = (1 + ln x)/x, strictement décroissante sur [1 ; +∞[, et hₙ(x) = φ(x + n) − φ(x) pour x > 0 et n ≥ 1. Quelle justification établit que hₙ(x) < 0 pour tout x ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + n > x ≥ 1 et φ strictement décroissante sur [1 ; +∞[, donc φ(x + n) < φ(x)"
+        },
+        {
+          "id": "b",
+          "text": "x + n > x ≥ 1 et φ est strictement croissante sur [1 ; +∞[, donc φ(x + n) < φ(x)"
+        },
+        {
+          "id": "c",
+          "text": "φ est strictement décroissante sur ]0 ; +∞[ tout entier, donc φ(x + n) < φ(x)"
+        },
+        {
+          "id": "d",
+          "text": "φ(x + n) = φ(x) + φ(n), donc hₙ(x) = φ(n) < 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x ≥ 1 et n ≥ 1, on a 1 ≤ x < x + n. Comme φ est strictement décroissante sur [1 ; +∞[, φ(x + n) < φ(x), c'est-à-dire hₙ(x) < 0 ✓. Piège classique : mal lire le sens de variation (φ croît sur ]0 ; 1] puis décroît), étendre la décroissance à tout ]0 ; +∞[, ou traiter φ comme additive (φ(x + n) n'est pas φ(x) + φ(n)).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit φ(x) = (1 + ln x)/x, φ′(x) = −ln x/x², et hₙ(x) = φ(x + n) − φ(x). Que peut-on dire du signe de hₙ′(x) pour x ∈ ]0 ; 1] et n ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "hₙ′(x) = −ln(x + n)/(x + n)² − ln x/x² : de signe indéterminé, car ln x ≤ 0 rend le second terme positif"
+        },
+        {
+          "id": "b",
+          "text": "hₙ′(x) = −ln(x + n)/(x + n)² + ln x/x² < 0 : premier terme < 0 car x + n > 1, second ≤ 0 car x ≤ 1"
+        },
+        {
+          "id": "c",
+          "text": "hₙ′(x) = −ln(x + n)/(x + n)² + ln x/x² > 0, car ln(x + n) > 0 et x² < (x + n)², donc le premier terme domine"
+        },
+        {
+          "id": "d",
+          "text": "hₙ′(x) = ln(x + n)/(x + n)² − ln x/x² > 0, car x + n > x, donc ln(x + n) > ln x"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "hₙ′(x) = φ′(x + n) − φ′(x) = −ln(x + n)/(x + n)² − (−ln x/x²) = −ln(x + n)/(x + n)² + ln x/x². Pour x ∈ ]0 ; 1] et n ≥ 1, x + n > 1 donc ln(x + n) > 0 et le premier terme est strictement négatif ; ln x ≤ 0 donc le second terme est négatif ou nul. La somme est strictement négative ✓. Piège classique : se tromper de signe en retranchant φ′(x) (on ajoute −ln x/x² au lieu de le retrancher), ou lire ln(x + n) > 0 comme rendant l'expression positive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit hₙ(x) = φ(x + n) − φ(x) sur ]0 ; +∞[ avec φ(x) = (1 + ln x)/x, φ(1/e) = 0 et lim₀⁺ φ = −∞. On sait que hₙ est strictement décroissante sur ]0 ; 1] et strictement négative sur [1 ; +∞[. Quelle justification établit que hₙ s'annule une seule fois, avec 1/e < α < 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "hₙ(1/e) > 0 et lim₀⁺ hₙ = +∞, hₙ strictement décroissante sur ]0 ; 1] : un seul zéro dans ]1/e ; 1["
+        },
+        {
+          "id": "b",
+          "text": "hₙ(1/e) > 0 et hₙ(1) < 0, donc hₙ s'annule dans ]1/e ; 1[ ; l'unicité vient de la continuité de hₙ"
+        },
+        {
+          "id": "c",
+          "text": "hₙ(1/e) > 0, hₙ(1) < 0 et hₙ strictement décroissante sur ]0 ; 1] : un seul zéro dans ]1/e ; 1["
+        },
+        {
+          "id": "d",
+          "text": "hₙ(1/e) > 0 et hₙ(1) < 0 ; hₙ est strictement décroissante sur ]0 ; +∞[ tout entier : un seul zéro"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "φ(1/e) = (1 + ln(1/e))/(1/e) = 0, donc hₙ(1/e) = φ(1/e + n) = (1 + ln(1/e + n))/(1/e + n) > 0 car 1/e + n > 1 donne ln(1/e + n) > 0. D'autre part hₙ(1) < 0. Comme hₙ est continue et strictement décroissante sur ]0 ; 1], elle s'annule une seule fois sur ]1/e ; 1[ ; sur [1 ; +∞[ elle est négative, donc il n'y a pas d'autre zéro ✓. Piège classique : se contenter de hₙ(1/e) > 0 et de la limite en 0⁺ (deux faits vrais, mais qui ne localisent pas le zéro : il manque hₙ(1) < 0), se tromper de signe en 1/e, croire que la continuité donne l'unicité (c'est la stricte monotonie), ou étendre la décroissance de hₙ à ]0 ; +∞[ alors qu'elle ne vaut que sur ]0 ; 1].",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, αₙ est l'unique solution de hₙ(x) = 0 dans ]0 ; +∞[, avec 1/e < αₙ < 1. Quelle justification établit que n + 1 + αₙ₊₁ > n + αₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n + 1 > n et αₙ₊₁ > αₙ (la suite (αₙ) est croissante), donc la somme est plus grande"
+        },
+        {
+          "id": "b",
+          "text": "αₙ₊₁ et αₙ sont tous deux dans ]1/e ; 1[, donc αₙ₊₁ = αₙ et n + 1 + αₙ₊₁ = n + αₙ + 1"
+        },
+        {
+          "id": "c",
+          "text": "φ est décroissante sur [1 ; +∞[, donc n + 1 + αₙ₊₁ > n + αₙ"
+        },
+        {
+          "id": "d",
+          "text": "αₙ₊₁ > 1/e > 0 donne n + 1 + αₙ₊₁ > n + 1, et αₙ < 1 donne n + 1 > n + αₙ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On encadre : n + 1 + αₙ₊₁ > n + 1 car αₙ₊₁ > 1/e > 0. D'autre part αₙ < 1 donc n + αₙ < n + 1. Donc n + 1 + αₙ₊₁ > n + 1 > n + αₙ ✓. Piège classique : supposer la suite croissante (c'est l'inverse qu'on démontre ensuite), confondre deux termes distincts de la suite, ou invoquer la décroissance de φ, qui sert à l'étape suivante et non pour comparer des nombres.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, αₙ vérifie φ(αₙ) = φₙ(αₙ) = φ(n + αₙ) (car hₙ(αₙ) = 0). La fonction φ est strictement décroissante sur [1 ; +∞[ et n + 1 + αₙ₊₁ > n + αₙ ≥ 1. Comment se comparent φ(αₙ₊₁) et φ(αₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ(αₙ₊₁) = φ(n + 1 + αₙ₊₁) < φ(n + αₙ) = φ(αₙ)"
+        },
+        {
+          "id": "b",
+          "text": "φ(αₙ₊₁) = φ(n + 1 + αₙ₊₁) > φ(n + αₙ) = φ(αₙ)"
+        },
+        {
+          "id": "c",
+          "text": "φ(αₙ₊₁) = φ(αₙ), car φₙ₊₁ et φₙ ont les mêmes zéros de hₙ"
+        },
+        {
+          "id": "d",
+          "text": "φ(αₙ₊₁) < φ(αₙ), car φ est croissante sur ]0 ; 1] et αₙ₊₁ < αₙ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme hₙ₊₁(αₙ₊₁) = 0, on a φ(αₙ₊₁) = φ(αₙ₊₁ + n + 1). Les deux arguments n + 1 + αₙ₊₁ et n + αₙ sont dans [1 ; +∞[ avec n + 1 + αₙ₊₁ > n + αₙ, et φ y est strictement décroissante : φ(n + 1 + αₙ₊₁) < φ(n + αₙ), soit φ(αₙ₊₁) < φ(αₙ) ✓. Piège classique : inverser l'inégalité (φ décroît sur [1 ; +∞[), confondre αₙ et αₙ₊₁ (zéros de deux fonctions différentes), ou utiliser déjà αₙ₊₁ < αₙ, que cette comparaison sert précisément à établir.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, αₙ ∈ ]1/e ; 1[ vérifie φ(αₙ₊₁) < φ(αₙ), et φ est strictement croissante sur ]0 ; 1]. Que peut-on dire de la suite (αₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "αₙ₊₁ > αₙ : la suite est croissante et majorée par 1, donc elle est convergente"
+        },
+        {
+          "id": "b",
+          "text": "αₙ₊₁ < αₙ : la suite est décroissante et minorée par 1/e, donc convergente"
+        },
+        {
+          "id": "c",
+          "text": "(αₙ) est dans ]1/e ; 1[ : elle est bornée, donc convergente"
+        },
+        {
+          "id": "d",
+          "text": "αₙ₊₁ < αₙ : la suite est décroissante, donc convergente"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "αₙ et αₙ₊₁ sont dans ]0 ; 1] où φ est strictement croissante : φ(αₙ₊₁) < φ(αₙ) entraîne αₙ₊₁ < αₙ. La suite est donc décroissante, et minorée par 1/e : une suite décroissante minorée converge ✓. Piège classique : renverser l'implication (φ croissante conserve l'ordre), croire qu'une suite bornée converge (la suite (−1)ⁿ est bornée), ou oublier la minoration qui garantit la convergence.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, αₙ vérifie φ(αₙ) = φ(n + αₙ), avec φ(x) = (1 + ln x)/x et lim₊∞ φ = 0. Quelle est la limite de φ(αₙ) quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞, car αₙ reste voisin de 0 et φ tend vers −∞ en 0⁺"
+        },
+        {
+          "id": "b",
+          "text": "1, car αₙ tend vers 1 et φ(1) = 1"
+        },
+        {
+          "id": "c",
+          "text": "0, car n + αₙ tend vers +∞ et φ tend vers 0 en +∞"
+        },
+        {
+          "id": "d",
+          "text": "+∞, car φₙ(x) croît avec n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Puisque αₙ ∈ ]1/e ; 1[, n + αₙ ≥ n tend vers +∞. Comme φ(x) → 0 quand x → +∞, φ(αₙ) = φ(n + αₙ) → 0 ✓. Piège classique : appliquer à αₙ la limite de φ en 0⁺ (αₙ ne tend pas vers 0, il reste au-dessus de 1/e), supposer αₙ → 1 sans preuve, ou croire que n fait grandir φ(n + αₙ).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La suite (αₙ), à valeurs dans ]1/e ; 1[, converge vers ℓ, avec φ(αₙ) → 0 et φ(x) = (1 + ln x)/x continue sur ]0 ; +∞[. Quelle est la valeur de ℓ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1, car φ(1) = 1 est le maximum de φ sur ]0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "e, car 1 + ln ℓ = 0 donne ℓ = e"
+        },
+        {
+          "id": "c",
+          "text": "0, car φ(ℓ) = 0 et φ(0) = 0"
+        },
+        {
+          "id": "d",
+          "text": "1/e, car φ(ℓ) = 0 donne 1 + ln ℓ = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ℓ ∈ [1/e ; 1] et φ est continue en ℓ, donc φ(ℓ) = lim φ(αₙ) = 0. Or φ(ℓ) = (1 + ln ℓ)/ℓ = 0 équivaut à ln ℓ = −1, soit ℓ = 1/e ✓. Piège classique : isoler ln ℓ = −1 puis écrire ℓ = e (au lieu de e⁻¹), confondre le maximum de φ (en 1) avec son zéro (en 1/e), ou prendre ℓ = 0, valeur exclue puisque φ n'y est pas définie.",
+      "difficulty": 3
+    }
+  ]
+}
