@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "text": "La limite vaut 1, différente de f(−1) = 0 : f n'est pas continue à droite en −1"
+          "text": "La limite vaut 0, car e^t tend vers 0 quand t tend vers +∞ et −1/(x + 1) tend vers +∞ : f(x) → 0 = f(−1), donc f est continue à droite en −1"
         },
         {
           "id": "c",
@@ -27,7 +27,7 @@
         }
       ],
       "correctOption": "d",
-      "explanation": "Quand x → −1⁺, x + 1 → 0⁺, donc 1/(x + 1) → +∞ et −1/(x + 1) → −∞. Comme e^t → 0 quand t → −∞, f(x) → 0 = f(−1) ✓ : f est continue à droite en −1. Pièges classiques : perdre le signe moins de l'exposant (on trouve +∞ et on conclut à tort à une discontinuité), calculer la limite pour x → +∞ (l'exposant tend vers 0 et f vers 1 ≠ f(−1)) au lieu de x → −1⁺, ou déclarer qu'il n'y a pas de limite parce que le dénominateur s'annule.",
+      "explanation": "Quand x → −1⁺, x + 1 → 0⁺, donc 1/(x + 1) → +∞ et −1/(x + 1) → −∞. Comme e^t → 0 quand t → −∞, f(x) → 0 = f(−1) ✓ : f est continue à droite en −1. Pièges classiques : perdre le signe moins de l'exposant (on trouve +∞ et on conclut à tort à une discontinuité) ; lire −1/(x + 1) → +∞ puis croire que e^t tend vers 0 quand t → +∞ (la conclusion « continue » tombe juste par hasard, mais la justification est fausse : e^t → +∞ en +∞, c'est en −∞ qu'il tend vers 0) ; ou déclarer qu'il n'y a pas de limite parce que le dénominateur s'annule.",
       "difficulty": 2
     },
     {
