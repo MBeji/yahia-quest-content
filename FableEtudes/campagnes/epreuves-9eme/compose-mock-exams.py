@@ -174,7 +174,7 @@ for i, (year, comp, lang, prod) in enumerate(FR_ANNALES):
 
 # ------------------------------------------------------- MATHÉMATIQUES (300+)
 MATH = {"fr": "Mathématiques", "en": "Mathematics", "ar": "الرياضيات"}
-math_sessions = [y for y in (2026, 2025, 2024, 2023, 2022) if "--with-math-2022-2026" in sys.argv] + [2021, 2020, 2019, 2018, 2017]
+math_sessions = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
 session_exams("math", MATH, 301, 90, math_sessions, "maths-9eme")
 
 # ----------------------------------------------------------------- SVT (400+)
