@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2019 · session principale · Exercice 3 ⭐⭐⭐ : plan défini par trois points, droite perpendiculaire et volumes de tétraèdres",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(−2 ; 1 ; 1), B(−1 ; −1 ; 0) et C(1 ; 1 ; 4). Quelle condition prouve que A, B et C définissent un plan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le produit scalaire AB⃗ · AC⃗ n'est pas égal à 0"
+        },
+        {
+          "id": "b",
+          "text": "le produit vectoriel AB⃗ ∧ AC⃗ est nul"
+        },
+        {
+          "id": "c",
+          "text": "le produit vectoriel AB⃗ ∧ AC⃗ n'est pas nul"
+        },
+        {
+          "id": "d",
+          "text": "la somme AB⃗ + AC⃗ n'est pas nulle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Trois points définissent un plan s'ils ne sont pas alignés, c'est-à-dire si AB⃗ et AC⃗ ne sont pas colinéaires, ce qui équivaut à AB⃗ ∧ AC⃗ ≠ 0⃗ ✓. Ici AB⃗(1 ; −2 ; −1) et AC⃗(3 ; 0 ; 3) donnent AB⃗ ∧ AC⃗ = (−6 ; −6 ; 6) ≠ 0⃗. Le produit scalaire détecte l'orthogonalité, pas l'alignement (ici il vaut d'ailleurs 0) ; un produit vectoriel nul signifie au contraire des points alignés ; une somme non nulle ne dit rien sur la colinéarité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(−2 ; 1 ; 1), B(−1 ; −1 ; 0) et C(1 ; 1 ; 4). Quelle est une équation cartésienne du plan (ABC) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + y − z + 2 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x + y − z − 2 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x − y − z + 4 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x + y − z = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a AB⃗(1 ; −2 ; −1) et AC⃗(3 ; 0 ; 3), donc AB⃗ ∧ AC⃗ = (−6 ; −6 ; 6) = −6(1 ; 1 ; −1). Le vecteur n⃗(1 ; 1 ; −1) est normal au plan, d'équation x + y − z + d = 0. Le point A donne −2 + 1 − 1 + d = 0, donc d = 2 ✓. Contrôle : B donne −1 − 1 − 0 + 2 = 0 et C donne 1 + 1 − 4 + 2 = 0. Le signe faux de la constante donne −2 ; un signe faux sur la deuxième coordonnée du produit vectoriel donne la normale (1 ; −1 ; −1) ; le plan sans constante passe par l'origine, pas par A.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(−2 ; 1 ; 1), B(−1 ; −1 ; 0), C(1 ; 1 ; 4) et E(2 ; 2 ; 0). Quel est le volume du tétraèdre EABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le volume est (1/6)|(AB⃗ ∧ AC⃗) · AE⃗|. Avec AB⃗ ∧ AC⃗ = (−6 ; −6 ; 6) et AE⃗(4 ; 1 ; −1), le produit scalaire vaut −24 − 6 − 6 = −36, donc V = 36/6 = 6 ✓. Contrôle : l'aire de ABC est (1/2)‖(−6 ; −6 ; 6)‖ = 3√3 et la distance de E au plan est 6/√3, d'où (1/3) × 3√3 × 6/√3 = 6. Oublier le facteur 1/6 donne 36 ; utiliser 1/3 donne 12 ; une erreur de signe sur la cote de AE⃗ (1 au lieu de −1) donne −24 − 6 + 6 = −24, soit 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit P le plan d'équation x + y − z + 2 = 0 et Δ la droite de représentation paramétrique x = α ; y = α ; z = −α + 2 (α réel). La droite Δ est perpendiculaire à P. En quel point Δ coupe-t-elle P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H(2/3 ; 2/3 ; 4/3)"
+        },
+        {
+          "id": "b",
+          "text": "H(−2/3 ; −2/3 ; 8/3)"
+        },
+        {
+          "id": "c",
+          "text": "H(2 ; 2 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "H(0 ; 0 ; 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un point de Δ est (α ; α ; 2 − α). Il est dans P si α + α − (2 − α) + 2 = 0, c'est-à-dire 3α = 0, donc α = 0 et H(0 ; 0 ; 2) ✓. Le vecteur directeur (1 ; 1 ; −1) de Δ est bien le vecteur normal de P. Les valeurs α = 2/3 ou −2/3 viennent d'une erreur de signe ou de calcul en passant la constante dans l'équation ; α = 2 donne le point E(2 ; 2 ; 0), qui n'est pas dans P (2 + 2 − 0 + 2 = 6).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit P le plan d'équation x + y − z + 2 = 0 passant par les points A(−2 ; 1 ; 1), B(−1 ; −1 ; 0) et C(1 ; 1 ; 4), dont l'aire du triangle ABC vaut 3√3. Pour α ≠ 0, soit M(α ; α ; −α + 2) un point de la droite Δ. Quel est le volume du tétraèdre MABC en fonction de α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6|α|"
+        },
+        {
+          "id": "b",
+          "text": "3|α|"
+        },
+        {
+          "id": "c",
+          "text": "9|α|"
+        },
+        {
+          "id": "d",
+          "text": "(9/2)|α|"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La distance de M à P est |α + α − (−α + 2) + 2|/√3 = |3α|/√3 = √3|α|. Le volume vaut V = (1/3) × (aire de ABC) × distance = (1/3) × 3√3 × √3|α| = 3|α| ✓. Utiliser ‖AB⃗ ∧ AC⃗‖ = 6√3 comme aire (sans le 1/2) donne 6|α| ; oublier le facteur 1/3 donne 9|α| ; utiliser 1/2 donne (9/2)|α|.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(−2 ; 1 ; 1), B(−1 ; −1 ; 0), C(1 ; 1 ; 4), E(2 ; 2 ; 0) et la droite Δ de représentation paramétrique x = α ; y = α ; z = 2 − α. Quels sont les points M de Δ tels que le volume du tétraèdre MABC soit le double du volume du tétraèdre EABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M(4 ; 4 ; −2) et M(−4 ; −4 ; 6)"
+        },
+        {
+          "id": "b",
+          "text": "M(4 ; 4 ; −2) seulement"
+        },
+        {
+          "id": "c",
+          "text": "M(2 ; 2 ; 0) et M(−2 ; −2 ; 4)"
+        },
+        {
+          "id": "d",
+          "text": "M(4/3 ; 4/3 ; 2/3) et M(−4/3 ; −4/3 ; 10/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le volume de EABC est 6 et celui de MABC est 3|α| (distance de M à (ABC) égale à √3|α|, aire 3√3). On veut 3|α| = 12, donc |α| = 4 : deux points, M(4 ; 4 ; −2) et M(−4 ; −4 ; 6) ✓. Oublier la valeur absolue ne garde qu'un point ; une aire prise sans le 1/2 donne |α| = 2 (et le point E lui-même) ; oublier le facteur 1/3 donne 9|α| = 12, soit |α| = 4/3.",
+      "difficulty": 3
+    }
+  ]
+}

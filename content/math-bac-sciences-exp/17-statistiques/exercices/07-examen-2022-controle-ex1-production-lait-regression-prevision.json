@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2022 · session de contrôle · Exercice 1 ⭐⭐⭐ : production de lait cru, régression linéaire et prévision",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "La production annuelle P de lait cru en Tunisie (en millions de litres) est donnée pour les années 2008 à 2017, de rangs i = 1 à 10 (2008 a pour rang 1) : 1014 ; 1030 ; 1059 ; 1096 ; 1124 ; 1175 ; 1218 ; 1376 ; 1428 ; 1424. On note (I, P) la série double.\nQuelle est la variance V(I) des rangs i = 1, 2, …, 10 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,17"
+        },
+        {
+          "id": "b",
+          "text": "2,87"
+        },
+        {
+          "id": "c",
+          "text": "8,25"
+        },
+        {
+          "id": "d",
+          "text": "38,5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ī = 5,5 et la moyenne des carrés vaut (1 + 4 + … + 100)/10 = 385/10 = 38,5, donc V(I) = 38,5 − 5,5² = 38,5 − 30,25 = 8,25 ✓. 38,5 oublie de retrancher le carré de la moyenne ; 2,87 est l'écart type √8,25, non la variance ; 9,17 vient d'une division par n − 1 = 9 au lieu de n.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La production annuelle P de lait cru en Tunisie (en millions de litres) est donnée pour les années 2008 à 2017, de rangs i = 1 à 10 (2008 a pour rang 1) : 1014 ; 1030 ; 1059 ; 1096 ; 1124 ; 1175 ; 1218 ; 1376 ; 1428 ; 1424. On note (I, P) la série double.\nPour cette série : Ī = 5,5, P̄ = 1194,4, V(I) = 8,25, cov(I, P) ≈ 423,9, σ_I ≈ 2,87 et σ_P ≈ 152,89. Que vaut le coefficient de corrélation ρ, et que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ρ ≈ 0,97 : |ρ| > √3/2, l'ajustement affine est justifié"
+        },
+        {
+          "id": "b",
+          "text": "ρ ≈ 0,02 : |ρ| < √3/2, aucun lien linéaire n'existe"
+        },
+        {
+          "id": "c",
+          "text": "ρ ≈ 51,38 : ρ dépasse 1, donc la corrélation est forte"
+        },
+        {
+          "id": "d",
+          "text": "ρ ≈ 0,97 : ρ est positif, mais proche de 1 cela interdit un ajustement affine"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ρ = cov(I, P)/(σ_I σ_P) ≈ 423,9/(2,87 × 152,89) ≈ 423,9/438,8 ≈ 0,97. Comme |ρ| > √3/2 ≈ 0,87, une droite ajuste bien le nuage ✓. Diviser par V(P) donne 0,02 ; 51,38 est la pente de la droite de P en I, et un coefficient de corrélation ne dépasse jamais 1 ; plus |ρ| est proche de 1, plus l'ajustement affine est justifié.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La production annuelle P de lait cru en Tunisie (en millions de litres) est donnée pour les années 2008 à 2017, de rangs i = 1 à 10 (2008 a pour rang 1) : 1014 ; 1030 ; 1059 ; 1096 ; 1124 ; 1175 ; 1218 ; 1376 ; 1428 ; 1424. On note (I, P) la série double.\nPour cette série : Ī = 5,5, P̄ = 1194,4, V(I) = 8,25, cov(I, P) ≈ 423,9, σ_I ≈ 2,87 et σ_P ≈ 152,89. Quelle est l'équation de la droite de régression de P en I, coefficients arrondis au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p = 0,02 i + 1194,30"
+        },
+        {
+          "id": "b",
+          "text": "p = 51,38 i + 1194,40"
+        },
+        {
+          "id": "c",
+          "text": "p = 51,38 i + 1477,00"
+        },
+        {
+          "id": "d",
+          "text": "p = 51,38 i + 911,80"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pente est a = cov(I, P)/V(I) ≈ 423,9/8,25 ≈ 51,38 et l'ordonnée à l'origine b = P̄ − a Ī ≈ 1194,4 − 51,38 × 5,5 ≈ 911,80 ✓. Diviser par V(P) donne la pente 0,02, celle de la droite de I en P ; prendre b = P̄ oublie le terme a Ī ; l'ajouter au lieu de le retrancher donne 1477,00.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La production annuelle P de lait cru en Tunisie (en millions de litres) est donnée pour les années 2008 à 2017, de rangs i = 1 à 10 (2008 a pour rang 1) : 1014 ; 1030 ; 1059 ; 1096 ; 1124 ; 1175 ; 1218 ; 1376 ; 1428 ; 1424. On note (I, P) la série double.\nLa droite de régression de P en I est p = 51,38 i + 911,80. Quelle production de lait cru estime-t-elle pour 2023, en millions de litres, arrondie à l'unité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1683"
+        },
+        {
+          "id": "b",
+          "text": "1734"
+        },
+        {
+          "id": "c",
+          "text": "1785"
+        },
+        {
+          "id": "d",
+          "text": "2017"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour 2023, i = 16 : p = 51,38 × 16 + 911,80 = 822,08 + 911,80 = 1733,88, soit 1734 millions de litres ✓. Le rang 15 donne 1683 (2023 − 2008) et le rang 17 donne 1785 ; remplacer l'ordonnée à l'origine 911,80 par la moyenne 1194,4 donne 2017.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La production annuelle P de lait cru en Tunisie (en millions de litres) est donnée pour les années 2008 à 2017, de rangs i = 1 à 10 (2008 a pour rang 1) : 1014 ; 1030 ; 1059 ; 1096 ; 1124 ; 1175 ; 1218 ; 1376 ; 1428 ; 1424. On note (I, P) la série double.\nLa droite de régression est p = 51,38 i + 911,80. À partir de quelle année la production estimée dépasse-t-elle 1800 millions de litres ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2024"
+        },
+        {
+          "id": "b",
+          "text": "2025"
+        },
+        {
+          "id": "c",
+          "text": "2026"
+        },
+        {
+          "id": "d",
+          "text": "2023"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On résout 51,38 i + 911,80 > 1800, soit i > 888,2/51,38 ≈ 17,29. Le plus petit rang entier qui convient est i = 18, c'est-à-dire l'année 2007 + 18 = 2025 ✓. Le rang 17 (2024) donne 1785 < 1800, et le rang 16 (2023) donne 1734 ; arrondir 17,29 à 17 est donc faux, et 2026 correspond au rang 19.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La production annuelle P de lait cru en Tunisie (en millions de litres) est donnée pour les années 2008 à 2017, de rangs i = 1 à 10 (2008 a pour rang 1) : 1014 ; 1030 ; 1059 ; 1096 ; 1124 ; 1175 ; 1218 ; 1376 ; 1428 ; 1424. On note (I, P) la série double.\nOn estime la production de 2024 (rang 17) par p = 51,38 × 17 + 911,80 ≈ 1785 millions de litres. On prévoit 12,5 millions d'habitants en 2024, chacun consommant en moyenne 135 litres par an. La production répondra-t-elle au besoin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "non : le besoin est de 12,5 × 135 = 16 875 millions de litres, supérieur à 1785"
+        },
+        {
+          "id": "b",
+          "text": "non : le besoin vaut 135/12,5 × 1000 = 10 800 millions de litres, supérieur à 1785"
+        },
+        {
+          "id": "c",
+          "text": "non : le besoin de 1687,5 millions de litres dépasse la production observée en 2017, 1424"
+        },
+        {
+          "id": "d",
+          "text": "oui : le besoin est de 12,5 × 135 = 1687,5 millions de litres, inférieur à 1785"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le besoin total est 12,5 millions × 135 L = 1687,5 millions de litres (même unité que P). La production estimée pour 2024 est d'environ 1785 millions de litres, supérieure au besoin : oui, elle y répond ✓. Une erreur d'une puissance de 10 sur le produit (16 875) ou une division de 135 par 12,5 (10 800) fait croire à un manque ; la comparaison porte sur la prévision de 2024 (rang 17), non sur la dernière valeur observée.",
+      "difficulty": 3
+    }
+  ]
+}

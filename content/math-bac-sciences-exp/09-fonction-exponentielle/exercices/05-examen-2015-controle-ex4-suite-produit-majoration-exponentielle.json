@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2015 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : suite géométrique, produit de facteurs et majoration par l'exponentielle",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Soit (uₙ) la suite géométrique de premier terme u₀ = 1/3 et de raison 1/3. On pose Sₙ = u₀ + u₁ + … + uₙ et vₙ = (1 + u₀)(1 + u₁) × … × (1 + uₙ).\nQuelles sont les valeurs de u₁ et de la limite de (uₙ) quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u₁ = 1/9 et lim uₙ = 1/3"
+        },
+        {
+          "id": "b",
+          "text": "u₁ = 1/9 et lim uₙ = 0"
+        },
+        {
+          "id": "c",
+          "text": "u₁ = 2/3 et lim uₙ = 0"
+        },
+        {
+          "id": "d",
+          "text": "u₁ = 2/3 et lim uₙ = 1/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour une suite géométrique, u₁ = u₀ × q = (1/3) × (1/3) = 1/9, et comme la raison q = 1/3 vérifie −1 < q < 1, qⁿ → 0, donc uₙ = (1/3)ⁿ⁺¹ → 0 ✓. La limite n'est pas la raison : lim uₙ = 1/3 confond la limite avec la valeur de q. Et u₁ = 2/3 additionne u₀ et la raison au lieu de les multiplier (on aurait alors une suite arithmétique).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit (uₙ) la suite géométrique de premier terme u₀ = 1/3 et de raison 1/3. On pose Sₙ = u₀ + u₁ + … + uₙ et vₙ = (1 + u₀)(1 + u₁) × … × (1 + uₙ).\nQuelle est l'expression de Sₙ pour tout entier naturel n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sₙ = (1/2)(1 − 1/3ⁿ)"
+        },
+        {
+          "id": "b",
+          "text": "Sₙ = (3/2)(1 − 1/3ⁿ⁺¹)"
+        },
+        {
+          "id": "c",
+          "text": "Sₙ = (3/2)(1 − 1/3ⁿ)"
+        },
+        {
+          "id": "d",
+          "text": "Sₙ = (1/2)(1 − 1/3ⁿ⁺¹)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sₙ est la somme des n + 1 premiers termes d'une suite géométrique : Sₙ = u₀ × (1 − qⁿ⁺¹)/(1 − q) = (1/3) × (1 − (1/3)ⁿ⁺¹)/(2/3) = (1/2)(1 − 1/3ⁿ⁺¹) ✓. Il y a n + 1 termes de u₀ à uₙ, donc l'exposant est n + 1 et non n. Le facteur est u₀/(1 − q) = (1/3)/(2/3) = 1/2 : écrire 1/(1 − q) = 3/2 oublie le facteur u₀.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose h(x) = eˣ − 1 − x pour tout réel x. Quelle étude de h permet d'établir que 1 + x ≤ eˣ pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h′(x) = eˣ − 1 est négative sur ]−∞ ; 0] et positive sur [0 ; +∞[ : h admet un minimum h(0) = 0, donc h(x) ≥ 0"
+        },
+        {
+          "id": "b",
+          "text": "h′(x) = eˣ − 1 est positive sur ℝ : h est croissante et h(x) ≥ h(0) = 0 pour tout réel x"
+        },
+        {
+          "id": "c",
+          "text": "h′(x) = eˣ − 1 est négative sur ]−∞ ; 0] et positive sur [0 ; +∞[ : h admet un maximum h(0) = 0, donc h(x) ≤ 0"
+        },
+        {
+          "id": "d",
+          "text": "h′(x) = eˣ − 1 est négative sur ]−∞ ; 0] et positive sur [0 ; +∞[ : h admet un minimum h(0) = −1, donc h prend des valeurs négatives"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "h′(x) = eˣ − 1 s'annule en 0, est négative pour x < 0 (car eˣ < 1) et positive pour x > 0 : h décroît puis croît, son minimum est h(0) = e⁰ − 1 − 0 = 0. Donc h(x) ≥ 0, c'est-à-dire 1 + x ≤ eˣ ✓. L'erreur classique est de lire eˣ − 1 > 0 partout : eˣ > 0 ne suffit pas, il faut eˣ > 1, ce qui n'est vrai que pour x > 0. Un maximum en 0 viendrait d'un tableau lu à l'envers, et h(0) = −1 oublierait que e⁰ = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (uₙ) la suite géométrique de premier terme u₀ = 1/3 et de raison 1/3. On pose Sₙ = u₀ + u₁ + … + uₙ et vₙ = (1 + u₀)(1 + u₁) × … × (1 + uₙ).\nQuelles sont les valeurs de v₀ et de v₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "v₀ = 4/3 et v₁ = 10/9"
+        },
+        {
+          "id": "b",
+          "text": "v₀ = 1/3 et v₁ = 1/3 × 1/9 = 1/27"
+        },
+        {
+          "id": "c",
+          "text": "v₀ = 4/3 et v₁ = 40/27"
+        },
+        {
+          "id": "d",
+          "text": "v₀ = 1/3 et v₁ = 10/9"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "v₀ = 1 + u₀ = 1 + 1/3 = 4/3. Ensuite v₁ = (1 + u₀)(1 + u₁) = (4/3)(1 + 1/9) = (4/3)(10/9) = 40/27 ✓. Garder seulement le dernier facteur (1 + u₁ = 10/9) oublie que vₙ est un produit de tous les facteurs depuis le rang 0. Multiplier les uₖ sans ajouter 1 donne u₀ = 1/3 puis u₀u₁ = 1/27.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (uₙ) la suite géométrique de premier terme u₀ = 1/3 et de raison 1/3. On pose Sₙ = u₀ + u₁ + … + uₙ et vₙ = (1 + u₀)(1 + u₁) × … × (1 + uₙ).\nQuelle justification établit que la suite (vₙ) est croissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "v₀ < v₁ : le premier pas est croissant, donc toute la suite l'est"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est décroissante, donc (vₙ), construite à partir de (uₙ), est décroissante"
+        },
+        {
+          "id": "c",
+          "text": "vₙ₊₁ = vₙ(1 + uₙ₊₁) avec vₙ > 0 et 1 + uₙ₊₁ > 1, donc vₙ₊₁ > vₙ"
+        },
+        {
+          "id": "d",
+          "text": "vₙ₊₁ = vₙ + (1 + uₙ₊₁) donc vₙ₊₁ − vₙ = 1 + uₙ₊₁ est de signe constant et la suite est décroissante"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le produit s'écrit vₙ₊₁ = vₙ × (1 + uₙ₊₁). Tous les facteurs sont strictement positifs et 1 + uₙ₊₁ > 1 (car uₙ₊₁ = (1/3)ⁿ⁺² > 0), donc vₙ₊₁ > vₙ pour tout n : (vₙ) est strictement croissante ✓. Comparer deux termes (v₀ < v₁) ne prouve rien pour tous les rangs. Que (uₙ) décroisse ne dit pas comment (vₙ) varie : chaque nouveau facteur est > 1, donc il fait croître le produit. Enfin vₙ₊₁ est un produit, non une somme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On admet que 1 + x ≤ eˣ pour tout réel x. Avec les notations uₖ = (1/3)ᵏ⁺¹, Sₙ = u₀ + … + uₙ et vₙ = (1 + u₀) × … × (1 + uₙ), quelle justification établit que vₙ ≤ e^(Sₙ) pour tout entier n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + uₖ ≤ e^(uₖ) pour chaque k, nombres positifs : on multiplie, d'où vₙ ≤ e^(u₀) × … × e^(uₙ) = e^(Sₙ)"
+        },
+        {
+          "id": "b",
+          "text": "1 + uₖ ≤ e^(uₖ) pour chaque k ; on additionne ces inégalités : vₙ ≤ e^(u₀ + … + uₙ) = e^(Sₙ) car un produit de (1 + uₖ) est une somme"
+        },
+        {
+          "id": "c",
+          "text": "1 + uₖ ≤ e^(uₖ) pour chaque k, nombres positifs : on multiplie, d'où vₙ ≤ e^(u₀ × … × uₙ) ≤ e^(Sₙ) car un produit de nombres inférieurs à 1 est inférieur à leur somme"
+        },
+        {
+          "id": "d",
+          "text": "1 + uₖ ≤ e^(uₖ) pour chaque k, nombres positifs : on multiplie, d'où vₙ ≤ (e^(u₀))ⁿ⁺¹ = e^((n + 1)u₀) ≤ e^(Sₙ)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'inégalité 1 + x ≤ eˣ, appliquée à x = uₖ, donne 0 < 1 + uₖ ≤ e^(uₖ). On peut multiplier membre à membre des inégalités entre nombres positifs : vₙ ≤ e^(u₀) × e^(u₁) × … × e^(uₙ) = e^(u₀ + u₁ + … + uₙ) = e^(Sₙ) ✓, car eᵃ × eᵇ = e^(a + b). Additionner les inégalités donne une somme d'exponentielles, qui n'est pas e^(Sₙ), et un produit de facteurs (1 + uₖ) n'est pas une somme ; un produit d'exponentielles est l'exponentielle d'une somme (non d'un produit) ; et majorer chaque facteur par e^(u₀) donne e^((n + 1)/3), qui tend vers +∞ et ne reste pas inférieur à e^(Sₙ) (Sₙ < 1/2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On admet que (vₙ) est croissante et que vₙ ≤ e^(Sₙ) pour tout n, où Sₙ = (1/2)(1 − 1/3ⁿ⁺¹). Quelle justification établit que (vₙ) est convergente ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(vₙ) est croissante, donc elle est convergente d'après le théorème de la limite monotone"
+        },
+        {
+          "id": "b",
+          "text": "(vₙ) est majorée par e^(Sₙ) pour tout n, donc elle est convergente"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) converge vers 0, donc (vₙ) converge elle aussi, vers 0"
+        },
+        {
+          "id": "d",
+          "text": "(vₙ) est croissante et majorée par e^(1/2), car Sₙ < 1/2 : elle converge"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour tout n, 1/3ⁿ⁺¹ > 0 donc Sₙ < 1/2 et vₙ ≤ e^(Sₙ) < e^(1/2) : la suite est majorée par la constante e^(1/2). Une suite croissante et majorée converge ✓. Croissante seule ne suffit pas (la suite des entiers croît sans converger). e^(Sₙ) dépend de n : ce n'est pas un majorant constant. Enfin vₙ ≥ v₀ = 4/3 : la limite de (vₙ) ne peut pas être 0, même si uₙ → 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Avec les notations uₖ = (1/3)ᵏ⁺¹, Sₙ = u₀ + … + uₙ et vₙ = (1 + u₀) × … × (1 + uₙ), on admet que (vₙ) converge, qu'elle est croissante avec v₀ = 4/3, et que vₙ ≤ e^(Sₙ) avec Sₙ → 1/2. On note ℓ sa limite. Quelle justification établit que 1 < ℓ ≤ √e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "vₙ > 1 pour tout n, donc ℓ > 1 par passage à la limite dans l'inégalité stricte ; e^(Sₙ) → √e donne ℓ ≤ √e"
+        },
+        {
+          "id": "b",
+          "text": "vₙ ≥ v₀ = 4/3 donne ℓ ≥ 4/3 > 1 ; e^(Sₙ) → √e donne ℓ ≤ √e à la limite"
+        },
+        {
+          "id": "c",
+          "text": "vₙ ≥ v₁ = 40/27 > 1 et e^(Sₙ) ≤ e, donc 1 < ℓ ≤ √e"
+        },
+        {
+          "id": "d",
+          "text": "vₙ ≥ v₀ = 4/3 > 1 et vₙ ≤ e^(Sₙ) ≤ e^(S₀) = e^(1/3) < √e, d'où 1 < ℓ ≤ √e"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(vₙ) est croissante : pour tout n, vₙ ≥ v₀ = 4/3, et le passage à la limite donne ℓ ≥ 4/3 > 1. D'autre part vₙ ≤ e^(Sₙ) et e^(Sₙ) → e^(1/2) = √e par continuité de exp, donc ℓ ≤ √e ✓. Le passage à la limite ne conserve pas les inégalités strictes : vₙ > 1 donne seulement ℓ ≥ 1, d'où l'intérêt du minorant 4/3 > 1. Majorer e^(Sₙ) par e donne seulement ℓ ≤ e, non ℓ ≤ √e : la bonne majoration est e^(Sₙ) ≤ e^(1/2) = √e. Enfin (Sₙ) est croissante : e^(Sₙ) ≥ e^(S₀) = e^(1/3), et non e^(Sₙ) ≤ e^(S₀).",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2023 · session principale · Exercice 1 ⭐⭐⭐ : événements indépendants, probabilités totales, probabilité inverse et loi binomiale",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Dans une ville, 10 % des personnes pubères sont atteintes d'une maladie M. On choisit au hasard un couple marié et on note A l'événement « le mari est atteint par M » et B l'événement « l'épouse est atteinte par M » ; on admet que A et B sont indépendants.\nQuelles sont les probabilités p(A ∩ B) et p(A ∪ B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(A ∩ B) = 0,01 et p(A ∪ B) = 0,20"
+        },
+        {
+          "id": "b",
+          "text": "p(A ∩ B) = 0,01 et p(A ∪ B) = 0,19"
+        },
+        {
+          "id": "c",
+          "text": "p(A ∩ B) = 0,20 et p(A ∪ B) = 0,19"
+        },
+        {
+          "id": "d",
+          "text": "p(A ∩ B) = 0,20 et p(A ∪ B) = 0,20"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A et B étant indépendants, p(A ∩ B) = p(A) × p(B) = 0,1 × 0,1 = 0,01. Puis p(A ∪ B) = p(A) + p(B) − p(A ∩ B) = 0,1 + 0,1 − 0,01 = 0,19 ✓. Additionner au lieu de multiplier donne 0,20 pour l'intersection ; oublier de retrancher p(A ∩ B) donne 0,20 pour la réunion (on compte deux fois les couples où les deux sont atteints).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une ville, 10 % des personnes pubères sont atteintes d'une maladie M. On choisit au hasard un couple marié et on note A l'événement « le mari est atteint par M » et B l'événement « l'épouse est atteinte par M » ; on admet que A et B sont indépendants. On note M₀ « aucun des deux conjoints n'est atteint », M₁ « un seul conjoint est atteint » et M₂ « les deux sont atteints ».\nQuelles sont les probabilités p(M₀) et p(M₁) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(M₀) = 0,80 et p(M₁) = 0,20"
+        },
+        {
+          "id": "b",
+          "text": "p(M₀) = 0,81 et p(M₁) = 0,09"
+        },
+        {
+          "id": "c",
+          "text": "p(M₀) = 0,81 et p(M₁) = 0,19"
+        },
+        {
+          "id": "d",
+          "text": "p(M₀) = 0,81 et p(M₁) = 0,18"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "M₀ = Ā ∩ B̄ : par indépendance p(M₀) = 0,9 × 0,9 = 0,81. M₁ = (A ∩ B̄) ∪ (Ā ∩ B), deux cas incompatibles : p(M₁) = 0,1 × 0,9 + 0,9 × 0,1 = 0,18 ✓. Contrôle : 0,81 + 0,18 + 0,01 = 1. 0,80 = 1 − 0,2 oublie le recouvrement ; 0,09 ne compte qu'un des deux cas (le mari seul ou l'épouse seule) ; et 0,19 est p(A ∪ B), qui inclut M₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une ville, 10 % des personnes pubères sont atteintes d'une maladie M. On choisit au hasard un couple marié et on note A l'événement « le mari est atteint par M » et B l'événement « l'épouse est atteinte par M » ; on admet que A et B sont indépendants. On note M₀ « aucun des deux conjoints n'est atteint », M₁ « un seul conjoint est atteint » et M₂ « les deux sont atteints ». Le nouveau-né du couple est atteint de la maladie M (événement E) avec la probabilité 0,02 si aucun parent n'est atteint, 0,1 si un seul parent est atteint et 0,25 si les deux parents sont atteints.\nQuelles sont les probabilités p(E ∩ M₂), p(E ∩ M₀) et p(E ∩ M₁), dans cet ordre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,0025 ; 0,0162 ; 0,018"
+        },
+        {
+          "id": "b",
+          "text": "0,25 ; 0,02 ; 0,1"
+        },
+        {
+          "id": "c",
+          "text": "0,0025 ; 0,081 ; 0,0036"
+        },
+        {
+          "id": "d",
+          "text": "0,0025 ; 0,0162 ; 0,18"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "p(E ∩ Mᵢ) = p(Mᵢ) × p_Mᵢ(E) : p(E ∩ M₂) = 0,01 × 0,25 = 0,0025 ; p(E ∩ M₀) = 0,81 × 0,02 = 0,0162 ; p(E ∩ M₁) = 0,18 × 0,1 = 0,018 ✓. Les valeurs 0,25 ; 0,02 ; 0,1 sont les probabilités conditionnelles, sans pondération par p(Mᵢ) ; croiser les taux de M₀ et M₁ donne 0,081 et 0,0036 ; et 0,18 oublie le facteur 0,1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une ville, 10 % des personnes pubères sont atteintes d'une maladie M. On choisit au hasard un couple marié et on note A l'événement « le mari est atteint par M » et B l'événement « l'épouse est atteinte par M » ; on admet que A et B sont indépendants. On note M₀ « aucun des deux conjoints n'est atteint », M₁ « un seul conjoint est atteint » et M₂ « les deux sont atteints ». Le nouveau-né du couple est atteint de la maladie M (événement E) avec la probabilité 0,02 si aucun parent n'est atteint, 0,1 si un seul parent est atteint et 0,25 si les deux parents sont atteints.\nQuelle est la probabilité p(E) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(E) = 0,37"
+        },
+        {
+          "id": "b",
+          "text": "p(E) = 0,1233"
+        },
+        {
+          "id": "c",
+          "text": "p(E) = 0,0367"
+        },
+        {
+          "id": "d",
+          "text": "p(E) = 0,0162"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les événements M₀, M₁, M₂ forment une partition : p(E) = p(E ∩ M₀) + p(E ∩ M₁) + p(E ∩ M₂) = 0,0162 + 0,018 + 0,0025 = 0,0367 ✓. 0,37 additionne les trois probabilités conditionnelles ; 0,1233 en fait la moyenne simple sans pondérer ; et 0,0162 ne garde que le chemin M₀.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le nouveau-né du couple est atteint de la maladie M (événement E) avec la probabilité 0,02 si aucun parent n'est atteint, 0,1 si un seul parent est atteint et 0,25 si les deux parents sont atteints. On choisit au hasard n nouveau-nés (n ≥ 2), et on admet que p(E) = 0,0367 pour chacun, indépendamment. Soit X le nombre de nouveau-nés atteints. Quels sont les paramètres de la loi binomiale de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n et 0,0367"
+        },
+        {
+          "id": "b",
+          "text": "n et 0,1"
+        },
+        {
+          "id": "c",
+          "text": "n et 0,02"
+        },
+        {
+          "id": "d",
+          "text": "2 et 0,0367"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "X compte les succès « nouveau-né atteint » sur n épreuves identiques et indépendantes, chacune de probabilité p = p(E) = 0,0367 : X suit ℬ(n ; 0,0367) ✓. 0,1 est la probabilité pour un parent d'être atteint, non pour un nouveau-né ; 0,02 n'est qu'une probabilité conditionnelle ; et le premier paramètre est le nombre n de nouveau-nés choisis, non 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "X suit une loi binomiale de paramètres n ≥ 2 et p = 0,0367 : c'est le nombre de nouveau-nés atteints parmi n. Quelle est la probabilité pₙ qu'aucun ne soit atteint ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pₙ = 0,0367ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "pₙ = 1 − 0,0367ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "pₙ = 1 − 0,0367n"
+        },
+        {
+          "id": "d",
+          "text": "pₙ = 0,9633ⁿ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "pₙ = p(X = 0) = C(n ; 0) × 0,0367⁰ × (1 − 0,0367)ⁿ = 0,9633ⁿ ✓ (chaque nouveau-né est sain avec la probabilité 0,9633, indépendamment). 0,0367ⁿ est la probabilité que tous soient atteints ; 1 − 0,0367ⁿ est la probabilité qu'au moins un soit sain ; et 1 − 0,0367n linéarise à tort un produit de probabilités.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une ville, 10 % des personnes pubères sont atteintes d'une maladie M. On choisit au hasard un couple marié et on note A l'événement « le mari est atteint par M » et B l'événement « l'épouse est atteinte par M » ; on admet que A et B sont indépendants. On note M₀ « aucun des deux conjoints n'est atteint », M₁ « un seul conjoint est atteint » et M₂ « les deux sont atteints ». Le nouveau-né du couple est atteint de la maladie M (événement E) avec la probabilité 0,02 si aucun parent n'est atteint, 0,1 si un seul parent est atteint et 0,25 si les deux parents sont atteints.\nSachant que le nouveau-né est atteint, quelle est la probabilité qu'aucun des parents ne le soit, à 10⁻⁴ près ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p_E(M₀) = p_M₀(E) = 0,02"
+        },
+        {
+          "id": "b",
+          "text": "p_E(M₀) = p(M₀) = 0,81"
+        },
+        {
+          "id": "c",
+          "text": "p_E(M₀) = 0,0162/0,0367 ≈ 0,4414"
+        },
+        {
+          "id": "d",
+          "text": "p_E(M₀) = p(E ∩ M₀) = 0,0162"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Formule de Bayes : p_E(M₀) = p(E ∩ M₀)/p(E) = 0,0162/0,0367 ≈ 0,4414 ✓. 0,02 est la probabilité inverse p_M₀(E) ; 0,81 est p(M₀), qui ignore l'information « atteint » ; et 0,0162 est p(E ∩ M₀), à diviser par p(E).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "pₙ = 0,9633ⁿ est la probabilité qu'aucun de n nouveau-nés ne soit atteint. Quelle est la plus grande valeur de l'entier n telle que pₙ ≥ 0,75 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 8, car n ≥ 7,69"
+        },
+        {
+          "id": "b",
+          "text": "n = 7, car n ≤ ln(0,75)/ln(0,9633) ≈ 7,69"
+        },
+        {
+          "id": "c",
+          "text": "n = 9, car 0,9633ⁿ ≥ 0,7 équivaut à n ≤ ln(0,7)/ln(0,9633) ≈ 9,54"
+        },
+        {
+          "id": "d",
+          "text": "n = 6, en remplaçant 0,9633ⁿ par 1 − 0,0367n"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "0,9633ⁿ ≥ 0,75 ⟺ n ln(0,9633) ≥ ln(0,75) ⟺ n ≤ ln(0,75)/ln(0,9633) ≈ 7,69 (on divise par ln 0,9633 < 0 : le sens de l'inégalité se renverse). La plus grande valeur entière est n = 7 ✓ : 0,9633⁷ ≈ 0,770 ≥ 0,75, alors que 0,9633⁸ ≈ 0,741 < 0,75. Garder le sens donne n ≥ 7,69 (donc 8, à tort) ; un seuil 0,7 au lieu de 0,75 donne n ≤ 9,54, soit n = 9 ; et 1 − 0,0367n linéarise 0,9633ⁿ (il donne 6, valeur trop petite).",
+      "difficulty": 3
+    }
+  ]
+}

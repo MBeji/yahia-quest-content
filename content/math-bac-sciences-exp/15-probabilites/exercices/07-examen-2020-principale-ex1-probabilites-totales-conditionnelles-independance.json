@@ -1,0 +1,125 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 1 ⭐⭐⭐ : partition, probabilités totales et répétition d'épreuves indépendantes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Dans une population, 50 % des personnes sont de poids normal (événement A), 30 % sont en surpoids (événement B) et 20 % sont obèses (événement C). Parmi les personnes de poids normal, 3 % sont diabétiques ; parmi celles en surpoids, 7 % ; parmi les obèses, 9 %. On choisit une personne au hasard et on note D : « la personne est diabétique ». Quelles sont les valeurs de p(A ∩ D), p(B ∩ D) et p(C ∩ D) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,015 ; 0,021 ; 0,018"
+        },
+        {
+          "id": "b",
+          "text": "0,03 ; 0,07 ; 0,09"
+        },
+        {
+          "id": "c",
+          "text": "0,485 ; 0,279 ; 0,182"
+        },
+        {
+          "id": "d",
+          "text": "0,015 ; 0,07 ; 0,09"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque probabilité d'intersection est le produit de la probabilité de la catégorie par le pourcentage de diabétiques dans cette catégorie : p(A ∩ D) = 0,5 × 0,03 = 0,015, p(B ∩ D) = 0,3 × 0,07 = 0,021 et p(C ∩ D) = 0,2 × 0,09 = 0,018 ✓. Les pourcentages 3 %, 7 % et 9 % sont des probabilités conditionnelles p(D/A), p(D/B), p(D/C) : les prendre pour des intersections oublie de multiplier par p(A), p(B), p(C) ; les valeurs 0,485, 0,279, 0,182 sont celles des non-diabétiques.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une population, 50 % des personnes sont de poids normal (événement A), 30 % sont en surpoids (événement B) et 20 % sont obèses (événement C). Parmi les personnes de poids normal, 3 % sont diabétiques ; parmi celles en surpoids, 7 % ; parmi les obèses, 9 %. On choisit une personne au hasard et on note D : « la personne est diabétique ». Quelle est la valeur de p(D) ?",
+      "answerKey": {
+        "value": 0.054
+      },
+      "explanation": "Les événements A, B et C forment une partition. D'après la formule des probabilités totales, p(D) = p(A ∩ D) + p(B ∩ D) + p(C ∩ D) = 0,015 + 0,021 + 0,018 = 0,054 ✓. Faire la moyenne simple de 3 %, 7 % et 9 % (≈ 6,3 %) oublie que les catégories n'ont pas le même poids.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une population, 50 % des personnes sont de poids normal (événement A), 30 % sont en surpoids (événement B) et 20 % sont obèses (événement C). Parmi les personnes de poids normal, 3 % sont diabétiques ; parmi celles en surpoids, 7 % ; parmi les obèses, 9 %. On choisit une personne au hasard et on note D : « la personne est diabétique ». On choisit une personne diabétique. Quelle est la probabilité qu'elle ne soit pas de poids normal ? Donne le résultat arrondi au millième.",
+      "answerKey": {
+        "value": 0.722,
+        "tolerance": 0.0005
+      },
+      "explanation": "On cherche p(A̅/D) = 1 − p(A/D), car p_D est une probabilité. Or p(A/D) = p(A ∩ D)/p(D) = 0,015/0,054 ≈ 0,2778, donc p(A̅/D) ≈ 0,7222, soit 0,722 ✓. Diviser 0,015 par p(A) = 0,5 donnerait p(D/A) = 0,03, le conditionnement inverse.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une population, 50 % des personnes sont de poids normal (événement A), 30 % sont en surpoids (événement B) et 20 % sont obèses (événement C). Parmi les personnes de poids normal, 3 % sont diabétiques ; parmi celles en surpoids, 7 % ; parmi les obèses, 9 %. On choisit une personne au hasard et on note D : « la personne est diabétique ». On choisit au hasard n personnes de cette population, de façon indépendante. Soit pₙ la probabilité qu'aucune de ces n personnes ne soit diabétique. Quelle est l'expression de pₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pₙ = 1 − 0,946ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "pₙ = 0,054ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "pₙ = 0,946ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "pₙ = 1 − 0,054ⁿ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une personne n'est pas diabétique avec la probabilité 1 − p(D) = 1 − 0,054 = 0,946. Pour n personnes indépendantes, la probabilité qu'aucune ne soit diabétique est le produit : pₙ = 0,946ⁿ ✓. 0,054ⁿ est la probabilité que toutes soient diabétiques ; 1 − 0,946ⁿ est celle qu'au moins une le soit ; 1 − 0,054ⁿ est celle qu'au moins une ne le soit pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une population, 50 % des personnes sont de poids normal (événement A), 30 % sont en surpoids (événement B) et 20 % sont obèses (événement C). Parmi les personnes de poids normal, 3 % sont diabétiques ; parmi celles en surpoids, 7 % ; parmi les obèses, 9 %. On choisit une personne au hasard et on note D : « la personne est diabétique ». On choisit au hasard n personnes de cette population, de façon indépendante, et on note pₙ la probabilité qu'aucune ne soit diabétique. Quelle est la limite de pₙ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,946"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a pₙ = (0,946)ⁿ, suite géométrique de raison 0,946 comprise entre 0 et 1 : elle tend vers 0 ✓. Garder 0,946 prend la raison pour la limite ; la limite 1 conviendrait à une raison égale à 1 ; +∞ à une raison supérieure à 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une population, 50 % des personnes sont de poids normal (événement A), 30 % sont en surpoids (événement B) et 20 % sont obèses (événement C). Parmi les personnes de poids normal, 3 % sont diabétiques ; parmi celles en surpoids, 7 % ; parmi les obèses, 9 %. On choisit une personne au hasard et on note D : « la personne est diabétique ». On choisit au hasard n personnes de cette population, de façon indépendante, et on note pₙ la probabilité qu'aucune ne soit diabétique. Quel est le plus petit entier n pour lequel pₙ ≤ 0,1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "41"
+        },
+        {
+          "id": "b",
+          "text": "76"
+        },
+        {
+          "id": "c",
+          "text": "17"
+        },
+        {
+          "id": "d",
+          "text": "42"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a pₙ = 0,946ⁿ ≤ 0,1. En passant au logarithme (ln 0,946 < 0), n ≥ ln 0,1/ln 0,946 ≈ 41,5. Le plus petit entier est 42 ✓. Arrondir 41,5 à 41 ne suffit pas (0,946⁴¹ > 0,1) ; utiliser la raison 0,97 (seulement les personnes de poids normal) donne 76 ; poser n × 0,054 ≥ 0,9 donne 17, ce qui confond probabilité d'une réunion et somme des probabilités.",
+      "difficulty": 3
+    }
+  ]
+}

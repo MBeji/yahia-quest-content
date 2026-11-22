@@ -1,0 +1,130 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 4 ⭐⭐⭐ : primitives avec racine et logarithme, intégration par parties",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Soit G la fonction définie sur [1 ; +∞[ par G(x) = √(x² − 2x + 2). Quelle est l'expression de G′(x) pour x > 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G′(x) = 1/(2√(x² − 2x + 2))"
+        },
+        {
+          "id": "b",
+          "text": "G′(x) = (2x − 2)/√(x² − 2x + 2)"
+        },
+        {
+          "id": "c",
+          "text": "G′(x) = (x − 1)/√(x² − 2x + 2)"
+        },
+        {
+          "id": "d",
+          "text": "G′(x) = (2x − 2)/(x² − 2x + 2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec u(x) = x² − 2x + 2, (√u)′ = u′/(2√u) = (2x − 2)/(2√(x² − 2x + 2)) = (x − 1)/√(x² − 2x + 2) ✓. Oublier le 2 du dénominateur donne (2x − 2)/√… ; oublier u′ donne 1/(2√…) ; oublier le 2 et ne pas garder la racine à la fois donne (2x − 2)/(x² − 2x + 2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit h(x) = 1/√(x² − 2x + 2) sur [1 ; +∞[ et H(x) = ln(x − 1 + √(x² − 2x + 2)).\nQuelle est la valeur de I = ∫₁² h(x) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(1 + √2)"
+        },
+        {
+          "id": "b",
+          "text": "ln √2"
+        },
+        {
+          "id": "c",
+          "text": "ln(2 + √2)"
+        },
+        {
+          "id": "d",
+          "text": "√2 − 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec u = x − 1 + √(x² − 2x + 2), u′ = 1 + (x − 1)/√(x² − 2x + 2) = u/√(x² − 2x + 2), donc H′ = u′/u = 1/√(x² − 2x + 2) = h(x) : H est une primitive de h. Alors I = H(2) − H(1), avec H(2) = ln(2 − 1 + √(4 − 4 + 2)) = ln(1 + √2) et H(1) = ln(0 + √1) = ln 1 = 0 ; donc I = ln(1 + √2) ✓. Oublier le terme x − 1 donne ln √2 ; remplacer x − 1 par x et ne calculer que H(2), sans retrancher H(1), donne ln(2 + √2) ; prendre √(x² − 2x + 2) pour primitive de h donne √2 − 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On pose I = ∫₁² 1/√(x² − 2x + 2) dx, J = ∫₁² (x − 1)²/√(x² − 2x + 2) dx et K = ∫₁² √(x² − 2x + 2) dx. Quelle égalité et quelle raison relient I, J et K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I + J = K, car 1 + (x − 1)² = x² − 2x + 1"
+        },
+        {
+          "id": "b",
+          "text": "I + J = K, car 1 + (x − 1)² = x² − 2x + 2"
+        },
+        {
+          "id": "c",
+          "text": "I − J = K, car 1 − (x − 1)² = x² − 2x + 2"
+        },
+        {
+          "id": "d",
+          "text": "I + J = K², car √(x² − 2x + 2) × √(x² − 2x + 2) = x² − 2x + 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "I + J = ∫₁² (1 + (x − 1)²)/√(x² − 2x + 2) dx. Or 1 + (x − 1)² = x² − 2x + 2, donc l'intégrande devient (x² − 2x + 2)/√(x² − 2x + 2) = √(x² − 2x + 2) : I + J = K ✓. Le développement de (x − 1)² est x² − 2x + 1, auquel il faut encore ajouter 1 ; et 1 − (x − 1)² n'est pas x² − 2x + 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose J = ∫₁² (x − 1)²/√(x² − 2x + 2) dx et K = ∫₁² √(x² − 2x + 2) dx. On intègre J par parties avec u(x) = x − 1 et v′(x) = (x − 1)/√(x² − 2x + 2), de primitive v(x) = √(x² − 2x + 2). Que vaut J en fonction de K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J = 2√2 − 1 + K"
+        },
+        {
+          "id": "b",
+          "text": "J = √2 − K"
+        },
+        {
+          "id": "c",
+          "text": "J = K − √2"
+        },
+        {
+          "id": "d",
+          "text": "J = 2√2 − 1 − K"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "J = [(x − 1)√(x² − 2x + 2)]₁² − ∫₁² 1 × √(x² − 2x + 2) dx. Le crochet vaut 1 × √2 − 0 × 1 = √2, donc J = √2 − K ✓. Permuter les termes donne K − √2 ; évaluer le crochet avec le facteur x au lieu de x − 1 donne 2√2 − 1, d'où J = 2√2 − 1 − K, et avec un signe faux devant l'intégrale J = 2√2 − 1 + K.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que I = ln(1 + √2), que I + J = K et que J = √2 − K. Quelle est la valeur de J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√2 + ln(1 + √2))/2"
+        },
+        {
+          "id": "b",
+          "text": "√2 − ln(1 + √2)"
+        },
+        {
+          "id": "c",
+          "text": "√2 + ln(1 + √2)"
+        },
+        {
+          "id": "d",
+          "text": "(√2 − ln(1 + √2))/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "De I + J = K on tire K = I + J ; en reportant dans J = √2 − K, on a J = √2 − I − J, donc 2J = √2 − I et J = (√2 − ln(1 + √2))/2 ✓. Contrôle : J est positif, comme son intégrande. Oublier de diviser par 2 donne √2 − ln(1 + √2) ; un signe faux sur I (2J = √2 + I) donne (√2 + ln(1 + √2))/2, qui est la valeur de K, et cumulé avec l'oubli de la division par 2, √2 + ln(1 + √2).",
+      "difficulty": 3
+    }
+  ]
+}

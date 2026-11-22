@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 2 ⭐⭐⭐⭐ : Équation du second degré, carré et cercle circonscrit",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "prompt": "Que vaut (2√3 − 2i)² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 − 8i√3"
+        },
+        {
+          "id": "b",
+          "text": "8 − 8i√3"
+        },
+        {
+          "id": "c",
+          "text": "2 − 8i√3"
+        },
+        {
+          "id": "d",
+          "text": "8 + 8i√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On développe : (2√3 − 2i)² = (2√3)² − 2 × 2√3 × 2i + (2i)² = 12 − 8i√3 − 4 = 8 − 8i√3 ✓. Contrôle : |(2√3 − 2i)²| = 12 + 4 = 16 et |8 − 8i√3| = √(64 + 192) = 16 ✓. Le piège courant : écrire (2i)² = +4 (oublier i² = −1) donne 16 − 8i√3 ; écrire (2√3)² = 2 × 3 = 6 au lieu de 12 donne 6 − 8i√3 − 4 = 2 − 8i√3 ; donner le signe plus au double produit donne 8 + 8i√3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\nz² − 2(1 + i√3)z + 4(−1 + i√3) = 0\nQue vaut son discriminant Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δ = 32 − 8i√3"
+        },
+        {
+          "id": "b",
+          "text": "Δ = −24 + 24i√3"
+        },
+        {
+          "id": "c",
+          "text": "Δ = −8 + 8i√3"
+        },
+        {
+          "id": "d",
+          "text": "Δ = 8 − 8i√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ici a = 1, b = −2(1 + i√3) et c = 4(−1 + i√3). On a b² = 4(1 + i√3)² = 4(−2 + 2i√3) = −8 + 8i√3 et 4ac = 16(−1 + i√3) = −16 + 16i√3. Donc Δ = b² − 4ac = −8 + 8i√3 + 16 − 16i√3 = 8 − 8i√3 ✓. Le piège courant : écrire (1 + i√3)² = 4 + 2i√3 (oublier i² = −1) donne 32 − 8i√3 ; ajouter 4ac au lieu de le retrancher donne −24 + 24i√3 ; oublier 4ac donne Δ = b².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est l'écriture exponentielle de z_B = 2 + 2i√3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4e^(iπ/3)"
+        },
+        {
+          "id": "b",
+          "text": "4e^(iπ/6)"
+        },
+        {
+          "id": "c",
+          "text": "16e^(iπ/3)"
+        },
+        {
+          "id": "d",
+          "text": "(2 + 2√3)e^(iπ/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le module est |z_B| = √(4 + 12) = 4. Un argument θ vérifie cos θ = 2/4 = 1/2 et sin θ = 2√3/4 = √3/2, donc θ = π/3 : z_B = 4e^(iπ/3) ✓. Contrôle : 4(1/2 + i√3/2) = 2 + 2i√3. Le piège courant : permuter cosinus et sinus donne π/6 ; oublier la racine du module donne 16 ; additionner 2 et 2√3 au lieu de calculer √(a² + b²) donne 2 + 2√3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\n(E) : z² − 2(1 + i√3)z + 4(−1 + i√3) = 0\nQuelle est la somme des deux solutions de (E) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 + 2i√3"
+        },
+        {
+          "id": "b",
+          "text": "2 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "2√3 + 2i"
+        },
+        {
+          "id": "d",
+          "text": "1 + i√3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour az² + bz + c = 0, la somme des solutions vaut −b/a. Ici a = 1 et b = −2(1 + i√3), donc la somme vaut 2(1 + i√3) = 2 + 2i√3 ✓. Contrôle : le produit vaut c/a = 4(−1 + i√3) = −4 + 4i√3. Le piège courant : oublier le facteur √3 dans la partie imaginaire donne 2 + 2i ; permuter les parties réelle et imaginaire donne 2√3 + 2i ; diviser par 2a = 2 au lieu de a, c'est donner la demi-somme 1 + i√3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\nz² − 2(1 + i√3)z + 4(−1 + i√3) = 0\nQuelles sont ses deux solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = 1 + √3 + i(√3 − 1) ou z = 1 − √3 + i(√3 + 1)"
+        },
+        {
+          "id": "b",
+          "text": "z = 1 + √3 + i(√3 + 1) ou z = 1 − √3 + i(√3 − 1)"
+        },
+        {
+          "id": "c",
+          "text": "z = 2 + 2√3 + i(2√3 − 2) ou z = 2 − 2√3 + i(2√3 + 2)"
+        },
+        {
+          "id": "d",
+          "text": "z = −1 + √3 − i(√3 + 1) ou z = −1 − √3 + i(1 − √3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le discriminant est Δ = 8 − 8i√3 = (2√3 − 2i)², donc δ = 2√3 − 2i est une racine carrée de Δ. Les solutions sont z = (2(1 + i√3) ± δ)/2 = (1 + i√3) ± (√3 − i), soit z = 1 + √3 + i(√3 − 1) et z = 1 − √3 + i(√3 + 1) ✓. Contrôle : leur somme vaut 2 + 2i√3 = 2(1 + i√3) = −b/a. Le piège courant : prendre la racine 2√3 + 2i (dont le carré est 8 + 8i√3, non Δ) échange les parties imaginaires ; oublier de diviser par 2a = 2 double les solutions ; remplacer −b par b change le signe de la partie 1 + i√3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A et C sont les points d'affixes z_A = 1 + √3 − i(1 − √3) et z_C = 1 − √3 + i(1 + √3). Quelle est la nature du triangle OAC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Équilatéral."
+        },
+        {
+          "id": "b",
+          "text": "Isocèle en O, sans angle droit."
+        },
+        {
+          "id": "c",
+          "text": "Rectangle et isocèle en O."
+        },
+        {
+          "id": "d",
+          "text": "Rectangle en O, mais non isocèle."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a |z_A|² = (1 + √3)² + (√3 − 1)² = 4 + 2√3 + 4 − 2√3 = 8 et |z_C|² = (1 − √3)² + (1 + √3)² = 8 : OA = OC = 2√2. Le quotient z_C/z_A vaut i (car i z_A = i(1 + √3) − (√3 − 1) = (1 − √3) + i(1 + √3) = z_C), donc l'angle (OA⃗, OC⃗) est π/2. OAC est rectangle et isocèle en O ✓. Le piège courant : égaler les modules ne donne que l'isocèle ; un angle droit en O avec des modules différents donnerait un triangle rectangle non isocèle ; un triangle équilatéral aurait un angle de π/3, non π/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, O est l'origine et A, B, C sont trois points. Quelle propriété prouve que OABC est un carré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OA⃗ + OC⃗ = OB⃗ (parallélogramme) et OB = AC."
+        },
+        {
+          "id": "b",
+          "text": "OA⃗ + OC⃗ = OB⃗ (parallélogramme) et (OB) ⊥ (AC)."
+        },
+        {
+          "id": "c",
+          "text": "OA⃗ + OC⃗ = OB⃗ (parallélogramme), OA = OC et (OA) ⊥ (OC)."
+        },
+        {
+          "id": "d",
+          "text": "OA⃗ + OC⃗ = OB⃗ (parallélogramme), OA = OC et OB = OA√3."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un parallélogramme qui a deux côtés consécutifs égaux est un losange ; s'il a de plus un angle droit, c'est un carré. Il faut donc les conditions : OA⃗ + OC⃗ = OB⃗ (parallélogramme), OA = OC (losange) et (OA) ⊥ (OC) (angle droit) ✓. Le piège courant : un parallélogramme à diagonales égales (OB = AC) est un rectangle, pas forcément un carré ; un parallélogramme à diagonales perpendiculaires est un losange, pas forcément un carré ; un losange de côté s dont la diagonale [OB] vaut s√3 a des angles de 60° et 120°, alors que la diagonale d'un carré de côté s vaut s√2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ ∈ [0 ; π] et M le point d'affixe z_M = 1 + i√3 + 2e^(iθ). B est le point d'affixe 2 + 2i√3. Pour quelle valeur de θ a-t-on M = B ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ = π/6"
+        },
+        {
+          "id": "b",
+          "text": "θ = 2π/3"
+        },
+        {
+          "id": "c",
+          "text": "Aucune valeur de θ"
+        },
+        {
+          "id": "d",
+          "text": "θ = π/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a M = B si et seulement si 1 + i√3 + 2e^(iθ) = 2 + 2i√3, soit 2e^(iθ) = 1 + i√3 = 2e^(iπ/3), donc e^(iθ) = e^(iπ/3) et θ = π/3, valeur qui est dans [0 ; π] ✓. Le piège courant : permuter cosinus et sinus donne π/6 ; confondre cos θ = 1/2 avec −1/2 donne 2π/3 ; oublier le facteur 2 et poser e^(iθ) = 1 + i√3 conduit à tort à conclure qu'aucune valeur ne convient (|1 + i√3| = 2 ≠ 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ ∈ [0 ; π] et M le point d'affixe z_M = 1 + i√3 + 2e^(iθ). Quel ensemble M décrit-il quand θ varie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle entier de centre d'affixe 1 + i√3 et de rayon 2."
+        },
+        {
+          "id": "b",
+          "text": "Le demi-cercle de centre d'affixe 1 + i√3 et de rayon 2, situé dans le demi-plan Im z ≥ √3."
+        },
+        {
+          "id": "c",
+          "text": "Le demi-cercle de centre d'affixe 1 + i√3 et de rayon 2, situé dans le demi-plan Im z ≤ √3."
+        },
+        {
+          "id": "d",
+          "text": "Le demi-cercle de centre O et de rayon 2, situé dans le demi-plan Im z ≥ 0."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z_M − (1 + i√3) = 2e^(iθ), donc M est à la distance 2 du point d'affixe 1 + i√3. Pour θ ∈ [0 ; π], la partie imaginaire de 2e^(iθ) est 2 sin θ ≥ 0 : M décrit le demi-cercle supérieur, situé dans le demi-plan Im z ≥ √3, extrémités comprises (θ = 0 et θ = π) ✓. Ce cercle est celui qui passe par O, A, B et C, car |z_B|/2 = 2 et le milieu de [OB] est 1 + i√3. Le piège courant : oublier la restriction θ ∈ [0 ; π] donne le cercle entier ; la partie imaginaire 2 sin θ positive donne le demi-plan du haut, non du bas ; confondre le centre avec O revient à oublier le terme constant 1 + i√3.",
+      "difficulty": 3
+    }
+  ]
+}

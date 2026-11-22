@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 2 ⭐⭐⭐ : Racines cubiques, losange et triangle MNP",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Quelles sont les racines cubiques du nombre complexe 2√2 i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2e^(iπ/2), √2e^(i7π/6) et √2e^(i11π/6)"
+        },
+        {
+          "id": "b",
+          "text": "(2√2/3)e^(iπ/6), (2√2/3)e^(i5π/6) et (2√2/3)e^(i3π/2)"
+        },
+        {
+          "id": "c",
+          "text": "√2e^(iπ/6), √2e^(i5π/6) et √2e^(i3π/2)"
+        },
+        {
+          "id": "d",
+          "text": "√2e^(iπ/6), √2e^(iπ/2) et √2e^(i5π/6)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a (√2)³ = 2√2, et 2√2 i = 2√2 e^(iπ/2). Une racine cubique est z′ = √2 e^(iπ/6) (module : (√2)³ = 2√2 ; argument : le tiers de π/2). Les autres s'en déduisent en multipliant par les racines cubiques de l'unité : z′e^(i2π/3) = √2e^(i5π/6) et z′e^(i4π/3) = √2e^(i3π/2) ✓. Contrôle : (√2e^(i3π/2))³ = 2√2e^(i9π/2) = 2√2 e^(iπ/2) = 2√2 i. Le piège courant : ne pas diviser l'argument par 3 donne des arguments faux ; diviser le module par 3 donne 2√2/3 au lieu de ³√(2√2) = √2 ; les arguments se répartissent tous les 2π/3 et non tous les π/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la forme algébrique du nombre complexe √2 e^(i5π/6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√6/2 + i√2/2"
+        },
+        {
+          "id": "b",
+          "text": "−√2/2 + i√6/2"
+        },
+        {
+          "id": "c",
+          "text": "√6/2 + i√2/2"
+        },
+        {
+          "id": "d",
+          "text": "−√2/2 − i√6/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a cos(5π/6) = −√3/2 et sin(5π/6) = 1/2, donc √2e^(i5π/6) = √2(−√3/2 + i/2) = −√6/2 + i√2/2 ✓. Contrôle : le module vaut √(6/4 + 2/4) = √2. Le piège courant : échanger les valeurs de cos et sin de π/6 donne −√2/2 + i√6/2 ; prendre l'angle π/6 au lieu de 5π/6 donne une partie réelle positive ; échanger cos et sin puis oublier que sin(5π/6) est positif donne −√2/2 − i√6/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit α un nombre complexe non nul et M, N, P les points d'affixes α, αe^(i2π/3) et αe^(−i2π/3). Que valent z_N³ et z_P³ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_N³ = α³e^(i2π/3) et z_P³ = α³e^(−i2π/3)"
+        },
+        {
+          "id": "b",
+          "text": "z_N³ = α et z_P³ = α"
+        },
+        {
+          "id": "c",
+          "text": "z_N³ = −α³ et z_P³ = −α³"
+        },
+        {
+          "id": "d",
+          "text": "z_N³ = α³ et z_P³ = α³"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z_N³ = α³(e^(i2π/3))³ = α³e^(i2π) = α³ et z_P³ = α³(e^(−i2π/3))³ = α³e^(−i2π) = α³ ✓. Le piège courant : oublier de tripler l'argument donne α³e^(i2π/3) ; ne pas élever α au cube donne α ; confondre e^(i2π) avec e^(iπ) = −1 donne −α³.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A, D, B et C ont pour affixes z_A = −i√2, z_D = 2i√2, z_B = √6/2 + i√2/2 et z_C = −√6/2 + i√2/2. Que vaut (z_C − z_B)/(z_D − z_A) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−i√3/3"
+        },
+        {
+          "id": "b",
+          "text": "i√3/3"
+        },
+        {
+          "id": "c",
+          "text": "√3/3"
+        },
+        {
+          "id": "d",
+          "text": "−i√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z_C − z_B = −√6 et z_D − z_A = 3i√2. Le quotient est −√6/(3i√2) = −√3/(3i) = i√3/3 (car 1/i = −i) ✓. Ce quotient est un imaginaire pur, ce qui exprime que les droites (BC) et (AD) sont perpendiculaires. Le piège courant : oublier le i du dénominateur donne le réel √3/3 (qui signifierait colinéaires) ; mal traiter 1/i = −i inverse le signe ; renverser le quotient donne −i√3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, les points A, B, D et C ont pour affixes z_A = −i√2, z_B = √6/2 + i√2/2, z_D = 2i√2 et z_C = −√6/2 + i√2/2. Quelle propriété suffit à prouver que le quadrilatère ABDC est un losange ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ABDC est un parallélogramme et ses diagonales [AD] et [BC] sont perpendiculaires."
+        },
+        {
+          "id": "b",
+          "text": "ABDC est un parallélogramme et ses diagonales [AD] et [BC] ont la même longueur."
+        },
+        {
+          "id": "c",
+          "text": "ABDC est un parallélogramme et AB = CD."
+        },
+        {
+          "id": "d",
+          "text": "ABDC est un parallélogramme et ses diagonales [AD] et [BC] n'ont pas la même longueur."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici le milieu de [AD] a pour affixe (−i√2 + 2i√2)/2 = i√2/2 et celui de [BC] a pour affixe (z_B + z_C)/2 = i√2/2 : les diagonales ont le même milieu, donc ABDC est un parallélogramme. Comme (BC) ⊥ (AD), ses diagonales sont perpendiculaires : c'est un losange ✓. Le piège courant : un parallélogramme dont les diagonales ont la même longueur est un rectangle, pas forcément un losange ; AB = CD est vrai dans tout parallélogramme et ne le distingue pas ; des diagonales de longueurs différentes écartent seulement le carré et le rectangle, sans donner l'égalité des côtés ; seule la perpendicularité des diagonales d'un parallélogramme caractérise le losange.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α un nombre complexe non nul et M, N, P les points d'affixes α, αe^(i2π/3) et αe^(−i2π/3). Quelle est la nature du triangle MNP ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isocèle en M seulement : MN = MP, mais le côté NP est différent des deux autres côtés."
+        },
+        {
+          "id": "b",
+          "text": "Isocèle rectangle en N : les angles au centre valent 2π/3, donc l'angle du triangle en N vaut π/2."
+        },
+        {
+          "id": "c",
+          "text": "Équilatéral : les trois points sont sur un cercle de centre O, régulièrement espacés de 2π/3."
+        },
+        {
+          "id": "d",
+          "text": "Quelconque : les trois affixes α, αe^(i2π/3) et αe^(−i2π/3) sont différentes, donc aucun côté n'est égal."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les trois points sont à la distance |α| de O, et N, P se déduisent de M par les rotations de centre O et d'angles 2π/3 et −2π/3 : les trois angles au centre valent 2π/3 et les trois côtés sont égaux (MN = NP = PM = |α|√3). Le triangle MNP est équilatéral ✓. Le piège courant : voir MN = MP et conclure « isocèle seulement » oublie de comparer NP ; un angle au centre de 2π/3 ne donne pas un angle droit en N ; des sommets distincts n'interdisent pas toute régularité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α un nombre complexe non nul, M, N, P les points d'affixes α, αe^(i2π/3) et αe^(−i2π/3), et Q le point d'affixe α³. Le quadrilatère MNQP (sommets dans cet ordre) est un parallélogramme si et seulement si ses diagonales [MQ] et [NP] ont le même milieu. Quelle équation en α obtient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α³ = −α"
+        },
+        {
+          "id": "b",
+          "text": "α³ = (1 + i√3)α"
+        },
+        {
+          "id": "c",
+          "text": "α³ = (1 − i√3)α"
+        },
+        {
+          "id": "d",
+          "text": "α³ = −2α"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les diagonales [MQ] et [NP] ont le même milieu si et seulement si z_M + z_Q = z_N + z_P, soit α + α³ = α(e^(i2π/3) + e^(−i2π/3)) = 2α cos(2π/3) = −α. Donc α³ = −α − α = −2α ✓. Comme MN = MP, un tel parallélogramme est un losange. Le piège courant : écrire z_Q = z_N + z_P, c'est oublier le terme α de M, et donne α³ = −α ; apparier les mauvais sommets (M avec N, ou M avec P) donne α³ = (1 + i√3)α ou α³ = (1 − i√3)α.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit α un nombre complexe non nul. Le quadrilatère MNQP est un losange si et seulement si α³ + 2α = 0. Quelles sont les valeurs de α pour lesquelles c'est le cas ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α = √2 ou α = −√2"
+        },
+        {
+          "id": "b",
+          "text": "α = i√2 ou α = −i√2"
+        },
+        {
+          "id": "c",
+          "text": "α = i√8 ou α = −i√8"
+        },
+        {
+          "id": "d",
+          "text": "α = −2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On factorise : α³ + 2α = α(α² + 2) = 0, et comme α ≠ 0, cela équivaut à α² = −2. Or (i√2)² = −2 et (−i√2)² = −2, donc α = i√2 ou α = −i√2 ✓. Contrôle : (i√2)³ + 2i√2 = −2i√2 + 2i√2 = 0. Le piège courant : oublier le signe et résoudre α² = 2 donne ±√2 ; écrire α² = −8 donne ±i√8 ; diviser mal par α et ne garder que −2 confond α et α².",
+      "difficulty": 3
+    }
+  ]
+}

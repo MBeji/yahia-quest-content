@@ -1,0 +1,442 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : étude de x ↦ x² − x ln x, dérivabilité en 0, aires et suite",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Soit g la fonction définie sur ]0 ; +∞[ par g(x) = x − 1 − ln x.\nQuelle est l'expression de g′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) = 1 + 1/x"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = x − 1/x"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) = 1 − 1/x"
+        },
+        {
+          "id": "d",
+          "text": "g′(x) = −1/x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La dérivée de x est 1, celle de −1 est 0 et celle de −ln x est −1/x : g′(x) = 1 − 1/x = (x − 1)/x ✓. Un signe faux sur (ln x)′ donne 1 + 1/x ; confondre ln x avec 1/x lors du calcul donne x − 1/x ; oublier la dérivée de x donne −1/x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ]0 ; +∞[ par g(x) = x − 1 − ln x.\nQuel est le minimum de g sur ]0 ; +∞[, et quelle inégalité en découle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(1) = 0, donc g(x) ≥ 0 pour tout x > 0"
+        },
+        {
+          "id": "b",
+          "text": "g(1) = 0, donc g(x) ≤ 0 pour tout x > 0"
+        },
+        {
+          "id": "c",
+          "text": "g(1) = −1, donc g(x) ≥ −1 pour tout x > 0"
+        },
+        {
+          "id": "d",
+          "text": "g(e) = e − 2, donc g(x) ≥ e − 2 pour tout x > 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g′(x) = (x − 1)/x est négative sur ]0 ; 1[ et positive sur ]1 ; +∞[ : g est minimale en 1, avec g(1) = 1 − 1 − ln 1 = 0. Donc g(x) ≥ 0 sur ]0 ; +∞[ ✓. Un minimum donne un minorant, jamais un majorant ; et ln 1 = 0, non 1 ; l'extremum n'est pas en e, qui n'annule pas g′.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nPourquoi f est-elle continue à droite en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − x ln x tend vers −∞ quand x → 0⁺, car ln x → −∞"
+        },
+        {
+          "id": "b",
+          "text": "x² − x ln x tend vers 1 quand x → 0⁺, car x² → 1"
+        },
+        {
+          "id": "c",
+          "text": "la formule x² − x ln x n'a pas de limite en 0⁺"
+        },
+        {
+          "id": "d",
+          "text": "x² − x ln x tend vers 0 quand x → 0⁺, car x ln x → 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand x → 0⁺, x² → 0 et x ln x → 0 (croissance comparée) : la limite est 0 = f(0), donc f est continue à droite en 0 ✓. Le produit x ln x est de la forme 0 × (−∞) : le facteur x écrase le logarithme, et il ne faut pas conclure −∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nQue vaut la limite en 0⁺ du taux d'accroissement (f(x) − f(0))/x, et que signifie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 : f est dérivable en 0, demi-tangente horizontale"
+        },
+        {
+          "id": "b",
+          "text": "+∞ : f n'est pas dérivable en 0, demi-tangente verticale"
+        },
+        {
+          "id": "c",
+          "text": "1 : f est dérivable en 0, demi-tangente de pente 1"
+        },
+        {
+          "id": "d",
+          "text": "−∞ : f n'est pas dérivable en 0, demi-tangente verticale"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(f(x) − f(0))/x = (x² − x ln x)/x = x − ln x. Quand x → 0⁺, x → 0 et −ln x → +∞, donc la limite est +∞ ✓ : f n'est pas dérivable à droite en 0 et (Γ) admet à l'origine une demi-tangente verticale (dirigée vers le haut). Le piège courant est de simplifier par x avant de regarder le signe de −ln x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nQuelles sont les limites de f(x) et de f(x)/x quand x tend vers +∞, et quelle branche infinie en résulte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → 1 : asymptote oblique d'équation y = x"
+        },
+        {
+          "id": "b",
+          "text": "f(x) et f(x)/x → +∞ : branche parabolique de direction (O, j)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → +∞ et f(x)/x → 0 : branche parabolique de direction (O, i)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et f(x)/x → +∞ : la courbe admet une asymptote verticale"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) = x(x − ln x), avec x − ln x → +∞ (car ln x est négligeable devant x) : f(x) → +∞. De plus f(x)/x = x − ln x → +∞ : (Γ) monte plus vite que toute droite, d'où une branche parabolique de direction l'axe des ordonnées ✓. Une asymptote verticale se produit en une abscisse finie, pas en +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nQuelle est l'expression de f′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 2x − ln x"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 2x − 1/x"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 2x + ln x + 1"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 2x − ln x − 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(x²)′ = 2x et (x ln x)′ = ln x + x × 1/x = ln x + 1, donc f′(x) = 2x − ln x − 1 = x + (x − 1 − ln x) = x + g(x) ✓. Oublier le second terme du produit donne 2x − ln x ; dériver x ln x comme 1/x donne 2x − 1/x ; un signe faux donne 2x + ln x + 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nOn note g(x) = x − 1 − ln x, avec g(x) ≥ 0 pour tout x > 0.\nQuel est le sens de variation de f sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante, car f′(x) = x + g(x) > 0 pour x > 0"
+        },
+        {
+          "id": "b",
+          "text": "f est décroissante sur ]0 ; 1] puis croissante sur [1 ; +∞[, car g(1) = 0"
+        },
+        {
+          "id": "c",
+          "text": "f est croissante sur [0 ; 1] puis décroissante sur [1 ; +∞[, car g(1) = 0"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement décroissante, car −x ln x est négatif pour x > 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = x + g(x), avec g(x) = x − 1 − ln x ≥ 0 sur ]0 ; +∞[ : pour x > 0, f′(x) ≥ x > 0, donc f est strictement croissante ✓. Le zéro de g en 1 n'est pas un zéro de f′ : f′(1) = 1 + 0 = 1. L'erreur classique est de lire le signe de f′ sur celui de g seul, en oubliant le terme x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nQuelle est l'équation de la tangente à (Γ) au point d'abscisse 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x − 1"
+        },
+        {
+          "id": "b",
+          "text": "y = 2x − 1"
+        },
+        {
+          "id": "c",
+          "text": "y = x"
+        },
+        {
+          "id": "d",
+          "text": "y = 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(1) = 1 − 0 = 1 et f′(1) = 2 − 0 − 1 = 1. La tangente est y = f′(1)(x − 1) + f(1) = (x − 1) + 1 = x ✓. Oublier + f(1) donne x − 1 ; prendre f′(1) = 2 (en oubliant − ln 1 − 1) donne y = 2x − 1 ; une tangente horizontale y = 1 supposerait f′(1) = 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour n ≥ 2, 𝒜ₙ désigne l'aire, en unités d'aire, du domaine limité par (Γ), l'axe des abscisses et les droites x = 1/n et x = 1 ; f est positive sur [0 ; +∞[.\nL'aire 𝒜ₙ s'écrit :",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜ₙ = ∫ de 1 à 1/n de f(x) dx"
+        },
+        {
+          "id": "b",
+          "text": "𝒜ₙ = ∫ de 0 à 1/n de f(x) dx"
+        },
+        {
+          "id": "c",
+          "text": "𝒜ₙ = ∫ de 1/n à 1 de f(x) dx"
+        },
+        {
+          "id": "d",
+          "text": "𝒜ₙ = ∫ de 1/n à 1 de (f(x) − x) dx"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f est positive, donc l'aire sous la courbe entre les droites x = 1/n et x = 1 est ∫ de 1/n à 1 de f(x) dx, bornes dans l'ordre croissant car 1/n < 1 ✓. Inverser les bornes donnerait l'opposé, négatif ; la borne 0 changerait le domaine ; soustraire x calculerait l'aire entre (Γ) et la droite y = x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour n ≥ 2, on sait que 𝒜ₙ = 1/3 − 1/(3n³) − ∫ de 1/n à 1 de x ln x dx, et que ∫ de 1/n à 1 de x ln x dx tend vers −1/4 quand n tend vers +∞.\nQue vaut la limite de 𝒜ₙ quand n tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/12"
+        },
+        {
+          "id": "b",
+          "text": "1/12"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "1/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1/(3n³) → 0 et l'intégrale tend vers −1/4 : 𝒜ₙ → 1/3 − 0 − (−1/4) = 1/3 + 1/4 = 7/12 ✓. Le signe − devant l'intégrale la transforme en + 1/4 ; 1/3 serait la limite si l'on oubliait l'intégrale de x ln x, 1/4 celle de cette intégrale seule (au signe près), et 1/12 = 1/3 − 1/4 vient d'un signe faux sur −(−1/4).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nOn sait que f est continue et strictement croissante sur [0 ; +∞[ avec lim_{x→+∞} f(x) = +∞. Quel est l'intervalle J tel que f réalise une bijection de [0 ; +∞[ sur J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J = ]−∞ ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "J = [1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "J = [0 ; 1]"
+        },
+        {
+          "id": "d",
+          "text": "J = [0 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f est continue et strictement croissante : elle réalise une bijection de [0 ; +∞[ sur [f(0) ; lim f[ = [0 ; +∞[ ✓. La borne inférieure est f(0) = 0, non 1 (c'est la valeur en 1) ; la borne supérieure +∞ est donnée par la limite en +∞ ; et ]−∞ ; +∞[ exigerait des valeurs négatives que f ne prend pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nOn rappelle que ln 0,4 ≈ −0,9163 et ln 0,5 ≈ −0,693. Quelles sont les valeurs approchées de f(0,4) et de f(0,5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(0,4) ≈ −0,207 et f(0,5) ≈ −0,097"
+        },
+        {
+          "id": "b",
+          "text": "f(0,4) ≈ 0,527 et f(0,5) ≈ 0,597"
+        },
+        {
+          "id": "c",
+          "text": "f(0,4) ≈ 1,076 et f(0,5) ≈ 0,943"
+        },
+        {
+          "id": "d",
+          "text": "f(0,4) ≈ 0,160 et f(0,5) ≈ 0,250"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(0,4) = 0,16 − 0,4 × (−0,9163) = 0,16 + 0,3665 ≈ 0,527 ; f(0,5) = 0,25 − 0,5 × (−0,693) = 0,25 + 0,347 ≈ 0,597 ✓. Garder le signe de ln x sans le changer devant x ln x donne −0,207 et −0,097 ; oublier le facteur x devant ln x donne 1,076 et 0,943 ; oublier le terme x ln x donne 0,160 et 0,250.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nOn sait que g(x) = x − 1 − ln x est positive ou nulle sur ]0 ; +∞[. Que dire de la position de (Γ) par rapport à la droite Δ d'équation y = x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(Γ) est au-dessous de Δ, avec contact au seul point d'abscisse 1"
+        },
+        {
+          "id": "b",
+          "text": "(Γ) est au-dessus de Δ, avec contact au seul point d'abscisse 1"
+        },
+        {
+          "id": "c",
+          "text": "(Γ) est au-dessus de Δ sur ]0 ; 1[ et au-dessous sur ]1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "(Γ) est au-dessus de Δ, sans aucun point commun avec Δ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) − x = x² − x ln x − x = x(x − 1 − ln x) = x g(x). Comme x > 0 et g(x) ≥ 0 (nulle seulement en x = 1), f(x) − x ≥ 0 : (Γ) est au-dessus de Δ, et la touche en 1 (Δ est la tangente à (Γ) en x = 1) ✓. Le signe de x g(x) ne change jamais : la courbe ne traverse pas Δ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur de ∫₁^x t ln t dt, pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/2) x² ln x − (1/2) x² + 1/2"
+        },
+        {
+          "id": "b",
+          "text": "(1/2) x² ln x + (1/4) x² − 1/4"
+        },
+        {
+          "id": "c",
+          "text": "(1/2) x² ln x − (1/4) x²"
+        },
+        {
+          "id": "d",
+          "text": "(1/2) x² ln x − (1/4) x² + 1/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Intégration par parties avec u = ln t et v′ = t : ∫₁^x t ln t dt = [t²/2 × ln t]₁^x − ∫₁^x t/2 dt = (x²/2) ln x − (x² − 1)/4 = (1/2) x² ln x − (1/4) x² + 1/4 ✓. Oublier le facteur 1/2 dans l'intégrale restante donne (1/2)x² ln x − (1/2)x² + 1/2 ; un signe faux donne (1/2)x² ln x + (1/4)x² − 1/4 ; oublier la borne inférieure donne (1/2)x² ln x − (1/4)x².",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = x² − x ln x sur ]0 ; +∞[, de courbe (Γ). Pour n ≥ 2, 𝒜ₙ désigne l'aire, en unités d'aire, du domaine limité par (Γ), l'axe des abscisses et les droites x = 1/n et x = 1 ; f est positive sur [0 ; +∞[.\nQuelle est l'expression de 𝒜ₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7/12 − (ln n)/(2n²) − 1/(4n²) − 1/(3n³)"
+        },
+        {
+          "id": "b",
+          "text": "1/12 + (ln n)/(2n²) + 1/(4n²) − 1/(3n³)"
+        },
+        {
+          "id": "c",
+          "text": "7/12 + (ln n)/(2n²) − 1/(4n²) + 1/(3n³)"
+        },
+        {
+          "id": "d",
+          "text": "1/12 − (ln n)/(2n²) + 1/(4n²) + 1/(3n³)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "𝒜ₙ = ∫ de 1/n à 1 de x² dx − ∫ de 1/n à 1 de x ln x dx = (1/3)(1 − 1/n³) − [(ln n)/(2n²) + 1/(4n²) − 1/4]. En effet ∫ de 1/n à 1 de t ln t dt = −∫₁^{1/n} t ln t dt = (ln n)/(2n²) + 1/(4n²) − 1/4. Alors 𝒜ₙ = 1/3 + 1/4 − 1/(3n³) − (ln n)/(2n²) − 1/(4n²) = 7/12 − … ✓. Le piège courant est ln(1/n) = ln n au lieu de −ln n, qui renverse le signe du terme (ln n)/(2n²) ; oublier le signe − devant l'intégrale de x ln x renverse celui de 1/(4n²) ; la constante 1/12 vient de 1/3 − 1/4 ; un signe faux dans (1/3)(1 − 1/n³) change celui de 1/(3n³).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nOn sait que f est une bijection de [0 ; +∞[ sur [0 ; +∞[. Pourquoi, pour tout n ≥ 2, existe-t-il un unique réel aₙ > 0 tel que f(aₙ) = 𝒜ₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est dérivable sur ]0 ; +∞[, donc l'équation f(x) = 𝒜ₙ a une seule solution"
+        },
+        {
+          "id": "b",
+          "text": "f(0) = 0 et f(1) = 1, donc tout réel de ]0 ; 1[ a un seul antécédent"
+        },
+        {
+          "id": "c",
+          "text": "𝒜ₙ > 0 est dans [0 ; +∞[, donc elle a un seul antécédent par f"
+        },
+        {
+          "id": "d",
+          "text": "𝒜ₙ ≤ 1 pour tout n, donc elle est atteinte par f en un seul point"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une bijection de [0 ; +∞[ sur [0 ; +∞[ donne à tout réel de [0 ; +∞[ exactement un antécédent. Or 𝒜ₙ est une aire strictement positive, donc dans l'ensemble d'arrivée ; elle admet un unique antécédent aₙ > 0 (non nul car f(0) = 0 ≠ 𝒜ₙ) ✓. Être dérivable ne donne pas l'unicité, et la majoration par 1 n'est pas nécessaire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nPour n ≥ 2, aₙ = f⁻¹(𝒜ₙ), et 𝒜ₙ → 7/12 quand n → +∞. Que dire de la suite (aₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(aₙ) converge vers 7/12, car aₙ et 𝒜ₙ ont la même limite"
+        },
+        {
+          "id": "b",
+          "text": "(aₙ) converge vers f(7/12), car f est continue en 7/12"
+        },
+        {
+          "id": "c",
+          "text": "(aₙ) converge vers α = f⁻¹(7/12), car f⁻¹ est continue"
+        },
+        {
+          "id": "d",
+          "text": "(aₙ) diverge vers +∞, car f⁻¹ tend vers +∞ en +∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f⁻¹ est continue (réciproque d'une bijection continue), donc aₙ = f⁻¹(𝒜ₙ) → f⁻¹(7/12) = α : on compose la limite 7/12 par f⁻¹ ✓. La limite de 𝒜ₙ est 7/12, mais celle de aₙ est l'antécédent de 7/12, et non 7/12 lui-même ; et 𝒜ₙ reste bornée, donc aₙ aussi.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = x² − x ln x si x > 0 et f(0) = 0, de courbe (Γ) dans un repère orthonormé.\nSoit α = f⁻¹(7/12). On donne f(0,4) ≈ 0,527, f(0,5) ≈ 0,597 et 7/12 ≈ 0,583. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4 < α < 0,5, car f(0,4) < 7/12 < f(0,5) et f croissante"
+        },
+        {
+          "id": "b",
+          "text": "α > 0,5, car f(0,5) > 7/12 et f est strictement croissante"
+        },
+        {
+          "id": "c",
+          "text": "α < 0,4, car f(0,4) < 7/12 et f est strictement croissante"
+        },
+        {
+          "id": "d",
+          "text": "0,4 < α < 0,5, car f(0,4) et f(0,5) sont proches de 7/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(α) = 7/12 avec f(0,4) < 7/12 < f(0,5) : f étant strictement croissante, on rapporte l'encadrement des valeurs à celui des antécédents : 0,4 < α < 0,5 ✓. Comme f(0,5) > f(α), α est avant 0,5 et non après ; comme f(0,4) < f(α), α est après 0,4. La seule proximité des valeurs ne prouve rien.",
+      "difficulty": 3
+    }
+  ]
+}

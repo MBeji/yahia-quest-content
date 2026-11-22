@@ -1,0 +1,262 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 2 ⭐⭐⭐ : plan, sphère, triangle et sphères passant par trois points",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 2), B(2 ; 1 ; 0) et C(1 ; 2 ; 0). Que vaut AB⃗ ∧ AC⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; −2 ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; −2 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; 2 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "(0 ; 0 ; 4)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a AB⃗(1 ; 0 ; −2) et AC⃗(0 ; 1 ; −2). Alors AB⃗ ∧ AC⃗ = (0 × (−2) − (−2) × 1 ; (−2) × 0 − 1 × (−2) ; 1 × 1 − 0 × 0) = (2 ; 2 ; 1) ✓. Inverser l'ordre des facteurs change tous les signes ; un signe faux sur la deuxième coordonnée donne (2 ; −2 ; 1) ; le produit terme à terme (0 ; 0 ; 4) n'est pas un produit vectoriel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 2), B(2 ; 1 ; 0) et C(1 ; 2 ; 0). Quelle est une équation cartésienne du plan P = (ABC) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x + 2y + z + 6 = 0"
+        },
+        {
+          "id": "b",
+          "text": "2x + 2y + z − 6 = 0"
+        },
+        {
+          "id": "c",
+          "text": "2x − 2y + z − 2 = 0"
+        },
+        {
+          "id": "d",
+          "text": "2x + 2y + z − 4 = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le vecteur AB⃗ ∧ AC⃗ = (2 ; 2 ; 1) est normal à P, dont une équation est 2x + 2y + z + d = 0. Le point A donne 2 + 2 + 2 + d = 0, donc d = −6 ✓. Contrôle : B donne 4 + 2 + 0 − 6 = 0 et C donne 2 + 4 + 0 − 6 = 0. Le signe faux de la constante donne +6 ; un signe faux sur y dans la normale donne 2x − 2y + z − 2 = 0 ; oublier la cote 2 de A donne la constante −4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 2), B(2 ; 1 ; 0) et C(1 ; 2 ; 0). Quelle est l'aire du triangle ABC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "9/2"
+        },
+        {
+          "id": "d",
+          "text": "√5/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'aire est (1/2)‖AB⃗ ∧ AC⃗‖ = (1/2)√(4 + 4 + 1) = 3/2 ✓. Oublier le facteur 1/2 donne l'aire du parallélogramme (3) ; garder la norme au carré donne 9/2 ; oublier d'élever les coordonnées 2 au carré donne √5/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 2), B(2 ; 1 ; 0) et C(1 ; 2 ; 0). Soit S la sphère de centre I(−1 ; −1 ; 1) et de rayon 3. Quelle est la position de S par rapport au plan (ABC) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S et le plan sont sécants selon un cercle"
+        },
+        {
+          "id": "b",
+          "text": "S et le plan n'ont aucun point commun"
+        },
+        {
+          "id": "c",
+          "text": "le plan passe par le centre de S"
+        },
+        {
+          "id": "d",
+          "text": "S et le plan sont tangents"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une équation du plan (ABC) est 2x + 2y + z − 6 = 0 ; la distance de I à ce plan est |−2 − 2 + 1 − 6|/√9 = 9/3 = 3, égale au rayon : S et le plan sont tangents ✓. Oublier de diviser par la norme 3 donne 9 > 3, donc l'absence de point commun ; diviser par la somme des coefficients 5 donne 9/5 < 3, donc un cercle ; le plan passerait par le centre si la distance était nulle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 2), B(2 ; 1 ; 0) et C(1 ; 2 ; 0). Le plan P = (ABC) d'équation 2x + 2y + z − 6 = 0 est tangent en un point à la sphère S de centre I(−1 ; −1 ; 1) et de rayon 3. Quel est ce point de contact ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B(2 ; 1 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "A(1 ; 1 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "C(1 ; 2 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "T(5 ; 5 ; 4)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point de contact est le projeté orthogonal de I sur P : T = I + k(2 ; 2 ; 1). Dans P : 2(−1 + 2k) + 2(−1 + 2k) + (1 + k) − 6 = 9k − 9 = 0, donc k = 1 et T(1 ; 1 ; 2) = A ✓. Les points B et C sont dans P mais à la distance IB = IC = √14 > 3 du centre : ils ne sont pas sur S. Le point (5 ; 5 ; 4) correspond à k = 3 (on a pris le rayon pour coefficient) et n'est pas dans P.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne C(1 ; 2 ; 0) et D(1 ; 0 ; 4). Quelles sont les coordonnées du milieu du segment [CD] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; 1 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 2 ; 4)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(0 ; −1 ; 2)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        },
+        {
+          "id": "d",
+          "text": "(0 ; −2 ; 4)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les coordonnées d'un milieu sont les demi-sommes : ((1 + 1)/2 ; (2 + 0)/2 ; (0 + 4)/2) = (1 ; 1 ; 2) ✓. Oublier de diviser par 2 donne (2 ; 2 ; 4) ; prendre la demi-différence ou la différence entière donne les coordonnées de CD⃗/2 ou de CD⃗ (au signe près), c'est-à-dire (0 ; −1 ; 2) ou (0 ; −2 ; 4).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne B(2 ; 1 ; 0), C(1 ; 2 ; 0) et D(1 ; 0 ; 4). En quel sommet le triangle BCD est-il rectangle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "en B"
+        },
+        {
+          "id": "b",
+          "text": "en C"
+        },
+        {
+          "id": "c",
+          "text": "en D"
+        },
+        {
+          "id": "d",
+          "text": "il n'est pas rectangle"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a BC⃗(−1 ; 1 ; 0) et BD⃗(−1 ; −1 ; 4) : BC⃗ · BD⃗ = 1 − 1 + 0 = 0, donc BCD est rectangle en B ✓. Contrôle par Pythagore : BC² = 2, BD² = 18 et CD² = 20 = BC² + BD². En C, CB⃗ · CD⃗ = (1 ; −1 ; 0) · (0 ; −2 ; 4) = 2 ≠ 0 ; en D, DB⃗ · DC⃗ = (1 ; 1 ; −4) · (0 ; 2 ; −4) = 18 ≠ 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne B(2 ; 1 ; 0), C(1 ; 2 ; 0) et D(1 ; 0 ; 4). Quel est l'ensemble des centres des sphères qui passent par B, C et D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le plan perpendiculaire à (CD) passant par son milieu"
+        },
+        {
+          "id": "b",
+          "text": "la droite perpendiculaire à (BCD) au milieu de [CD]"
+        },
+        {
+          "id": "c",
+          "text": "le plan (BCD) lui-même, qui contient les trois points"
+        },
+        {
+          "id": "d",
+          "text": "la droite (BD), qui porte un des côtés du triangle"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un centre J équidistant de B, C et D vérifie JB = JC = JD : J est dans le plan médiateur de [BC] et dans celui de [CD]. Leur intersection est une droite perpendiculaire au plan (BCD), qui passe par le point équidistant de B, C et D dans ce plan, c'est-à-dire le milieu A de l'hypoténuse [CD] (BCD est rectangle en B) ✓. Le plan perpendiculaire à (CD) en son milieu ne traduit que l'égalité JC = JD, une seule condition sur deux ; le plan (BCD) et la droite (BD) ne sont pas équidistants des trois points.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit A(1 ; 1 ; 2) et I(−1 ; −1 ; 1). Quelle est une représentation paramétrique de la droite (AI) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 1 + 2t ; y = 1 + 2t ; z = 2 − t"
+        },
+        {
+          "id": "b",
+          "text": "x = 1 + 2t ; y = 1 + 2t ; z = 1 − t"
+        },
+        {
+          "id": "c",
+          "text": "x = 1 + t ; y = 1 + t ; z = 2 + t"
+        },
+        {
+          "id": "d",
+          "text": "x = 1 − 2t ; y = 1 − 2t ; z = 2 − t"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a AI⃗(−2 ; −2 ; −1). La droite passe par A(1 ; 1 ; 2) avec ce vecteur directeur : x = 1 − 2t, y = 1 − 2t, z = 2 − t ✓. Contrôle : t = 1 donne I(−1 ; −1 ; 1). Un signe faux sur x et y donne le vecteur (2 ; 2 ; −1), non colinéaire à AI⃗, que ce soit en partant de A (x = 1 + 2t ; y = 1 + 2t ; z = 2 − t) ou d'un point de départ qui n'est pas sur la droite (x = 1 + 2t ; y = 1 + 2t ; z = 1 − t, avec z = 1 pour t = 0) ; la représentation de vecteur directeur (1 ; 1 ; 1) prend la somme des coordonnées de A comme direction.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne B(2 ; 1 ; 0), C(1 ; 2 ; 0) et D(1 ; 0 ; 4). Une sphère passant par B, C et D a pour rayon √14. Soit A le milieu de [CD] et J le centre de la sphère. Quelle est la distance AJ ?",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Le triangle BCD est rectangle en B : le centre de son cercle circonscrit est le milieu A de [CD], de rayon CD/2 = √20/2 = √5. Le centre J est sur la perpendiculaire en A au plan (BCD), donc JB² = JA² + AB² : 14 = AJ² + 5, d'où AJ² = 9 et AJ = 3 ✓. Utiliser le rayon √14 pour AJ ou soustraire sans carré fausserait le résultat.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne B(2 ; 1 ; 0), C(1 ; 2 ; 0) et D(1 ; 0 ; 4). Le milieu de [CD] est A(1 ; 1 ; 2) et le plan (BCD) a pour vecteur normal n⃗(2 ; 2 ; 1). Quels sont les centres des sphères de rayon √14 passant par B, C et D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "J(7 ; 7 ; 5) et J′(−5 ; −5 ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "J(3 ; 3 ; 3) seulement"
+        },
+        {
+          "id": "c",
+          "text": "J(3 ; 3 ; 3) et J′(−1 ; −1 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "J(1 ; 1 ; 5) et J′(1 ; 1 ; −1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les centres sont sur la perpendiculaire en A au plan (BCD), à la distance AJ = 3 de A. Comme ‖n⃗‖ = 3, le vecteur unitaire est n⃗/3 et J = A ± 3 × n⃗/3 = A ± (2 ; 2 ; 1). On obtient J(3 ; 3 ; 3) et J′(−1 ; −1 ; 1) ✓ : il y a deux sphères. Oublier de normaliser (A ± 3n⃗) donne les points (7 ; 7 ; 5) et (−5 ; −5 ; −1) ; oublier la deuxième solution ne garde que J(3 ; 3 ; 3) ; prendre la direction de l'axe des cotes (A ± 3k⃗) donne J(1 ; 1 ; 5) et J′(1 ; 1 ; −1).",
+      "difficulty": 3
+    }
+  ]
+}

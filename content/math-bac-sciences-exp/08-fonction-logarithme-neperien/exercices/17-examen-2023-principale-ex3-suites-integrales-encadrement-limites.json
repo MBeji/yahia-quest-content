@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2023 · session principale · Exercice 3 ⭐⭐⭐ : suites d'intégrales, encadrement et limites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 17,
+  "questions": [
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose uₙ = ∫ de 1 à 1 + 1/n de (ln x)/x dx. Quelle est la valeur de uₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln²(1 + 1/n)"
+        },
+        {
+          "id": "b",
+          "text": "(1/2) ln(1 + 1/n)"
+        },
+        {
+          "id": "c",
+          "text": "(1/2) ln²(1 + 1/n)"
+        },
+        {
+          "id": "d",
+          "text": "ln(1 + 1/n)/(1 + 1/n)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La fonction x ↦ (ln x)/x est de la forme u′u avec u = ln x, u′ = 1/x : une primitive est (1/2) ln²x. Donc uₙ = (1/2) ln²(1 + 1/n) − (1/2) ln²1 = (1/2) ln²(1 + 1/n) ✓. Oublier le facteur 1/2 donne ln²(1 + 1/n) ; n'élever ln x qu'à la puissance 1 donne (1/2) ln(1 + 1/n) ; évaluer l'intégrande à la borne supérieure donne la dernière expression.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose uₙ = ∫ de 1 à 1 + 1/n de (ln x)/x dx et vₙ = ∫ de 1 à 1 + 1/n de (ln x)/(x√(1 + x)) dx.\nOn sait que 0 ≤ vₙ ≤ uₙ et que uₙ tend vers 0. Que vaut la limite de vₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "ln 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le théorème des gendarmes s'applique : 0 ≤ vₙ ≤ uₙ avec uₙ → 0, donc vₙ → 0 ✓. 1 est le majorant de 1/√(1 + x) sur [1 ; 1 + 1/n], pas la limite de vₙ ; 1/2 est la valeur de 1/(1 + x) en x = 1, racine oubliée, et ln 2 celle de ln en 2 : ce sont des constantes lues au passage, alors que vₙ est écrasée entre 0 et uₙ qui tend vers 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose uₙ = ∫ de 1 à 1 + 1/n de (ln x)/x dx et vₙ = ∫ de 1 à 1 + 1/n de (ln x)/(x√(1 + x)) dx.\nQue vaut la limite de n² uₙ, sachant que uₙ = (1/2) ln²(1 + 1/n) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "n² uₙ = (1/2) (n ln(1 + 1/n))² = (1/2) (ln(1 + 1/n)/(1/n))². En posant t = 1/n → 0, ln(1 + t)/t → 1 (nombre dérivé de ln en 1), donc n² uₙ → (1/2) × 1² = 1/2 ✓. Conclure 0 parce que uₙ → 0 oublie le facteur n² ; oublier le coefficient 1/2 donne 1 ; l'appliquer à la limite déjà divisée donne 1/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose uₙ = ∫ de 1 à 1 + 1/n de (ln x)/x dx et vₙ = ∫ de 1 à 1 + 1/n de (ln x)/(x√(1 + x)) dx.\nPour tout réel x tel que 1 ≤ x ≤ 1 + 1/n, quel encadrement de 1/√(1 + x) est correct ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/√(2n + 1) ≤ 1/√(1 + x) ≤ 1/2"
+        },
+        {
+          "id": "b",
+          "text": "√(n/(2n + 1)) ≤ 1/√(1 + x) ≤ 1/√2"
+        },
+        {
+          "id": "c",
+          "text": "1/√(2n + 1) ≤ 1/√(1 + x) ≤ 1/√2"
+        },
+        {
+          "id": "d",
+          "text": "√(n/(2n + 1)) ≤ 1/√(1 + x) ≤ 1/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "De 1 ≤ x ≤ 1 + 1/n on tire 2 ≤ 1 + x ≤ 2 + 1/n = (2n + 1)/n. La fonction t ↦ 1/√t est décroissante, donc l'ordre s'inverse : √(n/(2n + 1)) ≤ 1/√(1 + x) ≤ 1/√2 ✓. Écrire 2 + 1/n = 2n + 1 oublie la division par n ; majorer par 1/2 oublie la racine ; cumuler ces deux erreurs donne 1/√(2n + 1) ≤ 1/√(1 + x) ≤ 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose uₙ = ∫ de 1 à 1 + 1/n de (ln x)/x dx et vₙ = ∫ de 1 à 1 + 1/n de (ln x)/(x√(1 + x)) dx.\nOn sait que √(n/(2n + 1)) ≤ 1/√(1 + x) ≤ 1/√2 pour 1 ≤ x ≤ 1 + 1/n. Quel encadrement de vₙ en déduit-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√(n/(2n + 1)) ≤ vₙ ≤ 1/√2"
+        },
+        {
+          "id": "b",
+          "text": "√(n/(2n + 1)) uₙ ≤ vₙ ≤ (1/√2) uₙ"
+        },
+        {
+          "id": "c",
+          "text": "(1/√2) uₙ ≤ vₙ ≤ √(n/(2n + 1)) uₙ"
+        },
+        {
+          "id": "d",
+          "text": "0 ≤ vₙ ≤ uₙ/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur [1 ; 1 + 1/n], (ln x)/x ≥ 0. On multiplie l'encadrement par (ln x)/x sans changer son sens, puis on intègre sur [1 ; 1 + 1/n] (croissance de l'intégrale, bornes dans l'ordre croissant) : √(n/(2n + 1)) ∫ (ln x)/x dx ≤ vₙ ≤ (1/√2) ∫ (ln x)/x dx, c'est-à-dire √(n/(2n + 1)) uₙ ≤ vₙ ≤ (1/√2) uₙ ✓. Oublier le poids (ln x)/x laisse un encadrement sans uₙ ; intervertir les deux bornes est impossible, car √(n/(2n + 1)) < 1/√2 ; majorer par uₙ/2 est trop fort, puisque 1/√2 > 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose uₙ = ∫ de 1 à 1 + 1/n de (ln x)/x dx et vₙ = ∫ de 1 à 1 + 1/n de (ln x)/(x√(1 + x)) dx.\nOn sait que √(n/(2n + 1)) uₙ ≤ vₙ ≤ (1/√2) uₙ et que n² uₙ → 1/2. Que vaut la limite de n² vₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "√2/2"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "√2/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On multiplie l'encadrement par n² : √(n/(2n + 1)) × n² uₙ ≤ n² vₙ ≤ (1/√2) × n² uₙ. Comme √(n/(2n + 1)) → 1/√2 et n² uₙ → 1/2, les deux bornes tendent vers (1/√2) × (1/2) = 1/(2√2) = √2/4 ; par les gendarmes n² vₙ → √2/4 ✓. Oublier le facteur 1/√2 donne 1/2 ; prendre n² uₙ → 1 donne √2/2 ; la limite n'est pas 0 car n² compense uₙ.",
+      "difficulty": 3
+    }
+  ]
+}

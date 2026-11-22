@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : Racine quatrième, suite récurrente et sous-suites",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé, (C) est la courbe représentative de la fonction g définie sur [0 ; +∞[ par\ng(x) = ⁴√(4x)\net (D) est la droite d'équation y = x. Elles se coupent à l'origine O et en un second point, d'abscisse α non nulle. Quelle est la valeur de α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α = √2"
+        },
+        {
+          "id": "b",
+          "text": "α = ∛4"
+        },
+        {
+          "id": "c",
+          "text": "α = 4"
+        },
+        {
+          "id": "d",
+          "text": "α = 4/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une abscisse commune vérifie ⁴√(4x) = x avec x ≥ 0. Comme t ↦ t⁴ est strictement croissante sur [0 ; +∞[, on peut élever à la puissance 4 : 4x = x⁴, soit x(x³ − 4) = 0. Donc x = 0 (le point O) ou x³ = 4, d'où α = ∛4 ✓. Contrôle : 4 = (∛4)³, donc 4α = α⁴ et ⁴√(4α) = α. Le piège courant : écrire x⁴ = 4 en perdant le facteur x de 4x donne √2 ; confondre l'indice de la racine et écrire 4x = x² donne 4 ; transformer x³ = 4 en 3x = 4 donne 4/3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La suite (uₙ) est définie par u₀ = 4 et, pour tout entier naturel n,\nuₙ₊₁ = 2/√(uₙ)\nQue vaut u₃ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2"
+        },
+        {
+          "id": "b",
+          "text": "√2/2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On calcule de proche en proche : u₁ = 2/√4 = 2/2 = 1, puis u₂ = 2/√1 = 2, puis u₃ = 2/√2 = √2 (on multiplie le numérateur et le dénominateur par √2) ✓. Contrôle : (√2)² = 2 et 2/√2 × √2 = 2. Le piège courant : écrire 2/√2 = 2√2 oublie que l'on divise ; répondre √2/2 confond 2/√2 avec 1/√2 ; répondre 2 compte les rangs à partir de 1 et donne u₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On veut montrer par récurrence que uₙ > 0 pour tout entier naturel n, où u₀ = 4 et uₙ₊₁ = 2/√(uₙ). L'initialisation est faite (u₀ = 4 > 0). Quelle rédaction de l'hérédité est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si uₙ > 0, alors √(uₙ) > 0, donc 2/√(uₙ) > 0, c'est-à-dire uₙ₊₁ > 0."
+        },
+        {
+          "id": "b",
+          "text": "Si uₙ > 0, alors uₙ₊₁ = 2/√(uₙ) est bien défini, et un terme défini est un terme positif."
+        },
+        {
+          "id": "c",
+          "text": "Si uₙ₊₁ > 0, alors 2/√(uₙ) > 0, donc √(uₙ) > 0 et par suite uₙ > 0."
+        },
+        {
+          "id": "d",
+          "text": "Les termes u₀ = 4 et u₁ = 1 sont positifs, donc tous les termes de la suite le sont."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'hérédité part de l'hypothèse uₙ > 0 pour en déduire uₙ₊₁ > 0 : une racine carrée d'un réel strictement positif est strictement positive, et le quotient de 2 par un réel strictement positif l'est aussi ✓. Le piège courant : dire qu'un terme défini est positif confond existence et signe ; partir de uₙ₊₁ > 0 pour retrouver uₙ > 0 démontre la propriété à l'envers (on suppose la conclusion) ; vérifier deux termes ne remplace pas l'hérédité, qui doit valoir pour un rang n quelconque.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La suite (uₙ) est définie par u₀ = 4 et uₙ₊₁ = 2/√(uₙ). On pose vₙ = u₂ₙ₊₁ et wₙ = u₂ₙ, et l'on admet que les suites (vₙ) et (wₙ) sont monotones. Quels sont leurs sens de variation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(vₙ) est décroissante et (wₙ) est décroissante."
+        },
+        {
+          "id": "b",
+          "text": "(vₙ) est croissante et (wₙ) est croissante."
+        },
+        {
+          "id": "c",
+          "text": "(vₙ) est croissante et (wₙ) est décroissante."
+        },
+        {
+          "id": "d",
+          "text": "(vₙ) est décroissante et (wₙ) est croissante."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule les premiers termes : u₁ = 1, u₂ = 2 et u₃ = √2. Donc v₀ = u₁ = 1 < v₁ = u₃ = √2 : (vₙ) est croissante. Et w₀ = u₀ = 4 > w₁ = u₂ = 2 : (wₙ) est décroissante ✓. Le piège courant : conclure que les deux suites varient dans le même sens, soit parce que l'on suppose f décroissante donc tout décroît, soit parce que la composée de deux fonctions décroissantes est croissante donc tout croît ; ou bien échanger les deux sens (v décroissante, w croissante), alors que w part de u₀ = 4, au-dessus du point fixe, et v de u₁ = 1, en dessous : les deux sous-suites ne varient pas de la même façon, et c'est w qui décroît.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par\nf(x) = 2/√x\net (uₙ) la suite définie par uₙ₊₁ = f(uₙ), avec uₙ > 0 pour tout n. On suppose que, pour un entier n, uₙ₊₁ ≤ uₙ. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur ]0 ; +∞[, donc f(uₙ₊₁) ≤ f(uₙ), c'est-à-dire uₙ₊₂ ≤ uₙ₊₁."
+        },
+        {
+          "id": "b",
+          "text": "f est strictement décroissante sur ]0 ; +∞[, donc f(uₙ₊₁) ≤ f(uₙ), c'est-à-dire uₙ₊₂ ≤ uₙ₊₁."
+        },
+        {
+          "id": "c",
+          "text": "f est strictement décroissante sur ]0 ; +∞[, donc f(uₙ₊₁) ≥ f(uₙ), c'est-à-dire uₙ₊₂ ≥ uₙ₊₁."
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur ]0 ; +∞[, donc f(uₙ₊₁) ≥ f(uₙ), c'est-à-dire uₙ₊₂ ≥ uₙ₊₁."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour x > 0, f(x) = 2x^(−1/2) a pour dérivée f′(x) = −x^(−3/2) < 0 : f est strictement décroissante. Une fonction décroissante inverse les inégalités : uₙ₊₁ ≤ uₙ donne f(uₙ₊₁) ≥ f(uₙ), soit uₙ₊₂ ≥ uₙ₊₁ ✓. Le piège courant : conserver le sens de l'inégalité alors que f est décroissante (c'est garder l'ordre comme si f était croissante) ; ou croire f croissante parce que √x l'est, alors que x apparaît au dénominateur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La suite (uₙ) est définie par u₀ = 4 et uₙ₊₁ = 2/√(uₙ). Que peut-on dire de son sens de variation, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u₁ < u₀ et u₁ < u₂ : la suite décroît de u₀ à u₁ puis croît de u₁ à u₂, elle n'est pas monotone."
+        },
+        {
+          "id": "b",
+          "text": "u₁ < u₀ et u₂ < u₀ : tous les termes calculés sont plus petits que u₀, donc la suite est décroissante."
+        },
+        {
+          "id": "c",
+          "text": "u₁ < u₂ et u₃ < u₂ : u₂ est le plus grand des termes de rang 1 à 3, donc la suite est croissante."
+        },
+        {
+          "id": "d",
+          "text": "La fonction f est décroissante, donc la suite (uₙ) définie par uₙ₊₁ = f(uₙ) est décroissante."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On calcule u₀ = 4, u₁ = 1 et u₂ = 2. Comme u₁ < u₀ la suite ne peut pas être croissante, et comme u₂ > u₁ elle ne peut pas être décroissante : une suite monotone ne change jamais de sens ✓. Le piège courant : comparer chaque terme au seul terme initial (u₁ < u₀ et u₂ < u₀) ne dit rien du sens de variation, qui compare des termes consécutifs ; et une suite uₙ₊₁ = f(uₙ) avec f décroissante n'est pas décroissante, elle alterne : la décroissance de f échange les inégalités à chaque pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2/√x. Pour x > 0, laquelle de ces expressions est égale à f(f(x)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2 × x"
+        },
+        {
+          "id": "b",
+          "text": "4/x"
+        },
+        {
+          "id": "c",
+          "text": "⁴√(64/x)"
+        },
+        {
+          "id": "d",
+          "text": "⁴√(4x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a f(f(x)) = 2/√(2/√x). Or √(2/√x) = √2/x^(1/4), donc f(f(x)) = 2x^(1/4)/√2 = √2 × x^(1/4) = ⁴√4 × ⁴√x = ⁴√(4x) ✓. Contrôle pour x = 16 : f(16) = 2/4 = 1/2 puis f(1/2) = 2/√(1/2) = 2√2, et ⁴√(4 × 16) = ⁴√64 = 2√2 ✓. Le piège courant : confondre f∘f et f², c'est écrire (2/√x)² = 4/x (à x = 16, 4/16 ≠ 2√2) ; prendre √(√x) pour x donne √2 × x ; oublier de retourner la fraction en divisant par √(2/√x) donne ⁴√(64/x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur [0 ; +∞[ par g(x) = ⁴√(4x), strictement croissante. On note α l'abscisse non nulle du point commun à sa courbe et à la droite d'équation y = x, de sorte que g(α) = α. La suite (vₙ) vérifie v₀ = 1 et vₙ₊₁ = g(vₙ), et l'on sait que v₀ ≤ α. Quelle rédaction de l'hérédité prouve que vₙ ≤ α pour tout n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si vₙ ≤ α, la croissance de g donne g(vₙ) ≥ g(α), soit vₙ₊₁ ≥ α."
+        },
+        {
+          "id": "b",
+          "text": "Si vₙ ≤ α, la croissance de g donne g(vₙ) ≤ g(α), soit vₙ₊₁ ≤ α."
+        },
+        {
+          "id": "c",
+          "text": "Si vₙ ≤ α, alors vₙ₊₁ = g(vₙ) ≤ vₙ, donc vₙ₊₁ ≤ α."
+        },
+        {
+          "id": "d",
+          "text": "Comme g(α) = α, on a vₙ₊₁ = g(vₙ) = α, donc vₙ₊₁ ≤ α."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'hypothèse de récurrence est vₙ ≤ α. Une fonction croissante conserve l'ordre : g(vₙ) ≤ g(α). Or g(vₙ) = vₙ₊₁ et g(α) = α, donc vₙ₊₁ ≤ α ✓. Le piège courant : inverser l'inégalité alors que g est croissante ; affirmer g(x) ≤ x sur [0 ; α], alors que g(x) ≥ x pour 0 ≤ x ≤ α (par exemple g(1) = ⁴√4 > 1), ce qui rend la suite croissante et non décroissante ; remplacer vₙ par α revient à supposer l'égalité alors que seule l'inégalité est donnée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (uₙ) une suite définie par uₙ₊₁ = f(uₙ). Les sous-suites (vₙ) = (u₂ₙ₊₁) et (wₙ) = (u₂ₙ) sont monotones et bornées, et vérifient vₙ₊₁ = g(vₙ) et wₙ₊₁ = g(wₙ) avec g continue. Quel raisonnement permet de conclure que (uₙ) converge ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chaque sous-suite converge (monotone bornée) vers un point fixe de g et ces limites sont égales : les rangs pairs et impairs ont la même limite."
+        },
+        {
+          "id": "b",
+          "text": "Chaque sous-suite converge (monotone bornée) vers un point fixe de g, donc la suite (uₙ) converge, quelles que soient les valeurs de ces deux limites."
+        },
+        {
+          "id": "c",
+          "text": "La suite (uₙ) est elle-même bornée par les termes extraits, donc elle converge d'après le théorème sur les suites bornées, sans autre condition."
+        },
+        {
+          "id": "d",
+          "text": "La fonction f étant continue, (uₙ) converge vers l'unique point fixe de f sur ]0 ; +∞[, ce qui suffit à justifier sa convergence."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une suite monotone et bornée converge. Les limites ℓ de (vₙ) et ℓ′ de (wₙ) vérifient g(ℓ) = ℓ et g(ℓ′) = ℓ′ par passage à la limite (g continue). Si ces limites sont égales, le théorème des rangs pairs et impairs donne la convergence de (uₙ) vers cette limite commune ✓. Le piège courant : deux sous-suites convergentes avec des limites différentes (par exemple uₙ = (−1)ⁿ) ne donnent pas une suite convergente ; une suite bornée n'est pas toujours convergente ; et citer le point fixe de f avant d'avoir prouvé la convergence suppose le résultat à démontrer.",
+      "difficulty": 3
+    }
+  ]
+}

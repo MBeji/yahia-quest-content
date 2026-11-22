@@ -1,0 +1,130 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 3 ⭐⭐⭐ : intégrales par décomposition et par parties avec ln",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Pour tout x de [√e ; e], quelle égalité est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(x(x² − 1)) = 1/(x² − 1) + 1/x"
+        },
+        {
+          "id": "b",
+          "text": "1/(x(x² − 1)) = 1/x − x/(x² − 1)"
+        },
+        {
+          "id": "c",
+          "text": "1/(x(x² − 1)) = x/(x² − 1) − 1/x"
+        },
+        {
+          "id": "d",
+          "text": "1/(x(x² − 1)) = 1/(x² − 1) − 1/x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On met sur le même dénominateur : x/(x² − 1) − 1/x = (x × x − (x² − 1))/(x(x² − 1)) = 1/(x(x² − 1)) ✓. Contrôle pour x = 2 : 1/(2 × 3) = 1/6 et 2/3 − 1/2 = 1/6 ✓. Les autres écritures échouent dès x = 2 : elles donnent 1/3 + 1/2 = 5/6, 1/2 − 2/3 = −1/6 et 1/3 − 1/2 = −1/6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit J = ∫ de √e à e de 1/(x(x² − 1)) dx, avec 1/(x(x² − 1)) = x/(x² − 1) − 1/x. Quelle est la valeur de J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/2) ln(e + 1) − 1/2"
+        },
+        {
+          "id": "b",
+          "text": "ln(e + 1) − 1/2"
+        },
+        {
+          "id": "c",
+          "text": "(1/2) ln(e + 1)"
+        },
+        {
+          "id": "d",
+          "text": "ln(e + 1) + 1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de x/(x² − 1) est (1/2) ln(x² − 1) (forme u′/u avec u = x² − 1, u′ = 2x), et une primitive de 1/x est ln x. Donc J = [(1/2) ln(x² − 1) − ln x] de √e à e = ((1/2) ln(e² − 1) − 1) − ((1/2) ln(e − 1) − 1/2) = (1/2) ln((e² − 1)/(e − 1)) − 1/2 = (1/2) ln(e + 1) − 1/2 ✓. Oublier le facteur 1/2 donne ln(e + 1) − 1/2 ; prendre ln √e = 1 au lieu de 1/2 donne (1/2) ln(e + 1) ; un signe faux sur ln x donne (1/2) ln(e + 1) + 1/2, et cumulé avec le facteur 1/2 oublié, ln(e + 1) + 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On veut intégrer par parties K = ∫ de √e à e de (x ln x)/(x² − 1)² dx, avec u(x) = ln x. Quelle primitive v de v′(x) = x/(x² − 1)² convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "v(x) = 1/(x² − 1)"
+        },
+        {
+          "id": "b",
+          "text": "v(x) = −1/(x² − 1)²"
+        },
+        {
+          "id": "c",
+          "text": "v(x) = 1/(2(x² − 1)²)"
+        },
+        {
+          "id": "d",
+          "text": "v(x) = −1/(2(x² − 1))"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec w = x² − 1, w′ = 2x, donc x/(x² − 1)² = (1/2) w′/w², dont une primitive est (1/2) × (−1/w) = −1/(2(x² − 1)) ✓. Contrôle par dérivation : (−1/(2w))′ = w′/(2w²) = x/(x² − 1)². Élever le dénominateur au carré dans la primitive est une confusion avec la règle de dérivation ; les erreurs se cumulent : un signe faux et le facteur 1/2 oublié donnent 1/(x² − 1), le facteur oublié et le carré gardé donnent −1/(x² − 1)², un signe faux et le carré gardé donnent 1/(2(x² − 1)²).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans l'intégration par parties de K = ∫ de √e à e de (x ln x)/(x² − 1)² dx, avec u = ln x et v = −1/(2(x² − 1)), le terme tout intégré est [−ln x/(2(x² − 1))] de √e à e. Quelle est sa valeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e/(2(e² − 1))"
+        },
+        {
+          "id": "b",
+          "text": "1/(4(e + 1))"
+        },
+        {
+          "id": "c",
+          "text": "−1/(4(e + 1))"
+        },
+        {
+          "id": "d",
+          "text": "1/(4(e − 1))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En e : −1/(2(e² − 1)). En √e : −(1/2)/(2(e − 1)) = −1/(4(e − 1)). La différence vaut −1/(2(e² − 1)) + 1/(4(e − 1)) = (−2 + (e + 1))/(4(e² − 1)) = (e − 1)/(4(e − 1)(e + 1)) = 1/(4(e + 1)) ✓. Prendre ln √e = 1 donne e/(2(e² − 1)) ; inverser les bornes donne −1/(4(e + 1)) ; ne garder que la valeur en √e (avec son signe d'extrémité inférieure) donne 1/(4(e − 1)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que J = (1/2) ln(e + 1) − 1/2 et que K vérifie 2K = J + 1/(2(e + 1)). Quelle est la valeur de K ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/4) ln(e + 1) − 1/4 + 1/(2(e + 1))"
+        },
+        {
+          "id": "b",
+          "text": "(1/4) ln(e + 1) − 1/4 + 1/(4(e + 1))"
+        },
+        {
+          "id": "c",
+          "text": "(1/2) ln(e + 1) − 1/2 + 1/(4(e + 1))"
+        },
+        {
+          "id": "d",
+          "text": "−(1/4) ln(e + 1) + 1/4 + 1/(2(e + 1))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On divise les deux membres par 2 : K = J/2 + 1/(4(e + 1)) = (1/4) ln(e + 1) − 1/4 + 1/(4(e + 1)) ✓. Il faut diviser CHAQUE terme du second membre : oublier le 2 sur 1/(2(e + 1)) laisse 1/(2(e + 1)) ; oublier de diviser J laisse (1/2) ln(e + 1) − 1/2 ; un signe faux sur J change les deux premiers termes, et cumulé avec le terme 1/(2(e + 1)) non divisé, il donne −(1/4) ln(e + 1) + 1/4 + 1/(2(e + 1)).",
+      "difficulty": 3
+    }
+  ]
+}

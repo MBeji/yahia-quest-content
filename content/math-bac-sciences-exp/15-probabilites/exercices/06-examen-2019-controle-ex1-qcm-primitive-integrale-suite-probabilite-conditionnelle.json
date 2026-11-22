@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 1 ⭐⭐ : primitive, intégrale, suite et probabilité conditionnelle",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Une primitive sur ]−∞ ; 0[ de la fonction f définie par f(x) = (x + 1)/x est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(x) = x + ln(x) − 1"
+        },
+        {
+          "id": "b",
+          "text": "F(x) = x + 1 + ln(−x)"
+        },
+        {
+          "id": "c",
+          "text": "F(x) = ln((x + 1)/x)"
+        },
+        {
+          "id": "d",
+          "text": "F(x) = x + 1 − ln(−x)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur ]−∞ ; 0[, f(x) = 1 + 1/x. Une primitive de 1/x sur cet intervalle est ln(−x) (dérivée : (−1)/(−x) = 1/x), donc F(x) = x + ln(−x) + c convient, par exemple avec c = 1 : x + 1 + ln(−x) ✓. L'écriture ln(x) n'est pas définie pour x < 0 ; ln((x + 1)/x) a pour dérivée 1/(x + 1) − 1/x, qui n'est pas f ; le signe moins devant ln(−x) donne la dérivée 1 − 1/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f une fonction strictement positive, paire et continue sur [−1 ; 1], et I = ∫₀¹ f(x)dx. Laquelle de ces égalités est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫₀⁻¹ f(x)dx = −I"
+        },
+        {
+          "id": "b",
+          "text": "∫₋₁¹ (f(x))² dx = I²"
+        },
+        {
+          "id": "c",
+          "text": "∫₀⁻¹ f(x)dx = I"
+        },
+        {
+          "id": "d",
+          "text": "∫₋₁¹ f(x)dx = I"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme f est paire, sa courbe est symétrique par rapport à l'axe des ordonnées : ∫₋₁⁰ f(x)dx = ∫₀¹ f(x)dx = I. Échanger les bornes change le signe : ∫₀⁻¹ f(x)dx = −∫₋₁⁰ f(x)dx = −I ✓. On a aussi ∫₋₁¹ f(x)dx = 2I, pas I ; et l'intégrale du carré n'est pas le carré de l'intégrale (avec f = 1, ∫₋₁¹ f² = 2 alors que I² = 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (Uₙ) la suite définie sur ℕ par U₀ = 2 et Uₙ₊₁ = 2Uₙ². La suite (Uₙ) est-elle géométrique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "oui, de raison 2, car Uₙ₊₁ = 2Uₙ²"
+        },
+        {
+          "id": "b",
+          "text": "oui, de raison 4, car le quotient U₁/U₀ vaut 4"
+        },
+        {
+          "id": "c",
+          "text": "non, car la suite est croissante et non constante"
+        },
+        {
+          "id": "d",
+          "text": "non : U₁/U₀ = 4 et U₂/U₁ = 16 ne sont pas égaux"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On calcule U₁ = 2 × 2² = 8 et U₂ = 2 × 8² = 128. Les quotients U₁/U₀ = 4 et U₂/U₁ = 16 sont différents : la suite n'est pas géométrique ✓. Le facteur 2 de Uₙ₊₁ = 2Uₙ² multiplie un carré, pas Uₙ : ce n'est pas une raison ; un seul quotient ne prouve rien ; et une suite géométrique de raison supérieure à 1 est croissante, donc la croissance ne l'exclut pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (Uₙ) la suite définie sur ℕ par U₀ = 2 et Uₙ₊₁ = 2Uₙ². Quelle est sa limite ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour Uₙ ≥ 2, on a Uₙ₊₁ = 2Uₙ² = (2Uₙ) × Uₙ ≥ 4Uₙ. Par récurrence Uₙ ≥ 2 × 4ⁿ, donc Uₙ tend vers +∞ ✓. Le nombre 1/2 vérifie bien 2ℓ² = ℓ, mais une suite minorée par 2 ne peut pas converger vers 1/2 ; 2 est seulement le premier terme ; 0 est l'autre solution de 2ℓ² = ℓ et n'est pas atteint non plus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un sondage effectué auprès de 100 personnes donne les résultats suivants : parmi les hommes, 15 sont fumeurs et 35 sont non-fumeurs ; parmi les femmes, 10 sont fumeuses et 40 sont non-fumeuses. On interroge au hasard l'une de ces personnes. Quelle est la probabilité que ce soit un non-fumeur, sachant que c'est un homme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,35"
+        },
+        {
+          "id": "b",
+          "text": "0,7"
+        },
+        {
+          "id": "c",
+          "text": "0,75"
+        },
+        {
+          "id": "d",
+          "text": "0,47"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Il y a 15 + 35 = 50 hommes, dont 35 non-fumeurs : p(non-fumeur/homme) = 35/50 = 0,7 ✓. La valeur 0,35 = 35/100 est la probabilité de l'intersection (homme et non-fumeur), non divisée par p(homme) ; 0,75 = 75/100 est la proportion de non-fumeurs dans toute la population ; 0,47 ≈ 35/75 est la probabilité inverse (homme sachant non-fumeur).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un sondage effectué auprès de 100 personnes donne les résultats suivants : parmi les hommes, 15 sont fumeurs et 35 sont non-fumeurs ; parmi les femmes, 10 sont fumeuses et 40 sont non-fumeuses. On interroge au hasard l'une de ces personnes. Quelle est la probabilité que ce soit une femme non-fumeuse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,4"
+        },
+        {
+          "id": "b",
+          "text": "0,8"
+        },
+        {
+          "id": "c",
+          "text": "0,53"
+        },
+        {
+          "id": "d",
+          "text": "0,1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Parmi les 100 personnes, 40 sont des femmes non-fumeuses : la probabilité vaut 40/100 = 0,4 ✓. La valeur 0,8 = 40/50 est la proportion de non-fumeuses parmi les femmes (probabilité conditionnelle) ; 0,53 ≈ 40/75 est la proportion de femmes parmi les non-fumeurs ; 0,1 = 10/100 concerne les femmes fumeuses.",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 1 ⭐⭐ : réunion, probabilité conditionnelle et lancers indépendants",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Dans une population, la probabilité qu'une personne soit diabétique est 0,15, la probabilité qu'elle soit atteinte d'une hépatite est 0,05 et la probabilité qu'elle ait les deux maladies à la fois est 0,03. On choisit une personne au hasard. Quelle est la probabilité qu'elle soit atteinte d'une hépatite ou qu'elle soit diabétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,23"
+        },
+        {
+          "id": "c",
+          "text": "0,17"
+        },
+        {
+          "id": "d",
+          "text": "0,12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On applique p(H ∪ D) = p(H) + p(D) − p(H ∩ D) = 0,05 + 0,15 − 0,03 = 0,17 ✓. Oublier de retrancher l'intersection donne 0,2 ; l'ajouter donne 0,23 ; 0,12 = 0,15 − 0,03 est la probabilité d'être diabétique sans hépatite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une population, la probabilité qu'une personne soit diabétique est 0,15, la probabilité qu'elle soit atteinte d'une hépatite est 0,05 et la probabilité qu'elle ait les deux maladies à la fois est 0,03. On choisit une personne au hasard. Quelle est la probabilité qu'elle soit atteinte d'une hépatite sachant qu'elle est diabétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "0,6"
+        },
+        {
+          "id": "c",
+          "text": "0,05"
+        },
+        {
+          "id": "d",
+          "text": "0,03"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On cherche p(H/D) = p(H ∩ D)/p(D) = 0,03/0,15 = 0,2 ✓. La valeur 0,6 = 0,03/0,05 est p(D/H), le conditionnement inverse ; 0,05 est p(H), valeur qu'on garderait si H et D étaient indépendants (ce qui n'est pas le cas) ; 0,03 est l'intersection non divisée par p(D).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On lance trois fois de suite un dé cubique équilibré à 6 faces : deux faces portent la lettre A, trois faces portent la lettre B et une face porte la lettre C. Quelle est la probabilité d'obtenir les lettres B, A et C dans cet ordre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/12"
+        },
+        {
+          "id": "b",
+          "text": "1/36"
+        },
+        {
+          "id": "c",
+          "text": "1/6"
+        },
+        {
+          "id": "d",
+          "text": "1/54"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À chaque lancer, p(B) = 3/6 = 1/2, p(A) = 2/6 = 1/3 et p(C) = 1/6. Les lancers étant indépendants, p(B puis A puis C) = 1/2 × 1/3 × 1/6 = 1/36 ✓. Oublier la lettre A donne 1/2 × 1/6 = 1/12 ; compter les 6 ordres possibles donne 6/36 = 1/6 ; prendre p(A) pour le deuxième et le premier lancer donne 1/3 × 1/3 × 1/6 = 1/54.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On lance trois fois de suite un dé cubique équilibré à 6 faces : deux faces portent la lettre A, trois la lettre B et une la lettre C. Quelle est la probabilité d'obtenir au moins une fois la lettre A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2/3)³"
+        },
+        {
+          "id": "b",
+          "text": "1 − (1/3)³"
+        },
+        {
+          "id": "c",
+          "text": "(1/3)³"
+        },
+        {
+          "id": "d",
+          "text": "1 − (2/3)³"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À chaque lancer, p(A) = 2/6 = 1/3 et p(non A) = 2/3. L'événement contraire de « au moins une fois A » est « aucune fois A », de probabilité (2/3)³ par indépendance. Donc la probabilité cherchée est 1 − (2/3)³, c'est la bonne expression ✓. (2/3)³ est la probabilité de n'obtenir jamais A ; (1/3)³ celle d'obtenir A trois fois ; 1 − (1/3)³ celle de ne pas obtenir A trois fois.",
+      "difficulty": 2
+    }
+  ]
+}

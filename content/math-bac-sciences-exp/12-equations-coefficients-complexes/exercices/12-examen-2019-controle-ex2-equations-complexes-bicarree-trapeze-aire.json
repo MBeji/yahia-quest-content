@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 2 ⭐⭐⭐ : Équations du second degré, degré 4 et trapèze",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Dans ℂ, on considère l'équation\nz² + iz + 1 + 3i = 0\nQue vaut son discriminant Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δ = −5 − 12i"
+        },
+        {
+          "id": "b",
+          "text": "Δ = −3 − 12i"
+        },
+        {
+          "id": "c",
+          "text": "Δ = 3 + 12i"
+        },
+        {
+          "id": "d",
+          "text": "Δ = −4 − 12i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ici a = 1, b = i et c = 1 + 3i. On a b² = i² = −1 et 4ac = 4 + 12i. Donc Δ = b² − 4ac = −1 − 4 − 12i = −5 − 12i ✓. Remarque : Δ est l'opposé de 5 + 12i = (3 + 2i)². Le piège courant : écrire i² = +1 donne −3 − 12i ; ajouter 4ac au lieu de le retrancher donne 3 + 12i ; oublier le terme b² et ne garder que −4ac donne −4 − 12i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les équations (E₁) : z² + iz + 1 + 3i = 0 et (E₂) : z² − iz + 1 − 3i = 0 ont des coefficients conjugués deux à deux. Quelle propriété relie leurs solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les solutions de (E₂) sont les opposées de celles de (E₁) : si z vérifie (E₁), alors −z vérifie (E₂)."
+        },
+        {
+          "id": "b",
+          "text": "Les solutions de (E₂) sont les inverses de celles de (E₁) : si z vérifie (E₁), alors 1/z vérifie (E₂)."
+        },
+        {
+          "id": "c",
+          "text": "Les solutions de (E₂) sont les conjuguées de celles de (E₁) : si z vérifie (E₁), alors z̄ vérifie (E₂)."
+        },
+        {
+          "id": "d",
+          "text": "Les solutions de (E₂) sont les mêmes que celles de (E₁), puisque les deux équations ont les mêmes modules de coefficients."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Si z est solution de (E₁), on a z² + iz + 1 + 3i = 0. En prenant le conjugué des deux membres, z̄² + conj(i) z̄ + conj(1 + 3i) = 0, soit z̄² − iz̄ + 1 − 3i = 0 : z̄ est solution de (E₂) ✓ (la conjugaison respecte sommes et produits, et conj(i) = −i). Réciproquement, les solutions de (E₂) sont les conjugués de celles de (E₁). Le piège courant : changer le signe de i et de 3i ne revient pas à changer z en −z (remplacer z par −z changerait le signe du seul terme en z) ; l'inverse 1/z ne change pas le degré des termes de la même façon ; deux équations de mêmes modules de coefficients n'ont pas les mêmes solutions.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans le plan complexe, les points A, B, C et D ont pour affixes respectives 1 + 2i, 1 − 2i, −1 − i et −1 + i. Que vaut le quotient (z_B − z_A)/(z_C − z_D) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "−2"
+        },
+        {
+          "id": "d",
+          "text": "2i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z_B − z_A = −4i et z_C − z_D = −1 − i + 1 − i = −2i. Le quotient est (−4i)/(−2i) = 2 ✓. Ce quotient est réel : les vecteurs AB⃗ et DC⃗ sont colinéaires, donc (AB) ∥ (CD) ; et AB⃗ = 2DC⃗, donc ABCD n'a que deux côtés parallèles : c'est un trapèze de bases [AB] et [CD]. Le piège courant : renverser le quotient donne 1/2 ; inverser l'ordre d'un des deux vecteurs donne −2 ; diviser −4i par −2 sans simplifier le i donne 2i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un élève cherche les nombres complexes z tels que\nz² + iz + 1 + 3i = 0\nQuelles valeurs de z trouve-t-il s'il calcule sans erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = −1 + 2i ou z = 1 − i"
+        },
+        {
+          "id": "b",
+          "text": "z = (3 + i)/2 ou z = (−3 − 3i)/2"
+        },
+        {
+          "id": "c",
+          "text": "z = −1 − i ou z = 1 + 2i"
+        },
+        {
+          "id": "d",
+          "text": "z = −1 + i ou z = 1 − 2i"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le discriminant est Δ = i² − 4(1 + 3i) = −5 − 12i. Une racine carrée δ = x + iy vérifie x² − y² = −5, x² + y² = |Δ| = 13 et 2xy = −12 : x² = 4, y² = 9 et xy < 0, donc δ = −2 + 3i (ou son opposée). Alors z = (−i ± (−2 + 3i))/2 : z = (−2 + 2i)/2 = −1 + i ou z = (2 − 4i)/2 = 1 − 2i ✓. Contrôle : la somme vaut −i = −b/a et le produit (−1 + i)(1 − 2i) = 1 + 3i = c ✓. Le piège courant : utiliser b au lieu de −b donne −1 + 2i et 1 − i ; oublier que Δ est l'opposé de 5 + 12i et prendre δ = 3 + 2i donne (3 + i)/2 et (−3 − 3i)/2 ; la conjugaison donne les solutions de l'équation voisine z² − iz + 1 − 3i = 0, pas celles-ci.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\nz⁴ + 3z² + 6z + 10 = 0\nQuelles sont ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + i, −1 − 2i, −1 + i et 1 − 2i"
+        },
+        {
+          "id": "b",
+          "text": "−1 + i, 1 − 2i, −1 − i et 1 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "1 + i, 1 − i, −1 + 2i et −1 − 2i"
+        },
+        {
+          "id": "d",
+          "text": "−1 + i et 1 − 2i, chacune double"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec u = z² + 1, on a z⁴ + 3z² + 6z + 10 = u² + (z + 3)² = (u + i(z + 3))(u − i(z + 3)) = (z² + iz + 1 + 3i)(z² − iz + 1 − 3i). Le premier facteur s'annule pour z = −1 + i ou z = 1 − 2i, le second pour z = −1 − i ou z = 1 + 2i (ce sont les conjugués) ✓. Contrôle : la somme des quatre solutions vaut 0 (pas de terme en z³) : (−1 + i) + (1 − 2i) + (−1 − i) + (1 + 2i) = 0. Le piège courant : résoudre le second facteur avec un signe faux donne les opposés de ses vraies solutions, 1 + i et −1 − 2i, tout en gardant −1 + i et 1 − 2i ; changer le signe de la partie réelle de toutes les solutions ; écrire deux fois le même facteur donne des solutions doubles et en perd deux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan complexe, A, B, C et D ont pour affixes 1 + 2i, 1 − 2i, −1 − i et −1 + i. Le quadrilatère ABCD est un trapèze de bases [AB] et [CD] (figure ci-dessous). Quelle est son aire ?\n<svg viewBox=\"0 0 240 282\"><title>Le quadrilatère ABCD dans le plan complexe : A(1 ; 2), B(1 ; −2), C(−1 ; −1), D(−1 ; 1)</title><path d=\"M15 141 H225\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M99 267 V15\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M225 141 l-6 -3 l0 6 z\" fill=\"#0f172a\"/><path d=\"M99 15 l-3 6 l6 0 z\" fill=\"#0f172a\"/><path d=\"M15 138 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"15\" y=\"156\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M57 138 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"57\" y=\"156\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M141 138 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"141\" y=\"156\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M183 138 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"183\" y=\"156\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M225 138 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"225\" y=\"156\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M96 267 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"92\" y=\"270\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−3</text><path d=\"M96 225 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"92\" y=\"228\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M96 183 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"92\" y=\"186\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M96 99 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"92\" y=\"102\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M96 57 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"92\" y=\"60\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M96 15 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"92\" y=\"18\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">3</text><text x=\"94\" y=\"154\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">O</text><path d=\"M141 57 L141 225\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><path d=\"M141 225 L57 183\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><path d=\"M57 183 L57 99\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><path d=\"M57 99 L141 57\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><circle cx=\"141\" cy=\"57\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"147\" y=\"53\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">A</text><circle cx=\"141\" cy=\"225\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"147\" y=\"237\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">B</text><circle cx=\"57\" cy=\"183\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"43\" y=\"195\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">C</text><circle cx=\"57\" cy=\"99\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"43\" y=\"95\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">D</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les bases sont verticales : AB = |z_B − z_A| = 4 et CD = |z_D − z_C| = 2. La hauteur est la distance entre les deux droites verticales x = 1 et x = −1, soit 2. L'aire est (AB + CD)/2 × h = (4 + 2)/2 × 2 = 6 ✓. Contrôle par découpage : le rectangle de largeur 2 et de hauteur 2 sous les sommets C et D vaut 4, auquel s'ajoutent les deux triangles. Le piège courant : oublier le facteur 1/2 donne 12 ; ne compter que la grande base donne 4 × 2 = 8 ; prendre 1 pour hauteur donne 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans le plan complexe, A, B, C et D ont pour affixes 1 + 2i, 1 − 2i, −1 − i et −1 + i. Le quadrilatère ABCD est un trapèze de bases [AB] et [CD]. Quel est son périmètre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 + 2√5"
+        },
+        {
+          "id": "b",
+          "text": "4 + √5"
+        },
+        {
+          "id": "c",
+          "text": "4 + 2√5"
+        },
+        {
+          "id": "d",
+          "text": "16"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les bases valent AB = |z_B − z_A| = 4 et CD = |z_D − z_C| = 2. Les côtés non parallèles valent AD = |z_D − z_A| = |−2 − i| = √5 et BC = |z_C − z_B| = |−2 + i| = √5. Le périmètre est donc 4 + 2 + 2√5 = 6 + 2√5 ✓. Contrôle : √5 ≈ 2,24, soit un périmètre d'environ 10,5. Le piège courant : oublier la petite base [CD] donne 4 + 2√5 ; oublier en plus l'un des deux côtés non parallèles donne 4 + √5 ; prendre AD² = 5 pour la longueur AD (oublier la racine carrée) donne 6 + 2 × 5 = 16.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2023 · session de contrôle · Exercice 3 ⭐⭐⭐ : majoration de ln(1 + x), intégrales mêlant eᵗ et ln, encadrement",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Quelle justification établit que ln(1 + x) ≤ x pour tout réel x ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(1 + x) = ln 1 + ln x = ln x, et on sait que ln x ≤ x pour tout x strictement positif"
+        },
+        {
+          "id": "b",
+          "text": "1/(1 + t) ≤ 1 pour t ≥ 0 ; en intégrant sur [0 ; x] : ln(1 + x) = ∫ de 0 à x de dt/(1 + t) ≤ x"
+        },
+        {
+          "id": "c",
+          "text": "pour x ≥ 0, 1 + x ≤ 2x, donc ln(1 + x) ≤ ln(2x) = ln 2 + ln x ≤ x car ln x ≤ x − 1 et ln 2 ≤ 1"
+        },
+        {
+          "id": "d",
+          "text": "1/(1 + t) ≤ 1 pour t ≥ 0 ; en intégrant sur [0 ; x] : ln(1 + x) − ln 2 ≤ x, donc ln(1 + x) ≤ x pour x ≥ 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour t ≥ 0, 1 + t ≥ 1, donc 1/(1 + t) ≤ 1. Sur [0 ; x], l'intégration conserve l'ordre : ∫ de 0 à x de dt/(1 + t) ≤ ∫ de 0 à x de dt, soit [ln(1 + t)] de 0 à x = ln(1 + x) − ln 1 = ln(1 + x) ≤ x ✓. Le raisonnement ln(a + b) = ln a + ln b est faux ; l'inégalité 1 + x ≤ 2x n'est vraie que pour x ≥ 1, pas sur [0 ; 1[ ; et la valeur de la primitive en 0 est ln(1 + 0) = 0, non ln 2 : le terme ln 2 ne figure pas dans l'intégrale.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle transformation donne ln(1 + e²ᵗ) = 2t + ln(1 + e⁻²ᵗ) pour tout réel t ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(1 + e²ᵗ) = ln 1 + ln(e²ᵗ) = 2t, car le logarithme transforme une somme en somme"
+        },
+        {
+          "id": "b",
+          "text": "1 + e²ᵗ = e²ᵗ(1 + e²ᵗ), puis ln(e²ᵗ(1 + e²ᵗ)) = 2t + ln(1 + e²ᵗ)"
+        },
+        {
+          "id": "c",
+          "text": "ln(1 + e²ᵗ) est proche de 2t quand t est grand, donc ln(1 + e²ᵗ) = 2t + ln(1 + e⁻²ᵗ)"
+        },
+        {
+          "id": "d",
+          "text": "1 + e²ᵗ = e²ᵗ(e⁻²ᵗ + 1), puis ln(e²ᵗ(1 + e⁻²ᵗ)) = ln(e²ᵗ) + ln(1 + e⁻²ᵗ)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On met e²ᵗ en facteur : e²ᵗ(1 + e⁻²ᵗ) = e²ᵗ + e²ᵗ × e⁻²ᵗ = e²ᵗ + 1 ✓. Puis ln d'un produit = somme des ln : ln(e²ᵗ) + ln(1 + e⁻²ᵗ) = 2t + ln(1 + e⁻²ᵗ). L'erreur classique est de croire que ln(a + b) = ln a + ln b ; le facteur doit redonner 1 + e²ᵗ (la factorisation e²ᵗ(1 + e²ᵗ) redonne e²ᵗ + e⁴ᵗ) ; et une équivalence en +∞ n'est pas une égalité pour tout t.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère les intégrales A = ∫ de 2 à 3 de t eᵗ dt et B = ∫ de 2 à 3 de eᵗ ln(1 + e²ᵗ) dt.\nQuelle est la valeur de A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A = 2e³ − e²"
+        },
+        {
+          "id": "b",
+          "text": "A = 3e³ − 2e²"
+        },
+        {
+          "id": "c",
+          "text": "A = 4e³ − 3e²"
+        },
+        {
+          "id": "d",
+          "text": "A = e³ − e²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Par parties avec u(t) = t (u′ = 1) et v′(t) = eᵗ (v = eᵗ) : ∫ t eᵗ dt = t eᵗ − ∫ eᵗ dt = (t − 1)eᵗ. Donc A = [(t − 1)eᵗ] de 2 à 3 = 2e³ − e² ✓. Oublier l'intégrale restante donne [t eᵗ] = 3e³ − 2e² ; un signe + devant ∫ eᵗ donne [(t + 1)eᵗ] = 4e³ − 3e² ; et intégrer eᵗ seul donne e³ − e².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère les intégrales A = ∫ de 2 à 3 de t eᵗ dt et B = ∫ de 2 à 3 de eᵗ ln(1 + e²ᵗ) dt.\nOn admet que ln(1 + e²ᵗ) = 2t + ln(1 + e⁻²ᵗ) pour tout t. Quel raisonnement établit que B − 2A ≥ 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(1 + e²ᵗ) = ln 1 + ln(e²ᵗ) = 2t sur [2 ; 3], donc B − 2A = 0"
+        },
+        {
+          "id": "b",
+          "text": "eᵗ > 0 donc B > 0 et A > 0 ; on en déduit B − 2A ≥ 0"
+        },
+        {
+          "id": "c",
+          "text": "B − 2A = ∫ de 2 à 3 de eᵗ ln(1 + e⁻²ᵗ) dt ≥ 0, car ln(1 + e⁻²ᵗ) > 0"
+        },
+        {
+          "id": "d",
+          "text": "B − 2A = ∫ de 2 à 3 de eᵗ ln(1 + e⁻²ᵗ) dt ≥ 0, car ln(1 + e⁻²ᵗ) → 0 quand t → +∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "B = ∫ eᵗ(2t + ln(1 + e⁻²ᵗ)) dt = 2∫ t eᵗ dt + ∫ eᵗ ln(1 + e⁻²ᵗ) dt = 2A + ∫ eᵗ ln(1 + e⁻²ᵗ) dt. Sur [2 ; 3], e⁻²ᵗ > 0 donc 1 + e⁻²ᵗ > 1 et ln(1 + e⁻²ᵗ) > 0 : l'intégrale de eᵗ ln(1 + e⁻²ᵗ) est ≥ 0 (bornes dans l'ordre croissant), donc B − 2A ≥ 0 ✓. ln(a + b) ≠ ln a + ln b, donc B ≠ 2A en général ; B > 0 et A > 0 ne comparent pas B à 2A ; et une limite nulle ne donne pas le signe : c'est 1 + e⁻²ᵗ > 1 qui rend le logarithme positif.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On considère les intégrales A = ∫ de 2 à 3 de t eᵗ dt et B = ∫ de 2 à 3 de eᵗ ln(1 + e²ᵗ) dt.\nOn admet que ln(1 + x) ≤ x pour x ≥ 0 et que B − 2A = ∫ de 2 à 3 de eᵗ ln(1 + e⁻²ᵗ) dt. Quel raisonnement établit que B − 2A ≤ e⁻² − e⁻³ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(1 + e⁻²ᵗ) ≤ e⁻²ᵗ, donc eᵗ ln(1 + e⁻²ᵗ) ≤ e⁻ᵗ ≤ e⁻² − e⁻³ pour tout t ∈ [2 ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "ln(1 + e⁻²ᵗ) ≤ e⁻²ᵗ, donc eᵗ ln(1 + e⁻²ᵗ) ≤ e⁻ᵗ ; ∫ de 2 à 3 de e⁻ᵗ dt = [e⁻ᵗ] = e⁻³ − e⁻², d'où B − 2A ≤ e⁻² − e⁻³ en prenant l'opposé"
+        },
+        {
+          "id": "c",
+          "text": "ln(1 + e⁻²ᵗ) ≤ e⁻²ᵗ, donc eᵗ ln(1 + e⁻²ᵗ) ≤ e⁻ᵗ ; ∫ de 2 à 3 de e⁻ᵗ dt = e⁻² − e⁻³"
+        },
+        {
+          "id": "d",
+          "text": "ln(1 + e⁻²ᵗ) ≤ e⁻²ᵗ, donc eᵗ ln(1 + e⁻²ᵗ) ≤ e⁻ᵗ ; e⁻ᵗ ≤ e⁻² sur [2 ; 3], donc B − 2A ≤ e⁻² − e⁻³"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En appliquant ln(1 + x) ≤ x à x = e⁻²ᵗ ≥ 0 : ln(1 + e⁻²ᵗ) ≤ e⁻²ᵗ. En multipliant par eᵗ > 0 : eᵗ ln(1 + e⁻²ᵗ) ≤ eᵗ × e⁻²ᵗ = e⁻ᵗ. On intègre sur [2 ; 3] : B − 2A ≤ ∫ de 2 à 3 de e⁻ᵗ dt = [−e⁻ᵗ] de 2 à 3 = −e⁻³ + e⁻² = e⁻² − e⁻³ ✓. Une inégalité entre fonctions de t ne se compare pas à un nombre sans l'intégrer : e⁻ᵗ ≤ e⁻² − e⁻³ est faux en t = 2 (e⁻² > e⁻² − e⁻³) ; majorer e⁻ᵗ par e⁻² sur un intervalle de longueur 1 donne e⁻², non e⁻² − e⁻³ ; et une primitive de e⁻ᵗ est −e⁻ᵗ : [e⁻ᵗ] donne le nombre négatif e⁻³ − e⁻², qu'on ne peut pas retourner à volonté.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On considère les intégrales A = ∫ de 2 à 3 de t eᵗ dt et B = ∫ de 2 à 3 de eᵗ ln(1 + e²ᵗ) dt.\nOn donne e² ≈ 7,3891, e³ ≈ 20,0855, e⁻² ≈ 0,1353 et e⁻³ ≈ 0,0498, et A = 2e³ − e². Quelles sont les valeurs approchées de 2A et de 2A + e⁻² − e⁻³ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2A ≈ 65,564 et 2A + e⁻² − e⁻³ ≈ 65,649"
+        },
+        {
+          "id": "b",
+          "text": "2A ≈ 32,782 et 2A + e⁻² − e⁻³ ≈ 32,867"
+        },
+        {
+          "id": "c",
+          "text": "2A ≈ 65,564 et 2A + e⁻² − e⁻³ ≈ 65,478"
+        },
+        {
+          "id": "d",
+          "text": "2A ≈ 72,953 et 2A + e⁻² − e⁻³ ≈ 73,039"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A = 2e³ − e² ≈ 40,171 − 7,389 = 32,782 et 2A = 4e³ − 2e² ≈ 80,342 − 14,778 = 65,564. De plus e⁻² − e⁻³ ≈ 0,1353 − 0,0498 = 0,0855, donc 2A + e⁻² − e⁻³ ≈ 65,649 ✓. Oublier le facteur 2 donne 32,782 ; soustraire e⁻² − e⁻³ au lieu de l'ajouter donne 65,478 ; et 4e³ − e² (oubli du 2 devant e²) donne 72,953.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On considère les intégrales A = ∫ de 2 à 3 de t eᵗ dt et B = ∫ de 2 à 3 de eᵗ ln(1 + e²ᵗ) dt.\nOn a 2A ≤ B ≤ 2A + e⁻² − e⁻³. Quel raisonnement établit que 65,56 < B < 65,65 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B ≥ 2A ≈ 65,564 et B ≤ 2A + 1 ≈ 66,564, d'où 65,56 < B < 65,65"
+        },
+        {
+          "id": "b",
+          "text": "2A ≈ 65,56 et 2A + e⁻² − e⁻³ ≈ 65,65 à 10⁻² près, donc B est compris entre ces deux valeurs"
+        },
+        {
+          "id": "c",
+          "text": "B ≥ 2A + e⁻² − e⁻³ ≈ 65,649 > 65,56 d'une part ; B ≤ 2A ≈ 65,564 < 65,65 d'autre part"
+        },
+        {
+          "id": "d",
+          "text": "B ≥ 2A ≈ 65,564 > 65,56 d'une part, B ≤ 2A + e⁻² − e⁻³ ≈ 65,649 < 65,65 d'autre part"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le minorant 2A ≈ 65,564 est supérieur à 65,56, donc B ≥ 2A > 65,56. Le majorant 2A + e⁻² − e⁻³ ≈ 65,649 est inférieur à 65,65, donc B ≤ 65,649 < 65,65. Ainsi 65,56 < B < 65,65 ✓. Majorer B par 2A + 1 ≈ 66,564 ne donne pas B < 65,65 ; des valeurs arrondies à 10⁻² près ne sont pas des inégalités strictes ; et il faut B ≥ 2A et B ≤ 2A + e⁻² − e⁻³, non l'inverse.",
+      "difficulty": 3
+    }
+  ]
+}

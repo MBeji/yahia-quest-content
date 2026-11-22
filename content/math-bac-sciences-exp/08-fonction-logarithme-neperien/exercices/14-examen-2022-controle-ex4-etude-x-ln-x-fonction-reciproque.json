@@ -1,0 +1,418 @@
+{
+  "title": "🏛️ Bac 2022 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : étude de x ↦ x ln x − (1/2) ln²x, tangente, réciproque et aire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nQuelle est la limite de f en 0⁺, et que signifie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : la droite d'équation x = 0 est asymptote verticale"
+        },
+        {
+          "id": "b",
+          "text": "0 : la courbe (ζ) passe par l'origine du repère"
+        },
+        {
+          "id": "c",
+          "text": "−∞ : la droite d'équation x = 0 est asymptote verticale"
+        },
+        {
+          "id": "d",
+          "text": "−∞ : la courbe (ζ) admet en 0 une demi-tangente verticale"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand x → 0⁺, x ln x → 0 (croissance comparée) tandis que −(1/2) ln²x → −∞ car ln²x → +∞. La somme tend donc vers −∞ ✓ : l'axe des ordonnées est asymptote verticale. Le piège courant est de croire que le terme x ln x, qui tend vers 0, emporte la limite : c'est le carré du logarithme qui domine.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nQuelle est la limite de f en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "−∞"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On factorise par ln x : f(x) = ln x (x − (1/2) ln x). Or x − (1/2) ln x = x(1 − (ln x)/(2x)) → +∞ car (ln x)/x → 0, et ln x → +∞ : le produit tend vers +∞ ✓. Le piège est de croire que −(1/2) ln²x l'emporte sur x ln x : le facteur x domine tout logarithme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nQuelle branche infinie (ζ) admet-elle au voisinage de +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une branche parabolique de direction (O, i), car f(x)/x → 0"
+        },
+        {
+          "id": "b",
+          "text": "une asymptote oblique de pente 1, car f(x)/x → 1"
+        },
+        {
+          "id": "c",
+          "text": "une asymptote horizontale, car f(x) tend vers un réel"
+        },
+        {
+          "id": "d",
+          "text": "branche parabolique de direction (O, j), car f(x)/x → +∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x)/x = ln x − ln²x/(2x). Comme ln²x/(2x) → 0 par croissances comparées, f(x)/x ≈ ln x → +∞ : la courbe monte plus vite que toute droite, d'où une branche parabolique de direction l'axe des ordonnées ✓. Une asymptote oblique ou horizontale exigerait un quotient ou une limite finis.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nQuelle est l'expression de f′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = ln x + 1 − (ln x)/2"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = ln x + 1 − (ln x)/x"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = ln x + 1 − 1/(2x)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = ln x + 1 − (ln x)/x²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(x ln x)′ = ln x + 1 et ((1/2) ln²x)′ = (1/2) × 2 ln x × (1/x) = (ln x)/x, donc f′(x) = ln x + 1 − (ln x)/x ✓. Dériver ln²x comme ln x donne (ln x)/2 ; remplacer (ln x)/x par 1/(2x) oublie le facteur ln x ; mettre x² au dénominateur double le facteur 1/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout réel x > 0, quel est le signe de (x − 1) ln x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "négatif sur ]0 ; 1[ et positif sur ]1 ; +∞[, car ln x change de signe en 1"
+        },
+        {
+          "id": "b",
+          "text": "positif ou nul, nul seulement en 1, car x − 1 et ln x ont le même signe"
+        },
+        {
+          "id": "c",
+          "text": "négatif ou nul, nul seulement en x = 1, car x − 1 est négatif près de 0"
+        },
+        {
+          "id": "d",
+          "text": "positif sur ]0 ; 1[ et négatif sur ]1 ; +∞[, car ln x décroît après 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur ]0 ; 1[, x − 1 < 0 et ln x < 0 : le produit est positif. En 1, il est nul. Sur ]1 ; +∞[, x − 1 > 0 et ln x > 0 : le produit est positif ✓. Les deux facteurs changent de signe au même endroit, donc ils s'accordent toujours ; lire le signe du seul ln x oublie l'autre facteur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nQuelle est l'équation de la tangente (T) à (ζ) au point d'abscisse 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = x"
+        },
+        {
+          "id": "b",
+          "text": "y = 2x − 2"
+        },
+        {
+          "id": "c",
+          "text": "y = x + 1"
+        },
+        {
+          "id": "d",
+          "text": "y = x − 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(1) = 1 × ln 1 − (1/2) ln²1 = 0 et f′(1) = ln 1 + 1 − (ln 1)/1 = 1. La tangente est y = f′(1)(x − 1) + f(1) = x − 1 ✓. Prendre ln 1 = 1 fausserait f(1) ; une pente 2 vient d'une dérivée mal calculée ; et la tangente passe par le point (1 ; 0), donc y = x + 1, qui y vaut 2, ne convient pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = f(x) − x + 1, avec f(x) = x ln x − (1/2) ln²x, sur ]0 ; +∞[. La fonction g est strictement croissante, de limite −∞ en 0⁺ et +∞ en +∞.\nQue vaut g(1), et quel est le signe de g(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(1) = 0 ; g(x) < 0 sur ]0 ; 1[ et g(x) > 0 sur ]1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "g(1) = 0 ; g(x) > 0 sur ]0 ; 1[ et g(x) < 0 sur ]1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "g(1) = 1 ; g(x) > 0 sur ]0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "g(1) = 0 ; g(x) ≥ 0 sur ]0 ; +∞[, car g(1) est un minimum"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g(1) = f(1) − 1 + 1 = 0. g est strictement croissante : elle est négative avant son zéro 1 et positive après ✓. Il n'y a pas de minimum en 1 : une fonction strictement croissante n'a pas d'extremum et traverse l'axe des abscisses.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nOn rappelle que ln 3,3 ≈ 1,194 et ln 3,4 ≈ 1,224. Quelles sont les valeurs approchées de g(3,3) et de g(3,4), où g(x) = f(x) − x + 1, au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(3,3) ≈ 3,23 et g(3,4) ≈ 3,41"
+        },
+        {
+          "id": "b",
+          "text": "g(3,3) ≈ 2,35 et g(3,4) ≈ 2,51"
+        },
+        {
+          "id": "c",
+          "text": "g(3,3) ≈ 0,93 et g(3,4) ≈ 1,01"
+        },
+        {
+          "id": "d",
+          "text": "g(3,3) ≈ −1,07 et g(3,4) ≈ −0,99"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(3,3) = 3,3 × 1,194 − (1/2) × 1,194² ≈ 3,940 − 0,713 ≈ 3,227, donc g(3,3) ≈ 3,227 − 3,3 + 1 ≈ 0,93 ; f(3,4) ≈ 4,162 − 0,749 ≈ 3,413, donc g(3,4) ≈ 3,413 − 3,4 + 1 ≈ 1,01 ✓. Oublier de retrancher x − 1 donne les valeurs de f ; un signe faux devant (1/2) ln²x donne 2,35 et 2,51 ; retrancher x + 1 au lieu de x − 1 donne des valeurs négatives.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = f(x) − x + 1, avec f(x) = x ln x − (1/2) ln²x, sur ]0 ; +∞[. La fonction g est strictement croissante, de limite −∞ en 0⁺ et +∞ en +∞.\nQuelle équation équivaut à f(x) = x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) = 0"
+        },
+        {
+          "id": "b",
+          "text": "g(x) = x"
+        },
+        {
+          "id": "c",
+          "text": "g(x) = 1"
+        },
+        {
+          "id": "d",
+          "text": "g(x) = −1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g(x) = f(x) − x + 1, donc f(x) = x équivaut à f(x) − x = 0, c'est-à-dire g(x) − 1 = 0, soit g(x) = 1 ✓. L'équation g(x) = 0 correspond à f(x) = x − 1, c'est-à-dire à l'intersection avec la tangente (T) ; g(x) = −1 correspondrait à f(x) = x − 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nQuel est l'ensemble image f(]0 ; +∞[), sachant que f est une bijection continue de ]0 ; +∞[ sur un intervalle J ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ℝ, car f tend vers −∞ en 0⁺ et vers +∞ en +∞"
+        },
+        {
+          "id": "b",
+          "text": "]0 ; +∞[, car f est positive pour x > 1 et f(1) = 0"
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; 0[, car f tend vers −∞ en 0⁺ et f(1) = 0"
+        },
+        {
+          "id": "d",
+          "text": "[0 ; +∞[, car f(1) = 0 est le minimum de f sur ]0 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une bijection continue de ]0 ; +∞[ sur un intervalle J est strictement monotone, et J est l'intervalle ouvert limité par les limites aux bornes : ici f tend vers −∞ en 0⁺ et vers +∞ en +∞, donc J = ]−∞ ; +∞[ = ℝ ✓. Que f s'annule en 1 et soit positive ensuite ne décrit pas toutes ses valeurs, puisqu'elle prend aussi des valeurs négatives sur ]0 ; 1[ ; f(1) = 0 n'est donc pas un minimum.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nQuel est le sens de variation de f sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "strictement décroissante sur ]0 ; 1] puis strictement croissante sur [1 ; +∞[, car ln x change de signe en 1"
+        },
+        {
+          "id": "b",
+          "text": "strictement croissante sur ]0 ; 1] puis strictement décroissante sur [1 ; +∞[, car f′(1) = 0"
+        },
+        {
+          "id": "c",
+          "text": "strictement décroissante, car −(1/2) ln²x est négatif"
+        },
+        {
+          "id": "d",
+          "text": "strictement croissante, car f′(x) = 1 + ((x − 1) ln x)/x ≥ 1 > 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(x) = ln x + 1 − (ln x)/x = 1 + (x ln x − ln x)/x = 1 + ((x − 1) ln x)/x. Comme (x − 1) ln x ≥ 0 et x > 0, f′(x) ≥ 1 > 0 : f est strictement croissante sur ]0 ; +∞[ ✓, de −∞ à +∞. L'erreur classique est de lire le signe de f′ sur celui de ln x seul : le produit (x − 1) ln x est toujours positif, et f′(1) vaut 1, non 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = f(x) − x + 1, avec f(x) = x ln x − (1/2) ln²x, sur ]0 ; +∞[. La fonction g est strictement croissante, de limite −∞ en 0⁺ et +∞ en +∞.\n(ζ) est la courbe de f et (T) : y = x − 1 sa tangente en A(1 ; 0).\nPourquoi le point A(1 ; 0) est-il un point d'inflexion de (ζ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(1) = 0 : A appartient à la tangente (T)"
+        },
+        {
+          "id": "b",
+          "text": "g change de signe en 1 : (ζ) traverse sa tangente (T) en A"
+        },
+        {
+          "id": "c",
+          "text": "f′(1) = 1 : la tangente en A n'est pas horizontale"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante : la courbe change de concavité en A"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) − (x − 1) = g(x). Comme g est strictement croissante et g(1) = 0, g est négative avant 1 et positive après : (ζ) est au-dessous de (T) puis au-dessus, donc elle traverse sa tangente en A, qui est un point d'inflexion ✓. Appartenir à la tangente est vrai pour tout point de tangence ; la pente ne dit rien de la concavité ; et la croissance n'implique aucun changement de concavité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = f(x) − x + 1, avec f(x) = x ln x − (1/2) ln²x, sur ]0 ; +∞[. La fonction g est strictement croissante, de limite −∞ en 0⁺ et +∞ en +∞.\nOn donne g(3,3) ≈ 0,93 et g(3,4) ≈ 1,01. Que peut-on dire de la solution α de l'équation g(x) = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α > 3,4, car g(3,4) > 1 et g est strictement croissante sur ]0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "3,3 < α < 3,4, car g(3,3) < 1 < g(3,4) et g est croissante"
+        },
+        {
+          "id": "c",
+          "text": "α < 3,3, car g(3,3) < 1 et g est strictement croissante sur ]0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "3,3 < α < 3,4, car g(3,3) et g(3,4) sont proches de 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g est strictement croissante et g(α) = 1, avec g(3,3) < 1 < g(3,4) : on traduit l'encadrement des valeurs en celui des antécédents, 3,3 < α < 3,4 ✓, et l'unicité vient de la stricte monotonie. Comme g(3,4) > g(α), α est avant 3,4 ; comme g(3,3) < g(α), α est après 3,3. Les valeurs de g sont proches de 1, pas de 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur de ∫₁^e x ln x dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e²/4"
+        },
+        {
+          "id": "b",
+          "text": "(e² − 1)/4"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "(e² + 1)/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Intégration par parties avec u = ln x et v′ = x : ∫₁^e x ln x dx = [(x²/2) ln x]₁^e − ∫₁^e x/2 dx = e²/2 − (e² − 1)/4 = (e² + 1)/4 ✓. Oublier la borne 1 dans le second crochet donne e²/4 ; ne garder que l'intégrale restante, sans le crochet, donne (e² − 1)/4 ; prendre x²/2 au lieu de x²/4 pour une primitive de x/2 donne e²/2 − (e² − 1)/2 = 1/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces fonctions est une primitive de x ↦ ln²x sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ x ln²x − 2x ln x + 2x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ x ln²x − 2x ln x"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ x ln²x + 2x ln x + 2"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ x ln²x + 2x ln x + 2x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On dérive u(x) = x ln²x − 2x ln x + 2x : ln²x + x × 2 ln x/x − 2 ln x − 2 + 2 = ln²x ✓. Sans le terme 2x, la dérivée est ln²x − 2 ; le signe + devant 2x ln x donne ln²x + 4 ln x + 4, et avec la constante 2 à la place de 2x, ln²x + 4 ln x + 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = x ln x − (1/2) ln²x, de courbe (ζ) dans un repère orthonormé.\nSoit f⁻¹ la réciproque de f et (Γ) sa courbe. L'aire 𝒜 du domaine limité par (Γ), les droites y = 1 et y = e et l'axe des ordonnées vaut :",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫₁^e f⁻¹(y) dy, la largeur horizontale à la hauteur y étant f⁻¹(y)"
+        },
+        {
+          "id": "b",
+          "text": "∫₀^1 f(x) dx, car x varie de 0 à 1"
+        },
+        {
+          "id": "c",
+          "text": "∫₁^e f(y) dy, la largeur horizontale à la hauteur y étant f(y)"
+        },
+        {
+          "id": "d",
+          "text": "∫₁^e (f(x) − x) dx, car (Γ) est symétrique de (ζ)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point (x ; y) est sur (Γ) si y = f⁻¹(x), c'est-à-dire x = f(y). À la hauteur y, le domaine s'étend de x = 0 (axe des ordonnées) à x = f(y) : l'aire est donc ∫₁^e f(y) dy ✓. La formule avec f⁻¹ mesurerait l'aire sous (Γ) entre x = 1 et x = e, pas le domaine horizontal demandé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que ∫₁^e x ln x dx = (e² + 1)/4 et qu'une primitive de ln²x est x ln²x − 2x ln x + 2x. Quelle est la valeur de ∫₁^e (x ln x − (1/2) ln²x) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(e² − 4e + 9)/4"
+        },
+        {
+          "id": "b",
+          "text": "(e² + 2e − 3)/4"
+        },
+        {
+          "id": "c",
+          "text": "(e² − 2e + 5)/4"
+        },
+        {
+          "id": "d",
+          "text": "(e² − 2e + 1)/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "∫₁^e ln²x dx = [x ln²x − 2x ln x + 2x]₁^e = (e − 2e + 2e) − 2 = e − 2. Alors l'intégrale vaut (e² + 1)/4 − (1/2)(e − 2) = (e² + 1 − 2e + 4)/4 = (e² − 2e + 5)/4 ✓. Oublier le facteur 1/2 donne (e² − 4e + 9)/4 ; un signe faux sur ce terme donne (e² + 2e − 3)/4 ; oublier la borne 1 dans le crochet donne (e² − 2e + 1)/4.",
+      "difficulty": 3
+    }
+  ]
+}

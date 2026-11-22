@@ -1,0 +1,370 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 3 ⭐⭐⭐⭐ : étude de x ↦ 2 ln x − x + 1/x, aire et suite de carrés",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nQuelle est la limite de f(x) quand x tend vers 0 par valeurs supérieures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "une forme indéterminée : f n'a pas de limite en 0⁺"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand x → 0⁺, 2 ln x → −∞, −x → 0 et 1/x → +∞ : la somme est une forme indéterminée à lever. On factorise par 1/x : f(x) = (1/x)(1 + 2x ln x − x²), avec x ln x → 0 par croissances comparées, donc le facteur entre parenthèses tend vers 1 et f(x) → +∞ ✓. Le piège courant est de croire que 2 ln x l'emporte sur 1/x : c'est 1/x qui domine tout logarithme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nOn admet que f′(x) = −((x − 1)/x)² pour tout x > 0. Que valent f(1) et le signe de f(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(1) = 0 ; f(x) > 0 sur ]0 ; 1[ et f(x) < 0 sur ]1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f(1) = 0 ; f(x) < 0 sur ]0 ; 1[ et f(x) > 0 sur ]1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f(1) = 0 ; f(x) ≤ 0 sur ]0 ; +∞[, car f′ ≤ 0"
+        },
+        {
+          "id": "d",
+          "text": "f(1) = 2 ; f(x) > 0 sur ]0 ; +∞[, car f est décroissante"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(1) = 2 ln 1 − 1 + 1 = 0. Comme f′(x) = −((x − 1)/x)² est négative et ne s'annule qu'en 1, f est strictement décroissante : les valeurs avant 1 sont supérieures à f(1) = 0 et celles après 1 lui sont inférieures : f > 0 sur ]0 ; 1[ et f < 0 sur ]1 ; +∞[ ✓. Le signe de f′ donne le sens de variation de f, jamais le signe de f.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie sur ℕ* par uₙ = ln²(1 + 1/1) + ln²(1 + 1/2) + … + ln²(1 + 1/n), c'est-à-dire uₙ = Σ_{k=1}^{n} ln²(1 + 1/k).\nQuelle est la valeur approchée de u₃ à 10⁻³ près ? On donne ln 2 ≈ 0,6931, ln 1,5 ≈ 0,4055 et ln(4/3) ≈ 0,2877.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,645"
+        },
+        {
+          "id": "b",
+          "text": "1,386"
+        },
+        {
+          "id": "c",
+          "text": "2,773"
+        },
+        {
+          "id": "d",
+          "text": "0,728"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "u₃ = ln²2 + ln²(3/2) + ln²(4/3) ≈ 0,4804 + 0,1644 + 0,0828 ≈ 0,728 ✓. Oublier le dernier terme donne 0,645 ; oublier le carré revient à additionner ln 2 + ln(3/2) + ln(4/3) = ln 4 ≈ 1,386 ; prendre ln² pour 2 ln donne 2 ln 4 ≈ 2,773.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nQuelle est la limite de f(x) quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "−∞"
+        },
+        {
+          "id": "c",
+          "text": "−1"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) = x(2 (ln x)/x − 1 + 1/x²). Par croissances comparées (ln x)/x → 0, et 1/x² → 0, donc le facteur tend vers −1 et f(x) → −∞ ✓. Le piège courant est d'écrire que 2 ln x → +∞ l'emporte sur −x, alors que x domine ln x ; ou de donner −1, qui est la limite de f(x)/x et non de f(x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nComment se comporte 𝒞 au voisinage de +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "asymptote oblique d'équation y = −x en +∞, car f(x)/x → −1 et f(x) + x → 0"
+        },
+        {
+          "id": "b",
+          "text": "branche parabolique de direction y = −x, car f(x)/x → −1 et f(x) + x → +∞"
+        },
+        {
+          "id": "c",
+          "text": "branche parabolique de direction (O, j) en +∞, car f(x)/x → −∞ et f(x) → −∞"
+        },
+        {
+          "id": "d",
+          "text": "asymptote horizontale d'équation y = −1 en +∞, car f(x)/x → −1 et f(x) → −∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x)/x = 2(ln x)/x − 1 + 1/x² → −1 : la direction est celle de y = −x. Mais f(x) + x = 2 ln x + 1/x → +∞ : la différence n'a pas de limite finie, donc y = −x n'est pas asymptote : c'est une branche parabolique ✓. Une asymptote horizontale exigerait que f(x) tende vers un réel, ce qui n'est pas le cas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nQuelle est l'expression de f′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 1/x − 1 + 1/x²"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 1/x − 1 − 1/x²"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 2/x − 1 − 1/x"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 2/x − 1 − 1/x²"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La dérivée de 2 ln x est 2/x, celle de −x est −1 et celle de 1/x est −1/x² : f′(x) = 2/x − 1 − 1/x² ✓. Les erreurs usuelles sont un facteur 2 perdu (1/x − 1 − 1/x²), (1/x)′ pris égal à −1/x (2/x − 1 − 1/x), ou les deux erreurs cumulées : un facteur 2 perdu et un signe faux sur (1/x)′ donnent 1/x − 1 + 1/x².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie sur ℕ* par uₙ = ln²(1 + 1/1) + ln²(1 + 1/2) + … + ln²(1 + 1/n), c'est-à-dire uₙ = Σ_{k=1}^{n} ln²(1 + 1/k).\nOn pose uₙ₊₁ − uₙ pour n ∈ ℕ*. Que peut-on dire du sens de variation de (uₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) est strictement croissante, car uₙ₊₁ − uₙ = ln²(1 + 1/(n+1)) > 0"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) est strictement décroissante, car les termes ln²(1 + 1/k) diminuent quand k augmente"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) est strictement croissante, car la fonction ln² est croissante"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) est constante à partir d'un rang, car ln²(1 + 1/k) tend vers 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "uₙ₊₁ − uₙ est le terme ajouté, ln²(1 + 1/(n+1)), strictement positif puisque 1 + 1/(n+1) ≠ 1 : (uₙ) est strictement croissante ✓. Que les termes décroissent vers 0 n'empêche pas la somme de croître : on cumule des quantités positives.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout k ∈ ℕ*, 1/(k(k + 1)) = 1/k − 1/(k + 1). Quelle est la valeur de Σ_{k=1}^{n} 1/(k(k + 1)) pour n ∈ ℕ* ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − 1/n"
+        },
+        {
+          "id": "b",
+          "text": "n/(n + 2)"
+        },
+        {
+          "id": "c",
+          "text": "1 − 1/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "1 + 1/(n + 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme télescope : (1 − 1/2) + (1/2 − 1/3) + … + (1/n − 1/(n+1)) = 1 − 1/(n + 1) ✓. Contrôle pour n = 1 : 1/2 = 1 − 1/2 ✓. Les formules 1 − 1/n et n/(n + 2) donnent 0 et 1/3 pour n = 1 : elles sont fausses.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nQuel est le sens de variation de f sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "décroissante sur ]0 ; 1] puis croissante sur [1 ; +∞[, car f′(1) = 0"
+        },
+        {
+          "id": "b",
+          "text": "croissante sur ]0 ; 1] puis décroissante sur [1 ; +∞[, car f′(1) = 0"
+        },
+        {
+          "id": "c",
+          "text": "strictement décroissante, car f′ ≤ 0 et f′ ne s'annule qu'en x = 1"
+        },
+        {
+          "id": "d",
+          "text": "constante au voisinage de 1, car f′(1) = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′(x) = 2/x − 1 − 1/x² = −(x² − 2x + 1)/x² = −((x − 1)/x)², qui est négative ou nulle, et nulle seulement en x = 1. Un point isolé où la dérivée s'annule sans changer de signe n'est pas un extremum : f est strictement décroissante sur ]0 ; +∞[ ✓. L'erreur classique est de conclure à un extremum dès que f′ s'annule.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nQuelle justification établit que le point I(1 ; 0) est un point d'inflexion de 𝒞 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f″(x) = −2(x − 1)/x³ s'annule en 1 en changeant de signe"
+        },
+        {
+          "id": "b",
+          "text": "f′(1) = 0 : la tangente en I est horizontale"
+        },
+        {
+          "id": "c",
+          "text": "f(1) = 0 : la courbe coupe l'axe des abscisses en I"
+        },
+        {
+          "id": "d",
+          "text": "f′ garde un signe constant sur ]0 ; +∞[, donc la courbe ne change pas de concavité"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = −(1 − 1/x)², donc f″(x) = −2(1 − 1/x) × (1/x²) = −2(x − 1)/x³, positive avant 1 et négative après : la concavité change en x = 1, donc I est un point d'inflexion ✓. Annuler f′ ne suffit pas (c'est le signe de f″ qui compte), et un signe constant de f′ décrit le sens de variation, pas la concavité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2 ln x − x + 1/x, de courbe 𝒞 dans un repère orthonormé.\nSachant que f est négative sur [1 ; e], quelle est l'aire, en unités d'aire, de la partie du plan limitée par 𝒞, l'axe des abscisses et les droites x = 1 et x = e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(e² − 3)/2"
+        },
+        {
+          "id": "b",
+          "text": "(e² − 5)/2"
+        },
+        {
+          "id": "c",
+          "text": "e² − 4"
+        },
+        {
+          "id": "d",
+          "text": "(e² − 7)/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une primitive de f est F(x) = 2(x ln x − x) − x²/2 + ln x. F(e) = 1 − e²/2 et F(1) = −2 − 1/2 = −5/2, donc ∫₁^e f = (7 − e²)/2 < 0. Comme f ≤ 0, l'aire est son opposé : (e² − 7)/2 ✓. Oublier le terme ln x donne (e² − 5)/2 ; prendre −x² au lieu de −x²/2 pour primitive de −x donne e² − 4 ; prendre −ln x pour primitive de 1/x donne (e² − 3)/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour x > 0, que vaut f(√(1 + 1/x)), où f(t) = 2 ln t − t + 1/t ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ln(1 + 1/x) − 1/√(x(x + 1))"
+        },
+        {
+          "id": "b",
+          "text": "ln(1 + 1/x) − 1/√(x(x + 1))"
+        },
+        {
+          "id": "c",
+          "text": "ln(1 + 1/x) − 1/x"
+        },
+        {
+          "id": "d",
+          "text": "2 ln(1 + 1/x) + 1/√(x(x + 1))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec t = √(1 + 1/x) : 2 ln t = ln(t²) = ln(1 + 1/x). Puis −t + 1/t = (1 − t²)/t = −(1/x)/√((x + 1)/x) = −1/√(x(x + 1)). Donc f(t) = ln(1 + 1/x) − 1/√(x(x + 1)) ✓. L'erreur classique est de remplacer 2 ln √ par 2 ln au lieu de ln, ou de ne pas réduire −t + 1/t au même dénominateur ; un signe faux sur −t + 1/t donne ln(1 + 1/x) + 1/√(x(x + 1)), et cumulé avec le 2 ln conservé, 2 ln(1 + 1/x) + 1/√(x(x + 1)).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(t) = 2 ln t − t + 1/t. On sait que f est strictement décroissante et que f(1) = 0. Pour x > 0, quel est le signe de f(√(1 + 1/x)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "strictement positif, car √(1 + 1/x) > 1"
+        },
+        {
+          "id": "b",
+          "text": "strictement négatif, car √(1 + 1/x) > 1"
+        },
+        {
+          "id": "c",
+          "text": "nul, car f(1) = 0"
+        },
+        {
+          "id": "d",
+          "text": "strictement positif, car 1 + 1/x > 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x > 0, 1 + 1/x > 1, donc √(1 + 1/x) > 1. Comme f est strictement décroissante et f(1) = 0, f(t) < 0 pour t > 1 : le signe est strictement négatif ✓. Cela donne l'inégalité ln(1 + 1/x) < 1/√(x(x + 1)). L'erreur classique est de croire que f est positive à droite de son zéro, comme le serait une fonction croissante.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie sur ℕ* par uₙ = ln²(1 + 1/1) + ln²(1 + 1/2) + … + ln²(1 + 1/n), c'est-à-dire uₙ = Σ_{k=1}^{n} ln²(1 + 1/k).\nOn admet que, pour tout k ∈ ℕ*, 0 < ln(1 + 1/k) ≤ 1/√(k(k + 1)). Quelle majoration de uₙ en découle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ ≤ 1 − 2/(n + 1)"
+        },
+        {
+          "id": "b",
+          "text": "uₙ ≤ 1 − 1/n"
+        },
+        {
+          "id": "c",
+          "text": "uₙ ≤ 1/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "uₙ ≤ 1 − 1/(n + 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En élevant au carré (tout est positif) : ln²(1 + 1/k) ≤ 1/(k(k + 1)) = 1/k − 1/(k + 1). On additionne de k = 1 à n : uₙ ≤ 1 − 1/(n + 1) ✓. Les majorations 1 − 1/n et 1/(n + 1) sont fausses : pour n = 3, u₃ ≈ 0,728 dépasse 1 − 1/3 ≈ 0,667 comme 1/4 ; un facteur 2 de trop dans le télescopage donne 1 − 2/(n + 1), déjà fausse pour n = 1 (elle vaut 0, alors que u₁ > 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie sur ℕ* par uₙ = ln²(1 + 1/1) + ln²(1 + 1/2) + … + ln²(1 + 1/n), c'est-à-dire uₙ = Σ_{k=1}^{n} ln²(1 + 1/k).\nOn sait que (uₙ) est strictement croissante et que uₙ ≤ 1 − 1/(n + 1) pour tout n. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) converge vers un réel ℓ avec 0,7 < ℓ ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) converge vers 1, car elle est majorée par 1"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) converge, et sa limite ℓ vérifie ℓ < 0,7"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) converge vers 1 − 1/(n + 1), car elle est croissante"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une suite croissante et majorée converge (théorème de la limite monotone). Comme uₙ ≤ 1 − 1/(n + 1) < 1, ℓ ≤ 1 ; comme (uₙ) est croissante, ℓ ≥ u₃ ≈ 0,728 > 0,7 ✓. Être majorée par 1 ne dit pas que la limite vaut 1 : un majorant n'est pas la limite. Et 1 − 1/(n + 1) dépend de n, donc n'est pas une limite.",
+      "difficulty": 3
+    }
+  ]
+}

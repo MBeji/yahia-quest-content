@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2015 · session de contrôle · Exercice 3 ⭐⭐⭐⭐ : fonction auxiliaire, étude de x ↦ 2x − (ln x)² et aire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Soit g la fonction définie sur ]0 ; +∞[ par g(x) = x − ln x. Que dit son étude des variations sur le signe de g ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g admet un maximum g(1) = 1 en x = 1, donc le signe de g n'est pas déterminé"
+        },
+        {
+          "id": "b",
+          "text": "g admet un minimum g(1) = 0 en x = 1, donc g(x) ≥ 0 avec égalité en 1"
+        },
+        {
+          "id": "c",
+          "text": "g admet un minimum g(1) = 1 en x = 1, donc g(x) > 0 pour tout x > 0"
+        },
+        {
+          "id": "d",
+          "text": "g admet un minimum g(e) = e − 1 en x = e, donc g(x) > 0 pour tout x > 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g′(x) = 1 − 1/x = (x − 1)/x : négative sur ]0 ; 1[, positive sur ]1 ; +∞[, donc g est minimale en 1 avec g(1) = 1 − ln 1 = 1 − 0 = 1 > 0. Ainsi g(x) ≥ 1 > 0 sur ]0 ; +∞[ ✓. Le piège courant est de dire ln 1 = 1, ce qui donnerait un minimum nul, ou de lire le tableau de g′ à l'envers.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nQuelles sont les limites de f en 0⁺ et en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "lim en 0⁺ = −∞ et lim en +∞ = +∞"
+        },
+        {
+          "id": "b",
+          "text": "lim en 0⁺ = +∞ et lim en +∞ = +∞"
+        },
+        {
+          "id": "c",
+          "text": "lim en 0⁺ = −∞ et lim en +∞ = −∞"
+        },
+        {
+          "id": "d",
+          "text": "lim en 0⁺ = 0 et lim en +∞ = +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En 0⁺ : 2x → 0 et (ln x)² → +∞, donc f(x) → −∞. En +∞ : f(x) = x(2 − (ln x)²/x) et (ln x)²/x → 0 par croissances comparées, donc f(x) → +∞ ✓. Le piège courant est de croire que (ln x)², qui tend vers +∞, l'emporte sur 2x en +∞ : c'est x qui l'emporte sur toute puissance de ln x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nQuelle est l'expression de f′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 2 + 2 ln x"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 2 − 1/x²"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 2 + (2 ln x)/x"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 2 − (2 ln x)/x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La dérivée de (ln x)² est 2 × (ln x)′ × ln x = (2 ln x)/x, donc f′(x) = 2 − (2 ln x)/x ✓. Le facteur intérieur 1/x ne s'oublie pas : (u²)′ = 2u′u avec u = ln x ; l'oublier donne 2 − 2 ln x, et avec un signe faux 2 + 2 ln x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nQuelle est l'équation de la tangente à C_f au point d'abscisse 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 2x − 2"
+        },
+        {
+          "id": "b",
+          "text": "y = 2x"
+        },
+        {
+          "id": "c",
+          "text": "y = x + 1"
+        },
+        {
+          "id": "d",
+          "text": "y = x/2 + 3/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(1) = 2 − (ln 1)² = 2 et f′(1) = 2 − (2 ln 1)/1 = 2. La tangente est y = f′(1)(x − 1) + f(1) = 2(x − 1) + 2 = 2x ✓. Oublier + f(1) donne 2x − 2 ; une pente prise égale à 1 (facteur 2 oublié dans la dérivée) donne x + 1 ; une pente inversée donne x/2 + 3/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nOn rappelle que ln 2 ≈ 0,693. Quelles sont les valeurs approchées de f(1/4) et de f(1/2), au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(1/4) ≈ 3,27 et f(1/2) ≈ 2,39"
+        },
+        {
+          "id": "b",
+          "text": "f(1/4) ≈ −1,42 et f(1/2) ≈ 0,52"
+        },
+        {
+          "id": "c",
+          "text": "f(1/4) ≈ 2,42 et f(1/2) ≈ 1,48"
+        },
+        {
+          "id": "d",
+          "text": "f(1/4) ≈ −1,92 et f(1/2) ≈ −0,48"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "ln(1/4) = −2 ln 2 ≈ −1,386 donc (ln(1/4))² ≈ 1,92 et f(1/4) = 1/2 − 1,92 ≈ −1,42 ; ln(1/2) ≈ −0,693 donc (ln(1/2))² ≈ 0,48 et f(1/2) = 1 − 0,48 ≈ 0,52 ✓. Confondre (ln x)² avec 2 ln x donne 3,27 et 2,39 ; prendre le carré d'un négatif pour négatif donne 2,42 et 1,48 ; ne garder que (ln x)² sans 2x donne −1,92 et −0,48.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nQuel est le tableau de variation de f sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement décroissante sur ]0 ; 1] puis strictement croissante sur [1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f est strictement croissante sur ]0 ; 1] puis strictement décroissante sur [1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f est strictement décroissante sur ]0 ; +∞[, de +∞ en 0⁺ à −∞ en +∞"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur ]0 ; +∞[, de −∞ en 0⁺ à +∞ en +∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(x) = 2(x − ln x)/x. Pour tout x > 0, x − ln x > 0 (minimum 1 de cette fonction auxiliaire), donc f′ > 0 : f est strictement croissante, de −∞ à +∞ d'après les limites ✓. L'erreur classique est de lire le signe de f′ sur ln x seul : ln x change de signe en 1, mais le numérateur x − ln x, lui, ne s'annule jamais, donc f n'a aucun extremum.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nComment se comporte C_f au voisinage de +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "branche parabolique de direction y = 2x, car f(x)/x → 2 et f(x) − 2x → −∞"
+        },
+        {
+          "id": "b",
+          "text": "asymptote oblique d'équation y = 2x en +∞, car f(x)/x → 2 et f(x) − 2x → 0"
+        },
+        {
+          "id": "c",
+          "text": "branche parabolique de direction (O, j) en +∞, car f(x)/x → +∞ et f(x) → +∞"
+        },
+        {
+          "id": "d",
+          "text": "branche parabolique de direction (O, i) en +∞, car f(x)/x → 0 et f(x) → +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(x)/x = 2 − (ln x)²/x → 2 par croissances comparées : la direction est celle de y = 2x. Mais f(x) − 2x = −(ln x)² → −∞ : cette différence n'a pas de limite finie, donc la droite n'est PAS asymptote : c'est une branche parabolique ✓. L'erreur classique est de conclure à une asymptote dès que f(x)/x tend vers 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nSoit Δ la droite d'équation y = 2x. Quelle est la position relative de C_f et de Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C_f est au-dessus de Δ sur ]0 ; +∞[, avec pour seul point commun celui d'abscisse 1"
+        },
+        {
+          "id": "b",
+          "text": "C_f est au-dessous de Δ sur ]0 ; 1[ et au-dessus de Δ sur ]1 ; +∞[, en se croisant en 1"
+        },
+        {
+          "id": "c",
+          "text": "C_f est au-dessous de Δ sur ]0 ; +∞[, avec pour seul point commun celui d'abscisse 1"
+        },
+        {
+          "id": "d",
+          "text": "C_f est strictement au-dessous de Δ sur ]0 ; +∞[, sans aucun point commun avec elle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x) − 2x = −(ln x)² ≤ 0, avec égalité si et seulement si ln x = 0, c'est-à-dire x = 1. La courbe est donc au-dessous de Δ partout, et la touche en x = 1 sans la traverser ✓. L'erreur classique est de faire changer de signe f(x) − 2x en 1 comme ln x : le carré rend la différence de signe constant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nPourquoi l'équation f(x) = 0 admet-elle une unique solution α dans ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est continue et f(1/4) × f(1/2) < 0 : cela suffit à garantir une solution unique"
+        },
+        {
+          "id": "b",
+          "text": "f est dérivable sur ]0 ; +∞[, et une fonction dérivable s'annule une seule fois"
+        },
+        {
+          "id": "c",
+          "text": "f est continue, strictement croissante de ]0 ; +∞[ sur ℝ : 0 a un seul antécédent"
+        },
+        {
+          "id": "d",
+          "text": "f tend vers −∞ en 0⁺ et vers +∞ en +∞, donc f s'annule une seule fois entre 0 et 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f est continue, strictement croissante, de limites −∞ et +∞ : c'est une bijection de ]0 ; +∞[ sur ℝ, et 0 a un unique antécédent α ✓. Les valeurs f(1/4) < 0 < f(1/2) localisent α dans ]1/4 ; 1/2[, mais le théorème des valeurs intermédiaires seul donne l'existence, jamais l'unicité : celle-ci vient de la stricte monotonie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = 2x − (ln x)², de courbe C_f dans un repère orthonormé.\nSoit Δ la droite d'équation y = 2x. Quelle est l'aire, en unités d'aire, de la partie du plan limitée par Δ, C_f et les droites x = 1 et x = e ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e − 2"
+        },
+        {
+          "id": "b",
+          "text": "1/3"
+        },
+        {
+          "id": "c",
+          "text": "e"
+        },
+        {
+          "id": "d",
+          "text": "e + 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'aire vaut ∫₁^e |2x − f(x)| dx = ∫₁^e (ln x)² dx, un carré étant toujours positif. Une primitive de (ln x)² est x(ln x)² − 2x ln x + 2x (une première intégration par parties donne x(ln x)² − 2∫ ln x dx, puis ∫ ln x dx = x ln x − x). Alors [x(ln x)² − 2x ln x + 2x]₁^e = (e − 2e + 2e) − 2 = e − 2 ✓. Erreurs : (ln x)³/3 donne 1/3 ; oublier la borne 1 donne e ; un signe faux dans l'intégration par parties donne e + 2.",
+      "difficulty": 3
+    }
+  ]
+}

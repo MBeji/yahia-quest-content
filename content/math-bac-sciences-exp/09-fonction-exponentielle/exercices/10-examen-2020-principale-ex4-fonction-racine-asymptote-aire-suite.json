@@ -1,0 +1,370 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 4 ⭐⭐⭐⭐ : fonction racine d'une somme avec exponentielle, asymptote, aire et suite d'aires",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x). Quelle est l'expression de g′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) = 2x + e^(−x)"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = 2x − e^(−x)"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) = 2x − eˣ"
+        },
+        {
+          "id": "d",
+          "text": "g′(x) = 2x e^(−x)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "x² a pour dérivée 2x, et e^(−x) = e^u avec u = −x a pour dérivée u′e^u = −e^(−x). Donc g′(x) = 2x − e^(−x) ✓. Oublier le signe moins du facteur u′ = −1 donne + e^(−x) ; confondre e^(−x) avec son opposé eˣ en changeant l'exposant donne −eˣ ; et une dérivée de somme n'est pas un produit.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f(x) = √(x² + e^(−x)) pour tout réel x. Quelles sont les limites de f en −∞ et en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ en −∞ et 0 en +∞"
+        },
+        {
+          "id": "b",
+          "text": "0 en −∞ et +∞ en +∞"
+        },
+        {
+          "id": "c",
+          "text": "0 aux deux bornes"
+        },
+        {
+          "id": "d",
+          "text": "+∞ aux deux bornes"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En −∞, −x → +∞ donc e^(−x) → +∞ (et x² → +∞) : la somme tend vers +∞, donc f(x) → +∞. En +∞, x² → +∞ et e^(−x) → 0 : la somme tend vers +∞, donc f(x) → +∞ ✓. Dire que f tend vers 0 en +∞ oublie le terme x², qui diverge ; dire que f tend vers 0 en −∞ confond e^(−x) avec eˣ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nOn a g′(x) = 2x − e^(−x). Quelles valeurs de g′ établissent que son unique zéro β vérifie 0,3 < β < 0,4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(0,3) ≈ −0,14 < 0 et g′(0,4) ≈ 0,13 > 0, avec g′ continue et strictement croissante"
+        },
+        {
+          "id": "b",
+          "text": "g′(0,3) ≈ −0,14 et g′(0,4) ≈ 0,13 : β est le milieu de l'intervalle ]0,3 ; 0,4[, donc β = 0,35"
+        },
+        {
+          "id": "c",
+          "text": "g(0,3) et g(0,4) sont de signes opposés, donc β est entre 0,3 et 0,4"
+        },
+        {
+          "id": "d",
+          "text": "g′(0) = −1 < 0 et g′(1) = 2 − 1/e > 0, donc 0,3 < β < 0,4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g′ est continue et strictement croissante de −∞ à +∞ : elle s'annule une seule fois (théorème de la bijection). Or g′(0,3) = 0,6 − e^(−0,3) ≈ −0,14 < 0 et g′(0,4) = 0,8 − e^(−0,4) ≈ 0,13 > 0, donc β ∈ ]0,3 ; 0,4[ ✓. Le milieu 0,35 n'est qu'un repère : g′(0,35) = 0,7 − e^(−0,35) ≈ −0,005 ≠ 0, donc β ≠ 0,35, et les signes de g′ aux deux bornes ne donnent que l'encadrement ; g est toujours positive (x² + e^(−x) > 0), son signe ne localise pas β ; et g′(0) < 0 < g′(1) donne seulement β ∈ ]0 ; 1[, trop large.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nOn note β l'unique solution de g′(x) = 0. Quel est le signe de g′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) > 0 sur ]−∞ ; β[ et g′(x) < 0 sur ]β ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "g′(x) > 0 sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) < 0 sur ]−∞ ; β[ et g′(x) > 0 sur ]β ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "g′(x) < 0 sur ]−∞ ; 0[ et g′(x) > 0 sur ]0 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g′ est strictement croissante et s'annule en β : elle est négative avant β et positive après ✓. Un tableau inversé lit « croissante » comme « positive » ; g′ n'est pas toujours positive (g′(0) = −1) ; et son zéro est β ≈ 0,35, non 0 (g′(0) = −1 ≠ 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nQuelle est l'expression de f′(x) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = (2x − e^(−x))/√(x² + e^(−x))"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = (2x − e^(−x))/(2(x² + e^(−x)))"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = (2x − e^(−x))/(2√(x² + e^(−x)))"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 2(2x − e^(−x))√(x² + e^(−x))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f = √g avec g > 0 : (√g)′ = g′/(2√g) ✓. Comme 2√(g(x)) > 0, f′ a le signe de g′. Oublier le 2 donne g′/√g ; garder g à la place de √g au dénominateur oublie que la racine reste au dénominateur : g′/(2g) au lieu de g′/(2√g) ; et dériver comme un carré donne 2g′√g.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nQue valent la limite de f(x)/x quand x → −∞ et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞ : C_f admet une branche parabolique de direction l'axe des ordonnées au voisinage de −∞"
+        },
+        {
+          "id": "b",
+          "text": "−1 : C_f admet une asymptote oblique d'équation y = −x au voisinage de −∞"
+        },
+        {
+          "id": "c",
+          "text": "+∞ : C_f admet une branche parabolique de direction l'axe des ordonnées au voisinage de −∞"
+        },
+        {
+          "id": "d",
+          "text": "0 : C_f admet une branche parabolique de direction l'axe des abscisses au voisinage de −∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x < 0, f(x) ≥ √(e^(−x)) = e^(−x/2) > 0 ; en divisant par x < 0 l'inégalité se renverse : f(x)/x ≤ e^(−x/2)/x, et e^(−x/2)/x → −∞ (croissances comparées), donc f(x)/x → −∞ ✓ : branche parabolique de direction (O, j). La valeur −1 viendrait de √(x²) = |x| = −x, en négligeant e^(−x) qui l'emporte sur x² ; +∞ oublie que x est négatif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nQuelle transformation donne f(x) − x = e^(−x)/(f(x) + x) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(f(x) − x)(f(x) + x) = f(x)² + x² = g(x) + x² = 2x² + e^(−x)"
+        },
+        {
+          "id": "b",
+          "text": "(f(x) − x)² = f(x)² − x² = g(x) − x² = e^(−x)"
+        },
+        {
+          "id": "c",
+          "text": "(f(x) − x)(f(x) + x) = f(x) − x² = √(g(x)) − x² = √(x² + e^(−x)) − x²"
+        },
+        {
+          "id": "d",
+          "text": "(f(x) − x)(f(x) + x) = f(x)² − x² = g(x) − x² = e^(−x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On multiplie f(x) − x par son conjugué f(x) + x : (f(x) − x)(f(x) + x) = f(x)² − x² = g(x) − x² = e^(−x), d'où f(x) − x = e^(−x)/(f(x) + x) ✓ (f(x) + x > 0 car f(x) > |x|). Le produit conjugué fait une différence de carrés, non une somme ; (f − x)² = f² − 2fx + x² n'est pas f² − x² ; et f(x) est une racine, il faut la mettre au carré : f(x)² = g(x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nOn a f(x) − x = e^(−x)/(f(x) + x) pour tout x. Quel raisonnement établit que Δ est asymptote à C_f au voisinage de +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x)/x → 1 quand x → +∞, donc la droite y = x est asymptote"
+        },
+        {
+          "id": "b",
+          "text": "e^(−x) → 0 et f(x) + x → +∞, donc f(x) − x → 0 quand x → +∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x) + x → +∞ et e^(−x) → 0, donc le quotient e^(−x)/(f(x) + x) tend vers +∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) − x = e^(−x)/(f(x) + x) ≥ e^(−x)/(2x) car f(x) + x ≤ 2x, et e^(−x)/(2x) → 0, donc f(x) − x → 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour que la droite y = x soit asymptote en +∞, il faut f(x) − x → 0. Or e^(−x) → 0 et f(x) + x → +∞, donc leur quotient tend vers 0 ✓. Une limite de f(x)/x égale à 1 donne la direction mais pas l'asymptote (il faut aussi f(x) − x → 0). Un numérateur qui tend vers 0 sur un dénominateur qui tend vers +∞ donne 0, non +∞. Enfin, f(x) + x > 2x (car f(x) > x), et non f(x) + x ≤ 2x ; de toute façon, minorer f(x) − x par e^(−x)/(2x), qui tend vers 0, ne prouve pas que f(x) − x tend vers 0 : il faudrait un majorant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nOn a f(x) − x = e^(−x)/(f(x) + x). Quelle est la position de C_f par rapport à Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) > |x| ≥ −x, donc f(x) + x > 0 et f(x) − x < 0 : C_f est au-dessous de Δ sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "f(x) + x peut s'annuler pour x < 0, donc la position dépend du signe de x"
+        },
+        {
+          "id": "c",
+          "text": "f(x) ≥ x par définition de la racine carrée, donc C_f est au-dessus de Δ sur ℝ"
+        },
+        {
+          "id": "d",
+          "text": "f(x) > |x| ≥ −x, donc f(x) + x > 0 et f(x) − x > 0 : C_f est au-dessus de Δ sur ℝ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x) = √(x² + e^(−x)) > √(x²) = |x|, donc f(x) > |x| ≥ x et f(x) > |x| ≥ −x. Ainsi f(x) + x > 0 et le quotient e^(−x)/(f(x) + x) est strictement positif : f(x) − x > 0, C_f est au-dessus de Δ ✓. Une différence positive place C_f au-dessus, non au-dessous. Le dénominateur ne s'annule jamais, grâce à f(x) > −x. Et « f(x) ≥ x » n'est pas une propriété de la racine carrée : c'est précisément ce qu'on démontre.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nOn note β ≈ 0,35 l'unique zéro de g′. Quel est le tableau de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît sur ]−∞ ; β] de −∞ à f(β), puis décroît sur [β ; +∞[ de f(β) à −∞"
+        },
+        {
+          "id": "b",
+          "text": "f décroît sur ]−∞ ; β] de +∞ à f(β), puis croît sur [β ; +∞[ de f(β) à +∞"
+        },
+        {
+          "id": "c",
+          "text": "f décroît sur ]−∞ ; 0] de +∞ à f(0) = 1, puis croît sur [0 ; +∞[ de 1 à +∞"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur ℝ, de +∞ en −∞ à +∞ en +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′ a le signe de g′ : négative sur ]−∞ ; β[, positive sur ]β ; +∞[. Donc f décroît de +∞ (limite en −∞) jusqu'au minimum f(β), puis croît jusqu'à +∞ ✓. Le minimum est atteint en β ≈ 0,35, non en 0 : f′(0) = g′(0)/2 = −1/2 ≠ 0. Un maximum en β lirait le signe de f′ à l'envers, et une fonction qui part de +∞ ne peut pas être croissante sur ℝ entier.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit n ≥ 2 et aₙ = ∫ de 1 à n de (f(x) − x) dx, avec f(x) − x > 0 pour tout x. Quel raisonnement établit que (aₙ) est croissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "aₙ₊₁ − aₙ = f(n + 1) − (n + 1), car on ajoute la valeur de la fonction au rang suivant"
+        },
+        {
+          "id": "b",
+          "text": "f est croissante sur [1 ; +∞[, donc (aₙ) est croissante"
+        },
+        {
+          "id": "c",
+          "text": "aₙ₊₁ − aₙ = ∫ de n à n+1 de (f(x) − x) dx > 0, car f(x) − x > 0"
+        },
+        {
+          "id": "d",
+          "text": "aₙ₊₁ − aₙ = ∫ de n à n+1 de (f(x) − x) dx < 0, car l'intervalle ajouté est plus à droite"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "aₙ₊₁ − aₙ = ∫ de 1 à n+1 − ∫ de 1 à n = ∫ de n à n+1 de (f(x) − x) dx (relation de Chasles), intégrale d'une fonction strictement positive sur un intervalle de longueur 1 : elle est > 0 ✓. La différence de deux intégrales n'est pas la valeur de la fonction en un point ; la croissance de f ne dit rien (c'est f(x) − x qui compte, et il est positif) ; et la position de l'intervalle ne change pas le signe de l'intégrale d'une fonction positive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ℝ par g(x) = x² + e^(−x), de dérivée g′ strictement croissante sur ℝ, et f la fonction définie sur ℝ par f(x) = √(g(x)), de courbe C_f dans un repère orthonormé. On note Δ la droite d'équation y = x.\nOn sait que f(x) + x est une fonction croissante sur [1 ; n] (n ≥ 2) et que f(x) − x = e^(−x)/(f(x) + x). Quel encadrement de f(x) − x en résulte sur [1 ; n] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−x)/(n + f(n)) ≤ f(x) − x ≤ e^(−x)/(1 + f(1))"
+        },
+        {
+          "id": "b",
+          "text": "e^(−x)/(1 + f(1)) ≤ f(x) − x ≤ e^(−x)/(n + f(n))"
+        },
+        {
+          "id": "c",
+          "text": "e^(−x)/(n + f(n)) ≤ f(x) − x ≤ e^(−x)/(f(1) + n)"
+        },
+        {
+          "id": "d",
+          "text": "(n + f(n))e^(−x) ≤ f(x) − x ≤ (1 + f(1))e^(−x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Croissance : 1 + f(1) ≤ x + f(x) ≤ n + f(n) pour x ∈ [1 ; n], avec tous ces nombres strictement positifs. En passant à l'inverse (qui renverse l'ordre) : 1/(n + f(n)) ≤ 1/(x + f(x)) ≤ 1/(1 + f(1)). On multiplie par e^(−x) > 0 : e^(−x)/(n + f(n)) ≤ f(x) − x ≤ e^(−x)/(1 + f(1)) ✓. Oublier que l'inverse renverse l'ordre donne e^(−x)/(1 + f(1)) ≤ f(x) − x ≤ e^(−x)/(n + f(n)) ; mélanger les bornes donne une majoration en e^(−x)/(f(1) + n) ; multiplier par n + f(n) et 1 + f(1) au lieu de diviser donne (n + f(n))e^(−x) ≤ f(x) − x ≤ (1 + f(1))e^(−x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur de l'intégrale ∫ de 1 à n de e^(−x) dx, pour n ≥ 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−1) − e^(−n)"
+        },
+        {
+          "id": "b",
+          "text": "e^(−n) − e^(−1)"
+        },
+        {
+          "id": "c",
+          "text": "e^(−1) + e^(−n)"
+        },
+        {
+          "id": "d",
+          "text": "eⁿ − e"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de e^(−x) est −e^(−x) (car (−e^(−x))′ = e^(−x)), donc l'intégrale vaut [−e^(−x)] de 1 à n = −e^(−n) + e^(−1) = e^(−1) − e^(−n) ✓ (positive : e^(−n) < e^(−1)). Permuter les bornes donne le nombre négatif e^(−n) − e^(−1) ; prendre eˣ pour primitive donne eⁿ − e ; une primitive e^(−x) sans signe moins donne e^(−n) − e^(−1) ; et additionner les deux valeurs aux bornes au lieu de les soustraire donne e^(−1) + e^(−n).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On donne e^(−1) ≈ 0,3679, e^(−2) ≈ 0,1353, f(1) = √(1 + e^(−1)) ≈ 1,1696 et f(2) = √(4 + e^(−2)) ≈ 2,0336. Quelles sont les valeurs approchées de (e^(−1) − e^(−2))/(2 + f(2)) et de e^(−1)/(1 + f(1)), à 10⁻⁴ près ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≈ 0,1163 et ≈ 0,3679"
+        },
+        {
+          "id": "b",
+          "text": "≈ 0,1248 et ≈ 0,1696"
+        },
+        {
+          "id": "c",
+          "text": "≈ 0,0577 et ≈ 0,1696"
+        },
+        {
+          "id": "d",
+          "text": "≈ 0,0577 et ≈ 0,3679"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(e^(−1) − e^(−2))/(2 + f(2)) ≈ 0,2325/4,0336 ≈ 0,0577 et e^(−1)/(1 + f(1)) ≈ 0,3679/2,1696 ≈ 0,1696 ✓. Oublier f dans les dénominateurs donne 0,2325/2 ≈ 0,1163 et 0,3679/1 = 0,3679 ; additionner e^(−1) et e^(−2) au lieu de les soustraire donne 0,5032/4,0336 ≈ 0,1248 ; et oublier f(1) dans le seul second dénominateur donne 0,3679.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, (aₙ) est croissante et (e^(−1) − e^(−n))/(n + f(n)) ≤ aₙ ≤ (e^(−1) − e^(−n))/(1 + f(1)). On note L sa limite, et on a (e^(−1) − e^(−2))/(2 + f(2)) ≈ 0,0577 et e^(−1)/(1 + f(1)) ≈ 0,1696. Quel raisonnement établit 0,05 < L < 0,17 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "aₙ ≤ 0,1696 pour tout n donc, par passage à la limite, L ≥ 0,1696, d'où 0,05 < L < 0,17"
+        },
+        {
+          "id": "b",
+          "text": "croissante : L ≥ a₂ ≥ 0,0577 > 0,05 ; majorée par 0,1696 : L ≤ 0,1696 < 0,17"
+        },
+        {
+          "id": "c",
+          "text": "le minorant (e^(−1) − e^(−n))/(n + f(n)) tend vers 0, donc L ≥ 0, ce qui donne bien L > 0,05"
+        },
+        {
+          "id": "d",
+          "text": "a₂ ≤ 0,1696 et la suite est croissante, donc L ≤ 0,0577 < 0,17 par passage à la limite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(aₙ) étant croissante, L ≥ a₂ ; et a₂ ≥ (e^(−1) − e^(−2))/(2 + f(2)) ≈ 0,0577 > 0,05, donc L > 0,05. Par ailleurs aₙ ≤ (e^(−1) − e^(−n))/(1 + f(1)) < e^(−1)/(1 + f(1)) ≈ 0,1696 pour tout n, donc, par passage à la limite, L ≤ 0,1696 < 0,17 ✓. Un majorant donne une majoration de L, non une minoration ; un minorant qui tend vers 0 ne donne que L ≥ 0 ; et la croissance de (aₙ) donne L ≥ a₂, non L ≤ 0,0577.",
+      "difficulty": 3
+    }
+  ]
+}

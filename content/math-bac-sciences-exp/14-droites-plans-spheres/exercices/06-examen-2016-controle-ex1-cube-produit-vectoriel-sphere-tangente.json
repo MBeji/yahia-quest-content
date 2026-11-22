@@ -1,0 +1,188 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 1 ⭐⭐⭐ : cube, produit vectoriel, volume et sphère",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "L'espace est rapporté au repère orthonormé direct (O, u⃗, v⃗, w⃗). Le solide OADBCEFG est le cube d'arête 1 tel que OA⃗ = u⃗, OB⃗ = v⃗ et OC⃗ = w⃗. Les points I et J sont les milieux respectifs des segments [AF] et [CG]. Quelles sont les coordonnées de E, I et J ?\n<svg viewBox=\"0 0 300 210\"><path d=\"M140 185 L140 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M140 185 L80 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M140 185 L240 185\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M140 85 L80 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M140 85 L240 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M80 137 L80 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M80 137 L180 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M80 37 L180 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M240 185 L240 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M240 185 L180 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M240 85 L180 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M180 137 L180 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M240 185 L180 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><g fill=\"#dc2626\"><circle cx=\"210.0\" cy=\"111.0\" r=\"4\"/><circle cx=\"110.0\" cy=\"61.0\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\"><text x=\"218.0\" y=\"115.0\">I</text><text x=\"116.0\" y=\"53.0\">J</text></g><g font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" text-anchor=\"middle\"><text x=\"136.6\" y=\"202.5\">O</text><text x=\"132.1\" y=\"79.7\">C</text><text x=\"67.6\" y=\"146.0\">B</text><text x=\"70.5\" y=\"33.2\">G</text><text x=\"249.5\" y=\"198.8\">A</text><text x=\"252.4\" y=\"86.0\">E</text><text x=\"187.9\" y=\"152.3\">D</text><text x=\"183.4\" y=\"29.5\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "E(1 ; 0 ; 1), I(1 ; 1/2 ; 1/2) et J(0 ; 1/2 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "E(1 ; 0 ; 1), I(1 ; 1/2 ; 1) et J(0 ; 1/2 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "E(1 ; 0 ; 1), I(1 ; 1/2 ; 1/2) et J(0 ; 1 ; 1/2)"
+        },
+        {
+          "id": "d",
+          "text": "E(0 ; 1 ; 1), I(1 ; 1/2 ; 1) et J(0 ; 1 ; 1/2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le sommet E est au-dessus de A : E = A + w⃗ = (1 ; 0 ; 1), tandis que G = B + w⃗ = (0 ; 1 ; 1) et F = D + w⃗ = (1 ; 1 ; 1). Le milieu de [AF] est I((1 + 1)/2 ; (0 + 1)/2 ; (0 + 1)/2) = (1 ; 1/2 ; 1/2). Le milieu de [CG] est J((0 + 0)/2 ; (0 + 1)/2 ; (1 + 1)/2) = (0 ; 1/2 ; 1) ✓. Garder la cote 1 de F pour I oublie de la moyenner avec celle de A ; permuter l'ordonnée et la cote de J mélange les axes ; E(0 ; 1 ; 1) est en réalité G.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est rapporté à un repère orthonormé direct. On donne les points I(1 ; 1/2 ; 1/2) et J(0 ; 1/2 ; 1). Que vaut le produit vectoriel OI⃗ ∧ OJ⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/4 ; 1 ; 1/2)"
+        },
+        {
+          "id": "b",
+          "text": "(−1/4 ; 1 ; −1/2)"
+        },
+        {
+          "id": "c",
+          "text": "(0 ; 1/4 ; 1/2)"
+        },
+        {
+          "id": "d",
+          "text": "(1/4 ; −1 ; 1/2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec OI⃗(1 ; 1/2 ; 1/2) et OJ⃗(0 ; 1/2 ; 1), on obtient (1/2 × 1 − 1/2 × 1/2 ; 1/2 × 0 − 1 × 1 ; 1 × 1/2 − 1/2 × 0) = (1/4 ; −1 ; 1/2) ✓. Oublier de changer le signe de la deuxième coordonnée donne (1/4 ; 1 ; 1/2) ; inverser l'ordre des facteurs change tous les signes ; multiplier les coordonnées terme à terme (0 ; 1/4 ; 1/2) donne un produit de composantes, pas un produit vectoriel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est rapporté à un repère orthonormé direct. On donne les points O(0 ; 0 ; 0), I(1 ; 1/2 ; 1/2) et J(0 ; 1/2 ; 1). Quelle est l'aire du triangle OIJ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√21/4"
+        },
+        {
+          "id": "b",
+          "text": "√21/2"
+        },
+        {
+          "id": "c",
+          "text": "√21/8"
+        },
+        {
+          "id": "d",
+          "text": "21/32"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'aire d'un triangle est la moitié de la norme du produit vectoriel : OI⃗ ∧ OJ⃗ = (1/4 ; −1 ; 1/2), de norme √(1/16 + 1 + 1/4) = √21/4. L'aire vaut donc (1/2) × √21/4 = √21/8 ✓. Oublier le facteur 1/2 donne l'aire du parallélogramme √21/4 ; calculer avec (1 ; −4 ; 2) sans le facteur 1/4 donne √21/2 ; oublier la racine donne 21/32.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est rapporté à un repère orthonormé direct. On donne les points O(0 ; 0 ; 0), I(1 ; 1/2 ; 1/2), J(0 ; 1/2 ; 1) et E(1 ; 0 ; 1). Quel est le volume du tétraèdre OIJE ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/4"
+        },
+        {
+          "id": "b",
+          "text": "1/8"
+        },
+        {
+          "id": "c",
+          "text": "1/4"
+        },
+        {
+          "id": "d",
+          "text": "3/8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le volume est (1/6)|(OI⃗ ∧ OJ⃗) · OE⃗|. Avec OI⃗ ∧ OJ⃗ = (1/4 ; −1 ; 1/2) et OE⃗(1 ; 0 ; 1) : (1/4)(1) + (−1)(0) + (1/2)(1) = 3/4. Donc V = (1/6) × 3/4 = 1/8 ✓. Oublier le facteur 1/6 donne 3/4 ; utiliser 1/3 donne 1/4 ; utiliser 1/2 donne 3/8.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit OIJE un tétraèdre, 𝒜 l'aire de sa face OIJ et V son volume. Soit H le projeté orthogonal de E sur le plan (OIJ). Quelle relation permet de calculer la distance EH sans connaître les coordonnées de H ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EH = V/(3𝒜)"
+        },
+        {
+          "id": "b",
+          "text": "EH = 3𝒜/V"
+        },
+        {
+          "id": "c",
+          "text": "EH = V/𝒜"
+        },
+        {
+          "id": "d",
+          "text": "EH = 3V/𝒜"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le volume d'un tétraèdre vaut V = (1/3) × (aire de la base) × (hauteur). Ici la base est OIJ, d'aire 𝒜, et la hauteur issue de E est EH. Donc V = (1/3) 𝒜 × EH et EH = 3V/𝒜 ✓. Les autres relations oublient le facteur 3 au numérateur ou intervertissent le rôle de V et de 𝒜.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est rapporté à un repère orthonormé direct. On donne O(0 ; 0 ; 0), I(1 ; 1/2 ; 1/2), J(0 ; 1/2 ; 1) et E(1 ; 0 ; 1). Soit H le projeté orthogonal de E sur le plan (OIJ). Calculer la distance EH. Donne le résultat sous forme décimale, arrondi au centième.",
+      "answerKey": {
+        "value": 0.65,
+        "tolerance": 0.005
+      },
+      "explanation": "Le volume de OIJE est 1/8 et l'aire de OIJ est √21/8, d'après le produit vectoriel OI⃗ ∧ OJ⃗ = (1/4 ; −1 ; 1/2). Donc EH = 3V/𝒜 = (3/8)/(√21/8) = 3/√21 = √21/7 ≈ 0,65 ✓. Contrôle par une équation du plan : (OIJ) a pour équation x − 4y + 2z = 0 et d(E ; (OIJ)) = |1 + 2|/√21 = 3/√21.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est rapporté à un repère orthonormé direct. Soit S l'ensemble des points M(x, y, z) tels que :\nx² + y² + z² − 2x − 2z + 11/7 = 0\nQuelle est la nature de S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une sphère de centre (1 ; 0 ; 1) et de rayon √(3/7)"
+        },
+        {
+          "id": "b",
+          "text": "une sphère de centre (−1 ; 0 ; −1) et de rayon √(3/7)"
+        },
+        {
+          "id": "c",
+          "text": "l'ensemble vide"
+        },
+        {
+          "id": "d",
+          "text": "une sphère de centre (1 ; 0 ; 1) et de rayon √(25/7)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On passe à la forme canonique : (x − 1)² + y² + (z − 1)² = 1 + 1 − 11/7 = 3/7. Comme 3/7 > 0, S est la sphère de centre (1 ; 0 ; 1) et de rayon √(3/7) ✓. Lire le centre avec les signes des coefficients donne (−1 ; 0 ; −1) ; renverser le signe de la constante donne R² = −3/7 < 0, donc un ensemble vide par erreur ; ajouter 11/7 au lieu de la retrancher donne R² = 25/7.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est rapporté à un repère orthonormé direct. Soit S la sphère de centre E(1 ; 0 ; 1) et de rayon √(3/7), et soit (OIJ) le plan d'équation x − 4y + 2z = 0. Quelle est la position de S par rapport à ce plan ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le plan coupe la sphère selon un cercle"
+        },
+        {
+          "id": "b",
+          "text": "le plan est tangent à la sphère"
+        },
+        {
+          "id": "c",
+          "text": "le plan et la sphère n'ont aucun point commun"
+        },
+        {
+          "id": "d",
+          "text": "le plan passe par le centre de la sphère"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La distance du centre E(1 ; 0 ; 1) au plan est |1 − 0 + 2|/√(1 + 16 + 4) = 3/√21 = √21/7. Or le rayon vaut √(3/7) = √21/7 : distance et rayon sont égaux, donc le plan est tangent à la sphère ✓. Oublier de diviser par la norme du vecteur normal donne une distance 3, plus grande que le rayon (aucun point commun) ; comparer la distance au carré du rayon sans le carré pourrait faire croire à une section.",
+      "difficulty": 3
+    }
+  ]
+}

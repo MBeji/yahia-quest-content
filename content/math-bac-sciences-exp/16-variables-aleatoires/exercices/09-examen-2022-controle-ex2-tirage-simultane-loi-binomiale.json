@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2022 · session de contrôle · Exercice 2 ⭐⭐⭐ : tirage simultané, épreuves répétées avec remise, espérance et variance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Une urne contient quatre boules rouges et six boules noires, indiscernables au toucher. Une épreuve consiste à tirer simultanément trois boules de l'urne. On note A l'événement « obtenir exactement une boule rouge ».\nCombien de tirages simultanés de trois boules donnent exactement une boule rouge ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "60"
+        },
+        {
+          "id": "c",
+          "text": "120"
+        },
+        {
+          "id": "d",
+          "text": "19"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un tirage simultané est une partie de 3 boules : on choisit 1 rouge parmi 4 (C(4 ; 1) = 4 façons) et 2 noires parmi 6 (C(6 ; 2) = 15 façons), soit 4 × 15 = 60 tirages ✓. Ne choisir qu'une noire parmi 6 donne 4 × 6 = 24 (il faut 2 noires) ; compter les paires de noires dans l'ordre (6 × 5 = 30) donne 4 × 30 = 120 (le tirage est simultané, l'ordre ne compte pas) ; et additionner 4 et 15 confond les étapes successives avec une alternative.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une urne contient quatre boules rouges et six boules noires, indiscernables au toucher. Une épreuve consiste à tirer simultanément trois boules de l'urne. On note A l'événement « obtenir exactement une boule rouge ».\nQuelle est la probabilité P(A) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P(A) = 2/5"
+        },
+        {
+          "id": "b",
+          "text": "P(A) = 1/5"
+        },
+        {
+          "id": "c",
+          "text": "P(A) = 3/5"
+        },
+        {
+          "id": "d",
+          "text": "P(A) = 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Il y a C(10 ; 3) = 120 tirages équiprobables et 4 × C(6 ; 2) = 4 × 15 = 60 favorables : P(A) = 60/120 = 1/2 ✓. 2/5 est la proportion de rouges dans l'urne (4/10) ; 1/5 = 24/120 ne choisit qu'une boule noire ; et 3/5 est la proportion de noires (6/10).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient quatre boules rouges et six boules noires, indiscernables au toucher. Une épreuve consiste à tirer simultanément trois boules de l'urne. On note A l'événement « obtenir exactement une boule rouge ».\nQuelle est la probabilité de l'événement B : « obtenir aucune boule rouge » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P(B) = 1/6"
+        },
+        {
+          "id": "b",
+          "text": "P(B) = 27/125"
+        },
+        {
+          "id": "c",
+          "text": "P(B) = 1/3"
+        },
+        {
+          "id": "d",
+          "text": "P(B) = 3/5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Aucune boule rouge signifie trois boules noires : C(6 ; 3) = 20 tirages sur C(10 ; 3) = 120, donc P(B) = 20/120 = 1/6 ✓ (on retrouve (6/10)(5/9)(4/8) = 1/6). (6/10)³ = 27/125 suppose un tirage avec remise ; 1/3 = (6/10)(5/9) ne tient compte que de deux boules ; et 3/5 est la proportion de noires pour un seul tirage.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient quatre boules rouges et six boules noires, indiscernables au toucher. Une épreuve consiste à tirer simultanément trois boules de l'urne. On note A l'événement « obtenir exactement une boule rouge ». On répète n fois l'épreuve de façon indépendante, avec n ≥ 2, en remettant les boules dans l'urne à chaque fois. Soit X le nombre de fois où l'on obtient exactement une boule rouge. Quelle est la loi de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X suit la loi binomiale ℬ(n ; 1/6), avec p(X = k) = C(n ; k)(1/6)ᵏ(5/6)ⁿ⁻ᵏ"
+        },
+        {
+          "id": "b",
+          "text": "X suit la loi binomiale ℬ(n ; 2/5), avec p(X = k) = C(n ; k)(2/5)ᵏ(3/5)ⁿ⁻ᵏ"
+        },
+        {
+          "id": "c",
+          "text": "X suit la loi binomiale ℬ(n ; 1/2), avec p(X = k) = C(n ; k)/2ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "X suit la loi binomiale ℬ(3 ; 1/2), avec p(X = k) = C(3 ; k)/2³"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les n épreuves sont identiques et indépendantes (les boules sont remises), et chacune a deux issues : succès A, de probabilité 1/2. Donc X suit ℬ(n ; 1/2), avec p(X = k) = C(n ; k)(1/2)ᵏ(1/2)ⁿ⁻ᵏ = C(n ; k)/2ⁿ ✓. 1/6 est P(B), non P(A) ; 2/5 est la proportion de rouges ; et le premier paramètre est le nombre n de répétitions de l'épreuve, non le nombre 3 de boules tirées à chaque fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient quatre boules rouges et six boules noires, indiscernables au toucher. Une épreuve consiste à tirer simultanément trois boules de l'urne. On note A l'événement « obtenir exactement une boule rouge ». On répète n fois l'épreuve avec remise (n ≥ 2). Soit X le nombre de fois où l'on obtient exactement une boule rouge. Quelle est la probabilité d'obtenir au moins une fois exactement une boule rouge ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/2)ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "1 − 1/(2n)"
+        },
+        {
+          "id": "c",
+          "text": "1 − (1/2)ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "n/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Au moins une fois » est le contraire de « jamais » : p(X ≥ 1) = 1 − p(X = 0) = 1 − C(n ; 0)(1/2)ⁿ, soit 1 − (1/2)ⁿ : c'est la clé ✓. (1/2)ⁿ est p(X = 0) ; 1 − 1/(2n) confond l'exposant n avec un facteur ; et n/2 peut dépasser 1, ce n'est pas une probabilité.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une urne contient quatre boules rouges et six boules noires, indiscernables au toucher. Une épreuve consiste à tirer simultanément trois boules de l'urne. On note A l'événement « obtenir exactement une boule rouge ». On répète n fois l'épreuve avec remise (n ≥ 2), X étant le nombre de fois où l'on obtient exactement une boule rouge. Quelles sont l'espérance et la variance de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E(X) = n/2 et V(X) = n/4"
+        },
+        {
+          "id": "b",
+          "text": "E(X) = n/2 et V(X) = n/2"
+        },
+        {
+          "id": "c",
+          "text": "E(X) = n/4 et V(X) = n/2"
+        },
+        {
+          "id": "d",
+          "text": "E(X) = n/4 et V(X) = n/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour ℬ(n ; p) : E(X) = np = n/2 et V(X) = np(1 − p) = n × 1/2 × 1/2 = n/4 ✓. V(X) = np oublie le facteur (1 − p) = 1/2 ; échanger les deux résultats confond espérance et variance ; et E(X) = n/4 prend p = 1/4 au lieu de p(A) = 4 × 15/120 = 1/2, puis V(X) = n/4 reprend np sans le facteur (1 − p).",
+      "difficulty": 3
+    }
+  ]
+}

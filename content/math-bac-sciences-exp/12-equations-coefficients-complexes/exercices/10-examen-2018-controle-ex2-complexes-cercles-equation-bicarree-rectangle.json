@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 2 ⭐⭐⭐ : Module, argument, équation bicarrée et rectangle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé direct, P est le point d'affixe p = √2 + i. Que vaut le module de p ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "1 + √2"
+        },
+        {
+          "id": "c",
+          "text": "√2"
+        },
+        {
+          "id": "d",
+          "text": "√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le module est |p| = √((√2)² + 1²) = √(2 + 1) = √3 ✓. Ainsi P est sur le cercle de centre O et de rayon √3. Contrôle : |p|² = p p̄ = (√2 + i)(√2 − i) = 2 + 1 = 3. Le piège courant : s'arrêter au carré du module donne 3 ; additionner les parties réelle et imaginaire donne 1 + √2 ; ne garder que la partie réelle donne √2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, P est le point d'affixe p = √2 + i et α est un argument de p. Q est le point du cercle de centre O et de rayon 3 tel que (OP⃗, OQ⃗) ≡ α [2π]. Quelle est l'écriture exponentielle de l'affixe q de Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q = 3e^(iα)"
+        },
+        {
+          "id": "b",
+          "text": "q = 3e^(2iα)"
+        },
+        {
+          "id": "c",
+          "text": "q = √3 e^(2iα)"
+        },
+        {
+          "id": "d",
+          "text": "q = 9e^(2iα)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une mesure de (u⃗, OQ⃗) s'obtient par la relation de Chasles : (u⃗, OQ⃗) ≡ (u⃗, OP⃗) + (OP⃗, OQ⃗) ≡ α + α = 2α [2π]. Comme OQ = 3, on a q = 3e^(2iα) ✓. Le piège courant : confondre l'angle (OP⃗, OQ⃗) avec l'angle (u⃗, OQ⃗) donne e^(iα) ; prendre pour module celui de P (√3) au lieu du rayon 3 de ce cercle ; élever le rayon au carré donne 9.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit α un argument du nombre complexe p = √2 + i. Que valent cos α et sin α ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cos α = √6/3 et sin α = √3/3"
+        },
+        {
+          "id": "b",
+          "text": "cos α = √3/3 et sin α = √6/3"
+        },
+        {
+          "id": "c",
+          "text": "cos α = √2/3 et sin α = 1/3"
+        },
+        {
+          "id": "d",
+          "text": "cos α = √2/2 et sin α = 1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a |p| = √3, donc cos α = Re(p)/|p| = √2/√3 = √6/3 et sin α = Im(p)/|p| = 1/√3 = √3/3 ✓. Contrôle : cos²α + sin²α = 6/9 + 3/9 = 1. Le piège courant : permuter les deux rapports ; diviser par 3 au lieu de √3 donne √2/3 et 1/3 (la somme des carrés vaut alors 1/3) ; diviser par 2 ne respecte pas non plus cos²α + sin²α = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit p = √2 + i. Que vaut p² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 + 2i√2"
+        },
+        {
+          "id": "b",
+          "text": "2 + 2i√2"
+        },
+        {
+          "id": "c",
+          "text": "1 + 2i√2"
+        },
+        {
+          "id": "d",
+          "text": "1 + i√2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe : p² = (√2)² + 2 × √2 × i + i² = 2 + 2i√2 − 1 = 1 + 2i√2 ✓. Contrôle : |p²| = |p|² = 3 et |1 + 2i√2| = √(1 + 8) = 3 ✓. Le piège courant : écrire i² = +1 donne 3 + 2i√2 ; oublier le terme i² (écrire seulement 2 + 2i√2) revient à ne pas retrancher 1 ; oublier le facteur 2 du double produit donne 1 + i√2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\n16z² − 8z + 9 = 0\nQuelles sont ses deux solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = 1/2 + i√2 ou z = 1/2 − i√2"
+        },
+        {
+          "id": "b",
+          "text": "z = 1/4 + √2/2 ou z = 1/4 − √2/2"
+        },
+        {
+          "id": "c",
+          "text": "z = 1/4 + i√2/4 ou z = 1/4 − i√2/4"
+        },
+        {
+          "id": "d",
+          "text": "z = 1/4 + i√2/2 ou z = 1/4 − i√2/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le discriminant est Δ = (−8)² − 4 × 16 × 9 = 64 − 576 = −512 = (16i√2)², car 512 = 256 × 2. Les solutions sont z = (8 ± 16i√2)/32 = 1/4 ± i√2/2 ✓. Contrôle par la somme : 1/4 + 1/4 = 1/2 = −b/a = 8/16. Le piège courant : diviser par 16 au lieu de 2a = 32 double les solutions ; oublier le i, c'est traiter Δ < 0 comme s'il avait une racine réelle et donner des solutions réelles ; prendre 8i√2 comme racine carrée de −512 divise par deux la partie imaginaire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans ℂ, l'équation 16z² − 8z + 9 = 0 a pour solutions deux complexes conjugués non réels, notés Z et Z̄, et w désigne une racine carrée de Z. Combien de solutions l'équation 16z⁴ − 8z² + 9 = 0 admet-elle, et lesquelles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux solutions, une par valeur de Z : w et w̄"
+        },
+        {
+          "id": "b",
+          "text": "Quatre solutions : w, −w, w̄ et −w̄"
+        },
+        {
+          "id": "c",
+          "text": "Deux solutions, celles de l'équation en Z : Z et Z̄"
+        },
+        {
+          "id": "d",
+          "text": "Quatre solutions, avec leurs opposés : Z, −Z, Z̄ et −Z̄"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En posant Z = z², l'équation devient 16Z² − 8Z + 9 = 0 : Z ou Z̄. Chaque valeur de Z a deux racines carrées opposées : z² = Z donne w et −w, et z² = Z̄ donne w̄ et −w̄ (car (w̄)² = Z̄). Les quatre solutions sont donc w, −w, w̄ et −w̄ ✓. Le piège courant : s'arrêter à Z et Z̄, ce qui oublie de revenir à l'inconnue z ; ne garder que w et w̄ oublie les racines opposées ; répondre Z, −Z, Z̄ et −Z̄ confond z et z² : leurs carrés ne valent pas Z et Z̄.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est une racine carrée du nombre complexe 1/4 + i√2/2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√2 − i)/2"
+        },
+        {
+          "id": "b",
+          "text": "(√2 + i)/2"
+        },
+        {
+          "id": "c",
+          "text": "√2 + i"
+        },
+        {
+          "id": "d",
+          "text": "(1 + i√2)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On vérifie que ((√2 + i)/2)² = ((√2)² + 2i√2 + i²)/4 = (2 + 2i√2 − 1)/4 = 1/4 + i√2/2 ✓ (on reconnaît (√2 + i)² = 1 + 2i√2). Le piège courant : (√2 − i)/2 a pour carré 1/4 − i√2/2, le conjugué : c'est une erreur de signe sur la partie imaginaire ; √2 + i a pour carré 1 + 2i√2, quatre fois trop grand : on a oublié de diviser par 2 la racine, donc par 4 son carré ; (1 + i√2)/2 a pour carré −1/4 + i√2/2 : les parties réelle et imaginaire ont été échangées.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit z₀ un complexe non réel et non imaginaire pur. Quelle propriété prouve que les points d'affixes z₀, −z₀, z̄₀ et −z̄₀ sont les sommets d'un rectangle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les quatre points sont à la même distance |z₀| de O : ils sont les sommets d'un carré, puisqu'ils sont sur un cercle de centre O."
+        },
+        {
+          "id": "b",
+          "text": "Les quatre points sont deux à deux symétriques par rapport à l'axe des abscisses : ils forment un rectangle, puisque les ordonnées s'opposent."
+        },
+        {
+          "id": "c",
+          "text": "Les quatre points, distincts, sont sur un même cercle de centre O : quatre points distincts d'un cercle forment toujours un rectangle."
+        },
+        {
+          "id": "d",
+          "text": "Les quatre points sont symétriques deux à deux par rapport à O et à la même distance de O : les diagonales ont même milieu et même longueur."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les points z₀ et −z₀ sont symétriques par rapport à O, ainsi que z̄₀ et −z̄₀ : les segments [z₀, −z₀] et [z̄₀, −z̄₀] ont pour milieu O. Ils ont la même longueur 2|z₀| (car |z̄₀| = |z₀|) : un quadrilatère dont les diagonales ont le même milieu et la même longueur est un rectangle ✓. Le piège courant : des points sur un même cercle ne forment pas forcément un carré (ici les côtés valent 2|Re z₀| et 2|Im z₀|, en général différents) ; une symétrie par rapport à un axe ne suffit pas ; quatre points distincts d'un cercle ne forment pas toujours un rectangle (il suffit de les déplacer sur le cercle).",
+      "difficulty": 3
+    }
+  ]
+}
