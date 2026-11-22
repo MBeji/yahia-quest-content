@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le calcul vectoriel en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le plan est muni d'un repère orthonormé d'origine O. On donne A(−5 ; −10) et B(−1 ; −7). Le point M est défini par AM⃗ = xAB⃗, où x est un réel, et vérifie OM⃗ ⊥ AB⃗ (avec OM⃗ non nul). Donne la valeur de x.",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "AB⃗ a pour composantes (−1 − (−5) ; −7 − (−10)) = (4 ; 3). La relation AM⃗ = xAB⃗ donne AM⃗(4x ; 3x), donc M(−5 + 4x ; −10 + 3x), et ces coordonnées sont aussi les composantes de OM⃗. Dans un repère orthonormé, OM⃗ ⊥ AB⃗ s'écrit 4(−5 + 4x) + 3(−10 + 3x) = 0, soit −20 + 16x − 30 + 9x = 0, donc 25x = 50 et x = 2. Contrôle : M(3 ; −4) et 3 × 4 + (−4) × 3 = 0 ; M n'appartient pas au segment [AB] (x > 1), ce qui ne gêne pas la condition, qui porte sur la droite (AB).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "ABC est un triangle, I le milieu de [BC] et G son centre de gravité. Quelles égalités sont vraies ? (Pour les égalités contenant M, M désigne un point quelconque du plan.) Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "GA⃗ = 2GI⃗"
+        },
+        {
+          "id": "b",
+          "text": "MA⃗ + 2MI⃗ = 3MG⃗"
+        },
+        {
+          "id": "c",
+          "text": "MA⃗ + MI⃗ = 2MG⃗"
+        },
+        {
+          "id": "d",
+          "text": "GA⃗ = 2IG⃗"
+        },
+        {
+          "id": "e",
+          "text": "AG⃗ = 2GI⃗"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Comme I est le milieu de [BC], MB⃗ + MC⃗ = 2MI⃗ pour tout point M ; la relation MA⃗ + MB⃗ + MC⃗ = 3MG⃗ devient alors MA⃗ + 2MI⃗ = 3MG⃗ : l'égalité MA⃗ + 2MI⃗ = 3MG⃗ est vraie. Avec AG⃗ = (2/3)AI⃗ on a GI⃗ = AI⃗ − AG⃗ = (1/3)AI⃗, donc AG⃗ = 2GI⃗ : cette égalité est vraie, et son opposé donne GA⃗ = −2GI⃗ = 2IG⃗, vraie elle aussi. En revanche GA⃗ = 2GI⃗ est fausse : GA⃗ et GI⃗ sont de sens contraires, ils ne peuvent pas être positivement proportionnels. Et MA⃗ + MI⃗ = 2MG⃗ est fausse : en prenant M = G, elle donnerait GA⃗ + GI⃗ = 0⃗, c'est-à-dire G milieu de [AI], alors que G est aux deux tiers de [AI] à partir de A.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "(i⃗, j⃗) est une base du plan et k un réel. Pour quelles valeurs de k le couple (i⃗ + kj⃗, ki⃗ + j⃗) est-il lui aussi une base ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pour tout réel k sauf k = 0 seulement"
+        },
+        {
+          "id": "b",
+          "text": "Pour tout réel k sauf k = 1 et k = −1"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout réel k sauf k = 1 seulement"
+        },
+        {
+          "id": "d",
+          "text": "Pour tout réel k, sans aucune exception"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans la base (i⃗, j⃗), les deux vecteurs ont pour composantes (1 ; k) et (k ; 1). Ils forment une base si et seulement s'ils ne sont pas colinéaires, c'est-à-dire si leur déterminant est non nul : 1 × 1 − k × k = 1 − k² = (1 − k)(1 + k). Ce déterminant s'annule pour k = 1 et pour k = −1, et seulement pour ces deux valeurs ✓. Contrôle : pour k = 1 les deux vecteurs sont égaux à i⃗ + j⃗ ; pour k = −1 ils valent i⃗ − j⃗ et −i⃗ + j⃗, opposés l'un de l'autre : dans les deux cas ils sont colinéaires. Pour k = 0 en revanche, on retrouve i⃗ et j⃗, qui forment bien une base, ce qui écarte l'exclusion de 0 ; exclure seulement 1 oublie le cas des vecteurs opposés ; et affirmer qu'aucune valeur n'est exclue ignore ces deux cas de colinéarité.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABCD est un rectangle tel que AB = 2AD. I est le milieu de [AB]. On munit le plan du repère orthonormé (A, AI⃗, AD⃗). Le point E est défini par DE⃗ = (2/3)DI⃗. Les points A, E et C sont alignés : AC⃗ = λAE⃗. Donne la valeur de λ.",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Comme AB = 2AD et I est le milieu de [AB], AI = AD ; dans le repère (A, AI⃗, AD⃗) on a A(0 ; 0), I(1 ; 0), B(2 ; 0), D(0 ; 1) et C(2 ; 1). Alors DI⃗(1 ; −1), donc DE⃗(2/3 ; −2/3) et E(0 + 2/3 ; 1 − 2/3) = (2/3 ; 1/3). Les composantes sont AE⃗(2/3 ; 1/3) et AC⃗(2 ; 1). Déterminant : 2 × 1/3 − 2/3 × 1 = 0, donc AE⃗ et AC⃗ sont colinéaires et A, E, C sont alignés. Enfin 2 = λ × 2/3 donne λ = 3, et 1 = 3 × 1/3 le confirme : AC⃗ = 3AE⃗.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est un triangle et G son centre de gravité. Les points P, Q et R sont définis par AP⃗ = (1/3)AB⃗, BQ⃗ = (1/3)BC⃗ et CR⃗ = (1/3)CA⃗. Pour tout point M du plan, à quoi est égale la somme MP⃗ + MQ⃗ + MR⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MG⃗"
+        },
+        {
+          "id": "b",
+          "text": "9MG⃗"
+        },
+        {
+          "id": "c",
+          "text": "3MG⃗"
+        },
+        {
+          "id": "d",
+          "text": "(1/3)MG⃗"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour tout point M, MP⃗ = MA⃗ + AP⃗ = MA⃗ + (1/3)(MB⃗ − MA⃗) = (2/3)MA⃗ + (1/3)MB⃗. De même MQ⃗ = (2/3)MB⃗ + (1/3)MC⃗ et MR⃗ = (2/3)MC⃗ + (1/3)MA⃗. En additionnant, chaque vecteur MA⃗, MB⃗, MC⃗ apparaît avec le coefficient 2/3 + 1/3 = 1 : MP⃗ + MQ⃗ + MR⃗ = MA⃗ + MB⃗ + MC⃗ = 3MG⃗ ✓. En particulier, pour M = G, on obtient GP⃗ + GQ⃗ + GR⃗ = 0⃗ : G est aussi le centre de gravité du triangle PQR. Le résultat MG⃗ oublierait que le centre de gravité d'un triangle se compte avec trois vecteurs, et (1/3)MG⃗ comme 9MG⃗ viennent d'une erreur sur le facteur 3 de la relation MA⃗ + MB⃗ + MC⃗ = 3MG⃗.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un parallélogramme. Le point E est défini par BE⃗ = −2BC⃗, et la droite (AE) coupe la droite (DC) en F. Quelle relation lie DC⃗ et DF⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DC⃗ = −2DF⃗"
+        },
+        {
+          "id": "b",
+          "text": "DC⃗ = 2DF⃗"
+        },
+        {
+          "id": "c",
+          "text": "DC⃗ = −(1/2)DF⃗"
+        },
+        {
+          "id": "d",
+          "text": "DC⃗ = (1/2)DF⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le triangle EAB, le point C est sur (EB) et F sur (EA), avec (CF) parallèle à (AB) puisque (DC) ∥ (AB). Comme BE⃗ = −2BC⃗, on a EB⃗ = 2BC⃗, donc EC⃗ = EB⃗ + BC⃗ = 3BC⃗ = (3/2)EB⃗. Par la forme vectorielle de Thalès, EF⃗ = (3/2)EA⃗ et CF⃗ = (3/2)BA⃗. Or BA⃗ = CD⃗ (parallélogramme), donc CF⃗ = (3/2)CD⃗. Alors DF⃗ = DC⃗ + CF⃗ = DC⃗ + (3/2)CD⃗ = DC⃗ − (3/2)DC⃗ = −(1/2)DC⃗, d'où DC⃗ = −2DF⃗ ✓. Contrôle en repère (A, AB⃗, AD⃗) : E(1 ; −2), F(−1/2 ; 1), D(0 ; 1), C(1 ; 1) donnent DF⃗(−1/2 ; 0) et DC⃗(1 ; 0). Le coefficient 2 sans signe oublierait que F est du côté de D opposé à C, et les coefficients 1/2 inversent le rapport.",
+      "difficulty": 3
+    }
+  ]
+}

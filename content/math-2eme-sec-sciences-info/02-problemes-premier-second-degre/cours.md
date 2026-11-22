@@ -77,14 +77,14 @@ Le réel **Δ = b² − 4ac** s'appelle le **discriminant** de l'équation. Tout
 | signe de Δ | nombre de racines | racines                                            |
 | ---------- | ----------------- | -------------------------------------------------- |
 | Δ < 0      | aucune racine     | —                                                  |
-| Δ = 0      | une racine double | x₀ = −b/(2a)                                       |
+| Δ = 0      | une seule racine  | x₀ = −b/(2a)                                       |
 | Δ > 0      | deux racines      | x₁ = (−b − √Δ)/(2a) **et** x₂ = (−b + √Δ)/(2a)     |
 
-Toute solution de ax² + bx + c = 0 est aussi appelée **racine** de cette équation.
+Toute solution de ax² + bx + c = 0 est aussi appelée **racine** de cette équation. (Quand Δ = 0, on dit aussi parfois « racine double » : c'est un usage courant ; le manuel dit « l'équation a une seule racine ».)
 
 _Exemple détaillé_ : x² − 5x + 6 = 0 donne Δ = (−5)² − 4 × 1 × 6 = 25 − 24 = 1 > 0, donc √Δ = 1 et les racines sont (5 − 1)/2 = **2** et (5 + 1)/2 = **3** ✓.
 
-**Discriminant réduit.** Quand b est pair, on pose b = 2b' et on gagne du temps avec Δ' = b'² − ac (on a Δ = 4Δ') : si Δ' = 0 la racine double est x₀ = −b'/a, et si Δ' > 0 les racines sont (−b' − √Δ')/a et (−b' + √Δ')/a.
+**Discriminant réduit.** Quand b est pair, on pose b = 2b' et on gagne du temps avec Δ' = b'² − ac (on a Δ = 4Δ') : si Δ' = 0 l'équation a une seule racine x₀ = −b'/a, et si Δ' > 0 les racines sont (−b' − √Δ')/a et (−b' + √Δ')/a.
 
 _Exemple détaillé_ : 5x² − 16x + 3 = 0 avec b' = −8 : Δ' = 64 − 5 × 3 = 49, √Δ' = 7, donc les racines sont (8 − 7)/5 = **1/5** et (8 + 7)/5 = **3** ✓.
 
@@ -92,11 +92,13 @@ _Exemple détaillé_ : 5x² − 16x + 3 = 0 avec b' = −8 : Δ' = 64 − 5 × 3
 
 ## 🔑 Somme et produit des racines
 
-Lorsque l'équation admet deux racines x₁ et x₂ (Δ ≥ 0) :
+Lorsque Δ > 0, l'équation admet deux racines x₁ et x₂, et :
 
 $$ S = x₁ + x₂ = −b/a $$
 
 $$ P = x₁ · x₂ = c/a $$
+
+(Si Δ = 0, l'équation a une seule racine x₀ = −b/(2a), et les formules restent vraies en prenant x₁ = x₂ = x₀ : 2x₀ = −b/a et x₀² = c/a.)
 
 Deux cas particuliers font gagner un temps précieux :
 
@@ -154,11 +156,11 @@ _Exemple détaillé_ : (x − 1)(−2x + 3) ≥ 0. Le facteur x − 1 est négat
 
 ## 🔄 Les équations qui se ramènent au second degré
 
-- **Bicarrée** ax⁴ + bx² + c = 0 : on pose X = x², on résout aX² + bX + c = 0, puis on revient à x en ne gardant que les X ≥ 0 (chaque X > 0 donne deux valeurs de x, opposées).
+- **Équation du type ax⁴ + bx² + c = 0** (on dit couramment « bicarrée ») : on pose X = x², on résout aX² + bX + c = 0, puis on revient à x en ne gardant que les X ≥ 0 (chaque X > 0 donne deux valeurs de x, opposées).
 - **Fractionnaire** : ensemble de résolution d'abord, puis on multiplie par le dénominateur pour obtenir une équation du second degré, puis on écarte les valeurs interdites.
 - **Irrationnelle** : √A = B équivaut à « A = B² **et** B ≥ 0 ». Élever au carré peut créer de fausses solutions : la **vérification est obligatoire**.
 
-_Exemple détaillé_ (bicarrée) : x⁴ − 5x² + 4 = 0. Avec X = x² : X² − 5X + 4 = 0, Δ = 25 − 16 = 9, donc X = 1 ou X = 4. On revient à x : x² = 1 donne x = −1 ou x = 1, et x² = 4 donne x = −2 ou x = 2. Les solutions sont **−2, −1, 1 et 2** ✓.
+_Exemple détaillé_ (type ax⁴ + bx² + c = 0) : x⁴ − 5x² + 4 = 0. Avec X = x² : X² − 5X + 4 = 0, Δ = 25 − 16 = 9, donc X = 1 ou X = 4. On revient à x : x² = 1 donne x = −1 ou x = 1, et x² = 4 donne x = −2 ou x = 2. Les solutions sont **−2, −1, 1 et 2** ✓.
 
 _Exemple détaillé_ (fractionnaire) : x + 8/x = 6. **L'ensemble de résolution d'abord** : le dénominateur x s'annule en 0, donc on résout sur ℝ \ {0}. On **multiplie les deux membres par x** (ce qui revient à tout mettre au même dénominateur x, puis à annuler le numérateur) : x² + 8 = 6x, d'où l'équation du second degré **x² − 6x + 8 = 0**. Son discriminant vaut Δ = (−6)² − 4 × 1 × 8 = 36 − 32 = 4, donc √Δ = 2 et les racines sont (6 − 2)/2 = **2** et (6 + 2)/2 = **4**. **Retour à l'ensemble de résolution** : 2 ≠ 0 et 4 ≠ 0, les deux valeurs sont donc acceptées ✓ (vérification : 2 + 8/2 = 2 + 4 = 6, et 4 + 8/4 = 4 + 2 = 6). Si l'une des racines trouvées avait été 0, il aurait fallu la **rejeter** : une valeur interdite n'est jamais solution de l'équation de départ.
 

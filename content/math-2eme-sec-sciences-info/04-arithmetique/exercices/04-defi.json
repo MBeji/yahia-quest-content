@@ -1,0 +1,134 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Restes, combinaisons et critères en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Sans poser l'opération, détermine le reste de la division euclidienne de 909092 par 11.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "7"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On numérote les chiffres de droite à gauche : les rangs impairs portent 2, 0 et 0, les rangs pairs portent 9, 9 et 9. Donc S₁ = 2 et S₂ = 27, d'où d = 2 − 27 = −25. Comme d < 0, on prend le plus petit entier naturel p tel que d + 11p ≥ 0 : 11 × 2 = 22 ne suffit pas (−25 + 22 = −3), alors que p = 3 donne −25 + 33 = 8. Le reste vaut donc 8 ✓ (on vérifie 909092 = 11 × 82644 + 8). Le piège courant est de ne retenir que la valeur absolue de d : 25 = 11 × 2 + 3 donne 3, et c'est aussi ce qu'on obtient en numérotant les rangs de gauche à droite (d = +25). Le nombre 7 est le reste de la somme des chiffres, 29 = 11 × 2 + 7, qui applique à 11 le critère de 3 et de 9. Un p plus grand, comme p = 4, donnerait −25 + 44 = 19, qui n'est pas un reste puisqu'il dépasse 11 ; c'est pourquoi le critère demande le plus petit p. Le nombre 2 est le reste de 909092 dans la division par 9 (29 = 9 × 3 + 2) : c'est le critère de 9, pas celui de 11.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces cinq affirmations sur la divisibilité, lesquelles sont démontrables à coup sûr ? Coche-les toutes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si n divise a et divise 3a + 5b, alors n divise forcément 5b."
+        },
+        {
+          "id": "b",
+          "text": "Si n divise x + y et divise x − y, alors n divise forcément x."
+        },
+        {
+          "id": "c",
+          "text": "Si 6 divise le produit ab, alors 6 divise a ou 6 divise b."
+        },
+        {
+          "id": "d",
+          "text": "Un entier dont les deux derniers chiffres forment 76 laisse le reste 1 dans la division par 25."
+        },
+        {
+          "id": "e",
+          "text": "Si PGCD(a ; b) = 1, alors a et b sont des nombres premiers."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "d"
+        ]
+      },
+      "explanation": "Vraie : 5b = (3a + 5b) − 3a, différence de deux multiples de n (le second est un multiple de a, donc de n), donc n divise 5b. Vraie : le nombre formé par les deux derniers chiffres donne le reste par 25, et 76 = 25 × 3 + 1. Fausse : n = 2, x = y = 1 donne x + y = 2 et x − y = 0, tous deux divisibles par 2, alors que 2 ne divise pas 1 ; on peut seulement conclure que n divise la somme (x + y) + (x − y) = 2x. Fausse : 6 divise 2 × 3 = 6, mais 6 ne divise ni 2 ni 3. Fausse : 328 = 2³ × 41 et 299 = 13 × 23 sont premiers entre eux sans être premiers ; premiers entre eux veut seulement dire sans facteur premier commun.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève veut prouver que, pour tout entier naturel n, le nombre n(n² + 5) est divisible par 3. Il écrit :\n(1) n s'écrit 3k, 3k + 1 ou 3k + 2, avec k entier naturel ;\n(2) si n = 3k, alors n(n² + 5) = 3k(9k² + 5), qui est divisible par 3 ;\n(3) si n = 3k + 1, alors n² + 5 = 9k² + 6k + 5 = 3(3k² + 2k + 1) + 2, qui laisse le reste 2 : n(n² + 5) n'est pas divisible par 3 ;\n(4) la propriété est donc fausse.\nQuelle étape est fautive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1 : il faut aussi traiter le cas n = 3k + 3"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2 : un facteur multiple de 3 ne suffit pas, il faut aussi que 9k² + 5 le soit"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3 : le développement de (3k + 1)² oublie un terme"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : un seul cas qui échoue ne permet pas de conclure"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans l'étape 3, (3k + 1)² = 9k² + 6k + 1, et non 9k² + 6k : donc n² + 5 = 9k² + 6k + 6 = 3(3k² + 2k + 2), qui est divisible par 3 (pour k = 0 : n = 1 et n² + 5 = 6). Le cas 3k + 2 se traite de la même façon : (3k + 2)² + 5 = 9k² + 12k + 9, divisible par 3 ; la propriété est vraie. L'écriture en trois cas est complète, car 3k + 3 = 3(k + 1) est déjà du type 3k. Dans l'étape 2, il suffit qu'un seul facteur du produit soit multiple de 3 : si n divise x, alors n divise px. Enfin, un seul cas réellement en échec suffirait à réfuter la propriété, mais ici ce cas vient d'un calcul faux. Cette question est une chasse à l'erreur : la réponse est l'étape fausse, le piège étant le terme 1 oublié dans le carré.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On cherche les entiers naturels n tels que (n + 22)/(n + 4) soit un entier. Donne la somme de toutes les valeurs possibles de n.",
+      "answerKey": {
+        "value": 21
+      },
+      "explanation": "Si n + 4 divise n + 22 et n + 4, alors n + 4 divise la différence (n + 22) − (n + 4) = 18. Comme n est un entier naturel, n + 4 ≥ 4 : parmi les diviseurs de 18 (1, 2, 3, 6, 9, 18), seuls 6, 9 et 18 conviennent, d'où n = 2, 5 ou 14. Vérification : 24/6 = 4, 27/9 = 3 et 36/18 = 2. La somme vaut 2 + 5 + 14 = 21. Le piège courant est de garder aussi 1, 2 et 3, qui donneraient des valeurs négatives de n, ou d'oublier le grand diviseur 18 : on obtiendrait 7 au lieu de 21.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un marchand possède sept caisses contenant respectivement 4, 7, 10, 12, 13, 16 et 19 jetons. Chaque caisse ne contient que des jetons d'une seule couleur, rouge ou noire. Il vend une caisse, puis constate que, dans les six caisses restantes, il y a exactement deux fois plus de jetons rouges que de jetons noirs. Combien y a-t-il de jetons noirs dans ces six caisses ?",
+      "answerKey": {
+        "value": 23
+      },
+      "explanation": "Si N est le nombre de jetons noirs restants, le nombre de jetons rouges est 2N et le total restant vaut 3N : c'est un multiple de 3. Le total des sept caisses vaut 4 + 7 + 10 + 12 + 13 + 16 + 19 = 81, multiple de 3. La caisse vendue doit donc contenir un multiple de 3 de jetons, car 81 − x n'est un multiple de 3 que si x l'est : c'est la caisse de 12 (les autres laissent le reste 1 dans la division par 3). Il reste 81 − 12 = 69 jetons, et N = 69 ÷ 3 = 23. Cette répartition existe : 4 + 19 = 7 + 16 = 23 noirs, et les quatre autres caisses donnent 46 rouges. Le piège courant est de répondre 12, la caisse vendue, au lieu du nombre de jetons noirs demandé.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel est le plus petit entier naturel supérieur ou égal à 100 qui laisse le reste 1 dans la division par 4, dans la division par 6 et dans la division par 10 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "101"
+        },
+        {
+          "id": "b",
+          "text": "121"
+        },
+        {
+          "id": "c",
+          "text": "181"
+        },
+        {
+          "id": "d",
+          "text": "241"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Si n laisse le reste 1 dans les trois divisions, alors n − 1 est un multiple de 4, de 6 et de 10, donc un multiple de leur PPCM. Or 4 = 2², 6 = 2 × 3 et 10 = 2 × 5 donnent PPCM = 2² × 3 × 5 = 60. Les entiers cherchés sont donc 60k + 1 : 1, 61, 121, 181… Le plus petit qui soit supérieur ou égal à 100 est 121 ✓ (121 = 4 × 30 + 1 = 6 × 20 + 1 = 10 × 12 + 1). Le piège courant est de prendre 101 parce qu'il laisse le reste 1 par 4 et par 10 : mais 101 = 6 × 16 + 5. Le nombre 241 vient du produit 4 × 6 × 10 = 240 pris pour le PPCM : il convient, mais n'est pas le plus petit. Le nombre 181 convient aussi, mais vient après 121.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le second degré en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles équations admettent exactement deux racines distinctes ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² − 6x + 9 = 0"
+        },
+        {
+          "id": "b",
+          "text": "2x² − 3x − 2 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x² + 4x + 5 = 0"
+        },
+        {
+          "id": "d",
+          "text": "3x² − 12 = 0"
+        },
+        {
+          "id": "e",
+          "text": "−x² + x + 6 = 0"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On calcule Δ pour chacune. x² − 6x + 9 = 0 : Δ = 36 − 36 = 0, une seule racine (x = 3). 2x² − 3x − 2 = 0 : Δ = 9 + 16 = 25 > 0, deux racines (2 et −1/2). x² + 4x + 5 = 0 : Δ = 16 − 20 = −4 < 0, aucune racine. 3x² − 12 = 0 : ici b = 0 et Δ = 0 − 4 × 3 × (−12) = 144 > 0, deux racines (−2 et 2) ; le signe opposé de a et c suffit à rendre Δ positif. −x² + x + 6 = 0 : Δ = 1 + 24 = 25 > 0, deux racines (−2 et 3). Seules ces trois équations ont Δ > 0.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soit m un réel strictement positif. L'équation 2x² + mx + 8 = 0 a une seule racine. Donne la valeur de m.",
+      "answerKey": {
+        "value": 8
+      },
+      "explanation": "Une seule racine signifie Δ = 0. Ici Δ = m² − 4 × 2 × 8 = m² − 64, donc m² = 64 et m = 8 ou m = −8. Comme m > 0, on garde m = 8. Contrôle : 2x² + 8x + 8 = 2(x + 2)², qui ne s'annule qu'en x = −2 ✓ (et x₀ = −m/(2a) = −8/4 = −2).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Soient x₁ et x₂ les deux racines de l'équation x² − 5x + 3 = 0. Donne la valeur de x₁² + x₂².",
+      "answerKey": {
+        "value": 19
+      },
+      "explanation": "Δ = 25 − 12 = 13 > 0 : les deux racines existent. La somme vaut S = −b/a = 5 et le produit P = c/a = 3. Comme (x₁ + x₂)² = x₁² + 2x₁x₂ + x₂², on a x₁² + x₂² = S² − 2P = 25 − 6 = 19. Contrôle numérique : x₁ ≈ 4,303 et x₂ ≈ 0,697, d'où x₁² + x₂² ≈ 18,51 + 0,49 = 19 ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une pierre est lancée vers le haut depuis un point situé à 25 m du sol. Sa hauteur (en m) à l'instant t (en s, t ≥ 0) est h(t) = −5t² + 20t + 25. À quel instant touche-t-elle le sol ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "t = 2 s"
+        },
+        {
+          "id": "b",
+          "text": "t = 5 s"
+        },
+        {
+          "id": "c",
+          "text": "t = 1 s"
+        },
+        {
+          "id": "d",
+          "text": "t = 4 s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La pierre touche le sol quand h(t) = 0, soit −5t² + 20t + 25 = 0, ou encore t² − 4t − 5 = 0. Ici a − b + c = 1 + 4 − 5 = 0, donc −1 est racine et l'autre vaut −c/a = 5. Comme t ≥ 0, on rejette −1 : la pierre touche le sol à t = 5 s ✓ (h(5) = −125 + 100 + 25 = 0). L'instant t = 2 s est celui du sommet, où la hauteur est maximale (h(2) = 45 m), pas nulle. La valeur t = 1 vient de la racine −1 prise en valeur absolue, alors qu'elle n'est pas dans l'ensemble des temps possibles. La valeur t = 4 est la somme des racines (−1 + 5), qui n'est pas une racine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résous l'inéquation (x² − x − 6)/(x − 1) ≤ 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; −2] ∪ [1 ; 3]"
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; −2[ ∪ ]1 ; 3["
+        },
+        {
+          "id": "c",
+          "text": "[−2 ; 1[ ∪ [3 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; −2] ∪ ]1 ; 3]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le numérateur x² − x − 6 a pour discriminant 25 et pour racines −2 et 3 ; il est positif à l'extérieur de ces racines (a = 1 > 0) et négatif entre elles. Le dénominateur x − 1 s'annule en 1, valeur interdite, négatif avant 1 et positif après. Le tableau donne le quotient : négatif sur ]−∞ ; −2[, positif sur ]−2 ; 1[, négatif sur ]1 ; 3[, positif sur ]3 ; +∞[. L'inégalité est large : on garde −2 et 3 qui annulent le quotient, mais jamais 1. D'où ]−∞ ; −2] ∪ ]1 ; 3] ✓ (contrôle : x = 2 donne −4/1 = −4 ≤ 0, x = 0 donne 6 > 0). L'ensemble qui contient [1 ; 3] accepte la valeur interdite ; celui aux bornes ouvertes en −2 et 3 oublie que l'inégalité est large ; celui avec [−2 ; 1[ ∪ [3 ; +∞[ est le signe opposé, celui de l'inéquation ≥ 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Résous dans ℝ l'équation 2x⁴ − 3x² − 2 = 0 (on pose X = x²).",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−√2 ; √2}"
+        },
+        {
+          "id": "b",
+          "text": "{2 ; −1/2}"
+        },
+        {
+          "id": "c",
+          "text": "{√2}"
+        },
+        {
+          "id": "d",
+          "text": "{−√2 ; √2 ; −√2/2 ; √2/2}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On pose X = x² : 2X² − 3X − 2 = 0, Δ = 9 + 16 = 25, donc X = (3 − 5)/4 = −1/2 ou X = (3 + 5)/4 = 2. Il faut X = x² ≥ 0 : on écarte X = −1/2, car un carré n'est jamais négatif. Reste x² = 2, soit x = −√2 ou x = √2. L'ensemble des solutions est {−√2 ; √2} ✓ (contrôle : 2 × 4 − 3 × 2 − 2 = 0). La réponse {2 ; −1/2} s'arrête aux valeurs de X sans revenir à x ; {√2} oublie la valeur opposée −√2 ; et {−√2 ; √2 ; −√2/2 ; √2/2} invente des solutions à partir de X = −1/2, alors que x² = −1/2 est impossible dans ℝ (contrôle : x = √2/2 donne 2 × 1/4 − 3/2 − 2 = −3 ≠ 0).",
+      "difficulty": 3
+    }
+  ]
+}

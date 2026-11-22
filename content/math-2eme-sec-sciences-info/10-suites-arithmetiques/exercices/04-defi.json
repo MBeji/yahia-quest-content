@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les suites arithmétiques en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles suites, définies pour tout entier naturel n, sont arithmétiques ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uₙ = (n + 1)² − n²"
+        },
+        {
+          "id": "b",
+          "text": "Uₙ = n(n + 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "Uₙ = 7"
+        },
+        {
+          "id": "d",
+          "text": "Uₙ = (2n + 3)/(n + 1)"
+        },
+        {
+          "id": "e",
+          "text": "Uₙ = (4 − 3n)/5"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le test est le calcul littéral de Uₙ₊₁ − Uₙ, qui doit être indépendant de n. Pour (n + 1)² − n², on développe : Uₙ = 2n + 1, donc Uₙ₊₁ − Uₙ = 2 : suite arithmétique de raison 2. Pour Uₙ = 7, la différence vaut 0 : suite arithmétique de raison nulle, tous les termes sont égaux. Pour (4 − 3n)/5, la différence vaut −3/5 : suite arithmétique. En revanche n(n + 1)/2 donne les nombres triangulaires 0, 1, 3, 6, dont la différence Uₙ₊₁ − Uₙ = n + 1 dépend de n ; et (2n + 3)/(n + 1) = 2 + 1/(n + 1) donne 3, 5/2, 7/3, avec des écarts −1/2 puis −1/6 qui ne sont pas constants.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour quelle valeur du réel x les trois nombres x − 2 ; 2x + 1 ; 4x − 3 sont-ils trois termes consécutifs d'une suite arithmétique ?",
+      "answerKey": {
+        "value": 7
+      },
+      "explanation": "Le terme du milieu est la moyenne arithmétique des deux autres : 2x + 1 = ((x − 2) + (4x − 3))/2, soit 2(2x + 1) = 5x − 5, donc 4x + 2 = 5x − 5 et x = 7. Vérification : les trois nombres valent 5 ; 15 ; 25, l'écart est 10 les deux fois, la raison est constante ✓.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les points Aₙ(n ; Uₙ) d'une suite arithmétique sont tous situés sur la droite qui passe par B(2 ; 7) et C(6 ; −1). Que vaut S = U₀ + U₁ + … + U₂₀ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−378"
+        },
+        {
+          "id": "b",
+          "text": "−200"
+        },
+        {
+          "id": "c",
+          "text": "−189"
+        },
+        {
+          "id": "d",
+          "text": "−180"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La droite BC a pour pente (−1 − 7)/(6 − 2) = −2, donc la raison est r = −2. Comme B appartient à la droite, U₂ = 7, d'où U₀ = U₂ − 2r = 7 + 4 = 11 et Uₙ = 11 − 2n. Le dernier terme est U₂₀ = 11 − 40 = −29, et la somme compte 20 − 0 + 1 = 21 termes : S = 21 × (11 + (−29))/2 = 21 × (−9) = −189 ✓. La valeur −180 = 20 × (11 + (−29))/2 compte 20 termes au lieu de 21 : le « + 1 » a été oublié. La valeur −378 oublie de diviser par 2. La valeur −200 additionne les termes de U₁ à U₂₀ seulement, en omettant U₀.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la somme de tous les multiples de 7 compris entre 100 et 1000 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "69237"
+        },
+        {
+          "id": "b",
+          "text": "70336"
+        },
+        {
+          "id": "c",
+          "text": "71071"
+        },
+        {
+          "id": "d",
+          "text": "140672"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le plus petit multiple de 7 supérieur à 100 est 105 = 7 × 15 (car 7 × 14 = 98 < 100). Le plus grand multiple inférieur à 1000 est 994 = 7 × 142 (car 7 × 143 = 1001 > 1000). Ces multiples forment une suite arithmétique de raison 7, de 7 × 15 à 7 × 142 : il y en a 142 − 15 + 1 = 128. La somme vaut 128 × (105 + 994)/2 = 64 × 1099 = 70336 ✓. La valeur 71071 part du multiple 7 au lieu de 105. La valeur 140672 oublie la division par 2. La valeur 69237 = 126 × 1099/2 compte 142 − 15 − 1 = 126 termes : on a retranché 1 au lieu d'ajouter 1.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une suite arithmétique vérifie U₅ = 19 et U₁₇ = −17. Donne la valeur de S = U₀ + U₁ + … + U₁₀.",
+      "answerKey": {
+        "value": 209
+      },
+      "explanation": "La raison vaut r = (U₁₇ − U₅)/(17 − 5) = (−17 − 19)/12 = −3. Alors U₀ = U₅ − 5r = 19 + 15 = 34 et U₁₀ = U₅ + 5r = 19 − 15 = 4. La somme compte 10 − 0 + 1 = 11 termes : S = 11 × (34 + 4)/2 = 11 × 19 = 209. Contrôle : les termes 34, 31, 28, …, 4 s'additionnent bien à 209.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les trois premiers termes d'une suite sont U₀ = 1, U₁ = 4 et U₂ = 7. Laquelle de ces définitions donne ces trois termes sans que la suite soit arithmétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uₙ = 100 − 3 × (33 − n)"
+        },
+        {
+          "id": "b",
+          "text": "Uₙ = 4 + 3 × (n − 1)"
+        },
+        {
+          "id": "c",
+          "text": "Uₙ = 7 − 3 × (2 − n)"
+        },
+        {
+          "id": "d",
+          "text": "Uₙ = n³ − 3n² + 5n + 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les trois premières différences successives ne prouvent rien : il faut calculer Uₙ₊₁ − Uₙ pour tout n. Avec Uₙ = n³ − 3n² + 5n + 1, on trouve bien 1, 4 et 7, mais U₃ = 27 − 27 + 15 + 1 = 16 : les écarts valent 3, 3 puis 9, la différence n'est pas constante et la suite n'est pas arithmétique ✓. Les trois autres définitions se réduisent toutes à Uₙ = 3n + 1 : 100 − 3 × (33 − n) = 3n + 1, 4 + 3 × (n − 1) = 3n + 1 et 7 − 3 × (2 − n) = 3n + 1 ; ce sont des suites arithmétiques de raison 3 qui redonnent les mêmes trois termes.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les suites géométriques en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Pour tout entier naturel n, quelles suites sont géométriques ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ = 3^(2n + 1)"
+        },
+        {
+          "id": "b",
+          "text": "uₙ = 2ⁿ + 2ⁿ⁺¹"
+        },
+        {
+          "id": "c",
+          "text": "uₙ = n × 2ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "uₙ = 4ⁿ − 3ⁿ"
+        },
+        {
+          "id": "e",
+          "text": "uₙ = 4 × (−1)ⁿ"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Pour 3^(2n + 1), le quotient uₙ₊₁/uₙ = 3^(2n + 3)/3^(2n + 1) = 3² = 9 ne dépend pas de n : raison 9. Pour 2ⁿ + 2ⁿ⁺¹, on factorise : 2ⁿ(1 + 2) = 3 × 2ⁿ, de la forme u₀ qⁿ avec u₀ = 3 et q = 2. Pour 4 × (−1)ⁿ, le quotient vaut −1 : raison −1, les termes alternent entre 4 et −4. En revanche n × 2ⁿ donne 0 ; 2 ; 8 ; 24, et le terme 0 suivi de 2 est impossible, puisque 0 × q = 0 pour tout q ; et 4ⁿ − 3ⁿ donne 0 ; 1 ; 7 ; 37, dont les quotients 7 puis 37/7 ne sont pas égaux : la soustraction casse le quotient constant.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "(uₙ) est une suite géométrique avec u₂ = 12 et u₅ = −96. Donne la valeur de u₈.",
+      "answerKey": {
+        "value": 768
+      },
+      "explanation": "De u₅ = u₂ q³ on tire q³ = −96/12 = −8, donc q = −2 : l'exposant 3 est impair, la raison est unique. Alors u₈ = u₅ q³ = −96 × (−8) = 768. Contrôle de proche en proche : 12 ; −24 ; 48 ; −96 ; 192 ; −384 ; 768. Les termes alternent bien, comme le veut une raison négative.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève calcule la somme A = 5 + 15 + 45 + … + 3645 ainsi : (1) la raison est 15/5 = 3 ; (2) 3645 = 5 × 3⁶ ; (3) il y a donc 6 termes ; (4) A = 5 × (1 − 3⁶)/(1 − 3) = 5 × 364 = 1820. Le résultat est faux. Quelle est l'étape fautive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 3 : l'exposant du dernier terme est pris pour le nombre de termes"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2 : 3645 ne s'écrit pas comme 5 multiplié par une puissance de 3"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 1 : la raison se calcule en divisant le premier terme par le second"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : la formule demande de diviser par q − 1, jamais par 1 − q"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les exposants vont de 0 à 6 : cela fait 7 termes, et non 6. L'étape 3 confond l'exposant du dernier terme avec le nombre de termes. Avec n = 7 : A = 5 × (1 − 3⁷)/(1 − 3) = 5 × 1093 = 5465 ✓ ; on peut aussi l'obtenir en ajoutant le dernier terme à la somme obtenue : 1820 + 3645 = 5465. L'étape 1 est correcte, car la raison est le terme suivant divisé par le précédent. L'étape 2 l'est aussi : 5 × 729 = 3645. L'étape 4 applique correctement la formule, car (1 − qⁿ)/(1 − q) et (qⁿ − 1)/(q − 1) sont égaux : l'erreur ne vient que du nombre de termes retenu. Cette question est une chasse à l'erreur : la réponse est l'étape fausse.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les points Aₙ(n ; uₙ) d'une suite géométrique (uₙ) sont placés ci-dessous ; seuls les rangs 1, 2 et 3 sont marqués. Que vaut u₆ ?\n<svg viewBox=\"0 0 300 260\"><path d=\"M50 20 V240 M40 150 H280\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"><path d=\"M110 150 V120 M170 150 V210 M230 150 V30\"/></g><g fill=\"#0f6e56\"><circle cx=\"110\" cy=\"120\" r=\"4.2\"/><circle cx=\"170\" cy=\"210\" r=\"4.2\"/><circle cx=\"230\" cy=\"30\" r=\"4.2\"/></g><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"110\" y=\"112\">6</text><text x=\"170\" y=\"228\">−12</text><text x=\"230\" y=\"22\">24</text><text x=\"50\" y=\"166\">0</text><text x=\"110\" y=\"166\">1</text><text x=\"170\" y=\"166\">2</text><text x=\"230\" y=\"166\">3</text><text x=\"290\" y=\"166\">n</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "192"
+        },
+        {
+          "id": "b",
+          "text": "−192"
+        },
+        {
+          "id": "c",
+          "text": "384"
+        },
+        {
+          "id": "d",
+          "text": "−768"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le quotient de deux ordonnées consécutives donne la raison : −12/6 = −2, et 24/(−12) = −2 ✓. Le premier point lu est u₁ = 6, donc u₆ = u₁ q⁶⁻¹ = 6 × (−2)⁵ = 6 × (−32) = −192. Contrôle en remontant au rang 0 : u₀ = 6/(−2) = −3, puis u₆ = −3 × (−2)⁶ = −3 × 64 = −192. La valeur 192 perd le signe, alors que l'exposant 5 est impair. La valeur 384 est 6 × (−2)⁶ : l'exposant a été pris égal au rang 6 alors qu'il faut compter 5 pas depuis le rang 1. La valeur −768 est 6 × (−2)⁷ : cette fois l'exposant dépasse d'un pas.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une tirelire reçoit 128 dinars la première semaine, puis chaque semaine 50 % de plus que la semaine précédente. Quelle somme totale (en dinars) a-t-elle reçue en 6 semaines ?",
+      "answerKey": {
+        "value": 2660
+      },
+      "explanation": "Augmenter de 50 % revient à multiplier par 1,5 : les versements forment une suite géométrique de premier terme 128 et de raison 3/2, avec 6 termes. S = 128 × (1 − 1,5⁶)/(1 − 1,5) = 128 × (1 − 11,390625)/(−0,5) = 128 × 20,78125 = 2660. Contrôle par addition : 128 + 192 + 288 + 432 + 648 + 972 = 2660. Prendre 1,5⁷ à la place de 1,5⁶ revient à compter 7 termes, alors que la somme demandée n'en contient que 6.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les réels −2, b et −8 sont, dans cet ordre, trois termes consécutifs d'une suite géométrique. Quelles valeurs b peut-il prendre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "b = 4 uniquement"
+        },
+        {
+          "id": "b",
+          "text": "b = 4 ou b = −4"
+        },
+        {
+          "id": "c",
+          "text": "b = −4 uniquement"
+        },
+        {
+          "id": "d",
+          "text": "b = 16"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Trois termes consécutifs vérifient b² = ac, donc b² = (−2) × (−8) = 16 : b = 4 ou b = −4. Les deux valeurs conviennent : −2 ; 4 ; −8 a pour raison −2, et −2 ; −4 ; −8 a pour raison 2. La formule b = √(ac) ne s'applique qu'à des réels positifs, ce qui n'est pas le cas ici, et le signe de b n'est pas imposé par celui de a et c. Ne retenir que 4 est le piège courant : il applique la racine carrée du cours hors de ses conditions. Ne retenir que −4 oublie la raison négative. La valeur 16 est b² : la racine carrée a été oubliée.",
+      "difficulty": 3
+    }
+  ]
+}

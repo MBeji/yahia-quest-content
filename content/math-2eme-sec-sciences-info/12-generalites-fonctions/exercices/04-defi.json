@@ -1,0 +1,134 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Variations, parité et extremums en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "La fonction f est décroissante sur un intervalle I. Parmi les fonctions suivantes, définies sur I, lesquelles sont à coup sûr croissantes sur I ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) = −f(x) + 3"
+        },
+        {
+          "id": "b",
+          "text": "h(x) = f(x) − 5"
+        },
+        {
+          "id": "c",
+          "text": "k(x) = −(f(x) + 2)"
+        },
+        {
+          "id": "d",
+          "text": "m(x) = −(−f(x))"
+        },
+        {
+          "id": "e",
+          "text": "n(x) = −(−f(x) + 1)"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Si f est décroissante sur I, alors −f est croissante sur I, car multiplier par −1 inverse toutes les inégalités ; ajouter ou retrancher une constante ne change pas le sens de variation. Ainsi −f(x) + 3 est croissante, et −(f(x) + 2) = −f(x) − 2 aussi. En revanche f(x) − 5 reste décroissante : la constante translate la courbe sans la retourner. Le piège courant est de retenir « ajouter une constante change le sens » ou d'oublier que deux signes moins se compensent : −(−f(x)) = f(x) est décroissante, et −(−f(x) + 1) = f(x) − 1 aussi, puisqu'elle s'obtient en retournant deux fois la courbe de f.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La fonction f est impaire et définie sur [−5 ; 5]. On a tracé sa courbe C sur le seul intervalle [0 ; 5], avec la droite d'équation y = 1. Combien l'équation f(x) = 1 a-t-elle de solutions sur [−5 ; 5] ?\n<svg viewBox=\"0 0 304 190\"><path d=\"M20 176 V20 M42 176 V20 M64 176 V20 M86 176 V20 M108 176 V20 M130 176 V20 M152 176 V20 M174 176 V20 M196 176 V20 M218 176 V20 M240 176 V20 M262 176 V20 M284 176 V20 M20 176 H284 M20 150 H284 M20 124 H284 M20 98 H284 M20 72 H284 M20 46 H284 M20 20 H284\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"0.8\" opacity=\"0.55\"/><path d=\"M20 98 H292 M152 176 V8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M287 94 L295 98 L287 102 Z M148 13 L152 5 L156 13 Z\" fill=\"#0f172a\"/><g font-size=\"10.5\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.2\" stroke-linejoin=\"round\"><text x=\"42\" y=\"111\" fill=\"#0f172a\">−5</text><text x=\"64\" y=\"111\" fill=\"#0f172a\">−4</text><text x=\"86\" y=\"111\" fill=\"#0f172a\">−3</text><text x=\"108\" y=\"111\" fill=\"#0f172a\">−2</text><text x=\"130\" y=\"111\" fill=\"#0f172a\">−1</text><text x=\"174\" y=\"111\" fill=\"#0f172a\">1</text><text x=\"196\" y=\"111\" fill=\"#0f172a\">2</text><text x=\"218\" y=\"111\" fill=\"#0f172a\">3</text><text x=\"240\" y=\"111\" fill=\"#0f172a\">4</text><text x=\"262\" y=\"111\" fill=\"#0f172a\">5</text><text x=\"147\" y=\"180\" fill=\"#0f172a\" text-anchor=\"end\">−3</text><text x=\"147\" y=\"154\" fill=\"#0f172a\" text-anchor=\"end\">−2</text><text x=\"147\" y=\"128\" fill=\"#0f172a\" text-anchor=\"end\">−1</text><text x=\"147\" y=\"76\" fill=\"#0f172a\" text-anchor=\"end\">1</text><text x=\"147\" y=\"50\" fill=\"#0f172a\" text-anchor=\"end\">2</text><text x=\"147\" y=\"24\" fill=\"#0f172a\" text-anchor=\"end\">3</text><text x=\"147\" y=\"111\" fill=\"#0f172a\" text-anchor=\"end\">O</text></g><path d=\"M152 72 H284\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><polyline points=\"152.0,98.0 153.1,100.6 154.2,103.1 155.3,105.5 156.4,107.9 157.5,110.2 158.6,112.4 159.7,114.6 160.8,116.7 161.9,118.8 163.0,120.8 164.1,122.7 165.2,124.5 166.3,126.3 167.4,128.0 168.5,129.7 169.6,131.3 170.7,132.8 171.8,134.3 172.9,135.7 174.0,137.0 175.1,138.3 176.2,139.5 177.3,140.6 178.4,141.7 179.5,142.7 180.6,143.6 181.7,144.5 182.8,145.3 183.9,146.1 185.0,146.8 186.1,147.4 187.2,147.9 188.3,148.4 189.4,148.8 190.5,149.2 191.6,149.5 192.7,149.7 193.8,149.9 194.9,150.0 196.0,150.0 197.1,150.0 198.2,149.9 199.3,149.7 200.4,149.5 201.5,149.2 202.6,148.8 203.7,148.4 204.8,147.9 205.9,147.4 207.0,146.8 208.1,146.1 209.2,145.3 210.3,144.5 211.4,143.6 212.5,142.7 213.6,141.7 214.7,140.6 215.8,139.5 216.9,138.3 218.0,137.0 219.1,135.7 220.2,134.3 221.3,132.8 222.4,131.3 223.5,129.7 224.6,128.0 225.7,126.3 226.8,124.5 227.9,122.7 229.0,120.8 230.1,118.8 231.2,116.7 232.3,114.6 233.4,112.4 234.5,110.2 235.6,107.9 236.7,105.5 237.8,103.1 238.9,100.6 240.0,98.0 241.1,95.4 242.2,92.7 243.3,89.9 244.4,87.1 245.5,84.2 246.6,81.2 247.7,78.2 248.8,75.1 249.9,72.0 251.0,68.8 252.1,65.5 253.2,62.1 254.3,58.7 255.4,55.2 256.5,51.7 257.6,48.1 258.7,44.4 259.8,40.7 260.9,36.9 262.0,33.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"152\" cy=\"98\" r=\"4\" fill=\"#0f6e56\"/><circle cx=\"262\" cy=\"33.0\" r=\"4\" fill=\"#0f6e56\"/><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"268.6\" y=\"67\" fill=\"#b45309\" text-anchor=\"start\" font-size=\"11\">y = 1</text><text x=\"231.2\" y=\"48.6\" fill=\"#0f6e56\" text-anchor=\"start\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [0 ; 5], la courbe coupe la droite y = 1 une seule fois, vers l'abscisse 4,4 : une solution positive. Pour les x négatifs, on utilise la parité : f(−t) = −f(t), donc f(−t) = 1 revient à f(t) = −1 avec t dans ]0 ; 5]. Or la courbe passe deux fois par la hauteur −1, à la descente puis à la remontée, vers les abscisses 0,6 et 3,4 : cela donne les deux solutions négatives −0,6 et −3,4 environ. Au total 1 + 2 = 3 solutions (f(0) = 0 n'est pas solution). Le piège courant est de raisonner comme si f était paire, ce qui donne 2 × 1 = 2, ou de ne compter que les solutions visibles, ce qui donne 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève veut déterminer le sens de variation de f(x) = x² − 2x + 3 sur ]−∞ ; 1]. Il écrit : (1) f(b) − f(a) = b² − a² − 2(b − a) = (b − a)(a + b − 2) ; (2) soit a ≤ b dans ]−∞ ; 1], donc b − a ≥ 0 ; (3) a ≤ 1 et b ≤ 1, donc a + b ≥ 2, donc a + b − 2 ≥ 0 ; (4) le produit est positif, donc f est croissante sur ]−∞ ; 1]. Or f(0) = 3 et f(1) = 2, ce qui contredit la conclusion. Quelle étape est fautive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1 : la factorisation de f(b) − f(a) est inexacte"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2 : b − a est négatif lorsque a ≤ b"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 4 : un produit positif ne prouve pas la croissance"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 3 : a ≤ 1 et b ≤ 1 donnent a + b ≤ 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chasse à l'erreur : la réponse est l'étape fausse. L'étape 1 est exacte : b² − a² − 2(b − a) = (b − a)(b + a) − 2(b − a) = (b − a)(a + b − 2). L'étape 2 aussi : a ≤ b donne b − a ≥ 0. L'étape 4 est correcte si le produit est positif : f(b) − f(a) ≥ 0 pour tous a ≤ b se lit « croissante ». L'erreur est à l'étape 3 : en additionnant a ≤ 1 et b ≤ 1, on obtient a + b ≤ 2, donc a + b − 2 ≤ 0. Le produit (b − a)(a + b − 2) est alors négatif, et f est décroissante sur ]−∞ ; 1], ce que confirment f(0) = 3 > f(1) = 2.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La fonction f est définie sur ℝ par f(x) = x/(x² + 1). On admet que son maximum sur [0 ; +∞[ est 1/2. Le nombre 2/5 admet exactement deux antécédents strictement positifs par f. Donne le plus grand des deux.",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "Un antécédent x de 2/5 vérifie x/(x² + 1) = 2/5, soit 5x = 2x² + 2, donc 2x² − 5x + 2 = 0, dont les solutions sont x = 1/2 et x = 2 : f(2) = 2/5 et f(1/2) = (1/2)/(5/4) = 2/5. Les deux antécédents sont donc 1/2 et 2, et le plus grand est 2. Contrôle par les variations : f croît de 0 à 1/2 sur [0 ; 1], puis décroît sur [1 ; +∞[, et 2/5 < 1/2 est atteint une fois dans chaque morceau, en 1/2 puis en 2. Le piège courant est de s'arrêter au premier antécédent trouvé : sur une courbe qui monte puis redescend, un nombre admet souvent deux antécédents.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "On dispose de 60 m de grillage pour clôturer, le long d'un mur, un enclos rectangulaire partagé en deux compartiments par une cloison parallèle aux côtés perpendiculaires au mur. Le mur tient lieu de quatrième côté, et le grillage forme les trois autres côtés et la cloison. On note x la longueur, en mètres, de chacun des trois segments perpendiculaires au mur. Quelle est l'aire maximale de l'enclos, en m² ?\n<svg viewBox=\"0 0 260 150\"><path d=\"M20 120 H240\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><g stroke=\"#94a3b8\" stroke-width=\"1\" opacity=\"0.7\"><path d=\"M30 120 l-7 9\"/><path d=\"M44 120 l-7 9\"/><path d=\"M58 120 l-7 9\"/><path d=\"M72 120 l-7 9\"/><path d=\"M86 120 l-7 9\"/><path d=\"M100 120 l-7 9\"/><path d=\"M114 120 l-7 9\"/><path d=\"M128 120 l-7 9\"/><path d=\"M142 120 l-7 9\"/><path d=\"M156 120 l-7 9\"/><path d=\"M170 120 l-7 9\"/><path d=\"M184 120 l-7 9\"/><path d=\"M198 120 l-7 9\"/><path d=\"M212 120 l-7 9\"/><path d=\"M226 120 l-7 9\"/></g><path d=\"M70 120 V30 H190 V120\" fill=\"#ccfbf1\" fill-opacity=\"0.55\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><path d=\"M130 120 V30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\"/><g font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3.6\" stroke-linejoin=\"round\"><text x=\"52\" y=\"80\" fill=\"#0f172a\">x</text><text x=\"208\" y=\"80\" fill=\"#0f172a\">x</text><text x=\"142\" y=\"100\" fill=\"#0f172a\">x</text><text x=\"100\" y=\"74\" fill=\"#0f6e56\">1</text><text x=\"160\" y=\"74\" fill=\"#0f6e56\">2</text><text x=\"130\" y=\"143\" fill=\"#0f172a\" font-size=\"11\">mur</text></g></svg>",
+      "answerKey": {
+        "value": 300
+      },
+      "explanation": "Les trois segments perpendiculaires utilisent 3x mètres de grillage, donc le côté parallèle au mur mesure 60 − 3x, avec 0 < x < 20. A(x) = x(60 − 3x) = −3x² + 60x. A(10) = 10 × 30 = 300, puis A(x) − A(10) = −3x² + 60x − 300 = −3(x − 10)² ≤ 0, donc A(x) ≤ 300 avec égalité en x = 10. Maximum : 300 m², pour x = 10 m (côté parallèle de 30 m). Le piège courant est d'oublier la cloison (2x au lieu de 3x), ce qui donne 450, ou de répondre 10, la position du maximum au lieu de sa valeur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [−3 ; 5] par f(x) = x/(x² − 4), pour tout x de cet intervalle où l'expression existe. Que peut-on affirmer de la parité de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est impaire, car f(−x) = −f(x) dès que les deux membres existent"
+        },
+        {
+          "id": "b",
+          "text": "f est impaire, car son ensemble de définition devient symétrique une fois −2 et 2 retirés"
+        },
+        {
+          "id": "c",
+          "text": "f n'est ni paire ni impaire, car 5 est dans son ensemble de définition mais pas −5"
+        },
+        {
+          "id": "d",
+          "text": "f est paire, car le dénominateur x² − 4 est une expression paire"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'ensemble de définition de f est [−3 ; 5] privé de −2 et de 2, soit [−3 ; −2[ ∪ ]−2 ; 2[ ∪ ]2 ; 5]. Il contient 5, mais −5 n'est pas dans [−3 ; 5] : cet ensemble n'est pas symétrique par rapport à 0. Or la première étape de l'étude de parité exige que −x appartienne à E dès que x y appartient. Elle échoue ici : f n'est ni paire ni impaire, quelle que soit l'écriture de f(x). Le piège courant est de ne regarder que la formule : f(−x) = −x/(x² − 4) = −f(x) a l'air impair, mais le calcul ne dispense jamais de vérifier l'ensemble. Retirer −2 et 2 ne rend pas l'ensemble symétrique, puisque 5 reste sans opposé. Quant à l'option « paire », elle tombe aussi par le calcul : f(1) = −1/3 et f(−1) = 1/3 ne sont pas égaux.",
+      "difficulty": 3
+    }
+  ]
+}

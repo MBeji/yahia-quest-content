@@ -69,9 +69,9 @@ Le théorème central du chapitre relie les deux :
 
 $$ α racine de f (degré n ≥ 1) ⟺ f(x) = (x − α) g(x), avec d°(g) = n − 1 $$
 
-Et si l'on connaît **plusieurs** racines α et β, on peut sortir les deux facteurs : f(x) = (x − α)(x − β) g(x) avec d°(g) = n − 2. Plus généralement, avec k racines α₁, …, α_k (k ≤ n) : f(x) = (x − α₁)…(x − α_k) g(x) et d°(g) = n − k.
+Et si l'on connaît **deux** racines distinctes α et β d'un polynôme f de degré n ≥ 2, on peut sortir les deux facteurs : f(x) = (x − α)(x − β) g(x) avec d°(g) = n − 2. Plus généralement, pour un polynôme f de degré n (n ≥ 3), **on admet** que si α₁, …, α_k (k ≤ n) sont des racines de f (distinctes), alors f(x) = (x − α₁)…(x − α_k) g(x) avec d°(g) = n − k.
 
-> **Retenir.** Un polynôme de degré 3 admet **au plus trois** racines ; un polynôme de degré 4 au plus quatre ; un polynôme de degré n (n ≥ 2) admet **au plus n** racines.
+> **Retenir.** Un polynôme de degré 3 admet **au plus trois** racines ; un polynôme de degré 4 au plus quatre ; **on admet** qu'un polynôme de degré n (n ≥ 2) admet **au plus n** racines.
 
 > 🗡️ Conséquence à retenir : si un polynôme de degré **inférieur ou égal à n** admet **plus de n** racines distinctes, il ne peut pas être « non nul » — c'est donc le **polynôme nul**, celui dont tous les coefficients sont nuls et qui s'annule en tout réel. C'est l'argument standard pour prouver qu'une identité est vraie partout.
 
@@ -158,7 +158,7 @@ $$ ax³ + bx² + bx + a = (x + 1)(ax² + (b − a)x + a) $$
 
 _Exemple détaillé_ : pour 7x³ − 43x² − 43x + 7, on a a = 7 et b = −43, donc b − a = −50 et l'on obtient (x + 1)(7x² − 50x + 7). Comme 7x² − 50x + 7 = (x − 7)(7x − 1), les racines sont **−1, 1/7 et 7**.
 
-**3. Décomposition en éléments simples et somme télescopique.** On cherche à écrire 1/(x(x + 1)) sous la forme a/x + b/(x + 1). En réduisant au même dénominateur : a(x + 1) + bx = (a + b)x + a, qui doit être égal à 1 pour tout x. Par identification, a = 1 et a + b = 0, donc b = −1 :
+**3. Décomposition de 1/(x(x + 1)) et somme télescopique.** (On parle parfois d'éléments simples.) On cherche à écrire 1/(x(x + 1)) sous la forme a/x + b/(x + 1). En réduisant au même dénominateur : a(x + 1) + bx = (a + b)x + a, qui doit être égal à 1 pour tout x. Par identification, a = 1 et a + b = 0, donc b = −1 :
 
 $$ 1/(k(k + 1)) = 1/k − 1/(k + 1) $$
 

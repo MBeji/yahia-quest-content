@@ -31,7 +31,7 @@
       "difficulty": 3
     },
     {
-      "prompt": "Trois réels strictement positifs a, b et c sont, dans cet ordre, trois termes consécutifs d'une suite géométrique. Quelle relation les lie toujours ?",
+      "prompt": "Trois réels positifs a, b et c sont, dans cet ordre, trois termes consécutifs d'une suite géométrique. Quelle relation les lie toujours ?",
       "options": [
         { "id": "a", "text": "2b = a + c" },
         { "id": "b", "text": "b = ac" },
@@ -39,7 +39,7 @@
         { "id": "d", "text": "b² = ac" }
       ],
       "correctOption": "d",
-      "explanation": "Si a, b, c sont consécutifs, alors b = aq et c = bq, donc b/a = c/b. En multipliant en croix on obtient b² = ac ✓, et b est appelé moyenne géométrique de a et c. Test rapide sur 3 ; 9 ; 27 : 9² = 81 = 3 × 27. La relation 2b = a + c est celle de la moyenne arithmétique, le piège courant : elle décrit le terme du milieu d'une progression additive, et donnerait ici 15 au lieu de 9. La relation b = ac oublie l'élévation au carré et donnerait 81. La relation b² = a + c remplace le produit par la somme et donnerait 30 pour b².",
+      "explanation": "Si a, b, c sont consécutifs, alors b = aq et c = bq = aq², donc b² = a²q² = a × aq² = ac ✓ (calcul valable même si un terme est nul, sans aucune division), et b est appelé moyenne géométrique de a et c. Test rapide sur 3 ; 9 ; 27 : 9² = 81 = 3 × 27. La relation 2b = a + c est celle de la moyenne arithmétique, le piège courant : elle décrit le terme du milieu d'une progression additive, et donnerait ici 15 au lieu de 9. La relation b = ac oublie l'élévation au carré et donnerait 81. La relation b² = a + c remplace le produit par la somme et donnerait 30 pour b².",
       "difficulty": 3
     },
     {
