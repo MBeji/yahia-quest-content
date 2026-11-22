@@ -1,0 +1,326 @@
+{
+  "title": "⭐⭐ تمرين: القيمة المطلقة والحصر — بُعدٌ أصغر أو أكبر من r",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "أيّ كتابة تكافئ الشرط |x| < 5 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x < 5",
+          "misconceptionTag": "math.num.valeur-absolue-borne-negative-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "−5 ≤ x ≤ 5",
+          "misconceptionTag": "math.stat.seuil-strict-borne-incluse"
+        },
+        {
+          "id": "c",
+          "text": "−5 < x < 5"
+        },
+        {
+          "id": "d",
+          "text": "x < −5 أو x > 5"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "|x| < 5 تعني أنّ x يبعد عن المبدأ أقلّ من 5 وحدات، فهو بين −5 و 5 دون الطرفين: −5 < x < 5 . أمّا x < 5 وحدها فتنسى الحدّ السالب: العدد x = −9 يحقّقها بينما |−9| = 9 ليس أصغر من 5. وأمّا −5 ≤ x ≤ 5 فتُدخل الطرفين مع أنّ |5| = 5 ليس أصغر من 5 قطعًا. وأمّا x < −5 أو x > 5 فهي الأعداد الأبعد عن المبدأ لا الأقرب إليه.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "أيّ الأعداد التالية يحقّق الشرط |x| ≤ 8 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−12",
+          "misconceptionTag": "math.num.valeur-absolue-borne-negative-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "−8"
+        },
+        {
+          "id": "c",
+          "text": "8,5"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "|−8| = 8 وهو أصغر من 8 أو يساويه، فالعدد −8 يحقّق الشرط: الإشارة ≤ تُدخل الطرف. أمّا −12 فبُعده 12 أكبر من 8، مع أنّ العدد −12 نفسه أصغر من 8 ؛ ومن قرأ |x| ≤ 8 على أنّها x ≤ 8 قبله خطأً. وكذلك |8,5| = 8,5 و |10| = 10 أكبر من 8، فهما خارج الحلول.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "يمثّل الجزءان الأخضران على المستقيم المدرّج التالي مجموعةَ أعداد x . أيّ كتابة تصف هذه الأعداد ؟\n<svg viewBox=\"0 0 360 120\"><title>مستقيم مدرّج: الجزءان الأخضران خارج العددين −6 و 6</title><line x1=\"14\" y1=\"60\" x2=\"338\" y2=\"60\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"28\" y1=\"55\" x2=\"28\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"28\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−8</text><line x1=\"47\" y1=\"55\" x2=\"47\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"66\" y1=\"55\" x2=\"66\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"66\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−6</text><line x1=\"85\" y1=\"55\" x2=\"85\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"104\" y1=\"55\" x2=\"104\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"104\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−4</text><line x1=\"123\" y1=\"55\" x2=\"123\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"142\" y1=\"55\" x2=\"142\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"142\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−2</text><line x1=\"161\" y1=\"55\" x2=\"161\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"55\" x2=\"180\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"180\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><line x1=\"199\" y1=\"55\" x2=\"199\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"218\" y1=\"55\" x2=\"218\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"218\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">2</text><line x1=\"237\" y1=\"55\" x2=\"237\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"256\" y1=\"55\" x2=\"256\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"256\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><line x1=\"275\" y1=\"55\" x2=\"275\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"294\" y1=\"55\" x2=\"294\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"294\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><line x1=\"313\" y1=\"55\" x2=\"313\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"332\" y1=\"55\" x2=\"332\" y2=\"65\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"332\" y=\"80\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">8</text><line x1=\"66\" y1=\"60\" x2=\"14\" y2=\"60\" stroke=\"#15803d\" stroke-width=\"5\"/><polygon points=\"8,60 18,54 18,66\" fill=\"#15803d\"/><line x1=\"294\" y1=\"60\" x2=\"342\" y2=\"60\" stroke=\"#15803d\" stroke-width=\"5\"/><polygon points=\"352,60 342,54 342,66\" fill=\"#15803d\"/><circle cx=\"66\" cy=\"60\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2.5\"/><circle cx=\"294\" cy=\"60\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#15803d\" stroke-width=\"2.5\"/><circle cx=\"180\" cy=\"60\" r=\"4.5\" fill=\"#0f172a\"/><text x=\"180\" y=\"102\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" direction=\"ltr\" unicode-bidi=\"isolate\">O</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "x < −6 أو x > 6"
+        },
+        {
+          "id": "b",
+          "text": "x < −6 و x > 6",
+          "misconceptionTag": "math.num.valeur-absolue-superieur-relie-par-et"
+        },
+        {
+          "id": "c",
+          "text": "−6 < x < 6"
+        },
+        {
+          "id": "d",
+          "text": "x ≤ −6 أو x ≥ 6",
+          "misconceptionTag": "math.stat.seuil-strict-borne-incluse"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نقرأ الشكل: جزءان منفصلان، واحد على يسار −6 وآخر على يمين 6، والدائرتان الفارغتان تعنيان أنّ الطرفين غير مشمولين. فالكتابة الصحيحة هي x < −6 أو x > 6 ، أي |x| > 6 . الرابط «و» خطأ لأنّ لا عدد أصغر من −6 وأكبر من 6 في آن واحد. وأمّا −6 < x < 6 فتصف القطعة غير الملوّنة بين −6 و 6، أي |x| < 6 . وأمّا x ≤ −6 أو x ≥ 6 فتُدخل الطرفين مع أنّ دائرتيهما فارغتان: |6| = 6 ليس أكبر من 6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "type": "matching",
+      "prompt": "صِلْ كلّ شرط بكتابته دون قيمة مطلقة.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "|x| < 9"
+        },
+        {
+          "id": "l2",
+          "text": "|x| ≤ 9"
+        },
+        {
+          "id": "l3",
+          "text": "|x| > 9"
+        },
+        {
+          "id": "l4",
+          "text": "|x| ≥ 9"
+        },
+        {
+          "id": "r1",
+          "text": "−9 < x < 9"
+        },
+        {
+          "id": "r2",
+          "text": "−9 ≤ x ≤ 9"
+        },
+        {
+          "id": "r3",
+          "text": "x < −9 أو x > 9"
+        },
+        {
+          "id": "r4",
+          "text": "x ≤ −9 أو x ≥ 9"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "الإشارتان < و ≤ تعنيان أنّ البعد أصغر من 9 : x بين −9 و 9، ولا يدخل الطرفان إلّا مع ≤ . والإشارتان > و ≥ تعنيان أنّ البعد أكبر من 9 : x على يسار −9 أو على يمين 9 بالرابط «أو»، ولا يدخل الطرفان إلّا مع ≥ .",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "عدد حقيقي x بُعده عن المبدأ O لا يقلّ عن 7 وحدات. أيّ كتابة تعبّر عن x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ≤ −7 و x ≥ 7",
+          "misconceptionTag": "math.num.valeur-absolue-superieur-relie-par-et"
+        },
+        {
+          "id": "b",
+          "text": "x ≥ 7"
+        },
+        {
+          "id": "c",
+          "text": "x < −7 أو x > 7"
+        },
+        {
+          "id": "d",
+          "text": "x ≤ −7 أو x ≥ 7"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "«لا يقلّ عن 7» تعني |x| ≥ 7 : x على يسار −7 أو على يمين 7، والطرفان مشمولان: x ≤ −7 أو x ≥ 7 . الرابط «و» خطأ لأنّ لا عدد أصغر من −7 وأكبر من 7 معًا. وأمّا x ≥ 7 وحدها فتنسى الجهة السالبة: العدد −10 بُعده |−10| = 10 لا يقلّ عن 7، ولا يحقّق x ≥ 7 . وأمّا x < −7 أو x > 7 فتُقصي الطرفين مع أنّ |7| = 7 لا يقلّ عن 7.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "اختر كلّ النقاط التي فاصلتها x تحقّق الشرط |x| < 4 .\n<svg viewBox=\"0 0 360 100\"><title>مستقيم مدرّج وست نقاط A و B و C و D و E و F</title><line x1=\"14\" y1=\"58\" x2=\"338\" y2=\"58\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"346,58 336,53 336,63\" fill=\"#334155\"/><line x1=\"26\" y1=\"53\" x2=\"26\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"26\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−7</text><line x1=\"48\" y1=\"53\" x2=\"48\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"48\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−6</text><line x1=\"70\" y1=\"53\" x2=\"70\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"70\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−5</text><line x1=\"92\" y1=\"53\" x2=\"92\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"92\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−4</text><line x1=\"114\" y1=\"53\" x2=\"114\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"114\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−3</text><line x1=\"136\" y1=\"53\" x2=\"136\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"136\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−2</text><line x1=\"158\" y1=\"53\" x2=\"158\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"158\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">−1</text><line x1=\"180\" y1=\"53\" x2=\"180\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"180\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">0</text><line x1=\"202\" y1=\"53\" x2=\"202\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"202\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">1</text><line x1=\"224\" y1=\"53\" x2=\"224\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"224\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">2</text><line x1=\"246\" y1=\"53\" x2=\"246\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"246\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">3</text><line x1=\"268\" y1=\"53\" x2=\"268\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"268\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">4</text><line x1=\"290\" y1=\"53\" x2=\"290\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"290\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">5</text><line x1=\"312\" y1=\"53\" x2=\"312\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"312\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">6</text><line x1=\"334\" y1=\"53\" x2=\"334\" y2=\"63\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"334\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\" direction=\"ltr\" unicode-bidi=\"isolate\">7</text><circle cx=\"48\" cy=\"58\" r=\"4.5\" fill=\"#dc2626\"/><text x=\"48\" y=\"40\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#dc2626\" direction=\"ltr\" unicode-bidi=\"isolate\">A</text><circle cx=\"92\" cy=\"58\" r=\"4.5\" fill=\"#2563eb\"/><text x=\"92\" y=\"40\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#2563eb\" direction=\"ltr\" unicode-bidi=\"isolate\">B</text><circle cx=\"136\" cy=\"58\" r=\"4.5\" fill=\"#059669\"/><text x=\"136\" y=\"40\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#059669\" direction=\"ltr\" unicode-bidi=\"isolate\">C</text><circle cx=\"202\" cy=\"58\" r=\"4.5\" fill=\"#d97706\"/><text x=\"202\" y=\"40\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#d97706\" direction=\"ltr\" unicode-bidi=\"isolate\">D</text><circle cx=\"246\" cy=\"58\" r=\"4.5\" fill=\"#7c3aed\"/><text x=\"246\" y=\"40\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#7c3aed\" direction=\"ltr\" unicode-bidi=\"isolate\">E</text><circle cx=\"290\" cy=\"58\" r=\"4.5\" fill=\"#0f766e\"/><text x=\"290\" y=\"40\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f766e\" direction=\"ltr\" unicode-bidi=\"isolate\">F</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "النقطة A"
+        },
+        {
+          "id": "b",
+          "text": "النقطة B"
+        },
+        {
+          "id": "c",
+          "text": "النقطة C"
+        },
+        {
+          "id": "d",
+          "text": "النقطة D"
+        },
+        {
+          "id": "e",
+          "text": "النقطة E"
+        },
+        {
+          "id": "f",
+          "text": "النقطة F"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "نقرأ فاصلة كلّ نقطة ثمّ نقارن بُعدها عن المبدأ بالعدد 4 : النقطة C فاصلتها −2 وبُعدها 2، والنقطة D فاصلتها 1 وبُعدها 1، والنقطة E فاصلتها 3 وبُعدها 3، وكلّها أصغر من 4. أمّا النقطة B فبُعدها |−4| = 4 وليس أصغر من 4 قطعًا، فهي خارج الحلول. وأمّا النقطة A فبُعدها 6 والنقطة F بُعدها 5، وكلّ منهما أكبر من 4 ؛ ومن قرأ |x| < 4 على أنّها x < 4 قبل النقطة A خطأً لأنّ فاصلتها سالبة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "نقرأ |x + 4| ≤ 3 على أنّها AM ≤ 3 ، حيث M نقطة فاصلتها x و A نقطة فاصلتها a . ما قيمة a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "misconceptionTag": "math.num.valeur-absolue-centre-signe-apparent"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب x + 4 = x − (−4) ، فيكون |x + 4| هو البعد بين M(x) والنقطة التي فاصلتها −4 ، أي a = −4 . من أخذ 4 أخذ الفاصلة بإشارتها الظاهرة في العبارة، مع أنّ الطرح من x يُظهر العدد المقابل. أمّا العدد 3 فهو القيمة التي نقارن بها البعد، لا فاصلة A. وأمّا −1 فهو طرف الحصر −4 + 3 = −1 ، لا فاصلة A.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "ما أكبر عدد x يحقّق الشرط |x − 4| ≤ 2,5 ؟ اكتب الناتج عددًا عشريًّا.",
+      "answerKey": {
+        "value": 6.5
+      },
+      "explanation": "|x − 4| هو البعد بين M(x) والنقطة التي فاصلتها 4. الشرط ≤ 2,5 يعني أنّ M تبعد عن هذه النقطة 2,5 وحدة على الأكثر، فطرفا الحصر هما 4 − 2,5 = 1,5 و 4 + 2,5 = 6,5 ، وكلاهما مشمول. إذن 1,5 ≤ x ≤ 6,5 وأكبر عدد هو 6,5 .",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "أيّ حصر للعبارة 5x − 3 يكافئ الشرط التالي ؟\n|5x − 3| < 2",
+      "options": [
+        {
+          "id": "a",
+          "text": "5x − 3 < 2",
+          "misconceptionTag": "math.num.valeur-absolue-borne-negative-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "−2 < 5x − 3 < 2"
+        },
+        {
+          "id": "c",
+          "text": "−2 < 5x < 2"
+        },
+        {
+          "id": "d",
+          "text": "5x − 3 < −2 أو 5x − 3 > 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "القاعدة |X| < r تعني −r < X < r وتبقى صحيحة إذا كان X عبارة. هنا X = 5x − 3 و r = 2 ، فنجد −2 < 5x − 3 < 2 . أمّا 5x − 3 < 2 وحدها فتنسى الحدّ السالب. وأمّا −2 < 5x < 2 فتضع الحدّين حول 5x مع أنّهما يحيطان بالعبارة كلّها 5x − 3. وأمّا الكتابة بالرابط «أو» فهي حالة |5x − 3| > 2 أي الأبعد عن الصفر لا الأقرب.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "عدد حقيقي x يحقّق الشرط التالي:\n|x + 3| ≤ 7\nما الحصر الصحيح للعدد x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4 ≤ x ≤ 10",
+          "misconceptionTag": "math.num.valeur-absolue-centre-signe-apparent"
+        },
+        {
+          "id": "b",
+          "text": "−7 ≤ x ≤ 7"
+        },
+        {
+          "id": "c",
+          "text": "x ≤ 4",
+          "misconceptionTag": "math.num.valeur-absolue-borne-negative-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "−10 ≤ x ≤ 4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نكتب x + 3 = x − (−3) ، فالعدد |x + 3| هو بُعد x عن النقطة ذات الفاصلة −3. نعدّ 7 وحدات في الجهتين: −3 − 7 = −10 و −3 + 7 = 4 ، وهما مشمولان لأنّ الإشارة ≤ ، فنجد −10 ≤ x ≤ 4 . ومن أخذ الفاصلة 3 وجد −4 ≤ x ≤ 10 ، لكنّ x = 10 يعطي |13| = 13 أكبر من 7. والكتابة −7 ≤ x ≤ 7 تهمل الإزاحة: هي حلّ |x| ≤ 7 . وأمّا x ≤ 4 فتنسى الحدّ السالب: x = −20 يحقّقها بينما |−17| = 17 أكبر من 7.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    }
+  ]
+}
