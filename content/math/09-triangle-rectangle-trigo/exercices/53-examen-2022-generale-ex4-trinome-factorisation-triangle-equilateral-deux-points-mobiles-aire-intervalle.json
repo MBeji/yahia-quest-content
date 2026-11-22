@@ -1,0 +1,274 @@
+{
+  "title": "🏛️ مناظرة 2022 · التمرين 4 ⭐⭐⭐⭐: عبارة من الدرجة الثانية وتعميلها — مثلّث متقايس الأضلاع ونقطتان متحرّكتان ومساحة بدلالة متغيّر",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 53,
+  "questions": [
+    {
+      "prompt": "OAB مثلّث متقايس الأضلاع طول ضلعه 4 ، و a عدد حقيقي من المجال ]0 ; 2[ ، والنقطة M من [OA] حيث OM = a. ما طول [AM] بدلالة a ؟\n<svg viewBox=\"0 0 320 250\"><title>المثلث المتقايس الأضلاع OAB والنقطة M على [OA]</title><path d=\"M44 222 L160 21.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 21.1 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"21.1\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"90.4\" cy=\"141.6\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"160\" y=\"10.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"288\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"76.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 − a"
+        },
+        {
+          "id": "b",
+          "text": "a − 4"
+        },
+        {
+          "id": "c",
+          "text": "4 + a",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        },
+        {
+          "id": "d",
+          "text": "a",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "النقطة M تقع بين O و A على الضلع [OA] الذي طوله 4 ، فـ OM + MA = OA أي a + AM = 4 ، ومنه AM = 4 − a ، وهو طول موجب لأنّ a < 2 < 4 ✓. الخطأ الشائع: جمع الطولين بدل طرح OM من OA فنجد 4 + a ؛ أو أخذ OM مكان AM فنجد a.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "لتكن العبارة التالية حيث x عدد حقيقي:\nE = x² − 4x + 16\nأيّ جداء يساوي E − 13 لكلّ عدد حقيقي x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 1)(x − 3)"
+        },
+        {
+          "id": "b",
+          "text": "(x + 1)(x + 3)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 1)(x + 3)"
+        },
+        {
+          "id": "d",
+          "text": "(x + 1)(x − 3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب E − 13 = x² − 4x + 16 − 13 = x² − 4x + 3. نبحث عن عددين جداؤهما 3 ومجموعهما −4 ، فهما −1 و −3 ، ومنه x² − 4x + 3 = (x − 1)(x − 3) ✓. نتحقّق بالنشر: (x − 1)(x − 3) = x² − 3x − x + 3 = x² − 4x + 3 ✓. أمّا (x + 1)(x + 3) فينشر إلى x² + 4x + 3 و (x − 1)(x + 3) إلى x² + 2x − 3 و (x + 1)(x − 3) إلى x² − 2x − 3 ، وكلّها تخالف E − 13.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة الأعداد الحقيقية x التي تحقّق المعادلة التالية ؟\nx² − 4x + 16 = 13",
+      "options": [
+        {
+          "id": "a",
+          "text": "{1 ; 3}"
+        },
+        {
+          "id": "b",
+          "text": "{−3 ; −1}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "{3}",
+          "misconceptionTag": "math.alg.produit-nul-une-seule-solution"
+        },
+        {
+          "id": "d",
+          "text": "{−3 ; 1}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المعادلة x² − 4x + 16 = 13 تكافئ x² − 4x + 3 = 0 ، أي (x − 1)(x − 3) = 0. جداء عاملين ينعدم إذا انعدم أحدهما: x − 1 = 0 أو x − 3 = 0 ، أي x = 1 أو x = 3 ✓. تحقّق: 1 − 4 + 16 = 13 ✓ و 9 − 12 + 16 = 13 ✓. الخطأ الشائع: الاكتفاء بجذر واحد فنجد {3} ؛ أو قراءة الجذرين بإشارتيهما الظاهرتين في (x + 1)(x + 3) فنجد {−3 ; −1} ؛ أو كتابة x(x − 4) = −3 ثمّ القول إنّ x = −3 أو x − 4 = −3 ، وهذا لا يصحّ لأنّ الجداء ليس معدومًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "OAB مثلّث متقايس الأضلاع طول ضلعه 4 ، و a عدد حقيقي من المجال ]0 ; 2[ ، والنقطة N من [AB] حيث AN = a ، والنقطة K من [OA] حيث AK = AN. ما طول [KN] بدلالة a ؟\n<svg viewBox=\"0 0 320 250\"><title>المثلث OAB والنقطتان K و N</title><path d=\"M44 222 L160 21.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 21.1 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.6 101.4 L206.4 101.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M141.6 64 L132 58.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M188 58.5 L178.4 64\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"21.1\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"113.6\" cy=\"101.4\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"206.4\" cy=\"101.4\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"160\" y=\"10.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"288\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"99.6\" y=\"105.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"220.4\" y=\"99.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a"
+        },
+        {
+          "id": "b",
+          "text": "a/2"
+        },
+        {
+          "id": "c",
+          "text": "a√2"
+        },
+        {
+          "id": "d",
+          "text": "4 − a",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "زاوية المثلّث OAB عند A قياسها 60° لأنّه متقايس الأضلاع ، وهي نفسها زاوية المثلّث AKN عند A لأنّ K على [AO] و N على [AB]. في المثلّث AKN لدينا AK = AN ، فهو متقايس الضلعين قمّته A ، وزاويتا قاعدته متساويتان ، كلّ منهما (180° − 60°) ÷ 2 = 60°. إذن زواياه الثلاث قياس كلّ منها 60° وهو متقايس الأضلاع ، ومنه KN = AK = AN = a ✓. الخطأ الشائع: أخذ الطول OK = 4 − a مكان KN ؛ أو الظنّ أنّ [KN] نصف [AN] فنجد a/2 ؛ أو تطبيق فيثاغورس على AKN كأنّ زاويته عند A قائمة فنجد KN² = a² + a² أي a√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "OAB مثلّث متقايس الأضلاع طول ضلعه 4 ، و a عدد حقيقي من المجال ]0 ; 2[ ، والنقطة N من [AB] حيث AN = a ، والنقطة K من [OA] حيث AK = AN ، و H المسقط العمودي للنقطة N على المستقيم (OA). ما طول [NH] بدلالة a ؟\n<svg viewBox=\"0 0 320 250\"><title>المثلث OAB والنقاط K و N و H</title><path d=\"M44 222 L160 21.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 21.1 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M113.6 101.4 L206.4 101.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206.4 101.4 L136.8 61.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M146.3 66.8 L151.8 57.2 L142.3 51.7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"21.1\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"113.6\" cy=\"101.4\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"206.4\" cy=\"101.4\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"136.8\" cy=\"61.3\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"160\" y=\"10.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"288\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"99.6\" y=\"105.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"220.4\" y=\"99.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"122.8\" y=\"65.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√3/2)a"
+        },
+        {
+          "id": "b",
+          "text": "a/2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "a√3"
+        },
+        {
+          "id": "d",
+          "text": "(√5/2)a",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث AKN متقايس الأضلاع وطول ضلعه a ، و [NH] ارتفاعه الصادر من N ، فـ H منتصف [AK] أي AH = a/2. في المثلّث AHN القائم في H ووتره [AN]: NH² = AN² − AH² = a² − a²/4 = 3a²/4 ، ومنه NH = (√3/2)a ✓. الخطأ الشائع: أخذ AH مكان NH فنجد a/2 ؛ أو إسقاط المقام 4 فنجد NH² = 3a² أي a√3 ؛ أو جمع المربّعين بدل طرحهما فنجد NH² = a² + a²/4 = 5a²/4 أي (√5/2)a.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "OAB مثلّث متقايس الأضلاع طول ضلعه 4 cm. ما مساحته بالسنتيمتر المربّع ؟\n<svg viewBox=\"0 0 320 250\"><title>المثلث المتقايس الأضلاع OAB طول ضلعه 4</title><path d=\"M44 222 L160 21.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 21.1 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"21.1\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"160\" y=\"10.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"288\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"160\" y=\"239\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">4</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√3"
+        },
+        {
+          "id": "b",
+          "text": "4√3"
+        },
+        {
+          "id": "c",
+          "text": "4√5",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "8√3",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نرسم الارتفاع الصادر من A ، وهو يقطع [OB] في منتصفه لأنّ المثلّث متقايس الأضلاع. هذا الارتفاع h ضلع قائم في مثلّث قائم وتره 4 وضلعه القائم الآخر 2 ، فـ h² = 4² − 2² = 12 ومنه h = 2√3. المساحة = (1/2) × 4 × 2√3 = 4√3 ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 4 × 2√3 = 8√3 ؛ أو جمع المربّعين لحساب الارتفاع فنجد h² = 16 + 4 = 20 ثمّ 4√5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "OAB مثلّث متقايس الأضلاع طول ضلعه 4 cm ، و a عدد حقيقي من المجال ]0 ; 2[ ، والنقطة M من [OA] حيث OM = a ، والنقطة N من [AB] حيث AN = a. ما مساحة المثلّث AMN بالسنتيمتر المربّع بدلالة a ؟\n<svg viewBox=\"0 0 320 250\"><title>المثلث OAB والمثلث AMN</title><polygon points=\"160,21.1 90.4,141.6 206.4,101.4\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M44 222 L160 21.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 21.1 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.4 141.6 L206.4 101.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"21.1\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"90.4\" cy=\"141.6\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"206.4\" cy=\"101.4\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"160\" y=\"10.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"288\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"76.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"220.4\" y=\"99.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√3/4)a(4 − a)"
+        },
+        {
+          "id": "b",
+          "text": "(√3/2)a(4 − a)",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(√3/4)a²",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "(√3/4)(4 − a)²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في المثلّث AMN: AM = 4 − a و AN = a. نأخذ [AM] قاعدة ، وارتفاعها هو البعد NH من N إلى المستقيم (OA) ، حيث H المسقط العمودي للنقطة N عليه. في المثلّث AHN القائم في H وفيه AN = a وزاوية A قياسها 60° لدينا NH = (√3/2)a. المساحة = (1/2) × AM × NH = (1/2) × (4 − a) × (√3/2)a = (√3/4)a(4 − a) ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد (√3/2)a(4 − a) ؛ أو أخذ AM = a بدل 4 − a فنجد (√3/4)a².",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "الرباعي OMNB هو ما يبقى من المثلّث OAB بعد حذف المثلّث AMN ، ومساحته S هي قيمة العبارة التالية عند العدد a من المجال ]0 ; 2[ :\nT = (√3/4)(a² − 4a + 16)\nما أصغر قيمة تأخذها العبارة T حين يأخذ a كلّ القيم الحقيقية ؟\n<svg viewBox=\"0 0 320 250\"><title>المثلث OAB والرباعي OMNB</title><polygon points=\"44,222 90.4,141.6 206.4,101.4 276,222\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M44 222 L160 21.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 21.1 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.4 141.6 L206.4 101.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"21.1\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"90.4\" cy=\"141.6\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"206.4\" cy=\"101.4\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"160\" y=\"10.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"288\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"76.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"220.4\" y=\"99.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "3√3"
+        },
+        {
+          "id": "c",
+          "text": "4√3"
+        },
+        {
+          "id": "d",
+          "text": "12√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نكتب a² − 4a + 16 = (a − 2)² + 12 لأنّ (a − 2)² = a² − 4a + 4. وبما أنّ (a − 2)² ≥ 0 فإنّ T ≥ (√3/4) × 12 = 3√3 ، وتبلغ T هذه القيمة عند a = 2 ، فأصغر قيمة لها 3√3 ✓. ومنه S ≥ 3√3 لكلّ a من المجال ]0 ; 2[. الخطأ الشائع: نسيان العامل √3 فنجد 3 ؛ أو نسيان القسمة على 4 فنجد 12√3 ؛ أو أخذ قيمة T عند a = 0 فنجد 4√3 ، وهي أكبر من قيمتها عند a = 2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.inequations"
+      ]
+    },
+    {
+      "prompt": "OAB مثلّث متقايس الأضلاع طول ضلعه 4 cm ، و a عدد حقيقي من المجال ]0 ; 2[ ، والنقطة M من [OA] حيث OM = a ، والنقطة N من [AB] حيث AN = a ، و S مساحة الرباعي OMNB بالسنتيمتر المربّع ، ونعلم أنّ:\nS = 13√3/4\nما قيمة a أو قيمها الممكنة ؟\n<svg viewBox=\"0 0 320 250\"><title>المثلث OAB والرباعي OMNB</title><polygon points=\"44,222 90.4,141.6 206.4,101.4 276,222\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M44 222 L160 21.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 21.1 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M44 222 L276 222\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M90.4 141.6 L206.4 101.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"44\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"160\" cy=\"21.1\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"222\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"90.4\" cy=\"141.6\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"206.4\" cy=\"101.4\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"32\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"160\" y=\"10.1\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"288\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"76.4\" y=\"145.6\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"220.4\" y=\"99.4\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 1"
+        },
+        {
+          "id": "b",
+          "text": "a = 1 أو a = 3",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "c",
+          "text": "a = √3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "لا توجد قيمة ممكنة"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مساحة OAB تساوي 4√3 ، ومساحة AMN تساوي (√3/4)a(4 − a) لأنّ AM = 4 − a وارتفاعها (√3/2)a. إذن S = 4√3 − (√3/4)a(4 − a) = (√3/4)(16 − 4a + a²). الشرط S = 13√3/4 يعطي a² − 4a + 16 = 13 ، أي a² − 4a + 3 = 0 ، أي (a − 1)(a − 3) = 0 ، فـ a = 1 أو a = 3. لكنّ a من المجال ]0 ; 2[ ، والعدد 3 خارجه ، فنقبل a = 1 فقط ✓. تحقّق: S = (√3/4)(1 − 4 + 16) = 13√3/4 ✓. الخطأ الشائع: الاحتفاظ بالحلّين دون اختبار المجال ؛ أو أخذ AM = a بدل 4 − a فنجد S = 4√3 − (√3/4)a² ثمّ a² = 3 و a = √3 ؛ أو مساواة 13√3/4 بمساحة المثلّث AMN بدل الرباعي فنجد a² − 4a + 13 = 0 ولا حلّ لها.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.mes.aires",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

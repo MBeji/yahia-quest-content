@@ -1,0 +1,337 @@
+{
+  "title": "🏛️ مناظرة 2026 · التمرين 4 ⭐⭐⭐⭐: مثلّث قائم ومتقايس الضلعين ودائرة قطرها ضلع — مركز الثقل وطاليس والمركز القائم والمساحة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 55,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A ، وطول ضلعه AB بالسنتيمتر هو:\nAB = 6\nما طول الوتر [BC] بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 235\"><title>المثلث ABC القائم والمتقايس الضلعين</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 199.5 L150 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M54.5 115 L65.5 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "6√2"
+        },
+        {
+          "id": "b",
+          "text": "12",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "c",
+          "text": "72",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "d",
+          "text": "36√2",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ABC قائم في A وفيه AC = AB = 6 ، فبنظرية فيثاغورس BC² = AB² + AC² = 36 + 36 = 72. ومنه BC = √72 = √(36 × 2) = 6√2 ✓. الخطأ الشائع: جمع الطولين فنجد 12 ؛ أو التوقّف عند BC² = 72 ؛ أو إخراج العدد 36 من الجذر دون أخذ جذره فنجد 36√2.",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A حيث AB = 6 ، و I منتصف [AB] ، و O منتصف [BC] ، والمستقيمان (IC) و (AO) يتقاطعان في النقطة G. ما قيمة النسبة CG/CI ؟\n<svg viewBox=\"0 0 300 235\"><title>المثلث ABC والموسّطان</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L150 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 25 L150 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"115\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"145\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"164\" y=\"109\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"132\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3"
+        },
+        {
+          "id": "b",
+          "text": "1/2",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "1/3",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "d",
+          "text": "3/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "[CI] يصل الرأس C بمنتصف الضلع المقابل [AB] ، و [AO] يصل الرأس A بمنتصف [BC] ، فهما موسّطان في المثلّث ABC ، ونقطة تقاطعهما G هي مركز ثقله. ومركز الثقل يقع على ثلثي كلّ موسّط انطلاقًا من الرأس ، فـ CG = (2/3) CI أي CG/CI = 2/3 ✓. الخطأ الشائع: وضع G في منتصف الموسّط فنجد 1/2 ؛ أو قلب الثلث والثلثين فنجد 1/3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A ، و O منتصف [BC] ، و I منتصف [AB] ، والدائرة (ζ) التي قطرها [BI] تقطع (BC) في نقطة ثانية K. أيّ استدلال يثبت أنّ المستقيمين (IK) و (AO) متوازيان ؟\n<svg viewBox=\"0 0 300 272\"><title>الدائرة ذات القطر BI والنقطة K</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"195\" cy=\"205\" r=\"45\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><path d=\"M60 205 L150 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 25 L150 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 205 L195 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"115\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"195\" cy=\"160\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"241\" y=\"158\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">ζ</text><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"164\" y=\"109\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"210\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "[BI] قطر للدائرة والنقطة K منها فالمثلّث BKI قائم في K ، أي (IK) ⟂ (BC) ؛ و (AO) موسّط في المثلّث المتقايس الضلعين ABC قمّته A فهو ارتفاع ، أي (AO) ⟂ (BC) ؛ إذن (IK) ∥ (AO)"
+        },
+        {
+          "id": "b",
+          "text": "[BI] قطر للدائرة والنقطة K منها فالمثلّث BKI قائم في K ، أي (IK) ⟂ (BC) ؛ و (AO) موسّط في المثلّث ABC والموسّط عمودي دائمًا على الضلع المقابل ، أي (AO) ⟂ (BC) ؛ إذن (IK) ∥ (AO)",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "[BI] قطر للدائرة والنقطة K منها فالمثلّث BKI قائم في B ، أي (IK) ⟂ (BC) ؛ و (AO) موسّط في المثلّث المتقايس الضلعين ABC قمّته A فهو ارتفاع ، أي (AO) ⟂ (BC) ؛ إذن (IK) ∥ (AO)",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "d",
+          "text": "[BI] قطر للدائرة والنقطة K منها فالمثلّث BKI قائم في B ، أي (IK) ⟂ (BC) ؛ و (AO) موسّط في المثلّث ABC والموسّط عمودي دائمًا على الضلع المقابل ، أي (AO) ⟂ (BC) ؛ إذن (IK) ∥ (AO)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "النقطة K من الدائرة التي قطرها [BI] ، فالمثلّث BKI قائم في K لأنّ الزاوية المقابلة للقطر قائمة ، أي (IK) ⟂ (KB) = (BC). وفي المثلّث ABC المتقايس الضلعين قمّته A يكون الموسّط [AO] الصادر من القمّة ارتفاعًا أيضًا ، فـ (AO) ⟂ (BC). المستقيمان (IK) و (AO) عموديان على (BC) نفسه ، فهما متوازيان ✓. الخطأ الشائع: وضع الزاوية القائمة عند طرف القطر بدل الرأس المقابل له ؛ أو الظنّ أنّ كلّ موسّط عمودي على الضلع المقابل ، وهذا لا يصحّ إلاّ لموسّط القمّة في مثلّث متقايس الضلعين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.cercle",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "الدائرة (ζ) قطرها [BI] ، والنقطة E نقطة ثانية من (ζ) تخالف B و I ، وتنتمي إلى المستقيم (IC). ما طبيعة المثلّث BEI ؟\n<svg viewBox=\"0 0 300 320\"><title>الدائرة ذات القطر BI والنقطة E على (IC)</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"195\" cy=\"205\" r=\"45\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><path d=\"M60 25 L168 241\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"168\" cy=\"241\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"241\" y=\"158\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">ζ</text><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"182\" y=\"255\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم في E"
+        },
+        {
+          "id": "b",
+          "text": "قائم في B",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "c",
+          "text": "قائم في I",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "d",
+          "text": "متقايس الأضلاع"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "[BI] قطر للدائرة (ζ) والنقطة E منها تخالف B و I ، فالمثلّث BEI قائم في الرأس E المقابل للقطر ، أي (BE) ⟂ (EI) = (IC) ✓. الخطأ الشائع: وضع الزاوية القائمة عند أحد طرفي القطر B أو I بدل الرأس الذي يواجه القطر.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A ، والنقطة I منتصف [AB]. ما موضع المستقيم (CA) بالنسبة للمثلّث IBC ؟\n<svg viewBox=\"0 0 300 235\"><title>المثلث IBC والمستقيم (CA)</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "ارتفاع صادر من C"
+        },
+        {
+          "id": "b",
+          "text": "موسّط صادر من C",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "موسّط عمودي للضلع [IB]",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "d",
+          "text": "منصّف الزاوية ICB",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "النقطة A تنتمي إلى المستقيم (IB) و (CA) عمودي على (AB) ، فـ (CA) عمودي على (IB). وهو يمرّ من الرأس C ، فهو الارتفاع الصادر من C في المثلّث IBC ✓. وليس موسّطًا ولا موسّطًا عموديًّا لأنّ A ليست منتصف [IB] ، بل تقع خارج القطعة [IB] ، وليس منصّفًا لأنّ الزاويتين المجاورتين له غير متساويتين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A ، والنقطة K تنتمي إلى [BC] والمستقيم (IK) عمودي على (BC) ، والمستقيم (IK) يقطع (AC) في النقطة H حيث I نقطة من [AB]. ما طبيعة المثلّث HKC ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلث HKC</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"195\" cy=\"205\" r=\"45\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><path d=\"M60 295 L195 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"195\" cy=\"160\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"295\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"241\" y=\"158\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">ζ</text><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"210\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"46\" y=\"300\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم في K ومتقايس الضلعين"
+        },
+        {
+          "id": "b",
+          "text": "قائم في K وغير متقايس الضلعين"
+        },
+        {
+          "id": "c",
+          "text": "قائم في C ومتقايس الضلعين",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "d",
+          "text": "قائم في C وغير متقايس الضلعين"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(HK) = (IK) عمودي على (BC) = (KC) ، فالمثلّث HKC قائم في K. وزاويته عند C هي الزاوية ACB ، وقياسها 45° لأنّ ABC قائم ومتقايس الضلعين ؛ فزاويته الثالثة عند H قياسها 180° − 90° − 45° = 45° أيضًا. زاويتان متساويتان تعنيان أنّ KH = KC ، فهو قائم ومتقايس الضلعين قمّته K ✓. الخطأ الشائع: وضع الزاوية القائمة عند C ، مع أنّ المستقيمين العموديين يتقاطعان في K.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A حيث AB = 6 ، والنقطة H من المستقيم (AC) بحيث A بين C و H وطول [HC] بالسنتيمتر:\nHC = 9\nما مساحة المثلّث BCH بالسنتيمتر المربّع ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلث BCH</title><polygon points=\"240,205 60,25 60,295\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 25 L60 295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 199.5 L150 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M54.5 115 L65.5 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"295\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"46\" y=\"300\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "18",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "27"
+        },
+        {
+          "id": "c",
+          "text": "27√2",
+          "misconceptionTag": "math.mes.aire-cote-oblique-pris-pour-hauteur"
+        },
+        {
+          "id": "d",
+          "text": "54",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نأخذ [HC] قاعدة ، وهي محمولة على (AC). ارتفاع المثلّث المقابل للرأس B هو البعد من B إلى (AC) ، وهو AB = 6 لأنّ (AB) عمودي على (AC). المساحة = (1/2) × 9 × 6 = 27 ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 54 ؛ أو أخذ الضلع المائل [BC] ارتفاعًا فنجد (1/2) × 9 × 6√2 = 27√2 ؛ أو حساب مساحة المثلّث ABC فنجد 18.",
+      "difficulty": 2,
+      "competencies": [
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A حيث AB = 6 ، والنقطة H من المستقيم (AC) بحيث A بين C و H وطول [HC] بالسنتيمتر:\nHC = 9\nما طول [BH] بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلث BCH</title><polygon points=\"240,205 60,25 60,295\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 25 L60 295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 199.5 L150 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M54.5 115 L65.5 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"295\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"46\" y=\"300\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√3",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "3√5"
+        },
+        {
+          "id": "c",
+          "text": "3√13",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "3√29",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A بين C و H ، فـ AH = HC − AC = 9 − 6 = 3. المثلّث ABH قائم في A ووتره [BH] ، فـ BH² = AB² + AH² = 36 + 9 = 45 ، ومنه BH = √45 = 3√5 ✓. الخطأ الشائع: جعل [AB] وترًا فنجد BH² = 36 − 9 = 27 ؛ أو أخذ AH = HC = 9 فنجد BH² = 36 + 81 = 117 ؛ أو جمع الطولين فنجد AH = 6 + 9 = 15 و BH² = 261.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A حيث AB = 6 ، و I منتصف [AB] ، و O منتصف [BC] ، والمستقيمان (IC) و (AO) يتقاطعان في G ، والدائرة (ζ) التي قطرها [BI] تقطع (BC) في نقطة ثانية K ، ونعلم أنّ (IK) ∥ (AO). ما طول [CK] بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 272\"><title>الدائرة ذات القطر BI والنقاط G و K</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"195\" cy=\"205\" r=\"45\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\"/><path d=\"M60 205 L150 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 25 L150 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 205 L195 160\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150\" cy=\"115\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"145\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"195\" cy=\"160\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"241\" y=\"158\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">ζ</text><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150\" y=\"223\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"164\" y=\"109\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"132\" y=\"162\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"210\" y=\"154\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2√2"
+        },
+        {
+          "id": "b",
+          "text": "3√2/2"
+        },
+        {
+          "id": "c",
+          "text": "9√2/2"
+        },
+        {
+          "id": "d",
+          "text": "9√2",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "BC = 6√2 بفيثاغورس ، فـ CO = BC/2 = 3√2. G مركز ثقل ABC ، فـ CG = (2/3) CI أي CI/CG = 3/2. النقاط C و G و I على استقامة واحدة وكذلك C و O و K ، و (IK) ∥ (GO) لأنّ G ∈ (AO). بطاليس CK/CO = CI/CG = 3/2 ، ومنه CK = (3/2) × 3√2 = 9√2/2 ✓. الخطأ الشائع: قلب النسبة فنجد (2/3) × 3√2 = 2√2 ؛ أو أخذ نصف CO فنجد 3√2/2 ؛ أو ضربها في BC بدل CO فنجد (3/2) × 6√2 = 9√2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.pythagore",
+        "math.geo.cercle"
+      ]
+    },
+    {
+      "prompt": "في مثلّث IBC ، النقطة H هي مركزه القائم أي نقطة تلاقي ارتفاعاته الثلاثة ، والدائرة التي قطرها [BI] تقطع المستقيم (IC) في نقطة E تخالف I. أيّ استنتاج صحيح بخصوص النقاط H و E و B ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "H و E و B على استقامة واحدة ، لأنّ (BH) و (BE) عموديان على (IC) ويمرّان من B ، والعمودي على (IC) من B وحيد"
+        },
+        {
+          "id": "b",
+          "text": "H و E و B ليست على استقامة واحدة ، لأنّ (BH) و (BE) عموديان على (IC) ، وكلّ مستقيمين عموديين على مستقيم واحد متوازيان"
+        },
+        {
+          "id": "c",
+          "text": "المثلّث BHE قائم في E ، لأنّ (BE) عمودي على (IC) والنقطة E من (IC)"
+        },
+        {
+          "id": "d",
+          "text": "E منتصف [BH] ، لأنّ (BE) و (BH) عموديان على (IC) في آن واحد"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(BH) هو الارتفاع الثالث للمثلّث IBC ، فهو عمودي على (IC). والمثلّث BEI قائم في E لأنّ [BI] قطر ، فـ (BE) ⟂ (IC) أيضًا. المستقيمان (BH) و (BE) يمرّان من B ويعامدان (IC) ، ومن نقطة معلومة يوجد مستقيم وحيد عمودي على مستقيم معلوم ، فهما منطبقان ، أي H و E و B على استقامة واحدة ✓. الخطأ الشائع: القول إنّ المستقيمين متوازيان فيبتعدان ، مع أنّهما يشتركان في النقطة B فينطبقان.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.cercle",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "ABC مثلّث متقايس الضلعين وقائم في A حيث AB = 6 ، والنقطة H من المستقيم (AC) بحيث A بين C و H وطول [HC] بالسنتيمتر:\nHC = 9\nو E المسقط العمودي للنقطة C على المستقيم (BH). ما طول [CE] بالسنتيمتر ؟\n<svg viewBox=\"0 0 300 320\"><title>المثلث BCH والنقطة E</title><path d=\"M60 205 L240 205\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 25\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M240 205 L60 295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 25 L60 295\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M60 25 L168 241\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M150 199.5 L150 210.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M54.5 115 L65.5 115\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M71 205 L71 194 L60 194\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M163.1 231.2 L172.9 226.2 L177.8 236.1\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"240\" cy=\"205\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"25\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"60\" cy=\"295\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"168\" cy=\"241\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"47\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"253\" y=\"221\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"46\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"46\" y=\"300\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"182\" y=\"255\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9√5/5",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        },
+        {
+          "id": "b",
+          "text": "27√5/5"
+        },
+        {
+          "id": "c",
+          "text": "18√5/5"
+        },
+        {
+          "id": "d",
+          "text": "18√5",
+          "misconceptionTag": "math.num.rationalisation-denominateur-oublie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب مساحة المثلّث BCH بطريقتين. بأخذ [HC] قاعدة وارتفاعها AB = 6: المساحة = (1/2) × 9 × 6 = 27. وبأخذ [BH] قاعدة وارتفاعها CE: المساحة = (1/2) × BH × CE ، حيث BH² = AB² + AH² = 36 + 9 = 45 أي BH = 3√5. إذن (1/2) × 3√5 × CE = 27 ، ومنه CE = 54/(3√5) = 18/√5 = 18√5/5 ✓. الخطأ الشائع: نسيان العامل 1/2 فنجد CE = 27/(3√5) = 9√5/5 ؛ أو ترك الضرب في √5 دون القسمة على 5 فنجد 18√5 ؛ أو أخذ HC = 9 ارتفاعًا مكان AB فنجد المساحة 81/2 ثمّ CE = 81/(3√5) = 27√5/5.",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

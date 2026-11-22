@@ -1,0 +1,271 @@
+{
+  "title": "🏛️ مناظرة 2023 · التمرين 3 ⭐⭐⭐⭐: عبارة من الدرجة الثانية ومعادلة المساحة — طاليس في مثلّثين وعلاقة الارتفاع ونوع رباعي",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 54,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "لتكن العبارة التالية حيث x عدد حقيقي:\nF = −4x² + 5x\nما قيمة F في حالة x = 1/2 ؟ اكتب الناتج عددًا عشريًّا.",
+      "answerKey": {
+        "value": 1.5
+      },
+      "explanation": "نعوّض x بالعدد 1/2: F = −4 × (1/2)² + 5 × (1/2) = −4 × 1/4 + 5/2 = −1 + 5/2 = 3/2 = 1,5 ✓. الخطأ الشائع: تربيع البسط وحده فنجد (1/2)² = 1/2 ثمّ −2 + 5/2 = 1/2 ؛ أو إدخال المعامل −4 في المربّع فنجد (−4 × 1/2)² = 4 ثمّ 4 + 5/2 = 13/2.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.puissances",
+        "math.frac.add-sous"
+      ]
+    },
+    {
+      "prompt": "لتكن العبارة التالية حيث x عدد حقيقي:\nF = −4x² + 5x\nأيّ جداء يساوي F − 3/2 لكلّ عدد حقيقي x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−4(x − 1/2)(x − 3/4)"
+        },
+        {
+          "id": "b",
+          "text": "−4(x + 1/2)(x + 3/4)"
+        },
+        {
+          "id": "c",
+          "text": "−4(x − 1/2)(x + 3/4)"
+        },
+        {
+          "id": "d",
+          "text": "−4(x + 1/2)(x − 3/4)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ننشر الجداء المقترح: (x − 1/2)(x − 3/4) = x² − (3/4)x − (1/2)x + 3/8 = x² − (5/4)x + 3/8 ، وبضربه في −4 نجد −4x² + 5x − 3/2 ، وهو F − 3/2 ✓. أمّا الجداءات الأخرى فتنشر إلى −4x² − 5x − 3/2 و −4x² − x + 3/2 و −4x² + x + 3/2 ، وهي تخالف F − 3/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة الأعداد الحقيقية x التي تحقّق المعادلة التالية ؟\n−4x² + 5x = 3/2",
+      "options": [
+        {
+          "id": "a",
+          "text": "{1/2 ; 3/4}"
+        },
+        {
+          "id": "b",
+          "text": "{−1/2 ; −3/4}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "c",
+          "text": "{2 ; 4/3}",
+          "misconceptionTag": "math.frac.numerateur-denominateur-inverses"
+        },
+        {
+          "id": "d",
+          "text": "{1/2}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المعادلة تكافئ −4x² + 5x − 3/2 = 0 ، أي x² − (5/4)x + 3/8 = 0. نبحث عن عددين مجموعهما 5/4 وجداؤهما 3/8 ، فهما 1/2 و 3/4 ، لأنّ 1/2 + 3/4 = 5/4 و 1/2 × 3/4 = 3/8. تصبح المعادلة (x − 1/2)(x − 3/4) = 0 ، فـ x = 1/2 أو x = 3/4 ✓. تحقّق: −4 × 1/4 + 5/2 = 3/2 ✓ و −4 × 9/16 + 15/4 = −9/4 + 15/4 = 3/2 ✓. الخطأ الشائع: قراءة الجذرين بإشارتيهما الظاهرتين في القوسين فنجد {−1/2 ; −3/4} ؛ أو قلب الكسرين عند الحلّ فنجد {2 ; 4/3} ؛ أو الاكتفاء بجذر واحد.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "HAB مثلّث قائم في H حيث AH = 1 و BH = 2 ، و I منتصف [BH] ، و M نقطة من [AH] تخالف A و H ، والمستقيم المارّ من M والموازي لـ (BH) يقطع [AI] في J و [AB] في N. أيّ مساواة صحيحة بتطبيق نظرية طاليس ؟\n<svg viewBox=\"0 0 320 178\"><title>المثلث HAB القائم في H والمستقيم الموازي لـ (BH) المارّ من M</title><path d=\"M25 135 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L215 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L25 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L120 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M101 97 L215 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 124 L204 124 L204 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"215\" cy=\"40\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"25\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"101\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"158\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"215\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"15\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"215\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"120\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"229\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"89\" y=\"89\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"160\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "NJ/BI = JM/IH"
+        },
+        {
+          "id": "b",
+          "text": "NJ/BI = IH/JM",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "NJ/BH = JM/IH",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "NJ/BI = JM/MH",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "النقاط B و I و H على استقامة واحدة والمستقيم (MN) يوازي (BH) ، فـ (NJ) ∥ (BI) و (JM) ∥ (IH). في المثلّث ABI: AJ/AI = NJ/BI. وفي المثلّث AIH: AJ/AI = JM/IH. النسبة AJ/AI مشتركة بين المساواتين ، فـ NJ/BI = JM/IH ✓. الخطأ الشائع: قلب أحد الكسرين فنجد NJ/BI = IH/JM ؛ أو وضع الضلع الكبير [BH] مكان [BI] فنجد NJ/BH ؛ أو وضع [MH] مكان [IH] فنجد JM/MH.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "prompt": "المثلّث HAB قائم في H حيث AH = 1 و BH = 2 ، والمستقيم المارّ من A والعمودي على (AB) يقطع المستقيم (BH) في النقطة C. ما طول [HC] ؟\n<svg viewBox=\"0 0 320 178\"><title>المثلث HAB القائم في H والنقطة C</title><path d=\"M25 135 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L215 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L25 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M205.2 44.9 L210.1 54.8 L219.9 49.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 124 L204 124 L204 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"215\" cy=\"40\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"25\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"262.5\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"215\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"15\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"215\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"274.5\" y=\"151\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "misconceptionTag": "math.geo.hauteur-confondue-avec-mediane"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث ABC قائم في A لأنّ (AC) عمودي على (AB) ، و [AH] ارتفاعه الصادر من A لأنّ (AH) عمودي على (BC). بعلاقة الارتفاع AH² = BH × CH نجد 1² = 2 × CH ، ومنه CH = 1/2 ✓. الخطأ الشائع: اعتبار H منتصف [BC] لأنّ [AH] ارتفاع فنجد HC = HB = 2 ؛ أو إسناد المربّع إلى القطعة الخطأ فنجد AH² = BH² × HC أي 1 = 4 × HC و HC = 1/4 ؛ أو الظنّ أنّ HC = AH = 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "HAB مثلّث قائم في H حيث AH = 1 و BH = 2 ، و I منتصف [BH] ، و M نقطة من [AH] تخالف A و H ، والمستقيم المارّ من M والموازي لـ (BH) يقطع [AI] في J و [AB] في N. ما طبيعة المثلّث MAJ ؟\n<svg viewBox=\"0 0 320 178\"><title>المثلث HAB القائم في H والمستقيم الموازي لـ (BH) المارّ من M</title><path d=\"M25 135 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L215 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L25 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L120 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M101 97 L215 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 124 L204 124 L204 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"215\" cy=\"40\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"25\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"101\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"158\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"215\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"15\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"215\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"120\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"229\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"89\" y=\"89\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"160\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "قائم في M ومتقايس الضلعين"
+        },
+        {
+          "id": "b",
+          "text": "قائم في M وغير متقايس الضلعين"
+        },
+        {
+          "id": "c",
+          "text": "قائم في A ومتقايس الضلعين",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "d",
+          "text": "قائم في A وغير متقايس الضلعين"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المستقيم (MJ) يوازي (BH) و (AH) عمودي على (BH) ، فـ (AH) عمودي على (MJ) ، أي أنّ المثلّث MAJ قائم في M. وبتطبيق طاليس في المثلّث AIH: JM/IH = AM/AH ، لكنّ IH = BH/2 = 1 = AH ، فـ JM = AM ، أي أنّ المثلّث MAJ متقايس الضلعين قمّته M ✓. الخطأ الشائع: وضع الزاوية القائمة عند A ، مع أنّ زاوية المثلّث MAJ عند A حادّة لأنّ J تقع على [AI] المائل ؛ أو نسيان أنّ IH = AH فيُظنّ المثلّث غير متقايس الضلعين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.triangles-base"
+      ]
+    },
+    {
+      "prompt": "HAB مثلّث قائم في H حيث AH = 1 و BH = 2 ، و I منتصف [BH] ، و M نقطة من [AH] تخالف A و H ، والمستقيم المارّ من M والموازي لـ (BH) يقطع [AI] في J و [AB] في N. ما قيمة النسبة MN/MA ؟\n<svg viewBox=\"0 0 320 178\"><title>المثلث HAB القائم في H والمستقيم الموازي لـ (BH) المارّ من M</title><path d=\"M25 135 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L215 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L25 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L120 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M101 97 L215 97\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 124 L204 124 L204 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"215\" cy=\"40\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"25\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"120\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"101\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"158\" cy=\"97\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"215\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"15\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"215\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"120\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"229\" y=\"102\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"89\" y=\"89\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"160\" y=\"116\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بطاليس في المثلّث AIH: JM/IH = AM/AH ، و IH = AH = 1 ، فـ JM = AM. وبطاليس في المثلّث ABI: NJ/BI = AJ/AI = JM/IH ، و BI = IH ، فـ NJ = JM. إذن J منتصف [MN] و MN = 2 × MJ = 2 × MA ، أي MN/MA = 2 ✓. الخطأ الشائع: أخذ MN = MJ فنجد 1 ؛ أو استعمال BH = 2 بدل IH = 1 في النسبة فنجد JM = 2 × AM ثمّ MN/MA = 4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "HAB مثلّث قائم في H حيث AH = 1 و BH = 2 ، و M نقطة من [AH] حيث HM = 1/4 ، والمستقيم المارّ من M والموازي لـ (BH) يقطع [AB] في N ، والمستقيم المارّ من A والعمودي على (AB) يقطع (BH) في C. ما مساحة الرباعي NHCM بالوحدة المربّعة ؟ اكتب الناتج عددًا عشريًّا.\n<svg viewBox=\"0 0 320 178\"><title>الرباعي NHCM عندما HM = 1/4</title><polygon points=\"72.5,111.3 215,135 262.5,135 215,111.3\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M25 135 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L215 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L25 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M72.5 111.3 L215 111.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M72.5 111.3 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M262.5 135 L215 111.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M205.2 44.9 L210.1 54.8 L219.9 49.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 124 L204 124 L204 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"215\" cy=\"40\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"25\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"111.3\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"72.5\" cy=\"111.3\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"262.5\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"215\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"15\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"215\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"228\" y=\"102.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"60.5\" y=\"103.3\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"274.5\" y=\"151\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "answerKey": {
+        "value": 0.25
+      },
+      "explanation": "(MN) ∥ (BH) في المثلّث ABH ، فبطاليس MN/BH = AM/AH ، و AM = 1 − 1/4 = 3/4 ، ومنه MN = 2 × 3/4 = 3/2. وبعلاقة الارتفاع في المثلّث ABC القائم في A: AH² = BH × HC فـ HC = 1/2. الرباعي NHCM شبه منحرف قاعدتاه [MN] و [HC] ، وارتفاعه HM لأنّ (HM) عمودي على المستقيمين المتوازيين. المساحة = (1/2) × (3/2 + 1/2) × 1/4 = (1/2) × 2 × 1/4 = 1/4 = 0,25 ✓. الخطأ الشائع: نسيان القسمة على 2 فنجد 0,5 ؛ أو أخذ الضلع المائل [NH] ارتفاعًا مكان [HM].",
+      "difficulty": 3,
+      "competencies": [
+        "math.mes.aires",
+        "math.geo.thales-direct",
+        "math.geo.relations-metriques"
+      ]
+    },
+    {
+      "prompt": "HAB مثلّث قائم في H حيث AH = 1 و BH = 2 ، و a عدد حقيقي من المجال ]0 ; 1[ ، و M نقطة من [AH] حيث HM = a ، والمستقيم المارّ من M والموازي لـ (BH) يقطع [AB] في N ، والمستقيم المارّ من A والعمودي على (AB) يقطع (BH) في C ، ومساحة الرباعي NHCM هي S حيث:\nS = (1/4)(−4a² + 5a)\nونعلم أنّ S = 3/8. ما كلّ القيم الممكنة للعدد a ؟\n<svg viewBox=\"0 0 320 178\"><title>الرباعي NHCM</title><polygon points=\"82,106.5 215,135 262.5,135 215,106.5\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M25 135 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L215 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L25 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M82 106.5 L215 106.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M82 106.5 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M262.5 135 L215 106.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M205.2 44.9 L210.1 54.8 L219.9 49.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 124 L204 124 L204 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"215\" cy=\"40\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"25\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"106.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"82\" cy=\"106.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"262.5\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"215\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"15\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"215\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"228\" y=\"97.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"70\" y=\"98.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"274.5\" y=\"151\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"198\" y=\"125.8\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 1/2 أو a = 3/4"
+        },
+        {
+          "id": "b",
+          "text": "a = 1/2"
+        },
+        {
+          "id": "c",
+          "text": "a = 7/8"
+        },
+        {
+          "id": "d",
+          "text": "لا توجد قيمة ممكنة",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الشرط S = 3/8 يعني (1/4)(−4a² + 5a) = 3/8 ، وبضرب الطرفين في 4: −4a² + 5a = 3/2. المعادلة −4a² + 5a − 3/2 = 0 تكافئ a² − (5/4)a + 3/8 = 0 ، ونبحث عن عددين مجموعهما 5/4 وجداؤهما 3/8 ، فهما 1/2 و 3/4. إذن −4a² + 5a − 3/2 = −4(a − 1/2)(a − 3/4) = 0 ، أي a = 1/2 أو a = 3/4. والعددان ينتميان إلى ]0 ; 1[ ، فكلاهما مقبول ✓. تحقّق: S(1/2) = (1/4)(−1 + 5/2) = 3/8 ✓ و S(3/4) = (1/4)(−9/4 + 15/4) = 3/8 ✓. الخطأ الشائع: عدم تعميل العبارة والاكتفاء بجذر واحد ؛ أو قراءة الجذرين بإشارتيهما الظاهرتين فنجد a = −1/2 أو a = −3/4 ثمّ رفضهما لأنّ a موجب ؛ أو كتابة a(−4a + 5) = 3/2 ثمّ القول إنّ a = 3/2 أو −4a + 5 = 3/2 ، فنجد a = 7/8 بعد استبعاد 3/2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.mes.aires"
+      ]
+    },
+    {
+      "prompt": "HAB مثلّث قائم في H حيث AH = 1 و BH = 2 ، و M نقطة من [AH] حيث HM = 3/4 ، والمستقيم المارّ من M والموازي لـ (BH) يقطع [AB] في N ، والمستقيم المارّ من A والعمودي على (AB) يقطع (BH) في C. ما طبيعة الرباعي NHCM ؟\n<svg viewBox=\"0 0 320 178\"><title>الرباعي NHCM عندما HM = 3/4</title><polygon points=\"167.5,63.8 215,135 262.5,135 215,63.8\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M25 135 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L215 40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L25 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M167.5 63.8 L215 63.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 40 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 135 L262.5 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M167.5 63.8 L215 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M262.5 135 L215 63.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M205.2 44.9 L210.1 54.8 L219.9 49.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M215 124 L204 124 L204 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"215\" cy=\"40\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"25\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"215\" cy=\"63.8\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"167.5\" cy=\"63.8\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"262.5\" cy=\"135\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"215\" y=\"29\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"15\" y=\"152\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"215\" y=\"153\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"205\" y=\"79.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"155.5\" y=\"55.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"274.5\" y=\"151\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازي أضلاع وليس مستطيلًا"
+        },
+        {
+          "id": "b",
+          "text": "مستطيل وليس مربّعًا",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "c",
+          "text": "شبه منحرف وليس متوازي أضلاع",
+          "misconceptionTag": "math.geo.paires-de-cotes-paralleles-mal-comptees"
+        },
+        {
+          "id": "d",
+          "text": "معيّن وليس مربّعًا"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بطاليس في المثلّث ABH: MN/BH = AM/AH = 1/4 ، فـ MN = 2 × 1/4 = 1/2. وبعلاقة الارتفاع في المثلّث ABC القائم في A: AH² = BH × HC فـ HC = 1/2. إذن MN = HC ، و (MN) ∥ (HC) ، والقطعتان [MN] و [HC] ضلعان متقابلان في الرباعي NHCM ، فهو متوازي أضلاع وليس مستطيلًا ✓. وهو ليس مستطيلًا: لو كانت زاويته عند H قائمة لكان (NH) عموديًّا على (BH) مثل (AH) ، فيوازي (NH) المستقيم (AH) ويمرّان من H فينطبقان ، وتكون N على (AH) ، وهذا مستحيل لأنّ N من [AB] وتخالف A. وليس معيّنًا لأنّ NH أكبر من HM = 3/4 (وتر المثلّث NMH القائم في M) أمّا HC = 1/2. الخطأ الشائع: الاكتفاء بتوازي ضلعين فيُقال شبه منحرف ؛ أو إضافة زاوية قائمة لم يثبتها شيء.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.geo.relations-metriques",
+        "math.geo.triangles-base"
+      ]
+    }
+  ]
+}
