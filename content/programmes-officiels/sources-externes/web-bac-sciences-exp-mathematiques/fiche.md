@@ -23,7 +23,7 @@ Les **corrigés** ré-hébergés n'ont pas été ouverts : sans en-tête du Mini
 à établir (fiche `web-devoir-tn` § 9), donc source tierce (R-2). Les explications des missions sont
 celles des auteurs, re-résolues.
 
-## Ce qui a été produit (2026-11-22)
+## Ce qui a été produit (2026-11-22) — publié en production le jour même (privé#907, apply-content run 366)
 
 - 17 transcriptions fidèles sous `programmes-officiels/examens-nationaux/bac-sciences-exp/mathematiques/`.
 - 68 missions, une par exercice officiel, placées au chapitre le plus avancé qu'elles mobilisent :
