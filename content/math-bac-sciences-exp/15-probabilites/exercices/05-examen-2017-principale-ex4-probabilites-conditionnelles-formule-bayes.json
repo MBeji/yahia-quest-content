@@ -1,0 +1,110 @@
+{
+  "title": "🏛️ Bac 2017 · session principale · Exercice 4 ⭐⭐⭐ : probabilités totales, probabilité conditionnelle et répétition de n épreuves",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Dans une ville, 5 % des femmes enceintes ont une grossesse multiple ; parmi ces dernières, 55 % accouchent dans le délai prévu, et parmi les femmes ayant une grossesse unique, 92 % accouchent dans le délai prévu. On choisit au hasard une femme de cette population et on note U : « la femme a une grossesse unique » et D : « la femme accouche dans le délai prévu ». Quelle est la valeur de p(U) ?",
+      "answerKey": {
+        "value": 0.95
+      },
+      "explanation": "Les événements « grossesse unique » et « grossesse multiple » sont contraires. Comme 5 % des femmes ont une grossesse multiple, p(U) = 1 − 0,05 = 0,95 ✓. Le pourcentage 5 % décrit l'événement contraire de U, non U lui-même.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une ville, 5 % des femmes enceintes ont une grossesse multiple ; parmi ces dernières, 55 % accouchent dans le délai prévu, et parmi les femmes ayant une grossesse unique, 92 % accouchent dans le délai prévu. On choisit au hasard une femme de cette population et on note U : « la femme a une grossesse unique » et D : « la femme accouche dans le délai prévu ». Comment traduit-on en probabilités les pourcentages 92 % et 55 % ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(U/D) = 0,92 et p(D/U̅) = 0,55"
+        },
+        {
+          "id": "b",
+          "text": "p(D/U) = 0,92 et p(U̅/D) = 0,55"
+        },
+        {
+          "id": "c",
+          "text": "p(D/U) = 0,92 et p(D/U̅) = 0,55"
+        },
+        {
+          "id": "d",
+          "text": "p(U/D) = 0,92 et p(U̅/D) = 0,55"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le pourcentage 92 % est calculé parmi les femmes ayant une grossesse unique : c'est la probabilité de D sachant U, p(D/U) = 0,92. Le pourcentage 55 % est calculé parmi les femmes ayant une grossesse multiple, c'est-à-dire U̅ : p(D/U̅) = 0,55 ✓. L'erreur classique est d'inverser le conditionnement : p(U/D) serait la proportion de grossesses uniques parmi les femmes qui accouchent dans le délai, une tout autre grandeur.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une ville, 5 % des femmes enceintes ont une grossesse multiple ; parmi ces dernières, 55 % accouchent dans le délai prévu, et parmi les femmes ayant une grossesse unique, 92 % accouchent dans le délai prévu. On choisit au hasard une femme de cette population et on note U : « la femme a une grossesse unique » et D : « la femme accouche dans le délai prévu ». Quelle est la valeur de p(D) ?",
+      "answerKey": {
+        "value": 0.9015
+      },
+      "explanation": "Les événements U et U̅ forment une partition. D'après la formule des probabilités totales, p(D) = p(U) × p(D/U) + p(U̅) × p(D/U̅) = 0,95 × 0,92 + 0,05 × 0,55 = 0,874 + 0,0275 = 0,9015 ✓. Chaque produit suit une branche de l'arbre ; oublier la branche U̅ donnerait 0,874.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans une ville, 5 % des femmes enceintes ont une grossesse multiple ; parmi ces dernières, 55 % accouchent dans le délai prévu, et parmi les femmes ayant une grossesse unique, 92 % accouchent dans le délai prévu. On choisit au hasard une femme de cette population et on note U : « la femme a une grossesse unique » et D : « la femme accouche dans le délai prévu ». Une femme a accouché dans le délai prévu. Quelle est la probabilité que sa grossesse soit unique ? Donne le résultat arrondi au dix-millième.",
+      "answerKey": {
+        "value": 0.9695,
+        "tolerance": 0.00015
+      },
+      "explanation": "On cherche p(U/D) = p(U ∩ D)/p(D). On a p(U ∩ D) = 0,95 × 0,92 = 0,874 et p(D) = 0,9015, donc p(U/D) = 0,874/0,9015 ≈ 0,9695 ✓ (la valeur exacte est 0,96949…, que le sujet donne sous la forme tronquée 0,9694). Diviser par p(U) = 0,95 donnerait 0,92, c'est-à-dire p(D/U), le conditionnement inverse.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une ville, 5 % des femmes enceintes ont une grossesse multiple ; parmi ces dernières, 55 % accouchent dans le délai prévu, et parmi les femmes ayant une grossesse unique, 92 % accouchent dans le délai prévu. Un service de maternité prévoit que, en juillet, n femmes (n ≥ 2) de cette population accoucheront dans le délai prévu, leurs grossesses étant indépendantes les unes des autres. Soit pₙ la probabilité qu'au moins une de ces n femmes ait une grossesse multiple. Quelle est l'expression de pₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pₙ = 1 − (0,95 × 0,92)ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "pₙ = 1 − (0,874/0,9015)ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "pₙ = 1 − (0,874/0,95)ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "pₙ = 1 − (0,0275/0,9015)ⁿ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le contraire de « au moins une grossesse multiple » est « toutes les grossesses sont uniques ». Pour une femme ayant accouché dans le délai, la probabilité d'une grossesse unique est p(U/D) = 0,874/0,9015. Pour n femmes indépendantes, la probabilité que toutes soient uniques est (0,874/0,9015)ⁿ, donc pₙ = 1 − (0,874/0,9015)ⁿ ✓. L'erreur classique est de prendre p(U ∩ D) = 0,874 (soit 0,95 × 0,92) ou p(D/U) = 0,874/0,95 = 0,92 au lieu de p(U/D) ; écrire 1 − (0,0275/0,9015)ⁿ emploie p(M/D) = 0,0275/0,9015, la probabilité d'une grossesse multiple, à la place de celle d'une grossesse unique.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans une ville, 5 % des femmes enceintes ont une grossesse multiple ; parmi ces dernières, 55 % accouchent dans le délai prévu, et parmi les femmes ayant une grossesse unique, 92 % accouchent dans le délai prévu. Un service de maternité prévoit que n femmes (n ≥ 2) de cette population accoucheront dans le délai prévu, leurs grossesses étant indépendantes. Quel est le plus petit entier n pour lequel la probabilité qu'au moins une de ces femmes ait une grossesse multiple soit supérieure à 0,9 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "74"
+        },
+        {
+          "id": "b",
+          "text": "45"
+        },
+        {
+          "id": "c",
+          "text": "33"
+        },
+        {
+          "id": "d",
+          "text": "75"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour une femme ayant accouché dans le délai, la probabilité d'une grossesse unique est q = 0,874/0,9015 ≈ 0,9695. On veut 1 − qⁿ > 0,9, soit qⁿ < 0,1. En passant au logarithme (ln q < 0), n > ln 0,1/ln q ≈ 74,3. Le plus petit entier est 75 ✓. Arrondir 74,3 à l'entier inférieur donne 74, qui ne suffit pas ; utiliser q = 0,95 (p(U) au lieu de p(U/D)) donne n > 44,9 ; attendre n × 0,0305 ≥ 1 donne 33.",
+      "difficulty": 3
+    }
+  ]
+}

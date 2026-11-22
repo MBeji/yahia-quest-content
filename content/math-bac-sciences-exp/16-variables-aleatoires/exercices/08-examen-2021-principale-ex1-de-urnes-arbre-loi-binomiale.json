@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 1 ⭐⭐⭐ : dé et deux urnes, arbre pondéré, probabilité inverse et loi binomiale",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "On dispose d'un dé cubique équilibré dont deux faces portent le chiffre 1 et les quatre autres le chiffre 2, et de deux urnes : U₁ contient une boule blanche et trois rouges, U₂ contient deux blanches et deux rouges. Une épreuve consiste à lancer le dé : si la face porte 1, on tire une boule de U₁ ; si elle porte 2, on tire une boule de U₂. On note D l'événement « la face porte le chiffre 1 » et B l'événement « la boule tirée est blanche ».\nQuelle est la probabilité p(D) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(D) = 1/2"
+        },
+        {
+          "id": "b",
+          "text": "p(D) = 1/3"
+        },
+        {
+          "id": "c",
+          "text": "p(D) = 2/3"
+        },
+        {
+          "id": "d",
+          "text": "p(D) = 1/6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Deux faces sur six portent le chiffre 1 et le dé est équilibré : p(D) = 2/6 = 1/3 ✓. 1/2 supposerait deux issues équiprobables (« 1 » ou « 2 ») ; 2/3 est la probabilité de l'événement contraire ; et 1/6 est la probabilité d'une seule face.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On dispose d'un dé cubique équilibré dont deux faces portent le chiffre 1 et les quatre autres le chiffre 2, et de deux urnes : U₁ contient une boule blanche et trois rouges, U₂ contient deux blanches et deux rouges. Une épreuve consiste à lancer le dé : si la face porte 1, on tire une boule de U₁ ; si elle porte 2, on tire une boule de U₂. On note D l'événement « la face porte le chiffre 1 » et B l'événement « la boule tirée est blanche ».\nQuelles sont les valeurs de p(D̄), de p_D(B̄) et de p_D̄(B) dans l'arbre pondéré de l'expérience ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(D̄) = 1/3 ; p_D(B̄) = 3/4 ; p_D̄(B) = 1/2"
+        },
+        {
+          "id": "b",
+          "text": "p(D̄) = 2/3 ; p_D(B̄) = 1/4 ; p_D̄(B) = 1/2"
+        },
+        {
+          "id": "c",
+          "text": "p(D̄) = 2/3 ; p_D(B̄) = 3/4 ; p_D̄(B) = 1/4"
+        },
+        {
+          "id": "d",
+          "text": "p(D̄) = 2/3 ; p_D(B̄) = 3/4 ; p_D̄(B) = 1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "p(D̄) = 1 − 1/3 = 2/3. Si D est réalisé, on tire dans U₁ (1 blanche sur 4) : p_D(B) = 1/4 et p_D(B̄) = 3/4. Si D̄ est réalisé, on tire dans U₂ (2 blanches sur 4) : p_D̄(B) = 2/4 = 1/2 ✓. Prendre p(D̄) = 1/3 recopie p(D) ; 1/4 est p_D(B), non p_D(B̄) ; et 1/4 pour p_D̄(B) utilise l'urne U₁ au lieu de U₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dispose d'un dé cubique équilibré dont deux faces portent le chiffre 1 et les quatre autres le chiffre 2, et de deux urnes : U₁ contient une boule blanche et trois rouges, U₂ contient deux blanches et deux rouges. Une épreuve consiste à lancer le dé : si la face porte 1, on tire une boule de U₁ ; si elle porte 2, on tire une boule de U₂. On note D l'événement « la face porte le chiffre 1 » et B l'événement « la boule tirée est blanche ».\nQuelle est la probabilité p(B) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(B) = 5/12"
+        },
+        {
+          "id": "b",
+          "text": "p(B) = 3/4"
+        },
+        {
+          "id": "c",
+          "text": "p(B) = 3/8"
+        },
+        {
+          "id": "d",
+          "text": "p(B) = 1/12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Probabilités totales : p(B) = p(D)p_D(B) + p(D̄)p_D̄(B) = (1/3)(1/4) + (2/3)(1/2) = 1/12 + 4/12 = 5/12 ✓. 3/4 additionne 1/4 et 1/2 sans pondérer ; 3/8 en fait la moyenne simple, qui suppose D et D̄ équiprobables ; et 1/12 oublie le chemin par U₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dispose d'un dé cubique équilibré dont deux faces portent le chiffre 1 et les quatre autres le chiffre 2, et de deux urnes : U₁ contient une boule blanche et trois rouges, U₂ contient deux blanches et deux rouges. Une épreuve consiste à lancer le dé : si la face porte 1, on tire une boule de U₁ ; si elle porte 2, on tire une boule de U₂. On note D l'événement « la face porte le chiffre 1 » et B l'événement « la boule tirée est blanche ».\nOn répète l'épreuve cinq fois, de façon indépendante (la boule est remise à chaque fois). Soit X le nombre de boules blanches obtenues. Quelle est la loi de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X suit la loi binomiale ℬ(5 ; 1/4)"
+        },
+        {
+          "id": "b",
+          "text": "X suit la loi binomiale ℬ(5 ; 1/2)"
+        },
+        {
+          "id": "c",
+          "text": "X suit la loi binomiale ℬ(5 ; 5/12)"
+        },
+        {
+          "id": "d",
+          "text": "X suit la loi binomiale ℬ(5 ; 7/12)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les cinq épreuves sont identiques et indépendantes, et chacune a deux issues : succès « boule blanche », de probabilité p(B) = 5/12 (probabilités totales). X suit donc ℬ(5 ; 5/12), avec p(X = k) = C(5 ; k)(5/12)ᵏ(7/12)⁵⁻ᵏ ✓. 1/4 et 1/2 sont les probabilités conditionnelles de blanche dans U₁ et dans U₂ seulement ; et 7/12 est la probabilité d'une boule rouge.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dispose d'un dé cubique équilibré dont deux faces portent le chiffre 1 et les quatre autres le chiffre 2, et de deux urnes : U₁ contient une boule blanche et trois rouges, U₂ contient deux blanches et deux rouges. Une épreuve consiste à lancer le dé : si la face porte 1, on tire une boule de U₁ ; si elle porte 2, on tire une boule de U₂. On note D l'événement « la face porte le chiffre 1 » et B l'événement « la boule tirée est blanche ».\nOn répète l'épreuve cinq fois, de façon indépendante. Soit q la probabilité d'obtenir au moins une boule rouge. Que vaut q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "q = 1 − (7/12)⁵ ≈ 0,932"
+        },
+        {
+          "id": "b",
+          "text": "q = 7/12 ≈ 0,583"
+        },
+        {
+          "id": "c",
+          "text": "q = 1 − (5/12)⁵ ≈ 0,987"
+        },
+        {
+          "id": "d",
+          "text": "q = (7/12)⁵ ≈ 0,068"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "« Au moins une rouge » est le contraire de « cinq blanches » : q = 1 − p(X = 5) = 1 − (5/12)⁵ ≈ 1 − 0,0126 = 0,987 ✓. 1 − (7/12)⁵ est la probabilité d'au moins une blanche ; 7/12 est la probabilité d'une seule rouge, sur un seul tirage ; et (7/12)⁵ est la probabilité que les cinq boules soient rouges.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On dispose d'un dé cubique équilibré dont deux faces portent le chiffre 1 et les quatre autres le chiffre 2, et de deux urnes : U₁ contient une boule blanche et trois rouges, U₂ contient deux blanches et deux rouges. Une épreuve consiste à lancer le dé : si la face porte 1, on tire une boule de U₁ ; si elle porte 2, on tire une boule de U₂. On note D l'événement « la face porte le chiffre 1 » et B l'événement « la boule tirée est blanche ».\nSachant que la boule tirée est blanche, quelle est la probabilité qu'elle provienne de l'urne U₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p_B(D̄) = (2/3 × 1/2)/(5/12) = 4/5"
+        },
+        {
+          "id": "b",
+          "text": "p_B(D̄) = p_D̄(B) = 1/2"
+        },
+        {
+          "id": "c",
+          "text": "p_B(D̄) = p(D̄) = 2/3"
+        },
+        {
+          "id": "d",
+          "text": "p_B(D̄) = (1/3 × 1/4)/(5/12) = 1/5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La boule vient de U₂ quand D̄ est réalisé. Formule de Bayes : p_B(D̄) = p(B ∩ D̄)/p(B) = (2/3 × 1/2)/(5/12) = (1/3)/(5/12) = 4/5 ✓. 1/2 est la probabilité inverse p_D̄(B) ; 2/3 ignore l'information « blanche » ; et 1/5 est p_B(D), la probabilité que la boule vienne de U₁.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On dispose d'un dé cubique équilibré dont deux faces portent le chiffre 1 et les quatre autres le chiffre 2, et de deux urnes : U₁ contient une boule blanche et trois rouges, U₂ contient deux blanches et deux rouges. Une épreuve consiste à lancer le dé : si la face porte 1, on tire une boule de U₁ ; si elle porte 2, on tire une boule de U₂. On note D l'événement « la face porte le chiffre 1 » et B l'événement « la boule tirée est blanche ».\nOn répète l'épreuve cinq fois, de façon indépendante. Soit X le nombre de boules blanches obtenues. Quelle est la probabilité d'obtenir une seule fois une boule blanche ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(X = 1) = (5/12) × (7/12)⁴ ≈ 0,048"
+        },
+        {
+          "id": "b",
+          "text": "p(X = 1) = 5 × (7/12) × (5/12)⁴ ≈ 0,088"
+        },
+        {
+          "id": "c",
+          "text": "p(X = 1) = (7/12)⁵ ≈ 0,068"
+        },
+        {
+          "id": "d",
+          "text": "p(X = 1) = 5 × (5/12) × (7/12)⁴ ≈ 0,241"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "X suit ℬ(5 ; 5/12) : p(X = 1) = C(5 ; 1)(5/12)¹(7/12)⁴ = 5 × 0,4167 × 0,1158 ≈ 0,241 ✓. Oublier le coefficient C(5 ; 1) = 5 (la boule blanche peut venir de n'importe quel tirage) divise par 5 ; échanger succès et échec donne p(X = 4) ≈ 0,088 ; et (7/12)⁵ est p(X = 0).",
+      "difficulty": 3
+    }
+  ]
+}

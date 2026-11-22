@@ -1,0 +1,188 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 1 ⭐⭐⭐ : plans parallèles, sphère, produit vectoriel et volume d'un tétraèdre",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les plans P et Q d'équations respectives :\nx + y − z − 5 = 0\nx + y − z + 7 = 0\nQuelle est la position relative de P et de Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "strictement parallèles"
+        },
+        {
+          "id": "b",
+          "text": "confondus"
+        },
+        {
+          "id": "c",
+          "text": "sécants suivant une droite"
+        },
+        {
+          "id": "d",
+          "text": "perpendiculaires"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les vecteurs normaux (1 ; 1 ; −1) de P et de Q sont égaux, donc colinéaires : les plans sont parallèles. Ils sont confondus seulement si les équations sont proportionnelles, ce qui exigerait les mêmes constantes ; ici −5 ≠ 7, par exemple le point (5 ; 0 ; 0) de P n'est pas dans Q (5 + 7 = 12 ≠ 0). Les plans sont donc strictement parallèles ✓. Ils ne se coupent donc pas, et ils ne sont pas perpendiculaires : le produit scalaire des normales vaut 1 + 1 + 1 = 3, non nul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) tels que :\nx² + y² + z² − 2x − 4y − 2z + 1 = 0\nLequel de ces points appartient à S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B(0 ; 0 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "A(2 ; 4 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "C(1 ; 2 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "D(3 ; 2 ; 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On teste chaque point dans l'équation. Pour (2 ; 4 ; 1) : 4 + 16 + 1 − 4 − 16 − 2 + 1 = 0 ✓. Pour (0 ; 0 ; 0), on obtient 1 ≠ 0 ; pour (1 ; 2 ; 1), qui est le centre de la sphère, on obtient 1 + 4 + 1 − 2 − 8 − 2 + 1 = −5 ≠ 0 ; pour (3 ; 2 ; 1), 9 + 4 + 1 − 6 − 8 − 2 + 1 = −1 ≠ 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S la sphère de centre I(1 ; 2 ; 1) et de rayon √5, et soit P le plan d'équation x + y − z − 5 = 0. Quelle est l'intersection de S et de P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le cercle de centre J(2 ; 3 ; 0) et de rayon √3"
+        },
+        {
+          "id": "b",
+          "text": "le cercle de centre I(1 ; 2 ; 1) et de rayon √2"
+        },
+        {
+          "id": "c",
+          "text": "le cercle de centre J(2 ; 3 ; 0) et de rayon √2"
+        },
+        {
+          "id": "d",
+          "text": "le cercle de centre I(1 ; 2 ; 1) et de rayon √3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La distance de I à P est d = |1 + 2 − 1 − 5|/√3 = 3/√3 = √3 < √5 : l'intersection est un cercle de rayon √(5 − 3) = √2. Son centre est le projeté orthogonal de I sur P : I + k(1 ; 1 ; −1) avec k = 1 donne J(2 ; 3 ; 0) ✓ (2 + 3 − 0 − 5 = 0). Prendre la distance √3 pour rayon oublie le théorème de Pythagore ; le point I n'est pas dans P (1 + 2 − 1 − 5 = −3), il ne peut pas être le centre d'un cercle contenu dans P.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S la sphère de centre I(1 ; 2 ; 1) et de rayon √5, et soit Q le plan d'équation x + y − z + 7 = 0. Quelle est l'intersection de S et de Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "un cercle de rayon √22"
+        },
+        {
+          "id": "b",
+          "text": "un seul point"
+        },
+        {
+          "id": "c",
+          "text": "un cercle de rayon √2"
+        },
+        {
+          "id": "d",
+          "text": "l'ensemble vide"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La distance de I à Q est |1 + 2 − 1 + 7|/√3 = 9/√3 = 3√3, soit d² = 27. Comme d² = 27 > R² = 5, le plan est à l'extérieur de la sphère : l'intersection est vide ✓. Prendre la valeur absolue de R² − d² = −22 donne un faux cercle de rayon √22 ; un seul point exigerait d = R ; le rayon √2 est celui du cercle avec l'autre plan, qui est à une autre distance.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(0 ; 0 ; 1), B(0 ; 1 ; 2) et C(2 ; 2 ; 5). Que vaut le produit vectoriel AB⃗ ∧ AC⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 ; −2 ; −2)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 2 ; −2)"
+        },
+        {
+          "id": "c",
+          "text": "(−2 ; −2 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "(0 ; 2 ; 4)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a AB⃗(0 ; 1 ; 1) et AC⃗(2 ; 2 ; 4). Alors AB⃗ ∧ AC⃗ = (1 × 4 − 1 × 2 ; 1 × 2 − 0 × 4 ; 0 × 2 − 1 × 2) = (2 ; 2 ; −2) ✓. Une erreur de signe sur la deuxième coordonnée donne (2 ; −2 ; −2) ; inverser l'ordre des vecteurs change tous les signes ; le produit terme à terme (0 ; 2 ; 4) n'est pas un produit vectoriel.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(0 ; 0 ; 1), B(0 ; 1 ; 2) et C(2 ; 2 ; 5). Pour tout point M(x, y, z), que vaut (AB⃗ ∧ AC⃗) · AM⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2(x + y − z + 1)"
+        },
+        {
+          "id": "b",
+          "text": "−2(x + y − z + 1)"
+        },
+        {
+          "id": "c",
+          "text": "2(x + y − z − 1)"
+        },
+        {
+          "id": "d",
+          "text": "2(x + y − z)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec AB⃗ ∧ AC⃗ = (2 ; 2 ; −2) et AM⃗(x ; y ; z − 1), on obtient 2x + 2y − 2(z − 1) = 2x + 2y − 2z + 2 = 2(x + y − z + 1) ✓. Prendre le vecteur MA⃗ à la place de AM⃗ change le signe de tout ; écrire AM⃗(x ; y ; z + 1) donne 2(x + y − z − 1) ; oublier la cote de A (travailler avec OM⃗) supprime le terme constant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne A(0 ; 0 ; 1), B(0 ; 1 ; 2), C(2 ; 2 ; 5). Un point M(x, y, z) est tel que le tétraèdre ABCM a un volume égal à 2. Quelle condition portent les coordonnées de M ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + y − z = 11 ou x + y − z = −13"
+        },
+        {
+          "id": "b",
+          "text": "x + y − z = 0 ou x + y − z = −2"
+        },
+        {
+          "id": "c",
+          "text": "x + y − z = 5 ou x + y − z = −7"
+        },
+        {
+          "id": "d",
+          "text": "x + y − z = 2 ou x + y − z = −4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le volume est V = (1/6)|(AB⃗ ∧ AC⃗) · AM⃗| = (1/6)|2(x + y − z + 1)| = |x + y − z + 1|/3. Avec V = 2, |x + y − z + 1| = 6, donc x + y − z = 5 ou x + y − z = −7 ✓ : M est dans le plan P ou dans le plan Q. Oublier le facteur 2 du produit vectoriel donne |…| = 12 ; oublier le facteur 1/6 donne |…| = 1 ; utiliser 1/3 au lieu de 1/6 donne |…| = 3.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) tels que x² + y² + z² − 2x − 4y − 2z + 1 = 0, et soit A(0 ; 0 ; 1), B(0 ; 1 ; 2), C(2 ; 2 ; 5). L'ensemble des points M de S pour lesquels ABCM est un tétraèdre de volume 2 est une courbe fermée. Quelle est sa longueur ? Donne le résultat sous forme décimale, arrondi au centième.",
+      "answerKey": {
+        "value": 8.89,
+        "tolerance": 0.02
+      },
+      "explanation": "Le volume 2 impose x + y − z = 5 ou x + y − z = −7. L'ensemble cherché est l'union de S ∩ P et de S ∩ Q, où P : x + y − z − 5 = 0 et Q : x + y − z + 7 = 0. Le centre I(1 ; 2 ; 1) est à la distance √3 de P : l'intersection est un cercle de rayon √(5 − 3) = √2. Il est à la distance 3√3 de Q : l'intersection est vide. La courbe est donc un seul cercle de rayon √2, de longueur 2π√2 ≈ 8,89 ✓. Compter aussi un cercle pour Q doublerait la longueur.",
+      "difficulty": 3
+    }
+  ]
+}

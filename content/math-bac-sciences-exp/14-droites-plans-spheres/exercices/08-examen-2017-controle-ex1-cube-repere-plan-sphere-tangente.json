@@ -1,0 +1,206 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 1 ⭐⭐⭐ : cube dans un repère, produit vectoriel, plan et sphère",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Le solide OABCGDEF est un cube tel que A(3 ; 0 ; 0), C(0 ; 3 ; 0) et G(0 ; 0 ; 3). Dans la figure, B est le quatrième sommet de la face OABC, et D, E, F sont situés respectivement au-dessus de A, de B et de C. Quelles sont les coordonnées de E et de D ?\n<svg viewBox=\"0 0 300 210\"><path d=\"M80 185 L80 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M80 185 L140 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M80 185 L180 185\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M80 85 L140 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M80 85 L180 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M140 137 L140 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M140 137 L240 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M140 37 L240 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M180 185 L180 85\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M180 185 L240 137\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M180 85 L240 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M240 137 L240 37\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><g font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" text-anchor=\"middle\"><text x=\"70.5\" y=\"198.8\">O</text><text x=\"67.6\" y=\"86.0\">G</text><text x=\"132.1\" y=\"152.3\">C</text><text x=\"136.6\" y=\"29.5\">F</text><text x=\"183.4\" y=\"202.5\">A</text><text x=\"187.9\" y=\"79.7\">D</text><text x=\"252.4\" y=\"146.0\">B</text><text x=\"249.5\" y=\"33.2\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "E(3 ; 3 ; 3) et D(3 ; 0 ; 3)"
+        },
+        {
+          "id": "b",
+          "text": "E(3 ; 3 ; 3) et D(0 ; 3 ; 3)"
+        },
+        {
+          "id": "c",
+          "text": "E(3 ; 3 ; 0) et D(3 ; 0 ; 3)"
+        },
+        {
+          "id": "d",
+          "text": "E(3 ; 3 ; 0) et D(0 ; 3 ; 3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le sommet B de la face du bas vérifie OB⃗ = OA⃗ + OC⃗, donc B(3 ; 3 ; 0). Le sommet E est au-dessus de B à la hauteur 3 : E(3 ; 3 ; 3). Le sommet D est au-dessus de A : D = A + (0 ; 0 ; 3) = (3 ; 0 ; 3) ✓. Échanger l'abscisse et l'ordonnée de D en fait le sommet F ; oublier la hauteur donne B au lieu de E ; cumuler les deux erreurs donne E(3 ; 3 ; 0) et D(0 ; 3 ; 3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. On donne C(0 ; 3 ; 0) et D(3 ; 0 ; 3). Quelles sont les coordonnées du milieu Ω de [CD] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 ; 3 ; 3)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "b",
+          "text": "(3/2 ; 3/2 ; 3/2)"
+        },
+        {
+          "id": "c",
+          "text": "(3/2 ; −3/2 ; 3/2)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        },
+        {
+          "id": "d",
+          "text": "(3 ; −3 ; 3)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les coordonnées d'un milieu sont les demi-sommes : Ω((0 + 3)/2 ; (3 + 0)/2 ; (0 + 3)/2) = (3/2 ; 3/2 ; 3/2) ✓. Oublier de diviser par 2 donne (3 ; 3 ; 3) ; prendre la demi-différence ou la différence des coordonnées donne les coordonnées de CD⃗/2 ou de CD⃗, c'est-à-dire (3/2 ; −3/2 ; 3/2) ou (3 ; −3 ; 3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. On donne A(3 ; 0 ; 0), E(3 ; 3 ; 3) et G(0 ; 0 ; 3). Que vaut AE⃗ ∧ AG⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(9 ; 9 ; 9)"
+        },
+        {
+          "id": "b",
+          "text": "(−9 ; 9 ; −9)"
+        },
+        {
+          "id": "c",
+          "text": "(0 ; 0 ; 9)"
+        },
+        {
+          "id": "d",
+          "text": "(9 ; −9 ; 9)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a AE⃗(0 ; 3 ; 3) et AG⃗(−3 ; 0 ; 3). Alors AE⃗ ∧ AG⃗ = (3 × 3 − 3 × 0 ; 3 × (−3) − 0 × 3 ; 0 × 0 − 3 × (−3)) = (9 ; −9 ; 9) ✓. Oublier le signe de la deuxième coordonnée donne (9 ; 9 ; 9) ; inverser l'ordre donne l'opposé ; multiplier les coordonnées terme à terme donne (0 ; 0 ; 9), qui n'est pas un produit vectoriel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. On donne O(0 ; 0 ; 0), A(3 ; 0 ; 0), E(3 ; 3 ; 3) et G(0 ; 0 ; 3). Quel est le volume du tétraèdre OAEG ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "27"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "9/2"
+        },
+        {
+          "id": "d",
+          "text": "27/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On calcule |(AE⃗ ∧ AG⃗) · AO⃗|/6, avec AE⃗ ∧ AG⃗ = (9 ; −9 ; 9) et AO⃗(−3 ; 0 ; 0). Le produit scalaire vaut −27, donc V = 27/6 = 9/2 ✓. Oublier le facteur 1/6 donne 27 ; utiliser 1/3 donne 9 ; utiliser 1/2 donne 27/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. Soit OABCGDEF le cube d'arête 3 tel que A(3 ; 0 ; 0), C(0 ; 3 ; 0), G(0 ; 0 ; 3), D(3 ; 0 ; 3) et E(3 ; 3 ; 3). Soit P le plan (AEG). Laquelle de ces propriétés, vérifiée par le calcul, prouve que la droite (CD) est perpendiculaire à P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CD⃗ · AE⃗ = 0",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "CD⃗ est colinéaire à AE⃗ ∧ AG⃗"
+        },
+        {
+          "id": "c",
+          "text": "CD⃗ · (AE⃗ ∧ AG⃗) = 0"
+        },
+        {
+          "id": "d",
+          "text": "AE⃗ ∧ AG⃗ est colinéaire à AE⃗"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une droite est perpendiculaire à un plan si elle dirige un vecteur normal à ce plan. Or AE⃗ ∧ AG⃗ est normal au plan (AEG) : il suffit que CD⃗(3 ; −3 ; 3) soit colinéaire à AE⃗ ∧ AG⃗ ✓. Vérifier CD⃗ · AE⃗ = 0 ne suffit pas : une droite orthogonale à une seule droite du plan peut ne pas être perpendiculaire au plan, il faut deux droites sécantes. La condition CD⃗ · (AE⃗ ∧ AG⃗) = 0 exprime que CD⃗ est parallèle au plan, ce qui est le contraire ; enfin AE⃗ ∧ AG⃗ n'est jamais colinéaire à AE⃗, puisqu'il lui est orthogonal.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. Quelle est une équation cartésienne du plan P qui passe par les points A(3 ; 0 ; 0), E(3 ; 3 ; 3) et G(0 ; 0 ; 3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x − y + z − 3 = 0"
+        },
+        {
+          "id": "b",
+          "text": "x + y + z − 3 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x − y + z + 3 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x − y + z = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le vecteur AE⃗ ∧ AG⃗ = (9 ; −9 ; 9) est normal au plan : on prend n⃗(1 ; −1 ; 1). Une équation est x − y + z + d = 0, et A(3 ; 0 ; 0) donne 3 + d = 0, donc d = −3 : x − y + z − 3 = 0 ✓. Contrôle : E donne 3 − 3 + 3 − 3 = 0 et G donne 0 − 0 + 3 − 3 = 0. Une erreur de signe sur la constante donne +3 ; le plan x − y + z = 0 passe par l'origine, pas par A ; changer le signe de y change la normale.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. Soit S l'ensemble des points M(x, y, z) tels que :\nx² + y² + z² − 3x − 3y − 3z + 6 = 0\nQuel est le carré R² du rayon de S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R² = 6"
+        },
+        {
+          "id": "b",
+          "text": "R² = 3/4"
+        },
+        {
+          "id": "c",
+          "text": "R² = 27/4"
+        },
+        {
+          "id": "d",
+          "text": "R² = 51/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On regroupe : (x − 3/2)² + (y − 3/2)² + (z − 3/2)² = 3 × 9/4 − 6 = 27/4 − 24/4 = 3/4. Le rayon vaut donc √3/2 et R² = 3/4 ✓. Lire la constante 6 comme R² oublie de la comparer à la somme des carrés des demi-coefficients ; s'arrêter à 27/4 oublie de retrancher 6 ; ajouter 6 à 27/4 donne 51/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct. La sphère S de centre Ω(3/2 ; 3/2 ; 3/2) et de rayon √3/2 est tangente au plan P d'équation x − y + z − 3 = 0 en un point H. Quelles sont les coordonnées de H ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H(1 ; 2 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "H(5/2 ; 1/2 ; 5/2)"
+        },
+        {
+          "id": "c",
+          "text": "H(3/2 ; 3/2 ; 3/2)"
+        },
+        {
+          "id": "d",
+          "text": "H(2 ; 1 ; 2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le point de contact H est le projeté orthogonal de Ω sur P : H = Ω + k(1 ; −1 ; 1). En reportant dans l'équation de P : 3/2 + k − 3/2 + k + 3/2 + k − 3 = 3k − 3/2 = 0, donc k = 1/2 et H(2 ; 1 ; 2) ✓. Contrôle : 2 − 1 + 2 − 3 = 0 et ΩH = (√3)/2 = R. Le choix k = −1/2 prend le mauvais sens de la normale et donne (1 ; 2 ; 1) ; k = 1 donne (5/2 ; 1/2 ; 5/2), qui n'est pas dans le plan (5/2 − 1/2 + 5/2 − 3 = 3/2) ; le centre Ω n'est pas sur le plan.",
+      "difficulty": 3
+    }
+  ]
+}

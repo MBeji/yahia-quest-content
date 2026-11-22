@@ -1,0 +1,188 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 3 ⭐⭐⭐ : sphère, plan, cercle, droite et plans tangents",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) tels que :\nx² + y² + z² − 2x + 4y + 4z + 5 = 0\nS est une sphère. Quel est son centre Ω ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ω(−1 ; 2 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "Ω(2 ; −4 ; −4)"
+        },
+        {
+          "id": "c",
+          "text": "Ω(1 ; 2 ; 2)"
+        },
+        {
+          "id": "d",
+          "text": "Ω(1 ; −2 ; −2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On regroupe : (x − 1)² + (y + 2)² + (z + 2)² = 1 + 4 + 4 − 5 = 4. Le centre est donc Ω(1 ; −2 ; −2) (et le rayon 2) ✓. Prendre les coefficients tels quels avec leur signe donne (−1 ; 2 ; 2) ; ne pas les diviser par 2 donne (2 ; −4 ; −4) ; ne changer que le signe de x oublie que (y + 2)² a pour centre −2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit Ω(1 ; −2 ; −2) et P le plan d'équation x − 2y + 2z + 1 = 0. Quelle est la distance de Ω au plan P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "2/9"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La distance est |1 × 1 − 2 × (−2) + 2 × (−2) + 1|/√(1 + 4 + 4) = |1 + 4 − 4 + 1|/3 = 2/3 ✓. Oublier de diviser par la norme √9 = 3 donne 2 ; diviser par la norme au carré donne 2/9 ; multiplier par la norme donne 6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S la sphère de centre Ω(1 ; −2 ; −2) et de rayon 2, et P le plan d'équation x − 2y + 2z + 1 = 0. Le plan P coupe S selon un cercle. Quel est son rayon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4/3"
+        },
+        {
+          "id": "b",
+          "text": "2√10/3"
+        },
+        {
+          "id": "c",
+          "text": "4√2/3"
+        },
+        {
+          "id": "d",
+          "text": "√30/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La distance de Ω à P est d = 2/3. Le rayon du cercle est √(R² − d²) = √(4 − 4/9) = √(32/9) = 4√2/3 ✓. Soustraire les distances (R − d) donne 4/3 ; additionner les carrés donne √(40/9) = 2√10/3 ; oublier d'élever d au carré donne √(4 − 2/3) = √30/3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit K(7/9 ; −14/9 ; −22/9) et Ω(1 ; −2 ; −2). Quelle est une représentation paramétrique de la droite (KΩ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = 1 + t ; y = −2 + 2t ; z = −2 + 2t"
+        },
+        {
+          "id": "b",
+          "text": "x = 1 + t ; y = −2 − 2t ; z = −2 + 2t"
+        },
+        {
+          "id": "c",
+          "text": "x = 1 + t ; y = −2 + 2t ; z = −2 − 2t"
+        },
+        {
+          "id": "d",
+          "text": "x = 7/9 + t ; y = −14/9 − 2t ; z = −22/9 − 2t"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a ΩK⃗(−2/9 ; 4/9 ; −4/9), colinéaire à u⃗(1 ; −2 ; 2). La droite passe par Ω(1 ; −2 ; −2) avec ce vecteur directeur : x = 1 + t, y = −2 − 2t, z = −2 + 2t ✓. Contrôle : t = −2/9 donne K. Un signe faux sur y ou sur z change le vecteur directeur : (1 ; 2 ; 2) et (1 ; 2 ; −2) ne sont pas colinéaires à (1 ; −2 ; 2) ; la représentation qui part de K garde le bon point mais a une cote de direction fausse, (1 ; −2 ; −2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) tels que x² + y² + z² − 2x + 4y + 4z + 5 = 0 et I(α, β, γ) un point de S. Quelle est une équation du plan Q tangent à S en I ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(α − 1)x + (β + 2)y + (γ + 2)z − α + 2β + 2γ + 5 = 0"
+        },
+        {
+          "id": "b",
+          "text": "αx + βy + γz − 2α + 4β + 4γ + 5 = 0"
+        },
+        {
+          "id": "c",
+          "text": "(α + 1)x + (β − 2)y + (γ − 2)z − 3α + 6β + 6γ + 5 = 0"
+        },
+        {
+          "id": "d",
+          "text": "(α − 1)x + (β + 2)y + (γ + 2)z − α + 2β + 2γ − 5 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le plan tangent en I est orthogonal à ΩI⃗(α − 1 ; β + 2 ; γ + 2). Il s'écrit (α − 1)(x − α) + (β + 2)(y − β) + (γ + 2)(z − γ) = 0. En développant et en utilisant α² + β² + γ² − 2α + 4β + 4γ + 5 = 0 (I est sur S), la constante devient −α + 2β + 2γ + 5 ✓. L'équation αx + βy + γz − 2α + 4β + 4γ + 5 = 0 prend OI⃗ pour normale (le plan est tangent à une sphère centrée en O) ; l'équation de coefficients (α + 1 ; β − 2 ; γ − 2) inverse les signes de Ω ; la constante −α + 2β + 2γ − 5 se trompe de signe.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit K(7/9 ; −14/9 ; −22/9) et Ω(1 ; −2 ; −2). Lequel de ces points appartient à la droite (KΩ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "N(−1 ; 2 ; 2)"
+        },
+        {
+          "id": "b",
+          "text": "N(−1 ; −6 ; −6)"
+        },
+        {
+          "id": "c",
+          "text": "N(−1 ; 2 ; −6)"
+        },
+        {
+          "id": "d",
+          "text": "N(−1 ; −6 ; 2)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La droite (KΩ) est dirigée par u⃗(1 ; −2 ; 2) et passe par Ω : ses points sont (1 + t ; −2 − 2t ; −2 + 2t). Pour x = −1, on a t = −2 et le point (−1 ; 2 ; −6) ✓. Les autres points d'abscisse −1 s'obtiennent avec un vecteur directeur au signe faux : (1 ; −2 ; −2) donne N(−1 ; 2 ; 2), (1 ; 2 ; 2) donne N(−1 ; −6 ; −6), (1 ; 2 ; −2) donne N(−1 ; −6 ; 2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S la sphère d'équation x² + y² + z² − 2x + 4y + 4z + 5 = 0 et P le plan x − 2y + 2z + 1 = 0. Soit I(α, β, γ) un point du cercle S ∩ P, et Q le plan tangent à S en I, d'équation (α − 1)x + (β + 2)y + (γ + 2)z − α + 2β + 2γ + 5 = 0. Pourquoi le point N(−1 ; 2 ; −6) appartient-il à Q ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "en remplaçant, on trouve une expression nulle dès que I appartient à S, sans utiliser P"
+        },
+        {
+          "id": "b",
+          "text": "parce que N appartient à la sphère S"
+        },
+        {
+          "id": "c",
+          "text": "parce que N est le centre du cercle S ∩ P"
+        },
+        {
+          "id": "d",
+          "text": "en remplaçant, on trouve −2(α − 2β + 2γ + 1), qui est nul car I appartient à P"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On remplace (x ; y ; z) par (−1 ; 2 ; −6) : −(α − 1) + 2(β + 2) − 6(γ + 2) − α + 2β + 2γ + 5 = −2α + 4β − 4γ − 2 = −2(α − 2β + 2γ + 1). Cette expression est nulle exactement lorsque I vérifie l'équation de P : c'est le cas puisque I ∈ P ✓. Le fait que I soit sur S sert à établir l'équation de Q, pas à annuler cette expression ; N n'est pas sur S (1 + 4 + 36 + 2 + 8 − 24 + 5 = 32 ≠ 0) et le centre du cercle est K, pas N.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S la sphère de centre Ω(1 ; −2 ; −2) et de rayon 2, et N(−1 ; 2 ; −6). Une droite issue de N est tangente à S en un point T. On admet que le rayon [ΩT] est perpendiculaire à la droite (NT). Quelle est la longueur NT ? Donne le résultat sous forme décimale, arrondi au centième.",
+      "answerKey": {
+        "value": 5.66,
+        "tolerance": 0.01
+      },
+      "explanation": "Le rayon ΩT est perpendiculaire à la tangente (NT) : le triangle ΩTN est rectangle en T, donc NT² = NΩ² − ΩT². Or NΩ⃗(2 ; −4 ; 4) donne NΩ² = 4 + 16 + 16 = 36 et ΩT = 2. Donc NT² = 36 − 4 = 32 et NT = 4√2 ≈ 5,66 ✓. Utiliser NΩ = 6 comme longueur de la tangente oublie le rayon.",
+      "difficulty": 3
+    }
+  ]
+}

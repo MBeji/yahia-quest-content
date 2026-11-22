@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 2 ⭐⭐⭐ : Équation du second degré, rectangle et cercle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "Dans ℂ, on considère l'équation\n(E) : z² − 2iz − 3 + 2i√3 = 0\nLequel de ces nombres est solution de (E) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√3"
+        },
+        {
+          "id": "b",
+          "text": "√3"
+        },
+        {
+          "id": "c",
+          "text": "2i"
+        },
+        {
+          "id": "d",
+          "text": "√3 − 2i"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour z = √3 : z² = 3 et −2iz = −2i√3, donc le premier membre vaut 3 − 2i√3 − 3 + 2i√3 = 0 : √3 est solution ✓. Les autres valeurs ne l'annulent pas : pour z = −√3, −2iz = +2i√3 et le premier membre vaut 4i√3 ; pour z = 2i, z² = −4 et −2iz = 4, d'où −3 + 2i√3 ; pour z = √3 − 2i, on trouve −8 − 4i√3. Le piège courant : se tromper de signe en remplaçant z par −√3 (signe de −2iz) ; prendre 2i, qui est l'opposé du coefficient de z et donc la somme des solutions, pour une solution ; mélanger la solution √3 et le terme −2i du coefficient pour fabriquer √3 − 2i.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, l'équation z² − 2iz − 3 + 2i√3 = 0 admet pour solution √3. Quelle est son autre solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√3 − 2i"
+        },
+        {
+          "id": "b",
+          "text": "−√3 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "√3 − 2i"
+        },
+        {
+          "id": "d",
+          "text": "−√3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La somme des deux solutions vaut −b/a = 2i, donc l'autre solution est 2i − √3 = −√3 + 2i ✓. Contrôle par le produit : √3 × (−√3 + 2i) = −3 + 2i√3 = c/a ✓. Le piège courant : prendre la somme égale à −2i donne −√3 − 2i ; retrancher dans le mauvais sens (√3 − 2i au lieu de 2i − √3) donne √3 − 2i ; croire que l'autre solution est l'opposé conjugué de √3 donne −√3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On donne dans le plan complexe A(√3 + 2i), B(−√3 + 2i), C(−√3) et D(√3). Calculer les affixes des vecteurs AB⃗ et DC⃗, c'est-à-dire z_B − z_A et z_C − z_D.",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_B − z_A = −2√3 et z_C − z_D = 2√3"
+        },
+        {
+          "id": "b",
+          "text": "z_B − z_A = −2√3 + 4i et z_C − z_D = −2√3"
+        },
+        {
+          "id": "c",
+          "text": "z_B − z_A = 2√3 et z_C − z_D = 2√3"
+        },
+        {
+          "id": "d",
+          "text": "z_B − z_A = −2√3 et z_C − z_D = −2√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z_B − z_A = (−√3 + 2i) − (√3 + 2i) = −2√3 et z_C − z_D = −√3 − √3 = −2√3 ✓. Les deux vecteurs AB⃗ et DC⃗ ont la même affixe : AB⃗ = DC⃗ et ABCD est un parallélogramme. Le piège courant : soustraire dans l'ordre inverse pour l'un des deux vecteurs change le signe ; additionner les parties imaginaires 2i au lieu de les soustraire donne 4i ; inverser les deux ordres change le signe de toutes les affixes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les sommets du quadrilatère ABCD ont pour affixes √3 + 2i, −√3 + 2i, −√3 et √3. Calculer la longueur de chacune de ses diagonales [AC] et [BD].",
+      "options": [
+        {
+          "id": "a",
+          "text": "AC = 4 et BD = 4"
+        },
+        {
+          "id": "b",
+          "text": "AC = 2√3 + 2 et BD = 2√3 + 2"
+        },
+        {
+          "id": "c",
+          "text": "AC = 2√3 et BD = 2"
+        },
+        {
+          "id": "d",
+          "text": "AC = 4 et BD = 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a z_C − z_A = −2√3 − 2i, de module √(12 + 4) = 4 ; et z_D − z_B = 2√3 − 2i, de module √(12 + 4) = 4. Donc AC = BD = 4 ✓. Le piège courant : additionner les parties réelle et imaginaire au lieu de calculer √(a² + b²) donne 2√3 + 2 ; lire les côtés du rectangle (2√3 et 2) à la place des diagonales ; oublier de soustraire la partie réelle de C ou de B pour BD donne 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A, B, C et D sont quatre points d'affixes √3 + 2i, −√3 + 2i, −√3 et √3. Quelle propriété prouve que ABCD est un rectangle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et (AC) ⊥ (BD) (diagonales perpendiculaires)."
+        },
+        {
+          "id": "b",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et AB = BC (deux côtés consécutifs de même longueur)."
+        },
+        {
+          "id": "c",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et AC = BD (diagonales de même longueur)."
+        },
+        {
+          "id": "d",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et les diagonales [AC] et [BD] se coupent en leur milieu."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le quadrilatère est un parallélogramme (AB⃗ = DC⃗) dont les diagonales [AC] et [BD] ont la même longueur 4 : c'est un rectangle ✓. Le piège courant : un parallélogramme à diagonales perpendiculaires, ou à deux côtés consécutifs égaux, est un losange, non un rectangle ; des diagonales qui se coupent en leur milieu sont déjà une conséquence de AB⃗ = DC⃗ et n'apportent rien de plus.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, I est le point d'affixe i et A le point d'affixe √3 + 2i. Quelle est la distance IA ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√7"
+        },
+        {
+          "id": "b",
+          "text": "2√3"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a z_A − z_I = √3 + 2i − i = √3 + i, de module √(3 + 1) = 2. Donc IA = 2 ✓. Contrôle : de même IC = |−√3 − i| = 2, ce qui place les points A, B, C et D sur le cercle de centre I et de rayon 2. Le piège courant : calculer |z_A| = √7 sans retrancher z_I ; prendre la longueur du côté AB = 2√3 du rectangle pour la distance IA donne 2√3 ; arrêter le calcul au carré donne 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, ABCD est le rectangle de sommets A(√3 + 2i), B(−√3 + 2i), C(−√3) et D(√3), inscrit dans le cercle de centre I d'affixe i et de rayon 2 (figure ci-dessous). Quelle est son aire ?\n<svg viewBox=\"0 0 282 282\"><title>Le rectangle ABCD et le cercle de centre I (0 ; 1) et de rayon 2</title><path d=\"M15 183 H267\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M141 267 V15\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M267 183 l-6 -3 l0 6 z\" fill=\"#0f172a\"/><path d=\"M141 15 l-3 6 l6 0 z\" fill=\"#0f172a\"/><path d=\"M15 180 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"15\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−3</text><path d=\"M57 180 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"57\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M99 180 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"99\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M183 180 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"183\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M225 180 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"225\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M267 180 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"267\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M138 267 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134\" y=\"270\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M138 225 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134\" y=\"228\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M138 141 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134\" y=\"144\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M138 99 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134\" y=\"102\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M138 57 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134\" y=\"60\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M138 15 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134\" y=\"18\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">4</text><text x=\"136\" y=\"196\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">O</text><circle cx=\"141\" cy=\"141\" r=\"84\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><path d=\"M213.7 99 L68.3 99\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><path d=\"M68.3 99 L68.3 183\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><path d=\"M68.3 183 L213.7 183\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><path d=\"M213.7 183 L213.7 99\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><circle cx=\"213.7\" cy=\"99\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"219.7\" y=\"95\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">A</text><circle cx=\"68.3\" cy=\"99\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"54.3\" y=\"95\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">B</text><circle cx=\"68.3\" cy=\"183\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"54.3\" y=\"197\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">C</text><circle cx=\"213.7\" cy=\"183\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"219.7\" y=\"197\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">D</text><circle cx=\"141\" cy=\"141\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"147\" y=\"137\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">I</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√3"
+        },
+        {
+          "id": "b",
+          "text": "8"
+        },
+        {
+          "id": "c",
+          "text": "2√3"
+        },
+        {
+          "id": "d",
+          "text": "12"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les côtés sont parallèles aux axes : AB = |z_B − z_A| = 2√3 et BC = |z_C − z_B| = |−2i| = 2. L'aire vaut AB × BC = 2√3 × 2 = 4√3 ✓. Contrôle : les diagonales valent 4 et AB² + BC² = 12 + 4 = 16 = 4² ✓. Le piège courant : appliquer au rectangle la formule du losange, produit des diagonales divisé par 2 : 4 × 4/2 = 8 ; ne compter qu'un côté donne 2√3 ; calculer AB × AB donne 12.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 4 ⭐⭐⭐ : équation différentielle y′ = ay + b, lecture graphique et croissance d'une plante",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Dans le repère orthogonal ci-dessous, la courbe (C) représente une fonction f solution d'une équation différentielle y′ = ay + b (a réel non nul, b réel). La courbe passe par l'origine O ; la droite D est la tangente à (C) en O et passe par le point de coordonnées (4 ; 2) repéré par les pointillés. Que valent f(0) et f′(0) ?\n<svg viewBox=\"0 0 330 200\"><title>Courbe C, tangente D en O et repères de lecture</title><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"><path d=\"M40 170 H315\"/><path d=\"M40 170 V27.0\"/></g><polyline fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"2.4\" points=\"40.0,170.0 51.0,164.6 62.0,159.5 73.0,154.7 84.0,150.1 95.0,145.7 106.0,141.5 117.0,137.5 128.0,133.7 139.0,130.1 150.0,126.7 161.0,123.5 172.0,120.4 183.0,117.4 194.0,114.6 205.0,112.0 216.0,109.4 227.0,107.0 238.0,104.7 249.0,102.5 260.0,100.5 271.0,98.5 282.0,96.6 293.0,94.8 304.0,93.1\"/><path d=\"M40 170 L293.0 43.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.8\"/><g stroke=\"#475569\" stroke-width=\"1\" stroke-dasharray=\"4 3\" fill=\"none\"><path d=\"M260 170 V60\"/><path d=\"M40 60 H260\"/></g><g stroke=\"#0f172a\" stroke-width=\"1.4\"><path d=\"M95 166 v8\"/><path d=\"M260 166 v8\"/><path d=\"M36 115 h8\"/><path d=\"M36 60 h8\"/></g><g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\"><text x=\"26\" y=\"184\">O</text><text x=\"92\" y=\"188\">1</text><text x=\"257\" y=\"188\">4</text><text x=\"26\" y=\"119\">1</text><text x=\"26\" y=\"64\">2</text><text x=\"291.0\" y=\"37.5\" fill=\"#dc2626\">D</text><text x=\"303.5\" y=\"64.7\" fill=\"#1d4ed8\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(0) = 0 et f′(0) = 2"
+        },
+        {
+          "id": "b",
+          "text": "f(0) = 0 et f′(0) = 1/2"
+        },
+        {
+          "id": "c",
+          "text": "f(0) = 2 et f′(0) = 1/2"
+        },
+        {
+          "id": "d",
+          "text": "f(0) = 2 et f′(0) = 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La courbe passe par O, donc f(0) = 0. Le nombre dérivé f′(0) est la pente de la tangente D en O : D passe par O(0 ; 0) et par (4 ; 2), donc sa pente est (2 − 0)/(4 − 0) = 1/2. Lire l'ordonnée 2 du point de repère comme pente oublie de diviser par l'écart des abscisses ; lire 2 comme f(0) confond la hauteur du point de repère avec l'image de 0 (la courbe part de O).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une fonction f dérivable sur ℝ vérifie y′ = ay + b pour tout x, avec f(0) = 0 et f′(0) = 1/2. Que peut-on en conclure pour b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "b = 1/2, car af(0) = 0"
+        },
+        {
+          "id": "b",
+          "text": "b = 0, car f(0) = 0"
+        },
+        {
+          "id": "c",
+          "text": "b = −a/2, car −b/a = 1/2"
+        },
+        {
+          "id": "d",
+          "text": "b = 1/(2a), car f′(0) = a × b"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit l'équation en x = 0 : f′(0) = a × f(0) + b. Comme f(0) = 0, il reste f′(0) = b, donc b = 1/2. Conclure b = 0 sous prétexte que f(0) = 0 oublie que f(0) ne multiplie que a, pas b ; −a/2 confond f′(0) avec la solution constante −b/a ; 1/(2a) multiplie b par a alors que b est un terme additif.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle y′ = ay + 1/2 (a réel non nul) qui vérifie f(0) = 0. On suppose f positive sur [0 ; 4] et on pose m = f(4). Soit S l'aire, en unités d'aire, de la partie du plan comprise entre la courbe de f, l'axe des abscisses et les droites d'équations x = 0 et x = 4. Que vaut S en fonction de a et de m ?\nOn pourra utiliser que, pour tout réel x :\nf(x) = (1/a)(f′(x) − 1/2)",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = (2 − m)/a"
+        },
+        {
+          "id": "b",
+          "text": "S = m/a"
+        },
+        {
+          "id": "c",
+          "text": "S = (m − 1/2)/a"
+        },
+        {
+          "id": "d",
+          "text": "S = (m − 2)/a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "S est l'intégrale de f sur [0 ; 4]. Avec f(x) = (1/a)(f′(x) − 1/2), une primitive de f est x ↦ (1/a)(f(x) − x/2). Donc S = (1/a)[(f(4) − 2) − (f(0) − 0)] = (m − 2)/a ✓. Oublier la primitive de la constante 1/2 donne m/a ; intégrer 1/2 sur [0 ; 4] comme s'il valait 1/2 au lieu de 2 donne (m − 1/2)/a ; une erreur de signe donne (2 − m)/a.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une fonction f vérifie f(x) = (1/a)(f′(x) − 1/2) et l'aire de la partie du plan comprise entre sa courbe, l'axe des abscisses et les droites x = 0 et x = 4 est donnée par S = −2e⁻¹/a. On sait de plus que S = 8e⁻¹. Quelle est la valeur de a ? Donne le résultat sous forme décimale.",
+      "answerKey": {
+        "value": -0.25
+      },
+      "explanation": "On écrit −2e⁻¹/a = 8e⁻¹, donc −2/a = 8, d'où a = −2/8 = −1/4 = −0,25 ✓. Contrôle : −2e⁻¹/(−0,25) = 8e⁻¹. Le facteur e⁻¹ se simplifie des deux côtés, il ne change pas la valeur de a.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la solution sur ℝ de l'équation différentielle suivante qui vérifie f(0) = 0.\n4y′ + y = 2\nQuelle est l'expression de f(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) = 2e^(−x/4) − 2"
+        },
+        {
+          "id": "b",
+          "text": "f(x) = 2e^(x/4) − 2"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = 2 − 2e^(−x/4)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) = 2 − 2e^(−4x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'équation équivaut à y′ = −(1/4)y + 1/2, avec a = −1/4 et b = 1/2. La solution constante est −b/a = 2, donc f(x) = ke^(−x/4) + 2. La condition f(0) = 0 donne k + 2 = 0, donc k = −2 et f(x) = 2 − 2e^(−x/4) ✓. Contrôle : f′(x) = (1/2)e^(−x/4) et −(1/4)f(x) + 1/2 = −1/2 + (1/2)e^(−x/4) + 1/2. Prendre b/a = −2 pour constante donne 2e^(−x/4) − 2 ; garder a = +1/4 donne 2e^(x/4) − 2 ; écrire l'exposant x/a au lieu de ax donne e^(−4x).",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "La hauteur h(t), en mètres, d'une plante de maïs au bout de t semaines vérifie 4h′(t) + h(t) = 2 pour t ≥ 0, avec h(0) = 0. Quelle est la hauteur de la plante au bout de trois semaines ? Donne le résultat en mètres, arrondi au centième.",
+      "answerKey": {
+        "value": 1.06,
+        "tolerance": 0.01
+      },
+      "explanation": "L'équation équivaut à h′ = −0,25h + 0,5, de solution constante 2, donc h(t) = 2 − 2e^(−0,25t). On calcule h(3) = 2 − 2e^(−0,75). Or e^(−0,75) ≈ 0,4724, donc h(3) ≈ 2 − 0,9447 = 1,0553 m, soit 1,06 m au centième ✓. La hauteur est une valeur de h, pas une valeur de la dérivée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La hauteur h(t), en mètres, d'une plante de maïs au bout de t semaines (t ≥ 0) vérifie 4h′(t) + h(t) = 2 avec h(0) = 0. Au cours de quelle semaine la hauteur dépasse-t-elle pour la première fois 198 cm ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la 18e semaine"
+        },
+        {
+          "id": "b",
+          "text": "la 19e semaine"
+        },
+        {
+          "id": "c",
+          "text": "la 16e semaine"
+        },
+        {
+          "id": "d",
+          "text": "la 5e semaine"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a h(t) = 2 − 2e^(−0,25t). On convertit 198 cm = 1,98 m et on résout 2 − 2e^(−0,25t) > 1,98, soit e^(−0,25t) < 0,01. En passant au logarithme, −0,25t < ln(0,01) = −ln 100, donc t > 4 ln 100 ≈ 18,42. La hauteur dépasse 198 cm pendant la semaine qui contient t = 18,42, c'est-à-dire entre t = 18 et t = 19 : la 19e semaine ✓. Oublier de diviser par 2 (e^(−0,25t) < 0,02) donne t > 4 ln 50 ≈ 15,6, soit la 16e semaine ; oublier le facteur 4 donne t > ln 100 ≈ 4,6, soit la 5e semaine ; arrondir 18,42 à l'entier inférieur donne la 18e semaine.",
+      "difficulty": 3
+    }
+  ]
+}

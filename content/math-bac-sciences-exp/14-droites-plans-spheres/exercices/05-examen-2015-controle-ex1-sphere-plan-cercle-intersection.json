@@ -1,0 +1,124 @@
+{
+  "title": "🏛️ Bac 2015 · session de contrôle · Exercice 1 ⭐⭐⭐ : sphère, plan, cercle d'intersection et seconde sphère",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) de l'espace tels que :\nx² + y² + z² − 2x + 2y − 23 = 0\nS est une sphère. Quels sont son centre et son rayon ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "centre I(−1 ; 1 ; 0) et rayon 5"
+        },
+        {
+          "id": "b",
+          "text": "centre I(1 ; −1 ; 0) et rayon √23"
+        },
+        {
+          "id": "c",
+          "text": "centre I(1 ; −1 ; 0) et rayon 5"
+        },
+        {
+          "id": "d",
+          "text": "centre I(−1 ; 1 ; 0) et rayon √23"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On met l'équation sous la forme canonique : (x − 1)² + (y + 1)² + z² = 23 + 1 + 1 = 25. Le centre est I(1 ; −1 ; 0) et le rayon vaut √25 = 5 ✓. Prendre I(−1 ; 1 ; 0) lit le signe des coefficients à l'envers ; oublier d'ajouter 1 + 1 au second membre donne R = √23 ; cumuler les deux erreurs donne le centre (−1 ; 1 ; 0) et R = √23.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit les points I(1 ; −1 ; 0) et J(−1 ; 1 ; 1), et P l'ensemble des points M(x, y, z) tels que JI⃗ · JM⃗ = 0. P est un plan. Quelle en est une équation cartésienne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2x − 2y − z + 5 = 0"
+        },
+        {
+          "id": "b",
+          "text": "2x − 2y − z − 5 = 0"
+        },
+        {
+          "id": "c",
+          "text": "2x − 2y − z − 4 = 0"
+        },
+        {
+          "id": "d",
+          "text": "−x + y + z − 3 = 0"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a JI⃗(2 ; −2 ; −1) et JM⃗(x + 1 ; y − 1 ; z − 1). La condition JI⃗ · JM⃗ = 0 s'écrit 2(x + 1) − 2(y − 1) − (z − 1) = 0, soit 2x − 2y − z + 5 = 0 ✓. Contrôle : J(−1 ; 1 ; 1) donne −2 − 2 − 1 + 5 = 0. La constante −5 se trompe de signe ; −4 correspond au plan passant par I et non par J ; −x + y + z − 3 = 0 prend le vecteur OJ⃗ pour vecteur normal alors que la normale est JI⃗.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S la sphère de centre I(1 ; −1 ; 0) et de rayon 5, et soit P le plan qui passe par le point J(−1 ; 1 ; 1) et qui est orthogonal à la droite (IJ). Le plan P coupe S selon un cercle de centre J. Quel est le rayon de ce cercle ?",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "Le plan P passe par J et sa normale est IJ⃗ : J est donc le projeté orthogonal de I sur P, et la distance de I à P vaut IJ = √(4 + 4 + 1) = 3. Le rayon du cercle est √(R² − d²) = √(25 − 9) = √16 = 4 ✓. Contrôle : un point M du cercle vérifie IM² = IJ² + JM² = 9 + 16 = 25.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne I(1 ; −1 ; 0), J(−1 ; 1 ; 1) et A(−5 ; 5 ; 3). Quelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A appartient à la droite (IJ) et AJ = 2"
+        },
+        {
+          "id": "b",
+          "text": "A appartient à la droite (IJ) et AJ = 6"
+        },
+        {
+          "id": "c",
+          "text": "A appartient à la droite (IJ) et AJ = 4√2"
+        },
+        {
+          "id": "d",
+          "text": "A n'appartient pas à la droite (IJ), car JA⃗ et JI⃗ ne sont pas dans le même sens"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a JI⃗(2 ; −2 ; −1) et JA⃗(−4 ; 4 ; 2). Chaque coordonnée de JA⃗ est −2 fois celle de JI⃗ : les vecteurs sont colinéaires, donc A est sur la droite (IJ) — le sens contraire n'empêche pas d'être sur la droite. Alors AJ = ‖JA⃗‖ = √(16 + 16 + 4) = 6 ✓. Le réel 2 est le coefficient de colinéarité en valeur absolue, pas la longueur ; 4√2 oublie la coordonnée sur z.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) tels que x² + y² + z² − 2x + 2y − 23 = 0. Soit J(−1 ; 1 ; 1) et P le plan qui passe par J et qui est orthogonal à la droite (IJ), où I est le centre de S. Soit A(−5 ; 5 ; 3). Pour un point M de l'intersection de S et de P, que vaut AM² ?",
+      "answerKey": {
+        "value": 52
+      },
+      "explanation": "Le centre de S est I(1 ; −1 ; 0), de rayon 5 ; la distance de I à P est IJ = 3, donc M décrit le cercle de centre J et de rayon JM = √(25 − 9) = 4. Comme JA⃗ = −2 JI⃗ est normal à P, AJ = 6 et JM⃗ est orthogonal à JA⃗ : le triangle AJM est rectangle en J. Donc AM² = AJ² + JM² = 36 + 16 = 52 ✓. Utiliser le rayon 5 de S à la place de JM = 4 donnerait 61.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit S l'ensemble des points M(x, y, z) tels que x² + y² + z² − 2x + 2y − 23 = 0, J(−1 ; 1 ; 1), P le plan passant par J et orthogonal à la droite (IJ) où I est le centre de S, et S′ la sphère de centre A(−5 ; 5 ; 3) et de rayon 2√13. Que peut-on dire de l'intersection de S′ et de P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "c'est un cercle de même centre J, mais de rayon plus grand que l'intersection de S et de P"
+        },
+        {
+          "id": "b",
+          "text": "c'est un cercle de même centre J, mais de rayon plus petit que l'intersection de S et de P"
+        },
+        {
+          "id": "c",
+          "text": "c'est le même cercle que l'intersection de S et de P"
+        },
+        {
+          "id": "d",
+          "text": "c'est le seul point J"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La distance de A au plan P est AJ = 6, car JA⃗ est normal à P. Le rayon du cercle S′ ∩ P est √(52 − 36) = 4, et son centre est le projeté orthogonal de A sur P, c'est-à-dire J. Or S ∩ P est le cercle de centre J et de rayon √(25 − 9) = 4 : les deux cercles coïncident ✓. Le point J seul supposerait la distance AJ égale au rayon 2√13 ≈ 7,2, ce qui n'est pas le cas.",
+      "difficulty": 3
+    }
+  ]
+}

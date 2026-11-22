@@ -1,0 +1,322 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : étude d'une fonction mêlant eˣ et e^(1/x), position et aire entre deux courbes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Soit g la fonction définie sur ]0 ; +∞[ par g(x) = x²eˣ. Quelle est son expression dérivée g′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) = 2xeˣ"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = (x² + 2x)eˣ"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) = 2xeˣ − x²eˣ"
+        },
+        {
+          "id": "d",
+          "text": "g′(x) = 2x + eˣ"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "g est un produit u × v avec u = x² et v = eˣ, donc g′ = u′v + uv′ = 2xeˣ + x²eˣ = (x² + 2x)eˣ = x(x + 2)eˣ ✓. Cette expression est strictement positive sur ]0 ; +∞[ : g y est strictement croissante. L'erreur classique est de dériver chaque facteur et de multiplier (u′v′ = 2xeˣ), ou d'oublier le terme uv′ (même résultat 2xeˣ) ; un signe − dans la formule du produit donne 2xeˣ − x²eˣ ; et dériver chaque facteur puis additionner donne 2x + eˣ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ]0 ; +∞[ par g(x) = x²eˣ, strictement croissante sur ]0 ; +∞[. Quel est le signe de g(x) − g(1/x) sur ]0 ; 1[, puis sur ]1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "positif sur ]0 ; 1[ et négatif sur ]1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "négatif sur ]0 ; 1[ et négatif sur ]1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "positif sur ]0 ; 1[ et positif sur ]1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "négatif sur ]0 ; 1[ et positif sur ]1 ; +∞["
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si 0 < x < 1, alors 1/x > 1 > x, donc x < 1/x ; g étant strictement croissante, g(x) < g(1/x) : la différence est négative. Si x > 1, alors 1/x < 1 < x, donc g(1/x) < g(x) : la différence est positive ✓. En x = 1 elle s'annule. L'erreur classique est de croire que x < 1/x pour tout x, ou d'inverser l'ordre des deux nombres sur ]1 ; +∞[.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nQuelle est la limite de f(x) quand x tend vers 0 par valeurs supérieures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "−∞"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand x → 0⁺, (x² − 2x + 2)eˣ → 2 × 1 = 2, et 1/x → +∞ donc e^(1/x) → +∞. La somme tend vers +∞ ✓ : la droite d'équation x = 0 est asymptote verticale à (C_f). Oublier le terme e^(1/x) donne 2, et remplacer 1/x par 0 (alors e^(1/x) → e⁰ = 1) donne 3 : or 1/x tend vers +∞ et non vers 0 quand x tend vers 0⁺.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nQue valent la limite de f(x)/x quand x → +∞ et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 : (C_f) admet une asymptote oblique de direction y = x au voisinage de +∞"
+        },
+        {
+          "id": "b",
+          "text": "0 : (C_f) admet une branche parabolique de direction l'axe des abscisses au voisinage de +∞"
+        },
+        {
+          "id": "c",
+          "text": "+∞ : (C_f) admet une branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "d",
+          "text": "0 : (C_f) admet une asymptote horizontale d'équation y = 0 au voisinage de +∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x)/x = (x − 2 + 2/x)eˣ + e^(1/x)/x. Le premier terme tend vers +∞ (produit de x − 2 + 2/x → +∞ par eˣ → +∞), le second vers 0 car e^(1/x) → e⁰ = 1 et 1/x → 0. Donc f(x)/x → +∞ ✓ : la courbe s'éloigne de tout axe horizontal plus vite qu'une droite, branche parabolique de direction l'axe des ordonnées (O, j). Une asymptote oblique exigerait que f(x)/x ait une limite finie : la valeur 1 vient du quotient (x² − 2x + 2)/x² dont on oublie le facteur eˣ, et la valeur 0 ne retient que le terme e^(1/x)/x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nQuelle est la dérivée de la fonction x ↦ (x² − 2x + 2)eˣ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2x − 2)eˣ"
+        },
+        {
+          "id": "b",
+          "text": "(x² − 2x + 2)eˣ"
+        },
+        {
+          "id": "c",
+          "text": "x²eˣ"
+        },
+        {
+          "id": "d",
+          "text": "−(x − 2)²eˣ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec u = x² − 2x + 2 et v = eˣ : u′v + uv′ = (2x − 2)eˣ + (x² − 2x + 2)eˣ = (x² + 0x + 0)eˣ = x²eˣ ✓. Ne dériver que le polynôme donne (2x − 2)eˣ ; recopier la fonction suppose u′ = 0 ; et soustraire au lieu d'additionner les deux termes donne (2x − 2 − x² + 2x − 2)eˣ = −(x − 2)²eˣ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la dérivée de la fonction x ↦ e^(1/x) sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−e^(1/x)/x²"
+        },
+        {
+          "id": "b",
+          "text": "e^(1/x)"
+        },
+        {
+          "id": "c",
+          "text": "e^(1/x) × 1/x²"
+        },
+        {
+          "id": "d",
+          "text": "−e^(1/x)/x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(e^u)′ = u′e^u avec u(x) = 1/x et u′(x) = −1/x² : la dérivée est −(1/x²)e^(1/x) ✓. Oublier le facteur u′ laisse e^(1/x) ; perdre le signe de (1/x)′ donne e^(1/x)/x² ; prendre u′ = −1/x au lieu de −1/x² confond (1/x)′ avec la dérivée de ln.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nOn pose g(x) = x²eˣ. Comment s'écrit f′(x) à l'aide de g, pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = g(x) + g(1/x)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = g(x) − g(−x)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = g(x) − 1/g(x)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = g(x) − g(1/x)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le polynôme et eˣ donnent la dérivée de (x² − 2x + 2)eˣ : x²eˣ = g(x). La dérivée de e^(1/x) est −(1/x²)e^(1/x) = −(1/x)²e^(1/x) = −g(1/x), puisque g(1/x) = (1/x)²e^(1/x). Donc f′(x) = g(x) − g(1/x) ✓. Le signe + oublie le signe moins de (1/x)′ ; g(−x) = x²e^(−x) change eˣ en e^(−x), et 1/g(x) = e^(−x)/x² n'est pas g(1/x).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nQuelle est la valeur de f′(1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(1) = e"
+        },
+        {
+          "id": "b",
+          "text": "f′(1) = 0"
+        },
+        {
+          "id": "c",
+          "text": "f′(1) = −e"
+        },
+        {
+          "id": "d",
+          "text": "f′(1) = 2e"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour x > 0, f′(x) = x²eˣ − (1/x²)e^(1/x). En x = 1 : f′(1) = 1² × e¹ − 1 × e¹ = e − e = 0 ✓ : la courbe (C_f) admet une tangente horizontale au point d'abscisse 1. Ne garder que le premier terme donne e, que le second donne −e ; perdre le signe de (e^(1/x))′ = −(1/x²)e^(1/x) donne e + e = 2e.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nQuel est le tableau de variation de f sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur ]0 ; 1], strictement décroissante sur [1 ; +∞[, de maximum f(1) = 2e"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement décroissante sur ]0 ; 1], strictement croissante sur [1 ; +∞[, de minimum f(1) = e"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement décroissante sur ]0 ; 1], strictement croissante sur [1 ; +∞[, de minimum f(1) = 0"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement décroissante sur ]0 ; 1], strictement croissante sur [1 ; +∞[, de minimum f(1) = 2e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(x) = g(x) − g(1/x) avec g(x) = x²eˣ strictement croissante : f′ < 0 sur ]0 ; 1[ (car x < 1/x) et f′ > 0 sur ]1 ; +∞[ (car x > 1/x), avec f′(1) = 0. Donc f décroît sur ]0 ; 1], croît sur [1 ; +∞[, et son minimum est f(1) = (1 − 2 + 2)e + e¹ = e + e = 2e ✓, entre les limites +∞ en 0⁺ et +∞ en +∞. Les valeurs e et 0 viennent d'un oubli du terme e^(1/x) ou d'une confusion entre f′(1) = 0 et f(1) = 0 ; le sens croissant puis décroissant lit le signe de f′ à l'envers.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nQuelle est la position relative de (C_f) et (C_h) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) − h(x) = (x² − 2x + 2)eˣ s'annule en x = 1 : (C_f) et (C_h) se coupent au point d'abscisse 1 et se recoupent ailleurs"
+        },
+        {
+          "id": "b",
+          "text": "f(x) − h(x) = (x² − 2x + 2)eˣ = ((x − 1)² + 1)eˣ > 0 : (C_f) est au-dessus de (C_h) sur ]0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "x² − 2x + 2 = (x − 1)² − 1 = x(x − 2), donc (C_f) est au-dessous de (C_h) sur ]0 ; 2[ et au-dessus ensuite"
+        },
+        {
+          "id": "d",
+          "text": "f(x) − h(x) = (x² − 2x + 2)eˣ > 0 sur ]0 ; +∞[ : (C_f) est donc au-dessous de (C_h) sur ]0 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) − h(x) = (x² − 2x + 2)eˣ avec x² − 2x + 2 = (x − 1)² + 1 ≥ 1 > 0 (discriminant 4 − 8 < 0) et eˣ > 0. Donc f(x) > h(x) pour tout x > 0 : (C_f) est au-dessus de (C_h) et les deux courbes n'ont aucun point commun ✓. La racine 1 appartient à (x − 1)², non à (x − 1)² + 1 ; (x − 1)² = x² − 2x + 1, d'où +1 et non −1 ; et une différence positive place (C_f) au-dessus, non au-dessous.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Laquelle de ces fonctions est une primitive sur ℝ de la fonction t ↦ (t² − 2t + 2)eᵗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "t ↦ (t² − 2t + 2)eᵗ"
+        },
+        {
+          "id": "b",
+          "text": "t ↦ (t² − 4t + 2)eᵗ"
+        },
+        {
+          "id": "c",
+          "text": "t ↦ (t² − 4t + 6)eᵗ"
+        },
+        {
+          "id": "d",
+          "text": "t ↦ (t³/3 − t² + 2t)eᵗ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On dérive (t² − 4t + 6)eᵗ : (2t − 4)eᵗ + (t² − 4t + 6)eᵗ = (t² − 2t + 2)eᵗ ✓. La fonction elle-même a pour dérivée t²eᵗ ; (t² − 4t + 2)eᵗ a pour dérivée (t² − 2t − 2)eᵗ ; et primitiver le polynôme en laissant eᵗ n'est pas une primitive du produit : (t³/3 − t² + 2t)eᵗ a pour dérivée (t³/3 + 2)eᵗ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (x² − 2x + 2)eˣ + e^(1/x), de courbe (C_f) dans un repère orthogonal (O, i, j), et soit h(x) = e^(1/x) de courbe (C_h).\nSoit α ∈ ]0 ; 1]. On rappelle que (t² − 4t + 6)eᵗ est une primitive de t ↦ f(t) − h(t). Quelle est l'aire A_α de la partie du plan limitée par (C_f), (C_h) et les droites x = α et x = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A_α = 3e − (α² − 4α + 6)eᵅ"
+        },
+        {
+          "id": "b",
+          "text": "A_α = (α² − 4α + 6)eᵅ − 3e"
+        },
+        {
+          "id": "c",
+          "text": "A_α = 3e + (α² − 4α + 6)eᵅ"
+        },
+        {
+          "id": "d",
+          "text": "A_α = 3e − (α² − 4α + 6)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "(C_f) étant au-dessus de (C_h), A_α = ∫ de α à 1 de (f(t) − h(t)) dt = [(t² − 4t + 6)eᵗ] de α à 1 = (1 − 4 + 6)e − (α² − 4α + 6)eᵅ = 3e − (α² − 4α + 6)eᵅ ✓. Cette valeur est positive (en α = 1/2 : 8,15 − 7,01 > 0). Permuter les bornes donne l'opposé (négatif, donc pas une aire) ; additionner les deux valeurs de la primitive ne correspond pas à une différence F(1) − F(α) ; et oublier eᵅ revient à évaluer le polynôme seul.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour α ∈ ]0 ; 1], l'aire A_α de la partie du plan comprise entre (C_f) et (C_h) et les droites x = α et x = 1 vaut A_α = 3e − (α² − 4α + 6)eᵅ. Quelle est la limite de A_α quand α tend vers 0 par valeurs supérieures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3e − 6"
+        },
+        {
+          "id": "b",
+          "text": "3e"
+        },
+        {
+          "id": "c",
+          "text": "3e + 6"
+        },
+        {
+          "id": "d",
+          "text": "+∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand α → 0⁺, α² − 4α + 6 → 6 et eᵅ → 1, donc (α² − 4α + 6)eᵅ → 6 et A_α → 3e − 6 ≈ 2,15 ✓. Ce n'est pas +∞ : f et h tendent toutes deux vers +∞ en 0⁺, mais leur différence f − h = (x² − 2x + 2)eˣ reste bornée et son intégrale reste finie. Oublier le 6 donne 3e, et soustraire de travers donne 3e + 6.",
+      "difficulty": 3
+    }
+  ]
+}

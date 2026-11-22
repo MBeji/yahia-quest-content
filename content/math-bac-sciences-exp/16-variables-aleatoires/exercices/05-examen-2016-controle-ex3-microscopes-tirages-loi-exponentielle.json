@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 3 ⭐⭐⭐ : tirages sans remise jusqu'au premier succès, loi de X et espérance, durée de vie exponentielle",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Le laboratoire d'un lycée possède 10 microscopes dont 3 sont défectueux. Le laborantin choisit un microscope au hasard et le teste ; s'il est défectueux, il le met à part et en choisit un autre parmi ceux qui restent, jusqu'à obtenir un microscope non défectueux. On note Aₙ l'événement « le premier microscope non défectueux est obtenu au n-ième choix », de probabilité pₙ.\nQuelle justification établit que n ≤ 4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 microscopes sur 10 sont bons : sur 4 choix, on en attend 4 × 0,7 = 2,8, donc au moins un bon parmi les 4 premiers"
+        },
+        {
+          "id": "b",
+          "text": "il y a 3 microscopes défectueux : après 3 mises à part, le 4ᵉ choix est forcément non défectueux"
+        },
+        {
+          "id": "c",
+          "text": "10/3 ≈ 3,3 choix par microscope défectueux, arrondi à 4 : le premier bon vient donc au plus tard au 4ᵉ choix"
+        },
+        {
+          "id": "d",
+          "text": "4 défectueux de suite ont la probabilité (3/10)⁴ ≈ 0,008, négligeable : le premier bon arrive donc au plus tard au 4ᵉ choix"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque microscope défectueux testé est mis à part. Comme il n'y en a que 3, on ne peut en écarter que 3 au plus : si les 3 premiers choix sont défectueux, il ne reste que des microscopes non défectueux et le 4ᵉ choix est bon. Donc n ≤ 4 ✓. Le nombre moyen 2,8 de bons microscopes sur 4 choix est une espérance, pas une certitude ; un quotient comme 10/3 arrondi ne prouve aucune borne ; et (3/10)⁴ calcule comme si chaque microscope revenait dans le lot : sans remise, 4 défectueux de suite sont impossibles (il n'y en a que 3), et une probabilité faible ne prouverait de toute façon aucune borne certaine.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le laboratoire d'un lycée possède 10 microscopes dont 3 sont défectueux. Le laborantin choisit un microscope au hasard et le teste ; s'il est défectueux, il le met à part et en choisit un autre parmi ceux qui restent, jusqu'à obtenir un microscope non défectueux. On note Aₙ l'événement « le premier microscope non défectueux est obtenu au n-ième choix », de probabilité pₙ.\nQuelles sont les valeurs de p₁ et de p₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p₁ = 7/10 et p₂ = 21/100"
+        },
+        {
+          "id": "b",
+          "text": "p₁ = 3/10 et p₂ = 7/30"
+        },
+        {
+          "id": "c",
+          "text": "p₁ = 7/10 et p₂ = 7/9"
+        },
+        {
+          "id": "d",
+          "text": "p₁ = 7/10 et p₂ = 7/30"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "p₁ est la probabilité que le premier microscope soit non défectueux : 7/10. Pour A₂, le premier est défectueux (3/10) puis, sur 9 restants dont 7 bons, le deuxième est non défectueux (7/9) : p₂ = (3/10)(7/9) = 21/90 = 7/30 ✓. Garder 7/10 pour le deuxième microscope (21/100) oublie que le microscope écarté ne revient pas ; 3/10 est la probabilité d'un microscope défectueux ; et 7/9 oublie le premier événement.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le laboratoire d'un lycée possède 10 microscopes dont 3 sont défectueux. Le laborantin choisit un microscope au hasard et le teste ; s'il est défectueux, il le met à part et en choisit un autre parmi ceux qui restent, jusqu'à obtenir un microscope non défectueux. On note Aₙ l'événement « le premier microscope non défectueux est obtenu au n-ième choix », de probabilité pₙ.\nQuelle est la valeur de p₃ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p₃ = 7/120"
+        },
+        {
+          "id": "b",
+          "text": "p₃ = 21/500"
+        },
+        {
+          "id": "c",
+          "text": "p₃ = 7/150"
+        },
+        {
+          "id": "d",
+          "text": "p₃ = 1/15"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A₃ : les deux premiers microscopes sont défectueux, puis le troisième est bon. Les probabilités se multiplient avec des effectifs qui diminuent : p₃ = (3/10) × (2/9) × (7/8) = 42/720 = 7/120 ✓. Des dénominateurs restés à 10 (21/500) ou un dernier facteur 7/10 (7/150) oublient que les microscopes écartés ne reviennent pas ; 1/15 = (3/10)(2/9) oublie le troisième microscope.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le laboratoire d'un lycée possède 10 microscopes dont 3 sont défectueux. Le laborantin choisit un microscope au hasard et le teste ; s'il est défectueux, il le met à part et en choisit un autre parmi ceux qui restent, jusqu'à obtenir un microscope non défectueux. On note Aₙ l'événement « le premier microscope non défectueux est obtenu au n-ième choix », de probabilité pₙ.\nSoit X le rang du premier microscope non défectueux. Quelle est la loi de probabilité de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(X = 1) = 7/10, p(X = 2) = 21/100, p(X = 3) = 63/1000, p(X = 4) = 189/10000"
+        },
+        {
+          "id": "b",
+          "text": "p(X = 1) = 1/120, p(X = 2) = 7/120, p(X = 3) = 7/30, p(X = 4) = 7/10"
+        },
+        {
+          "id": "c",
+          "text": "p(X = 1) = 7/10, p(X = 2) = 7/30, p(X = 3) = 7/120, p(X = 4) = 1/120"
+        },
+        {
+          "id": "d",
+          "text": "p(X = 1) = p(X = 2) = p(X = 3) = p(X = 4) = 1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "X prend les valeurs 1, 2, 3, 4 avec p(X = 1) = 7/10, p(X = 2) = 7/30, p(X = 3) = 7/120 et p(X = 4) = (3/10)(2/9)(1/8)(7/7) = 1/120. Contrôle : 84/120 + 28/120 + 7/120 + 1/120 = 120/120 = 1 ✓. La loi 7/10, 21/100, 63/1000, 189/10000 suppose que le microscope revient dans le lot (probabilités 7/10 et 3/10 constantes) ; sa somme vaut 0,9919 et non 1. La loi 1/120, 7/120, 7/30, 7/10 lit les probabilités à l'envers, et la loi uniforme 1/4 suppose une équiprobabilité injustifiée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le laboratoire d'un lycée possède 10 microscopes dont 3 sont défectueux. Le laborantin choisit un microscope au hasard et le teste ; s'il est défectueux, il le met à part et en choisit un autre parmi ceux qui restent, jusqu'à obtenir un microscope non défectueux. On note Aₙ l'événement « le premier microscope non défectueux est obtenu au n-ième choix », de probabilité pₙ.\nOn a p(X = 1) = 7/10, p(X = 2) = 7/30, p(X = 3) = 7/120, p(X = 4) = 1/120. Quelle est l'espérance E(X) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E(X) = 1"
+        },
+        {
+          "id": "b",
+          "text": "E(X) = 5/2"
+        },
+        {
+          "id": "c",
+          "text": "E(X) = 11/8"
+        },
+        {
+          "id": "d",
+          "text": "E(X) = 7/10"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E(X) = Σ k·p(X = k) = 1 × 7/10 + 2 × 7/30 + 3 × 7/120 + 4 × 1/120 = 84/120 + 56/120 + 21/120 + 4/120 = 165/120 = 11/8 ✓. Oublier le facteur k donne la somme des probabilités, 1 ; la moyenne simple des valeurs 1, 2, 3, 4 donne 5/2 ; et 7/10 est la seule probabilité p(X = 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La durée de vie Y d'un microscope, en années, suit la loi exponentielle de paramètre λ > 0. Soit T un réel positif. Quelle est l'expression de p(Y ≤ T) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(Y ≤ T) = 1 − e^(−λT)"
+        },
+        {
+          "id": "b",
+          "text": "p(Y ≤ T) = e^(−λT)"
+        },
+        {
+          "id": "c",
+          "text": "p(Y ≤ T) = 1 − e^(λT)"
+        },
+        {
+          "id": "d",
+          "text": "p(Y ≤ T) = λe^(−λT)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour la loi exponentielle de paramètre λ, de densité λe^(−λt) sur [0 ; +∞[, p(Y ≤ T) = ∫ de 0 à T de λe^(−λt) dt = [−e^(−λt)] de 0 à T = 1 − e^(−λT) ✓. e^(−λT) est p(Y ≥ T) (le complémentaire) ; 1 − e^(λT) est négatif pour λT > 0 ; et λe^(−λT) est la valeur de la densité, non une probabilité cumulée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La durée de vie Y d'un microscope suit une loi exponentielle de paramètre λ et p(Y ≥ 5) = 0,7. Quelle est la valeur de λ, à 10⁻³ près ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "λ = ln(0,7)/5 ≈ −0,071"
+        },
+        {
+          "id": "b",
+          "text": "λ = −ln(0,3)/5 ≈ 0,241"
+        },
+        {
+          "id": "c",
+          "text": "λ = 0,7/5 = 0,14"
+        },
+        {
+          "id": "d",
+          "text": "λ = −ln(0,7)/5 ≈ 0,071"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "p(Y ≥ 5) = e^(−5λ) = 0,7, donc −5λ = ln 0,7 et λ = −ln(0,7)/5 ≈ 0,3567/5 ≈ 0,071 ✓ (λ > 0 car ln 0,7 < 0). Garder ln(0,7)/5 donne un λ négatif, impossible ; −ln(0,3)/5 correspond à p(Y ≥ 5) = 0,3, soit p(Y ≤ 5) = 0,7 ; et 0,7/5 oublie le logarithme (p(Y ≥ 5) n'est pas linéaire en λ).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La durée de vie Y d'un microscope suit la loi exponentielle de paramètre λ = 0,071. Sachant qu'un microscope n'a pas eu de panne pendant les cinq premières années, quelle est la probabilité que sa durée de vie dépasse 10 ans ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(Y > 10 | Y > 5) = e^(−10λ) = e^(−0,71) ≈ 0,492"
+        },
+        {
+          "id": "b",
+          "text": "p(Y > 10 | Y > 5) = e^(−5λ) = e^(−0,355) ≈ 0,701"
+        },
+        {
+          "id": "c",
+          "text": "p(Y > 10 | Y > 5) = p(Y > 10) × p(Y > 5) ≈ 0,345"
+        },
+        {
+          "id": "d",
+          "text": "p(Y > 10 | Y > 5) = 1 − e^(−5λ) ≈ 0,299"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "p(Y > 10 | Y > 5) = p(Y > 10)/p(Y > 5) = e^(−10λ)/e^(−5λ) = e^(−5λ) = e^(−0,355) ≈ 0,701 ✓ : c'est l'absence de mémoire de la loi exponentielle (la probabilité de survivre 5 années de plus ne dépend pas de l'âge). e^(−0,71) ≈ 0,492 est la probabilité inconditionnelle p(Y > 10) ; un produit au lieu d'un quotient donne 0,345 ; et 1 − e^(−5λ) ≈ 0,299 est p(Y ≤ 5).",
+      "difficulty": 3
+    }
+  ]
+}

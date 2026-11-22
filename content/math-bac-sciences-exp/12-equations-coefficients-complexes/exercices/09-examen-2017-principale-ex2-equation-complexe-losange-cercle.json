@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2017 · session principale · Exercice 2 ⭐⭐⭐ : Équation du second degré, cercle et parallélogramme",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Que vaut (√5 + 2i)² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + 4i√5"
+        },
+        {
+          "id": "b",
+          "text": "9 + 4i√5"
+        },
+        {
+          "id": "c",
+          "text": "1 + 2i√5"
+        },
+        {
+          "id": "d",
+          "text": "1 − 4i√5"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On développe : (√5 + 2i)² = 5 + 2 × √5 × 2i + (2i)² = 5 + 4i√5 − 4 = 1 + 4i√5 ✓. Contrôle : le module de (√5 + 2i)² vaut 5 + 4 = 9 et |1 + 4i√5|² = 1 + 80 = 81 = 9² ✓. Le piège courant : écrire (2i)² = +4 (oublier i² = −1) donne 9 + 4i√5 ; oublier le facteur 2 du double produit donne 1 + 2i√5 ; écrire le double produit avec le signe moins, comme dans (a − b)², donne 5 − 4i√5 − 4 = 1 − 4i√5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\nz² − (√5 + 2i)z + 1 + 4i√5 = 0\nQue vaut son discriminant Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δ = −3 − 16i√5"
+        },
+        {
+          "id": "b",
+          "text": "Δ = 5 + 20i√5"
+        },
+        {
+          "id": "c",
+          "text": "Δ = 5 − 12i√5"
+        },
+        {
+          "id": "d",
+          "text": "Δ = −3 − 12i√5"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ici a = 1, b = −(√5 + 2i) et c = 1 + 4i√5. On a b² = (√5 + 2i)² = 1 + 4i√5 et 4ac = 4 + 16i√5. Donc Δ = b² − 4ac = 1 + 4i√5 − 4 − 16i√5 = −3 − 12i√5 ✓. On remarque que Δ = −3(1 + 4i√5) = −3(√5 + 2i)². Le piège courant : oublier le double produit dans b² (écrire 5 − 4 = 1) donne −3 − 16i√5 ; ajouter 4ac au lieu de le retrancher donne 5 + 20i√5 ; oublier que i² = −1 dans b² (9 + 4i√5) donne 5 − 12i√5.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, (C) est le cercle de centre O et de rayon 3 (figure ci-dessous), et Q est le point d'affixe √5 + 2i. Comment placer Q sur (C) ?\n<svg viewBox=\"0 0 240.0 240.0\"><title>Repère orthonormé et cercle (C) de centre O et de rayon 3</title><path d=\"M15.0 120.0 H225.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M120.0 225.0 V15.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M225.0 120.0 l-6 -3 l0 6 z\" fill=\"#0f172a\"/><path d=\"M120.0 15.0 l-3 6 l6 0 z\" fill=\"#0f172a\"/><path d=\"M30.0 117.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"30.0\" y=\"135.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−3</text><path d=\"M60.0 117.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"60.0\" y=\"135.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M90.0 117.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"90.0\" y=\"135.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M150.0 117.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"150.0\" y=\"135.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M180.0 117.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"180.0\" y=\"135.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M210.0 117.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"210.0\" y=\"135.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M117.0 210.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"113.0\" y=\"213.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−3</text><path d=\"M117.0 180.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"113.0\" y=\"183.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M117.0 150.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"113.0\" y=\"153.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M117.0 90.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"113.0\" y=\"93.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M117.0 60.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"113.0\" y=\"63.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M117.0 30.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"113.0\" y=\"33.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">3</text><text x=\"115.0\" y=\"133.0\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">O</text><circle cx=\"120.0\" cy=\"120.0\" r=\"90\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"1.6\" /></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Q est le point d'intersection de (C) et de la droite d'équation y = 2, du côté des abscisses positives."
+        },
+        {
+          "id": "b",
+          "text": "Q est le point d'intersection de (C) et de la droite d'équation y = 2, du côté des abscisses négatives."
+        },
+        {
+          "id": "c",
+          "text": "Q est le point d'intersection de (C) et de la droite d'équation x = 2, du côté des ordonnées positives."
+        },
+        {
+          "id": "d",
+          "text": "Q est le point d'intersection de (C) et de la droite d'équation x = 2, du côté des ordonnées négatives."
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point Q a pour abscisse √5 et pour ordonnée 2. Il est sur (C) car OQ = √(5 + 4) = 3. Il se place donc à l'intersection de (C) et de la droite horizontale y = 2, du côté des abscisses positives (l'autre intersection est le point d'abscisse −√5) ✓. Le piège courant : confondre les deux coordonnées et tracer x = 2 place le point (2 ; √5), autre point du cercle (4 + 5 = 9) mais qui n'est pas Q ; choisir le mauvais côté revient à placer le symétrique du bon point.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\nz² − (√5 + 2i)z + 1 + 4i√5 = 0\nQuelles sont ses deux solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = (√5 + 2i)(1 + √3)/2 ou z = (√5 + 2i)(1 − √3)/2"
+        },
+        {
+          "id": "b",
+          "text": "z = (√5 + 2i)(1 + i√3)/2 ou z = (√5 + 2i)(1 − i√3)/2"
+        },
+        {
+          "id": "c",
+          "text": "z = (√5 + 2i)(1 + i√3) ou z = (√5 + 2i)(1 − i√3)"
+        },
+        {
+          "id": "d",
+          "text": "z = (√5 + 2i)(−1 + i√3)/2 ou z = (√5 + 2i)(−1 − i√3)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le discriminant vaut Δ = −3 − 12i√5 = −3(√5 + 2i)² = (i√3(√5 + 2i))², donc δ = i√3(√5 + 2i) est une racine carrée de Δ (car i² = −1). Les solutions sont z = (−b ± δ)/2 avec −b = √5 + 2i : z = (√5 + 2i)(1 ± i√3)/2 ✓. Contrôle par la somme : (√5 + 2i)(1 + i√3)/2 + (√5 + 2i)(1 − i√3)/2 = √5 + 2i. Le piège courant : prendre √(−3) = √3 (oublier le i) donne des solutions avec (1 ± √3) ; oublier de diviser par 2a = 2 double les deux solutions ; changer le signe de −b change celui du 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel est le module du nombre complexe (√5 + 2i)(1 + i√3)/2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6"
+        },
+        {
+          "id": "b",
+          "text": "3/2"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "3√3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le module d'un produit est le produit des modules : |√5 + 2i| = √(5 + 4) = 3, |1 + i√3| = √(1 + 3) = 2, et l'on divise par 2. Donc le module vaut 3 × 2/2 = 3 ✓. Cela place le point d'affixe (√5 + 2i)(1 + i√3)/2 sur le cercle de centre O et de rayon 3. Le piège courant : oublier la division par 2 donne 6 ; prendre |1 + i√3| = 1 donne 3/2 ; ne garder que la partie imaginaire √3 pour ce module donne 3√3/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A et B sont les points d'affixes a = (√5 + 2i)(1 + i√3)/2 et b = (√5 + 2i)(1 − i√3)/2, de module 3, et Q est le point d'affixe √5 + 2i. On a OA⃗ + OB⃗ = OQ⃗. Quelle propriété prouve que OAQB est un losange ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OA⃗ + OB⃗ = OQ⃗ donne un parallélogramme, et OQ = 3 : la diagonale [OQ] a la longueur du rayon."
+        },
+        {
+          "id": "b",
+          "text": "OA⃗ + OB⃗ = OQ⃗ donne un parallélogramme, et OB⃗ = AQ⃗ : deux côtés opposés sont égaux."
+        },
+        {
+          "id": "c",
+          "text": "OA⃗ + OB⃗ = OQ⃗ donne un parallélogramme, et ses diagonales [OQ] et [AB] ont le même milieu."
+        },
+        {
+          "id": "d",
+          "text": "OA⃗ + OB⃗ = OQ⃗ donne un parallélogramme, et OA = OB donne deux côtés consécutifs égaux."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La relation OA⃗ + OB⃗ = OQ⃗ montre que OAQB est un parallélogramme (OQ est la diagonale issue de O). Comme OA = OB = 3, deux côtés consécutifs sont égaux : le parallélogramme est un losange ✓. Le piège courant : la longueur OQ = 3 de la diagonale ne renseigne pas sur les côtés ; l'égalité de deux côtés opposés, OB⃗ = AQ⃗, est vraie dans tout parallélogramme et ne le distingue pas d'un parallélogramme quelconque ; le fait que les diagonales aient le même milieu est la définition même du parallélogramme et ne suffit pas non plus pour un losange.",
+      "difficulty": 3
+    }
+  ]
+}

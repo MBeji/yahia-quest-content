@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 3 ⭐⭐⭐ : Équation, rectangle, cercle et droites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 13,
+  "questions": [
+    {
+      "prompt": "Résoudre dans ℂ l'équation\nz² − 4iz − 3 = 0\nQuel est l'ensemble des solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = −i ou z = −3i"
+        },
+        {
+          "id": "b",
+          "text": "z = i(2 + √7) ou z = i(2 − √7)"
+        },
+        {
+          "id": "c",
+          "text": "z = i ou z = 3i"
+        },
+        {
+          "id": "d",
+          "text": "z = 1 + 2i ou z = −1 + 2i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le discriminant est Δ = (−4i)² − 4 × (−3) = −16 + 12 = −4 = (2i)². Les solutions sont z = (4i ± 2i)/2, soit z = 3i et z = i ✓. Contrôle : la somme vaut 4i = −b/a et le produit i × 3i = −3 = c/a ✓. Le piège courant : prendre b au lieu de −b change le signe des deux solutions ; écrire Δ = −16 − 12 = −28 donne des racines en √7 ; oublier que (4i)² = −16 et poser Δ = 16 − 12 = 4 donne 2i ± 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, les points A, B et D ont pour affixes z_A = i, z_B = √3 + i et z_D = 3i. Que vaut le quotient (z_D − z_A)/(z_B − z_A) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2i√3/3"
+        },
+        {
+          "id": "b",
+          "text": "−i√3/2"
+        },
+        {
+          "id": "c",
+          "text": "2√3/3"
+        },
+        {
+          "id": "d",
+          "text": "2i√3/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z_D − z_A = 2i et z_B − z_A = √3. Le quotient est 2i/√3 = 2i√3/3 ✓. C'est un imaginaire pur : les vecteurs AD⃗ et AB⃗ sont orthogonaux, c'est-à-dire que l'angle en A est droit. Le piège courant : permuter les deux différences donne √3/(2i) = −i√3/2 ; inverser l'ordre d'une soustraction change le signe ; oublier le i donne un réel (qui voudrait dire colinéaires).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, soit M un point de la demi-droite [OB) privée de O, où B a pour affixe √3 + i. Quel raisonnement justifie que arg(z_M) ≡ π/6 [2π] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M est sur la droite (OB) : les vecteurs OM⃗ et OB⃗ sont colinéaires, donc ils ont le même argument π/6."
+        },
+        {
+          "id": "b",
+          "text": "M est sur la demi-droite [OB) privée de O : OM⃗ et OB⃗ ont le même sens, donc arg z_M ≡ arg z_B ≡ π/6."
+        },
+        {
+          "id": "c",
+          "text": "OM et OB sont des longueurs strictement positives, donc z_M et z_B ont le même argument, qui vaut π/6."
+        },
+        {
+          "id": "d",
+          "text": "M est sur la demi-droite [OB) : z_M = z_B + r avec r > 0, donc arg z_M ≡ arg z_B ≡ π/6."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z_B = √3 + i = 2e^(iπ/6), d'argument π/6. Les points de [OB) autres que O sont les points M tels que OM⃗ = t OB⃗ avec t > 0 : z_M = t z_B a le même argument que z_B, soit π/6 ✓. Le piège courant : deux vecteurs colinéaires peuvent être de sens contraires (z_M = −t z_B aurait pour argument π/6 + π) ; une longueur ne détermine pas un argument ; ajouter un réel r à z_B déplacerait le point hors de la demi-droite et changerait l'argument.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, les points A, B, C et D ont pour affixes z_A = i, z_B = √3 + i, z_C = √3 + 3i et z_D = 3i. Quelle combinaison de propriétés prouve que ABCD est un rectangle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et les diagonales [AC] et [BD] ont le même milieu : z_A + z_C = z_B + z_D."
+        },
+        {
+          "id": "b",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et (z_D − z_A)/(z_B − z_A) imaginaire pur (angle droit)."
+        },
+        {
+          "id": "c",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et les diagonales [AC] et [BD] sont perpendiculaires."
+        },
+        {
+          "id": "d",
+          "text": "AB⃗ = DC⃗ (parallélogramme) et AB = AD : deux côtés consécutifs ont la même longueur."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z_B − z_A = √3 = z_C − z_D, donc AB⃗ = DC⃗ et ABCD est un parallélogramme. Le quotient (z_D − z_A)/(z_B − z_A) = 2i/√3 est un imaginaire pur : l'angle en A est droit. Un parallélogramme avec un angle droit est un rectangle ✓. Le piège courant : les diagonales qui ont le même milieu sont la définition même du parallélogramme et ne donnent pas l'angle droit ; un parallélogramme à diagonales perpendiculaires, ou à deux côtés consécutifs égaux, est un losange, pas forcément un rectangle.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, (C) est le cercle de centre le point d'affixe √3 + 3i et de rayon √3, et A est le point d'affixe i. Que dire de la droite (OA) par rapport au cercle (C), et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle ne coupe pas (C) : la distance du centre à (OA) vaut 3, supérieure au rayon."
+        },
+        {
+          "id": "b",
+          "text": "Elle est tangente à (C) au point A : A est le point de (OA) le plus proche du centre."
+        },
+        {
+          "id": "c",
+          "text": "Elle coupe (C) en deux points : la distance du centre à (OA) vaut 1, inférieure au rayon."
+        },
+        {
+          "id": "d",
+          "text": "Elle est tangente à (C) : la distance du centre à (OA) vaut √3, c'est-à-dire le rayon."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les points O et A sont sur l'axe des ordonnées : (OA) est la droite d'équation x = 0. La distance du centre (√3 ; 3) à cette droite est la valeur absolue de son abscisse, soit √3, égale au rayon : (OA) est tangente à (C) ✓. Le piège courant : lire l'ordonnée 3 au lieu de l'abscisse √3 (la droite est verticale, c'est l'abscisse qui mesure l'écart) ; placer le point de contact en A : le point de (OA) le plus proche du centre est le pied de la perpendiculaire, d'affixe 3i, et la tangente touche (C) en 3i, pas en A ; prendre l'ordonnée 1 de A comme distance.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelles sont les écritures exponentielles de z_B = √3 + i et de z_C = √3 + 3i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_B = 2e^(iπ/6) et z_C = 2√3 e^(iπ/3)"
+        },
+        {
+          "id": "b",
+          "text": "z_B = 2e^(iπ/3) et z_C = 2√3 e^(iπ/6)"
+        },
+        {
+          "id": "c",
+          "text": "z_B = 4e^(iπ/3) et z_C = 12e^(iπ/6)"
+        },
+        {
+          "id": "d",
+          "text": "z_B = 4e^(iπ/6) et z_C = 12e^(iπ/3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "|z_B| = √(3 + 1) = 2, cos θ = √3/2 et sin θ = 1/2 donnent θ = π/6. |z_C| = √(3 + 9) = √12 = 2√3, cos θ = √3/(2√3) = 1/2 et sin θ = 3/(2√3) = √3/2 donnent θ = π/3 ✓. Contrôle : 2√3(1/2 + i√3/2) = √3 + 3i. Le piège courant : permuter cosinus et sinus échange les arguments de z_B et de z_C ; oublier la racine carrée des modules donne 4 pour z_B et 12 pour z_C ; cumuler ces deux erreurs donne 4e^(iπ/3) et 12e^(iπ/6).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, C est le point d'affixe √3 + 3i. Un point M de la demi-droite [OB) (privée de O), où B a pour affixe √3 + i, a pour affixe z_M = r e^(iπ/6), avec r = OM. Quelle est la forme de z_M − z_C comme produit d'un facteur par e^(iπ/6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(r − 3 + i√3) e^(iπ/6)"
+        },
+        {
+          "id": "b",
+          "text": "(r − 2√3) e^(iπ/6)"
+        },
+        {
+          "id": "c",
+          "text": "(r − 3 − i√3) e^(iπ/6)"
+        },
+        {
+          "id": "d",
+          "text": "(r − √3 − 3i) e^(iπ/6)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On écrit z_C = √3 + 3i = 2√3 e^(iπ/3) = 2√3 e^(iπ/6) e^(iπ/6) = (3 + i√3) e^(iπ/6), car 2√3 e^(iπ/6) = 2√3(√3/2 + i/2) = 3 + i√3. Donc z_M − z_C = (r − 3 − i√3) e^(iπ/6) ✓. Contrôle : (3 + i√3)(√3/2 + i/2) = 3√3/2 + 3i/2 + 3i/2 − √3/2 = √3 + 3i. Le piège courant : conjuguer le facteur donne r − 3 + i√3 ; prendre pour module de z_C l'écart de modules (r − 2√3) oublie la différence d'argument ; mettre e^(iπ/6) en facteur sans diviser z_C par lui donne r − √3 − 3i.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, C est le point d'affixe √3 + 3i et M un point d'affixe r e^(iπ/6), avec r réel strictement positif. Quelle est la valeur de CM² en fonction de r ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(r − 3)² − 3"
+        },
+        {
+          "id": "b",
+          "text": "(r − 3 − √3)²"
+        },
+        {
+          "id": "c",
+          "text": "(r − 3)² + 3"
+        },
+        {
+          "id": "d",
+          "text": "r² + 3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a z_M − z_C = (r − 3 − i√3)e^(iπ/6) et |e^(iπ/6)| = 1, donc CM² = |r − 3 − i√3|² = (r − 3)² + (√3)² = (r − 3)² + 3 ✓. Contrôle pour r = 0 (le point O) : CM² = 9 + 3 = 12 = |z_C|² ✓. Le piège courant : traiter i√3 comme un réel donne (r − 3 − √3)² ; écrire (i√3)² = −3 donne (r − 3)² − 3 ; oublier de retrancher 3 donne r² + 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, (C) est le cercle de centre le point d'affixe √3 + 3i et de rayon √3, et (OB) la droite passant par O et le point B d'affixe √3 + i. Ils sont tangents en un point. Quelle est l'affixe de ce point ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3√3 + 3i)/2"
+        },
+        {
+          "id": "b",
+          "text": "(3 + 3i√3)/2"
+        },
+        {
+          "id": "c",
+          "text": "3/2 + i√3/2"
+        },
+        {
+          "id": "d",
+          "text": "√3 + i"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le point de tangence M est le pied de la perpendiculaire à (OB) menée du centre C. Avec z_M = r e^(iπ/6), on a z_M − z_C = (r − 3 − i√3)e^(iπ/6), de module au carré (r − 3)² + 3, minimal pour r = 3 et alors égal à 3, c'est-à-dire au carré du rayon : la distance de C à (OB) est le rayon, donc (OB) est tangente en M d'affixe 3e^(iπ/6) = 3(√3/2 + i/2) = (3√3 + 3i)/2 ✓. Le piège courant : permuter cosinus et sinus donne (3 + 3i√3)/2 ; prendre r = √3 (le rayon) donne 3/2 + i√3/2 ; le point B appartient à (OB) mais est à la distance CB = 2 > √3 de C.",
+      "difficulty": 3
+    }
+  ]
+}

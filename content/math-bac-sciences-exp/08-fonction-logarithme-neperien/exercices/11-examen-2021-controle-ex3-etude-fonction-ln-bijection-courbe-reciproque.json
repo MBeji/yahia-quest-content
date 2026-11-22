@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2021 · session de contrôle · Exercice 3 ⭐⭐⭐⭐ : étude de x ↦ x/(x + 1) + ln(x + 1), bijection, position relative et aire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nQuelle est la limite de f en −1 par valeurs supérieures, et que signifie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : la droite d'équation x = −1 est asymptote verticale"
+        },
+        {
+          "id": "b",
+          "text": "−1 : la droite d'équation y = −1 est asymptote horizontale"
+        },
+        {
+          "id": "c",
+          "text": "−∞ : la droite d'équation x = −1 est asymptote verticale"
+        },
+        {
+          "id": "d",
+          "text": "0 : la courbe (ζ) passe par le point de coordonnées (−1 ; 0)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand x → −1⁺, x → −1 et x + 1 → 0 par valeurs positives, donc x/(x + 1) → −∞ (numérateur proche de −1, dénominateur positif proche de 0) ; de plus ln(x + 1) → −∞. Les deux termes tendent vers −∞ : f(x) → −∞ ✓ et la droite x = −1 est asymptote verticale. Le piège courant est d'oublier le signe négatif du numérateur et de conclure +∞.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nQuelle est l'expression de f′(x) pour tout x > −1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 1/(x + 1)² + 1/(x + 1)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 1/(x + 1) + 1/(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 1 − 1/(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = −1/(x + 1)² − 1/(x + 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "x/(x + 1) = 1 − 1/(x + 1), de dérivée 1/(x + 1)² ; celle de ln(x + 1) est 1/(x + 1). Donc f′(x) = 1/(x + 1)² + 1/(x + 1) ✓. Dériver le quotient en ne dérivant que le numérateur donne 1/(x + 1) en premier terme ; prendre 1 pour dérivée de x/(x + 1) et (ln(x + 1))′ égal à −1/(x + 1) donne 1 − 1/(x + 1) ; un signe faux dans (1/u)′ avec (ln(x + 1))′ pris égal à −1/(x + 1) donne −1/(x + 1)² − 1/(x + 1).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nQue valent la limite de f(x) et celle de f(x)/x quand x tend vers +∞, et quelle branche infinie en résulte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → 1 : asymptote oblique d'équation y = x"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → 1 : asymptote horizontale d'équation y = 1"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → +∞ et f(x)/x → +∞ : branche parabolique de direction (O, j)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et f(x)/x → 0 : branche parabolique de direction (O, i)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "x/(x + 1) → 1 et ln(x + 1) → +∞, donc f(x) → +∞. Par ailleurs f(x)/x = 1/(x + 1) + ln(x + 1)/x → 0 (croissances comparées) : la courbe est plus plate que toute droite de pente positive, d'où une branche parabolique de direction l'axe des abscisses ✓. Une asymptote horizontale exigerait une limite finie, ce qui oublie le logarithme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nQuel est le sens de variation de f sur ]−1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "strictement décroissante, de +∞ en −1⁺ à −∞ en +∞"
+        },
+        {
+          "id": "b",
+          "text": "strictement croissante, de −∞ en −1⁺ à +∞ en +∞"
+        },
+        {
+          "id": "c",
+          "text": "strictement croissante sur ]−1 ; 0], puis décroissante sur [0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "strictement croissante, de −∞ en −1⁺ à 1 en +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′(x) = 1/(x + 1)² + 1/(x + 1) est une somme de deux termes strictement positifs sur ]−1 ; +∞[, donc f′ > 0 et f est strictement croissante ; ses limites sont −∞ en −1⁺ et +∞ en +∞ ✓. L'erreur classique est de ne regarder que x/(x + 1) et de lui attribuer la limite 1 en +∞, en oubliant que ln(x + 1) tend vers +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nQuelle propriété justifie que f réalise une bijection de ]−1 ; +∞[ sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est continue, de limites −∞ et +∞ aux bornes : toute valeur de ℝ est prise"
+        },
+        {
+          "id": "b",
+          "text": "f est continue et strictement croissante, de limites −∞ et +∞ aux bornes"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante et f(0) = 0 : toute valeur de ℝ est prise"
+        },
+        {
+          "id": "d",
+          "text": "f est dérivable sur ]−1 ; +∞[ avec f′ > 0, donc f(]−1 ; +∞[) = ]0 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une fonction continue et strictement croissante réalise une bijection de l'intervalle sur l'intervalle ouvert limité par ses limites aux bornes, ici ]−∞ ; +∞[ = ℝ ✓. La continuité avec les limites donne seulement que toute valeur est atteinte, pas qu'elle l'est une seule fois ; f(0) = 0 ne suffit pas à décrire l'image ; f′ > 0 ne dit pas que l'image est positive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = f(x) − x pour x > −1, avec f(x) = x/(x + 1) + ln(x + 1). La fonction g est strictement croissante sur ]−1 ; m], puis strictement décroissante sur [m ; +∞[, où m = (√5 − 1)/2.\nQue vaut g(0), et que peut-on en déduire pour g(m) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(0) = 0 et g(m) = 0, car 0 est le maximum de g sur ]−1 ; m]"
+        },
+        {
+          "id": "b",
+          "text": "g(0) = 1 et g(m) > 1, car 0 < m et g croît sur ]−1 ; m]"
+        },
+        {
+          "id": "c",
+          "text": "g(0) = 0 et g(m) < 0, car g est décroissante après m"
+        },
+        {
+          "id": "d",
+          "text": "g(0) = 0 et g(m) > 0, car 0 < m et g croît sur ]−1 ; m]"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "g(0) = f(0) − 0 = 0/1 + ln 1 = 0. Comme m = (√5 − 1)/2 ≈ 0,618 est strictement positif et que g est strictement croissante sur ]−1 ; m], g(m) > g(0) = 0 ✓. Prendre ln 1 = 1 donnerait g(0) = 1 ; le maximum de g est en m, pas en 0 ; et m est le point où g cesse de croître, non celui où elle devient négative.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nOn note f⁻¹ la fonction réciproque de f. Comment obtient-on la courbe de f⁻¹ à partir de (ζ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "par symétrie par rapport à la droite y = x"
+        },
+        {
+          "id": "b",
+          "text": "par symétrie par rapport à l'axe des abscisses"
+        },
+        {
+          "id": "c",
+          "text": "par symétrie par rapport à l'axe des ordonnées"
+        },
+        {
+          "id": "d",
+          "text": "par symétrie par rapport à l'origine du repère"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Échanger les rôles de x et de y, c'est réfléchir la courbe dans la première bissectrice : la courbe de f⁻¹ est la symétrique de (ζ) par rapport à la droite y = x ✓ (repère orthonormé). Les symétries par rapport aux axes ou à l'origine donnent des courbes de −f, de x ↦ f(−x) ou de x ↦ −f(−x), pas de la réciproque.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nOn rappelle que ln 2,5 ≈ 0,916 et ln 2,6 ≈ 0,956. Quelles sont les valeurs approchées de g(1,5) et de g(1,6), où g(x) = f(x) − x, au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(1,5) ≈ −0,02 et g(1,6) ≈ 0,03"
+        },
+        {
+          "id": "b",
+          "text": "g(1,5) ≈ 1,52 et g(1,6) ≈ 1,57"
+        },
+        {
+          "id": "c",
+          "text": "g(1,5) ≈ 0,02 et g(1,6) ≈ −0,03"
+        },
+        {
+          "id": "d",
+          "text": "g(1,5) ≈ −0,90 et g(1,6) ≈ −0,98"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g(1,5) = 1,5/2,5 + ln 2,5 − 1,5 ≈ 0,6 + 0,916 − 1,5 ≈ 0,02 ; g(1,6) = 1,6/2,6 + ln 2,6 − 1,6 ≈ 0,615 + 0,956 − 1,6 ≈ −0,03 ✓. Oublier de retrancher x donne les valeurs de f : 1,52 et 1,57 ; oublier le logarithme donne −0,90 et −0,98 ; un signe inversé échange les deux résultats.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g(x) = f(x) − x pour x > −1, avec f(x) = x/(x + 1) + ln(x + 1). La fonction g est strictement croissante sur ]−1 ; m], puis strictement décroissante sur [m ; +∞[, où m = (√5 − 1)/2.\nCombien de solutions l'équation f(x) = x admet-elle dans ]−1 ; +∞[, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une seule solution : g(0) = 0, et g croît jusqu'en m, donc 0 est le seul zéro de g"
+        },
+        {
+          "id": "b",
+          "text": "Trois solutions : g(0) = 0, avec un zéro de plus avant 0 et un autre après m, car g tend vers −∞ aux deux bornes"
+        },
+        {
+          "id": "c",
+          "text": "Deux solutions : g(0) = 0, puis g décroît de g(m) > 0 vers −∞ après m, ce qui donne un second zéro α > m"
+        },
+        {
+          "id": "d",
+          "text": "Une seule solution : g change une seule fois de sens de variation, donc elle ne s'annule qu'une fois"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur ]−1 ; m], g est strictement croissante et g(0) = 0 avec 0 < m : 0 est son seul zéro dans cet intervalle, donc il n'y a pas de zéro supplémentaire avant 0. Sur [m ; +∞[, g est strictement décroissante de g(m) > 0 à −∞ : elle s'annule une seule fois, en α > m. Il y a donc exactement deux solutions, 0 et α ✓. Conclure à une seule solution oublie la décroissance après m : changer une fois de sens de variation n'empêche pas de couper l'axe de chaque côté du maximum.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g(x) = f(x) − x pour x > −1, avec f(x) = x/(x + 1) + ln(x + 1). La fonction g est strictement croissante sur ]−1 ; m], puis strictement décroissante sur [m ; +∞[, où m = (√5 − 1)/2.\nOn sait de plus que g(0) = 0 et que g(α) = 0 avec 0 < m < α. Quelle est la position de (ζ) par rapport à la droite Δ d'équation y = x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ζ) est au-dessous de Δ sur ]−1 ; 0[ et sur ]α ; +∞[, au-dessus sur ]0 ; α["
+        },
+        {
+          "id": "b",
+          "text": "(ζ) est au-dessus de Δ sur ]−1 ; 0[ et sur ]α ; +∞[, au-dessous sur ]0 ; α["
+        },
+        {
+          "id": "c",
+          "text": "(ζ) est au-dessus de Δ sur ]−1 ; α[ et au-dessous sur ]α ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "(ζ) est au-dessous de Δ sur ]0 ; α[ et au-dessus sur ]α ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "g(x) = f(x) − x est négative avant son premier zéro 0 (g croît vers 0), positive entre 0 et α (g passe par son maximum g(m) > 0), négative après α (g décroît vers −∞). La courbe est donc au-dessous de Δ sur ]−1 ; 0[ et sur ]α ; +∞[, au-dessus sur ]0 ; α[ ✓. L'erreur classique est de lire le signe de g comme celui de g′ : le signe de g se lit sur ses valeurs, non sur son sens de variation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est une primitive de x ↦ x/(x + 1) + ln(x + 1) − x sur ]−1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ (x + 1) ln(x + 1) + x²/2"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ x ln(x + 1) − x²"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ (x + 1) ln(x + 1) − x²/2"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ x ln(x + 1) − x²/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "x/(x + 1) = 1 − 1/(x + 1) a pour primitive x − ln(x + 1) ; ln(x + 1) a pour primitive (x + 1) ln(x + 1) − x ; −x a pour primitive −x²/2. La somme est x − ln(x + 1) + (x + 1) ln(x + 1) − x − x²/2 = x ln(x + 1) − x²/2 ✓. Contrôle par dérivation : ln(x + 1) + x/(x + 1) − x. Un facteur 1/2 oublié sur −x²/2 donne x ln(x + 1) − x² ; oublier le terme −ln(x + 1) dans la primitive de x/(x + 1) donne (x + 1) ln(x + 1) − x²/2 ; cumulée avec un signe faux sur −x²/2, cette erreur donne (x + 1) ln(x + 1) + x²/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x/(x + 1) + ln(x + 1), de courbe (ζ) dans un repère orthonormé.\nSoit α > 0 tel que f(α) = α. L'aire 𝒜(α) du domaine limité par (ζ), par la courbe de f⁻¹ et par les droites x = 0 et x = α vaut, sachant qu'une primitive de f(x) − x est x ln(x + 1) − x²/2 :",
+      "options": [
+        {
+          "id": "a",
+          "text": "α ln(α + 1) − α²/2"
+        },
+        {
+          "id": "b",
+          "text": "2α ln(α + 1) − α²"
+        },
+        {
+          "id": "c",
+          "text": "2α ln α + α²"
+        },
+        {
+          "id": "d",
+          "text": "α ln α − α²/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Par symétrie par rapport à Δ, 𝒜(α) = 2 ∫₀^α (f(x) − x) dx = 2 [x ln(x + 1) − x²/2]₀^α = 2α ln(α + 1) − α² ✓. Oublier le facteur 2 (un seul des deux morceaux symétriques) donne α ln(α + 1) − α²/2 ; confondre ln(α + 1) avec ln α en oubliant le facteur 2 donne α ln α − α²/2 ; le même oubli avec un signe faux sur α² donne 2α ln α + α².",
+      "difficulty": 3
+    }
+  ]
+}

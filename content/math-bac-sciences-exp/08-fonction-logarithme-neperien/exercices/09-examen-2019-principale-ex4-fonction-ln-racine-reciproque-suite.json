@@ -1,0 +1,322 @@
+{
+  "title": "🏛️ Bac 2019 · session principale · Exercice 4 ⭐⭐⭐⭐ : étude de x ↦ ln(1 + √x), fonction réciproque, aire et suite récurrente",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nQuelle est l'expression de f′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 1/(1 + √x)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 1/(2√x)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 1/(2(x + √x))"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 1/(2(1 + √x))"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec u(x) = 1 + √x, u′(x) = 1/(2√x), donc f′ = u′/u = (1/(2√x))/(1 + √x) = 1/(2√x(1 + √x)) = 1/(2(√x + x)) ✓. Oublier le facteur u′ donne 1/(1 + √x) ; ne garder que u′ donne 1/(2√x) ; prendre u′ = 1/2 donne 1/(2(1 + √x)).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nQuel est le sens de variation de f sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "strictement croissante, de f(0) = 0 à +∞"
+        },
+        {
+          "id": "b",
+          "text": "strictement décroissante, de +∞ à f(0) = 0"
+        },
+        {
+          "id": "c",
+          "text": "strictement croissante, de f(0) = 0 à ln 2 seulement"
+        },
+        {
+          "id": "d",
+          "text": "croissante puis décroissante, avec un maximum en x = 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x > 0, f′(x) = 1/(2(x + √x)) > 0, donc f est strictement croissante ; f(0) = ln 1 = 0 et, quand x → +∞, 1 + √x → +∞ donc f(x) → +∞ ✓. Le maximum ln 2 n'est que la valeur en 1 : f continue de croître au-delà. Un quotient dont le dénominateur est positif ne change jamais de signe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nQuelle est la limite de f(x)/x quand x tend vers 0 par valeurs supérieures, et que signifie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 : demi-tangente horizontale à C_f en l'origine"
+        },
+        {
+          "id": "b",
+          "text": "1 : demi-tangente de pente 1 à C_f en l'origine"
+        },
+        {
+          "id": "c",
+          "text": "+∞ : la droite d'équation x = 0 est asymptote à C_f"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : demi-tangente verticale à C_f en l'origine"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 0, f(x)/x = [ln(1 + √x)/√x] × (1/√x). Le premier facteur tend vers 1 (limite classique ln(1 + t)/t quand t → 0, avec t = √x) et 1/√x → +∞ : donc f(x)/x → +∞ ✓. Le taux d'accroissement en 0 est infini : f n'est pas dérivable en 0 et la courbe a une demi-tangente verticale. L'axe des ordonnées n'est pas une asymptote, car f(0) = 0 est fini.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nQuelle est la limite de f(x)/x quand x tend vers +∞, et quelle branche infinie en résulte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : branche parabolique de direction (O, j)"
+        },
+        {
+          "id": "b",
+          "text": "0 : branche parabolique de direction (O, i)"
+        },
+        {
+          "id": "c",
+          "text": "1 : asymptote oblique d'équation y = x"
+        },
+        {
+          "id": "d",
+          "text": "0 : asymptote horizontale d'équation y = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) = ln(1 + √x) croît comme ln √x, soit comme (1/2) ln x ; f(x)/x ≈ ln(√x)/x → 0 (croissances comparées) tandis que f(x) → +∞ : la courbe devient plus plate que toute droite de pente positive, d'où une branche parabolique de direction l'axe des abscisses ✓. Une asymptote horizontale exigerait que f(x) tende vers un réel, ce qui est faux.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nSoit h(x) = f(x) − x. On donne ln(1 + √0,5) ≈ 0,535 et ln(1 + √0,6) ≈ 0,574. Quels sont les signes de h(0,5) et de h(0,6) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h(0,5) < 0 et h(0,6) > 0"
+        },
+        {
+          "id": "b",
+          "text": "h(0,5) > 0 et h(0,6) < 0"
+        },
+        {
+          "id": "c",
+          "text": "h(0,5) > 0 et h(0,6) > 0"
+        },
+        {
+          "id": "d",
+          "text": "h(0,5) < 0 et h(0,6) < 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "h(0,5) = 0,535 − 0,5 > 0 et h(0,6) = 0,574 − 0,6 < 0 ✓ : h change de signe entre 0,5 et 0,6. Il faut comparer chaque valeur de f à son abscisse, et non l'une à l'autre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nQuelle propriété justifie que f réalise une bijection de [0 ; +∞[ sur [0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est dérivable sur ]0 ; +∞[ et f(x) ≥ 0 pour tout x de [0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "f est continue et f′ > 0 sur ]0 ; +∞[, donc f([0 ; +∞[) = ]0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f est strictement croissante et f(0) = 0, donc l'image de [0 ; +∞[ est [0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "f est continue, strictement croissante, f(0) = 0 et lim f = +∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une fonction continue et strictement croissante réalise une bijection de son intervalle de définition sur l'intervalle compris entre ses bornes : ici de f(0) = 0 à lim f = +∞ ✓. La dérivabilité et la positivité ne donnent pas la stricte monotonie ; continuité et f′ > 0 donnent la monotonie, mais l'image contient f(0) = 0, elle n'est pas ]0 ; +∞[ ; la stricte croissance avec f(0) = 0 ne dit rien de la limite ni de la continuité : sans elles l'image pourrait être bornée ou trouée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nSur I = [1/4 ; 1], quelle est la valeur maximale de f′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "2/3"
+        },
+        {
+          "id": "d",
+          "text": "3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′(x) = 1/(2(x + √x)) est décroissante, puisque son dénominateur croît avec x : son maximum sur I est f′(1/4) = 1/(2(1/4 + 1/2)) = 1/(3/2) = 2/3 ✓. La valeur 1/4 = f′(1) est le minimum ; la valeur 1 vient de √(1/4) pris pour 1/4 ; 3/2 est l'inverse de 2/3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nOn pose h(x) = f(x) − x. Quel argument établit que l'équation f(x) = x a une seule solution α dans I = [1/4 ; 1] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur I, donc l'équation f(x) = x n'a qu'une solution"
+        },
+        {
+          "id": "b",
+          "text": "h est continue sur I avec h(1/4) × h(1) < 0, donc la solution est unique"
+        },
+        {
+          "id": "c",
+          "text": "h est strictement décroissante sur I et change de signe"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) ≤ 2/3 sur I, donc la courbe C_f est au-dessus de la droite y = x"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "h a pour dérivée f′(x) − 1 ≤ 2/3 − 1 = −1/3 < 0 : h est strictement décroissante sur I ; h(1/4) = ln(3/2) − 1/4 > 0 et h(1) = ln 2 − 1 < 0 ; la solution existe (valeurs intermédiaires) et elle est unique (monotonie) ✓. Une fonction croissante peut couper la droite y = x plusieurs fois, et le seul changement de signe ne garantit pas l'unicité.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit I = [1/4 ; 1] et (uₙ) la suite définie par u₀ = 1 et uₙ₊₁ = f(uₙ), où f(x) = ln(1 + √x).\nPourquoi uₙ ∈ I pour tout n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croissante : 1/4 < ln(3/2) ≤ f(uₙ) ≤ ln 2 < 1 dès que uₙ ∈ I"
+        },
+        {
+          "id": "b",
+          "text": "f(x) ≤ x sur I, donc la suite décroît et reste au-dessous de 1"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) ≤ 2/3 < 1 sur I, donc f(I) est inclus dans I et uₙ₊₁ ∈ I"
+        },
+        {
+          "id": "d",
+          "text": "f(1/4) = 1/4 et f(1) = 1, donc f(I) = I et uₙ ∈ I pour tout n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Récurrence : u₀ = 1 ∈ I. Si uₙ ∈ I, comme f est croissante, f(1/4) ≤ f(uₙ) ≤ f(1), c'est-à-dire ln(3/2) ≈ 0,405 ≤ uₙ₊₁ ≤ ln 2 ≈ 0,693, donc uₙ₊₁ ∈ [1/4 ; 1] ✓. Que f′ soit majorée par 2/3 renseigne sur la pente, pas sur la position des images ; et f(1/4) = ln(3/2), pas 1/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit I = [1/4 ; 1] et (uₙ) la suite définie par u₀ = 1 et uₙ₊₁ = f(uₙ), où f(x) = ln(1 + √x).\nOn note α la solution de f(x) = x dans I et l'on sait que |f′(x)| ≤ 2/3 sur I. Quelle inégalité en découle pour |uₙ₊₁ − α| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|uₙ₊₁ − α| ≤ |uₙ − α|², par l'inégalité des accroissements finis"
+        },
+        {
+          "id": "b",
+          "text": "|uₙ₊₁ − α| ≤ (2/3)ⁿ |uₙ − α|, par l'inégalité des accroissements finis"
+        },
+        {
+          "id": "c",
+          "text": "|uₙ₊₁ − α| ≥ (2/3) |uₙ − α|, par l'inégalité des accroissements finis"
+        },
+        {
+          "id": "d",
+          "text": "|uₙ₊₁ − α| ≤ (2/3) |uₙ − α|, par l'inégalité des accroissements finis"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "uₙ et α sont dans I et f(α) = α, donc |uₙ₊₁ − α| = |f(uₙ) − f(α)| ≤ (2/3)|uₙ − α| par l'inégalité des accroissements finis ✓. Par récurrence, avec |u₀ − α| ≤ 1, on obtient |uₙ − α| ≤ (2/3)ⁿ. Le facteur est la constante 2/3, jamais (2/3)ⁿ à chaque pas, et l'inégalité va dans le sens ≤.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit I = [1/4 ; 1] et (uₙ) la suite définie par u₀ = 1 et uₙ₊₁ = f(uₙ), où f(x) = ln(1 + √x).\nOn sait que |uₙ − α| ≤ (2/3)ⁿ pour tout n, où α est la solution de f(x) = x. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(uₙ) converge vers 0"
+        },
+        {
+          "id": "b",
+          "text": "(uₙ) converge vers α"
+        },
+        {
+          "id": "c",
+          "text": "(uₙ) converge vers 2/3"
+        },
+        {
+          "id": "d",
+          "text": "(uₙ) n'a pas de limite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Comme (2/3)ⁿ → 0, le théorème des gendarmes appliqué à 0 ≤ |uₙ − α| ≤ (2/3)ⁿ donne |uₙ − α| → 0, donc uₙ → α ✓. Le majorant (2/3)ⁿ tend vers 0, mais la limite de la suite est le réel α autour duquel elle se resserre : l'erreur classique est de confondre la limite du majorant avec celle de la suite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit I = [1/4 ; 1] et (uₙ) la suite définie par u₀ = 1 et uₙ₊₁ = f(uₙ), où f(x) = ln(1 + √x).\nOn note f⁻¹ la fonction réciproque de f ; c'est une bijection de [0 ; +∞[ sur [0 ; +∞[. On pose vₙ = f⁻¹(uₙ) et l'on sait que uₙ → α, avec f(α) = α. Que vaut la limite de (vₙ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√α"
+        },
+        {
+          "id": "b",
+          "text": "α"
+        },
+        {
+          "id": "c",
+          "text": "α²"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f⁻¹ est continue sur [0 ; +∞[, donc vₙ = f⁻¹(uₙ) → f⁻¹(α). Or f(α) = α ⟹ f⁻¹(α) = α : la limite est α ✓. Les valeurs √α et α² viennent d'une confusion entre α et √α (qui apparaît dans f(α) = ln(1 + √α)) ; 0 serait la valeur de f⁻¹(0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur [0 ; +∞[ par f(x) = ln(1 + √x), de courbe C_f dans un repère orthonormé.\nOn note f⁻¹ la fonction réciproque de f ; c'est une bijection de [0 ; +∞[ sur [0 ; +∞[. Soit α > 0 avec f(α) = α. L'aire du domaine limité par C_f, par la courbe de f⁻¹ et par les droites x = 0 et x = α s'écrit :",
+      "options": [
+        {
+          "id": "a",
+          "text": "∫₀^α (f(x) − x) dx, car C_f est au-dessus de la droite y = x"
+        },
+        {
+          "id": "b",
+          "text": "∫₀^α (f(x) + f⁻¹(x)) dx, car les deux courbes sont symétriques"
+        },
+        {
+          "id": "c",
+          "text": "∫₀^α (f(x) − f⁻¹(α)) dx, car f⁻¹(α) = α"
+        },
+        {
+          "id": "d",
+          "text": "2 ∫₀^α (f(x) − x) dx, par symétrie par rapport à y = x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur [0 ; α], C_f est au-dessus de la droite Δ : y = x et la courbe de f⁻¹, symétrique de C_f par rapport à Δ, est au-dessous. L'aire est ∫₀^α (f(x) − f⁻¹(x)) dx = ∫₀^α (f(x) − x) dx + ∫₀^α (x − f⁻¹(x)) dx, et les deux morceaux sont égaux par symétrie : l'aire vaut 2 ∫₀^α (f(x) − x) dx ✓. Le domaine est compris entre les deux courbes : il faut les soustraire, jamais les additionner.",
+      "difficulty": 3
+    }
+  ]
+}

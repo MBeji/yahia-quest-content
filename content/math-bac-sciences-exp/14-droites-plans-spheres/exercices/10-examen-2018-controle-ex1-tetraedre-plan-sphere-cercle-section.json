@@ -1,0 +1,233 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 1 ⭐⭐⭐⭐ : tétraèdre, plan, sphère, cercle de section et point d'intersection",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 10,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne A(1 ; 1 ; 1), B(0 ; 4 ; 0) et C(0 ; 0 ; 2). Que vaut AB⃗ ∧ AC⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; −2 ; −4)"
+        },
+        {
+          "id": "b",
+          "text": "(2 ; 2 ; 4)"
+        },
+        {
+          "id": "c",
+          "text": "(2 ; −2 ; 4)"
+        },
+        {
+          "id": "d",
+          "text": "(1 ; −3 ; −1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a AB⃗(−1 ; 3 ; −1) et AC⃗(−1 ; −1 ; 1). Alors AB⃗ ∧ AC⃗ = (3 × 1 − (−1)(−1) ; (−1)(−1) − (−1) × 1 ; (−1)(−1) − 3 × (−1)) = (2 ; 2 ; 4) ✓. L'erreur classique est le signe de la deuxième coordonnée, qui donne (2 ; −2 ; 4) ; inverser l'ordre des facteurs donne l'opposé ; le produit terme à terme (1 ; −3 ; −1) n'est pas un produit vectoriel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 1), B(0 ; 4 ; 0), C(0 ; 0 ; 2) et I(−1 ; 1 ; −1). Quel est le volume V du tétraèdre ABCI ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "V = 2"
+        },
+        {
+          "id": "b",
+          "text": "V = 12"
+        },
+        {
+          "id": "c",
+          "text": "V = 4"
+        },
+        {
+          "id": "d",
+          "text": "V = 6"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a AB⃗ ∧ AC⃗ = (2 ; 2 ; 4) et AI⃗(−2 ; 0 ; −2). Le produit mixte vaut (2)(−2) + (2)(0) + (4)(−2) = −12, donc V = |−12|/6 = 2 ✓. L'erreur classique est d'oublier le facteur 1/6 (V = 12) ; utiliser 1/3 donne 4 ; utiliser 1/2 donne 6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne A(1 ; 1 ; 1), B(0 ; 4 ; 0) et C(0 ; 0 ; 2). Quelle est une équation cartésienne du plan P = (ABC) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + y + 2z + 4 = 0"
+        },
+        {
+          "id": "b",
+          "text": "2x + 2y + 4z − 4 = 0"
+        },
+        {
+          "id": "c",
+          "text": "x − y + 2z − 2 = 0"
+        },
+        {
+          "id": "d",
+          "text": "x + y + 2z − 4 = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le vecteur AB⃗ ∧ AC⃗ = (2 ; 2 ; 4) est normal à P ; on peut le simplifier en n⃗(1 ; 1 ; 2). Une équation est x + y + 2z + d = 0, et A donne 1 + 1 + 2 + d = 0, donc d = −4 ✓. Contrôle : B donne 0 + 4 + 0 − 4 = 0 et C donne 0 + 0 + 4 − 4 = 0. L'erreur classique est de simplifier la normale sans simplifier la constante (2x + 2y + 4z − 4 = 0, qui ne passe pas par A) ; un signe faux sur la deuxième coordonnée de la normale donne le plan x − y + 2z − 2 = 0.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 1), B(0 ; 4 ; 0), C(0 ; 0 ; 2) et I(−1 ; 1 ; −1). Soit P le plan (ABC). Quelle est la distance du point I au plan P ? Donne le résultat sous forme décimale, arrondi au centième.",
+      "answerKey": {
+        "value": 2.45,
+        "tolerance": 0.01
+      },
+      "explanation": "Une équation de P est x + y + 2z − 4 = 0, de vecteur normal de norme √(1 + 1 + 4) = √6. La distance de I(−1 ; 1 ; −1) à P est |−1 + 1 − 2 − 4|/√6 = 6/√6 = √6 ≈ 2,45 ✓. L'erreur classique est d'oublier de diviser par la norme du vecteur normal, ce qui donne 6.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 1), B(0 ; 4 ; 0), C(0 ; 0 ; 2) et I(−1 ; 1 ; −1). Soit S l'ensemble des points M(x, y, z) tels que\nx² + y² + z² + 2x − 2y + 2z − 8 = 0\net soit P le plan (ABC). Le plan P coupe S selon un cercle. Quel est le rayon de ce cercle ? Donne le résultat sous forme décimale, arrondi au centième.",
+      "answerKey": {
+        "value": 2.24,
+        "tolerance": 0.01
+      },
+      "explanation": "L'équation de S s'écrit (x + 1)² + (y − 1)² + (z + 1)² = 8 + 3 = 11 : S est la sphère de centre I(−1 ; 1 ; −1) et de rayon √11. La distance de I au plan P (x + y + 2z − 4 = 0) est √6, donc le rayon du cercle est √(11 − 6) = √5 ≈ 2,24 ✓. L'erreur classique est de prendre √6 ou √11 pour rayon : le rayon du cercle est la racine de la différence R² − d².",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne B(0 ; 4 ; 0) et C(0 ; 0 ; 2). Quelle est la longueur BC ? Donne le résultat sous forme décimale, arrondi au centième.",
+      "answerKey": {
+        "value": 4.47,
+        "tolerance": 0.01
+      },
+      "explanation": "On a BC⃗(0 ; −4 ; 2), donc BC = √(0 + 16 + 4) = √20 = 2√5 ≈ 4,47 ✓. Cette longueur est le double de √5 : c'est ce qui prouvera que [BC] est un diamètre du cercle P ∩ S. L'erreur classique est de prendre les coordonnées de B et de C au lieu de leur différence, ou d'oublier la racine (20).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 1), B(0 ; 4 ; 0), C(0 ; 0 ; 2) et I(−1 ; 1 ; −1). Soit S la sphère de centre I et de rayon √11, P le plan (ABC), et H le centre du cercle P ∩ S. Quelles sont les coordonnées de H ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "H(0 ; 2 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "H(0 ; 4 ; 2)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "H(−1 ; 1 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "H(0 ; 2 ; −1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le centre H du cercle est le projeté orthogonal de I sur P : H = I + k(1 ; 1 ; 2) = (−1 + k ; 1 + k ; −1 + 2k). Dans P : (−1 + k) + (1 + k) + 2(−1 + 2k) − 4 = 6k − 6 = 0, donc k = 1 et H(0 ; 2 ; 1) ✓. Contrôle : c'est aussi le milieu de [BC], diamètre du cercle. L'erreur classique est de confondre le centre I de la sphère avec celui du cercle ; additionner les coordonnées de B et de C sans les diviser par 2 donne (0 ; 4 ; 2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne A(1 ; 1 ; 1) et B(0 ; 4 ; 0). Soit a un réel et M le point tel que AM⃗ = a AB⃗. Quelles sont les coordonnées de M en fonction de a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M(−a ; 3a ; −a)"
+        },
+        {
+          "id": "b",
+          "text": "M(1 + a ; 1 − 3a ; 1 + a)"
+        },
+        {
+          "id": "c",
+          "text": "M(1 − a ; 1 + 3a ; 1 − a)"
+        },
+        {
+          "id": "d",
+          "text": "M(1 − a ; 1 + 3a ; 1 + a)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a AB⃗(−1 ; 3 ; −1), donc AM⃗(−a ; 3a ; −a). Les coordonnées de M sont celles de A augmentées de celles de AM⃗ : M(1 − a ; 1 + 3a ; 1 − a) ✓. L'erreur classique est d'oublier d'ajouter A (M(−a ; 3a ; −a)) ; prendre BA⃗ à la place de AB⃗ change les signes ; un signe faux sur la cote donne M(1 − a ; 1 + 3a ; 1 + a).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne A(1 ; 1 ; 1), B(0 ; 4 ; 0) et C(0 ; 0 ; 2). Soit a un réel et M le point tel que AM⃗ = a AB⃗. Quelle est l'expression factorisée de BM⃗ · CM⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a(11a − 10)"
+        },
+        {
+          "id": "b",
+          "text": "(a − 1)(11a − 1)"
+        },
+        {
+          "id": "c",
+          "text": "2(a − 1)(5a + 1)"
+        },
+        {
+          "id": "d",
+          "text": "(a − 1)(11a + 3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a M(1 − a ; 1 + 3a ; 1 − a), donc BM⃗(1 − a ; 3a − 3 ; 1 − a) et CM⃗(1 − a ; 1 + 3a ; −1 − a). Alors BM⃗ · CM⃗ = (1 − a)² + (3a − 3)(3a + 1) + (1 − a)(−1 − a) = (a − 1)[(a − 1) + 3(3a + 1) + (a + 1)] = (a − 1)(11a + 3) ✓. L'erreur classique est de poser M = aAB⃗ au lieu de A + aAB⃗ (on obtient a(11a − 10)) ; prendre C(0 ; 0 ; −2) donne (a − 1)(11a − 1) ; oublier la troisième coordonnée donne 2(a − 1)(5a + 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne les points A(1 ; 1 ; 1), B(0 ; 4 ; 0), C(0 ; 0 ; 2) et I(−1 ; 1 ; −1). Soit S la sphère de centre I et de rayon √11, P le plan (ABC) et (C) le cercle P ∩ S, dont [BC] est un diamètre. La droite (AB) est contenue dans P et recoupe (C) en un point E distinct de B. On écrit AE⃗ = k AB⃗. Quelle est la valeur de k ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "k = 3/11"
+        },
+        {
+          "id": "b",
+          "text": "k = −3/11"
+        },
+        {
+          "id": "c",
+          "text": "k = −11/3"
+        },
+        {
+          "id": "d",
+          "text": "k = 11/3"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un point M de (AB) tel que AM⃗ = aAB⃗ est sur le cercle (C) si et seulement si BM⃗ · CM⃗ = 0, car [BC] est un diamètre de (C) dans le plan P. Or BM⃗ · CM⃗ = (a − 1)(11a + 3), qui s'annule pour a = 1 (le point B) et pour a = −3/11. Donc k = −3/11 ✓. L'erreur classique est de garder la racine a = 1, qui redonne B, ou de se tromper de signe ou d'inverser en résolvant 11a + 3 = 0 (3/11 ou −11/3).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). On donne A(1 ; 1 ; 1), B(0 ; 4 ; 0), C(0 ; 0 ; 2) et I(−1 ; 1 ; −1). Soit E un point de la droite (AB) tel que AE⃗ = −(5/4) AB⃗. On note V le volume du tétraèdre ABCI et V′ celui du tétraèdre AECI. Que vaut V′/V ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "125/64"
+        },
+        {
+          "id": "b",
+          "text": "4/5"
+        },
+        {
+          "id": "c",
+          "text": "9/4"
+        },
+        {
+          "id": "d",
+          "text": "5/4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les tétraèdres ABCI et AECI ont le même sommet I et leurs bases ABC et AEC sont dans le même plan P, donc leurs hauteurs issues de I sont égales. Les triangles ABC et AEC ont le même sommet C, et leurs côtés AB et AE sont portés par la même droite : leurs aires sont dans le rapport AE/AB = |−5/4| = 5/4, donc V′/V = 5/4 ✓. L'erreur classique est d'élever le rapport au cube comme pour deux solides semblables (125/64) : ici les deux tétraèdres ne sont pas semblables, ils ont même hauteur et des bases dans le rapport 5/4. Inverser le rapport donne 4/5 ; 9/4 est le rapport BE/AB, c'est-à-dire celui d'un autre tétraèdre.",
+      "difficulty": 3
+    }
+  ]
+}

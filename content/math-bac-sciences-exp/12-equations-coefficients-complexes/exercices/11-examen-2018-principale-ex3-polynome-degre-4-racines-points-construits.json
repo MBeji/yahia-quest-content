@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 3 ⭐⭐⭐ : Équation du second degré, polynôme de degré 4 et points construits",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Dans ℂ, on considère l'équation\nz² − i√3 z − 1 = 0\nQuelles sont ses solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−iπ/3) et e^(−i2π/3)"
+        },
+        {
+          "id": "b",
+          "text": "e^(iπ/3) et e^(i2π/3)"
+        },
+        {
+          "id": "c",
+          "text": "2e^(iπ/3) et 2e^(i2π/3)"
+        },
+        {
+          "id": "d",
+          "text": "((√3 + √7)/2)e^(iπ/2) et ((√7 − √3)/2)e^(−iπ/2)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Ici a = 1, b = −i√3 et c = −1. Le discriminant est Δ = (−i√3)² − 4 × (−1) = −3 + 4 = 1, de racine carrée 1. Les solutions sont z = (i√3 ± 1)/2, soit (1 + i√3)/2 = e^(iπ/3) et (−1 + i√3)/2 = e^(i2π/3) ✓. Contrôle : leur somme vaut i√3 = −b et leur produit e^(iπ) = −1 = c. Le piège courant : écrire Δ = −3 − 4 = −7 (mauvais signe de −4ac) donne des solutions imaginaires pures ; prendre b au lieu de −b change le signe des deux parties ; oublier de diviser par 2a donne des nombres de module 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A et C ont pour affixes respectives e^(iπ/3) et e^(i2π/3), et D est le point tel que OD⃗ = OA⃗ + OC⃗. Quelle est l'affixe de D sous forme algébrique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i√3"
+        },
+        {
+          "id": "b",
+          "text": "1 + i√3"
+        },
+        {
+          "id": "c",
+          "text": "−1"
+        },
+        {
+          "id": "d",
+          "text": "i√3/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a e^(iπ/3) = 1/2 + i√3/2 et e^(i2π/3) = −1/2 + i√3/2. Leur somme est z_D = i√3 ✓. Le point D est le quatrième sommet du losange OADC (OA = OC = 1) : il est sur la bissectrice de l'angle (OA, OC), c'est-à-dire sur l'axe des ordonnées. Le piège courant : oublier que cos(2π/3) est négatif donne une partie réelle 1 ; multiplier au lieu d'additionner donne e^(iπ) = −1 ; ne garder que la moitié de la partie imaginaire donne i√3/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, B et D sont les points d'affixes 3e^(iπ/3) et i√3. Quelle est l'affixe du vecteur BD⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3/2 + i√3/2"
+        },
+        {
+          "id": "b",
+          "text": "−3√3/2 + i(√3 − 3/2)"
+        },
+        {
+          "id": "c",
+          "text": "−3/2 − i√3/2"
+        },
+        {
+          "id": "d",
+          "text": "−1/2 + i√3/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a 3e^(iπ/3) = 3/2 + 3i√3/2. L'affixe de BD⃗ est z_D − z_B = i√3 − 3/2 − 3i√3/2 = −3/2 − i√3/2 ✓. Le piège courant : soustraire dans l'ordre inverse (z_B − z_D) donne l'opposé ; échanger cosinus et sinus de π/3 pour calculer 3e^(iπ/3) donne −3√3/2 + i(√3 − 3/2) ; oublier le facteur 3 de 3e^(iπ/3) revient à calculer avec le point A d'affixe e^(iπ/3) et donne −1/2 + i√3/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout complexe z, on pose P(z) = 3z⁴ − 7i√3 z³ − 18z² + 7i√3 z + 3. Quelle que soit la valeur de z non nulle, que vaut P(−1/z) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z⁴ P(z)"
+        },
+        {
+          "id": "b",
+          "text": "−P(z)/z⁴"
+        },
+        {
+          "id": "c",
+          "text": "P(z)/z²"
+        },
+        {
+          "id": "d",
+          "text": "P(z)/z⁴"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On remplace z par −1/z : P(−1/z) = 3/z⁴ + 7i√3/z³ − 18/z² − 7i√3/z + 3, car (−1/z)³ = −1/z³ et (−1/z)⁴ = 1/z⁴. En mettant au même dénominateur z⁴ : P(−1/z) = (3 + 7i√3 z − 18z² − 7i√3 z³ + 3z⁴)/z⁴ = P(z)/z⁴ ✓ : les coefficients de P se lisent à l'envers, au signe près. Le piège courant : multiplier par z⁴ au lieu de diviser ; oublier que (−1/z)⁴ est positif donne le signe moins ; confondre le degré et écrire z² au dénominateur.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout complexe z, on pose P(z) = 3z⁴ − 7i√3 z³ − 18z² + 7i√3 z + 3, et l'on admet que pour tout z non nul, P(−1/z) = P(z)/z⁴. Soit z₀ une solution non nulle de P(z) = 0. Quel autre nombre est solution de P(z) = 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/z₀"
+        },
+        {
+          "id": "b",
+          "text": "−1/z₀"
+        },
+        {
+          "id": "c",
+          "text": "−z₀"
+        },
+        {
+          "id": "d",
+          "text": "−1/z̄₀"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec z = z₀ dans la relation admise : P(−1/z₀) = P(z₀)/z₀⁴ = 0, donc −1/z₀ est aussi solution ✓. Le piège courant : 1/z₀ n'est pas solution en général, car P(1/z) = (3 − 7i√3 z − 18z² + 7i√3 z³ + 3z⁴)/z⁴ ne redonne pas P(z) ; −z₀ ne convient que si P est pair, ce qui n'est pas le cas (il y a des termes en z³ et en z) ; −1/z̄₀ mélange conjugaison et inversion : pour z₀ = e^(iπ/3), il donne e^(i4π/3), qui n'est pas solution (les coefficients ±7i√3 ne sont pas réels, la conjugaison ne conserve pas les solutions).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que vaut −1/e^(iπ/3), écrit sous forme exponentielle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(−iπ/3)"
+        },
+        {
+          "id": "b",
+          "text": "e^(i2π/3)"
+        },
+        {
+          "id": "c",
+          "text": "e^(i4π/3)"
+        },
+        {
+          "id": "d",
+          "text": "e^(iπ/3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 1/e^(iπ/3) = e^(−iπ/3) et −1 = e^(iπ) : −1/e^(iπ/3) = e^(iπ) × e^(−iπ/3) = e^(i2π/3) ✓. Contrôle sur la forme algébrique : −1/(1/2 + i√3/2) = −(1/2 − i√3/2) = −1/2 + i√3/2 = e^(i2π/3). Le piège courant : oublier le signe moins, c'est-à-dire le tour de π, donne e^(−iπ/3) ; prendre l'opposé de e^(iπ/3) au lieu de l'opposé de son inverse donne e^(i4π/3) ; garder e^(iπ/3) confond l'inverse d'un nombre de module 1 avec le nombre lui-même.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A, B et D sont les points d'affixes e^(iπ/3), 3e^(iπ/3) et i√3. La parallèle à la droite (BD) passant par A coupe la droite (OD) au point E. Quelle est l'affixe de E ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "i√3/2"
+        },
+        {
+          "id": "b",
+          "text": "2i√3/3"
+        },
+        {
+          "id": "c",
+          "text": "i√3/6"
+        },
+        {
+          "id": "d",
+          "text": "i√3/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La droite (OD) est l'axe des ordonnées. La droite (BD) a pour vecteur directeur BD⃗ d'affixe −3/2 − i√3/2, proportionnel à (3 ; √3). La parallèle passant par A (1/2 ; √3/2) a pour points (1/2 + 3t ; √3/2 + √3 t) ; elle coupe l'axe des ordonnées pour t = −1/6, d'où l'ordonnée √3/2 − √3/6 = √3/3 : E = i√3/3 ✓. Contrôle par le théorème de Thalès dans le triangle OBD : A est sur [OB] avec OA/OB = 1/3 et (AE) ∥ (BD), donc OE/OD = 1/3, soit E = D/3 = i√3/3 ✓. Le piège courant : prendre le milieu de [OD] (i√3/2) ; confondre le rapport 1/3 et le rapport 2/3 (2i√3/3) ; appliquer le rapport 1/3 au milieu de [OD] au lieu de D (i√3/6).",
+      "difficulty": 3
+    }
+  ]
+}

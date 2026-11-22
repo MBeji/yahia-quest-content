@@ -1,0 +1,394 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 4 ⭐⭐⭐⭐ : lecture graphique, étude de eᵘ − u avec u(x) = x − 1 − 4 ln x, aires et encadrement",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthogonal, (Γ) est la courbe de la fonction u définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x ; elle coupe l'axe des abscisses en deux points d'abscisses 1 et α (figure ci-dessous), et sa tangente est horizontale au point d'abscisse 4.\n<svg viewBox=\"0 0 270 200\"><title>Courbe Γ de la fonction u</title><path d=\"M26.0 132.0 H260.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M26.0 180.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M44.7 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"44.7\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M63.4 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"63.4\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M82.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"82.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M100.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"100.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M119.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"119.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">5</text><path d=\"M138.3 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"138.3\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M157.0 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"157.0\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">7</text><path d=\"M175.8 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"175.8\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M194.5 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"194.5\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">9</text><path d=\"M213.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"213.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">10</text><path d=\"M231.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"231.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">11</text><path d=\"M250.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"250.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">12</text><path d=\"M23.0 102.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"105.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M23.0 72.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"75.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M23.0 42.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"45.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M23.0 12.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"15.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M26.0 132.0 L175.8 12.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"none\"/><path d=\"M82.2 170.2 L119.6 170.2\" stroke=\"#b45309\" stroke-width=\"1.4\" fill=\"none\"/><polyline points=\"27.0,6.0 27.9,9.7 28.9,33.3 29.9,49.8 30.9,62.4 31.9,72.5 32.8,81.0 33.8,88.2 34.8,94.5 35.8,100.0 36.7,105.0 37.7,109.4 38.7,113.4 39.6,117.1 40.6,120.5 41.6,123.6 42.6,126.4 43.5,129.1 44.5,131.5 45.5,133.8 46.5,136.0 47.5,138.0 48.4,139.9 49.4,141.6 50.4,143.3 51.4,144.9 52.3,146.4 53.3,147.8 54.3,149.1 55.2,150.3 56.2,151.5 57.2,152.6 58.2,153.7 59.1,154.7 60.1,155.7 61.1,156.6 62.1,157.5 63.0,158.3 64.0,159.1 65.0,159.8 66.0,160.5 66.9,161.2 67.9,161.8 68.9,162.4 69.9,162.9 70.8,163.5 71.8,164.0 72.8,164.5 73.8,164.9 74.8,165.4 75.7,165.8 76.7,166.2 77.7,166.5 78.7,166.9 79.6,167.2 80.6,167.5 81.6,167.8 82.5,168.0 83.5,168.3 84.5,168.5 85.5,168.7 86.4,168.9 87.4,169.1 88.4,169.2 89.4,169.4 90.4,169.5 91.3,169.6 92.3,169.8 93.3,169.8 94.2,169.9 95.2,170.0 96.2,170.1 97.2,170.1 98.2,170.1 99.1,170.2 100.1,170.2 101.1,170.2 102.0,170.2 103.0,170.2 104.0,170.1 105.0,170.1 105.9,170.0 106.9,170.0 107.9,169.9 108.9,169.9 109.8,169.8 110.8,169.7 111.8,169.6 112.8,169.5 113.8,169.4 114.7,169.3 115.7,169.1 116.7,169.0 117.7,168.9 118.6,168.7 119.6,168.6 120.6,168.4 121.6,168.2 122.5,168.1 123.5,167.9 124.5,167.7 125.5,167.5 126.4,167.3 127.4,167.1 128.4,166.9 129.3,166.7 130.3,166.5 131.3,166.3 132.3,166.0 133.2,165.8 134.2,165.6 135.2,165.3 136.2,165.1 137.1,164.8 138.1,164.6 139.1,164.3 140.1,164.0 141.1,163.8 142.0,163.5 143.0,163.2 144.0,162.9 144.9,162.6 145.9,162.3 146.9,162.0 147.9,161.7 148.9,161.4 149.8,161.1 150.8,160.8 151.8,160.5 152.8,160.2 153.7,159.9 154.7,159.5 155.7,159.2 156.7,158.9 157.6,158.6 158.6,158.2 159.6,157.9 160.5,157.5 161.5,157.2 162.5,156.8 163.5,156.5 164.4,156.1 165.4,155.8 166.4,155.4 167.4,155.0 168.4,154.7 169.3,154.3 170.3,153.9 171.3,153.5 172.2,153.2 173.2,152.8 174.2,152.4 175.2,152.0 176.2,151.6 177.1,151.2 178.1,150.8 179.1,150.4 180.1,150.0 181.0,149.6 182.0,149.2 183.0,148.8 184.0,148.4 184.9,148.0 185.9,147.6 186.9,147.2 187.9,146.7 188.8,146.3 189.8,145.9 190.8,145.5 191.7,145.0 192.7,144.6 193.7,144.2 194.7,143.7 195.7,143.3 196.6,142.9 197.6,142.4 198.6,142.0 199.6,141.5 200.5,141.1 201.5,140.7 202.5,140.2 203.4,139.8 204.4,139.3 205.4,138.9 206.4,138.4 207.3,137.9 208.3,137.5 209.3,137.0 210.3,136.6 211.3,136.1 212.2,135.6 213.2,135.2 214.2,134.7 215.1,134.2 216.1,133.7 217.1,133.3 218.1,132.8 219.0,132.3 220.0,131.8 221.0,131.4 222.0,130.9 222.9,130.4 223.9,129.9 224.9,129.4 225.9,128.9 226.8,128.4 227.8,127.9 228.8,127.5 229.8,127.0 230.8,126.5 231.7,126.0 232.7,125.5 233.7,125.0 234.7,124.5 235.6,124.0 236.6,123.5 237.6,123.0 238.6,122.5 239.5,122.0 240.5,121.4 241.5,120.9 242.5,120.4 243.4,119.9 244.4,119.4 245.4,118.9 246.4,118.4 247.3,117.9 248.3,117.3 249.3,116.8 250.2,116.3 251.2,115.8 252.2,115.3 253.2,114.7 254.2,114.2 255.1,113.7 256.1,113.2 257.1,112.6 258.1,112.1 259.0,111.6 260.0,111.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"44.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"219.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"216.7\" y=\"125.0\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">α</text><circle cx=\"100.9\" cy=\"170.2\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"181.4\" y=\"27.0\" font-size=\"11\" fill=\"#64748b\">D : y = x</text><text x=\"37.2\" y=\"24.0\" font-size=\"11\" fill=\"#0f6e56\">Γ</text></svg>Quelles sont, d'après le graphique, les limites de u(x) quand x → 0⁺ et quand x → +∞, et la limite de u(x)/x quand x → +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ en 0⁺, +∞ en +∞, et u(x)/x → 0"
+        },
+        {
+          "id": "b",
+          "text": "+∞ en 0⁺, +∞ en +∞, et u(x)/x → 1"
+        },
+        {
+          "id": "c",
+          "text": "−∞ en 0⁺, +∞ en +∞, et u(x)/x → 1"
+        },
+        {
+          "id": "d",
+          "text": "+∞ en 0⁺, +∞ en +∞, et u(x)/x → +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur le graphique, la courbe monte le long de l'axe des ordonnées quand x → 0⁺ : u(x) → +∞ (c'est ce que donne −4 ln x → +∞). Quand x → +∞, la courbe monte aussi, en suivant la direction de la droite D : y = x, donc u(x) → +∞ et u(x)/x → 1 (la pente de D) ✓. Dire que u(x)/x tend vers 0 reviendrait à une direction horizontale ; la limite +∞ à une direction verticale. Et −∞ en 0⁺ lit mal le sens de l'asymptote verticale.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit u(x) = x − 1 − 4 ln x. On sait que u(α) = 0. Soit f définie par f(x) = e^(u(x)) − u(x). Que vaut f(α) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(α) = 0"
+        },
+        {
+          "id": "b",
+          "text": "f(α) = −1"
+        },
+        {
+          "id": "c",
+          "text": "f(α) = e"
+        },
+        {
+          "id": "d",
+          "text": "f(α) = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(α) = e^(u(α)) − u(α) = e⁰ − 0 = 1 ✓. Écrire e⁰ = 0 est l'erreur classique ; −1 et e viennent d'un signe ou d'un exposant mal évalué (e¹ = e).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère orthogonal, (Γ) est la courbe de la fonction u définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x ; elle coupe l'axe des abscisses en deux points d'abscisses 1 et α (figure ci-dessous), et sa tangente est horizontale au point d'abscisse 4.\n<svg viewBox=\"0 0 270 200\"><title>Courbe Γ de la fonction u</title><path d=\"M26.0 132.0 H260.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M26.0 180.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M44.7 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"44.7\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M63.4 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"63.4\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M82.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"82.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M100.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"100.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M119.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"119.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">5</text><path d=\"M138.3 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"138.3\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M157.0 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"157.0\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">7</text><path d=\"M175.8 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"175.8\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M194.5 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"194.5\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">9</text><path d=\"M213.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"213.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">10</text><path d=\"M231.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"231.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">11</text><path d=\"M250.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"250.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">12</text><path d=\"M23.0 102.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"105.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M23.0 72.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"75.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M23.0 42.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"45.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M23.0 12.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"15.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M26.0 132.0 L175.8 12.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"none\"/><path d=\"M82.2 170.2 L119.6 170.2\" stroke=\"#b45309\" stroke-width=\"1.4\" fill=\"none\"/><polyline points=\"27.0,6.0 27.9,9.7 28.9,33.3 29.9,49.8 30.9,62.4 31.9,72.5 32.8,81.0 33.8,88.2 34.8,94.5 35.8,100.0 36.7,105.0 37.7,109.4 38.7,113.4 39.6,117.1 40.6,120.5 41.6,123.6 42.6,126.4 43.5,129.1 44.5,131.5 45.5,133.8 46.5,136.0 47.5,138.0 48.4,139.9 49.4,141.6 50.4,143.3 51.4,144.9 52.3,146.4 53.3,147.8 54.3,149.1 55.2,150.3 56.2,151.5 57.2,152.6 58.2,153.7 59.1,154.7 60.1,155.7 61.1,156.6 62.1,157.5 63.0,158.3 64.0,159.1 65.0,159.8 66.0,160.5 66.9,161.2 67.9,161.8 68.9,162.4 69.9,162.9 70.8,163.5 71.8,164.0 72.8,164.5 73.8,164.9 74.8,165.4 75.7,165.8 76.7,166.2 77.7,166.5 78.7,166.9 79.6,167.2 80.6,167.5 81.6,167.8 82.5,168.0 83.5,168.3 84.5,168.5 85.5,168.7 86.4,168.9 87.4,169.1 88.4,169.2 89.4,169.4 90.4,169.5 91.3,169.6 92.3,169.8 93.3,169.8 94.2,169.9 95.2,170.0 96.2,170.1 97.2,170.1 98.2,170.1 99.1,170.2 100.1,170.2 101.1,170.2 102.0,170.2 103.0,170.2 104.0,170.1 105.0,170.1 105.9,170.0 106.9,170.0 107.9,169.9 108.9,169.9 109.8,169.8 110.8,169.7 111.8,169.6 112.8,169.5 113.8,169.4 114.7,169.3 115.7,169.1 116.7,169.0 117.7,168.9 118.6,168.7 119.6,168.6 120.6,168.4 121.6,168.2 122.5,168.1 123.5,167.9 124.5,167.7 125.5,167.5 126.4,167.3 127.4,167.1 128.4,166.9 129.3,166.7 130.3,166.5 131.3,166.3 132.3,166.0 133.2,165.8 134.2,165.6 135.2,165.3 136.2,165.1 137.1,164.8 138.1,164.6 139.1,164.3 140.1,164.0 141.1,163.8 142.0,163.5 143.0,163.2 144.0,162.9 144.9,162.6 145.9,162.3 146.9,162.0 147.9,161.7 148.9,161.4 149.8,161.1 150.8,160.8 151.8,160.5 152.8,160.2 153.7,159.9 154.7,159.5 155.7,159.2 156.7,158.9 157.6,158.6 158.6,158.2 159.6,157.9 160.5,157.5 161.5,157.2 162.5,156.8 163.5,156.5 164.4,156.1 165.4,155.8 166.4,155.4 167.4,155.0 168.4,154.7 169.3,154.3 170.3,153.9 171.3,153.5 172.2,153.2 173.2,152.8 174.2,152.4 175.2,152.0 176.2,151.6 177.1,151.2 178.1,150.8 179.1,150.4 180.1,150.0 181.0,149.6 182.0,149.2 183.0,148.8 184.0,148.4 184.9,148.0 185.9,147.6 186.9,147.2 187.9,146.7 188.8,146.3 189.8,145.9 190.8,145.5 191.7,145.0 192.7,144.6 193.7,144.2 194.7,143.7 195.7,143.3 196.6,142.9 197.6,142.4 198.6,142.0 199.6,141.5 200.5,141.1 201.5,140.7 202.5,140.2 203.4,139.8 204.4,139.3 205.4,138.9 206.4,138.4 207.3,137.9 208.3,137.5 209.3,137.0 210.3,136.6 211.3,136.1 212.2,135.6 213.2,135.2 214.2,134.7 215.1,134.2 216.1,133.7 217.1,133.3 218.1,132.8 219.0,132.3 220.0,131.8 221.0,131.4 222.0,130.9 222.9,130.4 223.9,129.9 224.9,129.4 225.9,128.9 226.8,128.4 227.8,127.9 228.8,127.5 229.8,127.0 230.8,126.5 231.7,126.0 232.7,125.5 233.7,125.0 234.7,124.5 235.6,124.0 236.6,123.5 237.6,123.0 238.6,122.5 239.5,122.0 240.5,121.4 241.5,120.9 242.5,120.4 243.4,119.9 244.4,119.4 245.4,118.9 246.4,118.4 247.3,117.9 248.3,117.3 249.3,116.8 250.2,116.3 251.2,115.8 252.2,115.3 253.2,114.7 254.2,114.2 255.1,113.7 256.1,113.2 257.1,112.6 258.1,112.1 259.0,111.6 260.0,111.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"44.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"219.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"216.7\" y=\"125.0\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">α</text><circle cx=\"100.9\" cy=\"170.2\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"181.4\" y=\"27.0\" font-size=\"11\" fill=\"#64748b\">D : y = x</text><text x=\"37.2\" y=\"24.0\" font-size=\"11\" fill=\"#0f6e56\">Γ</text></svg>\nQuels sont les signes de u(x) et de u′(x) lus sur ce graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u(x) > 0 sur ]0 ; 1[ et sur ]α ; +∞[, u(x) < 0 sur ]1 ; α[ ; u′(x) < 0 sur ]0 ; 4[ et u′(x) > 0 sur ]4 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "u(x) > 0 sur ]0 ; 1[ et sur ]α ; +∞[, u(x) < 0 sur ]1 ; α[ ; u′(x) > 0 sur ]0 ; 4[ et u′(x) < 0 sur ]4 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "u(x) < 0 sur ]0 ; 1[ et sur ]α ; +∞[, u(x) > 0 sur ]1 ; α[ ; u′(x) < 0 sur ]0 ; 4[ et u′(x) > 0 sur ]4 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "u(x) < 0 sur ]0 ; 1[ et sur ]α ; +∞[, u(x) > 0 sur ]1 ; α[ ; u′(x) > 0 sur ]0 ; 4[ et u′(x) < 0 sur ]4 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le signe de u se lit sur la position de la courbe par rapport à l'axe des abscisses : au-dessus avant 1 et après α, au-dessous entre 1 et α. Le signe de u′ se lit sur le sens de variation : la courbe descend jusqu'au minimum en x = 4 (tangente horizontale), puis monte ✓. L'erreur classique est de confondre « u′ négative » avec « u négative » : sur ]1 ; 4[, u est négative mais u′ l'est aussi, tandis que sur ]4 ; α[, u est négative et u′ positive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout x > 0, on pose u(x) = x − 1 − 4 ln x. Quelle est l'expression de e^(u(x)) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(u(x)) = x⁴e^(x−1)"
+        },
+        {
+          "id": "b",
+          "text": "e^(u(x)) = e^(x−1) − 4x"
+        },
+        {
+          "id": "c",
+          "text": "e^(u(x)) = e^(x−1)/x⁴"
+        },
+        {
+          "id": "d",
+          "text": "e^(u(x)) = e^(x−1)/(4x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "e^(u(x)) = e^(x − 1 − 4 ln x) = e^(x−1) × e^(−4 ln x) = e^(x−1) × (e^(ln x))^(−4) = e^(x−1) × x⁻⁴ = e^(x−1)/x⁴ ✓. Ainsi f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x). Le signe de l'exposant −4 ln x donne x⁻⁴, non x⁴ ; e^(a − b) est un quotient, non une différence ; et e^(−4 ln x) = x⁻⁴, non (4x)⁻¹.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x et f la fonction définie sur ]0 ; +∞[ par f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x), de courbe (C).\nQuelles sont les limites de f en 0⁺ et en +∞, et comment les justifier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 aux deux bornes : u(x) → +∞ et le terme −u compense exactement e^(u(x))"
+        },
+        {
+          "id": "b",
+          "text": "−∞ aux deux bornes : u(x) → +∞ et e^(u(x)) − u(x) est dominé par le terme −u"
+        },
+        {
+          "id": "c",
+          "text": "+∞ aux deux bornes : u(x) → +∞ et e^X − X = X(e^X/X − 1) → +∞"
+        },
+        {
+          "id": "d",
+          "text": "+∞ en 0⁺ mais −∞ en +∞ : le terme −(x − 1) l'emporte à l'infini sur le reste"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Aux deux bornes u(x) → +∞ (voir u(x) = x − 1 − 4 ln x). Avec X = u(x), f = e^X − X = X(e^X/X − 1), et e^X/X → +∞ (croissances comparées) donc f → +∞ en 0⁺ et en +∞ ✓. L'exponentielle l'emporte sur X : le terme −u ne compense pas e^u, la forme +∞ − ∞ ne vaut ni 0 ni −∞. Et f(x) = e^(u(x)) − u(x) inclut le terme e^(x−1)/x⁴, qui l'emporte sur −(x − 1) en +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x et f la fonction définie sur ]0 ; +∞[ par f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x), de courbe (C).\nQue valent la limite de f(x)/x en +∞ et les branches infinies de (C) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x)/x → +∞ : (C) admet la droite x = 0 pour asymptote verticale et une branche parabolique de direction l'axe des ordonnées en +∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x)/x → 1 : (C) admet la droite x = 0 pour asymptote verticale et la droite y = x pour asymptote oblique en +∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x)/x → +∞ : (C) admet la droite y = 0 pour asymptote horizontale en 0⁺ et une branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "d",
+          "text": "f(x)/x → 0 : (C) admet la droite x = 0 pour asymptote verticale et une branche parabolique de direction l'axe des abscisses en +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En +∞, f(x)/x = e^(x−1)/x⁵ − (x − 1)/x + 4 ln x/x, avec e^(x−1)/x⁵ → +∞ (croissances comparées), (x − 1)/x → 1 et ln x/x → 0 : f(x)/x → +∞ ✓, d'où une branche parabolique de direction (O, j). En 0⁺, f(x) → +∞ : la droite x = 0 est asymptote verticale. Le nombre 1 est la limite de u(x)/x, non celle de f(x)/x ; et une asymptote horizontale supposerait une limite finie en 0⁺.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x et f la fonction définie sur ]0 ; +∞[ par f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x), de courbe (C).\nQuelle est l'expression de f′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = e^(u(x)) − 1"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = u′(x)e^(u(x)) − 1"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = u′(x)(e^(u(x)) + 1)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = u′(x)(e^(u(x)) − 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f = e^u − u avec u dérivable : (e^u)′ = u′e^u et (−u)′ = −u′, donc f′ = u′e^u − u′ = u′(e^u − 1) ✓. Oublier le facteur u′ de (e^u)′ donne e^u − 1 ; dériver −u en −1 au lieu de −u′ donne u′e^u − 1 ; et un signe + vient d'un signe perdu sur −u′.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthogonal, (Γ) est la courbe de u (figure ci-dessous) : elle coupe l'axe des abscisses en 1 et en α, et sa tangente est horizontale au point d'abscisse 4.\n<svg viewBox=\"0 0 270 200\"><title>Courbe Γ de la fonction u</title><path d=\"M26.0 132.0 H260.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M26.0 180.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M44.7 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"44.7\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M63.4 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"63.4\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M82.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"82.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M100.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"100.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M119.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"119.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">5</text><path d=\"M138.3 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"138.3\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M157.0 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"157.0\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">7</text><path d=\"M175.8 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"175.8\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M194.5 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"194.5\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">9</text><path d=\"M213.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"213.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">10</text><path d=\"M231.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"231.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">11</text><path d=\"M250.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"250.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">12</text><path d=\"M23.0 102.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"105.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M23.0 72.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"75.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M23.0 42.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"45.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M23.0 12.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"15.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M26.0 132.0 L175.8 12.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"none\"/><path d=\"M82.2 170.2 L119.6 170.2\" stroke=\"#b45309\" stroke-width=\"1.4\" fill=\"none\"/><polyline points=\"27.0,6.0 27.9,9.7 28.9,33.3 29.9,49.8 30.9,62.4 31.9,72.5 32.8,81.0 33.8,88.2 34.8,94.5 35.8,100.0 36.7,105.0 37.7,109.4 38.7,113.4 39.6,117.1 40.6,120.5 41.6,123.6 42.6,126.4 43.5,129.1 44.5,131.5 45.5,133.8 46.5,136.0 47.5,138.0 48.4,139.9 49.4,141.6 50.4,143.3 51.4,144.9 52.3,146.4 53.3,147.8 54.3,149.1 55.2,150.3 56.2,151.5 57.2,152.6 58.2,153.7 59.1,154.7 60.1,155.7 61.1,156.6 62.1,157.5 63.0,158.3 64.0,159.1 65.0,159.8 66.0,160.5 66.9,161.2 67.9,161.8 68.9,162.4 69.9,162.9 70.8,163.5 71.8,164.0 72.8,164.5 73.8,164.9 74.8,165.4 75.7,165.8 76.7,166.2 77.7,166.5 78.7,166.9 79.6,167.2 80.6,167.5 81.6,167.8 82.5,168.0 83.5,168.3 84.5,168.5 85.5,168.7 86.4,168.9 87.4,169.1 88.4,169.2 89.4,169.4 90.4,169.5 91.3,169.6 92.3,169.8 93.3,169.8 94.2,169.9 95.2,170.0 96.2,170.1 97.2,170.1 98.2,170.1 99.1,170.2 100.1,170.2 101.1,170.2 102.0,170.2 103.0,170.2 104.0,170.1 105.0,170.1 105.9,170.0 106.9,170.0 107.9,169.9 108.9,169.9 109.8,169.8 110.8,169.7 111.8,169.6 112.8,169.5 113.8,169.4 114.7,169.3 115.7,169.1 116.7,169.0 117.7,168.9 118.6,168.7 119.6,168.6 120.6,168.4 121.6,168.2 122.5,168.1 123.5,167.9 124.5,167.7 125.5,167.5 126.4,167.3 127.4,167.1 128.4,166.9 129.3,166.7 130.3,166.5 131.3,166.3 132.3,166.0 133.2,165.8 134.2,165.6 135.2,165.3 136.2,165.1 137.1,164.8 138.1,164.6 139.1,164.3 140.1,164.0 141.1,163.8 142.0,163.5 143.0,163.2 144.0,162.9 144.9,162.6 145.9,162.3 146.9,162.0 147.9,161.7 148.9,161.4 149.8,161.1 150.8,160.8 151.8,160.5 152.8,160.2 153.7,159.9 154.7,159.5 155.7,159.2 156.7,158.9 157.6,158.6 158.6,158.2 159.6,157.9 160.5,157.5 161.5,157.2 162.5,156.8 163.5,156.5 164.4,156.1 165.4,155.8 166.4,155.4 167.4,155.0 168.4,154.7 169.3,154.3 170.3,153.9 171.3,153.5 172.2,153.2 173.2,152.8 174.2,152.4 175.2,152.0 176.2,151.6 177.1,151.2 178.1,150.8 179.1,150.4 180.1,150.0 181.0,149.6 182.0,149.2 183.0,148.8 184.0,148.4 184.9,148.0 185.9,147.6 186.9,147.2 187.9,146.7 188.8,146.3 189.8,145.9 190.8,145.5 191.7,145.0 192.7,144.6 193.7,144.2 194.7,143.7 195.7,143.3 196.6,142.9 197.6,142.4 198.6,142.0 199.6,141.5 200.5,141.1 201.5,140.7 202.5,140.2 203.4,139.8 204.4,139.3 205.4,138.9 206.4,138.4 207.3,137.9 208.3,137.5 209.3,137.0 210.3,136.6 211.3,136.1 212.2,135.6 213.2,135.2 214.2,134.7 215.1,134.2 216.1,133.7 217.1,133.3 218.1,132.8 219.0,132.3 220.0,131.8 221.0,131.4 222.0,130.9 222.9,130.4 223.9,129.9 224.9,129.4 225.9,128.9 226.8,128.4 227.8,127.9 228.8,127.5 229.8,127.0 230.8,126.5 231.7,126.0 232.7,125.5 233.7,125.0 234.7,124.5 235.6,124.0 236.6,123.5 237.6,123.0 238.6,122.5 239.5,122.0 240.5,121.4 241.5,120.9 242.5,120.4 243.4,119.9 244.4,119.4 245.4,118.9 246.4,118.4 247.3,117.9 248.3,117.3 249.3,116.8 250.2,116.3 251.2,115.8 252.2,115.3 253.2,114.7 254.2,114.2 255.1,113.7 256.1,113.2 257.1,112.6 258.1,112.1 259.0,111.6 260.0,111.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"44.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"219.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"216.7\" y=\"125.0\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">α</text><circle cx=\"100.9\" cy=\"170.2\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"181.4\" y=\"27.0\" font-size=\"11\" fill=\"#64748b\">D : y = x</text><text x=\"37.2\" y=\"24.0\" font-size=\"11\" fill=\"#0f6e56\">Γ</text></svg>\nSoit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x et f la fonction définie sur ]0 ; +∞[ par f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x), de courbe (C).\nSur quel ensemble f′(x) est-elle strictement positive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]4 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "]1 ; 4[ ∪ ]α ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "]0 ; 1[ ∪ ]α ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]0 ; 1[ ∪ ]4 ; α["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "e^u − 1 a le signe de u (car e^u > 1 ⟺ u > 0), donc e^(u(x)) − 1 > 0 sur ]0 ; 1[ ∪ ]α ; +∞[ et < 0 sur ]1 ; α[. Le produit u′ × (e^u − 1) est > 0 quand les deux facteurs ont le même signe : sur ]1 ; 4[ (u′ < 0 et e^u − 1 < 0) et sur ]α ; +∞[ (u′ > 0 et e^u − 1 > 0) ✓. Ne regarder que u′ donne ]4 ; +∞[, que u donne ]0 ; 1[ ∪ ]α ; +∞[ ; ]0 ; 1[ ∪ ]4 ; α[ est l'ensemble où f′ est négative.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthogonal, (Γ) est la courbe de u (figure ci-dessous) : elle coupe l'axe des abscisses en 1 et en α, et sa tangente est horizontale au point d'abscisse 4.\n<svg viewBox=\"0 0 270 200\"><title>Courbe Γ de la fonction u</title><path d=\"M26.0 132.0 H260.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M26.0 180.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M44.7 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"44.7\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M63.4 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"63.4\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M82.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"82.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M100.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"100.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M119.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"119.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">5</text><path d=\"M138.3 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"138.3\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M157.0 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"157.0\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">7</text><path d=\"M175.8 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"175.8\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M194.5 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"194.5\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">9</text><path d=\"M213.2 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"213.2\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">10</text><path d=\"M231.9 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"231.9\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">11</text><path d=\"M250.6 129.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"250.6\" y=\"147.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">12</text><path d=\"M23.0 102.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"105.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M23.0 72.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"75.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M23.0 42.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"45.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">6</text><path d=\"M23.0 12.0 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"15.0\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">8</text><path d=\"M26.0 132.0 L175.8 12.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"none\"/><path d=\"M82.2 170.2 L119.6 170.2\" stroke=\"#b45309\" stroke-width=\"1.4\" fill=\"none\"/><polyline points=\"27.0,6.0 27.9,9.7 28.9,33.3 29.9,49.8 30.9,62.4 31.9,72.5 32.8,81.0 33.8,88.2 34.8,94.5 35.8,100.0 36.7,105.0 37.7,109.4 38.7,113.4 39.6,117.1 40.6,120.5 41.6,123.6 42.6,126.4 43.5,129.1 44.5,131.5 45.5,133.8 46.5,136.0 47.5,138.0 48.4,139.9 49.4,141.6 50.4,143.3 51.4,144.9 52.3,146.4 53.3,147.8 54.3,149.1 55.2,150.3 56.2,151.5 57.2,152.6 58.2,153.7 59.1,154.7 60.1,155.7 61.1,156.6 62.1,157.5 63.0,158.3 64.0,159.1 65.0,159.8 66.0,160.5 66.9,161.2 67.9,161.8 68.9,162.4 69.9,162.9 70.8,163.5 71.8,164.0 72.8,164.5 73.8,164.9 74.8,165.4 75.7,165.8 76.7,166.2 77.7,166.5 78.7,166.9 79.6,167.2 80.6,167.5 81.6,167.8 82.5,168.0 83.5,168.3 84.5,168.5 85.5,168.7 86.4,168.9 87.4,169.1 88.4,169.2 89.4,169.4 90.4,169.5 91.3,169.6 92.3,169.8 93.3,169.8 94.2,169.9 95.2,170.0 96.2,170.1 97.2,170.1 98.2,170.1 99.1,170.2 100.1,170.2 101.1,170.2 102.0,170.2 103.0,170.2 104.0,170.1 105.0,170.1 105.9,170.0 106.9,170.0 107.9,169.9 108.9,169.9 109.8,169.8 110.8,169.7 111.8,169.6 112.8,169.5 113.8,169.4 114.7,169.3 115.7,169.1 116.7,169.0 117.7,168.9 118.6,168.7 119.6,168.6 120.6,168.4 121.6,168.2 122.5,168.1 123.5,167.9 124.5,167.7 125.5,167.5 126.4,167.3 127.4,167.1 128.4,166.9 129.3,166.7 130.3,166.5 131.3,166.3 132.3,166.0 133.2,165.8 134.2,165.6 135.2,165.3 136.2,165.1 137.1,164.8 138.1,164.6 139.1,164.3 140.1,164.0 141.1,163.8 142.0,163.5 143.0,163.2 144.0,162.9 144.9,162.6 145.9,162.3 146.9,162.0 147.9,161.7 148.9,161.4 149.8,161.1 150.8,160.8 151.8,160.5 152.8,160.2 153.7,159.9 154.7,159.5 155.7,159.2 156.7,158.9 157.6,158.6 158.6,158.2 159.6,157.9 160.5,157.5 161.5,157.2 162.5,156.8 163.5,156.5 164.4,156.1 165.4,155.8 166.4,155.4 167.4,155.0 168.4,154.7 169.3,154.3 170.3,153.9 171.3,153.5 172.2,153.2 173.2,152.8 174.2,152.4 175.2,152.0 176.2,151.6 177.1,151.2 178.1,150.8 179.1,150.4 180.1,150.0 181.0,149.6 182.0,149.2 183.0,148.8 184.0,148.4 184.9,148.0 185.9,147.6 186.9,147.2 187.9,146.7 188.8,146.3 189.8,145.9 190.8,145.5 191.7,145.0 192.7,144.6 193.7,144.2 194.7,143.7 195.7,143.3 196.6,142.9 197.6,142.4 198.6,142.0 199.6,141.5 200.5,141.1 201.5,140.7 202.5,140.2 203.4,139.8 204.4,139.3 205.4,138.9 206.4,138.4 207.3,137.9 208.3,137.5 209.3,137.0 210.3,136.6 211.3,136.1 212.2,135.6 213.2,135.2 214.2,134.7 215.1,134.2 216.1,133.7 217.1,133.3 218.1,132.8 219.0,132.3 220.0,131.8 221.0,131.4 222.0,130.9 222.9,130.4 223.9,129.9 224.9,129.4 225.9,128.9 226.8,128.4 227.8,127.9 228.8,127.5 229.8,127.0 230.8,126.5 231.7,126.0 232.7,125.5 233.7,125.0 234.7,124.5 235.6,124.0 236.6,123.5 237.6,123.0 238.6,122.5 239.5,122.0 240.5,121.4 241.5,120.9 242.5,120.4 243.4,119.9 244.4,119.4 245.4,118.9 246.4,118.4 247.3,117.9 248.3,117.3 249.3,116.8 250.2,116.3 251.2,115.8 252.2,115.3 253.2,114.7 254.2,114.2 255.1,113.7 256.1,113.2 257.1,112.6 258.1,112.1 259.0,111.6 260.0,111.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"44.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><circle cx=\"219.7\" cy=\"132.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"216.7\" y=\"125.0\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">α</text><circle cx=\"100.9\" cy=\"170.2\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"181.4\" y=\"27.0\" font-size=\"11\" fill=\"#64748b\">D : y = x</text><text x=\"37.2\" y=\"24.0\" font-size=\"11\" fill=\"#0f6e56\">Γ</text></svg>\nSoit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x et f la fonction définie sur ]0 ; +∞[ par f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x), de courbe (C).\nQuel est le tableau de variation de f sur ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît sur ]0 ; 1], décroît sur [1 ; 4], croît sur [4 ; α], décroît sur [α ; +∞[ ; f(1) = f(α) = 1"
+        },
+        {
+          "id": "b",
+          "text": "f décroît sur ]0 ; 1], croît sur [1 ; 4], décroît sur [4 ; α], croît sur [α ; +∞[ ; f(1) = f(α) = 0"
+        },
+        {
+          "id": "c",
+          "text": "f décroît sur ]0 ; 1], croît sur [1 ; 4], décroît sur [4 ; α], croît sur [α ; +∞[ ; f(1) = f(α) = e"
+        },
+        {
+          "id": "d",
+          "text": "f décroît sur ]0 ; 1], croît sur [1 ; 4], décroît sur [4 ; α], croît sur [α ; +∞[ ; f(1) = f(α) = 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′ > 0 exactement sur ]1 ; 4[ ∪ ]α ; +∞[ : f décroît sur ]0 ; 1], croît sur [1 ; 4], décroît sur [4 ; α] puis croît. Comme u(1) = u(α) = 0, f(1) = f(α) = e⁰ − 0 = 1 : ce sont deux minimums locaux, et f(4) = e^(3 − 8 ln 2) + 8 ln 2 − 3 est un maximum local ✓. Un tableau inversé lit le signe de f′ à l'envers ; f(1) = 0 utilise e⁰ = 0, et f(1) = e prend e¹ pour e⁰.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle étude établit que eˣ − 2x > 0 pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ(x) = eˣ − 2x : φ′(x) = eˣ − 2 est positive, φ est croissante et φ(x) ≥ φ(0) = 1 > 0 pour tout x"
+        },
+        {
+          "id": "b",
+          "text": "φ(x) = eˣ − 2x : φ′(x) = eˣ − 2 s'annule en ln 2, minimum φ(ln 2) = 2 − 2 ln 2 > 0 car ln 2 < 1"
+        },
+        {
+          "id": "c",
+          "text": "eˣ ≥ 1 + x donne eˣ − 2x ≥ 1 − x, et ce nombre est positif pour tout réel x"
+        },
+        {
+          "id": "d",
+          "text": "φ(0) = 1 > 0 et φ(1) = e − 2 > 0 : on en déduit que φ est positive sur ℝ entier"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "φ′(x) = eˣ − 2 s'annule en x = ln 2, est négative avant et positive après : φ admet un minimum φ(ln 2) = e^(ln 2) − 2 ln 2 = 2 − 2 ln 2 = 2(1 − ln 2) > 0 puisque ln 2 ≈ 0,69 < 1. Donc φ(x) > 0 pour tout x ✓. eˣ − 2 n'est positive que pour x > ln 2, donc φ n'est pas croissante sur ℝ ; 1 − x n'est positif que pour x < 1 ; et deux valeurs ne suffisent pas pour une propriété valable sur ℝ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x et f la fonction définie sur ]0 ; +∞[ par f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x), de courbe (C).\nOn admet que eᵗ − 2t > 0 pour tout réel t. Quelle est la position relative de (C) et de la courbe (Γ) de u ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) − u(x) = e^(u(x)) − 2u(x) > 0 avec t = u(x) : (C) est au-dessous de (Γ)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) − u(x) = e^(u(x)) − u(x) > 0 car l'exponentielle est positive : (C) est au-dessus de (Γ)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) − u(x) = e^(u(x)) − 2u(x) > 0 avec t = u(x) : (C) est au-dessus de (Γ)"
+        },
+        {
+          "id": "d",
+          "text": "f(x) − u(x) = eˣ − 2x > 0 en prenant t = x : (C) est au-dessus de (Γ)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x) − u(x) = e^(u(x)) − u(x) − u(x) = e^(u(x)) − 2u(x). En appliquant eᵗ − 2t > 0 au réel t = u(x), on a f(x) − u(x) > 0 pour tout x > 0 : (C) est au-dessus de (Γ) ✓. Une différence positive place (C) au-dessus ; oublier le second u(x) change l'expression ; et f(x) − u(x) n'est pas eˣ − 2x (on remplace t par u(x), non par x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x, de courbe (Γ). On sait que u(1) = 0 et que u(α) = 0 avec α > 4. Sur [3 ; 5], u est négative. Quelle intégrale donne l'aire 𝒜′ de la partie du plan limitée par (Γ), l'axe des abscisses et les droites x = 3 et x = 5 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜′ = −∫ de 3 à 5 de u(x) dx"
+        },
+        {
+          "id": "b",
+          "text": "𝒜′ = ∫ de 3 à 5 de u(x) dx"
+        },
+        {
+          "id": "c",
+          "text": "𝒜′ = ∫ de 3 à 5 de (x − u(x)) dx"
+        },
+        {
+          "id": "d",
+          "text": "𝒜′ = ∫ de 3 à 5 de u(x) dx + 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une aire est positive. Comme u(x) < 0 sur [3 ; 5], la courbe est sous l'axe et l'aire vaut −∫ u(x) dx = ∫ de 3 à 5 de |u(x)| dx ✓. L'intégrale ∫ u(x) dx est négative : c'est l'opposé de l'aire. ∫(x − u(x)) dx est l'aire entre (Γ) et la droite y = x, non l'axe ; et ajouter 2 n'a aucun sens géométrique.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u(x) = x − 1 − 4 ln x. Quelle est la valeur de l'aire 𝒜′ = −∫ de 3 à 5 de u(x) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 ln 5 − 12 ln 3 − 14"
+        },
+        {
+          "id": "b",
+          "text": "14 − 20 ln 5 + 12 ln 3"
+        },
+        {
+          "id": "c",
+          "text": "20 ln 5 − 12 ln 3 − 6"
+        },
+        {
+          "id": "d",
+          "text": "20 ln 5 − 12 ln 3 + 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une primitive de u est G(x) = x²/2 − x − 4(x ln x − x) = x²/2 + 3x − 4x ln x (car (x ln x − x)′ = ln x). Alors G(5) = 27,5 − 20 ln 5 et G(3) = 13,5 − 12 ln 3, donc ∫ u = 14 − 20 ln 5 + 12 ln 3 et 𝒜′ = −∫ u = 20 ln 5 − 12 ln 3 − 14 ≈ 5,005 ✓. Oublier le signe moins donne l'intégrale négative 14 − 20 ln 5 + 12 ln 3 ; une primitive de ln x prise égale à x ln x donne … − 6 ; une primitive prise égale à x ln x + x donne … + 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u(x) = x − 1 − 4 ln x, f(x) = e^(u(x)) − u(x), (C) et (Γ) leurs courbes. Sur [3 ; 5], u est négative. On note 𝒜 l'aire limitée par (C), l'axe des abscisses et les droites x = 3 et x = 5, et 𝒜′ celle limitée par (Γ), l'axe des abscisses et les mêmes droites. Quel raisonnement établit 𝒜′ < 𝒜 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(C) est au-dessus de (Γ) sur [3 ; 5], donc l'aire sous (C) est plus grande que l'aire sous (Γ)"
+        },
+        {
+          "id": "b",
+          "text": "f(x) > u(x) sur [3 ; 5], donc 𝒜 = ∫ f(x) dx > ∫ u(x) dx, et cette dernière intégrale vaut 𝒜′"
+        },
+        {
+          "id": "c",
+          "text": "f(x) = e^(u(x)) − u(x) > −u(x) > 0 sur [3 ; 5] ; on intègre : 𝒜 > 𝒜′"
+        },
+        {
+          "id": "d",
+          "text": "f(x) et u(x) sont toutes deux décroissantes sur [3 ; 4], donc 𝒜 > 𝒜′ sur cet intervalle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur [3 ; 5], u < 0, donc 𝒜′ = ∫ de 3 à 5 de (−u(x)) dx. De plus f(x) = e^(u(x)) − u(x) > −u(x) > 0 car e^(u(x)) > 0. En intégrant l'inégalité f(x) > −u(x) sur [3 ; 5], on obtient 𝒜 > 𝒜′ ✓. La position de (C) au-dessus de (Γ) ne suffit pas : (Γ) est sous l'axe, son aire est celle de −u, et f > u ne dit pas f > −u. L'égalité 𝒜′ = ∫ u est fausse (∫ u < 0). Enfin le sens de variation ne compare pas des aires.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit u la fonction définie sur ]0 ; +∞[ par u(x) = x − 1 − 4 ln x et f la fonction définie sur ]0 ; +∞[ par f(x) = e^(x−1)/x⁴ − (x − 1) + 4 ln x = e^(u(x)) − u(x), de courbe (C).\nQuel raisonnement établit que l'aire 𝒜 limitée par (C), l'axe des abscisses et les droites x = 3 et x = 5 vérifie 𝒜 < 2f(4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est décroissante sur [4 ; 5], donc f(x) ≤ f(4) sur tout [3 ; 5] ; on intègre sur une longueur 2"
+        },
+        {
+          "id": "b",
+          "text": "f croît sur [3 ; 4], décroît sur [4 ; 5] : 0 < f(x) ≤ f(4), on intègre sur une longueur 2"
+        },
+        {
+          "id": "c",
+          "text": "f(4) est le minimum de f sur [3 ; 5], donc 𝒜 ≤ 2f(4) car f(x) ≥ f(4) pour tout x"
+        },
+        {
+          "id": "d",
+          "text": "f(4) = f(3) + f(5), donc l'aire sur [3 ; 5] est inférieure à 2f(4), somme de deux valeurs"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur [3 ; 5], f croît jusqu'en 4 puis décroît : f(4) est le maximum de f sur cet intervalle, donc 0 < f(x) ≤ f(4). En intégrant sur [3 ; 5], de longueur 2, 𝒜 = ∫ f ≤ 2f(4) ✓. Connaître la monotonie sur [4 ; 5] seulement ne suffit pas pour [3 ; 4] ; un minimum donnerait une minoration, 𝒜 ≥ 2f(4) ; et aucune égalité ne lie f(4) à f(3) + f(5).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On donne ln 2 ≈ 0,6931, ln 3 ≈ 1,0986, ln 5 ≈ 1,6094 et e³ ≈ 20,0855. Avec u(x) = x − 1 − 4 ln x et f(x) = e^(u(x)) − u(x), quelles sont les valeurs approchées de 𝒜′ = 20 ln 5 − 12 ln 3 − 14 et de 2f(4) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜′ ≈ 5,005 et 2f(4) ≈ 2,624"
+        },
+        {
+          "id": "b",
+          "text": "𝒜′ ≈ 5,005 et 2f(4) ≈ 5,090"
+        },
+        {
+          "id": "c",
+          "text": "𝒜′ ≈ 5,005 et 2f(4) ≈ 7,600"
+        },
+        {
+          "id": "d",
+          "text": "𝒜′ ≈ 5,005 et 2f(4) ≈ 5,247"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "𝒜′ = 20 × 1,6094 − 12 × 1,0986 − 14 = 32,188 − 13,183 − 14 ≈ 5,005. Ensuite u(4) = 3 − 4 ln 4 = 3 − 8 ln 2 ≈ −2,545, e^(u(4)) = e³/2⁸ = e³/256 ≈ 0,0785, donc f(4) = 0,0785 + 2,545 ≈ 2,624 et 2f(4) ≈ 5,247 ✓. Les deux valeurs encadrent 𝒜 : 5 < 𝒜′ < 𝒜 < 2f(4) < 5,25. Oublier le facteur 2 donne 2,624 ; oublier e^(u(4)) donne 2 × 2,545 = 5,090 ; et e^(u(4)) = e³/16 (4 ln 4 pris pour 2 ln 4) donne environ 7,6.",
+      "difficulty": 3
+    }
+  ]
+}

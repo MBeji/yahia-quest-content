@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2016 · session de contrôle · Exercice 2 ⭐⭐⭐⭐ : Racines de l'unité, conjugué et polygone inscrit",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé direct, A est le point du cercle trigonométrique d'abscisse (√5 − 1)/4 et d'ordonnée positive ; on note a son affixe et θ une mesure de l'angle orienté (u⃗, OA). Quelles sont les écritures exponentielles de a² et de ā² (conjugué de a au carré) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² = e^(2iθ) et ā² = e^(−2iθ)"
+        },
+        {
+          "id": "b",
+          "text": "a² = e^(iθ²) et ā² = e^(−iθ²)"
+        },
+        {
+          "id": "c",
+          "text": "a² = 2e^(iθ) et ā² = 2e^(−iθ)"
+        },
+        {
+          "id": "d",
+          "text": "a² = e^(2iθ) et ā² = −e^(2iθ)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Comme A est sur le cercle trigonométrique, a = e^(iθ). Alors a² = (e^(iθ))² = e^(2iθ) : on double l'argument et le module reste 1. Le conjugué de e^(iθ) est e^(−iθ), donc ā² = (e^(−iθ))² = e^(−2iθ) ✓. Le piège courant : élever θ au carré (θ²) confond la puissance du nombre avec celle de l'angle ; doubler le module au lieu de l'argument confond carré et double ; prendre l'opposé du nombre pour son conjugué ne donne pas un point symétrique par rapport à l'axe des abscisses.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A est le point du cercle trigonométrique d'abscisse (√5 − 1)/4 et d'ordonnée positive, d'affixe a. Que vaut a + ā ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−(√5 − 1)/2"
+        },
+        {
+          "id": "b",
+          "text": "(√5 − 1)/4"
+        },
+        {
+          "id": "c",
+          "text": "(√5 − 1)/2"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour a = x + iy, on a a + ā = 2x : la somme d'un complexe et de son conjugué est le double de sa partie réelle. Ici x = (√5 − 1)/4, donc a + ā = (√5 − 1)/2 ✓. Le piège courant : oublier le facteur 2 donne la seule partie réelle (√5 − 1)/4 ; confondre la somme a + ā avec le produit aā = |a|² = 1 donne 1 ; le signe moins viendrait de a − ā ou d'une erreur sur la partie réelle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A est le point du cercle trigonométrique d'abscisse (√5 − 1)/4 et d'ordonnée positive, d'affixe a. Quelle équation du second degré à coefficients réels admet pour solutions a et ā ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z² + ((√5 − 1)/2) z + 1 = 0"
+        },
+        {
+          "id": "b",
+          "text": "z² − ((√5 − 1)/4) z + 1 = 0"
+        },
+        {
+          "id": "c",
+          "text": "z² − ((√5 − 1)/2) z + 1 = 0"
+        },
+        {
+          "id": "d",
+          "text": "z² − ((√5 − 1)/2) z − 1 = 0"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux nombres de somme S et de produit P sont les solutions de z² − Sz + P = 0. Ici S = a + ā, soit deux fois la partie réelle de a, vaut (√5 − 1)/2 et P = aā = |a|² = 1 (A est sur le cercle trigonométrique) ✓. Le piège courant : écrire z² + Sz + P = 0 change le signe du coefficient de z ; prendre S égal à la seule partie réelle de a oublie le facteur 2 ; confondre aā avec −1 donne le mauvais terme constant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit s = (√5 − 1)/2 et t = (√5 + 1)/2. Pour tout complexe z, quel est le développement du produit\n(z² − sz + 1)(z² + tz + 1) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z⁴ + z³ + z² + z + 1"
+        },
+        {
+          "id": "b",
+          "text": "z⁴ − z³ + z² − z + 1"
+        },
+        {
+          "id": "c",
+          "text": "z⁴ + z³ + 3z² + z + 1"
+        },
+        {
+          "id": "d",
+          "text": "z⁴ + 2z² + 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On développe : z⁴ + (t − s)z³ + (1 + 1 − st)z² + (t − s)z + 1. Or t − s = 1 et st = (5 − 1)/4 = 1, donc le produit vaut z⁴ + z³ + z² + z + 1 ✓. Multiplié par (z − 1), il redonne z⁵ − 1, ce qui montre le rôle de ces deux trinômes. Le piège courant : inverser t − s en s − t change les signes de z³ et de z ; écrire 1 + 1 + st au lieu de 1 + 1 − st donne 3 pour le coefficient de z² ; croire que les termes en z³ et en z se compensent supprime les deux termes croisés.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On admet que, pour tout complexe z, z⁵ − 1 = (z − 1)(z² − sz + 1)(z² + tz + 1), avec s = (√5 − 1)/2 et t = (√5 + 1)/2, et que le complexe a, de module 1, est solution de z² − sz + 1 = 0. Quel raisonnement prouve que a⁵ = 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a est de module 1, donc toutes ses puissances ont pour module 1 et en particulier a⁵ = 1."
+        },
+        {
+          "id": "b",
+          "text": "Un produit est nul si tous ses facteurs le sont : a ne peut annuler z⁵ − 1 que s'il annule aussi z − 1."
+        },
+        {
+          "id": "c",
+          "text": "a est solution d'une équation du second degré, donc a² = 1 puis a⁵ = a, et a est égal à 1."
+        },
+        {
+          "id": "d",
+          "text": "a annule le facteur z² − sz + 1 du produit, donc il annule le produit z⁵ − 1 : a⁵ − 1 = 0."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Si un seul facteur d'un produit est nul, le produit est nul : a annule z² − sz + 1, donc (a − 1)(a² − sa + 1)(a² + ta + 1) = 0, soit a⁵ − 1 = 0 et a⁵ = 1 ✓. Le piège courant : le module 1 de a ne donne que |a⁵| = 1, pas a⁵ = 1 (le nombre i a pour module 1 et i⁵ = i ≠ 1) ; exiger que tous les facteurs soient nuls confond produit nul et somme nulle ; écrire que a² = 1 revient à résoudre z² = 1 au lieu de z² − sz + 1 = 0, trinôme dont a est solution.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles sont les racines cinquièmes de l'unité distinctes de 1, écrites sous forme exponentielle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(iπ/5), e^(2iπ/5), e^(3iπ/5), e^(4iπ/5)"
+        },
+        {
+          "id": "b",
+          "text": "e^(2iπ/5), e^(4iπ/5), e^(6iπ/5), e^(8iπ/5)"
+        },
+        {
+          "id": "c",
+          "text": "e^(2iπ/5), e^(4iπ/5), e^(−4iπ/5), e^(−8iπ/5)"
+        },
+        {
+          "id": "d",
+          "text": "e^(iπ/5), e^(3iπ/5), e^(7iπ/5), e^(9iπ/5)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les solutions de z⁵ = 1 sont z_k = e^(i2kπ/5) pour k = 0, 1, 2, 3, 4. Pour k = 0 on retrouve 1 ; les quatre autres sont e^(2iπ/5), e^(4iπ/5), e^(6iπ/5) et e^(8iπ/5) ✓. Contrôle : (e^(4iπ/5))⁵ = e^(4iπ) = 1. Le piège courant : prendre les arguments kπ/5 (le tour complet est 2π, pas π) ; l'opposé de l'argument mal appliqué aux deux dernières racines donne e^(−8iπ/5) = e^(2iπ/5), qui fait doublon avec la première, tandis que e^(8iπ/5) manque : la liste n'a que trois racines distinctes ; les nombres e^(iπ/5), e^(3iπ/5), e^(7iπ/5), e^(9iπ/5) sont des solutions de z⁵ = −1, non de z⁵ = 1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi les racines cinquièmes de l'unité distinctes de 1, une seule a une partie réelle et une partie imaginaire strictement positives. Laquelle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(2iπ/5)"
+        },
+        {
+          "id": "b",
+          "text": "e^(4iπ/5)"
+        },
+        {
+          "id": "c",
+          "text": "e^(6iπ/5)"
+        },
+        {
+          "id": "d",
+          "text": "e^(8iπ/5)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les arguments valent 72°, 144°, 216° et 288°. Une partie réelle et une partie imaginaire strictement positives imposent un argument dans ]0 ; π/2[ = ]0° ; 90°[, ce qui ne laisse que 72°, soit e^(2iπ/5) ✓. Les autres sont dans le deuxième quadrant (144° : partie réelle négative), le troisième (216° : deux parties négatives) ou le quatrième (288° : partie imaginaire négative). Le piège courant : juger au premier coup d'œil d'après la fraction de π sans la convertir en angle, par exemple prendre 4π/5 pour un angle aigu.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a le complexe de module 1, de partie réelle (√5 − 1)/4 et de partie imaginaire positive. Quelle est la partie imaginaire de a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√(10 − 2√5)/4"
+        },
+        {
+          "id": "b",
+          "text": "(√5 + 1)/4"
+        },
+        {
+          "id": "c",
+          "text": "√(10 + 2√5)/4"
+        },
+        {
+          "id": "d",
+          "text": "√(5 − √5)/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme |a| = 1, (Re a)² + (Im a)² = 1. Or (Re a)² = (√5 − 1)²/16 = (6 − 2√5)/16, donc (Im a)² = (16 − 6 + 2√5)/16 = (10 + 2√5)/16. La partie imaginaire est positive : Im a = √(10 + 2√5)/4 ✓. Contrôle : √(10 + 2√5) ≈ 3,80, donc Im a ≈ 0,95 = sin 72° ✓. Le piège courant : écrire 16 − 6 − 2√5 au lieu de 16 − (6 − 2√5) oublie de changer le signe du second terme et donne √(10 − 2√5)/4 ; remplacer le signe de √5 dans la partie réelle donne (√5 + 1)/4, qui est cos 36° et non la partie imaginaire de a ; écrire sin θ = √(1 − cos θ) en oubliant le carré donne √(5 − √5)/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On sait que a = e^(2iπ/5) vérifie a⁵ = 1 et aā = 1. Parmi ces puissances de a, laquelle est égale à ā² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a⁴"
+        },
+        {
+          "id": "b",
+          "text": "a²"
+        },
+        {
+          "id": "c",
+          "text": "a⁶"
+        },
+        {
+          "id": "d",
+          "text": "a³"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme aā = 1, on a ā = 1/a = a⁴ car a⁵ = 1. Donc ā² = (a⁴)² = a⁸ = a⁵ × a³ = a³ ✓. Contrôle sur les arguments : ā² = e^(−4iπ/5) = e^(6iπ/5) et a³ = e^(6iπ/5). Le piège courant : s'arrêter à ā = a⁴ (c'est le conjugué simple, non son carré) ; confondre a² et ā² (ils sont conjugués, pas égaux) ; additionner les exposants (4 + 2 = 6) au lieu de les multiplier (4 × 2 = 8) pour élever a⁴ au carré donne a⁶, qui vaut a et non a³.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, a = e^(2iπ/5) et C est le point d'affixe a². Quelle est l'abscisse du point C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√5 + 1)/4"
+        },
+        {
+          "id": "b",
+          "text": "−(√5 + 1)/4"
+        },
+        {
+          "id": "c",
+          "text": "(√5 − 1)/2"
+        },
+        {
+          "id": "d",
+          "text": "−(√5 − 1)/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'abscisse de C est Re(a²) = cos(4π/5) = 2cos²(2π/5) − 1. Avec cos(2π/5) = (√5 − 1)/4, on a cos²(2π/5) = (6 − 2√5)/16 = (3 − √5)/8, donc 2cos²(2π/5) − 1 = (3 − √5)/4 − 1 = −(√5 + 1)/4 ✓. Le point C est bien à gauche de l'axe des ordonnées (angle de 144°). Le piège courant : doubler le cosinus au lieu d'utiliser cos 2x = 2cos²x − 1 donne (√5 − 1)/2 ; écrire cos(4π/5) = −cos(2π/5) (l'angle supplémentaire de 4π/5 est π/5, non 2π/5) donne −(√5 − 1)/4 ; oublier le signe négatif d'un angle du deuxième quadrant donne (√5 + 1)/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les points I, A, C, D et B ont pour affixes respectives 1, e^(2iπ/5), e^(4iπ/5), e^(6iπ/5) et e^(8iπ/5) (figure ci-dessous). Quel argument prouve que ce sont les sommets d'un pentagone régulier ?\n<svg viewBox=\"0 0 170 170\"><title>Cinq points du cercle trigonométrique : I(1), A, C, D et B, symétriques deux à deux par rapport à l'axe des abscisses</title><path d=\"M15 85 H155\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M85 155 V15\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M155 85 l-6 -3 l0 6 z\" fill=\"#0f172a\"/><path d=\"M85 15 l-3 6 l6 0 z\" fill=\"#0f172a\"/><text x=\"80\" y=\"98\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">O</text><circle cx=\"85\" cy=\"85\" r=\"70\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><circle cx=\"155\" cy=\"85\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"161\" y=\"79\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">I</text><circle cx=\"106.6\" cy=\"18.4\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"112.6\" y=\"12.399999999999999\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">A</text><circle cx=\"28.4\" cy=\"43.9\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"14.399999999999999\" y=\"37.9\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">C</text><circle cx=\"28.4\" cy=\"126.1\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"14.399999999999999\" y=\"140.1\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">D</text><circle cx=\"106.6\" cy=\"151.6\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"112.6\" y=\"165.6\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">B</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les cinq points sont sur le cercle trigonométrique, donc ils forment un pentagone régulier, puisque tout polygone inscrit dans un cercle l'est."
+        },
+        {
+          "id": "b",
+          "text": "Ce sont les cinq racines cinquièmes de l'unité : deux sommets consécutifs sont séparés de l'angle 2π/5 sur le cercle trigonométrique."
+        },
+        {
+          "id": "c",
+          "text": "Les cinq points sont sur le cercle trigonométrique et symétriques deux à deux par rapport à l'axe des abscisses, ce qui rend le pentagone régulier."
+        },
+        {
+          "id": "d",
+          "text": "Les côtés [IA] et [AC] ont la même longueur, donc les cinq côtés sont égaux entre eux et le pentagone est régulier."
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le pentagone IACDB est inscrit dans le cercle trigonométrique ; les cinq points s'obtiennent chacun du précédent par la rotation de centre O et d'angle 2π/5 (leurs arguments sont 0, 2π/5, 4π/5, 6π/5 et 8π/5). Les cinq côtés sont donc égaux et les cinq angles au centre aussi : le pentagone est régulier ✓. Le piège courant : cinq points sur un cercle ne forment pas forcément un polygone régulier (il faut des angles au centre égaux) ; la symétrie par rapport à un axe n'impose pas l'égalité des côtés ; deux côtés égaux ne prouvent pas que les cinq le sont.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a = e^(2iπ/5). Que vaut la somme des affixes des cinq sommets du pentagone, c'est-à-dire 1 + a + a² + ā² + ā ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "(√5 + 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "−1"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Avec a⁵ = 1 et a ≠ 1, 1 + a + a² + a³ + a⁴ = (a⁵ − 1)/(a − 1) = 0. Or ā² = a³ et ā = a⁴, donc la somme des cinq affixes vaut 0 ✓. Contrôle par les parties réelles : 1 + 2cos(2π/5) + 2cos(4π/5) = 1 + (√5 − 1)/2 − (√5 + 1)/2 = 0. Le piège courant : additionner les modules (cinq nombres de module 1) donne 5 ; ne compter que 1, a et ā donne 1 + (√5 − 1)/2 = (√5 + 1)/2 ; la valeur −1 est celle de la somme des quatre racines distinctes de 1 : le terme 1 est à ne pas oublier.",
+      "difficulty": 3
+    }
+  ]
+}

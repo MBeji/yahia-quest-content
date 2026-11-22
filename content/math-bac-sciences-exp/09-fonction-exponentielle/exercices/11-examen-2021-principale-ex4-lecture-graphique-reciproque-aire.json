@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2021 · session principale · Exercice 4 ⭐⭐⭐⭐ : lecture graphique, fonction réciproque et aire par symétrie",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthogonal, (ζ) est la courbe d'une fonction f dérivable et strictement croissante sur ]0 ; +∞[ (figure ci-dessous). La droite x = 0 est asymptote à (ζ), qui admet une branche parabolique de direction l'axe des abscisses au voisinage de +∞ ; (ζ) passe par A(1/2 ; 0) et B(25/6 ; ln 5) ; la droite T, tangente en A, a pour équation y = (4/3)x − 2/3 ; la droite y = x est tracée en gris.\n<svg viewBox=\"0 0 270 210\"><title>Courbe ζ</title><path d=\"M26.0 101.0 H260.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M26.0 190.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M71.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"71.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M116.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"116.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M161.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"161.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M206.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"206.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M251.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"251.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">5</text><path d=\"M23.0 169.5 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"172.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M23.0 135.2 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"138.2\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M23.0 66.8 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"69.8\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M23.0 32.5 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"35.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M26.0 101.0 L143.0 12.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"none\"/><path d=\"M26.0 123.8 L120.5 28.0\" stroke=\"#b45309\" stroke-width=\"1.4\" fill=\"none\"/><polyline points=\"27.0,164.1 27.9,151.2 28.9,143.4 29.9,137.8 30.9,133.4 31.9,129.8 32.8,126.7 33.8,123.9 34.8,121.5 35.8,119.3 36.7,117.3 37.7,115.4 38.7,113.7 39.6,112.1 40.6,110.6 41.6,109.2 42.6,107.9 43.5,106.6 44.5,105.4 45.5,104.2 46.5,103.1 47.5,102.1 48.4,101.1 49.4,100.1 50.4,99.2 51.4,98.3 52.3,97.4 53.3,96.5 54.3,95.7 55.2,94.9 56.2,94.2 57.2,93.4 58.2,92.7 59.1,92.0 60.1,91.3 61.1,90.6 62.1,89.9 63.0,89.3 64.0,88.7 65.0,88.0 66.0,87.4 66.9,86.9 67.9,86.3 68.9,85.7 69.9,85.2 70.8,84.6 71.8,84.1 72.8,83.6 73.8,83.0 74.8,82.5 75.7,82.0 76.7,81.6 77.7,81.1 78.7,80.6 79.6,80.1 80.6,79.7 81.6,79.2 82.6,78.8 83.5,78.4 84.5,77.9 85.5,77.5 86.5,77.1 87.4,76.7 88.4,76.3 89.4,75.9 90.3,75.5 91.3,75.1 92.3,74.7 93.3,74.3 94.2,73.9 95.2,73.6 96.2,73.2 97.2,72.8 98.1,72.5 99.1,72.1 100.1,71.8 101.1,71.4 102.0,71.1 103.0,70.8 104.0,70.4 105.0,70.1 106.0,69.8 106.9,69.4 107.9,69.1 108.9,68.8 109.8,68.5 110.8,68.2 111.8,67.9 112.8,67.6 113.8,67.3 114.7,67.0 115.7,66.7 116.7,66.4 117.7,66.1 118.6,65.8 119.6,65.5 120.6,65.3 121.6,65.0 122.5,64.7 123.5,64.4 124.5,64.2 125.5,63.9 126.4,63.6 127.4,63.4 128.4,63.1 129.4,62.8 130.3,62.6 131.3,62.3 132.3,62.1 133.2,61.8 134.2,61.6 135.2,61.3 136.2,61.1 137.2,60.8 138.1,60.6 139.1,60.3 140.1,60.1 141.1,59.9 142.0,59.6 143.0,59.4 144.0,59.2 144.9,58.9 145.9,58.7 146.9,58.5 147.9,58.3 148.9,58.0 149.8,57.8 150.8,57.6 151.8,57.4 152.8,57.2 153.7,56.9 154.7,56.7 155.7,56.5 156.7,56.3 157.6,56.1 158.6,55.9 159.6,55.7 160.6,55.5 161.5,55.3 162.5,55.1 163.5,54.9 164.4,54.7 165.4,54.5 166.4,54.3 167.4,54.1 168.4,53.9 169.3,53.7 170.3,53.5 171.3,53.3 172.2,53.1 173.2,52.9 174.2,52.7 175.2,52.5 176.2,52.4 177.1,52.2 178.1,52.0 179.1,51.8 180.1,51.6 181.0,51.4 182.0,51.3 183.0,51.1 183.9,50.9 184.9,50.7 185.9,50.5 186.9,50.4 187.8,50.2 188.8,50.0 189.8,49.8 190.8,49.7 191.7,49.5 192.7,49.3 193.7,49.2 194.7,49.0 195.7,48.8 196.6,48.7 197.6,48.5 198.6,48.3 199.6,48.2 200.5,48.0 201.5,47.8 202.5,47.7 203.4,47.5 204.4,47.4 205.4,47.2 206.4,47.0 207.3,46.9 208.3,46.7 209.3,46.6 210.3,46.4 211.2,46.3 212.2,46.1 213.2,46.0 214.2,45.8 215.2,45.7 216.1,45.5 217.1,45.3 218.1,45.2 219.1,45.1 220.0,44.9 221.0,44.8 222.0,44.6 222.9,44.5 223.9,44.3 224.9,44.2 225.9,44.0 226.9,43.9 227.8,43.7 228.8,43.6 229.8,43.5 230.7,43.3 231.7,43.2 232.7,43.0 233.7,42.9 234.6,42.8 235.6,42.6 236.6,42.5 237.6,42.3 238.6,42.2 239.5,42.1 240.5,41.9 241.5,41.8 242.5,41.7 243.4,41.5 244.4,41.4 245.4,41.3 246.3,41.1 247.3,41.0 248.3,40.9 249.3,40.7 250.2,40.6 251.2,40.5 252.2,40.4 253.2,40.2 254.1,40.1 255.1,40.0 256.1,39.8 257.1,39.7 258.1,39.6 259.0,39.5 260.0,39.3\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"48.5\" cy=\"101.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"44.5\" y=\"95.0\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">A</text><circle cx=\"213.5\" cy=\"45.9\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"201.5\" y=\"41.9\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"32.8\" y=\"20.6\" font-size=\"11\" fill=\"#0f6e56\">ζ</text></svg>\nQuelles sont les limites de f en 0⁺ et en +∞, et celle de f(x)/x en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ en 0⁺, +∞ en +∞ et f(x)/x → 0"
+        },
+        {
+          "id": "b",
+          "text": "−∞ en 0⁺, +∞ en +∞ et f(x)/x → 0"
+        },
+        {
+          "id": "c",
+          "text": "−∞ en 0⁺, +∞ en +∞ et f(x)/x → +∞"
+        },
+        {
+          "id": "d",
+          "text": "−∞ en 0⁺, ln 5 en +∞ et f(x)/x → 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f est strictement croissante et la courbe descend le long de l'axe des ordonnées quand x → 0⁺ : f(x) → −∞. Elle croît ensuite sans borne (branche parabolique, pas d'asymptote horizontale) : f(x) → +∞. Une branche parabolique de direction (O, i) signifie f(x)/x → 0 ✓. Le signe +∞ en 0⁺ contredit la croissance (f(1/2) = 0 est déjà plus grand) ; f(x)/x → +∞ serait une direction verticale ; et ln 5 est l'ordonnée de B, non une limite.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un repère orthogonal, (ζ) est la courbe d'une fonction f dérivable et strictement croissante sur ]0 ; +∞[ (figure ci-dessous). La droite x = 0 est asymptote à (ζ), qui admet une branche parabolique de direction l'axe des abscisses au voisinage de +∞ ; (ζ) passe par A(1/2 ; 0) et B(25/6 ; ln 5) ; la droite T, tangente en A, a pour équation y = (4/3)x − 2/3 ; la droite y = x est tracée en gris.\n<svg viewBox=\"0 0 270 210\"><title>Courbe ζ</title><path d=\"M26.0 101.0 H260.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M26.0 190.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M71.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"71.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M116.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"116.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M161.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"161.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M206.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"206.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M251.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"251.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">5</text><path d=\"M23.0 169.5 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"172.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M23.0 135.2 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"138.2\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M23.0 66.8 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"69.8\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M23.0 32.5 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"35.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M26.0 101.0 L143.0 12.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"none\"/><path d=\"M26.0 123.8 L120.5 28.0\" stroke=\"#b45309\" stroke-width=\"1.4\" fill=\"none\"/><polyline points=\"27.0,164.1 27.9,151.2 28.9,143.4 29.9,137.8 30.9,133.4 31.9,129.8 32.8,126.7 33.8,123.9 34.8,121.5 35.8,119.3 36.7,117.3 37.7,115.4 38.7,113.7 39.6,112.1 40.6,110.6 41.6,109.2 42.6,107.9 43.5,106.6 44.5,105.4 45.5,104.2 46.5,103.1 47.5,102.1 48.4,101.1 49.4,100.1 50.4,99.2 51.4,98.3 52.3,97.4 53.3,96.5 54.3,95.7 55.2,94.9 56.2,94.2 57.2,93.4 58.2,92.7 59.1,92.0 60.1,91.3 61.1,90.6 62.1,89.9 63.0,89.3 64.0,88.7 65.0,88.0 66.0,87.4 66.9,86.9 67.9,86.3 68.9,85.7 69.9,85.2 70.8,84.6 71.8,84.1 72.8,83.6 73.8,83.0 74.8,82.5 75.7,82.0 76.7,81.6 77.7,81.1 78.7,80.6 79.6,80.1 80.6,79.7 81.6,79.2 82.6,78.8 83.5,78.4 84.5,77.9 85.5,77.5 86.5,77.1 87.4,76.7 88.4,76.3 89.4,75.9 90.3,75.5 91.3,75.1 92.3,74.7 93.3,74.3 94.2,73.9 95.2,73.6 96.2,73.2 97.2,72.8 98.1,72.5 99.1,72.1 100.1,71.8 101.1,71.4 102.0,71.1 103.0,70.8 104.0,70.4 105.0,70.1 106.0,69.8 106.9,69.4 107.9,69.1 108.9,68.8 109.8,68.5 110.8,68.2 111.8,67.9 112.8,67.6 113.8,67.3 114.7,67.0 115.7,66.7 116.7,66.4 117.7,66.1 118.6,65.8 119.6,65.5 120.6,65.3 121.6,65.0 122.5,64.7 123.5,64.4 124.5,64.2 125.5,63.9 126.4,63.6 127.4,63.4 128.4,63.1 129.4,62.8 130.3,62.6 131.3,62.3 132.3,62.1 133.2,61.8 134.2,61.6 135.2,61.3 136.2,61.1 137.2,60.8 138.1,60.6 139.1,60.3 140.1,60.1 141.1,59.9 142.0,59.6 143.0,59.4 144.0,59.2 144.9,58.9 145.9,58.7 146.9,58.5 147.9,58.3 148.9,58.0 149.8,57.8 150.8,57.6 151.8,57.4 152.8,57.2 153.7,56.9 154.7,56.7 155.7,56.5 156.7,56.3 157.6,56.1 158.6,55.9 159.6,55.7 160.6,55.5 161.5,55.3 162.5,55.1 163.5,54.9 164.4,54.7 165.4,54.5 166.4,54.3 167.4,54.1 168.4,53.9 169.3,53.7 170.3,53.5 171.3,53.3 172.2,53.1 173.2,52.9 174.2,52.7 175.2,52.5 176.2,52.4 177.1,52.2 178.1,52.0 179.1,51.8 180.1,51.6 181.0,51.4 182.0,51.3 183.0,51.1 183.9,50.9 184.9,50.7 185.9,50.5 186.9,50.4 187.8,50.2 188.8,50.0 189.8,49.8 190.8,49.7 191.7,49.5 192.7,49.3 193.7,49.2 194.7,49.0 195.7,48.8 196.6,48.7 197.6,48.5 198.6,48.3 199.6,48.2 200.5,48.0 201.5,47.8 202.5,47.7 203.4,47.5 204.4,47.4 205.4,47.2 206.4,47.0 207.3,46.9 208.3,46.7 209.3,46.6 210.3,46.4 211.2,46.3 212.2,46.1 213.2,46.0 214.2,45.8 215.2,45.7 216.1,45.5 217.1,45.3 218.1,45.2 219.1,45.1 220.0,44.9 221.0,44.8 222.0,44.6 222.9,44.5 223.9,44.3 224.9,44.2 225.9,44.0 226.9,43.9 227.8,43.7 228.8,43.6 229.8,43.5 230.7,43.3 231.7,43.2 232.7,43.0 233.7,42.9 234.6,42.8 235.6,42.6 236.6,42.5 237.6,42.3 238.6,42.2 239.5,42.1 240.5,41.9 241.5,41.8 242.5,41.7 243.4,41.5 244.4,41.4 245.4,41.3 246.3,41.1 247.3,41.0 248.3,40.9 249.3,40.7 250.2,40.6 251.2,40.5 252.2,40.4 253.2,40.2 254.1,40.1 255.1,40.0 256.1,39.8 257.1,39.7 258.1,39.6 259.0,39.5 260.0,39.3\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"48.5\" cy=\"101.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"44.5\" y=\"95.0\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">A</text><circle cx=\"213.5\" cy=\"45.9\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"201.5\" y=\"41.9\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"32.8\" y=\"20.6\" font-size=\"11\" fill=\"#0f6e56\">ζ</text></svg>\nQuelle est la valeur de f′(1/2) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(1/2) = −2/3"
+        },
+        {
+          "id": "b",
+          "text": "f′(1/2) = 3/4"
+        },
+        {
+          "id": "c",
+          "text": "f′(1/2) = 0"
+        },
+        {
+          "id": "d",
+          "text": "f′(1/2) = 4/3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "T est la tangente à (ζ) au point A d'abscisse 1/2 : son coefficient directeur est f′(1/2). T a pour équation y = (4/3)x − 2/3, donc f′(1/2) = 4/3 ✓ (et T passe bien par A : (4/3)(1/2) − 2/3 = 0). −2/3 est l'ordonnée à l'origine de T, non sa pente ; 3/4 est son inverse ; 0 correspondrait à une tangente horizontale, incompatible avec une fonction strictement croissante dont la tangente en A monte.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On considère la fonction f définie sur ]0 ; +∞[ par f(x) = ln((x + √(x² + 4x))/2), strictement croissante, de courbe (ζ) dans un repère orthonormé (O, i, j).\nOn sait que f(x) → −∞ quand x → 0⁺ et f(x) → +∞ quand x → +∞. Sur quel intervalle f réalise-t-elle une bijection à partir de ]0 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f réalise une bijection de ]0 ; +∞[ sur ℝ"
+        },
+        {
+          "id": "b",
+          "text": "f réalise une bijection de ]0 ; +∞[ sur ]0 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "f réalise une bijection de ]0 ; +∞[ sur ]−∞ ; ln 5]"
+        },
+        {
+          "id": "d",
+          "text": "f réalise une bijection de ]0 ; +∞[ sur ]0 ; ln 5["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f est continue et strictement croissante sur ]0 ; +∞[ : elle réalise une bijection de ]0 ; +∞[ sur l'intervalle ]lim₀⁺ f ; lim₊∞ f[ = ]−∞ ; +∞[ = ℝ ✓. Prendre ]0 ; +∞[ suppose que f reste positive (or f(x) < 0 pour x < 1/2) ; ]−∞ ; ln 5] et ]0 ; ln 5[ s'arrêtent à ln 5 = f(25/6), alors que f est strictement croissante et dépasse ln 5 ensuite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (ζ) la courbe d'une fonction f strictement croissante sur ]0 ; +∞[, et (ζ′) celle de sa fonction réciproque f⁻¹, dans un repère orthonormé. B(25/6 ; ln 5) est un point de (ζ). Quelle est la construction du point D(ln 5 ; 25/6) de (ζ′) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D est le symétrique de B par rapport à l'axe des abscisses"
+        },
+        {
+          "id": "b",
+          "text": "D est le symétrique de B par rapport à l'origine O du repère"
+        },
+        {
+          "id": "c",
+          "text": "D est le symétrique de B par rapport à la droite y = x"
+        },
+        {
+          "id": "d",
+          "text": "D est le symétrique de B par rapport à l'axe des ordonnées"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(ζ) et (ζ′) sont symétriques par rapport à la première bissectrice y = x : le point (a ; b) de (ζ) a pour symétrique le point (b ; a) de (ζ′). B(25/6 ; ln 5) donne donc D(ln 5 ; 25/6) ✓ (les coordonnées sont échangées). Les symétries par rapport aux axes ou à l'origine changent un signe sans échanger les coordonnées : le symétrique de B par rapport à l'axe des abscisses serait (25/6 ; −ln 5).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "f est strictement croissante sur ]0 ; +∞[, f(1/2) = 0, et sa tangente au point A(1/2 ; 0) a pour pente 4/3. (ζ′) est la courbe de f⁻¹. Quelle est l'équation de la tangente T′ à (ζ′) au point d'abscisse 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = (4/3)x + 1/2"
+        },
+        {
+          "id": "b",
+          "text": "y = (3/4)x"
+        },
+        {
+          "id": "c",
+          "text": "y = (3/4)x + 1/2"
+        },
+        {
+          "id": "d",
+          "text": "y = (3/4)x − 2/3"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point de (ζ′) d'abscisse 0 est (0 ; f⁻¹(0)) = (0 ; 1/2), car f(1/2) = 0. La pente de T′ est (f⁻¹)′(0) = 1/f′(f⁻¹(0)) = 1/f′(1/2) = 3/4. Donc T′ : y = (3/4)(x − 0) + 1/2 = (3/4)x + 1/2 ✓ (symétrique de T par rapport à y = x). Garder la pente 4/3 oublie l'inverse ; omettre 1/2 oublie le point ; et −2/3 est l'ordonnée à l'origine de T.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On considère la fonction f définie sur ]0 ; +∞[ par f(x) = ln((x + √(x² + 4x))/2), strictement croissante, de courbe (ζ) dans un repère orthonormé (O, i, j).\nPour tout réel y, quelle est l'expression de f⁻¹(y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f⁻¹(y) = e^(2y)/(1 + e^y)"
+        },
+        {
+          "id": "b",
+          "text": "f⁻¹(y) = e^y/(1 + e^y)"
+        },
+        {
+          "id": "c",
+          "text": "f⁻¹(y) = (e^(2y) + 1)/(1 + e^y)"
+        },
+        {
+          "id": "d",
+          "text": "f⁻¹(y) = e^(2y)/(1 − e^y)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "y = f(x) ⟺ e^y = (x + √(x² + 4x))/2 ⟺ 2e^y − x = √(x² + 4x). En élevant au carré (2e^y − x ≥ 0 est vérifié pour la solution) : 4e^(2y) − 4xe^y + x² = x² + 4x, soit 4e^(2y) = 4x(1 + e^y), d'où x = e^(2y)/(1 + e^y) ✓. Contrôle : y = 0 donne 1/2 (f(1/2) = 0) et y = ln 5 donne 25/6 (B ∈ (ζ)). Les autres expressions échouent à ce contrôle : e^y/(1 + e^y) donne 5/6 au lieu de 25/6 en ln 5, (e^(2y) + 1)/(1 + e^y) donne 1 au lieu de 1/2 en 0, et e^(2y)/(1 − e^y) n'est pas définie en 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthogonal, (ζ) est la courbe de f (figure ci-dessous, B(25/6 ; ln 5), A(1/2 ; 0)). 𝒜 est l'aire de la partie colorée, limitée par (ζ), l'axe des abscisses et les droites x = 1/2 et x = 25/6. Quelle intégrale en y donne 𝒜 ? (f⁻¹ est la fonction réciproque de f)\n<svg viewBox=\"0 0 270 210\"><title>Courbe ζ</title><path d=\"M26.0 101.0 H260.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M26.0 190.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M71.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"71.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M116.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"116.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M161.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"161.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M206.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"206.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">4</text><path d=\"M251.0 98.0 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"251.0\" y=\"116.0\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">5</text><path d=\"M23.0 169.5 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"172.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M23.0 135.2 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"138.2\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M23.0 66.8 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"69.8\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M23.0 32.5 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"20.0\" y=\"35.5\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M26.0 101.0 L143.0 12.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"none\"/><polygon points=\"48.5,101.0 48.5,101.0 50.6,99.0 52.6,97.1 54.7,95.4 56.8,93.7 58.8,92.2 60.9,90.7 62.9,89.4 65.0,88.0 67.1,86.8 69.1,85.6 71.2,84.4 73.2,83.3 75.3,82.2 77.4,81.2 79.4,80.2 81.5,79.3 83.6,78.3 85.6,77.4 87.7,76.6 89.8,75.7 91.8,74.9 93.9,74.1 95.9,73.3 98.0,72.5 100.1,71.8 102.1,71.1 104.2,70.4 106.2,69.7 108.3,69.0 110.4,68.3 112.4,67.7 114.5,67.0 116.6,66.4 118.6,65.8 120.7,65.2 122.8,64.6 124.8,64.1 126.9,63.5 128.9,62.9 131.0,62.4 133.1,61.9 135.1,61.3 137.2,60.8 139.2,60.3 141.3,59.8 143.4,59.3 145.4,58.8 147.5,58.3 149.6,57.9 151.6,57.4 153.7,57.0 155.8,56.5 157.8,56.1 159.9,55.6 161.9,55.2 164.0,54.8 166.1,54.3 168.1,53.9 170.2,53.5 172.3,53.1 174.3,52.7 176.4,52.3 178.4,51.9 180.5,51.5 182.6,51.1 184.6,50.8 186.7,50.4 188.8,50.0 190.8,49.7 192.9,49.3 194.9,49.0 197.0,48.6 199.1,48.2 201.1,47.9 203.2,47.6 205.2,47.2 207.3,46.9 209.4,46.6 211.4,46.2 213.5,45.9 213.5,101.0\" fill=\"#fde68a\" stroke=\"none\"/><polyline points=\"27.0,164.1 27.9,151.2 28.9,143.4 29.9,137.8 30.9,133.4 31.9,129.8 32.8,126.7 33.8,123.9 34.8,121.5 35.8,119.3 36.7,117.3 37.7,115.4 38.7,113.7 39.6,112.1 40.6,110.6 41.6,109.2 42.6,107.9 43.5,106.6 44.5,105.4 45.5,104.2 46.5,103.1 47.5,102.1 48.4,101.1 49.4,100.1 50.4,99.2 51.4,98.3 52.3,97.4 53.3,96.5 54.3,95.7 55.2,94.9 56.2,94.2 57.2,93.4 58.2,92.7 59.1,92.0 60.1,91.3 61.1,90.6 62.1,89.9 63.0,89.3 64.0,88.7 65.0,88.0 66.0,87.4 66.9,86.9 67.9,86.3 68.9,85.7 69.9,85.2 70.8,84.6 71.8,84.1 72.8,83.6 73.8,83.0 74.8,82.5 75.7,82.0 76.7,81.6 77.7,81.1 78.7,80.6 79.6,80.1 80.6,79.7 81.6,79.2 82.6,78.8 83.5,78.4 84.5,77.9 85.5,77.5 86.5,77.1 87.4,76.7 88.4,76.3 89.4,75.9 90.3,75.5 91.3,75.1 92.3,74.7 93.3,74.3 94.2,73.9 95.2,73.6 96.2,73.2 97.2,72.8 98.1,72.5 99.1,72.1 100.1,71.8 101.1,71.4 102.0,71.1 103.0,70.8 104.0,70.4 105.0,70.1 106.0,69.8 106.9,69.4 107.9,69.1 108.9,68.8 109.8,68.5 110.8,68.2 111.8,67.9 112.8,67.6 113.8,67.3 114.7,67.0 115.7,66.7 116.7,66.4 117.7,66.1 118.6,65.8 119.6,65.5 120.6,65.3 121.6,65.0 122.5,64.7 123.5,64.4 124.5,64.2 125.5,63.9 126.4,63.6 127.4,63.4 128.4,63.1 129.4,62.8 130.3,62.6 131.3,62.3 132.3,62.1 133.2,61.8 134.2,61.6 135.2,61.3 136.2,61.1 137.2,60.8 138.1,60.6 139.1,60.3 140.1,60.1 141.1,59.9 142.0,59.6 143.0,59.4 144.0,59.2 144.9,58.9 145.9,58.7 146.9,58.5 147.9,58.3 148.9,58.0 149.8,57.8 150.8,57.6 151.8,57.4 152.8,57.2 153.7,56.9 154.7,56.7 155.7,56.5 156.7,56.3 157.6,56.1 158.6,55.9 159.6,55.7 160.6,55.5 161.5,55.3 162.5,55.1 163.5,54.9 164.4,54.7 165.4,54.5 166.4,54.3 167.4,54.1 168.4,53.9 169.3,53.7 170.3,53.5 171.3,53.3 172.2,53.1 173.2,52.9 174.2,52.7 175.2,52.5 176.2,52.4 177.1,52.2 178.1,52.0 179.1,51.8 180.1,51.6 181.0,51.4 182.0,51.3 183.0,51.1 183.9,50.9 184.9,50.7 185.9,50.5 186.9,50.4 187.8,50.2 188.8,50.0 189.8,49.8 190.8,49.7 191.7,49.5 192.7,49.3 193.7,49.2 194.7,49.0 195.7,48.8 196.6,48.7 197.6,48.5 198.6,48.3 199.6,48.2 200.5,48.0 201.5,47.8 202.5,47.7 203.4,47.5 204.4,47.4 205.4,47.2 206.4,47.0 207.3,46.9 208.3,46.7 209.3,46.6 210.3,46.4 211.2,46.3 212.2,46.1 213.2,46.0 214.2,45.8 215.2,45.7 216.1,45.5 217.1,45.3 218.1,45.2 219.1,45.1 220.0,44.9 221.0,44.8 222.0,44.6 222.9,44.5 223.9,44.3 224.9,44.2 225.9,44.0 226.9,43.9 227.8,43.7 228.8,43.6 229.8,43.5 230.7,43.3 231.7,43.2 232.7,43.0 233.7,42.9 234.6,42.8 235.6,42.6 236.6,42.5 237.6,42.3 238.6,42.2 239.5,42.1 240.5,41.9 241.5,41.8 242.5,41.7 243.4,41.5 244.4,41.4 245.4,41.3 246.3,41.1 247.3,41.0 248.3,40.9 249.3,40.7 250.2,40.6 251.2,40.5 252.2,40.4 253.2,40.2 254.1,40.1 255.1,40.0 256.1,39.8 257.1,39.7 258.1,39.6 259.0,39.5 260.0,39.3\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"48.5\" cy=\"101.0\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"44.5\" y=\"95.0\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">A</text><circle cx=\"213.5\" cy=\"45.9\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"201.5\" y=\"41.9\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">B</text><text x=\"32.8\" y=\"20.6\" font-size=\"11\" fill=\"#0f6e56\">ζ</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜 = ∫ de 0 à ln 5 de f⁻¹(y) dy"
+        },
+        {
+          "id": "b",
+          "text": "𝒜 = ∫ de 1/2 à 25/6 de f⁻¹(y) dy"
+        },
+        {
+          "id": "c",
+          "text": "𝒜 = ∫ de 0 à ln 5 de (f⁻¹(y) − 25/6) dy"
+        },
+        {
+          "id": "d",
+          "text": "𝒜 = ∫ de 0 à ln 5 de (25/6 − f⁻¹(y)) dy"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À la hauteur y ∈ [0 ; ln 5], la partie colorée s'étend horizontalement de la courbe (abscisse f⁻¹(y)) jusqu'à la verticale x = 25/6 : sa largeur est 25/6 − f⁻¹(y). En intégrant en y de 0 à ln 5 : 𝒜 = ∫ de 0 à ln 5 de (25/6 − f⁻¹(y)) dy ✓. L'intégrale de f⁻¹ seule est l'aire de l'autre partie, entre (ζ′) et l'axe ; les bornes en y sont 0 et ln 5, non 1/2 et 25/6 ; et la différence inversée donne l'opposé de l'aire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur de l'intégrale ∫ de 0 à ln 5 de (eˣ − eˣ/(1 + eˣ)) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 + ln 3"
+        },
+        {
+          "id": "b",
+          "text": "4 − ln 3"
+        },
+        {
+          "id": "c",
+          "text": "4 − ln 6"
+        },
+        {
+          "id": "d",
+          "text": "5 − ln 6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de eˣ est eˣ, et une primitive de eˣ/(1 + eˣ) = u′/u est ln(1 + eˣ). Donc l'intégrale vaut [eˣ − ln(1 + eˣ)] de 0 à ln 5 = (5 − ln 6) − (1 − ln 2) = 4 − ln 6 + ln 2 = 4 − ln 3 ✓ (car ln 6 − ln 2 = ln 3). Un signe + devant ln(1 + eˣ) donne 4 + ln 3 ; oublier la valeur en 0 de ln(1 + e⁰) = ln 2 donne 4 − ln 6 ; et oublier toute la borne basse donne 5 − ln 6.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f⁻¹(x) = eˣ − eˣ/(1 + eˣ) et 𝒜 = ∫ de 0 à ln 5 de (25/6 − f⁻¹(x)) dx. Quelle est la valeur de 𝒜 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "𝒜 = 4 − ln 3"
+        },
+        {
+          "id": "b",
+          "text": "𝒜 = (25/6) ln 5 − 4 − ln 3"
+        },
+        {
+          "id": "c",
+          "text": "𝒜 = −4 + (25/6) ln 5 + ln 6"
+        },
+        {
+          "id": "d",
+          "text": "𝒜 = −4 + (25/6) ln 5 + ln 3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "𝒜 = (25/6) × (ln 5 − 0) − ∫ de 0 à ln 5 de f⁻¹(x) dx. Une primitive de f⁻¹ est eˣ − ln(1 + eˣ), donc ∫ f⁻¹ = (5 − ln 6) − (1 − ln 2) = 4 − ln 3. D'où 𝒜 = (25/6) ln 5 − 4 + ln 3 ≈ 3,80 ✓. Donner 4 − ln 3 oublie le terme (25/6) ln 5 ; ln 3 de signe contraire vient d'une primitive eˣ + ln(1 + eˣ) ; et ln 6 oublie la valeur en 0 de ln(1 + eˣ).",
+      "difficulty": 3
+    }
+  ]
+}

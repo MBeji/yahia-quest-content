@@ -1,0 +1,322 @@
+{
+  "title": "🏛️ Bac 2017 · session principale · Exercice 3 ⭐⭐⭐⭐ : étude de x ↦ (1 + x²)e^(−x), branches infinies, inflexions, aire et valeur moyenne",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQuelle est la limite de f(x) quand x tend vers −∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand x → −∞, 1 + x² → +∞ et −x → +∞ donc e^(−x) → +∞ : le produit de deux quantités qui tendent vers +∞ tend vers +∞ ✓. Confondre e^(−x) avec eˣ (qui tend vers 0 en −∞) conduirait à une forme indéterminée ou à 0 ; le signe de x n'intervient pas dans 1 + x², toujours positif.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQue valent la limite de f(x)/x quand x → −∞ et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : (C) admet une branche parabolique de direction l'axe des ordonnées au voisinage de −∞"
+        },
+        {
+          "id": "b",
+          "text": "0 : (C) admet l'axe des abscisses pour asymptote au voisinage de −∞"
+        },
+        {
+          "id": "c",
+          "text": "−1 : (C) admet une asymptote oblique de direction y = −x au voisinage de −∞"
+        },
+        {
+          "id": "d",
+          "text": "−∞ : (C) admet une branche parabolique de direction l'axe des ordonnées au voisinage de −∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x)/x = ((1 + x²)/x) × e^(−x) = (x + 1/x)e^(−x). Quand x → −∞, x + 1/x → −∞ et e^(−x) → +∞, donc f(x)/x → −∞ ✓ (le signe négatif vient de x < 0 au dénominateur). La limite infinie de f(x)/x signifie que (C) admet une branche parabolique de direction (O, j) : pas d'asymptote oblique, qui exigerait une limite finie. Oublier que x est négatif donne le mauvais signe, +∞ ; la valeur 0 prend e^(−x) pour un terme qui tend vers 0 alors qu'il tend vers +∞ en −∞ ; et −1 recopie le coefficient de x dans l'exposant −x.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQuelle est la limite de f en +∞, et comment la justifier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 : f(x) = e^(−x) + x²/eˣ avec e^(−x) → 0 et x²/eˣ → 0 par croissances comparées"
+        },
+        {
+          "id": "b",
+          "text": "+∞ : x² tend vers +∞ plus vite que e^(−x) ne décroît vers 0, donc le produit diverge"
+        },
+        {
+          "id": "c",
+          "text": "1 : 1 + x² est équivalent à x² et e^(−x) tend vers 1 quand x grandit, donc le produit tend vers 1"
+        },
+        {
+          "id": "d",
+          "text": "pas de limite : +∞ × 0 est une forme indéterminée, qu'aucune méthode ne permet de lever"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(x) = e^(−x) + x²e^(−x) = e^(−x) + x²/eˣ. Quand x → +∞, e^(−x) → 0 et x²/eˣ → 0 (croissances comparées : eˣ l'emporte sur toute puissance de x), donc f(x) → 0 ✓ : l'axe des abscisses est asymptote horizontale à (C) au voisinage de +∞. Une forme indéterminée se lève par une transformation, ici la croissance comparée ; et l'idée que le polynôme l'emporte renverse la hiérarchie entre x² et eˣ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQuelle est l'expression de f′(x) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 2xe^(−x) + (1 + x²)e^(−x)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = −2xe^(−x)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = −(x − 1)²e^(−x)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (x − 1)²e^(−x)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f est un produit u × v avec u = 1 + x² (u′ = 2x) et v = e^(−x) (v′ = −e^(−x)). Donc f′(x) = 2xe^(−x) − (1 + x²)e^(−x) = −(x² − 2x + 1)e^(−x) = −(x − 1)²e^(−x) ✓. Oublier le signe de v′ donne 2xe^(−x) + (1 + x²)e^(−x) = (x + 1)²e^(−x) ; dériver chaque facteur et multiplier donne −2xe^(−x) ; et (x − 1)²e^(−x) perd le signe moins global.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQuel est le tableau de variation de f sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement croissante sur ℝ, de 0 en −∞ à +∞ en +∞"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement décroissante sur ]−∞ ; 1] puis strictement croissante sur [1 ; +∞[, avec un minimum en x = 1"
+        },
+        {
+          "id": "c",
+          "text": "f est strictement décroissante sur ℝ, de +∞ en −∞ à 0 en +∞"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur ]−∞ ; 1] puis strictement décroissante sur [1 ; +∞[, avec un maximum en x = 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f′(x) = −(x − 1)²e^(−x) est négative ou nulle, et ne s'annule qu'en x = 1 sans changer de signe. Donc f est strictement décroissante sur ℝ : elle va de +∞ (en −∞) à 0 (en +∞) ✓. Que f′ s'annule en 1 ne crée pas d'extremum : il faudrait un changement de signe. Un tableau croissant lit le signe de f′ à l'envers.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQuelle est l'équation de la tangente à (C) au point J d'abscisse 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 1 − x"
+        },
+        {
+          "id": "b",
+          "text": "y = 1 + x"
+        },
+        {
+          "id": "c",
+          "text": "y = 1"
+        },
+        {
+          "id": "d",
+          "text": "y = −x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f(0) = (1 + 0)e⁰ = 1 et f′(0) = −(0 − 1)²e⁰ = −1. La tangente est y = f′(0)(x − 0) + f(0) = −x + 1 = 1 − x ✓. Un signe oublié dans f′ donne la pente +1 ; une pente nulle ne tient pas compte de f′(0) = −1 ; et oublier f(0) donne y = −x, droite qui ne passe pas par J.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQuelle est l'ordonnée du point A de (C) d'abscisse 1, exprimée à l'aide de la fonction g définie par g(x) = eˣ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(1) = g(−1), le facteur 1 + x² n'intervenant pas en x = 1"
+        },
+        {
+          "id": "b",
+          "text": "f(1) = 2g(1), le double de la valeur de g en 1"
+        },
+        {
+          "id": "c",
+          "text": "f(1) = g(1) + g(−1), la somme de deux valeurs de g"
+        },
+        {
+          "id": "d",
+          "text": "f(1) = 2g(−1), le double de g(−1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(1) = (1 + 1²)e^(−1) = 2e^(−1) = 2g(−1) ✓. Le facteur 1 + x² vaut 2 en x = 1 : on ne peut pas l'oublier. Et e^(−1) = g(−1), non g(1) = e.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nOn a tracé ci-dessous la courbe (Γ) de g(x) = eˣ ; E et F sont les points de (Γ) d'abscisses respectives −1 et ln 10 − 3. Quelle est la construction du point B de (C) d'abscisse 3 ?\n<svg viewBox=\"0 0 230 170\"><title>Courbe Γ de la fonction exponentielle avec les points E et F</title><path d=\"M26.0 141.4 H220.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M151.5 150.0 V12.0\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M37.4 138.4 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"37.4\" y=\"156.4\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−2</text><path d=\"M94.5 138.4 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"94.5\" y=\"156.4\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M111.7 138.4 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"111.7\" y=\"156.4\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">ln10−3</text><path d=\"M208.6 138.4 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"208.6\" y=\"156.4\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M148.5 55.1 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"145.5\" y=\"58.1\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M94.5 150.0 V12.0\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3 3\" fill=\"none\"/><path d=\"M111.7 150.0 V12.0\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3 3\" fill=\"none\"/><polyline points=\"26.0,131.8 26.8,131.7 27.6,131.5 28.4,131.4 29.2,131.3 30.0,131.1 30.8,131.0 31.7,130.8 32.5,130.7 33.3,130.5 34.1,130.4 34.9,130.2 35.7,130.0 36.5,129.9 37.3,129.7 38.1,129.6 38.9,129.4 39.7,129.2 40.5,129.0 41.4,128.9 42.2,128.7 43.0,128.5 43.8,128.3 44.6,128.1 45.4,127.9 46.2,127.8 47.0,127.6 47.8,127.4 48.6,127.2 49.4,127.0 50.2,126.8 51.1,126.5 51.9,126.3 52.7,126.1 53.5,125.9 54.3,125.7 55.1,125.5 55.9,125.2 56.7,125.0 57.5,124.8 58.3,124.5 59.1,124.3 60.0,124.0 60.8,123.8 61.6,123.6 62.4,123.3 63.2,123.0 64.0,122.8 64.8,122.5 65.6,122.2 66.4,122.0 67.2,121.7 68.0,121.4 68.8,121.1 69.7,120.8 70.5,120.5 71.3,120.2 72.1,119.9 72.9,119.6 73.7,119.3 74.5,119.0 75.3,118.7 76.1,118.4 76.9,118.0 77.7,117.7 78.5,117.4 79.3,117.0 80.2,116.7 81.0,116.3 81.8,116.0 82.6,115.6 83.4,115.2 84.2,114.9 85.0,114.5 85.8,114.1 86.6,113.7 87.4,113.3 88.2,112.9 89.1,112.5 89.9,112.1 90.7,111.7 91.5,111.3 92.3,110.8 93.1,110.4 93.9,110.0 94.7,109.5 95.5,109.1 96.3,108.6 97.1,108.1 97.9,107.7 98.8,107.2 99.6,106.7 100.4,106.2 101.2,105.7 102.0,105.2 102.8,104.7 103.6,104.1 104.4,103.6 105.2,103.1 106.0,102.5 106.8,102.0 107.6,101.4 108.5,100.8 109.3,100.3 110.1,99.7 110.9,99.1 111.7,98.5 112.5,97.9 113.3,97.2 114.1,96.6 114.9,96.0 115.7,95.3 116.5,94.7 117.3,94.0 118.1,93.3 119.0,92.6 119.8,91.9 120.6,91.2 121.4,90.5 122.2,89.8 123.0,89.1 123.8,88.3 124.6,87.6 125.4,86.8 126.2,86.0 127.0,85.2 127.9,84.4 128.7,83.6 129.5,82.8 130.3,81.9 131.1,81.1 131.9,80.2 132.7,79.4 133.5,78.5 134.3,77.6 135.1,76.7 135.9,75.8 136.7,74.8 137.6,73.9 138.4,72.9 139.2,71.9 140.0,70.9 140.8,69.9 141.6,68.9 142.4,67.9 143.2,66.8 144.0,65.8 144.8,64.7 145.6,63.6 146.4,62.5 147.3,61.4 148.1,60.2 148.9,59.1 149.7,57.9 150.5,56.7 151.3,55.5 152.1,54.3 152.9,53.0 153.7,51.8 154.5,50.5 155.3,49.2 156.1,47.9 157.0,46.5 157.8,45.2 158.6,43.8 159.4,42.4 160.2,41.0 161.0,39.6 161.8,38.1 162.6,36.6 163.4,35.1 164.2,33.6 165.0,32.1 165.8,30.5 166.7,29.0 167.5,27.4 168.3,25.7 169.1,24.1 169.9,22.4 170.7,20.7 171.5,19.0 172.3,17.2 173.1,15.5 173.9,13.7 174.7,11.8 175.5,10.0 176.3,8.1 177.2,6.2\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"94.5\" cy=\"109.6\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"80.5\" y=\"105.6\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">E</text><circle cx=\"111.7\" cy=\"98.4\" r=\"2.8\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"109.7\" y=\"90.4\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">F</text><text x=\"194.3\" y=\"29.2\" font-size=\"11\" fill=\"#0f6e56\">Γ</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "B a pour abscisse 3 et pour ordonnée celle de E"
+        },
+        {
+          "id": "b",
+          "text": "B a pour abscisse 3 et pour ordonnée celle de F"
+        },
+        {
+          "id": "c",
+          "text": "B est le point de (Γ) d'abscisse 3"
+        },
+        {
+          "id": "d",
+          "text": "B a pour abscisse 3 et pour ordonnée le double de celle de F"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(3) = (1 + 9)e^(−3) = 10e^(−3) = e^(ln 10) × e^(−3) = e^(ln 10 − 3) : c'est l'ordonnée du point F de (Γ) d'abscisse ln 10 − 3 ✓. On reporte donc l'ordonnée de F sur la verticale d'abscisse 3. L'ordonnée de E vaut e^(−1) et correspond au point A (au facteur 2 près) ; le point de (Γ) d'abscisse 3 aurait pour ordonnée e³, bien plus grande ; et doubler l'ordonnée de F donnerait 20e^(−3).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nOn sait que f(3) = 10e^(−3). La droite (BK), avec B le point de (C) d'abscisse 3, est la tangente en B. Quelle est l'abscisse du point K où cette tangente coupe l'axe des abscisses ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "5/2"
+        },
+        {
+          "id": "c",
+          "text": "13/5"
+        },
+        {
+          "id": "d",
+          "text": "11/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(3) = −(3 − 1)²e^(−3) = −4e^(−3) et f(3) = 10e^(−3). La tangente en B est y = −4e^(−3)(x − 3) + 10e^(−3) ; elle coupe l'axe pour y = 0, soit x − 3 = 10/4 = 5/2, donc x = 11/2 ✓. Oublier le + 3 donne 5/2 ; un mauvais signe donne 3 − 5/2 = 1/2 ; et inverser le rapport f(3)/f′(3) en f′(3)/f(3) et perdre le signe donne 3 − 4/10 = 13/5.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nQuelle est l'expression de la dérivée seconde f″(x) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f″(x) = −(x − 1)(x + 1)e^(−x)"
+        },
+        {
+          "id": "b",
+          "text": "f″(x) = (x − 1)(x − 3)e^(−x)"
+        },
+        {
+          "id": "c",
+          "text": "f″(x) = (x − 1)²e^(−x)"
+        },
+        {
+          "id": "d",
+          "text": "f″(x) = −2(x − 1)e^(−x)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On dérive f′(x) = −(x − 1)²e^(−x) : f″(x) = −2(x − 1)e^(−x) + (x − 1)²e^(−x) = (x − 1)(−2 + x − 1)e^(−x) = (x − 1)(x − 3)e^(−x) ✓. Oublier le signe de (e^(−x))′ donne −(x − 1)(x + 1)e^(−x) ; oublier le terme −2(x − 1)e^(−x) donne (x − 1)²e^(−x) ; ne dériver que le carré donne −2(x − 1)e^(−x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nOn a f″(x) = (x − 1)(x − 3)e^(−x). Quel raisonnement établit que les points A et B d'abscisses 1 et 3 sont des points d'inflexion de (C) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f″(1) = f″(3) = 0, ce qui suffit pour que A et B soient des points d'inflexion"
+        },
+        {
+          "id": "b",
+          "text": "f′ s'annule en 3, donc la tangente en B est horizontale et B est un point d'inflexion"
+        },
+        {
+          "id": "c",
+          "text": "f″ s'annule en 1 et en 3 en changeant de signe (positive, négative, puis positive)"
+        },
+        {
+          "id": "d",
+          "text": "f′ change de signe en 1 et en 3, donc A et B sont des points d'inflexion de (C)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme e^(−x) > 0, f″ a le signe de (x − 1)(x − 3) : positive sur ]−∞ ; 1[, négative sur ]1 ; 3[, positive sur ]3 ; +∞[. f″ s'annule en 1 et en 3 en changeant de signe : la convexité change, donc A et B sont des points d'inflexion ✓. Un zéro de f″ sans changement de signe ne suffit pas ; f′(x) = −(x − 1)²e^(−x) ≤ 0 ne change de signe nulle part, et c'est f″, non f′, qui détecte une inflexion ; enfin un point d'inflexion n'impose pas une tangente horizontale (f′(3) = −4e^(−3) ≠ 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nOn admet que F(x) = −(x² + 2x + 3)e^(−x) est une primitive de f sur ℝ. Quelle est l'aire S, en unités d'aire, de la partie du plan limitée par (C), l'axe des abscisses et les droites x = 0 et x = 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "S = 3 − 18e^(−3)"
+        },
+        {
+          "id": "b",
+          "text": "S = 18e^(−3) − 3"
+        },
+        {
+          "id": "c",
+          "text": "S = −3 − 18e^(−3)"
+        },
+        {
+          "id": "d",
+          "text": "S = −18e^(−3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f étant positive sur [0 ; 3], S = ∫ de 0 à 3 de f(x) dx = F(3) − F(0). Or F(3) = −(9 + 6 + 3)e^(−3) = −18e^(−3) et F(0) = −3, donc S = −18e^(−3) + 3 = 3 − 18e^(−3) ≈ 2,10 ✓. Permuter les bornes donne le nombre négatif 18e^(−3) − 3 ; additionner F(3) et F(0) ne calcule pas une intégrale ; oublier F(0) donne F(3) seul, soit −18e^(−3).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (1 + x²)e^(−x), de courbe (C) dans un repère orthogonal (O, i, j).\nOn admet que F(x) = −(x² + 2x + 3)e^(−x) est une primitive de f sur ℝ. Quelle est la valeur moyenne de f sur l'intervalle [0 ; 3] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − 6e^(−3)"
+        },
+        {
+          "id": "b",
+          "text": "3 − 18e^(−3)"
+        },
+        {
+          "id": "c",
+          "text": "1 − 18e^(−3)"
+        },
+        {
+          "id": "d",
+          "text": "9 − 54e^(−3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La valeur moyenne de f sur [0 ; 3] est (1/(3 − 0)) × ∫ de 0 à 3 de f(x) dx = (1/3)(F(3) − F(0)) = (1/3)(3 − 18e^(−3)) = 1 − 6e^(−3) ≈ 0,70 ✓. Oublier de diviser par 3 donne l'aire 3 − 18e^(−3) ; ne diviser que le premier terme donne 1 − 18e^(−3) ; multiplier au lieu de diviser par la longueur 3 de l'intervalle donne 9 − 54e^(−3).",
+      "difficulty": 3
+    }
+  ]
+}

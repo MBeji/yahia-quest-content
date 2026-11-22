@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 2 ⭐⭐⭐ : Points d'affixes, module et équation du second degré",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Dans un repère orthonormé direct, A et B ont pour affixes respectives a = 2e^(iπ/6) et b = 2e^(iπ/4). Quelles sont les formes algébriques de a et de b ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 1 + i√3 et b = √2 + i√2"
+        },
+        {
+          "id": "b",
+          "text": "a = 1 + i√3 et b = (√2 + i√2)/2"
+        },
+        {
+          "id": "c",
+          "text": "a = √3 + i et b = √2 + i√2"
+        },
+        {
+          "id": "d",
+          "text": "a = √3 + i et b = (√2 + i√2)/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour re^(iθ) = r cos θ + i r sin θ : a = 2(cos π/6 + i sin π/6) = 2(√3/2 + i/2) = √3 + i, et b = 2(cos π/4 + i sin π/4) = 2(√2/2 + i√2/2) = √2 + i√2 ✓. Contrôle : |a|² = 3 + 1 = 4 et |b|² = 2 + 2 = 4, soit des modules égaux à 2. Le piège courant : permuter cos π/6 = √3/2 et sin π/6 = 1/2 donne 1 + i√3 ; oublier le module 2 divise a ou b par 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit les points A et B d'affixes a = √3 + i et b = √2 + i√2 dans un repère orthonormé direct. La parallèle à l'axe des ordonnées passant par A et la parallèle à l'axe des abscisses passant par B se coupent en un point C d'affixe c. Que vaut c² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 + 2i√6"
+        },
+        {
+          "id": "b",
+          "text": "1 + 2i√5"
+        },
+        {
+          "id": "c",
+          "text": "1 + 2i√6"
+        },
+        {
+          "id": "d",
+          "text": "1 + i√6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point C a l'abscisse de A et l'ordonnée de B : c = √3 + i√2. Alors c² = 3 + 2√3 × i√2 + (i√2)² = 3 + 2i√6 − 2 = 1 + 2i√6 ✓. Contrôle : la partie réelle de c² est (√3)² − (√2)² = 1. Le piège courant : écrire (i√2)² = +2 (oublier que i² = −1) donne 5 + 2i√6 ; écrire √3 × √2 = √5 dans le double produit donne 1 + 2i√5 ; garder le produit √3 × i√2 sans le facteur 2 donne 1 + i√6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, soit le quadrilatère OCM₁M₂. Quelle égalité vectorielle exprime que OCM₁M₂ est un parallélogramme (sommets dans cet ordre) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OC⃗ = M₂M₁⃗"
+        },
+        {
+          "id": "b",
+          "text": "OC⃗ = M₁M₂⃗"
+        },
+        {
+          "id": "c",
+          "text": "OC⃗ = CM₁⃗"
+        },
+        {
+          "id": "d",
+          "text": "OM₁⃗ = M₂C⃗"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans un parallélogramme OCM₁M₂, les côtés opposés [OC] et [M₂M₁] sont parallèles, de même longueur et de même sens quand on les parcourt dans le sens O → C et M₂ → M₁ : OC⃗ = M₂M₁⃗ ✓. Contrôle sur les diagonales : [OM₁] et [CM₂] ont alors le même milieu. Le piège courant : OC⃗ = M₁M₂⃗ donne deux vecteurs opposés (ce serait le quadrilatère O, C, M₂, M₁ parcouru dans l'autre ordre) ; OC⃗ = CM₁⃗ exprime que C est le milieu de [OM₁] ; OM₁⃗ = M₂C⃗ égale les deux diagonales, ce qui n'a pas lieu dans un parallélogramme (elles se coupent en leur milieu).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, soit l'équation 2z² − 2z − i√6 = 0, dont les solutions sont notées z₁ et z₂. Que vaut le produit z₁z₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−i√6"
+        },
+        {
+          "id": "b",
+          "text": "i√6/2"
+        },
+        {
+          "id": "c",
+          "text": "−i√6/4"
+        },
+        {
+          "id": "d",
+          "text": "−i√6/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour az² + bz + c = 0, le produit des solutions vaut c/a. Ici a = 2, b = −2 et c = −i√6, donc z₁z₂ = −i√6/2 ✓. Contrôle avec la somme : z₁ + z₂ = −b/a = 1. Le piège courant : oublier de diviser par a et donner c = −i√6 ; changer le signe du quotient ; diviser par 2a = 4 (dénominateur de la formule des solutions) au lieu de a = 2 donne −i√6/4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit c = √3 + i√2 et D le point d'affixe c² dans un repère orthonormé direct d'origine O. Que vaut la distance OD ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√5"
+        },
+        {
+          "id": "b",
+          "text": "5"
+        },
+        {
+          "id": "c",
+          "text": "25"
+        },
+        {
+          "id": "d",
+          "text": "1 + 2√6"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a OD = |c²| = |c|². Or |c|² = (√3)² + (√2)² = 3 + 2 = 5, donc OD = 5 ✓. Contrôle sur la forme algébrique : c² = 1 + 2i√6 et |c²| = √(1 + 24) = 5. Le piège courant : confondre |c|² et |c| donne √5 ; donner OD² = 25 au lieu de OD ; additionner partie réelle et partie imaginaire de c² donne 1 + 2√6, qui n'est pas le module.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\n2z² − 2z − i√6 = 0\nQuelles sont ses deux solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = (1 + √3)/2 + i√2/2 ou z = (1 − √3)/2 − i√2/2"
+        },
+        {
+          "id": "b",
+          "text": "z = (1 + √3)/2 − i√2/2 ou z = (1 − √3)/2 + i√2/2"
+        },
+        {
+          "id": "c",
+          "text": "z = (−1 + √3)/2 + i√2/2 ou z = (−1 − √3)/2 − i√2/2"
+        },
+        {
+          "id": "d",
+          "text": "z = 1 + √3 + i√2 ou z = 1 − √3 − i√2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le discriminant est Δ = (−2)² − 4 × 2 × (−i√6) = 4 + 8i√6 = 4(1 + 2i√6). Or (√3 + i√2)² = 1 + 2i√6, donc une racine carrée de Δ est δ = 2√3 + 2i√2, et z = (2 ± δ)/4, soit (1 + √3)/2 + i√2/2 et (1 − √3)/2 − i√2/2 ✓. Contrôle par la somme : (1 + √3)/2 + (1 − √3)/2 = 1 = −b/a. Le piège courant : un signe faux sur le terme constant donne δ = 2√3 − 2i√2 et les parties imaginaires s'échangent ; prendre b au lieu de −b dans la formule change le signe de 1 ; diviser par 2 au lieu de 2a = 4 double les deux solutions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, I est le point d'affixe 1 et C celui d'affixe √3 + i√2. Les points M₁ et M₂ ont pour affixes z₁ = (1 + √3)/2 + i√2/2 et z₂ = (1 − √3)/2 − i√2/2. Que dire de M₁ par rapport à I et C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "M₁ est le milieu du segment [OC]."
+        },
+        {
+          "id": "b",
+          "text": "M₁ est le symétrique de I par rapport à C."
+        },
+        {
+          "id": "c",
+          "text": "M₁ est le milieu du segment [IC]."
+        },
+        {
+          "id": "d",
+          "text": "M₁ est le quatrième sommet du parallélogramme OIM₁C."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les parties réelles et imaginaires donnent z₁ = (1 + √3)/2 + i√2/2 = (z_I + z_C)/2 : c'est la demi-somme des affixes de I et de C, donc M₁ est le milieu de [IC] ✓. Contrôle : (1 + √3)/2 > 0 et √2/2 > 0. Le piège courant : oublier le terme 1 donne z_C/2, milieu de [OC] ; prendre 2z_C − z_I donne le symétrique de I par rapport à C ; z_I + z_C donnerait le quatrième sommet du parallélogramme construit sur OI et OC.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, les points M₁ et M₂ ont pour affixes z₁ = (1 + √3)/2 + i√2/2 et z₂ = (1 − √3)/2 − i√2/2. Que vaut l'affixe du vecteur M₂M₁⃗, c'est-à-dire z₁ − z₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−√3 − i√2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "(√3 + i√2)/2"
+        },
+        {
+          "id": "d",
+          "text": "√3 + i√2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On soustrait partie par partie : z₁ − z₂ = ((1 + √3) − (1 − √3))/2 + i(√2/2 + √2/2) = √3 + i√2 ✓. On retrouve l'affixe de C : M₂M₁⃗ a la même affixe que OC⃗, donc OCM₁M₂ est un parallélogramme. Contrôle : la partie imaginaire vaut √2/2 − (−√2/2) = √2. Le piège courant : calculer z₂ − z₁ donne l'opposé ; la somme z₁ + z₂ = 1 est la somme, non la différence ; diviser par 4 au lieu de 2 la différence (2√3 + 2i√2) des deux racines données par la formule donne la moitié de √3 + i√2.",
+      "difficulty": 3
+    }
+  ]
+}

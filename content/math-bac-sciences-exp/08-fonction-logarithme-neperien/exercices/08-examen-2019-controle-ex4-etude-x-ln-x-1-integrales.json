@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2019 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : fonction auxiliaire, étude de x ↦ x² ln(x + 1) et suite d'intégrales",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Quelle est la limite de (x + 1) ln(x + 1) quand x tend vers −1 par valeurs supérieures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "−1/e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En posant t = x + 1, on cherche la limite de t ln t quand t → 0⁺ : c'est une croissance comparée, t ln t → 0 ✓. Le piège courant est de croire que le logarithme, qui tend vers −∞, l'emporte sur le facteur qui tend vers 0 : c'est l'inverse, t écrase ln t.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ]−1 ; +∞[ par g(x) = (x + 1) ln(x + 1) + x/2.\nQuelle est l'expression de g′(x) pour tout x > −1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g′(x) = ln(x + 1) + 3/2"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = ln(x + 1) + 1/2"
+        },
+        {
+          "id": "c",
+          "text": "g′(x) = 1/(x + 1) + 1/2"
+        },
+        {
+          "id": "d",
+          "text": "g′(x) = ln(x + 1) + 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour le produit (x + 1) ln(x + 1), (uv)′ = u′v + uv′ = ln(x + 1) + (x + 1) × 1/(x + 1) = ln(x + 1) + 1. En ajoutant la dérivée de x/2, qui est 1/2, on obtient ln(x + 1) + 3/2 ✓. Oublier le second terme du produit donne ln(x + 1) + 1/2 ; ne dériver que le logarithme donne 1/(x + 1) + 1/2 ; oublier x/2 donne ln(x + 1) + 1.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x² ln(x + 1), de courbe 𝒞 dans un repère orthonormé.\nQue valent la limite de f(x) quand x → +∞ et la limite de f(x)/x ? Quelle branche infinie en résulte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → 1 : asymptote oblique d'équation y = x en +∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et f(x)/x → 0 : branche parabolique de direction (O, i)"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → 0 : asymptote horizontale d'équation y = 0 en +∞, courbe sous l'axe"
+        },
+        {
+          "id": "d",
+          "text": "f(x) et f(x)/x tendent vers +∞ : branche parabolique de direction (O, j)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x) = x² ln(x + 1) est un produit de deux facteurs qui tendent vers +∞, donc f(x) → +∞. De plus f(x)/x = x ln(x + 1) → +∞ : la courbe monte plus vite que toute droite, c'est une branche parabolique de direction l'axe des ordonnées ✓. Une asymptote oblique exigerait que f(x)/x tende vers un réel.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x² ln(x + 1), de courbe 𝒞 dans un repère orthonormé.\nQuelle est la limite de f(x) quand x tend vers −1 par valeurs supérieures, et que signifie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 : la courbe passe par le point de coordonnées (−1 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "−∞ : la droite d'équation x = −1 est asymptote verticale"
+        },
+        {
+          "id": "c",
+          "text": "+∞ : la droite d'équation x = −1 est asymptote verticale"
+        },
+        {
+          "id": "d",
+          "text": "−1 : la courbe passe par le point de coordonnées (−1 ; −1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand x → −1⁺, x² → 1 et ln(x + 1) → −∞, donc f(x) → 1 × (−∞) = −∞ ✓ : la droite x = −1 est asymptote verticale. Il n'y a pas de forme indéterminée, car x² ne tend pas vers 0 : l'erreur classique est d'y voir « 0 × ∞ ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est la valeur de ∫₀¹ x²/(1 + x) dx ? On rappelle que x²/(1 + x) = x − 1 + 1/(1 + x) pour x ≠ −1.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln 2 + 1/2"
+        },
+        {
+          "id": "b",
+          "text": "ln 2 − 1/2"
+        },
+        {
+          "id": "c",
+          "text": "ln 2"
+        },
+        {
+          "id": "d",
+          "text": "ln 2 − 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une primitive de x − 1 + 1/(1 + x) est x²/2 − x + ln(1 + x). Entre 0 et 1 : (1/2 − 1 + ln 2) − 0 = ln 2 − 1/2 ✓. Oublier la partie polynomiale donne ln 2 ; oublier le terme x²/2 donne ln 2 − 1 ; oublier la primitive −x de −1 donne ln 2 + 1/2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle est une primitive de la fonction x ↦ ln(x + 1) sur ]−1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x ↦ x ln(x + 1) − x"
+        },
+        {
+          "id": "b",
+          "text": "x ↦ 1/(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "x ↦ (x + 1) ln(x + 1) + x"
+        },
+        {
+          "id": "d",
+          "text": "x ↦ (x + 1) ln(x + 1) − x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On vérifie par dérivation : ((x + 1) ln(x + 1) − x)′ = ln(x + 1) + (x + 1)/(x + 1) − 1 = ln(x + 1) ✓. La fonction x ln(x + 1) − x a pour dérivée ln(x + 1) + x/(x + 1) − 1, qui n'est pas ln(x + 1) ; 1/(x + 1) est la dérivée de ln(x + 1), non une primitive ; et le signe + ajouterait 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout n ≥ 1, on pose Iₙ = ∫₀¹ xⁿ ln(x + 1) dx. Que représente I₂, sachant que f(x) = x² ln(x + 1), de courbe 𝒞, est positive sur [0 ; 1] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "l'aire du domaine limité par 𝒞, l'axe des abscisses et les droites x = 0 et x = 1"
+        },
+        {
+          "id": "b",
+          "text": "l'aire du domaine limité par 𝒞, l'axe des abscisses et les droites x = −1 et x = 0"
+        },
+        {
+          "id": "c",
+          "text": "le volume du solide engendré par la rotation de 𝒞 autour de l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "l'aire du domaine limité par 𝒞, l'axe des abscisses et les droites x = 0 et x = 2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "I₂ = ∫₀¹ f(x) dx, avec f ≥ 0 sur [0 ; 1] : c'est l'aire, en unités d'aire, du domaine compris entre la courbe, l'axe des abscisses et les droites x = 0 et x = 1 ✓. Un volume de révolution s'écrirait π∫₀¹ f(x)² dx ; les droites x = 0 et x = 2 donneraient ∫₀² f(x) dx, et les droites x = −1 et x = 0, ∫ de −1 à 0 de f(x) dx.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ]−1 ; +∞[ par g(x) = (x + 1) ln(x + 1) + x/2.\nOn sait que g(0) = 0 et que g est d'abord strictement décroissante, puis strictement croissante, son minimum étant atteint en un réel négatif. Quel est le signe de g(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g(x) > 0 sur ]−1 ; 0[ et g(x) < 0 sur ]0 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "g(x) > 0 sur ]−1 ; +∞[ sauf en 0, où g s'annule"
+        },
+        {
+          "id": "c",
+          "text": "g(x) < 0 sur ]−1 ; 0[ et g(x) > 0 sur ]0 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "g(x) < 0 sur ]−1 ; +∞[ sauf en 0, où g s'annule"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La limite de g en −1⁺ est −1/2 < 0, g décroît jusqu'à son minimum puis croît jusqu'à +∞, et g(0) = 0 : tout le morceau ]−1 ; 0[ reste au-dessous de 0 (g est négative avant son minimum, puis croît jusqu'à 0), et g est positive après 0 puisqu'elle y est croissante ✓. L'erreur classique est de croire que g reste positive parce qu'elle tend vers +∞ : la valeur en 0 sépare les deux signes.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit g la fonction définie sur ]−1 ; +∞[ par g(x) = (x + 1) ln(x + 1) + x/2.\nQuelle est la valeur minimale de g sur ]−1 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1/2"
+        },
+        {
+          "id": "b",
+          "text": "−3/(2e√e)"
+        },
+        {
+          "id": "c",
+          "text": "−1/(e√e) − 1/2"
+        },
+        {
+          "id": "d",
+          "text": "1/(e√e) − 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "g′(x) = ln(x + 1) + 3/2 s'annule pour ln(x + 1) = −3/2. Or ln(e√e) = 1 + 1/2 = 3/2, donc ln(1/(e√e)) = −3/2 et x₀ + 1 = 1/(e√e), soit x₀ = 1/(e√e) − 1 ; g décroît avant, croît après. Le minimum est g(x₀) = (x₀ + 1) × (−3/2) + x₀/2 = −3/(2e√e) + (1/(e√e) − 1)/2 = −1/(e√e) − 1/2 ✓. L'erreur classique est de donner x₀, abscisse du minimum, au lieu de sa valeur ; −1/2 est la limite en −1⁺, qui n'est pas le minimum ; −3/(2e√e) oublie le terme x₀/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x² ln(x + 1), de courbe 𝒞 dans un repère orthonormé.\nQuelle est l'expression factorisée de f′(x), avec g(x) = (x + 1) ln(x + 1) + x/2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = (2x/(x + 1)) × g(x)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = (2x/(x + 1)) × ((x + 1) ln(x + 1) + x)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = (x/(x + 1)) × g(x)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (x/(x + 1)) × ((x + 1) ln(x + 1) + x)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "f′(x) = 2x ln(x + 1) + x²/(x + 1) = (2x/(x + 1)) × [(x + 1) ln(x + 1) + x/2] = (2x/(x + 1)) × g(x) ✓. En factorisant 2x/(x + 1), le second terme x²/(x + 1) devient (2x/(x + 1)) × x/2 : mettre x au lieu de x/2 oublie ce facteur 1/2, perdre le facteur 2 du préfacteur donne (x/(x + 1)) × g(x), et cumuler les deux erreurs donne (x/(x + 1)) × ((x + 1) ln(x + 1) + x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x² ln(x + 1), de courbe 𝒞 dans un repère orthonormé.\nOn sait que f′(x) = (2x/(x + 1)) g(x), où g(x) < 0 sur ]−1 ; 0[ et g(x) > 0 sur ]0 ; +∞[. Quel est le sens de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est strictement décroissante sur ]−1 ; 0], car x < 0 sur cet intervalle, puis croissante"
+        },
+        {
+          "id": "b",
+          "text": "f est strictement décroissante sur ]−1 ; +∞[, car g est négative près de −1"
+        },
+        {
+          "id": "c",
+          "text": "f est croissante sur ]−1 ; 0], puis décroissante sur [0 ; +∞[, car f′(0) = 0"
+        },
+        {
+          "id": "d",
+          "text": "f est strictement croissante sur ]−1 ; +∞[, car f′ ≥ 0 et ne s'annule qu'en 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Sur ]−1 ; 0[, x < 0 et g < 0 : le produit 2x g(x)/(x + 1) est positif. Sur ]0 ; +∞[, x > 0 et g > 0 : il est positif aussi. Ainsi f′ ≥ 0, nulle seulement en 0 : f est strictement croissante sur ]−1 ; +∞[ ✓. L'erreur classique est de lire le signe de x seul en oubliant celui de g : deux signes négatifs se compensent.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−1 ; +∞[ par f(x) = x² ln(x + 1), de courbe 𝒞 dans un repère orthonormé.\nQuelle est la tangente à 𝒞 au point O(0 ; 0) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la droite d'équation y = x, car f′(0) = 1"
+        },
+        {
+          "id": "b",
+          "text": "la droite d'équation y = 0, car f′(0) = 0"
+        },
+        {
+          "id": "c",
+          "text": "la droite d'équation x = 0, tangente verticale"
+        },
+        {
+          "id": "d",
+          "text": "la droite d'équation y = 2x, car f′(0) = 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′(x) = 2x ln(x + 1) + x²/(x + 1), donc f′(0) = 0 + 0 = 0 : la tangente en O est l'axe des abscisses, d'équation y = f′(0)(x − 0) + f(0) = 0 ✓. f est dérivable en 0 : il n'y a pas de tangente verticale, et ni la pente 1 ni la pente 2 ne sont celles de la dérivée.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 1, Iₙ = ∫₀¹ xⁿ ln(x + 1) dx. Calculer I₁ = ∫₀¹ x ln(x + 1) dx à l'aide d'une intégration par parties. On rappelle que x²/(1 + x) = x − 1 + 1/(1 + x).",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln 2 − 1/4"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "(ln 2)/2"
+        },
+        {
+          "id": "d",
+          "text": "1/2 − (ln 2)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On pose u = ln(x + 1) et v′ = x : I₁ = [x²/2 × ln(x + 1)]₀¹ − ∫₀¹ x²/(2(x + 1)) dx = (ln 2)/2 − (1/2)(ln 2 − 1/2) = 1/4 ✓. Ne garder que le crochet donne (ln 2)/2 ; oublier le facteur 1/2 devant l'intégrale donne 1/2 − (ln 2)/2 ; se tromper de signe devant l'intégrale donne ln 2 − 1/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On pose Iₙ = ∫₀¹ xⁿ ln(x + 1) dx, avec I₁ = 1/4, et l'on admet que (n + 2) Iₙ₊₁ = −1 + 2 ln 2 + (n + 1)/(n + 2) − (n + 1) Iₙ pour n ≥ 1. Quelle est la valeur de I₂ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ln 2 − 5/6"
+        },
+        {
+          "id": "b",
+          "text": "(2 ln 2)/3 + 1/18"
+        },
+        {
+          "id": "c",
+          "text": "(ln 2)/2 − 5/24"
+        },
+        {
+          "id": "d",
+          "text": "(2 ln 2)/3 − 5/18"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour n = 1 : 3 I₂ = −1 + 2 ln 2 + 2/3 − 2 × 1/4 = 2 ln 2 − 5/6, donc I₂ = (2 ln 2)/3 − 5/18 ✓. Oublier de diviser par n + 2 = 3 donne 2 ln 2 − 5/6 ; changer le signe du terme −(n + 1) Iₙ donne (2 ln 2)/3 + 1/18 ; diviser par 4, comme si n valait 2, donne (ln 2)/2 − 5/24.",
+      "difficulty": 3
+    }
+  ]
+}

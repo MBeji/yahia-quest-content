@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 1 ⭐⭐⭐⭐ : plan, sphère, distance à l'origine et volume d'un tétraèdre",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 11,
+  "questions": [
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit Q le plan d'équation :\nx + y + √2 z − 2 = 0\nEn quel point le plan Q coupe-t-il l'axe (O, k⃗) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C(0 ; 0 ; √2)"
+        },
+        {
+          "id": "b",
+          "text": "C(0 ; 0 ; 2)"
+        },
+        {
+          "id": "c",
+          "text": "C(0 ; 0 ; 2√2)"
+        },
+        {
+          "id": "d",
+          "text": "C(0 ; 0 ; 1/√2)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un point de l'axe (O, k⃗) a pour coordonnées (0 ; 0 ; z). L'équation de Q donne √2 z − 2 = 0, donc z = 2/√2 = √2 : C(0 ; 0 ; √2) ✓. L'erreur classique est d'oublier le coefficient √2 de z (z = 2), de le multiplier au lieu de diviser (2√2), ou d'inverser la division (1/√2).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit Q le plan d'équation x + y + √2 z − 2 = 0 et S la sphère d'équation x² + y² + z² = 1. Quelle est la position de Q par rapport à S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le plan Q coupe la sphère S selon un cercle"
+        },
+        {
+          "id": "b",
+          "text": "le plan Q et la sphère S n'ont aucun point commun"
+        },
+        {
+          "id": "c",
+          "text": "le plan Q est tangent à la sphère S"
+        },
+        {
+          "id": "d",
+          "text": "le plan Q passe par le centre de la sphère S"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La sphère S a pour centre O et pour rayon 1. La distance de O à Q est |0 + 0 + 0 − 2|/√(1 + 1 + 2) = 2/2 = 1. Cette distance est égale au rayon : Q est tangent à S ✓. L'erreur classique est de remplacer la norme √4 = 2 du vecteur normal par la somme 1 + 1 + √2 des coefficients : on trouverait 2/(2 + √2) < 1 et on conclurait à une section circulaire ; oublier de diviser par la norme donne 2 > 1, donc aucun point commun.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Le plan Q d'équation x + y + √2 z − 2 = 0 est tangent à la sphère S d'équation x² + y² + z² = 1. Quelles sont les coordonnées de leur point de contact ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 ; 1 ; √2)"
+        },
+        {
+          "id": "b",
+          "text": "(1/2 ; 1/2 ; √2/2)"
+        },
+        {
+          "id": "c",
+          "text": "(1/4 ; 1/4 ; √2/4)"
+        },
+        {
+          "id": "d",
+          "text": "(1/2 ; 1/2 ; 1/2)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le point de contact est le projeté orthogonal de O sur Q : H = t(1 ; 1 ; √2). Dans Q : t + t + 2t − 2 = 4t − 2 = 0, donc t = 1/2 et H(1/2 ; 1/2 ; √2/2) ✓. Contrôle : OH² = 1/4 + 1/4 + 1/2 = 1, donc H est bien sur S. L'erreur classique est de prendre t = 1 en oubliant de diviser par ‖n⃗‖² = 4 ; t = 1/4 vient de la division par 4 sans le facteur 2 du second membre ; supprimer le facteur √2 de la troisième coordonnée donne (1/2 ; 1/2 ; 1/2).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit a un réel strictement positif et les points C(0 ; 0 ; √2), M(a ; 0 ; 0) et N(0 ; 4/a ; 0). Que vaut CM⃗ ∧ CN⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(4√2/a ; −a√2 ; 4)"
+        },
+        {
+          "id": "b",
+          "text": "(4√2/a ; a√2 ; 4)"
+        },
+        {
+          "id": "c",
+          "text": "(−4√2/a ; −a√2 ; −4)"
+        },
+        {
+          "id": "d",
+          "text": "(4√2/a ; a√2 ; 4a)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a CM⃗(a ; 0 ; −√2) et CN⃗(0 ; 4/a ; −√2). Alors CM⃗ ∧ CN⃗ = (0 × (−√2) − (−√2)(4/a) ; (−√2) × 0 − a × (−√2) ; a × 4/a − 0 × 0) = (4√2/a ; a√2 ; 4) ✓. L'erreur classique est le signe de la deuxième coordonnée ; inverser les deux vecteurs change tous les signes ; la troisième coordonnée est a × 4/a = 4 et non 4a.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit a un réel strictement positif et les points C(0 ; 0 ; √2), M(a ; 0 ; 0) et N(0 ; 4/a ; 0). Quelle est une équation cartésienne du plan (CMN) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4x + a²y + 2a√2 z − 4 = 0"
+        },
+        {
+          "id": "b",
+          "text": "4x + a²y + a√2 z − 2a = 0"
+        },
+        {
+          "id": "c",
+          "text": "a²x + 4y + 2a√2 z − 4a = 0"
+        },
+        {
+          "id": "d",
+          "text": "4x + a²y + 2a√2 z − 4a = 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le vecteur CM⃗ ∧ CN⃗ = (4√2/a ; a√2 ; 4) est normal au plan ; en le multipliant par a/√2 on obtient n⃗(4 ; a² ; 2a√2). Une équation est 4x + a²y + 2a√2 z + d = 0, et C donne 2a√2 × √2 + d = 4a + d = 0, donc d = −4a ✓. Contrôle : M donne 4a − 4a = 0 et N donne 4a − 4a = 0. L'erreur classique est de calculer la constante avec la cote de C sans le facteur a (−4) ; changer le coefficient de z ou échanger les rôles de x et y fait perdre l'appartenance de M ou N.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit a un réel strictement positif et les points C(0 ; 0 ; √2), M(a ; 0 ; 0) et N(0 ; 4/a ; 0). Soit d la distance du point O au plan (CMN). Quelle est l'expression de d en fonction de a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d = 4a/(a² + 4)"
+        },
+        {
+          "id": "b",
+          "text": "d = 4a/(a² + 4a)"
+        },
+        {
+          "id": "c",
+          "text": "d = 4a/√(a² + 4)"
+        },
+        {
+          "id": "d",
+          "text": "d = 4/(a² + 4)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une équation de (CMN) est 4x + a²y + 2a√2 z − 4a = 0. La norme du vecteur normal est √(16 + a⁴ + 8a²) = √((a² + 4)²) = a² + 4. Donc d = |−4a|/(a² + 4) = 4a/(a² + 4) ✓. L'erreur classique est de ne pas reconnaître le carré parfait 16 + 8a² + a⁴ = (a² + 4)² et de laisser une racine ; oublier le facteur a de la constante donne 4/(a² + 4) ; additionner a² + 4a ne correspond à aucune norme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a un réel strictement positif et d(a) la distance du point O au plan (CMN), donnée par :\nd(a) = 1 − (a − 2)²/(a² + 4)\nQuelle est la valeur maximale de d(a), et pour quelle valeur de a est-elle atteinte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "d = 1, atteinte pour a = 1"
+        },
+        {
+          "id": "b",
+          "text": "d = 4/5, atteinte pour a = 1"
+        },
+        {
+          "id": "c",
+          "text": "d = 1, atteinte pour a = 2"
+        },
+        {
+          "id": "d",
+          "text": "d = 2, atteinte pour a = 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le terme (a − 2)²/(a² + 4) est positif ou nul, nul si et seulement si a = 2. Donc d(a) ≤ 1 pour tout a > 0, avec égalité exactement pour a = 2 ✓. L'erreur classique est de tester une valeur au hasard : a = 1 donne d = 1 − 1/5 = 4/5, qui n'est pas le maximum ; la valeur 2 est celle de a et non de d.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit a un réel strictement positif et les points O(0 ; 0 ; 0), C(0 ; 0 ; √2), M(a ; 0 ; 0) et N(0 ; 4/a ; 0). Que vaut le volume du tétraèdre OCMN ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√2/3, quel que soit a"
+        },
+        {
+          "id": "b",
+          "text": "√2, quel que soit a"
+        },
+        {
+          "id": "c",
+          "text": "2√2a/3, et il dépend donc de a"
+        },
+        {
+          "id": "d",
+          "text": "2√2/3, quel que soit a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La base OMN est un triangle rectangle en O, d'aire (1/2) × a × 4/a = 2, et la hauteur issue de C est OC = √2. Donc V = (1/3) × 2 × √2 = 2√2/3 ✓, et le résultat ne dépend pas de a puisque a × 4/a = 4. L'erreur classique est d'oublier le 1/2 de l'aire du triangle (4√2/3), de prendre 1/2 au lieu de 1/3 (√2), ou de croire que le volume varie avec a.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit a un réel strictement positif et les points C(0 ; 0 ; √2), M(a ; 0 ; 0) et N(0 ; 4/a ; 0). Quelle est la plus petite valeur de l'aire du triangle CMN lorsque a décrit ]0 ; +∞[ ? On admet que la distance de O au plan (CMN) vaut d = 1 − (a − 2)²/(a² + 4) et que le volume de OCMN vaut 2√2/3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√2"
+        },
+        {
+          "id": "b",
+          "text": "2√2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "5√2/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le volume de OCMN vaut (1/3) × aire(CMN) × d = 2√2/3, donc aire(CMN) = 2√2/d. Or d = 1 − (a − 2)²/(a² + 4) ≤ 1, d'où aire(CMN) ≥ 2√2, avec égalité si et seulement si a = 2 ✓. L'erreur classique est de calculer l'aire par le produit vectoriel, (1/2)√(32/a² + 2a² + 16), puis d'oublier le facteur 1/2 (4√2) ou la constante 16 sous la racine (2) ; ou de tester a = 1, qui donne d = 4/5 et une aire 5√2/2, sans être le minimum.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'espace est muni d'un repère orthonormé direct (O, i⃗, j⃗, k⃗). Soit a un réel strictement positif et les points C(0 ; 0 ; √2), M(a ; 0 ; 0) et N(0 ; 4/a ; 0). Pour quels points M et N l'aire du triangle CMN est-elle la plus petite possible ? On admet que la distance de O au plan (CMN) vaut d = 1 − (a − 2)²/(a² + 4) et que le volume de OCMN vaut 2√2/3.",
+      "options": [
+        {
+          "id": "a",
+          "text": "M(2 ; 0 ; 0) et N(0 ; 2 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "M(1 ; 0 ; 0) et N(0 ; 4 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "M(4 ; 0 ; 0) et N(0 ; 1 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "M(√2 ; 0 ; 0) et N(0 ; 2√2 ; 0)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'aire vaut 2√2/d, elle est minimale lorsque d est maximale. Or d = 1 − (a − 2)²/(a² + 4) ≤ 1, avec égalité si et seulement si a = 2 (a > 0). Alors M(2 ; 0 ; 0) et N(0 ; 4/2 ; 0) = (0 ; 2 ; 0) ✓. L'erreur classique est de croire que le minimum est atteint quand M et N sont les plus proches de O (a petit ou grand) ; a = √2 résout 2a² = 4, équation sans rapport avec d = 1.",
+      "difficulty": 3
+    }
+  ]
+}

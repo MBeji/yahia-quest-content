@@ -1,0 +1,226 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 2 ⭐⭐⭐ : Milieu, équation du second degré et points O, A, D",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 14,
+  "questions": [
+    {
+      "prompt": "Soit A le point d'affixe z_A = 2e^(iπ/6) et B le point d'affixe z_B = (1/2)z_A². Écrire z_A et z_B sous forme algébrique : quel couple convient ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z_A = √3 + i et z_B = 2 + i√3"
+        },
+        {
+          "id": "b",
+          "text": "z_A = √3 + i et z_B = 2 + 2i√3"
+        },
+        {
+          "id": "c",
+          "text": "z_A = 1 + i√3 et z_B = −1 + i√3"
+        },
+        {
+          "id": "d",
+          "text": "z_A = √3 + i et z_B = 1 + i√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z_A = 2(cos π/6 + i sin π/6) = 2(√3/2 + i/2) = √3 + i. Alors z_A² = 3 + 2i√3 − 1 = 2 + 2i√3 et z_B = z_A²/2 = 1 + i√3 ✓. Contrôle par l'exponentielle : z_B = (1/2) × 4e^(iπ/3) = 2e^(iπ/3) = 2(1/2 + i√3/2) = 1 + i√3. Le piège courant : écrire i² = +1 donne z_A² = 4 + 2i√3 et z_B = 2 + i√3 ; oublier le facteur 1/2 donne z_A² = 2 + 2i√3 ; permuter cos π/6 et sin π/6 donne z_A = 1 + i√3.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A et B ont pour affixes z_A = √3 + i et z_B = z_A²/2. Quelle est la forme de l'affixe du milieu I du segment [AB] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 + √3)(1 + i)"
+        },
+        {
+          "id": "b",
+          "text": "((1 + √3)/2)(1 + i)"
+        },
+        {
+          "id": "c",
+          "text": "((√3 − 1)/2)(1 − i)"
+        },
+        {
+          "id": "d",
+          "text": "((1 + √3)/4)(1 + i)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z_A² = (√3 + i)² = 2 + 2i√3, donc z_B = 1 + i√3. Le milieu a pour affixe z_I = (z_A + z_B)/2 = ((√3 + 1) + i(1 + √3))/2 = ((1 + √3)/2)(1 + i) ✓. Le piège courant : oublier de diviser par 2 donne la somme (1 + √3)(1 + i) ; soustraire au lieu d'additionner donne ((√3 − 1)/2)(1 − i) ; diviser deux fois par 2 donne le facteur 1/4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, on note z_A et z_C les solutions de l'équation\nz² + 2z − 2(1 + √3)(1 + i) = 0\nQue vaut leur somme z_A + z_C ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "2"
+        },
+        {
+          "id": "c",
+          "text": "−2(1 + √3)(1 + i)"
+        },
+        {
+          "id": "d",
+          "text": "−1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour az² + bz + c = 0, la somme des solutions vaut −b/a. Ici a = 1 et b = 2, donc z_A + z_C = −2 ✓. Contrôle : le produit vaut c/a = −2(1 + √3)(1 + i). Le piège courant : oublier le signe moins de −b/a donne 2 ; confondre somme et produit donne −2(1 + √3)(1 + i) ; diviser par 2a = 2 au lieu de a donne −1.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, K est le point d'affixe −2 ; A et C sont deux points dont les affixes z_A et z_C vérifient z_A + z_C = z_K. Que peut-on conclure pour le quadrilatère OAKC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O est le milieu de [AC] : OAKC est un losange, car ses diagonales se coupent en O."
+        },
+        {
+          "id": "b",
+          "text": "OA = OC : les deux côtés issus de O sont égaux, donc OAKC est un cerf-volant."
+        },
+        {
+          "id": "c",
+          "text": "OA⃗ + OC⃗ = OK⃗ : OAKC est un parallélogramme de diagonale [OK]."
+        },
+        {
+          "id": "d",
+          "text": "OA⃗ + OC⃗ = OK⃗ : OAKC est un rectangle, puisque [OK] est une diagonale."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'égalité des affixes z_A + z_C = z_K signifie OA⃗ + OC⃗ = OK⃗ : K est le quatrième sommet du parallélogramme construit sur OA et OC, de diagonale [OK] ✓. Le piège courant : O serait le milieu de [AC] si z_A + z_C = 0, ce qui n'est pas la relation donnée ; une somme vectorielle ne dit rien sur l'égalité OA = OC ni sur un angle droit (losange et rectangle sont des cas particuliers à justifier à part).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, I est le point d'affixe ((1 + √3)/2)(1 + i). Pour un complexe z non nul et différent de 2, on note M le point d'affixe z et N le point d'affixe z²/2. Quelle équation en z traduit que I est le milieu de [MN] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z² + 2z − (1 + √3)(1 + i) = 0"
+        },
+        {
+          "id": "b",
+          "text": "z² + 2z − 2(1 + √3)(1 + i) = 0"
+        },
+        {
+          "id": "c",
+          "text": "z² − 2z − 2(1 + √3)(1 + i) = 0"
+        },
+        {
+          "id": "d",
+          "text": "z² + 2z − 4(1 + √3)(1 + i) = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "I est le milieu de [MN] si et seulement si z_M + z_N = 2z_I, soit z + z²/2 = (1 + √3)(1 + i). En multipliant par 2 : z² + 2z = 2(1 + √3)(1 + i), c'est-à-dire z² + 2z − 2(1 + √3)(1 + i) = 0 ✓. Le piège courant : oublier le facteur 2 de 2z_I (utiliser z_I au lieu de 2z_I) donne (1 + √3)(1 + i) seul ; changer le signe de z dans la somme donne −2z ; multiplier deux fois par 2 donne le coefficient 4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour z_A = √3 + i, que vaut z_A² + 2z_A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 + 2√3 + i(2 + 2√3)"
+        },
+        {
+          "id": "b",
+          "text": "2 + 2√3 + 2i"
+        },
+        {
+          "id": "c",
+          "text": "4 + 2√3 + 2i"
+        },
+        {
+          "id": "d",
+          "text": "2 + 2√3 + i(2 + 2√3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z_A² = 3 + 2i√3 + i² = 2 + 2i√3 et 2z_A = 2√3 + 2i. Donc z_A² + 2z_A = (2 + 2√3) + i(2√3 + 2) = 2(1 + √3)(1 + i) ✓. C'est exactement le second membre de l'équation z² + 2z = 2(1 + √3)(1 + i), donc z_A en est solution. Le piège courant : écrire i² = +1 donne 4 + 2√3 pour la partie réelle ; oublier le double produit 2i√3 donne z_A² = 2 et la partie imaginaire 2 seule ; cumuler les deux erreurs (i² = +1 et double produit oublié) donne z_A² = 4, puis 4 + 2√3 + 2i.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans ℂ, l'équation z² + 2z − 2(1 + √3)(1 + i) = 0 admet pour solution √3 + i. Quelle est son autre solution ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 − √3 − i"
+        },
+        {
+          "id": "b",
+          "text": "−√3 − i"
+        },
+        {
+          "id": "c",
+          "text": "−2 − √3 − i"
+        },
+        {
+          "id": "d",
+          "text": "−2 + √3 + i"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La somme des deux solutions vaut −b/a = −2, donc l'autre solution est z_C = −2 − (√3 + i) = −2 − √3 − i ✓. Contrôle par le produit : (√3 + i)(−2 − √3 − i) = −2√3 − 3 − i√3 − 2i − i√3 + 1 = −2 − 2√3 − 2i(√3 + 1) = −2(1 + √3)(1 + i) = c/a ✓. Le piège courant : prendre la somme égale à +2 donne 2 − √3 − i ; croire que les deux solutions sont opposées donne −√3 − i ; mal soustraire √3 + i à −2 donne −2 + √3 + i.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le produit de deux nombres complexes z_A et z_C vaut −2(1 + √3)(1 + i). Quelle est son écriture exponentielle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2(√2 + √6)e^(i5π/4)"
+        },
+        {
+          "id": "b",
+          "text": "2(√2 + √6)e^(iπ/4)"
+        },
+        {
+          "id": "c",
+          "text": "4(1 + √3)e^(i5π/4)"
+        },
+        {
+          "id": "d",
+          "text": "2(√2 + √6)e^(i3π/4)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a 1 + i = √2 e^(iπ/4) et −1 = e^(iπ), donc −2(1 + √3)(1 + i) = 2(1 + √3)√2 e^(i(π/4 + π)) = 2(√2 + √6)e^(i5π/4) ✓. Contrôle : 2(1 + √3)√2 = 2√2 + 2√6 = 2(√2 + √6). Le piège courant : oublier le facteur −1 (le tour de π) donne e^(iπ/4) ; prendre 2 pour le module de 1 + i donne 4(1 + √3) ; ne changer que le signe de la partie réelle de 1 + i (−1 + i au lieu de −(1 + i)) donne l'argument 3π/4.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, z_A = 2e^(iπ/6), z_C est un complexe d'argument 13π/12 modulo 2π, et z_D = z_C²/2. Quel est un argument de z_D, et que peut-on dire des points O, A et D ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "13π/24 : O, A et D ne sont pas alignés."
+        },
+        {
+          "id": "b",
+          "text": "13π/12 : O, A et D ne sont pas alignés."
+        },
+        {
+          "id": "c",
+          "text": "7π/6 : O, A et D sont alignés."
+        },
+        {
+          "id": "d",
+          "text": "π/6 : O, A et D sont alignés."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un argument de z_C² est 2 × 13π/12 = 13π/6 ≡ π/6 [2π], et le facteur 1/2 est un réel positif : arg z_D ≡ π/6 [2π]. Comme arg z_A ≡ π/6, les vecteurs OA⃗ et OD⃗ ont même direction et même sens : O, A et D sont alignés ✓. Le piège courant : diviser l'argument par 2 au lieu de le doubler donne 13π/24 ; ne pas toucher à l'argument donne 13π/12 ; ajouter π à tort donne 7π/6, argument d'un point situé de l'autre côté de O, ce que le facteur réel positif 1/2 ne produit pas.",
+      "difficulty": 3
+    }
+  ]
+}

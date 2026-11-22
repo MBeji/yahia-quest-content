@@ -1,0 +1,394 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 4 ⭐⭐⭐⭐ : étude de x ↦ −x + ln(1 + xeˣ), asymptote, inflexions, aire et encadrement",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 12,
+  "questions": [
+    {
+      "prompt": "Soit u la fonction définie sur ℝ par u(x) = 1 + xeˣ. Quel est son sens de variation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u est strictement croissante sur ]−∞ ; −1], strictement décroissante sur [−1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "u est strictement décroissante sur ]−∞ ; −1], strictement croissante sur [−1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "u est strictement croissante sur ℝ"
+        },
+        {
+          "id": "d",
+          "text": "u est strictement décroissante sur ]−∞ ; 0], strictement croissante sur [0 ; +∞["
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "u′(x) = eˣ + xeˣ = (1 + x)eˣ, du signe de 1 + x car eˣ > 0 : négative sur ]−∞ ; −1[, positive sur ]−1 ; +∞[. Donc u décroît jusqu'en −1 puis croît ✓. Un tableau inversé lit le signe de u′ à l'envers ; u n'est pas croissante sur ℝ (u′(−2) = −e⁻² < 0) ; et le changement de variation a lieu en −1 (zéro de 1 + x), non en 0.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit u(x) = 1 + xeˣ. Quelle étude établit que u(x) > 0 pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "u admet un minimum u(−1) = 1 − e < 0, donc u change de signe"
+        },
+        {
+          "id": "b",
+          "text": "u(0) = 1 > 0, donc u est strictement positive sur ℝ"
+        },
+        {
+          "id": "c",
+          "text": "xeˣ > 0 donc 1 + xeˣ > 1 > 0 pour tout x"
+        },
+        {
+          "id": "d",
+          "text": "u admet un minimum u(−1) = 1 − 1/e ≈ 0,63 > 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "u′(x) = (1 + x)eˣ s'annule en −1 : u est minimale en −1, avec u(−1) = 1 + (−1)e⁻¹ = 1 − 1/e ≈ 0,63 > 0. Donc u(x) ≥ 1 − 1/e > 0 sur ℝ ✓. Écrire e⁻¹ = e donne un minimum négatif à tort ; une seule valeur positive n'établit pas la positivité partout ; et xeˣ n'est positif que pour x > 0 (il est négatif pour x < 0).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x. (On sait que 1 + xeˣ > 0 pour tout réel x.)\nQuelle est la limite de f en −∞, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : xeˣ → 0, donc ln(1 + xeˣ) → ln 1 = 0 et −x → +∞"
+        },
+        {
+          "id": "b",
+          "text": "−∞ : xeˣ → −∞, donc ln(1 + xeˣ) → −∞ et domine −x"
+        },
+        {
+          "id": "c",
+          "text": "0 : xeˣ → 0, donc ln(1 + xeˣ) → 0 et −x est négligeable"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : xeˣ → +∞, donc ln(1 + xeˣ) → +∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "En −∞, xeˣ → 0 (croissances comparées : eˣ l'emporte sur x), donc 1 + xeˣ → 1 et ln(1 + xeˣ) → ln 1 = 0. Comme −x → +∞, f(x) = −x + ln(1 + xeˣ) → +∞ ✓. Croire que xeˣ → −∞ revient à oublier que eˣ → 0 ; −x ne tend pas vers 0 (il tend vers +∞) ; et xeˣ ne tend pas vers +∞ en −∞ (il est négatif).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x. (On sait que 1 + xeˣ > 0 pour tout réel x.)\nLaquelle de ces conditions établit que Δ est asymptote à (ζ) au voisinage de −∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x)/x tend vers −1 quand x → −∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) tend vers +∞ quand x → −∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x) − (−x) = ln(1 + xeˣ) tend vers 0 quand x → −∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) − (−x) = ln(1 + xeˣ) tend vers +∞ quand x → −∞"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une droite y = ax + b est asymptote en −∞ si f(x) − (ax + b) → 0. Ici a = −1, b = 0 : il faut f(x) + x = ln(1 + xeˣ) → ln 1 = 0 ✓. La limite de f(x)/x vers −1 donne la direction mais non l'asymptote ; f(x) → +∞ est vrai de toute droite de pente négative, sans rapport avec Δ ; et ln(1 + xeˣ) tend vers 0, non vers +∞.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x. (On sait que 1 + xeˣ > 0 pour tout réel x.)\nQuelle est la position relative de (ζ) et de Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ζ) est au-dessus de Δ sur ]−∞ ; 0[ et au-dessous de Δ sur ]0 ; +∞[ ; elles se coupent en O"
+        },
+        {
+          "id": "b",
+          "text": "(ζ) est au-dessus de Δ sur ℝ, sans point commun"
+        },
+        {
+          "id": "c",
+          "text": "(ζ) est au-dessous de Δ sur ]−∞ ; 0[ et au-dessus de Δ sur ]0 ; +∞[ ; elles se coupent en O"
+        },
+        {
+          "id": "d",
+          "text": "(ζ) est au-dessous de Δ sur ]−∞ ; −1[ et au-dessus sur ]−1 ; +∞[ ; elles se coupent au point d'abscisse −1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x) − (−x) = ln(1 + xeˣ) a le signe de xeˣ (car ln t > 0 ⟺ t > 1), donc celui de x : négatif sur ]−∞ ; 0[, positif sur ]0 ; +∞[, nul en 0 (f(0) = ln 1 = 0, point O). Donc (ζ) est au-dessous de Δ pour x < 0 et au-dessus pour x > 0 ✓. Inverser ce sens place (ζ) du mauvais côté ; une différence qui s'annule en 0 donne un point commun ; et le point de changement est celui de x, non de 1 + x (qui est le zéro de u′).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x.\nQuelle transformation donne f(x) = ln(x + e⁻ˣ) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−x = ln(e⁻ˣ), donc f(x) = ln(e⁻ˣ) + ln(1 + xeˣ) = ln(e⁻ˣ(1 + xeˣ)) = ln(e⁻ˣ + x)"
+        },
+        {
+          "id": "b",
+          "text": "−x = ln(−x), donc f(x) = ln(−x) + ln(1 + xeˣ) = ln(−x(1 + xeˣ)) = ln(−x − x²eˣ)"
+        },
+        {
+          "id": "c",
+          "text": "ln(1 + xeˣ) = ln 1 + ln(xeˣ) = ln x − x, donc f(x) = −x + ln x − x = ln x − 2x pour tout x"
+        },
+        {
+          "id": "d",
+          "text": "−x = e⁻ˣ, donc f(x) = e⁻ˣ + ln(1 + xeˣ), qu'on regroupe en un seul logarithme ln(x + e⁻ˣ)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour tout réel a, a = ln(eᵃ) : ainsi −x = ln(e⁻ˣ). Alors f(x) = ln(e⁻ˣ) + ln(1 + xeˣ) = ln(e⁻ˣ × (1 + xeˣ)) = ln(e⁻ˣ + xe⁻ˣ × eˣ) = ln(e⁻ˣ + x) ✓. ln(−x) n'est pas défini pour x ≥ 0 et ne vaut pas −x ; ln(a + b) n'est pas ln a + ln b ; et −x n'est pas égal à e⁻ˣ (ce sont ln(e⁻ˣ) et e⁻ˣ qu'on confond).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On a f(x) = ln(x + e⁻ˣ) pour tout réel x. Que valent la limite de f(x) en +∞ et celle de f(x)/x, et quelle est l'interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → +∞ : (ζ) admet une branche parabolique de direction l'axe des ordonnées"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et f(x)/x → −1 : (ζ) admet la droite y = −x pour asymptote oblique"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → 0 et f(x)/x → 0 : (ζ) admet l'axe des abscisses pour asymptote horizontale"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et f(x)/x → 0 : (ζ) admet une branche parabolique de direction l'axe des abscisses"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En +∞, x + e⁻ˣ → +∞ donc f(x) = ln(x + e⁻ˣ) → +∞. Ensuite f(x)/x = ln(x + e⁻ˣ)/x = [ln x + ln(1 + e⁻ˣ/x)]/x → 0 car ln x/x → 0 et ln(1 + e⁻ˣ/x) → 0. La limite 0 donne une branche parabolique de direction (O, i) ✓. La limite −1 et l'asymptote y = −x valent en −∞, non en +∞ ; la réponse f(x) → 0 oublie que x + e⁻ˣ diverge.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x. (On sait que 1 + xeˣ > 0 pour tout réel x.)\nQuelle est l'expression de f′(x) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = −xeˣ/(1 + xeˣ)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = (eˣ − 1)/(1 + xeˣ)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = ((1 − x)eˣ − 1)/(1 + xeˣ)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (1 + x)eˣ/(1 + xeˣ)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(−x)′ = −1 et (ln u)′ = u′/u avec u = 1 + xeˣ, u′ = (1 + x)eˣ. Donc f′(x) = −1 + (1 + x)eˣ/(1 + xeˣ) = (−1 − xeˣ + eˣ + xeˣ)/(1 + xeˣ) = (eˣ − 1)/(1 + xeˣ) ✓. Oublier le facteur u′ de (ln u)′ donne −1 + 1/(1 + xeˣ) = −xeˣ/(1 + xeˣ) ; dériver xeˣ en eˣ donne ((1 − x)eˣ − 1)/(1 + xeˣ) ; et oublier le terme −1 donne (1 + x)eˣ/(1 + xeˣ).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x. (On sait que 1 + xeˣ > 0 pour tout réel x.)\nQuel est le tableau de variation de f ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît sur ]−∞ ; 0] de −∞ à f(0) = 0, puis décroît sur [0 ; +∞[ de 0 à −∞"
+        },
+        {
+          "id": "b",
+          "text": "f décroît sur ]−∞ ; −1] puis croît sur [−1 ; +∞[, avec un minimum f(−1) = 1 + ln(1 − 1/e)"
+        },
+        {
+          "id": "c",
+          "text": "f décroît sur ]−∞ ; 0] de +∞ à f(0) = 1, puis croît sur [0 ; +∞[ de 1 à +∞"
+        },
+        {
+          "id": "d",
+          "text": "f décroît sur ]−∞ ; 0] de +∞ à f(0) = 0, puis croît sur [0 ; +∞[ de 0 à +∞"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f′(x) = (eˣ − 1)/(1 + xeˣ) a le signe de eˣ − 1 (dénominateur > 0) : négative sur ]−∞ ; 0[, positive sur ]0 ; +∞[. Donc f décroît de +∞ (limite en −∞) à f(0) = −0 + ln(1 + 0) = 0, puis croît vers +∞ ✓. Le minimum est en 0, non en −1 : −1 est celui de u (u′ = (1 + x)eˣ) et non de f. Et f(0) = ln 1 = 0, non 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit h(x) = x + 2 − eˣ. h croît de −∞ (en −∞) jusqu'à h(0) = 1, puis décroît jusqu'à −∞ (en +∞). Quel raisonnement établit que h(x) = 0 admet exactement deux solutions α < β ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "h continue et h(−2) = −e⁻² < 0 < h(0) = 1 : une solution α dans ]−2 ; 0[ ; par symétrie du problème, β = −α dans ]0 ; 2["
+        },
+        {
+          "id": "b",
+          "text": "h continue, strictement croissante de −∞ à 1 sur ]−∞ ; 0], puis décroissante de 1 à −∞ sur [0 ; +∞[ : une solution de chaque côté"
+        },
+        {
+          "id": "c",
+          "text": "h′(x) = 1 − eˣ s'annule en 0 : une dérivée nulle donne deux racines, une de chaque côté de 0"
+        },
+        {
+          "id": "d",
+          "text": "h(0) = 1 > 0 et h tend vers −∞ aux deux bornes : h s'annule donc deux fois, d'après le théorème de la bijection appliqué sur ℝ tout entier"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Sur ]−∞ ; 0], h est continue, strictement croissante et passe de −∞ à 1 > 0 : elle prend la valeur 0 exactement une fois (théorème de la bijection), en α < 0. Sur [0 ; +∞[, h est continue, strictement décroissante de 1 à −∞ : elle s'annule exactement une fois, en β > 0 ✓. Un seul changement de signe ne donne pas la seconde racine : h(−2) < 0 < h(0) fournit α, mais la symétrie β = −α est fausse (h(−x) ≠ h(x)) ; une dérivée nulle donne un extremum, pas deux racines ; et le théorème de la bijection exige une fonction strictement monotone, ce que h n'est pas sur ℝ tout entier.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x. (On sait que 1 + xeˣ > 0 pour tout réel x.)\nQuelle est la valeur de f″(0), dérivée seconde de f en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f″(0) = 0"
+        },
+        {
+          "id": "b",
+          "text": "f″(0) = −1"
+        },
+        {
+          "id": "c",
+          "text": "f″(0) = 1"
+        },
+        {
+          "id": "d",
+          "text": "f″(0) = 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec w(x) = 1 + xeˣ, f′ = −1 + w′/w, donc f″ = (w″w − w′²)/w². Or w′ = (1 + x)eˣ et w″ = (2 + x)eˣ : en 0, w = 1, w′ = 1, w″ = 2, donc f″(0) = (2 × 1 − 1²)/1² = 1 ✓. f″(0) n'est pas nulle même si f′(0) = 0 : un minimum en 0 est compatible avec f″(0) > 0. −1 viendrait d'un numérateur w′² − w″w à l'envers, et 2 d'un oubli du terme w′² (dérivée de w′/w prise égale à w″/w).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = −x + ln(1 + xeˣ), de courbe (ζ) dans un repère orthonormé (O, i, j) ; on note Δ la droite d'équation y = −x.\nOn admet que f″(x) = h(x)eˣ/(1 + xeˣ)², avec h(x) = x + 2 − eˣ, qui s'annule en α < 0 et β > 0, avec h(x) > 0 sur ]α ; β[. Quel raisonnement établit que A(α ; f(α)) et B(β ; f(β)) sont des points d'inflexion de (ζ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f″ a le signe de h : elle s'annule en α et en β en changeant de signe, donc la concavité change en chacun de ces deux points"
+        },
+        {
+          "id": "b",
+          "text": "f′(α) = f′(β) = 0 : les tangentes en A et en B sont horizontales, donc A et B sont des points d'inflexion de la courbe (ζ) étudiée"
+        },
+        {
+          "id": "c",
+          "text": "f″ s'annule en α et en β : un zéro de la dérivée seconde suffit, sans étudier son signe"
+        },
+        {
+          "id": "d",
+          "text": "h(x) > 0 sur ]α ; β[ donc f″ > 0 sur ]α ; β[ : (ζ) y est convexe, ce qui suffit pour des points d'inflexion"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "eˣ > 0 et (1 + xeˣ)² > 0, donc f″ a le signe de h : négative sur ]−∞ ; α[, positive sur ]α ; β[, négative sur ]β ; +∞[. f″ s'annule en α et β en changeant de signe : la concavité change, donc A et B sont des points d'inflexion ✓. Un zéro de f″ sans changement de signe ne suffit pas (comme x ↦ x⁴ en 0) ; la convexité sur ]α ; β[ seule ne dit rien du signe de f″ de l'autre côté de α et de β ; et une tangente horizontale n'est pas la condition (f′(α) = (eˣ − 1)/(1 + xeˣ) ≠ 0 puisque α ≠ 0).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On a f(x) = ln(x + e⁻ˣ). Quelle justification établit que ln x ≤ f(x) ≤ ln x + ln(1 + e⁻¹) pour tout x ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x + e⁻ˣ ≥ x car e⁻ˣ > 0 ; x + e⁻ˣ ≤ x(1 + e⁻¹) car e⁻ˣ/x ≤ e⁻¹ ; ln est croissante"
+        },
+        {
+          "id": "b",
+          "text": "x + e⁻ˣ ≤ x + e⁻¹ ≤ x(1 + e⁻¹) car x ≥ 1 ; et ln x ≤ f(x) car ln est positive sur [1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "x + e⁻ˣ ≥ x car e⁻ˣ > 0 ; x + e⁻ˣ ≤ x + e⁻¹ car x ≥ 1 ; ln(x + e⁻¹) = ln x + ln(1 + e⁻¹)"
+        },
+        {
+          "id": "d",
+          "text": "x + e⁻ˣ ≥ x car e⁻ˣ > 0 ; x + e⁻ˣ ≤ x + 1 = x(1 + 1/x) ≤ x(1 + e⁻¹) car 1/x ≤ e⁻¹"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x ≥ 1 : e⁻ˣ > 0, donc x + e⁻ˣ ≥ x et f(x) ≥ ln x (ln est croissante). De plus e⁻ˣ ≤ e⁻¹ et 1/x ≤ 1, donc e⁻ˣ/x ≤ e⁻¹ et x + e⁻ˣ = x(1 + e⁻ˣ/x) ≤ x(1 + e⁻¹), d'où f(x) ≤ ln x + ln(1 + e⁻¹) ✓. Dire que ln x ≤ f(x) parce que ln est positive ne justifie rien : il faut comparer les arguments x et x + e⁻ˣ ; ln(x + e⁻¹) ≠ ln x + ln(1 + e⁻¹) (ln(a + b) ≠ ln a + ln b) ; et 1/x ≤ e⁻¹ est faux pour 1 ≤ x < e (par exemple x = 1 : 1 > e⁻¹).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur de l'intégrale ∫ de 1 à λ de (ln x + ln(1 + e⁻¹)) dx, pour λ > 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "λ ln λ − λ + (λ − 1)ln(1 + e⁻¹)"
+        },
+        {
+          "id": "b",
+          "text": "λ ln λ + λ − 1 + (λ − 1)ln(1 + e⁻¹)"
+        },
+        {
+          "id": "c",
+          "text": "λ ln λ − λ + 1 + (λ − 1)ln(1 + e⁻¹)"
+        },
+        {
+          "id": "d",
+          "text": "λ ln λ − λ + 1 + ln(1 + e⁻¹)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une primitive de ln x est x ln x − x (car (x ln x − x)′ = ln x + 1 − 1 = ln x) et ln(1 + e⁻¹) est une constante, de primitive x ln(1 + e⁻¹). Donc l'intégrale vaut [x ln x − x + x ln(1 + e⁻¹)] de 1 à λ = (λ ln λ − λ) − (−1) + (λ − 1)ln(1 + e⁻¹) = λ ln λ − λ + 1 + (λ − 1)ln(1 + e⁻¹) ✓. Oublier la valeur −1 de la primitive en 1 retire le + 1 ; un signe + devant x dans la primitive de ln x donne λ ln λ + λ − 1 ; et intégrer la constante sur [1 ; λ] donne (λ − 1) ln(1 + e⁻¹), non ln(1 + e⁻¹).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "𝒜_λ est l'aire de la partie du plan limitée par (ζ), l'axe des abscisses et les droites x = 1 et x = λ, avec λ > 1 ; f est positive sur [1 ; +∞[ et ln x ≤ f(x) ≤ ln x + ln(1 + e⁻¹). Quelle est la limite de 𝒜_λ quand λ → +∞, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "une limite finie : 𝒜_λ ≤ (λ − 1)ln(1 + e⁻¹) est majorée, donc elle converge"
+        },
+        {
+          "id": "b",
+          "text": "+∞ : 𝒜_λ ≥ ∫ de 1 à λ de ln x dx = λ ln λ − λ + 1, qui tend vers +∞"
+        },
+        {
+          "id": "c",
+          "text": "0 : l'aire entre (ζ) et l'axe devient négligeable quand λ grandit"
+        },
+        {
+          "id": "d",
+          "text": "+∞ : 𝒜_λ ≥ ∫ de 1 à λ de ln(1 + e⁻¹) dx = ln(1 + e⁻¹), qui tend vers +∞"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En intégrant ln x ≤ f(x) sur [1 ; λ] : 𝒜_λ = ∫ f ≥ ∫ ln x dx = λ ln λ − λ + 1 → +∞ (car λ ln λ l'emporte sur λ), donc 𝒜_λ → +∞ ✓. Un majorant qui dépend de λ ne prouve pas la convergence (ici (λ − 1)ln(1 + e⁻¹) → +∞) ; une aire de fonction positive croît avec λ, elle ne devient pas négligeable ; et ln(1 + e⁻¹) est une constante qui ne tend pas vers +∞ : l'intégrale de cette constante sur [1 ; λ] vaut (λ − 1)ln(1 + e⁻¹), non ln(1 + e⁻¹).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "𝒜_λ est l'aire de la partie du plan limitée par (ζ), l'axe des abscisses et les droites x = 1 et x = λ, avec λ > 1, et ln x ≤ f(x) ≤ ln x + ln(1 + e⁻¹) sur [1 ; +∞[. Quelle est la limite de 𝒜_λ/(λ ln λ) quand λ → +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "ln(1 + e⁻¹)"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "En intégrant l'encadrement : λ ln λ − λ + 1 ≤ 𝒜_λ ≤ λ ln λ − λ + 1 + (λ − 1)ln(1 + e⁻¹). On divise par λ ln λ > 0 : le minorant devient 1 − 1/ln λ + 1/(λ ln λ) → 1, et le majorant devient ce même terme plus (λ − 1)ln(1 + e⁻¹)/(λ ln λ) → 0 (car 1/ln λ → 0). Par le théorème des gendarmes, 𝒜_λ/(λ ln λ) → 1 ✓. La limite 0 ou +∞ ignore que 𝒜_λ et λ ln λ sont du même ordre ; ln(1 + e⁻¹) est la largeur de la bande, négligeable devant λ ln λ.",
+      "difficulty": 3
+    }
+  ]
+}

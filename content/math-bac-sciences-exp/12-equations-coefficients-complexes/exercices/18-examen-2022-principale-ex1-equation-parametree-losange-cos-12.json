@@ -1,0 +1,274 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 1 ⭐⭐⭐⭐ : Équation paramétrée, losange et valeur exacte d'un cosinus",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 18,
+  "questions": [
+    {
+      "prompt": "Soit θ un réel de [−π/2 ; π/2]. Dans ℂ, on considère l'équation\n(E) : z² − (i + 2e^(iθ))z + e^(2iθ) + i e^(iθ) = 0\nQue vaut son discriminant Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δ = −1"
+        },
+        {
+          "id": "b",
+          "text": "Δ = 1"
+        },
+        {
+          "id": "c",
+          "text": "Δ = −1 + 3ie^(iθ) + 3e^(2iθ)"
+        },
+        {
+          "id": "d",
+          "text": "Δ = −1 + 8ie^(iθ) + 8e^(2iθ)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a b² = (i + 2e^(iθ))² = i² + 4ie^(iθ) + 4e^(2iθ) = −1 + 4ie^(iθ) + 4e^(2iθ) et 4ac = 4e^(2iθ) + 4ie^(iθ). Donc Δ = b² − 4ac = −1 ✓ : tous les termes en θ disparaissent. Le piège courant : écrire i² = +1 donne Δ = 1 ; oublier le facteur 4 de 4ac laisse des termes en θ (3ie^(iθ) + 3e^(2iθ)) ; ajouter 4ac au lieu de le retrancher en donne 8 fois plus.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit θ un réel de [−π/2 ; π/2]. Dans le plan complexe, A, B et C ont pour affixes z_A = i, z_B = i + e^(iθ) et z_C = e^(iθ). Que vaut le quotient (z_A − z_B)/(z_B − z_C) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−i e^(iθ)"
+        },
+        {
+          "id": "b",
+          "text": "−i e^(−iθ)"
+        },
+        {
+          "id": "c",
+          "text": "i e^(iθ)"
+        },
+        {
+          "id": "d",
+          "text": "e^(iθ)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a z_A − z_B = −e^(iθ) et z_B − z_C = i. Le quotient vaut −e^(iθ)/i = −e^(iθ) × (−i) = ie^(iθ) ✓, car 1/i = −i. Le piège courant : écrire 1/i = i donne −ie^(iθ) ; oublier le signe moins de z_A − z_B donne e^(iθ)/i = −ie^(iθ) ; remplacer e^(iθ) par son inverse donne −ie^(−iθ) ; oublier de diviser par i donne e^(iθ) au signe près.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout réel θ, que vaut 1 + e^(2iθ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2cos θ e^(2iθ)"
+        },
+        {
+          "id": "b",
+          "text": "2cos θ e^(iθ)"
+        },
+        {
+          "id": "c",
+          "text": "2i sin θ e^(iθ)"
+        },
+        {
+          "id": "d",
+          "text": "2e^(iθ)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On met e^(iθ) en facteur : 1 + e^(2iθ) = e^(iθ)(e^(−iθ) + e^(iθ)) = e^(iθ) × 2cos θ ✓, car e^(iθ) + e^(−iθ) = 2cos θ (formule d'Euler). Contrôle pour θ = 0 : 1 + 1 = 2 = 2cos 0 × 1. Le piège courant : mettre e^(2iθ) en facteur à la place de e^(iθ) ; confondre la somme e^(iθ) + e^(−iθ) = 2cos θ avec la différence e^(iθ) − e^(−iθ) = 2i sin θ ; oublier le facteur cos θ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelles sont les écritures exponentielles de 1 + i√3 et de 1 − i ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 + i√3 = 2e^(iπ/3) et 1 − i = √2 e^(iπ/4)"
+        },
+        {
+          "id": "b",
+          "text": "1 + i√3 = 2e^(iπ/6) et 1 − i = √2 e^(−iπ/4)"
+        },
+        {
+          "id": "c",
+          "text": "1 + i√3 = 2e^(iπ/3) et 1 − i = √2 e^(−iπ/4)"
+        },
+        {
+          "id": "d",
+          "text": "1 + i√3 = 2e^(iπ/6) et 1 − i = √2 e^(iπ/4)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a |1 + i√3| = √(1 + 3) = 2 et cos θ = 1/2, sin θ = √3/2, donc θ = π/3. On a |1 − i| = √2, cos θ = √2/2 et sin θ = −√2/2, donc θ = −π/4 ✓. Le piège courant : oublier le signe de la partie imaginaire de 1 − i donne π/4 ; permuter cosinus et sinus donne π/6 pour 1 + i√3 ; les mauvaises réponses combinent deux de ces erreurs.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit θ un réel de [−π/2 ; π/2]. Dans ℂ, on considère l'équation\n(E) : z² − (i + 2e^(iθ))z + e^(2iθ) + i e^(iθ) = 0\nQuelles sont ses deux solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = e^(iθ) + (i ± 1)/2"
+        },
+        {
+          "id": "b",
+          "text": "z = −e^(iθ) ou z = −i − e^(iθ)"
+        },
+        {
+          "id": "c",
+          "text": "z = e^(iθ) ou z = i + e^(iθ)"
+        },
+        {
+          "id": "d",
+          "text": "z = 2e^(iθ) ou z = 2i + 2e^(iθ)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le discriminant vaut Δ = −1 = i², donc δ = i est une racine carrée de Δ. Les solutions sont z = (i + 2e^(iθ) ± i)/2 : z = (2i + 2e^(iθ))/2 = i + e^(iθ) et z = 2e^(iθ)/2 = e^(iθ) ✓. Contrôle : la somme vaut i + 2e^(iθ) = −b/a et le produit e^(iθ)(i + e^(iθ)) = ie^(iθ) + e^(2iθ) = c/a ✓. Le piège courant : prendre pour Δ = 1, donc δ = 1, donne e^(iθ) + (i ± 1)/2 ; prendre b au lieu de −b change tous les signes ; oublier de diviser par 2a = 2 double les solutions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ un réel de [−π/2 ; π/2]. Dans le plan complexe, A, B et C ont pour affixes i, i + e^(iθ) et e^(iθ). Pour quelles valeurs de θ les points A, B et C sont-ils alignés ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ = −π/2 ou θ = π/2"
+        },
+        {
+          "id": "b",
+          "text": "θ = 0"
+        },
+        {
+          "id": "c",
+          "text": "θ = −π/4 ou θ = π/4"
+        },
+        {
+          "id": "d",
+          "text": "Pour toute valeur de θ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les points A, B et C sont alignés si et seulement si le quotient (z_A − z_B)/(z_B − z_C) = ie^(iθ) est un réel, c'est-à-dire si e^(iθ) est un imaginaire pur : cos θ = 0. Dans [−π/2 ; π/2], cela donne θ = −π/2 ou θ = π/2 ✓. Contrôle pour θ = π/2 : A = i, B = 2i et C = i sont sur l'axe des ordonnées. Le piège courant : confondre « e^(iθ) imaginaire pur » avec « e^(iθ) réel » donne θ = 0 ; chercher un angle intermédiaire donne ±π/4 ; croire l'alignement vrai partout oublie que le quotient dépend de θ.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ ∈ ]−π/2 ; π/2[. Dans le plan complexe, O est l'origine et A, B, C sont les points d'affixes i, i + e^(iθ) et e^(iθ). Quelle propriété prouve que OABC est un losange ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OA⃗ = CB⃗ (parallélogramme) et OB = AC : les diagonales ont la même longueur."
+        },
+        {
+          "id": "b",
+          "text": "OA⃗ = CB⃗ (parallélogramme) et (OA) ⊥ (OC) : les côtés issus de O sont perpendiculaires."
+        },
+        {
+          "id": "c",
+          "text": "OA⃗ = CB⃗ (parallélogramme) et AB = OC : les côtés opposés ont la même longueur."
+        },
+        {
+          "id": "d",
+          "text": "OA⃗ = CB⃗ (parallélogramme) et OA = OC = 1."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z_B − z_C = i = z_A, donc OA⃗ = CB⃗ et OABC est un parallélogramme. Comme OA = |i| = 1 et OC = |e^(iθ)| = 1, deux côtés consécutifs sont égaux : c'est un losange ✓. Le piège courant : un parallélogramme à diagonales de même longueur ou à côtés issus de O perpendiculaires est un rectangle, non un losange ; l'égalité AB = OC des côtés opposés est vraie dans tout parallélogramme et ne le distingue pas d'un parallélogramme quelconque.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ ∈ ]−π/2 ; π/2[. Dans le plan complexe, O est l'origine et A, B, C sont les points d'affixes i, i + e^(iθ) et e^(iθ), sommets du losange OABC. Quelle est son aire 𝒜(θ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cos θ"
+        },
+        {
+          "id": "b",
+          "text": "sin θ"
+        },
+        {
+          "id": "c",
+          "text": "2cos θ"
+        },
+        {
+          "id": "d",
+          "text": "(cos θ)/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les diagonales sont [OB] et [AC] : OB = |i + e^(iθ)| et AC = |e^(iθ) − i|. Leur produit est |e^(iθ) − i||e^(iθ) + i| = |e^(2iθ) + 1| = |2cos θ e^(iθ)| = 2cos θ (cos θ > 0 sur ]−π/2 ; π/2[). L'aire d'un losange est la moitié du produit des diagonales : 𝒜(θ) = cos θ ✓. Contrôle par le côté et l'angle : OA = OC = 1 et l'angle (OA⃗, OC⃗) vaut π/2 − θ, d'où sin(π/2 − θ) = cos θ. Le piège courant : prendre θ pour l'angle au centre donne sin θ ; oublier le facteur 1/2 du produit des diagonales donne 2cos θ ; le diviser une fois de trop donne (cos θ)/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est l'écriture exponentielle du nombre (√2/4)(1 + i√3)(1 − i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "e^(i7π/12)"
+        },
+        {
+          "id": "b",
+          "text": "√2 e^(iπ/12)"
+        },
+        {
+          "id": "c",
+          "text": "e^(iπ/6)"
+        },
+        {
+          "id": "d",
+          "text": "e^(iπ/12)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a 1 + i√3 = 2e^(iπ/3) et 1 − i = √2e^(−iπ/4), donc (√2/4)(1 + i√3)(1 − i) = (√2/4) × 2 × √2 × e^(i(π/3 − π/4)) = (4/4)e^(iπ/12) = e^(iπ/12) ✓. Le piège courant : additionner π/3 et π/4 au lieu de π/3 − π/4 donne 7π/12 ; prendre |1 − i| = 2 donne le module √2 ; doubler l'argument π/12 (comme pour un carré) donne π/6.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur exacte de cos(π/12) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(√2 − √6)/4"
+        },
+        {
+          "id": "b",
+          "text": "(√2 + √6)/4"
+        },
+        {
+          "id": "c",
+          "text": "(√6 − √2)/4"
+        },
+        {
+          "id": "d",
+          "text": "(1 − √2)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On écrit π/12 = π/3 − π/4. Alors cos(π/12) = cos(π/3)cos(π/4) + sin(π/3)sin(π/4) = (1/2)(√2/2) + (√3/2)(√2/2) = (√2 + √6)/4 ✓. Contrôle : (√2 + √6)/4 ≈ 0,966 = cos 15°. Le piège courant : le signe de cos(a − b) = cos a cos b + sin a sin b donne le signe plus ; le choisir moins donne (√2 − √6)/4 (négatif) ; (√6 − √2)/4 ≈ 0,259 est sin(π/12) ; cos(π/3) − cos(π/4) confond le cosinus d'une différence avec la différence des cosinus.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit θ ∈ ]−π/2 ; π/2[. Dans le plan complexe, OABC est le losange de sommets O, A(i), B(i + e^(iθ)) et C(e^(iθ)). Pour quelles valeurs de θ son aire vaut-elle (√2 + √6)/4 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "θ = π/12 seulement"
+        },
+        {
+          "id": "b",
+          "text": "θ = π/12 ou θ = −π/12"
+        },
+        {
+          "id": "c",
+          "text": "θ = 5π/12 seulement"
+        },
+        {
+          "id": "d",
+          "text": "θ = π/12 ou θ = 23π/12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'aire du losange OABC est cos θ (produit des côtés 1 et 1 par le sinus de l'angle π/2 − θ en O), et cos(π/12) = (√2 + √6)/4. L'équation cos θ = cos(π/12) a pour solutions θ = π/12 et θ = −π/12 (le cosinus est pair), qui sont toutes deux dans ]−π/2 ; π/2[ ✓. Contrôle : pour θ = −π/12, l'angle en O vaut π/2 + π/12 et son sinus est encore cos(π/12). Le piège courant : oublier que le cosinus est pair ne garde que π/12 ; confondre aire cos θ et aire sin θ donne 5π/12, car sin(5π/12) = cos(π/12) ; 23π/12 est égal à −π/12 modulo 2π mais n'appartient pas à l'intervalle imposé.",
+      "difficulty": 3
+    }
+  ]
+}

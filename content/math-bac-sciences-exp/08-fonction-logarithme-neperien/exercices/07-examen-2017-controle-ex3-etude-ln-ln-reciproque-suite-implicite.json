@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2017 · session de contrôle · Exercice 3 ⭐⭐⭐⭐ : quotient de logarithmes, bijection réciproque et suite implicite",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (ln x)/(ln(x + 1)), de courbe 𝒞 dans un repère orthonormé.\nQuelle est la limite de f en 0⁺, et que signifie-t-elle pour 𝒞 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : la droite d'équation x = 0 est asymptote verticale"
+        },
+        {
+          "id": "b",
+          "text": "1 : la courbe 𝒞 se rapproche du point de coordonnées (0 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "−∞ : la droite d'équation x = 0 est asymptote verticale"
+        },
+        {
+          "id": "d",
+          "text": "0 : la courbe 𝒞 passe par l'origine"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand x → 0⁺, ln x → −∞ et ln(x + 1) → ln 1 = 0, par valeurs positives car x + 1 > 1. Le quotient d'un nombre qui tend vers −∞ par un nombre positif qui tend vers 0 tend vers −∞ : l'axe des ordonnées est asymptote verticale ✓. Le piège courant est d'assimiler ln(x + 1) à ln x, ce qui donnerait 1, ou d'oublier le signe du dénominateur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces égalités est vraie pour tout réel x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(x + 1) = ln x + ln(1 + 1/x)"
+        },
+        {
+          "id": "b",
+          "text": "ln(x + 1) = ln x + 1/x"
+        },
+        {
+          "id": "c",
+          "text": "ln(x + 1) = ln x × ln(1 + 1/x)"
+        },
+        {
+          "id": "d",
+          "text": "ln(x + 1) = ln x + ln 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On écrit x + 1 = x(1 + 1/x), puis ln(x + 1) = ln x + ln(1 + 1/x) : le logarithme d'un produit est la somme des logarithmes ✓. Contrôle pour x = 1 : ln 2 = 0 + ln 2 ✓. Les autres égalités échouent dès x = 1 : elles donnent 1, 0 et 0 au lieu de ln 2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (ln x)/(ln(x + 1)), de courbe 𝒞 dans un repère orthonormé.\nQuelle est la limite de f en +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞"
+        },
+        {
+          "id": "b",
+          "text": "0"
+        },
+        {
+          "id": "c",
+          "text": "n'existe pas (forme indéterminée +∞/+∞)"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 0, ln(x + 1) = ln x + ln(1 + 1/x), donc f(x) = 1/(1 + ln(1 + 1/x)/ln x). Quand x → +∞, ln(1 + 1/x) → 0 et ln x → +∞, donc le quotient tend vers 0 et f(x) → 1 ✓. La forme +∞/+∞ est indéterminée, non sans limite : il faut la lever. Une asymptote horizontale y = 1 en résulte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (ln x)/(ln(x + 1)), de courbe 𝒞 dans un repère orthonormé.\nEn quel point la courbe 𝒞 coupe-t-elle l'axe des abscisses ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "au point de coordonnées (e ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "au point de coordonnées (1 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "au point de coordonnées (0 ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "au point de coordonnées (e − 1 ; 0)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f(x) = 0 équivaut à ln x = 0 (le dénominateur est non nul pour x > 0), c'est-à-dire x = 1 ✓ : le point est (1 ; 0). Le point (e ; 0) vient de ln x = 1, le point (e − 1 ; 0) de ln(x + 1) = 1 ; et 0 n'est pas dans l'ensemble de définition.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]0 ; +∞[ par f(x) = (ln x)/(ln(x + 1)), de courbe 𝒞 dans un repère orthonormé.\nQuelle est l'expression de f′(x) pour tout x > 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = ((1/x) ln(x + 1) + (1/(x + 1)) ln x) / ln²(x + 1)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = ((1/x) ln(x + 1) − (1/(x + 1)) ln x) / ln²(x + 1)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = ((1/x) ln(x + 1) + (1/(x + 1)) ln x) / ln(x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = ((1/(x + 1)) ln x − (1/x) ln(x + 1)) / ln(x + 1)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avec u = ln x et v = ln(x + 1), (u/v)′ = (u′v − uv′)/v², où u′ = 1/x et v′ = 1/(x + 1) : on obtient ((1/x) ln(x + 1) − (1/(x + 1)) ln x)/ln²(x + 1) ✓. Un signe + fait confondre quotient et produit ; un dénominateur non élevé au carré oublie v² ; permuter les deux termes du numérateur change le signe de f′ ; en cumulant le signe + et le carré oublié, ou la permutation et le carré oublié, on obtient les deux autres expressions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (ln x)/(ln(x + 1)) sur ]0 ; +∞[, avec f′(x) = N(x)/(x(x + 1) ln²(x + 1)), où N(x) = x(ln(x + 1) − ln x) + ln(x + 1). Quel argument donne le signe de f′(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le signe de f′(x) est celui de ln x, qui change de signe en x = 1 ; f a donc un extremum"
+        },
+        {
+          "id": "b",
+          "text": "N(x) < 0 sur ]0 ; 1[ car ln x < 0 sur cet intervalle ; f décroît donc d'abord"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) > 0 car f(x) > 0 sur ]1 ; +∞[ ; f n'a alors de signe que sur cet intervalle"
+        },
+        {
+          "id": "d",
+          "text": "N(x) > 0 car ln(x + 1) > ln x et ln(x + 1) > 0, et le dénominateur est > 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x > 0, x + 1 > x donc ln(x + 1) > ln x, d'où x(ln(x + 1) − ln x) > 0 ; de plus ln(x + 1) > ln 1 = 0. Ainsi N(x) > 0, et le dénominateur x(x + 1) ln²(x + 1) est > 0 : f′(x) > 0 et f est strictement croissante ✓. L'erreur classique est de lire le signe sur le seul ln x : ce terme apparaît dans une différence qui reste positive.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On admet que f(x) = (ln x)/(ln(x + 1)) est continue et strictement croissante sur ]0 ; +∞[, de limite −∞ en 0⁺ et de limite 1 en +∞. Quel est l'ensemble f(]0 ; +∞[) sur lequel f⁻¹ est définie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 1["
+        },
+        {
+          "id": "b",
+          "text": "]−∞ ; 1]"
+        },
+        {
+          "id": "c",
+          "text": "ℝ"
+        },
+        {
+          "id": "d",
+          "text": "]0 ; 1["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une fonction continue strictement croissante envoie l'intervalle ]0 ; +∞[ sur l'intervalle ouvert dont les bornes sont ses limites : ]−∞ ; 1[ ✓. La borne 1 est une limite, jamais atteinte, donc exclue ; ℝ exigerait une limite +∞ ; et f prend des valeurs négatives, donc ]0 ; 1[ est trop petit.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (ln x)/(ln(x + 1)), strictement croissante sur ]0 ; +∞[, avec f(1) = 0 et f⁻¹ continue sur ]−∞ ; 1[. Pour n ≥ 2, on pose aₙ = f⁻¹(1/n). Quelle est la limite de aₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "e"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand n → +∞, 1/n → 0, et f⁻¹ est continue en 0, donc aₙ = f⁻¹(1/n) → f⁻¹(0). Or f(1) = 0, donc f⁻¹(0) = 1 : la limite est 1 ✓. L'erreur classique est de répondre 0 parce que 1/n tend vers 0 : on compose avec f⁻¹, qui ne fixe pas 0.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f(x) = (ln x)/(ln(x + 1)) sur ]0 ; +∞[ et, pour n ≥ 2, aₙ = f⁻¹(1/n), c'est-à-dire f(aₙ) = 1/n. Quelle équation d'inconnue x aₙ vérifie-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "x = (x + 1)ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "nx = x + 1"
+        },
+        {
+          "id": "c",
+          "text": "xⁿ = x + 1"
+        },
+        {
+          "id": "d",
+          "text": "x^(1/n) = x + 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(aₙ) = 1/n s'écrit (ln aₙ)/(ln(aₙ + 1)) = 1/n, donc n ln aₙ = ln(aₙ + 1), soit ln(aₙⁿ) = ln(aₙ + 1), et par injectivité de ln : aₙⁿ = aₙ + 1 ✓. Placer le facteur n du mauvais côté donne x = (x + 1)ⁿ ; confondre n ln x avec ln(nx) donne nx = x + 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour n ≥ 2, aₙ est solution de l'équation xⁿ = x + 1, et la suite (aₙ) tend vers 1. Que vaut la limite de (aₙ)ⁿ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "1"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "e"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Puisque aₙⁿ = aₙ + 1 et aₙ → 1, on a (aₙ)ⁿ → 1 + 1 = 2 ✓. L'erreur classique est d'écrire que 1ⁿ = 1 : mais aₙ n'est pas égal à 1, il tend vers 1 en restant strictement supérieur, et la forme 1^∞ est indéterminée ; ici l'équation vérifiée lève l'indétermination.",
+      "difficulty": 3
+    }
+  ]
+}

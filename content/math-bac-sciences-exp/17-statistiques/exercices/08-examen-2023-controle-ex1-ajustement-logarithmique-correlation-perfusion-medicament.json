@@ -1,0 +1,130 @@
+{
+  "title": "🏛️ Bac 2023 · session de contrôle · Exercice 1 ⭐⭐⭐ : perfusion d'un médicament, ajustement par un logarithme et corrélation",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Lors d'une perfusion, le temps T (en minutes) mis pour atteindre une concentration C (en µg/cm³) du médicament dans le sang est donné par : C = 24 ; 72 ; 104 ; 120 ; 128 ; 144 ; 160 ; 176 ; 184 et T = 70 ; 161 ; 242 ; 294 ; 323 ; 395 ; 495 ; 635 ; 786. La concentration ne dépasse pas 200 µg/cm³. On pose X = ln(200 − C) et l'on considère la série double (X, T), de valeurs de X arrondies à 10⁻¹ : 5,2 ; 4,9 ; 4,6 ; 4,4 ; 4,3 ; 4 ; 3,7 ; 3,2 ; 2,8.\nPour la série (X, T) : X̄ ≈ 4,12, T̄ ≈ 377,9, V(X) ≈ 0,544, V(T) ≈ 46 335,7, cov(X, T) ≈ −158,53, σ_X ≈ 0,7375 et σ_T ≈ 215,26. Quel est le coefficient de corrélation linéaire ρ_XT, arrondi à 10⁻³ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,999"
+        },
+        {
+          "id": "b",
+          "text": "−0,003"
+        },
+        {
+          "id": "c",
+          "text": "−0,999"
+        },
+        {
+          "id": "d",
+          "text": "−291,444"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ρ_XT = cov(X, T)/(σ_X σ_T) ≈ −158,53/(0,7375 × 215,26) ≈ −158,53/158,75 ≈ −0,999 ✓, négatif car T diminue quand X augmente (plus 200 − C est grand, plus la concentration est faible et vite atteinte). Un signe + contredit la covariance négative ; −0,003 vient d'une division par V(T) ; −291,444 est la pente de la droite de régression.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lors d'une perfusion, le temps T (en minutes) mis pour atteindre une concentration C (en µg/cm³) du médicament dans le sang est donné par : C = 24 ; 72 ; 104 ; 120 ; 128 ; 144 ; 160 ; 176 ; 184 et T = 70 ; 161 ; 242 ; 294 ; 323 ; 395 ; 495 ; 635 ; 786. La concentration ne dépasse pas 200 µg/cm³. On pose X = ln(200 − C) et l'on considère la série double (X, T), de valeurs de X arrondies à 10⁻¹ : 5,2 ; 4,9 ; 4,6 ; 4,4 ; 4,3 ; 4 ; 3,7 ; 3,2 ; 2,8.\nOn trouve ρ_XT ≈ −0,999. Quel argument permet d'exprimer T en fonction de C par une relation de la forme T = α + β ln(200 − C) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "|ρ_XT| ≈ 1 : T s'ajuste par une droite en X = ln(200 − C)"
+        },
+        {
+          "id": "b",
+          "text": "ρ_XT est négatif : l'ajustement affine de T en X est impossible"
+        },
+        {
+          "id": "c",
+          "text": "ρ_XT est négatif : T diminue donc quand C augmente"
+        },
+        {
+          "id": "d",
+          "text": "|ρ_XT| est proche de 1 : T s'ajuste par une droite directement en C"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand |ρ_XT| est proche de 1 (ici 0,999 > √3/2), le nuage (X, T) est presque aligné : T ≈ α + β X, avec X = ln(200 − C), d'où T = α + β ln(200 − C) ✓. Le signe de ρ ne rend pas l'ajustement impossible, il donne seulement le sens de variation par rapport à X ; et T augmente avec C (de 70 à 786), alors que c'est la série (C, T), non (X, T), qui n'est pas alignée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lors d'une perfusion, le temps T (en minutes) mis pour atteindre une concentration C (en µg/cm³) du médicament dans le sang est donné par : C = 24 ; 72 ; 104 ; 120 ; 128 ; 144 ; 160 ; 176 ; 184 et T = 70 ; 161 ; 242 ; 294 ; 323 ; 395 ; 495 ; 635 ; 786. La concentration ne dépasse pas 200 µg/cm³. On pose X = ln(200 − C) et l'on considère la série double (X, T), de valeurs de X arrondies à 10⁻¹ : 5,2 ; 4,9 ; 4,6 ; 4,4 ; 4,3 ; 4 ; 3,7 ; 3,2 ; 2,8.\nPour la série (X, T) : X̄ ≈ 4,12, T̄ ≈ 377,9, V(X) ≈ 0,544, V(T) ≈ 46 335,7, cov(X, T) ≈ −158,53, σ_X ≈ 0,7375 et σ_T ≈ 215,26. Quelle est la droite de régression de T en X, T = α + βX, avec α et β arrondis au dixième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "α = 377,9 et β = −291,4"
+        },
+        {
+          "id": "b",
+          "text": "α = 1579,3 et β = 291,4"
+        },
+        {
+          "id": "c",
+          "text": "α = 377,9 et β = 291,4"
+        },
+        {
+          "id": "d",
+          "text": "α = 1579,3 et β = −291,4"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pente est β = cov(X, T)/V(X) ≈ −158,53/0,544 ≈ −291,4 et l'ordonnée à l'origine α = T̄ − β X̄ avec X̄ ≈ 4,1222, T̄ ≈ 377,89 et β ≈ −291,44 non arrondi : 377,89 + 291,44 × 4,1222 ≈ 1579,3 ✓. Prendre α = T̄ oublie le terme β X̄ ; un signe faux sur β change la direction de la droite ; combiner les deux erreurs donne α = 377,9 avec β = 291,4.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On a T = 1579,3 − 291,4 ln(200 − C). Quel temps, arrondi à l'unité, faut-il pour atteindre la concentration C₁ = 190 µg/cm³ ? On donne ln 10 ≈ 2,303.",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 minutes"
+        },
+        {
+          "id": "b",
+          "text": "908 minutes"
+        },
+        {
+          "id": "c",
+          "text": "2250 minutes"
+        },
+        {
+          "id": "d",
+          "text": "1288 minutes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "200 − 190 = 10, donc T₁ = 1579,3 − 291,4 × ln 10 ≈ 1579,3 − 291,4 × 2,303 ≈ 1579,3 − 671,1 ≈ 908 minutes ✓. Le logarithme s'applique à 200 − C, non à C : ln 190 donnerait 50 ; le signe de β est négatif : le retrancher mal donne 2250 ; ln 10 ≈ 2,303 n'est pas 1 : prendre 1 donnerait 1288.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La concentration est optimale entre 190 et 197 µg/cm³. Avec T = 1579,3 − 291,4 ln(200 − C), ln 10 ≈ 2,303 et ln 3 ≈ 1,099, quelle est la durée de l'efficacité optimale, arrondie à l'unité ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1259 minutes"
+        },
+        {
+          "id": "b",
+          "text": "2167 minutes"
+        },
+        {
+          "id": "c",
+          "text": "671 minutes"
+        },
+        {
+          "id": "d",
+          "text": "351 minutes"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La durée est T(197) − T(190) = −291,4 (ln 3 − ln 10) = 291,4 × (2,303 − 1,099) ≈ 291,4 × 1,204 ≈ 351 minutes ✓. La durée est une différence de deux instants : prendre T(197) seul donne 1259, les additionner donne 2167, et oublier la borne 197, donc le terme ln 3, donne 291,4 × ln 10 ≈ 671.",
+      "difficulty": 3
+    }
+  ]
+}

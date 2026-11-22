@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2019 · session principale · Exercice 1 ⭐⭐⭐ : arbre pondéré, probabilité inverse, épreuves répétées et « au moins un »",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "prompt": "Dans une ville, 15 % des individus de moins de 60 ans et 80 % des individus de plus de 60 ans sont vaccinés contre la grippe, et les plus de 60 ans représentent 30 % de la population. On choisit une personne au hasard et on note G l'événement « la personne a plus de 60 ans » et V l'événement « la personne est vaccinée ».\nQuelles sont les valeurs de p(Ḡ), de p_G(V̄) et de p_Ḡ(V̄) dans l'arbre pondéré de l'expérience ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(Ḡ) = 0,3 ; p_G(V̄) = 0,2 ; p_Ḡ(V̄) = 0,85"
+        },
+        {
+          "id": "b",
+          "text": "p(Ḡ) = 0,7 ; p_G(V̄) = 0,2 ; p_Ḡ(V̄) = 0,85"
+        },
+        {
+          "id": "c",
+          "text": "p(Ḡ) = 0,7 ; p_G(V̄) = 0,8 ; p_Ḡ(V̄) = 0,15"
+        },
+        {
+          "id": "d",
+          "text": "p(Ḡ) = 0,7 ; p_G(V̄) = 0,2 ; p_Ḡ(V̄) = 0,15"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les branches issues d'un même nœud ont des poids de somme 1. p(Ḡ) = 1 − 0,3 = 0,7. Chez les plus de 60 ans, 80 % sont vaccinés donc p_G(V̄) = 1 − 0,8 = 0,2. Chez les moins de 60 ans, 15 % sont vaccinés donc p_Ḡ(V̄) = 1 − 0,15 = 0,85 ✓. Prendre p(Ḡ) = 0,3 recopie p(G) ; 0,8 et 0,15 sont les poids de la branche V, non V̄ ; et 0,15 pour p_Ḡ(V̄) oublie de passer au complémentaire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans une ville, 15 % des individus de moins de 60 ans et 80 % des individus de plus de 60 ans sont vaccinés contre la grippe, et les plus de 60 ans représentent 30 % de la population. On choisit une personne au hasard et on note G l'événement « la personne a plus de 60 ans » et V l'événement « la personne est vaccinée ».\nQuelle est la probabilité p(V) qu'une personne soit vaccinée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(V) = 0,24"
+        },
+        {
+          "id": "b",
+          "text": "p(V) = 0,475"
+        },
+        {
+          "id": "c",
+          "text": "p(V) = 0,95"
+        },
+        {
+          "id": "d",
+          "text": "p(V) = 0,345"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "V se réalise par deux chemins incompatibles (formule des probabilités totales) : p(V) = p(G)p_G(V) + p(Ḡ)p_Ḡ(V) = 0,3 × 0,8 + 0,7 × 0,15 = 0,24 + 0,105 = 0,345 ✓. 0,24 oublie le chemin Ḡ → V ; 0,475 = (0,8 + 0,15)/2 fait une moyenne simple sans pondérer par 0,3 et 0,7 ; et 0,95 additionne les deux taux de vaccination, ce qui dépasse la proportion réelle.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans une ville, 15 % des individus de moins de 60 ans et 80 % des individus de plus de 60 ans sont vaccinés contre la grippe, et les plus de 60 ans représentent 30 % de la population. On choisit une personne au hasard et on note G l'événement « la personne a plus de 60 ans » et V l'événement « la personne est vaccinée ».\nLa personne choisie étant vaccinée, quelle est la probabilité qu'elle ait moins de 60 ans ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p_V(Ḡ) = 0,105/0,345 ≈ 0,304"
+        },
+        {
+          "id": "b",
+          "text": "p_V(Ḡ) = p_Ḡ(V) = 0,15"
+        },
+        {
+          "id": "c",
+          "text": "p_V(Ḡ) = p(V ∩ Ḡ) = 0,105"
+        },
+        {
+          "id": "d",
+          "text": "p_V(Ḡ) = p(Ḡ) = 0,7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Formule de Bayes : p_V(Ḡ) = p(V ∩ Ḡ)/p(V) = (0,7 × 0,15)/0,345 = 0,105/0,345 = 7/23 ≈ 0,304 ✓. 0,15 est la probabilité inverse p_Ḡ(V) (vaccinée sachant moins de 60 ans) ; 0,105 est p(V ∩ Ḡ), qu'il faut diviser par p(V) ; et 0,7 est p(Ḡ), qui ignore l'information « vaccinée ».",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi les plus de 60 ans, chacun est vacciné avec la probabilité 0,8. On choisit au hasard 10 personnes de plus de 60 ans, indépendamment. Quelle est la probabilité que deux exactement soient vaccinées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C(10 ; 2) × 0,2² × 0,8⁸ ≈ 0,302"
+        },
+        {
+          "id": "b",
+          "text": "0,8² × 0,2⁸ ≈ 1,6 × 10⁻⁶"
+        },
+        {
+          "id": "c",
+          "text": "C(10 ; 2) × 0,8² × 0,2⁸ ≈ 7,4 × 10⁻⁵"
+        },
+        {
+          "id": "d",
+          "text": "C(10 ; 2) × 0,15² × 0,85⁸ ≈ 0,276"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le nombre X de vaccinés suit la loi binomiale ℬ(10 ; 0,8) : p(X = 2) = C(10 ; 2) × 0,8² × 0,2⁸ = 45 × 0,64 × 2,56 × 10⁻⁶ ≈ 7,4 × 10⁻⁵ ✓ (événement très rare : 2 vaccinés sur 10 quand 80 % le sont). Échanger succès et échec donne 0,302 (c'est p(8 vaccinés)) ; oublier le coefficient binomial C(10 ; 2) = 45 divise le résultat par 45 ; et 0,15 est le taux des moins de 60 ans, non celui des plus de 60 ans.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On choisit n personnes de plus de 60 ans, chacune étant vaccinée avec la probabilité 0,8, indépendamment. Quelle est la probabilité qu'aucune ne soit vaccinée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,8ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "0,2n"
+        },
+        {
+          "id": "c",
+          "text": "0,2ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "1 − 0,8ⁿ"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Chaque personne est non vaccinée avec la probabilité 0,2 ; par indépendance, la probabilité qu'aucune des n ne soit vaccinée est le produit (0,2)ⁿ ✓. 0,8ⁿ est la probabilité que toutes soient vaccinées ; 0,2n additionne au lieu de multiplier ; et 1 − 0,8ⁿ est la probabilité qu'au moins une ne soit pas vaccinée.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On choisit n personnes de plus de 60 ans, chacune étant vaccinée avec la probabilité 0,8, indépendamment. Quelle est la probabilité pₙ que l'une au moins soit vaccinée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "pₙ = 1 − 0,2ⁿ"
+        },
+        {
+          "id": "b",
+          "text": "pₙ = 0,8ⁿ"
+        },
+        {
+          "id": "c",
+          "text": "pₙ = 1 − 0,8ⁿ"
+        },
+        {
+          "id": "d",
+          "text": "pₙ = 1 − 0,2n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'événement « au moins une vaccinée » est le contraire de « aucune vaccinée », de probabilité 0,2ⁿ : pₙ = 1 − 0,2ⁿ ✓. 0,8ⁿ est la probabilité que toutes soient vaccinées ; 1 − 0,8ⁿ est la probabilité qu'au moins une soit non vaccinée ; et 1 − 0,2n additionne les probabilités au lieu de les multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi n personnes de plus de 60 ans, chacune étant vaccinée avec la probabilité 0,8 indépendamment, on note pₙ la probabilité que l'une au moins soit vaccinée. Quelle est la plus petite valeur de l'entier n pour laquelle pₙ ≥ 0,9 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 1, car 0,2ⁿ ≤ 0,1 équivaut à n ≤ ln(0,1)/ln(0,2) ≈ 1,43"
+        },
+        {
+          "id": "b",
+          "text": "n = 3, car 0,2ⁿ ≤ 0,01 équivaut à n ≥ ln(0,01)/ln(0,2) ≈ 2,86"
+        },
+        {
+          "id": "c",
+          "text": "n = 11, car 0,8ⁿ ≤ 0,1 équivaut à n ≥ ln(0,1)/ln(0,8) ≈ 10,3"
+        },
+        {
+          "id": "d",
+          "text": "n = 2, car 0,2ⁿ ≤ 0,1 équivaut à n ≥ ln(0,1)/ln(0,2) ≈ 1,43"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "pₙ ≥ 0,9 ⟺ 1 − 0,2ⁿ ≥ 0,9 ⟺ 0,2ⁿ ≤ 0,1 ⟺ n ln 0,2 ≤ ln 0,1 ⟺ n ≥ ln 0,1/ln 0,2 ≈ 1,43 (on divise par ln 0,2 < 0, ce qui renverse l'inégalité). Le plus petit entier est n = 2 ✓ : p₂ = 1 − 0,04 = 0,96 ≥ 0,9, alors que p₁ = 0,8 < 0,9. Ne pas renverser l'inégalité donne n ≤ 1,43, donc n = 1, alors que p₁ = 0,8 < 0,9 ; le seuil 0,01 n'est pas celui de 1 − 0,9 = 0,1 ; et prendre 0,8 pour la probabilité d'échec donne 0,8ⁿ ≤ 0,1, soit n = 11.",
+      "difficulty": 3
+    }
+  ]
+}

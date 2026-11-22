@@ -1,0 +1,236 @@
+{
+  "title": "🏛️ Bac 2020 · session principale · Exercice 3 ⭐⭐⭐⭐ : deux cubes, plan, projeté orthogonal et sphère coupée par un plan",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗. Quelles sont les coordonnées de F et de K ?\n<svg viewBox=\"0 0 300 240\"><path d=\"M70 65 L170 65\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M170 65 L225 23\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M225 23 L125 23\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M125 23 L70 65\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M70 215 L170 215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M170 215 L225 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M70 65 L70 215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M170 65 L170 215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M225 23 L225 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M70 140 L170 140\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M170 140 L225 98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M225 173 L125 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M125 173 L70 215\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M125 23 L125 98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M125 98 L125 173\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M225 98 L125 98\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><path d=\"M125 98 L70 140\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><g fill=\"#dc2626\"><circle cx=\"70\" cy=\"110\" r=\"4\"/></g><g font-size=\"14\" font-weight=\"700\" fill=\"#dc2626\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\"><text x=\"52\" y=\"115\">K</text></g><g font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" text-anchor=\"middle\"><text x=\"61.0\" y=\"154.0\">O</text><text x=\"180.0\" y=\"155.0\">A</text><text x=\"237.0\" y=\"102.0\">B</text><text x=\"114.0\" y=\"95.0\">C</text><text x=\"61.0\" y=\"61.0\">D</text><text x=\"161.0\" y=\"57.0\">E</text><text x=\"235.0\" y=\"17.0\">F</text><text x=\"121.0\" y=\"15.0\">G</text><text x=\"61.0\" y=\"229.0\">D′</text><text x=\"182.0\" y=\"229.0\">E′</text><text x=\"239.0\" y=\"179.0\">F′</text><text x=\"121.0\" y=\"189.0\">G′</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "F(1 ; 1 ; 1) et K(0 ; 0 ; a)"
+        },
+        {
+          "id": "b",
+          "text": "F(1 ; 1 ; 1) et K(a ; 0 ; 0)"
+        },
+        {
+          "id": "c",
+          "text": "F(1 ; 0 ; 1) et K(0 ; 0 ; a)"
+        },
+        {
+          "id": "d",
+          "text": "F(1 ; 0 ; 1) et K(a ; 0 ; 0)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le repère (O, OA⃗, OC⃗, OD⃗), A(1 ; 0 ; 0), C(0 ; 1 ; 0) et D(0 ; 0 ; 1). Le sommet B de la face du bas est (1 ; 1 ; 0), et F est au-dessus de B : F(1 ; 1 ; 1). Le point K vérifie OK⃗ = a OD⃗, soit K(0 ; 0 ; a), sur l'axe des cotes ✓. L'erreur classique est de placer K sur le mauvais axe, ou de prendre pour F le sommet au-dessus de A.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗. Que vaut BC⃗ ∧ BK⃗ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0 ; −a ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; −a ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(0 ; a ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "(0 ; 1 ; a)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Avec B(1 ; 1 ; 0), C(0 ; 1 ; 0) et K(0 ; 0 ; a), on a BC⃗(−1 ; 0 ; 0) et BK⃗(−1 ; −1 ; a). Alors BC⃗ ∧ BK⃗ = (0 × a − 0 × (−1) ; 0 × (−1) − (−1) × a ; (−1)(−1) − 0 × (−1)) = (0 ; a ; 1) ✓. L'erreur classique est d'inverser l'ordre des facteurs (tous les signes changent), de se tromper de signe sur la deuxième coordonnée, ou d'échanger les deux dernières coordonnées.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗. Quel est le volume du tétraèdre FBCK ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a/6"
+        },
+        {
+          "id": "b",
+          "text": "1/3"
+        },
+        {
+          "id": "c",
+          "text": "1"
+        },
+        {
+          "id": "d",
+          "text": "1/6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le volume est (1/6)|(BC⃗ ∧ BK⃗) · BF⃗|. Avec BC⃗ ∧ BK⃗ = (0 ; a ; 1) et BF⃗(0 ; 0 ; 1), le produit scalaire vaut 1, donc V = 1/6 ✓, quel que soit a. L'erreur classique est de croire que le volume dépend de a, d'utiliser 1/3 au lieu de 1/6, ou d'oublier le facteur 1/6.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗. Quelle est une équation cartésienne du plan P = (BCK) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ay + z + a = 0"
+        },
+        {
+          "id": "b",
+          "text": "ay + z − a = 0"
+        },
+        {
+          "id": "c",
+          "text": "y + az − a = 0"
+        },
+        {
+          "id": "d",
+          "text": "ay − z − a = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le vecteur BC⃗ ∧ BK⃗ = (0 ; a ; 1) est normal à P : une équation est ay + z + d = 0. Le point C(0 ; 1 ; 0) donne a + d = 0, donc d = −a ✓. Contrôle : K(0 ; 0 ; a) donne a − a = 0 et B(1 ; 1 ; 0) donne a − a = 0. L'erreur classique est le signe de la constante (+a), l'échange des deux dernières coordonnées de la normale (y + az − a = 0 ne contient pas K), ou le signe de z (ay − z − a = 0 ne contient pas K).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point E′ est le symétrique de E par rapport au plan de la face OABC, et le point L est défini par E′L⃗ = (1 − a) OC⃗. Quelles sont les coordonnées de L ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L(1 ; 1 − a ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "L(1 ; a − 1 ; −1)"
+        },
+        {
+          "id": "c",
+          "text": "L(1 ; 1 − a ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "L(1 ; a − 1 ; 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a E(1 ; 0 ; 1), donc E′(1 ; 0 ; −1). Comme OC⃗(0 ; 1 ; 0), le vecteur E′L⃗ vaut (0 ; 1 − a ; 0), et L = E′ + E′L⃗ = (1 ; 1 − a ; −1) ✓. L'erreur classique est de se tromper de signe sur 1 − a, de prendre E′ à la cote +1 (E au lieu de E′), ou de cumuler les deux erreurs, ce qui donne L(1 ; a − 1 ; 1).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗, le point E′ est le symétrique de E par rapport au plan de la face OABC, et le point L est défini par E′L⃗ = (1 − a) OC⃗. Quelle est la distance de L au plan P = (BCK) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² + 1"
+        },
+        {
+          "id": "b",
+          "text": "√(a² + 2)"
+        },
+        {
+          "id": "c",
+          "text": "√(a² + 1)"
+        },
+        {
+          "id": "d",
+          "text": "1 + |a|"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a L(1 ; 1 − a ; −1) et P : ay + z − a = 0, de vecteur normal de norme √(a² + 1). La distance est |a(1 − a) − 1 − a|/√(a² + 1) = |−a² − 1|/√(a² + 1) = (a² + 1)/√(a² + 1) = √(a² + 1) ✓. L'erreur classique est d'oublier la racine ou de ne pas diviser par la norme du vecteur normal ; √(a² + 2) est le rayon de la sphère de centre L et non la distance au plan.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗, le point E′ est le symétrique de E par rapport au plan de la face OABC, et le point L est défini par E′L⃗ = (1 − a) OC⃗. Quel est le projeté orthogonal de L sur le plan (BCK) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le point C(0 ; 1 ; 0)"
+        },
+        {
+          "id": "b",
+          "text": "le point K(0 ; 0 ; a)"
+        },
+        {
+          "id": "c",
+          "text": "le point (1 ; 1 − a ; 0)"
+        },
+        {
+          "id": "d",
+          "text": "le point B(1 ; 1 ; 0)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a L(1 ; 1 − a ; −1) et B(1 ; 1 ; 0), donc LB⃗(0 ; a ; 1). Ce vecteur est le vecteur normal BC⃗ ∧ BK⃗ du plan (BCK), et B appartient au plan : B est le projeté orthogonal de L ✓. Le point (1 ; 1 − a ; 0) est la projection de L sur le plan de la face OABC, parallèlement à (OD), qui n'est pas la projection orthogonale sur (BCK) ; C et K sont dans le plan mais LC⃗ et LK⃗ ne sont pas normaux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit a un réel de ]0 ; 1[ et S l'ensemble des points M(x, y, z) tels que :\nx² + y² + z² − 2x + 2(a − 1)y + 2z + 1 − 2a = 0\nQuel est le rayon de S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² + 2"
+        },
+        {
+          "id": "b",
+          "text": "√(a² + 2)"
+        },
+        {
+          "id": "c",
+          "text": "|a − 2|"
+        },
+        {
+          "id": "d",
+          "text": "√(a² − 2a + 3)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On regroupe : (x − 1)² + (y + (a − 1))² + (z + 1)² = 1 + (a − 1)² + 1 − (1 − 2a) = a² + 2. Le centre est (1 ; 1 − a ; −1) et le rayon vaut √(a² + 2) ✓. L'erreur classique est d'oublier la racine ; changer le signe de la constante 1 − 2a donne (a − 2)² ; oublier la constante donne a² − 2a + 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗. Soit S la sphère d'équation x² + y² + z² − 2x + 2(a − 1)y + 2z + 1 − 2a = 0 et P le plan (BCK). Quelle est l'intersection de S et de P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "le cercle de centre B et de rayon 1"
+        },
+        {
+          "id": "b",
+          "text": "le cercle de centre B et de rayon √(a² + 1)"
+        },
+        {
+          "id": "c",
+          "text": "le cercle de centre C et de rayon √(a² + 2)"
+        },
+        {
+          "id": "d",
+          "text": "le cercle de centre C et de rayon 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La sphère S a pour centre L(1 ; 1 − a ; −1) et pour rayon √(a² + 2). La distance de L au plan P est √(a² + 1) et le projeté orthogonal de L sur P est B. Le cercle a donc pour centre B et pour rayon √((a² + 2) − (a² + 1)) = 1 ✓, indépendant de a. L'erreur classique est de prendre la distance √(a² + 1) ou le rayon √(a² + 2) pour rayon du cercle, ou de prendre pour centre C, autre point du plan, au lieu du projeté B de L.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les solides OABCDEFG et OABCD′E′F′G′ sont deux cubes d'arête 1 situés de part et d'autre du plan de la face OABC : D, E, F, G sont au-dessus de O, A, B, C, et D′, E′, F′, G′ sont leurs symétriques par rapport à ce plan. L'espace est muni du repère orthonormé direct (O, OA⃗, OC⃗, OD⃗). Soit a un réel de ]0 ; 1[. Le point K est défini par OK⃗ = a OD⃗. Pour a = 3/4, quelle est l'aire du triangle BCK ? Donne la valeur exacte sous forme décimale.",
+      "answerKey": {
+        "value": 0.625,
+        "tolerance": 0.001
+      },
+      "explanation": "L'aire est (1/2)‖BC⃗ ∧ BK⃗‖ = (1/2)‖(0 ; a ; 1)‖ = (1/2)√(a² + 1). Pour a = 3/4, √(9/16 + 1) = √(25/16) = 5/4, donc l'aire vaut 5/8 = 0,625 ✓. L'erreur classique est d'oublier le facteur 1/2, qui donnerait 1,25.",
+      "difficulty": 3
+    }
+  ]
+}

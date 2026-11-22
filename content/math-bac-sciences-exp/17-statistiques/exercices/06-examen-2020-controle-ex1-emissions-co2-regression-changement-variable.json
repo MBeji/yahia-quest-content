@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2020 · session de contrôle · Exercice 1 ⭐⭐⭐ : émissions de CO₂, régression linéaire puis changement de variable",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Les émissions mondiales de CO₂ (en milliards de tonnes) sont données pour les années 2000, 2002, …, 2018, de rangs xᵢ = 0, 2, …, 18 (le rang est le nombre d'années écoulées depuis 2000) : yᵢ = 24,7 ; 25,6 ; 28,4 ; 30,6 ; 32,2 ; 31,9 ; 35,5 ; 36,1 ; 36,4 ; 37,1. On note (X, Y) la série double.\nQuelles sont les coordonnées du point moyen G de la série (X, Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "G(9 ; 318,5)"
+        },
+        {
+          "id": "b",
+          "text": "G(10 ; 31,85)"
+        },
+        {
+          "id": "c",
+          "text": "G(9 ; 31,85)"
+        },
+        {
+          "id": "d",
+          "text": "G(18 ; 31,85)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "X̄ = (0 + 2 + … + 18)/10 = 90/10 = 9 et Ȳ = (24,7 + 25,6 + … + 37,1)/10 = 318,5/10 = 31,85, donc G(9 ; 31,85) ✓. 318,5 est la somme des Yᵢ, non leur moyenne ; 10 est le nombre de valeurs, non la moyenne des rangs ; 18 est le dernier rang observé.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les émissions mondiales de CO₂ (en milliards de tonnes) sont données pour les années 2000, 2002, …, 2018, de rangs xᵢ = 0, 2, …, 18 (le rang est le nombre d'années écoulées depuis 2000) : yᵢ = 24,7 ; 25,6 ; 28,4 ; 30,6 ; 32,2 ; 31,9 ; 35,5 ; 36,1 ; 36,4 ; 37,1. On note (X, Y) la série double.\nPour cette série : X̄ = 9, Ȳ = 31,85, V(X) = 33, V(Y) ≈ 18,34, cov(X, Y) ≈ 24,01, σ_X ≈ 5,74 et σ_Y ≈ 4,28. Quel est le coefficient de corrélation linéaire ρ_XY, arrondi au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,98"
+        },
+        {
+          "id": "b",
+          "text": "−0,98"
+        },
+        {
+          "id": "c",
+          "text": "0,73"
+        },
+        {
+          "id": "d",
+          "text": "1,31"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ρ_XY = cov(X, Y)/(σ_X σ_Y) ≈ 24,01/(5,74 × 4,28) ≈ 24,01/24,57 ≈ 0,98 ✓, positif car Y croît avec X. Le signe moins contredirait la covariance positive ; 0,73 est la pente de la droite de régression ; 1,31 vient d'une division par V(Y) et dépasse 1, valeur impossible pour un coefficient de corrélation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les émissions mondiales de CO₂ (en milliards de tonnes) sont données pour les années 2000, 2002, …, 2018, de rangs xᵢ = 0, 2, …, 18 (le rang est le nombre d'années écoulées depuis 2000) : yᵢ = 24,7 ; 25,6 ; 28,4 ; 30,6 ; 32,2 ; 31,9 ; 35,5 ; 36,1 ; 36,4 ; 37,1. On note (X, Y) la série double.\nPour cette série : X̄ = 9, Ȳ = 31,85, V(X) = 33, V(Y) ≈ 18,34, cov(X, Y) ≈ 24,01, σ_X ≈ 5,74 et σ_Y ≈ 4,28. Quelle est l'équation de la droite de régression de Y en X, coefficients arrondis au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = 1,31x + 20,07"
+        },
+        {
+          "id": "b",
+          "text": "y = 0,73x + 31,85"
+        },
+        {
+          "id": "c",
+          "text": "y = 1,31x + 43,64"
+        },
+        {
+          "id": "d",
+          "text": "y = 0,73x + 25,30"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pente est a = cov(X, Y)/V(X) ≈ 24,01/33 ≈ 0,73 et l'ordonnée à l'origine b = Ȳ − a X̄ avec a ≈ 0,7276, soit b ≈ 31,85 − 6,55 ≈ 25,30 ✓. Diviser par V(Y) donne la pente de la droite de X en Y (1,31) ; prendre b = Ȳ oublie le terme a X̄ ; écrire b = Ȳ + a X̄ avec la pente 1,31 de la droite de X en Y ajoute au lieu de retrancher et donne 43,64.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les émissions mondiales de CO₂ (en milliards de tonnes) sont données pour les années 2000, 2002, …, 2018, de rangs xᵢ = 0, 2, …, 18 (le rang est le nombre d'années écoulées depuis 2000) : yᵢ = 24,7 ; 25,6 ; 28,4 ; 30,6 ; 32,2 ; 31,9 ; 35,5 ; 36,1 ; 36,4 ; 37,1. On note (X, Y) la série double.\nLa droite de régression de Y en X est y = 0,73x + 25,30. Quelle quantité d'émissions prévoit-elle pour 2022, en milliards de tonnes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "33,33"
+        },
+        {
+          "id": "b",
+          "text": "41,36"
+        },
+        {
+          "id": "c",
+          "text": "38,44"
+        },
+        {
+          "id": "d",
+          "text": "42,09"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour 2022, x = 22 : y = 0,73 × 22 + 25,30 = 16,06 + 25,30 = 41,36 ✓. Prendre x = 11 (rang divisé par 2) donne 33,33 ; x = 18 donne la valeur du dernier rang observé, 38,44 ; x = 23 donne 42,09.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On suppose que Y est liée à Z = (X − 22)² par la droite y = −0,03 z + 37,47. Quelle est l'expression de Y en fonction de X, développée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y = −0,03X² − 1,32X + 22,95"
+        },
+        {
+          "id": "b",
+          "text": "Y = −0,03X² + 1,32X + 22,95"
+        },
+        {
+          "id": "c",
+          "text": "Y = −0,03X² + 1,32X + 37,47"
+        },
+        {
+          "id": "d",
+          "text": "Y = −0,03X² + 1,32X − 14,52"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Y = −0,03(X − 22)² + 37,47 = −0,03(X² − 44X + 484) + 37,47 = −0,03X² + 1,32X − 14,52 + 37,47 = −0,03X² + 1,32X + 22,95 ✓ : c'est bien un trinôme du second degré en X. Le signe de 1,32 vient de −0,03 × (−44) ; oublier de multiplier 484 par −0,03 laisse 37,47 ; oublier la constante 37,47 laisse −14,52.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le nouveau modèle est Y = −0,03(X − 22)² + 37,47. Quelle quantité d'émissions estime-t-il pour 2022, de rang 22 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "41,36"
+        },
+        {
+          "id": "b",
+          "text": "22,95"
+        },
+        {
+          "id": "c",
+          "text": "36,81"
+        },
+        {
+          "id": "d",
+          "text": "37,47"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour X = 22, Z = (22 − 22)² = 0, donc Y = −0,03 × 0 + 37,47 = 37,47 ✓. La valeur 41,36 est celle du modèle affine ; 22,95 est la constante du trinôme développé, soit la valeur en X = 0 ; 36,81 vient d'un terme −0,03 × 22 mal appliqué.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le modèle Y = −0,03(X − 22)² + 37,47 reste valable jusqu'en 2030, X étant le nombre d'années écoulées depuis 2000. Pourquoi prévoit-on une baisse des émissions chaque année à partir de 2023 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y est maximale en X = 22, puis décroît : le coefficient de X² est négatif"
+        },
+        {
+          "id": "b",
+          "text": "Y décroît après 2022, car le coefficient 1,32 de X est inférieur à 22"
+        },
+        {
+          "id": "c",
+          "text": "Y décroît dès 2000, car le coefficient −0,03 de Z est négatif"
+        },
+        {
+          "id": "d",
+          "text": "Y décroît après 2022 parce que 37,47 est la dernière valeur observée en 2022"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le trinôme −0,03X² + 1,32X + 22,95 a un coefficient dominant négatif : sa courbe est une parabole tournée vers le bas, dont le sommet est en X = 22. Y croît donc jusqu'à 2022, puis décroît chaque année ✓ ; (X − 22)² est nul en 22 et augmente ensuite, ce qui retranche de plus en plus. Comparer le coefficient 1,32 de X à 22 ne donne pas le sens de variation, qui se lit sur le coefficient de X² et l'abscisse du sommet ; et 37,47 est une valeur du modèle, non une observation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le modèle donne Y = −0,03(X − 22)² + 37,47. La valeur observée en 2018 est 37,1. De quel pourcentage environ les émissions de 2030 (X = 30) sont-elles inférieures à celles de 2018 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4,4 %"
+        },
+        {
+          "id": "b",
+          "text": "5,1 %"
+        },
+        {
+          "id": "c",
+          "text": "4,2 %"
+        },
+        {
+          "id": "d",
+          "text": "1,6 %"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour 2030, X = 30 : Y = −0,03 × 8² + 37,47 = 37,47 − 1,92 = 35,55. La baisse relative par rapport à 2018 est (37,1 − 35,55)/37,1 ≈ 1,55/37,1 ≈ 0,042, soit 4,2 % ✓. Diviser par la valeur finale 35,55 donne 4,4 % ; prendre pour base 2022 (37,47) donne 5,1 % ; l'écart brut 1,55 n'est pas un pourcentage.",
+      "difficulty": 3
+    }
+  ]
+}

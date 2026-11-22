@@ -1,0 +1,91 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 2 ⭐⭐ : arbre pondéré, probabilités totales et probabilités conditionnelles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 9,
+  "questions": [
+    {
+      "prompt": "On considère l'arbre pondéré ci-dessous, incomplet, où A et F sont deux événements tels que p(F) = 5/12. Les points d'interrogation marquent les probabilités à déterminer.\nQuelle est la valeur de p(A̅ ∩ F) ?\n<svg viewBox=\"0 0 300 190\"><title>Arbre pondéré à deux niveaux : A ou A̅, puis F ou F̅</title><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"><path d=\"M30 95 L120 50\"/><path d=\"M30 95 L120 140\"/><path d=\"M120 50 L215 25\"/><path d=\"M120 50 L215 75\"/><path d=\"M120 140 L215 115\"/><path d=\"M120 140 L215 165\"/></g><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"95\" r=\"3.5\"/><circle cx=\"120\" cy=\"50\" r=\"4\"/><circle cx=\"120\" cy=\"140\" r=\"4\"/><circle cx=\"215\" cy=\"25\" r=\"3.5\"/><circle cx=\"215\" cy=\"75\" r=\"3.5\"/><circle cx=\"215\" cy=\"115\" r=\"3.5\"/><circle cx=\"215\" cy=\"165\" r=\"3.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\"><text x=\"66\" y=\"64\" text-anchor=\"middle\">2/3</text><text x=\"66\" y=\"132\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"31\" text-anchor=\"middle\">1/4</text><text x=\"167\" y=\"74\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"121\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"164\" text-anchor=\"middle\">?</text></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"120\" y=\"40\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"158\" text-anchor=\"middle\">A̅</text><text x=\"228\" y=\"29\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"79\" text-anchor=\"middle\">F̅</text><text x=\"228\" y=\"119\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"169\" text-anchor=\"middle\">F̅</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/6"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "1/3"
+        },
+        {
+          "id": "d",
+          "text": "5/12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les événements A et A̅ forment une partition : p(F) = p(A ∩ F) + p(A̅ ∩ F). Le chemin A puis F donne p(A ∩ F) = 2/3 × 1/4 = 1/6, donc p(A̅ ∩ F) = 5/12 − 1/6 = 5/12 − 2/12 = 3/12 = 1/4 ✓. La valeur 1/6 est p(A ∩ F) ; 5/12 est p(F) ; 1/3 est p(A̅).",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On considère l'arbre pondéré ci-dessous, incomplet, où A et F sont deux événements tels que p(F) = 5/12. Les points d'interrogation marquent les probabilités à déterminer.\nQuelle est la valeur de p(F/A̅) ?\n<svg viewBox=\"0 0 300 190\"><title>Arbre pondéré à deux niveaux : A ou A̅, puis F ou F̅</title><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"><path d=\"M30 95 L120 50\"/><path d=\"M30 95 L120 140\"/><path d=\"M120 50 L215 25\"/><path d=\"M120 50 L215 75\"/><path d=\"M120 140 L215 115\"/><path d=\"M120 140 L215 165\"/></g><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"95\" r=\"3.5\"/><circle cx=\"120\" cy=\"50\" r=\"4\"/><circle cx=\"120\" cy=\"140\" r=\"4\"/><circle cx=\"215\" cy=\"25\" r=\"3.5\"/><circle cx=\"215\" cy=\"75\" r=\"3.5\"/><circle cx=\"215\" cy=\"115\" r=\"3.5\"/><circle cx=\"215\" cy=\"165\" r=\"3.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\"><text x=\"66\" y=\"64\" text-anchor=\"middle\">2/3</text><text x=\"66\" y=\"132\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"31\" text-anchor=\"middle\">1/4</text><text x=\"167\" y=\"74\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"121\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"164\" text-anchor=\"middle\">?</text></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"120\" y=\"40\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"158\" text-anchor=\"middle\">A̅</text><text x=\"228\" y=\"29\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"79\" text-anchor=\"middle\">F̅</text><text x=\"228\" y=\"119\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"169\" text-anchor=\"middle\">F̅</text></g></svg>",
+      "answerKey": {
+        "value": 0.75
+      },
+      "explanation": "On a p(A̅) = 1 − 2/3 = 1/3 et p(A̅ ∩ F) = 5/12 − 2/3 × 1/4 = 1/4. Donc p(F/A̅) = p(A̅ ∩ F)/p(A̅) = (1/4)/(1/3) = 3/4 = 0,75 ✓. Garder 1/4 s'arrête à l'intersection sans diviser par p(A̅).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère l'arbre pondéré ci-dessous, incomplet, où A et F sont deux événements tels que p(F) = 5/12. Les points d'interrogation marquent les probabilités à déterminer.\nQuand l'arbre est complété, quelle est la probabilité du chemin qui passe par A̅ puis par F̅ ?\n<svg viewBox=\"0 0 300 190\"><title>Arbre pondéré à deux niveaux : A ou A̅, puis F ou F̅</title><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"><path d=\"M30 95 L120 50\"/><path d=\"M30 95 L120 140\"/><path d=\"M120 50 L215 25\"/><path d=\"M120 50 L215 75\"/><path d=\"M120 140 L215 115\"/><path d=\"M120 140 L215 165\"/></g><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"95\" r=\"3.5\"/><circle cx=\"120\" cy=\"50\" r=\"4\"/><circle cx=\"120\" cy=\"140\" r=\"4\"/><circle cx=\"215\" cy=\"25\" r=\"3.5\"/><circle cx=\"215\" cy=\"75\" r=\"3.5\"/><circle cx=\"215\" cy=\"115\" r=\"3.5\"/><circle cx=\"215\" cy=\"165\" r=\"3.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\"><text x=\"66\" y=\"64\" text-anchor=\"middle\">2/3</text><text x=\"66\" y=\"132\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"31\" text-anchor=\"middle\">1/4</text><text x=\"167\" y=\"74\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"121\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"164\" text-anchor=\"middle\">?</text></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"120\" y=\"40\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"158\" text-anchor=\"middle\">A̅</text><text x=\"228\" y=\"29\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"79\" text-anchor=\"middle\">F̅</text><text x=\"228\" y=\"119\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"169\" text-anchor=\"middle\">F̅</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/12"
+        },
+        {
+          "id": "b",
+          "text": "1/4"
+        },
+        {
+          "id": "c",
+          "text": "7/12"
+        },
+        {
+          "id": "d",
+          "text": "1/9"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a p(A̅) = 1/3 et p(F̅/A̅) = 1 − p(F/A̅) = 1 − 3/4 = 1/4, donc le chemin A̅ puis F̅ a pour probabilité 1/3 × 1/4 = 1/12 ✓. La valeur 1/4 est celle du chemin A̅ puis F ; 7/12 est p(F̅) toutes branches confondues ; 1/9 vient du carré de p(A̅).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On considère l'arbre pondéré ci-dessous, incomplet, où A et F sont deux événements tels que p(F) = 5/12. Les points d'interrogation marquent les probabilités à déterminer.\nQuelle est la valeur de p(A̅/F̅) ?\n<svg viewBox=\"0 0 300 190\"><title>Arbre pondéré à deux niveaux : A ou A̅, puis F ou F̅</title><g fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"><path d=\"M30 95 L120 50\"/><path d=\"M30 95 L120 140\"/><path d=\"M120 50 L215 25\"/><path d=\"M120 50 L215 75\"/><path d=\"M120 140 L215 115\"/><path d=\"M120 140 L215 165\"/></g><g fill=\"#0f172a\"><circle cx=\"30\" cy=\"95\" r=\"3.5\"/><circle cx=\"120\" cy=\"50\" r=\"4\"/><circle cx=\"120\" cy=\"140\" r=\"4\"/><circle cx=\"215\" cy=\"25\" r=\"3.5\"/><circle cx=\"215\" cy=\"75\" r=\"3.5\"/><circle cx=\"215\" cy=\"115\" r=\"3.5\"/><circle cx=\"215\" cy=\"165\" r=\"3.5\"/></g><g font-size=\"12\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f6e56\"><text x=\"66\" y=\"64\" text-anchor=\"middle\">2/3</text><text x=\"66\" y=\"132\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"31\" text-anchor=\"middle\">1/4</text><text x=\"167\" y=\"74\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"121\" text-anchor=\"middle\">?</text><text x=\"167\" y=\"164\" text-anchor=\"middle\">?</text></g><g font-size=\"13\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" fill=\"#0f172a\"><text x=\"120\" y=\"40\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"158\" text-anchor=\"middle\">A̅</text><text x=\"228\" y=\"29\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"79\" text-anchor=\"middle\">F̅</text><text x=\"228\" y=\"119\" text-anchor=\"middle\">F</text><text x=\"228\" y=\"169\" text-anchor=\"middle\">F̅</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "1/12"
+        },
+        {
+          "id": "c",
+          "text": "1/7"
+        },
+        {
+          "id": "d",
+          "text": "7/12"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On a p(F̅) = 1 − 5/12 = 7/12 et p(A̅ ∩ F̅) = 1/3 × 1/4 = 1/12. Donc p(A̅/F̅) = (1/12)/(7/12) = 1/7 ✓. La valeur 1/4 est p(F̅/A̅), sens inverse du conditionnement ; 1/12 est l'intersection non divisée par p(F̅) ; 7/12 est p(F̅).",
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "title": "🏛️ Bac 2018 · session de contrôle · Exercice 3 ⭐⭐⭐⭐ : étude de x ↦ (x + 1)² − xeˣ, tangente commune, positions relatives et aire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 8,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j).\nQuelle est la limite de f(x) quand x tend vers −∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand x → −∞, (x + 1)² → +∞ et xeˣ → 0 (croissances comparées : eˣ l'emporte sur x en −∞). Donc f(x) → +∞ ✓. Conclure −∞ en croyant que xeˣ diverge comme x oublie que eˣ tend vers 0 bien plus vite que x ne diverge.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j).\nQue valent la limite de f(x)/x quand x → −∞ et son interprétation graphique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+∞ : (C_f) admet, au voisinage de −∞, une branche parabolique de direction (O, j), l'axe des ordonnées"
+        },
+        {
+          "id": "b",
+          "text": "2 : (C_f) admet, au voisinage de −∞, une asymptote oblique de pente 2"
+        },
+        {
+          "id": "c",
+          "text": "0 : (C_f) admet, au voisinage de −∞, une branche parabolique de direction (O, i), l'axe des abscisses"
+        },
+        {
+          "id": "d",
+          "text": "−∞ : (C_f) admet, au voisinage de −∞, une branche parabolique de direction (O, j), l'axe des ordonnées"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x)/x = (x + 1)²/x − eˣ = x + 2 + 1/x − eˣ. Quand x → −∞, x + 2 + 1/x → −∞ et eˣ → 0, donc f(x)/x → −∞ ✓. Cette limite infinie donne une branche parabolique de direction l'axe des ordonnées ; une asymptote oblique demanderait une limite finie. Oublier que x est négatif (donc que x + 2 + 1/x tend vers −∞) donne le mauvais signe ; la valeur 2 ne retient que le terme constant de x + 2 + 1/x ; et la valeur 0 ne retient que eˣ → 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j).\nQuelles sont les limites de f(x) et de f(x)/x quand x → +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → −∞ et f(x)/x → −∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et f(x)/x → +∞"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → −∞ et f(x)/x → +∞"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et f(x)/x → −∞"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Pour x > 0, f(x) = xeˣ((x + 1)²/(xeˣ) − 1) avec (x + 1)²/(xeˣ) → 0 par croissances comparées, donc f(x) ~ −xeˣ → −∞. De même f(x)/x = x + 2 + 1/x − eˣ → −∞ car eˣ l'emporte sur x + 2 + 1/x ✓. Croire que le polynôme (x + 1)² l'emporte donne +∞ ; ne garder que (x + 1)²/x = x + 2 + 1/x donne f(x)/x → +∞, en oubliant le terme −eˣ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j).\nQuelle est l'expression de f′(x) pour tout réel x ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 2(x + 1) − eˣ"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 2(x + 1) − xeˣ"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = (x + 1)(2 − eˣ)"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = (x + 1)(2 + eˣ)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(x + 1)² a pour dérivée 2(x + 1), et xeˣ a pour dérivée eˣ + xeˣ = (x + 1)eˣ. Donc f′(x) = 2(x + 1) − (x + 1)eˣ = (x + 1)(2 − eˣ) ✓. Dériver xeˣ en eˣ seulement oublie le facteur x ; le dériver en xeˣ oublie la dérivée de x ; et un signe + devant (x + 1)eˣ vient d'un signe perdu en passant de f à −xeˣ.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j). On note (Γ) la courbe de la fonction g définie par g(x) = eˣ et Δ la droite d'équation y = x + 1.\nQuelles égalités établissent que Δ est tangente à (C_f) et à (Γ) au point d'abscisse 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(0) = g(0) = 1, qui suffisent : les deux courbes passent par le point (0 ; 1) de Δ"
+        },
+        {
+          "id": "b",
+          "text": "f′(0) = g′(0) = 1, qui suffisent : les deux pentes sont égales à celle de Δ"
+        },
+        {
+          "id": "c",
+          "text": "f(0) = g(0) = 1 et f′(0) = g′(0) = 1, valeurs de y = x + 1 et de sa pente en 0"
+        },
+        {
+          "id": "d",
+          "text": "f(0) = g(0) = 1 et f′(0) = g′(0) = 0 : les deux courbes ont la tangente horizontale y = 1"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Δ a pour équation y = x + 1 : elle passe par (0 ; 1) et sa pente vaut 1. Or f(0) = 1 − 0 = 1, g(0) = e⁰ = 1, f′(0) = (0 + 1)(2 − 1) = 1 et g′(0) = e⁰ = 1. Chaque courbe passe donc par (0 ; 1) avec la pente de Δ : Δ est leur tangente en ce point ✓. Un point commun seul, ou une pente égale seule, ne fait pas une tangente ; et f′(0) vaut 1, non 0.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle justification établit que eˣ ≥ x + 1 pour tout réel x, à partir de la courbe (Γ) de g(x) = eˣ et de sa tangente Δ : y = x + 1 en 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "g″(x) = eˣ > 0 : (Γ) est convexe, donc au-dessus de toutes ses tangentes, dont Δ"
+        },
+        {
+          "id": "b",
+          "text": "g′(x) = eˣ > 0 : g est croissante, donc (Γ) est au-dessus de Δ"
+        },
+        {
+          "id": "c",
+          "text": "g(0) = 1 : (Γ) et Δ ont un point commun, donc (Γ) reste au-dessus de Δ"
+        },
+        {
+          "id": "d",
+          "text": "g″(x) = eˣ > 0 : (Γ) est concave, donc au-dessus de toutes ses tangentes, dont Δ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une fonction deux fois dérivable dont la dérivée seconde est positive est convexe : sa courbe reste au-dessus de chacune de ses tangentes. Ici g″(x) = eˣ > 0 sur ℝ, donc (Γ) est au-dessus de Δ, tangente en 0, soit eˣ ≥ x + 1 ✓. La croissance de g ne dit rien de la position par rapport à une tangente (Δ aussi est croissante) ; un point commun n'empêche pas les deux courbes de se croiser ; et g″ > 0 signifie convexe, non concave.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j).\nQuelle est la factorisation correcte de eˣ − f(x) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "eˣ − f(x) = x(eˣ − x − 1)"
+        },
+        {
+          "id": "b",
+          "text": "eˣ − f(x) = (x + 1)(eˣ − 1)"
+        },
+        {
+          "id": "c",
+          "text": "eˣ − f(x) = (x + 1)(eˣ − x + 1)"
+        },
+        {
+          "id": "d",
+          "text": "eˣ − f(x) = (x + 1)(eˣ − x − 1)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "eˣ − f(x) = eˣ − (x + 1)² + xeˣ = (x + 1)eˣ − (x + 1)² = (x + 1)(eˣ − (x + 1)) = (x + 1)(eˣ − x − 1) ✓. La factorisation x(eˣ − x − 1) est celle de (x + 1) − f(x) ; (x + 1)(eˣ − 1) oublie de retrancher x + 1 en entier ; et (x + 1)(eˣ − x + 1) change le signe du 1 lors de la mise en facteur.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j).\nQuel est le tableau de variation de f sur ℝ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f croît sur ]−∞ ; −1], décroît sur [−1 ; ln 2], croît sur [ln 2 ; +∞[ ; f(−1) = 1/e et f(ln 2) = 1 + (ln 2)²"
+        },
+        {
+          "id": "b",
+          "text": "f décroît sur ]−∞ ; −1], croît sur [−1 ; ln 2], décroît sur [ln 2 ; +∞[ ; f(−1) = 1/e et f(ln 2) = 1 + (ln 2)²"
+        },
+        {
+          "id": "c",
+          "text": "f décroît sur ]−∞ ; −1], croît sur [−1 ; ln 2], décroît sur [ln 2 ; +∞[ ; f(−1) = −1/e et f(ln 2) = 1 + (ln 2)²"
+        },
+        {
+          "id": "d",
+          "text": "f décroît sur ]−∞ ; −1], croît sur [−1 ; ln 2], décroît sur [ln 2 ; +∞[ ; f(−1) = 1/e et f(ln 2) = (1 − ln 2)²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′(x) = (x + 1)(2 − eˣ) s'annule en −1 et en ln 2 (car eˣ = 2). Signe : négatif sur ]−∞ ; −1[ (x + 1 < 0, 2 − eˣ > 0), positif sur ]−1 ; ln 2[, négatif sur ]ln 2 ; +∞[. Les extremums sont f(−1) = 0² − (−1)e^(−1) = 1/e et f(ln 2) = (ln 2 + 1)² − ln 2 × 2 = 1 + (ln 2)² ✓, avec les limites +∞ en −∞ et −∞ en +∞. L'erreur classique est de lire le signe du produit à l'envers ; f(−1) = 1/e, non −1/e, car −xeˣ vaut +1/e en −1 ; et (ln 2 + 1)² − 2 ln 2 se simplifie en (ln 2)² + 1, non en (1 − ln 2)² (mauvais développement).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j). On note (Γ) la courbe de la fonction g définie par g(x) = eˣ et Δ la droite d'équation y = x + 1.\nOn admet que eˣ − f(x) = (x + 1)(eˣ − x − 1) et que eˣ − x − 1 ≥ 0 pour tout x, avec égalité seulement en 0. Quelle est la position relative de (C_f) et (Γ) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(C_f) est au-dessus de (Γ) sur ]−1 ; +∞[ privé de 0, et au-dessous sur ]−∞ ; −1[ ; les courbes se coupent en −1 et en 0"
+        },
+        {
+          "id": "b",
+          "text": "(Γ) est au-dessus de (C_f) sur ℝ privé de 0 ; les courbes se coupent seulement en 0"
+        },
+        {
+          "id": "c",
+          "text": "(Γ) est au-dessus de (C_f) sur ]−∞ ; 0[ et au-dessous sur ]0 ; +∞[ ; les courbes se coupent seulement en 0"
+        },
+        {
+          "id": "d",
+          "text": "(Γ) est au-dessus de (C_f) sur ]−1 ; +∞[ privé de 0, et au-dessous sur ]−∞ ; −1[ ; les courbes se coupent en −1 et en 0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Comme eˣ − x − 1 > 0 pour x ≠ 0, le signe de eˣ − f(x) est celui de x + 1 : positif pour x > −1 (x ≠ 0), négatif pour x < −1, nul en −1 et en 0. Donc (Γ) est au-dessus de (C_f) sur ]−1 ; +∞[ privé de 0, au-dessous sur ]−∞ ; −1[, et les courbes se coupent en −1 et en 0 ✓. Une différence positive place (Γ) au-dessus, non (C_f). Ignorer le facteur x + 1 fait croire à une même position partout ; et prendre x pour facteur de signe confond avec la différence (x + 1) − f(x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j). On note (Γ) la courbe de la fonction g définie par g(x) = eˣ et Δ la droite d'équation y = x + 1.\nOn admet que (x + 1) − f(x) = x(eˣ − x − 1) et que eˣ − x − 1 ≥ 0 pour tout x, avec égalité seulement en 0. Quelle est la position relative de (C_f) et de Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(C_f) est au-dessous de Δ sur ]−∞ ; 0[ et au-dessus de Δ sur ]0 ; +∞[ ; elles se coupent en 0"
+        },
+        {
+          "id": "b",
+          "text": "(C_f) est au-dessus de Δ sur ]−∞ ; 0[ et au-dessous de Δ sur ]0 ; +∞[ ; elles se coupent en 0"
+        },
+        {
+          "id": "c",
+          "text": "(C_f) est au-dessous de Δ sur ℝ privé de 0 ; elles se coupent seulement en 0"
+        },
+        {
+          "id": "d",
+          "text": "(C_f) est au-dessus de Δ sur ]−∞ ; −1[ et au-dessous de Δ sur ]−1 ; +∞[ ; elles se coupent en −1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(x + 1) − f(x) a le signe de x : positif pour x > 0, négatif pour x < 0, nul en 0. Pour x > 0, la droite Δ est donc au-dessus de (C_f), c'est-à-dire (C_f) au-dessous de Δ ; pour x < 0, (C_f) est au-dessus de Δ ✓. Dire (C_f) au-dessous partout ignore le signe de x ; et le changement de signe en −1 est celui de eˣ − f(x), non de (x + 1) − f(x).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ℝ par f(x) = (x + 1)² − xeˣ, de courbe (C_f) dans un repère orthogonal (O, i, j). On note (Γ) la courbe de la fonction g définie par g(x) = eˣ et Δ la droite d'équation y = x + 1.\nOn étudie l'aire A de la partie du plan limitée par (C_f), (Γ) et les droites x = −1 et x = 0. Sur [−1 ; 0], (Γ) est au-dessus de (C_f). Quelle intégrale donne A ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A = ∫ de −1 à 0 de (f(x) − eˣ) dx"
+        },
+        {
+          "id": "b",
+          "text": "A = ∫ de −1 à 0 de (eˣ + f(x)) dx"
+        },
+        {
+          "id": "c",
+          "text": "A = ∫ de −1 à 0 de (eˣ − f(x)) dx"
+        },
+        {
+          "id": "d",
+          "text": "A = ∫ de 0 à 1 de (eˣ − f(x)) dx"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'aire entre deux courbes sur [a ; b] est ∫ de a à b de (courbe du dessus − courbe du dessous). Ici (Γ) est au-dessus de (C_f) sur [−1 ; 0], donc A = ∫ de −1 à 0 de (eˣ − f(x)) dx = ∫ de −1 à 0 de (x + 1)(eˣ − x − 1) dx ✓. Inverser la différence donne l'opposé de l'aire ; une somme n'est pas une aire entre deux courbes ; et les bornes sont −1 et 0, non 0 et 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quelle est la valeur de l'intégrale ∫ de −1 à 0 de (x + 1)(eˣ − x − 1) dx ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/e − 1/3"
+        },
+        {
+          "id": "b",
+          "text": "1/3 − 1/e"
+        },
+        {
+          "id": "c",
+          "text": "1/e + 1/3"
+        },
+        {
+          "id": "d",
+          "text": "1/e − 1/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On développe (x + 1)(eˣ − x − 1) = (x + 1)eˣ − (x + 1)². Une primitive de (x + 1)eˣ est xeˣ (car (xeˣ)′ = (x + 1)eˣ) et une primitive de (x + 1)² est (x + 1)³/3. Donc l'intégrale vaut [xeˣ − (x + 1)³/3] de −1 à 0 = (0 − 1/3) − (−e^(−1) − 0) = 1/e − 1/3 ≈ 0,035 ✓, valeur positive comme l'intégrale d'une fonction positive. Permuter les bornes donne 1/3 − 1/e ; mal gérer le signe de la primitive en −1 donne 1/e + 1/3 ; et une primitive de (x + 1)² prise égale à (x + 1)²/2 donne 1/e − 1/2.",
+      "difficulty": 3
+    }
+  ]
+}

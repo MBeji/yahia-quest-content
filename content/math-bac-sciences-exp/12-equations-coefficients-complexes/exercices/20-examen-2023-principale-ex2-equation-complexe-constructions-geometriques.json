@@ -1,0 +1,250 @@
+{
+  "title": "🏛️ Bac 2023 · session principale · Exercice 2 ⭐⭐⭐⭐ : Équation du second degré, inverse, carré et constructions de points",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 20,
+  "questions": [
+    {
+      "prompt": "Dans ℂ, on considère l'équation\n(E) : z² + (1 − 3i√3)z − 8 = 0\nQue vaut son discriminant Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δ = 60 − 6i√3"
+        },
+        {
+          "id": "b",
+          "text": "Δ = −58 − 6i√3"
+        },
+        {
+          "id": "c",
+          "text": "Δ = 6 − 6i√3"
+        },
+        {
+          "id": "d",
+          "text": "Δ = 6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Ici a = 1, b = 1 − 3i√3 et c = −8. On a b² = 1 − 6i√3 + (3i√3)² = 1 − 6i√3 − 27 = −26 − 6i√3 et −4ac = 32. Donc Δ = −26 − 6i√3 + 32 = 6 − 6i√3 ✓. Remarque : Δ = (3 − i√3)², car (3 − i√3)² = 9 − 6i√3 − 3. Le piège courant : écrire (3i√3)² = +27 donne 60 − 6i√3 ; retrancher 32 au lieu de l'ajouter (mauvais signe de −4ac) donne −58 − 6i√3 ; oublier le double produit −6i√3 donne 6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, A est le point d'affixe a = 1 + i√3. Quelles sont les écritures exponentielles de 1/a et de a² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/a = 2e^(−iπ/3) et a² = 4e^(i2π/3)"
+        },
+        {
+          "id": "b",
+          "text": "1/a = (1/2)e^(−iπ/3) et a² = 2e^(i2π/3)"
+        },
+        {
+          "id": "c",
+          "text": "1/a = 2e^(−iπ/3) et a² = 2e^(i2π/3)"
+        },
+        {
+          "id": "d",
+          "text": "1/a = (1/2)e^(−iπ/3) et a² = 4e^(i2π/3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a |a| = √(1 + 3) = 2 et cos θ = 1/2, sin θ = √3/2, donc a = 2e^(iπ/3). Alors 1/a = (1/2)e^(−iπ/3) (on inverse le module et l'on change le signe de l'argument) et a² = 2²e^(i2π/3) = 4e^(i2π/3) (on élève le module au carré et l'on double l'argument) ✓. Le piège courant : garder le module 2 pour l'inverse (au lieu de 1/2) ou doubler le module sans l'élever au carré (2 au lieu de 4) ; ces deux erreurs sont indépendantes l'une de l'autre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un repère orthonormé direct, I et A sont les points d'affixes 1 et 1 + i√3, et M est un point de la droite (IA). Que peut-on dire de l'affixe z de M ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Re(z) = √3"
+        },
+        {
+          "id": "b",
+          "text": "Re(z) = 1"
+        },
+        {
+          "id": "c",
+          "text": "Im(z) = 1"
+        },
+        {
+          "id": "d",
+          "text": "Re(z) = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les points I(1) et A(1 + i√3) ont la même partie réelle 1 : la droite (IA) est la droite verticale d'équation x = 1. Tout point M de cette droite a donc une partie réelle égale à 1 : Re(z) = 1 ✓ (et z = 1 + ib avec b réel). Le piège courant : confondre abscisse et ordonnée (Im z = 1 serait une droite horizontale) ; prendre pour abscisse la partie imaginaire √3 de A ; la droite x = 0 est l'axe des ordonnées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit b un réel et z = 1 + ib. Que vaut la partie imaginaire de z² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "b²"
+        },
+        {
+          "id": "b",
+          "text": "1 − b²"
+        },
+        {
+          "id": "c",
+          "text": "2b"
+        },
+        {
+          "id": "d",
+          "text": "2b²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On développe : z² = 1 + 2ib + (ib)² = (1 − b²) + 2ib. La partie imaginaire est 2b, soit le double de Im(z) = b ✓. Le piège courant : confondre partie réelle et partie imaginaire donne 1 − b² ; lire le terme (ib)² = −b² comme partie imaginaire donne b² (au signe près) ; multiplier le double produit 2b par b donne 2b².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans ℂ, on considère l'équation\n(E) : z² + (1 − 3i√3)z − 8 = 0\nQuelles sont ses deux solutions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = 1 + i√3 ou z = −2 + 2i√3"
+        },
+        {
+          "id": "b",
+          "text": "z = 2 − 2i√3 ou z = −1 − i√3"
+        },
+        {
+          "id": "c",
+          "text": "z = 1 + 2i√3 ou z = −2 + i√3"
+        },
+        {
+          "id": "d",
+          "text": "z = 2 + 2i√3 ou z = −4 + 4i√3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le discriminant vaut Δ = 6 − 6i√3 = (3 − i√3)², donc δ = 3 − i√3. Les solutions sont z = (−b ± δ)/2 avec −b = −1 + 3i√3 : z = (−1 + 3i√3 + 3 − i√3)/2 = 1 + i√3 et z = (−1 + 3i√3 − 3 + i√3)/2 = −2 + 2i√3 ✓. Contrôle par le produit : (1 + i√3)(−2 + 2i√3) = −2 + 2i√3 − 2i√3 − 6 = −8 = c/a ✓. Le piège courant : prendre b au lieu de −b donne les opposés des solutions ; une racine carrée fautive (3 + i√3) donne des solutions qui ne vérifient pas l'équation ; oublier de diviser par 2a = 2 double les deux solutions.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit b un réel non nul et M le point d'affixe z = 1 + ib. N est le point d'affixe z². Que vaut le quotient (z_N − z_M)/z_M ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ib"
+        },
+        {
+          "id": "b",
+          "text": "2 + ib"
+        },
+        {
+          "id": "c",
+          "text": "1 + ib"
+        },
+        {
+          "id": "d",
+          "text": "−ib"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On a z_N − z_M = z² − z = z(z − 1) = z × ib. Donc (z_N − z_M)/z_M = ib ✓. Ce quotient est un imaginaire pur (b ≠ 0) : les vecteurs MN⃗ et OM⃗ sont orthogonaux, c'est-à-dire (MN) ⊥ (OM). Le piège courant : factoriser z² + z au lieu de z² − z donne z + 1 = 2 + ib ; oublier la soustraction et garder z² / z donne z = 1 + ib ; se tromper de signe en écrivant 1 − z donne −ib.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit b un réel non nul et M le point d'affixe z = 1 + ib, situé sur la droite d'équation x = 1 (figure ci-dessous). N est le point d'affixe z². Comment construire N ?\n<svg viewBox=\"0 0 206 206\"><title>Droite (IA) d'équation x = 1 et point M de cette droite</title><path d=\"M15 147 H191\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M59 191 V15\" stroke=\"#0f172a\" stroke-width=\"1.2\" fill=\"none\"/><path d=\"M191 147 l-6 -3 l0 6 z\" fill=\"#0f172a\"/><path d=\"M59 15 l-3 6 l6 0 z\" fill=\"#0f172a\"/><path d=\"M15 144 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"15\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M103 144 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"103\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M147 144 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"147\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M191 144 v6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"191\" y=\"162\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">3</text><path d=\"M56 191 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"52\" y=\"194\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">−1</text><path d=\"M56 103 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"52\" y=\"106\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">1</text><path d=\"M56 59 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"52\" y=\"62\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">2</text><path d=\"M56 15 h6\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"52\" y=\"18\" text-anchor=\"end\" font-size=\"10\" fill=\"#0f172a\">3</text><text x=\"54\" y=\"160\" text-anchor=\"end\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">O</text><path d=\"M103 182.2 L103 50.2\" stroke=\"#b45309\" stroke-width=\"1.8\" fill=\"none\" /><path d=\"M59 147 L103 125.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\" /><circle cx=\"59\" cy=\"147\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"45\" y=\"161\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">O</text><circle cx=\"103\" cy=\"147\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"107\" y=\"162\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">I</text><circle cx=\"103\" cy=\"125.0\" r=\"3.2\" fill=\"#0f6e56\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"109\" y=\"121.0\" font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\">M</text></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "N est l'intersection de la perpendiculaire à (OM) passant par M et de la droite d'équation y = b."
+        },
+        {
+          "id": "b",
+          "text": "N est l'intersection de la parallèle à (OM) passant par M et de la droite d'équation y = 2b."
+        },
+        {
+          "id": "c",
+          "text": "N est l'intersection de la parallèle à (OM) passant par M et de la droite d'équation y = b."
+        },
+        {
+          "id": "d",
+          "text": "N est l'intersection de la perpendiculaire à (OM) passant par M et de la droite d'équation y = 2b."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a MN⃗ d'affixe z² − z = z × ib : le quotient (z_N − z_M)/z_M = ib est un imaginaire pur, donc (MN) ⊥ (OM). De plus Im(z²) = 2b : N a pour ordonnée 2b. N est donc l'intersection de la perpendiculaire à (OM) en M et de la droite horizontale y = 2b ✓. Le piège courant : la droite y = b coupe la perpendiculaire en M lui-même ; la parallèle à (OM) passant par M est (OM) elle-même, qui ne contient pas z² dès que b ≠ 0, et elle ne donne pas le bon point, que l'on coupe avec y = b ou avec y = 2b.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit b un réel non nul et z = 1 + ib. P et P′ sont les points d'affixes 1/z et z̄. Que vaut le quotient z_P/z_P′ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 − ib)/(1 + ib)"
+        },
+        {
+          "id": "b",
+          "text": "1/(1 + b²)"
+        },
+        {
+          "id": "c",
+          "text": "1/(1 + b)²"
+        },
+        {
+          "id": "d",
+          "text": "1/(1 − b²)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a z_P/z_P′ = (1/z)/z̄ = 1/(z z̄) = 1/|z|² = 1/(1 + b²) ✓. C'est un réel strictement positif. Le piège courant : confondre 1/(z z̄) avec z̄/z donne (1 − ib)/(1 + ib), qui n'est pas réel ; écrire |z|² = (1 + b)² oublie que les parties réelle et imaginaire se traitent séparément ; écrire (1 + ib)(1 − ib) = 1 − b² en prenant (ib)² = b² donne 1/(1 − b²).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit b un réel non nul et z = 1 + ib. Que vaut |1/z − 1/2| ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "1/√(1 + b²)"
+        },
+        {
+          "id": "d",
+          "text": "1/(2√(1 + b²))"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On a 1/z − 1/2 = (2 − z)/(2z) = (1 − ib)/(2(1 + ib)). Les modules de 1 − ib et de 1 + ib sont égaux (conjugués), donc |1/z − 1/2| = 1/2 ✓. Le piège courant : oublier que 1 − ib et 1 + ib ont le même module donne 1/√(1 + b²) ou une variante ; ne pas diviser par 2 donne 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit b un réel non nul, M le point d'affixe z = 1 + ib, P′ son symétrique par rapport à l'axe des abscisses, et I le point d'affixe 1. P est le point d'affixe 1/z. Comment construire P ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P est le second point d'intersection de la droite (OM) avec le cercle de diamètre [OI]."
+        },
+        {
+          "id": "b",
+          "text": "P est le second point d'intersection de la droite (OP′) avec le cercle de centre O et de rayon 1."
+        },
+        {
+          "id": "c",
+          "text": "P est le second point d'intersection de la droite (OM) avec le cercle de centre O et de rayon 1."
+        },
+        {
+          "id": "d",
+          "text": "P est le second point d'intersection de la droite (OP′) avec le cercle de diamètre [OI]."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On a z_P = 1/z = z̄/|z|² : P est sur la droite (OP′) (alignement avec O et z̄). Et |1/z − 1/2| = 1/2 : P est sur le cercle de diamètre [OI] ✓. P est distinct de I car 1/z = 1 équivaut à z = 1, c'est-à-dire b = 0. Le piège courant : la droite (OM) donne le point d'argument arg z, alors que P a pour argument −arg z ; le cercle de rayon 1 centré en O ne contient P que si |z| = 1, ce qui n'est pas le cas en général.",
+      "difficulty": 3
+    }
+  ]
+}

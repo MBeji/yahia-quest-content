@@ -1,0 +1,202 @@
+{
+  "title": "🏛️ Bac 2022 · session principale · Exercice 3 ⭐⭐⭐ : suites d'intégrales, relations de récurrence et limites",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 15,
+  "questions": [
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nQuelle est la valeur de K₁ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 ln 2"
+        },
+        {
+          "id": "b",
+          "text": "(1/4) ln 2"
+        },
+        {
+          "id": "c",
+          "text": "(1/2) ln 2"
+        },
+        {
+          "id": "d",
+          "text": "ln 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "K₁ = ∫₀¹ x/(1 + x²) dx. La forme u′/u avec u = 1 + x² donne u′ = 2x : une primitive de x/(1 + x²) est (1/2) ln(1 + x²). Donc K₁ = (1/2) ln 2 − (1/2) ln 1 = (1/2) ln 2 ✓. Multiplier par 2 au lieu de diviser donne 2 ln 2 ; appliquer deux fois le facteur 1/2 donne (1/4) ln 2 ; oublier le facteur 1/2 de la primitive donne ln 2.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nQue vaut Kₙ₊₂ + Kₙ pour tout n ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/(n + 1)"
+        },
+        {
+          "id": "b",
+          "text": "1/(n + 2)"
+        },
+        {
+          "id": "c",
+          "text": "1/(n + 3)"
+        },
+        {
+          "id": "d",
+          "text": "1/(n + 1) + 1/(n + 3)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Kₙ₊₂ + Kₙ = ∫₀¹ (xⁿ⁺² + xⁿ)/(1 + x²) dx = ∫₀¹ xⁿ(x² + 1)/(1 + x²) dx = ∫₀¹ xⁿ dx = 1/(n + 1) ✓. 1/(n + 3) est la seule intégrale ∫₀¹ xⁿ⁺² dx, avec le terme xⁿ oublié ; 1/(n + 2) vient de l'intégrale de xⁿ⁺¹ au lieu de xⁿ ; additionner 1/(n + 1) et 1/(n + 3) revient à intégrer xⁿ et xⁿ⁺² en oubliant le dénominateur 1 + x².",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nOn sait que 0 ≤ Kₙ ≤ 1/(n + 1) pour tout n ≥ 1. Que vaut la limite de Kₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "(1/2) ln 2"
+        },
+        {
+          "id": "c",
+          "text": "+∞"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Par le théorème des gendarmes : 0 ≤ Kₙ ≤ 1/(n + 1) et 1/(n + 1) → 0, donc Kₙ → 0 ✓. 1/2 est la valeur de K₁ + K₃, pas une limite, et (1/2) ln 2 est K₁ : ce sont des valeurs de la suite, non sa limite.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nQuelle est la valeur de K₃ ? On rappelle que K₁ = (1/2) ln 2.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 + ln 2)/2"
+        },
+        {
+          "id": "b",
+          "text": "(1 − ln 2)/2"
+        },
+        {
+          "id": "c",
+          "text": "1/3 − (ln 2)/2"
+        },
+        {
+          "id": "d",
+          "text": "1/4 + (ln 2)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La relation Kₙ₊₂ + Kₙ = 1/(n + 1) pour n = 1 donne K₃ + K₁ = 1/2, donc K₃ = 1/2 − (1/2) ln 2 = (1 − ln 2)/2 ✓. Un signe faux donne (1 + ln 2)/2 ; prendre n = 2 au lieu de n = 1 donne 1/3 à la place de 1/2 ; prendre n = 3 donne 1/4, et cumulé avec un signe faux, 1/4 + (ln 2)/2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nQuel argument établit que 0 ≤ Kₙ ≤ 1/(n + 1) pour tout n ≥ 1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sur [0 ; 1], xⁿ ≤ 1 ; on divise par 1 + x² et on intègre pour avoir Kₙ ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "sur [0 ; 1], 1/(1 + x²) ≥ 1 ; on multiplie par xⁿ et on intègre"
+        },
+        {
+          "id": "c",
+          "text": "sur [0 ; 1], 1 + x² ≤ 1 ; on divise xⁿ par 1 + x² et on intègre"
+        },
+        {
+          "id": "d",
+          "text": "sur [0 ; 1], 0 ≤ 1/(1 + x²) ≤ 1 ; on multiplie par xⁿ et on intègre"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour x ∈ [0 ; 1], 1 + x² ≥ 1, donc 0 < 1/(1 + x²) ≤ 1. En multipliant par xⁿ ≥ 0 : 0 ≤ xⁿ/(1 + x²) ≤ xⁿ. L'intégration sur [0 ; 1] (positivité et croissance de l'intégrale) donne 0 ≤ Kₙ ≤ ∫₀¹ xⁿ dx = 1/(n + 1) ✓. Majorer seulement xⁿ par 1 donne la borne 1, trop faible pour conclure ; et 1 + x² ≥ 1 renverse les deux autres inégalités.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Iₙ = ∫₀¹ xⁿ ln(1 + x²) dx et Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nQuelle relation obtient-on entre Iₙ et Kₙ₊₂ en intégrant Iₙ par parties avec u = ln(1 + x²) et v′ = xⁿ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iₙ = (ln 2)/(n + 1) − (2/(n + 1)) Kₙ₊₂"
+        },
+        {
+          "id": "b",
+          "text": "Iₙ = (ln 2)/(n + 1) − (2/(n + 1)) Kₙ"
+        },
+        {
+          "id": "c",
+          "text": "Iₙ = (ln 2)/(n + 1) + (1/(n + 1)) Kₙ₊₂"
+        },
+        {
+          "id": "d",
+          "text": "Iₙ = (ln 2)/(n + 1) + (1/(n + 1)) Kₙ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "u′ = 2x/(1 + x²) et v = xⁿ⁺¹/(n + 1) donnent Iₙ = [xⁿ⁺¹ ln(1 + x²)/(n + 1)]₀¹ − ∫₀¹ (xⁿ⁺¹/(n + 1)) × (2x/(1 + x²)) dx = (ln 2)/(n + 1) − (2/(n + 1)) ∫₀¹ xⁿ⁺²/(1 + x²) dx = (ln 2)/(n + 1) − (2/(n + 1)) Kₙ₊₂ ✓. Le produit xⁿ⁺¹ × x fait monter l'indice à n + 2 (l'oublier donne Kₙ) ; le facteur 2 vient de la dérivée de 1 + x² (l'oublier donne le facteur 1/(n + 1)) ; le signe de l'intégrale restante est − (le signe + vient d'un oubli du signe de la formule d'intégration par parties).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Iₙ = ∫₀¹ xⁿ ln(1 + x²) dx et Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nOn sait que Iₙ = (ln 2)/(n + 1) − (2/(n + 1)) Kₙ₊₂ et que Kₙ₊₂ ≥ 0. Quel encadrement de Iₙ permet de conclure que Iₙ tend vers 0 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(ln 2)/(n + 1) ≤ Iₙ ≤ 1"
+        },
+        {
+          "id": "b",
+          "text": "Iₙ ≥ (ln 2)/(n + 1) et Iₙ ≤ 2/(n + 1)"
+        },
+        {
+          "id": "c",
+          "text": "0 ≤ Iₙ ≤ (ln 2)/(n + 1)"
+        },
+        {
+          "id": "d",
+          "text": "Iₙ ≤ 0 et Iₙ ≥ −2/(n + 1)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Comme Kₙ₊₂ ≥ 0, on retranche une quantité positive : Iₙ ≤ (ln 2)/(n + 1). Et Iₙ ≥ 0 car l'intégrande xⁿ ln(1 + x²) est positif sur [0 ; 1]. Donc 0 ≤ Iₙ ≤ (ln 2)/(n + 1), et le théorème des gendarmes donne Iₙ → 0 ✓. Retrancher Kₙ₊₂ ne peut que diminuer, jamais augmenter : Iₙ ≥ (ln 2)/(n + 1) est faux.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour tout entier n ≥ 1, on pose Iₙ = ∫₀¹ xⁿ ln(1 + x²) dx et Kₙ = ∫₀¹ xⁿ/(1 + x²) dx.\nOn sait que Iₙ = (ln 2)/(n + 1) − (2/(n + 1)) Kₙ₊₂ et que Kₙ₊₂ → 0. Que vaut la limite de n Iₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "+∞"
+        },
+        {
+          "id": "c",
+          "text": "ln 2"
+        },
+        {
+          "id": "d",
+          "text": "ln 2 − 2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "n Iₙ = (n/(n + 1)) ln 2 − (2n/(n + 1)) Kₙ₊₂. Or n/(n + 1) → 1 et Kₙ₊₂ → 0, donc n Iₙ → ln 2 − 0 = ln 2 ✓. Le produit n Iₙ n'est pas une forme « ∞ × 0 » indéterminée à abandonner : on le réécrit avec n/(n + 1), qui tend vers 1. Conclure 0 parce que Iₙ → 0 oublie le facteur n.",
+      "difficulty": 3
+    }
+  ]
+}

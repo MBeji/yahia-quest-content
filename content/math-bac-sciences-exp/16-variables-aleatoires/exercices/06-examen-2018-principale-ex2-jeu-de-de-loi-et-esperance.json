@@ -1,0 +1,178 @@
+{
+  "title": "🏛️ Bac 2018 · session principale · Exercice 2 ⭐⭐⭐ : jeu de dé en deux lancers, loi, espérance et nombre moyen de gagnants",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 6,
+  "questions": [
+    {
+      "prompt": "Dans un magasin, un jeu de hasard utilise un dé cubique équilibré dont une face porte la lettre G, deux faces la lettre R et trois faces la lettre D. Le client lance le dé : G rapporte 100 DT et le jeu s'arrête ; R ne rapporte rien et le jeu s'arrête ; D permet un deuxième lancer, où G rapporte 50 DT et R ou D ne rapportent rien. On note G₁ l'événement « le client reçoit 100 DT » et G₂ l'événement « le client reçoit 50 DT ».\nQuelle est la probabilité p(G₁) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(G₁) = 1/3"
+        },
+        {
+          "id": "b",
+          "text": "p(G₁) = 1/6"
+        },
+        {
+          "id": "c",
+          "text": "p(G₁) = 1/2"
+        },
+        {
+          "id": "d",
+          "text": "p(G₁) = 1/5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "G₁ se réalise quand la face supérieure du premier lancer porte G : 1 face favorable sur 6, donc p(G₁) = 1/6 ✓ (dé équilibré, issues équiprobables). 1/3 est la probabilité de R (2 faces sur 6), 1/2 celle de D (3 faces sur 6), et 1/5 compte 1 face sur 5, comme si l'une des 6 faces n'existait pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un magasin, un jeu de hasard utilise un dé cubique équilibré dont une face porte la lettre G, deux faces la lettre R et trois faces la lettre D. Le client lance le dé : G rapporte 100 DT et le jeu s'arrête ; R ne rapporte rien et le jeu s'arrête ; D permet un deuxième lancer, où G rapporte 50 DT et R ou D ne rapportent rien. On note G₁ l'événement « le client reçoit 100 DT » et G₂ l'événement « le client reçoit 50 DT ».\nQuelle est la probabilité p(G₂) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(G₂) = 1/6"
+        },
+        {
+          "id": "b",
+          "text": "p(G₂) = 1/36"
+        },
+        {
+          "id": "c",
+          "text": "p(G₂) = 2/3"
+        },
+        {
+          "id": "d",
+          "text": "p(G₂) = 1/12"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "G₂ exige deux événements successifs : D au premier lancer (3/6 = 1/2) puis G au deuxième (1/6). Les lancers étant indépendants, p(G₂) = (1/2) × (1/6) = 1/12 ✓. Garder 1/6 oublie qu'il faut d'abord obtenir D ; 1/36 = (1/6)(1/6) suppose G aux deux lancers ; et 2/3 additionne 1/2 et 1/6 au lieu de les multiplier.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un magasin, un jeu de hasard utilise un dé cubique équilibré dont une face porte la lettre G, deux faces la lettre R et trois faces la lettre D. Le client lance le dé : G rapporte 100 DT et le jeu s'arrête ; R ne rapporte rien et le jeu s'arrête ; D permet un deuxième lancer, où G rapporte 50 DT et R ou D ne rapportent rien. On note G₁ l'événement « le client reçoit 100 DT » et G₂ l'événement « le client reçoit 50 DT ».\nQuelle est la probabilité de l'événement « le client reçoit un montant non nul » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "1/72"
+        },
+        {
+          "id": "c",
+          "text": "1/6"
+        },
+        {
+          "id": "d",
+          "text": "1/3"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Recevoir un montant non nul, c'est G₁ ou G₂. Ces deux événements sont incompatibles (le jeu s'arrête après G au premier lancer), donc p(G₁ ∪ G₂) = p(G₁) + p(G₂) = 1/6 + 1/12 = 3/12 = 1/4 ✓. Le produit 1/72 confond « ou » et « et » ; 1/6 = p(G₁) oublie G₂ ; et 1/3 = 1/6 + 1/6 donne à G₂ la probabilité d'un G au deuxième lancer sans exiger D d'abord.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un magasin, un jeu de hasard utilise un dé cubique équilibré dont une face porte la lettre G, deux faces la lettre R et trois faces la lettre D. Le client lance le dé : G rapporte 100 DT et le jeu s'arrête ; R ne rapporte rien et le jeu s'arrête ; D permet un deuxième lancer, où G rapporte 50 DT et R ou D ne rapportent rien. On note G₁ l'événement « le client reçoit 100 DT » et G₂ l'événement « le client reçoit 50 DT ».\nSoit X le montant reçu par un client, en DT (X vaut 0 s'il ne reçoit rien). Quelle est la loi de probabilité de X ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "p(X = 0) = 1/3, p(X = 50) = 1/12, p(X = 100) = 1/6"
+        },
+        {
+          "id": "b",
+          "text": "p(X = 0) = 3/4, p(X = 50) = 1/6, p(X = 100) = 1/12"
+        },
+        {
+          "id": "c",
+          "text": "p(X = 0) = 3/4, p(X = 50) = 1/12, p(X = 100) = 1/6"
+        },
+        {
+          "id": "d",
+          "text": "p(X = 0) = 3/4, p(X = 50) = 1/12, p(X = 100) = 1/4"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "X prend les valeurs 100 (événement G₁, probabilité 1/6), 50 (événement G₂, probabilité 1/12) et 0 (complémentaire) : p(X = 0) = 1 − 1/4 = 3/4. Contrôle : 3/4 + 1/12 + 1/6 = 9/12 + 1/12 + 2/12 = 1 ✓. Compter seulement R pour X = 0 (1/3) fait une somme de 7/12 ; échanger les probabilités de 50 et 100 oublie que 100 DT est le gain le plus probable ; et 1/4 est la probabilité de gagner, non celle de gagner 100 DT.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un magasin, un jeu de hasard utilise un dé cubique équilibré dont une face porte la lettre G, deux faces la lettre R et trois faces la lettre D. Le client lance le dé : G rapporte 100 DT et le jeu s'arrête ; R ne rapporte rien et le jeu s'arrête ; D permet un deuxième lancer, où G rapporte 50 DT et R ou D ne rapportent rien. On note G₁ l'événement « le client reçoit 100 DT » et G₂ l'événement « le client reçoit 50 DT ».\nOn a p(X = 0) = 3/4, p(X = 50) = 1/12, p(X = 100) = 1/6. Quel est le montant moyen E(X) reçu par un client ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E(X) = 50 DT"
+        },
+        {
+          "id": "b",
+          "text": "E(X) = 50/3 ≈ 16,67 DT"
+        },
+        {
+          "id": "c",
+          "text": "E(X) = 125/6 ≈ 20,83 DT"
+        },
+        {
+          "id": "d",
+          "text": "E(X) = 75/2 = 37,5 DT"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "E(X) = 0 × 3/4 + 50 × 1/12 + 100 × 1/6 = 50/12 + 200/12 = 250/12 = 125/6 ≈ 20,83 DT ✓. La moyenne simple (0 + 50 + 100)/3 = 50 ignore les probabilités ; 100 × 1/6 = 50/3 oublie le gain de 50 DT ; et 150 × 1/4 = 37,5 attribue un gain moyen de 150 DT à chaque gagnant, qui ne reçoit que 100 ou 50 DT.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "200 clients participent, chacun gagnant (montant non nul) avec la probabilité 1/4, indépendamment des autres. Soit Y le nombre de clients gagnants. Que vaut E(Y) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y suit la loi binomiale ℬ(200 ; 1/4), donc E(Y) = 200 × 1/4 = 50"
+        },
+        {
+          "id": "b",
+          "text": "E(Y) = 200 × 1/12 = 50/3 ≈ 16,7, car il faut deux lancers pour gagner"
+        },
+        {
+          "id": "c",
+          "text": "E(Y) = 200 × 1/6 ≈ 33,3, car un seul lancer suffit à gagner"
+        },
+        {
+          "id": "d",
+          "text": "E(Y) = 200 × 3/4 = 150, car 3 clients sur 4 sont concernés"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Y compte les succès (gain non nul, probabilité 1/4) sur 200 épreuves identiques et indépendantes : Y suit ℬ(200 ; 1/4) et E(Y) = np = 200 × 1/4 = 50 ✓. La probabilité de succès est celle d'un montant non nul, 1/4, non celle de G₂ (1/12) ni celle de G₁ (1/6) ; et 3/4 est la probabilité de ne rien recevoir.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans un magasin, un jeu de hasard utilise un dé cubique équilibré dont une face porte la lettre G, deux faces la lettre R et trois faces la lettre D. Le client lance le dé : G rapporte 100 DT et le jeu s'arrête ; R ne rapporte rien et le jeu s'arrête ; D permet un deuxième lancer, où G rapporte 50 DT et R ou D ne rapportent rien. On note G₁ l'événement « le client reçoit 100 DT » et G₂ l'événement « le client reçoit 50 DT ».\n200 clients participent à ce jeu, de façon indépendante, et le gérant a prévu 1 200 DT comme montant global à distribuer. A-t-il bien estimé ce montant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oui : le nombre moyen de gagnants fois le gain moyen par client donne 50 × 125/6 ≈ 1 042 DT ≤ 1 200 DT"
+        },
+        {
+          "id": "b",
+          "text": "Non : il faut prévoir 200 × 100 = 20 000 DT, puisque chaque client peut gagner 100 DT"
+        },
+        {
+          "id": "c",
+          "text": "Oui : le gain moyen par client est 20,83 DT et 1 200 DT ≥ 20,83 DT, donc la somme prévue suffit"
+        },
+        {
+          "id": "d",
+          "text": "Non : le montant moyen distribué est 200 × 125/6 ≈ 4 167 DT, bien supérieur à 1 200 DT"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le montant total distribué a pour espérance 200 × E(X) = 200 × 125/6 = 12 500/3 ≈ 4 167 DT (linéarité de l'espérance). La somme prévue de 1 200 DT est donc très insuffisante ✓. Multiplier le nombre de gagnants par le gain moyen par client mélange deux moyennes (50 gagnants ne reçoivent pas tous 125/6 DT) ; 20 000 DT supposerait que tous gagnent 100 DT ; et comparer 1 200 DT au gain d'un seul client n'a pas de sens.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "title": "🏛️ Bac 2023 · session de contrôle · Exercice 4 ⭐⭐⭐⭐ : étude de x ↦ x − ln(x + 2), aire et suite récurrente",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 16,
+  "questions": [
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nQuelle est la limite de f en −2 par valeurs supérieures, et que signifie-t-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−∞ : la droite d'équation x = −2 est asymptote verticale"
+        },
+        {
+          "id": "b",
+          "text": "−2 : la droite d'équation y = −2 est asymptote horizontale"
+        },
+        {
+          "id": "c",
+          "text": "+∞ : la droite d'équation x = −2 est asymptote verticale"
+        },
+        {
+          "id": "d",
+          "text": "0 : la courbe (C_f) passe par le point de coordonnées (−2 ; 0)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Quand x → −2⁺, x → −2 et x + 2 → 0⁺, donc ln(x + 2) → −∞ et −ln(x + 2) → +∞ : f(x) → −2 + ∞ = +∞ ✓, et la droite x = −2 est asymptote verticale. Le piège courant est d'oublier le signe moins devant le logarithme et de conclure −∞.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nQuelle est l'expression de f′(x) pour tout x > −2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f′(x) = 1 − 1/(x + 2)"
+        },
+        {
+          "id": "b",
+          "text": "f′(x) = 1 + 1/(x + 2)"
+        },
+        {
+          "id": "c",
+          "text": "f′(x) = 1 − 1/(x + 2)²"
+        },
+        {
+          "id": "d",
+          "text": "f′(x) = 1 + 1/x"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La dérivée de x est 1 et celle de ln(x + 2) est 1/(x + 2), donc f′(x) = 1 − 1/(x + 2) = (x + 1)/(x + 2) ✓. Un signe faux sur −ln donne 1 + 1/(x + 2) ; dériver comme une fraction donne un carré au dénominateur ; oublier le décalage de 2 donne 1 − 1/x, et avec un signe faux, 1 + 1/x.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nQue valent les limites de f(x) et de f(x)/x quand x tend vers +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(x) → +∞ et f(x)/x → +∞"
+        },
+        {
+          "id": "b",
+          "text": "f(x) → +∞ et f(x)/x → 0"
+        },
+        {
+          "id": "c",
+          "text": "f(x) → 0 et f(x)/x → 0"
+        },
+        {
+          "id": "d",
+          "text": "f(x) → +∞ et f(x)/x → 1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(x) = x(1 − ln(x + 2)/x). Par croissances comparées, ln(x + 2)/x → 0 ; donc f(x)/x → 1 et f(x) → +∞ ✓. Le piège courant est de croire que ln(x + 2), qui tend aussi vers +∞, compense x : la différence tend vers +∞ car x domine le logarithme.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nOn sait que f(x)/x → 1 en +∞. Quelle branche infinie (C_f) admet-elle au voisinage de +∞ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "asymptote oblique d'équation y = x en +∞, car f(x)/x → 1 et f(x) − x → 0"
+        },
+        {
+          "id": "b",
+          "text": "branche parabolique de direction Δ, car f(x) − x = −ln(x + 2) → −∞"
+        },
+        {
+          "id": "c",
+          "text": "branche parabolique de direction (O, j) en +∞, car f(x) → +∞ et f(x)/x → +∞"
+        },
+        {
+          "id": "d",
+          "text": "asymptote oblique d'équation y = x − 2 en +∞, car f(x) − x → −2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La limite f(x)/x → 1 donne la direction de Δ. Il faut ensuite étudier f(x) − x = −ln(x + 2) → −∞ : cette différence n'a pas de limite finie, donc Δ n'est pas asymptote et la courbe admet une branche parabolique de direction Δ ✓. Conclure à une asymptote dès que f(x)/x tend vers 1 est l'erreur classique.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nQuel est le tableau de variation de f sur ]−2 ; +∞[ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "croissante sur ]−2 ; −1], puis décroissante, avec le maximum f(−1) = −1"
+        },
+        {
+          "id": "b",
+          "text": "décroissante sur ]−2 ; −1], puis croissante, avec le minimum f(−1) = −1"
+        },
+        {
+          "id": "c",
+          "text": "décroissante sur ]−2 ; −1], puis croissante, avec le minimum f(−1) = −2"
+        },
+        {
+          "id": "d",
+          "text": "décroissante sur ]−2 ; 0], puis croissante, avec le minimum f(0) = −ln 2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "f′(x) = (x + 1)/(x + 2) est négative sur ]−2 ; −1[ et positive sur ]−1 ; +∞[ (x + 2 > 0). Le minimum est f(−1) = −1 − ln 1 = −1 ✓. Prendre ln 1 = 1 donnerait −2 ; l'annulation de f′ est en −1, non en 0 ; et le signe de f′ est celui de x + 1, donc négatif avant −1 : f décroît d'abord.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nOn rappelle que ln 3,1 ≈ 1,131 et ln 3,2 ≈ 1,163. Quelles sont les valeurs approchées de f(1,1) et de f(1,2), au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f(1,1) ≈ 0,03 et f(1,2) ≈ −0,04"
+        },
+        {
+          "id": "b",
+          "text": "f(1,1) ≈ 2,23 et f(1,2) ≈ 2,36"
+        },
+        {
+          "id": "c",
+          "text": "f(1,1) ≈ 1,00 et f(1,2) ≈ 1,02"
+        },
+        {
+          "id": "d",
+          "text": "f(1,1) ≈ −0,03 et f(1,2) ≈ 0,04"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "f(1,1) = 1,1 − ln 3,1 ≈ 1,1 − 1,131 ≈ −0,03 et f(1,2) = 1,2 − ln 3,2 ≈ 1,2 − 1,163 ≈ 0,04 ✓. Ajouter le logarithme au lieu de le retrancher donne 2,23 et 2,36 ; utiliser ln x à la place de ln(x + 2) donne 1,00 et 1,02 ; un signe inversé échange les deux signes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie par u₀ = 0 et uₙ₊₁ = f(uₙ), où f(x) = x − ln(x + 2) sur ]−2 ; +∞[.\nQuelle égalité est vraie pour tout entier naturel k ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(2 + uₖ) = uₖ − uₖ₊₁"
+        },
+        {
+          "id": "b",
+          "text": "ln(2 + uₖ) = uₖ₊₁ − uₖ"
+        },
+        {
+          "id": "c",
+          "text": "ln(2 + uₖ) = uₖ + uₖ₊₁"
+        },
+        {
+          "id": "d",
+          "text": "ln(2 + uₖ) = uₖ₊₁"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "uₖ₊₁ = f(uₖ) = uₖ − ln(uₖ + 2), donc ln(2 + uₖ) = uₖ − uₖ₊₁ ✓. L'égalité uₖ₊₁ − uₖ = ln(2 + uₖ) a le mauvais signe : uₖ₊₁ − uₖ vaut −ln(2 + uₖ).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nOn sait que f est décroissante sur ]−2 ; −1], croissante sur [−1 ; +∞[, avec f(−1) = −1 et des limites +∞ aux deux bornes. Combien de solutions l'équation f(x) = 0 admet-elle dans ]−2 ; +∞[, et où se situent-elles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucune solution : f(−1) = −1 n'est pas nul, donc f ne s'annule nulle part"
+        },
+        {
+          "id": "b",
+          "text": "Une seule solution β > −1 : f croît de −1 à +∞ sur [−1 ; +∞[ et ne s'annule pas avant −1"
+        },
+        {
+          "id": "c",
+          "text": "Deux solutions α < −1 < β : f décroît de +∞ à −1 < 0, puis croît de −1 à +∞, et s'annule une fois de chaque côté"
+        },
+        {
+          "id": "d",
+          "text": "Deux solutions, toutes deux supérieures à −1 : f(−1) < 0 et f tend vers +∞, donc f s'annule deux fois à droite"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sur ]−2 ; −1], f est continue et strictement décroissante de +∞ à f(−1) = −1 < 0 : elle s'annule une seule fois (α < −1). Sur [−1 ; +∞[, elle est continue et strictement croissante de −1 à +∞ : elle s'annule une seule fois (β > −1). Il y a donc exactement deux solutions, de part et d'autre de −1 ✓. Un minimum négatif signifie que f prend des valeurs des deux signes, donc s'annule ; ignorer la branche de gauche oublie la limite +∞ en −2 ; et f, strictement monotone sur [−1 ; +∞[, ne peut s'y annuler qu'une fois.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nQuelle est la position relative de (C_f) et de Δ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(C_f) est au-dessous de Δ sur ]−2 ; −1[ et au-dessus sur ]−1 ; +∞["
+        },
+        {
+          "id": "b",
+          "text": "(C_f) est au-dessus de Δ sur ]−2 ; −1[ et sur ]−1 ; +∞["
+        },
+        {
+          "id": "c",
+          "text": "(C_f) est au-dessus de Δ sur ]−2 ; −1[ et au-dessous sur ]−1 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "(C_f) est au-dessous de Δ sur ]−2 ; −1[ et sur ]−1 ; +∞["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "f(x) − x = −ln(x + 2), qui est positif si ln(x + 2) < 0, c'est-à-dire x + 2 < 1, x < −1 ; négatif si x > −1 ; nul en x = −1 ✓. La courbe est donc au-dessus de Δ avant −1, au-dessous après, et les deux se coupent au point (−1 ; −1). Le signe de −ln(x + 2) change en −1 : ni dessus partout, ni dessous partout.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit f la fonction définie sur ]−2 ; +∞[ par f(x) = x − ln(x + 2), de courbe (C_f) dans un repère orthonormé ; Δ désigne la droite d'équation y = x.\nOn note β la solution de f(x) = 0 vérifiant β > −1, et l'on rappelle que ln(β + 2) = β. L'aire du domaine limité par (C_f), Δ et les droites x = −1 et x = β vaut ∫ de −1 à β de ln(x + 2) dx, de primitive (x + 2) ln(x + 2) − (x + 2). Que vaut-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "β² + β − 1"
+        },
+        {
+          "id": "b",
+          "text": "β² + β − 2"
+        },
+        {
+          "id": "c",
+          "text": "β² + 2β"
+        },
+        {
+          "id": "d",
+          "text": "β² + 2β + 1"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Avec la primitive F(x) = (x + 2) ln(x + 2) − (x + 2) : F(β) = (β + 2)β − (β + 2) = β² + β − 2 en remplaçant ln(β + 2) par β, et F(−1) = 1 × 0 − 1 = −1. L'aire vaut F(β) − F(−1) = β² + β − 2 + 1 = β² + β − 1 ✓. Oublier de retrancher F(−1) donne β² + β − 2 ; oublier le terme −(x + 2) aux deux bornes donne β² + 2β, et à la seule borne β, β² + 2β + 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie par u₀ = 0 et uₙ₊₁ = f(uₙ), où f(x) = x − ln(x + 2) sur ]−2 ; +∞[.\nOn sait que f(x) ≥ −1 pour tout x > −2, avec égalité seulement en x = −1. Pourquoi uₙ ≥ −1 pour tout n ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f est décroissante sur ]−2 ; +∞[, donc f(uₙ) ≥ f(−1) pour tout n"
+        },
+        {
+          "id": "b",
+          "text": "f(x) ≥ x pour tout x > −2, donc uₙ₊₁ ≥ uₙ ≥ −1"
+        },
+        {
+          "id": "c",
+          "text": "u₀ = 0 ≥ −1 et u₁ = −ln 2 ≥ −1 suffisent pour tous les n"
+        },
+        {
+          "id": "d",
+          "text": "u₀ ≥ −1, et uₙ ≥ −1 ⟹ f(uₙ) ≥ −1, car −1 est le minimum de f"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Récurrence : u₀ = 0 ≥ −1. Si uₙ ≥ −1, alors uₙ₊₁ = f(uₙ) ≥ min f = f(−1) = −1 ✓. Le minimum −1 de f minore toute image, quel que soit uₙ. Vérifier deux termes ne prouve rien pour les suivants ; f n'est pas décroissante partout ; et f(x) ≥ x seulement pour x ≤ −1, non sur tout ]−2 ; +∞[.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie par u₀ = 0 et uₙ₊₁ = f(uₙ), où f(x) = x − ln(x + 2) sur ]−2 ; +∞[.\nOn sait que uₙ ≥ −1 pour tout n. Quelle justification établit que (uₙ) est décroissante ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "uₙ₊₁ − uₙ = ln(uₙ + 2) ≥ 0, car uₙ + 2 ≥ 1"
+        },
+        {
+          "id": "b",
+          "text": "uₙ₊₁ − uₙ = −ln(uₙ + 2) ≤ 0, car uₙ + 2 ≥ 1"
+        },
+        {
+          "id": "c",
+          "text": "f est croissante sur [−1 ; +∞[, donc (uₙ) est croissante"
+        },
+        {
+          "id": "d",
+          "text": "uₙ₊₁ − uₙ = −ln(uₙ + 2) ≤ 0, car uₙ + 2 ≤ 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "uₙ₊₁ − uₙ = f(uₙ) − uₙ = −ln(uₙ + 2). Comme uₙ ≥ −1, uₙ + 2 ≥ 1, donc ln(uₙ + 2) ≥ 0 et uₙ₊₁ − uₙ ≤ 0 : (uₙ) est décroissante ✓. Que f soit croissante sur [−1 ; +∞[ garantit seulement que (uₙ) est monotone ; le sens se lit en comparant u₁ = −ln 2 à u₀ = 0. Et ln(uₙ + 2) ≥ 0 exige uₙ + 2 ≥ 1, non ≤ 1.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie par u₀ = 0 et uₙ₊₁ = f(uₙ), où f(x) = x − ln(x + 2) sur ]−2 ; +∞[.\nLa suite (uₙ) est décroissante et minorée par −1. Quelle est sa limite ℓ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−2"
+        },
+        {
+          "id": "b",
+          "text": "−1"
+        },
+        {
+          "id": "c",
+          "text": "0"
+        },
+        {
+          "id": "d",
+          "text": "la solution β de l'équation f(x) = 0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(uₙ) décroît et est minorée : elle converge vers ℓ ≥ −1. La fonction f est continue, donc ℓ = f(ℓ), soit ℓ = ℓ − ln(ℓ + 2), c'est-à-dire ln(ℓ + 2) = 0, donc ℓ = −1 ✓. La valeur −2 est la borne de l'ensemble de définition, non atteinte ; 0 est le premier terme ; et β résout f(x) = 0, non f(x) = x : ne pas confondre points fixes et zéros.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Soit (uₙ) la suite définie par u₀ = 0 et uₙ₊₁ = f(uₙ), où f(x) = x − ln(x + 2) sur ]−2 ; +∞[.\nOn pose vₙ = (2 + u₀)(2 + u₁)…(2 + uₙ), avec ln(2 + uₖ) = uₖ − uₖ₊₁, et l'on sait que uₙ → −1. Que vaut ln(vₙ), et quelle est la limite de vₙ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(vₙ) = uₙ₊₁, donc vₙ tend vers 1/e"
+        },
+        {
+          "id": "b",
+          "text": "ln(vₙ) = −uₙ₊₁, donc vₙ tend vers 1/e"
+        },
+        {
+          "id": "c",
+          "text": "ln(vₙ) = −uₙ₊₁, donc vₙ tend vers 1"
+        },
+        {
+          "id": "d",
+          "text": "ln(vₙ) = −uₙ₊₁, donc vₙ tend vers e"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ln(vₙ) = Σ ln(2 + uₖ) = Σ (uₖ − uₖ₊₁) = u₀ − uₙ₊₁ = −uₙ₊₁ (la somme télescope et u₀ = 0). Comme uₙ₊₁ → −1, ln(vₙ) → 1, donc vₙ → e¹ = e ✓. Le signe moins compte : ln(vₙ) → 1, non −1 ; et ln(vₙ) → 1 ne signifie pas vₙ → 1.",
+      "difficulty": 3
+    }
+  ]
+}

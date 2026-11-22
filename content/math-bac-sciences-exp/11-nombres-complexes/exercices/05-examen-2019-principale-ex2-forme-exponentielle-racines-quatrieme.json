@@ -1,0 +1,130 @@
+{
+  "title": "🏛️ Bac 2019 · session principale · Exercice 2 ⭐⭐⭐ : forme exponentielle d'un produit, valeurs exactes de cos et sin, puissance quatrième",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Quelle est l'écriture exponentielle du nombre complexe (√2/2)(1 + i) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "√2 e^(iπ/4)"
+        },
+        {
+          "id": "b",
+          "text": "e^(iπ/4)"
+        },
+        {
+          "id": "c",
+          "text": "e^(iπ/2)"
+        },
+        {
+          "id": "d",
+          "text": "(√2/2)e^(iπ/4)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "|1 + i| = √(1 + 1) = √2, et 1 + i = √2(√2/2 + i√2/2) = √2(cos π/4 + i sin π/4) = √2 e^(iπ/4). Donc (√2/2)(1 + i) = (√2/2) × √2 e^(iπ/4) = e^(iπ/4) ✓ (module 1). Oublier le facteur √2/2 laisse √2 e^(iπ/4) ; prendre l'argument π/2 confond arg(1 + i) avec celui de i ; et un module (√2/2) pour (1 + i) oublie qu'il vaut √2.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Soit le nombre complexe a = (√2/2)(1 + i)(√3 + i). Quelle est son écriture exponentielle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 2e^(iπ/12)"
+        },
+        {
+          "id": "b",
+          "text": "a = 2√2 e^(i5π/12)"
+        },
+        {
+          "id": "c",
+          "text": "a = 4e^(i5π/12)"
+        },
+        {
+          "id": "d",
+          "text": "a = 2e^(i5π/12)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "(√2/2)(1 + i) = e^(iπ/4) et √3 + i = 2(√3/2 + i/2) = 2e^(iπ/6). Le produit multiplie les modules (1 × 2 = 2) et ajoute les arguments (π/4 + π/6 = 3π/12 + 2π/12 = 5π/12) : a = 2e^(i5π/12) ✓. Soustraire les arguments donnerait π/4 − π/6 = π/12 ; oublier que le facteur (√2/2) divise le module donne 2√2 ; et un module 4 vient de |√3 + i|² au lieu de |√3 + i|.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Soit le nombre complexe a = (√2/2)(1 + i)(√3 + i). On a a = 2e^(i5π/12). Quelle est la forme algébrique de a⁴ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a⁴ = 4(1 − i√3)"
+        },
+        {
+          "id": "b",
+          "text": "a⁴ = 8(1 + i√3)"
+        },
+        {
+          "id": "c",
+          "text": "a⁴ = 8(1 − i√3)"
+        },
+        {
+          "id": "d",
+          "text": "a⁴ = 8(√3 − i)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "a⁴ = 2⁴e^(i4 × 5π/12) = 16e^(i5π/3) = 16(cos 5π/3 + i sin 5π/3) = 16(1/2 − i√3/2) = 8(1 − i√3) ✓. Un module 8 (2 × 4 au lieu de 2⁴) donne 4(1 − i√3) ; sin(5π/3) est négatif : le signe + est faux ; et inverser cos(5π/3) = 1/2 et sin(5π/3) = −√3/2 donne 8(√3 − i).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "On a a = (√2/2)(1 + i)(√3 + i) = 2e^(i5π/12). Quelles sont les valeurs exactes de cos(11π/12) et de sin(11π/12) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "cos(11π/12) = −(√6 + √2)/4 et sin(11π/12) = (√6 − √2)/4"
+        },
+        {
+          "id": "b",
+          "text": "cos(11π/12) = (√6 − √2)/4 et sin(11π/12) = (√6 + √2)/4"
+        },
+        {
+          "id": "c",
+          "text": "cos(11π/12) = (√6 + √2)/4 et sin(11π/12) = (√6 − √2)/4"
+        },
+        {
+          "id": "d",
+          "text": "cos(11π/12) = −(√6 − √2)/4 et sin(11π/12) = (√6 + √2)/4"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "D'après la forme algébrique, a = (√2/2)[(√3 − 1) + i(√3 + 1)] = 2(cos(5π/12) + i sin(5π/12)), donc cos(5π/12) = (√6 − √2)/4 et sin(5π/12) = (√6 + √2)/4. Comme 11π/12 = 5π/12 + π/2, on a cos(11π/12) = −sin(5π/12) = −(√6 + √2)/4 ≈ −0,966 et sin(11π/12) = cos(5π/12) = (√6 − √2)/4 ≈ 0,259 ✓. Les valeurs (√6 − √2)/4 et (√6 + √2)/4 sont cos et sin de 5π/12 (angle du premier quadrant) ; un cosinus positif, (√6 + √2)/4, oublie que cos est négatif dans le deuxième quadrant ; −(√6 − √2)/4 et (√6 + √2)/4 correspondent à 7π/12.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On a a = 2e^(i5π/12) et a⁴ = 16e^(i5π/3). Lequel de ces nombres vérifie z⁴ = 16e^(i5π/3) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "z = 2e^(i5π/3)"
+        },
+        {
+          "id": "b",
+          "text": "z = 2√2 e^(i5π/12)"
+        },
+        {
+          "id": "c",
+          "text": "z = 2e^(i11π/12)"
+        },
+        {
+          "id": "d",
+          "text": "z = 2e^(i7π/12)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour z = 2e^(i11π/12) : z⁴ = 2⁴e^(i44π/12) = 16e^(i11π/3) = 16e^(i(5π/3 + 2π)) = 16e^(i5π/3) ✓. On peut aussi écrire z = i × a, puisque i⁴ = 1 donne (ia)⁴ = a⁴. Le module 2 convient (2⁴ = 16) ; pour z = 2e^(i5π/3), z⁴ = 16e^(i20π/3) = 16e^(i2π/3) ≠ 16e^(i5π/3) ; pour z = 2√2 e^(i5π/12), le module de z⁴ est 64 ; pour z = 2e^(i7π/12), z⁴ = 16e^(i7π/3) = 16e^(iπ/3) ≠ 16e^(i5π/3).",
+      "difficulty": 3
+    }
+  ]
+}

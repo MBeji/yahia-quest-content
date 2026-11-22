@@ -1,0 +1,154 @@
+{
+  "title": "🏛️ Bac 2016 · session principale · Exercice 4 ⭐⭐⭐ : taux de mortalité infantile, ajustement affine et ajustement exponentiel",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 5,
+  "questions": [
+    {
+      "prompt": "Le taux de mortalité infantile en Tunisie (pour 1000 naissances) est donné pour les années 1990, 1993, …, 2014, de rangs xᵢ = 0, 1, …, 8 (un rang par période de trois ans) : yᵢ = 37,3 ; 32,3 ; 29,7 ; 24,2 ; 22,1 ; 20,3 ; 18,4 ; 16,4 ; 16,3. On note (X, Y) la série double.\nQuel est le rang de l'année 2020 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30"
+        },
+        {
+          "id": "b",
+          "text": "9"
+        },
+        {
+          "id": "c",
+          "text": "10"
+        },
+        {
+          "id": "d",
+          "text": "11"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les rangs augmentent de 1 tous les trois ans : 1990 → 0, 2014 → 8, 2017 → 9, 2020 → 10 ✓. Le rang n'est pas l'écart en années (30) : une unité de X vaut trois ans. Le rang 9 est celui de 2017 et le rang 11 celui de 2023.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le taux de mortalité infantile en Tunisie (pour 1000 naissances) est donné pour les années 1990, 1993, …, 2014, de rangs xᵢ = 0, 1, …, 8 (un rang par période de trois ans) : yᵢ = 37,3 ; 32,3 ; 29,7 ; 24,2 ; 22,1 ; 20,3 ; 18,4 ; 16,4 ; 16,3. On note (X, Y) la série double.\nPour cette série : X̄ = 4, Ȳ ≈ 24,11, V(X) ≈ 6,67, V(Y) ≈ 49,32 et cov(X, Y) ≈ −17,58. De plus σ_X ≈ 2,58 et σ_Y ≈ 7,02. Quel est le coefficient de corrélation linéaire ρ_XY, arrondi au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "−0,97"
+        },
+        {
+          "id": "b",
+          "text": "0,97"
+        },
+        {
+          "id": "c",
+          "text": "−0,05"
+        },
+        {
+          "id": "d",
+          "text": "−2,64"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "ρ_XY = cov(X, Y)/(σ_X σ_Y) ≈ −17,58/(2,58 × 7,02) ≈ −17,58/18,11 ≈ −0,97 ✓ : il est proche de −1, avec le signe de la covariance, négative car Y décroît quand X croît. Diviser par les variances au lieu des écarts types donne −0,05 ; −2,64 est la pente de la droite de régression, non le coefficient de corrélation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le taux de mortalité infantile en Tunisie (pour 1000 naissances) est donné pour les années 1990, 1993, …, 2014, de rangs xᵢ = 0, 1, …, 8 (un rang par période de trois ans) : yᵢ = 37,3 ; 32,3 ; 29,7 ; 24,2 ; 22,1 ; 20,3 ; 18,4 ; 16,4 ; 16,3. On note (X, Y) la série double.\nPour cette série : X̄ = 4, Ȳ ≈ 24,11, V(X) ≈ 6,67, V(Y) ≈ 49,32 et cov(X, Y) ≈ −17,58. Quelle est l'équation de la droite de régression D de Y en X, coefficients arrondis au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "y = −0,36x + 25,54"
+        },
+        {
+          "id": "b",
+          "text": "y = −2,64x + 24,11"
+        },
+        {
+          "id": "c",
+          "text": "y = −0,36x + 22,67"
+        },
+        {
+          "id": "d",
+          "text": "y = −2,64x + 34,66"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La pente est a = cov(X, Y)/V(X) ≈ −17,58/6,67 ≈ −2,64 et l'ordonnée à l'origine b = Ȳ − a X̄ ≈ 24,11 + 2,64 × 4 ≈ 34,66 ✓. Diviser par V(Y) donne la pente −0,36, celle de la droite de X en Y ; prendre b = Ȳ oublie le terme a X̄ ; écrire b = Ȳ + a X̄ avec la pente −0,36 de la droite de X en Y cumule les deux erreurs et donne 22,67.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le taux de mortalité infantile en Tunisie (pour 1000 naissances) est donné pour les années 1990, 1993, …, 2014, de rangs xᵢ = 0, 1, …, 8 (un rang par période de trois ans) : yᵢ = 37,3 ; 32,3 ; 29,7 ; 24,2 ; 22,1 ; 20,3 ; 18,4 ; 16,4 ; 16,3. On note (X, Y) la série double.\nLa droite de régression de Y en X est y = −2,64x + 34,66. Quelle estimation du taux en 2020 en donne-t-elle, au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10,90"
+        },
+        {
+          "id": "b",
+          "text": "8,26"
+        },
+        {
+          "id": "c",
+          "text": "5,62"
+        },
+        {
+          "id": "d",
+          "text": "13,54"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'année 2020 a pour rang x = 10 : y = −2,64 × 10 + 34,66 = 8,26 ✓. Utiliser le rang 9 (2017) ou 11 (2023) donne 10,90 ou 5,62 ; prendre le rang 8, celui de 2014, donne 13,54 : la droite se lit sur le rang de 2020.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le taux de mortalité infantile en Tunisie (pour 1000 naissances) est donné pour les années 1990, 1993, …, 2014, de rangs xᵢ = 0, 1, …, 8 (un rang par période de trois ans) : yᵢ = 37,3 ; 32,3 ; 29,7 ; 24,2 ; 22,1 ; 20,3 ; 18,4 ; 16,4 ; 16,3. On note (X, Y) la série double.\nOn pose Z = ln Y et la droite de régression de Z en X est z = −0,11x + 3,57, avec e^(3,57) ≈ 35,52. Quel taux le modèle exponentiel y = 35,52 e^(−0,11x) estime-t-il pour 2020, au centième ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,47"
+        },
+        {
+          "id": "b",
+          "text": "11,82"
+        },
+        {
+          "id": "c",
+          "text": "31,82"
+        },
+        {
+          "id": "d",
+          "text": "34,42"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Pour 2020, x = 10 : y = 35,52 × e^(−1,1) ≈ 35,52 × 0,333 ≈ 11,82 ✓. Le résultat de la droite de Z, 3,57 − 1,1 = 2,47, est un logarithme : ce n'est pas le taux, qu'on obtient par y = e^z. Garder l'exposant −0,11 sans le multiplier par x donne 31,82 ; retrancher 0,11 × 10 au lieu de l'exponentielle donne 34,42.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le taux de mortalité infantile en Tunisie (pour 1000 naissances) est donné pour les années 1990, 1993, …, 2014, de rangs xᵢ = 0, 1, …, 8 (un rang par période de trois ans) : yᵢ = 37,3 ; 32,3 ; 29,7 ; 24,2 ; 22,1 ; 20,3 ; 18,4 ; 16,4 ; 16,3. On note (X, Y) la série double.\nLes deux ajustements sont la droite D, y = −2,64x + 34,66 (ρ_XY ≈ −0,97), et le modèle exponentiel y = 35,52 e^(−0,11x) (ρ_XZ ≈ −0,99). Lequel est le plus adapté ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "la droite D : un coefficient de corrélation négatif prouve que l'ajustement est affine"
+        },
+        {
+          "id": "b",
+          "text": "la droite D : un taux de mortalité diminue au même rythme à chaque période"
+        },
+        {
+          "id": "c",
+          "text": "aucun : un coefficient de corrélation inférieur à 1 en valeur absolue invalide l'ajustement"
+        },
+        {
+          "id": "d",
+          "text": "l'exponentiel : |ρ_XZ| est plus proche de 1, et D devient négative pour x > 13"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux |ρ| dépassent √3/2 ≈ 0,866, mais |ρ_XZ| ≈ 0,99 est plus proche de 1 que |ρ_XY| ≈ 0,97. Surtout, D coupe l'axe des abscisses vers x ≈ 13 et prévoirait ensuite des taux négatifs, impossibles, alors que 35,52 e^(−0,11x) reste positif et décroît de plus en plus lentement, comme le nuage qui s'aplatit (16,4 puis 16,3) ✓. Le signe de ρ ne dit pas si un ajustement est adapté, et ρ = ±1 n'est jamais exigé.",
+      "difficulty": 3
+    }
+  ]
+}
