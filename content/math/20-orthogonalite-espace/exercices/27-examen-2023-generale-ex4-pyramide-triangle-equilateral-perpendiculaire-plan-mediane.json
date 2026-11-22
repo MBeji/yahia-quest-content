@@ -1,0 +1,170 @@
+{
+  "title": "🏛️ مناظرة 2023 · التمرين 4 ⭐⭐⭐: هرم قاعدته مثلّث متقايس الأضلاع — عمودي على مستوٍ وموسّط وفيثاغورس",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 27,
+  "questions": [
+    {
+      "prompt": "في الهرم SABC ، المثلّث ABC متقايس الأضلاع و I منتصف [BC] ، والمستقيم (SI) عمودي على المستوي (ABC) .\nما الحجّة التي تثبت أنّ (SI) عمودي على المستقيم (BI) ؟\n<svg viewBox=\"0 0 164 258.3\"><title>هرم SABC</title><path d=\"M134 202.5 L30 202.5 M82 30 L82 202.5 M82 202.5 L118.9 228.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M118.9 228.3 L82 30 M118.9 228.3 L134 202.5 M134 202.5 L82 30 M118.9 228.3 L30 202.5 M30 202.5 L82 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"82\" cy=\"30\" r=\"3.2\"/><circle cx=\"118.9\" cy=\"228.3\" r=\"3.2\"/><circle cx=\"134\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"30\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"82\" cy=\"202.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81.1\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"124.2\" y=\"245.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"143.9\" y=\"215.9\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"18.8\" y=\"214.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"69\" y=\"198.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "لأنّ I منتصف [BC] ، فالمستقيم (SI) يعامد (BC) في منتصفه"
+        },
+        {
+          "id": "b",
+          "text": "لأنّ (SI) يقطع (BI) في I ، والمستقيمان المتقاطعان متعامدان",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        {
+          "id": "c",
+          "text": "لأنّ (SI) عمودي على المستوي (ABC) ، و(BI) من هذا المستوي"
+        },
+        {
+          "id": "d",
+          "text": "لأنّ (SI) عمودي على (AI) من المستوي (ABC) ، و(AI) عمودي على (BI)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(SI) عمودي على المستوي (ABC) ، إذن هو عمودي على كلّ مستقيم من هذا المستوي يمرّ من I ، ومنها (BI) لأنّ (BI) = (BC) ✓. الخطأ الشائع : اعتبار التقاطع في I كافيًا للتعامد ، أو استنتاج التعامد من كون I منتصفًا ، أو الاستدلال بتعامد (AI) و(BI) في مستوي القاعدة ، فهذه مستقيمات من المستوي نفسه ولا تقول شيئًا عن (SI) .",
+      "difficulty": 2,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABC هرم قاعدته المثلّث ABC المتقايس الأضلاع الذي طول ضلعه 2 ، و I منتصف [BC] ، والمستقيم (SI) عمودي على المستوي (ABC) ، و SI = √11 (وحدة الطول هي الصنتمتر).\nما طول [SB] ؟\n<svg viewBox=\"0 0 164 258.3\"><title>هرم SABC</title><path d=\"M134 202.5 L30 202.5 M82 30 L82 202.5 M82 202.5 L118.9 228.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M118.9 228.3 L82 30 M118.9 228.3 L134 202.5 M134 202.5 L82 30 M118.9 228.3 L30 202.5 M30 202.5 L82 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"82\" cy=\"30\" r=\"3.2\"/><circle cx=\"118.9\" cy=\"228.3\" r=\"3.2\"/><circle cx=\"134\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"30\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"82\" cy=\"202.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81.1\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"124.2\" y=\"245.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"143.9\" y=\"215.9\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"18.8\" y=\"214.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"69\" y=\"198.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√10",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "b",
+          "text": "2√3"
+        },
+        {
+          "id": "c",
+          "text": "1 + √11",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "√15",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المثلّث SIB قائم في I لأنّ (SI) ⊥ (ABC) و (BI) من هذا المستوي ، ووتره [SB] . BI = 1 لأنّ I منتصف [BC] و BC = 2 . فيثاغورس : SB² = SI² + BI² = 11 + 1 = 12 ، إذن SB = √12 = 2√3 ✓ . مسار ثان : SC² = SI² + IC² = 12 أيضًا ، وSBC متقايس الضلعين في S . الأخطاء : √10 تأخذ [SI] وترًا (11 − 1) ، و√15 تأخذ BC = 2 بدل BI (11 + 4) ، و1 + √11 تجمع الأطوال بدل مربّعاتها .",
+      "difficulty": 2,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABC هرم ، المثلّث ABC متقايس الأضلاع و I منتصف [BC] ، والمستقيم (SI) عمودي على المستوي (ABC) ، ونعلم أنّ المستقيم (AI) عمودي على المستوي (SBC) .\nJ منتصف [SB] . في أيّ رأس يكون المثلّث AIJ قائمًا ، وما الحجّة ؟\n<svg viewBox=\"0 0 164 258.3\"><title>هرم SABC</title><path d=\"M118.9 228.3 L82 202.5 L108 116.2 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M134 202.5 L30 202.5 M82 30 L82 202.5 M82 202.5 L118.9 228.3 M82 202.5 L108 116.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M118.9 228.3 L82 30 M118.9 228.3 L134 202.5 M134 202.5 L82 30 M118.9 228.3 L30 202.5 M30 202.5 L82 30 M118.9 228.3 L108 116.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"82\" cy=\"30\" r=\"3.2\"/><circle cx=\"118.9\" cy=\"228.3\" r=\"3.2\"/><circle cx=\"134\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"30\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"82\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"108\" cy=\"116.2\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81.1\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"124.2\" y=\"245.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"143.9\" y=\"215.9\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"18.8\" y=\"214.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"69\" y=\"198.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"122\" y=\"117.2\" text-anchor=\"middle\" fill=\"#0f172a\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "في J ، لأنّ (SI) عمودي على المستوي (ABC) الذي يحوي (AI)"
+        },
+        {
+          "id": "b",
+          "text": "في I ، لأنّ (AI) عمودي على المستوي (SBC) الذي يحوي (IJ)"
+        },
+        {
+          "id": "c",
+          "text": "في J ، لأنّ (AI) عمودي على المستوي (SBC) الذي يحوي (IJ)",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "d",
+          "text": "في I ، لأنّ (SI) عمودي على المستوي (ABC) الذي يحوي (AI)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "(AI) عمودي على المستوي (SBC) ، والمستقيم (IJ) من هذا المستوي لأنّ I ∈ (BC) و J ∈ [SB] ، فـ (AI) ⊥ (IJ) أي أنّ المثلّث AIJ قائم في I ✓ . تعامد (SI) مع المستوي (ABC) يعطي (SI) ⊥ (AI) أي زاوية المثلّث SIA لا زاوية المثلّث AIJ لأنّ J ≠ S . والزاوية القائمة تقع حيث يلتقي الضلعان المتعامدان (AI) و(IJ) ، لا في J .",
+      "difficulty": 2,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABC هرم ، المثلّث ABC متقايس الأضلاع وطول ضلعه 2 ، I منتصف [BC] ، والمستقيم (SI) عمودي على المستوي (ABC) .\nما الحجّة التي تثبت أنّ (AI) عمودي على المستوي (SBC) ؟\n<svg viewBox=\"0 0 164 258.3\"><title>هرم SABC</title><path d=\"M134 202.5 L30 202.5 M82 30 L82 202.5 M82 202.5 L118.9 228.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M118.9 228.3 L82 30 M118.9 228.3 L134 202.5 M134 202.5 L82 30 M118.9 228.3 L30 202.5 M30 202.5 L82 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"82\" cy=\"30\" r=\"3.2\"/><circle cx=\"118.9\" cy=\"228.3\" r=\"3.2\"/><circle cx=\"134\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"30\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"82\" cy=\"202.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81.1\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"124.2\" y=\"245.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"143.9\" y=\"215.9\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"18.8\" y=\"214.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"69\" y=\"198.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AI) عمودي على (BC) فقط ، و(BC) مستقيم من المستوي (SBC) يمرّ من I",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "(AI) عمودي على (SI) فقط ، و(SI) مستقيم من المستوي (SBC) يمرّ من I",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "c",
+          "text": "(AI) و(SI) كلاهما عمودي على (BC) ، و(BC) مستقيم من المستوي (SBC) ويحوي I"
+        },
+        {
+          "id": "d",
+          "text": "(AI) عمودي على (BC) وعلى (SI) ، وهما متقاطعان في I من المستوي (SBC)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في المثلّث المتقايس الأضلاع ABC الموسّط (AI) هو أيضًا ارتفاع ، فـ (AI) ⊥ (BC) . و(SI) عمودي على المستوي (ABC) الذي يحوي (AI) ، فـ (AI) ⊥ (SI) . المستقيمان (BC) و(SI) متقاطعان في I ومحتويان في المستوي (SBC) ، إذن (AI) ⊥ (SBC) ✓ . مستقيم واحد لا يكفي ، ولا يكفي أن يكون (AI) و(SI) عموديين على (BC) نفسه ، فهذا لا يعطي (AI) عموديًا على (SI) .",
+      "difficulty": 3,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABC هرم قاعدته المثلّث ABC المتقايس الأضلاع الذي طول ضلعه 2 ، و I منتصف [BC] ، والمستقيم (SI) عمودي على المستوي (ABC) ، و SI = √11 (وحدة الطول هي الصنتمتر). و J منتصف [SB] .\nما طول [IJ] ؟\n<svg viewBox=\"0 0 164 258.3\"><title>هرم SABC</title><path d=\"M118.9 228.3 L82 202.5 L108 116.2 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M134 202.5 L30 202.5 M82 30 L82 202.5 M82 202.5 L118.9 228.3 M82 202.5 L108 116.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M118.9 228.3 L82 30 M118.9 228.3 L134 202.5 M134 202.5 L82 30 M118.9 228.3 L30 202.5 M30 202.5 L82 30 M118.9 228.3 L108 116.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"82\" cy=\"30\" r=\"3.2\"/><circle cx=\"118.9\" cy=\"228.3\" r=\"3.2\"/><circle cx=\"134\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"30\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"82\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"108\" cy=\"116.2\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81.1\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"124.2\" y=\"245.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"143.9\" y=\"215.9\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"18.8\" y=\"214.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"69\" y=\"198.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"122\" y=\"117.2\" text-anchor=\"middle\" fill=\"#0f172a\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "IJ = 2√3"
+        },
+        {
+          "id": "b",
+          "text": "IJ = 3",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "IJ = √3"
+        },
+        {
+          "id": "d",
+          "text": "IJ = √11/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "SB = 2√3 (فيثاغورس في SIB القائم في I) . [IJ] هو الموسّط الصادر من الزاوية القائمة I في المثلّث SIB ، وهو يساوي نصف الوتر [SB] ، فـ IJ = √3 ✓ . مسار ثان : I منتصف [BC] وJ منتصف [SB] ، فـ IJ = SC/2 بنظرية المنتصفين في SBC مع SC = √(SI² + IC²) = 2√3 . الأخطاء : IJ = 3 يتوقّف عند المربّع (IJ² = 12/4) ، و2√3 ينسى القسمة على 2 ، و√11/2 يأخذ نصف [SI] .",
+      "difficulty": 3,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "في الهرم SABC ، قاعدته ABC مثلّث متقايس الأضلاع ضلعه AB = 2 ، والمستقيم (SI) عمودي على المستوي (ABC) في منتصف I للضلع [BC] ، و SI = √11 ؛ النقطة J هي منتصف [SB] .\nاحسب بُعد A عن J .\n<svg viewBox=\"0 0 164 258.3\"><title>هرم SABC</title><path d=\"M118.9 228.3 L82 202.5 L108 116.2 Z\" fill=\"#0f6e56\" opacity=\"0.16\"/><path d=\"M134 202.5 L30 202.5 M82 30 L82 202.5 M82 202.5 L118.9 228.3 M82 202.5 L108 116.2\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M118.9 228.3 L82 30 M118.9 228.3 L134 202.5 M134 202.5 L82 30 M118.9 228.3 L30 202.5 M30 202.5 L82 30 M118.9 228.3 L108 116.2\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"82\" cy=\"30\" r=\"3.2\"/><circle cx=\"118.9\" cy=\"228.3\" r=\"3.2\"/><circle cx=\"134\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"30\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"82\" cy=\"202.5\" r=\"3.2\"/><circle cx=\"108\" cy=\"116.2\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"81.1\" y=\"22\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"124.2\" y=\"245.2\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"143.9\" y=\"215.9\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"18.8\" y=\"214.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"69\" y=\"198.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"122\" y=\"117.2\" text-anchor=\"middle\" fill=\"#0f172a\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AJ = 6",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "AJ = √3"
+        },
+        {
+          "id": "c",
+          "text": "AJ = √6"
+        },
+        {
+          "id": "d",
+          "text": "AJ = 2√3",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AI = √3 (ارتفاع المثلّث المتقايس الأضلاع الذي ضلعه 2) و IJ = √3 (نصف SB = 2√3 في المثلّث SIB القائم في I) . (AI) ⊥ (SBC) و(IJ) ⊂ (SBC) ، فالمثلّث AIJ قائم في I ، وفيثاغورس : AJ² = AI² + IJ² = 3 + 3 = 6 ، إذن AJ = √6 ✓ . الأخطاء : AJ = 6 يتوقّف عند المربّع ، و2√3 يجمع AI + IJ بدل المربّعات .",
+      "difficulty": 3,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    }
+  ]
+}

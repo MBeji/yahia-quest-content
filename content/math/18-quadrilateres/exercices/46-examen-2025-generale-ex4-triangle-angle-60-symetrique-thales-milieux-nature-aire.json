@@ -1,0 +1,238 @@
+{
+  "title": "🏛️ مناظرة 2025 · التمرين 4 ⭐⭐⭐⭐: مثلّث وزاوية 60° ونظيرة نقطة — طاليس والمستقيم الرابط بين منتصفين وإثبات طبيعة مثلّث ورباعي والمساحة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 46,
+  "questions": [
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة F من [AC] حيث AF = 4 cm.\nما أدقّ وصف للمثلّث BAF مع مبرّره ؟\n<svg viewBox=\"0 -10 270 285\"><title>المستقيمان (AB) و (AC) والنقطتان B و F</title><path d=\"M30.0 252.0 L166.0 16.44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M30.0 252.0 L234.0 252.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M56.0 252.0 A26 26 0 0 0 43.0 229.48\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.6\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"70.0\" y=\"244.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"13\">60°</text><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"247.0\" y=\"258.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متقايس الضلعين رأسه A: لأنّ AB = AF والزاوية BÂF = 60° عند الرأس A",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "متقايس الأضلاع: الزاوية BÂF = 60° وهي زاوية من زوايا المثلّث فتتساوى الزوايا الثلاث",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "متقايس الضلعين رأسه A: الزاوية BÂF = 60° وهي زاوية من زوايا المثلّث عند الرأس A"
+        },
+        {
+          "id": "d",
+          "text": "متقايس الأضلاع: AB = AF والزاوية BÂF = 60°، فالزاويتان الأخريان 60° أيضًا"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "F من [AC] فـ BÂF = BÂC = 60°. المثلّث BAF متقايس الضلعين رأسه A لأنّ AB = AF = 4 cm، فزاويتا القاعدة متساويتان وقياس كلّ منهما (180° − 60°) / 2 = 60°. فزواياه الثلاث 60° وهو متقايس الأضلاع ✓. «متقايس الضلعين» وصف صحيح لكنّه ليس الأدقّ؛ وزاوية واحدة قياسها 60° لا تكفي لإثبات تقايس الأضلاع؛ وزاوية 60° عند الرأس لا تكفي وحدها لإثبات تقايس ضلعين.",
+      "difficulty": 1,
+      "competencies": ["math.geo.quadrilateres", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm. المستقيم المارّ من C والموازي لـ (BF) يقطع [BE] في النقطة M.\nما قيمة النسبة BM/BE ؟\n<svg viewBox=\"0 -10 270 285\"><title>المستقيم (CM) الموازي لـ (BF)</title><path d=\"M30.0 252.0 L166.0 16.44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M30.0 252.0 L234.0 252.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M98.0 134.22 L166.0 252.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M234.0 252.0 L132.0 75.33\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\"/><path d=\"M133.5 195.71 L126.17 193.01\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M133.5 195.71 L134.83 188.01\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M176.4 152.23 L183.73 154.93\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M176.4 152.23 L175.07 159.93\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"75.33\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"247.0\" y=\"258.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"119.0\" y=\"71.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/2"
+        },
+        {
+          "id": "b",
+          "text": "1/3",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "c",
+          "text": "2/3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "3/4",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "E مناظرة A بالنسبة إلى B فـ AE = 8 cm و BE = 4 cm. في المثلّث AMC لدينا (BF) ∥ (CM)، فبطاليس AB/AM = AF/AC = 4/6 = 2/3، ومنه AM = 6 cm. إذن BM = AM − AB = 2 cm و BM/BE = 2/4 = 1/2 ✓. وبطريقة ثانية AB/BM = AF/FC أي 4/BM = 4/2 فـ BM = 2 cm. الأخطاء: اعتبار 2/3 هو النسبة المطلوبة، أو قلب نسبة طاليس، أو حساب AM/AE بدل BM/BE.",
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct", "math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm.\nفي أيّ رأس يكون المثلّث AFE قائمًا، ولماذا ؟\n<svg viewBox=\"0 -10 270 285\"><title>المثلّث AFE</title><polygon points=\"30.0,252.0 166.0,252.0 166.0,16.44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M30.0 252.0 L234.0 252.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M30.0 252.0 L166.0 16.44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"247.0\" y=\"258.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "في F: BF = BA = BE، فالموسّط [FB] الصادر من F طوله نصف [AE]"
+        },
+        {
+          "id": "b",
+          "text": "في E: [AE] أطول أضلاع المثلّث AFE فالزاوية القائمة في الرأس E",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "c",
+          "text": "في A: AF = 4 و AE = 8 فالضلعان [AF] و [AE] متعامدان",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "d",
+          "text": "لا في أيّ رأس: BÂF = 60° فالمثلّث AFE لا يحوي زاوية قائمة"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "BAF متقايس الأضلاع فـ BF = BA = 4 cm، و B منتصف [AE] فـ BE = 4 cm أيضًا. إذن [FB] موسّط في المثلّث AFE طوله 4 cm وهو نصف AE = 8 cm، فالمثلّث قائم في F بعكس خاصيّة الموسّط المتعلّق بالوتر ✓. وليست الزاوية القائمة في الرأس المقابل للضلع الأطول بل هي المقابلة له، والزاوية في A قياسها 60° فلا تكون قائمة، وزاوية A قياسها 60° لا تمنع أن تكون زاوية أخرى قائمة.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm.\nما طول [EF] بالصنتمتر ؟\n<svg viewBox=\"0 -10 270 285\"><title>المثلّث AFE</title><polygon points=\"30.0,252.0 166.0,252.0 166.0,16.44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M30.0 252.0 L234.0 252.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"247.0\" y=\"258.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4√3"
+        },
+        {
+          "id": "b",
+          "text": "4√5",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "c",
+          "text": "12",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        },
+        {
+          "id": "d",
+          "text": "48",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث BAF متقايس الأضلاع فـ BF = BA = BE = 4 cm، فالموسّط [FB] هو نصف [AE] والمثلّث AFE قائم في F ووتره [AE] = 8 cm. بفيثاغورس: EF² = AE² − AF² = 64 − 16 = 48، فـ EF = √48 = 4√3 cm ✓. وبطريقة ثانية بالنسب المثلّثيّة: EF = AE × sin 60° = 8 × √3/2 = 4√3. الأخطاء: وضع الزاوية القائمة في A فنجد 4√5، أو جمع الطولين، أو التوقّف عند 48 دون جذر.",
+      "difficulty": 3,
+      "competencies": ["math.geo.pythagore", "math.geo.triangles-base"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm. المستقيم المارّ من C والموازي لـ (BF) يقطع [BE] في النقطة M ويقطع [EF] في النقطة N.\nاحسب MN بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 -10 270 285\"><title>المستقيم (CM) الذي يقطع [BE] في M و [EF] في N</title><polygon points=\"166.0,16.44 98.0,134.22 166.0,252.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M30.0 252.0 L166.0 16.44\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M30.0 252.0 L234.0 252.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M234.0 252.0 L132.0 75.33\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\" stroke-linecap=\"round\"/><path d=\"M132.0 75.33 L166.0 134.22\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><path d=\"M133.5 195.71 L126.17 193.01\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M133.5 195.71 L134.83 188.01\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M150.5 107.37 L143.17 104.68\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M150.5 107.37 L151.83 99.68\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"75.33\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"247.0\" y=\"258.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"119.0\" y=\"71.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"179.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text></g></svg>",
+      "answerKey": {
+        "value": 2,
+        "unit": "cm"
+      },
+      "explanation": "المثلّث BAF متقايس الأضلاع فـ BF = 4 cm. في المثلّث AMC بطاليس AB/AM = AF/AC فـ AM = 6 cm، إذن BM = 2 cm = ME: M منتصف [BE]. وفي المثلّث EBF المستقيم المارّ من منتصف [BE] والموازي لـ (BF) يمرّ من منتصف [EF] فـ N منتصف [EF] (عكس مبرهنة المنتصفات)، وطول القطعة الرابطة بين المنتصفين MN = BF/2 = 2 cm ✓. وبطريقة ثانية بطاليس في المثلّث EBF: EM/EB = MN/BF أي 1/2 = MN/4. الخطأ الشائع: ضرب BF في 2 بدل قسمته.",
+      "difficulty": 3,
+      "competencies": ["math.geo.thales-direct", "math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm. المستقيم المارّ من C والموازي لـ (BF) يقطع [BE] في النقطة M. النقطة G منتصف [BF]، والمستقيم (AG) يقطع [MC] في النقطة P.\nما قيمة النسبة AG/AP ؟\n<svg viewBox=\"0 -10 270 285\"><title>المنتصف G والمستقيم (AG) الذي يقطع [MC] في P</title><path d=\"M30.0 252.0 L166.0 16.44\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M30.0 252.0 L234.0 252.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M98.0 134.22 L166.0 252.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M132.0 75.33 L234.0 252.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M30.0 252.0 L183.0 163.67\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M110.67 166.17 L119.33 161.17\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M144.67 225.06 L153.33 220.06\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M133.5 195.71 L126.17 193.01\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M133.5 195.71 L134.83 188.01\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M184.5 166.26 L177.17 163.57\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M184.5 166.26 L185.83 158.57\" stroke=\"#2563eb\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"75.33\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"193.11\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"183.0\" cy=\"163.67\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"247.0\" y=\"258.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"119.0\" y=\"71.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"120.0\" y=\"207.11\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"197.0\" y=\"161.67\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">P</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2/3"
+        },
+        {
+          "id": "b",
+          "text": "1/2"
+        },
+        {
+          "id": "c",
+          "text": "3/2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "1/3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في المثلّث AMP لدينا (BG) ∥ (MP)، فبطاليس AG/AP = AB/AM. وفي المثلّث AMC لدينا (BF) ∥ (MC)، فـ AB/AM = AF/AC = 4/6 = 2/3. إذن AG/AP = 2/3 ✓. ومنه P منتصف [MC]: BG/MP = AB/AM = 2/3 و BF/MC = 2/3 مع BG = BF/2، فـ MP = MC/2. فـ [AP] موسّط في المثلّث MAC و AG = (2/3) × AP، أي أنّ G مركز ثقل المثلّث MAC. الأخطاء: قلب نسبة طاليس، أو حساب GP/AP.",
+      "difficulty": 3,
+      "competencies": ["math.geo.thales-direct", "math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm. المستقيم المارّ من C والموازي لـ (BF) يقطع [BE] في النقطة M.\nما أدقّ وصف للمثلّث AMC ؟\n<svg viewBox=\"0 -10 270 285\"><title>المثلّث AMC</title><polygon points=\"30.0,252.0 132.0,75.33 234.0,252.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M98.0 134.22 L166.0 252.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M132.0 75.33 L166.0 16.44\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"75.33\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"234.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"247.0\" y=\"258.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"119.0\" y=\"71.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متقايس الضلعين رأسه A، لأنّ AM = AC بحكم طاليس",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "متقايس الأضلاع، لأنّ AM = AC = 6 cm والزاوية MÂC = 60°"
+        },
+        {
+          "id": "c",
+          "text": "متقايس الأضلاع، لأنّ AM = AC = 6 cm بحكم طاليس في المثلّث AMC",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "متقايس الضلعين رأسه A، لأنّ الزاوية MÂC = 60°"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بطاليس في المثلّث AMC (حيث (BF) ∥ (CM)): AB/AM = AF/AC = 2/3، فـ AM = 6 cm = AC. والزاوية MÂC هي BÂC = 60° لأنّ M على [AE) وC على [AC). فالمثلّث متقايس الضلعين رأسه A وزاوية رأسه 60°، وهو إذن متقايس الأضلاع ✓. «متقايس الضلعين» وصف صحيح لكنّه ليس الأدقّ؛ وضلعان متقايسان وحدهما لا يعطيان تقايس الأضلاع الثلاثة دون الزاوية 60°، وزاوية 60° وحدها لا تعطي ضلعين متقايسين.",
+      "difficulty": 3,
+      "competencies": ["math.geo.thales-direct", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm. المستقيم المارّ من C والموازي لـ (BF) يقطع [BE] في M و [EF] في N، والنقطة G منتصف [BF].\nما أدقّ وصف للرباعي BGNM مع مبرّره ؟\n<svg viewBox=\"0 -10 270 285\"><title>الرباعي BGNM</title><polygon points=\"166.0,16.44 98.0,134.22 166.0,252.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"98.0,134.22 132.0,193.11 166.0,134.22 132.0,75.33\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"98.0,134.22 132.0,193.11 166.0,134.22 132.0,75.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M30.0 252.0 L98.0 134.22\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"30.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"193.11\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"75.33\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"18.0\" y=\"266.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"120.0\" y=\"207.11\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"179.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"119.0\" y=\"71.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "معيّن، لأنّ (MN) ∥ (BG) و MN = BG، وكذلك BG = BM"
+        },
+        {
+          "id": "b",
+          "text": "مستطيل، لأنّ (MN) ∥ (BG) و MN = BG، وكذلك BG = BM",
+          "misconceptionTag": "math.geo.quadrilatere-mal-identifie"
+        },
+        {
+          "id": "c",
+          "text": "معيّن، لأنّ (MN) ∥ (BG) و MN = BG",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "مستطيل، لأنّ (MN) ∥ (BG) و MN = BG"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "بطاليس في المثلّث AMC حيث (BF) ∥ (CM): AB/AM = AF/AC = 2/3، فـ AM = 6 cm و BM = 2 cm = BE/2: M منتصف [BE]، والمستقيم (MN) المارّ من M موازيًا لـ (BF) يمرّ من منتصف [EF] فـ N منتصف [EF]. في المثلّث EBF: (MN) ∥ (BF) و MN = BF/2 = BG. فللرباعي ضلعان متقابلان متوازيان ومتقايسان فهو متوازي أضلاع. وBG = BF/2 = 2 cm و BM = BE/2 = 2 cm (BF = BE = 4 cm)، فله ضلعان متتاليان متقايسان، إذن BGNM معيّن ✓. الزاوية في B قياسها 120° فلا يكون مستطيلًا. والتوازي مع تقايس ضلعين متقابلين يعطي متوازي أضلاع فقط.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "A و B و C ثلاث نقاط حيث AB = 4 cm و AC = 6 cm و BÂC = 60°، والنقطة E مناظرة A بالنسبة إلى B، والنقطة F من [AC] حيث AF = 4 cm. المستقيم المارّ من C والموازي لـ (BF) يقطع [BE] في M و [EF] في N، والنقطة G منتصف [BF].\nما مساحة الرباعي BGNM بالسنتمتر المربّع ؟\n<svg viewBox=\"0 -10 270 285\"><title>المعيّن BGNM</title><polygon points=\"166.0,16.44 98.0,134.22 166.0,252.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"98.0,134.22 132.0,193.11 166.0,134.22 132.0,75.33\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"98.0,134.22 132.0,193.11 166.0,134.22 132.0,75.33\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M98.0 134.22 L166.0 134.22\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M132.0 193.11 L132.0 75.33\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><circle cx=\"98.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"16.44\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"252.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"193.11\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"166.0\" cy=\"134.22\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"132.0\" cy=\"75.33\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"85.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"166.0\" y=\"6.44\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"166.0\" y=\"269.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"120.0\" y=\"207.11\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text><text x=\"179.0\" y=\"132.22\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">N</text><text x=\"119.0\" y=\"71.33\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "4√3",
+          "misconceptionTag": "math.mes.aire-losange-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "√3"
+        },
+        {
+          "id": "d",
+          "text": "2√3"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "M منتصف [BE] (بطاليس في AMC: AM = 6 cm و BM = 2 cm) و N منتصف [EF] (المستقيم المارّ من منتصف [BE] موازيًا لـ (BF))، و BGNM معيّن: (MN) ∥ (BG) و MN = BF/2 = BG و BG = BM = 2 cm. BN = AF/2 = 2 cm بمبرهنة المنتصفات في المثلّث AEF (B منتصف [AE] و N منتصف [EF])، و GM = EF/2 = 2√3 cm بمبرهنة المنتصفات في المثلّث EBF. مساحة المعيّن = (BN × GM) / 2 = (2 × 2√3) / 2 = 2√3 cm² ✓. الأخطاء: نسيان القسمة على 2، أو اعتباره مربّعًا ضلعه 2، أو حساب نصف مساحته.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres", "math.mes.aires"]
+    }
+  ]
+}

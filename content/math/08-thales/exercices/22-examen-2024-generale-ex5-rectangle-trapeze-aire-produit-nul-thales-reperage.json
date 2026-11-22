@@ -1,0 +1,221 @@
+{
+  "title": "🏛️ مناظرة 2024 · التمرين 5 ⭐⭐⭐⭐: مستطيل وشبه منحرف — مساحة بدلالة متغيّر ومعادلة جداء في مجال ثمّ نظرية طاليس وإحداثيّات في معيّن",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 22,
+  "questions": [
+    {
+      "prompt": "العبارة التالية معرّفة لكلّ عدد حقيقي x:\n12 + (x − 1)(x − 8)\nنبسّطها بنشر الجداء ثمّ اختزال الحدود. أيّ كتابة مختصرة تساويها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x² + 9x + 4"
+        },
+        {
+          "id": "b",
+          "text": "x² + 9x + 20"
+        },
+        {
+          "id": "c",
+          "text": "x² − 9x + 4"
+        },
+        {
+          "id": "d",
+          "text": "x² − 9x + 20"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننشر: (x − 1)(x − 8) = x² − 8x − x + 8 = x² − 9x + 8. ثمّ نضيف 12: x² − 9x + 8 + 12 = x² − 9x + 20 ✓.\nتحقّق عند x = 0 : 12 + (−1)(−8) = 12 + 8 = 20 ✓ وهو الثابت المحصَّل.\nالخطأ الشائع: ضياع إشارة في −8x − x فنجد +9x ؛ أو اعتبار (−1)(−8) يساوي −8 فنجد 12 − 8 = 4.",
+      "difficulty": 2,
+      "competencies": ["math.alg.developpement"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 5 و AD = 4 ، والنقطتان M و N من [AD] ، والنقطة P من [DC] ، والنقطة Q المسقط العمودي للنقطة P على (AB). نعلم أنّ:\nAM = DN = PC = x\nx ∈ ]0 ; 2[\nما مساحة شبه المنحرف MNPQ بدلالة x ؟\n<svg viewBox=\"0 0 260 270\"><title>المستطيل ABCD والنقاط M و N و P و Q وشبه المنحرف MNPQ</title><path d=\"M77 230 L167 230 L194 77 L50 77 Z\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M50 230 L194 230 L194 50 L50 50 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M50 77 L194 77\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"50\" cy=\"230\" r=\"4.4\"/><circle cx=\"50\" cy=\"50\" r=\"4.4\"/><circle cx=\"194\" cy=\"50\" r=\"4.4\"/><circle cx=\"194\" cy=\"230\" r=\"4.4\"/><circle cx=\"77\" cy=\"230\" r=\"4.4\"/><circle cx=\"167\" cy=\"230\" r=\"4.4\"/><circle cx=\"194\" cy=\"77\" r=\"4.4\"/><circle cx=\"50\" cy=\"77\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"36\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"36\" y=\"48\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"208\" y=\"48\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"208\" y=\"238\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"77\" y=\"250\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"167\" y=\"250\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"208\" y=\"82\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"36\" y=\"82\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"63.5\" y=\"250\" text-anchor=\"middle\" fill=\"#0f172a\">x</text><text x=\"180.5\" y=\"250\" text-anchor=\"middle\" fill=\"#0f172a\">x</text><text x=\"206\" y=\"68.5\" text-anchor=\"middle\" fill=\"#0f172a\">x</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "5(4 − x)"
+        },
+        {
+          "id": "b",
+          "text": "(4 − 2x)(5 − x)",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        },
+        {
+          "id": "c",
+          "text": "(4 − x)(5 − x)"
+        },
+        {
+          "id": "d",
+          "text": "(8 − 2x)(5 − x)",
+          "misconceptionTag": "math.mes.aire-trapeze-sans-demi-somme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "القاعدتان المتوازيتان هما [MN] و [QP]. لدينا MN = AD − AM − DN = 4 − 2x ، و QP = AD = 4 لأنّ الرباعي AQPD مستطيل. والارتفاع هو البعد بين المستقيمين (AD) و (QP) ، أي DP = DC − PC = 5 − x.\nمساحة شبه المنحرف هي (القاعدة الكبرى + القاعدة الصغرى) × الارتفاع ÷ 2 : S = ((4 − 2x) + 4) × (5 − x)/2 = (8 − 2x)(5 − x)/2 = (4 − x)(5 − x) ✓.\nالخطأ الشائع: ترك القسمة على 2 فنجد (8 − 2x)(5 − x) ؛ أو أخذ قاعدة واحدة فنجد (4 − 2x)(5 − x) ؛ أو أخذ الارتفاع 5 وهو AB بدل 5 − x فنجد 5(4 − x).",
+      "difficulty": 2,
+      "competencies": ["math.mes.aires", "math.alg.developpement"]
+    },
+    {
+      "prompt": "المساحة S لشبه المنحرف MNPQ بدلالة x تُكتب كما يلي:\nS = 12 + (x − 1)(x − 8)\nما مجموعة قيم x من المجال ]0 ; 2[ التي تحقّق S = 12 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "{ −1 ; −8 }",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "b",
+          "text": "{ 1 }"
+        },
+        {
+          "id": "c",
+          "text": "{ 1 ; 8 }",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "{ 8 }"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "S = 12 تعني 12 + (x − 1)(x − 8) = 12 ، أي (x − 1)(x − 8) = 0. الجداء معدوم إذا انعدم أحد عامليه: x = 1 أو x = 8. وبما أنّ x ينتمي إلى المجال ]0 ; 2[ فالعدد 8 مرفوض لأنّه خارجه ، والعدد 1 مقبول لأنّ 0 < 1 < 2 ✓. مجموعة القيم { 1 }.\nتحقّق: عند x = 1 ينعدم العامل (x − 1) فيبقى الطرف الأيمن 12 ✓.\nالخطأ الشائع: الاحتفاظ بالحلّين 1 و 8 دون اختبار المجال ؛ أو قراءة جذري القوسين بإشارتيهما فنكتب −1 و −8.",
+      "difficulty": 2,
+      "competencies": ["math.alg.equations-produit"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 5 و AD = 4 ، ونعتبر x = 1. النقطتان M و N من [AD] حيث AM = DN = 1 ، والنقطة P من [DC] حيث PC = 1 ، والنقطة Q المسقط العمودي للنقطة P على (AB). المستقيمان (MQ) و (NP) يتقاطعان في النقطة O ، ونعلم أنّ OM = ON. لتكن H منتصف [MN]. ما الحجّة التي تثبت أنّ (OH) ⟂ (MN) ؟\n<svg viewBox=\"0 0 240 340\"><title>المستطيل ABCD والنقاط M و N و P و Q و O و H</title><path d=\"M90 190 L150 190 L180 70 L60 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M60 190 L180 190 L180 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M90 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M150 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 70 L180 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120 310 L120 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"4.4\"/><circle cx=\"60\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"190\" r=\"4.4\"/><circle cx=\"90\" cy=\"190\" r=\"4.4\"/><circle cx=\"150\" cy=\"190\" r=\"4.4\"/><circle cx=\"180\" cy=\"70\" r=\"4.4\"/><circle cx=\"60\" cy=\"70\" r=\"4.4\"/><circle cx=\"120\" cy=\"310\" r=\"4.4\"/><circle cx=\"120\" cy=\"190\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"194\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"76\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"194\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"46\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"134\" y=\"315\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"133\" y=\"182\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OMN مثلّث متساوي الساقين رأسه O ، فموسّطه [OH] هو أيضًا ارتفاعه"
+        },
+        {
+          "id": "b",
+          "text": "H منتصف [MN] ، وكلّ موسّط في مثلّث عمودي على الضلع الذي يقسمه",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "المستقيمان (OH) و (MN) يتقاطعان في النقطة H من القطعة [MN] ، فهما متعامدان",
+          "misconceptionTag": "math.geo.intersection-prise-pour-perpendicularite"
+        },
+        {
+          "id": "d",
+          "text": "OM = ON ، فالمثلّث OMN قائم الزاوية في O ، إذن (OH) ⟂ (MN)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "OM = ON ، فالمثلّث OMN متساوي الساقين رأسه O وقاعدته [MN]. و H منتصف القاعدة ، فـ [OH] موسّط صادر من الرأس. وفي المثلّث المتساوي الساقين يكون الموسّط الصادر من الرأس هو أيضًا الارتفاع ، أي أنّ (OH) ⟂ (MN) ✓.\nالخطأ الشائع: الاعتقاد بأنّ كلّ موسّط عمودي على الضلع الذي يقسمه ، وهذا لا يصحّ إلّا للموسّط الصادر من رأس مثلّث متساوي الساقين ؛ أو الاكتفاء بأنّ (OH) و (MN) يتقاطعان في H ، وتقاطع مستقيمين لا يعني تعامدهما ؛ أو تحويل تساوي الضلعين OM و ON إلى زاوية قائمة في O.",
+      "difficulty": 2,
+      "competencies": ["math.geo.triangles-base", "math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 5 و AD = 4 ، ونعتبر x = 1. النقطتان M و N من [AD] حيث AM = DN = 1 ، والنقطة P من [DC] حيث PC = 1 ، والنقطة Q المسقط العمودي للنقطة P على (AB). المستقيمان (MQ) و (NP) يتقاطعان في النقطة O. ما قيمة النسبة OM/OQ ؟\n<svg viewBox=\"0 0 240 340\"><title>المستطيل ABCD والنقاط M و N و P و Q و O</title><path d=\"M90 190 L150 190 L180 70 L60 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M60 190 L180 190 L180 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M90 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M150 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 70 L180 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"4.4\"/><circle cx=\"60\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"190\" r=\"4.4\"/><circle cx=\"90\" cy=\"190\" r=\"4.4\"/><circle cx=\"150\" cy=\"190\" r=\"4.4\"/><circle cx=\"180\" cy=\"70\" r=\"4.4\"/><circle cx=\"60\" cy=\"70\" r=\"4.4\"/><circle cx=\"120\" cy=\"310\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"194\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"76\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"194\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"46\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"134\" y=\"315\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/4"
+        },
+        {
+          "id": "b",
+          "text": "1/3"
+        },
+        {
+          "id": "c",
+          "text": "1/2"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب أوّلًا: MN = AD − AM − DN = 4 − 1 − 1 = 2 ، و QP = AD = 4 لأنّ الرباعي AQPD مستطيل. في المثلّث OQP : M من [OQ] و N من [OP] و (MN) ∥ (QP) لأنّ (MN) محمول على (AD) و (QP) ∥ (AD) ، فبنظرية طاليس OM/OQ = ON/OP = MN/QP = 2/4 = 1/2 ✓.\nالخطأ الشائع: قلب النسبة فنجد QP/MN = 2 ؛ أو أخذ MN = x = 1 بدل 4 − 2x = 2 فنجد 1/4.",
+      "difficulty": 3,
+      "competencies": ["math.geo.thales-direct", "math.mes.aires"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 5 و AD = 4 ، ونعتبر x = 1. النقطتان M و N من [AD] حيث AM = DN = 1 ، والنقطة P من [DC] حيث PC = 1 ، والنقطة Q المسقط العمودي للنقطة P على (AB). المستقيمان (MQ) و (NP) يتقاطعان في النقطة O ، ونعلم أنّ M منتصف [OQ] و N منتصف [OP]. لإثبات OM = ON يكفي إثبات MQ = NP. ما الحجّة التي تبرّر MQ = NP ؟\n<svg viewBox=\"0 0 240 340\"><title>المستطيل ABCD والنقاط M و N و P و Q و O</title><path d=\"M90 190 L150 190 L180 70 L60 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M60 190 L180 190 L180 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M90 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M150 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 70 L180 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"4.4\"/><circle cx=\"60\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"190\" r=\"4.4\"/><circle cx=\"90\" cy=\"190\" r=\"4.4\"/><circle cx=\"150\" cy=\"190\" r=\"4.4\"/><circle cx=\"180\" cy=\"70\" r=\"4.4\"/><circle cx=\"60\" cy=\"70\" r=\"4.4\"/><circle cx=\"120\" cy=\"310\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"194\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"76\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"194\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"46\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"134\" y=\"315\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "المثلّثان AQM و DPN قائمان وفيهما AQ = DP و AM = DN ، فبفيثاغورس MQ = NP"
+        },
+        {
+          "id": "b",
+          "text": "المستقيمان (MN) و (QP) متوازيان ، والرباعي MNPQ شبه منحرف قاعدتاه [MN] و [QP] ، فـ MQ = NP"
+        },
+        {
+          "id": "c",
+          "text": "القطعة [MN] نصف القطعة [QP] والنقطة H منتصف [MN] ، فالقطعتان [MQ] و [NP] متقايستان"
+        },
+        {
+          "id": "d",
+          "text": "M و N منتصفا [OQ] و [OP] ، والمنتصفان يقسمان الضلعين بالتساوي ، فالقطعتان [MQ] و [NP] متقايستان"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب MQ و NP بفيثاغورس. المثلّث AQM قائم في A وضلعاه القائمان AQ = DP = 5 − 1 = 4 (لأنّ AQPD مستطيل) و AM = 1 ، فـ MQ² = 4² + 1² = 17. والمثلّث DPN قائم في D وضلعاه القائمان DP = 4 و DN = 1 ، فـ NP² = 4² + 1² = 17 أيضًا. إذن MQ = NP ✓ ، وبما أنّ OM = MQ و ON = NP فإنّ OM = ON.\nأمّا توازي (MN) و (QP) فلا يعطي تساوي الساقين لأنّ شبه المنحرف قد لا يكون متساوي الساقين ؛ ونصف القاعدة لا يقول شيئًا عن الساقين ؛ ومنتصفا [OQ] و [OP] لا يعطيان MQ = NP إلّا إذا كان OQ = OP وهذا ما لم يُثبَت بعد.",
+      "difficulty": 3,
+      "competencies": ["math.geo.pythagore", "math.geo.thales-direct"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 5 و AD = 4 ، ونعتبر x = 1. النقطتان M و N من [AD] حيث AM = DN = 1 ، والنقطة P من [DC] حيث PC = 1 ، والنقطة Q المسقط العمودي للنقطة P على (AB). المستقيمان (MQ) و (NP) يتقاطعان في النقطة O ، ونعلم أنّ M و N منتصفا [OQ] و [OP]. لتكن H منتصف [MN] ، والنقطة G هي تقاطع (MP) و (OH). أيّ استدلال يثبت أنّ G مركز ثقل المثلّث OPQ ؟\n<svg viewBox=\"0 0 240 340\"><title>المستطيل ABCD والنقاط M و N و P و Q و O و H و G</title><path d=\"M90 190 L150 190 L180 70 L60 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M60 190 L180 190 L180 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M90 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M150 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 70 L180 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120 310 L120 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M180 70 L90 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120 310 L120 150\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f6e56\"><circle cx=\"120\" cy=\"150\" r=\"4.4\"/></g><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"4.4\"/><circle cx=\"60\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"190\" r=\"4.4\"/><circle cx=\"90\" cy=\"190\" r=\"4.4\"/><circle cx=\"150\" cy=\"190\" r=\"4.4\"/><circle cx=\"180\" cy=\"70\" r=\"4.4\"/><circle cx=\"60\" cy=\"70\" r=\"4.4\"/><circle cx=\"120\" cy=\"310\" r=\"4.4\"/><circle cx=\"120\" cy=\"190\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"194\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"76\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"194\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"46\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"134\" y=\"315\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"133\" y=\"182\" text-anchor=\"middle\" fill=\"#0f172a\">H</text><text x=\"134\" y=\"164\" text-anchor=\"middle\" fill=\"#0f6e56\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "[PM] موسّط لأنّ M منتصف [OQ] ، و (OH) موسّط لأنّها تمرّ من O ومن منتصف [QP]"
+        },
+        {
+          "id": "b",
+          "text": "[PM] موسّط لأنّ M منتصف [OQ] ، و (OH) ارتفاع لأنّها تمرّ من O وعمودية على (QP)",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "[PM] و [QN] موسّطان لأنّ M و N منتصفا [OQ] و [OP] ، وهما يلتقيان في نقطة واحدة",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "d",
+          "text": "[PM] موسّط لأنّ M منتصف [OQ] ، و G نقطة من [PM] تقع داخل المثلّث OPQ"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "مركز ثقل مثلّث هو نقطة تقاطع موسّطين من موسّطاته. [PM] موسّط في المثلّث OPQ لأنّ M منتصف [OQ]. والمستقيم (OH) يمرّ من الرأس O وهو يقطع [QP] في منتصفه L : فبطاليس في المثلّثين OHM و OLQ لدينا LQ/HM = OQ/OM = 2 ، فـ LQ = 2 × HM = MN = 2 = QP/2 لأنّ MN = 2 و QP = 4 ، أي أنّ L منتصف [QP] ، فـ (OH) هو الموسّط الثاني. و G تقاطع هذين الموسّطين ، فهي مركز ثقل OPQ ✓.\nالخطأ الشائع: الاكتفاء بأنّ (OH) ارتفاع ، والارتفاع لا يكون موسّطًا إلّا في مثلّث ثبت أنّه متساوي الساقين رأسه O ، وهذا لم يُذكر في الاستدلال ؛ أو الاكتفاء بأنّ G نقطة من الموسّط [PM] داخل المثلّث ، وكلّ نقاط [PM] بين P و M كذلك ؛ أو أخذ موسّطين لا يلتقيان في G مثل [QN] ، والنقطة G معرّفة بتقاطع (MP) و (OH).",
+      "difficulty": 3,
+      "competencies": ["math.geo.thales-direct", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "ABCD مستطيل حيث AB = 5 و AD = 4 ، ونعتبر x = 1. النقطتان M و N من [AD] حيث AM = DN = 1 ، والنقطة P من [DC] حيث PC = 1 ، والنقطة Q المسقط العمودي للنقطة P على (AB). المستقيمان (MQ) و (NP) يتقاطعان في النقطة O ، والنقطة G مركز ثقل المثلّث OPQ. نعتبر المعيّن (A, D, Q) الذي مبدؤه A ونقطتا الوحدة فيه D و Q ، وهو متعامد ومتجانس لأنّ AD = AQ. ما إحداثيّتا G في هذا المعيّن ؟\n<svg viewBox=\"0 0 240 340\"><title>المستطيل ABCD والنقاط M و N و P و Q و O و H</title><path d=\"M90 190 L150 190 L180 70 L60 70 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M60 190 L180 190 L180 40 L60 40 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M90 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M150 190 L120 310\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><path d=\"M60 70 L180 70\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M120 310 L120 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"190\" r=\"4.4\"/><circle cx=\"60\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"40\" r=\"4.4\"/><circle cx=\"180\" cy=\"190\" r=\"4.4\"/><circle cx=\"90\" cy=\"190\" r=\"4.4\"/><circle cx=\"150\" cy=\"190\" r=\"4.4\"/><circle cx=\"180\" cy=\"70\" r=\"4.4\"/><circle cx=\"60\" cy=\"70\" r=\"4.4\"/><circle cx=\"120\" cy=\"310\" r=\"4.4\"/><circle cx=\"120\" cy=\"190\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"46\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"194\" y=\"38\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"194\" y=\"198\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"76\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"164\" y=\"208\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"194\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"46\" y=\"75\" text-anchor=\"middle\" fill=\"#0f6e56\">Q</text><text x=\"134\" y=\"315\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"133\" y=\"182\" text-anchor=\"middle\" fill=\"#0f172a\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1/3 ; 1/2)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
+        {
+          "id": "b",
+          "text": "(1/2 ; −1/3)",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "c",
+          "text": "(1/2 ; 1/3)"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; 4/3)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المعيّن (A, D, Q) وحدة الطول هي AD = AQ = 4 cm (لأنّ AQ = DP = 5 − 1 = 4). فيه A(0 ; 0) و D(1 ; 0) و Q(0 ; 1) ، والنقطة P هي (1 ; 1) لأنّ AQPD مربّع. و M من [AD] حيث AM = 1 cm أي 1/4 وحدة ، فـ M(1/4 ; 0). وبما أنّ M منتصف [OQ] فإنّ O = 2M − Q = (1/2 ; −1).\nمركز ثقل OPQ : xG = (1/2 + 1 + 0)/3 = 1/2 ، و yG = (−1 + 1 + 1)/3 = 1/3. إذن G(1/2 ; 1/3) ✓.\nتحقّق بالأبعاد: G على بعد 2 cm من (AQ) وعلى بعد 4/3 cm من (AD) ، ووحدة المعيّن 4 cm ، فإحداثيّتاها 2/4 = 1/2 و (4/3)/4 = 1/3 ✓.\nالخطأ الشائع: كتابة الأبعاد بالسنتمتر (2 ; 4/3) بدل قياسها بوحدة المعيّن ؛ أو تبديل الفاصلة والترتيبة ؛ أو عكس الثلث والثلثين على الموسّط الصادر من O فنجد الترتيبة −1/3.",
+      "difficulty": 3,
+      "competencies": ["math.vec.repere-coordonnees", "math.geo.thales-direct"]
+    }
+  ]
+}

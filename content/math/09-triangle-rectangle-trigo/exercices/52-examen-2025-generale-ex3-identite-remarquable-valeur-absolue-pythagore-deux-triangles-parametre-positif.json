@@ -1,0 +1,253 @@
+{
+  "title": "🏛️ مناظرة 2025 · التمرين 3 ⭐⭐⭐: متطابقة شهيرة ومتراجحة بالقيمة المطلقة — فيثاغورس في مثلّثين قائمين ووسيط موجب",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 52,
+  "questions": [
+    {
+      "prompt": "المثلّث ABC قائم في B ، وطولا ضلعيه القائمين بالسنتيمتر هما:\nAB = 2√2\nBC = a\nحيث a عدد حقيقي موجب قطعًا. ما قيمة AC² بدلالة a ؟\n<svg viewBox=\"0 0 300 150\"><title>المثلث ABC القائم في B</title><polygon points=\"93,100 217.5,100 217.5,42.8\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M93 100 L217.5 100\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 100 L217.5 42.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 100 L217.5 42.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206.5 100 L206.5 89 L217.5 89\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"93\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"100\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"42.8\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"80\" y=\"105\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"231.5\" y=\"115\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"230.5\" y=\"37.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"229.5\" y=\"76.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 + a²"
+        },
+        {
+          "id": "b",
+          "text": "4 + a²",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "c",
+          "text": "8 − a²",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        },
+        {
+          "id": "d",
+          "text": "(2√2 + a)²",
+          "misconceptionTag": "math.geo.pythagore-sans-carres"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المثلّث ABC قائم في B فوتره [AC] ، وبنظرية فيثاغورس AC² = AB² + BC². لكنّ AB² = (2√2)² = 2² × (√2)² = 4 × 2 = 8 و BC² = a². إذن AC² = 8 + a² ✓. الخطأ الشائع: تربيع الجذر وحده فنجد AB² = 2 × 2 = 4 ثمّ AC² = 4 + a² ؛ أو اعتبار [AB] وترًا فنجد AC² = 8 − a² ؛ أو جمع الطولين قبل التربيع فنجد AC² = (2√2 + a)².",
+      "difficulty": 1,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "لتكن العبارة التالية حيث x عدد حقيقي:\nE = x² + 2x + 6\nأيّ عبارة تساوي E − 5 لكلّ عدد حقيقي x ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x + 1)²"
+        },
+        {
+          "id": "b",
+          "text": "(x − 1)²"
+        },
+        {
+          "id": "c",
+          "text": "(x + 3)²"
+        },
+        {
+          "id": "d",
+          "text": "(x + 2)²"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب E − 5 = x² + 2x + 6 − 5 = x² + 2x + 1. وهذه العبارة مربّع مجموع: (x + 1)² = x² + 2 × x × 1 + 1² = x² + 2x + 1 ✓. أمّا (x − 1)² فينشر إلى x² − 2x + 1 ، فإشارة الحدّ الأوسط مخالفة. أمّا (x + 2)² فتنشر إلى x² + 4x + 4 : أُخذ معامل x كاملًا بدل نصفه.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "حلّ في ℝ المعادلة التالية:\nx² + 2x + 6 = 21",
+      "options": [
+        {
+          "id": "a",
+          "text": "{−5 ; 3}"
+        },
+        {
+          "id": "b",
+          "text": "{3}",
+          "misconceptionTag": "math.alg.produit-nul-une-seule-solution"
+        },
+        {
+          "id": "c",
+          "text": "{−3 ; 5}",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "d",
+          "text": "{13 ; 15}"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "المعادلة x² + 2x + 6 = 21 تكافئ x² + 2x − 15 = 0. نبحث عن عددين جداؤهما −15 ومجموعهما 2 ، فهما 5 و −3 ، ومنه x² + 2x − 15 = (x + 5)(x − 3) = 0. جداء عاملين ينعدم إذا انعدم أحدهما: x + 5 = 0 أو x − 3 = 0 ، أي x = −5 أو x = 3 ✓. تحقّق: (−5)² + 2 × (−5) + 6 = 25 − 10 + 6 = 21 ✓ و 3² + 2 × 3 + 6 = 21 ✓. الخطأ الشائع: الاكتفاء بجذر واحد فنجد {3} ؛ أو قراءة الجذرين بإشارتيهما الظاهرتين في القوسين فنجد {−3 ; 5} ؛ أو كتابة x(x + 2) = 15 ثمّ القول إنّ x = 15 أو x + 2 = 15 ، وهذا لا يصحّ لأنّ الجداء ليس معدومًا.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation"
+      ]
+    },
+    {
+      "prompt": "ما مجموعة الأعداد الحقيقية x التي تحقّق المتراجحة التالية ؟\n|x + 1| ≤ 2",
+      "options": [
+        {
+          "id": "a",
+          "text": "[−3 ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "[−1 ; 3]",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "c",
+          "text": "[−2 ; 2]"
+        },
+        {
+          "id": "d",
+          "text": "]−∞ ; −3] ∪ [1 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "|x + 1| ≤ 2 تعني أنّ المسافة بين x + 1 والصفر لا تتجاوز 2 ، أي −2 ≤ x + 1 ≤ 2. نطرح 1 من الأطراف الثلاثة: −3 ≤ x ≤ 1. مجموعة الحلول هي [−3 ; 1] ✓. تحقّق: x = −3 يعطي |−2| = 2 ✓ و x = 1 يعطي |2| = 2 ✓ و x = 2 يعطي |3| = 3 > 2 فهو ليس حلًّا. الخطأ الشائع: نقل العدد 1 دون تغيير إشارته فنجد −1 ≤ x ≤ 3 ؛ أو إهمال العدد 1 داخل القيمة المطلقة فنجد [−2 ; 2] ؛ أو عكس اتّجاه المتراجحة فنجد المجالين الخارجيين.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في B والمثلّث CAD قائم في A ، ونعلم أنّ الأطوال بالسنتيمتر هي:\nAB = 2√2\nBC = a\nAD = a + 2\nحيث a عدد حقيقي موجب قطعًا. ما قيمة CD² بدلالة a ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلثان ABC و CAD القائمان</title><polygon points=\"93,80 217.5,80 217.5,22.8\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M93 80 L217.5 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 22.8 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M103 75.4 L107.6 85.4 L97.6 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206.5 80 L206.5 69 L217.5 69\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"93\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"22.8\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"153.6\" cy=\"211.9\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"80\" y=\"85\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"231.5\" y=\"95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"230.5\" y=\"17.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"149.6\" y=\"231.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"229.5\" y=\"56.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a</text><text x=\"100.3\" y=\"150\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a+2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2a² + 4a + 12"
+        },
+        {
+          "id": "b",
+          "text": "2a² + 12",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "2a² − 4a + 12",
+          "misconceptionTag": "math.alg.carre-somme-signe-double-produit"
+        },
+        {
+          "id": "d",
+          "text": "a² + 4a + 12",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نطبّق فيثاغورس مرّتين. في المثلّث ABC القائم في B: AC² = AB² + BC² = 8 + a². في المثلّث CAD القائم في A ووتره [CD]: CD² = AC² + AD² = 8 + a² + (a + 2)². وبما أنّ (a + 2)² = a² + 4a + 4 فإنّ CD² = 8 + a² + a² + 4a + 4 = 2a² + 4a + 12 ✓. الخطأ الشائع: كتابة (a + 2)² = a² + 4 بنسيان الجداء المضاعف فنجد 2a² + 12 ؛ أو إعطاء الجداء المضاعف إشارة سالبة فنجد (a + 2)² = a² − 4a + 4 ثمّ 2a² − 4a + 12 ؛ أو تطبيق فيثاغورس في المثلّث CAD بأخذ AB مكان AC فنجد CD² = 8 + (a + 2)² = a² + 4a + 12.",
+      "difficulty": 2,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.developpement",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في B والمثلّث CAD قائم في A ، ونعلم أنّ الأطوال بالسنتيمتر هي:\nAB = 2√2\nBC = a\nAD = a + 2\nحيث a عدد حقيقي موجب قطعًا. ما المتراجحة المكافئة للشرط CD ≤ 3√2 ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلثان ABC و CAD القائمان</title><polygon points=\"93,80 217.5,80 217.5,22.8\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M93 80 L217.5 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 22.8 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M103 75.4 L107.6 85.4 L97.6 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206.5 80 L206.5 69 L217.5 69\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"93\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"22.8\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"153.6\" cy=\"211.9\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"80\" y=\"85\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"231.5\" y=\"95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"230.5\" y=\"17.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"149.6\" y=\"231.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"229.5\" y=\"56.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a</text><text x=\"100.3\" y=\"150\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a+2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a + 1)² ≤ 4"
+        },
+        {
+          "id": "b",
+          "text": "(a + 1)² ≤ 8",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        },
+        {
+          "id": "c",
+          "text": "(a + 1)² ≤ 7"
+        },
+        {
+          "id": "d",
+          "text": "(a + 1)² ≤ −2",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الطولان CD و 3√2 موجبان ، فالشرط CD ≤ 3√2 يكافئ CD² ≤ (3√2)² = 9 × 2 = 18. وبما أنّ CD² = AC² + AD² = 2a² + 4a + 12 فالمتراجحة تصبح 2a² + 4a + 12 ≤ 18 ، أي 2a² + 4a − 6 ≤ 0 ، ثمّ بالقسمة على 2: a² + 2a − 3 ≤ 0. وبما أنّ a² + 2a − 3 = (a + 1)² − 4 فالمتراجحة تكافئ (a + 1)² ≤ 4 ✓. الخطأ الشائع: كتابة (3√2)² = 3 × 2 = 6 بتربيع الجذر وحده فنجد (a + 1)² ≤ −2 ؛ أو نسيان القسمة على 2 فنجد (a + 1)² ≤ 8 ؛ أو قسمة بعض الحدود فقط فنجد a² + 2a − 6 ≤ 0 أي (a + 1)² ≤ 7.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.inequations",
+        "math.alg.identites-remarquables",
+        "math.geo.pythagore"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في B والمثلّث CAD قائم في A ، ونعلم أنّ الأطوال بالسنتيمتر هي:\nAB = 2√2\nBC = a\nAD = a + 2\nحيث a عدد حقيقي موجب قطعًا. إذا كان CD = √42 فما قيمة a ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلثان ABC و CAD القائمان</title><polygon points=\"93,80 217.5,80 217.5,22.8\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M93 80 L217.5 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 22.8 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M103 75.4 L107.6 85.4 L97.6 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206.5 80 L206.5 69 L217.5 69\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"93\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"22.8\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"153.6\" cy=\"211.9\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"80\" y=\"85\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"231.5\" y=\"95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"230.5\" y=\"17.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"149.6\" y=\"231.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"229.5\" y=\"56.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a</text><text x=\"100.3\" y=\"150\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a+2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "√15"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "misconceptionTag": "math.alg.produit-nul-racine-signe-non-oppose"
+        },
+        {
+          "id": "d",
+          "text": "15",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب أوّلًا CD² = AC² + AD² = 8 + a² + (a + 2)² = 2a² + 4a + 12. والشرط CD = √42 يعطي CD² = 42 ، أي 2a² + 4a + 12 = 42 ، ومنه a² + 2a − 15 = 0 ، أي (a + 5)(a − 3) = 0. إذن a = −5 أو a = 3 ، لكنّ a موجب قطعًا فنقبل a = 3 فقط ✓. تحقّق: 2 × 9 + 4 × 3 + 12 = 18 + 12 + 12 = 42 ✓. الخطأ الشائع: نسيان الجداء المضاعف في (a + 2)² فنجد 2a² + 12 = 42 ثمّ a² = 15 و a = √15 ؛ أو قراءة جذر العامل a + 5 بإشارته الظاهرة فنجد a = 5 ؛ أو كتابة (a + 1)² = 16 ثمّ a + 1 = 16 بدل a + 1 = 4 فنجد a = 15.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.pythagore",
+        "math.alg.equations-produit",
+        "math.alg.developpement"
+      ]
+    },
+    {
+      "prompt": "المثلّث ABC قائم في B والمثلّث CAD قائم في A ، ونعلم أنّ الأطوال بالسنتيمتر هي:\nAB = 2√2\nBC = a\nAD = a + 2\nحيث a عدد حقيقي موجب قطعًا. ما مجموعة الأعداد الحقيقية a التي تحقّق CD ≤ 3√2 ؟\n<svg viewBox=\"0 0 300 232\"><title>المثلثان ABC و CAD القائمان</title><polygon points=\"93,80 217.5,80 217.5,22.8\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><path d=\"M93 80 L217.5 80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L217.5 22.8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M93 80 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M217.5 22.8 L153.6 211.9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M103 75.4 L107.6 85.4 L97.6 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M206.5 80 L206.5 69 L217.5 69\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"93\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"80\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"217.5\" cy=\"22.8\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"153.6\" cy=\"211.9\" r=\"3.8\" fill=\"#0f172a\"/></g><g font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"80\" y=\"85\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"231.5\" y=\"95\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"230.5\" y=\"17.8\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"149.6\" y=\"231.9\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"229.5\" y=\"56.4\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a</text><text x=\"100.3\" y=\"150\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">a+2</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "]0 ; 1]"
+        },
+        {
+          "id": "b",
+          "text": "[−3 ; 1]",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "c",
+          "text": "]0 ; 3]",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "[1 ; +∞["
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "CD ≤ 3√2 تكافئ CD² ≤ 18 ، أي 2a² + 4a + 12 ≤ 18 ، ثمّ a² + 2a − 3 ≤ 0 ، أي (a + 1)² ≤ 4. وهذا يكافئ |a + 1| ≤ 2 ، أي −2 ≤ a + 1 ≤ 2 ، ومنه −3 ≤ a ≤ 1. لكنّ a موجب قطعًا ، فمجموعة الحلول هي ]0 ; 1] ✓. تحقّق: a = 1 يعطي CD² = 2 + 4 + 12 = 18 ✓ ، و a = 2 يعطي CD² = 8 + 8 + 12 = 28 > 18 فهو مرفوض. الخطأ الشائع: الاحتفاظ بالمجال [−3 ; 1] دون تذكّر أنّ a موجب قطعًا ؛ أو كتابة a + 1 ≤ 4 بدل a + 1 ≤ 2 فنجد ]0 ; 3].",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.inequations",
+        "math.num.valeur-absolue",
+        "math.geo.pythagore"
+      ]
+    }
+  ]
+}

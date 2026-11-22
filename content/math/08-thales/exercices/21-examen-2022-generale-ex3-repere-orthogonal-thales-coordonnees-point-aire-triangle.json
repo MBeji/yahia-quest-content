@@ -1,0 +1,179 @@
+{
+  "title": "🏛️ مناظرة 2022 · التمرين 3 ⭐⭐⭐: معيّن متعامد — نظرية طاليس وإحداثيّات نقطة وحساب مساحة مثلّث",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 21,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "(O, I, J) معيّن متعامد في المستوي حيث:\nOI = OJ = 1\nنعتبر النقطة A(3 ; 0) ، والنقطة G هي تقاطع القطعة [AJ] مع المستقيم المارّ من I والعمودي على (OA). اختر كلّ الجمل الصحيحة.\n<svg viewBox=\"0 0 250 300\"><title>المعيّن (O, I, J) مع النقاط A و I و J و G حيث G على [AJ]</title><path d=\"M25.8 190 L219.6 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 281.8 L70 23.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M219.6 190 L210.6 185.5 L210.6 194.5 Z\" fill=\"#0f172a\"/><path d=\"M70 23.4 L65.5 32.4 L74.5 32.4 Z\" fill=\"#0f172a\"/><path d=\"M36 186 L36 194 M104 186 L104 194 M138 186 L138 194 M172 186 L172 194 M206 186 L206 194 M66 258 L74 258 M66 224 L74 224 M66 156 L74 156 M66 122 L74 122 M66 88 L74 88 M66 54 L74 54 \" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M172 190 L70 156\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M104 190 L104 167.33\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"190\" r=\"4.4\"/><circle cx=\"104\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"156\" r=\"4.4\"/><circle cx=\"172\" cy=\"190\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"104\" cy=\"167.33\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"104\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"172\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"161\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"118\" y=\"161.33\" text-anchor=\"middle\" fill=\"#0f6e56\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(IG) ∥ (OJ)"
+        },
+        {
+          "id": "b",
+          "text": "(IG) ⟂ (OJ)"
+        },
+        {
+          "id": "c",
+          "text": "المستقيمان (IG) و (OJ) لا يتقاطعان"
+        },
+        {
+          "id": "d",
+          "text": "(IG) ∥ (OA)"
+        },
+        {
+          "id": "e",
+          "text": "المستقيمان (IG) و (OJ) عموديان على المستقيم نفسه (OA)"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "المستقيم (OJ) عمودي على (OA) لأنّ المعيّن متعامد ، والمستقيم (IG) عمودي على (OA) بمعطى المسألة ، فكلّ منهما عمودي على المستقيم نفسه (OA) ✓. والمستقيمان العموديان على مستقيم واحد متوازيان ، فـ (IG) ∥ (OJ) ✓. وهما متوازيان مختلفان (الأوّل يمرّ من I والثاني من O) فلا يتقاطعان ✓.\nأمّا (IG) ⟂ (OJ) فخاطئة: مستقيمان عموديان على مستقيم ثالث ليسا متعامدين بل متوازيان. وأمّا (IG) ∥ (OA) فخاطئة لأنّ (IG) عمودي على (OA) ويقطعه في I.",
+      "difficulty": 1,
+      "competencies": ["math.geo.droites-perp-para", "math.geo.thales-direct"]
+    },
+    {
+      "prompt": "نعتبر معيّنًا متعامدًا (O, I, J) حيث:\nOI = OJ = 1\nوالنقطتين B(0 ; 4) و C(0 ; −2). أوجد إحداثيّتي منتصف القطعة [BC].",
+      "options": [
+        {
+          "id": "a",
+          "text": "(0 ; 3)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 2)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(0 ; 1)"
+        },
+        {
+          "id": "d",
+          "text": "(1 ; 0)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "إحداثيّتا منتصف قطعة هما نصف مجموع الإحداثيّتين المتناظرتين: الفاصلة (0 + 0)/2 = 0 والترتيبة (4 + (−2))/2 = 2/2 = 1. إذن المنتصف هو (0 ; 1) ✓.\nالخطأ الشائع: أخذ نصف الفرق (4 − (−2))/2 = 3 بدل نصف المجموع ؛ أو جمع الترتيبتين دون القسمة على 2 فنجد 4 + (−2) = 2 ؛ أو تبديل الفاصلة والترتيبة فنكتب (1 ; 0).",
+      "difficulty": 1,
+      "competencies": ["math.vec.repere-calculs"]
+    },
+    {
+      "prompt": "(O, I, J) معيّن متعامد في المستوي حيث:\nOI = OJ = 1\nنعتبر النقطة A(3 ; 0) ، ونرسم من I مستقيمًا عموديًّا على (OA) فيقطع القطعة [AJ] في النقطة G. ما قيمة النسبة AG/AJ ؟\n<svg viewBox=\"0 0 250 300\"><title>المثلّث AOJ في المعيّن (O, I, J) مع النقطتين I و G</title><path d=\"M25.8 190 L219.6 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 281.8 L70 23.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M219.6 190 L210.6 185.5 L210.6 194.5 Z\" fill=\"#0f172a\"/><path d=\"M70 23.4 L65.5 32.4 L74.5 32.4 Z\" fill=\"#0f172a\"/><path d=\"M36 186 L36 194 M104 186 L104 194 M138 186 L138 194 M172 186 L172 194 M206 186 L206 194 M66 258 L74 258 M66 224 L74 224 M66 156 L74 156 M66 122 L74 122 M66 88 L74 88 M66 54 L74 54 \" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M172 190 L70 190 L70 156 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M172 190 L70 156\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M104 190 L104 167.33\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"190\" r=\"4.4\"/><circle cx=\"104\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"156\" r=\"4.4\"/><circle cx=\"172\" cy=\"190\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"104\" cy=\"167.33\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"104\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"172\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"161\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"118\" y=\"161.33\" text-anchor=\"middle\" fill=\"#0f6e56\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "2/3"
+        },
+        {
+          "id": "c",
+          "text": "3/2",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "d",
+          "text": "2",
+          "misconceptionTag": "math.geo.thales-formes-melangees"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "المستقيمان (OJ) و (IG) عموديان على (OA) فهما متوازيان. في المثلّث AOJ : I من [AO] و G من [AJ] و (IG) ∥ (OJ) ، فبنظرية طاليس AI/AO = AG/AJ. ولدينا OA = 3 و OI = 1 و I بين O و A ، فـ AI = OA − OI = 3 − 1 = 2 ، ومنه AG/AJ = AI/AO = 2/3 ✓.\nالخطأ الشائع: أخذ OI بدل AI فنجد 1/3 ؛ أو قلب النسبة فنجد 3/2 ؛ أو استعمال نسبة الجزء على الجزء المتبقّي AI/IO = 2 كأنّها نسبة جزء على كلّ فنجد 2.",
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct", "math.geo.droites-perp-para"]
+    },
+    {
+      "prompt": "(O, I, J) معيّن متعامد في المستوي حيث:\nOI = OJ = 1\nنعتبر النقاط A(3 ; 0) و B(0 ; 4) و C(0 ; −2). النقطة J منتصف [BC] ، والنقطة G من [AJ] تحقّق:\nAG = 2/3 × AJ\nما الحكم الصحيح على النقطة G بالنسبة إلى المثلّث ABC مع تعليله ؟\n<svg viewBox=\"0 0 250 300\"><title>المثلّث ABC في المعيّن (O, I, J) مع الموسّط [AJ] والنقطة G عليه</title><path d=\"M25.8 190 L219.6 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 281.8 L70 23.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M219.6 190 L210.6 185.5 L210.6 194.5 Z\" fill=\"#0f172a\"/><path d=\"M70 23.4 L65.5 32.4 L74.5 32.4 Z\" fill=\"#0f172a\"/><path d=\"M36 186 L36 194 M104 186 L104 194 M138 186 L138 194 M172 186 L172 194 M206 186 L206 194 M66 258 L74 258 M66 224 L74 224 M66 156 L74 156 M66 122 L74 122 M66 88 L74 88 M66 54 L74 54 \" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M172 190 L70 54 L70 258 Z\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M172 190 L70 156\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"190\" r=\"4.4\"/><circle cx=\"104\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"156\" r=\"4.4\"/><circle cx=\"172\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"54\" r=\"4.4\"/><circle cx=\"70\" cy=\"258\" r=\"4.4\"/></g><g fill=\"#0f6e56\"><circle cx=\"104\" cy=\"167.33\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"104\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"176\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"161\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"57\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"57\" y=\"263\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"118\" y=\"159.33\" text-anchor=\"middle\" fill=\"#0f6e56\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "G ليست مركز ثقل ABC ، لأنّها ليست منتصف الموسّط [AJ]",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "b",
+          "text": "G مركز ثقل ABC ، لأنّها نقطة من الموسّط [AJ]"
+        },
+        {
+          "id": "c",
+          "text": "G ليست مركز ثقل ABC ، لأنّها عند ثلثي [AJ] لا عند ثلثه",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "d",
+          "text": "G مركز ثقل ABC ، لأنّها على [AJ] عند ثلثيه من A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "J منتصف [BC] ، فـ [AJ] موسّط في المثلّث ABC. ومركز ثقل مثلّث هو النقطة من كلّ موسّط التي تبعد عن الرأس بثلثي طول الموسّط. وبما أنّ AG = (2/3) × AJ فإنّ G هي مركز ثقل المثلّث ABC ✓.\nالخطأ الشائع: وضع مركز الثقل في منتصف الموسّط فنقول إنّ G ليست مركز الثقل لأنّها ليست في المنتصف ؛ أو عكس الثلث والثلثين فنقول إنّها ليست مركز الثقل لأنّها على ثلثي الموسّط لا على ثلثه ؛ أو الاكتفاء بانتماء G إلى الموسّط ، وهذا لا يكفي إذ كلّ نقطة من [AJ] تنتمي إليه.",
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "(O, I, J) معيّن متعامد في المستوي حيث:\nOI = OJ = 1\nنعتبر النقاط A(3 ; 0) و B(0 ; 4) و C(0 ; −2). النقطة G مركز ثقل المثلّث ABC ، والمستقيم (BG) يقطع (AC) في النقطة K. ما إحداثيّتا K ؟\n<svg viewBox=\"0 0 250 300\"><title>المثلّث ABC في المعيّن (O, I, J)</title><path d=\"M25.8 190 L219.6 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 281.8 L70 23.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M219.6 190 L210.6 185.5 L210.6 194.5 Z\" fill=\"#0f172a\"/><path d=\"M70 23.4 L65.5 32.4 L74.5 32.4 Z\" fill=\"#0f172a\"/><path d=\"M36 186 L36 194 M104 186 L104 194 M138 186 L138 194 M172 186 L172 194 M206 186 L206 194 M66 258 L74 258 M66 224 L74 224 M66 156 L74 156 M66 122 L74 122 M66 88 L74 88 M66 54 L74 54 \" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M172 190 L70 54 L70 258 Z\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"190\" r=\"4.4\"/><circle cx=\"104\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"156\" r=\"4.4\"/><circle cx=\"172\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"54\" r=\"4.4\"/><circle cx=\"70\" cy=\"258\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"104\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"176\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"161\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"57\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"57\" y=\"263\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3/2 ; −1)"
+        },
+        {
+          "id": "b",
+          "text": "(3 ; −2)",
+          "misconceptionTag": "math.vec.milieu-sans-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(−3/2 ; −1)",
+          "misconceptionTag": "math.vec.milieu-difference-au-lieu-de-somme"
+        },
+        {
+          "id": "d",
+          "text": "(1 ; 2/3)",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "G مركز ثقل المثلّث ABC ، فالمستقيم (BG) يمرّ من الرأس B ومن G ، أي أنّه الموسّط الصادر من B ؛ وهذا الموسّط يقطع الضلع المقابل [AC] في منتصفه. إذن K منتصف [AC].\nإحداثيّتا K : xK = (xA + xC)/2 = (3 + 0)/2 = 3/2 ، و yK = (yA + yC)/2 = (0 + (−2))/2 = −1. إذن K(3/2 ; −1) ✓.\nالخطأ الشائع: جمع الإحداثيّتين دون القسمة على 2 فنجد (3 ; −2) ؛ أو أخذ نصف الفرق xC − xA و yC − yA بدل نصف المجموع فنجد (−3/2 ; −1) ؛ أو إعطاء إحداثيّتي مركز الثقل G(1 ; 2/3) بدل نقطة التقاطع K.",
+      "difficulty": 3,
+      "competencies": ["math.vec.repere-calculs", "math.geo.thales-direct"]
+    },
+    {
+      "prompt": "مثلّث ABC رؤوسه A(3 ; 0) و B(0 ; 4) و C(0 ; −2) في المعيّن المتعامد (O, I, J) الذي وحدة طوله OI = OJ = 1 ، ومركز ثقله G. يقطع المستقيم (BG) الضلع [AC] في K. ما مساحة المثلّث ABK بوحدة المساحة ؟\n<svg viewBox=\"0 0 250 300\"><title>المثلّث ABC في المعيّن (O, I, J)</title><path d=\"M25.8 190 L219.6 190\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M70 281.8 L70 23.4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M219.6 190 L210.6 185.5 L210.6 194.5 Z\" fill=\"#0f172a\"/><path d=\"M70 23.4 L65.5 32.4 L74.5 32.4 Z\" fill=\"#0f172a\"/><path d=\"M36 186 L36 194 M104 186 L104 194 M138 186 L138 194 M172 186 L172 194 M206 186 L206 194 M66 258 L74 258 M66 224 L74 224 M66 156 L74 156 M66 122 L74 122 M66 88 L74 88 M66 54 L74 54 \" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><path d=\"M172 190 L70 54 L70 258 Z\" fill=\"#0f6e56\" fill-opacity=\"0.07\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"70\" cy=\"190\" r=\"4.4\"/><circle cx=\"104\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"156\" r=\"4.4\"/><circle cx=\"172\" cy=\"190\" r=\"4.4\"/><circle cx=\"70\" cy=\"54\" r=\"4.4\"/><circle cx=\"70\" cy=\"258\" r=\"4.4\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"58\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"104\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"176\" y=\"210\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"57\" y=\"161\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"57\" y=\"59\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"57\" y=\"263\" text-anchor=\"middle\" fill=\"#0f172a\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "9/4"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "9/2"
+        },
+        {
+          "id": "d",
+          "text": "9",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(BG) هو الموسّط الصادر من B ، فـ K منتصف [AC]. القطعة [BK] تقسم المثلّث ABC إلى مثلّثين ABK و CBK لهما الارتفاع نفسه الصادر من B وقاعدتان متقايستان AK = KC ، فمساحتاهما متساويتان.\nمساحة المثلّث ABC : القاعدة [BC] طولها 4 − (−2) = 6 وهي على المحور (OJ) ، والارتفاع الموافق لها هو البعد OA = 3 ، فمساحته (6 × 3)/2 = 9. إذن مساحة ABK هي نصفها: 9/2 ✓.\nالخطأ الشائع: إعطاء مساحة المثلّث ABC كاملة وهي 9 ؛ أو أخذ ثلثها 3 كأنّ المطلوب مساحة المثلّث ABG ؛ أو القسمة على 2 مرّتين فنجد 9/4.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires", "math.geo.thales-direct"]
+    }
+  ]
+}

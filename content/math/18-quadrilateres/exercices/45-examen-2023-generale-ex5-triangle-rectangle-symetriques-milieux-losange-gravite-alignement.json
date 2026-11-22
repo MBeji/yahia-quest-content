@@ -1,0 +1,208 @@
+{
+  "title": "🏛️ مناظرة 2023 · التمرين 5 ⭐⭐⭐⭐: مثلّث قائم ومنتصفاته ومناظراته — المستقيمات الهامة في المثلّث وإثبات طبيعة رباعي واستقامة نقاط",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 45,
+  "questions": [
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A، و I منتصف وتره [BC].\nلماذا IA = IC ؟\n<svg viewBox=\"-12 -4 324 202\"><title>المثلّث ABC القائم في A ومنتصف الوتر I</title><polygon points=\"150.0,70.0 150.0,172.0 286.0,70.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150.0 70.0 L218.0 121.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M159.0 70.0 L159.0 79.0 L150.0 79.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"150.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"172.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"286.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"121.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"138.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"191.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"233.0\" y=\"129.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "[AI] موسّط المثلّث القائم ABC المتعلّق بالوتر [BC]، فطوله نصف الوتر: IA = BC/2 = IC"
+        },
+        {
+          "id": "b",
+          "text": "I منتصف [BC] فـ IB = IC، فالنقطة I مركز الدائرة المحيطة بالمثلّث ABC، ومنه IA = IC",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "الزاوية في A قائمة، فـ (AI) ⊥ (BC) في I، والعمودي في المنتصف يعطي IA = IC بالتناظر",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "d",
+          "text": "ABC قائم في A، فـ AB = AC لأنّ الرسم يبيّن ذلك، ومنه IA = IC لأنّ المثلّث متقايس الضلعين"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "في المثلّث القائم الموسّط المتعلّق بالوتر يساوي نصفه. [AI] هو الموسّط الصادر من الزاوية القائمة، فـ IA = BC/2، و I منتصف [BC] فـ IC = BC/2 أيضًا، إذن IA = IC ✓. الخطأ الشائع: اعتبار I مركز الدائرة المحيطة لمجرّد أنّ IB = IC، أو اعتبار (AI) عموديًّا على (BC) (وهو ليس كذلك في المثلّث القائم غير المتقايس الضلعين)، أو الاكتفاء بـ IB = IC دون ربط IA بهما.",
+      "difficulty": 1,
+      "competencies": ["math.geo.quadrilateres", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A، و I منتصف [BC]، و J مناظرة I بالنسبة إلى (AC).\nما أدقّ وصف للرباعي AICJ مع مبرّره ؟\n<svg viewBox=\"-12 -4 324 202\"><title>الرباعي AICJ والقطعة [IJ]</title><polygon points=\"150.0,70.0 150.0,172.0 286.0,70.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><polygon points=\"150.0,70.0 218.0,121.0 286.0,70.0 218.0,19.0\" fill=\"#0f6e56\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"150.0,70.0 218.0,121.0 286.0,70.0 218.0,19.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M218.0 121.0 L218.0 19.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M159.0 70.0 L159.0 79.0 L150.0 79.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"150.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"172.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"286.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"19.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"138.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"191.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"232.0\" y=\"131.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"232.0\" y=\"13.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "معيّن، لأنّ JA = IA و JC = IC بالتناظر بالنسبة إلى (AC)",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "مربّع، لأنّ IA = IC و JA = IA و JC = IC بالتناظر بالنسبة إلى (AC): أضلاعه الأربعة متقايسة",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "c",
+          "text": "معيّن، لأنّ IA = IC و JA = IA و JC = IC بالتناظر بالنسبة إلى (AC): أضلاعه الأربعة متقايسة"
+        },
+        {
+          "id": "d",
+          "text": "مربّع، لأنّ JA = IA و JC = IC بالتناظر بالنسبة إلى (AC)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "I منتصف وتر المثلّث القائم فـ IA = IC. و J مناظرة I بالنسبة إلى (AC) فـ JA = IA و JC = IC. إذن الأضلاع الأربعة [AI] و [IC] و [CJ] و [JA] متقايسة، والرباعي ذو الأضلاع الأربعة المتقايسة معيّن ✓. التناظر وحده يعطي JA = IA و JC = IC فقط، وهذا لا يكفي لمعيّن بل قد يكون الرباعي على شكل طائرة. ولا شيء يثبت أنّه مربّع: لا شيء يثبت أنّ له زاوية قائمة أو أنّ قطريه متقايسان.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A، و I منتصف [BC]، و D مناظرة C بالنسبة إلى A. المستقيم (DI) يقطع [AB] في النقطة G.\nلماذا G مركز ثقل المثلّث DBC ؟\n<svg viewBox=\"-12 -4 324 202\"><title>المثلّث DBC والموسّطان المحتملان [BA] و [DI]</title><polygon points=\"14.0,70.0 150.0,172.0 286.0,70.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M14.0 70.0 L218.0 121.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M150.0 70.0 L150.0 172.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"14.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"172.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"286.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"121.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"150.0\" cy=\"104.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"1.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150.0\" y=\"191.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150.0\" y=\"61.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"233.0\" y=\"129.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">I</text><text x=\"138.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A منتصف [DC] فـ [BA] موسّط في DBC، و I منتصف [BC] فـ [DI] موسّط فيه، وهما يتقاطعان في G"
+        },
+        {
+          "id": "b",
+          "text": "I منتصف [BC] فـ [DI] موسّط في المثلّث DBC، و G تنتمي إليه، فهي مركز ثقل المثلّث دون حاجة إلى موسّط ثانٍ",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "G نقطة تقاطع (DI) و (AB) وتبدو قريبة من A على الرسم، فهي مركز ثقل المثلّث DBC"
+        },
+        {
+          "id": "d",
+          "text": "(BA) ⊥ (DC) فـ [BA] ارتفاع في المثلّث DBC، و [DI] موسّط فيه، والمستقيمان يتقاطعان في G",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "D مناظرة C بالنسبة إلى A، فـ A منتصف [DC]، و [BA] موسّط في DBC. و I منتصف [BC] فـ [DI] موسّط فيه. مركز ثقل المثلّث هو نقطة تلاقي موسّطاته، فنقطة تقاطع الموسّطين [BA] و [DI] هي G، إذن G مركز ثقل DBC ✓. نقطة واحدة على موسّط واحد لا تكفي، والارتفاع ليس موسّطًا في الحالة العامّة، والرسم لا يبرهن.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A، و I منتصف [BC]، و J مناظرة I بالنسبة إلى (AC)، و D مناظرة C بالنسبة إلى A. المستقيم (DI) يقطع [AB] في G، والمستقيم (AJ) يقطع [DB] في K.\nلماذا النقاط C و G و K على استقامة واحدة ؟\n<svg viewBox=\"-12 -4 324 202\"><title>المثلّث DBC والنقاط I و J و G و K</title><polygon points=\"14.0,70.0 150.0,172.0 286.0,70.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150.0 70.0 L150.0 172.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M14.0 70.0 L218.0 121.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M82.0 121.0 L218.0 19.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"14.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"172.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"286.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"19.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"82.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"104.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"1.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150.0\" y=\"191.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"146.0\" y=\"61.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"233.0\" y=\"131.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"232.0\" y=\"13.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text><text x=\"68.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"138.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(AK) ∥ (BC) و A منتصف [DC]، فـ K منتصف [DB] و [CK] موسّط في DBC، و G على الموسّط [BA] فهي على [CK]",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "(AK) يمرّ من A منتصف [DC]، فـ K منتصف [DB] و [CK] موسّط في DBC، و G على الموسّط [BA] فهي على [CK]"
+        },
+        {
+          "id": "c",
+          "text": "(AK) ∥ (BC) و A منتصف [DC]، فـ K منتصف [DB] و [CK] موسّط في DBC، و G مركز ثقله فهي على [CK]"
+        },
+        {
+          "id": "d",
+          "text": "(AK) يمرّ من A منتصف [DC]، فـ K منتصف [DB] و [CK] موسّط في DBC، و G مركز ثقله فهي على [CK]",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AICJ معيّن فـ (AJ) ∥ (IC)، أي (AK) ∥ (BC). و A منتصف [DC]، والمستقيم المارّ من منتصف ضلع والموازي لحامل ضلع آخر يمرّ من منتصف الضلع الثالث، فـ K منتصف [DB] و [CK] موسّط ثالث في المثلّث DBC. ومركز الثقل G يقع على كلّ موسّط، فهو على [CK]: النقاط C و G و K على استقامة واحدة ✓. مستقيم يمرّ من منتصف ضلع لا يمرّ من منتصف ضلع آخر إلّا إذا وازى حامل الضلع الثالث، والانتماء إلى موسّط واحد لا يضع النقطة على موسّط آخر.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres", "math.geo.triangles-base"]
+    },
+    {
+      "prompt": "ABC مثلّث قائم الزاوية في A، و I منتصف [BC]، و J مناظرة I بالنسبة إلى (AC)، و D مناظرة C بالنسبة إلى A. المستقيم (AJ) يقطع [DB] في K وهو منتصف [DB].\nلماذا A منتصف [JK] ؟\n<svg viewBox=\"-12 -4 324 202\"><title>المثلّث DBC والنقاط J و K و A</title><polygon points=\"14.0,70.0 150.0,172.0 286.0,70.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150.0 70.0 L150.0 172.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M14.0 70.0 L218.0 121.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M82.0 121.0 L218.0 19.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"14.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"172.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"286.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"218.0\" cy=\"19.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"82.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"104.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"1.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">D</text><text x=\"150.0\" y=\"191.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"300.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"146.0\" y=\"61.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"233.0\" y=\"131.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">I</text><text x=\"232.0\" y=\"13.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text><text x=\"68.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"138.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AJ = BC/2 لأنّ AJ = AI بالتناظر و AI = BC/2، و AK = BC/2 بمبرهنة المنتصفات في DBC، وJ و K على جهتين مختلفتين من A، فـ A منتصف [JK]"
+        },
+        {
+          "id": "b",
+          "text": "AJ = BC/2 لأنّ AJ = AI بالتناظر و AI = BC/2، و AK = BC/2 بمبرهنة المنتصفات في DBC، فـ AJ = AK، إذن A منتصف [JK]",
+          "misconceptionTag": "math.geo.position-relative-ignoree"
+        },
+        {
+          "id": "c",
+          "text": "AJ = BC/2 لأنّ AJ = AI بالتناظر و AI = BC/2، و AK = BC بمبرهنة المنتصفات في DBC (القطعة الرابطة بين منتصفين ضعف الضلع الثالث)، فـ A منتصف [JK]",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "d",
+          "text": "J مناظرة I بالنسبة إلى (AC) وK على (AJ)، فالنقطة A تتوسّط [JK] على الرسم"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "AJ = AI بالتناظر بالنسبة إلى (AC) و AI = BC/2، فـ AJ = BC/2. و A منتصف [DC] و K منتصف [DB]، فمبرهنة المنتصفات في DBC تعطي AK = BC/2. إذن AJ = AK، ولأنّ J و K على المستقيم (AJ) من جهتين مختلفتين من A (J فوق (AC) وK تحتها) فـ A منتصف [JK] ✓. تساوي البعدين لا يكفي دون موضع النقطتين: لو كانتا في جهة واحدة لتطابقتا. والقطعة الرابطة بين المنتصفين هي نصف الضلع الثالث لا ضعفه.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "A منتصف [JK]، و G مركز ثقل المثلّث DBC وهي تنتمي إلى [AB].\nلماذا G مركز ثقل المثلّث JKB ؟\n<svg viewBox=\"-12 -4 324 202\"><title>المثلّث JKB والقطعة [BA] والنقطة G</title><polygon points=\"218.0,19.0 82.0,121.0 150.0,172.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150.0 172.0 L150.0 70.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"218.0\" cy=\"19.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"82.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"172.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"104.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"232.0\" y=\"13.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text><text x=\"68.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"150.0\" y=\"191.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"138.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"138.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "AG = AB/3 وA منتصف [JK]، فـ G على الموسّط [BA] عند ثلث طوله من الرأس B فهي مركز ثقل JKB",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "b",
+          "text": "[BA] موسّط في JKB (A منتصف [JK])، و BG = (2/3) × BA لأنّ G مركز ثقل DBC و[BA] موسّط فيه أيضًا"
+        },
+        {
+          "id": "c",
+          "text": "[BA] موسّط في JKB لأنّ A منتصف [JK]، و G تنتمي إليه، ولا حاجة إلى معرفة موقعها عليه، فهي مركز ثقل JKB",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "G مركز ثقل DBC، والمثلّثان DBC و JKB متقايسا المساحة ويشتركان في الرأس B، فلهما مركز الثقل نفسه"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A منتصف [JK]، فـ [BA] موسّط في المثلّث JKB. وG مركز ثقل DBC و [BA] موسّط فيه أيضًا، فـ G على [BA] وتبعد عن الرأس B ثلثَي الموسّط: BG = (2/3) × BA. نقطة من موسّط تبعد عن الرأس ثلثَيه هي مركز الثقل، إذن G مركز ثقل JKB ✓. الانتماء إلى موسّط واحد لا يكفي، والثلث يُحسب من الرأس لا من منتصف الضلع، وتساوي المساحتين لا يعطي مركز ثقل مشتركًا.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "O منتصف [BJ]، و G مركز ثقل المثلّث JKB، والنقاط C و G و K على استقامة واحدة.\nلماذا النقاط C و O و G على استقامة واحدة ؟\n<svg viewBox=\"-12 -4 324 202\"><title>المثلّث JKB والنقاط G و O و C</title><polygon points=\"218.0,19.0 82.0,121.0 150.0,172.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150.0 172.0 L150.0 70.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"218.0\" cy=\"19.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"82.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"172.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"104.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"184.0\" cy=\"95.5\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"286.0\" cy=\"70.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"232.0\" y=\"13.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">J</text><text x=\"68.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"150.0\" y=\"191.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"138.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"138.0\" y=\"102.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">G</text><text x=\"197.0\" y=\"89.5\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"300.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "C و G و K على استقامة واحدة وO منتصف [BJ]، والمنتصفات تقع دائمًا على المستقيم نفسه بلا حاجة إلى برهان آخر"
+        },
+        {
+          "id": "b",
+          "text": "[KO] موسّط في JKB (O منتصف [BJ]) فـ G عليه، أي K و G و O على استقامة واحدة، وC على المستقيم (KG) نفسه"
+        },
+        {
+          "id": "c",
+          "text": "O منتصف [BJ] و A منتصف [JK]، فـ (OA) ∥ (BK)، وبما أنّ C و G و K على استقامة واحدة فالنقاط C و O و G كذلك أيضًا",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "d",
+          "text": "C و O و G تبدو على استقامة واحدة على الرسم، والرسم مرسوم بدقّة في مثلّث قائم، فهي كذلك"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "G مركز ثقل JKB، ومركز الثقل يقع على كلّ موسّط. O منتصف [BJ] فـ [KO] موسّط في JKB، إذن G على (KO): النقاط K و G و O على استقامة واحدة. وC على المستقيم (KG) بحكم المعطى، فهو المستقيم نفسه (KG) الذي يمرّ من O ومن C، إذن C و O و G على استقامة واحدة ✓. أمّا (OA) ∥ (BK) فصحيح لكنّه لا يمرّ من G ولا يخبر عن C، والرسم لا يبرهن.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "G مركز ثقل كلّ من المثلّثين DBC و JKB، و K منتصف [DB]، و O منتصف [BJ]، والنقاط C و O و G و K على استقامة واحدة.\nاحسب النسبة GC/GO، ثمّ اكتب قيمتها.\n<svg viewBox=\"-12 -4 324 202\"><title>المستقيم (CK) والنقاط O و G عليه</title><path d=\"M286.0 70.0 L82.0 121.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"286.0\" cy=\"70.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"82.0\" cy=\"121.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"184.0\" cy=\"95.5\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"104.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"300.0\" y=\"64.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"68.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"188.0\" y=\"85.5\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"144.0\" y=\"94.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">G</text></g></svg>",
+      "answerKey": {
+        "value": 4
+      },
+      "explanation": "في المثلّث DBC: [CK] موسّط ومركز الثقل G عليه، فـ CG = (2/3) × CK و GK = (1/3) × CK، أي CG = 2 × GK. وفي المثلّث JKB: [KO] موسّط وG عليه، فـ KG = (2/3) × KO و GO = (1/3) × KO، أي KG = 2 × GO. إذن CG = 2 × GK = 4 × GO، ومنه GC/GO = 4 ✓. وبطريقة ثانية بمعلّم أصله A وبأخذ AB = 6 و AC = 8: C(8 ; 0) و G(0 ; −2) و O(2 ; −1,5)، فـ GC هو أربعة أضعاف GO بحساب الإحداثيّات. الخطأ الشائع: الاكتفاء بنسبة موسّط واحد فنجد 2.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    }
+  ]
+}

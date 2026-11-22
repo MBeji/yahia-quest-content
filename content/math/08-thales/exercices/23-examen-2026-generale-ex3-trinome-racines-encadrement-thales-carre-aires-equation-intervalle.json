@@ -1,0 +1,279 @@
+{
+  "title": "🏛️ مناظرة 2026 · التمرين 3 ⭐⭐⭐⭐: عبارة من الدرجة الثانية وجذور ثمّ حصر ونظرية طاليس في مربّع ومساحتان ومعادلة في مجال",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 23,
+  "questions": [
+    {
+      "prompt": "لتكن العبارة A التالية حيث x عدد حقيقي:\nA = x² − 12x + 16\nما قيمة A عند x = 6 + 2√5 ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−48√5",
+          "misconceptionTag": "math.alg.carre-somme-signe-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "−24√5",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "c",
+          "text": "−10",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "d",
+          "text": "0"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نعوّض: x² = (6 + 2√5)² = 36 + 2 × 6 × 2√5 + (2√5)² = 36 + 24√5 + 20 = 56 + 24√5 ، و −12x = −72 − 24√5. إذن A = 56 + 24√5 − 72 − 24√5 + 16 = 0 ✓ لأنّ حدّي √5 يتقابلان والثوابت 56 − 72 + 16 = 0.\nالخطأ الشائع: نسيان الجداء المضاعف في المربّع فنجد x² = 56 و A = −24√5 ؛ أو إعطاء الجداء المضاعف إشارة سالبة فنجد x² = 56 − 24√5 و A = −48√5 ؛ أو تربيع √5 وحدها في (2√5)² فنجد 10 و A = −10.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "type": "numeric",
+      "prompt": "العبارة A معرّفة لكلّ عدد حقيقي x بالمساواة التالية:\nA = x² − 12x + 16\nنريد كتابتها على الشكل (x − 6)² + k. ما قيمة العدد k ؟ اكتب العدد صحيحًا.",
+      "answerKey": {
+        "value": -20
+      },
+      "explanation": "(x − 6)² = x² − 12x + 36 ، فـ x² − 12x = (x − 6)² − 36. إذن A = (x − 6)² − 36 + 16 = (x − 6)² − 20 ، أي k = −20 ✓.\nتحقّق عند x = 6 : A = 36 − 72 + 16 = −20 = 0² + k ✓.",
+      "difficulty": 2,
+      "competencies": ["math.alg.identites-remarquables"]
+    },
+    {
+      "prompt": "نعلم أنّ لكلّ عدد حقيقي x:\nA = (x − 6)² − 20\nما تفكيك A إلى جداء عاملين من الدرجة الأولى ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(x − 6 − 2√5)(x − 6 + 2√5)"
+        },
+        {
+          "id": "b",
+          "text": "(x + 6 − 2√5)(x + 6 + 2√5)"
+        },
+        {
+          "id": "c",
+          "text": "(x − 6 − 10)(x − 6 + 10)",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "d",
+          "text": "(x − 6 − 2√5)²",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نكتب 20 على شكل مربّع: (2√5)² = 4 × 5 = 20. فنحصل على فرق مربّعين: A = (x − 6)² − (2√5)² = (x − 6 − 2√5)(x − 6 + 2√5) بالمتطابقة a² − b² = (a − b)(a + b) ✓.\nالخطأ الشائع: أخذ نصف 20 بدل جذره فنكتب 10 بدل 2√5 ؛ أو الخلط بين فرق مربّعين ومربّع فرق فنكتب (x − 6 − 2√5)² ؛ أو تغيير إشارة 6 فنكتب x + 6 بدل x − 6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.factorisation",
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "type": "multi",
+      "prompt": "نعلم أنّ لكلّ عدد حقيقي x:\nA = (x − 6 − 2√5)(x − 6 + 2√5)\nاختر كلّ الأعداد التالية التي تحقّق المعادلة A = 0.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 + 2√5"
+        },
+        {
+          "id": "b",
+          "text": "6 − 2√5"
+        },
+        {
+          "id": "c",
+          "text": "−6 + 2√5"
+        },
+        {
+          "id": "d",
+          "text": "−6 − 2√5"
+        },
+        {
+          "id": "e",
+          "text": "6 + √20"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "e"]
+      },
+      "explanation": "الجداء معدوم إذا انعدم أحد عامليه: x − 6 − 2√5 = 0 أي x = 6 + 2√5 ✓ ، أو x − 6 + 2√5 = 0 أي x = 6 − 2√5 ✓. والعدد 6 + √20 يساوي 6 + 2√5 لأنّ √20 = √(4 × 5) = 2√5 ، فهو حلّ أيضًا ✓.\nأمّا −6 + 2√5 و −6 − 2√5 فليسا حلّين: العدد الذي ينعدم عنده كلّ قوس هو المقابل لما في القوس مع الإبقاء على 6 ، أي 6 ± 2√5. تحقّق: عند x = −6 + 2√5 يساوي العامل الأوّل −12 ، ويساوي العامل الثاني −12 + 4√5 وهو غير معدوم لأنّ √5 ≠ 3 ، فالجداء غير معدوم.",
+      "difficulty": 2,
+      "competencies": ["math.alg.equations-produit"]
+    },
+    {
+      "prompt": "نعلم أنّ العدد √5 يحقّق:\n2 < √5 < 3\nما الحصر الصحيح للعدد التالي ؟\n6 − 2√5",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6 < 6 − 2√5 < −4",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "b",
+          "text": "0 < 6 − 2√5 < 2"
+        },
+        {
+          "id": "c",
+          "text": "3 < 6 − 2√5 < 4"
+        },
+        {
+          "id": "d",
+          "text": "10 < 6 − 2√5 < 12"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "من 2 < √5 < 3 نضرب في 2 وهو موجب فيبقى الاتّجاه: 4 < 2√5 < 6. ثمّ نضرب في −1 فينعكس الاتّجاه: −6 < −2√5 < −4. ثمّ نضيف 6 إلى الأطراف الثلاثة: 0 < 6 − 2√5 < 2 ✓.\nالخطأ الشائع: إيقاف الحساب عند −6 < −2√5 < −4 دون إضافة 6 ؛ أو نسيان المعامل 2 فنجد 3 < 6 − √5 < 4 ؛ أو الخلط بين −2√5 و 2√5 فنجد 10 < 6 + 2√5 < 12.",
+      "difficulty": 2,
+      "competencies": ["math.num.ordre-encadrement", "math.num.racines-calcul"]
+    },
+    {
+      "prompt": "في الشكل التالي ABCD مربّع طول ضلعه 4 ، والعدد a بين 0 و 4 ، والنقطة M من [AB] تبعد عن A بالمسافة a ، والنقطة N من [CD] تجعل الرباعي AMCN متوازي أضلاع ، والنقطة P هي تقاطع (CM) و (AD). أيّ مساواة بين النسب تعطيها نظرية طاليس في المثلّث DPC ؟\n<svg viewBox=\"0 0 220 290\"><title>المربّع ABCD والنقاط M و N و P : المستقيم (CP) يمرّ من M والقطعة [AN] مرسومة</title><path d=\"M40 130 L160 130 L160 250 L40 250 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M160 130 L160 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M40 250 L160 90\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 130 L70 250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"250\" r=\"4.4\"/><circle cx=\"40\" cy=\"250\" r=\"4.4\"/><circle cx=\"130\" cy=\"130\" r=\"4.4\"/><circle cx=\"70\" cy=\"250\" r=\"4.4\"/><circle cx=\"160\" cy=\"90\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"26\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"174\" y=\"146\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"174\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"26\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"126\" y=\"152\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"70\" y=\"270\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"174\" y=\"95\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"145\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\">a</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "DP/DA = DN/DC",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "DA/DC = DP/DN",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "c",
+          "text": "DP/DA = DC/DN"
+        },
+        {
+          "id": "d",
+          "text": "DP/DA = AN/PC"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "AMCN متوازي أضلاع ، فالضلعان المتقابلان (AN) و (MC) متوازيان ، أي (AN) ∥ (PC) لأنّ P على (CM). في المثلّث DPC : A من [DP] و N من [DC] و (AN) ∥ (PC) ، فبنظرية طاليس DA/DP = DN/DC = AN/PC. بقلب النسبتين نحصل على DP/DA = DC/DN ✓.\nالخطأ الشائع: قلب نسبة واحدة فقط فنكتب DP/DA = DN/DC ؛ أو اختيار قطع لا تنتمي إلى النسب نفسها ، مثل DA/DC = DP/DN ؛ أو مساواة DP/DA بالنسبة AN/PC وهي مقلوبة.",
+      "difficulty": 2,
+      "competencies": ["math.geo.thales-direct"]
+    },
+    {
+      "prompt": "ABCD مربّع ضلعه 4 ، والنقطة M من [AB] حيث AM = a مع 0 < a < 4. ما مساحة المثلّث CMB بدلالة a ؟\n<svg viewBox=\"0 0 220 290\"><title>المربّع ABCD والنقاط M و N و P : المستقيم (CP) يمرّ من M والقطعة [AN] مرسومة ، والمثلّث CMB ملوّن</title><path d=\"M40 130 L160 130 L160 250 L40 250 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M40 250 L130 130 L40 130 Z\" fill=\"#0f6e56\" fill-opacity=\"0.16\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M160 130 L160 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M40 250 L160 90\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 130 L70 250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"250\" r=\"4.4\"/><circle cx=\"40\" cy=\"250\" r=\"4.4\"/><circle cx=\"130\" cy=\"130\" r=\"4.4\"/><circle cx=\"70\" cy=\"250\" r=\"4.4\"/><circle cx=\"160\" cy=\"90\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"26\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"174\" y=\"146\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"174\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"26\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"126\" y=\"152\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"70\" y=\"270\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"174\" y=\"95\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"145\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\">a</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2a"
+        },
+        {
+          "id": "b",
+          "text": "2(4 + a)"
+        },
+        {
+          "id": "c",
+          "text": "2(4 − a)"
+        },
+        {
+          "id": "d",
+          "text": "4(4 − a)",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المثلّث CMB قائم في B لأنّ ABCD مربّع ، وضلعاه القائمان CB = 4 و MB = AB − AM = 4 − a. مساحته (CB × MB)/2 = 4 × (4 − a)/2 = 2(4 − a) ✓.\nالخطأ الشائع: نسيان القسمة على 2 فنجد 4(4 − a) ؛ أو أخذ AM = a بدل MB فنجد 2a ؛ أو كتابة MB = 4 + a فنجد 2(4 + a).",
+      "difficulty": 2,
+      "competencies": ["math.mes.aires"]
+    },
+    {
+      "prompt": "ليكن ABCD مربّعًا ضلعه 4 ، و M من [AB] حيث AM = a مع 0 < a < 4 ، و N من [CD] حيث AMCN متوازي أضلاع ، و P تقاطع (CM) مع (AD). علمًا أنّ:\nDP/DA = DC/DN\nما طول DP بدلالة a ؟\n<svg viewBox=\"0 0 220 290\"><title>المربّع ABCD والنقاط M و N و P : المستقيم (CP) يمرّ من M والقطعة [AN] مرسومة ، والمثلّث DPC ملوّن</title><path d=\"M40 130 L160 130 L160 250 L40 250 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M160 250 L160 90 L40 250 Z\" fill=\"#0f6e56\" fill-opacity=\"0.16\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M160 130 L160 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M40 250 L160 90\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 130 L70 250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"250\" r=\"4.4\"/><circle cx=\"40\" cy=\"250\" r=\"4.4\"/><circle cx=\"130\" cy=\"130\" r=\"4.4\"/><circle cx=\"70\" cy=\"250\" r=\"4.4\"/><circle cx=\"160\" cy=\"90\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"26\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"174\" y=\"146\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"174\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"26\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"126\" y=\"152\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"70\" y=\"270\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"174\" y=\"95\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"145\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\">a</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 − a",
+          "misconceptionTag": "math.geo.thales-rapport-inverse"
+        },
+        {
+          "id": "b",
+          "text": "4/(4 − a)"
+        },
+        {
+          "id": "c",
+          "text": "16/(4 + a)"
+        },
+        {
+          "id": "d",
+          "text": "16/(4 − a)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "في متوازي الأضلاع AMCN الضلعان المتقابلان [AM] و [NC] متقايسان ، فـ CN = AM = a ، ومنه DN = DC − CN = 4 − a. نعوّض في DP/DA = DC/DN : DP/4 = 4/(4 − a) ، فـ DP = 4 × 4/(4 − a) = 16/(4 − a) ✓.\nالخطأ الشائع: أخذ DN = 4 + a فنجد DP = 16/(4 + a) ؛ أو نسيان الضرب في DA فنجد 4/(4 − a) ؛ أو قلب النسبة فنجد DP = DA × DN/DC = 4 − a.",
+      "difficulty": 3,
+      "competencies": [
+        "math.geo.thales-direct",
+        "math.alg.equations-premier-degre"
+      ]
+    },
+    {
+      "prompt": "في مربّع ABCD ضلعه 4 نأخذ M من [AB] تبعد عن A بالمسافة a ، ونسمّي P نقطة تقاطع (CM) و (AD). نعلم أنّ:\nDP = 16/(4 − a)\nما مساحة المثلّث PMD بدلالة a ؟\n<svg viewBox=\"0 0 220 290\"><title>المربّع ABCD والنقاط M و N و P : المستقيم (CP) يمرّ من M والقطعة [AN] مرسومة ، والمثلّث PMD ملوّن</title><path d=\"M40 130 L160 130 L160 250 L40 250 Z\" fill=\"#0f6e56\" fill-opacity=\"0.06\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M160 90 L130 130 L160 250 Z\" fill=\"#0f6e56\" fill-opacity=\"0.16\" stroke=\"none\" stroke-width=\"0\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M160 130 L160 90\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\"/><path d=\"M40 250 L160 90\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M160 130 L70 250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"40\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"130\" r=\"4.4\"/><circle cx=\"160\" cy=\"250\" r=\"4.4\"/><circle cx=\"40\" cy=\"250\" r=\"4.4\"/><circle cx=\"130\" cy=\"130\" r=\"4.4\"/><circle cx=\"70\" cy=\"250\" r=\"4.4\"/><circle cx=\"160\" cy=\"90\" r=\"4.4\"/></g><g font-size=\"14\" font-weight=\"700\" direction=\"ltr\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"26\" y=\"128\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"174\" y=\"146\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"174\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"26\" y=\"258\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"126\" y=\"152\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text><text x=\"70\" y=\"270\" text-anchor=\"middle\" fill=\"#0f6e56\">N</text><text x=\"174\" y=\"95\" text-anchor=\"middle\" fill=\"#0f6e56\">P</text><text x=\"145\" y=\"120\" text-anchor=\"middle\" fill=\"#0f172a\">a</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "8a/(4 − a)"
+        },
+        {
+          "id": "c",
+          "text": "16/(4 − a)",
+          "misconceptionTag": "math.alg.reponse-a-l-autre-inconnue"
+        },
+        {
+          "id": "d",
+          "text": "16a/(4 − a)",
+          "misconceptionTag": "math.mes.aire-triangle-sans-moitie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المثلّث PMD نأخذ القاعدة [DP] الواقعة على (AD). الارتفاع الموافق لها هو البعد من M إلى (AD) ، وهو AM = a لأنّ (AB) ⟂ (AD) و M من [AB]. فالمساحة (DP × AM)/2 = (16/(4 − a) × a)/2 = 8a/(4 − a) ✓.\nالخطأ الشائع: نسيان القسمة على 2 فنجد 16a/(4 − a) ؛ أو أخذ الارتفاع MB = 4 − a بدل AM فنجد (16/(4 − a) × (4 − a))/2 = 8 ؛ أو إعطاء القاعدة DP وحدها.",
+      "difficulty": 3,
+      "competencies": ["math.mes.aires", "math.geo.thales-direct"]
+    },
+    {
+      "prompt": "ABCD مربّع ضلعه 4 ، والعدد a ينتمي إلى المجال ]0 ; 4[. مساحتا المثلّثين PMD و CMB هما S₁ و S₂ حيث:\nS₁ = 8a/(4 − a)\nS₂ = 2(4 − a)\nأوجد كلّ الأعداد a من المجال ]0 ; 4[ التي تحقّق S₁ = S₂.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a = 6 − 2√5"
+        },
+        {
+          "id": "b",
+          "text": "a = 6 + 2√5"
+        },
+        {
+          "id": "c",
+          "text": "a = 6 − 2√5 أو a = 6 + 2√5",
+          "misconceptionTag": "math.alg.solution-hors-contrainte-gardee"
+        },
+        {
+          "id": "d",
+          "text": "لا يوجد أيّ عدد",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "S₁ = S₂ تعني 8a/(4 − a) = 2(4 − a). بالضرب التقاطعي (4 − a ≠ 0): 8a = 2(4 − a)² ، أي 4a = (4 − a)² = 16 − 8a + a² ، ومنه a² − 12a + 16 = 0. نكمل المربّع: a² − 12a + 16 = (a − 6)² − 20 = (a − 6 − 2√5)(a − 6 + 2√5) ، فحلاّها a = 6 + 2√5 و a = 6 − 2√5.\nنحتفظ بما ينتمي إلى ]0 ; 4[ : لدينا 1 < √5 < 3 ، فـ 6 − 2√5 بين 0 و 4 ✓ ، بينما 6 + 2√5 أكبر من 6 فهو خارج المجال. إذن a = 6 − 2√5.\nالخطأ الشائع: الاحتفاظ بالحلّين معًا ؛ أو أخذ الحلّ الخارج عن المجال ؛ أو تطوير (4 − a)² بنسيان الجداء المضاعف فنكتب 16 + a² فتصير المعادلة a² − 4a + 16 = 0 التي لا حلّ لها.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.equations-produit",
+        "math.alg.factorisation",
+        "math.mes.aires"
+      ]
+    }
+  ]
+}

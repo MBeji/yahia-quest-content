@@ -1,0 +1,152 @@
+{
+  "title": "🏛️ مناظرة 2025 · التمرين 5 ⭐⭐⭐: هرم قاعدته مربّع — فيثاغورس والموسّط وعمودي على مستوٍ وطاليس",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 29,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "SABCD هرم قاعدته المربّع ABCD ، المثلّث SBC قائم في C ، حيث BC = 4 و SB = 4√2 (وحدة الطول هي الصنتمتر) .\nاحسب SC .\n<svg viewBox=\"0 0 263.6 205.1\"><title>هرم SABCD</title><path d=\"M131.8 93.6 L30 134.3 M131.8 93.6 L182.7 30 M131.8 93.6 L233.6 134.3 M131.8 93.6 L131.8 175.1 M30 134.3 L233.6 134.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M131.8 175.1 L182.7 30 M30 134.3 L131.8 175.1 M30 134.3 L182.7 30 M233.6 134.3 L182.7 30 M131.8 175.1 L233.6 134.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"131.8\" cy=\"175.1\" r=\"3.2\"/><circle cx=\"30\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"233.6\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"93.6\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"30\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"134.3\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"131.8\" y=\"196.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"17.2\" y=\"141.7\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"246.3\" y=\"142.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125.9\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"182.7\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"131.8\" y=\"155.3\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>",
+      "answerKey": {
+        "value": 4,
+        "unit": "cm"
+      },
+      "explanation": "[SB] هو الوتر لأنّه المقابل للزاوية القائمة في C . فيثاغورس : SC² = SB² − BC² = 32 − 16 = 16 ، إذن SC = 4 ✓ .",
+      "difficulty": 2,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABCD هرم قاعدته المربّع ABCD الذي مركزه O ، المثلّث SDC متقايس الأضلاع ، والمثلّث SBC قائم في C ، حيث BC = 4 و SB = SA = 4√2 (وحدة الطول هي الصنتمتر) ، و I منتصف [SC] .\nما طول [DI] ؟\n<svg viewBox=\"0 0 263.6 205.1\"><title>هرم SABCD</title><path d=\"M131.8 93.6 L30 134.3 M131.8 93.6 L182.7 30 M131.8 93.6 L233.6 134.3 M131.8 93.6 L131.8 175.1 M30 134.3 L233.6 134.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M131.8 175.1 L182.7 30 M30 134.3 L131.8 175.1 M30 134.3 L182.7 30 M233.6 134.3 L182.7 30 M131.8 175.1 L233.6 134.3 M233.6 134.3 L157.3 102.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"131.8\" cy=\"175.1\" r=\"3.2\"/><circle cx=\"30\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"233.6\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"93.6\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"30\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"157.3\" cy=\"102.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"131.8\" y=\"196.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"17.2\" y=\"141.7\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"246.3\" y=\"142.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125.9\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"182.7\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"131.8\" y=\"155.3\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"143.3\" y=\"101.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "DI = 12",
+          "misconceptionTag": "math.geo.pythagore-racine-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "DI = 2√3"
+        },
+        {
+          "id": "c",
+          "text": "DI = 2"
+        },
+        {
+          "id": "d",
+          "text": "DI = 2√5",
+          "misconceptionTag": "math.geo.hypotenuse-mal-choisie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "SC = 4 (فيثاغورس في SBC ، أو SC = DC في المثلّث المتقايس الأضلاع SDC) . [DI] موسّط في SDC فهو ارتفاع : DIC قائم في I مع IC = 2 ، فـ DI² = DC² − IC² = 16 − 4 = 12 ، إذن DI = 2√3 ✓ . الأخطاء : 2√5 يجمع 16 + 4 ، و12 يتوقّف عند المربّع ، و2 يأخذ نصف الضلع .",
+      "difficulty": 2,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABCD هرم قاعدته المربّع ABCD الذي مركزه O ، المثلّث SDC متقايس الأضلاع ، والمثلّث SBC قائم في C ، حيث BC = 4 و SB = SA = 4√2 (وحدة الطول هي الصنتمتر) ، و I منتصف [SC] .\nما قيمتا OI و OD ؟\n<svg viewBox=\"0 0 263.6 205.1\"><title>هرم SABCD</title><path d=\"M131.8 93.6 L30 134.3 M131.8 93.6 L182.7 30 M131.8 93.6 L233.6 134.3 M131.8 93.6 L131.8 175.1 M30 134.3 L233.6 134.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M131.8 175.1 L182.7 30 M30 134.3 L131.8 175.1 M30 134.3 L182.7 30 M233.6 134.3 L182.7 30 M131.8 175.1 L233.6 134.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"131.8\" cy=\"175.1\" r=\"3.2\"/><circle cx=\"30\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"233.6\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"93.6\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"30\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"157.3\" cy=\"102.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"131.8\" y=\"196.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"17.2\" y=\"141.7\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"246.3\" y=\"142.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125.9\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"182.7\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"131.8\" y=\"155.3\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"143.3\" y=\"101.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OI = 4√2 و OD = 4√2"
+        },
+        {
+          "id": "b",
+          "text": "OI = 4√2 و OD = 2√2",
+          "misconceptionTag": "math.geo.droite-des-milieux-facteur-deux"
+        },
+        {
+          "id": "c",
+          "text": "OI = 2√2 و OD = 2√2"
+        },
+        {
+          "id": "d",
+          "text": "OI = 2√2 و OD = 4√2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "قطر المربّع ABCD هو BD = 4√2 (فيثاغورس : 16 + 16 = 32) ، وO منتصفه ، فـ OD = 2√2 . في المثلّث ASC ، O منتصف [AC] و I منتصف [SC] ، فـ OI = SA/2 = 2√2 بنظرية المنتصفين ✓ . الأخطاء : OI = 4√2 ينسى القسمة على 2 ، وOD = 4√2 يأخذ القطر كاملًا .",
+      "difficulty": 3,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABCD هرم قاعدته المربّع ABCD الذي مركزه O ، المثلّث SDC متقايس الأضلاع وطول ضلعه 4 ، و I منتصف [SC] ، و SA = SB = 4√2 .\nما الحجّة التي تثبت أنّ المثلّث DIB قائم الزاوية في I ؟\n<svg viewBox=\"0 0 263.6 205.1\"><title>هرم SABCD</title><path d=\"M233.6 134.3 L157.3 102.5 L30 134.3 Z\" fill=\"#0f6e56\" opacity=\"0.14\"/><path d=\"M131.8 93.6 L30 134.3 M131.8 93.6 L182.7 30 M131.8 93.6 L233.6 134.3 M131.8 93.6 L131.8 175.1 M30 134.3 L233.6 134.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M131.8 175.1 L182.7 30 M30 134.3 L131.8 175.1 M30 134.3 L182.7 30 M233.6 134.3 L182.7 30 M131.8 175.1 L233.6 134.3 M233.6 134.3 L157.3 102.5 M157.3 102.5 L30 134.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"131.8\" cy=\"175.1\" r=\"3.2\"/><circle cx=\"30\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"233.6\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"93.6\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"30\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"157.3\" cy=\"102.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"131.8\" y=\"196.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"17.2\" y=\"141.7\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"246.3\" y=\"142.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125.9\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"182.7\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"131.8\" y=\"155.3\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"143.3\" y=\"101.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OI = OD ، فالمثلّث ODI متقايس الضلعين ، إذن المثلّث DIB قائم في I"
+        },
+        {
+          "id": "b",
+          "text": "O منتصف [DB] ، و(OI) موسّط ، والموسّط عمودي على [DB] ، إذن المثلّث DIB قائم في I",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "c",
+          "text": "I منتصف [SC] و O منتصف [AC] ، فـ (OI) ∥ (SA) ، إذن المثلّث DIB قائم في I"
+        },
+        {
+          "id": "d",
+          "text": "OI = OD = OB ، فـ I على الدائرة التي قطرها [DB] ، إذن المثلّث DIB قائم في I"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "O مركز المربّع ، فهو منتصف [DB] وOD = OB = 2√2 . وOI = SA/2 = 2√2 أيضًا ، فالموسّط [IO] في المثلّث DIB يساوي نصف الضلع [DB] ، أي أنّ I على الدائرة التي قطرها [DB] ، إذن DIB قائم في I ✓ . تساوي OI وOD يعطي مثلّثًا متقايس الضلعين ODI لا مثلّثًا قائمًا ، والموسّط لا يعامد الضلع في الحالة العامّة ، وتوازي (OI) و(SA) لا يعطي وحده تعامدًا .",
+      "difficulty": 3,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABCD هرم قاعدته المربّع ABCD الذي مركزه O ، المثلّث SDC متقايس الأضلاع ، والمثلّث SBC قائم في C ، حيث BC = 4 و SB = SA = 4√2 (وحدة الطول هي الصنتمتر) ، و I منتصف [SC] .\nما الحجّة التي تثبت أنّ المستقيم (DI) عمودي على المستوي (SCB) ؟\n<svg viewBox=\"0 0 263.6 205.1\"><title>هرم SABCD</title><path d=\"M182.7 30 L131.8 175.1 L30 134.3 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M131.8 93.6 L30 134.3 M131.8 93.6 L182.7 30 M131.8 93.6 L233.6 134.3 M131.8 93.6 L131.8 175.1 M30 134.3 L233.6 134.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M131.8 175.1 L182.7 30 M30 134.3 L131.8 175.1 M30 134.3 L182.7 30 M233.6 134.3 L182.7 30 M131.8 175.1 L233.6 134.3 M233.6 134.3 L157.3 102.5 M157.3 102.5 L30 134.3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"131.8\" cy=\"175.1\" r=\"3.2\"/><circle cx=\"30\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"233.6\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"93.6\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"30\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"157.3\" cy=\"102.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"131.8\" y=\"196.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"17.2\" y=\"141.7\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"246.3\" y=\"142.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125.9\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"182.7\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"131.8\" y=\"155.3\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"143.3\" y=\"101.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(DI) عمودي على (IB) فقط ، و(IB) مستقيم من المستوي (SCB) يمرّ من I",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        },
+        {
+          "id": "b",
+          "text": "(DI) عمودي على (SC) ، و(SC) و(IB) متقاطعان في I من المستوي (SCB) معًا"
+        },
+        {
+          "id": "c",
+          "text": "(DI) عمودي على (SC) وعلى (IB) ، وهما متقاطعان في I من المستوي (SCB)"
+        },
+        {
+          "id": "d",
+          "text": "(DI) عمودي على (SC) فقط ، و(SC) مستقيم من المستوي (SCB) يمرّ من I",
+          "misconceptionTag": "math.esp.perpendiculaire-au-plan-deux-secantes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "(DI) ⊥ (SC) لأنّ [DI] ارتفاع المثلّث المتقايس الأضلاع SDC ، و(DI) ⊥ (IB) لأنّ DIB قائم في I . المستقيمان (SC) و(IB) متقاطعان في I ومحتويان في المستوي (SCB) ، إذن (DI) ⊥ (SCB) ✓ . مستقيم واحد لا يكفي ، وتقاطع (SC) و(IB) في I لا يغني عن التعامد الثاني .",
+      "difficulty": 3,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "SABCD هرم قاعدته المربّع ABCD الذي مركزه O ، المثلّث SDC متقايس الأضلاع ، والمثلّث SBC قائم في C ، حيث BC = 4 و SB = SA = 4√2 (وحدة الطول هي الصنتمتر) ، و I منتصف [SC] . و J منتصف [BC] و K منتصف [DJ] ، والمستقيم العمودي على (SCB) في J يقطع (IK) في P ، و(DI) عمودي على (SCB) .\nأيّ استدلال يثبت أنّ K منتصف [IP] ؟\n<svg viewBox=\"0 0 263.6 205.1\"><title>هرم SABCD</title><path d=\"M182.7 30 L131.8 175.1 L30 134.3 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M131.8 93.6 L30 134.3 M131.8 93.6 L182.7 30 M131.8 93.6 L233.6 134.3 M131.8 93.6 L131.8 175.1 M30 134.3 L233.6 134.3 M233.6 134.3 L80.9 154.7 M157.3 102.5 L157.3 144.5\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><path d=\"M131.8 175.1 L182.7 30 M30 134.3 L131.8 175.1 M30 134.3 L182.7 30 M233.6 134.3 L182.7 30 M131.8 175.1 L233.6 134.3 M233.6 134.3 L157.3 102.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><g fill=\"#0f172a\"><circle cx=\"131.8\" cy=\"175.1\" r=\"3.2\"/><circle cx=\"30\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"233.6\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"93.6\" r=\"3.2\"/><circle cx=\"182.7\" cy=\"30\" r=\"3.2\"/><circle cx=\"131.8\" cy=\"134.3\" r=\"3.2\"/><circle cx=\"157.3\" cy=\"102.5\" r=\"3.2\"/><circle cx=\"80.9\" cy=\"154.7\" r=\"3.2\"/><circle cx=\"157.3\" cy=\"144.5\" r=\"3.2\"/></g><g font-size=\"15\" font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"131.8\" y=\"196.1\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"17.2\" y=\"141.7\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"246.3\" y=\"142.2\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"125.9\" y=\"87\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"182.7\" y=\"21\" text-anchor=\"middle\" fill=\"#0f172a\">S</text><text x=\"131.8\" y=\"155.3\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"143.3\" y=\"101.5\" text-anchor=\"middle\" fill=\"#0f172a\">I</text><text x=\"80.9\" y=\"175.7\" text-anchor=\"middle\" fill=\"#0f172a\">J</text><text x=\"157.3\" y=\"135.5\" text-anchor=\"middle\" fill=\"#0f172a\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(JP) ∥ (DI) لأنّ كلاًّ منهما عمودي على المستوي (SCB) ؛ ثمّ ، بما أنّ K منتصف [DJ] ، فهو منتصف [IP] بنظرية المنتصفين"
+        },
+        {
+          "id": "b",
+          "text": "(JP) ∥ (DI) لأنّ كلاًّ منهما عمودي على المستقيم (IB) ؛ ثمّ ، في وضعية طاليس ، KP/KI = KJ/KD = 1 لأنّ K منتصف [DJ]"
+        },
+        {
+          "id": "c",
+          "text": "(JP) ∥ (DI) لأنّ كلاًّ منهما عمودي على المستوي (SCB) ؛ ثمّ ، في وضعية طاليس ، KP/KI = KJ/KD = 1 لأنّ K منتصف [DJ]"
+        },
+        {
+          "id": "d",
+          "text": "(JP) ∥ (DI) لأنّ كلاًّ منهما عمودي على المستقيم (IB) ؛ ثمّ ، بما أنّ K منتصف [DJ] ، فهو منتصف [IP] بنظرية المنتصفين"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "المستقيمان (JP) و(DI) عموديان على المستوي (SCB) نفسه ، فهما متوازيان . المستقيمان (DJ) و(IP) متقاطعان في K و(JP) ∥ (DI) ، فحسب طاليس في الوضعية الفراشة KP/KI = KJ/KD ، وهذه النسبة تساوي 1 لأنّ K منتصف [DJ] ، إذن KP = KI و K منتصف [IP] ✓ . العموديان على مستقيم واحد (IB) لا يكونان متوازيين في الفضاء بالضرورة ، ونظرية المنتصفين لا تنطبق على [IP] إذ لا ضلع للمثلّث يحمله .",
+      "difficulty": 3,
+      "competencies": ["math.esp.solides-espace", "math.geo.pythagore"]
+    }
+  ]
+}

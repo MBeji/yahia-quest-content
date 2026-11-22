@@ -1,0 +1,206 @@
+{
+  "title": "🏛️ مناظرة 2022 · التمرين 5 ⭐⭐⭐⭐: دائرة وقطرها — العلاقات القياسية في المثلّث القائم والمستقيمات الهامة في المثلّث وإثبات طبيعة رباعي واستقامة نقاط والمساحة",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 44,
+  "questions": [
+    {
+      "prompt": "الدائرة التي مركزها O وقطرها [AB] حيث AB = 10 cm، والنقطة C من هذه الدائرة.\nلماذا المثلّث ABC قائم الزاوية في C ؟\n<svg viewBox=\"0 0 300 280\"><title>الدائرة التي قطرها [AB] والنقطة C منها والقطعتان [AC] و [CB]</title><circle cx=\"150.0\" cy=\"140.0\" r=\"110.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M150.0 30.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M150.0 30.0 L216.0 52.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M216.0 52.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"30.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150.0\" y=\"21.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"163.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "[AB] قطر الدائرة، فالمثلّث ABC قائم في B لأنّ الزاوية القائمة تقع عند طرف القطر",
+          "misconceptionTag": "math.geo.angle-droit-mauvais-sommet"
+        },
+        {
+          "id": "b",
+          "text": "AC² + BC² = AB²، فالمثلّث ABC قائم في C بنظرية فيثاغورس",
+          "misconceptionTag": "math.geo.pythagore-reciproque-role"
+        },
+        {
+          "id": "c",
+          "text": "C من الدائرة، فـ CA = CB، والمثلّث ABC متقايس الضلعين رأسه C فهو قائم فيه"
+        },
+        {
+          "id": "d",
+          "text": "OC = OA = OB = 5 cm، فالموسّط [CO] طوله نصف [AB]، إذن المثلّث ABC قائم في C"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "O منتصف القطر [AB] و C من الدائرة، فـ OC = OA = OB = AB/2 = 5 cm. إذن [CO] موسّط في المثلّث ABC طوله نصف [AB]، وعكس خاصيّة الموسّط المتعلّق بالوتر يعطي أنّ ABC قائم في C ✓. الخطأ الشائع: وضع الزاوية القائمة عند طرف القطر بدل الرأس المقابل له، أو استعمال فيثاغورس قبل معرفة أنّ المثلّث قائم (والعكس يُثبت ولا يُفترض)، أو افتراض CA = CB اعتمادًا على الرسم.",
+      "difficulty": 1,
+      "competencies": ["math.geo.cercle", "math.geo.quadrilateres"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "الدائرة التي مركزها O وقطرها [AB] حيث AB = 10 cm، والنقطة H من [AB] حيث AH = 1 cm، والمستقيم المارّ من H والعمودي على (AB) يقطع الدائرة في النقطتين F و C. المثلّث ABC قائم في C.\nاحسب HC بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 280\"><title>المثلّث ABC وقدم العمود H والوتر [FC]</title><circle cx=\"150.0\" cy=\"140.0\" r=\"110.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M150.0 30.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M84.0 52.0 L216.0 52.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M150.0 30.0 L216.0 52.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M216.0 52.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M150.0 43.0 L159.0 43.0 L159.0 52.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><path d=\"M208.41 49.47 L205.88 57.06 L213.47 59.59\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"150.0\" cy=\"30.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150.0\" y=\"21.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"163.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"70.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"140.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "answerKey": {
+        "value": 3,
+        "unit": "cm"
+      },
+      "explanation": "المثلّث ABC قائم في C و [CH] عمودي على [AB] في H، و HB = AB − AH = 9 cm. بفيثاغورس في المثلّثين AHC و BHC: AC² = 1 + HC² و BC² = 81 + HC². وفي المثلّث ABC: AC² + BC² = AB² = 100، أي 82 + 2HC² = 100، فـ HC² = 9 و HC = 3 cm ✓. وبطريقة ثانية (العلاقات القياسيّة): HC² = AH × HB = 1 × 9 = 9. الخطأ الشائع: التوقّف عند HC² = 9 دون أخذ الجذر، أو كتابة HC = AH × HB.",
+      "difficulty": 2,
+      "competencies": ["math.geo.relations-metriques", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "الدائرة التي مركزها O وقطرها [AB]، والنقطتان B و C منها. المستقيم المارّ من O والعمودي على (BC) يقطع [BC] في النقطة K.\nلماذا K منتصف [BC] ؟\n<svg viewBox=\"0 0 300 280\"><title>الدائرة ونقطتان B و C منها والمنتصف K والقطعة [OK]</title><circle cx=\"150.0\" cy=\"140.0\" r=\"110.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M150.0 30.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M150.0 250.0 L216.0 52.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M150.0 140.0 L183.0 151.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M150.0 140.0 L216.0 52.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M150.0 140.0 L150.0 250.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M145.0 195.0 L155.0 195.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M187.0 99.0 L179.0 93.0\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M174.46 148.15 L177.31 139.62 L185.85 142.46\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"150.0\" cy=\"30.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"183.0\" cy=\"151.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150.0\" y=\"21.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"163.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"198.0\" y=\"157.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">K</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "OB = OC (نصفا قطر)، فالمثلّث OBC متقايس الضلعين رأسه O، و (OK) ارتفاعه الصادر من O فهو موسّطه"
+        },
+        {
+          "id": "b",
+          "text": "(OK) ⊥ (BC) و O منتصف [AB]، فـ K منتصف [BC] بعكس مبرهنة المنتصفات في المثلّث ABC",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "يبدو K في وسط [BC] على الرسم وO مركز الدائرة وهي تقع على العمودي، فـ K منتصف [BC]"
+        },
+        {
+          "id": "d",
+          "text": "(OK) ⊥ (BC)، فـ (OK) هو الموسط العمودي لـ [BC] لأنّ كلّ عمودي على قطعة هو موسطها العمودي، إذن K منتصف [BC]",
+          "misconceptionTag": "math.geo.mediatrice-un-seul-critere"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "OB = OC لأنّهما نصفا قطر، فالمثلّث OBC متقايس الضلعين رأسه O. والمستقيم (OK) عمودي على (BC) ويمرّ من الرأس O، فهو الارتفاع الصادر من O، وارتفاع المثلّث المتقايس الضلعين الصادر من رأسه هو موسّطه أيضًا. إذن K منتصف [BC] ✓. أمّا العمودية وحدها فلا تعطي المنتصف، وعكس مبرهنة المنتصفات يحتاج إلى مستقيم موازٍ لحامل ضلع، والتعليل المقترح لا يذكر أيّ توازٍ: العمودية على (BC) وحدها لا تكفي، والرسم لا يُبرهن.",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "الدائرة التي مركزها O وقطرها [AB] حيث AB = 10 cm، والنقطة C منها. المستقيم (CO) يقطع الدائرة في نقطة ثانية E.\nما أدقّ وصف للرباعي ACBE مع مبرّره ؟\n<svg viewBox=\"0 0 300 280\"><title>الدائرة وقطراها [AB] و [CE]</title><circle cx=\"150.0\" cy=\"140.0\" r=\"110.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M150.0 30.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M216.0 52.0 L84.0 228.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"30.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"228.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150.0\" y=\"21.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"163.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"70.0\" y=\"244.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "متوازي أضلاع، لأنّ [AB] و [CE] قطران للدائرة: منتصفهما O، وطولاهما متساويان",
+          "misconceptionTag": "math.geo.description-la-plus-precise-manquee"
+        },
+        {
+          "id": "b",
+          "text": "مستطيل، لأنّ [AB] و [CE] قطران للدائرة: منتصفهما O",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "c",
+          "text": "مستطيل، لأنّ [AB] و [CE] قطران للدائرة: منتصفهما O، وطولاهما متساويان"
+        },
+        {
+          "id": "d",
+          "text": "متوازي أضلاع، لأنّ [AB] و [CE] قطران للدائرة: منتصفهما O"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "[AB] و [CE] قطران للدائرة نفسها، فمنتصفهما واحد هو O: للرباعي ACBE قطران لهما نفس المنتصف، فهو متوازي أضلاع. وكلّ قطر طوله 10 cm، فالقطران متقايسان، وقطرا متوازي الأضلاع المتقايسان يجعلانه مستطيلًا ✓. المنتصف المشترك وحده يعطي متوازي أضلاع لا غير، وهو وصف صحيح لكنّه ليس الأدقّ، والتقايس وحده لا يكفي لإثبات مستطيل.",
+      "difficulty": 2,
+      "competencies": ["math.geo.cercle", "math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "المثلّث CBS، والنقطة K منتصف [BC]، والنقطة O من [KS] حيث OS = 2 × OK.\nماذا تمثّل النقطة O بالنسبة إلى المثلّث CBS ؟\n<svg viewBox=\"0 0 300 280\"><title>المثلّث CBS والموسّط [SK] والنقطة O</title><polygon points=\"216.0,52.0 150.0,250.0 84.0,118.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M84.0 118.0 L183.0 151.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M171.24 202.08 L161.76 198.92\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M204.24 103.08 L194.76 99.92\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"118.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"183.0\" cy=\"151.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"70.0\" y=\"114.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text><text x=\"198.0\" y=\"157.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"163.0\" y=\"134.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "مركز دائرته المحيطة، لأنّها على الموسّط [SK] وSO = (2/3) × SK",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        },
+        {
+          "id": "b",
+          "text": "منتصف الموسّط [SK]، لأنّها على الموسّط [SK]",
+          "misconceptionTag": "math.geo.centre-gravite-milieu-mediane"
+        },
+        {
+          "id": "c",
+          "text": "مركز ثقله، لأنّها على الموسّط [SK] وSO = (2/3) × SK"
+        },
+        {
+          "id": "d",
+          "text": "نقطة تلاقي ارتفاعاته، لأنّها على الموسّط [SK] وSO = (2/3) × SK",
+          "misconceptionTag": "math.geo.droites-remarquables-confondues"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "K منتصف [BC]، فـ [SK] موسّط في المثلّث CBS. و O من [KS] مع OS = 2OK، فـ SK = SO + OK = 3OK، أي SO = (2/3) × SK: النقطة O تبعد عن الرأس S ثلثَي الموسّط [SK]، وهذه خاصيّة مركز الثقل ✓. منتصف الموسّط يعني SO = SK/2 وليس هذا حالنا؛ أمّا مركز الدائرة المحيطة فتحدّده الموسّطات العموديّة ونقطة تلاقي الارتفاعات تحدّدها الارتفاعات، لا الموسّطات.",
+      "difficulty": 2,
+      "competencies": ["math.geo.quadrilateres", "math.geo.cercle"]
+    },
+    {
+      "prompt": "المثلّث CBS، والنقطة K منتصف [BC]، والنقطة O من [KS] حيث OS = 2 × OK. النقطة M منتصف [BS]، والنقطة E مناظرة C بالنسبة إلى O.\nما قيمة النسبة OM/OE ؟\n<svg viewBox=\"0 0 300 280\"><title>المثلّث CBS ومنتصف [BS] والقطعة [CE]</title><polygon points=\"216.0,52.0 150.0,250.0 84.0,118.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M216.0 52.0 L84.0 228.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M137.97 214.76 L129.03 219.24\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><path d=\"M104.97 148.76 L96.03 153.24\" stroke=\"#0f6e56\" stroke-width=\"1.8\" fill=\"none\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"118.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"228.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"117.0\" cy=\"184.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"183.0\" cy=\"151.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"197.0\" y=\"157.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">K</text><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"70.0\" y=\"114.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text><text x=\"70.0\" y=\"244.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"132.0\" y=\"190.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">M</text><text x=\"163.0\" y=\"134.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "1/3",
+          "misconceptionTag": "math.geo.segment-mal-choisi"
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "misconceptionTag": "math.geo.centre-gravite-tiers-inverse"
+        },
+        {
+          "id": "c",
+          "text": "3"
+        },
+        {
+          "id": "d",
+          "text": "1/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "K منتصف [BC]، فـ [SK] موسّط، و OS = 2 × OK أي SO = (2/3) × SK: النقطة O مركز ثقل CBS. و M منتصف [BS]، فـ [CM] موسّط وO عليه: CO = (2/3) × CM و OM = (1/3) × CM، إذن CO = 2 × OM. و E مناظرة C بالنسبة إلى O فـ OE = OC = 2 × OM، ومنه OM/OE = 1/2 ✓. أي أنّ M منتصف [OE]، وهو منتصف [BS] أيضًا: للقطرين [OE] و [BS] نفس المنتصف فالرباعي OBES متوازي أضلاع. الأخطاء: أخذ OM/CM بدل OM/OE فنجد 1/3، أو قلب الثلث والثلثين (CO = (1/3) × CM و OM = (2/3) × CM) فنجد 2، أو أخذ CM/OM فنجد 3.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "prompt": "الدائرة التي مركزها O وقطرها [AB]، والمستقيم العمودي على (AB) في H يقطعها في F و C حيث H منتصف [FC]. المستقيم (CO) يقطع الدائرة ثانية في E، والنقطة S تجعل OBES متوازي أضلاع.\nلماذا النقاط E و S و F على استقامة واحدة ؟\n<svg viewBox=\"0 0 300 280\"><title>الدائرة والنقاط F و C و E و S والرباعي OBES</title><circle cx=\"150.0\" cy=\"140.0\" r=\"110.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M150.0 30.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"150.0,140.0 150.0,250.0 84.0,228.0 84.0,118.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M84.0 52.0 L216.0 52.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M216.0 52.0 L84.0 228.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"30.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"228.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"118.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150.0\" y=\"21.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"163.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"70.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"70.0\" y=\"244.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"97.0\" y=\"118.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text><text x=\"161.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "(FE) ∥ (AB) بمبرهنة المنتصفات لأنّ H منتصف [FC]، و(ES) ∥ (AB) لأنّ OBES متوازي أضلاع فيه (ES) ∥ (OB)، والمستقيمان يمرّان من E فهما منطبقان",
+          "misconceptionTag": "math.geo.condition-suffisante-supposee"
+        },
+        {
+          "id": "b",
+          "text": "(FE) ∥ (AB) بمبرهنة المنتصفات في المثلّث CFE لأنّ H منتصف [FC] و O منتصف [CE]، و(ES) ∥ (AB) لأنّ OBES متوازي أضلاع فيه (ES) ∥ (BE)، والمستقيمان يمرّان من E فهما منطبقان",
+          "misconceptionTag": "math.geo.parallelogramme-sommets-mal-ordonnes"
+        },
+        {
+          "id": "c",
+          "text": "(FE) ∥ (AB) بمبرهنة المنتصفات في المثلّث CFE لأنّ H منتصف [FC] و O منتصف [CE]، و(ES) ∥ (AB) لأنّ OBES متوازي أضلاع فيه (ES) ∥ (OB)، والمستقيمان يمرّان من E فهما منطبقان"
+        },
+        {
+          "id": "d",
+          "text": "(FE) ∥ (AB) بمبرهنة المنتصفات لأنّ H منتصف [FC]، و(ES) ∥ (AB) لأنّ OBES متوازي أضلاع فيه (ES) ∥ (BE)، والمستقيمان يمرّان من E فهما منطبقان"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "في المثلّث CFE: H منتصف [FC] و O منتصف [CE]، فمبرهنة المنتصفات تعطي (HO) ∥ (FE)، أي (FE) ∥ (AB). وفي متوازي الأضلاع OBES الضلعان المتقابلان [ES] و [OB] متوازيان، أي (ES) ∥ (AB). المستقيمان (FE) و (ES) موازيان لـ (AB) ويمرّان من النقطة E، فهما مستقيم واحد، إذن E و S و F على استقامة واحدة ✓. منتصف واحد لا يكفي لإثبات التوازي، والضلعان المتتاليان في متوازي الأضلاع غير متوازيين.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "الدائرة التي مركزها O وقطرها [AB] حيث AB = 10 cm، والنقطة H من [AB] حيث AH = 1 cm، والمستقيم العمودي على (AB) في H يقطع الدائرة في F و C حيث H منتصف [FC]. المستقيم (CO) يقطع الدائرة ثانية في E، والنقطة S تجعل OBES متوازي أضلاع. النقاط F و S و E على استقامة واحدة وS بين F و E.\nاحسب FS بالصنتمتر، ثمّ اكتب قيمته.\n<svg viewBox=\"0 0 300 280\"><title>القطعة [FE] والنقطة S بين F و E والنقاط A و H و O و B</title><circle cx=\"150.0\" cy=\"140.0\" r=\"110.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><path d=\"M150.0 30.0 L150.0 250.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M84.0 52.0 L84.0 228.0\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><path d=\"M84.0 52.0 L216.0 52.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><path d=\"M216.0 52.0 L84.0 228.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"150.0\" cy=\"30.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"250.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"4.4\" fill=\"#0f6e56\"/><circle cx=\"216.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"228.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"118.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150.0\" y=\"21.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"150.0\" y=\"270.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">B</text><text x=\"163.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f6e56\" font-size=\"15\">O</text><text x=\"230.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">C</text><text x=\"70.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"70.0\" y=\"244.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">E</text><text x=\"71.0\" y=\"118.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text><text x=\"161.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text></g></svg>",
+      "answerKey": {
+        "value": 3,
+        "unit": "cm"
+      },
+      "explanation": "H منتصف [FC] و O منتصف [CE]، فمبرهنة المنتصفات في CFE تعطي FE = 2 × HO. و HO = OA − AH = 5 − 1 = 4 cm، فـ FE = 8 cm. وفي متوازي الأضلاع OBES: SE = OB = 5 cm. و S بين F و E، فـ FS = FE − SE = 8 − 5 = 3 cm ✓. وبطريقة ثانية بالإحداثيّات: O أصل المعلّم، F(−3 ; 4) و S(−3 ; 1)، فالفرق بين الترتيبين 3. الخطأ الشائع: إهمال أنّ S بين F و E فنجمع الطولين، أو أخذ FE = HO.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres", "math.geo.cercle"]
+    },
+    {
+      "type": "numeric",
+      "prompt": "[AB] قطر طوله 10 cm لدائرة مركزها O، و H نقطة من [AB] تبعد 1 cm عن A. العمودي على (AB) في H يقطع الدائرة في F و C حيث H منتصف [FC]، والمستقيم (CO) يقطعها ثانية في E. النقطة S من [FE] تجعل الرباعي OBES متوازي أضلاع.\nاحسب مساحة الرباعي OHFS بالسنتمتر المربّع، ثمّ اكتب قيمتها.\n<svg viewBox=\"0 0 300 280\"><title>الرباعي OHFS</title><circle cx=\"150.0\" cy=\"140.0\" r=\"110.0\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M150.0 30.0 L150.0 250.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><polygon points=\"150.0,140.0 150.0,52.0 84.0,52.0 84.0,118.0\" fill=\"#0f6e56\" fill-opacity=\"0.18\" stroke=\"none\"/><polygon points=\"150.0,140.0 150.0,52.0 84.0,52.0 84.0,118.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M150.0 61.0 L141.0 61.0 L141.0 52.0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"150.0\" cy=\"30.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"140.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"150.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"52.0\" r=\"3.8\" fill=\"#0f172a\"/><circle cx=\"84.0\" cy=\"118.0\" r=\"3.8\" fill=\"#0f172a\"/><g font-weight=\"700\" direction=\"ltr\" unicode-bidi=\"isolate\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"150.0\" y=\"21.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">A</text><text x=\"163.0\" y=\"135.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">O</text><text x=\"162.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">H</text><text x=\"70.0\" y=\"46.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">F</text><text x=\"71.0\" y=\"122.0\" text-anchor=\"middle\" fill=\"#0f172a\" font-size=\"15\">S</text></g></svg>",
+      "answerKey": {
+        "value": 10.5,
+        "unit": "cm²"
+      },
+      "explanation": "المثلّث AFB قائم في F لأنّ [AB] قطر و F على الدائرة، و [FH] ارتفاعه: HF² = HA × HB = 1 × 9 = 9، فـ HF = 3 cm. و H منتصف [FC] و O منتصف [CE]، فمبرهنة المنتصفات في المثلّث CFE تعطي (FE) ∥ (AB) و FE = 2 × HO = 2 × 4 = 8 cm، وفي متوازي الأضلاع OBES: SE = OB = 5 cm، فـ FS = FE − SE = 3 cm. الرباعي OHFS شبه منحرف قاعدتاه [OH] و [FS] المتوازيتان، و [HF] عمودي عليهما فهو ارتفاعه: المساحة = (OH + FS) × HF / 2 = (4 + 3) × 3 / 2 = 21/2 = 10,5 cm² ✓. الخطأ الشائع: نسيان القسمة على 2، أو ضرب القاعدتين.",
+      "difficulty": 3,
+      "competencies": ["math.geo.quadrilateres", "math.mes.aires"]
+    }
+  ]
+}
