@@ -51,7 +51,7 @@
         { "id": "d", "text": "f(x) > 0 pour tout réel x" }
       ],
       "correctOption": "d",
-      "explanation": "Δ = (−2)² − 4 × 3 × 5 = 4 − 60 = −56 < 0 : le trinôme n'a aucune racine et garde donc le signe de a = 3 > 0, c'est-à-dire f(x) > 0 pour tout réel x ✓ (vérification : f(0) = 5 > 0). Dire que f est « négatif entre deux racines et positif à l'extérieur » suppose deux racines, ce qui exigerait Δ > 0 ; dire que f s'annule pour une seule valeur de x suppose une racine double, donc Δ = 0 ; et « f(x) < 0 pour tout réel x » se trompe sur le signe de a, qui est ici positif. Le piège courant est de conclure « Δ < 0 donc le trinôme est négatif » : le signe de Δ dit combien il y a de racines, jamais le signe de f.",
+      "explanation": "Δ = (−2)² − 4 × 3 × 5 = 4 − 60 = −56 < 0 : le trinôme n'a aucune racine et garde donc le signe de a = 3 > 0, c'est-à-dire f(x) > 0 pour tout réel x ✓ (vérification : f(0) = 5 > 0). Dire que f est « négatif entre deux racines et positif à l'extérieur » suppose deux racines, ce qui exigerait Δ > 0 ; dire que f s'annule pour une seule valeur de x suppose une seule racine, donc Δ = 0 ; et « f(x) < 0 pour tout réel x » se trompe sur le signe de a, qui est ici positif. Le piège courant est de conclure « Δ < 0 donc le trinôme est négatif » : le signe de Δ dit combien il y a de racines, jamais le signe de f.",
       "difficulty": 3
     },
     {
@@ -69,13 +69,13 @@
     {
       "prompt": "Résous l'équation x + (1/x) + 2 = 0.",
       "options": [
-        { "id": "a", "text": "x = −1 (racine double)" },
+        { "id": "a", "text": "x = −1 (une seule racine)" },
         { "id": "b", "text": "x = −1 et x = 1 (deux racines opposées)" },
-        { "id": "c", "text": "x = 1 (racine simple)" },
+        { "id": "c", "text": "x = 1 (une seule solution)" },
         { "id": "d", "text": "Aucune solution dans ℝ \\ {0}" }
       ],
       "correctOption": "a",
-      "explanation": "L'ensemble de résolution est ℝ \\ {0}. En multipliant par x : x² + 1 + 2x = 0, soit x² + 2x + 1 = 0, c'est-à-dire (x + 1)² = 0. Comme Δ = 4 − 4 = 0, il y a une racine double x = −1, qui appartient bien à l'ensemble de résolution ✓ (vérification : −1 + 1/(−1) + 2 = −1 − 1 + 2 = 0). La réponse « x = −1 et x = 1 » factorise à tort en (x − 1)(x + 1), ce qui correspondrait à x² − 1 ; « x = 1 » se trompe de signe (1 + 1/1 + 2 = 4, pas 0) ; et « aucune solution » confond la valeur interdite x = 0 avec une absence de solution, alors que −1 en est bien une.",
+      "explanation": "L'ensemble de résolution est ℝ \\ {0}. En multipliant par x : x² + 1 + 2x = 0, soit x² + 2x + 1 = 0, c'est-à-dire (x + 1)² = 0. Comme Δ = 4 − 4 = 0, il y a une seule racine, x = −1, qui appartient bien à l'ensemble de résolution ✓ (vérification : −1 + 1/(−1) + 2 = −1 − 1 + 2 = 0). La réponse « x = −1 et x = 1 » factorise à tort en (x − 1)(x + 1), ce qui correspondrait à x² − 1 ; « x = 1 » se trompe de signe (1 + 1/1 + 2 = 4, pas 0) ; et « aucune solution » confond la valeur interdite x = 0 avec une absence de solution, alors que −1 en est bien une.",
       "difficulty": 3
     }
   ]

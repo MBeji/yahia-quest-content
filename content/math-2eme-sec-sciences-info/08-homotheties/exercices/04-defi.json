@@ -1,0 +1,123 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Homothéties, centres et lieux",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "On note h l'homothétie de centre I et de rapport −2/3. Quelles affirmations sont vraies ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'image d'un angle de 30° est un angle de 20°."
+        },
+        {
+          "id": "b",
+          "text": "L'image d'un segment de 9 cm est un segment de 6 cm."
+        },
+        {
+          "id": "c",
+          "text": "L'image d'une droite qui passe par I est cette même droite."
+        },
+        {
+          "id": "d",
+          "text": "Le périmètre d'une figure est multiplié par −2/3."
+        },
+        {
+          "id": "e",
+          "text": "Une figure d'aire 45 cm² a pour image une figure d'aire 20 cm²."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Une homothétie multiplie les longueurs par |k| = 2/3 : 9 × 2/3 = 6 cm, donc l'image du segment mesure bien 6 cm. Une droite qui passe par le centre est globalement invariante : chaque point M de la droite a son image sur (IM), c'est-à-dire sur la droite elle-même. L'aire est multipliée par k² = 4/9 : 45 × 4/9 = 20 cm². Les deux affirmations fausses : une homothétie conserve les mesures d'angles (30° reste 30°, le rapport n'intervient pas), et le périmètre est multiplié par |k| = 2/3, jamais par un nombre négatif puisqu'un périmètre est une longueur.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une figure de périmètre 20 cm et d'aire 15 cm² a pour image, par une homothétie, une figure de périmètre 8 cm. Donne l'aire de la figure image, en cm².",
+      "answerKey": {
+        "value": 2.4,
+        "unit": "cm²"
+      },
+      "explanation": "Le périmètre est multiplié par |k| : |k| = 8/20 = 2/5. L'aire est multipliée par k² = (2/5)² = 4/25, donc l'aire image vaut 15 × 4/25 = 2,4 cm² ✓. Le piège courant est d'appliquer |k| à l'aire : 15 × 2/5 = 6 cm², résultat faux car une aire se mesure en unités de longueur au carré.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABC est un triangle de centre de gravité G, d'orthocentre H et de centre de cercle circonscrit O ; ces trois points ne sont pas confondus. Le triangle des milieux A'B'C' de ABC est l'image de ABC par l'homothétie de centre G et de rapport −1/2. On sait que OG = 2 cm. Donne la distance OH, en cm.",
+      "answerKey": {
+        "value": 6,
+        "unit": "cm"
+      },
+      "explanation": "L'homothétie de centre G et de rapport −1/2 envoie l'orthocentre H sur le centre O du cercle circonscrit : l'image d'une hauteur de ABC est une droite parallèle à elle qui passe par le milieu du côté, c'est-à-dire une médiatrice. Ainsi GO⃗ = −(1/2)GH⃗, d'où GH = 2 × GO = 4 cm, et G est situé entre O et H. Alors OH = OG + GH = 2 + 4 = 6 cm ✓, ce qui retrouve OH⃗ = 3OG⃗ (3 × 2 = 6). Le piège courant est de répondre 4 cm, c'est-à-dire GH au lieu de OH.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "On cherche l'homothétie de rapport positif qui transforme un cercle de centre O et de rayon 3 cm en un cercle de centre O' et de rayon 6 cm, avec OO' = 9 cm. Un élève rédige : (1) le rapport est k = 6/3 = 2 ; (2) le centre I vérifie IO'⃗ = 2IO⃗, donc I, O et O' sont alignés ; (3) I est situé entre O et O', donc IO + IO' = 9 ; (4) alors 3 × IO = 9, d'où IO = 3 cm et IO' = 6 cm. Le résultat est faux. Quelle est l'étape fautive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1 : le rapport devrait être 3/6 = 1/2, pas 2, car on part du petit cercle"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2 : rien ne prouve que le centre I soit aligné avec O et O'"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3 : avec un rapport positif, I est à l'extérieur de [OO'], pas entre"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 4 : IO + IO' = 9 et IO' = 2 × IO donnent IO' = 3 × IO = 27 cm"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Pour k > 0, l'image est du même côté du centre que l'antécédent : O et O' sont du même côté de I, donc I est à l'extérieur du segment [OO'], du côté de O puisque le petit cercle est le plus proche du centre. On a alors IO' = IO + 9 et IO' = 2 × IO, donc IO = 9 cm et IO' = 18 cm. Le résultat de l'élève (IO = 3 cm) est celui de l'autre homothétie, de rapport négatif −2, dont le centre est bien entre O et O'. L'étape 1 est correcte (le grand cercle est l'image du petit, de rayon 6 = |k| × 3), l'étape 2 découle de la définition, et l'étape 4 est juste dans son calcul : IO + 2 × IO = 3 × IO, donc 3 × IO = 9 et non IO' = 3 × IO. Cette question est une chasse à l'erreur : la réponse est l'étape fausse.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Les cercles ci-dessous, de centres O et O' et de rayons 2 cm et 6 cm, sont tangents extérieurement au point T, avec OO' = 8 cm. L'homothétie de rapport positif qui transforme le petit cercle en le grand a pour centre I. Donne la distance IO, en cm.\n<svg viewBox=\"0 0 360 260\"><path d=\"M10 130 H350\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><circle cx=\"60\" cy=\"130\" r=\"40\" fill=\"#0f6e56\" opacity=\"0.10\"/><circle cx=\"60\" cy=\"130\" r=\"40\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><circle cx=\"220\" cy=\"130\" r=\"120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2.2\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"130\" r=\"4\"/><circle cx=\"220\" cy=\"130\" r=\"4\"/><circle cx=\"100\" cy=\"130\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"52\" y=\"120\" fill=\"#0f172a\">O</text><text x=\"212\" y=\"120\" fill=\"#0f172a\">O'</text><text x=\"108\" y=\"150\" fill=\"#0f172a\">T</text></g></svg>",
+      "answerKey": {
+        "value": 4,
+        "unit": "cm"
+      },
+      "explanation": "Le rapport positif est R'/R = 6/2 = 3. Avec k > 0, le centre I est à l'extérieur du segment [OO'], du côté du petit cercle : IO' = IO + OO' = IO + 8. Comme IO' = 3 × IO, on obtient 3 × IO = IO + 8, donc IO = 4 cm ✓ (et IO' = 12 cm). Contrôle : 12 − 4 = 8 = OO'. Le point T, lui, est le centre de l'homothétie de rapport négatif −3 : TO = 2 cm et TO' = 6 cm. Le piège courant est de confondre les deux centres et de répondre 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "A est un point fixe et M décrit le cercle de centre O et de rayon 6 cm, avec AO = 5 cm. Le point G est le barycentre des points pondérés (A, 3) et (M, −2). Quel est le lieu de G ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de rayon 12 cm dont le centre O' est du même côté de A que O, avec AO' = 10 cm"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de rayon 12 cm dont le centre O' est de l'autre côté de A que O, avec AO' = 10 cm"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de rayon 4 cm dont le centre O' est de l'autre côté de A que O, avec AO' = 10/3 cm"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de rayon 3 cm dont le centre O' est de l'autre côté de A que O, avec AO' = 5/2 cm"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La somme des coefficients vaut 3 − 2 = 1. En écrivant la réduction de la somme vectorielle pondérée au point A : 3AA⃗ − 2AM⃗ = 1 × AG⃗, donc AG⃗ = −2AM⃗ : G est l'image de M par l'homothétie de centre A et de rapport −2. Le lieu de G est l'image du cercle : de rayon |−2| × 6 = 12 cm, de centre O' tel que AO'⃗ = −2AO⃗, donc de l'autre côté de A que O et à AO' = 10 cm ✓. Le piège courant est d'oublier le signe de k, ce qui place le centre du même côté de A que O. Un rapport −2/3 viendrait de la division par la somme 3 au lieu de la somme 1 des coefficients, et un rapport −1/2 d'une inversion du rapport.",
+      "difficulty": 3
+    }
+  ]
+}

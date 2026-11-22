@@ -12,7 +12,7 @@ Un vecteur AB⃗ est déterminé par trois données : une **direction** (celle d
 
 Attention à l'ordre des lettres : le parallélogramme associé à AB⃗ = CD⃗ se lit **ABDC**, pas ABCD. On retient plutôt le critère des milieux, qui ne se trompe jamais.
 
-## ➕ Additionner : la somme, l'opposé et la relation de Chasles
+## ➕ Additionner : la somme, l'opposé et l'enchaînement des vecteurs
 
 > **Définition (somme).** Soient u⃗ et v⃗ deux vecteurs, A un point du plan, B le point tel que u⃗ = AB⃗ et C le point tel que v⃗ = AC⃗. Soit D le point tel que [BC] et [AD] aient le même milieu. On appelle **vecteur somme** de u⃗ et v⃗ le vecteur w⃗ tel que w⃗ = AD⃗. Le vecteur w⃗ est noté u⃗ + v⃗.
 
@@ -42,13 +42,13 @@ $$ u⃗ + v⃗ = v⃗ + u⃗ ; u⃗ + (v⃗ + w⃗) = (u⃗ + v⃗) + w⃗ ; u�
 
 > **Définition (opposé).** Pour tout vecteur u⃗, l'unique vecteur v⃗ tel que u⃗ + v⃗ = 0⃗ s'appelle l'**opposé** de u⃗ ; il est noté −u⃗. Ainsi u⃗ + (−u⃗) = (−u⃗) + u⃗ = 0⃗. On note u⃗ − v⃗ le vecteur u⃗ + (−v⃗).
 
-L'opposé, c'est le même déplacement parcouru à l'envers : **BA⃗ = −AB⃗**. Et la construction précédente, écrite avec des points enchaînés, donne le théorème le plus utilisé du chapitre, la **relation de Chasles**, valable quels que soient les points A, B et C :
+L'opposé, c'est le même déplacement parcouru à l'envers : **BA⃗ = −AB⃗**. Et la construction précédente, écrite avec des points enchaînés, donne la relation la plus utilisée du chapitre (on l'appelle souvent « relation de Chasles »), valable pour tous points A, B et C :
 
 $$ AB⃗ + BC⃗ = AC⃗ $$
 
 Le secret est toujours le même : le point d'**arrivée** du premier vecteur est le point de **départ** du second. En particulier AB⃗ + BA⃗ = AA⃗ = 0⃗.
 
-_Exemple détaillé_ : simplifions AB⃗ + CD⃗ + BC⃗. On remet les points bout à bout : AB⃗ + BC⃗ + CD⃗, et Chasles agit deux fois — AB⃗ + BC⃗ = AC⃗, puis AC⃗ + CD⃗ = **AD⃗**.
+_Exemple détaillé_ : simplifions AB⃗ + CD⃗ + BC⃗. On remet les points bout à bout : AB⃗ + BC⃗ + CD⃗, et la relation d'enchaînement agit deux fois — AB⃗ + BC⃗ = AC⃗, puis AC⃗ + CD⃗ = **AD⃗**.
 
 > 🗡️ Retiens la règle « même origine » : **AB⃗ − AC⃗ = CB⃗** (on va de la seconde extrémité vers la première). C'est la transformation qui débloque presque tous les exercices d'écriture vectorielle.
 
@@ -170,7 +170,7 @@ _Exemple détaillé (le quatrième sommet)_ : soient A(1 ; −2), B(5 ; 1) et C(
 
 Le facteur est bien la **valeur absolue** de α : une longueur ne peut pas être négative. Si ‖u⃗‖ = 10, alors ‖−(3/5)u⃗‖ = (3/5) × 10 = **6**.
 
-> **Définition (vecteurs orthogonaux).** Soient A, B et C les points tels que u⃗ = AB⃗ et v⃗ = AC⃗. On dit que u⃗ et v⃗ sont **orthogonaux** si les droites (AB) et (AC) sont perpendiculaires. Par convention, le vecteur nul est orthogonal à tout vecteur du plan. On note u⃗ ⊥ v⃗.
+> **Définition (vecteurs orthogonaux).** Soient u⃗ et v⃗ deux vecteurs **non nuls**, et A, B, C les points tels que u⃗ = AB⃗ et v⃗ = AC⃗. On dit que u⃗ et v⃗ sont **orthogonaux** si les droites (AB) et (AC) sont perpendiculaires. Par convention, le vecteur nul est orthogonal à tout vecteur du plan. On note u⃗ ⊥ v⃗.
 
 > **Définition (base et repère orthonormés).** Une base (i⃗, j⃗) est dite **orthonormée** lorsque i⃗ ⊥ j⃗ et ‖i⃗‖ = ‖j⃗‖ = 1. Le repère (O, i⃗, j⃗) est alors dit **orthonormé**.
 
@@ -222,7 +222,7 @@ Toute la géométrie du triangle se réécrit maintenant en une ligne de calcul.
 
 > **Retenir (milieu).** I est le milieu de [AB] ⟺ IA⃗ + IB⃗ = 0⃗ ⟺ AI⃗ = (1/2)AB⃗. Et pour **tout** point M du plan : **MA⃗ + MB⃗ = 2MI⃗**.
 
-La démonstration tient en deux lignes de Chasles : MA⃗ + MB⃗ = (MI⃗ + IA⃗) + (MI⃗ + IB⃗) = 2MI⃗ + (IA⃗ + IB⃗) = 2MI⃗ + 0⃗ = 2MI⃗.
+La démonstration tient en deux lignes, avec AB⃗ + BC⃗ = AC⃗ : MA⃗ + MB⃗ = (MI⃗ + IA⃗) + (MI⃗ + IB⃗) = 2MI⃗ + (IA⃗ + IB⃗) = 2MI⃗ + 0⃗ = 2MI⃗.
 
 > **Retenir (centre de gravité).** G est le **centre de gravité** du triangle ABC (le point de concours de ses médianes) ⟺ GA⃗ + GB⃗ + GC⃗ = 0⃗. Si I est le milieu de [BC], alors **AG⃗ = (2/3)AI⃗**. Et pour tout point M du plan : **MA⃗ + MB⃗ + MC⃗ = 3MG⃗**.
 
@@ -254,11 +254,11 @@ _Exemple détaillé_ : si M est le point de [AB] tel que AM⃗ = (3/4)AB⃗ et s
 
 > 🗡️ Le **théorème de la projection** est la version « trois parallèles » du même énoncé : si (AA'), (BB') et (CC') sont trois droites parallèles et si AB⃗ = xAC⃗, alors A'B'⃗ = xA'C'⃗. Le coefficient traverse la projection sans changer.
 
-## 👑 Aller plus loin : l'orthocentre et la droite d'Euler
+## 👑 Aller plus loin : l'orthocentre et l'alignement O, G, H
 
 Un dernier résultat, spectaculaire, qui n'utilise que ce chapitre. Soit ABC un triangle, O le centre de son cercle circonscrit et G son centre de gravité. Définissons le point H par OH⃗ = OA⃗ + OB⃗ + OC⃗.
 
-Comme MA⃗ + MB⃗ + MC⃗ = 3MG⃗ vaut pour tout point M, on a en particulier OA⃗ + OB⃗ + OC⃗ = 3OG⃗, donc **OH⃗ = 3OG⃗**. Les vecteurs OH⃗ et OG⃗ sont colinéaires : les points **O, G et H sont alignés**. La droite qui les porte s'appelle la **droite d'Euler** du triangle.
+Comme MA⃗ + MB⃗ + MC⃗ = 3MG⃗ vaut pour tout point M, on a en particulier OA⃗ + OB⃗ + OC⃗ = 3OG⃗, donc **OH⃗ = 3OG⃗**. Les vecteurs OH⃗ et OG⃗ sont colinéaires : les points **O, G et H sont alignés**. (Cette droite porte un nom, la droite d'Euler ; tu le rencontreras au chapitre des homothéties.)
 
 Et H n'est pas un point quelconque : c'est l'**orthocentre** de ABC, le point de concours des trois hauteurs. On le vérifie sur une hauteur : AH⃗ = AO⃗ + OH⃗ = AO⃗ + OA⃗ + OB⃗ + OC⃗ = OB⃗ + OC⃗. Or, I étant le milieu de [BC], la relation du milieu donne OB⃗ + OC⃗ = 2OI⃗ ; et comme O est équidistant de B et de C, la droite (OI) est la médiatrice de [BC], donc perpendiculaire à (BC). Ainsi (AH) ⊥ (BC) : la droite (AH) est bien la hauteur issue de A.
 

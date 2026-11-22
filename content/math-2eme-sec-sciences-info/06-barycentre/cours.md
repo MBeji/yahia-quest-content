@@ -116,13 +116,15 @@ $$ MA⃗ + 4MB⃗ − 5MC⃗ = (1 + 4 − 5)MC⃗ + CA⃗ + 4CB⃗ = CA⃗ + 4CB
 
 Le résultat ne contient plus M : c'est un vecteur **fixe**, entièrement déterminé par le triangle. Une condition portant sur sa norme n'a donc que deux issues possibles : ou bien elle est remplie par **tous** les points du plan, ou bien elle ne l'est par **aucun** — jamais par un cercle.
 
-## 🧮 La fonction vectorielle de Leibniz
+## 🧮 Réduire une somme pondérée : αMA⃗ + βMB⃗ = (α + β)MG⃗
 
 Voici l'outil qui fait tout le travail dans les exercices. Il transforme une somme portant sur plusieurs points en **un seul** vecteur.
 
-> **Retenir (fonction vectorielle de Leibniz).** Si G est le barycentre des points pondérés (A, α) et (B, β), alors pour **tout** point M du plan
+> **Retenir (réduction d'une somme pondérée).** Si G est le barycentre des points pondérés (A, α) et (B, β), alors pour **tout** point M du plan
 >
 > $$ αMA⃗ + βMB⃗ = (α + β) MG⃗ $$
+
+> On rencontre parfois cette égalité sous le nom de « fonction vectorielle de Leibniz » : c'est un nom d'usage, que le manuel n'emploie pas.
 
 La démonstration insère G dans chaque terme : α(MG⃗ + GA⃗) + β(MG⃗ + GB⃗) redonne (α + β)MG⃗ augmenté du bloc αGA⃗ + βGB⃗, lequel s'évanouit — c'est très exactement ce qui définit G.
 
@@ -130,7 +132,7 @@ _Exemple détaillé_ : G est le barycentre des points pondérés (A, 3) et (B, 2
 
 > 🗡️ Le facteur qui sort est la **somme** des coefficients, jamais leur nombre ni la somme de leurs valeurs absolues. Avec les coefficients 5 et −2, le facteur est 3, pas 7.
 
-**Première application : les ensembles de points (lignes de niveau).** Une condition portant sur la norme d'une somme pondérée se ramène à une condition sur une seule distance.
+**Première application : la recherche d'un ensemble de points.** Une condition portant sur la norme d'une somme pondérée se ramène à une condition sur une seule distance.
 
 _Exemple détaillé_ : soit G le barycentre des points pondérés (A, 3) et (B, 2) ; cherchons l'ensemble des points M tels que ‖3MA⃗ + 2MB⃗‖ = 20. La réduction donne ‖5MG⃗‖ = 20, et comme ‖5MG⃗‖ = 5 × MG, la condition s'écrit 5 × MG = 20, soit MG = 4. L'ensemble des points M est donc le **cercle centré en G, de rayon 4**.
 
@@ -144,7 +146,7 @@ Tout se transpose mot pour mot.
 >
 > C'est le **barycentre des points pondérés (A, α), (B, β) et (C, γ)**. Lorsque α = β = γ, le point G s'appelle l'**isobarycentre** de A, B et C.
 
-> **Retenir (Leibniz à trois points).** Avec S = α + β + γ non nul, pour tout point M du plan
+> **Retenir (réduction à trois points).** Avec S = α + β + γ non nul, pour tout point M du plan
 >
 > $$ αMA⃗ + βMB⃗ + γMC⃗ = S × MG⃗ $$
 >
@@ -197,25 +199,32 @@ _Exemple détaillé_ : G est le barycentre des points pondérés (A, 2), (B, 3) 
 
 ## 📐 Construire le barycentre à la règle
 
-Construire G revient toujours à réaliser l'égalité AG⃗ = (β/(α + β))AB⃗, c'est-à-dire à partager [AB] en α + β parts égales et à en compter β depuis A. Le manuel propose pour cela la **méthode des parallèles**, le partage classique par le théorème de Thalès, illustré ci-dessous.
+Construire G revient toujours à réaliser l'égalité AG⃗ = (β/(α + β))AB⃗. Le manuel propose deux constructions.
 
-::: figure Partage de [AB] en 5 parts égales pour construire le barycentre de (A, 3) et (B, 2) : on trace une demi-droite d'origine A, on y reporte 5 longueurs égales, on joint le cinquième point à B, puis on mène les parallèles à cette droite ; le point G cherché est le deuxième point de partage à partir de A, puisque AG⃗ = (2/5)AB⃗
-<svg viewBox="0 0 340 200">
-<path d="M40 150 L290 150" fill="none" stroke="#0f172a" stroke-width="2.4"/>
-<path d="M40 150 L215 40" fill="none" stroke="#94a3b8" stroke-width="1.8"/>
-<path d="M75 128 L90 150 M110 106 L140 150 M145 84 L190 150 M180 62 L240 150" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4"/>
-<g fill="#94a3b8"><circle cx="90" cy="150" r="3"/><circle cx="190" cy="150" r="3"/><circle cx="240" cy="150" r="3"/></g>
-<path d="M215 40 L290 150" fill="none" stroke="#0f172a" stroke-width="1.6"/>
-<g fill="#94a3b8"><circle cx="75" cy="128" r="3.5"/><circle cx="110" cy="106" r="3.5"/><circle cx="145" cy="84" r="3.5"/><circle cx="180" cy="62" r="3.5"/><circle cx="215" cy="40" r="3.5"/></g>
-<g fill="#0f172a"><circle cx="40" cy="150" r="5"/><circle cx="290" cy="150" r="5"/></g>
-<circle cx="140" cy="150" r="6" fill="#0f6e56"/>
+**La méthode des parallèles.** Pour G barycentre de (A, α) et (B, β), on choisit une droite D_A passant par A et ne contenant pas B, puis la parallèle D_B à D_A passant par B. On munit D_A et D_B d'un même vecteur directeur i⃗. On construit A' sur D_A tel que AA'⃗ = β i⃗ et B' sur D_B tel que BB'⃗ = −α i⃗. Alors G est aussi le barycentre de (A', α) et (B', β). En effet, αGA'⃗ + βGB'⃗ = α(GA⃗ + βi⃗) + β(GB⃗ − αi⃗) = αGA⃗ + βGB⃗ + (αβ − βα)i⃗ = 0⃗. Comme α + β ≠ 0, les droites (AB) et (A'B') ne sont pas parallèles : elles se coupent bien. Donc **G est l'intersection des droites (AB) et (A'B')**.
+
+::: figure Méthode des parallèles pour le barycentre de (A, 3) et (B, 2) : on trace par A et B deux parallèles de même vecteur directeur i⃗, on place A' tel que AA'⃗ = 2i⃗ et B' tel que BB'⃗ = −3i⃗ ; le point G est l'intersection de (AB) et (A'B'), avec AG⃗ = (2/5)AB⃗
+<svg viewBox="0 0 340 230">
+<path d="M60 150 L280 150" fill="none" stroke="#0f172a" stroke-width="2.4"/>
+<path d="M36 186 L96 96" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+<path d="M316 96 L226 231" fill="none" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 4"/>
+<path d="M84 114 L244 204" fill="none" stroke="#0f172a" stroke-width="1.8"/>
+<g fill="#0f172a"><circle cx="60" cy="150" r="5"/><circle cx="280" cy="150" r="5"/><circle cx="84" cy="114" r="4"/><circle cx="244" cy="204" r="4"/></g>
+<circle cx="148" cy="150" r="6" fill="#0f6e56"/>
 <g font-size="15" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">
-<text x="34" y="172" fill="#0f172a">A</text>
-<text x="296" y="172" fill="#0f172a">B</text>
-<text x="140" y="176" fill="#0f6e56">G</text>
+<text x="52" y="172" fill="#0f172a">A</text>
+<text x="290" y="172" fill="#0f172a">B</text>
+<text x="100" y="108" fill="#0f172a">A'</text>
+<text x="262" y="214" fill="#0f172a">B'</text>
+<text x="154" y="134" fill="#0f6e56">G</text>
+<text x="80" y="128" fill="#64748b">i⃗</text>
 </g>
+<path d="M60 150 L72 132" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<path d="M72 132 L65 135 M72 132 L72 140" fill="none" stroke="#64748b" stroke-width="1.8"/>
 </svg>
 :::
+
+**La méthode du parallélogramme.** Pour G barycentre de (A, α) et (B, β), on choisit un point M hors de (AB). On construit A' tel que MA'⃗ = αMA⃗ et B' tel que MB'⃗ = βMB⃗, puis le point M' tel que MA'M'B' soit un parallélogramme. On a alors MM'⃗ = αMA⃗ + βMB⃗ = (α + β)MG⃗, donc G est sur (MM') et **G est l'intersection des droites (AB) et (MM')**.
 
 ## 👑 Aller plus loin : deux résultats qui tombent tout seuls
 

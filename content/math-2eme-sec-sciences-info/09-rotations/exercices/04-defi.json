@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les rotations en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Une rotation r transforme A en A′, B en B′ et C en C′. Quelles affirmations sont toujours vraies ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Si M et N ont pour images M′ et N′, alors M′N′ = MN."
+        },
+        {
+          "id": "b",
+          "text": "L'image d'un cercle de centre I est un cercle de même centre I."
+        },
+        {
+          "id": "c",
+          "text": "L'image du centre de gravité de ABC est le centre de gravité de A′B′C′."
+        },
+        {
+          "id": "d",
+          "text": "Si la rotation a pour angle π/3, l'image d'une droite (D) est perpendiculaire à (D)."
+        },
+        {
+          "id": "e",
+          "text": "Un triangle d'aire 15 cm² a pour image un triangle d'aire 15 cm²."
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "La rotation conserve les distances : si M et N ont pour images M′ et N′, alors M′N′ = MN. Elle conserve le barycentre, donc l'image du centre de gravité de ABC (isobarycentre de A, B, C) est le centre de gravité de A′B′C′. Elle conserve aussi les aires : l'image d'un triangle de 15 cm² a pour aire 15 cm². En revanche l'image d'un cercle de centre I est un cercle de même rayon mais de centre r(I), qui diffère de I dès que I n'est pas le centre de la rotation. Et la perpendicularité entre une droite et son image est propre au quart de tour (angle π/2) ; pour un angle de π/3, ce n'est pas un quart de tour, donc rien n'assure que l'image soit perpendiculaire.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le triangle ABC est rectangle en A, avec AB = 9 cm et AC = 12 cm. Une rotation le transforme en A′B′C′, et H′ est le pied de la hauteur issue de A′ dans le triangle A′B′C′. Donne la longueur A′H′, en cm.",
+      "answerKey": {
+        "value": 7.2
+      },
+      "explanation": "Dans ABC rectangle en A, le théorème de Pythagore donne BC² = 81 + 144 = 225, donc BC = 15 cm. La rotation conserve les angles et les distances : A′B′C′ est rectangle en A′, avec A′B′ = 9 cm, A′C′ = 12 cm et B′C′ = 15 cm. Son aire vaut 9 × 12 / 2 = 54 cm², et aussi B′C′ × A′H′ / 2 = 15 × A′H′ / 2. Donc A′H′ = 108 / 15 = 7,2 cm. Contrôle : la hauteur issue de l'angle droit est inférieure aux deux côtés de l'angle droit (7,2 < 9 < 12).",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les points O, A et B vérifient OA = 5 cm, OB = 8 cm, et l'angle AÔB est droit. Existe-t-il une rotation de centre O qui envoie A sur un point de [OB] ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non, aucune, car OA ≠ OB : une rotation de centre O conserve la distance au centre, donc A ne peut pas aller sur [OB]"
+        },
+        {
+          "id": "b",
+          "text": "Oui, deux : le quart de tour direct et le quart de tour indirect de centre O, qui envoient A de part et d'autre de (OA)"
+        },
+        {
+          "id": "c",
+          "text": "Oui, une seule : le quart de tour de centre O qui envoie A sur le point B₁ de [OB] tel que OB₁ = 5 cm"
+        },
+        {
+          "id": "d",
+          "text": "Oui, une infinité : une pour chaque angle α de ]0 ; π["
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une rotation de centre O conserve la distance au centre : l'image de A est à 5 cm de O. Elle ne peut donc pas être B (OB = 8 cm), mais elle peut être le point B₁ de [OB] tel que OB₁ = 5 cm, qui existe puisque 5 < 8. Comme l'angle AÔB₁ est droit, c'est le quart de tour de centre O, dans le sens qui mène de A vers B, qui envoie A sur B₁ ; l'autre quart de tour envoie A de l'autre côté de (OA), hors de [OB]. Dire « aucune » confond B avec un point de [OB] à 5 cm de O, et « une infinité » oublie que l'angle est imposé par la position de B₁ ; « deux » oublie que le quart de tour de sens opposé envoie A hors de [OB].",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "ABCDEF est un hexagone régulier de centre O : vu depuis O, chaque côté est sous un angle de π/3. Combien existe-t-il de rotations directes de centre O, d'angle α ∈ ]0 ; π[, qui laissent cet hexagone globalement invariant ?",
+      "answerKey": {
+        "value": 2
+      },
+      "explanation": "Pour que l'hexagone retombe sur lui-même, la rotation doit poser chaque sommet sur un sommet : son angle est un multiple de π/3. Dans ]0 ; π[, les multiples de π/3 sont π/3 et 2π/3. La rotation directe d'angle π/3 envoie A sur B, B sur C, et ainsi de suite ; celle d'angle 2π/3 envoie A sur C, B sur D, et ainsi de suite : les deux conviennent. Le multiple π est exclu de l'intervalle : le demi-tour est la symétrie centrale de centre O, pas une rotation d'angle de ]0 ; π[. Les multiples 4π/3 et 5π/3 sont, eux, au-delà de π. Il y en a donc 2.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève calcule la longueur de l'arc intercepté par un angle au centre de mesure 5π/6 radians sur un cercle de rayon 9 cm : (1) 5π/6 rad = 5 × 180 / 6 = 150° ; (2) L = r × α = 9 × 150 = 1 350 ; (3) donc L = 1 350 cm. Le résultat est faux (l'arc est inférieur au périmètre du cercle, soit environ 56,5 cm). Quelle est l'étape fautive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 1 : on doit convertir en multipliant par 360/6 et non par 180/6"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 3 : la longueur doit s'exprimer en fonction de π, donc 1 350π cm"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 2 : la formule L = r × α suppose l'angle α en radians, et non en degrés"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 3 : la longueur doit s'exprimer en mètres et non en centimètres, donc L = 13,5 m"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'étape 1 est correcte : 5π/6 radians valent bien 150°, le facteur de conversion étant 180 et non 360. L'erreur est dans l'étape 2 : la formule L = r × α n'est valable que si α est exprimé en radians. Il fallait écrire L = 9 × 5π/6 = 15π/2 = 7,5π cm, soit environ 23,6 cm, nettement inférieur à 2π × 9 ≈ 56,5 cm. Mettre le π en facteur dans le résultat final ou changer l'unité de la longueur ne répare pas l'étape 2. Cette question est une chasse à l'erreur : on cherche l'étape fausse. L'option qui accuse l'étape 1 tombe devant le calcul 5 × 180 / 6 = 150.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABCD est un carré de centre O, parcouru dans le sens direct. Les points P de [AB] et Q de [BC] vérifient AP = BQ. On sait que le quart de tour direct de centre O envoie A sur B, B sur C, C sur D et D sur A. Que peut-on affirmer sur AQ et DP ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AQ = DP et (AQ) ⟂ (DP), car ce quart de tour envoie D sur A et P sur Q"
+        },
+        {
+          "id": "b",
+          "text": "AQ = DP et (AQ) // (DP), car la rotation conserve le parallélisme des droites"
+        },
+        {
+          "id": "c",
+          "text": "AQ ≠ DP en général, car les points P et Q ne sont pas à la même distance de O"
+        },
+        {
+          "id": "d",
+          "text": "On ne peut rien dire, car P et Q ne sont pas des sommets du carré ABCD"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le quart de tour envoie [AB] sur [BC] en envoyant A sur B : comme AP = BQ, le point P a pour image le point Q de [BC] tel que BQ = AP. Il envoie aussi D sur A. Le segment [DP] a donc pour image [AQ] : les longueurs sont conservées, donc AQ = DP, et l'image de la droite (DP) par un quart de tour lui est perpendiculaire, donc (AQ) ⟂ (DP). Le parallélisme conservé par une rotation relie deux droites parallèles entre elles à leurs images, non une droite à sa propre image. Et OP = OQ puisque Q est l'image de P ; enfin les points P et Q n'ont pas besoin d'être des sommets : la rotation s'applique à tout point du plan.",
+      "difficulty": 3
+    }
+  ]
+}

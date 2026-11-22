@@ -99,11 +99,11 @@ Voici le théorème qui fait tout le travail. Il transforme une information sur 
 
 La démonstration tient en une ligne de Chasles : M'N'⃗ = M'I⃗ + IN'⃗ = −kIM⃗ + kIN⃗ = k(IN⃗ − IM⃗) = kMN⃗.
 
-> **Retenir (les deux conséquences).** Si A' et B' sont les images de A et B par une homothétie de rapport k, alors
+> **Retenir (les deux conséquences).** Si A' et B' sont les images respectives de deux points **distincts** A et B par une homothétie de rapport k, alors
 >
 > $$ (AB) est parallèle à (A'B') et A'B' = |k| × AB $$
 
-Lis bien ces deux résultats : le premier porte sur les **vecteurs** et garde le signe de k ; le second porte sur des **longueurs**, qui sont positives, et ne retient donc que **|k|**.
+Lis bien la propriété caractéristique et la seconde conséquence : M'N'⃗ = kMN⃗ porte sur les **vecteurs** et garde le signe de k ; A'B' = |k| × AB porte sur des **longueurs**, qui sont positives, et ne retient donc que **|k|**.
 
 > ⚠️ C'est l'erreur numéro un du chapitre. Avec k = −4 et AB = 3 cm, on a A'B'⃗ = −4AB⃗ — un vecteur de sens contraire — mais A'B' = 4 × 3 = **12 cm**, jamais «−12 cm». Une longueur ne peut pas être négative.
 
@@ -211,7 +211,7 @@ Voici l'usage le plus rentable du chapitre. Quand un point M **décrit** une cou
 
 La méthode tient en trois temps : écrire la relation sous la forme IM'⃗ = kIM⃗ pour un point fixe I bien choisi ; en déduire que M' est l'image de M par h_(I,k) ; conclure en transformant la courbe de départ par le tableau des images.
 
-_Exemple détaillé_ : A est un point fixe, et M décrit un cercle C de centre O et de rayon 6 cm. On note G le barycentre des points pondérés (A, 2) et (M, 3). D'après la fonction vectorielle de Leibniz, 2AA⃗ + 3AM⃗ = 5AG⃗, c'est-à-dire AG⃗ = (3/5)AM⃗. Le point G est donc l'image de M par l'homothétie de centre **A** et de rapport **3/5**. Quand M parcourt C, le point G parcourt donc le **cercle image** : celui de centre h(O), placé sur [AO) à la distance (3/5) × AO, et de rayon (3/5) × 6 = **3,6 cm**.
+_Exemple détaillé_ : A est un point fixe, et M décrit un cercle C de centre O et de rayon 6 cm. On note G le barycentre des points pondérés (A, 2) et (M, 3). Comme G est le barycentre de (A, 2) et (M, 3), la réduction de la somme vectorielle pondérée, prise au point A, donne 2AA⃗ + 3AM⃗ = 5AG⃗, c'est-à-dire AG⃗ = (3/5)AM⃗. Le point G est donc l'image de M par l'homothétie de centre **A** et de rapport **3/5**. Quand M parcourt C, le point G parcourt donc le **cercle image** : celui de centre h(O), placé sur [AO) à la distance (3/5) × AO, et de rayon (3/5) × 6 = **3,6 cm**.
 
 > 🗡️ Le point fixe qui sert de centre est toujours celui qui **ne bouge pas** dans l'énoncé : ici A. Cherche-le en premier, l'égalité vectorielle se met ensuite d'elle-même sous la bonne forme.
 

@@ -55,7 +55,7 @@
       "difficulty": 2
     },
     {
-      "prompt": "Un entier de la forme N = 2ⁿ × (2ⁿ⁺¹ − 1) est parfait lorsque le facteur 2ⁿ⁺¹ − 1 est premier. Que vaut N pour n = 4 ?",
+      "prompt": "Un entier N = 2ⁿ × p, avec p premier différent de 2, est parfait lorsque p = 2ⁿ⁺¹ − 1. Que vaut N pour n = 4 ?",
       "options": [
         { "id": "a", "text": "62" },
         { "id": "b", "text": "240" },
@@ -63,7 +63,7 @@
         { "id": "d", "text": "496" }
       ],
       "correctOption": "d",
-      "explanation": "Pour n = 4, le facteur vaut 2⁵ − 1 = 31, qui est bien premier, et la puissance vaut 2⁴ = 16. Donc N = 16 × 31 = 496 ✓, le troisième nombre parfait après 6 et 28. La valeur 62 est 2 × 31 : la puissance 2⁴ a été remplacée par la base 2. La valeur 240 est 16 × 15 : le facteur a été calculé comme 2⁴ − 1 au lieu de 2⁵ − 1, l'exposant n ayant été utilisé à la place de n + 1. La valeur 248 est 8 × 31 : la puissance a été prise égale à 2³ au lieu de 2⁴.",
+      "explanation": "Pour n = 4, p = 2⁵ − 1 = 31, qui est bien premier et différent de 2, et la puissance vaut 2⁴ = 16. Donc N = 16 × 31 = 496 ✓, le troisième nombre parfait après 6 et 28. La valeur 62 est 2 × 31 : la puissance 2⁴ a été remplacée par la base 2. La valeur 240 est 16 × 15 : p a été calculé comme 2⁴ − 1 au lieu de 2⁵ − 1, l'exposant n ayant été utilisé à la place de n + 1. La valeur 248 est 8 × 31 : la puissance a été prise égale à 2³ au lieu de 2⁴.",
       "difficulty": 3
     },
     {

@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le calcul réel sans filet",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sont vraies ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "√(x²) = x pour tout réel x"
+        },
+        {
+          "id": "b",
+          "text": "2xy ≤ x² + y² pour tous réels x et y"
+        },
+        {
+          "id": "c",
+          "text": "Pour tout réel x < 0, x + 1/x ≥ 2"
+        },
+        {
+          "id": "d",
+          "text": "|x + y| = |x| + |y| dès que x × y ≥ 0"
+        },
+        {
+          "id": "e",
+          "text": "Si a > 1, alors √a < a < a²"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "b",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "2xy ≤ x² + y² équivaut à (x − y)² ≥ 0 : elle vaut pour tous les réels, sans condition de signe. Si x × y ≥ 0, les deux nombres ont le même signe (ou l'un est nul) : la somme ne se compense pas et |x + y| = |x| + |y| ; avec x = 7 et y = −3 (produit négatif) on aurait au contraire 4 < 10. Pour a > 1, on a bien √a < a < a² (par exemple 2 < 4 < 16 pour a = 4). En revanche √(x²) = |x|, qui vaut −x quand x < 0 : √((−3)²) = 3 et non −3. Et x + 1/x ≥ 2 exige x > 0 : pour x = −1, x + 1/x = −2, qui est inférieur à 2.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien d'entiers relatifs x vérifient à la fois |x − 1| < 6 et |x + 1| ≥ 3 ?",
+      "answerKey": {
+        "value": 6
+      },
+      "explanation": "|x − 1| < 6 équivaut à −5 < x < 7. |x + 1| ≥ 3 équivaut à x ≤ −4 ou x ≥ 2. L'intersection est −5 < x ≤ −4 ou 2 ≤ x < 7. Les entiers solutions sont −4 ; 2 ; 3 ; 4 ; 5 ; 6, soit 6 entiers.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève sait que −2 ≤ a ≤ 3 et 1 ≤ b ≤ 4. Il encadre a − b ainsi : (1) −2 ≤ a ≤ 3 ; (2) 1 ≤ b ≤ 4 ; (3) donc −2 − 1 ≤ a − b ≤ 3 − 4 ; (4) −3 ≤ a − b ≤ −1. Le résultat est faux : a = 3 et b = 1 donnent a − b = 2. Quelle est l'étape fautive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 2 : l'encadrement de b est faux, car b peut valoir 0"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 4 : les calculs −2 − 1 et 3 − 4 sont faux, il fallait trouver −1 et 1"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 3 : on soustrait les bornes sans renverser l'encadrement de b"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 1 : on devrait d'abord ajouter b aux trois membres de l'encadrement"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Soustraire b revient à ajouter −b, et multiplier par −1 renverse l'encadrement : −4 ≤ −b ≤ −1. On additionne alors avec −2 ≤ a ≤ 3 : −6 ≤ a − b ≤ 2. Les bornes de l'étape 3 sont celles de a et de b dans le mauvais ordre. Les calculs de l'étape 4 sont justes (−2 − 1 = −3 et 3 − 4 = −1) et les étapes 1 et 2 recopient les données : l'erreur est dans le passage de l'étape 2 à l'étape 3.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Que vaut A = √(9 − 4√5) + √(9 + 4√5) ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "text": "2√5"
+        },
+        {
+          "id": "c",
+          "text": "3√2"
+        },
+        {
+          "id": "d",
+          "text": "√5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On reconnaît des carrés cachés : 9 − 4√5 = 5 − 4√5 + 4 = (√5 − 2)² et 9 + 4√5 = (√5 + 2)². Comme √5 > 2, √((√5 − 2)²) = |√5 − 2| = √5 − 2, et √((√5 + 2)²) = √5 + 2. Donc A = (√5 − 2) + (√5 + 2) = 2√5 ≈ 4,47. Écrire 2 − √5 à la place de √5 − 2 donnerait 4 : c'est oublier la valeur absolue, car 2 − √5 est négatif et une racine ne l'est jamais. Additionner sous une seule racine, en écrivant √9 + √16 = √25 par exemple, donnerait ici √18 = 3√2, ce qui est faux.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un article est vendu 74,88 dinars toutes taxes comprises, après une remise de 20 % sur son prix TTC. La TVA est de 17 %. Quel est son prix hors taxes, en dinars ?",
+      "answerKey": {
+        "value": 80
+      },
+      "explanation": "La remise de 20 % multiplie par 0,80 : le prix TTC avant remise vaut 74,88 / 0,80 = 93,6 dinars. La TVA de 17 % multiplie le prix HT par 1,17 : prix HT = 93,6 / 1,17 = 80 dinars. Contrôle : 80 × 1,17 = 93,6, puis 93,6 × 0,80 = 74,88. Soustraire 20 % puis 17 % ne marche pas : les taux se multiplient par des coefficients, ils ne s'additionnent pas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un virus mesure environ 1,2 × 10⁻⁷ m. Combien de tels virus, placés bout à bout, tiennent sur 1 mm ? Donne l'ordre de grandeur de ce nombre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "8,3 × 10³"
+        },
+        {
+          "id": "b",
+          "text": "8 × 10⁴"
+        },
+        {
+          "id": "c",
+          "text": "8 × 10³"
+        },
+        {
+          "id": "d",
+          "text": "8 × 10²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On convertit d'abord : 1 mm = 10⁻³ m. Le nombre de virus est 10⁻³ / (1,2 × 10⁻⁷) = (1/1,2) × 10⁴ ≈ 0,833 × 10⁴ = 8,33 × 10³, soit environ 8333 virus. L'écriture scientifique est 8,33 × 10³ ; l'ordre de grandeur est b × 10ⁿ où b est l'arrondi de 8,33 à l'unité, donc 8 × 10³. Garder 8,3 donne une écriture scientifique, pas un ordre de grandeur ; 8 × 10⁴ et 8 × 10² viennent d'un exposant faux dans la conversion. 1 × 10⁴ est la puissance de 10 la plus proche : c'est une autre convention, mais le manuel définit l'ordre de grandeur par b × 10ⁿ, avec b l'arrondi à l'unité du facteur 8,33 de l'écriture scientifique, ce qui donne 8 × 10³.",
+      "difficulty": 3
+    }
+  ]
+}

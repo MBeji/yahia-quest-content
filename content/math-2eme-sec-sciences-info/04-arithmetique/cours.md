@@ -91,21 +91,21 @@ _Exemple détaillé (chiffre inconnu)_ : dans 83a6, quel chiffre a rend l'entier
 
 > ⚠️ Ne confonds pas les deux critères. La somme des chiffres de 8346 vaut 21 : c'est un multiple de 3, mais pas de 9. Donc 8346 est divisible par 3 et pas par 9.
 
-## ⚡ Le critère par 11 : la somme alternée
+## ⚡ Le critère par 11 : la différence S₁ − S₂
 
 Le point de départ : 11 divise 10² − 1 = 99, et 11 divise 10³ + 1 = 1001. Plus généralement 11 divise 10^(2k) − 1 et 10^(2k+1) + 1. Les puissances de 10 d'exposant pair valent donc « 1 de plus » qu'un multiple de 11, et celles d'exposant impair « 1 de moins » : les chiffres entrent alternativement avec le signe + et le signe −.
 
-On numérote les chiffres **de droite à gauche** : le chiffre des unités est de rang 1, celui des dizaines de rang 2, et ainsi de suite. On note **S₁** la somme des chiffres de rang impair, **S₂** la somme des chiffres de rang pair, et l'on forme la **somme alternée** :
+On numérote les chiffres **de droite à gauche** : le chiffre des unités est de rang 1, celui des dizaines de rang 2, et ainsi de suite. On note **S₁** la somme des chiffres de rang impair, **S₂** la somme des chiffres de rang pair, et l'on forme leur **différence** :
 
 $$ d = S₁ − S₂ $$
 
-> **Retenir.** Si d ≥ 0, l'entier est divisible par 11 si et seulement si d l'est, et le reste de sa division par 11 est le reste de d. Si d < 0, on ajoute à d un multiple de 11 pour le rendre positif : on choisit p tel que d + 11p ≥ 0, et on conclut sur d + 11p.
+> **Retenir.** Si d ≥ 0, l'entier est divisible par 11 si et seulement si d l'est, et le reste de sa division par 11 est le reste de d. Si d < 0, on prend **le plus petit entier naturel p** tel que d + 11p ≥ 0 : l'entier est divisible par 11 si et seulement si d + 11p l'est, et le reste de sa division par 11 est d + 11p.
 
 _Exemple détaillé_ : pour 2749, les rangs impairs portent 9 et 7, les rangs pairs portent 4 et 2. Donc S₁ = 9 + 7 = 16, S₂ = 4 + 2 = 6 et d = 16 − 6 = **10**. Comme 0 ≤ 10 < 11, le reste de 2749 par 11 vaut **10** : ce nombre n'est pas divisible par 11 ✓.
 
-_Exemple détaillé (cas d < 0)_ : pour 7392, S₁ = 2 + 3 = 5 et S₂ = 9 + 7 = 16, donc d = 5 − 16 = −11. On ajoute 11 : d + 11 = 0, qui est bien divisible par 11. Donc **7392 est divisible par 11**, et son reste est 0. On vérifie : 7392 = 11 × 672 ✓.
+_Exemple détaillé (cas d < 0)_ : pour 7392, S₁ = 2 + 3 = 5 et S₂ = 9 + 7 = 16, donc d = 5 − 16 = −11. Le plus petit entier naturel p tel que d + 11p ≥ 0 est p = 1, et d + 11 = 0, qui est bien divisible par 11. Donc **7392 est divisible par 11**, et son reste est 0. On vérifie : 7392 = 11 × 672 ✓.
 
-> ⚠️ Le critère de 11 n'est pas celui de 9 : la somme des chiffres de 7362 vaut 18, ce nombre est donc divisible par 9 — mais sa somme alternée vaut 2 − 6 + 3 − 7 = −8, et 7362 n'est pas divisible par 11.
+> ⚠️ Le critère de 11 n'est pas celui de 9 : la somme des chiffres de 7362 vaut 18, ce nombre est donc divisible par 9 — mais sa différence S₁ − S₂ vaut (2 + 3) − (6 + 7) = −8, et 7362 n'est pas divisible par 11.
 
 ## 🔮 Facteurs premiers, PGCD, PPCM et entiers premiers entre eux
 
@@ -128,7 +128,7 @@ Deux entiers sont **premiers entre eux** lorsque leur PGCD vaut 1, c'est-à-dire
 
 ## 🗝️ Les cinq méthodes du chapitre
 
-1. **Chiffre inconnu.** On traduit le critère en une condition sur la somme des chiffres (ou sur la somme alternée), puis on cherche la seule valeur possible entre 0 et 9.
+1. **Chiffre inconnu.** On traduit le critère en une condition sur la somme des chiffres (ou sur la différence S₁ − S₂), puis on cherche la seule valeur possible entre 0 et 9.
 2. **Reste imposé.** De a = bq + r on tire que b divise a − r. Si la division de 1000 par n laisse 12 pour reste, alors n divise 1000 − 12 = 988, et de plus n > 12 puisque le reste est toujours inférieur au diviseur. Avec deux conditions de ce type, on cherche les diviseurs communs, c'est-à-dire les diviseurs du PGCD.
 3. **Raisonner par cas sur le reste.** Tout entier n s'écrit 3k, 3k + 1 ou 3k + 2. On traite les trois cas : (3k)² = 3(3k²) laisse 0, (3k + 1)² = 3(3k² + 2k) + 1 laisse 1, et (3k + 2)² = 3(3k² + 4k + 1) + 1 laisse 1. Les seuls restes possibles de n² par 3 sont donc **0 et 1**.
 4. **Chercher un cycle.** Le chiffre des unités de 3ⁿ se répète de 4 en 4 : 3, 9, 7, 1, puis 3, 9, 7, 1… Pour connaître celui de 3⁴¹, on divise l'exposant par 4 : 41 = 4 × 10 + 1, le reste est 1, le chiffre des unités est donc celui de 3¹, soit **3**. Le même réflexe donne les jours de la semaine : dans 100 jours, comme 100 = 7 × 14 + 2, on avance de **2** jours seulement.

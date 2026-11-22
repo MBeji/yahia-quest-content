@@ -1,0 +1,135 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Barycentres en situation",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "ABC est un triangle non aplati et M un point variable du plan. Pour lesquelles de ces conditions l'ensemble des points M est-il un cercle ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "‖2MA⃗ + MB⃗ + MC⃗‖ = 8"
+        },
+        {
+          "id": "b",
+          "text": "‖MA⃗ − 3MB⃗ + 2MC⃗‖ = 4"
+        },
+        {
+          "id": "c",
+          "text": "‖3MA⃗ − MB⃗ − MC⃗‖ = 6"
+        },
+        {
+          "id": "d",
+          "text": "‖MA⃗ + MB⃗ − 3MC⃗‖ = 3"
+        },
+        {
+          "id": "e",
+          "text": "‖MA⃗ + MB⃗ + MC⃗‖ = 0"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "Tout dépend de la somme S des coefficients. Pour 2MA⃗ + MB⃗ + MC⃗, S = 4 : avec le barycentre G₁ de (A, 2), (B, 1), (C, 1), la condition devient 4 × MG₁ = 8, soit MG₁ = 2 : cercle. Pour 3MA⃗ − MB⃗ − MC⃗, S = 1 : MG₂ = 6, cercle. Pour MA⃗ + MB⃗ − 3MC⃗, S = −1 : ‖−MG₃⃗‖ = MG₃ = 3, cercle (le signe de S ne change pas la norme). Pour MA⃗ − 3MB⃗ + 2MC⃗, S = 1 − 3 + 2 = 0 : la somme est un vecteur constant, il n'y a pas de barycentre et l'ensemble est le plan entier ou vide, jamais un cercle. Pour MA⃗ + MB⃗ + MC⃗ = 3MG⃗, la condition 3 × MG = 0 donne MG = 0 : l'ensemble est le point G seul, un cercle de rayon nul n'étant pas un cercle.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans un triangle ABC, on a BC = 9, CA = 6 et AB = 5. La bissectrice issue de A coupe [BC] en D, et I est le centre du cercle inscrit. On écrit AI⃗ = k AD⃗. Donne la valeur de k (sous forme décimale).",
+      "answerKey": {
+        "value": 0.55
+      },
+      "explanation": "Avec a = 9, b = 6 et c = 5, le point D vérifie DB/DC = c/b : c'est le barycentre de (B, 6) et (C, 5), affecté du coefficient 11 après regroupement. Le centre I du cercle inscrit est le barycentre de (A, 9), (B, 6) et (C, 5), donc, par barycentre partiel, celui de (A, 9) et (D, 11). La somme vaut 20, d'où AI⃗ = (11/20)AD⃗ et k = 11/20 = 0,55. Contrôle : k est compris entre 0 et 1, I est bien à l'intérieur du triangle, entre A et D.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est un triangle non aplati. On considère les points pondérés (A, 3), (B, 2) et (C, −2). Quelle affirmation est vraie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le barycentre G existe et vérifie AG⃗ = (2/3)BC⃗"
+        },
+        {
+          "id": "b",
+          "text": "Le barycentre G existe et vérifie AG⃗ = (2/3)CB⃗"
+        },
+        {
+          "id": "c",
+          "text": "Le barycentre G n'existe pas, car les coefficients de B et de C sont opposés"
+        },
+        {
+          "id": "d",
+          "text": "Le barycentre G existe et appartient à la droite (BC)"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La somme des trois coefficients vaut 3 + 2 − 2 = 3, non nulle : G existe. Le regroupement de B et C est en revanche impossible, puisque 2 + (−2) = 0. On revient donc à la définition : 3GA⃗ + 2GB⃗ − 2GC⃗ = 0⃗. Comme GB⃗ − GC⃗ = CB⃗, cela s'écrit 3GA⃗ + 2CB⃗ = 0⃗, soit GA⃗ = −(2/3)CB⃗ et AG⃗ = (2/3)CB⃗ ✓. Ce n'est pas (2/3)BC⃗ : le sens du vecteur serait inversé. Les coefficients opposés de B et de C empêchent seulement de les regrouper, pas d'avoir un barycentre pour l'ensemble des trois points. Enfin G se déduit de A par la translation de vecteur (2/3)CB⃗, qui est parallèle à (BC) : G est sur la parallèle à (BC) passant par A, donc pas sur (BC) lui-même.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "ABC est un triangle tel que BC = 6, et G est son centre de gravité. Quel est l'ensemble des points M du plan tels que ‖MA⃗ + MB⃗ + MC⃗‖ = ‖MB⃗ − MC⃗‖ ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cercle de centre G et de rayon 6"
+        },
+        {
+          "id": "b",
+          "text": "Le cercle de centre G et de rayon 18"
+        },
+        {
+          "id": "c",
+          "text": "Le cercle de centre le milieu de [BC] et de rayon 2"
+        },
+        {
+          "id": "d",
+          "text": "Le cercle de centre G et de rayon 2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Pour tout point M, MA⃗ + MB⃗ + MC⃗ = 3MG⃗, de norme 3 × MG. Par ailleurs MB⃗ − MC⃗ = CB⃗ : ce vecteur ne dépend pas de M et sa norme vaut BC = 6. La condition s'écrit donc 3 × MG = 6, soit MG = 2 : c'est le cercle de centre G et de rayon 2 ✓. Un rayon de 6 oublie de diviser par la somme 3 des coefficients ; un rayon de 18 la multiplie au lieu de diviser ; quant au milieu de [BC], il n'intervient pas : le centre est le barycentre qui absorbe la somme MA⃗ + MB⃗ + MC⃗.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur une droite, A et B sont deux points tels que AB = 8. Soit G le barycentre des points pondérés (A, 7) et (B, −3). Donne la distance BG.",
+      "answerKey": {
+        "value": 14
+      },
+      "explanation": "La somme des coefficients vaut 4, non nulle. On a BG⃗ = (α/(α + β))BA⃗ = (7/4)BA⃗, donc BG = (7/4) × 8 = 14. Contrôle par l'autre écriture : AG⃗ = (−3/4)AB⃗, donc G est du côté opposé à B par rapport à A, avec AG = (3/4) × 8 = 6 ; alors BG = AB + AG = 8 + 6 = 14. Les coefficients de signes contraires placent G hors du segment, du côté du coefficient de plus grande valeur absolue, ici celui de A.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève cherche l'ensemble des points M tels que ‖2MA⃗ − 5MB⃗‖ = 12. Il écrit : « Les coefficients ont pour somme −3, non nulle, donc le barycentre G de (A, 2) et (B, −5) existe. Alors 2MA⃗ − 5MB⃗ = −3MG⃗. Donc ‖−3MG⃗‖ = −3 × MG = 12, d'où MG = −4 : l'ensemble est vide. » Le résultat est faux, car l'ensemble est un cercle. Où est l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La réduction en −3MG⃗ : le facteur devrait être 7"
+        },
+        {
+          "id": "b",
+          "text": "L'existence de G : des coefficients de signes contraires n'admettent pas de barycentre"
+        },
+        {
+          "id": "c",
+          "text": "Le calcul de la norme : ‖−3MG⃗‖ vaut 3 × MG et non −3 × MG"
+        },
+        {
+          "id": "d",
+          "text": "L'énoncé : une norme ne peut pas valoir 12 avec un coefficient négatif"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le facteur qui sort est bien la somme algébrique 2 + (−5) = −3, et G existe puisque cette somme est non nulle, même avec des coefficients de signes contraires. L'erreur est dans la norme : ‖kv⃗‖ = |k| × ‖v⃗‖, donc ‖−3MG⃗‖ = 3 × MG ✓. La condition devient 3 × MG = 12, soit MG = 4 : l'ensemble est le cercle de centre G et de rayon 4. Un coefficient négatif n'interdit en rien la condition, car le signe disparaît dans la norme.",
+      "difficulty": 3
+    }
+  ]
+}

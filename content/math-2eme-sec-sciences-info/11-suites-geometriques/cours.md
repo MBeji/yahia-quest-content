@@ -117,7 +117,7 @@ Si a, b, c sont consécutifs, alors b = aq et c = bq, donc b/a = c/b. En multipl
 
 $$ b² = ac $$
 
-> **Retenir (moyenne géométrique).** Si a, b et c sont, dans cet ordre, trois termes consécutifs d'une suite géométrique, alors **b² = ac**. Lorsque les trois termes sont strictement positifs, on écrit **b = √(ac)** et l'on dit que b est la **moyenne géométrique** de a et c.
+> **Retenir (moyenne géométrique).** Si a, b et c sont, dans cet ordre, trois termes consécutifs d'une suite géométrique, alors **b² = ac**. Lorsque a, b et c sont des réels positifs, on écrit **b = √(ac)** et l'on dit que b est la **moyenne géométrique** de a et c.
 
 _Exemple détaillé_ : 3 ; b ; 27 sont en progression géométrique avec b > 0. Alors b² = 3 × 27 = 81, donc b = **9**. On vérifie : 3 ; 9 ; 27 a bien pour raison 3.
 
@@ -159,7 +159,7 @@ Recopie une suite géométrique dans un tableur, tire la formule vers le bas sur
 
 **Les grains de blé de l'échiquier.** La légende raconte que l'inventeur du jeu d'échecs demanda au roi 1 grain de blé sur la première case, 2 sur la deuxième, 4 sur la troisième, en doublant jusqu'à la 64ᵉ. Le total est la somme de 64 termes de raison 2 partant de 1, soit **2⁶⁴ − 1** grains — de quoi charger des milliers de bateaux. Le roi croyait payer une poignée de blé.
 
-**Les nombres parfaits.** Un entier est dit **parfait** lorsqu'il est égal à la somme de ses diviseurs propres : 6 = 1 + 2 + 3, puis 28, 496, 8128. Euclide en donne la fabrique : si p = 2ⁿ⁺¹ − 1 est **premier**, alors N = 2ⁿ × p est parfait. Pour n = 4 : p = 2⁵ − 1 = 31, qui est premier, et N = 16 × 31 = **496**. Les nombres 2ⁿ⁺¹ − 1 premiers portent le nom de **nombres de Mersenne**.
+**Les nombres parfaits.** Un entier est dit **parfait** lorsqu'il est égal à la somme de ses diviseurs propres : 6 = 1 + 2 + 3, puis 28, 496, 8128. Voici la fabrique (Euclide en a établi le sens réciproque « si p = 2ⁿ⁺¹ − 1 est premier, N est parfait ») : soit p un nombre **premier différent de 2** et N = 2ⁿ × p ; alors N est parfait **si et seulement si p = 2ⁿ⁺¹ − 1** (les diviseurs de N sont les 2ᵏ et les p·2ᵏ, et leur somme est une somme géométrique). Pour n = 4 : p = 2⁵ − 1 = 31, qui est premier et différent de 2, et N = 16 × 31 = **496**. (On appelle parfois « nombres premiers de Mersenne » les nombres premiers de la forme 2ⁿ⁺¹ − 1 : c'est un nom d'usage, que le manuel n'imprime pas.)
 
 > 🗡️ **Le pont entre les deux familles de suites.** Si une suite (uₙ) vérifie uₙ₊₁ = uₙ + 3 (elle est arithmétique de raison 3) et si l'on pose vₙ = 2^uₙ, alors vₙ₊₁/vₙ = 2^(uₙ + 3)/2^uₙ = 2³ = 8 : la suite (vₙ) est **géométrique de raison 8**. L'exponentielle transforme une addition d'exposants en une multiplication — c'est le mécanisme qui relie les deux chapitres.
 
