@@ -1,0 +1,224 @@
+{
+  "title": "🏛️ مناظرة 2024 · التمرين 2 ⭐⭐⭐: مقارنة جذرين، ومربّع فرق، وجذر مربّع، وإنطاق مقام، ثمّ ترتيب",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 33,
+  "questions": [
+    {
+      "prompt": "في دراسة العدد a = √(197 − 42√22) نقارن أوّلًا العددين الموجبين 7√2 و 3√11 دون استعمال آلة حاسبة. أيّ حكم مع حجّته هو الصحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "7√2 < 3√11 ، لأنّ (7√2)² = 98 و (3√11)² = 99"
+        },
+        {
+          "id": "b",
+          "text": "7√2 > 3√11 ، لأنّ (7√2)² = 49 و (3√11)² = 9",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "c",
+          "text": "7√2 < 3√11 ، لأنّ (7√2)² = 14 و (3√11)² = 33",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "d",
+          "text": "7√2 > 3√11 ، لأنّ المعامل 7 أكبر من المعامل 3",
+          "misconceptionTag": "math.num.comparaison-radicaux-partie-par-partie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "العددان موجبان، فنقارن مربّعيهما: (7√2)² = 7² × (√2)² = 49 × 2 = 98 و (3√11)² = 3² × (√11)² = 9 × 11 = 99. وبما أنّ 98 < 99 فإنّ 7√2 < 3√11 ✓. الخطأ الشائع تربيع المعامل وحده فيخرج 49 و 9 ويُحكم بعكس الصواب ؛ أو تربيع الجذر وحده فيخرج 7 × 2 = 14 و 3 × 11 = 33 فيبدو الحكم صحيحًا بالمصادفة والحجّة باطلة ؛ أو الاكتفاء بمقارنة المعاملين 7 و 3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين الموجبين 7√2 و 3√11. ما الكتابة المنشورة والمبسّطة للعدد التالي ؟\nc = (7√2 − 3√11)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "197 + 42√22",
+          "misconceptionTag": "math.alg.carre-difference-signes"
+        },
+        {
+          "id": "b",
+          "text": "−1",
+          "misconceptionTag": "math.alg.carre-difference-ecrit-difference-carres"
+        },
+        {
+          "id": "c",
+          "text": "197 − 21√22",
+          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+        },
+        {
+          "id": "d",
+          "text": "197 − 42√22"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نطبّق المتطابقة (u − v)² = u² − 2uv + v² مع u = 7√2 و v = 3√11 : u² = 98 و v² = 99 و 2uv = 2 × 7 × 3 × √2 × √11 = 42√22. إذن c = 98 − 42√22 + 99 = 197 − 42√22 ✓. الخطأ الشائع إعطاء الجداء المضاعف إشارة الجمع فيخرج 197 + 42√22 ؛ أو معاملة المربّع كفرق مربّعين فيخرج 98 − 99 = −1 ؛ أو كتابة الجداء المضاعف uv بدل 2uv فيخرج 197 − 21√22.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نكتب العدد الحقيقي b على أبسط صورة ، حيث:\nb = 27/(√11 + √2) + 2√50\nما الكتابة الصحيحة له ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√11 + 47√2",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "b",
+          "text": "3√11 + 7√2"
+        },
+        {
+          "id": "c",
+          "text": "3√11 − 3√2 + 10",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "d",
+          "text": "3√11 + 9√2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نضرب بسط الكسر ومقامه في مرافق المقام √11 − √2 : (√11 + √2)(√11 − √2) = 11 − 2 = 9 ، فيكون 27/(√11 + √2) = 27(√11 − √2)/9 = 3(√11 − √2) = 3√11 − 3√2. وبما أنّ √50 = √(25 × 2) = 5√2 فإنّ 2√50 = 10√2. إذن b = 3√11 − 3√2 + 10√2 = 3√11 + 7√2 ✓. الخطأ الشائع إخراج العامل 25 دون أخذ جذره فيصير √50 = 25√2 و 2√50 = 50√2 ويخرج 3√11 + 47√2 ؛ أو إدخال المعامل 2 تحت الجذر دون تربيعه فيصير 2√50 = √(2 × 50) = √100 = 10 ويخرج 3√11 − 3√2 + 10 ؛ أو توزيع 3 على الحدّ الأوّل فقط فيخرج 3√11 − √2 + 10√2 = 3√11 + 9√2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ما قيمة الجذر التربيعي التالي ؟\na = √(197 − 42√22)",
+      "options": [
+        {
+          "id": "a",
+          "text": "7√2 − 3√11",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "7√2 + 3√11"
+        },
+        {
+          "id": "c",
+          "text": "3√11 − 7√2"
+        },
+        {
+          "id": "d",
+          "text": "(197 − 42√22)/2",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نلاحظ أنّ (7√2 − 3√11)² = 98 − 42√22 + 99 = 197 − 42√22 ، فيكون a = √((7√2 − 3√11)²) = |7√2 − 3√11|. وبما أنّ (7√2)² = 98 < 99 = (3√11)² فإنّ 7√2 < 3√11 ، أي 7√2 − 3√11 < 0 ، فـ |7√2 − 3√11| = 3√11 − 7√2. إذن a = 3√11 − 7√2 ✓ وهو عدد موجب. الخطأ الشائع كتابة جذر المربّع دون قيمة مطلقة فيخرج 7√2 − 3√11 وهو عدد سالب لا يصلح جذرًا تربيعيًّا ؛ أو جمع العددين بدل طرحهما ؛ أو أخذ نصف العدد بدل جذره.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين الحقيقيّين:\na = 3√11 − 7√2\nb = 3√11 + 7√2\nأيّ الأعداد التالية يساوي 1/a بعد التخلّص من الجذر في المقام ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3√11 + 7√2"
+        },
+        {
+          "id": "b",
+          "text": "(3√11 + 7√2)/9",
+          "misconceptionTag": "math.num.exposant-porte-sur-un-seul-facteur"
+        },
+        {
+          "id": "c",
+          "text": "(7√2 − 3√11)/9"
+        },
+        {
+          "id": "d",
+          "text": "7√2 − 3√11",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "1/a = 1/(3√11 − 7√2). نضرب البسط والمقام في المرافق 3√11 + 7√2 : (3√11 − 7√2)(3√11 + 7√2) = (3√11)² − (7√2)² = 99 − 98 = 1. إذن 1/a = (3√11 + 7√2)/1 = 3√11 + 7√2 ، أي 1/a = b ✓. الخطأ الشائع تربيع الجذر وحده في المقام فيخرج 11 − 2 = 9 ثمّ القسمة على 9 ؛ أو كتابة العدد المقابل 7√2 − 3√11 بدل المقلوب ؛ أو الجمع بين الخطأين.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين الحقيقيّين المقلوبين:\na = 3√11 − 7√2\nb = 3√11 + 7√2\nما حكم a بالنسبة إلى العددين 0 و 1 ، مع حجّته ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0 < a < 1 ، لأنّ a مقلوب b و b موجب"
+        },
+        {
+          "id": "b",
+          "text": "a > 1 ، لأنّ a مقلوب b و b أكبر من 1 والمقلوب يحفظ الترتيب",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        },
+        {
+          "id": "c",
+          "text": "0 < a < 1 ، لأنّ a مقلوب b و b أكبر من 1"
+        },
+        {
+          "id": "d",
+          "text": "a < 0 ، لأنّ a = 3√11 − 7√2 و 7 > 3",
+          "misconceptionTag": "math.num.comparaison-radicaux-partie-par-partie"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "العدد b = 3√11 + 7√2 أكبر من 1 ، لأنّه مجموع عددين موجبين أوّلهما 3√11 > 1. وأخذ المقلوب يقلب ترتيب عددين موجبين: من b > 1 نستنتج 1/b < 1/1 ، أي a < 1. وفوق ذلك a = 1/b موجب لأنّ b موجب. إذن 0 < a < 1 ✓. الخطأ الشائع الاكتفاء بكون b موجبًا ، فمقلوب العدد الموجب قد يتجاوز 1 (مقلوب 1/2 هو 2) ؛ أو الظنّ أنّ المقلوب يحفظ الترتيب فيُحكم بأنّ a > 1 ؛ أو مقارنة المعاملين 7 و 3 فقط فيُحكم بأنّ 7√2 أكبر من 3√11 وأنّ a سالب.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد الحقيقي a الذي يحقّق:\na = 3√11 − 7√2\na² = 197 − 42√22\n0 < a < 1\nأيّ سلسلة استنتاجات تبرّر المتباينة التالية ؟\n197 + 7√2 < 3√11 + 42√22",
+      "options": [
+        {
+          "id": "a",
+          "text": "a² > a ⟹ 197 − 42√22 > 3√11 − 7√2 ⟹ 197 + 7√2 > 3√11 + 42√22",
+          "misconceptionTag": "math.num.carre-et-racine-entre-zero-et-un"
+        },
+        {
+          "id": "b",
+          "text": "a² < a ⟹ 197 − 42√22 < 3√11 − 7√2 ⟹ 197 + 7√2 < 3√11 + 42√22"
+        },
+        {
+          "id": "c",
+          "text": "a² < a ⟹ 197 − 42√22 < 3√11 − 7√2 ⟹ 197 + 42√22 < 3√11 + 7√2",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "a² > a ⟹ 197 − 42√22 > 3√11 − 7√2 ⟹ 197 + 42√22 > 3√11 + 7√2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بما أنّ 0 < a < 1 ، نضرب طرفي المتباينة a < 1 في العدد الموجب a فنحصل على a × a < a × 1 ، أي a² < a. نعوّض: 197 − 42√22 < 3√11 − 7√2. ثمّ ننقل الحدّين السالبين مع تغيير إشارتيهما: نضيف 42√22 و 7√2 إلى الطرفين فنحصل على 197 + 7√2 < 3√11 + 42√22 ✓. الخطأ الشائع الظنّ أنّ التربيع يكبّر العدد فيُكتب a² > a ، وهذا خاطئ لعدد محصور بين 0 و 1 فتنعكس المتباينة ؛ أو نقل الحدّين دون تغيير إشارتيهما فتخرج المتباينة 197 + 42√22 < 3√11 + 7√2.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.alg.identites-remarquables"
+      ]
+    }
+  ]
+}

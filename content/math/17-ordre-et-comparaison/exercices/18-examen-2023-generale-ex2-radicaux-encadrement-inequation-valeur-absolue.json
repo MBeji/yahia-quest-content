@@ -1,0 +1,246 @@
+{
+  "title": "🏛️ مناظرة 2023 · التمرين 2 ⭐⭐⭐: اختزال عبارة جذرية، وحصر، ثمّ متراجحة بقيمة مطلقة وإشارة عبارة",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 18,
+  "questions": [
+    {
+      "prompt": "ننشر ثمّ نختزل العدد الحقيقي a المعرَّف بما يلي:\na = 8 − 4√3 + 4(1 − √3)²\nأيّ الكتابات التالية تساويه ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "24 − 4√3",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "72 − 36√3",
+          "misconceptionTag": "math.num.exposant-porte-sur-le-coefficient"
+        },
+        {
+          "id": "c",
+          "text": "24 − 12√3"
+        },
+        {
+          "id": "d",
+          "text": "−4√3",
+          "misconceptionTag": "math.alg.carre-difference-ecrit-difference-carres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "ننشر المربّع: (1 − √3)² = 1 − 2√3 + 3 = 4 − 2√3. ثمّ 4(4 − 2√3) = 16 − 8√3 ، ومنه a = 8 − 4√3 + 16 − 8√3 = 24 − 12√3 ✓. الخطأ الشائع إسقاط الجداء المضاعف فيصير (1 − √3)² = 1 + 3 = 4 ويخرج 8 − 4√3 + 16 = 24 − 4√3 ؛ أو إدخال المعامل 4 في التربيع فيصير 4(1 − √3)² = (4 − 4√3)² = 16 − 32√3 + 48 = 64 − 32√3 ويخرج 8 − 4√3 + 64 − 32√3 = 72 − 36√3 ؛ أو معاملة المربّع كفرق مربّعين فيصير (1 − √3)² = 1 − 3 = −2 ويخرج 8 − 4√3 − 8 = −4√3.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نُبسّط الجذر في العدد الحقيقي b ثمّ نختزل الكسر:\nb = (4 + √12)/24\nما الصورة المختزلة للعدد b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(2 + √3)/12"
+        },
+        {
+          "id": "b",
+          "text": "5/12",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "c",
+          "text": "(1 + √3)/6",
+          "misconceptionTag": "math.num.facteur-racine-sans-carre"
+        },
+        {
+          "id": "d",
+          "text": "(2 + √3)/24"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نُخرج المربّع الكامل من تحت الجذر: √12 = √(4 × 3) = 2√3. ومنه b = (4 + 2√3)/24 = 2(2 + √3)/24 = (2 + √3)/12 ✓. الخطأ الشائع أخذ نصف العدد بدل جذره فيصير √12 = 6 ويخرج (4 + 6)/24 = 5/12 ؛ أو إخراج العامل 4 دون أخذ جذره فيصير √12 = 4√3 ويخرج (4 + 4√3)/24 = (1 + √3)/6 ؛ أو قسمة البسط على 2 دون قسمة المقام فيبقى (2 + √3)/24.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد الحقيقي:\nb = (2 + √3)/12\nما الكتابة الصحيحة للعدد 1/b بعد التخلّص من الجذر في المقام ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "12(2 − √3)/7",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "b",
+          "text": "12(2 + √3)/7"
+        },
+        {
+          "id": "c",
+          "text": "12(2 + √3)"
+        },
+        {
+          "id": "d",
+          "text": "12(2 − √3)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "1/b = 12/(2 + √3). نضرب البسط والمقام في مرافق المقام 2 − √3 : 12(2 − √3)/((2 + √3)(2 − √3)) = 12(2 − √3)/(2² − (√3)²) = 12(2 − √3)/(4 − 3) = 12(2 − √3) ✓. الخطأ الشائع جمع المربّعين في المقام بدل طرحهما فيخرج 4 + 3 = 7 ثمّ 12(2 − √3)/7 ؛ أو قلب الكسر بكتابة 12 × (2 + √3) دون أيّ حساب للمقام.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نحلّ في ℝ المتراجحة التالية:\n|2x − 7| < 1\nما مجموعة الأعداد x التي تحقّقها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; 4["
+        },
+        {
+          "id": "b",
+          "text": "]3 ; 4["
+        },
+        {
+          "id": "c",
+          "text": "]−∞ ; 3[ ∪ ]4 ; +∞["
+        },
+        {
+          "id": "d",
+          "text": "]6 ; 8[",
+          "misconceptionTag": "math.alg.coefficient-non-divise"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الشرط |2x − 7| < 1 يعني بُعد 2x − 7 عن الصفر أصغر من 1 ، أي −1 < 2x − 7 < 1. نضيف 7 إلى الأطراف الثلاثة: 6 < 2x < 8 ، ثمّ نقسم على 2 (عدد موجب فلا ينقلب الترتيب): 3 < x < 4. مجموعة الحلول ]3 ; 4[ ✓. الخطأ الشائع الاكتفاء بالشرط 2x − 7 < 1 وإهمال الشرط −1 < 2x − 7 فتخرج ]−∞ ; 4[ ؛ أو حلّ المتراجحة المعاكسة |2x − 7| > 1 فتخرج ]−∞ ; 3[ ∪ ]4 ; +∞[ ؛ أو التوقّف عند 6 < 2x < 8 دون القسمة على 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ 1 < 3 < 4 ، ونعتبر العدد:\nb = (2 + √3)/12\nما الحصر الصحيح للعدد b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "36 < b < 48",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "b",
+          "text": "1/4 < b < 1/3"
+        },
+        {
+          "id": "c",
+          "text": "3 < b < 4"
+        },
+        {
+          "id": "d",
+          "text": "1/6 < b < 1/4"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الجذر التربيعي يحفظ الترتيب بين عددين موجبين: من 1 < 3 < 4 نستنتج 1 < √3 < 2. نضيف 2 إلى الأطراف الثلاثة: 3 < 2 + √3 < 4. ثمّ نقسم على 12 وهو عدد موجب فلا ينقلب الترتيب: 3/12 < b < 4/12 ، أي 1/4 < b < 1/3 ✓. الخطأ الشائع الضرب في 12 بدل القسمة فيخرج 36 < b < 48 ؛ أو التوقّف عند 3 < 2 + √3 < 4 دون القسمة فيُكتب 3 < b < 4 ؛ أو جعل √3 بين 0 و 1 فيخرج 2 < 2 + √3 < 3 ثمّ 1/6 < b < 1/4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ليكن b عددًا موجبًا يحقّق:\n1/4 < b < 1/3\nونضع a = 1/b. ما الحكم الصحيح على a ، مع حجّته ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 < a < 4 ، لأنّ المقلوب يقلب ترتيب عددين موجبين"
+        },
+        {
+          "id": "b",
+          "text": "a < 3 ، لأنّ b < 1/3 والمقلوب يحفظ الترتيب",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        },
+        {
+          "id": "c",
+          "text": "a > 4 ، لأنّ b > 1/4 والمقلوب يحفظ الترتيب",
+          "misconceptionTag": "math.num.inverse-conserve-l-ordre"
+        },
+        {
+          "id": "d",
+          "text": "1/4 < a < 1/3 ، لأنّ a و b مقلوبان فلهما الحصر نفسه"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "العدد b موجب ، وأخذ المقلوب يقلب ترتيب عددين موجبين. من b < 1/3 نستنتج 1/b > 3 أي a > 3 ، ومن b > 1/4 نستنتج 1/b < 4 أي a < 4. إذن 3 < a < 4 ✓. الخطأ الشائع الظنّ أنّ المقلوب يحفظ الترتيب فتُكتب a < 3 انطلاقًا من b < 1/3 ، أو a > 4 انطلاقًا من b > 1/4 ؛ أو الظنّ أنّ العددين المقلوبين يشتركان في الحصر نفسه.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد الحقيقي a الذي يحقّق:\n|2a − 7| < 1\nما قيمة العدد التالي ؟\nE = |a − 3| + |a − 4|",
+      "options": [
+        {
+          "id": "a",
+          "text": "2a − 7",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "b",
+          "text": "7 − 2a",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "c",
+          "text": "−1"
+        },
+        {
+          "id": "d",
+          "text": "1"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "الشرط |2a − 7| < 1 يعني 3 < a < 4. إذن a − 3 > 0 فـ |a − 3| = a − 3 ، و a − 4 < 0 فـ |a − 4| = 4 − a. ومنه E = (a − 3) + (4 − a) = 1 ✓. الخطأ الشائع رفع رمز القيمة المطلقة دون اختبار الإشارة: |a − 4| = a − 4 فيخرج (a − 3) + (a − 4) = 2a − 7 ؛ أو |a − 3| = 3 − a فيخرج (3 − a) + (4 − a) = 7 − 2a ؛ وإذا أُخطئ في الرمزين معًا خرج (3 − a) + (a − 4) = −1.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعتبر العدد الحقيقي a الذي يحقّق:\n|2a − 7| < 1\nما إشارة العدد التالي ، وما الحجّة الصحيحة ؟\nS = |a − 3| + |a − 4| − (2a − 7)²",
+      "options": [
+        {
+          "id": "a",
+          "text": "S سالب ، لأنّ S = 1 − (2a − 7)² و (2a − 7)² > 1 إذ التربيع يكبّر العدد",
+          "misconceptionTag": "math.num.carre-et-racine-entre-zero-et-un"
+        },
+        {
+          "id": "b",
+          "text": "S = 0 ، لأنّ S = 1 − (2a − 7)² و (2a − 7)² = 1"
+        },
+        {
+          "id": "c",
+          "text": "S موجب ، لأنّ S = 1 − (2a − 7)² و (2a − 7)² < 1"
+        },
+        {
+          "id": "d",
+          "text": "لا يمكن تحديد إشارة S ، لأنّ S = (2a − 7) − (2a − 7)² وإشارة 2a − 7 مجهولة",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "الشرط |2a − 7| < 1 يعني 3 < a < 4 ، فـ |a − 3| + |a − 4| = (a − 3) + (4 − a) = 1. إذن S = 1 − (2a − 7)². ولأنّ |2a − 7| < 1 فإنّ مربّعه أصغر من 1 أيضًا (التربيع يحفظ الترتيب بين عددين موجبين وبالتالي |2a − 7|² < 1) ، أي (2a − 7)² < 1 ، ومنه S > 0 ✓. الخطأ الشائع الظنّ أنّ التربيع يكبّر العدد دائمًا ، وهذا غير صحيح لعدد محصور بين 0 و 1 ؛ أو معاملة الشرط الصارم كأنّه مساواة |2a − 7| = 1 فيخرج S = 0 ؛ أو رفع رمزَي القيمة المطلقة دون اختبار الإشارة فيبقى المجموع 2a − 7 وتضيع إشارة S.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.ordre-encadrement"
+      ]
+    }
+  ]
+}

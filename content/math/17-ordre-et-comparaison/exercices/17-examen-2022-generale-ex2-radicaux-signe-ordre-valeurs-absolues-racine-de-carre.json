@@ -1,0 +1,221 @@
+{
+  "title": "🏛️ مناظرة 2022 · التمرين 2 ⭐⭐⭐: اختزال عبارة جذرية، وإشارة وترتيب، ثمّ قيم مطلقة وجذر مربّع",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 17,
+  "questions": [
+    {
+      "prompt": "نبسّط العدد الحقيقي a المعرَّف بما يلي:\na = [16 + √5 − (√5 + 2)²]/2\nما الكتابة المبسّطة الصحيحة للعدد a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(7 + √5)/2",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "(7 − 3√5)/2"
+        },
+        {
+          "id": "c",
+          "text": "(7 + 5√5)/2",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "d",
+          "text": "(7 − √5)/2",
+          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نبدأ بنشر المربّع: (√5 + 2)² = (√5)² + 2 × √5 × 2 + 2² = 5 + 4√5 + 4 = 9 + 4√5. ثمّ نطرح الجداء بأكمله: 16 + √5 − (9 + 4√5) = 16 + √5 − 9 − 4√5 = 7 − 3√5. إذن a = (7 − 3√5)/2 ✓. الخطأ الشائع إسقاط الجداء المضاعف فيصير (√5 + 2)² = 5 + 4 = 9 ويخرج 16 + √5 − 9 = 7 + √5 ؛ أو تطبيق إشارة الطرح على الحدّ الأوّل وحده فيخرج 16 + √5 − 9 + 4√5 = 7 + 5√5 ؛ أو كتابة √5 × 2 = 2√5 فيصير الجداء المضاعف 2√5 بدل 4√5 ويخرج 16 + √5 − 9 − 2√5 = 7 − √5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نريد تحديد إشارة العدد التالي:\na = (7 − 3√5)/2\nأيّ حكم مع حجّته هو الصحيح ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a موجب ، لأنّ 7² = 49 و (3√5)² = 45 فـ 7 > 3√5"
+        },
+        {
+          "id": "b",
+          "text": "a سالب ، لأنّ 7² = 49 و (3√5)² = 225 فـ 7 < 3√5"
+        },
+        {
+          "id": "c",
+          "text": "a سالب ، لأنّ 3√5 = 3 × 5 = 15 وهو أكبر من 7",
+          "misconceptionTag": "math.num.comparaison-radical-et-entier"
+        },
+        {
+          "id": "d",
+          "text": "a موجب ، لأنّ 7 > 3 فالفرق 7 − 3√5 موجب",
+          "misconceptionTag": "math.num.comparaison-radicaux-partie-par-partie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "العددان 7 و 3√5 موجبان، فنقارنهما بمقارنة مربّعيهما: 7² = 49 و (3√5)² = 3² × 5 = 45 ، وبما أنّ 49 > 45 فإنّ 7 > 3√5 ، أي 7 − 3√5 > 0 ، فالعدد a = (7 − 3√5)/2 موجب ✓. الخطأ الشائع حساب (3√5)² = 9 × 25 = 225 بتربيع √5 على أنّها 5 ، فيُحكم بأنّ 7 < 3√5 ؛ أو حذف الجذر فتُقارن 3 × 5 = 15 بالعدد 7 ؛ أو الاكتفاء بمقارنة المعاملين 7 و 3 دون تربيع.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعتبر العددين الحقيقيّين:\na = (7 − 3√5)/2\nb = (5 + 3√5)/10\nما العلاقة بين العددين b و 1 − a ، وما الحجّة الصحيحة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "b × (1 − a) = (25 − 45)/20 = −1 ، فالعددان متقابلان",
+          "misconceptionTag": "math.num.oppose-inverse-confondus"
+        },
+        {
+          "id": "b",
+          "text": "b × (1 − a) = (45 + 25)/20 = 7/2 ، فالعددان ليسا مقلوبين",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "b × (1 − a) = (45 − 25)/20 = 1 ، فالعددان مقلوبان"
+        },
+        {
+          "id": "d",
+          "text": "b × (1 − a) = (45 − 5)/20 = 2 ، فالعددان ليسا مقلوبين",
+          "misconceptionTag": "math.alg.difference-carres-second-terme-non-eleve-au-carre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب أوّلًا 1 − a = 1 − (7 − 3√5)/2 = (2 − 7 + 3√5)/2 = (3√5 − 5)/2. ثمّ b × (1 − a) = (5 + 3√5)(3√5 − 5)/20 ، وهو جداء من الشكل (u + v)(u − v) = u² − v² مع u = 3√5 و v = 5 ، أي ((3√5)² − 5²)/20 = (45 − 25)/20 = 20/20 = 1 ✓. جداء العددين 1 ، فهما مقلوبان. الخطأ الشائع قلب ترتيب الطرح فيخرج (25 − 45)/20 = −1 ثمّ الخلط بين المقلوب والمقابل ؛ أو جمع المربّعين بدل طرحهما فيخرج (45 + 25)/20 = 7/2 ؛ أو ترك 5 دون تربيع فيخرج (45 − 5)/20 = 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نقارن العدد a بالعدد 1 ، حيث:\na = (7 − 3√5)/2\nأيّ استدلال من الاستدلالات التالية سليم ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "a < 1 ، لأنّ 1 − a = (3√5 − 5)/2 موجب إذ 45 > 25"
+        },
+        {
+          "id": "b",
+          "text": "a > 1 ، لأنّ 1 − a = (−5 − 3√5)/2 وهو عدد سالب",
+          "misconceptionTag": "math.alg.moins-devant-parenthese"
+        },
+        {
+          "id": "c",
+          "text": "a > 1 ، لأنّ a − 1 = (5 − 3√5)/2 وهو عدد موجب لأنّ 5 > 3",
+          "misconceptionTag": "math.num.comparaison-radicaux-partie-par-partie"
+        },
+        {
+          "id": "d",
+          "text": "a < 1 ، لأنّ a = (7 − 3√5)/2 وبسطه 7 − 3√5 موجب"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب الفرق 1 − a = 1 − (7 − 3√5)/2 = (2 − 7 + 3√5)/2 = (3√5 − 5)/2. العددان 3√5 و 5 موجبان و (3√5)² = 45 > 25 = 5² ، فـ 3√5 > 5 ، إذن 1 − a > 0 أي a < 1 ✓. الخطأ الشائع تطبيق إشارة الطرح على الحدّ الأوّل وحده: 1 − a = (2 − 7 − 3√5)/2 = (−5 − 3√5)/2 فيُحكم بأنّ الفرق سالب ؛ أو مقارنة 5 مع 3 في العدد (5 − 3√5) دون تربيع فيُحكم بأنّه موجب ؛ أو الظنّ أنّ العدد الموجب أصغر من 1 دائمًا، والحال أنّ 3/2 مثلًا موجب وأكبر من 1.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.ordre-encadrement",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العدد a يحقّق 0 < a < 1. ما تعميل العبارة 1 − a² ، وما إشارتها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 − a² = (1 − a)(1 + a) ، وهي سالبة لأنّ 1 − a و 1 + a متعاكسا الإشارة"
+        },
+        {
+          "id": "b",
+          "text": "1 − a² = (1 − a)² ، وهي موجبة لأنّها مربّع عدد حقيقي",
+          "misconceptionTag": "math.alg.difference-carres-confondue"
+        },
+        {
+          "id": "c",
+          "text": "1 − a² = (1 − a)² ، وهي سالبة لأنّ a < 1"
+        },
+        {
+          "id": "d",
+          "text": "1 − a² = (1 − a)(1 + a) ، وهي موجبة لأنّ 1 − a و 1 + a موجبان"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "العبارة 1 − a² = 1² − a² فرق مربّعين ، فتُعمَّل: (1 − a)(1 + a). بما أنّ 0 < a < 1 فإنّ 1 − a > 0 و 1 + a > 0 ، وجداء عددين موجبين موجب ، إذن 1 − a² > 0 ✓. الخطأ الشائع الخلط بين فرق المربّعين ومربّع الفرق: (1 − a)² = 1 − 2a + a² ولا يساوي 1 − a² ؛ كما أنّ العاملين 1 − a و 1 + a موجبان معًا لا متعاكسا الإشارة.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العدد a يحقّق 0 < a < 1. ما قيمة العبارة التالية بعد رفع رمزَي القيمة المطلقة ؟\nE = 2|a − 1| − |a² − 1|",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 − 2a − a²",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "b",
+          "text": "−3 + 2a + a²",
+          "misconceptionTag": "math.num.valeur-absolue-signe-du-contenu-non-teste"
+        },
+        {
+          "id": "c",
+          "text": "1 − 2a + a²"
+        },
+        {
+          "id": "d",
+          "text": "−1 + 2a − a²"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "بما أنّ a < 1 فإنّ a − 1 < 0 ، إذن |a − 1| = 1 − a. وبما أنّ 0 < a < 1 فإنّ a² < 1 ، أي a² − 1 < 0 ، إذن |a² − 1| = 1 − a². ومنه E = 2(1 − a) − (1 − a²) = 2 − 2a − 1 + a² = 1 − 2a + a² ✓. الخطأ الشائع رفع رمز واحد دون اختبار إشارة ما بداخله: |a² − 1| = a² − 1 فيخرج 2(1 − a) − (a² − 1) = 3 − 2a − a² ؛ أو |a − 1| = a − 1 فيخرج 2(a − 1) − (1 − a²) = −3 + 2a + a² ؛ وإذا رُفع الرمزان معًا دون اختبار خرج 2(a − 1) − (a² − 1) = −1 + 2a − a².",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.ordre-encadrement"
+      ]
+    },
+    {
+      "prompt": "نعلم أنّ العدد a يحقّق 0 < a < 1. ما قيمة العدد التالي ؟\nr = √((a − 1)²)",
+      "options": [
+        {
+          "id": "a",
+          "text": "a − 1",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "1 − a"
+        },
+        {
+          "id": "c",
+          "text": "غير معرّف ، لأنّ (a − 1)² = a² − 1 وهو سالب",
+          "misconceptionTag": "math.alg.carre-difference-ecrit-difference-carres"
+        },
+        {
+          "id": "d",
+          "text": "(1 − a)²"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "الجذر التربيعي لمربّع عدد x يساوي |x| لا x ، أي r = |a − 1|. بما أنّ a < 1 فإنّ a − 1 < 0 ، إذن |a − 1| = −(a − 1) = 1 − a ، وهو عدد موجب كما يجب أن يكون جذر تربيعي ✓. الخطأ الشائع كتابة r = a − 1 دون قيمة مطلقة فيخرج عدد سالب ؛ أو نشر (a − 1)² على أنّه فرق مربّعين a² − 1 فيبدو ما تحت الجذر سالبًا ؛ أو نسيان الجذر والاكتفاء بتغيير الإشارة وكتابة مربّع الفرق.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.valeur-absolue",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

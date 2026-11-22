@@ -1,0 +1,152 @@
+{
+  "title": "🏛️ مناظرة 2023 · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — معادلة بقيمة مطلقة وقابلية القسمة وإحداثيّات رأس متوازي أضلاع في معيّن",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 23,
+  "questions": [
+    {
+      "prompt": "نعلم أنّ العدد الحقيقي x يحقّق 1 − 2|x| = −5. كم تساوي 2|x| ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "−6"
+        },
+        {
+          "id": "b",
+          "text": "−4"
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نعزل الحدّ 2|x| : نطرح 1 من الطرفين فنجد −2|x| = −5 − 1 = −6 ، ثمّ نضرب الطرفين في −1 فنجد 2|x| = 6 ✓. الخطأ الشائع: نقل الحدّ 1 إلى الطرف الآخر دون تغيير إشارته فنجد −2|x| = −5 + 1 = −4 ومنه 2|x| = 4 ؛ أو نسيان تغيير الإشارة عند ضرب الطرفين في −1 فنجد 2|x| = −6 ، وهو مستحيل لأنّ القيمة المطلقة لا تكون سالبة ؛ أو الجمع بين الخطأين فنجد 2|x| = −4.",
+      "difficulty": 1,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "نحلّ في ℝ المعادلة التالية :\n1 − 2|x| = −5\nأيّ المجموعات التالية هي مجموعة حلولها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "∅"
+        },
+        {
+          "id": "b",
+          "text": "{−3 ; 3}"
+        },
+        {
+          "id": "c",
+          "text": "{−2 ; 2}",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "d",
+          "text": "{3}",
+          "misconceptionTag": "math.num.valeur-absolue-solution-unique"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بعد عزل القيمة المطلقة نجد |x| = 3. وللمعادلة |x| = 3 حلّان متقابلان لأنّ 3 عدد موجب تمامًا : x = 3 أو x = −3 ، فمجموعة الحلول هي {−3 ; 3} ✓. تحقّق : 1 − 2 × 3 = −5 من أجل x = 3 وكذلك من أجل x = −3 لأنّ |−3| = 3. الخطأ الشائع: الاكتفاء بالحلّ الموجب فنجد {3} ، مع أنّ العددين 3 و −3 يبعدان عن 0 بالقدر نفسه ؛ أو نقل الحدّ 1 دون تغيير إشارته فنجد |x| = 2 أي {−2 ; 2} ؛ أو نسيان تغيير الإشارة عند عزل القيمة المطلقة فنجد |x| سالبة فنعتبر المعادلة مستحيلة ∅.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.valeur-absolue"
+      ]
+    },
+    {
+      "prompt": "العدد 9b2a مكتوب بأربعة أرقام حيث a و b رقمان ، وهو من مضاعفات 4 ومن مضاعفات 5 في آن واحد. ما رقم آحاده a ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "0"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "misconceptionTag": "math.num.divisibilite-un-seul-critere"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "يقبل العدد القسمة على 5 إذا كان رقم آحاده 0 أو 5 ، أي a = 0 أو a = 5. ويقبل القسمة على 4 إذا كان العدد المكوَّن من رقميه الأخيرين 2a يقبل القسمة على 4 : فالعدد 20 = 4 × 5 يصلح ، أمّا العدد 25 فلا يقبل القسمة على 4. القيمة الوحيدة التي تحقّق الشرطين معًا هي a = 0 ✓. الخطأ الشائع: الاكتفاء بشرط واحد : a = 4 و a = 8 يحقّقان شرط القسمة على 4 (فالعددان 24 و 28 من مضاعفات 4) لكنّ العدد لا ينتهي بـ 0 أو 5 ، و a = 5 يحقّق شرط القسمة على 5 لكنّ 25 لا يقبل القسمة على 4.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "إذا كان a و b رقمين وكان العدد 9b2a يقبل القسمة على 4 وعلى 5 وعلى 9 معًا فما قيمة b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "7"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "شرطا القسمة على 4 وعلى 5 يحدّدان الرقم a وحيدًا (رقم الآحاد ينتهي بـ 0 أو 5 والعدد المكوَّن من الرقمين الأخيرين يقبل القسمة على 4). ثمّ يقبل العدد القسمة على 9 إذا كان مجموع أرقامه من مضاعفات 9 : مجموع أرقام العدد هو 11 + b ، وبما أنّ b رقم فإنّ هذا المجموع محصور بين 11 و 20 ، والمضاعف الوحيد للعدد 9 في هذا المجال هو 18. إذن 11 + b = 18 ومنه b = 7 ✓. الخطأ الشائع: إهمال أحد الشروط عند تعيين a. فإذا أُهمل شرط القسمة على 4 وأُخذ a = 5 صار مجموع الأرقام 16 + b فنجد b = 2 ؛ وإذا أُهمل شرط القسمة على 5 وأُخذ a = 4 صار المجموع 15 + b فنجد b = 3 ، وإذا أُخذ a = 8 صار المجموع 19 + b فنجد b = 8.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.criteres-divisibilite"
+      ]
+    },
+    {
+      "prompt": "ABCD متوازي أضلاع ، و E منتصف [BC] ، و C منتصف [EF] ، كما في الشكل.\n<svg viewBox=\"0 0 260 240\"><title>متوازي الأضلاع ABCD والنقطتان E وF على المستقيم (BC)</title><path d=\"M80 80 L40 200 L160 200 L200 80 Z\" fill=\"#0f6e56\" opacity=\"0.12\"/><path d=\"M80 80 L40 200 L160 200 L200 80 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M160 200 L220 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"80\" cy=\"80\" r=\"4\"/><circle cx=\"40\" cy=\"200\" r=\"4\"/><circle cx=\"160\" cy=\"200\" r=\"4\"/><circle cx=\"200\" cy=\"80\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"100\" cy=\"200\" r=\"4\"/><circle cx=\"220\" cy=\"200\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"68\" y=\"70\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"28\" y=\"220\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"160\" y=\"222\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"212\" y=\"70\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"100\" y=\"222\" text-anchor=\"middle\" fill=\"#0f6e56\">E</text><text x=\"222\" y=\"222\" text-anchor=\"middle\" fill=\"#0f6e56\">F</text></g></svg>\nأصل المعيّن (C, F, D) هو C ، والنقطة F هي الواحديّة على محور الفواصل (CF) ، والنقطة D هي الواحديّة على محور الترتيبات (CD). ما إحداثيّتا النقطة A في هذا المعيّن ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 ; 1)"
+        },
+        {
+          "id": "b",
+          "text": "(−1 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(1 ; −2)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
+        {
+          "id": "d",
+          "text": "(2 ; 1)"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "وحدة محور الفواصل هي القطعة [CF] ، ووحدة محور الترتيبات هي القطعة [CD]. بما أنّ E منتصف [BC] و C منتصف [EF] فإنّ BE = EC = CF ، أي أنّ BC = 2 × CF ، والنقطة B تقع على المستقيم (CF) في الجهة المعاكسة لـ F بالنسبة إلى C ، فإحداثيّتا B هما (−2 ; 0). وفي متوازي الأضلاع ABCD لدينا BA = CD ، أي أنّ A هي صورة B بالانسحاب الذي شعاعه CD ، وإحداثيّتا الشعاع CD هما (0 ; 1). إذن إحداثيّتا A هما (−2 + 0 ; 0 + 1) = (−2 ; 1) ✓. الخطأ الشائع: اعتبار [BC] وحدة المحور بدل [CF] فنجد B(−1 ; 0) ومنه (−1 ; 1) ؛ أو وضع B في جهة F فنجد (2 ; 1) ؛ أو عكس ترتيب الإحداثيّتين فنجد (1 ; −2).",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees"
+      ]
+    }
+  ]
+}

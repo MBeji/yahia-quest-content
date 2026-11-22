@@ -1,0 +1,89 @@
+{
+  "title": "🏛️ مناظرة 2022 · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — قطر مربّع ومتراجحة بقيمة مطلقة وجذر مربّع عدد",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 34,
+  "questions": [
+    {
+      "prompt": "مربّع طول قطره العدد التالي:\n2√5 + √2\nما طول ضلعه ؟\n<svg viewBox=\"0 0 210 150\"><title>مربّع مرسوم مع أحد قطريه</title><path d=\"M60 120 L60 30 L150 30 L150 120 Z\" fill=\"#0f6e56\" fill-opacity=\"0.1\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M60 120 L150 30\" fill=\"none\" stroke=\"#0f6e56\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"7 6\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"120\" r=\"4.4\"/><circle cx=\"60\" cy=\"30\" r=\"4.4\"/><circle cx=\"150\" cy=\"30\" r=\"4.4\"/><circle cx=\"150\" cy=\"120\" r=\"4.4\"/></g></svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "√5 + √2/2"
+        },
+        {
+          "id": "b",
+          "text": "√10 + 1"
+        },
+        {
+          "id": "c",
+          "text": "√5 + 2"
+        },
+        {
+          "id": "d",
+          "text": "2√10 + 2",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "في المربّع الذي ضلعه c وقطره d ، نطبّق فيثاغورس في المثلّث القائم الذي ضلعاه القائمان ضلعان من المربّع ووتره القطر: d² = c² + c² = 2c² ، أي d = c√2 ، ومنه c = d/√2.\nنحسب: c = (2√5 + √2)/√2 = 2√5/√2 + √2/√2 = √2 × √5 + 1 = √10 + 1 ✓ لأنّ 2/√2 = √2.\nتحقّق: (√10 + 1)² = 10 + 2√10 + 1 = 11 + 2√10 ، وهذا يساوي d²/2 = (22 + 4√10)/2 لأنّ d² = (2√5)² + 2 × 2√5 × √2 + (√2)² = 20 + 4√10 + 2 ✓.\nالخطأ الشائع: القسمة على 2 بدل √2 فنجد √5 + √2/2 ؛ أو الضرب في √2 بدل القسمة عليه فنجد 2√10 + 2.",
+      "difficulty": 2,
+      "competencies": ["math.num.racines-calcul", "math.geo.pythagore"]
+    },
+    {
+      "prompt": "نذكّر بأنّ |x| هو بعد العدد x عن الصفر على المستقيم المدرّج. ما مجموعة حلول المتراجحة التالية في ℝ ؟\n1 − 3|x| ≥ −14",
+      "options": [
+        {
+          "id": "a",
+          "text": "]−∞ ; −5] ∪ [5 ; +∞[",
+          "misconceptionTag": "math.alg.inequation-sens-non-inverse"
+        },
+        {
+          "id": "b",
+          "text": "[−13/3 ; 13/3]",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "c",
+          "text": "[−5 ; 5]"
+        },
+        {
+          "id": "d",
+          "text": "[0 ; 5]"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نعزل |x| : المتراجحة 1 − 3|x| ≥ −14 تصير −3|x| ≥ −15 بطرح 1 من الطرفين. نقسم الطرفين على −3 وهو عدد سالب فينعكس اتّجاه المتراجحة: |x| ≤ 5. أي أنّ بعد x عن الصفر لا يتجاوز 5 ، فـ x يقع بين −5 و 5 بما فيهما: [−5 ; 5] ✓ والقوسان مغلقان لأنّ المتراجحة غير صارمة.\nتحقّق: x = 5 يعطي 1 − 15 = −14 ≥ −14 ✓ ، و x = 6 يعطي 1 − 18 = −17 وهو أصغر من −14.\nالخطأ الشائع: القسمة على −3 دون قلب الاتّجاه فنجد |x| ≥ 5 أي ]−∞ ; −5] ∪ [5 ; +∞[ ؛ أو نقل العدد 1 دون تغيير إشارته فنجد −3|x| ≥ −13 ثمّ |x| ≤ 13/3 أي [−13/3 ; 13/3] ؛ أو الاكتفاء بالجهة الموجبة فنجد [0 ; 5].",
+      "difficulty": 2,
+      "competencies": ["math.alg.inequations", "math.num.valeur-absolue"]
+    },
+    {
+      "prompt": "ليكن العدد x التالي:\nx = √3 − 2\nأيّ كتابة من الكتابات التالية تساوي العدد √(7 − 4√3) ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "x",
+          "misconceptionTag": "math.num.racine-carre-sans-valeur-absolue"
+        },
+        {
+          "id": "b",
+          "text": "x²"
+        },
+        {
+          "id": "c",
+          "text": "−x/2"
+        },
+        {
+          "id": "d",
+          "text": "−x"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "نحسب مربّع x : x² = (√3 − 2)² = 3 − 4√3 + 4 = 7 − 4√3 ✓. إذن √(7 − 4√3) = √(x²) = |x|. وبما أنّ √3 < 2 (لأنّ 3 < 4) فإنّ x سالب ، وقيمته المطلقة هي مقابله: |x| = −x.\nتحقّق: −x = 2 − √3 عدد موجب كما يجب أن يكون الجذر التربيعي ، و (2 − √3)² = 4 − 4√3 + 3 = 7 − 4√3 ✓.\nالخطأ الشائع: كتابة √(x²) = x دون الانتباه إلى أنّ x سالب ، فنجد عددًا سالبًا قيمةً لجذر تربيعي وهذا مستحيل.",
+      "difficulty": 2,
+      "competencies": ["math.num.racines-calcul", "math.num.valeur-absolue"]
+    }
+  ]
+}

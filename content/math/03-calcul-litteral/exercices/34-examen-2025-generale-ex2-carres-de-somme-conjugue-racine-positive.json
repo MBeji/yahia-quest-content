@@ -1,0 +1,212 @@
+{
+  "title": "🏛️ مناظرة 2025 · التمرين 2 ⭐⭐⭐: نشر جداء وإنطاق مقام، ومربّع مجموع، ثمّ جذر عدد موجب",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 34,
+  "questions": [
+    {
+      "prompt": "نعتبر العدد الحقيقي b الموجب الذي يحقّق:\nb² = (1 + √5)(−1 + (1/2)√5)\nأيّ الكتابات التالية تساوي b² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−2 − √5)/2",
+          "misconceptionTag": "math.alg.distribution-partielle"
+        },
+        {
+          "id": "b",
+          "text": "(3 + 3√5)/2"
+        },
+        {
+          "id": "c",
+          "text": "2"
+        },
+        {
+          "id": "d",
+          "text": "(3 − √5)/2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "ننشر الجداء حدًّا بحدّ: (1 + √5)(−1 + (1/2)√5) = −1 + (1/2)√5 − √5 + (1/2)(√5)² = −1 + (1/2)√5 − √5 + 5/2. نجمع الأعداد: −1 + 5/2 = 3/2 ، ونجمع حدود √5 : (1/2)√5 − √5 = −(1/2)√5. إذن b² = 3/2 − (1/2)√5 = (3 − √5)/2 ✓. الخطأ الشائع نسيان الجداء الأخير (1/2)(√5)² فيخرج −1 + (1/2)√5 − √5 = (−2 − √5)/2 ؛ أو أخذ −√5 على أنّه +√5 فيخرج 3/2 + (3/2)√5 = (3 + 3√5)/2 ؛ أو قراءة العامل الثاني (−1 + √5)/2 فيخرج (1 + √5)(√5 − 1)/2 = 4/2 = 2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "b و c عددان حقيقيّان موجبان جداؤهما يساوي 1 ، أي:\nbc = 1\nومربّع b معطى بما يلي:\nb² = (3 − √5)/2\nما قيمة مربّع c ، أي c² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(3 + √5)/2"
+        },
+        {
+          "id": "b",
+          "text": "(3 + √5)/7",
+          "misconceptionTag": "math.alg.difference-carres-somme-au-lieu-de-difference"
+        },
+        {
+          "id": "c",
+          "text": "(3 − √5)/2"
+        },
+        {
+          "id": "d",
+          "text": "(3 − √5)/7"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "من bc = 1 نستنتج c = 1/b ، ومنه c² = 1/b² = 2/(3 − √5). نضرب البسط والمقام في المرافق 3 + √5 : c² = 2(3 + √5)/((3 − √5)(3 + √5)) = 2(3 + √5)/(9 − 5) = 2(3 + √5)/4 = (3 + √5)/2 ✓. الخطأ الشائع جمع المربّعين في المقام بدل طرحهما فيخرج 9 + 5 = 14 ثمّ 2(3 + √5)/14 = (3 + √5)/7 ؛ أو الظنّ أنّ c² = b².",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ليكن b و c عددين حقيقيّين يحقّقان:\nb² = (3 − √5)/2\nc² = (3 + √5)/2\nbc = 1\nما قيمة (b + c)² ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "3",
+          "misconceptionTag": "math.alg.carre-somme-sans-double-produit"
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "misconceptionTag": "math.alg.double-produit-sans-facteur-2"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نطبّق المتطابقة (b + c)² = b² + 2bc + c². إذن (b + c)² = (3 − √5)/2 + 2 × 1 + (3 + √5)/2 = (3 − √5 + 3 + √5)/2 + 2 = 3 + 2 = 5 ✓. الخطأ الشائع إسقاط الجداء المضاعف فيخرج b² + c² = 3 ؛ أو كتابته bc بدل 2bc فيخرج 3 + 1 = 4 ؛ أو مضاعفة المجموع b² + c² فيخرج 6.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables"
+      ]
+    },
+    {
+      "prompt": "ليكن b و c عددين حقيقيّين يحقّقان:\nb + c = √5\nbc = 1\nأيّ الكتابات التالية تعبّر عن c بدلالة c² وحدها ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "c = (1 − c²)/√5",
+          "misconceptionTag": "math.alg.transposition-sans-changer-signe"
+        },
+        {
+          "id": "b",
+          "text": "c = (c² + 1)/√5"
+        },
+        {
+          "id": "c",
+          "text": "c = √5 × (c² + 1)",
+          "misconceptionTag": "math.num.operation-inverse-appliquee"
+        },
+        {
+          "id": "d",
+          "text": "c = (c² + 1)/5"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "بما أنّ b + c = √5 فإنّ b = √5 − c. نعوّض في bc = 1 : (√5 − c) × c = 1 ، أي c√5 − c² = 1. ننقل c² إلى الطرف الأيمن فيصير c√5 = c² + 1 ، ثمّ نقسم على √5 : c = (c² + 1)/√5 ✓. الخطأ الشائع نقل c² دون تغيير إشارته فيخرج c√5 = 1 − c² ؛ أو الضرب في √5 بدل القسمة عليه فيخرج c = √5 × (c² + 1) ؛ أو القسمة على 5 بدل √5.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "عددان موجبان b و c مجموع مربّعيهما 3 وجداؤهما 1 ، أي:\nb² + c² = 3\nbc = 1\nما قيمة مجموعهما b + c ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "√5"
+        },
+        {
+          "id": "b",
+          "text": "5/2",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "c",
+          "text": "25",
+          "misconceptionTag": "math.num.racine-et-carre-confondus"
+        },
+        {
+          "id": "d",
+          "text": "√5/2"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "نحسب أوّلًا (b + c)² = b² + 2bc + c² = (b² + c²) + 2bc = 3 + 2 × 1 = 5. المجموع b + c موجب لأنّ b و c موجبان ، ومربّعه 5 ، إذن b + c = √5 ✓. الخطأ الشائع أخذ نصف 5 بدل جذره فيخرج 5/2 ؛ أو الخلط بين الجذر والتربيع فيخرج 5² = 25 ؛ أو أخذ نصف الجذر √5/2.",
+      "difficulty": 2,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ليكن c عددًا حقيقيًّا يحقّق:\nc² = (3 + √5)/2\nc = (c² + 1)/√5\nما قيمة c ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(5 + 4√5)/10"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "(1 + √5)/2"
+        },
+        {
+          "id": "d",
+          "text": "(3 + √5)/2"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نحسب c² + 1 = (3 + √5)/2 + 1 = (3 + √5 + 2)/2 = (5 + √5)/2. إذن c = (5 + √5)/(2√5). نعمّل البسط: 5 + √5 = √5 × (√5 + 1) ، فنختزل √5 : c = √5(√5 + 1)/(2√5) = (√5 + 1)/2 ✓. الخطأ الشائع جمع 1 مع (3 + √5)/2 على أنّه 1/2 فيخرج (4 + √5)/2 ثمّ (4 + √5)/(2√5) = (5 + 4√5)/10 ؛ أو قسمة كلّ حدّ من 5 + √5 على √5 كأنّ √5 تساوي 1 فيخرج (5 + 1)/2 = 3 ؛ أو التوقّف عند c² دون أيّ قسمة.",
+      "difficulty": 3,
+      "competencies": [
+        "math.num.racines-calcul"
+      ]
+    },
+    {
+      "prompt": "ليكن b عددًا حقيقيًّا موجبًا يحقّق:\nb² = (3 − √5)/2\nأيّ الأعداد التالية يساوي b ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1 − √5)/2"
+        },
+        {
+          "id": "b",
+          "text": "(√5 − 1)/2"
+        },
+        {
+          "id": "c",
+          "text": "(3 − √5)/4",
+          "misconceptionTag": "math.num.racine-confondue-avec-moitie"
+        },
+        {
+          "id": "d",
+          "text": "(√5 − 2)/2"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "نبحث عن عدد موجب مربّعه (3 − √5)/2. نختبر العدد (√5 − 1)/2 : ((√5 − 1)/2)² = (5 − 2√5 + 1)/4 = (6 − 2√5)/4 = (3 − √5)/2 ✓ وهو موجب لأنّ √5 > 1. أمّا العدد (1 − √5)/2 فمربّعه هو نفسه ولكنّه سالب لأنّ √5 > 1 ، فلا يصلح لأنّ b موجب. الخطأ الشائع إهمال شرط الموجب واختيار العدد السالب ؛ أو أخذ نصف العدد (3 − √5)/2 بدل جذره فيخرج (3 − √5)/4.",
+      "difficulty": 3,
+      "competencies": [
+        "math.alg.identites-remarquables",
+        "math.num.racines-calcul"
+      ]
+    }
+  ]
+}

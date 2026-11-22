@@ -1,0 +1,149 @@
+{
+  "title": "🏛️ مناظرة 2025 · التمرين 1 ⭐⭐: أسئلة اختيار من متعدّد — تكرارات تراكميّة ومعدّل حسابي وإحداثيّات نقطتين من مربّع في معيّن وعدد أرقام جداء قوى",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 25,
+  "questions": [
+    {
+      "prompt": "سُئل مجموعة من التلاميذ عن مدّة استعمالهم اليوميّ للهاتف الجوّال ، فدُوّن لكلّ مدّة عدد التلاميذ الذين لا تزيد مدّتهم عليها :\nالمدّة بالساعة : 2 ، 3 ، 4\nعدد التلاميذ : 60 ، 90 ، 100\nكم تلميذًا يقضّون أكثر من ساعتين يوميًّا ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "40"
+        },
+        {
+          "id": "c",
+          "text": "60",
+          "misconceptionTag": "math.stat.cumul-croissant-decroissant-confondus"
+        },
+        {
+          "id": "d",
+          "text": "90"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "التكرار التراكميّ الصاعد عند القيمة 2 هو 60 : أي أنّ 60 تلميذًا يقضّون ساعتين أو أقلّ ، والعدد الكلّي للتلاميذ هو 100. فالذين يقضّون أكثر من ساعتين هم 100 − 60 = 40 تلميذًا ✓. الخطأ الشائع: قراءة 60 مباشرة من الجدول ، وهو عدد الذين يقضّون ساعتين أو أقلّ لا أكثر ؛ أو قراءة 90 وهو عدد الذين يقضّون 3 ساعات أو أقلّ ؛ أو حساب 100 − 90 = 10 وهو عدد الذين يقضّون أكثر من 3 ساعات.",
+      "difficulty": 1,
+      "competencies": [
+        "math.stat.effectifs-frequences"
+      ]
+    },
+    {
+      "prompt": "ABCD مربّع مركزه النقطة O ، كما في الشكل.\n<svg viewBox=\"0 0 280 240\"><title>المربّع ABCD ومركزه O</title><path d=\"M60 30 L220 30 L220 190 L60 190 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 30 L220 30 L220 190 L60 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 190 L220 30 M220 190 L60 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"30\" r=\"4\"/><circle cx=\"220\" cy=\"30\" r=\"4\"/><circle cx=\"60\" cy=\"190\" r=\"4\"/><circle cx=\"220\" cy=\"190\" r=\"4\"/><circle cx=\"140\" cy=\"110\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"234\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"46\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"234\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"140\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\">O</text></g></svg>\nالمعيّن (O, B, C) أصله O ، والنقطة B هي الواحديّة على محور الفواصل (OB) ، والنقطة C هي الواحديّة على محور الترتيبات (OC). ما إحداثيّتا النقطة A في هذا المعيّن ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−1 ; 0)",
+          "misconceptionTag": "math.vec.coordonnees-point-inversees"
+        },
+        {
+          "id": "b",
+          "text": "(0 ; 1)"
+        },
+        {
+          "id": "c",
+          "text": "(0 ; −1)"
+        },
+        {
+          "id": "d",
+          "text": "(1 ; 0)"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "النقطة O مركز المربّع ، فهي منتصف القطر [AC] ، أي أنّ A مناظرة C بالنسبة إلى O. والنقطة C هي الواحديّة على محور الترتيبات ، أي C(0 ; 1) ، فمناظرتها بالنسبة إلى الأصل O هي A(0 ; −1) ✓. الخطأ الشائع: عكس ترتيب الإحداثيّتين فنجد (−1 ; 0) وهي إحداثيّتا النقطة D ؛ أو أخذ إحداثيّتي C نفسهما (0 ; 1) ؛ أو أخذ إحداثيّتي B وهما (1 ; 0).",
+      "difficulty": 1,
+      "competencies": [
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "ABCD مربّع مركزه النقطة O ، و M منتصف [AB] ، كما في الشكل.\n<svg viewBox=\"0 0 280 240\"><title>المربّع ABCD ومركزه O والنقطة M</title><path d=\"M60 30 L220 30 L220 190 L60 190 Z\" fill=\"#0f6e56\" opacity=\"0.10\"/><path d=\"M60 30 L220 30 L220 190 L60 190 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M60 190 L220 30 M220 190 L60 30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/><g fill=\"#0f172a\"><circle cx=\"60\" cy=\"30\" r=\"4\"/><circle cx=\"220\" cy=\"30\" r=\"4\"/><circle cx=\"60\" cy=\"190\" r=\"4\"/><circle cx=\"220\" cy=\"190\" r=\"4\"/><circle cx=\"140\" cy=\"110\" r=\"4\"/></g><g fill=\"#0f6e56\"><circle cx=\"140\" cy=\"190\" r=\"4\"/></g><g font-size=\"15\" font-weight=\"700\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\"><text x=\"46\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">D</text><text x=\"234\" y=\"26\" text-anchor=\"middle\" fill=\"#0f172a\">C</text><text x=\"46\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">A</text><text x=\"234\" y=\"208\" text-anchor=\"middle\" fill=\"#0f172a\">B</text><text x=\"140\" y=\"92\" text-anchor=\"middle\" fill=\"#0f172a\">O</text><text x=\"140\" y=\"212\" text-anchor=\"middle\" fill=\"#0f6e56\">M</text></g></svg>\nالمعيّن (O, B, C) أصله O ، والنقطة B هي الواحديّة على محور الفواصل (OB) ، والنقطة C هي الواحديّة على محور الترتيبات (OC). ما إحداثيّتا النقطة M في هذا المعيّن ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "(−1/2 ; −1/2)"
+        },
+        {
+          "id": "b",
+          "text": "(−1/2 ; 1/2)"
+        },
+        {
+          "id": "c",
+          "text": "(1/2 ; 1/2)"
+        },
+        {
+          "id": "d",
+          "text": "(1/2 ; −1/2)"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "النقطة O منتصف القطر [AC] ، فالشعاع OA مقابل الشعاع OC ، والمعيّن (O, B, C) يحمل الشعاعين OB و OC. و M منتصف [AB] ، فإنّ OM = (OA + OB)/2 = (−OC + OB)/2 = 1/2 × OB − 1/2 × OC ، وإحداثيّتا M هما (1/2 ; −1/2) ✓. الخطأ الشائع: الخلط بين منتصفات الأضلاع : (1/2 ; 1/2) هما إحداثيّتا منتصف [BC] ، و (−1/2 ; 1/2) إحداثيّتا منتصف [CD] ، و (−1/2 ; −1/2) إحداثيّتا منتصف [AD].",
+      "difficulty": 2,
+      "competencies": [
+        "math.vec.repere-coordonnees"
+      ]
+    },
+    {
+      "prompt": "يمثّل الجدول التالي التكرارات التراكميّة الصاعدة للمدّة الزمنيّة التي يقضيها يوميًّا مجموعة من التلاميذ في استعمال الهاتف الجوّال :\nالمدّة الزمنيّة بالساعة : 2 ، 3 ، 4\nالتكرار التراكميّ الصاعد : 60 ، 90 ، 100\nما المعدّل الحسابي لهذه السلسلة الإحصائيّة ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "text": "2,5"
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "misconceptionTag": "math.stat.moyenne-sans-ponderation"
+        },
+        {
+          "id": "d",
+          "text": "3,16",
+          "misconceptionTag": "math.stat.effectif-cumule-non-cumule"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "التكرارات التراكميّة ليست تكرارات القيم. نستنتج التكرار الخاصّ بكلّ قيمة بالفرق بين تكرارين تراكميّين متتاليين : 60 تلميذًا يقضّون ساعتين ، و 90 − 60 = 30 تلميذًا يقضّون 3 ساعات ، و 100 − 90 = 10 تلاميذ يقضّون 4 ساعات. المعدّل = (2 × 60 + 3 × 30 + 4 × 10)/100 = 250/100 = 2,5 ✓. الخطأ الشائع: استعمال التكرارات التراكميّة على أنّها تكرارات فنجد (2 × 60 + 3 × 90 + 4 × 100)/250 = 790/250 = 3,16 ؛ أو حساب معدّل القيم الثلاث دون مراعاة تكراراتها فنجد (2 + 3 + 4)/3 = 3 ؛ أو إعطاء القيمة الأكثر تكرارًا وهي المنوال 2 بدل المعدّل.",
+      "difficulty": 2,
+      "competencies": [
+        "math.stat.moyenne-mediane"
+      ]
+    },
+    {
+      "prompt": "ما عدد أرقام الجداء ((√2)³)⁶⁷⁵ × (5√2)²⁰²⁵ ؟",
+      "options": [
+        {
+          "id": "a",
+          "text": "2024"
+        },
+        {
+          "id": "b",
+          "text": "2025"
+        },
+        {
+          "id": "c",
+          "text": "2026"
+        },
+        {
+          "id": "d",
+          "text": "2027"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "نكتب ((√2)³)⁶⁷⁵ = (√2)²⁰²⁵ لأنّ 3 × 675 = 2025 ، و (5√2)²⁰²⁵ = 5²⁰²⁵ × (√2)²⁰²⁵. فالجداء هو 5²⁰²⁵ × (√2)²⁰²⁵ × (√2)²⁰²⁵ = 5²⁰²⁵ × ((√2)²)²⁰²⁵ = 5²⁰²⁵ × 2²⁰²⁵ = (5 × 2)²⁰²⁵ = 10²⁰²⁵. العدد 10²⁰²⁵ يُكتب بالرقم 1 يليه 2025 صفرًا ، أي 2026 رقمًا ✓. الخطأ الشائع: عدّ الأصفار فقط ونسيان الرقم 1 فنجد 2025 ؛ أو الخطأ في الأسّ بواحد نقصانًا فنجد 2024 أو زيادةً فنجد 2027.",
+      "difficulty": 2,
+      "competencies": [
+        "math.num.puissances"
+      ]
+    }
+  ]
+}
