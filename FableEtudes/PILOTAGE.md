@@ -92,6 +92,30 @@ Légende : ✅ fait · ⏳ en cours · ❌ à faire · — sans objet.
 | français (`french`) | ✅ 121905 lu | ✅ armé le 2026-10-01 | ✅ `fr.*` | ✅ | ✅ 41 sessions d'examen lues (2001–2026, 1 introuvable) : **27 missions** fusionnées en 5 lots (L01–L05), chacun audité à l'aveugle (opus), corrigé et re-vérifié, livrées le 2026-10-16 ; texte support des compréhensions résumé (référence, sha256 au registre), jamais transcrit en entier | ✅ vague 1 lue (D01–D08) : 6 missions en salle blanche (L06), auditées, corrigées, re-vérifiées, livrées le 2026-10-16 ; **pas de vague 2** (décision du pilote) | cours 01, 02, 05 et 11 complétés de ce que les sujets exigent ; étiquette neuve `fr.mode.subjonctif-abusif` (élargie aux conjonctions) ; suivi moteur : italique contenant du gras (`36-…/en-cours/francais/SUIVIS.md`) ; rapports dans `36-gisement-examens-devoirs/en-cours/francais/` (branche `wip/gisement-9eme-lots-en-ecriture`) — **publiés** le 2026-10-16 (privé#701 ; registre : 33 missions `publiee`) |
 | anglais (`english`) | ✅ 141906 + 141907 lus | ✅ armé le 2026-09-28 | ✅ | ✅ | ✅ 41 sessions d'examen lues (2001–2026, 2004 introuvable) : **24 missions** fusionnées en 5 lots (L01–L04, L06), chacune auditée à l'aveugle (opus), corrigée et re-vérifiée, livrées le 2026-10-17 ; texte support des readings résumé (sha256 au registre), passif écarté (non enseigné) | ✅ vague 1 lue (D01–D06 ; écoute des contrôles sans objet) : 2 missions en salle blanche (L05), auditées, livrées le 2026-10-17 ; **pas de vague 2** (19–28 % de signatures neuves) | cours 07 (gérondif + to + base, pronoms compléments, « own », dérivation par suffixes) et 09 (prépositions, connecteurs) complétés de ce que les sujets exigent ; 4 étiquettes neuves `english.*`, 2 élargies ; suivis : noms des chapitres 06/07 du manifeste ≠ contenu (`36-…/en-cours/anglais/SUIVIS.md` S1), rendu des tableaux (S5) ; rapports dans `36-gisement-examens-devoirs/en-cours/anglais/` — **publiés** le 2026-10-17 (privé#706 ; registre : 26 missions `publiee`) |
 
+#### Épreuves blanches par matière — 9ᵉ (commande du propriétaire du 2026-11-22)
+
+> « Des épreuves significatives » pour la 9ᵉ, **l'arabe et le français d'abord**. Constat mesuré le
+> 2026-11-22 : un seul examen blanc en base (six questions par matière) ; les chapitres d'annales
+> d'arabe et de français ne portaient que trois mini-sujets de 6 questions sur un texte de cinq
+> lignes ; les cinq sujets de mathématiques les plus récents (2022-2026, filière générale, documents
+> `D01`-`D05` du registre) étaient transcrits mais sans mission.
+>
+> **Le registre des épreuves est `content/mock-exams.json`** (compilé par le moteur, arena#1358 ;
+> appliqué par `apply-content.yml` APRÈS les sujets ; publié seulement si chaque épreuve est en base).
+> Il ne s'édite pas à la main : `python3 -I FableEtudes/campagnes/epreuves-9eme/compose-mock-exams.py
+> content` le recompose depuis les registres du gisement (quelle mission vient de quel exercice),
+> les barèmes des transcriptions officielles (× 10) et les fichiers présents. Une épreuve
+> « originale » = un texte écrit pour elle (longueur d'un vrai sujet) et trois missions qui suivent
+> les trois parties de l'examen national, dans le chapitre d'annales de la matière.
+
+| Matière | Épreuves originales (texte + 3 parties, 24 questions) | Épreuves d'annales (sessions réelles) | En cours · prochaine action |
+| --- | --- | --- | --- |
+| arabe (`arabic`, `11-annales-subur`) | ✅ اختبار 2 livré (العلم والتّقنية : « الهاتف الذكيّ وصاحبه ») — audit opus à l'aveugle, 24/24 clés, reprises revérifiées ; ⏳ اختبار 1 (العمل) en audit, 3 (المرأة) en écriture, 4 à écrire | ✅ 2023 à 2026 composées (texte et production de la session, langue des sessions récentes) | livrer اختبار 1, écrire 3-4 |
+| français (`french`, `10-annales-sujets-types`) | ✅ épreuves 1-2 livrées (récit avec dialogue ; récit avec portrait) — audit opus à l'aveugle, 24/24 clés, reprises revérifiées ; ⏳ 3-4 | ✅ 2026, 2025, 2023 composées (compréhension de la session, langue et production des sessions d'examen) | écrire 3-4 (exploit ; métier, argumentatif) |
+| maths (`math`) | — | ✅ sujets 2017 à 2021 composés (5 exercices, barème officiel) ; ❌ 2022 à 2026 : 25 missions à écrire (plan `content:gisement:plan`, 6 lots par chapitre) | écrire les 25 missions, puis recomposer avec `--with-math-2022-2026` |
+| SVT (`sciences-vie-terre`) | — | ✅ sujets 2020, 2021, 2022, 2024, 2025, 2026 composés (barème officiel) | — |
+| anglais (`english`) | — | ✅ 2024 à 2026 composées (texte de la session, langue et production des sessions d'examen) | — |
+
 ### 6ᵉ (concours de 6ᵉ — après la 9ᵉ)
 
 | Couple | Fiche / manuel | Cours au patron | Étiquettes | Audit | Gisement | En cours · prochaine action |

@@ -229,6 +229,20 @@ jobs:
           node --experimental-strip-types scripts/content/build.ts --misconceptions \
             --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
 
+      # QUATRIÈME appel (2026-11-22) : les examens blancs que le corpus compose
+      # (`content/mock-exams.json`, étude 02 — les épreuves par matière).
+      # `--mock-exams` émet ce registre SEUL, toujours, même vide : le plan
+      # ci-dessous l'attend à chaque passage. Contrairement aux deux registres
+      # précédents il s'applique EN DERNIER, parce qu'une épreuve est un exercice :
+      # son INSERT joint `public.exercises` et ne retient que ce qui est en base.
+      # Un examen auquel il manque une épreuve reste `draft` — c'est voulu, et
+      # l'étape de vérification le dit au lieu de le laisser passer pour publié.
+      - name: Émettre le registre des examens blancs
+        working-directory: engine
+        run: |
+          node --experimental-strip-types scripts/content/build.ts --mock-exams \
+            --sql-dir "$GITHUB_WORKSPACE/corpus/sql/content"
+
       - name: Établir le plan d'application
         id: plan
         run: |
@@ -244,20 +258,28 @@ jobs:
           # raison : un sujet peut taguer un distracteur avec une entrée toute
           # neuve, et `get_attempt_review` ne trouverait rien à afficher.
           MISCONCEPTIONS="_misconceptions_registry.sql"
+          # Le registre des EXAMENS BLANCS ferme la marche, lui : ses épreuves
+          # désignent des exercices, que les sujets ci-dessus viennent d'écrire.
+          # Passé avant eux, il laisserait en brouillon un examen dont le sujet
+          # arrive deux fichiers plus loin.
+          MOCK_EXAMS="_mock_exams_registry.sql"
           [ -f "${REGISTRY}" ] || { echo "::error::${REGISTRY} absent — l'étape d'émission du registre a-t-elle tourné ?"; exit 1; }
           [ -f "${MISCONCEPTIONS}" ] || { echo "::error::${MISCONCEPTIONS} absent — l'étape d'émission du registre de misconceptions a-t-elle tourné ?"; exit 1; }
+          [ -f "${MOCK_EXAMS}" ] || { echo "::error::${MOCK_EXAMS} absent — l'étape d'émission du registre des examens blancs a-t-elle tourné, et le moteur connaît-il --mock-exams ?"; exit 1; }
           REGISTRIES="${REGISTRY} ${MISCONCEPTIONS}"
           if [ -n "${SUBJECTS}" ]; then
             FILES="${REGISTRIES}"
             for s in ${SUBJECTS}; do
               [ "${s}.sql" = "${REGISTRY}" ] && continue
               [ "${s}.sql" = "${MISCONCEPTIONS}" ] && continue
+              [ "${s}.sql" = "${MOCK_EXAMS}" ] && continue
               [ -f "${s}.sql" ] || { echo "::error::Sujet inconnu : ${s}.sql introuvable."; exit 1; }
               FILES="${FILES} ${s}.sql"
             done
           else
-            FILES="${REGISTRIES} $(ls *.sql | grep -vE "^(${REGISTRY}|${MISCONCEPTIONS})$" | tr '\n' ' ')"
+            FILES="${REGISTRIES} $(ls *.sql | grep -vE "^(${REGISTRY}|${MISCONCEPTIONS}|${MOCK_EXAMS})$" | tr '\n' ' ')"
           fi
+          FILES="${FILES} ${MOCK_EXAMS}"
           echo "files=${FILES}" >> "$GITHUB_OUTPUT"
           echo "### Plan d'application" >> "$GITHUB_STEP_SUMMARY"
           for f in ${FILES}; do echo "- \`${f}\`" >> "$GITHUB_STEP_SUMMARY"; done
@@ -376,6 +398,31 @@ jobs:
                 -c "SELECT count(*) FROM public.misconceptions;")
               echo "| \`registre d'erreurs nommées\` | — | ${EN_BASE} en base / ${DECLARE} déclarées |" >> "$GITHUB_STEP_SUMMARY"
               [ "${EN_BASE:-0}" -ge "${DECLARE:-1}" ] || VIDES="${VIDES} misconceptions(${EN_BASE}<${DECLARE})"
+              continue
+            fi
+            # Troisième registre, même piège : ce n'est pas un sujet. Son critère
+            # est le sien — un examen déclaré doit être PUBLIÉ, et il ne l'est que
+            # complet. Un examen resté `draft` n'est pas une panne du canal (le
+            # sujet d'une de ses épreuves n'est peut-être pas encore publié) : on
+            # le NOMME, en avertissement, pour que la session qui publie sache
+            # qu'il lui reste un sujet à appliquer. Le rouge est réservé au canal
+            # muet : des examens déclarés, et aucun en base.
+            if [ "$f" = "_mock_exams_registry.sql" ]; then
+              DECLARE=$(node -e "
+                const fs = require('fs');
+                const f = process.env.GITHUB_WORKSPACE + '/corpus/content/mock-exams.json';
+                process.stdout.write(String(fs.existsSync(f) ? Object.keys(JSON.parse(fs.readFileSync(f, 'utf8'))).length : 0));")
+              PUBLIES=$(psql "${PROD_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -tAq \
+                -c "SELECT count(*) FROM public.mock_exams WHERE slug IS NOT NULL AND status = 'published';")
+              BROUILLONS=$(psql "${PROD_SUPABASE_DB_URL}" --set ON_ERROR_STOP=1 -tAq \
+                -c "SELECT coalesce(string_agg(slug, ' ' ORDER BY slug), '') FROM public.mock_exams WHERE slug IS NOT NULL AND status = 'draft';")
+              echo "| \`registre d'examens blancs\` | — | ${PUBLIES} publiés / ${DECLARE} déclarés |" >> "$GITHUB_STEP_SUMMARY"
+              if [ -n "${BROUILLONS}" ]; then
+                echo "::warning::Examens blancs restés en brouillon (une épreuve au moins n'est pas en base — publier son sujet, puis relancer) : ${BROUILLONS}"
+              fi
+              if [ "${DECLARE:-0}" -gt 0 ] && [ "${PUBLIES:-0}" -eq 0 ]; then
+                VIDES="${VIDES} examens-blancs(0<${DECLARE})"
+              fi
               continue
             fi
             # `subjects.id` EST le slug du sujet (et donc le nom du fichier) —
