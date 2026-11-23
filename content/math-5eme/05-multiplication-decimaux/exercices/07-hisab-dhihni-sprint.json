@@ -1,0 +1,115 @@
+{
+  "title": "حساب ذهني ⭐⭐⭐",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 7,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "احسب ذهنيًّا: 0,7 × 100.",
+      "answerKey": {
+        "value": 70
+      },
+      "explanation": "الضرب في 100 يُزيح الفاصلة مرتبتين نحو اليمين ونكمل بصفر: 0,7 × 100 = 70.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "احسب ذهنيًّا: 0,08 × 1000.",
+      "answerKey": {
+        "value": 80
+      },
+      "explanation": "الضرب في 1000 يُزيح الفاصلة ثلاث مراتب نحو اليمين: 0,08 → 0,8 → 8 → 80. إذن 0,08 × 1000 = 80.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "احسب ذهنيًّا: 0,3 × 3.",
+      "answerKey": {
+        "value": 0.9,
+        "tolerance": 0.001
+      },
+      "explanation": "3 أعشار مضروبةٌ في 3 تعطي 9 أعشار: 3 × 3 = 9، ثمّ رقمٌ واحد بعد الفاصلة، فالجداء 0,9.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "احسب ذهنيًّا: 1,5 × 6.",
+      "answerKey": {
+        "value": 9
+      },
+      "explanation": "نفكّك: 1 × 6 = 6 و 0,5 × 6 = 3 (نصف 6)، ثمّ نجمع 6 + 3 = 9.",
+      "difficulty": 2
+    },
+    {
+      "type": "mcq",
+      "prompt": "احسب ذهنيًّا: 0,4 × 5",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,2"
+        },
+        {
+          "id": "b",
+          "text": "20"
+        },
+        {
+          "id": "c",
+          "text": "0,9"
+        },
+        {
+          "id": "d",
+          "text": "2"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "4 × 5 = 20، وفي العامل 0,4 رقمٌ واحد بعد الفاصلة، فالجداء 2,0 أي 2. من يضع رقمين بعد الفاصلة يجد 0,2، ومن ينسى الفاصلة يجد 20، ومن يجمع بدل أن يضرب يجد 0,9.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "احسب ذهنيًّا: 2,5 × 8.",
+      "answerKey": {
+        "value": 20
+      },
+      "explanation": "2,5 × 4 = 10، و 8 = 4 × 2، فنضاعف: 10 × 2 = 20. إذن 2,5 × 8 = 20.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "احسب ذهنيًّا: 0,25 × 40.",
+      "answerKey": {
+        "value": 10
+      },
+      "explanation": "0,25 × 4 = 1، و 40 = 4 × 10، فالجداء 1 × 10 = 10.",
+      "difficulty": 3
+    },
+    {
+      "type": "mcq",
+      "prompt": "احسب ذهنيًّا: 0,5 × 46",
+      "options": [
+        {
+          "id": "a",
+          "text": "23"
+        },
+        {
+          "id": "b",
+          "text": "2,3"
+        },
+        {
+          "id": "c",
+          "text": "230"
+        },
+        {
+          "id": "d",
+          "text": "92"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "الضرب في 0,5 يعطي النصف: نصف 46 هو 23. من يخطئ في موضع الفاصلة يجد 2,3 أو 230، ومن يضاعف بدل التنصيف يجد 92.",
+      "difficulty": 3
+    }
+  ]
+}
