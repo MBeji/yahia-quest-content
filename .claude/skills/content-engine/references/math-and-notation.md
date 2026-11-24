@@ -172,7 +172,7 @@ Arabic-comma-in-math **and** the **split-number** patterns — the last one adde
 (`auditRtlNotation`), after a `::: figure` caption shipped with a plain space and rendered
 «العدد 758 3». The scan below is no longer the only net under this rule.
 
-**Two recurring U+00A0 traps** (seen authoring multi-digit Arabic content):
+**Three recurring U+00A0 traps** (seen authoring multi-digit Arabic content):
 
 1. **The file-write path can silently flatten U+00A0 → a plain space.** So re-run the `\d \d{3}` scan
    _after_ writing each file and re-inject U+00A0 (e.g. a byte-level rewrite) wherever a plain space
@@ -181,3 +181,8 @@ Arabic-comma-in-math **and** the **split-number** patterns — the last one adde
    while its prompt/explanation is grouped (`308 000`) trips `content:qa`'s «answer value not echoed»
    warning — that check's number-extractor splits on the U+00A0, so the two forms no longer match.
    Group (or leave ungrouped) the **same way** everywhere in a question.
+3. **A `numeric` key ≥ 10 000 is always ungrouped** — `answerKey.value` is a JSON number (`55300`),
+   so an explanation that only writes `55 300` (U+00A0) trips the same «not echoed» warning, and
+   the prompt can't be regrouped to match. Keep the grouped form in the reasoning, and end the
+   explanation by restating the value as typed, e.g. «نكتب الجواب في الخانة: 55300.» — seen on
+   the primary-school `حساب ذهني` missions (2026-11, math-4eme…6eme).
