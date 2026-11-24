@@ -1,0 +1,198 @@
+{
+  "title": "⭐ Exercice : Les ouvriers invisibles de la cuisine",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une levure est placée dans un milieu sans dioxygène, avec du glucose. Comment dégrade-t-elle le glucose ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Par fermentation alcoolique"
+        },
+        {
+          "id": "b",
+          "text": "Par respiration, comme dans la mitochondrie",
+          "misconceptionTag": "bio.ferm.levure-un-seul-mode"
+        },
+        {
+          "id": "c",
+          "text": "Par fermentation lactique",
+          "misconceptionTag": "bio.ferm.produits-fermentations-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Par hydrolyse, comme l'amidon de la farine"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sans dioxygène, la respiration est impossible : la levure fermente le glucose en éthanol et en CO₂ (fermentation alcoolique). La fermentation lactique est celle des bactéries lactiques, et l'hydrolyse coupe l'amidon, pas le glucose.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel procédé chauffe modérément du lait pendant quelques minutes pour détruire des microbes sans changer sa saveur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'affinage"
+        },
+        {
+          "id": "b",
+          "text": "La pasteurisation"
+        },
+        {
+          "id": "c",
+          "text": "L'aseptie",
+          "misconceptionTag": "bio.ferm.procedes-confondus"
+        },
+        {
+          "id": "d",
+          "text": "La fermentation lactique"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "C'est la définition de la pasteurisation, procédé mis au point par Pasteur. L'aseptie est un état, l'absence de microbes, et non un chauffage ; l'affinage mûrit le fromage en cave ; la fermentation lactique est faite par des bactéries.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pour une molécule de glucose fermentée par la levure, combien de molécules de CO₂ se forment ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "molécules"
+      },
+      "explanation": "L'équation de la fermentation alcoolique est C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂ : une molécule de glucose donne 2 molécules de CO₂ (et 2 d'éthanol).",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque aliment au microorganisme qui intervient dans sa fabrication (pour le vinaigre, celui qui forme l'acide acétique).",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Le pain"
+        },
+        {
+          "id": "l2",
+          "text": "Le yaourt"
+        },
+        {
+          "id": "l3",
+          "text": "Le roquefort"
+        },
+        {
+          "id": "l4",
+          "text": "Le vinaigre"
+        },
+        {
+          "id": "r1",
+          "text": "La levure"
+        },
+        {
+          "id": "r2",
+          "text": "Les bactéries lactiques"
+        },
+        {
+          "id": "r3",
+          "text": "Le champignon Penicillium roqueforti"
+        },
+        {
+          "id": "r4",
+          "text": "La bactérie Acetobacter"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "Le pain lève grâce à la levure, le yaourt est fait par des bactéries lactiques, le roquefort doit son affinage à Penicillium roqueforti, et le vinaigre vient de la transformation de l'éthanol en acide acétique par Acetobacter.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la réalisation d'un frottis coloré de yaourt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Étaler une goutte de yaourt sur une lame"
+        },
+        {
+          "id": "b",
+          "text": "Sécher par un chauffage modéré"
+        },
+        {
+          "id": "c",
+          "text": "Colorer 3 minutes au bleu de méthylène"
+        },
+        {
+          "id": "d",
+          "text": "Rincer à l'eau du robinet, puis sécher"
+        },
+        {
+          "id": "e",
+          "text": "Observer au microscope, sans lamelle"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "On étale d'abord le yaourt, puis on sèche par un chauffage modéré (trop fort, il abîmerait les bactéries). On colore ensuite 3 minutes, on rince et on sèche, et on n'observe qu'à la fin, sans lamelle.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Dans quels milieux la levure fermente-t-elle le glucose ? Sélectionne toutes les bonnes réponses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sans dioxygène, avec 2 g/L de glucose"
+        },
+        {
+          "id": "b",
+          "text": "Avec dioxygène et 20 g/L de glucose"
+        },
+        {
+          "id": "c",
+          "text": "Avec dioxygène et 2 g/L de glucose"
+        },
+        {
+          "id": "d",
+          "text": "Avec dioxygène et sans glucose"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Sans dioxygène, la levure fermente, même avec peu de glucose. Avec du dioxygène, elle ne fermente que si le glucose dépasse 8 g/L : c'est le cas à 20 g/L, mais pas à 2 g/L, où elle respire seulement, ni sans glucose, où il n'y a rien à fermenter. Le seuil de 8 g/L est celui du manuel.",
+      "difficulty": 2
+    }
+  ]
+}

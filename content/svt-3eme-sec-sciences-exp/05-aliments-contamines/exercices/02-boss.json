@@ -1,0 +1,153 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du garde-manger",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Pourquoi dit-on que l'Homme est un hôte accidentel du ténia Echinococcus multilocularis ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est infesté par hasard, hors du cycle carnivore-rongeur"
+        },
+        {
+          "id": "b",
+          "text": "Il est l'hôte définitif, car le ténia adulte s'y reproduit",
+          "misconceptionTag": "bio.contam.hotes-inverses"
+        },
+        {
+          "id": "c",
+          "text": "Il n'héberge jamais de larves, seulement des œufs"
+        },
+        {
+          "id": "d",
+          "text": "Il est l'hôte intermédiaire, car il mange le rongeur"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le cycle normal du ténia se déroule entre un carnivore (hôte définitif) et un rongeur (hôte intermédiaire). L'Homme, qui avale des œufs avec des végétaux ou des mains souillés, y est infesté par hasard : les larves se développent dans son foie, mais l'adulte ne s'y reproduit pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quels pesticides utilise-t-on aujourd'hui, et pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des organochlorés comme le DDT, car ils sont très stables",
+          "misconceptionTag": "bio.contam.organochlores-actuels"
+        },
+        {
+          "id": "b",
+          "text": "Aucun : tous les pesticides sont interdits depuis 1972"
+        },
+        {
+          "id": "c",
+          "text": "Des herbicides uniquement, les autres groupes étant interdits"
+        },
+        {
+          "id": "d",
+          "text": "Des organophosphorés, plus efficaces et dégradables plus vite"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les organochlorés (DDT, interdit depuis 1972) sont très stables : ils persistent et s'accumulent le long des chaînes alimentaires. On utilise aujourd'hui des organophosphorés, plus efficaces et dégradables plus vite. Les insecticides, fongicides, herbicides et rodenticides restent employés.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un poisson prédateur contient 0,2 p.p.m. de dieldrine (1 p.p.m. = 1 mg par kg). Combien de milligrammes de dieldrine contiennent 250 g de ce poisson ?",
+      "answerKey": {
+        "value": 0.05,
+        "unit": "mg"
+      },
+      "explanation": "0,2 p.p.m. = 0,2 mg par kg ; 250 g = 0,25 kg ; 0,2 × 0,25 = 0,05 mg. Le cormoran, à 1,6 p.p.m., en contient 8 fois plus par kilogramme de chair : c'est ainsi que la dieldrine s'accumule d'un maillon au suivant.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Aux États-Unis, des malades atteints de salmonellose mangent tous la viande d'élevages de bovins traités aux antibiotiques. Quel élément renforce l'hypothèse d'un lien avec ces élevages ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les malades vivent tous dans des villes voisines les unes des autres"
+        },
+        {
+          "id": "b",
+          "text": "Les malades ont tous de la fièvre et des vomissements"
+        },
+        {
+          "id": "c",
+          "text": "La souche des malades résiste aux antibiotiques habituels"
+        },
+        {
+          "id": "d",
+          "text": "La salmonellose existe aussi chez des personnes qui n'en mangent pas"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point commun alimentaire n'est qu'une présomption. Ce qui la renforce, c'est que la souche identifiée résiste aux antibiotiques efficaces d'ordinaire : ce caractère s'explique par la sélection de bactéries résistantes dans des élevages traités. Fièvre et vomissements sont des signes de toute salmonellose, et la proximité des villes ne dit rien de l'origine de la viande.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un journaliste écrit : « Aucune étude n'a prouvé que les hormones de croissance sont dangereuses, donc elles sont sans danger. » Que répondre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exact : l'absence de preuve montre qu'il n'y a pas de danger"
+        },
+        {
+          "id": "b",
+          "text": "Faux : un effet cancérigène est prouvé pour une des cinq hormones"
+        },
+        {
+          "id": "c",
+          "text": "Exact : les hormones naturelles sont toujours inoffensives"
+        },
+        {
+          "id": "d",
+          "text": "Faux : le danger ne dépend que de la dose, et la dose sûre est connue"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La prémisse est fausse : l'effet cancérigène a été prouvé pour une des cinq hormones, et pour les autres il y a des craintes. De plus « non prouvé » ne signifie pas « prouvé inoffensif », et la science ne sait pas dire quelle dose autoriser : d'où le principe de précaution.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Un consommateur mange souvent de la viande d'un élevage traité aux antibiotiques. Quels risques s'ajoutent pour lui ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des antibiotiques actifs agissent sur les bactéries de son tube digestif"
+        },
+        {
+          "id": "b",
+          "text": "Des infections plus difficiles à traiter peuvent apparaître"
+        },
+        {
+          "id": "c",
+          "text": "Il avale des bactéries résistantes, dangereuses si la viande est mal cuite"
+        },
+        {
+          "id": "d",
+          "text": "Il devient lui-même résistant à toutes les infections"
+        },
+        {
+          "id": "e",
+          "text": "Les antibiotiques de la viande le protègent des toxi-infections"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La viande apporte des antibiotiques actifs, qui favorisent les bactéries résistantes du tube digestif, et des bactéries résistantes pathogènes, qui déclenchent des infections si la cuisson est insuffisante : on ne peut alors plus les traiter avec ces antibiotiques. Aucun antibiotique ne rend résistant à toutes les infections ni ne protège des toxi-infections.",
+      "difficulty": 3
+    }
+  ]
+}

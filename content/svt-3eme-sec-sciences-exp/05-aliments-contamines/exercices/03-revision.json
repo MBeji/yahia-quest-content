@@ -1,0 +1,204 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Les aliments contaminés",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Pourquoi le réfrigérateur ne suffit-il pas à protéger un aliment contaminé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le froid ralentit les microbes sans les tuer"
+        },
+        {
+          "id": "b",
+          "text": "Le froid fait multiplier les microbes plus vite"
+        },
+        {
+          "id": "c",
+          "text": "Le froid tue les microbes mais pas leurs toxines",
+          "misconceptionTag": "bio.contam.froid-tue-microbes"
+        },
+        {
+          "id": "d",
+          "text": "Le froid ne protège que contre les parasites"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le froid ralentit le développement des microbes sans les tuer : un aliment contaminé le reste au frais, et c'est la cuisson qui détruit microbes et parasites. L'idée que le froid les tue est l'erreur courante ; il ne les fait pas non plus multiplier plus vite.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque polluant de l'alimentation à son effet sur l'Homme.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Mercure"
+        },
+        {
+          "id": "l2",
+          "text": "Dioxines et furanes"
+        },
+        {
+          "id": "l3",
+          "text": "Nitrates en excès"
+        },
+        {
+          "id": "r3",
+          "text": "Méthémoglobine, incapable de transporter le dioxygène"
+        },
+        {
+          "id": "r1",
+          "text": "Troubles neurologiques, par accumulation dans le tissu nerveux"
+        },
+        {
+          "id": "r2",
+          "text": "Cancers et malformations congénitales"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Le mercure rejeté par l'usine de Minamata s'accumule dans le tissu nerveux et provoque des troubles neurologiques. Les dioxines et les furanes, organochlorés présents dans le lait et la viande, sont responsables de cancers et de malformations congénitales. Les nitrates en excès se transforment en nitrites, qui changent l'hémoglobine en méthémoglobine, incapable de transporter le dioxygène.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel agent provoque la dysenterie amibienne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enterobius vermicularis, un ver nématode"
+        },
+        {
+          "id": "b",
+          "text": "Entamoeba histolytica, un protozoaire"
+        },
+        {
+          "id": "c",
+          "text": "Echinococcus multilocularis, un petit ténia"
+        },
+        {
+          "id": "d",
+          "text": "Salmonella enteritidis, une bactérie"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La dysenterie amibienne est causée par le protozoaire Entamoeba histolytica. Enterobius vermicularis est l'oxyure, Echinococcus multilocularis le ténia de l'échinococcose alvéolaire, et Salmonella enteritidis une bactérie responsable de salmonellose.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel effet recherche l'éleveur qui donne des hormones de croissance à ses bovins ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Protéger les animaux contre les infections microbiennes",
+          "misconceptionTag": "bio.contam.hormones-antibiotiques-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Détruire les parasites de leur intestin"
+        },
+        {
+          "id": "c",
+          "text": "Éliminer les bactéries résistantes du troupeau"
+        },
+        {
+          "id": "d",
+          "text": "Accélérer leur croissance et leur prise de poids"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les hormones de croissance accélèrent la croissance des animaux, ce qui augmente la production de viande et de lait. Protéger contre les infections est le rôle des antibiotiques : confondre les deux produits est l'erreur courante.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes du cycle de l'amibe dysentérique, à partir des selles d'une personne malade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La forme active se multiplie et provoque des diarrhées sanglantes"
+        },
+        {
+          "id": "b",
+          "text": "Dans l'intestin, le kyste libère la forme active"
+        },
+        {
+          "id": "c",
+          "text": "Les kystes survivent dans l'eau ou sur des légumes souillés"
+        },
+        {
+          "id": "d",
+          "text": "Des kystes sont rejetés avec les selles d'une personne malade"
+        },
+        {
+          "id": "e",
+          "text": "Un kyste est avalé avec l'eau ou un légume mal lavé"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "d",
+          "c",
+          "e",
+          "b",
+          "a"
+        ]
+      },
+      "explanation": "Le cycle part des selles : les kystes y sont rejetés, puis ils survivent hors du corps, dans l'eau ou sur des légumes souillés. Un kyste avalé arrive dans l'intestin, où il libère la forme active ; celle-ci se multiplie et provoque les diarrhées sanglantes, puis de nouveaux kystes sortent avec les selles.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Voici deux pesticides fictifs : X reste actif dans le sol pendant des années, Y disparaît en quelques semaines. Quelles affirmations sont justifiées ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X risque de s'accumuler le long des chaînes alimentaires"
+        },
+        {
+          "id": "b",
+          "text": "X ressemble aux organochlorés comme le DDT"
+        },
+        {
+          "id": "c",
+          "text": "Y est inoffensif pour l'Homme, puisqu'il se dégrade vite"
+        },
+        {
+          "id": "d",
+          "text": "Y ressemble aux organophosphorés utilisés aujourd'hui"
+        },
+        {
+          "id": "e",
+          "text": "X est sans danger car sa concentration baisse à chaque maillon"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Un pesticide persistant comme X se comporte comme les organochlorés : stable, il s'accumule d'un maillon au suivant. Y se dégrade vite, comme les organophosphorés actuels. Mais dégradable ne veut pas dire inoffensif : les pesticides ont une toxicité aiguë. La concentration d'un polluant persistant ne baisse pas le long de la chaîne, elle augmente.",
+      "difficulty": 3
+    }
+  ]
+}

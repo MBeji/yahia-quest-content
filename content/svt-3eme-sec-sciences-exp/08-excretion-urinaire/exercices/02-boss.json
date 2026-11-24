@@ -1,0 +1,125 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du néphron",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Chez un sujet, la pression hydrostatique du sang dans le capillaire glomérulaire (P2) vaut 80 mmHg, la pression osmotique du plasma (P1) 30 mmHg et la pression dans la capsule de Bowman (P3) 20 mmHg. Quelle est la pression de filtration ?\n<svg viewBox=\"0 0 360 186\">\n<title>Les trois pressions de la barrière de filtration d'un sujet</title>\n<rect x=\"10\" y=\"44\" width=\"110\" height=\"132\" rx=\"0\" fill=\"#fecaca\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"240\" y=\"44\" width=\"110\" height=\"132\" rx=\"0\" fill=\"#fef9c3\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"120\" y=\"44\" width=\"120\" height=\"132\" rx=\"0\" fill=\"#e2e8f0\" stroke=\"none\" stroke-width=\"0\"/><line x1=\"120\" y1=\"44\" x2=\"120\" y2=\"176\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"240\" y1=\"44\" x2=\"240\" y2=\"176\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"180\" y=\"36\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">barrière de filtration</text><text x=\"65\" y=\"102\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">capillaire</text><text x=\"65\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">du glomérule</text><text x=\"295\" y=\"102\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">capsule</text><text x=\"295\" y=\"116\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">de Bowman</text><text x=\"180\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f6e56\">P2 = 80 mmHg</text><line x1=\"130\" y1=\"78\" x2=\"208.89\" y2=\"78\" stroke=\"#0f6e56\" stroke-width=\"4\"/><polygon points=\"218.89,78 208.89,82.5 208.89,73.5\" fill=\"#0f6e56\" stroke=\"#0f6e56\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"180\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">P1 = 30 mmHg</text><line x1=\"230\" y1=\"116\" x2=\"206.67\" y2=\"116\" stroke=\"#b91c1c\" stroke-width=\"4\"/><polygon points=\"196.67,116 206.67,111.5 206.67,120.5\" fill=\"#b91c1c\" stroke=\"#b91c1c\" stroke-width=\"1\" stroke-linejoin=\"round\"/><text x=\"180\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#b91c1c\">P3 = 20 mmHg</text><line x1=\"230\" y1=\"150\" x2=\"217.78\" y2=\"150\" stroke=\"#b91c1c\" stroke-width=\"4\"/><polygon points=\"207.78,150 217.78,145.5 217.78,154.5\" fill=\"#b91c1c\" stroke=\"#b91c1c\" stroke-width=\"1\" stroke-linejoin=\"round\"/>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 mmHg"
+        },
+        {
+          "id": "b",
+          "text": "50 mmHg",
+          "misconceptionTag": "bio.excr.pressions-opposees-ignorees"
+        },
+        {
+          "id": "c",
+          "text": "70 mmHg",
+          "misconceptionTag": "bio.excr.pressions-opposees-ignorees"
+        },
+        {
+          "id": "d",
+          "text": "130 mmHg",
+          "misconceptionTag": "bio.excr.pressions-opposees-ignorees"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "P2 pousse le liquide vers la capsule, P1 et P3 s'y opposent : P_F = P2 − (P1 + P3) = 80 − (30 + 20) = 30 mmHg ✓. Le piège courant : 80 − 30 = 50 ignore P3, 80 − 30 + 20 = 70 traite P3 comme favorable, et 80 + 30 + 20 = 130 additionne toutes les pressions.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chez un sujet, 0,5 l de plasma traverse les reins chaque minute et 20 % de ce plasma est filtré dans les capsules de Bowman (données d'illustration). Quel volume de filtrat se forme en 1 heure, en litres ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "l"
+      },
+      "explanation": "Volume filtré par minute : 0,5 × 0,20 = 0,1 l. Une heure compte 60 minutes : 0,1 × 60 = 6 l de filtrat. Le piège courant est d'oublier de multiplier par la durée.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Voici la composition du plasma d'un malade et du liquide de dialyse (données d'illustration). Quelles substances diffusent du sang vers le liquide de dialyse ?\n<svg viewBox=\"0 0 302 156\">\n<title>Composition du plasma et du liquide de dialyse</title>\n<rect x=\"6\" y=\"6\" width=\"290\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"81\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">substance</text><text x=\"191\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">plasma</text><text x=\"261\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">dialysat</text><rect x=\"6\" y=\"30\" width=\"290\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"81\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">urée (mg/100 ml)</text><text x=\"191\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">80</text><text x=\"261\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">0</text><rect x=\"6\" y=\"54\" width=\"290\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"81\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">acide urique (mg/100 ml)</text><text x=\"191\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">9</text><text x=\"261\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">0</text><rect x=\"6\" y=\"78\" width=\"290\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"81\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">glucose (mg/100 ml)</text><text x=\"191\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">100</text><text x=\"261\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">100</text><rect x=\"6\" y=\"102\" width=\"290\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"81\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">K⁺ (mEq/l)</text><text x=\"191\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">5</text><text x=\"261\" y=\"118\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">5</text><rect x=\"6\" y=\"126\" width=\"290\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"81\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Ca²⁺ (mEq/l)</text><text x=\"191\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">4</text><text x=\"261\" y=\"142\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\">6</text><line x1=\"156\" y1=\"6\" x2=\"156\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1\"/><line x1=\"226\" y1=\"6\" x2=\"226\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'urée"
+        },
+        {
+          "id": "b",
+          "text": "L'acide urique"
+        },
+        {
+          "id": "c",
+          "text": "Le glucose"
+        },
+        {
+          "id": "d",
+          "text": "Le K⁺"
+        },
+        {
+          "id": "e",
+          "text": "Le Ca²⁺"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b"]
+      },
+      "explanation": "Une substance diffuse du côté où elle est la plus concentrée vers l'autre : l'urée (80 contre 0) et l'acide urique (9 contre 0) quittent le sang. Le glucose et le K⁺ ont la même concentration des deux côtés, donc aucun passage net. Le Ca²⁺, moins concentré dans le sang (4) que dans le dialysat (6), entre dans le sang.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une personne a une glycémie de 3 g/l. Son débit de filtration est de 0,12 l/min et ses tubes ne peuvent réabsorber que 204 mg de glucose par minute (modèle d'illustration). Quelle masse de glucose est excrétée par minute, en mg ?",
+      "answerKey": {
+        "value": 156,
+        "unit": "mg/min"
+      },
+      "explanation": "Glucose filtré : 0,12 l/min × 3 g/l = 0,36 g/min = 360 mg/min. Les tubes en réabsorbent 204 mg/min au plus : 360 − 204 = 156 mg/min passent dans l'urine. La glycémie dépasse le seuil de 1,7 g/l, d'où la glucosurie.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Après l'ablation des glandes surrénales, un animal rejette davantage de NaCl dans son urine. Quelle hormone lui manque, et quel est son rôle normal ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ADH, qui active la réabsorption de l'eau au tube collecteur",
+          "misconceptionTag": "bio.excr.adh-aldosterone-confondues"
+        },
+        {
+          "id": "b",
+          "text": "L'aldostérone, qui active la filtration de NaCl au glomérule",
+          "misconceptionTag": "bio.excr.etape-du-nephron-confondue"
+        },
+        {
+          "id": "c",
+          "text": "L'ADH, qui active la réabsorption de NaCl dans le tube contourné distal du néphron",
+          "misconceptionTag": "bio.excr.adh-aldosterone-confondues"
+        },
+        {
+          "id": "d",
+          "text": "L'aldostérone, qui active la réabsorption de NaCl au tube contourné distal"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les glandes surrénales sécrètent l'aldostérone, qui active la réabsorption de NaCl au tube contourné distal. Sans elle, moins de NaCl revient au sang et davantage est rejeté. L'ADH commande la réabsorption de l'eau au tube collecteur, et la filtration ne dépend pas de l'aldostérone.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "En 24 h, 9 g de Cl⁻ sont excrétés dans 1,5 l d'urine ; le plasma contient 3,65 g/l de Cl⁻. Combien de fois l'urine est-elle plus concentrée en Cl⁻ que le plasma ? (arrondi au dixième)",
+      "answerKey": {
+        "value": 1.6,
+        "tolerance": 0.05
+      },
+      "explanation": "Concentration du Cl⁻ dans l'urine : 9 ÷ 1,5 = 6 g/l. Rapport avec le plasma : 6 ÷ 3,65 ≈ 1,64, soit 1,6. L'urine est plus concentrée parce que l'eau filtrée est réabsorbée dans une proportion (99,1 %) un peu plus grande que le Cl⁻ (98,5 %).",
+      "difficulty": 3
+    }
+  ]
+}

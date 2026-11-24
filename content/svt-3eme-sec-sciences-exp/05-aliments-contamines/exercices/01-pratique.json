@@ -1,0 +1,156 @@
+{
+  "title": "⭐ Exercice : Les aliments qui rendent malade",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans le botulisme, qu'est-ce qui rend directement malade ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les œufs d'un parasite présents dans l'aliment"
+        },
+        {
+          "id": "b",
+          "text": "Les bactéries qui se multiplient dans l'intestin",
+          "misconceptionTag": "bio.contam.toxine-ignoree"
+        },
+        {
+          "id": "c",
+          "text": "La toxine que la bactérie sécrète dans la boîte"
+        },
+        {
+          "id": "d",
+          "text": "Un pesticide resté sur les parois de la conserve"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans le botulisme, la bactérie Clostridium botulinum a déjà sécrété sa toxine dans l'aliment : c'est elle, avalée avec la conserve, qui provoque les troubles nerveux. Ce n'est ni un parasite ni un pesticide, et la maladie ne vient pas d'une multiplication des bactéries dans l'intestin.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pourquoi la listériose est-elle particulièrement redoutée chez la femme enceinte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle paralyse les muscles respiratoires de la future mère"
+        },
+        {
+          "id": "b",
+          "text": "Elle fait risquer un avortement ou un accouchement prématuré"
+        },
+        {
+          "id": "c",
+          "text": "Elle donne des abcès du foie et des poumons à la future mère"
+        },
+        {
+          "id": "d",
+          "text": "Elle cause cinq à sept jours de diarrhées à la future mère"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La listériose touche surtout les femmes enceintes, avec un risque d'avortement et d'accouchement prématuré d'enfants malades, et les personnes âgées. La paralysie respiratoire est celle du botulisme, les diarrhées celles de la salmonellose, les abcès du foie et des poumons ceux de l'amibiase.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le phytoplancton contient 0,001 p.p.m. de dieldrine et le zooplancton 0,02 p.p.m. Combien de fois la concentration est-elle plus grande dans le zooplancton ?",
+      "answerKey": {
+        "value": 20,
+        "unit": "fois"
+      },
+      "explanation": "0,02 ÷ 0,001 = 20 : la concentration est multipliée par 20 entre les deux maillons, première étape de l'accumulation de la dieldrine le long de la chaîne alimentaire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Des champignons envahissent les grappes de raisin d'un vignoble. Quel pesticide faut-il choisir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un insecticide"
+        },
+        {
+          "id": "b",
+          "text": "Un herbicide"
+        },
+        {
+          "id": "c",
+          "text": "Un rodenticide"
+        },
+        {
+          "id": "d",
+          "text": "Un fongicide"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le suffixe « -cide » signifie tuer et le début du mot nomme la cible : un fongicide tue les champignons. Un insecticide vise les insectes, un herbicide les herbes concurrentes, un rodenticide les rongeurs.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles règles protègent contre la contamination biologique des aliments ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuire suffisamment les aliments"
+        },
+        {
+          "id": "b",
+          "text": "Laver les légumes et les fruits à l'eau javellisée"
+        },
+        {
+          "id": "c",
+          "text": "Ranger les aliments au frais pour tuer les microbes"
+        },
+        {
+          "id": "d",
+          "text": "Ne pas consommer un aliment dont la date limite est dépassée"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "La cuisson détruit les microbes et les parasites, l'eau javellisée nettoie légumes et fruits, et un aliment périmé ne se consomme pas. Le réfrigérateur, lui, ralentit le développement des microbes mais ne les tue pas : il ne remplace aucune des trois autres règles.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la propagation des salmonelles, de la première à la dernière.",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'aliment, trop peu cuit, est mangé avec ses salmonelles vivantes"
+        },
+        {
+          "id": "b",
+          "text": "Un aliment contaminé, comme un œuf ou une volaille, arrive dans la cuisine"
+        },
+        {
+          "id": "c",
+          "text": "Le consommateur a de la fièvre, des diarrhées et des vomissements"
+        },
+        {
+          "id": "d",
+          "text": "Les mains ou les ustensiles transmettent les salmonelles à un aliment sain"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "Tout part d'un aliment déjà contaminé. Les mains ou les ustensiles transmettent alors les salmonelles à un aliment sain, qui n'est pas assez cuit pour les détruire. Les signes de la maladie ne viennent qu'à la fin, quand le consommateur a mangé cet aliment.",
+      "difficulty": 2
+    }
+  ]
+}

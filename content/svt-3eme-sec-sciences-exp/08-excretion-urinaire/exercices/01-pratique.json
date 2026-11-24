@@ -1,0 +1,159 @@
+{
+  "title": "⭐ Exercice : Les reins au travail",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quel est le rôle des uretères ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conduire l'urine du rein à la vessie"
+        },
+        {
+          "id": "b",
+          "text": "Former l'urine à partir du sang",
+          "misconceptionTag": "bio.excr.urine-formee-hors-du-rein"
+        },
+        {
+          "id": "c",
+          "text": "Stocker l'urine jusqu'à la prochaine miction"
+        },
+        {
+          "id": "d",
+          "text": "Évacuer l'urine hors du corps à la miction"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque uretère conduit l'urine du bassinet du rein jusqu'à la vessie. L'urine est formée dans les néphrons, stockée dans la vessie et évacuée par l'urètre : ce ne sont pas les rôles des uretères.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Par forte chaleur, un homme perd 1,2 l d'eau par la sueur. Ses entrées d'eau valent 2,55 l ; ses autres sorties (peau et poumons 0,9 l, fèces 0,1 l) ne changent pas, et son bilan reste équilibré (valeurs d'illustration). Quel volume d'urine rejette-t-il, en litres ?",
+      "answerKey": {
+        "value": 0.35,
+        "unit": "l"
+      },
+      "explanation": "Les sorties hors urine valent 0,9 + 0,1 + 1,2 = 2,2 l. Le bilan étant équilibré, les entrées de 2,55 l égalent les sorties : l'urine vaut 2,55 − 2,2 = 0,35 l.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un rein artificiel, une membrane semi-perméable sépare le sang du liquide de dialyse. Que laisse-t-elle passer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toutes les substances du sang, cellules du sang comprises"
+        },
+        {
+          "id": "b",
+          "text": "Seulement l'eau pure, sans aucune substance dissoute"
+        },
+        {
+          "id": "c",
+          "text": "Seulement les grosses molécules, qui gagnent le dialysat"
+        },
+        {
+          "id": "d",
+          "text": "Les petites molécules, mais pas les cellules du sang"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une membrane semi-perméable laisse passer les petites molécules dissoutes, comme l'urée, et retient les cellules du sang, trop grosses pour la traverser. Elle ne se limite pas à l'eau et ne laisse pas passer les cellules.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle structure du néphron enveloppe le glomérule et recueille le liquide filtré ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le tube contourné proximal"
+        },
+        {
+          "id": "b",
+          "text": "La capsule de Bowman"
+        },
+        {
+          "id": "c",
+          "text": "L'anse de Henlé"
+        },
+        {
+          "id": "d",
+          "text": "Le tube collecteur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La capsule de Bowman entoure le glomérule et recueille le liquide qui traverse la paroi des capillaires. Le tube contourné proximal, l'anse de Henlé et le tube collecteur viennent après : ils modifient ce liquide.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur la filtration glomérulaire, lesquelles sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est un phénomène physique, sans dépense d'énergie"
+        },
+        {
+          "id": "b",
+          "text": "Elle forme l'urine primitive dans la capsule de Bowman"
+        },
+        {
+          "id": "c",
+          "text": "Elle arrête les hématies et les protéines du plasma"
+        },
+        {
+          "id": "d",
+          "text": "Elle réabsorbe la totalité du glucose filtré"
+        },
+        {
+          "id": "e",
+          "text": "Elle ajoute de l'ammoniaque au liquide filtré"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "La filtration est un phénomène physique passif : la pression du sang pousse le plasma à travers la paroi, ce qui forme l'urine primitive dans la capsule de Bowman, et la barrière arrête les cellules et les protéines. La réabsorption du glucose et la sécrétion d'ammoniaque se font plus loin, dans les tubes, pas à la filtration.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Place dans l'ordre le trajet de l'urine, depuis sa sortie du néphron jusqu'à son rejet hors du corps.",
+      "options": [
+        {
+          "id": "c1",
+          "text": "Le calice"
+        },
+        {
+          "id": "c2",
+          "text": "L'uretère"
+        },
+        {
+          "id": "c3",
+          "text": "Le tube collecteur"
+        },
+        {
+          "id": "c4",
+          "text": "L'urètre"
+        },
+        {
+          "id": "c5",
+          "text": "Le bassinet"
+        },
+        {
+          "id": "c6",
+          "text": "La vessie"
+        }
+      ],
+      "answerKey": {
+        "order": ["c3", "c1", "c5", "c2", "c6", "c4"]
+      },
+      "explanation": "Le tube collecteur reçoit l'urine du néphron et s'ouvre dans un calice ; les calices se réunissent dans le bassinet, d'où part l'uretère. L'urine gagne alors la vessie, qui la stocke, puis l'urètre, qui l'évacue à la miction.",
+      "difficulty": 2
+    }
+  ]
+}

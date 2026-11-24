@@ -1,0 +1,10 @@
+# 📜 Résumé : Les aliments contaminés
+
+- **Toxi-infections alimentaires** : maladies dues à des bactéries pathogènes ou à leurs toxines. Salmonellose (œufs, volailles, très contagieuse), botulisme (conserves ; la toxine est sécrétée dans l'aliment), listériose (lait, fromage, légumes crus ; femmes enceintes et personnes âgées).
+- **Amibiase et oxyurose** : un parasite vit aux dépens d'un hôte. L'amibe (*Entamoeba histolytica*) entre par ses kystes (forme de résistance, rejetés avec les selles ; la forme active vit dans l'intestin), et l'oxyure par ses œufs ; ils entrent par la bouche avec l'eau, les aliments ou les mains souillés.
+- **Échinococcose alvéolaire** : ténia à deux hôtes. Adulte chez un carnivore (hôte définitif), larves chez un rongeur (hôte intermédiaire) ; l'Homme, qui avale des œufs, est un hôte accidentel. Maladie silencieuse du foie.
+- **Accumulation des polluants** : un polluant persistant (dieldrine, mercure) se concentre à chaque maillon de la chaîne alimentaire, de 0,001 à 1,6 p.p.m. pour la dieldrine ; l'Homme, au bout, est le plus exposé (Minamata). Dioxines, nitrates : autres polluants des aliments.
+- **Pesticides** : insecticides, fongicides, herbicides, rodenticides. Organochlorés (stables, persistants, DDT interdit depuis 1972) remplacés par les organophosphorés (plus efficaces, dégradables). Voies : respiratoire, cutanée, digestive.
+- **Antibiotiques d'élevage** : les mêmes que ceux de l'Homme ; leur usage répété sélectionne des bactéries résistantes, transmises par la viande insuffisamment cuite et difficiles à soigner.
+- **Hormones d'élevage** : elles accélèrent la croissance des animaux ; autorisées dans certains pays, interdites ailleurs (Tunisie) ; les savants sont divisés et le principe de précaution est l'argument de ceux qui les interdisent (Europe de l'Ouest, Tunisie).
+- **Prévention** : aliments non périmés, bien cuits, séparés ; cuisine et mains propres ; légumes lavés à l'eau javellisée ; le froid ralentit les microbes sans les tuer. Contre les produits chimiques : normes, contrôles et réglementation.
