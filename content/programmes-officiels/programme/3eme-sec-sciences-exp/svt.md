@@ -381,9 +381,9 @@ aussi. »
   ( physiologique ) » flèche d'augmentation ; « - Prise alimentaire » flèche d'augmentation).
   Légende des flèches : « : constante » (flèche droite) ; « : augmentation » (flèche courbe
   montante) ; « : diminution » (flèche courbe descendante). Le passage poids normal → obésité
-  passe par le cercle rose (flèches d'augmentation de la prise alimentaire, diminution des
-  dépenses d'activités [?]) ; le retour obésité → poids normal passe par le cercle vert (flèches
-  inverses [?]) — le sens exact de chaque petite flèche courbe est difficile à lire à la
+  passe par le cercle rose (prise alimentaire : flèche d'augmentation ; dépenses d'activités : flèche
+  constante et flèche de diminution) ; le retour obésité → poids normal passe par le cercle vert (flèches
+  inverses : prise alimentaire en diminution ; dépenses d'activités constantes ou en augmentation ; lu au zoom 220 dpi à l'audit R-7) — lecture confirmée à la
   résolution de lecture.
 
 Questions (verbatim) :
@@ -1024,7 +1024,7 @@ Encadré de méthode (verbatim) :
 acides aminés : en présence des réactifs spécifiques NaOH + CuSO4 les protides donnent une
 coloration bleu violacée.
 – la réaction xanthoprotéique qui met en évidence les protides : en présence du réactif
-spécifique HNO3, les protides donnent une coloration jaune. »
+spécifique HNO3, les protides donnent une coloration jaune. » (« plus de 3 acides aminés » [sic ?] : la réaction du biuret est positive dès 3 acides aminés, soit au moins 2 liaisons peptidiques — complément du lecteur.)
 
 **B - De quoi est constituée une protéine ?**
 
@@ -1503,10 +1503,10 @@ nutritionnels de l'adolescent, et en exploitant la table de composition des alim
 **A- La ration de l'enfant** (p.36)
 
 - **Document 32a — « Courbe de croissance staturale »** : axe vertical « Taille en Cm » (60 à
-  200, pas de 20) ; axe horizontal « Age (ans) » (0 à 18, pas de 2). Courbe croissante, plus
-  pentue dans les deux premières années : ≈ 50 cm [?] à la naissance, ≈ 75 cm à 1 an, ≈ 90 cm à
+  200, pas de 20) ; axe horizontal « Age (ans) » (origine étiquetée « B » = naissance, puis 2 à 18, pas de 2). Courbe croissante, plus
+  pentue dans les deux premières années : ≈ 50 cm à la naissance (départ sur l'axe des abscisses, sous la graduation 60), ≈ 75 cm à 1 an, ≈ 90 cm à
   2 ans, ≈ 100 cm à 4 ans, ≈ 115 cm à 6 ans, ≈ 130 cm à 8 ans, ≈ 140 cm à 10 ans, ≈ 150 cm à
-  12 ans, ≈ 165 cm à 14 ans, ≈ 175 cm à 16 ans, ≈ 178 cm à 17–18 ans (valeurs lues, ±5 cm).
+  12 ans, ≈ 165 cm à 14 ans, ≈ 177 cm à 16 ans, ≈ 183 cm à 18 ans (valeurs lues, ±5 cm).
 - **Document 32b — « Petit déjeuner d'enfant »** : photo (fillette buvant du lait ; huile,
   pain, fruits).
 - **Document 33 — « Besoins d'énergie de l'enfant en Kcal / Kg »** :
@@ -1535,7 +1535,7 @@ nutritionnels de l'adolescent, et en exploitant la table de composition des alim
   qu'écrite ; pour la vitamine D, 1 UI = 0,025 µg = 0,025 × 10⁻³ mg — complément du lecteur].
 - **Document 35 — « Hormone de croissance »** (verbatim) : « L'organisme produit 2 hormones de
   croissance : l'une par la glande hypophyse et l'autre par la glande thyroïde, ces deux hormones
-  sont de nature protéique. L'hormone thyroïdienne contient des atomes d'iode. »
+  sont de nature protéique. L'hormone thyroïdienne contient des atomes d'iode. » [sic — l'hormone thyroïdienne (thyroxine) n'est pas une protéine mais un dérivé iodé d'un acide aminé (tyrosine) ; seule l'hormone de croissance hypophysaire est protéique — complément du lecteur, à ne pas reprendre tel quel]
 
 Questions (verbatim) : « 1- Relevez à partir de l'analyse de la courbe du document 8 [sic — 32a],
 la caractéristique physiologique de l'enfant. 2- Expliquez l'évolution des besoins nutritionnels
@@ -1934,7 +1934,7 @@ Tableau p.47, recopié intégralement :
 | B2 (riboflavine ou lactoflavine ou ovoflavine) 1 - 2 mg | Produits laitiers, foie, œufs, céréales, légumes. | Intervient dans le métabolisme énergétique. |
 | B3 (vitamine PP ou niacine) 1 - 20 mg | Foie, viandes maigres, céréales, légumes. | Réactions d'oxydoréduction de la respiration cellulaire. |
 | B5 (acide pantothénique) 7 - 12 mg | Produits laitiers, foie, œufs, céréales, légumes. | Intervient dans le métabolisme énergétique. |
-| B6 (pyroxidine [sic]) 0,1 mg | Céréales complètes, légumes, viande. | Joue un rôle dans le métabolisme de nombreuses molécules : acides aminés, glycogène, hémoglobine, |
+| B6 (pyroxidine [sic]) 0,1 mg [sic ? — besoin réel ≈ 1,3 à 2 mg/j, complément du lecteur] | Céréales complètes, légumes, viande. | Joue un rôle dans le métabolisme de nombreuses molécules : acides aminés, glycogène, hémoglobine, |
 | vitamine C 10 - 70 mg | Végétaux frais, fruits. (détruite à l'air et à la cuisson) | • Facteur anti-infectieux • Formation des tissus |
 
 (Le besoin en vitamine D « 1 - 2 mg (enfant) » contredit le document 34 p.36 (400 à 800 UI, soit
@@ -2032,7 +2032,7 @@ Dérivés ; Sucreries** (colonne vitamine D en plus)
 | Rouget | 99,4 | 72,8 | 22,6 | 1 | | | | | 0,02 | 0,2 | | | |
 | Sardine (fraiche) | 111,77 | 73,1 | 22,7 | 2,33 | | 288 | 490 | 1,2 | 0,3 | 0,4 | 0 | 0 | 0 |
 | Sardine (conserve) | 275,7 | 84,4 | 19,6 | 21,7 | 0,5 | 386 | 586 | 2,7 | 0,07 | 0,02 | 0 | tr | 0 |
-| Thon frais) | 123,7 | 72,7 | 21,7 | 4,1 | 0 | 5 | 195 | 0,8 | | | | | |
+| Thon frais | 123,7 | 72,7 | 21,7 | 4,1 | 0 | 5 | 195 | 0,8 | | | | | |
 | Thon (connserve) [sic] | 252,6 | 55,4 | 24 | 17 | 0,9 | 7 | 224 | 1,2 | 0,12 | 0,04 | 0 | tr | 10,2 |
 | Beurre | 733 | 15,5 | 0,6 | 81 | 0,4 | 16 | 23 | 0,19 | 0,7 | tr | tr | 0,0037 | tr |
 | Fromage (gruère) | 402 | 32,84 | 31,6 | 28,6 | 2,85 | 750 | 480 | | 0,05 | | tr | 0,005 | 0,03 |
@@ -2161,7 +2161,7 @@ points positifs et les points négatifs de cette évolution. »
   37,7 kJ/g (9 kcal/g) ; 1 kcal ≈ 4,18 kJ.
 - **Réactifs de mise en évidence** : eau iodée (amidon bleu, glycogène brun acajou), liqueur de
   Fehling (sucre réducteur → précipité rouge brique), biuret (NaOH + CuSO4 → bleu violacé,
-  peptides > 3 AA), réaction xanthoprotéique (HNO3 → jaune), tache translucide (lipides) ; ions
+  peptides « > 3 AA » selon le manuel, en réalité dès 3 AA), réaction xanthoprotéique (HNO3 → jaune), tache translucide (lipides — résultat attendu, non imprimé : complément du lecteur) ; ions
   chlorure, calcium, sulfate (cités dans le tableau des préacquis, réactifs non donnés).
 - **Glucides** : propriétés (solubilité, filtration, diffusion, dialyse, chaleur, Fehling) ;
   cristaux à la phénylhydrazine ; **oses** (hexoses C6H12O6 : glucose, fructose, galactose —
@@ -2254,7 +2254,7 @@ Glossaire de fin de partie (p.54) — entrées relevant du chapitre : Nutriment 
     recherche 4) → **ch.05** (partie III).
   - Rôle de l'ADN/ARN, synthèse des protéines → thème 2 (**ch.10–11**) : ribose/désoxyribose ne
     sont donnés ici que comme constituants des acides nucléiques.
-  - Hormones de croissance : seule la mention du doc 35 (hypophyse, thyroïde, nature protéique,
+  - Hormones de croissance : seule la mention du doc 35 (hypophyse, thyroïde, « nature protéique » [sic, fausse pour l'hormone thyroïdienne, voir p.36],
     iode) ; aucune physiologie hormonale.
 
 ---
@@ -2403,7 +2403,7 @@ p.9 (obésité modérée dès 30) seulement par l'inégalité stricte. La défin
 - b) Hypothèse : « La salive est indispensable à la simplification de la molécule d'amidon en molécules plus simples (oses ou diholosides), à la température du corps. »
 - c) Expérience (protocole verbatim) : « – On prépare une solution d'empois d'amidon à 1 %. – On introduit 10 ml de cette solution dans un tube à essai. – On ajoute ≈ 2 ml de salive ( la bouche ne doit pas contenir des restes d'aliments ). – On place ce tube à essai : T2 dans un bain-marie ≈ 40° C, avec un 2ème tube témoin : T1 ne contenant qu'une solution d'empois d'amidon. – suivi des résultats de l'expérience : Pour suivre l'évolution de l'expérience, on prélève à des temps différents, 2 ml du contenu de chaque tube sur lequel on vérifie la présence de l'amidon par l'eau iodée ou la présence d'un sucre réducteur par la liqueur de Fehling. »
 - **Doc 10 — « Digestion de l'amidon par la salive »** : photo d'un bain-marie transparent avec thermomètre, deux tubes numérotés 1 et 2.
-- Tableaux **vides** à compléter : « Test à l'eau iodée » et « Test à la liqueur de Fehling » ; lignes Tubes 1, 2 ; colonnes Temps 0, 10, 15, 20, 25 (unité non imprimée ; minutes vraisemblablement — complément du lecteur). **Le manuel n'imprime pas les résultats.**
+- Consigne : « Reproduisez et complétez les tableaux ci-dessous, en vous appuyant sur les résultats expérimentaux obtenus. » Tableaux **vides** à compléter : « Test à l'eau iodée » et « Test à la liqueur de Fehling » ; lignes Tubes 1, 2 ; colonnes Temps 0, 10, 15, 20, 25 (unité non imprimée ; minutes vraisemblablement — complément du lecteur). **Le manuel n'imprime pas les résultats.**
 - d) Interprétation : « 1- Comment expliquez-vous la disparition de l'amidon et l'apparition d'un sucre réducteur ? 2- Sachant que l'amidon a pour formule ( C6 H10 O5)n et que le produit final est le maltose de formule C12 H22 O11, écrivez l'équation de la réaction. »
 - e) Conclusion : « 1- Concluez sur la validité de l'hypothèse 2- Emettez d'autres hypothèses sur les conditions de la digestion de l'amidon par la salive. »
 
@@ -2459,13 +2459,13 @@ p.9 (obésité modérée dès 30) seulement par l'inégalité stricte. La défin
 • la nature de la réaction enzymatique :
 Toutes les enzymes de la digestion catalysent des réactions d'hydrolyse. Ce sont des hydrolases. D'autres cellules de l'organisme possèdent des enzymes oxydases, des enzymes synthétases, etc… »
 (Note : la saccharase est dite ici « enzyme du suc pancréatique », alors que le tableau récapitulatif de la synthèse p.70 la place dans le **suc intestinal** — incohérence de la source, voir notes.)
-- Question : « Comment peut-on expliquer la spécificité enzymatique ? »
+- Question : « Comment peut-on expliquer la spécificité enzymatique ? » — Texte : « Le document ci-contre ( 11 ) montre un modèle explicatif de la réaction entre une enzyme et son substrat spécifique. »
 - **Doc 11 — « La spécificité enzyme ( E ) substrat ( S ) est schématisée par le modèle clé-serrure »** : trois vignettes — (1) un « substrat » (rond + triangle accolés) au-dessus d'une « enzyme » en forme de coupe dont l'échancrure est le « site actif » ; (2) « complexe enzyme-substrat » (substrat logé dans le site) ; (3) « produits de la réaction » (rond et triangle séparés) au-dessus de l'« enzyme » inchangée.
 - Questions : « 1- Commenter ce modèle. 2- Si ce modèle correspond à l'amylase et à l'amidon, représenter un modèle qui correspond à la pepsine et à l'ovalbumine. »
 
 **B - Influence de la température** (p.65)
 - Texte : « Le document ci-contre ( 12 ) montre la variation de l'efficacité de l'activité enzymatique en fonction de la température du milieu. L'efficacité est mesurée par le % de la masse de substrat ( aliment ) digéré. »
-- **Doc 12 — « Courbe de la variation de l'efficacité des enzymes en fonction de la température »** : ordonnée « Efficacité de l'enzyme (%) », graduations 50 % et 100 % ; abscisse « T° », graduations 20°, 40°, 60°. Courbe en cloche : part bas (~10 %) vers ~5 °C, monte, **maximum 100 % vers 35–37 °C**, redescend et atteint ~0 % vers **60 °C** (lecture graphique, valeurs approchées).
+- **Doc 12 — « Courbe de la variation de l'efficacité des enzymes en fonction de la température »** : ordonnée « Efficacité de l'enzyme (%) », graduations 50 % et 100 % ; abscisse « T° », graduations 20°, 40°, 60°. Courbe en cloche : part d'≈ 5 % vers 0 °C, monte, **maximum ≈ 100 % (sommet juste sous la graduation 100 %) vers ≈ 33 °C** (entre 30 et 35 °C), redescend et atteint ≈ 0 % à **60 °C** (lecture graphique au zoom 250 dpi, valeurs approchées ; la synthèse p.70 donne « optimum thermique compris entre 30° C et 40° C »).
 - Questions : « 1- Déterminez la valeur optimale de la température ou température qui correspond à une activité enzymatique maximale. 2- Expliquez l'effet des températures extrêmes sur l'activité des enzymes en tenant compte de leur nature protéique. »
 
 **C - Influence du PH** (p.65)
@@ -2489,7 +2489,7 @@ Toutes les enzymes de la digestion catalysent des réactions d'hydrolyse. Ce son
 
 **A - La villosité intestinale siège de l'absorption** (p.67)
 - Encadré, verbatim : « La paroi de l'intestin forme plus de 10 millions de replis richement vascularisés. Ces multiples replis peuvent constituer une surface de 400 m2 . Chaque repli est couvert de villosités dont la densité atteint 40 / mm2 . La membrane des villosités est recouverte de microvillosités ( 200 000 / mm2 ). L'épaisseur de la frontière entre aliments et sang est de l'ordre de 50 μm. »
-- **Doc 16 — « Structure de la paroi de l'intestin grêle »** : quatre dessins emboîtés par des flèches de grossissement :
+- **Doc 16 — « Structure de la paroi de l'intestin grêle »** : cinq dessins emboîtés par des flèches de grossissement :
   1. « La paroi de l'intestin grêle » (tronçon en perspective) — légendes imprimées : « artère », « veine », « replis », « enveloppe fibreuse », « couches musculaires », « muqueuse » ;
   2. « 3 replis circulaires » — repère **1** ;
   3. « Villosités » (bloc de muqueuse) — repères **2**, **3** ;
@@ -2602,7 +2602,7 @@ La lymphe se déversant dans le sang au niveau de la veine cave, tous les nutrim
 Demande : « Interprétez les résultats des expériences 1 et 2. »
 
 **EXERCICE 3** — « On mélange dans un tube à essai de l'huile, de l'eau et de la bile. On agite puis on ajoute une enzyme : la lipase pancréatique. Les résultats de l'expérience sont représentés par le graphique ci-dessous : »
-- Graphique : ordonnée « taux de substance dosée » (seule graduation : 100 % ; origine 0) ; abscisse « temps en min », graduations 60, 120, 180. Deux courbes : « huiles ( lipides ) » décroît de **100 % à t = 0** jusqu'à ≈ 0–5 % vers 180 min (décroissance rapide puis ralentie) ; « glycérol » croît de **0 à t = 0** jusqu'à ≈ 100 % vers 180 min (croissance accélérée) ; les deux courbes se croisent vers ≈ 90 min à ≈ 30 % (lecture graphique, valeurs approchées).
+- Graphique : ordonnée « taux de substance dosée » (seule graduation : 100 % ; origine 0) ; abscisse « temps en min », graduations 60, 120, 180. Deux courbes : « huiles ( lipides ) » décroît de **100 % à t = 0** jusqu'à ≈ 8 % vers 180 min (palier bas, sans toucher 0) (décroissance rapide puis ralentie) ; « glycérol » croît de **0 à t = 0** jusqu'à ≈ 100 % vers 180 min (croissance accélérée) ; les deux courbes se croisent vers ≈ 85–90 min à ≈ 33 % (lecture graphique, valeurs approchées).
 - Demandes : « 1- A l'aide de vos connaissances, précisez le rôle de la bile. 2- Analysez le graphique. 3- Etablissez une relation entre la variation des taux des substances dosées et l'action de la lipase pancréatique. »
 
 ### Concepts / notions
@@ -2731,7 +2731,7 @@ Glossaire de fin de partie (p.92) — entrées du chapitre, verbatim :
   | – On cultive des cellules dans un milieu contenant du glucose dont le carbone est marqué au ¹⁴C | – Le carbone du CO2 rejeté est radioactif ( *CO2 ) |
   | – On ajoute dans le milieu de culture de l'oxygène marqué ¹⁸O2 | – Le CO2 formé n'est pas radioactif – L'eau produite renferme de l'oxygène radioactif. |
 
-  Encadré, verbatim : « Les éléments radioactifs émettent un rayonnement ce qui permet de les suivre dans la cellule. Ils constituent des traceurs. »
+  Encadré, verbatim : « Les éléments radioactifs émettent un rayonnement ce qui permet de les suivre dans la cellule. Ils constituent des traceurs. » (Erreur scientifique de la source : ¹⁸O est un isotope **stable**, non radioactif ; il se repère par spectrométrie de masse. « oxygène radioactif » est reproduit tel qu'imprimé [sic] ; ne jamais faire dire qu'¹⁸O est radioactif — complément de l'auditeur R-7.)
   Questions : « 1- A partir de l'analyse des données expérimentales : * Vérifiez les hypothèses que vous avez formulé sur l'origine du CO2 et de H2O. * Précisez le devenir de l'O2 respiratoire absorbé. 2- Nommez la réaction de la formation du CO2 à partir du nutriment. »
 
 **B - Quelle est l'origine de l'hydrogène de la molécule d'eau ?** (p.76–77)
@@ -2951,18 +2951,18 @@ Le transfert de protons fournit de l'énergie qui servira à la synthèse de l'A
 (Pas de corrigé imprimé.)
 
 **EXERCICE 2** — « Des mitochondries sont isolées et placées dans un milieu nutritif fortement oxygéné et riche en ions phosphates. On mesure l'évolution du taux du dioxygène dans le milieu de culture des mitochondries après addition d'ADP dans le milieu. Les résultats sont représentés dans le document ci-dessous. »
-- Graphique : ordonnée « (O2) en μM », graduations 100, 150, 250 ; abscisse « Temps en mn » de 0 à 6. Lecture (valeurs approchées) : de ≈ **245 µM à t = 0** à ≈ 230 µM à 3 min (baisse lente) ; flèche « ajout : pyruvate » à 3 min → baisse rapide jusqu'à ≈ 165 µM vers 3,5 min, puis lente jusqu'à ≈ **150 µM vers 4,6 min** ; flèche « ADP » à ≈ 4,6 min → baisse rapide jusqu'à ≈ **78 µM vers 5,1 min**, puis lente jusqu'à ≈ 67 µM à 6 min. Une lettre « x » est placée près du segment qui suit l'ajout de pyruvate, et la légende imprimée près du segment qui suit l'ajout d'ADP dit « x = baisse de la concentration en ions phosphate » (position de « x » ambiguë — voir notes).
+- Graphique : ordonnée « (O2) en μM », graduations 100, 150, 250 ; abscisse « Temps en mn » de 0 à 6. Lecture (valeurs approchées) : de ≈ **250 µM à t = 0** à ≈ 222 µM à 3 min (baisse lente) [graduations non proportionnelles : l'intervalle 150 → 100 est dessiné plus long que la moitié de 250 → 150 ; valeurs sous 150 µM approximatives] ; flèche « ajout : pyruvate » à 3 min → baisse rapide jusqu'à ≈ 165 µM vers 3,5 min, puis lente jusqu'à ≈ **150 µM vers 4,6 min** ; flèche « ADP » à ≈ 4,6 min → baisse rapide jusqu'à ≈ **78 µM vers 5,1 min**, puis lente jusqu'à ≈ 67 µM à 6 min. Une lettre « x » est placée près du segment qui suit l'ajout de pyruvate, et la légende imprimée près du segment qui suit l'ajout d'ADP dit « x = baisse de la concentration en ions phosphate » (position de « x » ambiguë — voir notes).
 - Demande : « Expliquez la relation existant entre la variation du taux du dioxygène, l'apport d'ADP et la concentration des ions phosphates. »
 
 ### Concepts / notions
 
 - Besoin d'énergie des activités cellulaires ; glucose principale source ; consommation d'O2 proportionnelle à l'énergie produite.
 - Respiration (échanges gazeux, sang artériel / veineux) et respiration cellulaire ; réaction globale C6H12O6 + 6 O2 → 6 CO2 + 6 H2O + énergie (686 kcal = 2830 kJ ; 5,8 kcal par litre d'O2).
-- Traceurs radioactifs (¹⁴C, ¹⁸O) : le C du CO2 vient du glucose ; l'O2 respiratoire se retrouve dans l'eau.
+- Traceurs isotopiques (¹⁴C, radioactif ; ¹⁸O, isotope stable que le manuel dit à tort « radioactif » [sic]) : le C du CO2 vient du glucose ; l'O2 respiratoire se retrouve dans l'eau.
 - Déshydrogénation (bleu de méthylène accepteur d'hydrogène, Bm / BmH2) ; décarboxylation ; nature enzymatique des réactions respiratoires (filtrat bouilli, 0 °C).
 - Mitochondrie : siège de la respiration (consommation d'O2 par mitochondries isolées) ; ultrastructure (membranes externe et interne, crêtes, sphères pédonculaires, espace intermembranaire, matrice) et composition (enzymes d'oxydoréduction, déshydrogénases, décarboxylases, transporteurs).
 - Métabolite dégradé dans la mitochondrie : acide pyruvique (pas le glucose) ; succinate ; inhibiteurs (roténone, antimycine A, cyanure).
-- Étapes : glycolyse (hyaloplasme, 9 réactions, 1 glucose → 2 acides pyruviques, anaérobie) ; formation de l'acétyl-coenzyme A ; cycle de KREBS (matrice) ; chaîne respiratoire (membrane interne / crêtes), activation de O2 et de H2, formation de H2O par l'oxydase.
+- Étapes : glycolyse (hyaloplasme, « 9 réactions » selon le manuel [10 en biochimie actuelle : ne pas en faire une clé], 1 glucose → 2 acides pyruviques, anaérobie) ; formation de l'acétyl-coenzyme A ; cycle de KREBS (matrice) ; chaîne respiratoire (membrane interne / crêtes), activation de O2 et de H2, formation de H2O par l'oxydase.
 - Transporteurs T / TH2 ; enzymes : décarboxylases, déshydrogénases, oxydases.
 - Énergie : chaleur + énergie chimique stockée ; bombe calorimétrique ; ATP (adénine + ribose + 3 phosphates, liaisons riches en énergie P~P, 7,3 kcal = 30,5 kJ) ; ADP, AMP ; hydrolyse exergonique (ATPase) ; phosphorylation endergonique (ATP synthétase) ; cycle ATP/ADP ; renouvellement de l'ATP.
 - Bilan : 36 ATP par glucose (2 glycolyse, 2 KREBS, 32 chaîne respiratoire, selon le texte).
@@ -2985,6 +2985,19 @@ Glossaire de fin de partie (p.92) — entrées du chapitre, verbatim :
 
 - ✅ INCLUS : respiration cellulaire et réaction globale ; origine du CO2 et de H2O (traceurs) ; déshydrogénation et décarboxylation ; nature enzymatique ; mitochondrie (siège, ultrastructure, composition) ; glycolyse, cycle de KREBS, chaîne respiratoire au niveau du schéma imprimé (métabolites M6/M5/M4/M3/M2, transporteurs T/TH2) ; ATP/ADP/AMP, hydrolyse et phosphorylation, bilan de 36 ATP ; calcul énergie / volume d'O2 ; fermentation lactique et dette d'oxygène.
 - ⛔ EXCLU : digestion et absorption (ch.03) ; fermentations utilisées par l'industrie (microorganismes au service de la production, ch.06) ; régulation de la glycémie (ch.09) ; nomenclature détaillée des intermédiaires du cycle de KREBS (citrate, oxaloacétate…) et noms des transporteurs (NAD, FAD, cytochromes) — non imprimés dans ce chapitre ; mécanisme chimiosmotique détaillé (seul « le transfert de protons fournit de l'énergie » est imprimé) ; photosynthèse.
+
+## Fin de partie II — Recherche (p.91) et Glossaire (p.92)
+
+> Pages communes aux ch.03 et 04 (partie « UTILISATION DES NUTRIMENTS PAR L'ORGANISME »). Le glossaire p.92 (18 entrées) est recopié verbatim dans les sections ch.03 (11 entrées) et ch.04 (7 entrées).
+
+### Recherche (p.91) — verbatim
+**1 La respiration est-elle notre seule source d'énergie ?**
+« Certains microorganismes (la levure, le bacille tétanique, etc.) peuvent vivre en absence d'O2, (en anaérobie ). Cherchez des informations sur des microorganismes qui se procurent de l'énergie autrement que par la respiration, et les présenter dans un document numérique ( CD ) ou analogique ( dépliant... ). »
+**2 Les enzymes et la biotechnologie**
+« Les connaissances des enzymes ainsi que leurs conditions d'action, ont donné lieu à des applications industrielles notamment en agroalimentaire. Visitez des laboratoires spécialisés et consulter des sites Internet pur [sic] chercher des informations relatives à l'utilisation des enzymes dans l'agroalimentaire. Présentez ces informations dans un document numérique ( CD ) ou analogique ( dossier… ). »
+(Travaux de recherche : la 1 sert le ch.04 (fermentation), la 2 le ch.03 (enzymes) ; pas de notion de cours nouvelle.)
+
+---
 
 ## T1.5 Chapitre 05 — Risques liés à la consommation d'aliments contaminés (p.93–106, transcrit à profondeur de génération)
 
@@ -3249,7 +3262,7 @@ Termes imprimés dans le chapitre (définitions du manuel quand elles existent, 
 
 ## T1.6 Chapitre 06 — Des microorganismes au service de la production des aliments (p.107–115, transcrit à profondeur de génération)
 
-> Source : manuel CNP 225333, fichier P01, pages imprimées 107 à 115 (+ page « Recherche » de fin de partie p.116, résumée dans les notes).
+> Source : manuel CNP 225333, fichier P01, pages imprimées 107 à 115 (+ page « Recherche » de fin de partie p.116, transcrite dans la section « Fin de partie III » ci-dessous).
 > Rattachement imprimé : « Thème 1 — NUTRITION ET SANTE — NUTRITION ET ENVIRONNEMENT », « Chapitre 2 : DES MICROORGANISMES AU SERVICE DE LA PRODUCTION DES ALIMENTS » (numéro global : 06).
 > En-tête courant des pages 108–115 : « DES MICROORGANISMES AU SERVICE DE LA PRODUCTION DES ALIMENTS ».
 > Titre de la fiche : le brief dit « Des microorganismes au service de la production alimentaire » ; le titre imprimé est « DES MICROORGANISMES AU SERVICE DE LA PRODUCTION DES ALIMENTS ».
@@ -3355,7 +3368,7 @@ lactose                    glucose         acide lactique
 Actuellement, l'industrie alimentaire a mis au point des yaourts au «bifidus» grâce à l'utilisation de nouvelles souches bactériennes : bifidobactérium lifidum, bifidobactérium langum [sic]. Ces yaourts se distinguent par leur onctuosité ; ils facilitent la digestion et protègent contre les infections intestinales. »
 
 - **Schéma bilan — Doc 12 « Schéma de l'ultra structure d'une cellule de levure »** (légendes recopiées) : « cicatrice d'un bourgeon », « cytoplasme », « membrane plasmique », « glycogène », « espace périplasmique », « Vacuole », « mitochondrie », « Paroi », « noyau », « plasmide », « chromosome », « réticulum endoplasmique rugueux avec ribosomes fixés », « appareil de Golgi », « vésicule sécrétoire », « ribosome libre », « EXOCYTOSE » (flèches du réticulum vers le Golgi puis vers des vésicules qui fusionnent avec la membrane plasmique). Cellule ovale entourée d'une paroi épaisse.
-- (complément du lecteur : les équations sont recopiées telles qu'imprimées ; l'équation de la fermentation alcoolique porte « Enzymes » au-dessus de la flèche et ne mentionne pas d'ATP ; l'hydrolyse du lactose porte « + H₂O ».)
+- (complément du lecteur : les équations sont recopiées telles qu'imprimées ; l'équation de la fermentation alcoolique porte « Enzymes » au-dessus de la flèche et ne mentionne pas d'ATP ; l'hydrolyse du lactose porte « + H₂O ». Simplification de la source : la synthèse dit le lactose hydrolysé « en glucose » et légende « glucose » sous « 2 C₆H₁₂O₆ », alors que le tableau récapitulatif du ch.03 (p.70) donne « Lactose → Glucose + Galactose », qui est exact. Ne pas créer d'item affirmant que le lactose donne deux molécules de glucose — complément de l'auditeur R-7.)
 
 ### Exercices (p.114–115)
 
@@ -3402,6 +3415,21 @@ Termes imprimés dans le chapitre, avec définitions verbatim du manuel :
 
 - ✅ INCLUS : rôle des levures (pain, fermentation alcoolique, boissons alcoolisées citées), des bactéries lactiques (yaourt, fermentation lactique) et des moisissures Penicillium (fromages) ; équations globales des fermentations ; procédés de pasteurisation, stérilisation, aseptie ; vinaigre (exercice) ; lecture de courbes de culture de levure.
 - ⛔ EXCLU : mécanismes détaillés de la glycolyse, du cycle de Krebs et du bilan énergétique des fermentations (ch.04 « La respiration ») ; enzymologie détaillée (ch.03) ; risques sanitaires des aliments (ch.05) ; génie génétique et production industrielle par microorganismes génétiquement modifiés (ch.12).
+
+---
+
+## Fin de partie III — Recherche (p.116)
+
+> Bandeau « NUTRITION ET ENVIRONNEMENT » ; page commune aux ch.05 et 06 ; la partie III n'a pas de page « Glossaire ».
+
+### Recherche (p.116) — verbatim
+**1 L'agriculture biologique** — Doc 14 « Coccinelle consommant des pucerons » ; doc 15 « Larve de pyrale du maïs attaquée par un champignon filamenteux » (photos).
+« Dans le but de préserver l'environnement et faire face aux effets négatifs des pesticides, des engrais chimiques et d'additifs aux aliments de bétail ; certains pays industrialisés s'orientent vers «l'agriculture biologique» ou «agriculture raisonnée». • Cherchez ce que c'est "l'agriculture biologique" et quels sont ses moyens et ses techniques ? • Précisez ses avantages et ses limites. • Est-elle pratiquée dans notre pays ? »
+**2 La grippe aviaire**
+« La grippe aviaire est une maladie qui affecte les oiseaux et l'Homme. Depuis 2003, cette maladie fait des ravages dans les pays d'Asie ( Chine, Hongkong, Indonésie … ) : plus de 63 décès humains et des millions de volailles tuées par la maladie ou abattues. • Réalisez une étude (CD, fascicule, poster …) sur ce sujet : l'agent de la maladie, les vecteurs de propagation, danger … »
+**3 Maladie de la «vache folle»** — Doc 16 « Vache folle » (photo).
+« La maladie de la «vache folle» est apparue en Europe et aux U.S.A. Elle affecte le système nerveux des bovins alimentés à la «farine animale» et se transmet à l'Homme, qui consomme de la viande contaminée. • Cherchez des informations sur cette maladie : – sa gravité – ses symptômes – son agent pathogène – les conditions de contamination de bovins et de l'Homme. »
+(Travaux de recherche, non transcrits comme notions du cours : voir les bornes du ch.05.)
 
 ---
 
@@ -3579,7 +3607,14 @@ Termes imprimés dans le chapitre, définitions verbatim quand le manuel en donn
 - **Acidose** (« Une baisse anormale du PH sanguin »), **alcalose** (« Une élévation anormale du PH sanguin ») (p.124).
 - **Volémie** (« Volume sanguin ou volémie », p.124).
 - **Métabolisme** : « l'activité cellulaire appelée métabolisme » (p.125).
-- **Glossaire** : aucune page « Glossaire » dans la plage pour la partie IV ; la partie se poursuit avec le ch.08 « L'excrétion urinaire » (p.127). Le glossaire de la partie IV, s'il existe, est hors plage (lot suivant).
+- **Glossaire de la partie IV (p.156)**, entrées qui servent ce chapitre (verbatim) :
+  - **Hémoglobine** : « Hétéroprotéine contenue dans les hématies, assure le transport de CO₂ et de l'O₂ »
+  - **Homéostasie** : « Ensemble de toutes les réactions physiologiques qui maintiennent la constance du milieu intérieur. »
+  - **Lymphe** : « Liquide presque incolore, naît du sang et remplit les espaces intercellulaires, mais n'y stagne pas, une partie regagne les capillaires sanguins, l'autre partie est drainée par les vaisseaux lymphatiques. »
+  - **Milieu intérieur** : « Lymphe canalisée + lymphe interstitielle + plasma. » [définition du glossaire ; la synthèse p.125 dit « l'ensemble des liquides extracellulaires qui baignent les cellules »]
+  - **Pression hydrostatique** : « Pression exercée par un liquide sur les parois des vaisseaux qui le contiennent. Elle filtre l'eau. »
+  - **Pression oncotique** : « Fraction de la pression osmotique du plasma liée aux protéines plasmatiques. Elle attire l'eau. »
+  - **Pression osmotique** : « Force exercée par les molécules et les ions du soluté dans une solution. Elle attire l'eau. »
 
 ### Bornes de scope
 
@@ -3936,7 +3971,7 @@ Termes imprimés dans le chapitre, définitions verbatim quand le manuel en donn
     | Temps après l'ablation (mn) | 0 | 15 | 30 | 45 | 60 | 75 |
     | --- | --- | --- | --- | --- | --- | --- |
     | Glycémie (en g/l) | 1 | 0,89 | 0,75 | 0,7 | 0,62 | 0,5 |
-    | Effet de l'ablation | | | Hypoglycémie | | | Coma |
+    | Effet de l'ablation | | Hypoglycémie (case fusionnée de 15 à 60 mn) | | | | Coma |
 
   - Questions : « 1- Analysez le document 6. 2- Quelle hypothèse est confirmée par l'analyse de ce document ? »
 - **D- Variation de la glycémie de part et d'autre du foie** — « Le document 7 montre des mesures de la glycémie au niveau de la veine porte et la veine sus-hépatique chez une personne pendant un jeûne et après une alimentation. »
@@ -4080,7 +4115,7 @@ Tableau, verbatim :
   4. Le glucagon a- est une enzyme pancréatique. b- est une hormone hyperglycémiante. c- est sécrétée lors d'une hypoglycémie. d- est une hormone qui stimule la gycogénolyse au niveau du muscle. [« gycogénolyse » sic]
   5. Les organes régulateurs de la glycémie sont : a- le foie. b- les reins. c- le pancréas. d- les muscles.
 - **EXERCICE 2** (p.153) — « Chez un sujet normal, on se propose d'étudier l'évolution de la glycémie et de l'insulinémie avant et après l'ingestion de glucose. On fait ingérer à ce sujet dès la 30ème minute 50g de glucose. Les résultats de mesure de la glycémie et de l'insulinémie sont représentés par les graphes a et b du document suivant. » Demandes : « 1- Indiquez la nature et l'origine de l'insuline. 2- Interprétez les deux graphes a et b. » Source citée : « (D'après Bac. Math.Tunisie, juin 1995) ».
-  - **Doc 24 — « Variation de la glycémie et de l'insulinémie »** : (a) ordonnée « glycémie (en g/l) » 0,5 / 1 / 1,5 ; abscisse « temps (en minutes) » 0 à 180 ; « ingestion de glucose » à 30 min. Lectures : 1 g/l de 0 à 30 min ; montée à ≈ 1,45 vers 45 min, maximum ≈ 1,6 vers 60–65 min ; ≈ 1,5 à 90 ; ≈ 1,3 à 120 ; ≈ 1,1 à 165–180. (b) ordonnée « insulinémie (10⁻⁶ g/l) » 2 / 4 / 6 ; même abscisse. Lectures : ≈ 1,7 de 0 à 30 min ; montée à ≈ 6 vers 70 min, plateau ≈ 6 jusqu'à ≈ 100 min ; ≈ 4,5 à 115 ; ≈ 4 à 135 ; ≈ 3 à 165 ; ≈ 2 à 175.
+  - **Doc 24 — « Variation de la glycémie et de l'insulinémie »** : (a) ordonnée « glycémie (en g/l) » 0,5 / 1 / 1,5 ; abscisse « temps (en minutes) » 0 à 180 ; « ingestion de glucose » à 30 min. Lectures : 1 g/l de 0 à 30 min ; montée à ≈ 1,45 vers 45 min, maximum ≈ 1,6 vers 60–65 min ; ≈ 1,5 à 90 ; ≈ 1,3 à 120 ; ≈ 1,1 à 165–180. (b) ordonnée « insulinémie (10⁻⁶ g/l) » 2 / 4 / 6 ; même abscisse. Lectures : ≈ 1,5 de 0 à 30 min ; montée à ≈ 6 vers 70 min, plateau ≈ 6 jusqu'à ≈ 100 min ; ≈ 4,5 à 115 ; ≈ 4 à 135 ; ≈ 3 à 165 ; ≈ 2 à 175.
 - **EXERCICE 3** (p.154) — « Le document 25a montre l'évolution de la structure des adipocytes pendant un amaigrissement qui accompagne un diabète expérimental. »
   - **Doc 25a** : quatre dessins de cellules A, B, C, D (échelle « 1 µm » sur chacun) : A, grosse cellule remplie d'une volumineuse inclusion noire (lipides) ; B, inclusion fragmentée et réduite ; C, plus petite, inclusions dispersées ; D, petite cellule irrégulière avec noyau visible et quelques inclusions.
   - « Le document 25b montre l'évolution de l'utilisation de glucose par des cellules adipeuses en fonction de la quantité de l'insuline. On observe également que ces cellules s'enrichissent en lipides. » Demandes : « 1- Analyser le document 25b. 2- À partir des résultats du document 25a et du document 25b, dégager le rôle de l'insuline mis en évidence par ces résultats ? » Source : « (D'après Bac. Montpellier, juin 1998) ».
@@ -4102,7 +4137,7 @@ Tableau, verbatim :
 
 - Glycémie : définition, constante biologique (0,7–1,10 g/l ; 3,88–6,10 mmol/l) ; variations faibles avec l'alimentation (hausse) et l'exercice (baisse) ; hypoglycémie (< 0,70 g/l ; coma, mort vers 0,4 g/l) ; hyperglycémie / diabète.
 - Devenir du glucose ingéré (foie 55 %, muscle 18 %, tissu adipeux 11 %, liquides extracellulaires 5 %) ; position du foie sur la veine porte-hépatique ; foie tampon (veine porte variable, veine sus-hépatique stable) ; hépatectomie → hypoglycémie et coma.
-- Foie lavé de Claude Bernard : le foie stocke le glycogène et libère du glucose ; glycogène d'origine glucidique et non glucidique (acides aminés, acides gras) ; mise en évidence du glucose (liqueur de Fehling, précipité rouge brique) et du glycogène (eau iodée, brun acajou).
+- Foie lavé de Claude Bernard : le foie stocke le glycogène et libère du glucose ; glycogène d'origine glucidique et non glucidique (acides aminés, acides gras) ; mise en évidence du glucose (liqueur de Fehling, précipité rouge brique) et du glycogène (réactif iodo-ioduré, brun acajou).
 - Pancréas, glande mixte : acini exocrines (suc pancréatique → duodénum) / îlots de Langerhans endocrines (hormones → sang) ; pancréatectomie → diabète (glucosurie, polyurie, polydipsie, polyphagie, hyperglycémie ≈ 3,5 g/l) ; greffe → correction ; suppression du greffon → rechute.
 - Cellules α (périphériques) → glucagon (hyperglycémiant) ; cellules β (centrales) → insuline (hypoglycémiante, seule hormone hypoglycémiante) ; alloxane ; hormones de nature protéique (insuline : 2 chaînes A 21 / B 30 aa, ponts disulfure ; glucagon : 29 aa).
 - Sécrétion en fonction de la glycémie (doc 17) et action antagoniste (docs 18–19).
@@ -4133,6 +4168,53 @@ Tableau, verbatim :
 
 - ✅ INCLUS : définition et valeurs de la glycémie ; rôle du foie (stockage / libération, glycogène, néoglucogenèse ; expériences de Claude Bernard) ; pancréas endocrine / exocrine ; cellules α et β, insuline et glucagon (nature protéique, structure schématique, conditions de sécrétion, effets antagonistes) ; cellules cibles (foie, muscle, tissu adipeux, autres cellules) et réactions métaboliques stimulées / inhibées (doc 23) ; principe du récepteur membranaire et du 2ᵉ messager (doc 22, schéma) ; diabète : symptômes, types I et II, complications, prévention, gestion ; analyse de courbes d'hyperglycémie provoquée.
 - ⛔ EXCLU : nature et cascade du 2ᵉ messager (AMPc, kinases) — non nommées ; régulation nerveuse de la glycémie (seulement mentionnée « de nature nerveuse ») ; autres hormones hyperglycémiantes (adrénaline, cortisol) — non citées ; étapes détaillées de la glycolyse et de la respiration (→ ch.04, rappelées en préacquis) ; digestion et absorption (→ ch.03) ; seuil rénal du glucose (→ ch.08, rappelé en préacquis 6) ; traitements médicamenteux du diabète au-delà de la mention des sulfamides (ex. 4).
+
+## Fin de partie IV — Recherche (p.155) et Glossaire (p.156)
+
+### Recherche (p.155) — en-tête courant « LA RÉGULATION DE LA GLYCÉMIE », sert les ch.08 et 09
+
+- **1 « L'insuffisance rénale aiguë et son traitement »** — verbatim : « L'insuffisance rénale aiguë ( IRA ) est la perte de la fonction rénale d'une manière totale ou partielle ( égale ou supérieure à 80% ) à cause de maladies diverses. Il en résulte une accumulation des déchets cellulaires dans le sang, notamment l'urée et la créatinine, qui sont toxiques. Pour sauver les malades atteints d'IRA, on les soumet au traitement de l'hémodialyse appelée aussi rein artificiel, et on peut les guérir grâce à la greffe d'un nouveau rein. » Consigne : « Réalisez un poster, un dépliant, une planche murale sur : • La technique de l'hémodialyse. • La greffe ou transplantation rénale. Recherchez des informations sur l'Internet, contacter des médecins, visiter un centre d'hémodialyse. » [« aiguë » imprimé « aiguë » ; « contacter » sic]
+- **2 « Le diabète en Tunisie »** — « Réalisez le même travail que le précédent sur le diabète : • Les facteurs de risque de la maladie. • La ration alimentaire recommandée. • La prise en charge des enfants et des adultes diabétiques. Contactez des médecins, des malades et des associations de lutte contre le diabète. Cherchez des informations sur Internet. »
+- « Adresses de sites Web » : www.monanneeaucollege.com/3.svt ; www.didier-pol.net ; www.education.sn ; webiologie.free.fr ; perso.wanadoo.fr (imprimées avec espaces).
+
+### Glossaire de la partie IV (p.156) — recopié intégralement (14 entrées)
+
+- **Cellules cibles de l'insuline** : « Cellules qui possèdent des récepteurs membranaires spécifiques de l'insuline. »
+- **Excrétion** : « Elimination des déchets du métabolisme. »
+- **Glande endocrine** : « Organe qui sécrète dans le sang une ou plusieurs substances appelées hormones. »
+- **Glycolyse** : « Dégradation du glucose (C₆) en pyruvate (C₃) dans le hyaloplasme de la cellule. »
+- **Glycosurie** : « Présence de glucose dans les urines. »
+- **Hémoglobine** : « Hétéroprotéine contenue dans les hématies, assure le transport de CO₂ et de l'O₂ »
+- **Homéostasie** : « Ensemble de toutes les réactions physiologiques qui maintiennent la constance du milieu intérieur. »
+- **Hormone** : « Substance sécrétée par une glande et qui agit, après transport par le sang, sur des tissus situés à distance. »
+- **Lymphe** : « Liquide presque incolore, naît du sang et remplit les espaces intercellulaires, mais n'y stagne pas, une partie regagne les capillaires sanguins, l'autre partie est drainée par les vaisseaux lymphatiques. »
+- **Milieu intérieur** : « Lymphe canalisée + lymphe interstitielle + plasma. »
+- **Pression hydrostatique** : « Pression exercée par un liquide sur les parois des vaisseaux qui le contiennent. Elle filtre l'eau. »
+- **Pression oncotique** : « Fraction de la pression osmotique du plasma liée aux protéines plasmatiques. Elle attire l'eau. »
+- **Pression osmotique** : « Force exercée par les molécules et les ions du soluté dans une solution. Elle attire l'eau. »
+- **Ultra-filtrat** : « Liquide obtenu après filtration fine au niveau du glomérule. »
+
+---
+
+## Thème 2 — GÉNÉTIQUE : présentation du thème (p.157–158)
+
+### Page de présentation du thème (p.157)
+
+- Bandeau : « Thème 2 GÉNÉTIQUE — L'INFORMATION GÉNÉTIQUE : EXPRESSION, DIVERSITÉ ET TRANSMISSION ».
+- **Doc 1** (photo d'enfants d'une classe) : « Polymorphisme dans une population humaine : les enfants d'une classe, comme les personnes de la population mondiale (≈ 6,5 milliards) sont tous des individus uniques ». **Doc 2** (quatre photos de chats) : « Races naturelles de chats : des animaux de même espèce mais différents par certains caractères ». **Doc 3** (épis de maïs) : « Le maïs transgénique est une variété génétiquement modifiée produite au laboratoire à partir d'une variété naturelle ». (« Polymorphisme », « individus », « Races naturelles », « caractères » soulignés.)
+- **Texte de présentation**, verbatim : « Le monde vivant présente une caractéristique essentielle : la diversité. On parle de biodiversité ; ce mot désigne la diversité des espèces (≈ 30 millions), la diversité des lignées (races animales, variétés végétales et souches de microorganismes) et la diversité des individus appelée aussi polymorphisme. Chaque être vivant présente un ensemble de caractères héréditaires : caractères spécifiques (d'espèce), caractères raciaux (ou de variété) et caractères individuels. Tous ces caractères sont contrôlés par des informations génétiques bien déterminées, localisées au niveau de l'ADN qui est le constituant essentiel des chromosomes.
+  La science qui étudie la nature, la structure, la transmission de l'information génétique ainsi que son expression sous forme de caractères observables s'appelle “la Génétique”.
+  La recherche en génétique a permis de mettre au point des techniques de manipulation de l'ADN appelées Génie génétique. Le génie génétique a réussi la production d'organismes (plantes animaux, bactéries, levures) Génétiquement Modifiés (OGM) à partir de lignées naturelles. [« plantes animaux » sic]
+  Dans ce thème sur la génétique, nous aborderons les problèmes scientifiques suivants :
+  • Comment expliquer la constance de l'espèce à travers les différentes générations issues de la reproduction sexuée ?
+  • Comment l'information génétique s'exprime t-elle pour déterminer l'apparition d'un caractère héréditaire ?
+  • Quels sont les objectifs et les techniques du génie génétique ?
+  • Comment expliquer la diversité génétique des individus ?
+  • Comment expliquer la transmission des caractères héréditaires des parents à leurs descendants ? »
+
+### Sommaire du thème 2 (p.158)
+
+« Le thème de la Génétique comporte les chapitres suivants : CHAPITRE 1 : L'information génétique : des caractères aux gènes — CHAPITRE 2 : L'information génétique : mécanisme de son expression — CHAPITRE 3 : L'information génétique : ses manipulations en génie génétique — CHAPITRE 4 : L'information génétique : origine de la diversité — CHAPITRE 5 : L'information génétique : sa transmission ». Colonne des pages vide (aucune page de début imprimée).
 
 ## T2.1 Chapitre 10 — L'information génétique : des caractères aux gènes (p.159–170, transcrit à profondeur de génération)
 
@@ -4364,7 +4446,16 @@ Tableau, verbatim :
 ### Vocabulaire officiel
 
 espèce ; interfécondité ; lignée ; variété ; race ; lignée sauvage ; lignée mutante ; lignées sélectionnées ; caractère héréditaire ; caractère spécifique ; caractère individuel ; phénotype (sauvage, sélectionné, mutant) ; mutation ; information génétique ; ADN ; double hélice ; bases ; chromosome ; chromosomes homologues ; centromère ; caryotype ; formule chromosomique ; diploïde / diploïdie ; haploïde / haploïdie ; ploïdie ; gamète ; gamétogenèse ; fécondation ; cellule œuf ; mitose ; spermatozoïde ; ovule ; gène ; locus (pl. loci) ; allèle ; allèle mutant ; couple d'allèles ; génotype ; génome ; homozygote ; hétérozygote ; hémoglobine HbA / HbS ; drépanocytose ; hématies falciformes ; biodiversité.
-- Glossaire de fin de partie : aucun dans la plage (pas de glossaire après ce chapitre ; à rechercher en fin de thème 2, hors lot E).
+- **Glossaire de fin de thème 2 (p.257)** — entrées qui servent ce chapitre, verbatim :
+  - **Espèce** : « Population dont les individus sont semblables et capables de se croiser entre eux en donnant des descendants fertiles. »
+  - **Lignée** : « Groupe d'individus appartenant à une même espèce et ayant en commun des caractères distinctifs. »
+  - **Phénotype** : « C'est une forme d'expression d'un caractère héréditaire. Il correspond à l'expression d'un génotype. »
+  - **Génotype** : « Combinaison allélique d'un ou de plusieurs gènes présents dans le génome d'un individu. »
+  - **Génome** : « Ensemble des gènes de l'individu. »
+  - **Locus** : « Emplacement d'un gène sur le chromosome. »
+  - **Homozygote** : « Génotypes dont les deux allèles du génotype sont identiques. »
+  - **Hétérozygote** : « Génotypes dont les deux allèles du génotypes sont différents. » [sic]
+  - **Duplication chromosomique** : « Dédoublement des chromosomes pendant l'interphase : chaque chromosome à une chromatide devient formé de deux chromatides liées par le centromère. »
 
 ### Bornes de scope
 
@@ -4445,7 +4536,7 @@ espèce ; interfécondité ; lignée ; variété ; race ; lignée sauvage ; lign
 
 - **A — « Un organite cellulaire »**
   - **CONSTATATION 1** : « Dans l'organisme, certaines cellules ont une intense activité de synthèse de protéines : – Cellules des glandes digestives qui synthétisent des enzymes digestives ( document ci-contre ). – Cellules des glandes hormonales qui synthétisent des hormones de nature protéique ( insuline, glucagon … ) On a remarqué que de telles cellules sont particulièrement riches en ribosomes. Dans les autres cellules, les ribosomes sont peu nombreux. »
-  - **Encadré** : « **Ribosome** : organite cellulaire constitué de protéine (20%) et d'ARN ( 80% ), il est formé de deux sous-unités ribosomales : la petite sous-unité et la grande sous-unité. »
+  - **Encadré** : « **Ribosome** : organite cellulaire constitué de protéine (20%) et d'ARN ( 80% ), il est formé de deux sous-unités ribosomales : la petite sous-unité et la grande sous-unité. » [(complément de l'auditeur) proportions telles qu'imprimées ; ne pas en faire une donnée à mémoriser]
   - **Doc 15 — « Synthèse et excrétion de protéines par une cellule »** (schéma d'une cellule sécrétrice ; flèche « métabolites » entrant) — légendes à gauche : « SYNTHESE DES PROTEINES », « TRANSFERT », « STOCKAGE », « EXOCYTOSE » ; à droite : « réticulum endoplasmiqu[e] rugueux », « appareil de Golgi », « Ribosome libre », « vésicule de sécrétion », « Protéine ( enzyme ) ».
   - **CONSTATATION 2** : « Les hématies (ou globules rouges) appelées aussi érythrocytes sont des cellules différenciées (spécialisées) qui transportent l'O2 et le CO2 grâce à une protéine : l'hémoglobine. Les hématies se forment à partir de cellules non différenciées appelées érythroblastes. On a constaté que : – Les hématies sont sans noyau et dépourvues de ribosomes. – Les érythroblastes ont des noyaux et contiennent des ribosomes. – Les hématies sont incapables de synthétiser l'hémoglobine, alors que les érythrocytes en sont capables. » [« érythrocytes » à la dernière ligne, pour « érythroblastes », sic — les érythrocytes viennent d'être définis comme les hématies]
   - **EXPÉRIENCE** : « On cultive des érythroblastes sur un milieu nutritif contenant des acides aminés radioactifs ( marqués au ¹⁴C ). Après quelques temps on constate que la radioactivité se manifeste dans les ribosomes et dans la protéine synthétisée (l'hémoglobine). »
@@ -4613,7 +4704,15 @@ La protéine synthétisée est soit :
 ### Vocabulaire officiel
 
 expression de l'information génétique ; génotype ; phénotype ; métabolisme ; albinisme ; mélanine ; mélanocyte ; tyrosine ; tyrosinase ; phénylalanine ; phénylalanine hydroxylase ; phénylcétonurie ; acide phénylcétonurique ; ovalbumine ; oviducte ; amidon ; stachyose ; drépanocytose ; hémoglobine ; oxyhémoglobine ; chaîne de globine ; hème ; acide aminé ; liaison peptidique ; dipeptide ; polypeptide ; protéine ; enzyme ; ribosome ; sous-unité ribosomale (petite, grande) ; site P ; site A ; polysome ; réticulum endoplasmique rugueux ; appareil de Golgi ; vésicule de sécrétion ; exocytose ; érythroblaste ; érythrocyte / hématie ; acide ribonucléique ; ARN messager (ARNm) ; ARN de transfert (ARNt) ; ARNr ; ribose ; uracile ; nucléotide ; monocaténaire ; homogénéat ; ultracentrifugation ; ATP ; DNP ; ARN polymérase ; transcription ; brin transcrit / « brin codant » ; complémentarité des bases ; traduction ; code génétique ; codon ; codon d'initiation ; codon stop ; anticodon ; initiation ; élongation ; terminaison ; translocation ; protéine de structure ; protéine de fonction ; gène unité de fonction ; biosynthèse ; réticulocytes.
-- Glossaire de fin de partie : aucun dans la plage.
+- **Glossaire de fin de thème 2 (p.257)** — entrées qui servent ce chapitre, verbatim :
+  - **Anticodon** : « Triplet de bases azotées d'un ARNt complémentaire à un codon de l'ARNm. »
+  - **Codon** : « Triplet de nucléotides de l'ARNm correspondant à un acide aminé. »
+  - **Codon initiateur** : « Triplet de l'ARNm qui indique le début de la traduction, ce codon peut être : AUG qui correspond à la méthionine. »
+  - **Codon stop** : « Triplet de bases de l'ARNm qui indique la fin de la traduction, ce codon peut être : UAA, UAG, UGA. »
+  - **Désoxyribonucléotide** : « Nucléotide constitué de trois molécules : une base azotée (A, G, C et T), un sucre en C5 (désoxyribose) et un acide phosphorique (H₃PO₄). »
+  - **Ribonucléotide** : « Nucléotide constitué de trois molécules : une base azotée (A, U, G et C), un sucre en C5 (Ribose) et un acide phosphorique (H₃PO₄). »
+  - **Transcription** : « La synthèse d'un ARN (ARNm) à partir d'une séquence d'un brin d'ADN selon le principe de complémentarité des bases en utilisant un complexe enzymatique. »
+  - **Traduction** : « La synthèse d'une chaîne polypetidique à partir d'un ARNm. » [« polypetidique » sic]
 
 ### Bornes de scope
 
@@ -4793,8 +4892,15 @@ Le vecteur recombiné permet à la cellule hôte d'exprimer le gène et aussi de
 
 ### Vocabulaire officiel
 
-génie génétique ; manipulation des gènes ; transfert de gène ; OGM (organisme génétiquement modifié) ; organisme transgénique ; colibacille / Escherichia coli ; levure ; cellule hôte ; gène codant ; gène étranger ; gène de structure ; séquences régulatrices ; promoteur ; signal de fin de copie / de transcription ; ADNc (ADN copie, simple brin, double brin) ; transcriptase reverse / réverse ; enzyme de restriction ; endonucléase ; site de coupure ; sonde moléculaire radioactive ; hybridation ; électrophorèse ; gel d'agarose ; filtre de nitrocellulose ; dénaturation ; autoradiographie ; témoin positif / négatif ; plasmide ; plasmide recombiné / hybride / plasmide-chimère ; vecteur ; ADN recombiné ; ligase / ADN ligase (« enzyme d'épissage », « colle moléculaire ») ; « ciseaux moléculaire » ; bactérie transformée ; marqueur ; gène de résistance à un antibiotique ; streptomycine ; clonage ; clone ; bipartition ; réplication ; fermenteur ; espace périplasmique ; coque ; milieu hypertonique / hypotonique ; choc osmotique ; plasmolyse ; turgescence ; lyse ; banque d'ADNc ; banque d'ADN génomique ; bactériophage recombinant ; thérapie génique ; interféron ; thaumatine ; présure ; génome.
-- Glossaire de fin de partie : aucun dans la plage (pas de glossaire après ce chapitre ; p.206 ouvre directement le ch.13).
+génie génétique ; manipulation des gènes ; transfert de gène ; OGM (organisme génétiquement modifié) ; organisme transgénique ; colibacille / Escherichia coli ; levure ; cellule hôte ; gène codant ; gène étranger ; gène de structure ; séquences régulatrices ; promoteur ; signal de fin de copie / de transcription ; ADNc (ADN copie, simple brin, double brin) ; transcriptase reverse / réverse ; enzyme de restriction ; endonucléase ; site de coupure ; sonde moléculaire radioactive ; hybridation ; électrophorèse ; gel d'agarose ; filtre de nitrocellulose ; dénaturation ; autoradiographie ; témoin positif / négatif ; plasmide ; plasmide recombiné / hybride / plasmide-chimère ; vecteur ; ADN recombiné ; ligase / ADN ligase (« colle moléculaire » ; le doc 15 l'appelle aussi « enzyme d'épissage » [sic] — (complément de l'auditeur) terme impropre, l'épissage désignant la maturation de l'ARN ; ne pas le reprendre dans les contenus) ; « ciseaux moléculaire » ; bactérie transformée ; marqueur ; gène de résistance à un antibiotique ; streptomycine ; clonage ; clone ; bipartition ; réplication ; fermenteur ; espace périplasmique ; coque ; milieu hypertonique / hypotonique ; choc osmotique ; plasmolyse ; turgescence ; lyse ; banque d'ADNc ; banque d'ADN génomique ; bactériophage recombinant ; thérapie génique ; interféron ; thaumatine ; présure ; génome.
+- **Glossaire de fin de thème 2 (p.257)** — entrées qui servent ce chapitre, verbatim :
+  - **ADN hybride** : « Combinaison de deux types d'ADN provenant de deux individus différents. »
+  - **Clone** : « Ensemble d'individus génétiquement identiques issus d'un même individu. »
+  - **Enzyme de restriction** : « Protéine isolée à partir de bactéries assurant la coupure de la molécule d'ADN au niveau de sites bien déterminés. »
+  - **Enzyme ligase** : « Enzyme qui assure la liaison entre deux fragments d'ADN. »
+  - **Plasmide** : « Petite molécule d'ADN circulaire, localisée dans le ctyplasme d'une bactérie. » [« ctyplasme » sic]
+  - **Sonde moléculaire** : « Séquence de nucléotides radioactifs capables de s'hybrider avec le gène recherché. »
+  - **Vecteur** : « Molécule d'ADN (généralement un plasmide) capable de transférer le gène vers l'intérieur d'une bactérie. »
 
 ### Bornes de scope
 
@@ -4950,7 +5056,7 @@ génie génétique ; manipulation des gènes ; transfert de gène ; OGM (organis
   - Rangées **R1 à R5** : chaque portion de rate porte un assortiment différent de souches, réparties sur presque toute la gamme A–R, avec des barres de hauteurs variées (la perspective ne permet pas de lire des valeurs fiables) [?]. Exemples lisibles : R1 — barres vers K–N (≈ 10 à 20 %) et une petite barre vers R ; les rangées du fond (R4–R5) — une barre très haute vers G–H et des petites barres dispersées jusqu'à Q–R.
   - Lecture attendue (complément du lecteur) : souches dominantes différentes dans le sang et dans chaque portion de rate.
 - Questions (1–2), verbatim : « 1- Analysez les documents 19 et 20. 2- Proposez une hypothèse permettant d'expliquer l'origine de la variabilité génétique du VIH. »
-- **Doc 21 — « Origine de la diversité génétique des VIH »** (encadré, verbatim) : « L'ARN viral introduit dans la cellule hôte est transcrit en ADN viral grâce à la transcriptase réverse. L'ADN viral est inséré dans l'ADN de la cellule hôte. Cette opération conduit à la production de nombreux virus. Au cours de la transcription de l'ADN en ARN, il se produit de nombreuses erreurs au niveau de la nature et de l'ordre des bases. Il y a en moyenne 1 erreur de transcription pour 10000 nucléotides. Ceci conduit à une diversité de souches de VIH. »
+- **Doc 21 — « Origine de la diversité génétique des VIH »** (encadré, verbatim) : « L'ARN viral introduit dans la cellule hôte est transcrit en ADN viral grâce à la transcriptase réverse. L'ADN viral est inséré dans l'ADN de la cellule hôte. Cette opération conduit à la production de nombreux virus. Au cours de la transcription de l'ADN en ARN, il se produit de nombreuses erreurs au niveau de la nature et de l'ordre des bases. Il y a en moyenne 1 erreur de transcription pour 10000 nucléotides. Ceci conduit à une diversité de souches de VIH. » [(complément du lecteur) erreur de la source : les erreurs qui font varier le VIH se produisent lors de la transcription inverse (ARN viral → ADN) par la transcriptase réverse, et non lors de la « transcription de l'ADN en ARN » ; ne pas reprendre cette formulation.]
 - Questions (3–4), verbatim : « 3- Analysez le document 21. 4- Déduisez une relation entre la variabilité génétique et le pouvoir de mutation du VIH. »
 
 ##### 6 — « Mutation chez le virus de la grippe » (p.216)
@@ -5097,7 +5203,7 @@ La méiose est une division cellulaire particulière qui affecte des cellules di
 – La division réductionnelle :
 Division par laquelle une cellule germinale dite aussi cellule souche diploïde à 2n chromosomes (dans le schéma 2n est égal à 2) donne 2 cellules haploïdes à n chromosomes chacune.
 – La division équationnelle :
-Les deux cellules filles issues de la division réductionnelle subissent la division équationnelle en donnant quatre cellules ou gamètes haploides à n chromosomes chacun. »
+Les deux cellules filles issues de la division réductionnelle subissent la division équationnelle en donnant quatre cellules ou gamètes haploides à n chromosomes chacun. » [« gamètes » sic, ici et aux p.217 (« le gamète mâle est le grain de pollen et le gamète femelle est l'ovule ») et p.227 (« les ovules ou gamètes ♀ ») — (complément du lecteur) chez les plantes à fleurs, la méiose donne des spores (microspores, mégaspores) ; les gamètes sont les anthérozoïdes et l'oosphère (« gamète ♀ proprement dit », p.218). Dans le contenu, parler de grain de pollen et d'ovule « contenant » les gamètes.]
 - **Schéma bilan « Les étapes de la méiose »** (2n = 2 ; un chromosome bleu, un rose) : « Prophase I » (homologues appariés dans le noyau) → « Métaphase I » (bivalent sur l'équateur) → « Anaphase I » (homologues séparés, chacun à 2 chromatides) — flèche « Division réductionnelle » → « Télophase I / Prophase II » (2 cellules, l'une bleue, l'autre rose) → « Métaphase II » (dans chaque cellule, un chromosome à 2 chromatides à l'équateur) → « Anaphase II » (chromatides séparées) → « Télophase II » (4 cellules à un chromosome à 1 chromatide : 2 bleues, 2 roses) — flèche « Division équationnelle ».
 
 « **d) La fécondation**
@@ -5223,7 +5329,7 @@ T–A–C–G–A–C–C–A–C–C–T–C–T–C–C–A–C–G–G–A–
 ### Présentation et objectifs du chapitre (p.234)
 
 - **Doc 1** (portrait + dessin de plants de pois) — légende verbatim : « Le moine Grégor Mendel ( 1822 – 1884) est le fondateur de la génétique. Ses expériences sur le croisement du petit pois lui ont permis d'établir des lois : les lois de Mendel qui sont universelles et ce, avant même la découverte des chromosomes. »
-- **Doc 2** (photo de Morgan au microscope + photo de deux drosophiles) — légende verbatim : « Thomas Morgan ( prix Nobel de génétique ) a établi en 1910, à partir d'expériences sur les croisements de la Drosophile, la théorie chromosomique de l'hérédité. Il a déterminé la position des gènes sur les chromosomes, chez la Drosophile. »
+- **Doc 2** (photo de Morgan au microscope + photo de deux drosophiles) — légende verbatim : « Thomas Morgan ( prix Nobel de génétique ) a établi en 1910, à partir d'expériences sur les croisements de la Drosophile, la théorie chromosomique de l'hérédité. Il a déterminé la position des gènes sur les chromosomes, chez la Drosophile. » [« prix Nobel de génétique » sic — (complément du lecteur) ce prix n'existe pas : Morgan a reçu le prix Nobel de physiologie ou médecine en 1933.]
 - **Texte de présentation**, verbatim : « Chaque être vivant, animal ou végétal présente des caractères d'origine paternelle et maternelle, mais parfois il présente des caractères de l'un des parents et parfois des caractères différents des caractères parentaux.
   Au cours de la reproduction sexuée, deux parents, mâle et femelle, transmettent par leurs gamètes, à leurs descendants, un lot de gènes paternels et un lot de gènes maternels. Ces deux lots de gènes réunis dans l'œuf déterminent le sexe et les caractères de chaque descendant.
   La génétique dite formelle ( fondée par Mendel ) qui a précédé historiquement la génétique moléculaire a établi des lois qui expliquent la transmission des caractères à travers des générations.
@@ -5554,6 +5660,44 @@ b-Calculez les % des différents descendants issus du deuxième croisement. »
   - Méiose, brassages, double fécondation : **ch.13** ; nature moléculaire du gène : **ch.10–11**.
   - Hérédité humaine liée au sexe (daltonisme, hémophilie) : non citée dans ce chapitre.
 
+## Thème 3 — GÉOLOGIE : présentation du thème (p.258–260)
+
+> Source : manuel CNP 225333, fichier P03, pages imprimées 258 à 260 (pages physiques 25 à 27). Bandeau imprimé p.258 : « Thème 3 — GÉOLOGIE — Dynamique du globe terrestre et évolution » (les pages de chapitre portent « DYNAMIQUE DU GLOBE TERRESTRE ET ÉVOLUTION BIOLOGIQUE »). Cadrage commun aux ch.15 à 17.
+
+### Page de présentation du thème (p.258)
+
+- Photos : « Le système solaire » — légende « 1. Mercure ; 2. Vénus ; 3. Terre ; 4. Mars ; 5. Jupiter ; 6. Saturne et ses anneaux ; 7. Uranus ; 8. Neptune » ; « La Terre, planète bleue ! ».
+- Texte, verbatim : « La Terre est une planète du système solaire. Elle a une forme générale sphérique ; on l'appelle globe terrestre. Le globe terrestre mesure 12756 Km de diamètre équatorial. Sa masse est estimée à 6.10²¹ tonnes (600 milliards de milliards de tonnes). Notre planète se distingue des autres planètes, par la présence, de l'eau liquide, de l'oxygène libre et de formes de vie très variées. Grâce aux sciences de la Terre (géophysique, géochimie, paléontologie, sismologie, télédétection…) nous connaissons la structure et la composition du globe terrestre aussi bien sa partie externe appelée croûte que ses parties profondes non accessibles à l'observation directe. Les sciences de la Terre se préoccupent également, de l'histoire et de l'évolution du globe terrestre. Ainsi depuis sa formation, il y a 4,6 milliards d'années, la Terre n'est pas restée une planète stable et figée ; elle est au contraire en état dynamique, le siège d'une évolution géologique et d'une évolution biologique permanente. L'activité tectonique intense (séismes, volcanisme, failles, plissement) au temps actuel et dans le passé ainsi que la disparition de groupes d'êtres vivants et l'apparition de nouveaux groupes, au cours des temps géologiques, représentent les témoins de cette évolution. » [« 600 milliards de milliards » sic — (complément du lecteur) 6.10²¹ t = 6 000 milliards de milliards de tonnes ; ne reprendre que « 6.10²¹ tonnes ».]
+- Questions du thème, verbatim : « § Quelles sont la structure et la composition du globe terrestre ? § Comment expliquer l'état dynamique du globe terrestre ? § Comment a évolué la vie sur notre planète ? § Y-a-t-il une relation entre l'évolution géologique et l'évolution biologique ? »
+
+### Le calendrier géologique (p.259)
+
+Tableau pleine page, colonnes « Eres / Système / Série / Ma ». Chaque valeur en Ma est imprimée à la limite inférieure (base) de la série.
+
+| Ère | Système | Séries (base en Ma) |
+| --- | --- | --- |
+| IVre | — | HOLOCÈNE 0,01 ; PLÉISTOCÈNE 1,65 |
+| IIIre | Néogène | « POLICÈNE » [sic : Pliocène] 5,3 ; MIOCÈNE 23,5 |
+| IIIre | Paléogène | OLIGOCÈNE 34 ; ÉOCÈNE 53 ; PALÉOCÈNE 65 |
+| IIre | Crétacé | SUPÉRIEUR 96 ; INFÉRIEUR 135 |
+| IIre | Jurassique | SUPÉRIEUR (MALM) 154 ; MOYEN (DOGGER) 180 ; INFÉRIEUR (« LILAS » [sic : Lias]) 205 |
+| IIre | Trias | SUPÉRIEUR 230 ; MOYEN 240 ; INFÉRIEUR 245 |
+| Ire | Permien | SUPÉRIEUR 258 ; INFÉRIEUR 295 |
+| Ire | Carbonifère | SILÉSIEN 325 ; DINANTIEN 360 |
+| Ire | Dévonien | SUPÉRIEUR 375 ; MOYEN 385 ; INFÉRIEUR 410 |
+| Ire | Silurien | « PRODOLI » [sic : Pridoli] 415 ; LUDLOW 425 ; WENLOCK 430 ; LLANDOVERY 435 |
+| Ire | Ordovicien | ASHGILL 445 ; CARADOC 455 ; LLANDEILO (pas de valeur imprimée à sa base) ; LLANVIRN 470 ; ARÉNIG 485 ; TRÉMADOG 500 |
+| Ire | Cambrien | SUPÉRIEUR, MOYEN, INFÉRIEUR — seule la base est chiffrée : 540 |
+| Précambrien | — | de 540 à 2500 (valeur la plus basse imprimée) |
+
+- Attention : le manuel fait coexister trois échelles chiffrées. Ce calendrier (bases 1,65 / 65 / 245 / 540) diffère du doc 1 p.310 (−1,8 / −65 / −250 / −545) et du doc 3 p.311 (2,5 / 65 / 225 / 570 Ma). Dans un exercice du ch.17, citer l'échelle du document utilisé.
+
+### Sommaire du thème (p.260)
+
+- Verbatim : « L'étude du thème de la géologie comporte les chapitres suivants : CHAPITRE 1 : La structure et la composition du globe terrestre … 277 ; CHAPITRE 2 : La tectonique des plaque [sic] … 296 ; CHAPITRE 3 : L'évolution biologique … 326 ». Les numéros de page sont faux (+16) : les débuts réels sont 261, 280 et 310 (pages de titre et sommaire général p.335).
+
+---
+
 ## T3.1 Chapitre 15 — Structure et composition du globe terrestre (p.261–279, transcrit à profondeur de génération)
 
 > Source : manuel CNP 225333 (SVT 3ème sec. Sciences expérimentales), fichier P03, pages imprimées 261 à 279 (pages physiques 28 à 46).
@@ -5571,7 +5715,7 @@ b-Calculez les % des différents descendants issus du deuxième croisement. »
     - 3 Quelle est la composition du globe terrestre ? : A Renseignements fournis par le volcanisme (272–273) ; B Composition du globe : a) croûte continentale, b) croûte océanique, c) manteau (273–274), d) noyau (274–275)
   - Synthèse « Structure et composition du globe terrestre » (1 Discontinuités et couches ; 2 Composition ; 3 Source d'énergie thermique) — 276–278
   - Exercices (1 QCM, 2) — 279
-  - Pas de « Recherche » ni de « Glossaire » dans la plage. La p.263 renvoie au glossaire (« voir glossaire »), qui n'est pas dans la plage du lot (voir notes).
+  - Pas de « Recherche » ni de « Glossaire » propres : la Recherche (p.333) et le Glossaire (p.334) de fin de thème 3 suivent le ch.17. La p.263 renvoie au glossaire (« voir glossaire ») ; les entrées qui servent ce chapitre sont recopiées dans « Vocabulaire officiel ».
 
 ### Présentation et objectifs du chapitre (p.261)
 
@@ -5760,7 +5904,7 @@ b-Calculez les % des différents descendants issus du deuxième croisement. »
 
 ### Synthèse — « Structure et composition du globe terrestre » (p.276–278), verbatim
 
-**Schéma bilan p.276, « Modèle structural du globe terrestre »** : secteur de globe de la surface au centre. Légendes : croûte continentale, couches métamorphiques et granites ; croûte océanique (basalte) ; manteau supérieur, repères 0, 30 km, 100 km ; ASTHÉNOSPHÈRE MOINS RIGIDE ; péridotite solide ; 100 km [?] ; MANTEAU INFÉRIEUR RIGIDE ; 2500 km [sic : 2 900 km dans le texte] ; NOYAU EXTERNE, fer fondu (+ NICKEL, SOUFRE) ; 5170 km ; NOYAU INTERNE, fer solide (+ nickel) ; 6370 km. Accolades à droite : CROUTES (1/500ᵉ du volume terrestre) ; MANTEAU (4/5 du volume terrestre) ; NOYAU (1/5 du volume terrestre). Encadrés :
+**Schéma bilan p.276, « Modèle structural du globe terrestre »** : secteur de globe de la surface au centre. Légendes : croûte continentale, couches métamorphiques et granites ; croûte océanique (basalte) ; manteau supérieur, repères 0, 30 km, 100 km ; ASTHÉNOSPHÈRE MOINS RIGIDE ; « périodite solide » [sic : péridotite] ; 100 km [?] ; MANTEAU INFÉRIEUR RIGIDE ; 2500 km [sic : 2 900 km dans le texte] ; NOYAU EXTERNE, fer fondu (+ NICKEL, SOUFRE) ; 5170 km ; NOYAU INTERNE, fer solide (+ nickel) ; 6370 km. Accolades à droite : CROUTES (1/500ᵉ du volume terrestre) ; MANTEAU (4/5 du volume terrestre) ; NOYAU (1/5 du volume terrestre). Encadrés :
 - densité (g/cm³) : CROUTES 2,7 (continent), 3,0 (océan) ; MANTEAU « 33 a 55 » [sic, pour 3,3 à 5,5] ; NOYAU 10 a 12.
 - composition chimique : CROUTES : oxyde de silicium (50 % à 70 %), oxyde d'aluminium (13 % à 16 %), de calcium, de potassium, de sodium. MANTEAU : oxyde de cilicium [sic] (45 %), oxyde de fer (8 %), de magnésium (37 %). NOYAU : fer 88 %, nickel, soufre.
 - température (°C) : CROUTES 0 à 900 ; MANTEAU 900 à 4 000 ; NOYAU 4 000 à 5 000.
@@ -5791,7 +5935,7 @@ La découverte des discontinuités montre que l'intérieur de la terre est form�
 Au niveau du manteau on rencontre une zone à faible vitesse : la ZFV ou LVZ. Tous les niveaux situés au dessus de cette zone forment la lithosphère.
 – le noyau qui occupe le centre du globe terrestre, forme 17% du volume terrestre. Il se divise en noyau interne ou graine et en noyau externe.
 Le noyau est responsable du champ magnétique terrestre.
-Le champ magnétique de la terre protège les êtres vivants du rayonnement électromagnétique émis par le soleil.
+Le champ magnétique de la terre protège les êtres vivants du rayonnement électromagnétique émis par le soleil. [sic — (complément du lecteur) le champ magnétique dévie les particules chargées du vent solaire ; les UV sont filtrés par la couche d'ozone (ch.17, p.320 et p.330).]
 Le noyau joue ainsi un rôle important dans la protection de la biosphère.
 § Une autre subdivision de la structure du globe terrestre :
 Lithosphère et asthénosphère
@@ -5801,7 +5945,7 @@ Une couche d'une centaine de kilomètres d'épaisseur, froide et rigide engloban
 Les éruptions volcaniques ramènent en surface des matériaux qui témoignent de la composition profonde de la Terre. Leur étude permet de mieux comprendre les 200 premiers kilomètres.
 **A - Composition de la croûte** : on peut étudier directement des échantillons de la partie supérieure de la croûte continentale et océanique. La croûte continentale est constituée de granites. La croûte océanique est constituée de basalte.
 **B - Composition du manteau** :
-– le manteau supérieur est formé de basalte et de péridotite, roches riches en olivine (minéral vert).
+– le manteau supérieur est formé de basalte et de péridotite, roches riches en olivine (minéral vert). [sic, comme dans le tableau qui suit — (complément du lecteur) le manteau est formé de péridotite ; le basalte provient de sa fusion partielle et constitue la croûte océanique (p.273 ; 3e § de la p.278).]
 – Le manteau inférieur est constitué de péridotite.
 **C - Composition du noyau**
 L'étude expérimentale a montré que le noyau est particulièrement riche en fer. Le noyau externe liquide est constitué de fer, du nickel et du soufre. Le noyau interne solide est fait de fer et de nickel. »
@@ -5882,7 +6026,23 @@ Demande : 1- Représentez graphiquement la propagation des ondes P, S, et L.. 2-
 ### Vocabulaire officiel
 
 - Imprimé dans le chapitre (termes en couleur ou en gras) : Terre, séismes, volcans, séismogramme, séismographe, sismomètre, foyer, hypocentre, épicentre, échelle de Richter, magnitude, échelle de Mercalli, intensité, ondes P, ondes S, ondes L, ondes de compression, ondes de cisaillement, onde sismique, réflexion, réfraction, discontinuité, discontinuité de Mohorovicic (MOHO), discontinuité de Gutenberg, discontinuité de Lehmann, enveloppes concentriques, croûte, manteau supérieur, manteau inférieur, lithosphère, asthénosphère, zone de faible vitesse (LVZ, ZFV), croûte continentale, croûte océanique, noyau externe, noyau interne, graine, éruption volcanique, Stromboli, scories, cratère, cône, fumées, blocs, scories incandescentes, cendres, bombe, cheminée, coulées de lave, laves basaltiques, laves rhyolitiques, silice, affleurer, granite, basalte, péridotites, minéraux ferromagnésiens, roches endogènes, olivine, pyroxène, feldspath plagioclase, spinelle, orthose, mica (biotite), muscovite, quartz, macle, gravimétrie, calottes sphériques, structure différenciée, champ magnétique, biosphère, désintégration, éléments radioactifs, réactions exothermiques, magma, globe poreux, feu central, source thermique.
-- Glossaire du thème 3 : absent de la plage du lot (renvois « voir glossaire » p.263 et « chercher dans le glossaire » p.273). À reprendre du lot qui lit la fin du thème 3.
+- **Glossaire de fin de thème 3 (p.334)** — entrées qui servent ce chapitre (renvois « voir glossaire » p.263 et « chercher dans le glossaire » p.273), verbatim :
+  - **Asthénosphère** : « Couche visqueuse du manteau supportant la lithosphère. »
+  - **Basalte** : « Roche provenant de la solidification de lave fluide. Roche magmatique de surface. »
+  - **Cendres** : « Formées de magma pulvérisé ou de matériaux broyés. »
+  - **Discontinuité** : « Surface au niveau de laquelle la vitesse de propagation des ondes varie brusquement. Une discontinuité sépare deux milieux de nature différente. »
+  - **Echelle de Mercalli** : « Appelée encore échelle internationale, ell est aujourd'hui la plus utilisée. Elle se fonde sur les effets du séisme ressentis à la surface, donc elle mesure les effets d'un séisme en différents sites et le même séisme a différentes valeurs. Elle comprend 12 degrés depuis I (non ressenti sauf dans des conditions très favorables), jusqu'au XII (dévastation totale). » [« ell » sic]
+  - **Echelle de Richter = échelle de magnitude locale** : « Est une méthode de classement de la magnitude d'un séisme, la magnitude traduit la quantité d'énergie libérée au foyer d'un séisme, donc pour chaque séisme il existe une seule magnitude. L'échelle de Richter comprend 9 degrés depuis 1 jusqu'à 9 (en chiffres arabes). » [(complément du lecteur) l'échelle de Richter est ouverte, sans maximum ; « 9 degrés » est la formulation du manuel, à ne pas reprendre comme une borne.]
+  - **Granite** : « Roche magmatique formée en profondeur. »
+  - **Lapilli** : « Petites pierre projetée lors des explosions volcaniques. » [sic]
+  - **Laves** : « Matériaux en fusion montés des profondeurs de la terre. »
+  - **Lave visqueuse** : « S'écoule difficilement. »
+  - **Lithosphère** : « Partie rigide, elle correspond à l'écorce et à la partie supérieure du manteau. »
+  - **Magma** : « Matière en mouvement. Au cours d'une éruption volcanique, il peut s'élever jusqu'à la surface par une fracture ouverte. »
+  - **Magnitude** : « La magnitude d'un séisme est en relation avec l'énergie qu'il libère ; elle est évaluée à partir de l'échelle de Richter. »
+  - **Raies sismiques** : « Représentent les trajectoires suivies par les ondes sismiques. »
+  - **Scories** : « Roches légères rejetées au cours d'une éruption volcanique. »
+  - **ZFV** : « Zone à faible vitesse sismique Ou LVZ ( low velocity zone). »
 
 ### Bornes de scope
 
@@ -5911,7 +6071,7 @@ Demande : 1- Représentez graphiquement la propagation des ondes P, S, et L.. 2-
     - 5 La théorie de la tectonique des plaques explique les phénomènes géologiques majeurs : A Répartition des séismes et des volcans, a) à d) (297–301) ; B Évolution des océans (302) ; C Formation des chaînes de montagnes : cas de l'Atlas tunisien (303–305)
   - Synthèse (1 La théorie de Wegener ; 2 La théorie de la tectonique des plaques, A à C) — 306–307
   - Exercices (1 QCM, 2, 3, 4) — 308–309
-  - Pas de « Recherche » ni de « Glossaire » dans la plage.
+  - Pas de « Recherche » ni de « Glossaire » propres : Recherche (p.333) et Glossaire (p.334) de fin de thème 3, après le ch.17 ; les entrées qui servent ce chapitre sont recopiées dans « Vocabulaire officiel ».
 
 ### Présentation et objectifs du chapitre (p.280)
 
@@ -5939,7 +6099,7 @@ Demande : 1- Représentez graphiquement la propagation des ondes P, S, et L.. 2-
 - Texte, résumé fidèle (3 points) :
   1. La Terre est une masse minérale très active (séismicité, volcanisme, plissement), ce qui lui permet d'évacuer de grandes quantités d'énergie mécanique et thermique.
   2. Dès la première moitié du 20ᵉ siècle, la propagation des ondes P et S a révélé une structure différenciée, comparable à un œuf : une fine coquille externe (la croûte continentale ou océanique, quelques km), le « blanc » plus ou moins rigide (le manteau, jusqu'à 2 900 km), le « jaune » (le noyau, 3 500 km d'épaisseur). Seule la partie externe du noyau est liquide.
-  3. Autre subdivision : la lithosphère (100 km : croûte et manteau supérieur) ; l'asthénosphère (manteau plus visqueux sur plusieurs centaines de km) ; le noyau, où « des mouvements de la graine sont responsables de la formation du champ magnétique terrestre ».
+  3. Autre subdivision : la lithosphère (100 km : croûte et manteau supérieur) ; l'asthénosphère (manteau plus visqueux sur plusieurs centaines de km) ; le noyau, où « des mouvements de la graine sont responsables de la formation du champ magnétique terrestre » [sic — (complément du lecteur) le champ magnétique naît des mouvements du noyau externe liquide ; la graine est solide].
 
 ### Activités
 
@@ -5995,7 +6155,7 @@ Demande : 1- Représentez graphiquement la propagation des ondes P, S, et L.. 2-
     - **Doc 27. « Fosses de la cordillère des Andes »** : image satellite de l'Amérique du Sud et bloc 3D du relief. Légendes : Chili ; Plaque Amérique du Sud ; Plaque Nazca ; 40 km.
     - Consigne : « Montrer que les données (a et b) sont en accord avec l'hypothèse de la subduction. »
   - **c) Les fosses océaniques, une sismicité particulière !** Deux encadrés, verbatim :
-    - « **Relation entre la température des roches et la production de séisme** : «Un séisme se produit au sein d'une couche rigide mais capable de se déformer élastiquement sous l'action de forces internes du globe terrestre. Lorsque le seuil d'élasticité est dépassé, il y a rupture le long d'un plan de faille et rebondissement de chacune des portions de part et d'autre de la faille. On peut utiliser l'analogie du morceau de caoutchouc qu'en étire jusqu'à la rupture. C'est le phénomène de séisme : le rebondissement est à l'origine des ondes sismiques qui se propagent à partir de la zone de rupture. Si la température de la roche dépasse 450 à 600°C la roche devient élastique et le seuil de rupture n'est jamais atteint : dans ce cas il ne se produit pas de séismes. Les séismes ne peuvent normalement se produire que dans la zone, dont la température ne dépasse pas 600°C donc dans les 40 Km supérieurs de la lithosphère». »
+    - « **Relation entre la température des roches et la production de séisme** : «Un séisme se produit au sein d'une couche rigide mais capable de se déformer élastiquement sous l'action de forces internes du globe terrestre. Lorsque le seuil d'élasticité est dépassé, il y a rupture le long d'un plan de faille et rebondissement de chacune des portions de part et d'autre de la faille. On peut utiliser l'analogie du morceau de caoutchouc qu'en étire jusqu'à la rupture. C'est le phénomène de séisme : le rebondissement est à l'origine des ondes sismiques qui se propagent à partir de la zone de rupture. Si la température de la roche dépasse 450 à 600°C la roche devient élastique [sic — (complément du lecteur) lire « ductile (plastique) » : c'est la roche froide qui est élastique et cassante] et le seuil de rupture n'est jamais atteint : dans ce cas il ne se produit pas de séismes. Les séismes ne peuvent normalement se produire que dans la zone, dont la température ne dépasse pas 600°C donc dans les 40 Km supérieurs de la lithosphère». »
     - « **Les séismes profonds, une anomalie, significative !** Dans les fosses océaniques, des séismes ont lieu jusqu'à une profondeur de 700 Km. A cette profondeur il y a donc des roches dont la température est inférieure à 600°C. c'est de la lithosphère de la croûte océanique qui s'enfonce dans l'asthénosphère dont la température est supérieure à 1300°C. Ce phénomène est appelé **subduction**. »
     - Questions : 1- Indiquez pourquoi les séismes profonds sont considérés comme des faits exceptionnels. 2- Montrez comment les séismes profonds dans les fosses constituent une preuve de la subduction : disparition de la lithosphère océanique dans le manteau.
   - **d) Plan d'inclinaison de la subduction !** (p.293). Texte : « Le document 28 ci-contre présente : – A : la répartition des séismes par rapport à la fosse de subduction au niveau du Japon. – B : le plan de subduction appelé plan de BENIOFF. »
@@ -6041,7 +6201,7 @@ Demande : 1- Représentez graphiquement la propagation des ondes P, S, et L.. 2-
     - Consigne : « En s'appuyant sur l'analyse du document ci-contre (35) expliquez comment la subduction de la plaque pacifique sous la plaque américaine permet la formation de cette chaîne montagneuse. »
     - **– Cas de la plaque africaine et de la plaque eurasiatique** (p.299). **Doc 36. « Subduction de la plaque africaine sous la plaque eurasiatique au niveau de la fosse hellénique (Nord méditerranée orientale) »** (bloc-diagramme). Légendes : Afrique ; mer Méditerranée ; bassin levantin ; bassin ionien ; Subduction ; Crète ; Péloponèse ; arc insulaire ; arc volcanique de Santorin ; mer Egée. Texte, verbatim : « La **fosse hellénique** est une zone de subduction du fond de la méditerranée orientale (bordure de la plaque africaine) qui disparaît sous la plaque eurasiatique, au niveau de l'arc hellénique. La croûte océanique alourdie par des sédiments de 10 Km d'épaisseur (sables et vases) et enfouie sous 2500 m de profondeur d'eau, plonge dans des fosses de 3000 à 5000 m de profondeur pour rejoindre l'asthénosphère. Cette subduction se fait à une vitesse de 4 cm / an. »
       - Questions : 1- Rédigez un paragraphe qui décrit la subduction de la plaque africaine sous la plaque eurasiatique en utilisant les expressions et les termes suivants : subduction - convergence des plaques - épaisseur de la croûte océanique - fosses océaniques. 2- Etablissez une relation entre la subduction décrite dans le document ci-dessus (36) et les séismes fréquents et destructeurs qui frappent la région qui couvre la Grèce et la Turquie.
-    - **– Cas de la plaque indienne et de la plaque eurasiatique** (p.300). **Doc 37. « Déplacements de la plaque indienne depuis 70 millions d'années »** (carte). Latitudes de 30° N à 40° S, longitudes 60° à 90° ; échelle 1000 km. Positions successives de l'Inde : « IL Y A 70 MILLIONS D'ANNEES » (vers 20–40° S, « Continent indien ») ; « IL Y A 55 MILLIONS D'ANNEES » (vers l'équateur – 10° S) ; « IL Y A 38 MILLIONS D'ANNEES » (vers 0–20° N) ; « IL Y A 10 MILLIONS D'ANNÉES » [lecture probable : texte en partie masqué] ; « AUJOURD'HUI », au contact de la « Plaque eurasiatique » ; « HIMALAYA ». Repère « Équateur ». **Doc 38. « Mouvements de subduction (a) et de collision (b) des plaques indiennes et asiatiques »** : deux blocs-diagrammes. a- Phase de subduction : Nord ; Océan ; INDE (flèche vers le nord) ; TIBET ; ASIE. b- Phase de collision : Nord ; Himalaya ; INDE ; TIBET ; ASIE.
+    - **– Cas de la plaque indienne et de la plaque eurasiatique** (p.300). **Doc 37. « Déplacements de la plaque indienne depuis 70 millions d'années »** (carte). Latitudes de 30° N à 40° S, longitudes 60° à 90° ; échelle 1000 km. Positions successives de l'Inde : « IL Y A 70 MILLIONS D'ANNEES » (vers 20–40° S, « Continent indien ») ; « IL Y A 55 MILLIONS D'ANNEES » (vers l'équateur – 10° S) ; « IL Y A 38 MILLIONS D'ANNEES » (vers 0–20° N) ; « IL Y A 10 MILLIONS D'ANNEES » (lisible ; c'est « AUJOURD'HUI » qui est tronqué par le bord : « AUJOURD'HU ») ; « AUJOURD'HUI », au contact de la « Plaque eurasiatique » ; « HIMALAYA ». Repère « Équateur ». **Doc 38. « Mouvements de subduction (a) et de collision (b) des plaques indiennes et asiatiques »** : deux blocs-diagrammes. a- Phase de subduction : Nord ; Océan ; INDE (flèche vers le nord) ; TIBET ; ASIE. b- Phase de collision : Nord ; Himalaya ; INDE ; TIBET ; ASIE.
       - Texte, verbatim : « **Actuellement** l'Inde fait partie du continent asiatique. Entre ces 2 «continents» se dresse la chaîne montagneuse la plus élevée du monde : **L'Himalaya**. Mais il y a 70 millions d'années, l'Inde était attachée à la plaque africaine. Les documents ci-dessus (37 et 38) présentent certaines phases de la tectonique de ces deux plaques. A la fin de la phase de subduction, l'Inde entre en **affrontement** avec le continent asiatique : il y a alors **collision** entre la **croûte continentale indienne et la croûte continentale asiatique** (de même densité). »
       - Questions : 1- En exploitant les donnés [sic] du document 37, calculez la vitesse de déplacement de la plaque indienne. 2- Indiquez les conséquences de la subduction et de la collision sur l'évolution de l'océan localisé entre les deux continents ainsi que sur l'orogenèse de l'Himalaya.
   - **d) Un troisième type de volcanisme !** (p.301). Texte : « Le document 39 ci-dessous montre les principaux volcans actifs qui sont au nombre de 600 à 1000. »
@@ -6083,7 +6243,7 @@ Toutefois et malgré tous ces arguments la théorie de la dérive des continents
 **Schéma bilan p.306** (sans titre ni légende) : bloc-diagramme d'un océan avec dorsale (magma rouge montant, flèche divergente à gauche), lithosphère océanique plongeant sous un continent (flèches), volcan sur la marge continentale alimenté par un magma, et volcans d'îles dans l'océan.
 
 « **A - Notion de plaques lithosphériques**
-Selon la théorie de la tectonique des plaques élaborée en 1968, la lithosphère est une mosaïque de **plaques rigides** de 100 Km d'épaisseur constituée de la **croûte** et du **manteau supérieur**. Les **plaques lithosphériques** au nombre de 12 dont 6 sont très grandes, se **déplacent** sur le reste du manteau **plus visqueux** ou **asthénosphère**. Ce sont les **mouvements de convection** des matériaux de l'asthénosphère qui constituent le moteur des déplacements des plaques. L'énergie thermique dégagée par les réactions chimiques des corps radioactifs entraine des courants de matière qui font glisser les plaques lithosphériques sur l'asthénosphère.
+Selon la théorie de la tectonique des plaques élaborée en 1968, la lithosphère est une mosaïque de **plaques rigides** de 100 Km d'épaisseur constituée de la **croûte** et du **manteau supérieur**. Les **plaques lithosphériques** au nombre de 12 dont 6 sont très grandes, se **déplacent** sur le reste du manteau **plus visqueux** ou **asthénosphère**. Ce sont les **mouvements de convection** des matériaux de l'asthénosphère qui constituent le moteur des déplacements des plaques. L'énergie thermique dégagée par les réactions chimiques [sic — (complément du lecteur) la désintégration radioactive est une réaction nucléaire, non chimique] des corps radioactifs entraine des courants de matière qui font glisser les plaques lithosphériques sur l'asthénosphère.
 Par leur déplacement, les plaques présentent 3 types de frontières :
 – **des frontières constructives** : elles correspondent à la formation de nouveaux fonds océaniques et à la divergence de deux plaques lithosphériques. Ce sont les **rifts des dorsales médio-océaniques** qui sont le lieu de **l'accrétion** des roches sous forme de basalte. Au niveau de ces zones d'accrétion, se développent les plaques lithosphériques qui par leur divergence entraînent l'expansion océanique.
 – **des frontières destructives :** elles correspondent à la convergence de deux plaques lithosphériques. Ce sont les fosses océaniques où a lieu la **subduction** c'est-à-dire la destruction d'une plaque qui plonge pour rejoindre l'asthénosphère.
@@ -6144,7 +6304,15 @@ L'orogenèse de l'atlas tunisien résulte de la tectonique de deux plaques afric
 ### Vocabulaire officiel
 
 - Imprimé dans le chapitre (termes en couleur ou en gras) : fosses, dorsales médio-océaniques, tectonique des plaques, modèle explicatif planétaire, séismes, volcans, formation des chaînes de montagnes, régions actives, régions passives, croûte basaltique, fosses océaniques, Pangée, Gondwana, dérive des continents, faille, volcanisme, rift, accrétion océanique, pillow lavas (« Pilow Lavas »), expansion océanique, hypothèse, nord magnétique, champ magnétique, champ magnétique ancien, fossilisation du champ magnétique, paléomagnétisme, stable, inversions, anomalies magnétiques (positives, négatives), polarité magnétique, renouvellement océanique, subduction, marge active, plan de Benioff, théorie révolutionnaire, plaque lithosphérique, asthénosphère, courants de convection, moteur thermique, frontières (divergentes, convergentes, coulissantes), vecteurs mouvements absolus, divergence des plaques, convergence des plaques, régions tectoniquement actives, région calme tectoniquement ou passive, fissure rectiligne, failles transformantes, San Andréas, péridotites, magma basaltique, énergie, volcans à andésites, chaîne de subduction, fosse hellénique, Himalaya, affrontement, collision, croûte continentale, points chauds, chaîne montagneuse de l'Atlas tunisien, Atlas méridional, Atlas central, Atlas septentrional, plis anticlinaux, diapirs du Trias, prisme d'accrétion, zone en distension, zone en compression, bassin marginal, blocage de la subduction, orogenèse, Wegener, arguments géographiques / paléontologiques / paléo-climatiques / géologiques, évaporites, plaques rigides, manteau supérieur, frontières constructives, destructives, stables, Téthys, Sicile, Atlas Tunisien.
-- Glossaire du thème 3 : absent de la plage du lot (voir notes).
+- **Glossaire de fin de thème 3 (p.334)** — entrées qui servent ce chapitre, verbatim :
+  - **Asthénosphère** : « Couche visqueuse du manteau supportant la lithosphère. »
+  - **Collision** : « Affrontement entre deux plaques continentales conduisant à la surrection d'une chaîne de montagnes. »
+  - **Convection** : « Mouvement lent de matière avec transport de chaleur, sous l'influence de différences de températures et de densités. »
+  - **Lithosphère** : « Partie rigide, elle correspond à l'écorce et à la partie supérieure du manteau. »
+  - **Plaques lithosphériques** : « La lithosphère est constituée de morceaux rigides ou plaques se déplaçant les uns par rapport aux autres. »
+  - **Rift** : « Fossé d'effondrement au milieu d'une dorsale océanique ou d'un continent à intense activité volcanique et sismique. »
+  - **Subduction** : « Plongement d'une plaque lithosphérique sous une autre plaque au niveau d'une fosse. »
+  - **Tectonique des plaques** : « Modèle qui reproduit le mouvement des plaques lithosphériques à la surface du globe terrestre. »
 
 ### Bornes de scope
 
@@ -6153,7 +6321,7 @@ L'orogenèse de l'atlas tunisien résulte de la tectonique de deux plaques afric
 
 ## T3.3 Chapitre 17 — L'évolution biologique (p.310–332, transcrit à profondeur de génération)
 
-> Source : manuel CNP 225333 (SVT 3ème sec. Sciences expérimentales), fichier P03, pages imprimées 310 à 332 (pages physiques 77 à 99). Pages de fin de thème et d'ouvrage 333–336 (pages physiques 100 à 103) : Recherche (p.333), Glossaire (p.334), Sommaire (p.335), Bibliographie (p.336) — résumées dans les notes ; les entrées du glossaire qui servent ce chapitre sont recopiées plus bas.
+> Source : manuel CNP 225333 (SVT 3ème sec. Sciences expérimentales), fichier P03, pages imprimées 310 à 332 (pages physiques 77 à 99). Pages de fin de thème et d'ouvrage 333–336 (pages physiques 100 à 103) : Recherche (p.333), Glossaire (p.334), Sommaire (p.335), Bibliographie (p.336) — la Recherche est recopiée plus bas ; les entrées du glossaire sont réparties dans les « Vocabulaire officiel » des ch.15, 16 et 17 ; le sommaire (débuts 261, 280, 310 confirmés) et la bibliographie n'ont rien à reprendre.
 > Rattachement imprimé : « Thème 3 — GÉOLOGIE — DYNAMIQUE DU GLOBE TERRESTRE ET ÉVOLUTION BIOLOGIQUE », « Chapitre 3 : L'ÉVOLUTION BIOLOGIQUE » (numérotation imprimée propre au thème 3 ; numéro global de la fiche : 17).
 > En-tête courant : « L'ÉVOLUTION BIOLOGIQUE ». Sur p.324 le bandeau de rubrique dit « Synthèse » alors que la page porte les activités II-5 [sic, bandeau erroné] ; les activités se poursuivent p.325–326, la vraie synthèse commence p.327.
 > Convention : exposants et indices (19ème, 10⁻¹¹, CO₂, SO₂, δ¹⁸O, CaCO₃) rétablis d'après l'image. Les valeurs lues sur les graphiques sont des lectures à l'œil sur l'image à 110 dpi, signalées « ≈ ».
@@ -6252,7 +6420,7 @@ L'orogenèse de l'atlas tunisien résulte de la tectonique de deux plaques afric
 - Texte, verbatim : « L'arbre phylogénique est une représentation graphique de l'histoire évolutive ou phylogénie de différentes espèces en fonction de leur degré de parenté. Le document suivant (21) représente l'arbre phylogénique des 5 classes des vertébrés. »
 - **Doc 21 — « L'arbre phylogénique des 5 groupes des vertébrés »** (arbre à compléter) : axe vertical « Temps en millions d'années », gradué de « Actuel 0 » à « −500 » par pas de 50. En haut, de gauche à droite : « Poissons », « Amphibiens », « Reptiles », « Oiseaux », « Mammifères ». En bas, en pointillés : « Poissons sans mâchoires » (≈ −450). Trois nœuds (ronds roses), chacun désigné par une flèche aboutissant à une ligne pointillée vide (à légender par l'élève) : nœud Poissons/Amphibiens à ≈ −340 ; nœud (Reptiles+Oiseaux)/Mammifères à ≈ −230 ; nœud Reptiles/Oiseaux à ≈ −180 (lectures approximatives).
 - Texte (p.318) : « Le document suivant (22) représente l'arbre phylogénique de certains mammifères. »
-- **Doc 22 — « Arbre phylogénique de certains mammifères »** : échelle stratigraphique à gauche « (Ma) » de 0 à 140 par pas de 10 : Quaternaire, Tertiaire (Pliocène, Miocène ≈ 5–23, Oligocène ≈ 23–35, Éocène ≈ 35–55, Paléocène ≈ 55–65), Crétacé (≈ 65–135), Jurassique (> 135). En haut, 13 silhouettes d'animaux **sans nom imprimé** ; identification du lecteur (complément du lecteur) : kangourou ; lapin ; rongeur (écureuil ?) ; gorille ; animal non identifié [?] ; chauve-souris ; hérisson ; félin (léopard ?) ; chameau ; baleine ; cheval ; éléphant. Branches (lectures ≈) : le kangourou se sépare à la base vers ≈ −130 Ma ; tous les autres se rattachent à un nœud vers ≈ −100 Ma, d'où partent un groupe de gauche (lapin et rongeur réunis vers ≈ −70 ; gorille, animal non identifié, chauve-souris, hérisson réunis entre ≈ −80 et −95) et un groupe de droite (félin, chameau, baleine, cheval, éléphant, réunis entre ≈ −65 et −85).
+- **Doc 22 — « Arbre phylogénique de certains mammifères »** : échelle stratigraphique à gauche « (Ma) » de 0 à 140 par pas de 10 : Quaternaire, Tertiaire (Pliocène, Miocène ≈ 5–23, Oligocène ≈ 23–35, Éocène ≈ 35–55, Paléocène ≈ 55–65), Crétacé (≈ 65–135), Jurassique (> 135). En haut, 12 silhouettes d'animaux **sans nom imprimé** ; identification du lecteur (complément du lecteur) : kangourou ; lapin ; rongeur (écureuil ?) ; gorille ; animal non identifié [?] ; chauve-souris ; hérisson ; félin (léopard ?) ; chameau ; baleine ; cheval ; éléphant. Branches (lectures ≈) : le kangourou se sépare à la base vers ≈ −130 Ma ; tous les autres se rattachent à un nœud vers ≈ −100 Ma, d'où partent un groupe de gauche (lapin et rongeur réunis vers ≈ −70 ; gorille, animal non identifié, chauve-souris, hérisson réunis entre ≈ −80 et −95) et un groupe de droite (félin, chameau, baleine, cheval, éléphant, réunis entre ≈ −65 et −85).
 - Consignes, verbatim : « 1- En tenant compte des informations apportées par les activités A, B et C reproduisez et complétez l'arbre phylogénique présenté par le document 21. 2- A partir de l'analyse du document (22) comparez le degré de parenté de ces mammifères sachant que plus l'ancêtre commun est éloigné dans le temps et plus le degré de parenté est faible. »
 
 ### Activités — II. RAPPORT ENTRE L'ÉVOLUTION GÉOLOGIQUE ET L'ÉVOLUTION BIOLOGIQUE (p.319–326)
@@ -6384,7 +6552,7 @@ D'autres crises, de moindre ampleur, ont été utilisées comme repères pour un
 b) L'ère Primaire (de –545 à –250 millions d'années et dans une échelle de temps ramené à une journée de 12 heures de 10h35 à 11h20). Elle est caractérisée par une grande diversité de la faune marine, avec en tête les trilobites et les poissons cartilagineux. En ce qui concerne la flore, au Cambrien, les grands groupes d'algues et de champignons s'étaient mis en place. Ce fut aussi l'ère des fougères et des préspermaphytes ou plantes qui forment des ovules ; mais qui n'ont ni graines, ni fruits. Ce sont des progymnospermes et des préspermaphytes. Au cours de cette ère, les insectes commencent la conquête de la terre ferme. Au Dévonien, les amphibiens font leur apparition suivie des reptiles au Carbonifère. Entre la fin de cette ère et le début de l'ère Secondaire apparaissent les premiers dinosaures. Les plantes continentales se diversifient énormément et des forêts surgissent.
 Les plantes vasculaires sont sorties de l'eau à la fin de l'Ordovicien. Les animaux vertébrés au Dévonien. Ichtyostéga est considéré comme étant le premier vertébré sur la terre ferme. Il s'agit d'une période au cours de laquelle la quantité d'oxygène a augmenté dans l'atmosphère et une couche d'ozone s'est formée dans la haute atmosphère, protégeant ainsi les organismes des rayons ultraviolets nocifs du soleil. C'est aussi la période de la formation de niches écologiques très diversifiées grâce à la tectonique des plaques. La sortie de l'eau s'est accompagnée d'un accroissement considérable de la biodiversité.
 c) L'ère Secondaire (de –250 à –65 millions d'années) : à plusieurs reprises, les océans couvrent les continents. Le milieu de cette ère s'est caractérisé par une grande activité orogénique. Beaucoup de disparitions sont notées parmi les animaux les plus anciens. Dans le milieu marin se sont les céphalopodes qui dominaient. Sur la terre ferme une grande diversification s'est faite au niveau des insectes. C'est l'ère où les premiers mammifères et les premiers oiseaux apparaissent. C'est l'ère de l'expansion maximale des dinosaures et aussi l'ère de leur extinction au cours de la crise Crétacé-Tertiaire.
-d) L'ère Tertiaire (de –65 à –1,8 millions d'années) : c'est une ère qui se caractérise par plusieurs périodes de glaciation. Les continents avaient leurs formes actuelles, les monocotylédones ont fait leur apparition et les mammifères placentaires sont devenus dominants.
+d) L'ère Tertiaire (de –65 à –1,8 millions d'années) : c'est une ère qui se caractérise par plusieurs périodes de glaciation. Les continents avaient leurs formes actuelles, les monocotylédones ont fait leur apparition [sic — (complément du lecteur) les angiospermes, monocotylédones comprises, apparaissent au Crétacé, cf. doc 37 p.326 (angiospermes vers −100 Ma) ; ne pas dater l'apparition des monocotylédones au Tertiaire] et les mammifères placentaires sont devenus dominants.
 e) L'ère quaternaire : la forte fragmentation des continents commencée dès l'ère Tertiaire et le nombre très élevé de hautes chaînes de montagnes seraient à l'origine de la grande diversité du vivant dans cette ère. Paradoxalement, cette ère se caractérise aussi par des extinctions en masse des grands mammifères. Les spécialistes lient ce phénomène aux glaciations répétées depuis –1,6 millions d'années et à la présence de l'Homme qui agit négativement sur l'environnement.
 Le quaternaire correspond à l'apparition de l'espèce Homme. »
 [« se sont les céphalopodes » sic ; « photosynthèse anaérobie » tel qu'imprimé ; « Ce sont des progymnospermes et des préspermaphytes » répète « préspermaphytes » ; « virus » cités comme premiers êtres vivants, tel qu'imprimé.]
@@ -6437,7 +6605,16 @@ Le quaternaire correspond à l'apparition de l'espèce Homme. »
   - **Cyanobactéries** : « Procaryotes photosynthétiques, synonymes d'algues bleues. »
   - **Plaques lithosphériques** : « La lithosphère est constituée de morceaux rigides ou plaques se déplaçant les uns par rapport aux autres. »
   - **Tectonique des plaques** : « Modèle qui reproduit le mouvement des plaques lithosphériques à la surface du globe terrestre. »
-  - (Les autres entrées du glossaire p.334 — Asthénosphère, Basalte, Cendres, Collision, Convection, Discontinuité, Échelle de Mercalli, Échelle de Richter, Granite, Lapilli, Laves, Lave visqueuse, Lithosphère, Magma, Magnitude, Raies sismiques, Rift, Scories, Subduction, ZFV — servent les ch.15 et 16 ; elles sont recopiées intégralement dans les notes du lot H.)
+  - (Les autres entrées du glossaire p.334 servent les ch.15 et 16 ; elles sont recopiées verbatim dans les sections « Vocabulaire officiel » de ces chapitres.)
+
+### Recherche de fin de thème 3 (p.333) — sert les ch.15 à 17
+
+Consigne commune : produire un document numérique (« CD ») ou analogique (« dépliant, dossier ») à partir de sources variées.
+- **1 Le système solaire**, verbatim : « Il y a 5 milliards d'années, un nuage de gaz et de poussière de notre galaxie s'est contracté en un corps dont la température est de plusieurs millions de °C ce qui entraine la naissance du soleil. Le reste de la matière s'est dispersé autour du soleil sur certaines orbites donnant naissance aux planètes du système solaire : Terre, Mars… » Illustration « Le système solaire » (Soleil, Mercure, Venus, Terre, Lune, Mars, Jupiter, Saturne, Uranus, Neptune, Pluton).
+- **2 La géothermie** (sert le ch.15), verbatim : « La chaleur interne ou géothermie de la Terre a deux origines : – la radioactivité des roches internes. – la chaleur (initiale) emmagasinée lors de la formation de la planète terre. »
+- **3 Apparition de la vie terrestre**, verbatim : « L'âge de la Terre est de 4,6 milliards d'années. Les premières formes de la vie datent de 3,8 milliards d'années. Comment est apparue la vie sur terre ? » [3,8 Ga ici, 3,5 Ga au doc 3 p.311, « −4 à −3,5 » dans la synthèse p.330 : valeurs de la source non harmonisées.]
+- **4 Les dinosaures**, verbatim : « Les dinosaures sont des animaux reptiles qui ont dominé notre planète à l'ère secondaire. » Recherche demandée sur leur nutrition, leur déplacement, leur reproduction et les causes de leur disparition ; illustration « Tyrannosaure ».
+- **5 Devenir de la Méditerranée** (sert le ch.16), verbatim : « Le résultat de la tectonique des deux plaques africaine et européenne sur la position des deux continents africain et européen et le devenir de la mer méditerranée. »
 
 ### Bornes de scope
 
@@ -6446,7 +6623,7 @@ Le quaternaire correspond à l'apparition de l'espèce Homme. »
 
 ## 4. Chapitrage retenu (→ alimente `manifest/3eme-sec-sciences-exp.json`)
 
-Un chapitre de la plate-forme par chapitre du manuel, dans l'ordre du livre (3 thèmes : nutrition et santé ch.01–09, génétique ch.10–14, géologie ch.15–17). Les pages de début imprimées aux sommaires sont décalées de 2 pages en partie II et de 16 à 17 pages en géologie : les plages ci-dessous sont celles des pages de titre, vérifiées.
+Un chapitre de la plate-forme par chapitre du manuel, dans l'ordre du livre (3 thèmes : nutrition et santé ch.01–09, génétique ch.10–14, géologie ch.15–17). Les pages de début imprimées aux sommaires sont décalées de 2 pages en partie II et de 16 pages en géologie : les plages ci-dessous sont celles des pages de titre, vérifiées.
 
 | # | slug | notion | manuel (code · pages imprimées) | transcription |
 | --- | --- | --- | --- | --- |
@@ -6475,6 +6652,8 @@ Un chapitre de la plate-forme par chapitre du manuel, dans l'ordre du livre (3 t
 - **Manuel voisin** : `225342` (section Mathématiques) — non lu, hors scope.
 
 ## 6. Incertitudes, erreurs de la source, à revérifier
+
+Relecture R-7 (2026-11-24, quatre auditeurs opus en contexte vierge) : 100 % des synthèses, encadrés et du chapitrage confrontés à l'image ; pages auditées hors sondage des lecteurs : 33 % (ch.01–02), 76 % (ch.03–07), 49 % (ch.08–12), part du rapport R4 (ch.13–17) ; écarts substantiels : erreurs scientifiques du manuel désormais signalées, sections de fin de partie et de thème rétablies, quelques lectures de graphiques corrigées.
 
 Relevés des lecteurs (rubrique (d) de leurs notes), par lot. Tout ce qui est marqué `[sic]`, « valeur lue à l'œil » ou « contradiction de la source » ne devient jamais une clé ou une affirmation d'un cours sans correction scientifique explicite.
 
@@ -6517,13 +6696,16 @@ telles quelles)**
 - p.49 : « Haricot vert 129 kcal » ; tomate concentrée « 6 » dans la colonne B1 ; p.50 sardine
   (conserve) eau 84,4 g + protides + lipides > 100 g ; viande sèche 82 g de protides.
 - p.13 doc 22 : lait maternel 11/55/30 sans unité (ne peut être en g/100 g de lait).
+- p.47 : besoin en vitamine B6 « 0,1 mg » (besoin réel ≈ 1,3 à 2 mg/j) — relevé à l'audit R-7.
+- p.36 doc 35 : « 2 hormones de croissance […] l'une par la glande hypophyse et l'autre par la glande thyroïde, ces deux hormones sont de nature protéique » : l'hormone thyroïdienne (thyroxine) est un dérivé iodé d'acide aminé, pas une protéine — relevé à l'audit R-7.
+- p.25 : « la réaction de Biuret … met en évidence les peptides composés de plus de 3 acides aminés » : la réaction est positive dès 3 acides aminés (au moins 2 liaisons peptidiques) — relevé à l'audit R-7.
 - QCM ch.01 (p.19) sans corrigé ; items discutables : 2a (« maladie grave »), 3b (marasme ↔
   protides : la synthèse le définit par l'amaigrissement, le glossaire par l'« insuffisance
   protéo-calorique »), 4c (« seulement les jeunes enfants »), 5c (la synthèse dit que la carence
   en calcium « favorise … le rachitisme ») → à re-résoudre avant reprise.
 
 **Lectures graphiques approximatives (valeurs « ≈ » dans la fiche)**
-- p.12 doc 18c : sens de chaque petite flèche courbe difficile à lire [?].
+- p.12 doc 18c : sens des flèches courbes résolu à l'audit R-7 (zoom 220 dpi).
 - p.13 doc 23, p.28 doc 16, p.29 doc 17, p.30 docs 18–19, p.34 doc 27 (classes des barres 2 et 4
   non étiquetées), p.36 doc 32a, p.52 exercice 3 : valeurs lues à l'œil (précision indiquée).
 - p.51 exercice 2 : diagrammes empilés **sans échelle** ; parts estimées par le lecteur ; au
@@ -6552,6 +6734,10 @@ Aucune page illisible.
 11. **Doc 11 p.64 / doc 19 p.69** : le chapitre emploie « modèle clé-serrure » ; aucune mention d'ajustement induit.
 12. **Activité 4-D p.66** : « pour fabriquer du fromage, on utilise une enzyme la pepsine. Alors faut-il augmenter la concentration en présure… » — pepsine et présure confondues dans la phrase [sic].
 13. **Doc 11 p.80** : l'abscisse n'est graduée qu'à 10 et 20 min ; les instants d'ajout et les niveaux sont des lectures approchées.
+14. **¹⁸O « radioactif »** (p.76) : ¹⁸O est un isotope stable ; le manuel écrit « oxygène radioactif » et range ¹⁸O parmi les « éléments radioactifs » [erreur scientifique]. Parler de « traceur » ou d'« isotope marqué » (audit R-7).
+15. **Glycolyse « 9 réactions »** (p.82) : la biochimie en compte 10. Ne pas faire porter d'item sur ce nombre (audit R-7).
+16. **Exercice 2 p.90** : graduations de l'ordonnée non proportionnelles (l'intervalle 150 → 100 µM est dessiné plus long que la moitié de 250 → 150) ; les valeurs sous 150 µM sont des estimations (audit R-7).
+17. **Synthèse 4 p.71** : « La lymphe se déversant dans le sang au niveau de la veine cave » alors que le doc 18 (p.68) montre le canal lymphatique aboutissant à la **veine sous-clavière gauche** ; « reforment des triglycérides ou chylomicrons » assimile les chylomicrons (lipoprotéines riches en triglycérides) aux triglycérides. Citer le doc 18 pour le trajet de la lymphe (audit R-7).
 
 **Coquilles typographiques [sic] relevées** : « Proppos d'une pizza » (p.59) ; « Emplois d'amidon » pour « Empois » (p.61, 62) ; « 2Cl » pour 2C1 (p.66) ; « cytplame » (p.67) ; « carbonnée » (p.68) ; « monoglucérides » (p.70) ; « Tableau récapitulatif de l'action des enzymes digestive » (p.70) ; « décoration du bleu de méthylène » pour décoloration (p.77) ; « broit » (p.77) ; « Repiration » (p.82) ; « compostion », « microscoppique » (p.81) ; « Cycle de Kebs », « Décaboxylation », « Déhydrogénation » (p.83) ; « par par » (p.84) ; « subsantce » (p.84) ; « adénie », « adénoisine » (p.85) ; « Enzyme 1 » imprimé deux fois, « synthètase » (p.86, 89) ; « Crète », « crètes » (p.88–89) ; « mg.i⁻¹ » (p.80) ; « Co2 » dans les titres (p.76, 83) ; « pur chercher » (p.91) ; « 7.90 » (point décimal, p.84).
 
@@ -6577,6 +6763,11 @@ Aucune page illisible.
 13. **Résultats et corrigés non imprimés** : les lignes « Résultats obtenus / Conclusions » de l'activité 2 p.121 sont vides (aucun résultat imprimé) ; les QCM des trois chapitres n'ont pas de corrigé imprimé ; seul le QCM du ch.07 précise « une ou plusieurs réponse (s) exacte (s) ».
 14. **QCM ch.05 item 1** (« Les pesticides sont des molécules : minérales / à base de chlore / à base de phosphore ») : le manuel présente organochlorés et organophosphorés ; l'item admet vraisemblablement b et c — ambigu, pas de corrigé.
 15. **Doc 12 p.113** : la cellule de levure porte la légende « plasmide » — conservé tel quel.
+16. **Lactose** : la synthèse du ch.06 (p.113) écrit l'hydrolyse du lactose « en glucose » (2 C₆H₁₂O₆ légendé « glucose ») ; le ch.03 (p.70) donne « Glucose + Galactose », qui est exact. Retenir glucose + galactose (audit R-7).
+17. **Botulisme** (p.96) : « 2 à 3 heures après son ingestion » ; l'incubation habituelle est de 12 à 36 h. Ne pas faire porter d'item sur ce délai (audit R-7).
+18. **Hormones en élevage** : p.102, la Grande-Bretagne figure parmi les pays qui autorisent ; p.104, l'« Europe » interdit. Ne pas faire classer la Grande-Bretagne ; s'en tenir à « USA, Canada… autorisent ; pays d'Europe de l'Ouest et Tunisie interdisent » (audit R-7).
+19. **Synthèse p.103** : « De telles bactéries [résistantes] sont plus virulentes que les bactéries normales » — inexact (la résistance rend l'infection difficile à traiter, pas plus virulente). Ne pas en faire une clé (audit R-7).
+20. **Encadré p.123** : « syncope ( arrêt cardiaque ) » — une syncope est une perte de connaissance brève, pas un arrêt cardiaque. Ne pas reprendre l'équivalence (audit R-7).
 
 **Coquilles typographiques [sic] relevées** : « cormorane » (p.95) ; « Il y a des dizaines des souches » (p.96) ; « Ver nématode dans l'intestin de l'homme l'homme » (p.97) ; « Mains et aliments souillé » (p.97) ; « une dizaine d'année » (p.98) ; « œufs embryonné » (p.98) ; « Métyl mercure » (p.99) ; « trois milieu indiqués », « on les trouvez » (p.99) ; « rodonticides » (p.100) ; « la DDT » (p.100) ; « Les troubles aiguës » (p.100) ; « en vian de » (p.101) ; « sur les quelles », « l 'élevage », « dûs » (p.102) ; « streptococus thermophilis » (p.111) vs « streptocum thermophilus » (p.113) ; « bifidobactérium lifidum, bifidobactérium langum » (p.113) ; « protéïnes » (p.113) ; « Il est fabriquée » (p.114) ; « croissance des leveures » (p.115) ; « Louis Pasteur est le premier a démontrer », « Daniel carasso » (p.107) ; « Constituent » (majuscule, p.117) ; « cellules histolo-giques » (p.117) ; « entraÎne » (p.124) ; « au tissus » (p.124) ; « les nouveaux-nés » (p.106).
 
@@ -6603,6 +6794,7 @@ Aucune page illisible.
 16. **Doc 11 p.131** : « 6. artère efférente » ; le dessin ne figure pas l'artère afférente, citée seulement dans le QCM ch.08 item 2 d.
 17. **QCM** des deux chapitres : aucun corrigé imprimé ; consigne « une ou plusieurs réponse(s) exacte(s) ». QCM ch.08 item 3 : lettres dans l'ordre a, b, d, c [sic]. QCM ch.09 item 1 (« Le foie est le seul organe qui … ») : la synthèse dit que la glycogénolyse est « hépatique ou musculaire » ; l'item admet vraisemblablement c (libère du glucose dans le sang) et a, d discutables — pas de corrigé.
 18. **Calculs non imprimés** (marqués « complément du lecteur » dans la fiche) : volume de filtrat 172,8 l/j (activité 3 B), différences du doc 13, P_F = 25 mmHg (ex. 4 ch.08).
+19. **Doc 7 p.143** : « veine porte, jeûne : 0,2 g/l » conforme à l'image mais physiologiquement invraisemblable ; s'en tenir à la comparaison qualitative veine porte / veine sus-hépatique (audit R-7).
 
 **Coquilles typographiques [sic] relevées** : « exrétion » (p.127, objectifs) ; « plus concentré » (p.128) ; « Anotez le doucument 3 » ; « Indiquer » (p.129) ; « prèlèvement » (p.132, en-tête doc 12) ; « 0,30g » dans la colonne des concentrations en g/l (p.132) ; « les quelles » (p.134, deux fois) ; « HPO₃⁻⁻ » pour HPO₄²⁻ (p.134) ; « Na⁺ , K⁺ HPO₄²⁻ » (virgule manquante, p.135) ; « sels minéraux.. » (p.135) ; « secrétion » (p.135) ; « quelque soient » (p.136) ; « sécrétée l'hypothalamus » (p.136) ; « gl » pour g/l (p.139) ; « dûe » (p.140) ; « Ilot » / « ilots Langerhans » (p.145–146) ; « agit-le pancréas » (p.145) ; « miction fréquentes » (p.145) ; « dans le quel » (p.144) ; « précipité rouge brique) » parenthèse orpheline (p.144) ; « secrètent » (p.147) ; « a subit » ; « est inférieur » (p.148) ; « le tableau le tableau » (p.149) ; « Mode d'action de glucagon » (p.150) ; « gycogénolyse » ; « est sécrétée » pour le glucagon (p.153) ; en-tête « BESOINS NUTRITIONNELS DE L'HOMME » et numéro « 154 » imprimé deux fois (p.154) ; « contacter » (p.155) ; « plantes animaux » (virgule manquante, p.157) ; « s'exprime t-elle » (p.157).
 
@@ -6617,6 +6809,8 @@ Aucune page illisible.
 - **Erreur de mot probable** : p.176 « Les hématies sont incapables de synthétiser l'hémoglobine, alors que les érythrocytes en sont capables » → lire « érythroblastes » (les érythrocytes = hématies).
 - **Fait douteux** : p.174 « Folling ( médecin suédois ) » — Følling était norvégien (complément du lecteur).
 - **Exercice 2 du ch.11** (p.188) : l'ARNm proposé contient un codon stop UAA au 12ᵉ codon lu depuis AUG (complément du lecteur, après lecture codon par codon) ; à signaler aux auteurs qui voudraient en tirer une mission.
+- **« Enzyme d'épissage »** (doc 15 p.199) pour l'ADN ligase : terme impropre (l'épissage désigne la maturation de l'ARN) ; signalé dans le Vocabulaire officiel du ch.12 (audit R-7).
+- **Encadré Ribosome** (p.176) : « protéine (20%) et ARN (80%) » — proportions exagérées (≈ 40 % de protéines, 60 % d'ARNr) ; signalé dans l'encadré, ne pas en faire une donnée à mémoriser (audit R-7).
 - **Coquilles relevées [sic]** (non exhaustif, toutes conservées dans la fiche) : « un espèce » (160) ; « Revelez » (161) ; « Réservé essentiellementaux » (161) ; « deyx » (161) ; « Formulez une lignée et espèce » (162) ; « Tibar »/« thibar » (162) ; « établisez » (165) ; « basez » (167) ; « ligées » (168) ; « homolgues » (169) ; « controlant » (160) ; « Individus normal » (171) ; « MECANISME » (171, en-têtes) ; « au microscopique électronique » (177) ; « synthèse protéiques » (179) ; « Acide amine » (180) ; « TROIXIÈME LETTRE » (181) ; « polypetidique » (183) ; « polypeptique » (185) ; « évênements » (186) ; « del'Hb » (188) ; « mais » pour « maïs » (189) ; « Transfert de l'informationt » (191) ; « cadavres humaines » (192) ; « Sacharomycès cervisiae » (193) ; « récu » (193) ; « l'on inséré » (193) ; « shéma » (196) ; « pèche » (197) ; « circlaire » (199) ; « réstriction » (199) ; « Echérichia / Eshérichia » (200) ; « chronosome », « cellules-files » (200, doc 17) ; « procéder » pour « précéder » (200) ; « synthèsepro-téique » (200) ; « trangéniques », « repésentée », « tâches » (203).
 
 ### Lot ch.13–14 (p.206–257)
@@ -6684,7 +6878,7 @@ Aucune page illisible.
 - Doc 21 : distances des forages au rift et épaisseurs de sédiments approximatives (C ≈ 300 m [?], G ≈ 2 600 m).
 - Doc 24 : échelle de la lame de péridotite (0,6 mm [?]) ; repères minéraux de la lame de basalte partiellement lisibles.
 - Doc 31 : liste des vitesses portées sur les vecteurs incomplète et unité non imprimée ; noms des plaques arabique et somalienne tronqués par le bord de la carte ; plaque antarctique non visible sur l'extrait.
-- Doc 37 : une étiquette lue « IL Y A 10 MILLIONS D'ANNÉES » est en partie masquée.
+- Doc 37 : l'étiquette « AUJOURD'HUI » est tronquée par le bord de la carte ; les autres sont lisibles.
 - Doc 16 (ch.16) : petites annotations de la carte bathymétrique illisibles.
 - Doc 44 à 47 : la valeur exacte des symboles σ1/σ2/σ3 n'est pas expliquée dans la légende.
 - Aucune page illisible.
@@ -6709,3 +6903,17 @@ Aucune page illisible. Coquilles et incohérences de la source :
 - p.331 : QCM 2 — l'ordre « oiseaux - mammifères » (item d) n'est pas tranché par la synthèse ; pas de corrigé imprimé.
 - Numérotation de la synthèse : « I » puis « 2 » (sic) ; la fiche garde le libellé imprimé.
 
+
+### Audit R-7 (lot R4, p.206–336) — erreurs scientifiques de la source non relevées par les lecteurs
+
+Signalées [sic] dans les sections ; à ne pas reprendre telles quelles :
+- p.215 (doc 21) : erreurs attribuées à la « transcription de l'ADN en ARN » au lieu de la transcription inverse.
+- p.217, 227, 228 : grain de pollen / ovule appelés « gamètes », méiose qui « donne des gamètes » chez les plantes à fleurs (ce sont des spores).
+- p.234 (doc 2) : « prix Nobel de génétique » (Nobel de physiologie ou médecine, 1933).
+- p.258 : « 6.10²¹ tonnes (600 milliards de milliards de tonnes) » (= 6 000 milliards de milliards).
+- p.277 : champ magnétique censé protéger du « rayonnement électromagnétique » solaire (il dévie les particules chargées ; l'ozone filtre les UV).
+- p.278 : « manteau supérieur formé de basalte et de péridotite » (le manteau est péridotitique).
+- p.283 : champ magnétique attribué aux « mouvements de la graine » (noyau externe liquide).
+- p.292 : roche « élastique » au-delà de 450–600 °C (lire ductile).
+- p.307 : « réactions chimiques des corps radioactifs » (désintégration nucléaire).
+- p.330 d) : apparition des monocotylédones au Tertiaire (Crétacé, cf. doc 37 p.326).
