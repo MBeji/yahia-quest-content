@@ -1,0 +1,159 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'enquête du laboratoire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Après un effort intense, les cellules musculaires rejettent beaucoup de déchets dans le milieu intérieur. Pourtant, chez une personne en bonne santé, les constantes restent dans leurs limites. Pourquoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le milieu intérieur est si abondant que les déchets s'y diluent sans que leur concentration change",
+          "misconceptionTag": "bio.mi.constance-sans-regulation"
+        },
+        {
+          "id": "b",
+          "text": "Le milieu intérieur est un liquide immobile, donc ses valeurs ne peuvent pas changer",
+          "misconceptionTag": "bio.mi.constance-sans-regulation"
+        },
+        {
+          "id": "c",
+          "text": "Les constantes ont une valeur fixe, que les déchets ne peuvent pas modifier",
+          "misconceptionTag": "bio.mi.constante-valeur-fixe"
+        },
+        {
+          "id": "d",
+          "text": "Des mécanismes régulateurs corrigent les écarts créés par le métabolisme"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le métabolisme rejette des déchets dans le milieu intérieur et tend à écarter ses valeurs de la normale. Si elles restent dans leurs limites, c'est que des mécanismes régulateurs corrigent ces écarts. Ni une dilution, ni l'immobilité du liquide, ni l'absence de variation n'expliquent la constance.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un laboratoire analyse un liquide X prélevé chez une personne : Na⁺ 140 mmol/l, Ca²⁺ 2,5 mmol/l, glucose 5,0 mmol/l, protéines 4 g/l. Que peut-on affirmer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "X est de la lymphe ou du liquide interstitiel : mêmes ions, peu de protéines"
+        },
+        {
+          "id": "b",
+          "text": "X est du plasma, car les ions et le glucose ont exactement les valeurs du plasma",
+          "misconceptionTag": "bio.mi.lymphe-identique-au-plasma"
+        },
+        {
+          "id": "c",
+          "text": "X n'est pas un liquide du milieu intérieur, car il est pauvre en protéines"
+        },
+        {
+          "id": "d",
+          "text": "X est du plasma dilué dans l'eau : tous ses constituants sont moins concentrés"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les ions et le glucose sont voisins de ceux du plasma, mais 4 g/l de protéines est très inférieur aux 70 g/l du plasma : X est de la lymphe ou du liquide interstitiel, qui naît du plasma en retenant presque toutes les protéines. Ces liquides font partie du milieu intérieur.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un adulte de 68 kg a une volémie mesurée de 3600 ml (données d'illustration). La volémie moyenne est de 70 ml par kg ; d'une personne à l'autre, elle varie normalement de 20 % de part et d'autre de cette moyenne. De combien de ml sa volémie mesurée est-elle au-dessous de la limite normale basse ?",
+      "answerKey": {
+        "value": 208,
+        "unit": "ml"
+      },
+      "explanation": "Moyenne : 70 × 68 = 4760 ml. Limite basse : 4760 × 0,8 = 3808 ml. Écart avec la valeur mesurée : 3808 − 3600 = 208 ml sous la limite, donc un volume sanguin anormalement bas.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un patient a une glycémie de 7,2 mmol/l. Le glucose C₆H₁₂O₆ a une masse molaire de 180 g/mol et la glycémie normale est de 0,9 à 1,1 g/l. Quelle est sa glycémie en g/l, et que traduit-elle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,040 g/l : trop basse, hypoglycémie",
+          "misconceptionTag": "bio.mi.conversion-sans-masse-molaire"
+        },
+        {
+          "id": "b",
+          "text": "1,30 g/l : trop basse, hypoglycémie",
+          "misconceptionTag": "bio.mi.hyper-hypo-inverses"
+        },
+        {
+          "id": "c",
+          "text": "1,30 g/l : trop élevée, hyperglycémie"
+        },
+        {
+          "id": "d",
+          "text": "7,20 g/l : trop élevée, hyperglycémie",
+          "misconceptionTag": "bio.mi.conversion-sans-masse-molaire"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En g/l : 7,2 mmol/l × 180 g/mol ÷ 1000 ≈ 1,30 g/l, au-dessus de 1,1 : c'est une hyperglycémie. Diviser par 180 donne 0,04 ; garder le nombre donne 7,2 ; et une valeur supérieure à l'intervalle est un excès (hyper), pas un manque (hypo).",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Un technicien teste un liquide X (données d'illustration ; les tubes témoins, faits avec de l'eau distillée, restent sans précipité ; le test des chlorures est fait après élimination des protéines).\n<svg viewBox=\"0 0 340 140\">\n<title>Résultats sur un liquide X (données d'illustration)</title>\n<text x=\"170.0\" y=\"14\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Résultats sur un liquide X (données d'illustration)</text>\n<rect x=\"10\" y=\"22\" width=\"190\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"105.0\" y=\"37\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Expérience</text>\n<rect x=\"200\" y=\"22\" width=\"130\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"265.0\" y=\"37\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Observation</text>\n<rect x=\"10\" y=\"44\" width=\"190\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"105.0\" y=\"60\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">Acide nitrique puis AgNO₃</text>\n<rect x=\"200\" y=\"44\" width=\"130\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"265.0\" y=\"60\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">précipité blanc</text>\n<rect x=\"10\" y=\"66\" width=\"190\" height=\"22\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"105.0\" y=\"82\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">Liqueur de Fehling, à chaud</text>\n<rect x=\"200\" y=\"66\" width=\"130\" height=\"22\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"265.0\" y=\"82\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">aucun précipité</text>\n<rect x=\"10\" y=\"88\" width=\"190\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"105.0\" y=\"104\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">Chauffage du liquide</text>\n<rect x=\"200\" y=\"88\" width=\"130\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"265.0\" y=\"104\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">solide blanchâtre</text>\n<rect x=\"10\" y=\"110\" width=\"190\" height=\"22\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"105.0\" y=\"126\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">Acide chlorhydrique puis BaCl₂</text>\n<rect x=\"200\" y=\"110\" width=\"130\" height=\"22\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"265.0\" y=\"126\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">aucun précipité</text>\n</svg>\nQuelles conclusions sont correctes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le liquide X contient des chlorures"
+        },
+        {
+          "id": "b",
+          "text": "Le liquide X contient des protéines"
+        },
+        {
+          "id": "c",
+          "text": "Le liquide X contient du glucose"
+        },
+        {
+          "id": "d",
+          "text": "Le liquide X contient des sulfates"
+        },
+        {
+          "id": "e",
+          "text": "Le liquide X ne contient aucun sel minéral"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Le précipité blanc avec le nitrate d'argent acidifié indique des chlorures, et la coagulation par la chaleur indique des protéines. La liqueur de Fehling chauffée et le chlorure de baryum ne donnent rien : pas de glucose ni de sulfates mis en évidence. Le liquide contient au moins un sel minéral, les chlorures.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Chez un patient, plusieurs prises de sang à des jours différents donnent une glycémie de 1,9 g/l (valeur normale : 0,9 à 1,1 g/l). Que peut-on en déduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un mécanisme régulateur de la glycémie est déficient : il ne corrige plus l'écart"
+        },
+        {
+          "id": "b",
+          "text": "Sa glycémie est normale : chaque personne a sa propre valeur constante",
+          "misconceptionTag": "bio.mi.constante-valeur-fixe"
+        },
+        {
+          "id": "c",
+          "text": "L'écart est sans gravité tant que le patient ne ressent aucun symptôme"
+        },
+        {
+          "id": "d",
+          "text": "La constance est automatique : un écart persistant prouve une erreur de laboratoire",
+          "misconceptionTag": "bio.mi.constance-sans-regulation"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une valeur répétée hors de l'intervalle normal montre que l'écart n'est pas corrigé : chez le malade, un mécanisme régulateur est déficient. Une constante est un intervalle commun, pas une valeur propre à chaque personne, et la constance n'est pas automatique : elle dépend de la régulation.",
+      "difficulty": 3
+    }
+  ]
+}

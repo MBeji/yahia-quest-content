@@ -1,0 +1,172 @@
+{
+  "title": "⭐ Exercice : Les liquides qui baignent les cellules",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Selon Claude Bernard, un animal vit dans deux milieux. Lesquels ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un milieu extérieur et un milieu intérieur"
+        },
+        {
+          "id": "b",
+          "text": "L'air et l'eau"
+        },
+        {
+          "id": "c",
+          "text": "Un milieu extracellulaire et un milieu intracellulaire",
+          "misconceptionTag": "bio.mi.liquide-intracellulaire-inclus"
+        },
+        {
+          "id": "d",
+          "text": "Le sang et la lymphe"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Claude Bernard (1859) distingue le milieu extérieur, où l'organisme est placé, et le milieu intérieur, où vivent les cellules. Le milieu intérieur regroupe les seuls liquides extracellulaires ; le liquide intracellulaire n'en fait pas partie.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels liquides font partie du milieu intérieur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le plasma"
+        },
+        {
+          "id": "b",
+          "text": "Le liquide interstitiel"
+        },
+        {
+          "id": "c",
+          "text": "Le liquide contenu dans les cellules"
+        },
+        {
+          "id": "d",
+          "text": "La lymphe canalisée"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "Le plasma et la lymphe canalisée sont les milieux circulants, le liquide interstitiel est le milieu d'échanges : tous trois sont extracellulaires. Le liquide contenu dans les cellules est intracellulaire, donc hors du milieu intérieur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une écorchure légère laisse perler un liquide transparent, sans sang. De quel liquide s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Du plasma"
+        },
+        {
+          "id": "b",
+          "text": "Du sérum",
+          "misconceptionTag": "bio.mi.plasma-serum-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Du liquide contenu dans les cellules de la peau",
+          "misconceptionTag": "bio.mi.liquide-intracellulaire-inclus"
+        },
+        {
+          "id": "d",
+          "text": "Du liquide interstitiel"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le liquide transparent qui remplit l'espace entre les cellules de la peau est le liquide interstitiel. Sans saignement, il n'y a pas de plasma ; le sérum ne se forme qu'après la coagulation d'un sang prélevé ; le contenu des cellules ne s'écoule pas par une simple écorchure.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur le schéma, quel repère désigne un liquide qui n'appartient pas au milieu intérieur ?\n<svg viewBox=\"0 0 340 236\">\n<title>Tissu : capillaire sanguin, espace entre les cellules, vaisseau lymphatique</title>\n<rect x=\"100\" y=\"36\" width=\"132\" height=\"140\" rx=\"10\" fill=\"#e0f2fe\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n<rect x=\"16\" y=\"36\" width=\"60\" height=\"140\" rx=\"24\" fill=\"#fecaca\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<ellipse cx=\"36\" cy=\"76\" rx=\"11\" ry=\"6.5\" fill=\"#dc2626\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<ellipse cx=\"56\" cy=\"118\" rx=\"11\" ry=\"6.5\" fill=\"#dc2626\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<rect x=\"258\" y=\"36\" width=\"62\" height=\"140\" rx=\"24\" fill=\"#e9d5ff\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<ellipse cx=\"135\" cy=\"76\" rx=\"24\" ry=\"17\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<circle cx=\"135\" cy=\"76\" r=\"6\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<ellipse cx=\"190\" cy=\"130\" rx=\"24\" ry=\"17\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n<circle cx=\"190\" cy=\"130\" r=\"6\" fill=\"#f59e0b\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"46\" y=\"100\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">A</text>\n<text x=\"205\" y=\"70\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">B</text>\n<text x=\"289\" y=\"110\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">C</text>\n<text x=\"123\" y=\"81\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">D</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "B"
+        },
+        {
+          "id": "c",
+          "text": "C"
+        },
+        {
+          "id": "d",
+          "text": "D"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le repère D est à l'intérieur d'une cellule : c'est le liquide intracellulaire, qui n'est pas dans le milieu intérieur. Le repère A est le plasma, B le liquide interstitiel et C la lymphe canalisée : trois liquides extracellulaires.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces propositions, laquelle indique ce qu'une cellule puise dans le milieu intérieur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le dioxyde de carbone et les déchets de son métabolisme"
+        },
+        {
+          "id": "b",
+          "text": "Les hormones et les enzymes qu'elle vient de synthétiser"
+        },
+        {
+          "id": "c",
+          "text": "Le dioxygène et les nutriments nécessaires à son activité"
+        },
+        {
+          "id": "d",
+          "text": "Le dioxygène et les hormones qu'elle vient de synthétiser"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une cellule puise dans le milieu intérieur le dioxygène et les nutriments. Elle y rejette au contraire le dioxyde de carbone, les déchets et ses produits de synthèse (hormones, enzymes) : ces substances sortent de la cellule, elles n'y entrent pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Ranger, de la première à la dernière, les étapes du trajet d'un liquide du milieu intérieur.",
+      "options": [
+        {
+          "id": "s4",
+          "text": "La lymphe canalisée rejoint le sang au niveau d'une veine sous-clavière"
+        },
+        {
+          "id": "s2",
+          "text": "Une partie du plasma traverse la paroi d'un capillaire et devient du liquide interstitiel"
+        },
+        {
+          "id": "s1",
+          "text": "Le plasma circule dans les capillaires sanguins"
+        },
+        {
+          "id": "s3",
+          "text": "Le liquide interstitiel est drainé par un vaisseau lymphatique : c'est la lymphe canalisée"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "explanation": "Le plasma est d'abord dans les capillaires ; une partie en sort et devient liquide interstitiel ; celui-ci est ensuite drainé par un vaisseau lymphatique, ce qui donne la lymphe canalisée ; enfin la lymphe rejoint le sang et la boucle est fermée.",
+      "difficulty": 2
+    }
+  ]
+}

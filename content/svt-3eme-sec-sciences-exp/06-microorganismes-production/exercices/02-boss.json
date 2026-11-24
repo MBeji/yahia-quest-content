@@ -1,0 +1,135 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître-affineur",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quelle équation décrit l'hydrolyse du lactose dans le yaourt ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "lactose + eau → glucose + glucose",
+          "misconceptionTag": "bio.ferm.lactose-deux-glucoses"
+        },
+        {
+          "id": "b",
+          "text": "lactose → éthanol + dioxyde de carbone",
+          "misconceptionTag": "bio.ferm.produits-fermentations-confondus"
+        },
+        {
+          "id": "c",
+          "text": "lactose + dioxygène → dioxyde de carbone + eau"
+        },
+        {
+          "id": "d",
+          "text": "lactose + eau → glucose + galactose"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'hydrolyse ajoute de l'eau et coupe le lactose en ses deux sucres simples, un glucose et un galactose (12 C = 6 + 6, 24 H = 12 + 12, 12 O = 6 + 6). Deux glucoses seraient une erreur, et l'éthanol ou la respiration sont d'autres transformations.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la fabrication du pain, quel est le rôle du passage au four ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il arrête la fermentation, coagule les protéines et fait évaporer l'éthanol"
+        },
+        {
+          "id": "b",
+          "text": "Il accélère la fermentation, qui forme alors plus de CO₂ pour gonfler la pâte"
+        },
+        {
+          "id": "c",
+          "text": "Il transforme l'éthanol en acide acétique, ce qui donne sa croûte au pain",
+          "misconceptionTag": "bio.ferm.produits-fermentations-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Il détruit les protéines de la farine, ce qui rend la mie spongieuse et légère"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Au four, la chaleur arrête la fermentation de la levure, coagule les protéines, ce qui fixe les alvéoles de la mie, et évapore l'éthanol. La chaleur n'accélère pas la fermentation, la transformation de l'éthanol en acide acétique est l'œuvre d'Acetobacter, et les protéines coagulent au lieu de se détruire.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Voici les résultats d'une expérience sur du lait bouilli, au tiède. Quelle conclusion est justifiée ?\n<svg viewBox=\"0 0 340 126\">\n<title>Résultats de trois pots (données d'illustration)</title>\n<text x=\"10\" y=\"22\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Résultats de trois pots (données d'illustration)</text><rect x=\"10\" y=\"32\" width=\"40\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"30.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Pot</text><rect x=\"50\" y=\"32\" width=\"190\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"145.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Contenu</text><rect x=\"240\" y=\"32\" width=\"90\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"285.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Résultat</text><rect x=\"10\" y=\"54\" width=\"40\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"30.0\" y=\"68.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">1</text><rect x=\"50\" y=\"54\" width=\"190\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"145.0\" y=\"68.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">lait bouilli seul</text><rect x=\"240\" y=\"54\" width=\"90\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"285.0\" y=\"68.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">liquide</text><rect x=\"10\" y=\"76\" width=\"40\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"30.0\" y=\"90.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">2</text><rect x=\"50\" y=\"76\" width=\"190\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"145.0\" y=\"90.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">lait bouilli + yaourt</text><rect x=\"240\" y=\"76\" width=\"90\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"285.0\" y=\"90.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">caillé</text><rect x=\"10\" y=\"98\" width=\"40\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"30.0\" y=\"112.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">3</text><rect x=\"50\" y=\"98\" width=\"190\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"145.0\" y=\"112.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">lait bouilli + yaourt bouilli</text><rect x=\"240\" y=\"98\" width=\"90\" height=\"22\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"285.0\" y=\"112.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">liquide</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Des bactéries vivantes du yaourt font cailler le lait : c'est prouvé",
+          "misconceptionTag": "bio.demarche.facteur-non-teste"
+        },
+        {
+          "id": "b",
+          "text": "Un agent du yaourt, détruit par la chaleur, fait cailler le lait"
+        },
+        {
+          "id": "c",
+          "text": "Le yaourt fait cailler le lait, puisque le pot 2 a caillé",
+          "misconceptionTag": "bio.demarche.cause-sans-temoin"
+        },
+        {
+          "id": "d",
+          "text": "Le yaourt bouilli contient des bactéries mortes qui empêchent de cailler"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le pot 1 (témoin) montre que le lait ne caille pas seul ; le pot 2, que le yaourt apporte l'agent ; le pot 3, que cet agent est détruit par la chaleur. Mais la chaleur détruit aussi bien des bactéries qu'une enzyme : seul le frottis désigne des bactéries. Un seul pot ne prouve rien, et rien dans le tableau ne montre que le yaourt bouilli empêche le caillage : il ne le provoque simplement pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Pendant la levée d'une pâte, 36 g de glucose (M = 180 g/mol) sont fermentés par la levure. Quel volume de CO₂ se forme, en litres ? (1 mol de gaz occupe 24 L.)",
+      "answerKey": {
+        "value": 9.6,
+        "unit": "L",
+        "tolerance": 0.1
+      },
+      "explanation": "36 ÷ 180 = 0,2 mol de glucose. L'équation donne 2 CO₂ par glucose : 0,2 × 2 = 0,4 mol de CO₂. Volume : 0,4 × 24 = 9,6 L.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une cuve contient 9,2 g d'éthanol (M = 46 g/mol). Acetobacter le transforme entièrement en acide acétique (M = 60 g/mol), une molécule d'acide pour une d'éthanol. Quelle masse d'acide acétique se forme, en grammes ?",
+      "answerKey": {
+        "value": 12,
+        "unit": "g"
+      },
+      "explanation": "9,2 ÷ 46 = 0,2 mol d'éthanol. L'équation CH₃CH₂OH + O₂ → CH₃COOH + H₂O donne 1 acide pour 1 éthanol : 0,2 mol d'acide acétique. Masse : 0,2 × 60 = 12 g.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Du jus de fruits fermente dans une cuve hermétique, sans aucune entrée d'air. Quelques semaines plus tard, quel produit s'y est accumulé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De l'acide acétique : Acetobacter agit aussi sans dioxygène",
+          "misconceptionTag": "bio.ferm.acetobacter-sans-o2"
+        },
+        {
+          "id": "b",
+          "text": "De l'acide lactique : les bactéries lactiques prennent le relais",
+          "misconceptionTag": "bio.ferm.produits-fermentations-confondus"
+        },
+        {
+          "id": "c",
+          "text": "De l'éthanol : sans dioxygène, Acetobacter ne peut pas agir"
+        },
+        {
+          "id": "d",
+          "text": "Du glucose intact : sans dioxygène, la levure ne fermente pas",
+          "misconceptionTag": "bio.ferm.levure-un-seul-mode"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les levures fermentent le glucose en éthanol sans avoir besoin d'air. La transformation de l'éthanol en acide acétique consomme du dioxygène : dans une cuve fermée, Acetobacter ne la réalise pas, et on obtient une boisson alcoolisée plutôt que du vinaigre.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# 📜 Résumé : L'excrétion urinaire
+
+- **Bilan hydrique et appareil urinaire** : le bilan est équilibré quand les entrées d'eau égalent les sorties (2,55 l par jour dans l'exemple) ; l'urine en est la voie principale. Les reins forment l'urine, les uretères la conduisent, la vessie la stocke, l'urètre l'évacue.
+- **Plasma et urine** : le rein épure le sang (urée, créatinine concentrées dans l'urine), retient le glucose et les protides, et règle l'élimination des sels. L'urine n'est pas du plasma allégé.
+- **Rein et néphron** : l'urine se forme dans les néphrons, unités fonctionnelles du rein (capsule de Bowman et glomérule, tube contourné proximal, anse de Henlé, tube contourné distal, tube collecteur), puis gagne les calices, le bassinet, l'uretère, la vessie et l'urètre.
+- **Filtration glomérulaire** : phénomène physique passif qui arrête les cellules et les grosses molécules et donne l'urine primitive, environ 170 l par jour. Pression de filtration : P_F = P2 − (P1 + P3).
+- **Réabsorption et sécrétion** : la réabsorption est totale pour le glucose et les acides aminés, partielle pour l'eau et les sels ; la sécrétion ajoute au tube des substances produites par ses cellules, comme l'ammoniac et l'acide hippurique. Urine définitive = filtrat − réabsorbé + sécrété.
+- **Seuil d'élimination** : une substance à seuil (glucose 1,7 g/l, NaCl 5,6 g/l) n'est excrétée que si sa concentration plasmatique l'atteint ; une substance sans seuil (urée, ammoniac, acide urique, médicaments, colorants) l'est à toute concentration.
+- **Régulation** : l'hypothalamus, informé du volume et de la pression osmotique du milieu intérieur, commande l'ADH (tube collecteur, plus d'eau réabsorbée, urine moins abondante et plus concentrée) et l'aldostérone (tube contourné distal, plus de NaCl réabsorbé).
+- **Hémodialyse** : le sang est épuré à travers une membrane semi-perméable ; chaque substance diffuse du côté où elle est la plus concentrée vers l'autre, les déchets quittent le sang, les cellules du sang restent.

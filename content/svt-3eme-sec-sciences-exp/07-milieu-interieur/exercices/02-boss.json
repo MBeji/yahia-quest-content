@@ -1,0 +1,143 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des constantes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "D'après le tableau, combien de grammes de protéines y a-t-il en moins dans 2 litres de lymphe que dans 2 litres de plasma ?\n<svg viewBox=\"0 0 330 232\">\n<title>Lymphe et plasma (document 9 du manuel)</title>\n<text x=\"165.0\" y=\"14\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Lymphe et plasma (document 9 du manuel)</text>\n<rect x=\"10\" y=\"22\" width=\"130\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"37\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Constituant</text>\n<rect x=\"140\" y=\"22\" width=\"90\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"37\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Lymphe</text>\n<rect x=\"230\" y=\"22\" width=\"90\" height=\"22\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"37\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Plasma</text>\n<rect x=\"10\" y=\"44\" width=\"130\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"58\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Na⁺ (mmol/l)</text>\n<rect x=\"140\" y=\"44\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"58\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">140</text>\n<rect x=\"230\" y=\"44\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"58\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">140</text>\n<rect x=\"10\" y=\"64\" width=\"130\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">K⁺ (mmol/l)</text>\n<rect x=\"140\" y=\"64\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">5</text>\n<rect x=\"230\" y=\"64\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">4,8</text>\n<rect x=\"10\" y=\"84\" width=\"130\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"98\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Ca²⁺ (mmol/l)</text>\n<rect x=\"140\" y=\"84\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"98\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">2,5</text>\n<rect x=\"230\" y=\"84\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"98\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">2,5</text>\n<rect x=\"10\" y=\"104\" width=\"130\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"118\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Mg²⁺ (mmol/l)</text>\n<rect x=\"140\" y=\"104\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"118\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">1,5</text>\n<rect x=\"230\" y=\"104\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"118\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">0,9</text>\n<rect x=\"10\" y=\"124\" width=\"130\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Cl⁻ (mmol/l)</text>\n<rect x=\"140\" y=\"124\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">103</text>\n<rect x=\"230\" y=\"124\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"138\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">101</text>\n<rect x=\"10\" y=\"144\" width=\"130\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">HCO₃⁻ (mmol/l)</text>\n<rect x=\"140\" y=\"144\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">28</text>\n<rect x=\"230\" y=\"144\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"158\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">25</text>\n<rect x=\"10\" y=\"164\" width=\"130\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"178\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Phosphates (mmol/l)</text>\n<rect x=\"140\" y=\"164\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"178\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">4</text>\n<rect x=\"230\" y=\"164\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"178\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">4</text>\n<rect x=\"10\" y=\"184\" width=\"130\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Glucose (mmol/l)</text>\n<rect x=\"140\" y=\"184\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">5,0</text>\n<rect x=\"230\" y=\"184\" width=\"90\" height=\"20\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"198\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">5,1</text>\n<rect x=\"10\" y=\"204\" width=\"130\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"218\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Protéines (g/l)</text>\n<rect x=\"140\" y=\"204\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"185.0\" y=\"218\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">4</text>\n<rect x=\"230\" y=\"204\" width=\"90\" height=\"20\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"275.0\" y=\"218\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">70</text>\n</svg>",
+      "answerKey": {
+        "value": 132,
+        "unit": "g"
+      },
+      "explanation": "Par litre : plasma 70 g/l, lymphe 4 g/l, soit 70 − 4 = 66 g de moins par litre. Pour 2 litres : 66 × 2 = 132 g de protéines en moins dans la lymphe. Ce grand écart contraste avec les ions et le glucose, aux valeurs voisines.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le tableau du document 9 montre que la lymphe a presque la même composition que le plasma, sauf pour les protéines. Quelle interprétation est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La paroi du capillaire laisse passer toutes les molécules, protéines comprises",
+          "misconceptionTag": "bio.mi.lymphe-identique-au-plasma"
+        },
+        {
+          "id": "b",
+          "text": "Les petites molécules traversent la paroi du capillaire, les protéines très peu"
+        },
+        {
+          "id": "c",
+          "text": "La lymphe se forme à partir des cellules, qui rejettent un liquide pauvre en protéines"
+        },
+        {
+          "id": "d",
+          "text": "Les protéines du plasma sont détruites dès qu'elles quittent le capillaire"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Des concentrations voisines pour les ions et le glucose montrent que ces petites particules traversent la paroi du capillaire ; 4 g/l contre 70 g/l montre que les protéines y passent très peu. Si toutes les molécules passaient, les protéines aussi auraient des concentrations voisines.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le pH sanguin d'un patient est de 7,25 ; l'intervalle normal est de 7,35 à 7,45. Quel est son état, et quelle conséquence lui correspond ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acidose, avec une accélération de la fonction cardiaque"
+        },
+        {
+          "id": "b",
+          "text": "Acidose, avec une diminution de la fonction cardiaque"
+        },
+        {
+          "id": "c",
+          "text": "Alcalose, avec une diminution de la fonction cardiaque",
+          "misconceptionTag": "bio.mi.hyper-hypo-inverses"
+        },
+        {
+          "id": "d",
+          "text": "Alcalose, avec une faiblesse musculaire",
+          "misconceptionTag": "bio.mi.hyper-hypo-inverses"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "7,25 est au-dessous de 7,35 : c'est une baisse anormale du pH, donc une acidose. L'acidose diminue la fonction cardiaque et provoque des troubles respiratoires ; elle ne l'accélère pas, et la faiblesse musculaire accompagne l'alcalose, qui est une élévation du pH.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "La calcémie d'une personne est de 0,10 g/l. Le calcium a une masse molaire de 40 g/mol et sa valeur normale est de 2,2 à 2,75 mmol/l. Quelle conclusion est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,0025 mmol/l : bien trop basse",
+          "misconceptionTag": "bio.mi.conversion-sans-masse-molaire"
+        },
+        {
+          "id": "b",
+          "text": "0,10 mmol/l : trop basse",
+          "misconceptionTag": "bio.mi.conversion-sans-masse-molaire"
+        },
+        {
+          "id": "c",
+          "text": "2,5 mmol/l : valeur normale"
+        },
+        {
+          "id": "d",
+          "text": "4 mmol/l : trop élevée",
+          "misconceptionTag": "bio.mi.conversion-sans-masse-molaire"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "0,10 g/l ÷ 40 g/mol = 0,0025 mol/l, soit 2,5 mmol/l. Cette valeur est comprise entre 2,2 et 2,75 : elle est normale. Oublier de multiplier par 1000 donne 0,0025 ; garder le même nombre donne 0,10 ; multiplier par M au lieu de diviser donne 4.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un adulte de 75 kg a une volémie moyenne de 70 ml par kg. Une variation de 20 % par rapport à cette moyenne est considérée comme normale. Quelle est, en ml, la volémie normale minimale de cet adulte ?",
+      "answerKey": {
+        "value": 4200,
+        "unit": "ml"
+      },
+      "explanation": "Moyenne : 70 × 75 = 5250 ml. Limite basse : 5250 × 0,8 = 4200 ml (20 % de moins). Piège : retrancher 20 ml par kg au lieu de 20 % donnerait 50 × 75 = 3750 ml, qui n'est pas la limite.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Valeurs normales : température 36,4 à 37,2 °C ; pH sanguin 7,35 à 7,45 ; sodium 138 à 145 mmol/l ; urée 2,5 à 7,5 mmol/l ; glycémie 0,9 à 1,1 g/l. Quelles mesures sont dans les limites normales ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Température : 37,0 °C"
+        },
+        {
+          "id": "b",
+          "text": "pH sanguin : 7,50"
+        },
+        {
+          "id": "c",
+          "text": "Sodium : 3,2 g/l (Na : 23 g/mol)"
+        },
+        {
+          "id": "d",
+          "text": "Urée : 2,0 mmol/l"
+        },
+        {
+          "id": "e",
+          "text": "Glycémie : 1,0 g/l"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "37,0 °C est entre 36,4 et 37,2. Le sodium : 3,2 ÷ 23 × 1000 ≈ 139 mmol/l, entre 138 et 145. La glycémie de 1,0 g/l est entre 0,9 et 1,1. En revanche 7,50 dépasse 7,45 (alcalose) et 2,0 mmol/l d'urée est au-dessous de 2,5.",
+      "difficulty": 3
+    }
+  ]
+}
