@@ -1,0 +1,131 @@
+{
+  "title": "Test de compréhension ⭐ : La respiration cellulaire",
+  "questions": [
+    {
+      "prompt": "Des cellules sont cultivées avec du glucose dont le carbone est marqué au ¹⁴C : le CO₂ qu'elles rejettent est marqué. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le carbone du CO₂ rejeté provient du glucose dégradé"
+        },
+        {
+          "id": "b",
+          "text": "Le CO₂ rejeté est fabriqué à partir de l'oxygène respiré",
+          "misconceptionTag": "bio.resp.origine-co2-inversee"
+        },
+        {
+          "id": "c",
+          "text": "Le carbone du CO₂ rejeté provient de l'eau du milieu"
+        },
+        {
+          "id": "d",
+          "text": "Le carbone du CO₂ rejeté provient de l'air du milieu"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Seul le glucose portait du ¹⁴C : le carbone marqué retrouvé dans le CO₂ vient donc du glucose, par décarboxylation. Le dioxygène ne fournit pas le carbone du CO₂, et ni l'eau ni l'air du milieu n'étaient marqués.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans un tube à l'abri de l'air, du muscle frais décolore le bleu de méthylène, alors que du muscle bouilli ne le décolore pas. Que fait le muscle frais ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il prend de l'hydrogène au bleu de méthylène, qui devient incolore",
+          "misconceptionTag": "bio.resp.bleu-methylene-sens-inverse"
+        },
+        {
+          "id": "b",
+          "text": "Il cède du dioxyde de carbone au bleu de méthylène, qui devient incolore"
+        },
+        {
+          "id": "c",
+          "text": "Il cède de l'hydrogène au bleu de méthylène, qui devient incolore"
+        },
+        {
+          "id": "d",
+          "text": "Il cède de l'oxygène au bleu de méthylène, qui devient incolore"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La forme incolore du bleu de méthylène est sa forme réduite BmH₂ : il a reçu de l'hydrogène. C'est une déshydrogénation, catalysée par des enzymes du muscle frais que l'ébullition détruit. Le tube étant isolé de l'air, aucun dioxygène n'intervient, et le muscle ne prend pas d'hydrogène au colorant.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans quelle partie de la cellule la glycolyse a-t-elle lieu ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans la matrice de la mitochondrie",
+          "misconceptionTag": "bio.resp.glycolyse-dans-la-mitochondrie"
+        },
+        {
+          "id": "b",
+          "text": "Dans le noyau de la cellule"
+        },
+        {
+          "id": "c",
+          "text": "Sur les crêtes de la mitochondrie",
+          "misconceptionTag": "bio.resp.glycolyse-dans-la-mitochondrie"
+        },
+        {
+          "id": "d",
+          "text": "Dans le hyaloplasme de la cellule"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La glycolyse transforme le glucose en acide pyruvique dans le hyaloplasme. Seul l'acide pyruvique entre ensuite dans la mitochondrie, où la matrice abrite le cycle de Krebs et les crêtes la chaîne respiratoire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle réaction forme de l'ATP à partir d'ADP et de phosphate ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La décarboxylation du métabolite"
+        },
+        {
+          "id": "b",
+          "text": "La phosphorylation de l'ADP"
+        },
+        {
+          "id": "c",
+          "text": "L'hydrolyse de l'ATP",
+          "misconceptionTag": "bio.resp.hydrolyse-phosphorylation-inversees"
+        },
+        {
+          "id": "d",
+          "text": "La déshydrogénation du métabolite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Fixer un groupement phosphate sur l'ADP est une phosphorylation : réaction endergonique qui consomme l'énergie de la dégradation du glucose et la stocke dans l'ATP. L'hydrolyse fait l'inverse en libérant l'énergie ; décarboxylation et déshydrogénation concernent le métabolite, pas l'ATP.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "En l'absence de dioxygène, que devient l'acide pyruvique dans un muscle qui travaille intensément ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est transformé en acide lactique"
+        },
+        {
+          "id": "b",
+          "text": "Il est dégradé en CO₂ et en eau comme avec le dioxygène",
+          "misconceptionTag": "bio.resp.sans-o2-meme-bilan"
+        },
+        {
+          "id": "c",
+          "text": "Il redevient du glucose dans le muscle"
+        },
+        {
+          "id": "d",
+          "text": "Il s'accumule sans être transformé"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sans dioxygène, la chaîne respiratoire ne peut pas fonctionner : l'acide pyruvique reçoit de l'hydrogène et devient de l'acide lactique (fermentation lactique), qui s'accumule dans le muscle. La dégradation jusqu'au CO₂ et à l'eau exige le dioxygène.",
+      "difficulty": 2
+    }
+  ]
+}

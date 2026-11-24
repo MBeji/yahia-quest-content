@@ -1,0 +1,120 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des mitochondries",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Le tableau (données d'illustration) donne la composition du sang avant et après la traversée d'un muscle, pour 100 cm³ de sang. Quels échanges gazeux le muscle a-t-il réalisés avec ces 100 cm³ ?\n<svg viewBox=\"0 0 310 104\">\n<title>Sang avant et après un muscle (pour 100 cm³, données d'illustration)</title>\n<text x=\"10\" y=\"14\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Sang avant et après un muscle (pour 100 cm³, données d'illustration)</text>\n<rect x=\"10\" y=\"24\" width=\"130\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Sang</text>\n<rect x=\"140\" y=\"24\" width=\"80\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"180.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">O₂ (cm³)</text>\n<rect x=\"220\" y=\"24\" width=\"80\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"260.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">CO₂ (cm³)</text>\n<rect x=\"10\" y=\"48\" width=\"130\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"63.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">entrée du muscle</text>\n<rect x=\"140\" y=\"48\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"180.0\" y=\"63.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">19</text>\n<rect x=\"220\" y=\"48\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"260.0\" y=\"63.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">45</text>\n<rect x=\"10\" y=\"72\" width=\"130\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"75.0\" y=\"87.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">sortie du muscle</text>\n<rect x=\"140\" y=\"72\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"180.0\" y=\"87.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">13</text>\n<rect x=\"220\" y=\"72\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"260.0\" y=\"87.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">51</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a consommé 6 cm³ de CO₂ et libéré 6 cm³ d'O₂"
+        },
+        {
+          "id": "b",
+          "text": "Il a consommé 6 cm³ d'O₂ et libéré 6 cm³ de CO₂"
+        },
+        {
+          "id": "c",
+          "text": "Il a consommé 6 cm³ d'O₂ et libéré 51 cm³ de CO₂",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "d",
+          "text": "Il a consommé 13 cm³ d'O₂ et libéré 45 cm³ de CO₂",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le muscle prélève au sang 19 − 13 = 6 cm³ d'O₂ et lui rend 51 − 45 = 6 cm³ de CO₂ : ce sont les différences entre l'entrée et la sortie. Lire une seule valeur (51 ou 13) donne la teneur du sang, pas l'échange ; inverser les sens contredit la respiration, qui consomme l'O₂ et rejette le CO₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un filtrat de muscle frais est ajouté à du glucose et à du bleu de méthylène. Quelle conclusion le tableau permet-il de tirer ?\n<svg viewBox=\"0 0 340 180\">\n<title>Filtrat de muscle, glucose et bleu de méthylène</title>\n<text x=\"10\" y=\"14\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Filtrat de muscle, glucose et bleu de méthylène</text>\n<rect x=\"10\" y=\"24\" width=\"36\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"28.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Tube</text>\n<rect x=\"46\" y=\"24\" width=\"112\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"102.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Contenu</text>\n<rect x=\"158\" y=\"24\" width=\"52\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"184.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Temp.</text>\n<rect x=\"210\" y=\"24\" width=\"66\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"243.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Bleu de</text>\n<text x=\"243.0\" y=\"53.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">méthylène</text>\n<rect x=\"276\" y=\"24\" width=\"54\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"303.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Glucose</text>\n<rect x=\"10\" y=\"62\" width=\"36\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"28.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">1</text>\n<rect x=\"46\" y=\"62\" width=\"112\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"102.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">sans filtrat</text>\n<rect x=\"158\" y=\"62\" width=\"52\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"184.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">37 °C</text>\n<rect x=\"210\" y=\"62\" width=\"66\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"243.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">bleu</text>\n<rect x=\"276\" y=\"62\" width=\"54\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"303.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">présent</text>\n<rect x=\"10\" y=\"86\" width=\"36\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"28.0\" y=\"101.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">2</text>\n<rect x=\"46\" y=\"86\" width=\"112\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"102.0\" y=\"101.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">filtrat de muscle</text>\n<rect x=\"158\" y=\"86\" width=\"52\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"184.0\" y=\"101.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">37 °C</text>\n<rect x=\"210\" y=\"86\" width=\"66\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"243.0\" y=\"101.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">décoloré</text>\n<rect x=\"276\" y=\"86\" width=\"54\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"303.0\" y=\"101.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">absent</text>\n<rect x=\"10\" y=\"110\" width=\"36\" height=\"38\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"28.0\" y=\"132.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">3</text>\n<rect x=\"46\" y=\"110\" width=\"112\" height=\"38\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"102.0\" y=\"125.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">filtrat de muscle</text>\n<text x=\"102.0\" y=\"139.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">bouilli</text>\n<rect x=\"158\" y=\"110\" width=\"52\" height=\"38\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"184.0\" y=\"132.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">37 °C</text>\n<rect x=\"210\" y=\"110\" width=\"66\" height=\"38\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"243.0\" y=\"132.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">bleu</text>\n<rect x=\"276\" y=\"110\" width=\"54\" height=\"38\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"303.0\" y=\"132.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">présent</text>\n<rect x=\"10\" y=\"148\" width=\"36\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"28.0\" y=\"163.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">4</text>\n<rect x=\"46\" y=\"148\" width=\"112\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"102.0\" y=\"163.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">filtrat de muscle</text>\n<rect x=\"158\" y=\"148\" width=\"52\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"184.0\" y=\"163.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">0 °C</text>\n<rect x=\"210\" y=\"148\" width=\"66\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"243.0\" y=\"163.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">bleu</text>\n<rect x=\"276\" y=\"148\" width=\"54\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"303.0\" y=\"163.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">présent</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La substance du filtrat agit en consommant le dioxygène de l'air, ce qu'elle fait à 37 °C seulement",
+          "misconceptionTag": "bio.demarche.facteur-non-teste"
+        },
+        {
+          "id": "b",
+          "text": "Le glucose décolore seul le bleu de méthylène à 37 °C, le filtrat ne faisant qu'accélérer cette réaction"
+        },
+        {
+          "id": "c",
+          "text": "Une substance du filtrat déshydrogène le glucose ; elle est détruite par l'ébullition et inactive à 0 °C"
+        },
+        {
+          "id": "d",
+          "text": "Une substance du filtrat déshydrogène le glucose ; elle est détruite à 0 °C comme par l'ébullition",
+          "misconceptionTag": "bio.dig.froid-enzyme-detruite"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le tube 1, sans filtrat, reste bleu : le glucose seul ne réagit pas. Dans le tube 2 une substance du filtrat déshydrogène le glucose ; l'ébullition la détruit (tube 3) et à 0 °C elle est inactive (tube 4), comme une enzyme. Le froid inactive sans détruire, et le tableau ne dit rien du dioxygène.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Des cellules reçoivent du glucose dont les six atomes de carbone sont marqués au ¹⁴C. Combien de molécules de CO₂ marquées sont rejetées pour une molécule de glucose entièrement dégradée ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "molécules"
+      },
+      "explanation": "Le carbone du CO₂ vient du glucose, et les 6 carbones du glucose finissent tous en CO₂ (1 + 2 par acide pyruvique, soit 3 × 2 = 6) : 6 molécules de CO₂ marquées, comme l'équation du bilan (6 CO₂ par glucose).",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une cellule forme 108 ATP en dégradant du glucose par la respiration complète. Quel volume de dioxygène a-t-elle consommé, en litres ? (1 mol de gaz occupe 22,4 L.)",
+      "answerKey": {
+        "value": 403.2,
+        "unit": "L",
+        "tolerance": 0.5
+      },
+      "explanation": "La respiration forme 36 ATP par glucose : 108 ÷ 36 = 3 mol de glucose. Chacune consomme 6 mol de O₂ : 3 × 6 = 18 mol. Volume : 18 × 22,4 = 403,2 L.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Privée de dioxygène, une cellule ne forme d'ATP que par la glycolyse : 2 ATP par molécule de glucose. Quelle énergie est stockée dans l'ATP quand 5 moles de glucose sont dégradées ainsi, en kJ ? (1 mol d'ATP stocke 30,5 kJ.)",
+      "answerKey": {
+        "value": 305,
+        "unit": "kJ"
+      },
+      "explanation": "5 mol de glucose forment 5 × 2 = 10 mol d'ATP : 10 × 30,5 = 305 kJ stockés, contre 5 × 36 × 30,5 = 5490 kJ avec la respiration complète.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour une épreuve hypothétique (données d'illustration), la dépense d'énergie est de 700 kJ et le muscle consomme 14 L de dioxygène ; 1 L de dioxygène fournit 20 kJ par la respiration. Quelle part de l'énergie est fournie sans dioxygène ?\n<svg viewBox=\"0 0 330 94\">\n<title>Épreuve hypothétique (données d'illustration)</title>\n<text x=\"10\" y=\"14\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Épreuve hypothétique (données d'illustration)</text>\n<rect x=\"10\" y=\"24\" width=\"70\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"45.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Épreuve</text>\n<rect x=\"80\" y=\"24\" width=\"80\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"120.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Énergie</text>\n<text x=\"120.0\" y=\"53.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">dépensée</text>\n<rect x=\"160\" y=\"24\" width=\"80\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"200.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">O₂</text>\n<text x=\"200.0\" y=\"53.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">théorique</text>\n<rect x=\"240\" y=\"24\" width=\"80\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"280.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">O₂</text>\n<text x=\"280.0\" y=\"53.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">consommé</text>\n<rect x=\"10\" y=\"62\" width=\"70\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"45.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">fictive</text>\n<rect x=\"80\" y=\"62\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"120.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">700 kJ</text>\n<rect x=\"160\" y=\"62\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"200.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">à calculer</text>\n<rect x=\"240\" y=\"62\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"280.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">14 L</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "14 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "b",
+          "text": "21 %",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "c",
+          "text": "40 %",
+          "misconceptionTag": "bio.resp.parts-respiration-anaerobie-inversees"
+        },
+        {
+          "id": "d",
+          "text": "60 %"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le dioxygène théorique vaut 700 ÷ 20 = 35 L ; la respiration en fournit 14 ÷ 35 = 0,40, soit 40 %. Le reste, 60 % (21 L de dette ÷ 35 L), est fourni sans dioxygène (voie anaérobie, dont la fermentation lactique). Les valeurs 14 et 21 sont des litres, pas des pourcentages, et 40 % est la part de la respiration, pas celle de la voie sans dioxygène.",
+      "difficulty": 3
+    }
+  ]
+}

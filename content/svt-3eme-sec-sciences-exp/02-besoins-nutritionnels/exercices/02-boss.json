@@ -1,0 +1,138 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des rations",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un extrait de foie broyé prend une coloration brun acajou avec l'eau iodée. Quel glucide contient-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Du saccharose",
+          "misconceptionTag": "bio.alim.reactifs-confondus"
+        },
+        {
+          "id": "b",
+          "text": "De l'amidon"
+        },
+        {
+          "id": "c",
+          "text": "Du glycogène"
+        },
+        {
+          "id": "d",
+          "text": "Du glucose",
+          "misconceptionTag": "bio.alim.reactifs-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'eau iodée colore l'amidon, réserve végétale, en bleu, et le glycogène, réserve du foie et des muscles, en brun acajou. Le saccharose et le glucose, qui ne sont pas des polyosides, ne donnent pas cette coloration.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Valeurs d'illustration : un homme adulte reçoit une ration sans aucun protide et élimine 3,2 g d'azote par 24 heures. Sachant qu'un protide contient 16 % d'azote, quelle masse de protides son organisme détruit-il par 24 heures ?",
+      "answerKey": {
+        "value": 20,
+        "unit": "g"
+      },
+      "explanation": "La ration ne contient aucun protide : l'azote vient des protéines du corps. Avec 16 % d'azote, 3,2 = 0,16 × m donne m = 3,2 / 0,16 = 20 g de protides détruits par 24 heures.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Valeurs d'illustration : la ration d'un adolescent apporte 380 g de glucides, 90 g de protides et 100 g de lipides, et sa dépense est de 12 000 kJ par 24 heures. Quel est son bilan énergétique, et que devient sa masse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "+ 381 kJ : la masse augmente légèrement",
+          "misconceptionTag": "bio.alim.bilan-energetique-inverse"
+        },
+        {
+          "id": "b",
+          "text": "− 381 kJ : la masse diminue légèrement"
+        },
+        {
+          "id": "c",
+          "text": "+ 2 481 kJ : la masse augmente beaucoup"
+        },
+        {
+          "id": "d",
+          "text": "− 2 481 kJ : la masse diminue beaucoup",
+          "misconceptionTag": "bio.alim.valeurs-energetiques-confondues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Énergie de la ration : (380 + 90) × 16,7 = 7 849 kJ pour les glucides et les protides, plus 100 × 37,7 = 3 770 kJ pour les lipides, soit 11 619 kJ. Le bilan est apport − dépense = 11 619 − 12 000 = − 381 kJ : un petit déficit, la masse diminue légèrement. Calculer dépense − apport inverse le signe ; compter les lipides à 16,7 kJ par gramme donne 9 519 kJ et un bilan de − 2 481 kJ, trop fort.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Valeurs d'illustration : un marathonien de 70 kg, dont l'eau représente 70 % de la masse, perd 3,5 L de sueur sans boire (1 L d'eau pèse 1 kg). Quel pourcentage de l'eau de son corps a-t-il perdu, arrondi au dixième ?",
+      "answerKey": {
+        "value": 7.1,
+        "tolerance": 0.1,
+        "unit": "%"
+      },
+      "explanation": "Masse d'eau du corps : 0,70 × 70 = 49 kg, soit 49 L. La perte de 3,5 L représente 3,5 / 49 ≈ 0,071, soit 7,1 % : on s'approche du seuil de 10 % où apparaissent des troubles très graves.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois molécules de glycine, de formule C₂H₅O₂N, s'enchaînent en un tripeptide. Quelle est la formule brute de ce tripeptide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C₆H₁₃O₅N₃"
+        },
+        {
+          "id": "b",
+          "text": "C₆H₁₅O₆N₃"
+        },
+        {
+          "id": "c",
+          "text": "C₆H₉O₃N₃"
+        },
+        {
+          "id": "d",
+          "text": "C₆H₁₁O₄N₃"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Trois glycine réunies donnent C₆H₁₅O₆N₃. Le tripeptide compte deux liaisons peptidiques, donc il part deux molécules d'eau : C₆H₁₅O₆N₃ − 2 H₂O = C₆H₁₁O₄N₃. Retirer une seule molécule d'eau, ou aucune, oublie des liaisons ; en retirer trois en compte une de trop.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "D'après le tableau des besoins journaliers, quelles affirmations sont exactes ?\n<svg viewBox=\"0 0 408 90\">\n<rect x=\"4.0\" y=\"4.0\" width=\"190.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"99.0\" y=\"17.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Besoins par jour</text>\n<rect x=\"194.0\" y=\"4.0\" width=\"66.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"227.0\" y=\"17.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Énergie (kJ)</text>\n<rect x=\"260.0\" y=\"4.0\" width=\"74.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"297.0\" y=\"17.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Protéines (g)</text>\n<rect x=\"334.0\" y=\"4.0\" width=\"70.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"369.0\" y=\"17.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Calcium (mg)</text>\n<rect x=\"4.0\" y=\"24.0\" width=\"190.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"99.0\" y=\"37.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">femme adulte, ni enceinte ni allaitante</text>\n<rect x=\"194.0\" y=\"24.0\" width=\"66.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"227.0\" y=\"37.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">8 400</text>\n<rect x=\"260.0\" y=\"24.0\" width=\"74.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"297.0\" y=\"37.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">60</text>\n<rect x=\"334.0\" y=\"24.0\" width=\"70.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"369.0\" y=\"37.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">800</text>\n<rect x=\"4.0\" y=\"44.0\" width=\"190.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"99.0\" y=\"57.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">femme enceinte</text>\n<rect x=\"194.0\" y=\"44.0\" width=\"66.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"227.0\" y=\"57.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">9 500</text>\n<rect x=\"260.0\" y=\"44.0\" width=\"74.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"297.0\" y=\"57.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">75</text>\n<rect x=\"334.0\" y=\"44.0\" width=\"70.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"369.0\" y=\"57.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">1 000</text>\n<rect x=\"4.0\" y=\"64.0\" width=\"190.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"99.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">femme allaitante</text>\n<rect x=\"194.0\" y=\"64.0\" width=\"66.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"227.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">10 500</text>\n<rect x=\"260.0\" y=\"64.0\" width=\"74.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"297.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">80</text>\n<rect x=\"334.0\" y=\"64.0\" width=\"70.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"369.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">1 200</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le besoin d'énergie de la femme allaitante dépasse celui de la femme enceinte"
+        },
+        {
+          "id": "b",
+          "text": "La femme allaitante a besoin de deux fois plus d'énergie qu'une femme ni enceinte ni allaitante"
+        },
+        {
+          "id": "c",
+          "text": "Le besoin en protéines de la femme allaitante dépasse de 5 g celui de la femme enceinte"
+        },
+        {
+          "id": "d",
+          "text": "Le besoin en protéines est le même pour la femme enceinte et pour une femme ni enceinte ni allaitante"
+        },
+        {
+          "id": "e",
+          "text": "Entre la femme enceinte et la femme allaitante, le besoin en calcium augmente de 200 mg"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "L'énergie passe de 9 500 kJ à 10 500 kJ entre la femme enceinte et la femme allaitante, les protéines de 75 g à 80 g (+ 5 g) et le calcium de 1 000 mg à 1 200 mg (+ 200 mg) : trois affirmations exactes. Le besoin d'énergie de la femme allaitante vaut 10 500 / 8 400 = 1,25 fois celui d'une femme ni enceinte ni allaitante, pas le double, et son besoin en protéines (75 g) dépasse celui d'une femme ni enceinte ni allaitante (60 g).",
+      "difficulty": 3
+    }
+  ]
+}

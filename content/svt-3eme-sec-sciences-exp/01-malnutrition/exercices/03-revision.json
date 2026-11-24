@@ -1,0 +1,204 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La malnutrition",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un adulte pèse 90 kg et mesure 1,70 m. Quel est son IMC, en kg/m² ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,0031",
+          "misconceptionTag": "bio.malnut.imc-taille-en-cm"
+        },
+        {
+          "id": "b",
+          "text": "31,1"
+        },
+        {
+          "id": "c",
+          "text": "52,9",
+          "misconceptionTag": "bio.malnut.imc-sans-carre"
+        },
+        {
+          "id": "d",
+          "text": "153,0"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "T² = 1,70 × 1,70 = 2,89 m², donc IMC = 90 / 2,89 = 31,1 kg/m². Mettre la taille en centimètres donne 0,0031 ; diviser par T au lieu de T² donne 52,9 ; multiplier par T donne 153,0 : ces valeurs viennent de formules fausses, pas du calcul P / T².",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque vitamine à la maladie ou au trouble que provoque sa carence.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Vitamine A"
+        },
+        {
+          "id": "l2",
+          "text": "Vitamine B1"
+        },
+        {
+          "id": "l3",
+          "text": "Vitamine C"
+        },
+        {
+          "id": "l4",
+          "text": "Vitamine D"
+        },
+        {
+          "id": "r1",
+          "text": "Le scorbut"
+        },
+        {
+          "id": "r2",
+          "text": "Le rachitisme"
+        },
+        {
+          "id": "r3",
+          "text": "La cécité nocturne"
+        },
+        {
+          "id": "r4",
+          "text": "Le béribéri"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "explanation": "La vitamine A est associée à la cécité nocturne, la vitamine B1 au béribéri, la vitamine C au scorbut et la vitamine D au rachitisme. Chaque maladie a sa ligne dans le tableau des vitamines.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels signes caractérisent le marasme du jeune enfant ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un poids inférieur à 60 % de la normale"
+        },
+        {
+          "id": "b",
+          "text": "Des œdèmes qui masquent l'amaigrissement"
+        },
+        {
+          "id": "c",
+          "text": "Une fonte du tissu adipeux et des muscles"
+        },
+        {
+          "id": "d",
+          "text": "Des cheveux dépigmentés par bandes"
+        },
+        {
+          "id": "e",
+          "text": "Un visage empreint d'une grande anxiété"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le marasme s'observe surtout la première année de vie : poids inférieur à 60 % de celui d'un enfant normal, fonte du tissu adipeux et des muscles, visage anxieux. Les œdèmes qui masquent l'amaigrissement et les cheveux dépigmentés caractérisent le kwashiorkor.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un adulte mesure 1,80 m et son IMC est de 31,0 kg/m². Quel est son poids, au kilogramme près ?",
+      "answerKey": {
+        "value": 100,
+        "tolerance": 0.5,
+        "unit": "kg"
+      },
+      "explanation": "P = IMC × T² = 31,0 × 1,80² = 31,0 × 3,24 = 100,44 kg, soit 100 kg au kilogramme près. On retrouve bien un IMC proche de 31 : 100 / 3,24 = 30,9.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Parmi ces affirmations sur l'obésité et la santé, laquelle est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle rend certaine l'hypertension artérielle, mais elle laisse les autres maladies incertaines",
+          "misconceptionTag": "bio.malnut.obesite-complication-certaine"
+        },
+        {
+          "id": "b",
+          "text": "Elle accroît le risque de cancer chez la femme, mais pas chez l'homme"
+        },
+        {
+          "id": "c",
+          "text": "Elle accroît le risque de maladie du cœur et de diabète, sans le rendre certain"
+        },
+        {
+          "id": "d",
+          "text": "Elle accroît le risque de diabète, mais pas celui des maladies du cœur"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'obésité est un terrain favorable : elle accroît le risque de diabète, d'infarctus et d'hypertension, mais beaucoup d'obèses supportent leur surpoids sans complication, donc le risque n'est jamais une certitude. Chez l'homme, elle accroît aussi le risque de cancer de la prostate et du côlon, et les maladies cardio-vasculaires font partie de ses complications.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Ranger les étapes de la démarche qui a permis de trouver la cause du béribéri.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poser l'hypothèse que la maladie est liée à une alimentation fondée sur le riz poli"
+        },
+        {
+          "id": "b",
+          "text": "Nourrir deux lots de poules, l'un de riz poli, l'autre de riz entier, et comparer leur santé"
+        },
+        {
+          "id": "c",
+          "text": "Constater que des marins nourris de riz poli sont atteints de béribéri et pas des marins européens"
+        },
+        {
+          "id": "d",
+          "text": "Conclure que le riz poli manque d'un constituant, présent dans le riz entier, dont l'absence provoque la maladie"
+        },
+        {
+          "id": "e",
+          "text": "Remplacer une partie du riz par de la viande et observer que la maladie recule"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c",
+          "a",
+          "e",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "On part de la constatation faite sur les marins, puis on pose une hypothèse. On la teste d'abord en changeant le régime des marins, puis par une expérience contrôlée sur deux lots de poules où un seul facteur varie, la nature du riz. La conclusion vient en dernier, car elle s'appuie sur la comparaison des deux lots.",
+      "difficulty": 3
+    }
+  ]
+}

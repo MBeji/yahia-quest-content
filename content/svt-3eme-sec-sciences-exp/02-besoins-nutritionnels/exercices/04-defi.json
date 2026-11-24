@@ -1,0 +1,146 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : L'enquête du nutritionniste",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Sarra, 25 ans, 55 kg, mange chaque jour 9 500 kJ, quantité qui reste la même. Elle passe d'un travail de bureau (activité légère) à un travail de chantier (activité forte). Le tableau donne les dépenses moyennes d'une femme de 25 ans. Quels sont son bilan énergétique avant, puis après ce changement ?\n<svg viewBox=\"0 0 358 68\">\n<text x=\"4.0\" y=\"14.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Dépense moyenne d'une femme de 25 ans (55 kg)</text>\n<rect x=\"4.0\" y=\"22.0\" width=\"104.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"56.0\" y=\"35.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Activité</text>\n<rect x=\"108.0\" y=\"22.0\" width=\"52.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"134.0\" y=\"35.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">légère</text>\n<rect x=\"160.0\" y=\"22.0\" width=\"56.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"188.0\" y=\"35.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">modérée</text>\n<rect x=\"216.0\" y=\"22.0\" width=\"52.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"242.0\" y=\"35.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">forte</text>\n<rect x=\"268.0\" y=\"22.0\" width=\"86.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"311.0\" y=\"35.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">exceptionnelle</text>\n<rect x=\"4.0\" y=\"42.0\" width=\"104.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"56.0\" y=\"55.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">dépense (kJ par 24 h)</text>\n<rect x=\"108.0\" y=\"42.0\" width=\"52.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"134.0\" y=\"55.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">8 400</text>\n<rect x=\"160.0\" y=\"42.0\" width=\"56.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"188.0\" y=\"55.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">9 200</text>\n<rect x=\"216.0\" y=\"42.0\" width=\"52.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"242.0\" y=\"55.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">10 900</text>\n<rect x=\"268.0\" y=\"42.0\" width=\"86.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"311.0\" y=\"55.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">12 300</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "−1 100 kJ puis +1 400 kJ : sa masse diminuait, puis augmente"
+        },
+        {
+          "id": "b",
+          "text": "+1 100 kJ puis −1 400 kJ : sa masse augmentait, puis diminue"
+        },
+        {
+          "id": "c",
+          "text": "+1 100 kJ puis −2 500 kJ : sa masse augmentait, puis diminue très vite"
+        },
+        {
+          "id": "d",
+          "text": "+1 100 kJ puis +1 100 kJ : l'activité ne change pas son bilan",
+          "misconceptionTag": "bio.alim.age-seul"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Bilan = apport − dépense. En activité légère : 9 500 − 8 400 = +1 100 kJ, la masse augmente. En activité forte : 9 500 − 10 900 = −1 400 kJ, la masse diminue. Les signes inversés viennent d'une soustraction dans le mauvais sens ; −2 500 kJ est l'écart entre les deux dépenses (10 900 − 8 400), pas un bilan ; dire que le bilan ne change pas oublie que l'activité fait varier la dépense.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Des rats jeunes reçoivent des quantités convenables de glucides, de protides, de sels minéraux et de vitamines. Le lot B n'a aucun lipide ; le lot C reçoit en plus 10 gouttes de graisse animale par jour, qui contient des acides gras insaturés (linoléique, linolénique, arachidonique). Les courbes (allure schématique) donnent la masse des deux lots. Quelle hypothèse explique le mieux la différence ?\n<svg viewBox=\"0 0 340 244\">\n<text x=\"44.0\" y=\"14.0\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">masse (g)</text>\n<line x1=\"50.0\" y1=\"206.0\" x2=\"325.0\" y2=\"206.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"44.0\" y=\"209.5\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">0</text>\n<line x1=\"50.0\" y1=\"163.5\" x2=\"325.0\" y2=\"163.5\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"44.0\" y=\"167.0\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">60</text>\n<line x1=\"50.0\" y1=\"121.0\" x2=\"325.0\" y2=\"121.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"44.0\" y=\"124.5\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">120</text>\n<line x1=\"50.0\" y1=\"78.5\" x2=\"325.0\" y2=\"78.5\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"44.0\" y=\"82.0\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">180</text>\n<line x1=\"50.0\" y1=\"36.0\" x2=\"325.0\" y2=\"36.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"44.0\" y=\"39.5\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">240</text>\n<line x1=\"50.0\" y1=\"206.0\" x2=\"325.0\" y2=\"206.0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<line x1=\"50.0\" y1=\"206.0\" x2=\"50.0\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<line x1=\"50.0\" y1=\"206.0\" x2=\"50.0\" y2=\"211.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"50.0\" y=\"222.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">0</text>\n<line x1=\"118.0\" y1=\"206.0\" x2=\"118.0\" y2=\"211.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"118.0\" y=\"222.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">80</text>\n<line x1=\"186.0\" y1=\"206.0\" x2=\"186.0\" y2=\"211.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"186.0\" y=\"222.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">160</text>\n<line x1=\"254.0\" y1=\"206.0\" x2=\"254.0\" y2=\"211.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"254.0\" y=\"222.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">240</text>\n<line x1=\"322.0\" y1=\"206.0\" x2=\"322.0\" y2=\"211.0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"322.0\" y=\"222.0\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\">320</text>\n<text x=\"325.0\" y=\"235.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">temps (jours)</text>\n<polyline points=\"50.0,191.8 84.0,177.7 118.0,131.6 143.5,92.7 186.0,92.7 220.0,96.2 245.5,106.8 262.5,113.9\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<polyline points=\"50.0,191.8 84.0,177.7 118.0,131.6 152.0,64.3 186.0,39.5 322.0,36.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<text x=\"262.5\" y=\"135.2\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"700\" fill=\"#dc2626\">lot B : sans lipides</text>\n<text x=\"305.0\" y=\"28.0\" text-anchor=\"end\" font-size=\"9\" font-weight=\"700\" fill=\"#2563eb\">lot C : avec de la graisse animale</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La graisse apporte des acides gras que l'organisme ne fabrique pas"
+        },
+        {
+          "id": "b",
+          "text": "La graisse apporte l'énergie qui manque au lot B"
+        },
+        {
+          "id": "c",
+          "text": "La graisse apporte des acides aminés essentiels qui manquent au lot B",
+          "misconceptionTag": "bio.alim.acides-amines-gras-confondus"
+        },
+        {
+          "id": "d",
+          "text": "La graisse apporte du cholestérol nécessaire à la croissance"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les deux lots reçoivent la même ration, sauf 10 gouttes de graisse : une si faible quantité ne peut pas combler un manque d'énergie alors que glucides et protides sont fournis en quantité convenable. La graisse contient des acides gras insaturés, que l'organisme ne fabrique pas : l'hypothèse la mieux soutenue est un besoin en acides gras essentiels. Les acides aminés viennent des protides, déjà apportés, et le document ne mentionne pas le cholestérol.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le tableau donne la dépense énergétique moyenne de quatre groupes. Quel groupe dépense le plus d'énergie par kilogramme de masse corporelle et par 24 heures ?\n<svg viewBox=\"0 0 358 110\">\n<rect x=\"4.0\" y=\"4.0\" width=\"150.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"79.0\" y=\"17.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Groupe</text>\n<rect x=\"154.0\" y=\"4.0\" width=\"80.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"194.0\" y=\"17.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Masse (kg)</text>\n<rect x=\"234.0\" y=\"4.0\" width=\"120.0\" height=\"20.0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"294.0\" y=\"17.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Dépense (kJ par 24 h)</text>\n<rect x=\"4.0\" y=\"24.0\" width=\"150.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"79.0\" y=\"37.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">enfants de 1 à 4 ans</text>\n<rect x=\"154.0\" y=\"24.0\" width=\"80.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"194.0\" y=\"37.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">13,5</text>\n<rect x=\"234.0\" y=\"24.0\" width=\"120.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"294.0\" y=\"37.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">5 650</text>\n<rect x=\"4.0\" y=\"44.0\" width=\"150.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"79.0\" y=\"57.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">enfants de 4 à 7 ans</text>\n<rect x=\"154.0\" y=\"44.0\" width=\"80.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"194.0\" y=\"57.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">20</text>\n<rect x=\"234.0\" y=\"44.0\" width=\"120.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"294.0\" y=\"57.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">7 650</text>\n<rect x=\"4.0\" y=\"64.0\" width=\"150.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"79.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">filles de 13 à 16 ans</text>\n<rect x=\"154.0\" y=\"64.0\" width=\"80.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"194.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">50</text>\n<rect x=\"234.0\" y=\"64.0\" width=\"120.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"294.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">10 400</text>\n<rect x=\"4.0\" y=\"84.0\" width=\"150.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"79.0\" y=\"97.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">garçons de 16 à 20 ans</text>\n<rect x=\"154.0\" y=\"84.0\" width=\"80.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"194.0\" y=\"97.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">63</text>\n<rect x=\"234.0\" y=\"84.0\" width=\"120.0\" height=\"20.0\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"294.0\" y=\"97.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">12 850</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les enfants de 1 à 4 ans"
+        },
+        {
+          "id": "b",
+          "text": "Les enfants de 4 à 7 ans"
+        },
+        {
+          "id": "c",
+          "text": "Les filles de 13 à 16 ans"
+        },
+        {
+          "id": "d",
+          "text": "Les garçons de 16 à 20 ans"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On divise chaque dépense par la masse : 5 650 / 13,5 ≈ 418 kJ par kg pour les enfants de 1 à 4 ans, 7 650 / 20 = 382,5 pour ceux de 4 à 7 ans, 10 400 / 50 = 208 pour les filles et 12 850 / 63 ≈ 204 pour les garçons. Les garçons ont la plus grande dépense totale, mais c'est le jeune enfant, en pleine croissance, qui dépense le plus par kilogramme.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "De jeunes rats reçoivent un mélange de 18 acides aminés auquel on ajoute ou retire P (phénylalanine) et T (tyrosine) aux jours indiqués (graphiques schématiques) ; l'eau, les ions minéraux, les glucides et les lipides sont fournis en quantité suffisante. Quelle conclusion les trois lots permettent-ils ?\n<svg viewBox=\"0 0 340 214\">\n<text x=\"70.0\" y=\"12.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">lot 1</text>\n<line x1=\"30.0\" y1=\"150.0\" x2=\"106.0\" y2=\"150.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"26.0\" y=\"153.0\" text-anchor=\"end\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">20</text>\n<line x1=\"30.0\" y1=\"100.0\" x2=\"106.0\" y2=\"100.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"26.0\" y=\"103.0\" text-anchor=\"end\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">45</text>\n<line x1=\"30.0\" y1=\"50.0\" x2=\"106.0\" y2=\"50.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<text x=\"26.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">70</text>\n<line x1=\"30.0\" y1=\"150.0\" x2=\"106.0\" y2=\"150.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<line x1=\"30.0\" y1=\"150.0\" x2=\"30.0\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<line x1=\"30.0\" y1=\"150.0\" x2=\"30.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"30.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">0</text>\n<line x1=\"66.0\" y1=\"150.0\" x2=\"66.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"66.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">20</text>\n<line x1=\"102.0\" y1=\"150.0\" x2=\"102.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"102.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">40</text>\n<line x1=\"66.0\" y1=\"150.0\" x2=\"66.0\" y2=\"24.0\" stroke=\"#94a3b8\" stroke-width=\"1.1\" stroke-dasharray=\"4 3\"/>\n<polyline points=\"30.0,120.0 66.0,40.0 78.6,54.0 102.0,58.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<text x=\"72.0\" y=\"180.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">J0 à J20 : P + T</text>\n<text x=\"72.0\" y=\"192.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">J20 à J40 : ni P ni T</text>\n<text x=\"174.0\" y=\"12.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">lot 2</text>\n<line x1=\"134.0\" y1=\"150.0\" x2=\"210.0\" y2=\"150.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"134.0\" y1=\"100.0\" x2=\"210.0\" y2=\"100.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"134.0\" y1=\"50.0\" x2=\"210.0\" y2=\"50.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"134.0\" y1=\"150.0\" x2=\"210.0\" y2=\"150.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<line x1=\"134.0\" y1=\"150.0\" x2=\"134.0\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<line x1=\"134.0\" y1=\"150.0\" x2=\"134.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"134.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">0</text>\n<line x1=\"170.0\" y1=\"150.0\" x2=\"170.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"170.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">20</text>\n<line x1=\"206.0\" y1=\"150.0\" x2=\"206.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"206.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">40</text>\n<line x1=\"170.0\" y1=\"150.0\" x2=\"170.0\" y2=\"24.0\" stroke=\"#94a3b8\" stroke-width=\"1.1\" stroke-dasharray=\"4 3\"/>\n<polyline points=\"134.0,120.0 170.0,40.0 182.6,54.0 206.0,58.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<text x=\"176.0\" y=\"180.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">J0 à J20 : P</text>\n<text x=\"176.0\" y=\"192.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">J20 à J40 : T</text>\n<text x=\"278.0\" y=\"12.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">lot 3</text>\n<line x1=\"238.0\" y1=\"150.0\" x2=\"314.0\" y2=\"150.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"238.0\" y1=\"100.0\" x2=\"314.0\" y2=\"100.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"238.0\" y1=\"50.0\" x2=\"314.0\" y2=\"50.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\"/>\n<line x1=\"238.0\" y1=\"150.0\" x2=\"314.0\" y2=\"150.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<line x1=\"238.0\" y1=\"150.0\" x2=\"238.0\" y2=\"22.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<line x1=\"238.0\" y1=\"150.0\" x2=\"238.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"238.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">0</text>\n<line x1=\"274.0\" y1=\"150.0\" x2=\"274.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"274.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">20</text>\n<line x1=\"310.0\" y1=\"150.0\" x2=\"310.0\" y2=\"154.0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"310.0\" y=\"164.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">40</text>\n<line x1=\"274.0\" y1=\"150.0\" x2=\"274.0\" y2=\"24.0\" stroke=\"#94a3b8\" stroke-width=\"1.1\" stroke-dasharray=\"4 3\"/>\n<polyline points=\"238.0,120.0 274.0,120.0 310.0,50.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n<text x=\"280.0\" y=\"180.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">J0 à J20 : T</text>\n<text x=\"280.0\" y=\"192.0\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#0f172a\">J20 à J40 : P</text>\n<text x=\"6.0\" y=\"12.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"700\" fill=\"#0f172a\">g</text>\n<text x=\"334.0\" y=\"208.0\" text-anchor=\"end\" font-size=\"8.5\" font-weight=\"400\" fill=\"#475569\">abscisses : jours ; ordonnées : masse des rats (g)</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La tyrosine est essentielle, la phénylalanine ne l'est pas"
+        },
+        {
+          "id": "b",
+          "text": "Les deux sont essentielles, car le lot 1 perd de la masse quand on les retire ensemble",
+          "misconceptionTag": "bio.demarche.cause-sans-temoin"
+        },
+        {
+          "id": "c",
+          "text": "La phénylalanine est essentielle, la tyrosine ne l'est pas"
+        },
+        {
+          "id": "d",
+          "text": "Aucune n'est essentielle, car la masse du lot 3 augmente en fin d'expérience"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le lot 3 reste stable avec la tyrosine seule, puis grandit dès qu'on ajoute la phénylalanine, alors que la tyrosine est retirée : la phénylalanine est indispensable, la tyrosine ne l'est pas. Le lot 2 le confirme : la masse chute quand on retire la phénylalanine, même en présence de tyrosine. Le lot 1 retire les deux acides aminés à la fois et ne permet pas d'accuser la tyrosine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un sucre D réduit la liqueur de Fehling. On le chauffe avec de l'acide chlorhydrique, puis on dépose son hydrolysat (d) à côté de trois témoins : glucose (a), galactose (b) et fructose (c). Quel est ce sucre (positions schématiques) ?\n<svg viewBox=\"0 0 340 236\">\n<rect x=\"34.0\" y=\"22.0\" width=\"286.0\" height=\"150.0\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n<line x1=\"34.0\" y1=\"150.0\" x2=\"320.0\" y2=\"150.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/>\n<ellipse cx=\"78.0\" cy=\"62.0\" rx=\"12\" ry=\"6\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<ellipse cx=\"140.0\" cy=\"118.0\" rx=\"12\" ry=\"6\" fill=\"#7dd3fc\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<ellipse cx=\"202.0\" cy=\"98.0\" rx=\"12\" ry=\"6\" fill=\"#fdba74\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<ellipse cx=\"264.0\" cy=\"62.0\" rx=\"12\" ry=\"6\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<ellipse cx=\"264.0\" cy=\"118.0\" rx=\"12\" ry=\"6\" fill=\"#7dd3fc\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"78.0\" y=\"188.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">a</text>\n<text x=\"78.0\" y=\"200.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">glucose</text>\n<text x=\"140.0\" y=\"188.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">b</text>\n<text x=\"140.0\" y=\"200.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">galactose</text>\n<text x=\"202.0\" y=\"188.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">c</text>\n<text x=\"202.0\" y=\"200.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">fructose</text>\n<text x=\"264.0\" y=\"188.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">d</text>\n<text x=\"264.0\" y=\"200.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">hydrolysat</text>\n<text x=\"264.0\" y=\"212.0\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">du sucre D</text>\n<text x=\"40.0\" y=\"164.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"400\" fill=\"#475569\">ligne de départ</text>\n<line x1=\"16.0\" y1=\"146.0\" x2=\"16.0\" y2=\"34.0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<path d=\"M10 40 L16 28 L22 40 Z\" fill=\"#0f172a\"/>\n<text x=\"34.0\" y=\"16.0\" text-anchor=\"start\" font-size=\"9\" font-weight=\"400\" fill=\"#475569\">sens de migration</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Du saccharose",
+          "misconceptionTag": "bio.alim.diholosides-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Du maltose",
+          "misconceptionTag": "bio.alim.diholosides-confondus"
+        },
+        {
+          "id": "c",
+          "text": "De l'amidon"
+        },
+        {
+          "id": "d",
+          "text": "Du lactose"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'hydrolysat donne deux taches, aux hauteurs du glucose et du galactose : le sucre est formé de glucose et de galactose, c'est le lactose, qui est bien réducteur. Le saccharose donnerait du fructose et ne réduit pas Fehling ; le maltose donnerait du glucose seul, donc une seule tache ; l'amidon libérerait aussi du glucose seul.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Valeurs d'illustration : une ration apporte 300 g de glucides, 100 g de protides et 120 g de lipides. Quelle part de son énergie les lipides fournissent-ils, en %, arrondie au dixième ?",
+      "answerKey": {
+        "value": 40.4,
+        "tolerance": 0.1,
+        "unit": "%"
+      },
+      "explanation": "Glucides et protides : (300 + 100) × 16,7 = 6 680 kJ. Lipides : 120 × 37,7 = 4 524 kJ. Énergie totale : 6 680 + 4 524 = 11 204 kJ. Part des lipides : 4 524 / 11 204 ≈ 0,404, soit 40,4 %, bien au-dessus des 30 % recommandés.",
+      "difficulty": 3
+    }
+  ]
+}

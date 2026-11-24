@@ -1,0 +1,158 @@
+{
+  "title": "⭐ Exercice : Premiers pas vers une assiette équilibrée",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Une personne dont la ration apporte plus d'énergie que son organisme n'en dépense voit son poids, avec le temps :",
+      "options": [
+        {
+          "id": "a",
+          "text": "Augmenter : l'excédent d'énergie est stocké"
+        },
+        {
+          "id": "b",
+          "text": "Baisser : l'excédent d'énergie est éliminé",
+          "misconceptionTag": "bio.malnut.exces-elimine"
+        },
+        {
+          "id": "c",
+          "text": "Rester constant : l'organisme ajuste ses dépenses"
+        },
+        {
+          "id": "d",
+          "text": "Baisser : l'organisme puise dans ses réserves"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Quand l'apport dépasse la dépense, ce qui n'est pas dépensé est stocké sous forme de réserves de graisse : le poids augmente. L'excédent n'est pas éliminé, et l'organisme ne puise dans ses réserves que lorsque l'apport est inférieur à la dépense.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une femme adulte pèse 60 kg et mesure 1,50 m. Calculer son IMC, arrondi au dixième, en kg/m².",
+      "answerKey": {
+        "value": 26.7,
+        "tolerance": 0.05,
+        "unit": "kg/m²"
+      },
+      "explanation": "T² = 1,50 × 1,50 = 2,25 m², donc IMC = 60 / 2,25 = 26,666…, soit 26,7 kg/m². Cette valeur est comprise entre 25 et 29,9 : surpoids.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Par gramme, les lipides apportent environ :",
+      "options": [
+        {
+          "id": "a",
+          "text": "la même énergie que les glucides"
+        },
+        {
+          "id": "b",
+          "text": "deux fois plus d'énergie que les glucides"
+        },
+        {
+          "id": "c",
+          "text": "deux fois moins d'énergie que les glucides"
+        },
+        {
+          "id": "d",
+          "text": "quatre fois plus d'énergie que les glucides"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un gramme de lipides apporte 9 kcal, soit environ deux fois plus qu'un gramme de glucides ou de protides. C'est pourquoi réduire les graisses diminue vite l'apport d'énergie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un enfant sevré, nourri presque uniquement de bouillie de manioc, risque une maladie due à un régime carencé en :",
+      "options": [
+        {
+          "id": "a",
+          "text": "glucides"
+        },
+        {
+          "id": "b",
+          "text": "fer"
+        },
+        {
+          "id": "c",
+          "text": "iode"
+        },
+        {
+          "id": "d",
+          "text": "protides"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le manioc est très riche en glucides mais très pauvre en protides : l'enfant reçoit de l'énergie et presque aucune protéine. Le kwashiorkor est la maladie d'un régime carencé en protides ; le fer et l'iode relèvent d'autres carences, l'anémie et le goitre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un sel de cuisine enrichi en iode est distribué depuis 1984 en Tunisie. Quel trouble cherche-t-on avant tout à prévenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'anémie",
+          "misconceptionTag": "bio.malnut.mineral-confondu"
+        },
+        {
+          "id": "b",
+          "text": "Le goitre"
+        },
+        {
+          "id": "c",
+          "text": "Le rachitisme"
+        },
+        {
+          "id": "d",
+          "text": "Le scorbut"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'iode sert à la thyroïde pour fabriquer la thyroxine ; sa carence provoque le goitre, hypertrophie de la thyroïde, et d'autres troubles. L'anémie relève d'une carence en fer, le rachitisme de la vitamine D et le scorbut de la vitamine C.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces facteurs de risque de l'athérosclérose, lesquels peut-on maîtriser par son mode de vie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'usage du tabac"
+        },
+        {
+          "id": "b",
+          "text": "L'hérédité"
+        },
+        {
+          "id": "c",
+          "text": "Le manque d'exercice physique"
+        },
+        {
+          "id": "d",
+          "text": "L'âge"
+        },
+        {
+          "id": "e",
+          "text": "Un régime riche en graisses"
+        },
+        {
+          "id": "f",
+          "text": "Le sexe"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le tabac, le manque d'exercice et un régime riche en graisses dépendent de nos habitudes : on peut les modifier. L'hérédité, l'âge et le sexe échappent à notre contrôle, même si l'on peut agir sur tous les autres facteurs.",
+      "difficulty": 2
+    }
+  ]
+}

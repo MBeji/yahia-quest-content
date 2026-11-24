@@ -1,0 +1,139 @@
+{
+  "title": "⭐ Exercice : Premiers pas au marché des aliments",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Lesquels de ces éléments sont des aliments simples ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les protides"
+        },
+        {
+          "id": "b",
+          "text": "Le lait"
+        },
+        {
+          "id": "c",
+          "text": "Les sels minéraux"
+        },
+        {
+          "id": "d",
+          "text": "Le pain"
+        },
+        {
+          "id": "e",
+          "text": "Les lipides"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "Les protides, les sels minéraux et les lipides sont des aliments simples, comme les glucides, l'eau et les vitamines. Le lait et le pain sont des aliments composés : chacun mélange plusieurs aliments simples.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle est la formule brute d'un hexose comme le glucose ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C₆H₁₂O₆"
+        },
+        {
+          "id": "b",
+          "text": "C₅H₁₀O₅"
+        },
+        {
+          "id": "c",
+          "text": "C₁₂H₂₂O₁₁"
+        },
+        {
+          "id": "d",
+          "text": "(C₆H₁₀O₅)n"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un hexose est un ose à six atomes de carbone : sa formule brute est C₆H₁₂O₆. La formule C₅H₁₀O₅ est celle d'un pentose comme le ribose, C₁₂H₂₂O₁₁ celle d'un diholoside et (C₆H₁₀O₅)n celle d'un polyoside.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "L'acide stéarique, CH₃–(CH₂)₁₆–COOH, est un acide gras saturé parce que sa chaîne carbonée :",
+      "options": [
+        {
+          "id": "a",
+          "text": "contient plusieurs doubles liaisons",
+          "misconceptionTag": "bio.alim.saturation-inversee"
+        },
+        {
+          "id": "b",
+          "text": "ne contient aucune double liaison"
+        },
+        {
+          "id": "c",
+          "text": "contient une seule double liaison",
+          "misconceptionTag": "bio.alim.saturation-inversee"
+        },
+        {
+          "id": "d",
+          "text": "est plus courte que celle de l'acide oléique"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un acide gras est saturé quand sa chaîne n'a aucune double liaison C=C : c'est le cas de la chaîne (CH₂)₁₆ de l'acide stéarique. Une seule double liaison caractérise un acide mono-insaturé, plusieurs un acide polyinsaturé. La longueur n'intervient pas : les acides stéarique et oléique ont tous deux 18 atomes de carbone.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel aliment simple fournit de l'énergie à l'organisme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'eau",
+          "misconceptionTag": "bio.alim.vitamines-energetiques"
+        },
+        {
+          "id": "b",
+          "text": "Les sels minéraux",
+          "misconceptionTag": "bio.alim.vitamines-energetiques"
+        },
+        {
+          "id": "c",
+          "text": "Les vitamines",
+          "misconceptionTag": "bio.alim.vitamines-energetiques"
+        },
+        {
+          "id": "d",
+          "text": "Les glucides"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les glucides libèrent 16,7 kJ par gramme. L'eau, les sels minéraux et les vitamines n'ont aucune valeur énergétique : indispensables au corps, ils n'apportent pourtant pas d'énergie.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Cinq acides aminés s'enchaînent en un seul polypeptide. Combien de molécules d'eau sont libérées ?",
+      "answerKey": {
+        "value": 4,
+        "unit": "molécules"
+      },
+      "explanation": "Chaque liaison peptidique libère une molécule d'eau, et cinq acides aminés en chaîne forment 5 − 1 = 4 liaisons : 4 molécules d'eau sont libérées.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La table de composition donne, pour 100 g de pâtes (macaronis), 13 g de protides, 1,4 g de lipides et 73,9 g de glucides. Calculer l'énergie de ces 100 g, en kJ, arrondie à l'unité.",
+      "answerKey": {
+        "value": 1504,
+        "tolerance": 2,
+        "unit": "kJ"
+      },
+      "explanation": "Glucides et protides : (73,9 + 13) × 16,7 = 86,9 × 16,7 = 1 451,23 kJ. Lipides : 1,4 × 37,7 = 52,78 kJ. Total : 1 451,23 + 52,78 = 1 504,01 kJ, soit environ 1504 kJ.",
+      "difficulty": 2
+    }
+  ]
+}

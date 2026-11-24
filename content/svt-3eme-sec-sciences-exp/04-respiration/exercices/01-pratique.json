@@ -1,0 +1,154 @@
+{
+  "title": "⭐ Exercice : La cellule qui respire",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Quelle équation traduit le bilan de la respiration cellulaire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + énergie"
+        },
+        {
+          "id": "b",
+          "text": "6 CO₂ + 6 H₂O + énergie → C₆H₁₂O₆ + 6 O₂",
+          "misconceptionTag": "bio.resp.respiration-photosynthese-confondues"
+        },
+        {
+          "id": "c",
+          "text": "C₆H₁₂O₆ + O₂ → 6 CO₂ + 6 H₂O + énergie"
+        },
+        {
+          "id": "d",
+          "text": "C₆H₁₂O₆ + 6 CO₂ → 6 O₂ + 6 H₂O + énergie"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La cellule consomme du glucose et du dioxygène, et rejette du CO₂ et de l'eau en libérant de l'énergie : C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + énergie. L'équation inverse est celle de la photosynthèse, et l'équation avec un seul O₂ n'est pas équilibrée en atomes d'oxygène.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une molécule de glucose subit la glycolyse dans le hyaloplasme. Combien de molécules d'acide pyruvique se forment ?",
+      "answerKey": {
+        "value": 2,
+        "unit": "molécules"
+      },
+      "explanation": "Le glucose compte 6 carbones et l'acide pyruvique 3 : une molécule de glucose donne 6 ÷ 3 = 2 molécules d'acide pyruvique.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Comment appelle-t-on les replis de la membrane interne d'une mitochondrie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La matrice de la mitochondrie",
+          "misconceptionTag": "bio.resp.parties-mitochondrie-confondues"
+        },
+        {
+          "id": "b",
+          "text": "Les crêtes de la mitochondrie"
+        },
+        {
+          "id": "c",
+          "text": "L'espace entre les deux membranes",
+          "misconceptionTag": "bio.resp.parties-mitochondrie-confondues"
+        },
+        {
+          "id": "d",
+          "text": "La membrane externe de la mitochondrie",
+          "misconceptionTag": "bio.resp.parties-mitochondrie-confondues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les crêtes sont les replis de la membrane interne. La matrice est l'intérieur que cette membrane entoure, l'espace intermembranaire se trouve entre les deux membranes, et la membrane externe est l'enveloppe extérieure.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel élément faut-il fixer sur une molécule d'ADP pour obtenir une molécule d'ATP ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un groupement acétyle"
+        },
+        {
+          "id": "b",
+          "text": "Une molécule de ribose"
+        },
+        {
+          "id": "c",
+          "text": "Une seconde molécule d'adénine"
+        },
+        {
+          "id": "d",
+          "text": "Un groupement phosphate"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'ADP compte 2 groupements phosphate, l'ATP 3 : la phosphorylation ajoute un groupement phosphate. L'adénine et le ribose sont déjà présents dans l'ADP, et le groupement acétyle appartient à l'acétyl-coenzyme A.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la respiration cellulaire sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle consomme du dioxygène"
+        },
+        {
+          "id": "b",
+          "text": "Elle a lieu uniquement dans les poumons"
+        },
+        {
+          "id": "c",
+          "text": "Elle rejette du CO₂ et de l'eau"
+        },
+        {
+          "id": "d",
+          "text": "Elle libère du dioxygène"
+        },
+        {
+          "id": "e",
+          "text": "Elle produit de l'énergie"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "La respiration cellulaire consomme du dioxygène, rejette du CO₂ et de l'eau et produit de l'énergie. Elle a lieu dans les cellules : les poumons ne font qu'amener le dioxygène. Elle n'en libère pas : c'est la photosynthèse qui en produit.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la dégradation du glucose, de la première à la dernière.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le cycle de Krebs libère du CO₂ et charge des transporteurs en hydrogène dans la matrice"
+        },
+        {
+          "id": "b",
+          "text": "Le glucose est transformé en acide pyruvique dans le hyaloplasme"
+        },
+        {
+          "id": "c",
+          "text": "La chaîne respiratoire décharge les transporteurs et forme de l'eau avec le dioxygène sur les crêtes"
+        },
+        {
+          "id": "d",
+          "text": "L'acide pyruvique entre dans la mitochondrie et perd un CO₂ pour donner un groupement acétyle"
+        }
+      ],
+      "answerKey": {
+        "order": ["b", "d", "a", "c"]
+      },
+      "explanation": "La glycolyse vient d'abord : elle fournit l'acide pyruvique, seul métabolite que la mitochondrie reçoit. Celui-ci perd un CO₂ en devenant groupement acétyle, qui alimente le cycle de Krebs de la matrice. Les transporteurs chargés en hydrogène par le cycle sont enfin déchargés par la chaîne respiratoire, où le dioxygène forme l'eau : le dioxygène n'intervient qu'à la dernière étape.",
+      "difficulty": 2
+    }
+  ]
+}

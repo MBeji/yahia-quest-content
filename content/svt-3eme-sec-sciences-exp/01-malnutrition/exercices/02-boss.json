@@ -1,0 +1,130 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien de la balance",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Sana mange une ration de 2 400 kcal par jour et garde un poids constant ; sa sœur Amel mange une ration de 2 000 kcal par jour et prend du poids. Que peut-on dire de leurs dépenses d'énergie journalières ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sana dépense moins de 2 400 kcal, puisque son poids n'augmente pas"
+        },
+        {
+          "id": "b",
+          "text": "Amel dépense 2 000 kcal, puisque c'est l'énergie de sa ration"
+        },
+        {
+          "id": "c",
+          "text": "Sana dépense 2 400 kcal ; Amel dépense moins de 2 000 kcal"
+        },
+        {
+          "id": "d",
+          "text": "Sana dépense 2 400 kcal ; Amel dépense plus de 2 000 kcal, puisqu'elle mange moins que sa sœur"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un poids constant signifie un apport égal à la dépense : Sana dépense 2 400 kcal par jour. Un poids qui augmente signifie un apport supérieur à la dépense : Amel dépense donc moins de 2 000 kcal par jour. Manger moins que sa sœur n'empêche pas de grossir si l'on dépense encore moins, et un poids stable ne veut pas dire une dépense inférieure à l'apport.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une femme mesure 170 cm. D'après la formule du poids idéal, Pi = T − 100 − (T − 150) / 2, l'obésité est atteinte quand le poids dépasse Pi + 15 %. Quel est ce seuil, en kg ?",
+      "answerKey": {
+        "value": 69,
+        "tolerance": 0.05,
+        "unit": "kg"
+      },
+      "explanation": "Pi = 170 − 100 − (170 − 150) / 2 = 70 − 10 = 60 kg. Le seuil d'obésité vaut 60 × 1,15 = 69 kg. Au-delà de ce poids, la femme est dite obèse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le document donne le pourcentage de femmes hypertendues selon le poids relatif. Un élève affirme : « Chez les femmes, le pourcentage ne diminue jamais quand on passe à la classe de poids relatif supérieure. » Que répondre ?\n<svg viewBox=\"0 0 340 150\">\n<text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">% de femmes hypertendues, selon le poids relatif</text>\n<rect x=\"10\" y=\"34\" width=\"96\" height=\"26\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"58.0\" y=\"51\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">âge</text>\n<rect x=\"106\" y=\"34\" width=\"56\" height=\"26\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134.0\" y=\"51\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">&lt; 85</text>\n<rect x=\"162\" y=\"34\" width=\"56\" height=\"26\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"190.0\" y=\"51\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">85-99</text>\n<rect x=\"218\" y=\"34\" width=\"56\" height=\"26\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"246.0\" y=\"51\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100-114</text>\n<rect x=\"274\" y=\"34\" width=\"56\" height=\"26\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"302.0\" y=\"51\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">&gt; 114</text>\n<rect x=\"10\" y=\"60\" width=\"96\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"58.0\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">30 à 39 ans</text>\n<rect x=\"106\" y=\"60\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134.0\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">1</text>\n<rect x=\"162\" y=\"60\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"190.0\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">1</text>\n<rect x=\"218\" y=\"60\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"246.0\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">5</text>\n<rect x=\"274\" y=\"60\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"302.0\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">17</text>\n<rect x=\"10\" y=\"86\" width=\"96\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"58.0\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">40 à 49 ans</text>\n<rect x=\"106\" y=\"86\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134.0\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">9</text>\n<rect x=\"162\" y=\"86\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"190.0\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">10</text>\n<rect x=\"218\" y=\"86\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"246.0\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">17</text>\n<rect x=\"274\" y=\"86\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"302.0\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">28</text>\n<rect x=\"10\" y=\"112\" width=\"96\" height=\"26\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"58.0\" y=\"129\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">50 à 59 ans</text>\n<rect x=\"106\" y=\"112\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"134.0\" y=\"129\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">18</text>\n<rect x=\"162\" y=\"112\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"190.0\" y=\"129\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">27</text>\n<rect x=\"218\" y=\"112\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"246.0\" y=\"129\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">26</text>\n<rect x=\"274\" y=\"112\" width=\"56\" height=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/><text x=\"302.0\" y=\"129\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">46</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il a raison : la classe > 114 a la valeur la plus élevée dans les trois tranches d'âge"
+        },
+        {
+          "id": "b",
+          "text": "Il a raison : dans chaque tranche d'âge, chaque valeur dépasse la précédente"
+        },
+        {
+          "id": "c",
+          "text": "Il a tort : à 30-39 ans, le pourcentage passe de 5 % à 1 % entre deux classes"
+        },
+        {
+          "id": "d",
+          "text": "Il a tort : à 50-59 ans, le pourcentage passe de 27 % à 26 % entre deux classes"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À 50-59 ans, on lit 27 % pour la classe 85-99 puis 26 % pour la classe 100-114 : le pourcentage a diminué, l'affirmation est donc fausse. Que la classe > 114 soit la plus élevée dans les trois tranches ne prouve pas que la progression soit continue. À 30-39 ans, la suite 1, 1, 5, 17 ne diminue jamais, mais deux valeurs y sont égales.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un patient subit un arrêt brutal de l'apport de sang à une zone de son cœur : la zone non irriguée est détruite. Quel mécanisme, lié à l'athérosclérose, explique le mieux cette situation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une plaque très développée a rétréci une artère coronaire sans la boucher",
+          "misconceptionTag": "bio.malnut.angine-prise-pour-infarctus"
+        },
+        {
+          "id": "b",
+          "text": "Un caillot formé sur une plaque d'athérome a bouché une artère coronaire"
+        },
+        {
+          "id": "c",
+          "text": "Une poche formée sur l'aorte s'est rompue"
+        },
+        {
+          "id": "d",
+          "text": "Une plaque a dilaté l'artère coronaire en poche, sans rupture ni caillot"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'arrêt brutal de l'apport de sang et la destruction de la zone correspondent à un caillot qui bouche l'artère coronaire : c'est l'infarctus du myocarde. Un simple rétrécissement provoque l'angine de poitrine, douleur à l'effort sans destruction ; la rupture d'une poche de l'aorte donne une hémorragie interne, et une poche qui reste intacte ne coupe pas brutalement l'irrigation.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Valeurs d'illustration : un adolescent boit 1,2 L de boisson sucrée par jour, à 110 g de sucre par litre. Un morceau de sucre de 5 g fournit 85 kJ. Quelle énergie, en kJ, ces boissons lui apportent-elles chaque jour ?",
+      "answerKey": {
+        "value": 2244,
+        "unit": "kJ"
+      },
+      "explanation": "Sucre par jour : 1,2 × 110 = 132 g. Nombre de morceaux : 132 / 5 = 26,4. Énergie : 26,4 × 85 = 2244 kJ par jour.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une secrétaire obèse ne mange plus rien de gras et saute le dîner, mais son poids ne baisse pas. Quelle hypothèse est la mieux justifiée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle grignote ou boit sucré : son apport reste supérieur à sa dépense"
+        },
+        {
+          "id": "b",
+          "text": "L'énergie qu'elle ne dépense pas est éliminée : son poids ne peut pas varier",
+          "misconceptionTag": "bio.malnut.exces-elimine"
+        },
+        {
+          "id": "c",
+          "text": "Seuls les lipides sont stockés : elle aurait déjà dû maigrir",
+          "misconceptionTag": "bio.malnut.regime-un-seul-aliment"
+        },
+        {
+          "id": "d",
+          "text": "Sauter le dîner fait grossir par lui-même, quoi qu'elle mange"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les glucides et les protides apportent aussi de l'énergie, et tout excédent est stocké : des boissons sucrées ou du grignotage avec une vie sédentaire peuvent maintenir l'apport au-dessus de la dépense. Croire que seuls les lipides sont stockés, ou que l'excédent est éliminé, contredit la balance énergétique ; sauter un repas ne fait pas grossir en soi.",
+      "difficulty": 3
+    }
+  ]
+}
