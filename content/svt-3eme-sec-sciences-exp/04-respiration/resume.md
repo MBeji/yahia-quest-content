@@ -1,0 +1,10 @@
+# 📜 Résumé : La respiration cellulaire
+
+- **Bilan de la respiration cellulaire** : C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + énergie. Les traceurs montrent que le carbone du CO₂ vient du glucose (décarboxylation) et que l'oxygène du dioxygène aboutit dans l'eau ; le ¹⁴C est radioactif, le ¹⁸O est un isotope stable.
+- **Déshydrogénation et enzymes** : le muscle frais décolore le bleu de méthylène (Bm → BmH₂) en lui cédant de l'hydrogène, sans dioxygène. Filtrat bouilli (enzymes dénaturées) ou à 0 °C (inactivées) : sans effet. Les réactions respiratoires sont catalysées par des décarboxylases, des déshydrogénases et des oxydases.
+- **Mitochondrie** : siège de la respiration, elle consomme le dioxygène. Membrane externe, membrane interne (qui forme les crêtes), espace intermembranaire, matrice ; enzymes dans la matrice et sur la membrane interne.
+- **Glycolyse** : dans le hyaloplasme, sans dioxygène, C₆H₁₂O₆ → 2 C₃H₄O₃ + 4 H. La mitochondrie reçoit l'acide pyruvique, pas le glucose.
+- **Cycle de Krebs et chaîne respiratoire** : dans la matrice, l'acide pyruvique perd 1 CO₂ en donnant l'acétyl-coenzyme A, puis le cycle en libère 2 de plus (6 CO₂ par glucose) et charge des transporteurs (TH₂). Sur les crêtes, la chaîne les décharge : ½ O₂ + 2 e⁻ → O²⁻, puis 2 H⁺ + O²⁻ → H₂O.
+- **ATP** : adénine, ribose, 3 phosphates. Son hydrolyse (ATPase) libère 30,5 kJ par mole, sa formation par phosphorylation de l'ADP (ATP synthétase) consomme cette énergie, prise à la dégradation du glucose. La cellule le renouvelle sans cesse.
+- **Bilan énergétique** : 36 ATP par glucose (2 glycolyse, 2 cycle de Krebs, 32 chaîne respiratoire). Environ 39 % des 2830 kJ du glucose sont stockés dans l'ATP, le reste est dissipé en chaleur.
+- **Fermentation lactique et dette d'oxygène** : sans dioxygène, l'acide pyruvique devient de l'acide lactique (210 kJ par glucose, contre 2830 par respiration). Dette (ou manque) d'oxygène = dioxygène théorique − dioxygène consommé, remboursée après l'effort ; part de la respiration = consommé ÷ théorique (5 % au 100 m, 98 % au marathon).

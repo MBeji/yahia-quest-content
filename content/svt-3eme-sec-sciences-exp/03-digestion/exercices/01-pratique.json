@@ -1,0 +1,175 @@
+{
+  "title": "⭐ Exercice : Des aliments aux nutriments",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Parmi ces substances, laquelle est un nutriment ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'amidon"
+        },
+        {
+          "id": "b",
+          "text": "Le glucose"
+        },
+        {
+          "id": "c",
+          "text": "L'ovalbumine"
+        },
+        {
+          "id": "d",
+          "text": "Le pain"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un nutriment est une petite molécule qui traverse la paroi intestinale : le glucose en est un. L'amidon et l'ovalbumine sont des aliments simples, formés de macromolécules, et le pain est un aliment composé : tous trois doivent d'abord être digérés.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Spallanzani avale une bourse contenant 60 grains de chair de pigeon. Sachant que 1 grain = 0,065 g, quelle est la masse de cette chair, en g ?",
+      "answerKey": {
+        "value": 3.9,
+        "tolerance": 0.01,
+        "unit": "g"
+      },
+      "explanation": "Masse = 60 × 0,065 = 3,9 g. C'est la valeur donnée par Spallanzani pour cette expérience : 60 grains valent 3,9 g.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces transformations, laquelle est une digestion chimique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fragmentation d'un morceau de pain par les dents",
+          "misconceptionTag": "bio.dig.fragmentation-prise-pour-digestion"
+        },
+        {
+          "id": "b",
+          "text": "La trituration d'un aliment par les parois de l'estomac",
+          "misconceptionTag": "bio.dig.fragmentation-prise-pour-digestion"
+        },
+        {
+          "id": "c",
+          "text": "L'hydrolyse de l'amidon cuit en maltose par la salive"
+        },
+        {
+          "id": "d",
+          "text": "La dispersion de l'huile en gouttelettes par la bile",
+          "misconceptionTag": "bio.dig.bile-avec-enzymes"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une digestion chimique transforme des molécules : la salive hydrolyse l'amidon en maltose. Fragmenter ou triturer ne découpe aucune molécule (digestion mécanique), et la bile ne fait que disperser l'huile en gouttelettes, sans la transformer.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À quelle température les enzymes digestives de l'Homme sont-elles les plus actives ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entre 0 et 10 °C"
+        },
+        {
+          "id": "b",
+          "text": "Entre 30 et 40 °C"
+        },
+        {
+          "id": "c",
+          "text": "Entre 55 et 65 °C",
+          "misconceptionTag": "bio.dig.chaleur-accelere-toujours"
+        },
+        {
+          "id": "d",
+          "text": "Entre 80 et 90 °C",
+          "misconceptionTag": "bio.dig.chaleur-accelere-toujours"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'optimum thermique des enzymes digestives est compris entre 30 et 40 °C, proche de la température du corps. Au froid elles sont inactivées, et à 60 °C ou plus la chaleur les dénature : l'activité tombe.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la salive sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est produite par les glandes salivaires"
+        },
+        {
+          "id": "b",
+          "text": "Elle contient une enzyme qui agit sur l'amidon"
+        },
+        {
+          "id": "c",
+          "text": "Elle contient environ 99 g d'eau pour 100 g"
+        },
+        {
+          "id": "d",
+          "text": "Elle contient de la pepsine, qui digère les protéines"
+        },
+        {
+          "id": "e",
+          "text": "Elle contient de la bile, qui émulsionne les lipides"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "La salive est un suc digestif produit par les glandes salivaires ; sur 100 g elle contient 99 g d'eau, et elle renferme l'amylase salivaire, qui agit sur l'amidon. La pepsine est une enzyme du suc gastrique, et la bile est fabriquée par le foie : elles ne sont pas dans la salive.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Ranger les étapes d'une démarche expérimentale, du début à la fin.",
+      "options": [
+        {
+          "id": "s4",
+          "text": "Noter les résultats"
+        },
+        {
+          "id": "s1",
+          "text": "Poser le problème"
+        },
+        {
+          "id": "s6",
+          "text": "Conclure sur la validité de l'hypothèse"
+        },
+        {
+          "id": "s3",
+          "text": "Réaliser l'expérience, avec un tube témoin"
+        },
+        {
+          "id": "s5",
+          "text": "Interpréter les résultats"
+        },
+        {
+          "id": "s2",
+          "text": "Formuler une hypothèse"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ]
+      },
+      "explanation": "On pose d'abord le problème, puis on propose une hypothèse à tester. On réalise l'expérience avec un témoin et on note les résultats. On les interprète en comparant les tubes, et la conclusion vient en dernier, car elle juge l'hypothèse à partir de l'interprétation.",
+      "difficulty": 2
+    }
+  ]
+}

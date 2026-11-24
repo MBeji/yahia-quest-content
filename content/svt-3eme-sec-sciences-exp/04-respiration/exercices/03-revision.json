@@ -1,0 +1,196 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La respiration cellulaire",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quelle affirmation sur les traceurs utilisés pour suivre le dioxygène est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le ¹⁸O est un isotope radioactif, comme le ¹⁴C du carbone"
+        },
+        {
+          "id": "b",
+          "text": "Le ¹⁸O est un isotope stable de l'oxygène, repéré par sa masse"
+        },
+        {
+          "id": "c",
+          "text": "Un traceur est une enzyme qui accélère la dégradation du glucose"
+        },
+        {
+          "id": "d",
+          "text": "Un traceur est une molécule qui se transforme en eau dans la cellule"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un traceur est un atome remplacé par un isotope repérable. Le ¹⁴C est radioactif, mais le ¹⁸O est un isotope lourd stable de l'oxygène : on le repère par sa masse, non par un rayonnement. Un traceur ne catalyse rien : il sert seulement à suivre le trajet de l'atome.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque famille d'enzymes respiratoires à la réaction qu'elle catalyse.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Décarboxylases"
+        },
+        {
+          "id": "l2",
+          "text": "Déshydrogénases"
+        },
+        {
+          "id": "l3",
+          "text": "Oxydases"
+        },
+        {
+          "id": "r3",
+          "text": "Fixation de l'hydrogène sur le dioxygène"
+        },
+        {
+          "id": "r1",
+          "text": "Retrait d'un CO₂ au métabolite"
+        },
+        {
+          "id": "r2",
+          "text": "Transfert de H₂ du métabolite à un transporteur"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "Les décarboxylases retirent un CO₂ au métabolite, les déshydrogénases transfèrent son hydrogène (H₂) à un transporteur, les oxydases fixent cet hydrogène sur le dioxygène pour former l'eau. Chaque nom reprend la réaction : décarboxylation, déshydrogénation, oxydation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans quel compartiment de la cellule le CO₂ est-il formé quand l'acide pyruvique est dégradé ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur les crêtes de la mitochondrie",
+          "misconceptionTag": "bio.resp.etapes-lieux-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Dans l'espace entre les deux membranes",
+          "misconceptionTag": "bio.resp.parties-mitochondrie-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Dans le hyaloplasme, pendant la glycolyse",
+          "misconceptionTag": "bio.resp.etapes-lieux-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Dans la matrice de la mitochondrie"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'acide pyruvique perd son premier CO₂ puis le cycle de Krebs en libère deux autres : toutes ces décarboxylations ont lieu dans la matrice. Les crêtes portent la chaîne respiratoire, où l'on consomme du dioxygène et forme de l'eau, et la glycolyse du hyaloplasme ne libère pas de CO₂.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur les 36 ATP formés par la respiration d'une molécule de glucose, quelle part vient de la chaîne respiratoire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "environ 6 %",
+          "misconceptionTag": "bio.resp.bilan-atp-mal-reparti"
+        },
+        {
+          "id": "b",
+          "text": "environ 11 %",
+          "misconceptionTag": "bio.resp.bilan-atp-mal-reparti"
+        },
+        {
+          "id": "c",
+          "text": "environ 89 %"
+        },
+        {
+          "id": "d",
+          "text": "environ 94 %",
+          "misconceptionTag": "bio.resp.bilan-atp-mal-reparti"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La chaîne respiratoire forme 32 ATP sur 36 : 32 ÷ 36 ≈ 0,89, soit environ 89 %. Les 6 % correspondent à la glycolyse seule (2 ÷ 36), les 11 % à la glycolyse et au cycle de Krebs (4 ÷ 36), les 94 % à toute la mitochondrie, cycle et chaîne (34 ÷ 36).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Au marathon, un athlète dépense 14 000 kJ : le dioxygène théoriquement nécessaire est de 700 L et il en consomme réellement 685 L. Quelle est sa dette d'oxygène ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 L"
+        },
+        {
+          "id": "b",
+          "text": "15 L"
+        },
+        {
+          "id": "c",
+          "text": "685 L",
+          "misconceptionTag": "bio.lecture.valeur-d-une-autre-grandeur"
+        },
+        {
+          "id": "d",
+          "text": "1385 L"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La dette d'oxygène est le dioxygène théorique moins le dioxygène réellement consommé : 700 − 685 = 15 L. La valeur 685 L est le dioxygène consommé, et 1385 L la somme des deux données, qui n'a pas de sens ici.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Au 100 m, un coureur dépense 200 kJ (tableau). Quelles affirmations sont exactes ?\n<svg viewBox=\"0 0 330 94\">\n<title>100 m : valeurs moyennes d'athlètes (document du manuel)</title>\n<text x=\"10\" y=\"14\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">100 m : valeurs moyennes d'athlètes (document du manuel)</text>\n<rect x=\"10\" y=\"24\" width=\"70\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"45.0\" y=\"46.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Épreuve</text>\n<rect x=\"80\" y=\"24\" width=\"80\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"120.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Énergie</text>\n<text x=\"120.0\" y=\"53.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">dépensée</text>\n<rect x=\"160\" y=\"24\" width=\"80\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"200.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">O₂</text>\n<text x=\"200.0\" y=\"53.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">théorique</text>\n<rect x=\"240\" y=\"24\" width=\"80\" height=\"38\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"280.0\" y=\"39.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">O₂</text>\n<text x=\"280.0\" y=\"53.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">consommé</text>\n<rect x=\"10\" y=\"62\" width=\"70\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"45.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">100 m</text>\n<rect x=\"80\" y=\"62\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"120.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">200 kJ</text>\n<rect x=\"160\" y=\"62\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"200.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">10 L</text>\n<rect x=\"240\" y=\"62\" width=\"80\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"280.0\" y=\"77.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">0,5 L</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa dette d'oxygène est de 9,5 L"
+        },
+        {
+          "id": "b",
+          "text": "La respiration fournit environ 95 % de l'énergie"
+        },
+        {
+          "id": "c",
+          "text": "Il ne consomme aucun dioxygène pendant l'épreuve"
+        },
+        {
+          "id": "d",
+          "text": "Environ 95 % de l'énergie est fournie sans dioxygène"
+        },
+        {
+          "id": "e",
+          "text": "De l'acide lactique se forme dans le muscle à partir de l'acide pyruvique"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Dette : 10 − 0,5 = 9,5 L. La respiration fournit 0,5 ÷ 10 = 5 % de l'énergie, donc la voie sans dioxygène environ 95 % ; l'acide lactique se forme à partir de l'acide pyruvique. Le coureur consomme tout de même 0,5 L de dioxygène : la respiration ne s'arrête pas.",
+      "difficulty": 3
+    }
+  ]
+}

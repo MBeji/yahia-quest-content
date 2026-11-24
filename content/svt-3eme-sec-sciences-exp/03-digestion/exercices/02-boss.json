@@ -1,0 +1,158 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des enzymes",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une molécule d'amidon est une chaîne de n = 200 unités C₆H₁₀O₅. Elle est hydrolysée complètement en maltose, selon (C₆H₁₀O₅)ₙ + n/2 H₂O → n/2 C₁₂H₂₂O₁₁. Combien de molécules de maltose obtient-on ?",
+      "answerKey": {
+        "value": 100
+      },
+      "explanation": "D'après l'équation, on obtient n/2 molécules de maltose : 200 / 2 = 100. Chaque molécule de maltose réunit deux unités de la chaîne, donc 200 unités donnent 100 molécules de maltose (et il faut aussi 100 molécules d'eau).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans l'expérience sur la salive, le tube T1 contient seulement de l'empois d'amidon, à 40 °C comme le tube T2 qui contient aussi de la salive. Quel est le rôle de T1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Répéter l'expérience de T2 pour vérifier son résultat"
+        },
+        {
+          "id": "b",
+          "text": "Montrer que la chaleur du bain-marie digère l'amidon"
+        },
+        {
+          "id": "c",
+          "text": "Il est inutile : T2 suffit à prouver que la salive digère l'amidon",
+          "misconceptionTag": "bio.demarche.cause-sans-temoin"
+        },
+        {
+          "id": "d",
+          "text": "Montrer que l'empois seul ne change pas, sans salive"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "T1 est le tube témoin : il ne diffère de T2 que par l'absence de salive. S'il reste inchangé, la transformation observée dans T2 ne vient ni de la chaleur ni du temps, mais de la salive. Sans témoin, on ne pourrait pas attribuer le résultat de T2 à la salive.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le tableau donne la vitesse d'une réaction enzymatique pour une quantité d'enzyme fixée (unités arbitraires). Quelle vitesse attend-on pour une concentration en substrat de 12, avec la même quantité d'enzyme ?\n<svg viewBox=\"0 0 332 80\">\n<text x=\"10\" y=\"14\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Vitesse selon la concentration en substrat (données d'illustration)</text>\n<rect x=\"10\" y=\"24\" width=\"96\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"58\" y=\"39.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Concentration</text>\n<rect x=\"106\" y=\"24\" width=\"36\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"124\" y=\"39.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">1</text>\n<rect x=\"142\" y=\"24\" width=\"36\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"160\" y=\"39.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">2</text>\n<rect x=\"178\" y=\"24\" width=\"36\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"196\" y=\"39.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">3</text>\n<rect x=\"214\" y=\"24\" width=\"36\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"232\" y=\"39.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">4</text>\n<rect x=\"250\" y=\"24\" width=\"36\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"268\" y=\"39.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">5</text>\n<rect x=\"286\" y=\"24\" width=\"36\" height=\"24\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"304\" y=\"39.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">6</text>\n<rect x=\"10\" y=\"48\" width=\"96\" height=\"24\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"58\" y=\"63.3\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">Vitesse</text>\n<rect x=\"106\" y=\"48\" width=\"36\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"124\" y=\"63.3\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">12</text>\n<rect x=\"142\" y=\"48\" width=\"36\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"160\" y=\"63.3\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">24</text>\n<rect x=\"178\" y=\"48\" width=\"36\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"196\" y=\"63.3\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">36</text>\n<rect x=\"214\" y=\"48\" width=\"36\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"232\" y=\"63.3\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">44</text>\n<rect x=\"250\" y=\"48\" width=\"36\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"268\" y=\"63.3\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">48</text>\n<rect x=\"286\" y=\"48\" width=\"36\" height=\"24\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"304\" y=\"63.3\" text-anchor=\"middle\" font-size=\"10\" fill=\"#0f172a\">48</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "24"
+        },
+        {
+          "id": "b",
+          "text": "48"
+        },
+        {
+          "id": "c",
+          "text": "52",
+          "misconceptionTag": "bio.dig.activite-sans-plafond"
+        },
+        {
+          "id": "d",
+          "text": "144",
+          "misconceptionTag": "bio.dig.activite-sans-plafond"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La vitesse cesse de croître à partir de la concentration 5 : elle vaut 48 en 5 comme en 6, c'est la saturation, et les sites actifs sont tous occupés. Avec la même quantité d'enzyme, elle reste donc à 48 en 12. Les valeurs 52 et 144 supposent que la vitesse augmente encore, ce que la saturation interdit.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un tube contient de l'empois d'amidon et de la salive. Après 30 minutes à 0 °C, l'eau iodée le colore en bleu-violet. On le place ensuite 30 minutes dans un bain-marie à 40 °C, puis on refait le test à l'eau iodée. Un tube témoin, avec de l'empois seul, suit les mêmes étapes et reste coloré en bleu-violet. Que va-t-on observer dans le tube avec salive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'eau iodée ne colore plus : le froid n'avait fait qu'inactiver l'amylase"
+        },
+        {
+          "id": "b",
+          "text": "L'eau iodée colore encore en bleu-violet : le froid a dénaturé l'amylase pour toujours",
+          "misconceptionTag": "bio.dig.froid-enzyme-detruite"
+        },
+        {
+          "id": "c",
+          "text": "L'eau iodée ne colore plus, mais seulement si on ajoute de la salive neuve"
+        },
+        {
+          "id": "d",
+          "text": "L'eau iodée ne colore plus : c'est la chaleur du bain-marie qui transforme l'amidon",
+          "misconceptionTag": "bio.demarche.cause-sans-temoin"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "À 0 °C, l'amylase est inactivée, pas détruite : l'amidon reste intact et l'eau iodée le colore. Remise à 40 °C, l'amylase retrouve son activité et hydrolyse l'amidon, sans qu'il faille ajouter de la salive. Le tube témoin, sans salive, reste bleu-violet après le même passage à 40 °C : la chaleur seule ne transforme pas l'amidon. Seule une chaleur élevée dénature l'enzyme pour toujours.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une enzyme fragmente les protéines. Elle est inactive à pH 2 et très active en milieu basique. De quelle enzyme s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La pepsine, enzyme du suc gastrique",
+          "misconceptionTag": "bio.dig.ph-optimum-unique"
+        },
+        {
+          "id": "b",
+          "text": "L'amylase salivaire, enzyme de la salive",
+          "misconceptionTag": "bio.dig.specificite-enzyme-ignoree"
+        },
+        {
+          "id": "c",
+          "text": "La trypsine, enzyme du suc pancréatique"
+        },
+        {
+          "id": "d",
+          "text": "La maltase, enzyme du suc intestinal",
+          "misconceptionTag": "bio.dig.specificite-enzyme-ignoree"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux indices se combinent : l'enzyme agit sur les protéines et son pH optimum est basique. La trypsine répond aux deux. La pepsine fragmente aussi les protéines, mais son pH optimum est 2 : chaque enzyme a son pH optimum. L'amylase salivaire (amidon) et la maltase (maltose) ont un autre substrat.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "On porte la salive à ébullition, puis on la mélange à de l'empois d'amidon à 40 °C pendant 30 minutes. Quelles affirmations sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'eau iodée colore encore le contenu"
+        },
+        {
+          "id": "b",
+          "text": "La liqueur de Fehling chauffée reste négative"
+        },
+        {
+          "id": "c",
+          "text": "La salive refroidie retrouvera son activité"
+        },
+        {
+          "id": "d",
+          "text": "La protéine de la salive a été dénaturée par la chaleur"
+        },
+        {
+          "id": "e",
+          "text": "La chaleur seule a transformé l'amidon en maltose"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "explanation": "L'ébullition dénature l'amylase, une protéine, de façon irréversible : l'amidon n'est pas hydrolysé, donc l'eau iodée le colore encore et le Fehling reste négatif. La dénaturation est irréversible, donc la salive refroidie n'est pas réactivée (contrairement à une inactivation par le froid). Un témoin sans salive montrerait que la chaleur seule ne transforme pas l'amidon.",
+      "difficulty": 3
+    }
+  ]
+}
