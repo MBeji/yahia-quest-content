@@ -1,0 +1,146 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le laboratoire de la synthèse protéique",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Des chercheurs réalisent la synthèse d'hémoglobine in vitro, avec des acides aminés radioactifs, des ARNt, des enzymes et de l'énergie dans les deux fioles. Que montre ce document ?\n<svg viewBox=\"0 0 473 122\">\n<title>Synthèse in vitro de l'hémoglobine : deux fioles avec ribosomes de lapin et ARNm de lapin ou de cobaye</title>\n<rect x=\"1\" y=\"1\" width=\"46\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Fiole</text>\n<rect x=\"47\" y=\"1\" width=\"255\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"174.5\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Contenu</text>\n<rect x=\"302\" y=\"1\" width=\"170\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"387.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Hémoglobine synthétisée</text>\n<rect x=\"1\" y=\"41\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">1</text>\n<rect x=\"47\" y=\"41\" width=\"255\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"174.5\" y=\"59.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">ARNm de cobaye + ARNm de lapin</text>\n<text x=\"174.5\" y=\"71.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">+ ribosomes de lapin</text>\n<rect x=\"302\" y=\"41\" width=\"170\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"387.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">de lapin et de cobaye</text>\n<rect x=\"1\" y=\"81\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">2</text>\n<rect x=\"47\" y=\"81\" width=\"255\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"174.5\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">ARNm de lapin + ribosomes de lapin</text>\n<rect x=\"302\" y=\"81\" width=\"170\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"387.0\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">de lapin seulement</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les ribosomes déterminent l'hémoglobine fabriquée, puisque ceux de lapin donnent de l'hémoglobine de lapin",
+          "misconceptionTag": "bio.expr.ribosome-determine-la-proteine"
+        },
+        {
+          "id": "b",
+          "text": "Les ribosomes de lapin ne peuvent lire que l'ARNm de lapin, comme le montre la fiole 2"
+        },
+        {
+          "id": "c",
+          "text": "L'ARNm détermine l'hémoglobine fabriquée ; les ribosomes de lapin lisent aussi l'ARNm de cobaye"
+        },
+        {
+          "id": "d",
+          "text": "Les deux ARNm se combinent dans la fiole 1 pour former une seule hémoglobine hybride"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans la fiole 1, les mêmes ribosomes de lapin fabriquent deux hémoglobines, l'une de lapin et l'autre de cobaye, selon l'ARNm qu'ils lisent : l'ARNm détermine la protéine et les ribosomes sont non spécifiques. Les ribosomes ne déterminent donc pas la protéine, ils ne se limitent pas à l'ARNm de lapin, et on obtient deux hémoglobines distinctes, pas un hybride.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans l'ARNm de l'hémoglobine normale, le codon du 6ᵉ acide aminé, l'acide glutamique, est GAG ; son triplet sur le brin transcrit est CTC. Chez un malade drépanocytaire, ce 6ᵉ acide aminé est la valine, après le changement d'une seule base du brin transcrit. Quel est alors le triplet du brin transcrit ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CAC"
+        },
+        {
+          "id": "b",
+          "text": "CCC"
+        },
+        {
+          "id": "c",
+          "text": "CGC"
+        },
+        {
+          "id": "d",
+          "text": "CTA"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On cherche un triplet à une seule base d'écart de CTC dont l'ARNm désigne la valine. CAC donne GUG, un codon de la valine (GAG devient GUG). CCC donnerait GGG (glycine), CGC donnerait GCG (alanine) et CTA donnerait GAU (acide aspartique) : un seul changement de base peut ainsi modifier ou non l'acide aminé, ici il le remplace par la valine.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Combien de séquences d'ARNm de 9 bases, sans codon stop, peuvent coder le tripeptide Met–Leu–Trp ?",
+      "answerKey": {
+        "value": 6,
+        "unit": "séquences"
+      },
+      "explanation": "La méthionine n'a qu'un codon (AUG) et le tryptophane aussi (UGG), alors que la leucine en a 6 (UUA, UUG, CUU, CUC, CUA, CUG) : 1 × 6 × 1 = 6 séquences. On ne peut donc pas retrouver l'ARNm de façon unique à partir de la protéine.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Trois ribosomes lisent le même ARNm et portent chacun une chaîne d'acides aminés en cours de synthèse (document). Dans quel sens les ribosomes se déplacent-ils, et lequel atteindra le premier le codon stop ?\n<svg viewBox=\"0 0 470 230\">\n<title>Trois ribosomes numérotés 1, 2 et 3 sur un même ARNm, portant des chaînes polypeptidiques de longueurs différentes</title>\n<line x1=\"20\" y1=\"190\" x2=\"470\" y2=\"190\" stroke=\"#0f6e56\" stroke-width=\"4\"/>\n<circle cx=\"110\" cy=\"148\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"139\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"130\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"121\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"112\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"103\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"94\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"110\" cy=\"85\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<ellipse cx=\"110\" cy=\"170\" rx=\"26\" ry=\"16\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<ellipse cx=\"110\" cy=\"199\" rx=\"20\" ry=\"9\" fill=\"#7dd3fc\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<text x=\"110\" y=\"175\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">1</text>\n<circle cx=\"230\" cy=\"148\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"230\" cy=\"139\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"230\" cy=\"130\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"230\" cy=\"121\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"230\" cy=\"112\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<ellipse cx=\"230\" cy=\"170\" rx=\"26\" ry=\"16\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<ellipse cx=\"230\" cy=\"199\" rx=\"20\" ry=\"9\" fill=\"#7dd3fc\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<text x=\"230\" y=\"175\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">2</text>\n<circle cx=\"350\" cy=\"148\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<circle cx=\"350\" cy=\"139\" r=\"4.2\" fill=\"#c4b5fd\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<ellipse cx=\"350\" cy=\"170\" rx=\"26\" ry=\"16\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<ellipse cx=\"350\" cy=\"199\" rx=\"20\" ry=\"9\" fill=\"#7dd3fc\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<text x=\"350\" y=\"175\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">3</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vers la droite ; le ribosome 3"
+        },
+        {
+          "id": "b",
+          "text": "Vers la gauche ; le ribosome 1"
+        },
+        {
+          "id": "c",
+          "text": "Vers la gauche ; le ribosome 3"
+        },
+        {
+          "id": "d",
+          "text": "Vers la droite ; le ribosome 1"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un ribosome allonge sa chaîne en avançant sur l'ARNm : celui qui porte la plus longue chaîne, le ribosome 1 (8 acides aminés contre 5 et 2), est le plus avancé. Les ribosomes se déplacent donc vers la gauche, du ribosome 3 vers le ribosome 1, et le ribosome 1 sera le premier à atteindre le codon stop.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "L'ARNm AUGGCUCAAUUUUGGUAACCCGGGAAAUUU (30 bases) est traduit. Combien d'acides aminés le polypeptide compte-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 acides aminés"
+        },
+        {
+          "id": "b",
+          "text": "6 acides aminés",
+          "misconceptionTag": "bio.expr.codon-stop-acide-amine"
+        },
+        {
+          "id": "c",
+          "text": "9 acides aminés",
+          "misconceptionTag": "bio.expr.traduction-continue-apres-stop"
+        },
+        {
+          "id": "d",
+          "text": "10 acides aminés"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "On découpe : AUG GCU CAA UUU UGG UAA CCC GGG AAA UUU, soit 10 codons. La traduction s'arrête au codon stop UAA, 6ᵉ codon : elle fournit Met, Ala, Gln, Phe, Trp, soit 5 acides aminés. Le codon stop ne désigne aucun acide aminé et les 4 codons suivants ne sont pas traduits.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le brin transcrit d'un gène s'écrit TACCTTACCGTTCAAATT. Quel polypeptide ce gène détermine-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glu–Trp–Gln–Val",
+          "misconceptionTag": "bio.expr.methionine-initiale-oubliee"
+        },
+        {
+          "id": "b",
+          "text": "Met–Glu–Trp–Gln–Val"
+        },
+        {
+          "id": "c",
+          "text": "Trp–Asn–Gly–Lys–Phe",
+          "misconceptionTag": "bio.expr.lecture-triplets-decalee"
+        },
+        {
+          "id": "d",
+          "text": "Tyr–Leu–Thr–Val–Gln–Ile",
+          "misconceptionTag": "bio.expr.arnm-recopie-brin-transcrit"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On transcrit d'abord en ARNm par complémentarité : AUG GAA UGG CAA GUU UAA. On lit ensuite les codons dans le code génétique : Met, Glu, Trp, Gln, Val, puis UAA est un codon stop. Lire le brin transcrit comme s'il était l'ARNm donne Tyr–Leu–Thr–Val–Gln–Ile ; décaler la lecture d'une base ou oublier la méthionine du codon d'initiation donne les deux autres réponses.",
+      "difficulty": 3
+    }
+  ]
+}

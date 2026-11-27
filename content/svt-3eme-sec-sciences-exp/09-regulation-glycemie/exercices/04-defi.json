@@ -1,0 +1,175 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le mystère des deux diabètes",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Des rats obèses et diabétiques reçoivent une injection de sulfamides, qui active la sécrétion d'insuline. Leur insulinémie passe de 15 µU/ml (mesure la plus basse) à 99 µU/ml (mesure la plus haute). Par quel facteur a-t-elle été multipliée ? Donne le résultat arrondi au dixième.",
+      "answerKey": {
+        "value": 6.6,
+        "tolerance": 0.05
+      },
+      "explanation": "Le facteur vaut 99 ÷ 15 = 6,6 : l'insulinémie des rats obèses a été multipliée par 6,6.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Trois lots de rats reçoivent une injection de sulfamides, substance qui active la sécrétion d'insuline par les cellules β. Le tableau donne la glycémie avant l'injection puis à la dernière mesure, et l'insulinémie avant l'injection puis à son maximum (le troisième lot est d'illustration).\n<svg viewBox=\"0 0 370 108\">\n<title>Glycémie et insulinémie de trois lots de rats avant et après injection de sulfamides (le lot sans cellules β est d'illustration)</title>\n<rect x=\"6\" y=\"6\" width=\"358\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"70.0\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >lot</text>\n<text x=\"189.0\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >glycémie (g/l)</text>\n<text x=\"304.0\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >insuline (µU/ml)</text>\n<rect x=\"6\" y=\"30\" width=\"358\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"70.0\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >rats normaux</text>\n<text x=\"189.0\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >0,90 → 0,42</text>\n<text x=\"304.0\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >21 → 92</text>\n<rect x=\"6\" y=\"54\" width=\"358\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"70.0\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >rats obèses</text>\n<text x=\"189.0\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >1,45 → 1,45</text>\n<text x=\"304.0\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >15 → 99</text>\n<rect x=\"6\" y=\"78\" width=\"358\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"70.0\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >rats sans cellules β</text>\n<text x=\"189.0\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >2,40 → 2,40</text>\n<text x=\"304.0\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >2 → 2</text>\n</svg>\nQuelle interprétation de l'ensemble des trois lots est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rats obèses : peu d'insuline libérée ; rats sans cellules β : insuline libérée mais restant inefficace sur les cellules",
+          "misconceptionTag": "bio.glyc.types-diabete-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Rats obèses : insuline libérée mais peu efficace ; rats sans cellules β : rien à libérer, l'injection ne change rien"
+        },
+        {
+          "id": "c",
+          "text": "Rats obèses et rats sans cellules β : même défaut, l'insuline manque dans les deux lots de rats testés",
+          "misconceptionTag": "bio.glyc.types-diabete-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Rats obèses : cellules α détruites ; rats sans cellules β : excès de glucagon dans le sang circulant",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chez les rats obèses, l'insulinémie monte (15 → 99) mais la glycémie ne baisse pas : l'insuline est libérée et n'agit pas assez, c'est l'insulinorésistance. Chez les rats sans cellules β, l'insulinémie reste à 2 : sans cellules β, les sulfamides n'ont rien à stimuler. Les deux diabètes n'ont donc pas la même cause.",
+      "difficulty": 3
+    },
+    {
+      "type": "matching",
+      "prompt": "Après ingestion de glucose, on suit la glycémie et l'insulinémie de trois individus (valeurs lues approximativement, d'après le document 21 du manuel). Individu A : la glycémie reste voisine de 1 g/l, l'insulinémie monte puis redescend. Individu B : la glycémie monte très haut, l'insulinémie monte encore plus haut que chez A. Individu C : la glycémie monte très haut, l'insulinémie reste presque nulle. Associe chaque individu à son interprétation.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Individu A"
+        },
+        {
+          "id": "l2",
+          "text": "Individu B"
+        },
+        {
+          "id": "l3",
+          "text": "Individu C"
+        },
+        {
+          "id": "r1",
+          "text": "Insuline presque absente : cellules β peu nombreuses ou absentes"
+        },
+        {
+          "id": "r2",
+          "text": "Régulation normale : l'insuline sécrétée ramène la glycémie vers 1 g/l"
+        },
+        {
+          "id": "r3",
+          "text": "Insuline abondante mais inefficace : cellules cibles peu sensibles"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r3"
+          ],
+          [
+            "l3",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "A : l'insuline monte puis redescend et la glycémie reste voisine de 1 g/l, la régulation est normale. B : beaucoup d'insuline mais une hyperglycémie, donc l'hormone n'agit pas sur des cellules cibles peu sensibles (type II). C : presque pas d'insuline, donc cellules β peu nombreuses ou absentes (type I).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pendant une perfusion de glucose, la glycémie d'un sujet sain monte puis redescend vers sa valeur de départ. Un élève résume : 1) la glycémie monte au début ; 2) les cellules β sont activées et l'insuline augmente ; 3) les cellules α sont activées aussi, le glucagon augmente pour aider l'insuline ; 4) la glycémie redescend. Quelle étape est fausse ? (Chasse à l'erreur : la réponse est l'étape erronée.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'étape 4, car c'est le glucagon qui ramène la glycémie vers sa valeur de départ",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "b",
+          "text": "L'étape 2, car les cellules β répondent seulement à une baisse de la glycémie",
+          "misconceptionTag": "bio.glyc.stimulus-secretion-inverse"
+        },
+        {
+          "id": "c",
+          "text": "L'étape 2, car ce sont les cellules α qui sécrètent l'insuline",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "d",
+          "text": "L'étape 3, car l'hyperglycémie freine les cellules α : le glucagon baisse"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chasse à l'erreur : l'étape fausse est celle sur le glucagon. L'hyperglycémie active les cellules β (insuline en hausse) et freine les cellules α : le glucagon baisse, il n'« aide » pas l'insuline, il agit en sens contraire. La glycémie remonte au début puis redescend grâce à l'insuline, produite par les cellules β et non α.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le document 25a montre les adipocytes d'un animal atteint d'un diabète expérimental qui maigrit : ils se vident peu à peu de leurs lipides (cellules A à D, de la plus remplie à la plus petite). Dans une autre expérience, on place des adipocytes dans des milieux de plus en plus riches en insuline : leur utilisation du glucose passe de 6 (insuline 0) à 10 (31), 17 (125) puis 23 (500), en unités arbitraires (données d'illustration, d'après l'allure du document 25b). Quelle conclusion tirer de l'ensemble ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plus il y a d'insuline, plus les adipocytes utilisent de glucose ; l'amaigrissement vient donc d'un excès d'insuline qui les vide",
+          "misconceptionTag": "bio.glyc.effet-cible-inverse"
+        },
+        {
+          "id": "b",
+          "text": "L'utilisation du glucose ne dépend pas de l'insuline, puisqu'elle n'est pas nulle quand l'insuline vaut 0 unité",
+          "misconceptionTag": "bio.demarche.valeur-de-base-prise-pour-independance"
+        },
+        {
+          "id": "c",
+          "text": "Plus il y a d'insuline, plus les adipocytes utilisent de glucose, mais ils le dégradent tout entier pour produire de l'énergie, sans réserve"
+        },
+        {
+          "id": "d",
+          "text": "Plus il y a d'insuline, plus les adipocytes utilisent de glucose et le stockent en lipides : elle favorise la lipogenèse"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Quand l'insuline augmente, l'utilisation du glucose par les adipocytes passe de 6 à 23. Le document 25a dit ce que devient ce glucose : dans le diabète, où l'insuline manque ou agit mal, les adipocytes perdent leurs lipides. L'insuline fait donc entrer le glucose et le fait stocker en lipides : elle favorise la lipogenèse, et son défaut explique l'amaigrissement. Un glucose tout entier dégradé n'expliquerait pas ce lien avec les réserves, et un excès d'insuline remplirait les adipocytes au lieu de les vider. Enfin, une utilisation de 6 sans insuline montre seulement qu'elle n'est pas nulle, pas qu'elle est indépendante de l'hormone.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Une substance inconnue, injectée à un animal normal, fait baisser sa glycémie, augmente le glycogène de son foie et favorise la mise en réserve des graisses de son tissu adipeux. Quelle proposition est la mieux fondée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle agit comme le glucagon : elle active la glycogénolyse et la lipolyse",
+          "misconceptionTag": "bio.glyc.effet-cible-inverse"
+        },
+        {
+          "id": "b",
+          "text": "Elle agit comme l'alloxane : elle détruit les cellules β et active la néoglucogenèse",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Elle agit comme l'insuline : elle active la glycogénogenèse et la lipogenèse"
+        },
+        {
+          "id": "d",
+          "text": "Elle agit comme une enzyme digestive : elle active l'hydrolyse du glycogène",
+          "misconceptionTag": "bio.glyc.hormone-enzyme-confondue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une baisse de la glycémie, un glycogène hépatique en hausse (glycogénogenèse) et des graisses mises en réserve (lipogenèse) sont les trois effets de l'insuline. Le glucagon ferait l'inverse : glycogénolyse, lipolyse, hausse de la glycémie. L'alloxane détruit les cellules β et provoque une hyperglycémie.",
+      "difficulty": 2
+    }
+  ]
+}

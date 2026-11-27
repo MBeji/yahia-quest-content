@@ -1,0 +1,151 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Des caractères aux gènes",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Chez certaines races de lapin, la longueur des oreilles dépend de nombreux gènes. Quelle relation entre gènes et caractères cet exemple illustre-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un gène, un caractère",
+          "misconceptionTag": "bio.gen.un-gene-un-caractere-toujours"
+        },
+        {
+          "id": "b",
+          "text": "Un gène, des caractères"
+        },
+        {
+          "id": "c",
+          "text": "Des gènes, un caractère"
+        },
+        {
+          "id": "d",
+          "text": "Un caractère, un allèle"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Plusieurs gènes interviennent ici dans un seul caractère, la longueur des oreilles : c'est la relation « des gènes, un caractère ». La relation « un gène, un caractère » est la plus simple, mais le nombre de gènes varie selon les caractères.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le brin 1 d'une portion d'ADN s'écrit ATGC. Quel est le brin 2 qui lui fait face ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TACG"
+        },
+        {
+          "id": "b",
+          "text": "ATGC"
+        },
+        {
+          "id": "c",
+          "text": "CGTA",
+          "misconceptionTag": "bio.gen.complementarite-bases-inversee"
+        },
+        {
+          "id": "d",
+          "text": "TAGC",
+          "misconceptionTag": "bio.gen.complementarite-bases-inversee"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les bases s'apparient toujours de la même façon : A avec T, T avec A, G avec C, C avec G. Le brin 2 est donc TACG. Recopier le brin 1, ou apparier A avec C et T avec G, donne un brin faux.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le brin 1 d'une portion d'ADN s'écrit GAGGAGACCTCA. Combien de barreaux de cette portion relient une base G à une base C, quel que soit le brin qui porte chacune ?",
+      "answerKey": {
+        "value": 7,
+        "unit": "paires de bases"
+      },
+      "explanation": "On apparie base par base : G–C, A–T, G–C, G–C, A–T, G–C, A–T, C–G, C–G, T–A, C–G, A–T. Les barreaux G–C sont aux positions 1, 3, 4, 6, 8, 9 et 11, soit 7 ; les 5 autres sont des barreaux A–T, et 7 + 5 = 12.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi une lignée mutante qui se maintient de génération en génération traduit-elle une variation de l'information génétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parce que le milieu a changé et a modifié les cellules des descendants",
+          "misconceptionTag": "bio.gen.variation-pheno-sans-info-genetique"
+        },
+        {
+          "id": "b",
+          "text": "Parce que les descendants vivent dans le même milieu que leurs parents",
+          "misconceptionTag": "bio.gen.variation-pheno-sans-info-genetique"
+        },
+        {
+          "id": "c",
+          "text": "Parce que tout phénotype mutant est une maladie héréditaire",
+          "misconceptionTag": "bio.gen.mutant-egale-pathologique"
+        },
+        {
+          "id": "d",
+          "text": "Parce que le caractère nouveau est héréditaire : il se transmet"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Un caractère qui passe des parents aux descendants sur plusieurs générations est héréditaire, donc il dépend de l'information génétique : la lignée mutante en traduit une variation. Un phénotype mutant n'est pas forcément une maladie : le fraisier à feuilles simples en est la preuve.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans la drépanocytose, quel est le premier niveau modifié par rapport à une personne saine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La forme des hématies",
+          "misconceptionTag": "bio.gen.chaine-adn-proteine-inversee"
+        },
+        {
+          "id": "b",
+          "text": "La solubilité de l'hémoglobine",
+          "misconceptionTag": "bio.gen.chaine-adn-proteine-inversee"
+        },
+        {
+          "id": "c",
+          "text": "La séquence de bases de l'ADN"
+        },
+        {
+          "id": "d",
+          "text": "La séquence d'acides aminés de l'hémoglobine",
+          "misconceptionTag": "bio.gen.chaine-adn-proteine-inversee"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La chaîne suit l'ordre de l'information : séquence de bases de l'ADN, puis séquence d'acides aminés, puis solubilité de l'hémoglobine, puis forme des hématies. La modification de l'ADN, une base remplacée, est la première ; la forme des hématies est la dernière.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Trois cellules humaines : A contient 22 paires de chromosomes plus un X et un Y ; B contient 22 chromosomes plus un X ; C contient 22 chromosomes plus un Y. Quel lien existe entre elles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A est un gamète dont la division donne B et C",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        },
+        {
+          "id": "b",
+          "text": "B et C sont des gamètes dont l'union donne une cellule comme A"
+        },
+        {
+          "id": "c",
+          "text": "A, B et C sont trois gamètes du même individu",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        },
+        {
+          "id": "d",
+          "text": "B et C viennent de la mitose de A, qui répartit ses chromosomes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A a 46 chromosomes en 23 paires : c'est une cellule diploïde, pas un gamète. B et C ont 23 chromosomes, un de chaque paire : ce sont des gamètes (un ovule et un spermatozoïde), et leur union par fécondation rétablit 2n = 46 avec la paire XY.",
+      "difficulty": 2
+    }
+  ]
+}

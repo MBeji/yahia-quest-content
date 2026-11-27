@@ -1,0 +1,173 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le laboratoire du généticien",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Le caryotype d'une cellule du corps d'une espèce est représenté ci-dessous. Quelle est la formule chromosomique de cette espèce, et combien de chromosomes contient chacun de ses gamètes ?\n<svg viewBox=\"0 0 240 138\">\n<title>Caryotype d'une cellule : 5 paires de chromosomes homologues</title>\n<rect x=\"16\" y=\"40\" width=\"10\" height=\"70\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<rect x=\"30\" y=\"40\" width=\"10\" height=\"70\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"28\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">1</text>\n<rect x=\"60\" y=\"48\" width=\"10\" height=\"62\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<rect x=\"74\" y=\"48\" width=\"10\" height=\"62\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"72\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2</text>\n<rect x=\"104\" y=\"56\" width=\"10\" height=\"54\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<rect x=\"118\" y=\"56\" width=\"10\" height=\"54\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"116\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">3</text>\n<rect x=\"148\" y=\"64\" width=\"10\" height=\"46\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<rect x=\"162\" y=\"64\" width=\"10\" height=\"46\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"160\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">4</text>\n<rect x=\"192\" y=\"72\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<rect x=\"206\" y=\"72\" width=\"10\" height=\"38\" rx=\"5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"204\" y=\"128\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">5</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "2n = 5 ; 5 chromosomes par gamète",
+          "misconceptionTag": "bio.gen.2n-nombre-de-paires"
+        },
+        {
+          "id": "b",
+          "text": "2n = 10 ; 5 chromosomes par gamète"
+        },
+        {
+          "id": "c",
+          "text": "2n = 10 ; 10 chromosomes par gamète",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        },
+        {
+          "id": "d",
+          "text": "2n = 20 ; 10 chromosomes par gamète"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le dessin montre 5 paires de chromosomes homologues, soit 5 × 2 = 10 chromosomes dans une cellule diploïde : 2n = 10. Un gamète en reçoit un par paire : n = 5 chromosomes. Le nombre 5 est le nombre de paires, pas la formule, et un gamète à 10 chromosomes serait diploïde.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Voici le caryotype d'une cellule du corps (2n = 6, trois paires : bleue, orange et verte, les homologues d'une paire ayant deux teintes) et quatre cellules candidates. Laquelle ne peut pas être un gamète de cet individu ?\n<svg viewBox=\"0 0 420 122\">\n<title>Cellule du corps à 3 paires de chromosomes et quatre cellules candidates à 3 chromosomes</title>\n<text x=\"10\" y=\"14\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Cellule du corps</text>\n<rect x=\"10\" y=\"22\" width=\"102\" height=\"96\" rx=\"12\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/><rect x=\"22\" y=\"38\" width=\"9\" height=\"54\" rx=\"4.5\" fill=\"#2563eb\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"36\" y=\"38\" width=\"9\" height=\"54\" rx=\"4.5\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"50\" y=\"50\" width=\"9\" height=\"42\" rx=\"4.5\" fill=\"#d97706\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"64\" y=\"50\" width=\"9\" height=\"42\" rx=\"4.5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"78\" y=\"62\" width=\"9\" height=\"30\" rx=\"4.5\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"92\" y=\"62\" width=\"9\" height=\"30\" rx=\"4.5\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"61.0\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">2n = 6</text>\n<text x=\"150\" y=\"14\" text-anchor=\"start\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Cellules candidates</text>\n<rect x=\"150\" y=\"22\" width=\"60\" height=\"96\" rx=\"12\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/><rect x=\"162\" y=\"38\" width=\"9\" height=\"54\" rx=\"4.5\" fill=\"#2563eb\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"176\" y=\"50\" width=\"9\" height=\"42\" rx=\"4.5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"190\" y=\"62\" width=\"9\" height=\"30\" rx=\"4.5\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"180.0\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">P</text>\n<rect x=\"216\" y=\"22\" width=\"60\" height=\"96\" rx=\"12\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/><rect x=\"228\" y=\"38\" width=\"9\" height=\"54\" rx=\"4.5\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"242\" y=\"50\" width=\"9\" height=\"42\" rx=\"4.5\" fill=\"#d97706\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"256\" y=\"62\" width=\"9\" height=\"30\" rx=\"4.5\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"246.0\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Q</text>\n<rect x=\"282\" y=\"22\" width=\"60\" height=\"96\" rx=\"12\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/><rect x=\"294\" y=\"38\" width=\"9\" height=\"54\" rx=\"4.5\" fill=\"#2563eb\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"308\" y=\"38\" width=\"9\" height=\"54\" rx=\"4.5\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"322\" y=\"62\" width=\"9\" height=\"30\" rx=\"4.5\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"312.0\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">R</text>\n<rect x=\"348\" y=\"22\" width=\"60\" height=\"96\" rx=\"12\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/><rect x=\"360\" y=\"38\" width=\"9\" height=\"54\" rx=\"4.5\" fill=\"#93c5fd\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"374\" y=\"50\" width=\"9\" height=\"42\" rx=\"4.5\" fill=\"#fcd34d\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><rect x=\"388\" y=\"62\" width=\"9\" height=\"30\" rx=\"4.5\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"1.4\"/><text x=\"378.0\" y=\"110\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">S</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La cellule P"
+        },
+        {
+          "id": "b",
+          "text": "La cellule Q"
+        },
+        {
+          "id": "c",
+          "text": "La cellule R"
+        },
+        {
+          "id": "d",
+          "text": "La cellule S"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un gamète reçoit un chromosome de chaque paire, soit n = 3 chromosomes. La cellule R porte les deux homologues de la paire bleue et aucun de la paire orange : elle est impossible. Les cellules P, Q et S ont un chromosome de chaque paire. L'erreur classique est de se contenter de compter 3 chromosomes sans vérifier qu'il y en a un par paire.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le brin 2 d'une portion de gène s'écrit CTCCACTGGAGT. Quel est le brin 1 de cette portion, et quelle hémoglobine le gène permet-il de fabriquer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Brin 1 : GAGGAGACCTCA ; hémoglobine HbA",
+          "misconceptionTag": "bio.gen.une-base-aucun-effet"
+        },
+        {
+          "id": "b",
+          "text": "Brin 1 : CTCCACTGGAGT ; hémoglobine HbS"
+        },
+        {
+          "id": "c",
+          "text": "Brin 1 : AGAACAGTTCTG ; hémoglobine HbS",
+          "misconceptionTag": "bio.gen.complementarite-bases-inversee"
+        },
+        {
+          "id": "d",
+          "text": "Brin 1 : GAGGTGACCTCA ; hémoglobine HbS"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On apparie base par base (C–G, T–A, C–G, C–G, A–T, C–G, T–A, G–C, G–C, A–T, G–C, T–A) : le brin 1 est GAGGTGACCTCA. Il diffère du brin normal GAGGAGACCTCA par la 5ᵉ base, ce qui correspond à l'allèle S et à l'HbS. L'erreur classique est de négliger cette base unique, qui suffit pourtant à changer le phénotype.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un chercheur compare une lignée de drosophiles à yeux rouges et une lignée à yeux blancs (données d'illustration). Leurs caryotypes sont identiques, 2n = 8 en 4 paires, mais le même gène diffère par une base. Que conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les deux lignées portent deux allèles différents du même gène des yeux"
+        },
+        {
+          "id": "b",
+          "text": "Les deux lignées sont deux espèces différentes, car leur ADN diffère",
+          "misconceptionTag": "bio.gen.lignee-egale-espece"
+        },
+        {
+          "id": "c",
+          "text": "Un caryotype identique prouve que l'information génétique est identique",
+          "misconceptionTag": "bio.gen.caryotype-identique-meme-info"
+        },
+        {
+          "id": "d",
+          "text": "Les yeux blancs viennent du milieu, puisque le caryotype n'a pas changé",
+          "misconceptionTag": "bio.gen.variation-pheno-sans-info-genetique"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un gène existe sous des formes différentes, les allèles : ici la couleur des yeux change parce que le même gène porte une base différente, sans que le nombre ni la répartition des chromosomes changent. Les deux lignées restent de la même espèce, et un caryotype identique n'empêche pas deux allèles différents.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève écrit : « Chien : 2n = 78. La gamétogenèse donne des gamètes à 39 chromosomes. À la fécondation, les chromosomes du spermatozoïde et ceux de l'ovule s'additionnent : 39 + 39 = 78. La cellule œuf est donc un gamète à n chromosomes. » Dans quelle partie de ce raisonnement se trouve l'erreur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le nombre de chromosomes de chaque gamète, 39"
+        },
+        {
+          "id": "b",
+          "text": "L'addition des chromosomes des deux gamètes, 39 + 39",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        },
+        {
+          "id": "c",
+          "text": "La conclusion sur la nature de la cellule œuf"
+        },
+        {
+          "id": "d",
+          "text": "La formule chromosomique du chien, 2n = 78"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Dans cette chasse à l'erreur, seule la conclusion est fausse : la cellule œuf a 78 chromosomes, donc 2n, et c'est une cellule diploïde, pas un gamète. Les gamètes à 78 ÷ 2 = 39 chromosomes et l'addition 39 + 39 = 78 sont justes. L'erreur classique est d'oublier que la fécondation rétablit 2n.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Document (d'après le manuel) : deux variétés de l'espèce olivier (2n = 46). Chemlali : olives petites, 1 g en moyenne, 81,7 % de pulpe. Chétoui : olives moyennes, 2,47 g en moyenne, 90,3 % de pulpe. Quelles conclusions ce document justifie-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un ovule de Chétoui contient 23 chromosomes"
+        },
+        {
+          "id": "b",
+          "text": "Le poids de l'olive et le taux de pulpe sont des caractères qui distinguent deux lignées"
+        },
+        {
+          "id": "c",
+          "text": "Une olive de Chétoui pèse en moyenne plus de deux fois une olive de Chemlali"
+        },
+        {
+          "id": "d",
+          "text": "Les deux variétés sont deux espèces, car leurs olives n'ont pas le même poids"
+        },
+        {
+          "id": "e",
+          "text": "La différence de poids prouve que le nombre de chromosomes diffère"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Chemlali et Chétoui appartiennent à la même espèce, de formule 2n = 46 : un gamète, donc un ovule de Chétoui, en contient n = 46 ÷ 2 = 23. Le poids de l'olive et le taux de pulpe sont des caractères individuels qui distinguent les deux lignées ; la Chétoui pèse 2,47 ÷ 1 = 2,47 fois plus, soit plus du double. Ces caractères ne font ni deux espèces ni une différence de nombre de chromosomes : les deux variétés ont 2n = 46.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# 📜 Résumé : Des caractères aux gènes
+
+- **Espèce et lignée** : une espèce réunit des individus interféconds aux descendants fertiles ; une lignée (variété, race, souche) est un groupe de l'espèce aux caractères distinctifs. Des races différentes (barbarine, noire de Tibar) restent une seule espèce ; l'Homme diversifie les lignées par la sélection.
+- **Information génétique et ADN** : l'information génétique est le programme de la cellule œuf, porté par l'ADN, double hélice dont les barreaux sont des paires de bases (A–T, G–C). L'information est l'ordre des bases le long de l'ADN.
+- **Caryotype et formule chromosomique** : le caryotype classe les chromosomes d'une cellule en paires d'homologues ; la formule 2n compte tous les chromosomes (n paires). Elle est la même pour tous les individus d'une espèce, mais deux espèces peuvent la partager (Homme et olivier : 46).
+- **Constance du caryotype** : la gamétogenèse réduit le nombre de chromosomes de 2n à n (un de chaque paire), la fécondation le rétablit (n + n = 2n) et les mitoses de l'œuf le conservent.
+- **Phénotypes sauvages, sélectionnés, mutants** : le phénotype est l'aspect d'un caractère héréditaire. Un phénotype nouveau (sélectionné par l'Homme ou mutant) qui se transmet de génération en génération traduit une variation de l'information génétique de la lignée sauvage.
+- **Drépanocytose** : une base de l'ADN change, un acide aminé de l'hémoglobine change (Glu devient Val), l'HbS est peu soluble et les hématies prennent la forme de faucilles. La séquence de l'ADN détermine le phénotype.
+- **Gène, locus, allèles, génotype** : un gène occupe un locus ; chez un diploïde, un gène d'une paire d'homologues non sexuels existe en deux exemplaires, les allèles (couple d'allèles). Le génotype est la combinaison d'allèles : homozygote si les allèles sont identiques, hétérozygote s'ils sont différents (belle de nuit rose R//B, drépanocytose atténuée A//S).
+- **Gènes et caractères** : le génome est l'ensemble des gènes d'une cellule. Un gène peut déterminer un caractère ou plusieurs, et un caractère peut dépendre de plusieurs gènes.

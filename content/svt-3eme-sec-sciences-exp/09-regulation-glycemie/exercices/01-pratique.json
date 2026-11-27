@@ -1,0 +1,150 @@
+{
+  "title": "⭐ Exercice : Le sucre du sang sous surveillance",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un glucomètre indique 0,55 g/l chez un patient. Que signifie cette valeur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une glycémie normale, car elle est proche de 1 g/l"
+        },
+        {
+          "id": "b",
+          "text": "Une hyperglycémie, car le glucose manque dans le sang",
+          "misconceptionTag": "bio.mi.hyper-hypo-inverses"
+        },
+        {
+          "id": "c",
+          "text": "Une hypoglycémie, car elle est inférieure à 0,70 g/l"
+        },
+        {
+          "id": "d",
+          "text": "Un diabète, car la valeur sort de l'intervalle normal",
+          "misconceptionTag": "bio.glyc.hyper-egale-diabete"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'hypoglycémie correspond à une glycémie inférieure à 0,70 g/l ; 0,55 g/l est donc une hypoglycémie (hypo = trop bas). Une hyperglycémie serait trop haute, et le diabète est une hyperglycémie permanente : une valeur basse n'en est pas un.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces vaisseaux, lequel apporte au foie le sang chargé des nutriments absorbés par l'intestin grêle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La veine porte-hépatique, qui part de l'intestin grêle"
+        },
+        {
+          "id": "b",
+          "text": "L'artère hépatique, qui irrigue le foie"
+        },
+        {
+          "id": "c",
+          "text": "La veine sus-hépatique, qui relie le foie au cœur",
+          "misconceptionTag": "bio.glyc.entree-sortie-foie-inversees"
+        },
+        {
+          "id": "d",
+          "text": "Aucun : les nutriments absorbés vont directement à tous les organes",
+          "misconceptionTag": "bio.glyc.glucose-direct-aux-organes"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La veine porte-hépatique conduit au foie le sang sorti de l'intestin grêle, avant qu'il n'atteigne le reste du corps. La veine sus-hépatique emporte au contraire le sang qui sort du foie, et l'artère hépatique irrigue le foie sans venir de l'intestin.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le glycogène est :",
+      "options": [
+        {
+          "id": "a",
+          "text": "une hormone fabriquée par les cellules des îlots du pancréas",
+          "misconceptionTag": "bio.glyc.hormone-enzyme-confondue"
+        },
+        {
+          "id": "b",
+          "text": "le glucose circulant, dissous dans le plasma du sang"
+        },
+        {
+          "id": "c",
+          "text": "un déchet de la respiration des cellules musculaires"
+        },
+        {
+          "id": "d",
+          "text": "une réserve de glucose stockée dans le foie et les muscles"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le glycogène est la forme de réserve du glucose : le foie et les muscles en stockent. Ce n'est pas une hormone, et ce n'est pas le glucose circulant : le glucose du sang est celui que mesure la glycémie.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le pancréas est une glande mixte parce qu'il :",
+      "options": [
+        {
+          "id": "a",
+          "text": "déverse à la fois le suc pancréatique et les hormones dans le duodénum",
+          "misconceptionTag": "bio.glyc.pancreas-seulement-digestif"
+        },
+        {
+          "id": "b",
+          "text": "verse le suc pancréatique dans le duodénum et des hormones dans le sang"
+        },
+        {
+          "id": "c",
+          "text": "fabrique à la fois le glucose et le glycogène du sang",
+          "misconceptionTag": "bio.glyc.organe-mal-attribue"
+        },
+        {
+          "id": "d",
+          "text": "fonctionne seulement pendant la digestion puis s'arrête entre les repas"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le pancréas est mixte : ses acini versent le suc pancréatique dans le duodénum (fonction digestive, exocrine) et ses îlots de Langerhans versent des hormones dans le sang (fonction endocrine). Il ne fabrique ni glucose ni glycogène.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Après un repas riche en glucides, la glycémie monte. Quelle hormone est sécrétée en plus grande quantité, et quel est son effet ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le glucagon, qui fait baisser la glycémie",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "b",
+          "text": "Le glucagon, qui fait monter la glycémie",
+          "misconceptionTag": "bio.glyc.stimulus-secretion-inverse"
+        },
+        {
+          "id": "c",
+          "text": "L'insuline, qui fait monter la glycémie",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "d",
+          "text": "L'insuline, qui fait baisser la glycémie"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'hyperglycémie active les cellules β, qui sécrètent de l'insuline : cette hormone est hypoglycémiante et ramène la glycémie vers 1 g/l. Le glucagon, hyperglycémiant, est sécrété quand la glycémie baisse.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "On suit 100 g de glucose ingéré : le foie en retient 55 g, le muscle 18 g et le tissu adipeux 11 g. Quelle masse de glucose les trois organes retiennent-ils ensemble, en g ?",
+      "answerKey": {
+        "value": 84,
+        "unit": "g"
+      },
+      "explanation": "Le total retenu vaut 55 + 18 + 11 = 84 g sur les 100 g ingérés ; le foie en retient à lui seul 55 g, plus de la moitié. Le tableau du manuel indique aussi 5 g dans les liquides extracellulaires.",
+      "difficulty": 2
+    }
+  ]
+}

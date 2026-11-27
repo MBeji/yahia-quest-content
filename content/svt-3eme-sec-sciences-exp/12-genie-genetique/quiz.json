@@ -1,0 +1,135 @@
+{
+  "title": "Test de compréhension ⭐ : Le génie génétique",
+  "questions": [
+    {
+      "prompt": "Qu'est-ce qu'un OGM ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un organisme issu du croisement de deux races, choisies par l'éleveur",
+          "misconceptionTag": "bio.gen.ogm-par-croisement"
+        },
+        {
+          "id": "b",
+          "text": "Un organisme dont l'ADN a reçu un gène venu d'un autre organisme"
+        },
+        {
+          "id": "c",
+          "text": "Un organisme qui a reçu par injection la protéine d'une autre espèce"
+        },
+        {
+          "id": "d",
+          "text": "Un organisme dont un nouveau caractère est apparu par mutation spontanée"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un OGM est défini par un gène étranger, introduit dans son ADN au laboratoire. Le croisement de races ne fait que trier des caractères déjà présents dans l'espèce, l'injection d'une protéine ne change pas l'ADN, et une mutation spontanée n'est pas introduite par l'Homme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel outil du génie génétique intervient à la fois pour fragmenter l'ADN chromosomique, dans la voie de l'ADN, et pour ouvrir le plasmide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'enzyme de restriction"
+        },
+        {
+          "id": "b",
+          "text": "L'ADN ligase",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        },
+        {
+          "id": "c",
+          "text": "La transcriptase reverse",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        },
+        {
+          "id": "d",
+          "text": "La sonde radioactive",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'enzyme de restriction coupe l'ADN chromosomique en fragments, puis ouvre le plasmide pour la greffe. L'ADN ligase n'intervient qu'ensuite, pour souder le gène au plasmide ; la transcriptase reverse appartient à la voie de l'ARNm ; la sonde repère un gène sans rien couper.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour produire l'hormone de croissance avec des bactéries, que fait-on en premier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cloner les bactéries transformées",
+          "misconceptionTag": "bio.gen.etapes-genie-desordre"
+        },
+        {
+          "id": "b",
+          "text": "Repérer les bactéries transformées",
+          "misconceptionTag": "bio.gen.etapes-genie-desordre"
+        },
+        {
+          "id": "c",
+          "text": "Extraire l'hormone des bactéries",
+          "misconceptionTag": "bio.gen.etapes-genie-desordre"
+        },
+        {
+          "id": "d",
+          "text": "Obtenir le gène de l'hormone"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'ordre est fixe : on obtient d'abord le gène, puis on l'introduit dans une bactérie, on repère les bactéries transformées, on les clone et on extrait la protéine. Sans le gène, il n'y a rien à transférer, donc rien à repérer, cloner ou extraire.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Des colibacilles ont été mis au contact de plasmides recombinés portant un gène de résistance à la streptomycine, puis étalés sur un milieu contenant cet antibiotique. Lesquels se développent ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aucun, car l'antibiotique tue aussi les bactéries transformées",
+          "misconceptionTag": "bio.gen.antibiotique-tue-transformees"
+        },
+        {
+          "id": "b",
+          "text": "Tous, car les colibacilles naturels sont aussi résistants"
+        },
+        {
+          "id": "c",
+          "text": "Seulement ceux qui ont capté un plasmide recombiné"
+        },
+        {
+          "id": "d",
+          "text": "Seulement ceux qui n'ont pas capté de plasmide recombiné",
+          "misconceptionTag": "bio.gen.antibiotique-tue-transformees"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les colibacilles naturels sont sensibles à la streptomycine : ceux qui n'ont pas capté de plasmide meurent. Seuls survivent ceux qui ont capté le plasmide recombiné, porteur du gène de résistance : l'antibiotique sert à sélectionner les bactéries transformées.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un colibacille se divise toutes les 20 minutes. On part de 5 bactéries. Combien y en a-t-il après 2 heures ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60",
+          "misconceptionTag": "bio.gen.exponentielle-lineaire"
+        },
+        {
+          "id": "b",
+          "text": "160"
+        },
+        {
+          "id": "c",
+          "text": "320"
+        },
+        {
+          "id": "d",
+          "text": "640"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Deux heures valent 120 minutes, soit 6 divisions de 20 minutes. Chaque division double le nombre de bactéries : 2⁶ = 64 fois plus. Avec 5 bactéries au départ, on obtient 5 × 64 = 320. Le nombre 160 compte une division de moins, 640 une de plus, et 60 multiplie par 2 × 6 = 12 au lieu de 2⁶ = 64.",
+      "difficulty": 2
+    }
+  ]
+}

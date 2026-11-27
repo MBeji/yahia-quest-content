@@ -1,0 +1,144 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le laboratoire du biologiste moléculaire",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Un chercheur cherche un gène dans deux échantillons d'ADN, A et B, avec une sonde radioactive complémentaire du gène (données d'illustration). T+ est le témoin positif, T− le témoin négatif.\n<svg viewBox=\"0 0 380 250\">\n<title>Gel avec quatre pistes à gauche et autoradiographie à droite</title>\n<g font-size=\"12\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\">\n<text x=\"44\" y=\"32\">T+</text>\n<text x=\"84\" y=\"32\">A</text>\n<text x=\"124\" y=\"32\">B</text>\n<text x=\"164\" y=\"32\">T−</text>\n<text x=\"224\" y=\"32\">T+</text>\n<text x=\"264\" y=\"32\">A</text>\n<text x=\"304\" y=\"32\">B</text>\n<text x=\"344\" y=\"32\">T−</text>\n</g>\n<rect x=\"24\" y=\"40\" width=\"160\" height=\"170\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<g fill=\"#94a3b8\"><rect x=\"34\" y=\"40\" width=\"20\" height=\"6\"/><rect x=\"74\" y=\"40\" width=\"20\" height=\"6\"/><rect x=\"114\" y=\"40\" width=\"20\" height=\"6\"/><rect x=\"154\" y=\"40\" width=\"20\" height=\"6\"/></g>\n<g fill=\"#475569\"><rect x=\"32\" y=\"70\" width=\"24\" height=\"5\"/><rect x=\"32\" y=\"110\" width=\"24\" height=\"5\"/><rect x=\"32\" y=\"150\" width=\"24\" height=\"5\"/><rect x=\"72\" y=\"70\" width=\"24\" height=\"5\"/><rect x=\"72\" y=\"100\" width=\"24\" height=\"5\"/><rect x=\"72\" y=\"110\" width=\"24\" height=\"5\"/><rect x=\"72\" y=\"150\" width=\"24\" height=\"5\"/><rect x=\"112\" y=\"80\" width=\"24\" height=\"5\"/><rect x=\"112\" y=\"110\" width=\"24\" height=\"5\"/><rect x=\"112\" y=\"140\" width=\"24\" height=\"5\"/><rect x=\"152\" y=\"90\" width=\"24\" height=\"5\"/><rect x=\"152\" y=\"125\" width=\"24\" height=\"5\"/><rect x=\"152\" y=\"155\" width=\"24\" height=\"5\"/></g>\n<rect x=\"204\" y=\"40\" width=\"160\" height=\"170\" fill=\"#0f172a\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<g fill=\"#fde047\"><ellipse cx=\"224\" cy=\"112.5\" rx=\"12\" ry=\"4\"/><ellipse cx=\"264\" cy=\"112.5\" rx=\"12\" ry=\"4\"/></g>\n<g font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"104\" y=\"230\">Après électrophorèse</text><text x=\"284\" y=\"230\">Autoradiographie</text></g>\n</svg>\nQuelle conclusion est valide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le témoin positif est invalide, car toutes les bandes du gel n'ont pas de signal",
+          "misconceptionTag": "bio.gen.sonde-fixee-partout"
+        },
+        {
+          "id": "b",
+          "text": "A contient le gène ; B n'en contient pas, malgré une bande à la même hauteur"
+        },
+        {
+          "id": "c",
+          "text": "Ni A ni B ne contiennent le gène, car le témoin négatif ne donne aucun signal"
+        },
+        {
+          "id": "d",
+          "text": "A et B contiennent le gène, car chacun a une bande à la même hauteur que le témoin positif",
+          "misconceptionTag": "bio.gen.sonde-fixee-partout"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les témoins sont valides : le témoin positif donne un signal et le témoin négatif aucun. A donne un signal à la hauteur de celui du témoin positif : il contient le gène. B n'en donne pas : sa bande de même taille ne porte pas la séquence complémentaire de la sonde. La hauteur d'une bande du gel ne suffit pas, c'est le signal de l'autoradiographie qui compte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une bactérie fabrique l'hormone et l'exporte vers l'espace entre sa membrane et sa coque. Les trois dessins la montrent à trois moments d'une extraction par choc osmotique, présentés dans le désordre. Les points rouges sont l'hormone, le trait épais pointillé est la coque, le trait vert la membrane cytoplasmique.\n<svg viewBox=\"0 0 340 150\">\n<title>Trois bactéries X, Y et Z à trois moments d'un choc osmotique</title>\n<ellipse cx=\"57\" cy=\"65\" rx=\"46\" ry=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-dasharray=\"10 5\"/><ellipse cx=\"57\" cy=\"65\" rx=\"42\" ry=\"26\" fill=\"#e0f2fe\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><g fill=\"#dc2626\" stroke=\"#7f1d1d\" stroke-width=\"1\"><circle cx=\"8\" cy=\"40\" r=\"3.5\"/><circle cx=\"106\" cy=\"36\" r=\"3.5\"/><circle cx=\"104\" cy=\"96\" r=\"3.5\"/><circle cx=\"57\" cy=\"108\" r=\"3.5\"/></g>\n<ellipse cx=\"170\" cy=\"65\" rx=\"46\" ry=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-dasharray=\"10 5\"/><ellipse cx=\"170\" cy=\"65\" rx=\"36\" ry=\"21\" fill=\"#e0f2fe\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><g fill=\"#dc2626\" stroke=\"#7f1d1d\" stroke-width=\"1\"><circle cx=\"129\" cy=\"65\" r=\"3.5\"/><circle cx=\"211\" cy=\"65\" r=\"3.5\"/><circle cx=\"170\" cy=\"39.5\" r=\"3.5\"/><circle cx=\"170\" cy=\"90.5\" r=\"3.5\"/></g>\n<ellipse cx=\"283\" cy=\"65\" rx=\"46\" ry=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-dasharray=\"10 5\"/><ellipse cx=\"283\" cy=\"65\" rx=\"26\" ry=\"14\" fill=\"#e0f2fe\" stroke=\"#0f6e56\" stroke-width=\"2.5\"/><g fill=\"#dc2626\" stroke=\"#7f1d1d\" stroke-width=\"1\"><circle cx=\"247\" cy=\"65\" r=\"3.5\"/><circle cx=\"319\" cy=\"65\" r=\"3.5\"/><circle cx=\"283\" cy=\"42\" r=\"3.5\"/><circle cx=\"283\" cy=\"90\" r=\"3.5\"/></g>\n<g font-size=\"16\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"57\" y=\"138\">X</text><text x=\"170\" y=\"138\">Y</text><text x=\"283\" y=\"138\">Z</text></g>\n</svg>\nDans quel ordre ces états se succèdent-ils ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Y, puis Z, puis X"
+        },
+        {
+          "id": "b",
+          "text": "X, puis Z, puis Y"
+        },
+        {
+          "id": "c",
+          "text": "Y, puis X, puis Z",
+          "misconceptionTag": "bio.gen.choc-osmotique-inverse"
+        },
+        {
+          "id": "d",
+          "text": "Z, puis Y, puis X"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Au départ, l'hormone est déjà entre la membrane et la coque, dans un espace étroit (Y). En milieu hypertonique, la bactérie perd de l'eau : la membrane se rétracte et agrandit cet espace (Z). En milieu hypotonique, la bactérie reprend brutalement de l'eau et gonfle : le contenu de cet espace, hormone comprise, est libéré à travers la coque (X). La plasmolyse précède donc la turgescence.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans un champ, des tomates ont reçu le gène de résistance à l'herbicide BASTA ; les mauvaises herbes qui poussent entre elles ne l'ont pas reçu. On pulvérise BASTA sur tout le champ. Que peut-on prévoir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les deux survivent, car l'enzyme des tomates protège aussi les plantes voisines"
+        },
+        {
+          "id": "b",
+          "text": "Les tomates survivent ; les mauvaises herbes meurent, faute d'enzyme qui dégrade l'herbicide"
+        },
+        {
+          "id": "c",
+          "text": "Les deux meurent, car l'herbicide agit sur toute plante, qu'elle ait reçu le gène ou non"
+        },
+        {
+          "id": "d",
+          "text": "Les deux survivent, car les mauvaises herbes captent le gène des tomates dès la pulvérisation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La tomate qui a reçu le gène fabrique l'enzyme qui dégrade l'herbicide : elle survit. La mauvaise herbe n'a pas ce gène, donc pas cette enzyme : l'herbicide la tue. L'enzyme est fabriquée dans les cellules de la tomate et n'y protège qu'elle. Le passage du gène à de mauvaises plantes est un risque évoqué, pas un effet immédiat de la pulvérisation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Document (données d'illustration, nombre de colonies sur milieu nutritif seul, puis sur milieu avec streptomycine). Suspension 1, colibacilles seuls : 200 et 0. Suspension 2, colibacilles et plasmides recombinés portant un gène de résistance : 190 et 6. Suspension 3, colibacilles et plasmides d'origine, sans gène de résistance : 195 et 0. Que montre la comparaison des suspensions 2 et 3 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tout plasmide capté, même sans gène ajouté, rend la bactérie résistante à la streptomycine"
+        },
+        {
+          "id": "b",
+          "text": "La streptomycine détruit les bactéries qui ont reçu le plasmide recombiné",
+          "misconceptionTag": "bio.gen.antibiotique-tue-transformees"
+        },
+        {
+          "id": "c",
+          "text": "La résistance vient de n'importe quel gène étranger porté par un plasmide"
+        },
+        {
+          "id": "d",
+          "text": "La résistance vient du gène du plasmide recombiné, pas d'un plasmide quelconque"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Dans la suspension 3, même si certaines bactéries ont capté un plasmide d'origine, aucune ne résiste à la streptomycine : un plasmide seul ne rend pas résistant. Dans la suspension 2, 6 colonies survivent : elles portent le gène de résistance du plasmide recombiné, donc elles sont transformées. C'est ce gène précis qui donne la résistance : rien ne montre qu'un autre gène étranger en ferait autant. L'antibiotique ne détruit pas ces bactéries, il élimine celles qui n'ont pas le gène.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un clone de colibacilles issu d'une seule bactérie se multiplie dans des conditions idéales, avec une division toutes les 20 minutes. On donne 2¹⁰ = 1 024. Au bout de combien d'heures le clone dépasse-t-il un milliard (10⁹) de bactéries ?",
+      "answerKey": {
+        "value": 10,
+        "unit": "h"
+      },
+      "explanation": "Il faut 2ⁿ > 10⁹. Comme 2¹⁰ = 1 024, 2³⁰ = 1 024³ ≈ 1,07 × 10⁹ dépasse le milliard, alors que 2²⁹ ≈ 5,4 × 10⁸ ne le dépasse pas : il faut 30 divisions. À 20 minutes par division, 30 × 20 = 600 minutes, soit 10 heures.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pour obtenir une copie du gène de l'hormone de croissance par la voie de l'ARNm, on prélève l'ARNm dans des cellules de l'hypophyse. Pourquoi pas dans des cellules du foie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La transcriptase reverse ne peut agir que sur l'ARNm de l'hypophyse"
+        },
+        {
+          "id": "b",
+          "text": "L'ARNm du foie code l'hormone sous une forme inactive"
+        },
+        {
+          "id": "c",
+          "text": "Le foie ne fabrique pas cette hormone : il n'en contient pas l'ARNm"
+        },
+        {
+          "id": "d",
+          "text": "L'ADN des cellules du foie ne contient pas le gène de l'hormone de croissance"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les cellules du foie et de l'hypophyse ont les mêmes gènes, y compris celui de l'hormone de croissance. Mais l'ARNm d'une protéine n'existe que dans les cellules qui l'expriment : le foie ne fabrique pas cette hormone, donc n'en contient pas l'ARNm, alors que l'hypophyse en contient. La transcriptase reverse, elle, agit sur tout ARNm.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du ribosome",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une personne atteinte de phénylcétonurie n'est pas albinos. Quelle explication est correcte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une seule enzyme est en cause dans les deux maladies, mais elle est plus ou moins active selon les cas",
+          "misconceptionTag": "bio.expr.phenylcetonurie-egal-albinisme"
+        },
+        {
+          "id": "b",
+          "text": "Le phénotype albinos n'apparaît que si la phénylalanine est absente de l'alimentation de la personne"
+        },
+        {
+          "id": "c",
+          "text": "Deux enzymes différentes, E1 et E2, sont en cause, sous le contrôle de deux informations génétiques"
+        },
+        {
+          "id": "d",
+          "text": "La phénylcétonurie touche une protéine de structure alors que l'albinisme touche une enzyme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La phénylcétonurie correspond à l'absence de E1, la phénylalanine hydroxylase, et l'albinisme à l'absence de E2, la tyrosinase. Ce sont deux enzymes distinctes, commandées par deux informations génétiques : la panne de l'une n'entraîne pas celle de l'autre. La phénylalanine hydroxylase est elle-même une enzyme, et l'alimentation n'est pas ce qui décide du phénotype albinos.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "La chaîne B de l'insuline humaine compte 30 acides aminés. Combien de bases doit comporter au minimum la portion de brin transcrit qui code ces 30 acides aminés (codon stop non compté) ?",
+      "answerKey": {
+        "value": 90,
+        "unit": "bases"
+      },
+      "explanation": "Un acide aminé est désigné par un codon de 3 bases, donc par un triplet de 3 bases sur le brin transcrit : 30 × 3 = 90 bases au minimum, auxquelles s'ajouteraient 3 bases pour le codon stop.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle conclusion ce tableau (données d'illustration) permet-il de tirer ?\n<svg viewBox=\"0 0 468 202\">\n<title>Synthèse protéique in vitro : quatre tubes, avec ou sans ARNt ou ATP, et ARNm A ou B</title>\n<rect x=\"1\" y=\"1\" width=\"46\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Tube</text>\n<rect x=\"47\" y=\"1\" width=\"290\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"192.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Contenu</text>\n<rect x=\"337\" y=\"1\" width=\"130\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Protéine radioactive</text>\n<rect x=\"1\" y=\"41\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">1</text>\n<rect x=\"47\" y=\"41\" width=\"290\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"192.0\" y=\"59.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">ARNm A, ribosomes, ARNt, enzymes, ATP,</text>\n<text x=\"192.0\" y=\"71.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">acides aminés radioactifs</text>\n<rect x=\"337\" y=\"41\" width=\"130\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">oui (protéine A)</text>\n<rect x=\"1\" y=\"81\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">2</text>\n<rect x=\"47\" y=\"81\" width=\"290\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"192.0\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">Comme le tube 1, sans les ARNt</text>\n<rect x=\"337\" y=\"81\" width=\"130\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">non</text>\n<rect x=\"1\" y=\"121\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"145.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">3</text>\n<rect x=\"47\" y=\"121\" width=\"290\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"192.0\" y=\"145.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">Comme le tube 1, sans l'ATP</text>\n<rect x=\"337\" y=\"121\" width=\"130\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"145.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">non</text>\n<rect x=\"1\" y=\"161\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"185.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">4</text>\n<rect x=\"47\" y=\"161\" width=\"290\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"192.0\" y=\"179.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">Comme le tube 1, mais avec l'ARNm B</text>\n<text x=\"192.0\" y=\"191.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">à la place de l'ARNm A</text>\n<rect x=\"337\" y=\"161\" width=\"130\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"185.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">oui (protéine B)</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ARNt et l'ATP sont chacun nécessaires ; la protéine fabriquée dépend de l'ARNm"
+        },
+        {
+          "id": "b",
+          "text": "L'ARNt et l'ATP suffisent à eux deux pour fabriquer n'importe quelle protéine",
+          "misconceptionTag": "bio.expr.acteurs-necessaires-egal-suffisants"
+        },
+        {
+          "id": "c",
+          "text": "L'ARNt détermine la protéine fabriquée, l'ATP n'étant qu'une source d'énergie"
+        },
+        {
+          "id": "d",
+          "text": "L'ATP est nécessaire, mais l'ARNt n'intervient pas, puisque l'ARNm porte l'information"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Retirer les ARNt (tube 2) ou l'ATP (tube 3) arrête la synthèse : chacun est nécessaire. Dans le tube 4, seul l'ARNm change et la protéine change avec lui : c'est l'ARNm qui détermine la protéine. Être nécessaire ne veut pas dire suffire, car les autres acteurs du tube 1 restent indispensables.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Quel polypeptide est synthétisé à partir de l'ARNm AUGCUUGGCAAAGUUUAAGCC ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cys–Leu–Ala–Lys–Phe–Lys",
+          "misconceptionTag": "bio.expr.lecture-triplets-decalee"
+        },
+        {
+          "id": "b",
+          "text": "Leu–Gly–Lys–Val",
+          "misconceptionTag": "bio.expr.methionine-initiale-oubliee"
+        },
+        {
+          "id": "c",
+          "text": "Met–Leu–Gly–Lys–Val"
+        },
+        {
+          "id": "d",
+          "text": "Met–Leu–Gly–Lys–Val–Ala",
+          "misconceptionTag": "bio.expr.traduction-continue-apres-stop"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "On découpe à partir de AUG : AUG CUU GGC AAA GUU UAA GCC. Les codons donnent Met, Leu, Gly, Lys, Val, puis UAA est un codon stop : la traduction s'arrête et GCC n'est pas traduit. Oublier la méthionine du codon d'initiation, décaler la lecture d'une base ou continuer après le stop donnent les autres polypeptides.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Des œufs de grenouille, placés dans un milieu riche en acides aminés radioactifs, reçoivent trois traitements (données d'illustration). Que montre la comparaison des lots 1 et 2 ?\n<svg viewBox=\"0 0 488 162\">\n<title>Trois lots d'œufs de grenouille dans un milieu riche en acides aminés radioactifs</title>\n<rect x=\"1\" y=\"1\" width=\"46\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Lot</text>\n<rect x=\"47\" y=\"1\" width=\"270\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"182.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Injection</text>\n<rect x=\"317\" y=\"1\" width=\"170\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"25.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Hémoglobine radioactive</text>\n<rect x=\"1\" y=\"41\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">1</text>\n<rect x=\"47\" y=\"41\" width=\"270\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"182.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">ARNm d'érythroblastes</text>\n<rect x=\"317\" y=\"41\" width=\"170\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">présente</text>\n<rect x=\"1\" y=\"81\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">2</text>\n<rect x=\"47\" y=\"81\" width=\"270\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"182.0\" y=\"99.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">Le même ARNm, traité avant injection</text>\n<text x=\"182.0\" y=\"111.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">par une enzyme qui détruit l'ARN</text>\n<rect x=\"317\" y=\"81\" width=\"170\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"105.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">absente</text>\n<rect x=\"1\" y=\"121\" width=\"46\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"24.0\" y=\"145.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">3</text>\n<rect x=\"47\" y=\"121\" width=\"270\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"182.0\" y=\"145.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">Aucune injection</text>\n<rect x=\"317\" y=\"121\" width=\"170\" height=\"40\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"402.0\" y=\"145.0\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">absente</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que c'est bien l'ARN, et non une autre substance, qui oriente la synthèse de l'hémoglobine"
+        },
+        {
+          "id": "b",
+          "text": "Que l'enzyme ajoutée apporte elle-même l'information qui détermine l'hémoglobine fabriquée"
+        },
+        {
+          "id": "c",
+          "text": "Que l'hémoglobine radioactive, une fois synthétisée, est détruite ensuite par l'enzyme ajoutée"
+        },
+        {
+          "id": "d",
+          "text": "Que les ribosomes de l'œuf sont détruits par l'enzyme, ce qui bloque toute synthèse de protéine"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ARNm injecté provoque la synthèse d'hémoglobine (lot 1) ; une fois détruit par l'enzyme avant l'injection, il ne la provoque plus (lot 2), exactement comme en l'absence d'injection (lot 3). C'est donc l'ARN qui porte l'information. L'enzyme n'est pas injectée avec une information, elle agit sur l'ARNm avant l'injection, et rien n'indique que les ribosomes ou l'hémoglobine soient touchés.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un ribosome traduit l'ARNm AUG UGC GAU UAA. Quels sont, dans l'ordre d'arrivée, les anticodons des ARNt qui se fixent sur le ribosome ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AUG, UGC, GAU",
+          "misconceptionTag": "bio.expr.anticodon-egal-codon"
+        },
+        {
+          "id": "b",
+          "text": "CUA, ACG, UAC"
+        },
+        {
+          "id": "c",
+          "text": "UAC, ACG, CUA, AUU",
+          "misconceptionTag": "bio.expr.codon-stop-acide-amine"
+        },
+        {
+          "id": "d",
+          "text": "UAC, ACG, CUA"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque anticodon est complémentaire du codon qu'il lit : AUG est lu par UAC, UGC par ACG, GAU par CUA, dans l'ordre de lecture de l'ARNm. UAA est un codon stop : aucun ARNt ne vient s'y fixer, la traduction s'arrête. Recopier les codons ou lire l'ARNm à l'envers donnent les autres propositions.",
+      "difficulty": 3
+    }
+  ]
+}

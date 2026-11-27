@@ -1,0 +1,160 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien du génotype",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Formules chromosomiques (2n) : Homme 46, olivier 46, chien 78, cheval 64, drosophile 8, maïs 20. Quelle conclusion ces données permettent-elles ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plus une espèce est évoluée, plus sa formule chromosomique est élevée",
+          "misconceptionTag": "bio.gen.2n-croit-avec-complexite"
+        },
+        {
+          "id": "b",
+          "text": "Des êtres vivants de même formule chromosomique appartiennent forcément à la même espèce",
+          "misconceptionTag": "bio.gen.meme-2n-meme-espece"
+        },
+        {
+          "id": "c",
+          "text": "La formule chromosomique d'une espèce varie d'un individu à l'autre"
+        },
+        {
+          "id": "d",
+          "text": "Deux espèces éloignées peuvent partager la même formule chromosomique"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'Homme et l'olivier ont tous deux 2n = 46 alors que ce sont des espèces très éloignées : une même formule ne définit pas une espèce. Le chien (78) en a plus que l'Homme (46) : le nombre de chromosomes ne mesure pas la complexité. Au sein d'une espèce, la formule est la même pour tous les individus.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un ovule de maïs contient 10 chromosomes. Combien de chromosomes contient chaque cellule du corps de la plante ?",
+      "answerKey": {
+        "value": 20,
+        "unit": "chromosomes"
+      },
+      "explanation": "Un ovule est un gamète : ses 10 chromosomes sont n, un par paire. Une cellule du corps est diploïde : 2n = 2 × 10 = 20 chromosomes, soit 10 paires.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour le gène de l'hémoglobine, le génotype d'une personne s'écrit A//S. Que représentent A et S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deux allèles du même gène, situés au même locus des deux homologues"
+        },
+        {
+          "id": "b",
+          "text": "Deux gènes différents, situés chacun à un locus différent du chromosome",
+          "misconceptionTag": "bio.gen.gene-allele-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Deux phénotypes : l'un normal, l'autre malade, présents chez la personne"
+        },
+        {
+          "id": "d",
+          "text": "Le génome de la personne, c'est-à-dire l'ensemble de tous ses gènes",
+          "misconceptionTag": "bio.gen.genome-genotype-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "A et S sont deux allèles, c'est-à-dire deux versions du même gène de l'hémoglobine : ils occupent le même locus sur les deux chromosomes homologues, et leur combinaison A//S est le génotype. Le gène est le même ; le génome, lui, est l'ensemble de tous les gènes de la cellule, et l'aspect visible est le phénotype.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une belle de nuit rouge est croisée avec une belle de nuit blanche : toutes les fleurs obtenues sont roses. R est l'allèle « rouge » et B l'allèle « blanc ». Quels sont les génotypes des deux parents ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rouge : R//R ; blanche : B//B, chacune homozygote"
+        },
+        {
+          "id": "b",
+          "text": "Rouge : R//B ; blanche : R//B, comme leurs descendantes roses",
+          "misconceptionTag": "bio.gen.homo-hetero-inverses"
+        },
+        {
+          "id": "c",
+          "text": "Rouge : R ; blanche : B, un seul allèle par fleur",
+          "misconceptionTag": "bio.gen.un-seul-allele-par-individu"
+        },
+        {
+          "id": "d",
+          "text": "Rouge : R//R ; blanche : R//B, car la blanche cache un allèle rouge",
+          "misconceptionTag": "bio.gen.homo-hetero-inverses"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les roses sont R//B : chaque descendante a reçu un gamète de chaque parent, donc un allèle R du parent rouge et un allèle B du parent blanc. Chaque parent ne fabrique qu'une sorte de gamète : il est homozygote, R//R pour le rouge et B//B pour le blanc. Un diploïde porte toujours deux allèles pour ce gène, jamais un seul.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un fraisier à feuilles simples se maintient par graines pendant plusieurs générations. On compare son ADN à celui d'un fraisier ordinaire. Quel résultat attend-on pour le gène concerné ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une séquence identique, car le caractère vient seulement du milieu",
+          "misconceptionTag": "bio.gen.variation-pheno-sans-info-genetique"
+        },
+        {
+          "id": "b",
+          "text": "Un nombre de chromosomes différent, car c'est une autre espèce",
+          "misconceptionTag": "bio.gen.lignee-egale-espece"
+        },
+        {
+          "id": "c",
+          "text": "Une séquence de bases différente, car ce caractère est héréditaire"
+        },
+        {
+          "id": "d",
+          "text": "Une séquence identique, car deux plants d'une même espèce ont le même ADN",
+          "misconceptionTag": "bio.gen.caryotype-identique-meme-info"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un caractère nouveau qui passe aux descendants est héréditaire : il traduit une variation de l'information génétique, donc de la séquence de bases du gène concerné. Le fraisier reste de la même espèce, avec la même formule chromosomique : seul le gène a varié.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Document : chez la drosophile, 2n = 8 ; on connaît des lignées à yeux blancs, à corps noir et la lignée sauvage. Quelles affirmations sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chaque ovule de drosophile contient un chromosome X et 3 autres chromosomes"
+        },
+        {
+          "id": "b",
+          "text": "La lignée à corps noir et la lignée à yeux blancs appartiennent à la même espèce"
+        },
+        {
+          "id": "c",
+          "text": "Les mâles et les femelles ont des formules chromosomiques différentes"
+        },
+        {
+          "id": "d",
+          "text": "La lignée à yeux blancs a un nombre de chromosomes différent de la lignée sauvage"
+        },
+        {
+          "id": "e",
+          "text": "Les cellules œufs de drosophile contiennent 4 chromosomes"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b"
+        ]
+      },
+      "explanation": "Un gamète contient n = 8 ÷ 2 = 4 chromosomes, un par paire : un ovule porte donc un X et 3 autres chromosomes. Deux lignées d'une même espèce (corps noir, yeux blancs) restent de la même espèce. En revanche, mâles et femelles ont la même formule 2n = 8, toutes les lignées d'une espèce aussi, et la cellule œuf, à 4 + 4, en contient 8.",
+      "difficulty": 3
+    }
+  ]
+}

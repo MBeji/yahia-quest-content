@@ -1,0 +1,140 @@
+{
+  "title": "Test de compréhension ⭐ : La régulation de la glycémie",
+  "questions": [
+    {
+      "prompt": "Une personne a une glycémie de 1,45 g/l trente minutes après un repas riche en sucres, puis de 0,95 g/l trois heures plus tard (valeurs d'illustration). Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est un diabète, car la glycémie a dépassé 1,10 g/l après le repas",
+          "misconceptionTag": "bio.glyc.hyper-egale-diabete"
+        },
+        {
+          "id": "b",
+          "text": "Il s'agit d'une hyperglycémie passagère : la régulation a ramené la glycémie vers 1 g/l"
+        },
+        {
+          "id": "c",
+          "text": "Une constante biologique ne varie jamais : la hausse à 1,45 g/l prouve que la régulation a échoué",
+          "misconceptionTag": "bio.mi.constante-valeur-fixe"
+        },
+        {
+          "id": "d",
+          "text": "Le retour à 0,95 g/l est une hypoglycémie, puisque cette valeur est inférieure à 1 g/l",
+          "misconceptionTag": "bio.mi.hyper-hypo-inverses"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Après un repas riche en sucres, la glycémie peut dépasser un moment la limite de 1,10 g/l : c'est une hyperglycémie passagère. Trois heures plus tard elle est revenue vers 1 g/l, ce qui montre que la régulation fonctionne. Le diabète suppose une hyperglycémie permanente, et l'hypoglycémie commence sous 0,70 g/l.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Trente minutes après un repas, la glycémie est de 2,4 g/l dans la veine porte-hépatique et de 1,2 g/l dans les veines sus-hépatiques (valeurs d'illustration). Que fait le foie ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il laisse passer le glucose sans le modifier, comme un simple tuyau",
+          "misconceptionTag": "bio.glyc.glucose-direct-aux-organes"
+        },
+        {
+          "id": "b",
+          "text": "Il ajoute du glucose au sang qui le traverse pour le distribuer",
+          "misconceptionTag": "bio.glyc.entree-sortie-foie-inversees"
+        },
+        {
+          "id": "c",
+          "text": "Il retient du glucose et le met en réserve sous forme de glycogène"
+        },
+        {
+          "id": "d",
+          "text": "Il transforme le glucose du sang en insuline pour le pancréas",
+          "misconceptionTag": "bio.glyc.organe-mal-attribue"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le sang entre dans le foie par la veine porte-hépatique et en sort par la veine sus-hépatique. Il est moins riche en glucose à la sortie (1,2 g/l) qu'à l'entrée (2,4 g/l) : le foie a retenu du glucose et l'a mis en réserve sous forme de glycogène. Le foie ne fabrique pas d'insuline.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Dans le pancréas, les îlots de Langerhans :",
+      "options": [
+        {
+          "id": "a",
+          "text": "déversent leurs hormones directement dans le sang"
+        },
+        {
+          "id": "b",
+          "text": "fabriquent la bile qui est déversée dans le duodénum",
+          "misconceptionTag": "bio.glyc.organe-mal-attribue"
+        },
+        {
+          "id": "c",
+          "text": "déversent le suc pancréatique dans le duodénum",
+          "misconceptionTag": "bio.glyc.pancreas-seulement-digestif"
+        },
+        {
+          "id": "d",
+          "text": "stockent le glucose du sang sous forme de glycogène",
+          "misconceptionTag": "bio.glyc.organe-mal-attribue"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les îlots de Langerhans forment la partie endocrine du pancréas : ils versent leurs hormones dans les capillaires sanguins. Le suc pancréatique est fabriqué par les acini et part dans le duodénum ; la bile est fabriquée par le foie ; le glycogène est stocké surtout dans le foie et les muscles.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle proposition sur les hormones du pancréas est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'insuline, sécrétée par les cellules β, fait baisser la glycémie ; le glucagon, sécrété par les cellules α, la fait monter"
+        },
+        {
+          "id": "b",
+          "text": "L'insuline, sécrétée par les cellules α, fait baisser la glycémie ; le glucagon, sécrété par les cellules β, la fait monter",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "c",
+          "text": "L'insuline, sécrétée par les cellules β, fait monter la glycémie ; le glucagon, sécrété par les cellules α, la fait baisser",
+          "misconceptionTag": "bio.glyc.effet-cible-inverse"
+        },
+        {
+          "id": "d",
+          "text": "L'insuline, sécrétée par les cellules α, fait monter la glycémie ; le glucagon, sécrété par les cellules β, la fait baisser",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les cellules β des îlots sécrètent l'insuline, seule hormone hypoglycémiante ; les cellules α sécrètent le glucagon, hyperglycémiant. Les deux hormones ont des effets opposés : on dit qu'elles sont antagonistes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un adolescent mince a une glycémie trop élevée en permanence ; ses cellules β sont très peu nombreuses. De quel type de diabète s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Type II : l'insuline est sécrétée, mais elle n'agit plus sur les cellules cibles du corps",
+          "misconceptionTag": "bio.glyc.types-diabete-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Type I : peu ou pas d'insuline est produite, d'où une dépendance à l'insuline"
+        },
+        {
+          "id": "c",
+          "text": "Type II, car cette forme apparaît surtout chez les enfants et les jeunes adultes minces",
+          "misconceptionTag": "bio.glyc.types-diabete-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Type I : l'insuline est sécrétée en excès, mais ses récepteurs sont modifiés",
+          "misconceptionTag": "bio.glyc.types-diabete-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Des cellules β peu nombreuses signifient peu ou pas d'insuline : c'est le diabète de type I, insulino-dépendant, qui touche les enfants et les jeunes adultes sans surpoids. Le type II, lui, vient d'une insulinorésistance : l'insuline est sécrétée mais ne fait plus effet.",
+      "difficulty": 2
+    }
+  ]
+}

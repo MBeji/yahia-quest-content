@@ -1,0 +1,163 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des plasmides",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Quelle affirmation décrit correctement la voie de l'ADN chromosomique pour obtenir un gène, par comparaison avec la voie de l'ARNm ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle fragmente l'ADN avec des enzymes de restriction, puis repère le bon fragment avec une sonde"
+        },
+        {
+          "id": "b",
+          "text": "Elle copie d'abord l'ADN en ARNm avec la transcriptase reverse, puis repère le gène avec une sonde radioactive",
+          "misconceptionTag": "bio.gen.transcriptase-sens-inverse"
+        },
+        {
+          "id": "c",
+          "text": "Elle part de l'ARNm des cellules qui fabriquent la protéine, qu'elle copie en ADNc grâce à une enzyme",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        },
+        {
+          "id": "d",
+          "text": "Elle repère le gène avec une sonde radioactive sans fragmenter l'ADN, car le gène y est déjà isolé",
+          "misconceptionTag": "bio.gen.sonde-fixee-partout"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans la voie de l'ADN, on extrait l'ADN, on le coupe en fragments avec des enzymes de restriction, puis la sonde radioactive repère le fragment qui porte le gène. Copier un ARNm en ADNc avec la transcriptase reverse est l'autre voie, et la transcriptase reverse ne fabrique pas d'ARNm à partir de l'ADN. L'ADN extrait contient tous les gènes mêlés : il faut le fragmenter avant de repérer.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans des conditions idéales, un clone issu d'une seule bactérie compte 4,7 × 10²¹ bactéries au bout d'une journée. Une bactérie pèse 10⁻¹² g. Quelle est la masse du clone, en tonnes, arrondie à la centaine ? (1 t = 10⁶ g)",
+      "answerKey": {
+        "value": 4700,
+        "tolerance": 50,
+        "unit": "t"
+      },
+      "explanation": "La masse en grammes est 4,7 × 10²¹ × 10⁻¹² = 4,7 × 10⁹ g. Comme 1 t = 10⁶ g, on obtient 4,7 × 10⁹ ÷ 10⁶ = 4,7 × 10³ t, soit 4700 tonnes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un chercheur ouvre un plasmide avec l'enzyme de restriction E1, mais coupe le gène à greffer avec une autre enzyme, E2, qui laisse des extrémités différentes de celles de E1. Que prévoir quand il ajoute de l'ADN ligase ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le gène ne s'accroche pas, car ses extrémités ne sont pas complémentaires"
+        },
+        {
+          "id": "b",
+          "text": "La ligase soude quand même le gène, car elle colle n'importe quelles extrémités",
+          "misconceptionTag": "bio.gen.enzymes-differentes-restriction"
+        },
+        {
+          "id": "c",
+          "text": "Le gène s'insère, car toutes les enzymes de restriction laissent les mêmes extrémités",
+          "misconceptionTag": "bio.gen.enzymes-differentes-restriction"
+        },
+        {
+          "id": "d",
+          "text": "Le gène s'accroche, mais la ligase ne peut pas le souder au plasmide ouvert"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Chaque enzyme de restriction laisse ses propres extrémités. Ici, celles du gène sont différentes de celles du plasmide, donc non complémentaires : le gène ne se place pas en face et la ligase n'a rien à souder. Il faut la même enzyme pour le gène et le plasmide.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Document (données d'illustration). Boîte 1 : colibacilles mis au contact de plasmides recombinés, milieu avec streptomycine : 3 colonies. Boîte 2 : colibacilles jamais mis au contact de plasmides, milieu avec streptomycine : aucune colonie. Boîte 3 : les mêmes colibacilles de départ, milieu nutritif sans antibiotique : nombreuses colonies. Que montre la boîte 3, comparée à la boîte 2 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La streptomycine n'agit qu'en présence de plasmides : sans plasmide, les bactéries de départ ne meurent pas",
+          "misconceptionTag": "bio.gen.antibiotique-tue-transformees"
+        },
+        {
+          "id": "b",
+          "text": "Les colibacilles de départ sont résistants à l'antibiotique, puisqu'ils forment de nombreuses colonies sans lui"
+        },
+        {
+          "id": "c",
+          "text": "Les colibacilles de départ vivent : la boîte 2 est vide à cause de l'antibiotique"
+        },
+        {
+          "id": "d",
+          "text": "La streptomycine tue aussi les bactéries transformées : seules 3 colonies ont survécu dans la boîte 1",
+          "misconceptionTag": "bio.gen.antibiotique-tue-transformees"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sans antibiotique, les colibacilles de départ se développent : ils sont viables. Leur absence sur le milieu avec streptomycine (boîte 2) est donc due à l'antibiotique, auquel ils sont sensibles. Les 3 colonies de la boîte 1 résistent grâce au gène porté par le plasmide recombiné.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Des colibacilles portent un plasmide recombiné avec le gène de l'hormone et le gène de résistance à la streptomycine, mais sans promoteur devant le gène de l'hormone. Que prévoir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils se développent avec streptomycine et fabriquent l'hormone, car le gène est présent",
+          "misconceptionTag": "bio.gen.gene-sans-signaux"
+        },
+        {
+          "id": "b",
+          "text": "Ils ne se développent pas sur streptomycine, faute de promoteur devant le gène"
+        },
+        {
+          "id": "c",
+          "text": "Ils se développent avec streptomycine, mais ne fabriquent pas l'hormone"
+        },
+        {
+          "id": "d",
+          "text": "Ils fabriquent l'hormone, mais en quantité plus faible, car le promoteur manque",
+          "misconceptionTag": "bio.gen.gene-sans-signaux"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La résistance à la streptomycine ne dépend que du gène marqueur : les bactéries survivent à l'antibiotique. Mais le gène de l'hormone n'a pas de promoteur devant lui, donc sa transcription ne démarre pas et l'hormone n'est pas fabriquée. Survivre à l'antibiotique ne prouve pas que la protéine soit produite.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Pour obtenir un gène par la voie de l'ARNm puis le faire entrer dans des colibacilles, place ces opérations dans l'ordre.",
+      "options": [
+        {
+          "id": "v3",
+          "text": "Compléter l'ADNc en ADNc double brin"
+        },
+        {
+          "id": "v5",
+          "text": "Mélanger les plasmides recombinés aux colibacilles en culture"
+        },
+        {
+          "id": "v1",
+          "text": "Extraire l'ARNm de la protéine des cellules qui la fabriquent"
+        },
+        {
+          "id": "v4",
+          "text": "Insérer l'ADNc dans un plasmide ouvert, avec la ligase"
+        },
+        {
+          "id": "v2",
+          "text": "Copier l'ARNm en ADNc simple brin avec la transcriptase reverse"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "v1",
+          "v2",
+          "v3",
+          "v4",
+          "v5"
+        ]
+      },
+      "explanation": "On part de l'ARNm, qu'on copie en ADNc simple brin puis double brin : c'est le gène à transférer. On ne peut le greffer qu'une fois obtenu, dans un plasmide ouvert et soudé par la ligase. Enfin, on met les plasmides recombinés en présence des colibacilles.",
+      "difficulty": 3
+    }
+  ]
+}
