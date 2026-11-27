@@ -1,0 +1,131 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La transmission d'un couple d'allèles",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Un individu de lignée pure pour un caractère :",
+      "options": [
+        {
+          "id": "a",
+          "text": "A forcément le phénotype dominant, quel que soit le caractère",
+          "misconceptionTag": "bio.gen.pur-egale-dominant"
+        },
+        {
+          "id": "b",
+          "text": "Est un hybride, puisqu'il porte deux allèles pour ce gène",
+          "misconceptionTag": "bio.gen.homo-hetero-inverses"
+        },
+        {
+          "id": "c",
+          "text": "A un génotype homozygote, ses deux allèles étant identiques"
+        },
+        {
+          "id": "d",
+          "text": "Forme deux types de gamètes en proportions égales"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une lignée pure est homozygote : ses deux allèles sont identiques et tous ses gamètes portent le même. Elle peut avoir un phénotype récessif (a//a est aussi pur que A//A), et deux types de gamètes sont formés par un hétérozygote, pas par un homozygote.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour savoir si une souris grise est A//A ou A//a, avec quel partenaire faut-il la croiser ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une souris grise de lignée pure A//A",
+          "misconceptionTag": "bio.gen.testeur-dominant"
+        },
+        {
+          "id": "b",
+          "text": "Une autre souris grise de génotype inconnu"
+        },
+        {
+          "id": "c",
+          "text": "Une souris de la même portée qu'elle"
+        },
+        {
+          "id": "d",
+          "text": "Une souris blanche de lignée pure a//a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Le partenaire doit être récessif : ses gamètes a ne masquent aucun allèle de la souris testée, et ses descendants montrent directement ses gamètes. Avec un testeur gris A//A, une souris A//A comme une souris A//a donneraient des descendants tous gris, sans différence visible.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Sur 1 064 plants de pois d'une F2, 277 ont des tiges courtes. Quel pourcentage cela représente-t-il, arrondi à l'unité ?",
+      "answerKey": {
+        "value": 26,
+        "unit": "%"
+      },
+      "explanation": "277 ÷ 1 064 ≈ 0,260, soit 26 % : un quart environ, comme l'attend la F2 d'un monohybridisme avec dominance (le caractère court est récessif).",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chez la belle de nuit, l'autofécondation d'une plante à fleurs panachées (jaune avec des plages rouges) donne des plantes à fleurs jaunes, des plantes à fleurs rouges et des plantes à fleurs panachées. Quelle interprétation retenir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une plante panachée est homozygote : elle porte deux allèles « panaché »",
+          "misconceptionTag": "bio.gen.intermediaire-un-seul-allele"
+        },
+        {
+          "id": "b",
+          "text": "Une plante panachée est hétérozygote, avec un allèle jaune et un allèle rouge"
+        },
+        {
+          "id": "c",
+          "text": "L'allèle jaune domine l'allèle rouge, puisque des plantes jaunes apparaissent"
+        },
+        {
+          "id": "d",
+          "text": "Les trois phénotypes viennent de trois gènes indépendants"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'autofécondation des panachées redonne du jaune et du rouge : la panachée n'est pas pure, elle est hétérozygote J//R, et ses deux allèles s'expriment ensemble (codominance) ; on attendrait 1/4, 1/2, 1/4. Avec une dominance, il n'y aurait que deux phénotypes, et un seul gène suffit à expliquer les trois.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chez l'Homme (2n = 46), combien d'autosomes contient un ovule ?",
+      "answerKey": {
+        "value": 22,
+        "unit": "autosomes"
+      },
+      "explanation": "Un ovule est haploïde : il contient n = 23 chromosomes, un de chaque paire. Parmi eux, un seul est un chromosome sexuel, X ; les autres sont des autosomes : 23 − 1 = 22.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un agriculteur sème des graines de blé hybride F1 et récolte les graines de la génération suivante. Pourquoi ne les ressème-t-il pas ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ces graines sont stériles, car elles sont issues d'un hybride"
+        },
+        {
+          "id": "b",
+          "text": "Ces graines donnent des plants tous identiques à la F1, donc sans intérêt",
+          "misconceptionTag": "bio.gen.uniformite-f1-f2-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Les plants forment une F2 hétérogène, alors qu'il veut un champ uniforme"
+        },
+        {
+          "id": "d",
+          "text": "Un hybride ne forme qu'un seul type de gamète, donc des graines pauvres"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La F1 est uniforme, mais ses plants sont hétérozygotes et forment deux types de gamètes : leur descendance, la F2, est hétérogène (3/4 – 1/4 pour une dominance). Elle n'est donc plus uniforme, ce qui explique l'achat de semences. Ces graines ne sont pas stériles et la F2 n'est pas uniforme.",
+      "difficulty": 2
+    }
+  ]
+}

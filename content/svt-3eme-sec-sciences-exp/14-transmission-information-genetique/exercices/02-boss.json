@@ -1,0 +1,135 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître de l'échiquier",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un éleveur croise des volailles tachetées entre elles et compte 40 noires, 80 tachetées et 40 blanches. Quelle conclusion tirer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les tachetées sont hétérozygotes et leurs deux allèles sont codominants"
+        },
+        {
+          "id": "b",
+          "text": "Le noir domine le blanc, ce qui explique les 80 volailles tachetées"
+        },
+        {
+          "id": "c",
+          "text": "Les tachetées sont une lignée pure, car les trois phénotypes sont stables",
+          "misconceptionTag": "bio.gen.f1-uniforme-egale-pure"
+        },
+        {
+          "id": "d",
+          "text": "L'hypothèse d'un gène est fausse : on attendrait un tiers de chaque phénotype"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les proportions 40, 80 et 40 sur 160 sont 1/4, 1/2 et 1/4 : c'est la F2 d'un monohybridisme avec codominance, où les tachetées sont A//B. Un noir dominant sur le blanc ne donnerait que deux phénotypes. Les tachetées redonnent des noirs et des blancs : elles ne sont pas de lignée pure. Un tiers de chaque phénotype serait faux, car A//B occupe deux des quatre cases de l'échiquier.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Dans la F2 d'un monohybridisme avec codominance (noir, blanc, tacheté), on compte 90 volailles noires. D'après les proportions théoriques, combien de volailles compte la F2 en tout ?",
+      "answerKey": {
+        "value": 360,
+        "unit": "volailles"
+      },
+      "explanation": "Les noires sont A//A et représentent 1/4 de la F2. Si 90 volailles sont 1/4 du total, la F2 compte 90 × 4 = 360 volailles, dont 180 tachetées et 90 blanches.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quels gamètes, et dans quelles proportions, forme un hybride de génotype A//a ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement des gamètes A//a",
+          "misconceptionTag": "bio.gen.gametes-melanges"
+        },
+        {
+          "id": "b",
+          "text": "La moitié de gamètes A et la moitié de gamètes a"
+        },
+        {
+          "id": "c",
+          "text": "Trois quarts de gamètes A et un quart de gamètes a",
+          "misconceptionTag": "bio.gen.proportions-pheno-geno-confondues"
+        },
+        {
+          "id": "d",
+          "text": "Uniquement des gamètes A, car l'allèle a a disparu",
+          "misconceptionTag": "bio.gen.recessif-disparu-hybride"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À la formation des gamètes, les deux allèles se séparent : chaque gamète n'en reçoit qu'un, intact, et les deux types sont formés à parts égales (2e loi de Mendel). Un gamète A//a serait diploïde, 3/4 – 1/4 sont les proportions de phénotypes de la F2 (non celles des gamètes), et l'allèle a est toujours présent chez l'hybride.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chez la drosophile, 100 descendants d'un même couple comptent 52 mâles et 48 femelles. Comment l'expliquer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'ovule de la mère porte X ou Y, ce qui déplace un peu ce rapport",
+          "misconceptionTag": "bio.gen.mere-determine-le-sexe"
+        },
+        {
+          "id": "b",
+          "text": "L'hypothèse XX/XY est fausse : elle prévoirait exactement 50 et 50",
+          "misconceptionTag": "bio.gen.ecart-theorie-reel-invalide"
+        },
+        {
+          "id": "c",
+          "text": "Le mâle forme un peu plus de spermatozoïdes Y que de spermatozoïdes X"
+        },
+        {
+          "id": "d",
+          "text": "Le mâle forme autant de X que Y ; l'écart vient seulement du hasard"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les ovules portent tous X ; le père forme à parts égales des spermatozoïdes X et Y, d'où 1/2 de mâles et 1/2 de femelles en moyenne. Sur 100 descendants, un écart de quelques unités avec 50 et 50 est dû au hasard et n'invalide pas l'hypothèse. L'ovule ne décide pas du sexe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une souris grise (le gris domine le blanc) est croisée avec une souris blanche de lignée pure. En cinq portées, elle a 21 petits gris et 19 petits blancs. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est A//a : les petits blancs ont reçu un allèle a de leur mère"
+        },
+        {
+          "id": "b",
+          "text": "Elle est A//A : elle est grise, donc de lignée pure",
+          "misconceptionTag": "bio.gen.dominant-toujours-pur"
+        },
+        {
+          "id": "c",
+          "text": "Elle est A//A : les petits gris, plus nombreux, sont majoritaires",
+          "misconceptionTag": "bio.gen.test-cross-resultat-inverse"
+        },
+        {
+          "id": "d",
+          "text": "Elle est A//a, mais seulement si l'on compte exactement 20 gris et 20 blancs",
+          "misconceptionTag": "bio.gen.ecart-theorie-reel-invalide"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Des petits blancs a//a sont nés : chacun a reçu un allèle a de la souris testée, qui est donc hétérozygote A//a, et la moitié de ses gamètes porte a. 21 et 19 sont proches de 20 et 20 : l'écart est dû au hasard. Une descendance de 100 % de petits gris aurait indiqué A//A ; être grise ne prouve pas la pureté.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une F2 de pois compte 2 000 graines, issues de deux lignées pures (lisse dominant sur ridé). Combien de graines lisses portent aussi l'allèle ridé ?",
+      "answerKey": {
+        "value": 1000,
+        "unit": "graines"
+      },
+      "explanation": "La F2 compte 1/4 de L//L, 1/2 de L//r et 1/4 de r//r. Les graines lisses sont L//L ou L//r, soit 3/4 de 2 000 = 1 500 ; parmi elles, celles qui portent l'allèle ridé sont les hétérozygotes L//r, soit 1/2 × 2 000 = 1000.",
+      "difficulty": 3
+    }
+  ]
+}

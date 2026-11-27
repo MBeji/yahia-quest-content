@@ -1,0 +1,168 @@
+{
+  "title": "⭐ Exercice : Premiers relevés sous la surface",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Un même séisme est ressenti très fortement dans une ville et à peine dans une autre. Quelle grandeur change d'un lieu à l'autre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'énergie du séisme"
+        },
+        {
+          "id": "b",
+          "text": "L'intensité du séisme"
+        },
+        {
+          "id": "c",
+          "text": "La magnitude du séisme",
+          "misconceptionTag": "bio.geo.intensite-magnitude"
+        },
+        {
+          "id": "d",
+          "text": "La profondeur du foyer"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'intensité (échelle de Mercalli, à douze degrés) mesure les effets observés : elle change d'un lieu à l'autre. La magnitude (échelle de Richter) est liée à l'énergie libérée et n'a qu'une valeur par séisme ; l'énergie libérée et la profondeur du foyer sont elles aussi uniques pour un séisme.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au séisme d'Arette, les ondes S arrivent à la station C, à 3000 km de l'épicentre, après 10 min 10 s. Quelle est leur vitesse moyenne, en km/s, arrondie au dixième ?",
+      "answerKey": {
+        "value": 4.9,
+        "tolerance": 0.05,
+        "unit": "km/s"
+      },
+      "explanation": "On convertit la durée : 10 min 10 s = 610 s. La vitesse moyenne vaut v = 3000 ÷ 610 ≈ 4,9 km/s, plus faible que celle des ondes P, qui arrivent avant les S.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Qu'est-ce qu'une discontinuité dans le globe terrestre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une couche épaisse où la vitesse des ondes reste constante",
+          "misconceptionTag": "bio.globe.discontinuite-couche"
+        },
+        {
+          "id": "b",
+          "text": "Une cassure du sol d'où partent les ondes d'un séisme"
+        },
+        {
+          "id": "c",
+          "text": "Un point de la surface placé au-dessus du foyer"
+        },
+        {
+          "id": "d",
+          "text": "Une surface où la vitesse des ondes varie brusquement"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une discontinuité est une surface, sans épaisseur, qui sépare deux milieux de nature différente et où la vitesse des ondes varie brusquement. Une couche, comme la croûte ou le manteau, a une épaisseur et se trouve entre deux discontinuités. La cassure d'où partent les ondes est le foyer, et le point au-dessus du foyer est l'épicentre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "D'où vient une partie de la chaleur interne du globe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De la combustion des gaz rejetés par les volcans"
+        },
+        {
+          "id": "b",
+          "text": "De la désintégration d'éléments radioactifs (uranium)"
+        },
+        {
+          "id": "c",
+          "text": "D'un feu central, vestige d'une étoile avortée (Descartes)",
+          "misconceptionTag": "bio.globe.feu-central"
+        },
+        {
+          "id": "d",
+          "text": "De la chaleur du Soleil qui s'infiltre lentement en profondeur"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une partie de la chaleur interne provient de la désintégration d'éléments radioactifs, comme l'uranium, présents dans les couches du globe. L'idée d'un feu central, vestige d'une étoile avortée, est un ancien modèle abandonné. Le Soleil ne réchauffe que la surface, et les gaz volcaniques sont un effet de la chaleur interne, pas sa cause.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquels de ces produits d'une éruption volcanique sont solides ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les bombes"
+        },
+        {
+          "id": "b",
+          "text": "Les scories"
+        },
+        {
+          "id": "c",
+          "text": "Les cendres"
+        },
+        {
+          "id": "d",
+          "text": "Les laves en fusion"
+        },
+        {
+          "id": "e",
+          "text": "La vapeur d'eau"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Les bombes sont des lambeaux de lave projetés qui se solidifient en l'air, les scories des roches légères et les cendres du magma pulvérisé ou des matériaux broyés : ce sont des produits solides. Les laves en fusion sont liquides et la vapeur d'eau est un gaz.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Classer ces enveloppes du globe de la surface vers le centre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Noyau externe"
+        },
+        {
+          "id": "b",
+          "text": "Croûte"
+        },
+        {
+          "id": "c",
+          "text": "Graine"
+        },
+        {
+          "id": "d",
+          "text": "Manteau inférieur"
+        },
+        {
+          "id": "e",
+          "text": "Manteau supérieur"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "b",
+          "e",
+          "d",
+          "a",
+          "c"
+        ]
+      },
+      "explanation": "De la surface vers le centre : la croûte, limitée par le Moho ; le manteau supérieur puis le manteau inférieur, séparés vers 670 km ; le noyau externe liquide, sous la discontinuité de Gutenberg à 2900 km ; enfin la graine solide, sous la discontinuité de Lehmann vers 5100 km.",
+      "difficulty": 2
+    }
+  ]
+}

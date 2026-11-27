@@ -1,0 +1,157 @@
+{
+  "title": "Test de compréhension ⭐ : La transmission de l'information génétique",
+  "questions": [
+    {
+      "prompt": "Un jardinier laisse s'autoféconder des pois à fleurs blanches : leurs descendants ont toujours des fleurs blanches, sur de nombreuses générations. Que peut-on en dire pour la couleur de la fleur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ces plants sont tous hétérozygotes, car ils se ressemblent tous",
+          "misconceptionTag": "bio.gen.homo-hetero-inverses"
+        },
+        {
+          "id": "b",
+          "text": "Ils forment une lignée pure, car leur phénotype ne change pas"
+        },
+        {
+          "id": "c",
+          "text": "Ils forment la F1 d'un croisement entre deux lignées pures"
+        },
+        {
+          "id": "d",
+          "text": "Ils sont des hybrides, car ils descendent d'un croisement"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une lignée pure est un ensemble d'individus qui, croisés entre eux, donnent le même phénotype à toutes les générations : c'est le cas de ces pois. Une lignée pure est homozygote, et non hétérozygote ; la F1 est la génération issue du croisement de deux lignées différentes, ce que l'énoncé ne décrit pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Pour croiser deux plants de petit pois, on coupe les étamines de la fleur d'un plant avant leur maturité. Quel est le but de cette opération ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retirer l'organe femelle de la fleur, pour qu'elle ne forme plus de graines",
+          "misconceptionTag": "bio.gen.castration-pistil"
+        },
+        {
+          "id": "b",
+          "text": "Obtenir directement la F2 de cette fleur, sans passer par la génération F1"
+        },
+        {
+          "id": "c",
+          "text": "Ouvrir la fleur, pour qu'elle reçoive le pollen apporté par le vent"
+        },
+        {
+          "id": "d",
+          "text": "Empêcher l'autofécondation : la fleur ne recevra que le pollen étranger"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La fleur du pois est bisexuée et fermée : sans intervention, elle s'autoféconde. Couper les étamines (organes mâles) l'en empêche et laisse le pistil intact pour recevoir le pollen de l'autre plant. Retirer l'organe femelle supprimerait au contraire toute graine.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un coq noir et une poule blanche, de lignées pures, ne donnent que des poussins tachetés. Ces poussins sont-ils de lignée pure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non : croisés entre eux, ils redonnent aussi des noirs et des blancs"
+        },
+        {
+          "id": "b",
+          "text": "Oui : ils sont tous semblables entre eux, donc leur lignée est pure",
+          "misconceptionTag": "bio.gen.f1-uniforme-egale-pure"
+        },
+        {
+          "id": "c",
+          "text": "Oui : leurs deux parents étant de lignée pure, ils le sont aussi"
+        },
+        {
+          "id": "d",
+          "text": "Non : un descendant issu d'un croisement ne peut jamais être pur du tout"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Une lignée pure garde le même phénotype d'une génération à l'autre. Les poussins tachetés sont tous semblables, mais croisés entre eux ils donnent des noirs, des blancs et des tachetés : ce sont des hybrides. L'uniformité de la F1 ne prouve donc pas la pureté.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chez des volailles, l'allèle A donne le plumage noir, l'allèle B le plumage blanc, et les deux sont codominants. Quel est le génotype d'une poule tachetée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A//A, avec deux allèles noirs identiques"
+        },
+        {
+          "id": "b",
+          "text": "B//B, avec deux allèles blancs identiques"
+        },
+        {
+          "id": "c",
+          "text": "A//B, avec un allèle noir et un allèle blanc"
+        },
+        {
+          "id": "d",
+          "text": "T//T, avec deux allèles « tacheté » identiques",
+          "misconceptionTag": "bio.gen.intermediaire-un-seul-allele"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une poule tachetée a reçu un allèle A d'un parent et un allèle B de l'autre : son génotype est A//B, hétérozygote. Il n'existe pas d'allèle « tacheté » : le plumage tacheté vient de la présence simultanée des deux allèles codominants.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Chez la drosophile, quels gamètes produit un mâle XY pour la paire de chromosomes sexuels ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniquement des spermatozoïdes XY, portant les deux chromosomes sexuels",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        },
+        {
+          "id": "b",
+          "text": "Uniquement des spermatozoïdes X, puisque la femelle ne forme que X",
+          "misconceptionTag": "bio.gen.xy-gametes-identiques"
+        },
+        {
+          "id": "c",
+          "text": "Des spermatozoïdes X et des spermatozoïdes Y, en parts égales"
+        },
+        {
+          "id": "d",
+          "text": "Des spermatozoïdes X pour trois quarts et des Y pour un quart"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Les chromosomes X et Y forment une paire d'homologues : ils se séparent à la formation des gamètes et chaque spermatozoïde n'en reçoit qu'un. La moitié porte X, l'autre moitié Y. Un spermatozoïde XY serait diploïde pour cette paire, et la proportion 3/4 – 1/4 n'a rien à voir avec le sexe.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chez le blé, la taille haute est dominante sur la taille courte. On croise une variété pure à taille haute et une variété pure à taille courte. Quels sont les plants de la F1 ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trois quarts à taille haute et un quart à taille courte",
+          "misconceptionTag": "bio.gen.uniformite-f1-f2-confondues"
+        },
+        {
+          "id": "b",
+          "text": "Tous à taille haute et tous homozygotes A//A",
+          "misconceptionTag": "bio.gen.dominant-toujours-pur"
+        },
+        {
+          "id": "c",
+          "text": "Moitié à taille haute et moitié à taille courte"
+        },
+        {
+          "id": "d",
+          "text": "Tous à taille haute, et tous hétérozygotes A//a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les parents purs donnent chacun un seul type de gamète, A ou a : tous les plants de la F1 sont A//a. Ils sont hétérozygotes et, la taille haute étant dominante, tous à taille haute. Les proportions 3/4 – 1/4 n'apparaissent qu'en F2.",
+      "difficulty": 2
+    }
+  ]
+}

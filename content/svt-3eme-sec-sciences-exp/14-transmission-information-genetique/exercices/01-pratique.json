@@ -1,0 +1,176 @@
+{
+  "title": "⭐ Exercice : Croiser, nommer, ordonner",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "multi",
+      "prompt": "Quelles qualités font d'une espèce un bon organisme pour étudier les croisements ? (plusieurs réponses)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un cycle de développement court"
+        },
+        {
+          "id": "b",
+          "text": "Une descendance nombreuse à chaque croisement"
+        },
+        {
+          "id": "c",
+          "text": "Un élevage ou une culture facile"
+        },
+        {
+          "id": "d",
+          "text": "Une seule lignée disponible, pour éviter toute variation"
+        },
+        {
+          "id": "e",
+          "text": "Un cycle de développement de plusieurs années"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "b", "c"]
+      },
+      "explanation": "Un cycle court, une descendance nombreuse et un élevage facile permettent de répéter les croisements et de compter beaucoup de descendants, comme chez la drosophile ou le pois. Une seule lignée empêcherait de croiser des lignées différentes, et un cycle de plusieurs années ralentirait chaque génération.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Parmi ces descendants, lequel est un hybride ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un souriceau gris né de deux parents d'une même lignée pure grise"
+        },
+        {
+          "id": "b",
+          "text": "Un plant de pois issu de tiges longues pures et de tiges courtes pures"
+        },
+        {
+          "id": "c",
+          "text": "Un épi de blé issu de l'autofécondation d'une variété pure à tige haute"
+        },
+        {
+          "id": "d",
+          "text": "Une drosophile à yeux blancs issue d'une lignée pure à yeux blancs"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un hybride est un descendant de deux parents de la même espèce qui diffèrent par un caractère héréditaire : ici les tiges longues et les tiges courtes. Les trois autres descendants naissent de parents d'une même lignée pure, donc sans différence de caractère entre les parents.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une F2 de pois compte 929 plantes, dont 705 à téguments gris. Combien de plantes ont des téguments blancs ?",
+      "answerKey": {
+        "value": 224,
+        "unit": "plantes"
+      },
+      "explanation": "Les plantes à téguments blancs sont les plantes restantes : 929 − 705 = 224. On retrouve environ 1/4 de la F2 (224 sur 929).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Chez la souris, le gris domine le blanc. Que signifie « dominant » ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'allèle gris est le plus fréquent dans la nature",
+          "misconceptionTag": "bio.gen.dominant-egale-frequent"
+        },
+        {
+          "id": "b",
+          "text": "L'allèle gris élimine l'allèle blanc chez l'hybride",
+          "misconceptionTag": "bio.gen.recessif-disparu-hybride"
+        },
+        {
+          "id": "c",
+          "text": "L'allèle gris s'exprime seul chez l'individu hétérozygote"
+        },
+        {
+          "id": "d",
+          "text": "L'allèle gris est transmis à tous les gamètes de l'hybride"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Un allèle dominant détermine seul le phénotype de l'hétérozygote : une souris A//a est grise. Cela ne dit rien de sa fréquence dans la nature, l'allèle blanc n'est pas détruit (il reparaît en F2), et l'hybride forme autant de gamètes a que de gamètes A.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remettez dans l'ordre les étapes pour obtenir la F1, puis la F2, chez le petit pois.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Déposer sur son pistil le pollen de l'autre plant"
+        },
+        {
+          "id": "a",
+          "text": "Choisir deux lignées pures qui diffèrent par un caractère"
+        },
+        {
+          "id": "d",
+          "text": "Semer les graines de la F1 et laisser les plants s'autoféconder"
+        },
+        {
+          "id": "b",
+          "text": "Castrer la fleur d'un plant avant la maturité de ses étamines"
+        }
+      ],
+      "answerKey": {
+        "order": ["a", "b", "c", "d"]
+      },
+      "explanation": "On commence par des lignées pures, stables pour le caractère. On castre ensuite la fleur du parent femelle avant que ses étamines mûrissent, sinon elle s'autoféconde. Le pollen de l'autre plant donne alors la F1. Seuls les plants de la F1 peuvent ensuite s'autoféconder pour donner la F2.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associez chaque terme à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Lignée pure"
+        },
+        {
+          "id": "l2",
+          "text": "Hybride"
+        },
+        {
+          "id": "l3",
+          "text": "F2"
+        },
+        {
+          "id": "l4",
+          "text": "Monohybridisme"
+        },
+        {
+          "id": "r1",
+          "text": "Individus qui, croisés entre eux, gardent toujours le même phénotype"
+        },
+        {
+          "id": "r2",
+          "text": "Descendant de deux parents de la même espèce qui diffèrent par un caractère ou plus"
+        },
+        {
+          "id": "r3",
+          "text": "Descendance obtenue en croisant des individus de la F1 entre eux"
+        },
+        {
+          "id": "r4",
+          "text": "Croisement de deux lignées qui ne diffèrent que par un seul caractère"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          ["l1", "r1"],
+          ["l2", "r2"],
+          ["l3", "r3"],
+          ["l4", "r4"]
+        ]
+      },
+      "explanation": "Une lignée pure garde son phénotype d'une génération à l'autre. Un hybride est le descendant de deux parents qui diffèrent par un ou plusieurs caractères. La F2 est la génération obtenue en croisant des individus de la F1. Le monohybridisme est le croisement de deux lignées qui diffèrent par un seul caractère.",
+      "difficulty": 2
+    }
+  ]
+}

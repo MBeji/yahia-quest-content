@@ -1,0 +1,158 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le maître des mutations",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Une colonie résistante est prélevée sur un milieu avec streptomycine et repiquée sur un nouveau milieu avec streptomycine : de nombreuses colonies apparaissent. Comment l'expliquer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les bactéries s'adaptent à l'antibiotique à chaque nouvelle culture qu'on leur propose",
+          "misconceptionTag": "bio.div.antibiotique-cree-resistance"
+        },
+        {
+          "id": "b",
+          "text": "La streptomycine perd peu à peu son effet à chaque repiquage effectué"
+        },
+        {
+          "id": "c",
+          "text": "La mutation est héréditaire : les descendantes d'une bactérie résistante le sont aussi"
+        },
+        {
+          "id": "d",
+          "text": "La mutation est réversible : les bactéries repiquées redeviennent vite sensibles"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une colonie provient d'une seule bactérie résistante ; ses descendantes portent la mutation, donc résistent aussi : le caractère est héréditaire. L'antibiotique ne fabrique pas la résistance, et si les bactéries redevenaient sensibles, le repiquage ne donnerait aucune colonie.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Une mutation de résistance survient avec une fréquence de 10⁻⁶ par génération. Combien de bactéries sensibles faut-il étaler au minimum pour attendre en moyenne un seul mutant ? Écris le nombre en chiffres, sans espace.",
+      "answerKey": {
+        "value": 1000000
+      },
+      "explanation": "On attend N × 10⁻⁶ mutants. Pour obtenir 1 mutant : N = 1 ÷ 10⁻⁶ = 10⁶ = 1000000 bactéries (un million). Avec moins de bactéries, on attend moins d'un mutant : c'est pourquoi 10³ bactéries ne suffisent pas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur une séquence d'illustration, le fragment TTT CTG AAA du brin transcrit d'un gène est remplacé par TTT CCG AAA. Codons de l'ARNm : GAC acide aspartique, GGC glycine, CUG leucine, CCG proline. Quelle conséquence sur le polypeptide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La leucine est remplacée par la proline",
+          "misconceptionTag": "bio.expr.arnm-recopie-brin-transcrit"
+        },
+        {
+          "id": "b",
+          "text": "L'acide aspartique est remplacé par la glycine"
+        },
+        {
+          "id": "c",
+          "text": "Aucun acide aminé ne change : la substitution est silencieuse"
+        },
+        {
+          "id": "d",
+          "text": "La chaîne s'arrête au triplet modifié"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'ARNm est complémentaire du brin transcrit : CTG donne GAC (acide aspartique) et CCG donne GGC (glycine). L'acide aspartique est donc remplacé par la glycine. Lire CTG et CCG comme des codons, CUG et CCG, donnerait leucine et proline : c'est recopier le brin transcrit au lieu de le complémenter.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le brin transcrit TAC GGA CTT AAA CGT donne le polypeptide Met–Pro–Glu–Phe–Ala. La 1ʳᵉ base du 2ᵉ triplet (G) disparaît, ce qui donne TAC GAC TTA AAC GT. Codons de l'ARNm : AUG Met, CUG Leu, AAU Asn, UUG Leu. Que devient le polypeptide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seul le deuxième acide aminé change",
+          "misconceptionTag": "bio.div.addition-un-seul-acide-amine"
+        },
+        {
+          "id": "b",
+          "text": "La chaîne perd seulement son deuxième acide aminé, le reste est identique",
+          "misconceptionTag": "bio.div.addition-un-seul-acide-amine"
+        },
+        {
+          "id": "c",
+          "text": "Il ne change pas : la perte d'une base est silencieuse",
+          "misconceptionTag": "bio.div.perte-ou-addition-sans-effet"
+        },
+        {
+          "id": "d",
+          "text": "Tous les acides aminés après la méthionine sont modifiés"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La perte d'une base décale la lecture de tous les triplets suivants : TAC GAC TTA AAC donne AUG CUG AAU UUG, soit Met–Leu–Asn–Leu. Après la méthionine, Leu, Asn et Leu remplacent Pro, Glu et Phe : toute la suite est modifiée, contrairement à une substitution qui ne change qu'un codon.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur les mutations sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une substitution peut ne changer aucun acide aminé, car plusieurs codons désignent le même acide aminé"
+        },
+        {
+          "id": "b",
+          "text": "Une mutation d'une cellule de la peau est transmise aux enfants issus de la reproduction sexuée"
+        },
+        {
+          "id": "c",
+          "text": "Un nucléotide ajouté dans un gène décale la lecture des triplets qui suivent"
+        },
+        {
+          "id": "d",
+          "text": "Une mutation chromosomique change toujours le nombre de chromosomes"
+        },
+        {
+          "id": "e",
+          "text": "Une mutation des cellules à l'origine des gamètes peut être transmise aux descendants"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Sont exactes : la substitution silencieuse (redondance du code), le décalage de lecture après un ajout, et la transmission d'une mutation touchant les cellules à l'origine des gamètes. Une mutation de la peau n'atteint pas les gamètes, donc n'est pas transmise ; et une mutation chromosomique peut ne changer que la structure, comme dans le cri du chat.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Le document donne la proportion des deux formes de phalène du bouleau dans deux régions (valeurs d'illustration). La forme sombre est apparue par mutation de la forme claire sauvage.\n<svg viewBox=\"0 0 412 88\">\n<title>Proportion des deux formes de phalène du bouleau dans deux régions (valeurs d'illustration)</title>\n<rect x=\"1\" y=\"1\" width=\"110\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"56\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Région</text>\n<rect x=\"111\" y=\"1\" width=\"130\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"176\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Troncs d'arbres</text>\n<rect x=\"241\" y=\"1\" width=\"85\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"283.5\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Forme sombre</text>\n<rect x=\"326\" y=\"1\" width=\"85\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"368.5\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Forme claire</text>\n<rect x=\"1\" y=\"31\" width=\"110\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"56\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">industrialisée</text>\n<rect x=\"111\" y=\"31\" width=\"130\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"176\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">couverts de suie</text>\n<rect x=\"241\" y=\"31\" width=\"85\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"283.5\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">90 %</text>\n<rect x=\"326\" y=\"31\" width=\"85\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"368.5\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">10 %</text>\n<rect x=\"1\" y=\"59\" width=\"110\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"56\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">non industrialisée</text>\n<rect x=\"111\" y=\"59\" width=\"130\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"176\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">couverts de lichens blancs</text>\n<rect x=\"241\" y=\"59\" width=\"85\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"283.5\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">5 %</text>\n<rect x=\"326\" y=\"59\" width=\"85\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"368.5\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">95 %</text>\n</svg>\nQue montre ce document ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un même caractère est avantageux dans un milieu et pas dans l'autre"
+        },
+        {
+          "id": "b",
+          "text": "La pollution industrielle a provoqué l'apparition de la forme sombre chez la phalène",
+          "misconceptionTag": "bio.div.milieu-dirige-la-mutation"
+        },
+        {
+          "id": "c",
+          "text": "La mutation sombre est avantageuse dans tous les milieux étudiés",
+          "misconceptionTag": "bio.div.effet-mutation-independant-du-milieu"
+        },
+        {
+          "id": "d",
+          "text": "La forme sombre est le phénotype sauvage de l'espèce de phalène",
+          "misconceptionTag": "bio.div.mutant-sauvage-inverses"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La forme sombre domine là où les troncs sont noircis par la suie (90 %) et recule là où ils portent des lichens blancs (5 %) : son avantage dépend du milieu. La mutation est apparue spontanément ; le milieu ne la provoque pas, il décide seulement si elle est un avantage. Le phénotype sauvage est la forme claire.",
+      "difficulty": 3
+    }
+  ]
+}

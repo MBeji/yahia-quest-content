@@ -1,0 +1,155 @@
+{
+  "title": "Test de compréhension ⭐ : La structure et la composition du globe terrestre",
+  "questions": [
+    {
+      "prompt": "Comment s'appelle le point de la surface terrestre situé à la verticale du foyer d'un séisme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le front d'ondes du séisme"
+        },
+        {
+          "id": "b",
+          "text": "L'hypocentre du séisme",
+          "misconceptionTag": "bio.geo.foyer-epicentre"
+        },
+        {
+          "id": "c",
+          "text": "L'épicentre du séisme"
+        },
+        {
+          "id": "d",
+          "text": "Le sismogramme"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le point de la surface situé à la verticale du foyer est l'épicentre. L'hypocentre est un autre nom du foyer, point d'origine du séisme en profondeur ; le front d'ondes est la surface que les ondes atteignent en s'éloignant du foyer ; le sismogramme est l'enregistrement du séisme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelles ondes sismiques se propagent dans un milieu liquide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seulement les ondes P"
+        },
+        {
+          "id": "b",
+          "text": "Seulement les ondes S",
+          "misconceptionTag": "bio.globe.s-traversent-liquides"
+        },
+        {
+          "id": "c",
+          "text": "Les ondes P et les ondes S",
+          "misconceptionTag": "bio.globe.s-traversent-liquides"
+        },
+        {
+          "id": "d",
+          "text": "Ni les ondes P ni les ondes S"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les ondes P, de compression, traversent les solides et les liquides ; les ondes S, de cisaillement, ne traversent que les solides. Seules les ondes P se propagent donc dans un liquide.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "De quelle roche le manteau est-il essentiellement fait ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le granite"
+        },
+        {
+          "id": "b",
+          "text": "Le basalte",
+          "misconceptionTag": "bio.globe.manteau-de-basalte"
+        },
+        {
+          "id": "c",
+          "text": "La péridotite"
+        },
+        {
+          "id": "d",
+          "text": "Le fer et le nickel"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le manteau est fait de péridotite, roche verte riche en olivine. Le basalte est la roche de la croûte océanique, née de la fusion de la péridotite ; le granite forme la croûte continentale ; le fer et le nickel constituent le noyau.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Les ondes P mettent 5 min 30 s pour parcourir 3000 km. Quelle est leur vitesse moyenne ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,11 km/s",
+          "misconceptionTag": "bio.globe.vitesse-inversee"
+        },
+        {
+          "id": "b",
+          "text": "9,1 km/s"
+        },
+        {
+          "id": "c",
+          "text": "9,4 km/s"
+        },
+        {
+          "id": "d",
+          "text": "10 km/s"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "On convertit la durée : 5 min 30 s = 330 s, donc v = 3000 ÷ 330 ≈ 9,1 km/s. Le piège classique est de diviser la durée par la distance, ce qui donne 330 ÷ 3000 ≈ 0,11, l'inverse d'une vitesse. Oublier les 30 s donne 3000 ÷ 300 = 10 km/s, et lire 5 min 30 s comme 5,3 min, soit 318 s, donne 9,4 km/s.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "À 2900 km de profondeur, la vitesse des ondes P chute brutalement. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les ondes P se transforment en ondes S à cette profondeur"
+        },
+        {
+          "id": "b",
+          "text": "Les ondes P cessent de se propager au-delà de cette profondeur"
+        },
+        {
+          "id": "c",
+          "text": "Le milieu devient plus rigide et plus dense qu'au-dessus"
+        },
+        {
+          "id": "d",
+          "text": "Le milieu change de nature : on franchit une discontinuité"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une variation brusque de vitesse à une profondeur précise signale le passage d'un milieu à un autre : ici, la discontinuité de Gutenberg, entre le manteau et le noyau externe. Les P continuent de se propager, plus lentement ; elles ne se transforment pas en S. Un milieu plus rigide ferait au contraire accélérer les ondes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La lithosphère est la couche rigide du globe. De quoi est-elle formée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De la croûte terrestre seule, des continents aux océans",
+          "misconceptionTag": "bio.globe.lithosphere-egale-croute"
+        },
+        {
+          "id": "b",
+          "text": "De la croûte et de la partie supérieure du manteau"
+        },
+        {
+          "id": "c",
+          "text": "Du manteau supérieur seul, croûte exclue"
+        },
+        {
+          "id": "d",
+          "text": "De la croûte, du manteau et du noyau externe"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La lithosphère comprend la croûte et la partie du manteau supérieur située au-dessus de la zone à faible vitesse. Elle ne se réduit donc pas à la croûte, limitée par le Moho. Le manteau supérieur seul oublie la croûte, et le noyau externe, liquide, ne peut pas appartenir à une couche rigide.",
+      "difficulty": 2
+    }
+  ]
+}
