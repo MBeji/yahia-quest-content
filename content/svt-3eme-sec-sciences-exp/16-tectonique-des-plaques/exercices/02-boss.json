@@ -1,0 +1,129 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Accrétion, subduction et vitesses",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Dans le Pacifique, un forage situé à 1200 km du rift atteint un basalte de 12 Ma (valeurs d'illustration). Quelle est la vitesse d'expansion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0,1 cm/an"
+        },
+        {
+          "id": "b",
+          "text": "1 cm/an"
+        },
+        {
+          "id": "c",
+          "text": "10 cm/an"
+        },
+        {
+          "id": "d",
+          "text": "100 cm/an",
+          "misconceptionTag": "bio.tecto.vitesse-unites"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "v = 1200 km ÷ 12 Ma = 100 km/Ma. Comme 1 km/Ma vaut 0,1 cm/an, v = 10 cm/an. Le piège courant est de lire 100 km/Ma comme 100 cm/an sans convertir ; les valeurs 1 cm/an et 0,1 cm/an viennent d'une conversion trop forte.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "La surface du globe reste constante alors que l'accrétion crée de la lithosphère en permanence. Quelle explication retient-on ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La subduction détruit autant de lithosphère que l'accrétion en crée"
+        },
+        {
+          "id": "b",
+          "text": "La lithosphère neuve se tasse et occupe moins de surface"
+        },
+        {
+          "id": "c",
+          "text": "Le globe grandit en réalité, mais bien trop lentement pour être mesuré",
+          "misconceptionTag": "bio.tecto.accretion-agrandit-terre"
+        },
+        {
+          "id": "d",
+          "text": "Les continents rétrécissent d'autant par érosion"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La lithosphère océanique créée aux rifts disparaît aux fosses par subduction, à un rythme comparable : la surface du globe est constante. Dire que le globe grandit est l'erreur classique, et ni un tassement ni l'érosion des continents ne remplacent cette compensation.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Entre une plaque océanique et une plaque continentale qui convergent, pourquoi est-ce l'océanique qui plonge ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa lithosphère est plus jeune et plus chaude que le continent"
+        },
+        {
+          "id": "b",
+          "text": "Sa lithosphère est plus épaisse que la lithosphère continentale",
+          "misconceptionTag": "bio.geo.plongee-par-epaisseur"
+        },
+        {
+          "id": "c",
+          "text": "Sa lithosphère est plus dense que la lithosphère continentale"
+        },
+        {
+          "id": "d",
+          "text": "La plaque continentale la pousse vers le bas en avançant"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "C'est la densité qui décide : la lithosphère océanique, plus dense que la lithosphère continentale, s'enfonce sous elle. Le piège classique est de croire que la plus épaisse ou la plus massive au total plonge, alors que c'est la plus dense (la plus lourde à volume égal) qui s'enfonce ; la lithosphère continentale, plus légère, reste en surface.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le graphique donne la profondeur de foyers de séismes sous une fosse selon leur distance horizontale à la fosse (valeurs d'illustration). Comment l'interpréter ?\n<svg viewBox=\"0 0 340 214\">\n<title>Foyers de séismes sous une fosse : profondeur en fonction de la distance horizontale à la fosse, valeurs d'illustration</title>\n<line x1=\"141.3\" y1=\"36\" x2=\"141.3\" y2=\"196\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"226.7\" y1=\"36\" x2=\"226.7\" y2=\"196\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"312\" y1=\"36\" x2=\"312\" y2=\"196\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"56\" y1=\"76\" x2=\"312\" y2=\"76\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"56\" y1=\"116\" x2=\"312\" y2=\"116\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"56\" y1=\"156\" x2=\"312\" y2=\"156\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"56\" y1=\"196\" x2=\"312\" y2=\"196\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/>\n<line x1=\"56\" y1=\"36\" x2=\"318\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"56\" y1=\"36\" x2=\"56\" y2=\"202\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"56\" y1=\"32\" x2=\"56\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"56\" y=\"28\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">0</text>\n<line x1=\"141.3\" y1=\"32\" x2=\"141.3\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"141.3\" y=\"28\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">200</text>\n<line x1=\"226.7\" y1=\"32\" x2=\"226.7\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"226.7\" y=\"28\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">400</text>\n<line x1=\"312\" y1=\"32\" x2=\"312\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"312\" y=\"28\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">600</text>\n<line x1=\"52\" y1=\"36\" x2=\"56\" y2=\"36\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"49\" y=\"39\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">0</text>\n<line x1=\"52\" y1=\"76\" x2=\"56\" y2=\"76\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"49\" y=\"79\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">100</text>\n<line x1=\"52\" y1=\"116\" x2=\"56\" y2=\"116\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"49\" y=\"119\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">200</text>\n<line x1=\"52\" y1=\"156\" x2=\"56\" y2=\"156\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"49\" y=\"159\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">300</text>\n<line x1=\"52\" y1=\"196\" x2=\"56\" y2=\"196\" stroke=\"#0f172a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<text x=\"49\" y=\"199\" text-anchor=\"end\" font-size=\"9\" font-weight=\"400\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">400</text>\n<circle cx=\"81.6\" cy=\"44\" r=\"4\" fill=\"#b91c1c\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<circle cx=\"120\" cy=\"64\" r=\"4\" fill=\"#b91c1c\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<circle cx=\"158.4\" cy=\"84\" r=\"4\" fill=\"#b91c1c\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<circle cx=\"196.8\" cy=\"104\" r=\"4\" fill=\"#b91c1c\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<circle cx=\"235.2\" cy=\"128\" r=\"4\" fill=\"#b91c1c\" stroke=\"#0f172a\" stroke-width=\"1.2\"/>\n<text x=\"184\" y=\"14\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">distance horizontale à la fosse (km)</text>\n<text x=\"14\" y=\"116\" text-anchor=\"middle\" transform=\"rotate(-90 14 116)\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">profondeur du foyer (km)</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "La plaque plonge vers la fosse, depuis l'intérieur de la plaque voisine"
+        },
+        {
+          "id": "b",
+          "text": "La plaque plonge de la fosse vers l'intérieur de la plaque voisine"
+        },
+        {
+          "id": "c",
+          "text": "Les foyers profonds viennent d'une asthénosphère chaude qui se rompt"
+        },
+        {
+          "id": "d",
+          "text": "Les foyers alignés marquent une faille transformante verticale"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Plus un foyer est loin de la fosse, plus il est profond, et les points s'alignent : ils dessinent le plan de Benioff, le long duquel la lithosphère plonge depuis la fosse sous la plaque voisine. Des séismes profonds exigent une roche froide et rigide, donc de la lithosphère plongeante, et non une asthénosphère chaude qui se déforme sans casser ; une faille transformante est une frontière coulissante, pas un plan incliné.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "L'accrétion produit environ 3,5 km² de lithosphère océanique par an. La surface du globe étant constante, quelle surface de lithosphère disparaît par subduction en 40 millions d'années, en millions de km² ?",
+      "answerKey": {
+        "value": 140,
+        "unit": "millions de km²"
+      },
+      "explanation": "La surface du globe étant constante, la subduction détruit autant de lithosphère que l'accrétion en crée. En 40 Ma, l'accrétion en crée 3,5 × 40 = 140 millions de km² : c'est donc aussi la surface qui disparaît par subduction.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un plancher s'éloigne d'un rift à 3 cm/an et atteint une fosse située à 2400 km du rift (valeurs d'illustration). Quel âge a le basalte qui plonge, en millions d'années ?",
+      "answerKey": {
+        "value": 80,
+        "unit": "Ma"
+      },
+      "explanation": "On convertit : 3 cm/an = 30 km/Ma. L'âge est la distance divisée par la vitesse : 2400 km ÷ 30 km/Ma = 80 Ma. Le basalte qui plonge a donc 80 Ma, bien moins que 200 Ma, ce qui est cohérent avec une croûte océanique toujours jeune.",
+      "difficulty": 3
+    }
+  ]
+}

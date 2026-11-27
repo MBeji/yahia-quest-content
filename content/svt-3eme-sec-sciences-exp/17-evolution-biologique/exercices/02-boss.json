@@ -1,0 +1,159 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le tribunal des preuves",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "D'après l'arbre phylogénique simplifié, les amphibiens sont-ils plus proches des oiseaux ou des poissons ?\n<svg viewBox=\"0 0 340 266\">\n<title>Arbre phylogénique simplifié des cinq groupes de vertébrés, avec quatre ancêtres communs numérotés</title>\n<text x=\"44\" y=\"52\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">Poissons</text>\n<text x=\"104\" y=\"52\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">Amphibiens</text>\n<text x=\"164\" y=\"52\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">Reptiles</text>\n<text x=\"224\" y=\"52\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">Oiseaux</text>\n<text x=\"284\" y=\"52\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"700\" fill=\"#0f172a\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">Mammifères</text>\n<line x1=\"164\" y1=\"112\" x2=\"224\" y2=\"112\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"164\" y1=\"112\" x2=\"164\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"224\" y1=\"112\" x2=\"224\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"194\" y1=\"112\" x2=\"194\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"194\" y1=\"150\" x2=\"284\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"284\" y1=\"150\" x2=\"284\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"194\" y1=\"150\" x2=\"239\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"239\" y1=\"150\" x2=\"239\" y2=\"188\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"104\" y1=\"188\" x2=\"239\" y2=\"188\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"104\" y1=\"188\" x2=\"104\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"171.5\" y1=\"188\" x2=\"171.5\" y2=\"224\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"44\" y1=\"224\" x2=\"171.5\" y2=\"224\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"44\" y1=\"224\" x2=\"44\" y2=\"66\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"107.75\" y1=\"224\" x2=\"107.75\" y2=\"244\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"14\" y1=\"244\" x2=\"14\" y2=\"77\" stroke=\"#64748b\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n<polygon points=\"14,70 17.15,77 10.85,77\" fill=\"#64748b\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linejoin=\"round\"/>\n<text x=\"14\" y=\"62\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">présent</text>\n<text x=\"14\" y=\"258\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"400\" fill=\"#64748b\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\">passé</text>\n<circle cx=\"194\" cy=\"112\" r=\"8.5\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<text x=\"194\" y=\"115.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">4</text>\n<circle cx=\"239\" cy=\"150\" r=\"8.5\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<text x=\"239\" y=\"153.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">3</text>\n<circle cx=\"171.5\" cy=\"188\" r=\"8.5\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<text x=\"171.5\" y=\"191.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">2</text>\n<circle cx=\"107.75\" cy=\"224\" r=\"8.5\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.8\"/>\n<text x=\"107.75\" y=\"227.5\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">1</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plus proches des poissons que des oiseaux, car les deux groupes vivent dans l'eau"
+        },
+        {
+          "id": "b",
+          "text": "Plus proches des oiseaux que des poissons, car leur ancêtre commun est plus récent"
+        },
+        {
+          "id": "c",
+          "text": "Aussi proches des oiseaux que des poissons, car ils sont voisins des deux sur le dessin",
+          "misconceptionTag": "bio.evol.parente-par-voisinage"
+        },
+        {
+          "id": "d",
+          "text": "Impossible à dire, car les poissons et les oiseaux sont aux deux extrémités du dessin"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La parenté se lit aux ronds : les amphibiens et les oiseaux ont pour ancêtre commun le rond 2, plus récent que le rond 1 qu'ils partagent avec les poissons ; ils sont donc plus proches des oiseaux. Vivre dans l'eau ou être voisin sur le dessin ne compte pas, et la position des groupes aux extrémités ne dit rien : seuls les ancêtres communs permettent de trancher.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un élément radioactif (valeur d'illustration) a une période de 13,86 milliards d'années, soit 1,386×10¹⁰ ans. Avec ln 2 ≈ 0,693, calcule sa constante de radioactivité λ, en 10⁻¹¹ an⁻¹.",
+      "answerKey": {
+        "value": 5,
+        "tolerance": 0.05,
+        "unit": "10⁻¹¹ an⁻¹"
+      },
+      "explanation": "De T = 0,693 ÷ λ on tire λ = 0,693 ÷ T = 0,693 ÷ (1,386×10¹⁰) = 5×10⁻¹¹ an⁻¹, soit 5 en unités de 10⁻¹¹ an⁻¹. Contrôle : c'est presque la constante du thorium (4,948×10⁻¹¹), dont la période est voisine de 14 milliards d'années.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Sur une île, un allèle de bec épais est devenu fréquent chez les pinsons parce que la seule nourriture était faite de graines dures. Puis le climat change et les graines fines redeviennent abondantes. Que prévoit le modèle néo-darwiniste pour la fréquence de cet allèle ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les pinsons à bec épais affinent leur bec en mangeant des graines fines, et leurs petits en héritent",
+          "misconceptionTag": "bio.gen.caractere-acquis-transmis"
+        },
+        {
+          "id": "b",
+          "text": "Les becs fins se nourrissent mieux et laissent plus de descendants : l'allèle de bec épais devient moins fréquent"
+        },
+        {
+          "id": "c",
+          "text": "Les graines fines provoquent chez tous les pinsons une mutation qui amincit le bec",
+          "misconceptionTag": "bio.div.milieu-dirige-la-mutation"
+        },
+        {
+          "id": "d",
+          "text": "Les pinsons à bec épais sont aussitôt tous éliminés, car seuls les plus forts survivent",
+          "misconceptionTag": "bio.evol.selection-garde-le-plus-fort"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Quand le milieu change, le tri change aussi : les individus qui mangent le mieux les graines fines laissent plus de descendants, donc l'allèle de bec épais devient moins fréquent, sans disparaître forcément. Un bec affiné par l'usage ne se transmet pas, le milieu ne provoque pas la mutation, et la sélection naturelle ne retient pas le plus fort ni n'élimine tout d'un coup.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les laves associées aux grandes extinctions en masse sont plus riches en fer que celles des extinctions plus modestes. On sait aussi que le manteau inférieur est plus riche en fer et en gaz (CO₂ et SO₂) que le manteau supérieur. Quelle déduction est cohérente avec ces données ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les éruptions les plus meurtrières naissent près de la surface et libèrent peu de gaz"
+        },
+        {
+          "id": "b",
+          "text": "La richesse en fer d'une lave n'a aucun lien avec sa profondeur d'origine"
+        },
+        {
+          "id": "c",
+          "text": "Les éruptions les plus meurtrières naissent plus profondément mais libèrent moins de gaz"
+        },
+        {
+          "id": "d",
+          "text": "Les éruptions les plus meurtrières naissent plus profondément et libèrent plus de gaz"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une lave riche en fer vient vraisemblablement du manteau inférieur, lui-même plus riche en fer : l'éruption naît donc plus profondément. Le manteau inférieur étant aussi plus riche en gaz (CO₂ et SO₂), elle libère plus de gaz, ce qui la rend plus meurtrière. Les autres propositions contredisent l'un des deux liens établis par les données : fer et profondeur, profondeur et gaz.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur les crises biologiques, lesquelles sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une crise est une disparition brutale d'un grand nombre d'êtres vivants"
+        },
+        {
+          "id": "b",
+          "text": "Chaque crise a la même cause unique, la chute d'une météorite"
+        },
+        {
+          "id": "c",
+          "text": "Après la crise, les survivants géniteurs occupent les niches libérées et se diversifient"
+        },
+        {
+          "id": "d",
+          "text": "Les profiteurs sont les survivants qui se diversifient une fois la crise terminée"
+        },
+        {
+          "id": "e",
+          "text": "La crise Permien-Trias a éliminé environ 95 % des espèces marines, dont les trilobites"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Une crise est bien une disparition brutale d'un grand nombre d'êtres vivants ; après elle, les survivants géniteurs occupent les niches libérées et se diversifient (radiation évolutive) ; la crise Permien-Trias a éliminé environ 95 % des espèces marines, dont les trilobites. En revanche, les causes d'une crise sont combinées et varient d'une crise à l'autre, et les profiteurs se développent pendant la crise, non après elle.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Range ces trois fossiles du plus ancien au plus récent : Archéoptéryx (Jurassique supérieur), Ichtyostéga (Dévonien supérieur) et Dimetrodon (Permien inférieur).",
+      "options": [
+        {
+          "id": "b",
+          "text": "Archéoptéryx"
+        },
+        {
+          "id": "c",
+          "text": "Dimetrodon"
+        },
+        {
+          "id": "a",
+          "text": "Ichtyostéga"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "c",
+          "b"
+        ]
+      },
+      "explanation": "Les périodes de l'ère primaire se suivent ainsi : Dévonien, Carbonifère, Permien ; le Jurassique appartient à l'ère secondaire, plus récente. Ichtyostéga (Dévonien supérieur) est donc le plus ancien, Dimetrodon (Permien inférieur, environ −280 Ma) vient ensuite, puis Archéoptéryx (Jurassique supérieur, environ −150 Ma).",
+      "difficulty": 3
+    }
+  ]
+}

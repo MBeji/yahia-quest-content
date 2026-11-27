@@ -1,0 +1,189 @@
+{
+  "title": "⭐ Exercice : Premiers pas sur les plaques",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Des traces de glaciation de même âge sont trouvées sur des continents aujourd'hui très éloignés. De quel type d'argument de Wegener s'agit-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un argument géographique"
+        },
+        {
+          "id": "b",
+          "text": "Un argument géologique"
+        },
+        {
+          "id": "c",
+          "text": "Un argument paléoclimatique"
+        },
+        {
+          "id": "d",
+          "text": "Un argument paléontologique"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Des traces de glaciation et des dépôts d'évaporites renseignent sur les climats passés : c'est un argument paléoclimatique. Les arguments géographiques portent sur la forme des côtes, les géologiques sur les roches et les chaînes de montagnes, les paléontologiques sur les fossiles.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations décrivent le rift d'une dorsale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est fracturé par de nombreuses failles"
+        },
+        {
+          "id": "b",
+          "text": "Du magma basaltique y remonte de l'asthénosphère"
+        },
+        {
+          "id": "c",
+          "text": "De la croûte océanique neuve s'y forme"
+        },
+        {
+          "id": "d",
+          "text": "Une plaque lithosphérique y plonge dans le manteau"
+        },
+        {
+          "id": "e",
+          "text": "La croûte océanique y est la plus ancienne"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le rift est fracturé par des failles, du magma basaltique y remonte de l'asthénosphère et de la croûte neuve s'y forme par accrétion. La plongée d'une plaque est la subduction, qui a lieu aux fosses, et la croûte du rift est la plus jeune, d'âge nul.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un point du plancher s'éloigne du rift de 2 cm par an. Quelle distance parcourt-il en 10 millions d'années, en km ?",
+      "answerKey": {
+        "value": 200,
+        "unit": "km"
+      },
+      "explanation": "On convertit : 1 cm/an = 10 km/Ma, donc 2 cm/an = 20 km/Ma. En 10 Ma, la distance vaut 20 × 10 = 200 km. Contrôle : 2 cm × 10 000 000 ans = 20 000 000 cm = 200 km.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que devient la lithosphère océanique au niveau d'une fosse ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle s'épaissit sur place sans bouger"
+        },
+        {
+          "id": "b",
+          "text": "Elle se forme à partir d'un magma",
+          "misconceptionTag": "bio.geo.dorsale-subduction"
+        },
+        {
+          "id": "c",
+          "text": "Elle se soude au continent voisin pour l'agrandir"
+        },
+        {
+          "id": "d",
+          "text": "Elle s'enfonce dans l'asthénosphère"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À la fosse, la lithosphère océanique plonge sous l'autre plaque et s'enfonce dans l'asthénosphère : c'est la subduction. Sa formation à partir d'un magma est l'accrétion, qui a lieu au rift.",
+      "difficulty": 1
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre le trajet d'une lithosphère océanique, de sa naissance à son remplacement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Du basalte se forme au rift : c'est de la croûte océanique neuve"
+        },
+        {
+          "id": "b",
+          "text": "La lithosphère neuve est repoussée de part et d'autre du rift"
+        },
+        {
+          "id": "c",
+          "text": "En s'éloignant, la lithosphère océanique vieillit, s'épaissit et s'alourdit"
+        },
+        {
+          "id": "d",
+          "text": "Arrivée à une fosse, elle plonge dans l'asthénosphère"
+        },
+        {
+          "id": "e",
+          "text": "Au rift, de la lithosphère neuve prend la place de celle qui a disparu"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "La croûte océanique naît d'abord au rift (accrétion), et la lithosphère neuve est repoussée de chaque côté par celle qui se forme derrière ; en s'éloignant, la lithosphère océanique vieillit, s'épaissit et s'alourdit ; arrivée à une fosse, elle plonge dans l'asthénosphère (subduction) ; ensuite, au rift, de la lithosphère neuve remplace celle qui a disparu : c'est le renouvellement océanique de Hess.",
+      "difficulty": 2
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque lieu au type de frontière entre plaques qu'il illustre.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Dorsale médio-atlantique"
+        },
+        {
+          "id": "l2",
+          "text": "Fosse hellénique"
+        },
+        {
+          "id": "l3",
+          "text": "Faille de San Andreas"
+        },
+        {
+          "id": "r1",
+          "text": "Frontière divergente"
+        },
+        {
+          "id": "r2",
+          "text": "Frontière convergente"
+        },
+        {
+          "id": "r3",
+          "text": "Frontière coulissante"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La dorsale médio-atlantique est une frontière divergente : les plaques s'écartent et du plancher se crée. La fosse hellénique est une frontière convergente : une plaque plonge sous l'autre. La faille de San Andreas est une frontière coulissante : les plaques glissent côte à côte.",
+      "difficulty": 2
+    }
+  ]
+}
