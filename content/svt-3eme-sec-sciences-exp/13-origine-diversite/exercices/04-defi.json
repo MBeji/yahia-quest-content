@@ -1,0 +1,151 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Le laboratoire de la diversité",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Le document compare deux espèces de drosophiles dérivées l'une de l'autre par des fusions de deux chromosomes. Combien de fusions séparent A de E ?\n<svg viewBox=\"0 0 342 88\">\n<title>Deux espèces de drosophiles : A avec 6 chromosomes dessinés (un par paire), E avec 2n = 6</title>\n<rect x=\"1\" y=\"1\" width=\"70\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"36\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Espèce</text>\n<rect x=\"71\" y=\"1\" width=\"270\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"206\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Renseignement</text>\n<rect x=\"1\" y=\"31\" width=\"70\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"36\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">A</text>\n<rect x=\"71\" y=\"31\" width=\"270\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"206\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">6 chromosomes dessinés, un seul par paire</text>\n<rect x=\"1\" y=\"59\" width=\"70\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"36\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">E</text>\n<rect x=\"71\" y=\"59\" width=\"270\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"206\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">formule chromosomique 2n = 6</text>\n</svg>",
+      "answerKey": {
+        "value": 3
+      },
+      "explanation": "Le dessin de A ne montre qu'un chromosome par paire : n = 6. Pour E, 2n = 6 donc n = 3. Chaque fusion retire un chromosome du compte de n : 6 − 3 = 3 fusions. Lire 6 contre 6 sans passer de 2n à n ferait conclure à tort qu'il n'y en a aucune.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Le document montre l'effet de la mutation du gène de l'œil chez la souris. Quelles affirmations ce document permet-il de justifier ?\n<svg viewBox=\"0 0 422 116\">\n<title>Effet du nombre de copies défectueuses du gène de l'œil chez la souris</title>\n<rect x=\"1\" y=\"1\" width=\"60\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"31\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Souris</text>\n<rect x=\"61\" y=\"1\" width=\"160\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"141\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Copies du gène de l'œil</text>\n<rect x=\"221\" y=\"1\" width=\"200\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"321\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Phénotype observé</text>\n<rect x=\"1\" y=\"31\" width=\"60\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"31\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">1</text>\n<rect x=\"61\" y=\"31\" width=\"160\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"141\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">deux copies normales</text>\n<rect x=\"221\" y=\"31\" width=\"200\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"321\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">yeux de taille normale</text>\n<rect x=\"1\" y=\"59\" width=\"60\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"31\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">2</text>\n<rect x=\"61\" y=\"59\" width=\"160\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"141\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">une normale, une défectueuse</text>\n<rect x=\"221\" y=\"59\" width=\"200\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"321\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">yeux de taille réduite</text>\n<rect x=\"1\" y=\"87\" width=\"60\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"31\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">3</text>\n<rect x=\"61\" y=\"87\" width=\"160\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"141\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">deux défectueuses</text>\n<rect x=\"221\" y=\"87\" width=\"200\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"321\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">mort, système nerveux anormal</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une mutation peut faire apparaître un phénotype nouveau, ici des yeux réduits"
+        },
+        {
+          "id": "b",
+          "text": "Certaines mutations sont létales, ici quand les deux copies du gène sont défectueuses"
+        },
+        {
+          "id": "c",
+          "text": "Une mutation est réversible : une souris mutante peut redevenir normale"
+        },
+        {
+          "id": "d",
+          "text": "Une mutation est rare, de l'ordre de 10⁻⁶ à 10⁻⁷ par génération"
+        },
+        {
+          "id": "e",
+          "text": "L'effet d'un gène défectueux dépend du nombre de copies mutées présentes"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le tableau montre des yeux réduits avec une copie défectueuse (phénotype nouveau), la mort avec deux copies (mutation létale), donc un effet qui dépend du nombre de copies mutées. Il ne dit rien de la réversibilité ni de la fréquence des mutations : ces propriétés ne se lisent pas ici.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Les individus P, Q, R et S ont un gène modifié par rapport à l'individu sauvage. Codons de l'ARNm : GGU et GGC glycine ; CUU et CUC leucine ; CAC histidine ; AAA lysine ; AAU et AAC asparagine. Un seul d'entre eux a un polypeptide identique à celui du sauvage. Lequel ?\n<svg viewBox=\"0 0 342 172\">\n<title>Fragment du brin transcrit chez un individu sauvage et quatre individus P, Q, R et S</title>\n<rect x=\"1\" y=\"1\" width=\"80\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"41\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Individu</text>\n<rect x=\"81\" y=\"1\" width=\"260\" height=\"30\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"211\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">Brin transcrit (triplets, de gauche à droite)</text>\n<rect x=\"1\" y=\"31\" width=\"80\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"41\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">Sauvage</text>\n<rect x=\"81\" y=\"31\" width=\"260\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"211\" y=\"49\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">TAC CCA GAG TTT GAA</text>\n<rect x=\"1\" y=\"59\" width=\"80\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"41\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">P</text>\n<rect x=\"81\" y=\"59\" width=\"260\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"211\" y=\"77\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">TAC CCA GAG TTA GAA</text>\n<rect x=\"1\" y=\"87\" width=\"80\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"41\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">Q</text>\n<rect x=\"81\" y=\"87\" width=\"260\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"211\" y=\"105\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">TAC CCA GTG TTT GAA</text>\n<rect x=\"1\" y=\"115\" width=\"80\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"41\" y=\"133\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">R</text>\n<rect x=\"81\" y=\"115\" width=\"260\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"211\" y=\"133\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">TAC CCG GAG TTT GAA</text>\n<rect x=\"1\" y=\"143\" width=\"80\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"41\" y=\"161\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">S</text>\n<rect x=\"81\" y=\"143\" width=\"260\" height=\"28\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"211\" y=\"161\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"500\" fill=\"#0f172a\">TAC CCA GAG TTG AA</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'individu P"
+        },
+        {
+          "id": "b",
+          "text": "L'individu Q"
+        },
+        {
+          "id": "c",
+          "text": "L'individu R"
+        },
+        {
+          "id": "d",
+          "text": "L'individu S"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sauvage : AUG GGU CUC AAA CUU. P : AAA devient AAU, la lysine est remplacée par l'asparagine. Q : CUC devient CAC, la leucine est remplacée par l'histidine. R : GGU devient GGC, toujours la glycine, substitution silencieuse. S : la base perdue décale la lecture, le 4ᵉ codon devient AAC et la lysine est remplacée par l'asparagine.",
+      "difficulty": 3
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre la chaîne qui relie une substitution dans le gène d'une enzyme à l'apparition d'une maladie.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Un acide aminé de la chaîne polypeptidique est remplacé"
+        },
+        {
+          "id": "e",
+          "text": "Le phénotype malade apparaît"
+        },
+        {
+          "id": "a",
+          "text": "Une base du gène est remplacée lors de la réplication de l'ADN"
+        },
+        {
+          "id": "d",
+          "text": "L'enzyme, de forme modifiée, perd sa fonction"
+        },
+        {
+          "id": "b",
+          "text": "L'ARNm transcrit porte un codon modifié"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "La mutation touche d'abord l'ADN. Elle se retrouve dans l'ARNm transcrit, puis dans la séquence des acides aminés lors de la traduction. La forme de l'enzyme dépend de cette séquence, donc sa fonction est perdue, et le phénotype malade en découle.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un couple de parents fournit, au plus, 4096 types d'œufs différents par la rencontre de leurs gamètes, en ne tenant compte que du brassage interchromosomique. Quel est le nombre 2n de chromosomes de l'espèce ?",
+      "answerKey": {
+        "value": 12
+      },
+      "explanation": "Le nombre d'œufs est 2ⁿ × 2ⁿ = 2²ⁿ (2n chromosomes). 4096 = 2¹², donc 2n = 12 chromosomes, soit n = 6 paires et 2⁶ = 64 gamètes par parent (64 × 64 = 4096). Prendre 4096 = 2ⁿ donnerait n = 12 et 2n = 24, en oubliant la fécondation.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un chromosome porte les allèles A, B et C (dans cet ordre), son homologue a, b et c. Un crossing-over se produit entre B et C, sur deux chromatides non sœurs : chacune cède à l'autre la portion située après le point d'échange. Quelles chromatides recombinées obtient-on, en plus de ABC et abc ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les chromatides Abc et aBC",
+          "misconceptionTag": "bio.div.crossing-over-lieu-confondu"
+        },
+        {
+          "id": "b",
+          "text": "Les chromatides ABc et abC"
+        },
+        {
+          "id": "c",
+          "text": "Deux nouveaux allèles de B et de C",
+          "misconceptionTag": "bio.div.crossing-over-cree-allele"
+        },
+        {
+          "id": "d",
+          "text": "Les chromatides AbC et aBc",
+          "misconceptionTag": "bio.div.crossing-over-lieu-confondu"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Avant l'échange : ABC et abc. Le point d'échange est entre B et C : les gènes A et B restent en place, la portion qui porte C est échangée, d'où ABc et abC. Abc et aBC viendraient d'un échange entre A et B ; AbC et aBc exigeraient deux échanges, l'un entre A et B, l'autre entre B et C. Aucun allèle nouveau n'apparaît : le crossing-over recombine des allèles existants.",
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Le gardien des discontinuités",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Mohorovicic observe, pour un même séisme, deux groupes d'ondes P et S décalés dans le temps. Quelle explication retient-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le séisme s'est produit deux fois de suite, à quelques minutes d'intervalle, exactement au même foyer"
+        },
+        {
+          "id": "b",
+          "text": "Le second groupe est celui des ondes L de surface, qui arrivent toujours après les ondes P et S"
+        },
+        {
+          "id": "c",
+          "text": "Le sismographe a enregistré deux fois la même onde, à cause d'un défaut de fonctionnement de l'appareil"
+        },
+        {
+          "id": "d",
+          "text": "Le second groupe a suivi un autre trajet, réfléchi ou réfracté sur une surface séparant deux milieux"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les deux groupes sont partis ensemble du foyer : un décalage à l'arrivée vient d'un trajet différent. Une partie des ondes a rencontré en profondeur une surface séparant deux milieux de nature différente, s'y est réfléchie ou réfractée et a parcouru un chemin différent ; cette surface est la discontinuité de Mohorovicic. Un second séisme ou un défaut d'appareil n'expliquerait pas le doublement des P et des S, et les ondes L, de surface, forment un troisième groupe distinct.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour le séisme d'Arette, la vitesse moyenne des ondes P calculée vaut 8,3 km/s à 1000 km, 9,4 km/s à 4000 km et 11,8 km/s à 8000 km. Quelle conclusion en tirer ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La vitesse des ondes P est constante : les écarts viennent de l'imprécision des mesures"
+        },
+        {
+          "id": "b",
+          "text": "Les stations lointaines enregistrent des ondes L, plus rapides que les ondes P"
+        },
+        {
+          "id": "c",
+          "text": "Les ondes qui vont loin plongent plus profond, dans des couches où elles vont plus vite"
+        },
+        {
+          "id": "d",
+          "text": "La vitesse des ondes P augmente avec la distance parcourue, quel que soit le milieu traversé"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Une vitesse moyenne qui augmente avec la distance montre que le milieu n'est pas uniforme : les ondes qui vont loin plongent plus profondément, dans des couches où elles vont plus vite. Les ondes L, lentes, ne sont pas plus rapides que les P ; une vitesse constante contredit les trois valeurs calculées ; et ce n'est pas la distance seule qui accélère les ondes, mais le milieu qu'elles traversent.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Que peut-on dire de la croûte océanique par rapport à la croûte continentale ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle est moins épaisse et plus dense"
+        },
+        {
+          "id": "b",
+          "text": "Elle est plus épaisse et moins dense"
+        },
+        {
+          "id": "c",
+          "text": "Elle est plus épaisse et plus dense"
+        },
+        {
+          "id": "d",
+          "text": "Elle est moins épaisse et moins dense"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La croûte océanique mesure environ 7 km, contre 30 à 70 km pour la croûte continentale : elle est moins épaisse. Sa densité (2,9) dépasse celle de la croûte continentale (2,7) : elle est plus dense. Les trois autres combinaisons se trompent sur l'épaisseur, sur la densité, ou sur les deux.",
+      "difficulty": 2
+    },
+    {
+      "type": "numeric",
+      "prompt": "Au séisme d'Arette, les ondes L ont mis 30 min 48 s pour atteindre la station G, à 7000 km de l'épicentre. On admet que leur vitesse moyenne est la même sur tous les trajets. À quelle distance de l'épicentre, en km, se trouve une station où elles arrivent après 13 min 12 s ?",
+      "answerKey": {
+        "value": 3000,
+        "tolerance": 15,
+        "unit": "km"
+      },
+      "explanation": "On convertit : 30 min 48 s = 1848 s, donc v = 7000 ÷ 1848 ≈ 3,79 km/s. Puis 13 min 12 s = 792 s, donc d = v × t ≈ 3,79 × 792 ≈ 3000 km. On peut aussi remarquer que 792 s valent les 3/7 de 1848 s, donc d = 7000 × 3/7 = 3000 km. L'hypothèse d'une vitesse constante est celle des ondes L, dont la courbe temps-distance est une droite ; elle serait fausse pour les ondes P et S.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un élève affirme : « La croûte continentale dégage 1700 J/s par km³ et le manteau seulement 30, donc c'est la croûte continentale qui fournit le plus de chaleur au total. » Que lui répondre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est vrai : la couche qui dégage le plus par km³ fournit toujours le plus au total",
+          "misconceptionTag": "bio.globe.energie-par-km3"
+        },
+        {
+          "id": "b",
+          "text": "C'est faux : il faut tenir compte du volume, bien plus grand pour le manteau"
+        },
+        {
+          "id": "c",
+          "text": "C'est faux : le manteau ne contient aucun élément radioactif"
+        },
+        {
+          "id": "d",
+          "text": "C'est vrai : la croûte est plus proche de la surface, où la chaleur se mesure"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La puissance totale d'une couche est sa chaleur par km³ multipliée par son volume. Pour la croûte continentale : 4,5×10⁹ × 1700 ≈ 7,65×10¹² J/s ; pour le manteau : 920×10⁹ × 30 = 2,76×10¹³ J/s, soit environ 3,6 fois plus. Le piège courant est de s'arrêter à la valeur par km³. Le manteau contient bien des éléments radioactifs, et la proximité de la surface ne change pas la puissance produite.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Pourquoi, de toutes les enveloppes du globe, seul le noyau externe est-il liquide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "C'est l'enveloppe la plus chaude du globe, donc la seule dont les matériaux fondent à coup sûr",
+          "misconceptionTag": "bio.globe.etat-par-temperature-seule"
+        },
+        {
+          "id": "b",
+          "text": "C'est l'enveloppe la moins dense du globe, donc celle dont les matériaux s'écoulent le mieux"
+        },
+        {
+          "id": "c",
+          "text": "La température y fait fondre le fer, et la pression n'y suffit pas encore à le garder solide"
+        },
+        {
+          "id": "d",
+          "text": "C'est la seule enveloppe qui contienne du fer, métal que la chaleur fait fondre facilement"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'état d'un matériau dépend de la température et de la pression. Dans le noyau externe, la température suffit à fondre le fer sans que la pression soit assez forte pour le maintenir solide ; dans la graine, plus chaude, la pression l'emporte et le fer est solide. Le piège courant est de ne regarder que la température : la graine, plus chaude, est pourtant solide. Le noyau externe n'est pas l'enveloppe la moins dense, et la graine contient aussi du fer.",
+      "difficulty": 3
+    }
+  ]
+}

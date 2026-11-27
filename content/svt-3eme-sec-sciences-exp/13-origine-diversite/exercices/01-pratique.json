@@ -1,0 +1,195 @@
+{
+  "title": "⭐ Exercice : Premiers repères sur la diversité génétique",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans le syndrome du cri du chat, quelle modification est observée sur le caryotype ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une portion du bras court d'un chromosome 5 est perdue"
+        },
+        {
+          "id": "b",
+          "text": "Un chromosome 5 est absent : il y a 45 chromosomes",
+          "misconceptionTag": "bio.div.mutation-chrom-nombre-seulement"
+        },
+        {
+          "id": "c",
+          "text": "Une région d'un chromosome 5 est présente en double",
+          "misconceptionTag": "bio.div.repetition-prise-pour-perte"
+        },
+        {
+          "id": "d",
+          "text": "Un chromosome 5 est soudé à un chromosome 6 en un seul"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Dans le cri du chat, environ la moitié du bras court d'un chromosome 5 est perdue : le chromosome est plus court mais le caryotype garde 46 chromosomes. Ce n'est ni une répétition (comme l'œil Bar), ni un chromosome manquant, ni une fusion.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque cellule du sac embryonnaire à sa description.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Oosphère"
+        },
+        {
+          "id": "l2",
+          "text": "Synergides"
+        },
+        {
+          "id": "l3",
+          "text": "Antipodes"
+        },
+        {
+          "id": "l4",
+          "text": "Cellule centrale"
+        },
+        {
+          "id": "r3",
+          "text": "Trois cellules à un noyau chacune, au pôle opposé au micropyle"
+        },
+        {
+          "id": "r1",
+          "text": "Une cellule à un noyau, gamète femelle, au pôle du micropyle"
+        },
+        {
+          "id": "r4",
+          "text": "Une cellule à deux noyaux, au centre du sac"
+        },
+        {
+          "id": "r2",
+          "text": "Deux cellules à un noyau chacune, de part et d'autre de l'oosphère"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'oosphère est le gamète femelle, au pôle du micropyle ; elle est encadrée par les deux synergides. Les trois antipodes occupent le pôle opposé, et la cellule centrale, au milieu, contient deux noyaux. Le sac compte ainsi 7 cellules et 8 noyaux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle affirmation sur les mutations est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elles surviennent à chaque division d'une cellule",
+          "misconceptionTag": "bio.div.mutation-frequente"
+        },
+        {
+          "id": "b",
+          "text": "Elles sont rares, de l'ordre de 10⁻⁶ à 10⁻⁷ par génération"
+        },
+        {
+          "id": "c",
+          "text": "Elles sont toujours néfastes pour l'individu qui les porte",
+          "misconceptionTag": "bio.div.mutation-toujours-nefaste"
+        },
+        {
+          "id": "d",
+          "text": "Elles ne sont jamais transmises aux descendants"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une mutation est un événement rare, de l'ordre de 10⁻⁶ à 10⁻⁷ par génération. Elle peut être neutre ou avantageuse (la phalène sombre), et elle est transmise quand elle touche les cellules à l'origine des gamètes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "À l'anaphase I de la méiose, que se sépare-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les deux chromatides sœurs de chaque chromosome",
+          "misconceptionTag": "bio.div.anaphase1-separe-chromatides"
+        },
+        {
+          "id": "b",
+          "text": "Toujours tous les paternels d'un côté, tous les maternels de l'autre",
+          "misconceptionTag": "bio.div.lots-paternel-maternel-en-bloc"
+        },
+        {
+          "id": "c",
+          "text": "Les homologues, qui s'échangent alors des fragments",
+          "misconceptionTag": "bio.div.crossing-over-mauvais-moment"
+        },
+        {
+          "id": "d",
+          "text": "Les homologues de chaque paire, chacun à deux chromatides"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "À l'anaphase I, les chromosomes homologues de chaque paire se séparent, chacun gardant ses deux chromatides ; les chromatides ne se séparent qu'à l'anaphase II. Chaque paire se sépare indépendamment des autres, donc la répartition en bloc n'est qu'un des cas possibles, et l'échange de fragments a eu lieu plus tôt, en prophase I.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Chez une plante à fleurs à 2n = 20, combien de chromosomes l'œuf-albumen contient-il, sachant qu'il résulte de la fusion d'un anthérozoïde et des deux noyaux de la cellule centrale ?",
+      "answerKey": {
+        "value": 30
+      },
+      "explanation": "n = 20 ÷ 2 = 10. L'œuf-albumen réunit trois noyaux haploïdes : 10 + 10 + 10 = 30 chromosomes, soit 3n. L'œuf-embryon, lui, n'en a que 2n = 20.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la formation du sac embryonnaire à partir d'une cellule mère de l'ovule.",
+      "options": [
+        {
+          "id": "d",
+          "text": "La mégaspore conservée subit trois mitoses successives"
+        },
+        {
+          "id": "a",
+          "text": "Une cellule mère diploïde de l'ovule subit la méiose"
+        },
+        {
+          "id": "e",
+          "text": "Huit noyaux s'organisent en sept cellules"
+        },
+        {
+          "id": "c",
+          "text": "Trois mégaspores dégénèrent, une seule persiste"
+        },
+        {
+          "id": "b",
+          "text": "Quatre mégaspores haploïdes se forment"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "La méiose précède tout : elle donne quatre mégaspores. Trois dégénèrent, puis la dernière subit trois mitoses (1, 2, 4, 8 noyaux), et les huit noyaux s'organisent en sept cellules, le sac embryonnaire.",
+      "difficulty": 2
+    }
+  ]
+}

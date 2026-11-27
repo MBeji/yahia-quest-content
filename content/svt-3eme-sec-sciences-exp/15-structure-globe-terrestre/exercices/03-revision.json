@@ -1,0 +1,181 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le globe terrestre",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "numeric",
+      "prompt": "Une galerie de mine descend à 3000 m de profondeur. Près de la surface, la température augmente de 1 °C tous les 30 m. De combien de degrés la température y dépasse-t-elle celle de la surface ?",
+      "answerKey": {
+        "value": 100,
+        "unit": "°C"
+      },
+      "explanation": "On compte les paliers de 30 m : 3000 ÷ 30 = 100 paliers, donc l'élévation est de 100 × 1 °C = 100 °C. Cette valeur vaut près de la surface ; plus bas, la température monte moins vite.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associer chaque discontinuité à la limite qu'elle marque.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Discontinuité de Mohorovicic"
+        },
+        {
+          "id": "l2",
+          "text": "Discontinuité de Gutenberg"
+        },
+        {
+          "id": "l3",
+          "text": "Discontinuité de Lehmann"
+        },
+        {
+          "id": "r1",
+          "text": "Entre la croûte et le manteau"
+        },
+        {
+          "id": "r2",
+          "text": "Entre le manteau et le noyau externe"
+        },
+        {
+          "id": "r3",
+          "text": "Entre le noyau externe et la graine"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "explanation": "La discontinuité de Mohorovicic sépare la croûte du manteau ; celle de Gutenberg, à 2900 km, sépare le manteau du noyau externe liquide ; celle de Lehmann, vers 5100 km, sépare le noyau externe de la graine solide.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle description convient à une lave basaltique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Très visqueuse, riche en silice, sortie vers 800 °C",
+          "misconceptionTag": "bio.globe.laves-confondues"
+        },
+        {
+          "id": "b",
+          "text": "Très fluide, riche en silice, sortie vers 800 °C"
+        },
+        {
+          "id": "c",
+          "text": "Très visqueuse, pauvre en silice, sortie vers 1200 °C"
+        },
+        {
+          "id": "d",
+          "text": "Très fluide, pauvre en silice, sortie vers 1200 °C"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La lave basaltique est très fluide, pauvre en silice et sort vers 1200 °C. La description très visqueuse, riche en silice, vers 800 °C est celle de la lave rhyolitique ; les deux autres associent des caractères incompatibles : la richesse en silice va avec la viscosité et une température plus basse.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Dans quel ordre ces roches se classent-elles par vitesse croissante des ondes S ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "péridotite, basalte, granite, argile"
+        },
+        {
+          "id": "b",
+          "text": "argile, granite, basalte, péridotite"
+        },
+        {
+          "id": "c",
+          "text": "granite, argile, basalte, péridotite"
+        },
+        {
+          "id": "d",
+          "text": "argile, basalte, granite, péridotite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les mesures donnent pour les ondes S : argile 2,2 km/s, granite 2,4 à 3,2, basalte 3,5 à 4, péridotite 4,5 à 7,8. Ces intervalles ne se chevauchent pas, d'où le classement par vitesse croissante : argile, granite, basalte, péridotite. Les autres propositions inversent tout ou partie de l'ordre.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une péridotite du manteau remonte rapidement vers la surface et fond en partie. Quelle est la cause de cette fusion ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Son frottement contre la croûte la réchauffe jusqu'à la faire fondre"
+        },
+        {
+          "id": "b",
+          "text": "Sa température augmente pendant la montée, ce qui suffit à la faire fondre",
+          "misconceptionTag": "bio.globe.fusion-par-chauffage"
+        },
+        {
+          "id": "c",
+          "text": "La pression qui la maintenait solide chute plus vite que sa température"
+        },
+        {
+          "id": "d",
+          "text": "Elle entre dans l'asthénosphère, plus chaude, qui suffit à la faire fondre"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "En remontant vite, la péridotite subit une forte baisse de pression alors que sa température diminue peu : ce n'est plus la pression qui la maintient solide, et une partie fond en donnant un magma basaltique. C'est la fusion par décompression. Pendant la montée la température ne s'élève pas, et la couche traversée n'est pas la cause : c'est la baisse de pression qui compte.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Lesquelles de ces affirmations sur le globe sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le manteau est solide : les ondes S le traversent"
+        },
+        {
+          "id": "b",
+          "text": "Les ondes P ralentissent brutalement à 2900 km de profondeur"
+        },
+        {
+          "id": "c",
+          "text": "Les ondes S traversent le noyau externe"
+        },
+        {
+          "id": "d",
+          "text": "La croûte forme l'essentiel du volume du globe"
+        },
+        {
+          "id": "e",
+          "text": "La graine est solide, bien que plus chaude que le noyau externe"
+        },
+        {
+          "id": "f",
+          "text": "La densité du noyau, voisine de 10, suffit à prouver qu'il est fait de fer"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "e"
+        ]
+      },
+      "explanation": "Le manteau laisse passer les ondes S, donc il est solide. À 2900 km, la vitesse des ondes P chute en entrant dans le noyau externe liquide. La graine est plus chaude que le noyau externe mais solide, car la pression l'emporte. Les ondes S ne traversent pas le noyau externe liquide, et la croûte, mince, ne forme qu'une très faible part du volume du globe. Enfin, la densité du noyau ne suffit pas à prouver le fer : le cuivre a lui aussi une densité compatible, et c'est la vitesse des ondes, comparée aux mesures de laboratoire, qui désigne le fer.",
+      "difficulty": 3
+    }
+  ]
+}

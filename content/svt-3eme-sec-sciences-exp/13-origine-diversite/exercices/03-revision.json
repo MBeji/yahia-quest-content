@@ -1,0 +1,209 @@
+{
+  "title": "⭐⭐ Révision (type examen) : De la méiose à la fécondation",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Quel événement de la méiose est à l'origine du brassage intrachromosomique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un crossing-over entre chromatides non sœurs d'homologues"
+        },
+        {
+          "id": "b",
+          "text": "Un échange de fragments entre les deux chromatides sœurs d'un chromosome",
+          "misconceptionTag": "bio.div.crossing-over-chromatides-soeurs"
+        },
+        {
+          "id": "c",
+          "text": "La séparation au hasard des homologues à l'anaphase I",
+          "misconceptionTag": "bio.div.brassage-intra-inter-confondus"
+        },
+        {
+          "id": "d",
+          "text": "La réplication de l'ADN pendant l'interphase"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Le brassage intrachromosomique vient du crossing-over, échange de fragments entre chromatides non sœurs de deux chromosomes homologues. Les chromatides sœurs sont identiques, leur échange ne change rien ; la séparation au hasard des homologues est le brassage interchromosomique.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque étape de la méiose à ce qui s'y produit.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Prophase I"
+        },
+        {
+          "id": "l2",
+          "text": "Métaphase I"
+        },
+        {
+          "id": "l3",
+          "text": "Anaphase I"
+        },
+        {
+          "id": "l4",
+          "text": "Anaphase II"
+        },
+        {
+          "id": "r4",
+          "text": "Les chromatides de chaque chromosome se séparent"
+        },
+        {
+          "id": "r2",
+          "text": "Les paires d'homologues sont alignées sur l'équateur de la cellule"
+        },
+        {
+          "id": "r1",
+          "text": "Les homologues s'apparient et des crossing-over peuvent se produire"
+        },
+        {
+          "id": "r3",
+          "text": "Les chromosomes homologues de chaque paire se séparent"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "En prophase I, les homologues s'apparient et peuvent échanger des fragments. En métaphase I, les paires s'alignent sur l'équateur ; en anaphase I, les homologues se séparent (réduction de 2n à n) ; en anaphase II, les chromatides se séparent.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Combien de sacs embryonnaires se forment à partir d'une cellule mère de l'ovule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4, un par mégaspore",
+          "misconceptionTag": "bio.div.megaspores-toutes-fonctionnelles"
+        },
+        {
+          "id": "b",
+          "text": "1, car trois mégaspores dégénèrent"
+        },
+        {
+          "id": "c",
+          "text": "2, un par cellule issue de la première division"
+        },
+        {
+          "id": "d",
+          "text": "8, un par noyau du sac"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La méiose donne quatre mégaspores, mais trois dégénèrent : une seule forme le sac embryonnaire, donc un seul sac par cellule mère. Les huit noyaux appartiennent à ce sac unique, ils ne forment pas huit sacs.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Chez une espèce à 2n = 14, dont les homologues de chaque paire diffèrent, combien de types d'œufs la rencontre de deux gamètes peut-elle donner, par brassage interchromosomique seul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "128",
+          "misconceptionTag": "bio.div.fecondation-sans-effet-sur-diversite"
+        },
+        {
+          "id": "b",
+          "text": "256",
+          "misconceptionTag": "bio.div.somme-au-lieu-de-produit"
+        },
+        {
+          "id": "c",
+          "text": "16 384"
+        },
+        {
+          "id": "d",
+          "text": "268 435 456",
+          "misconceptionTag": "bio.div.exposant-2n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "n = 7 paires : chaque parent fournit 2⁷ = 128 types de gamètes. Chaque gamète mâle peut rencontrer chaque gamète femelle : 128 × 128 = 16 384 = 2¹⁴ types d'œufs. 128 oublie la fécondation, 256 additionne 128 + 128, et 268 435 456 = 2²⁸ viendrait de 2¹⁴ gamètes par parent, en prenant 2n pour exposant.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Lequel de ces phénomènes ajoute de la diversité génétique aux descendants, en plus du brassage de la méiose ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Les mitoses successives de la cellule œuf fécondée",
+          "misconceptionTag": "bio.div.mitose-source-de-diversite"
+        },
+        {
+          "id": "b",
+          "text": "La transcription d'un gène en ARNm dans le noyau"
+        },
+        {
+          "id": "c",
+          "text": "La rencontre au hasard de deux gamètes de sexes opposés"
+        },
+        {
+          "id": "d",
+          "text": "La division en deux d'une cellule du corps, à l'identique",
+          "misconceptionTag": "bio.div.mitose-source-de-diversite"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La fécondation réunit au hasard deux gamètes parmi ceux que chaque parent peut fournir : c'est la deuxième loterie, qui multiplie la diversité. Les mitoses copient l'information sans la brasser, et la transcription lit un gène sans modifier l'ADN : aucune ne crée de combinaison nouvelle.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations sur la double fécondation d'une plante à fleurs sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le noyau reproducteur du grain de pollen germé se divise en deux anthérozoïdes"
+        },
+        {
+          "id": "b",
+          "text": "Le noyau végétatif s'unit à l'oosphère pour former l'œuf-embryon"
+        },
+        {
+          "id": "c",
+          "text": "Un anthérozoïde s'unit à l'oosphère : l'œuf-embryon a 2n chromosomes"
+        },
+        {
+          "id": "d",
+          "text": "Les deux anthérozoïdes s'unissent à l'oosphère"
+        },
+        {
+          "id": "e",
+          "text": "L'autre anthérozoïde s'unit aux deux noyaux du sac : l'œuf-albumen a 3n chromosomes"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le noyau reproducteur donne deux anthérozoïdes ; l'un s'unit à l'oosphère (n + n = 2n, œuf-embryon), l'autre aux deux noyaux de la cellule centrale (n + n + n = 3n, œuf-albumen). Le noyau végétatif disparaît sans s'unir à rien, et chaque anthérozoïde a sa propre cible.",
+      "difficulty": 2
+    }
+  ]
+}

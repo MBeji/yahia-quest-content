@@ -1,0 +1,10 @@
+# 📜 Résumé : La transmission de l'information génétique
+
+- **Croiser deux lignées pures** : une lignée pure garde le même phénotype à toutes les générations ; le croisement de deux lignées pures donne la F1, puis la F1 donne la F2. On empêche l'autofécondation (castration des étamines chez le pois, coupe de la panicule chez le maïs) et on répète le croisement pour avoir beaucoup de descendants.
+- **Analyser un croisement** : on note les phénotypes par des symboles, on repère les lignées pures par leurs croisements internes et l'on relie chaque croisement au précédent. Une F1 uniforme n'est pas forcément pure : les volailles tachetées sont des hybrides.
+- **Génotype, dominance, codominance et 1re loi de Mendel** : un gène à deux allèles, A//A et B//B homozygotes, A//B hétérozygote. La F1 de deux lignées pures est uniforme : même génotype hétérozygote, même phénotype, celui du parent dominant ou un phénotype non parental en cas de codominance.
+- **Pureté des gamètes et échiquier (2e loi de Mendel)** : un hybride A//B forme deux types de gamètes purs, à parts égales. L'échiquier donne une F2 en 1/4, 1/2, 1/4 avec codominance ; les résultats réels sont proches des résultats théoriques, les écarts étant dus au hasard.
+- **Dominance complète** : la F1 est uniforme et de phénotype dominant ; la F2 compte 3/4 de dominants et 1/4 de récessifs, avec des génotypes 1/4 A//A, 1/2 A//a, 1/4 a//a. Dominant ne veut pas dire fréquent.
+- **Croisement test** : on croise l'individu à tester avec un testeur récessif a//a. 100 % de dominants indique un homozygote, 50 % et 50 % un hétérozygote ; un individu dominant n'est pas forcément pur.
+- **Le sexe, une affaire de chromosomes** : femelle XX, mâle XY. Les ovules portent tous X, le mâle forme à parts égales des spermatozoïdes X et Y, d'où autant de mâles que de femelles en moyenne.
+- **Hérédité liée au sexe** : un gène porté par X ou Y se transmet selon sa localisation (partie homologue, spécifique de Y, spécifique de X). Des croisements réciproques qui diffèrent signalent un gène lié au sexe ; le raisonnement sur les fils et les filles situe le gène white de la drosophile sur la partie spécifique de X.

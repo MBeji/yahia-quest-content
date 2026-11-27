@@ -1,0 +1,154 @@
+{
+  "title": "👑 Défi élite ⭐⭐⭐⭐ : Les laboratoires de Mendel et de Morgan",
+  "difficulty": 4,
+  "mode": "challenge",
+  "xpReward": 300,
+  "rewardCoins": 60,
+  "displayOrder": 4,
+  "questions": [
+    {
+      "prompt": "Mendel croise des lignées pures de pois pour trois caractères : forme de la graine (lisse ou ridée), couleur du tégument (gris ou blanc), longueur de la tige (longue ou courte). La F1 est toujours uniforme. Le diagramme donne, pour chaque F2, le pourcentage de descendants au phénotype présent chez toute la F1 (graines lisses, téguments gris, tiges longues). Que montrent ces résultats ?\n<svg viewBox=\"0 0 300 190\">\n<title>Trois F2 de Mendel : pourcentage de descendants de F2 au phénotype dominant pour la forme, la couleur du tégument et la longueur de la tige</title>\n<line x1=\"50\" y1=\"150\" x2=\"290\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"1.6\"/>\n<line x1=\"46\" y1=\"150.0\" x2=\"50\" y2=\"150.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<text x=\"42\" y=\"154.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">0</text>\n<line x1=\"46\" y1=\"90.0\" x2=\"50\" y2=\"90.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<text x=\"42\" y=\"94.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">50</text>\n<line x1=\"50\" y1=\"90.0\" x2=\"290\" y2=\"90.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-dasharray=\"4 3\"/>\n<line x1=\"46\" y1=\"30.0\" x2=\"50\" y2=\"30.0\" stroke=\"#0f172a\" stroke-width=\"1.4\"/>\n<text x=\"42\" y=\"34.0\" text-anchor=\"end\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">100</text>\n<line x1=\"50\" y1=\"30.0\" x2=\"290\" y2=\"30.0\" stroke=\"#cbd5e1\" stroke-width=\"0.8\" stroke-dasharray=\"4 3\"/>\n<text x=\"24\" y=\"20\" text-anchor=\"start\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">% de F2</text>\n<rect x=\"70\" y=\"60.36\" width=\"50\" height=\"89.64\" fill=\"#fde68a\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"95\" y=\"54.36\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">74,7 %</text>\n<text x=\"95\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">lisses</text>\n<text x=\"95\" y=\"177\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">n = 7324</text>\n<rect x=\"145\" y=\"58.92\" width=\"50\" height=\"91.08\" fill=\"#fbcfe8\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"170\" y=\"52.92\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">75,9 %</text>\n<text x=\"170\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">gris</text>\n<text x=\"170\" y=\"177\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">n = 929</text>\n<rect x=\"220\" y=\"61.2\" width=\"50\" height=\"88.8\" fill=\"#bbf7d0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"245\" y=\"55.2\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\">74,0 %</text>\n<text x=\"245\" y=\"164\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"700\" fill=\"#0f172a\">longues</text>\n<text x=\"245\" y=\"177\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"400\" fill=\"#0f172a\">n = 1064</text>\n</svg>",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans les trois cas, environ 3/4 de la F2 ont le phénotype dominant : un couple d'allèles avec dominance"
+        },
+        {
+          "id": "b",
+          "text": "Les écarts entre 74,0 % et 75,9 % montrent que trois règles différentes s'appliquent aux trois caractères",
+          "misconceptionTag": "bio.gen.ecart-theorie-reel-invalide"
+        },
+        {
+          "id": "c",
+          "text": "Le phénotype présent en F1 est trois fois plus fréquent que l'autre dans la nature",
+          "misconceptionTag": "bio.gen.dominant-egale-frequent"
+        },
+        {
+          "id": "d",
+          "text": "Les trois F2 sont presque uniformes, puisque ces pourcentages dépassent 74 %",
+          "misconceptionTag": "bio.gen.uniformite-f1-f2-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les pourcentages 74,7 %, 75,9 % et 74,0 % sont proches de 3/4 pour des F2 de plusieurs centaines à milliers de plants : chaque caractère suit la F2 d'un monohybridisme avec dominance, avec un phénotype dominant en F1. Les petits écarts sont dus au hasard et ne signalent pas des règles différentes. Une F2 à 3/4 – 1/4 n'est pas uniforme, et la dominance ne dit rien de la fréquence dans la nature.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Chez la drosophile, la lignée sauvage a le corps gris, une lignée mutante l'a de couleur sable. Croisement 1 : une femelle sauvage × un mâle sable ne donne que des descendants sauvages. Croisement 2 : un mâle sauvage de lignée pure × une femelle sable donne des femelles toutes sauvages et des mâles tous sable. Où se trouve le gène ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sur un autosome, car le caractère se transmet de la même façon dans les deux sens",
+          "misconceptionTag": "bio.gen.reciproques-toujours-identiques"
+        },
+        {
+          "id": "b",
+          "text": "Sur la partie spécifique de X : les croisements réciproques diffèrent"
+        },
+        {
+          "id": "c",
+          "text": "Sur la partie spécifique de Y, car le père transmet son Y à ses fils"
+        },
+        {
+          "id": "d",
+          "text": "Sur la partie homologue de X et de Y, comme un gène d'autosome ordinaire"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Les croisements réciproques donnent des résultats différents selon le sexe des parents : le gène est lié au sexe. Il n'est pas sur la partie spécifique de Y, car le père sauvage donnerait son Y à tous ses fils, qui seraient sauvages. Il n'est pas sur un autosome ni sur la partie homologue, car les deux croisements réciproques donneraient alors le même résultat. Le gène est donc sur la partie spécifique de X : les fils sable ont reçu de leur mère un X porteur de l'allèle sable.",
+      "difficulty": 3
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un mâle sauvage de lignée pure et une femelle à yeux blancs donnent une F1 (le gène white est récessif et porté par la partie spécifique de X). On croise entre eux les mâles et les femelles de cette F1. Sur 800 descendants, combien de femelles à yeux blancs attend-on ?",
+      "answerKey": {
+        "value": 200,
+        "unit": "femelles"
+      },
+      "explanation": "La mère est Xa//Xa et le père XA//Y : la F1 compte des femelles XA//Xa et des mâles Xa//Y. Croisées entre elles, elles forment des gamètes XA et Xa (moitié chacun) face à des gamètes Xa et Y : l'échiquier donne 1/4 XA//Xa, 1/4 XA//Y, 1/4 Xa//Xa et 1/4 Xa//Y. Les femelles à yeux blancs sont les Xa//Xa : 800 × 1/4 = 200.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Deux souris grises (le gris domine le blanc) sont croisées. En trois portées, elles ont 37 petits gris et 13 petits blancs. Quels sont les génotypes des deux parents ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un parent A//A et un parent A//a",
+          "misconceptionTag": "bio.gen.dominant-toujours-pur"
+        },
+        {
+          "id": "b",
+          "text": "Un parent A//a et un parent a//a"
+        },
+        {
+          "id": "c",
+          "text": "Les deux parents sont A//A"
+        },
+        {
+          "id": "d",
+          "text": "Les deux parents sont A//a"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Des petits blancs a//a sont nés : chaque parent leur a transmis un allèle a, donc les deux sont A//a. Avec 37 gris et 13 blancs sur 50, on retrouve environ 3/4 et 1/4. Deux parents A//A, ou un A//A et un A//a, ne donneraient que des petits gris ; un parent a//a serait blanc.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Dans la F2 d'un blé (taille haute dominante sur taille courte, issue de deux lignées pures), on prélève les plants à taille haute et on croise chacun avec la variété pure à taille courte. Quelle proportion de plants à taille courte attend-on dans l'ensemble de leurs descendants ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un tiers des descendants"
+        },
+        {
+          "id": "b",
+          "text": "Un quart des descendants",
+          "misconceptionTag": "bio.gen.proportions-pheno-geno-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Aucun descendant",
+          "misconceptionTag": "bio.gen.dominant-toujours-pur"
+        },
+        {
+          "id": "d",
+          "text": "La moitié des descendants"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Parmi les plants hauts de la F2, un tiers est A//A et deux tiers sont A//a. Croisés avec a//a, les A//A ne donnent que des plants hauts, les A//a donnent la moitié de plants courts : 2/3 × 1/2 = 1/3. Un quart est la proportion de plants courts dans la F2 elle-même ; la moitié supposerait que tous les plants hauts soient hétérozygotes ; aucun supposerait qu'ils soient tous purs.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Le gène white est récessif et porté par la partie spécifique de X chez la drosophile. Quelles affirmations sont exactes ? (plusieurs réponses)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un père à yeux blancs transmet l'allèle white à toutes ses filles"
+        },
+        {
+          "id": "b",
+          "text": "Un père à yeux blancs transmet l'allèle white à tous ses fils"
+        },
+        {
+          "id": "c",
+          "text": "Une mère à yeux blancs transmet l'allèle white à tous ses fils"
+        },
+        {
+          "id": "d",
+          "text": "Ce caractère n'apparaît que chez les mâles"
+        },
+        {
+          "id": "e",
+          "text": "Une fille à yeux blancs a forcément un père à yeux blancs"
+        }
+      ],
+      "answerKey": {
+        "correct": ["a", "c", "e"]
+      },
+      "explanation": "Un père Xa//Y donne son X, porteur de white, à toutes ses filles, et son Y à ses fils, qui ne reçoivent donc pas white de lui. Une mère à yeux blancs Xa//Xa ne donne que des Xa : tous ses fils sont Xa//Y et ont les yeux blancs. Une fille à yeux blancs est Xa//Xa : elle a reçu un Xa de son père, qui est donc Xa//Y, à yeux blancs. Le caractère touche aussi les femelles Xa//Xa.",
+      "difficulty": 3
+    }
+  ]
+}

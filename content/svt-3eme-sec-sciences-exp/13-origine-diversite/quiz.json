@@ -1,0 +1,138 @@
+{
+  "title": "Test de compréhension ⭐ : L'origine de la diversité génétique",
+  "questions": [
+    {
+      "prompt": "Qu'est-ce qu'une mutation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une maladie héréditaire qui touche les chromosomes d'un individu",
+          "misconceptionTag": "bio.gen.mutant-egale-pathologique"
+        },
+        {
+          "id": "b",
+          "text": "Un changement brusque de l'information génétique d'un individu"
+        },
+        {
+          "id": "c",
+          "text": "Une modification du phénotype due au seul milieu, sans effet sur l'ADN"
+        },
+        {
+          "id": "d",
+          "text": "Un échange de fragments entre deux chromosomes homologues"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une mutation est un changement brusque de l'information génétique, qui modifie un caractère héréditaire. Elle n'est pas forcément une maladie, elle touche l'ADN (contrairement à un effet du seul milieu), et l'échange de fragments entre homologues est un crossing-over, brassage normal de la méiose.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Laquelle de ces modifications est une mutation génique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un gène entier est présent en double sur un chromosome",
+          "misconceptionTag": "bio.div.chrom-prise-pour-genique"
+        },
+        {
+          "id": "b",
+          "text": "La moitié d'un bras de chromosome est perdue",
+          "misconceptionTag": "bio.div.chrom-prise-pour-genique"
+        },
+        {
+          "id": "c",
+          "text": "Deux chromosomes se soudent en un seul",
+          "misconceptionTag": "bio.div.chrom-prise-pour-genique"
+        },
+        {
+          "id": "d",
+          "text": "Une base G d'un gène est remplacée par une base A"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Une mutation génique change la séquence des bases d'un gène : ici, la substitution de G par A. Les trois autres modifient la structure ou le nombre des chromosomes : ce sont des mutations chromosomiques (répétition, perte, fusion).",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le triplet TTT du brin transcrit devient TTC. Codons de l'ARNm : AAA et AAG désignent la lysine, AAU l'asparagine, UUU la phénylalanine. Que devient le polypeptide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rien : la substitution est silencieuse"
+        },
+        {
+          "id": "b",
+          "text": "Un acide aminé est remplacé par l'asparagine",
+          "misconceptionTag": "bio.div.toute-mutation-change-proteine"
+        },
+        {
+          "id": "c",
+          "text": "Un acide aminé est remplacé par la phénylalanine",
+          "misconceptionTag": "bio.div.toute-mutation-change-proteine"
+        },
+        {
+          "id": "d",
+          "text": "La chaîne s'arrête à ce triplet",
+          "misconceptionTag": "bio.div.toute-mutation-change-proteine"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'ARNm est complémentaire du brin transcrit : TTT donne AAA et TTC donne AAG. Ces deux codons désignent la lysine : la substitution est silencieuse, grâce à la redondance du code.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Une cellule germinale diploïde à 2n = 6 subit une méiose complète. Combien de cellules obtient-on, avec combien de chromosomes chacune ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 cellules à 6 chromosomes",
+          "misconceptionTag": "bio.div.meiose-prise-pour-mitose"
+        },
+        {
+          "id": "b",
+          "text": "2 cellules à 3 chromosomes",
+          "misconceptionTag": "bio.div.meiose-une-division"
+        },
+        {
+          "id": "c",
+          "text": "4 cellules à 3 chromosomes"
+        },
+        {
+          "id": "d",
+          "text": "4 cellules à 6 chromosomes",
+          "misconceptionTag": "bio.div.meiose-prise-pour-mitose"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La méiose comprend deux divisions : la première ramène 2n = 6 à n = 3, la seconde sépare les chromatides sans changer n. On obtient 4 cellules à 3 chromosomes, soit quatre cellules haploïdes. Deux cellules à 6 correspondraient à une mitose, deux cellules à 3 à une méiose arrêtée après la première division.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un individu a 2n = 10 chromosomes, tous différents de leur homologue. Combien de types de gamètes peut-il former, par brassage interchromosomique seul ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10",
+          "misconceptionTag": "bio.div.puissance-calculee-par-produit"
+        },
+        {
+          "id": "b",
+          "text": "25",
+          "misconceptionTag": "bio.div.puissance-calculee-par-produit"
+        },
+        {
+          "id": "c",
+          "text": "32"
+        },
+        {
+          "id": "d",
+          "text": "1024",
+          "misconceptionTag": "bio.div.exposant-2n"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Il y a n = 10 ÷ 2 = 5 paires, chacune se séparant au hasard : 2⁵ = 2 × 2 × 2 × 2 × 2 = 32 types de gamètes. 10 viendrait de 2 × 5 et 25 de 5², deux calculs qui ne multiplient pas les choix ; 1024 prendrait 10 pour exposant.",
+      "difficulty": 2
+    }
+  ]
+}
