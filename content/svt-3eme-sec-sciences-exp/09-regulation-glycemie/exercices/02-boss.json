@@ -1,0 +1,175 @@
+{
+  "title": "⚔️ Boss du chapitre ⭐⭐⭐ : Les enquêtes du foie et du pancréas",
+  "difficulty": 3,
+  "mode": "boss",
+  "xpReward": 120,
+  "rewardCoins": 30,
+  "displayOrder": 2,
+  "questions": [
+    {
+      "prompt": "Un animal à jeun depuis 12 heures est étudié : la glycémie est de 0,85 g/l dans la veine porte-hépatique et de 1,00 g/l dans les veines sus-hépatiques (valeurs d'illustration). Que fait le foie dans ces conditions ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il retient du glucose, car la veine porte-hépatique est l'entrée du foie",
+          "misconceptionTag": "bio.glyc.entree-sortie-foie-inversees"
+        },
+        {
+          "id": "b",
+          "text": "Il libère du glucose dans le sang, en hydrolysant du glycogène hépatique"
+        },
+        {
+          "id": "c",
+          "text": "Il stocke le glucose en glycogène pour préparer le prochain repas",
+          "misconceptionTag": "bio.glyc.glycogenese-lyse-inversees"
+        },
+        {
+          "id": "d",
+          "text": "Il ne modifie pas la glycémie : le glucose le traverse sans être retenu",
+          "misconceptionTag": "bio.glyc.glucose-direct-aux-organes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le sang est plus riche en glucose à la sortie du foie (1,00 g/l) qu'à l'entrée (0,85 g/l) : le foie ajoute du glucose au sang, par hydrolyse de son glycogène (glycogénolyse). C'est l'inverse de ce qui suit un repas, où le foie retient du glucose ; sans cette libération, la glycémie s'effondrerait entre les repas.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un foie de chien est lavé en continu par la veine porte : l'eau qui en sort, d'abord sucrée, ne contient plus aucune trace de sucre après 40 minutes. Abandonné 24 heures à température ambiante, ce foie renferme de nouveau beaucoup de sucre. Quelle conclusion est la mieux fondée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le foie contenait une réserve, le glycogène, qui s'est transformée en glucose après le lavage de l'organe"
+        },
+        {
+          "id": "b",
+          "text": "Le foie transmet seulement le glucose du sang : celui trouvé 24 heures plus tard venait du sang resté dans ses vaisseaux",
+          "misconceptionTag": "bio.glyc.glucose-direct-aux-organes"
+        },
+        {
+          "id": "c",
+          "text": "Le lavage n'avait pas éliminé tout le glucose libre du foie, qui est ressorti progressivement par la suite"
+        },
+        {
+          "id": "d",
+          "text": "Le foie a fabriqué du glucose à partir de l'eau de lavage restée dans ses cellules après l'expérience"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "L'eau de lavage ne contenait plus aucune trace de sucre : le glucose libre était éliminé. Le sucre retrouvé 24 heures plus tard a donc été formé dans le foie à partir d'une réserve, le glycogène, hydrolysé en glucose (glycogénolyse) : le foie stocke et libère du glucose.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux lots de chiens reçoivent la même alimentation, sauf que le régime du premier contient des sucres et celui du second n'en contient aucun, pendant plusieurs jours (durée d'illustration). Le foie des deux lots renferme du glycogène. Quelle conclusion est la mieux fondée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le glycogène du foie provient uniquement des sucres contenus dans l'alimentation habituelle du chien",
+          "misconceptionTag": "bio.glyc.glycogene-origine-glucidique-seule"
+        },
+        {
+          "id": "b",
+          "text": "Le glycogène du foie est présent dès la naissance et n'a aucun lien avec l'alimentation du chien"
+        },
+        {
+          "id": "c",
+          "text": "Le foie fabrique le glycogène à partir de l'insuline apportée par le sang du chien",
+          "misconceptionTag": "bio.glyc.hormone-enzyme-confondue"
+        },
+        {
+          "id": "d",
+          "text": "Le foie fabrique du glycogène aussi à partir de nutriments non glucidiques, comme les acides aminés"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Les chiens du régime sans sucre ont du glycogène dans le foie : il ne vient donc pas seulement des glucides de l'alimentation. Le foie le fabrique aussi à partir de nutriments non glucidiques, par exemple les acides aminés des protéines (néoglucogenèse puis glycogénogenèse). L'insuline est une hormone, pas une matière première.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Après l'ablation du pancréas, un chien a une hyperglycémie prolongée d'environ 3,5 g/l. La greffe d'un pancréas ramène sa glycémie vers des valeurs normales ; la suppression du greffon la fait remonter. Quelle conclusion est justifiée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le pancréas agit sur la glycémie par son suc digestif, qui passe du duodénum dans le sang circulant",
+          "misconceptionTag": "bio.glyc.pancreas-seulement-digestif"
+        },
+        {
+          "id": "b",
+          "text": "Le pancréas retient le glucose du sang dans ses acini, comme le fait le foie après un repas",
+          "misconceptionTag": "bio.glyc.organe-mal-attribue"
+        },
+        {
+          "id": "c",
+          "text": "Le pancréas corrige la glycémie en versant une substance dans le sang, par ses îlots de Langerhans"
+        },
+        {
+          "id": "d",
+          "text": "Le pancréas ne peut corriger la glycémie que s'il reste relié au duodénum par son canal"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La greffe corrige la glycémie et la suppression du greffon la dérègle : c'est bien le pancréas qui agit. Le suc digestif ne passe pas dans le sang ; l'action vient des îlots de Langerhans, qui versent des hormones dans le sang. Le foie, et non le pancréas, retient le glucose.",
+      "difficulty": 3
+    },
+    {
+      "prompt": "Un volontaire sain mange un repas riche en glucides. On suit sa glycémie, son insulinémie et sa glucagonémie (données d'illustration, unités arbitraires).\n<svg viewBox=\"0 0 340 108\">\n<title>Glycémie, insulinémie et glucagonémie d'un volontaire sain avant et après un repas (données d'illustration)</title>\n<rect x=\"6\" y=\"6\" width=\"328\" height=\"24\" rx=\"0\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"54.0\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >temps</text>\n<text x=\"148.0\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >glycémie (g/l)</text>\n<text x=\"229.0\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >insuline</text>\n<text x=\"299.0\" y=\"22\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >glucagon</text>\n<rect x=\"6\" y=\"30\" width=\"328\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"54.0\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >avant le repas</text>\n<text x=\"148.0\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >0,90</text>\n<text x=\"229.0\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >10</text>\n<text x=\"299.0\" y=\"46\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >90</text>\n<rect x=\"6\" y=\"54\" width=\"328\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"54.0\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >1 h après</text>\n<text x=\"148.0\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >1,30</text>\n<text x=\"229.0\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >55</text>\n<text x=\"299.0\" y=\"70\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >55</text>\n<rect x=\"6\" y=\"78\" width=\"328\" height=\"24\" rx=\"0\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1\"/>\n<text x=\"54.0\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"700\" fill=\"#0f172a\" >3 h après</text>\n<text x=\"148.0\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >0,78</text>\n<text x=\"229.0\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >8</text>\n<text x=\"299.0\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"400\" fill=\"#0f172a\" >110</text>\n</svg>\nQuelle interprétation de la mesure faite 3 h après le repas est la mieux fondée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La glycémie, redescendue sous sa valeur de départ, active les cellules β : l'insuline augmente et le glucagon diminue",
+          "misconceptionTag": "bio.glyc.stimulus-secretion-inverse"
+        },
+        {
+          "id": "b",
+          "text": "La glycémie, redescendue sous sa valeur de départ, active les cellules α : le glucagon augmente et l'insuline diminue"
+        },
+        {
+          "id": "c",
+          "text": "Le repas a épuisé les cellules β, qui expliquent seules la baisse de la glycémie"
+        },
+        {
+          "id": "d",
+          "text": "La glycémie, redescendue sous sa valeur de départ, ne modifie aucune sécrétion : la régulation n'agit pas",
+          "misconceptionTag": "bio.mi.constance-sans-regulation"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "À 3 h la glycémie (0,78 g/l) est redescendue sous sa valeur de départ (0,90 g/l) : l'insuline est basse (8) et le glucagon élevé (110). C'est la réponse à une glycémie qui baisse : les cellules α sont activées et les cellules β se calment, ce qui ramène la glycémie vers sa valeur normale. À 1 h, c'était l'inverse.",
+      "difficulty": 3
+    },
+    {
+      "type": "multi",
+      "prompt": "Un médicament bloque les récepteurs du glucagon sur les hépatocytes et les lipocytes d'un sujet à jeun depuis 12 heures. Cochez toutes les conséquences attendues chez ce sujet.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sa glycémie tend à baisser, avec un risque d'hypoglycémie"
+        },
+        {
+          "id": "b",
+          "text": "Ses cellules α cessent de sécréter un glucagon devenu inutile"
+        },
+        {
+          "id": "c",
+          "text": "Son glycogène hépatique est beaucoup moins hydrolysé"
+        },
+        {
+          "id": "d",
+          "text": "Ses réserves de graisses sont beaucoup moins mobilisées"
+        },
+        {
+          "id": "e",
+          "text": "Sa glycémie monte, car le glucagon s'accumule dans le sang"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "À jeun, c'est le glucagon qui maintient la glycémie : il fait hydrolyser le glycogène du foie (glycogénolyse), fabriquer du glucose (néoglucogenèse) et dégrader les graisses (lipolyse). Récepteurs bloqués, ces cellules ne reçoivent plus le message : le glycogène hépatique et les graisses restent en réserve, le foie libère moins de glucose et la glycémie tend à baisser. Cette baisse stimule au contraire les cellules α. Un glucagon abondant dans le sang reste sans effet sur des cellules dont les récepteurs sont bloqués.",
+      "difficulty": 3
+    }
+  ]
+}

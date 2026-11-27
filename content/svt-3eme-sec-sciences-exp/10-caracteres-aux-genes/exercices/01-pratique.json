@@ -1,0 +1,188 @@
+{
+  "title": "⭐ Exercice : Espèces, chromosomes et premiers gènes",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Deux cellules œufs ont le même aspect, mais l'une devient un lapin et l'autre un bébé. Que faut-il en déduire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leur information génétique est la même, c'est le milieu qui change le résultat",
+          "misconceptionTag": "bio.gen.oeufs-semblables-meme-info"
+        },
+        {
+          "id": "b",
+          "text": "Leur ADN est identique, seul leur cytoplasme diffère",
+          "misconceptionTag": "bio.gen.oeufs-semblables-meme-info"
+        },
+        {
+          "id": "c",
+          "text": "Leur ADN, donc leur information génétique, est différent"
+        },
+        {
+          "id": "d",
+          "text": "Elles n'ont aucune information génétique avant leur première division"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'information génétique de la cellule œuf, portée par l'ADN, est à l'origine de tous les caractères de l'être vivant. Des œufs d'aspect semblable qui donnent un lapin et un bébé portent donc des ADN différents : l'ordre de leurs bases n'est pas le même.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels phénotypes sont des phénotypes sauvages de la drosophile ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corps gris"
+        },
+        {
+          "id": "b",
+          "text": "Yeux blancs"
+        },
+        {
+          "id": "c",
+          "text": "Ailes longues"
+        },
+        {
+          "id": "d",
+          "text": "Poils fourchus"
+        },
+        {
+          "id": "e",
+          "text": "Yeux rouges"
+        },
+        {
+          "id": "f",
+          "text": "Ailes courtes"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "c",
+          "e"
+        ]
+      },
+      "explanation": "Le phénotype sauvage est celui de la lignée la plus fréquente dans la nature : corps gris, yeux rouges, ailes longues. Le corps noir, les yeux blancs, les ailes courtes et les poils fourchus sont des phénotypes mutants, des phénotypes nouveaux apparus dans une lignée sauvage.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Le cheval a pour formule chromosomique 2n = 64. Combien de paires de chromosomes homologues contient chacune de ses cellules du corps ?",
+      "answerKey": {
+        "value": 32,
+        "unit": "paires"
+      },
+      "explanation": "2n est le nombre total de chromosomes : le nombre de paires vaut n = 64 ÷ 2 = 32. Il ne faut pas confondre ce nombre de paires avec les 64 chromosomes.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quel événement rétablit la formule chromosomique 2n au cours de la reproduction sexuée ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La fécondation, qui réunit les n chromosomes de chaque gamète"
+        },
+        {
+          "id": "b",
+          "text": "La gamétogenèse, qui double le nombre de chromosomes des gamètes",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        },
+        {
+          "id": "c",
+          "text": "Les mitoses de l'œuf, qui doublent le nombre de chromosomes"
+        },
+        {
+          "id": "d",
+          "text": "La formation des gamètes, qui fabrique des cellules à 2n chromosomes",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La gamétogenèse réduit le nombre de chromosomes de 2n à n ; la fécondation réunit les n chromosomes du gamète mâle et les n du gamète femelle, ce qui rétablit 2n. Les mitoses de l'œuf conservent 2n sans le modifier.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quelles affirmations définissent correctement les mots du vocabulaire de la génétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un gène est une portion d'ADN qui détermine un caractère"
+        },
+        {
+          "id": "b",
+          "text": "Le locus est l'emplacement d'un gène sur un chromosome"
+        },
+        {
+          "id": "c",
+          "text": "Un allèle est une version d'un même gène"
+        },
+        {
+          "id": "d",
+          "text": "Un allèle est l'emplacement d'un gène sur un chromosome"
+        },
+        {
+          "id": "e",
+          "text": "Le génome est l'ensemble des gènes d'un seul chromosome"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Un gène est une portion d'ADN qui détermine un caractère, son locus est son emplacement sur le chromosome et un allèle est une version de ce gène. L'emplacement s'appelle le locus, pas l'allèle, et le génome est l'ensemble des gènes de tous les chromosomes d'une cellule, pas ceux d'un seul.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Place dans l'ordre les étapes du cycle de la reproduction sexuée, de l'individu adulte jusqu'à l'embryon.",
+      "options": [
+        {
+          "id": "c4",
+          "text": "La fécondation : n chromosomes plus n chromosomes"
+        },
+        {
+          "id": "c1",
+          "text": "Un individu adulte à 2n chromosomes"
+        },
+        {
+          "id": "c6",
+          "text": "Les mitoses successives : l'embryon, à 2n chromosomes"
+        },
+        {
+          "id": "c3",
+          "text": "Les gamètes, à n chromosomes"
+        },
+        {
+          "id": "c5",
+          "text": "La cellule œuf, à 2n chromosomes"
+        },
+        {
+          "id": "c2",
+          "text": "La gamétogenèse : chaque gamète reçoit un chromosome de chaque paire"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "c1",
+          "c2",
+          "c3",
+          "c4",
+          "c5",
+          "c6"
+        ]
+      },
+      "explanation": "L'individu à 2n forme des gamètes à n par gamétogenèse. La fécondation réunit deux gamètes et donne la cellule œuf à 2n, qui se divise par mitoses : toutes les cellules de l'embryon gardent le même caryotype.",
+      "difficulty": 2
+    }
+  ]
+}

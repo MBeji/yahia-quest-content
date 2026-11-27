@@ -1,0 +1,138 @@
+{
+  "title": "Test de compréhension ⭐ : Des caractères aux gènes",
+  "questions": [
+    {
+      "prompt": "Deux races de moutons, croisées entre elles, donnent des agneaux fertiles. Que peut-on conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ce sont deux lignées d'une même espèce, car elles sont interfécondes"
+        },
+        {
+          "id": "b",
+          "text": "Ce sont deux espèces voisines, car leurs caractères diffèrent nettement",
+          "misconceptionTag": "bio.gen.lignee-egale-espece"
+        },
+        {
+          "id": "c",
+          "text": "Ce sont deux espèces différentes, car leurs queues n'ont pas la même forme",
+          "misconceptionTag": "bio.gen.lignee-egale-espece"
+        },
+        {
+          "id": "d",
+          "text": "Elles forment une seule lignée, car leurs descendants sont fertiles",
+          "misconceptionTag": "bio.gen.espece-lignee-confondues"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Des individus qui se croisent et donnent des descendants fertiles appartiennent à la même espèce : l'interfécondité est le critère de l'espèce. Leurs caractères différents (couleur, forme de la queue) distinguent seulement deux lignées d'une même espèce.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "La drosophile a pour formule chromosomique 2n = 8. Combien de chromosomes contient chacun de ses spermatozoïdes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 chromosomes"
+        },
+        {
+          "id": "b",
+          "text": "4 chromosomes"
+        },
+        {
+          "id": "c",
+          "text": "8 chromosomes",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        },
+        {
+          "id": "d",
+          "text": "16 chromosomes"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La gamétogenèse réduit le nombre de chromosomes de 2n à n : un gamète reçoit un seul chromosome de chaque paire, soit 8 ÷ 2 = 4 chromosomes. Avec 8 chromosomes dans chaque gamète, l'œuf en aurait 16 et le nombre doublerait à chaque génération.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Chez l'Homme, la formule chromosomique d'une cellule du corps s'écrit 2n = 46. Que signifie cette écriture ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "46 paires de chromosomes homologues, soit 92 chromosomes",
+          "misconceptionTag": "bio.gen.2n-nombre-de-paires"
+        },
+        {
+          "id": "b",
+          "text": "23 chromosomes au total, un seul de chaque paire",
+          "misconceptionTag": "bio.gen.2n-confondu-avec-n"
+        },
+        {
+          "id": "c",
+          "text": "46 chromosomes au total, soit 23 paires d'homologues"
+        },
+        {
+          "id": "d",
+          "text": "46 chromosomes présents seulement dans les cellules sexuelles",
+          "misconceptionTag": "bio.gen.gamete-diploide"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "2n est le nombre total de chromosomes d'une cellule diploïde : 46 chromosomes forment 46 ÷ 2 = 23 paires d'homologues. Les cellules sexuelles, elles, n'en contiennent que n = 23.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Le croisement d'une belle de nuit rouge et d'une belle de nuit blanche ne donne que des fleurs roses. Quel est le génotype d'une de ces fleurs roses pour la couleur ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un seul allèle, qui donne la couleur rose",
+          "misconceptionTag": "bio.gen.intermediaire-un-seul-allele"
+        },
+        {
+          "id": "b",
+          "text": "Deux allèles « rose », un sur chaque chromosome",
+          "misconceptionTag": "bio.gen.intermediaire-un-seul-allele"
+        },
+        {
+          "id": "c",
+          "text": "Deux allèles « blanc », venus de la fleur blanche",
+          "misconceptionTag": "bio.gen.oeuf-chromosomes-un-seul-parent"
+        },
+        {
+          "id": "d",
+          "text": "Un allèle « rouge » et un allèle « blanc »"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Chaque descendante reçoit un gamète de chaque parent, donc un allèle rouge de la fleur rouge et un allèle blanc de la fleur blanche : ses deux allèles sont différents. Il n'existe pas d'allèle rose, puisque deux roses donnent aussi des rouges et des blanches.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Les ADN d'une personne saine et d'une personne drépanocytaire ne diffèrent que par une base. Que peut-on en conclure ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une base est trop peu : la maladie vient donc d'autre chose que de l'ADN",
+          "misconceptionTag": "bio.gen.une-base-aucun-effet"
+        },
+        {
+          "id": "b",
+          "text": "Une seule base modifiée suffit à changer la protéine et le phénotype"
+        },
+        {
+          "id": "c",
+          "text": "Seule la protéine diffère entre les deux personnes, pas leur gène",
+          "misconceptionTag": "bio.gen.chaine-adn-proteine-inversee"
+        },
+        {
+          "id": "d",
+          "text": "C'est la forme des hématies qui a modifié la base de l'ADN",
+          "misconceptionTag": "bio.gen.chaine-adn-proteine-inversee"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Dans la drépanocytose, une seule base diffère : un acide aminé change dans l'hémoglobine (Glu devient Val), l'HbS est peu soluble et les hématies se déforment. La séquence de l'ADN détermine celle de la protéine, jamais l'inverse.",
+      "difficulty": 2
+    }
+  ]
+}

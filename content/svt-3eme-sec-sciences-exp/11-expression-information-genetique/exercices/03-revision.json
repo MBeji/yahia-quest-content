@@ -1,0 +1,181 @@
+{
+  "title": "⭐⭐ Révision (type examen) : De l'ADN au phénotype",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Qu'appelle-t-on gène dans ce chapitre ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La molécule d'ARNm qui quitte le noyau pour se fixer sur les ribosomes du cytoplasme"
+        },
+        {
+          "id": "b",
+          "text": "La séquence de triplets de bases de l'ADN transcrite en ARNm, qui détermine une protéine"
+        },
+        {
+          "id": "c",
+          "text": "La protéine fonctionnelle qui est fabriquée dans le cytoplasme à partir des acides aminés"
+        },
+        {
+          "id": "d",
+          "text": "La molécule d'ADN entière d'un chromosome, constituée de ses deux brins complémentaires"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Un gène est la séquence de triplets de bases de l'ADN qui est transcrite en codons d'ARNm et qui détermine la synthèse d'une protéine. L'ARNm en est la copie, la protéine en est le produit, et un chromosome porte un très grand nombre de gènes.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque acteur de la synthèse protéique à son rôle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "ARNm"
+        },
+        {
+          "id": "l2",
+          "text": "ARNt"
+        },
+        {
+          "id": "l3",
+          "text": "Ribosome"
+        },
+        {
+          "id": "l4",
+          "text": "ATP"
+        },
+        {
+          "id": "r1",
+          "text": "Porte l'information copiée sur l'ADN"
+        },
+        {
+          "id": "r2",
+          "text": "Conduit un acide aminé précis au ribosome"
+        },
+        {
+          "id": "r3",
+          "text": "Lieu d'assemblage des acides aminés"
+        },
+        {
+          "id": "r4",
+          "text": "Fournit l'énergie de la synthèse"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'ARNm porte l'information copiée sur un brin d'ADN. L'ARNt conduit au ribosome l'acide aminé qui correspond à son anticodon. Le ribosome est le lieu d'assemblage, et l'ATP apporte l'énergie de la synthèse.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Si le code utilisait des doublets de deux bases au lieu de triplets, combien de doublets différents pourrait-on former avec quatre sortes de bases ?",
+      "answerKey": {
+        "value": 16,
+        "unit": "doublets"
+      },
+      "explanation": "Chacune des 2 positions peut porter 4 bases : 4 × 4 = 16 doublets, ce qui ne suffit pas pour désigner 20 acides aminés. Il faut des triplets, qui offrent 64 possibilités.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Deux polypeptides sont formés des trois mêmes acides aminés : l'un s'écrit Gly–Ala–Ser, l'autre Ser–Ala–Gly. Que peut-on dire ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Un même polypeptide, car il compte les mêmes acides aminés en nombre égal",
+          "misconceptionTag": "bio.expr.ordre-acides-amines-ignore"
+        },
+        {
+          "id": "b",
+          "text": "Deux polypeptides différents, car l'ordre de leurs acides aminés n'est pas le même"
+        },
+        {
+          "id": "c",
+          "text": "Deux polypeptides différents, car l'un compte plus de liaisons peptidiques que l'autre"
+        },
+        {
+          "id": "d",
+          "text": "Un même polypeptide, car l'ordre des acides aminés ne modifie pas sa forme dans l'espace",
+          "misconceptionTag": "bio.expr.ordre-acides-amines-ignore"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Une protéine se définit par le nombre et par l'ordre de ses acides aminés. Ici le nombre est le même (3 acides aminés, donc 2 liaisons peptidiques dans chaque chaîne), mais l'ordre est inversé : ce sont deux polypeptides différents, de forme et de fonction différentes.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quelle affirmation sur le code génétique est exacte ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À chaque acide aminé ne correspond qu'un seul codon, comme dans un dictionnaire strict",
+          "misconceptionTag": "bio.expr.un-acide-amine-un-codon"
+        },
+        {
+          "id": "b",
+          "text": "Un codon est formé de deux bases de l'ARNm"
+        },
+        {
+          "id": "c",
+          "text": "Plusieurs codons peuvent désigner le même acide aminé, comme la leucine qui en a six"
+        },
+        {
+          "id": "d",
+          "text": "Les trois codons stop désignent chacun un acide aminé particulier de la protéine",
+          "misconceptionTag": "bio.expr.codon-stop-acide-amine"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Le code compte 64 codons pour 20 acides aminés : plusieurs codons désignent le même acide aminé (la leucine en a 6). À l'inverse, chaque codon n'a qu'une seule signification, et un codon compte trois bases, non deux. Les codons stop ne désignent aucun acide aminé, ils arrêtent la traduction.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un ARNt a pour anticodon GGG. Quel acide aminé porte-t-il ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glycine",
+          "misconceptionTag": "bio.expr.anticodon-egal-codon"
+        },
+        {
+          "id": "b",
+          "text": "Phénylalanine"
+        },
+        {
+          "id": "c",
+          "text": "Proline"
+        },
+        {
+          "id": "d",
+          "text": "Sérine"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'anticodon GGG est complémentaire du codon CCC, et le code génétique associe CCC à la proline. Lire GGG directement comme un codon donnerait la glycine, mais un codon appartient à l'ARNm, pas à l'ARNt.",
+      "difficulty": 2
+    }
+  ]
+}

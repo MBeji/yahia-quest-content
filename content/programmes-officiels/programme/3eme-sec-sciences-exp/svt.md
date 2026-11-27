@@ -4563,7 +4563,7 @@ espèce ; interfécondité ; lignée ; variété ; race ; lignée sauvage ; lign
     | Expériences | Résultats : synthèse (+) ou non (–) de protéine radioactive |
     | --- | --- |
     | Homogénéat total + acides aminés radioactifs. | + |
-    | Homogénéat total + acides aminés radioactifs + une substance qui bloque l'utilisation de l'ATP (DNP ). | – |
+    | Homogénéat total + acides aminés radioactifs + une substance qui bloque l'utilisation de l'ATP (DNP ) [sic : le DNP est un découplant qui empêche la production d'ATP, il ne bloque pas son utilisation — complément du lecteur]. | – |
     | Homogénéat total bouilli + acides aminés radioactifs. | – |
     | ARNm + ribosomes + acides aminés radioactifs. | – |
     | ARNm + ribosomes + ATP + Acides aminés radioactifs. | – |
@@ -6814,6 +6814,8 @@ Aucune page illisible.
 - **« Enzyme d'épissage »** (doc 15 p.199) pour l'ADN ligase : terme impropre (l'épissage désigne la maturation de l'ARN) ; signalé dans le Vocabulaire officiel du ch.12 (audit R-7).
 - **Encadré Ribosome** (p.176) : « protéine (20%) et ARN (80%) » — proportions exagérées (≈ 40 % de protéines, 60 % d'ARNr) ; signalé dans l'encadré, ne pas en faire une donnée à mémoriser (audit R-7).
 - **Coquilles relevées [sic]** (non exhaustif, toutes conservées dans la fiche) : « un espèce » (160) ; « Revelez » (161) ; « Réservé essentiellementaux » (161) ; « deyx » (161) ; « Formulez une lignée et espèce » (162) ; « Tibar »/« thibar » (162) ; « établisez » (165) ; « basez » (167) ; « ligées » (168) ; « homolgues » (169) ; « controlant » (160) ; « Individus normal » (171) ; « MECANISME » (171, en-têtes) ; « au microscopique électronique » (177) ; « synthèse protéiques » (179) ; « Acide amine » (180) ; « TROIXIÈME LETTRE » (181) ; « polypetidique » (183) ; « polypeptique » (185) ; « évênements » (186) ; « del'Hb » (188) ; « mais » pour « maïs » (189) ; « Transfert de l'informationt » (191) ; « cadavres humaines » (192) ; « Sacharomycès cervisiae » (193) ; « récu » (193) ; « l'on inséré » (193) ; « shéma » (196) ; « pèche » (197) ; « circlaire » (199) ; « réstriction » (199) ; « Echérichia / Eshérichia » (200) ; « chronosome », « cellules-files » (200, doc 17) ; « procéder » pour « précéder » (200) ; « synthèsepro-téique » (200) ; « trangéniques », « repésentée », « tâches » (203).
+
+- **DNP (ch.11, tableau homogénéat p.≈180)** : le manuel écrit « bloque l'utilisation de l'ATP » ; le DNP est un découplant qui empêche la production d'ATP — ne pas reprendre (relevé à l'audit du chapitre, 2026-11-27).
 
 ### Lot ch.13–14 (p.206–257)
 

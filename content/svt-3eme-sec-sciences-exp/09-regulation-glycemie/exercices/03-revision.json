@@ -1,0 +1,196 @@
+{
+  "title": "⭐⭐ Révision (type examen) : La régulation de la glycémie",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque réaction du foie à sa définition.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Glycogénogenèse"
+        },
+        {
+          "id": "l2",
+          "text": "Glycogénolyse"
+        },
+        {
+          "id": "l3",
+          "text": "Néoglucogenèse"
+        },
+        {
+          "id": "r1",
+          "text": "Synthèse de glucose à partir de molécules non glucidiques"
+        },
+        {
+          "id": "r2",
+          "text": "Synthèse du glycogène à partir du glucose libre"
+        },
+        {
+          "id": "r3",
+          "text": "Hydrolyse du glycogène en glucose libre"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l2",
+            "r3"
+          ],
+          [
+            "l3",
+            "r1"
+          ]
+        ]
+      },
+      "explanation": "Glycogénogenèse (R2) : le foie fabrique du glycogène à partir du glucose libre, il stocke. Glycogénolyse (R1) : il hydrolyse le glycogène en glucose libre, il libère. Néoglucogenèse (R3) : il fabrique du glucose à partir de molécules non glucidiques comme les acides aminés.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Quelle phrase décrit correctement l'insuline ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une enzyme digestive du suc pancréatique, formée d'une seule chaîne d'acides aminés",
+          "misconceptionTag": "bio.glyc.hormone-enzyme-confondue"
+        },
+        {
+          "id": "b",
+          "text": "Une hormone lipidique, sécrétée par les cellules α des îlots de Langerhans",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "c",
+          "text": "Une hormone hyperglycémiante, sécrétée par les cellules β des îlots de Langerhans du pancréas",
+          "misconceptionTag": "bio.glyc.hormones-confondues"
+        },
+        {
+          "id": "d",
+          "text": "Une hormone de nature protéique, sécrétée par les cellules β des îlots de Langerhans"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'insuline est une hormone de nature protéique : deux chaînes d'acides aminés reliées par des ponts disulfure. Elle est sécrétée par les cellules β et fait baisser la glycémie. Les enzymes digestives viennent des acini, et l'hormone hyperglycémiante est le glucagon.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On lave en continu un foie de chien par la veine porte pendant 40 minutes. On prélève l'eau qui sort par les veines hépatiques au début puis à la fin du lavage, et on la teste à la liqueur de Fehling (on chauffe). Quels résultats prévoir ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Début : précipité rouge brique ; fin : aucun précipité, car le glucose libre du foie a été entraîné"
+        },
+        {
+          "id": "b",
+          "text": "Début : aucun précipité ; fin : précipité rouge brique, car le glucose s'accumule dans l'eau de lavage",
+          "misconceptionTag": "bio.glyc.entree-sortie-foie-inversees"
+        },
+        {
+          "id": "c",
+          "text": "Début et fin : précipité rouge brique, car le foie libère sans cesse du glucose dans l'eau de lavage"
+        },
+        {
+          "id": "d",
+          "text": "Début et fin : aucun précipité, car le foie ne contient jamais de glucose libre dans ses cellules",
+          "misconceptionTag": "bio.alim.reactifs-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Au début, l'eau entraîne le glucose libre du foie : elle donne un précipité rouge brique avec Fehling. Après 40 minutes ce glucose a été entièrement lavé : l'eau ne donne plus aucun précipité. Le foie contient bien du glucose libre, mais en quantité limitée.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les étapes de la correction d'une hyperglycémie après un repas riche en glucides.",
+      "options": [
+        {
+          "id": "a",
+          "text": "La glycémie dépasse sa valeur normale après le repas"
+        },
+        {
+          "id": "b",
+          "text": "Les cellules β des îlots de Langerhans sécrètent de l'insuline"
+        },
+        {
+          "id": "c",
+          "text": "Le foie et le muscle stockent le glucose sous forme de glycogène"
+        },
+        {
+          "id": "d",
+          "text": "La glycémie revient vers 1 g/l"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "explanation": "L'hyperglycémie active d'abord les cellules β, qui sécrètent l'insuline ; l'insuline agit ensuite sur les cellules cibles, dont le foie et le muscle, qui stockent le glucose en glycogène ; la glycémie revient alors vers 1 g/l. Chaque étape est la cause de la suivante.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Chez un diabétique, on supprime la glucosurie par la pensée, sans rien changer d'autre : la glycémie reste élevée. Quel symptôme disparaît en premier ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La polydipsie, car la soif vient directement du glucose éliminé dans l'urine",
+          "misconceptionTag": "bio.glyc.chaine-symptomes-inversee"
+        },
+        {
+          "id": "b",
+          "text": "Aucun : polyurie et polydipsie persistent, car elles viennent de la glycémie élevée",
+          "misconceptionTag": "bio.glyc.chaine-symptomes-inversee"
+        },
+        {
+          "id": "c",
+          "text": "La polydipsie, car c'est la soif intense qui fait uriner abondamment",
+          "misconceptionTag": "bio.glyc.chaine-symptomes-inversee"
+        },
+        {
+          "id": "d",
+          "text": "La polyurie, car sans glucose éliminé l'urine n'entraîne plus d'eau en excès"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "La glycémie élevée n'agit sur l'urine que par la glucosurie : c'est le glucose éliminé qui entraîne de l'eau. Sans glucosurie, la polyurie disparaît d'abord ; la polydipsie, qui en est la conséquence (la perte d'eau donne soif), s'efface ensuite. La soif ne fait pas uriner, et elle ne vient du glucose éliminé qu'à travers la perte d'eau : elle ne disparaît qu'après la polyurie.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pourquoi l'insuline n'agit-elle que sur certaines cellules de l'organisme ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle n'est transportée par le sang que vers ces cellules, choisies à l'avance",
+          "misconceptionTag": "bio.glyc.hormone-agit-sans-recepteur"
+        },
+        {
+          "id": "b",
+          "text": "Seules ces cellules portent des récepteurs membranaires spécifiques de l'insuline"
+        },
+        {
+          "id": "c",
+          "text": "Elle se fixe sur toutes les cellules, mais seules celles du foie y répondent vraiment",
+          "misconceptionTag": "bio.glyc.hormone-agit-sans-recepteur"
+        },
+        {
+          "id": "d",
+          "text": "Seules ces cellules contiennent du glucose à stocker après un repas riche"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le sang transporte l'insuline partout. Seules les cellules cibles portent des récepteurs membranaires spécifiques : l'hormone s'y fixe, forme un complexe hormone-récepteur et déclenche, par un 2ème messager, la modification du métabolisme du glucose.",
+      "difficulty": 2
+    }
+  ]
+}

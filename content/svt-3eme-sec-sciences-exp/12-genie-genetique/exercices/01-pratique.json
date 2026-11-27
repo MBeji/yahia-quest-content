@@ -1,0 +1,200 @@
+{
+  "title": "⭐ Exercice : Premiers outils du génie génétique",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "prompt": "Dans la thérapie génique de la fillette privée du gène de l'enzyme ADA, que fait-on avec ses lymphocytes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On les cultive, on leur donne le gène normal, puis on les réinjecte"
+        },
+        {
+          "id": "b",
+          "text": "On leur injecte l'enzyme ADA fabriquée par des bactéries, sans toucher à leur ADN",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        },
+        {
+          "id": "c",
+          "text": "On les remplace par des lymphocytes d'un animal ayant le gène",
+          "misconceptionTag": "bio.gen.ogm-par-croisement"
+        },
+        {
+          "id": "d",
+          "text": "On supprime dans chacune de ses cellules le gène défectueux"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les lymphocytes sont prélevés, cultivés, reçoivent le gène normal de l'enzyme, puis sont réinjectés : c'est la thérapie génique, qui introduit un gène normal dans des cellules du malade. Injecter la protéine ne modifie pas l'ADN, et on ne retire pas le gène défectueux de toutes les cellules.",
+      "difficulty": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Associe chaque outil du génie génétique à son rôle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Enzyme de restriction"
+        },
+        {
+          "id": "l2",
+          "text": "ADN ligase"
+        },
+        {
+          "id": "l3",
+          "text": "Transcriptase reverse"
+        },
+        {
+          "id": "l4",
+          "text": "Sonde radioactive"
+        },
+        {
+          "id": "r1",
+          "text": "Coupe l'ADN à des endroits précis"
+        },
+        {
+          "id": "r2",
+          "text": "Soude deux fragments d'ADN"
+        },
+        {
+          "id": "r3",
+          "text": "Fabrique de l'ADN à partir d'un ARNm"
+        },
+        {
+          "id": "r4",
+          "text": "Se fixe sur une séquence complémentaire"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "L'enzyme de restriction coupe l'ADN, l'ADN ligase soude deux fragments d'ADN, la transcriptase reverse lit un ARNm pour fabriquer de l'ADN, et la sonde radioactive s'hybride avec la séquence complémentaire du gène recherché.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un colibacille se divise toutes les 20 minutes. Combien de divisions a-t-il subies au bout de 4 heures ?",
+      "answerKey": {
+        "value": 12,
+        "unit": "divisions"
+      },
+      "explanation": "4 heures valent 240 minutes, et 240 ÷ 20 = 12 : le colibacille s'est divisé 12 fois. Ce nombre de divisions est l'exposant de 2 pour compter les bactéries (2¹²), pas leur nombre.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Qu'est-ce qu'un plasmide ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une petite molécule d'ADN circulaire du cytoplasme bactérien"
+        },
+        {
+          "id": "b",
+          "text": "Un fragment d'ADN radioactif complémentaire du gène",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        },
+        {
+          "id": "c",
+          "text": "Le chromosome principal de la bactérie, replié en anneau fermé"
+        },
+        {
+          "id": "d",
+          "text": "Une enzyme qui soude deux fragments d'ADN",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Un plasmide est une petite molécule d'ADN circulaire située dans le cytoplasme de la bactérie, en plus de son chromosome : elle sert de vecteur au gène. Une enzyme qui soude est l'ADN ligase, et un fragment radioactif complémentaire est une sonde.",
+      "difficulty": 1
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels sont des objectifs du génie génétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identifier le génome d'une espèce"
+        },
+        {
+          "id": "b",
+          "text": "Produire en quantité industrielle une substance utile"
+        },
+        {
+          "id": "c",
+          "text": "Conférer un caractère nouveau à un organisme"
+        },
+        {
+          "id": "d",
+          "text": "Rendre fertiles entre elles des espèces différentes"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Le génie génétique vise à identifier le génome d'une espèce, à produire en quantité industrielle des substances utiles comme l'insuline, et à conférer un caractère nouveau en insérant un gène étranger. Il ne rend pas des espèces différentes fertiles entre elles : l'interfécondité reste le critère de l'espèce.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Place dans l'ordre les cinq étapes du transfert d'un gène vers des colibacilles, de la première à la dernière.",
+      "options": [
+        {
+          "id": "e4",
+          "text": "Cloner les bactéries et faire exprimer le gène"
+        },
+        {
+          "id": "e1",
+          "text": "Obtenir le gène de l'hormone"
+        },
+        {
+          "id": "e5",
+          "text": "Extraire l'hormone fabriquée"
+        },
+        {
+          "id": "e2",
+          "text": "Introduire le gène dans des colibacilles"
+        },
+        {
+          "id": "e3",
+          "text": "Repérer les colibacilles transformés"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5"
+        ]
+      },
+      "explanation": "On obtient d'abord le gène, qu'on introduit ensuite dans les colibacilles. On repère alors les bactéries transformées pour ne cloner que celles-là et leur faire exprimer le gène, puis on extrait la protéine qu'elles ont fabriquée.",
+      "difficulty": 2
+    }
+  ]
+}

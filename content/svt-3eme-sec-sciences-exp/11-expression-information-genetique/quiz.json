@@ -1,0 +1,181 @@
+{
+  "title": "Test de compréhension ⭐ : L'expression de l'information génétique",
+  "questions": [
+    {
+      "prompt": "Dans la chaîne qui mène à la mélanine, quelle substance est l'enzyme qui active la transformation de la tyrosine en mélanine ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "La mélanine"
+        },
+        {
+          "id": "b",
+          "text": "La phénylalanine"
+        },
+        {
+          "id": "c",
+          "text": "La tyrosinase"
+        },
+        {
+          "id": "d",
+          "text": "La tyrosine",
+          "misconceptionTag": "bio.expr.acide-amine-enzyme-confondus"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "La tyrosinase est l'enzyme qui active la transformation de la tyrosine en mélanine. La tyrosine est la substance transformée, la phénylalanine se situe en amont dans la chaîne et la mélanine est le produit final : aucune de ces trois substances n'est l'enzyme.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Un pentapeptide est un polypeptide de 5 acides aminés. Combien contient-il de liaisons peptidiques ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 liaisons"
+        },
+        {
+          "id": "b",
+          "text": "4 liaisons"
+        },
+        {
+          "id": "c",
+          "text": "5 liaisons",
+          "misconceptionTag": "bio.expr.liaisons-peptidiques-n"
+        },
+        {
+          "id": "d",
+          "text": "6 liaisons"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Chaque liaison peptidique relie deux acides aminés voisins : sur une chaîne de 5 acides aminés, il y en a 5 − 1 = 4. Répondre 5 reviendrait à compter les acides aminés au lieu des jonctions entre eux.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Où les protéines sont-elles fabriquées dans la cellule ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans le cytoplasme, au niveau des ribosomes"
+        },
+        {
+          "id": "b",
+          "text": "Dans le noyau, au contact des chromosomes",
+          "misconceptionTag": "bio.expr.synthese-proteique-dans-le-noyau"
+        },
+        {
+          "id": "c",
+          "text": "Dans l'appareil de Golgi, qui les assemble"
+        },
+        {
+          "id": "d",
+          "text": "Dans les vésicules, avant leur sortie de la cellule"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les protéines sont assemblées à partir des acides aminés dans le cytoplasme, au niveau des ribosomes. Le noyau garde l'information génétique ; l'appareil de Golgi et les vésicules ne font que transférer ou stocker des protéines déjà fabriquées.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Où l'ARNm est-il synthétisé, et à partir de quoi ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dans le cytoplasme, à partir des acides aminés"
+        },
+        {
+          "id": "b",
+          "text": "Dans les ribosomes, à partir d'ARNt"
+        },
+        {
+          "id": "c",
+          "text": "Dans le noyau, au contact d'un brin d'ADN"
+        },
+        {
+          "id": "d",
+          "text": "Dans le noyau, à partir des deux brins d'ADN à la fois",
+          "misconceptionTag": "bio.expr.arnm-copie-conforme-adn"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "L'ARNm est synthétisé dans le noyau, au contact d'un seul brin d'ADN, le brin transcrit. Il n'est fabriqué ni dans le cytoplasme ni à partir d'acides aminés, et il ne copie pas les deux brins à la fois.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Un brin transcrit d'ADN s'écrit CGATTG. Quel est l'ARNm synthétisé sur ce brin ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CGATTG",
+          "misconceptionTag": "bio.expr.arnm-copie-conforme-adn"
+        },
+        {
+          "id": "b",
+          "text": "CAAUCG"
+        },
+        {
+          "id": "c",
+          "text": "GCTAAC",
+          "misconceptionTag": "bio.expr.arn-contient-thymine"
+        },
+        {
+          "id": "d",
+          "text": "GCUAAC"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "L'ARNm est complémentaire du brin transcrit : C donne G, G donne C, A donne U, T donne A, T donne A, G donne C, soit GCUAAC. Recopier le brin ignore la complémentarité, garder un T dans l'ARN oublie que l'uracile remplace la thymine, et CAAUCG est complémentaire mais écrit à l'envers.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Quel codon marque le début de la traduction ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AUA"
+        },
+        {
+          "id": "b",
+          "text": "AUG"
+        },
+        {
+          "id": "c",
+          "text": "UAA",
+          "misconceptionTag": "bio.expr.codon-uaa-initiation"
+        },
+        {
+          "id": "d",
+          "text": "UGG"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "La traduction commence au codon d'initiation AUG, qui désigne la méthionine. UAA est un codon stop, qui l'arrête ; AUA désigne l'isoleucine et UGG le tryptophane.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Le ribosome lit le codon AUG sur l'ARNm. Quel est l'anticodon de l'ARNt qui s'y fixe ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AUG",
+          "misconceptionTag": "bio.expr.anticodon-egal-codon"
+        },
+        {
+          "id": "b",
+          "text": "UAC"
+        },
+        {
+          "id": "c",
+          "text": "UAG"
+        },
+        {
+          "id": "d",
+          "text": "UUC"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'anticodon est complémentaire du codon, base par base : A face à U, U face à A, G face à C, soit UAC. Un anticodon identique au codon, AUG, ne pourrait pas s'apparier avec lui.",
+      "difficulty": 2
+    }
+  ]
+}

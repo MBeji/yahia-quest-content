@@ -1,0 +1,171 @@
+{
+  "title": "⭐⭐ Révision (type examen) : Le génie génétique",
+  "difficulty": 2,
+  "mode": "practice",
+  "xpReward": 75,
+  "rewardCoins": 15,
+  "displayOrder": 3,
+  "questions": [
+    {
+      "prompt": "Pourquoi le colibacille est-il la cellule hôte la plus utilisée en génie génétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il lit n'importe quel gène humain sans promoteur, car son ADN est proche du nôtre",
+          "misconceptionTag": "bio.gen.gene-sans-signaux"
+        },
+        {
+          "id": "b",
+          "text": "Il est facile à se procurer et à cultiver, et se multiplie vite"
+        },
+        {
+          "id": "c",
+          "text": "Il sécrète l'hormone dans le milieu de culture, comme le fait l'hypophyse"
+        },
+        {
+          "id": "d",
+          "text": "Il possède un vrai noyau qui protège le gène greffé"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Le colibacille est facile à se procurer et à cultiver, et sa multiplication est rapide. Il n'a pas de noyau véritable, il n'est pas une cellule sécrétrice (c'est pourquoi on doit libérer la protéine), et il ne lit un gène étranger que s'il est précédé d'un promoteur.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Sur une autoradiographie, la sonde ne s'est fixée que sur une bande du gel. Que montre ce résultat ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seule cette bande porte la séquence complémentaire du gène"
+        },
+        {
+          "id": "b",
+          "text": "La sonde se fixe sur tous les fragments, mais les autres signaux ont disparu",
+          "misconceptionTag": "bio.gen.sonde-fixee-partout"
+        },
+        {
+          "id": "c",
+          "text": "Les autres bandes ne contiennent pas d'ADN, puisqu'elles ne donnent pas de signal"
+        },
+        {
+          "id": "d",
+          "text": "Toutes les bandes portent le gène, mais une seule est assez radioactive",
+          "misconceptionTag": "bio.gen.sonde-fixee-partout"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "La sonde s'hybride uniquement avec la séquence complémentaire du gène : une seule bande donne un signal, donc seuls ses fragments portent le gène. Les autres bandes contiennent bien de l'ADN, visible sur le gel, mais ne sont pas marquées parce que la sonde ne s'y fixe pas.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que fait l'ADN ligase en génie génétique ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elle relie un ARNm à son ADN complémentaire pour le repérer",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        },
+        {
+          "id": "b",
+          "text": "Elle soude le gène au plasmide ouvert en une seule molécule d'ADN"
+        },
+        {
+          "id": "c",
+          "text": "Elle colle les bactéries entre elles pour favoriser leur multiplication"
+        },
+        {
+          "id": "d",
+          "text": "Elle coupe le plasmide en deux extrémités complémentaires",
+          "misconceptionTag": "bio.gen.outils-genie-confondus"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "L'ADN ligase est la colle moléculaire : elle soude deux fragments d'ADN, ici le gène et le plasmide ouvert, en un plasmide recombiné. Relier un ARNm à un ADN complémentaire est l'hybridation de la sonde, couper le plasmide est le rôle de l'enzyme de restriction, et la ligase colle de l'ADN, pas des bactéries.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Une équipe clone tous les colibacilles mis au contact des plasmides recombinés, sans avoir repéré ceux qui ont capté un plasmide. Que prévoir pour la culture obtenue ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Une partie des bactéries porte le gène : la production est plus faible"
+        },
+        {
+          "id": "b",
+          "text": "Toutes les bactéries portent le gène, puisque toutes ont forcément capté un plasmide",
+          "misconceptionTag": "bio.gen.etapes-genie-desordre"
+        },
+        {
+          "id": "c",
+          "text": "Les bactéries expriment le gène plus vite, puisqu'aucun tri ne vient les ralentir",
+          "misconceptionTag": "bio.gen.etapes-genie-desordre"
+        },
+        {
+          "id": "d",
+          "text": "La production est identique, puisque le tri ne change que le nombre de bactéries"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Toutes les bactéries n'ont pas capté le plasmide recombiné. Sans repérage préalable, on multiplie aussi celles qui ne portent pas le gène : elles ne fabriquent pas l'hormone et la production baisse. Le tri ne ralentit ni n'accélère l'expression du gène.",
+      "difficulty": 2
+    },
+    {
+      "prompt": "Pour récolter l'hormone fabriquée par des colibacilles, on utilise un choc osmotique. Dans quel ordre place-t-on les bactéries ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "En milieu hypertonique seulement, où l'hormone est libérée",
+          "misconceptionTag": "bio.gen.choc-osmotique-inverse"
+        },
+        {
+          "id": "b",
+          "text": "D'abord en milieu hypertonique, puis en milieu hypotonique"
+        },
+        {
+          "id": "c",
+          "text": "En milieu hypotonique seulement, où l'hormone est libérée",
+          "misconceptionTag": "bio.gen.choc-osmotique-inverse"
+        },
+        {
+          "id": "d",
+          "text": "D'abord en milieu hypotonique, puis en milieu hypertonique",
+          "misconceptionTag": "bio.gen.choc-osmotique-inverse"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "En milieu hypertonique, la bactérie perd de l'eau (plasmolyse) : la membrane se rétracte et agrandit l'espace où se trouve l'hormone. En milieu hypotonique, elle reprend brutalement de l'eau (turgescence), gonfle, et le contenu de cet espace est libéré à travers la coque. Un seul des deux milieux ne suffit pas, et l'ordre ne s'inverse pas.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Quels risques liés aux OGM sont cités dans le débat sur leur culture et leur consommation ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le passage d'un gène de résistance à un antibiotique de l'OGM à l'animal ou à l'Homme"
+        },
+        {
+          "id": "b",
+          "text": "Le transfert d'un gène de résistance à un herbicide à des « mauvaises » plantes"
+        },
+        {
+          "id": "c",
+          "text": "L'allergie à la protéine fabriquée par le gène"
+        },
+        {
+          "id": "d",
+          "text": "L'insertion du gène étranger dans l'ADN de la personne qui consomme l'OGM"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "Sont cités : le passage possible d'un gène de résistance à un antibiotique, le transfert d'un gène de résistance à un herbicide à des mauvaises plantes, et l'allergie à la protéine fabriquée. Pour le consommateur, le risque évoqué est l'allergie, pas une insertion du gène dans son propre ADN.",
+      "difficulty": 2
+    }
+  ]
+}

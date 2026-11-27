@@ -1,0 +1,202 @@
+{
+  "title": "⭐ Exercice : Du gène à la protéine, premiers pas",
+  "difficulty": 1,
+  "mode": "practice",
+  "xpReward": 50,
+  "rewardCoins": 10,
+  "displayOrder": 1,
+  "questions": [
+    {
+      "type": "matching",
+      "prompt": "Associe chaque substance de la chaîne de biosynthèse de la mélanine à son rôle.",
+      "options": [
+        {
+          "id": "l1",
+          "text": "Mélanine"
+        },
+        {
+          "id": "l2",
+          "text": "Tyrosine"
+        },
+        {
+          "id": "l3",
+          "text": "Tyrosinase"
+        },
+        {
+          "id": "l4",
+          "text": "Phénylalanine hydroxylase"
+        },
+        {
+          "id": "r1",
+          "text": "Pigment foncé de la peau"
+        },
+        {
+          "id": "r2",
+          "text": "Acide aminé transformé en mélanine"
+        },
+        {
+          "id": "r3",
+          "text": "Enzyme qui active la formation de la mélanine"
+        },
+        {
+          "id": "r4",
+          "text": "Enzyme qui active la formation de la tyrosine"
+        }
+      ],
+      "answerKey": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "explanation": "La mélanine est le pigment foncé fabriqué par les mélanocytes. La tyrosine est l'acide aminé dont la tyrosinase active (catalyse) la transformation en mélanine, et la phénylalanine hydroxylase est l'enzyme qui active la transformation de la phénylalanine en tyrosine : les enzymes (tyrosinase, phénylalanine hydroxylase) activent les réactions, les autres substances en sont les produits ou les points de départ.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "Que peut-on dire des mélanocytes d'un albinos ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ils sont présents, mais ne produisent pas de mélanine faute de tyrosinase"
+        },
+        {
+          "id": "b",
+          "text": "Ils sont absents de sa peau, qui ne peut donc pas fabriquer de mélanine",
+          "misconceptionTag": "bio.expr.albinos-sans-melanocytes"
+        },
+        {
+          "id": "c",
+          "text": "Ils sont présents, mais la tyrosine leur manque faute d'alimentation adaptée"
+        },
+        {
+          "id": "d",
+          "text": "Ils sont présents, mais la phénylalanine hydroxylase leur manque"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Les mélanocytes de l'albinos existent, mais ils sont incapables de fabriquer la tyrosinase : la tyrosine n'est pas transformée en mélanine. Ce n'est donc ni l'absence des cellules, ni un manque de tyrosine alimentaire, ni l'enzyme de la phénylalanine (c'est la tyrosinase qui manque) : la mélanine foncée n'est tout simplement pas produite.",
+      "difficulty": 1
+    },
+    {
+      "prompt": "On place un érythroblaste et une hématie dans un milieu riche en acides aminés radioactifs. Laquelle fabriquera de l'hémoglobine radioactive ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "L'érythroblaste, car il possède noyau et ribosomes"
+        },
+        {
+          "id": "b",
+          "text": "L'hématie, car elle contient déjà de l'hémoglobine",
+          "misconceptionTag": "bio.expr.hematie-synthetise-hemoglobine"
+        },
+        {
+          "id": "c",
+          "text": "Les deux, car elles sont issues de la même cellule"
+        },
+        {
+          "id": "d",
+          "text": "Aucune, car l'hémoglobine ne se fabrique pas en culture"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Seul l'érythroblaste, qui possède un noyau et des ribosomes, fabrique l'hémoglobine à partir des acides aminés. L'hématie mûre a perdu noyau et ribosomes : elle contient de l'hémoglobine mais ne peut plus en fabriquer.",
+      "difficulty": 1
+    },
+    {
+      "type": "numeric",
+      "prompt": "Un polypeptide contient 24 liaisons peptidiques. Combien d'acides aminés compte-t-il ?",
+      "answerKey": {
+        "value": 25,
+        "unit": "acides aminés"
+      },
+      "explanation": "Il y a un acide aminé de plus que de liaisons, car chaque liaison se trouve entre deux voisins : 24 + 1 = 25 acides aminés.",
+      "difficulty": 2
+    },
+    {
+      "type": "ordering",
+      "prompt": "Remets dans l'ordre les événements qui mènent d'un gène à un caractère.",
+      "options": [
+        {
+          "id": "c",
+          "text": "Un ribosome lit les codons de l'ARNm"
+        },
+        {
+          "id": "e",
+          "text": "La protéine formée participe à la réalisation du phénotype"
+        },
+        {
+          "id": "a",
+          "text": "Un gène de l'ADN est transcrit en ARNm dans le noyau"
+        },
+        {
+          "id": "d",
+          "text": "Les acides aminés sont enchaînés en un polypeptide"
+        },
+        {
+          "id": "b",
+          "text": "L'ARNm passe du noyau dans le cytoplasme"
+        }
+      ],
+      "answerKey": {
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "explanation": "Le gène est d'abord transcrit dans le noyau, puis l'ARNm gagne le cytoplasme où un ribosome le lit. Les acides aminés sont ensuite enchaînés en polypeptide, et la protéine obtenue réalise le phénotype : chaque étape fournit ce dont la suivante a besoin.",
+      "difficulty": 2
+    },
+    {
+      "type": "multi",
+      "prompt": "Parmi ces affirmations sur l'ARNm, lesquelles sont exactes ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Il est formé d'un seul brin"
+        },
+        {
+          "id": "b",
+          "text": "Son sucre est le ribose"
+        },
+        {
+          "id": "c",
+          "text": "Il contient de l'uracile"
+        },
+        {
+          "id": "d",
+          "text": "Il contient de la thymine"
+        },
+        {
+          "id": "e",
+          "text": "Il est synthétisé dans le cytoplasme"
+        }
+      ],
+      "answerKey": {
+        "correct": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "explanation": "L'ARNm est un polymère à un seul brin, dont le sucre est le ribose et dont les bases sont A, U, G et C : il contient de l'uracile. Il ne contient pas de thymine, propre à l'ADN, et il est synthétisé dans le noyau, pas dans le cytoplasme.",
+      "difficulty": 2
+    }
+  ]
+}
