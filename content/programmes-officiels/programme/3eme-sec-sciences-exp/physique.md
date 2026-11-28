@@ -70,6 +70,8 @@ Les auteurs »
 « LES INTERACTIONS DANS L'UNIVERS — Chapitre 1- INTERACTION ELECTRIQUE — Chapitre 2- INTERACTION
 MAGNETIQUE — Chapitre 3- INTERACTION GRAVITATIONNELLE — Chapitre 4- INTERACTION FORTE »
 
+### Sommaire (p.296)
+
 (Mise en page à deux colonnes ; ordre de lecture rétabli ; numéros de page à droite.)
 
 ```
@@ -205,7 +207,7 @@ Chapitre 10 Instruments d'optique ............................... 274
 ```
 
 Remarques sur le sommaire : « Application :Le spectrographe de passe » [sic : de masse] ; « caracteristiques », « gravitationelle »
-[sic]. La page « Programme officiel » (p.4) n'est pas dans ma plage (transcrite par le lot PA).
+[sic].
 
 ---
 
@@ -348,7 +350,7 @@ i⃗. L'interaction est bien attractive. »
   d'une tige conductrice reliée à l'un des pôles d'une machine électrostatique ; on saupoudre de grains
   légers (graines de ricin) ; les grains se disposent suivant des lignes radiales (Photo-1).
 - Interprétation (p.14) : « Les graines de ricin sont oblongues (de forme ovale) ; lorsqu'on les place
-  dans un champ électrique E⃗, chacune d'elles acquiert à ses extrémités deux charges q = +q et q' = –q
+  dans un champ électrique E⃗, chacune d'elles acquiert à ses extrémités deux charges q = +|q| et q' = –|q|
   (Doc-10-a). L'action de ce champ électrique sur ces charges se traduit par deux forces électriques F⃗ et
   F⃗' constituant un couple de forces. Sous l'effet de ce couple, l'axe du grain s'aligne dans la
   direction de E⃗ (Doc-10-b). L'ensemble des grains forment des lignes radiales car elles concourent en un
@@ -693,7 +695,7 @@ nord et l'autre sud, elles s'attirent. »
 permettant de soustraire un objet à l'action de la pesanteur par l'intermédiaire de différents procédés
 (électrostatique, électrodynamique..) et également par magnétisme. » Application : « Le Maglev (Magnetic
 Levitation Train) actuellement en service d'essais depuis environ 30 ans au Japon peut atteindre
-550 km.h⁻¹ (record de vitesse) en se déplaçant à quelques centimètres au-dessus de rails spéciaux. »
+550 km.h⁻¹ (record de vitesse) [information datée : record porté à 603 km.h⁻¹ en 2015 — complément de l'auditeur] en se déplaçant à quelques centimètres au-dessus de rails spéciaux. »
 Principe : « La technologie du train à lévitation magnétique repose sur le principe que deux
 électroaimants s'attirent ou se repoussent suivant le sens du courant. Le train est équipé
 d'électroaimants supraconducteurs n'offrant aucune résistance au passage du courant. »
@@ -761,8 +763,8 @@ d'un aimant en U (Photo.7) et (Doc.7). »
   de s'orienter (Doc.9-a). » **B⃗(M) = B⃗h(M) + B⃗v(M)** ; « B⃗h(M) : composante horizontale du vecteur
   champ magnétique, dirigée vers le nord magnétique ; sa direction et le sens sont indiqués par une
   aiguille aimantée mobile autour d'un axe vertical (Doc.9-b). B⃗v(M) : composante verticale du vecteur
-  champ magnétique. » (Doc.9-a : aiguille suspendue à un fil sans torsion inclinée de I ; Doc.9-b :
-  boussole, angle D entre nord géographique et nord magnétique.)
+  champ magnétique. » (Doc.9-a : aiguille suspendue à un fil sans torsion inclinée, avec B⃗, B⃗h, B⃗v et l'angle D̂ entre nord géographique et nord magnétique ; Doc.9-b :
+  aiguille sur pivot vertical, alignée sur B⃗h.)
 - 2.2.3 **Inclinaison et déclinaison (p.37)** (verbatim) : « L'angle D̂ que fait le méridien magnétique
   avec le méridien géographique en un lieu est appelé déclinaison magnétique de ce lieu. La déclinaison
   est dite occidentale ou orientale suivant que le méridien magnétique est à l'ouest ou à l'est du
@@ -1880,15 +1882,14 @@ système géocentrique · système héliocentrique.
 
 ### Bornes de scope
 - ✅ INCLUS : loi de Newton (scalaire et vectorielle) ; calculs de forces gravitationnelles (particules,
-  objets courants, astres) et comparaison avec la force électrique (loi de Coulomb supposée connue — chapitre 01 du manuel d'après l'ordre des en-têtes, à confirmer par le lot voisin ;
+  objets courants, astres) et comparaison avec la force électrique (loi de Coulomb supposée connue — chapitre 01 du manuel, p.9–11 ;
   voir aussi Ex. résolu n°1) ; principe et exploitation statique de l'expérience de Cavendish ; champ de
   gravitation d'un corps ponctuel et d'un corps à symétrie sphérique, lignes de champ ; variation avec
   l'altitude ; champ de pesanteur, sa relation avec 𝒢⃗, sa variation avec la latitude (qualitative, Doc.17),
   uniformité locale ; point où deux champs se compensent (Ex-4) ; explication qualitative de la satellisation
   et des marées ; culture : astéroïdes, comètes, historique.
 - ⛔ EXCLU : étude cinématique/dynamique du mouvement des satellites (vitesse orbitale, période, lois de Kepler
-  quantitatives) — relève de la partie « Mouvements » (ch.05–08 de ce manuel, à vérifier par le lot
-  concerné) et du Bac ; effet quantitatif de la rotation terrestre sur g ; énergie potentielle
+  quantitatives) — relève de la partie « Mouvements » (ch.05–08 de ce manuel, p.107–239) et du Bac ; effet quantitatif de la rotation terrestre sur g ; énergie potentielle
   gravitationnelle ; théorie quantitative des marées (force de marée différentielle) ; interaction forte et
   cohésion du noyau (chapitre 04) ; champ électrique et magnétique (chapitres 01–02).
 
@@ -1947,7 +1948,7 @@ convergentes étiquetées « Interaction forte ».
 **2.1 Interactions dans un noyau d'Hélium** (p.100–101)
 - « Un noyau d'Hélium ⁴₂He est formé de deux neutrons et deux protons (Doc.1). » Doc.1 : « modélisation du
   noyau d'Hélium. Le rayon d'un nucléon est de **1,2.10⁻¹⁵ m**. » (quatre sphères jointives dans un cercle :
-  deux protons roses en vis-à-vis, deux neutrons gris en vis-à-vis.)
+  deux sphères roses en vis-à-vis, deux grises en vis-à-vis ; couleurs non légendées — Doc.2 p.101 dessine gris–rose–gris pour « proton–neutron–proton » : ne pas attribuer de couleur aux protons.)
 - **2-1-1 Interaction gravitationnelle (verbatim, formule lue sur l'image)** : « Les nucléons possèdent une
   masse ; ils subissent une attraction gravitationnelle. La valeur commune des deux forces qui constituent
   l'interaction gravitationnelle entre deux protons supposés jointifs est donnée par :
@@ -2000,6 +2001,7 @@ convergentes étiquetées « Interaction forte ».
   - est d'une portée courte (distance nucléaire),
   - d'une intensité élevée (dans le noyau, elle est environ mille fois plus élevée que l'interaction
     électrique),
+    [sic probable : ordre de grandeur admis ≈ 100 fois — voir §6]
   - elle s'exerce entre les nucléons (les neutrons et les protons).
   L'interaction forte assure la cohésion de la matière à l'échelle des noyaux. »
 - « **Cohésion de la matière** — Les atomes, les ions et les molécules qui constituent la matière sont des
@@ -2305,8 +2307,8 @@ partie, de leur étude cinématique. » Photo légendée « TGV en mouvement ».
   centripète car sa valeur v²/r est positive ; donc l'accélération a⃗ est toujours dirigée vers l'intérieur de la
   concavité de la trajectoire. Si le point M appartient à une droite ( cas d'une trajectoire rectiligne ), r est
   infini et a_n = 0 ; le vecteur accélération est réduit à sa composante tangentielle ; il est porté par la
-  trajectoire rectiligne. Si le point M décrit une trajectoire circulaire avec une vitesse v de valeur absolue
-  constante : v = constante ⇒ dv/dt = 0 ⇒ a_t = 0 ; l'accélération a⃗ est réduite à sa composante normale :
+  trajectoire rectiligne. Si le point M décrit une trajectoire circulaire avec une vitesse v⃗ de valeur absolue
+  constante : ‖v⃗‖ = constante ⇒ dv/dt = 0 ⇒ a_t = 0 ; l'accélération a⃗ est réduite à sa composante normale :
   **a⃗ = a⃗_n = (v²/r) N⃗** ; a⃗ est un vecteur radial c'est à dire portée par un rayon, et centripète c'est à dire
   dirigée vers le centre de la trajectoire circulaire. »
 - Remarque (p.115, verbatim) : « Pour un solide en mouvement de translation, et comme pour la vitesse
@@ -2326,7 +2328,7 @@ partie, de leur étude cinématique. » Photo légendée « TGV en mouvement ».
   vitesse : v⃗ = v₀·i⃗ = C⃗ᵗᵉ ; v = v₀ = dx/dt = Cᵗᵉ, d'où x = v₀t + b. L'abscisse instantanée x est une fonction
   affine du temps car sa dérivée v₀ est une constante. La constante b représente l'abscisse x₀ du point mobile à
   la date t = 0 ; elle est appelée abscisse initiale : **x = v₀·t + x₀**. C'est l'équation horaire du mouvement
-  rectiligne uniforme d'un point mobile. » (imprimé « se garde » [sic typographique])
+  rectiligne uniforme d'un point mobile. »
 
 **4 MOUVEMENT RECTILIGNE UNIFORMÉMENT VARIÉ** (p.116–118, verbatim)
 - « En 2ème année, nous avons vu qu'un mouvement rectiligne est uniformément accéléré ou retardé si la vitesse
@@ -2432,11 +2434,11 @@ a_T et a_N du vecteur accélération à l'instant t = 1 s. - c - En déduire le 
 - 2-b : imprimé « ‖a⃗_T‖ = ‖a⃗‖ sin α et ‖a⃗_T‖ = ‖a⃗‖ cos α » **[sic : la seconde relation est ‖a⃗_N‖ = ‖a⃗‖ cos α]** ;
   ‖a⃗_T‖ = 3·sin(21,8) = **1,11 m.s⁻²** ; ‖a⃗_N‖ = 3·cos(21,8) = **2,79 m.s⁻²** (Doc.18). (vérifié : juste.
   Complément du lecteur : a⃗ = − 3 j⃗ et v_y > 0, donc la composante tangentielle algébrique vaut − 1,11 m.s⁻² —
-  le mouvement est retardé à t = 1 s ; le manuel ne donne que des valeurs.)
-- 2-c : ‖a⃗_N‖ = v²/r d'où r = v²/‖a⃗_N‖ = (5,39)²/2,79 = **10,41 m** (vérifié : 10,4 m ; avec v² = 29 exactement,
+  le mouvement est retardé à t = 1 s ; la solution p.125 ne donne que des normes, mais le Doc.18 p.126 imprime a⃗_T = − 1,11 𝒯⃗.)
+- 2-c : ‖a⃗_N‖ = v²/r d'où r = v²/‖a⃗_N‖ = (5,39)²/2,79 = **10,41 m** (vérifié : valeurs exactes v² = 29 et ‖a⃗_N‖ = 15/√29 ⇒ r = 29^{3/2}/15 = 10,41 m ; seul le mélange v² = 29 et 2,79 donnerait
   r = 10,39 m — écart d'arrondi).
 - Doc.18 (p.126) : arc de parabole dans (x, y) en m, M₀(2 ; 3), v⃗ = 5 i⃗ + 2 j⃗ avec v⃗_x = 5 i⃗, v⃗_y = 2 j⃗,
-  angle α, a⃗ vertical vers le bas, composantes a_T = 1,11 et a_N = 2,79, ordonnée à l'origine 1,96.
+  angle α, a⃗ vertical vers le bas, composantes imprimées « a⃗_T = − 1,11 𝒯⃗ » (dessinée vers l'arrière, 𝒯⃗ dans le sens du mouvement) et « a⃗_N = 2,79 𝒩⃗ », ordonnée à l'origine 1,96.
 
 **Exercice résolu n°2 (p.127–129)** — Énoncé (verbatim) : « La courbe du document 19 représente les variations de
 la vitesse v ( t ) = V_m sin ( (2π/T) t + φ_v ) d'un point mobile en mouvement rectiligne sinusoïdal. » Doc.19 :
@@ -2585,7 +2587,7 @@ Un point mobile peut être :
   les données suivantes : a = 2 m.s⁻² et à t = 0 ( instant du lancement ) v₀ = − 6 m.s⁻¹ et x₀ = 5 m ( Doc.29 ).
   1 - Etablir les équations horaires du mouvement. 2 - Déterminer l'intervalle de temps qui sépare les deux
   passages par l'origine O. Calculer la valeur de la vitesse de la bille à ces passages. » (Doc.29 : axe x'x
-  incliné, i⃗ orienté vers x', bille en x₀ = 5 m du côté x, v⃗₀ dirigé vers O.)
+  incliné, i⃗ orienté de O vers x, bille en x₀ = 5 m du côté x, v⃗₀ dirigé vers O, c'est-à-dire opposé à i⃗, d'où v₀ < 0.)
 - **Ex-11** (p.136) — « Un mobile M peut glisser sans frottement le long de la ligne de plus grande pente x'Ox
   d'un plan incliné. Il est attaché à un fil inextensible tendu parallèle à x'Ox ( Doc.30-a ). A l'instant t₀ = 0,
   le mobile ( M ) est au repos au point O, origine de l'axe et on applique au fil une traction qui fait gravir à
@@ -3012,7 +3014,7 @@ traction inclinée) ; solide isolé et pseudo-isolé ; exploitation de chronopho
 déterminer a puis une force.
 
 ⛔ EXCLU : cinématique pure (ch.05, supposée acquise) ; énergie cinétique et théorème de l'énergie cinétique
-(ch.07) ; « Mouvements dans les champs » (ch.08 ; contenu exact à relever par le lot suivant) ; troisième loi de Newton détaillée (vue au ch.03 interaction gravitationnelle et en 2ème
+(ch.07) ; « Mouvements dans les champs » (ch.08, §T8) ; troisième loi de Newton détaillée (vue au ch.03 interaction gravitationnelle et en 2ème
 année) ; quantité de mouvement et forme p⃗ (non abordée dans ce manuel) ; dynamique de rotation ; oscillateurs
 mécaniques et équations différentielles du mouvement (Bac) ; référentiels non galiléens et forces d'inertie
 (seulement cités comme non galiléens).
@@ -3180,7 +3182,7 @@ leurs travaux entre les deux instants considérés 5- Formuler et appliquer le t
 
 **Solution du manuel** :
 1. Système { véhicule } ; référentiel terrestre supposé galiléen ; état initial G en A, Ec(A) = 0 ; état
-   final G en B, Ec(B) = ½ m v_B². Tableau des travaux A→B : poids W(m g⃗) = m‖g⃗‖(z_B − z_A) =
+   final G en B, Ec(B) = ½ m v_B². Tableau des travaux A→B (schéma de la solution : axe (O, k⃗) vertical orienté vers le bas) : poids W(m g⃗) = m‖g⃗‖(z_B − z_A) =
    − m‖g⃗‖AB sinα ; réaction normale W(R⃗ₙ) = 0 ; force motrice W(F⃗) = ‖F⃗‖·AB ; frottement W(f⃗) = −‖f⃗‖·AB.
    Ec(B) − Ec(A) = − m‖g⃗‖AB sinα + ‖F⃗‖·AB − ‖f⃗‖·AB ⇒ ½ m v_B² = (−m‖g⃗‖sinα + ‖F⃗‖ − ‖f⃗‖)AB ⇒
    **‖F⃗‖ = ½ m v_B² / AB + ‖f⃗‖ + m‖g⃗‖sinα** = 0,5·100·(20)²/100 + 100 + 100·9,8·0,5 → **‖F⃗‖ = 790 N**
@@ -3286,7 +3288,7 @@ les forces extérieures et intérieures appliquées au système entre ces deux i
   impacts » d'Alain Carion (Masson) : les petites météorites sont freinées par les couches denses de
   l'atmosphère, arrivent intactes ou fragmentées, « fichées » en terre ; les plus importantes (supérieures à
   une dizaine de mètres de diamètre) ne sont pratiquement pas ralenties et arrivent au sol « avec des vitesses
-  de l'ordre de 100 kilomètres par seconde » ; collision d'une fraction de seconde, énergie comparable à
+  de l'ordre de 100 kilomètres par seconde » [sic : la vitesse d'entrée d'une météorite est comprise entre ≈ 11 et ≈ 72 km.s⁻¹ ; garder la donnée du texte pour l'ordre de grandeur de 2-b, mais ne pas l'enseigner comme valeur réelle] ; collision d'une fraction de seconde, énergie comparable à
   plusieurs explosions nucléaires, vaporisation, cratère. Glossaire : météorite, fichées. Questions :
   1-a pourquoi certaines météorites ne parviennent pas au sol ? b comment varie leur Ec durant l'approche ?
   c pourquoi les grosses ont-elles des vitesses plus élevées ? d qu'en est-il de leur Ec ? e justifier les
@@ -3867,7 +3869,7 @@ déviation ; son expression est : **Y = (Deℓ / (m d v₀²)) U**. » (« traje
   2- Montrer que le poids est négligeable. 3- Nature du mouvement. 4- Valeur algébrique de l'accélération a.
   5- Instant t_A de sortie en A. 6- Calculer en km.s⁻¹ la valeur de v⃗_A. 7- Comment peut-on augmenter v_A ?
   Peut-on l'augmenter indéfiniment ? Données : e = 1,6.10⁻¹⁹ C ; ‖g⃗‖ = 9,8 m.s⁻². (Complément du lecteur :
-  q = 8e ; a ≈ 9,0.10¹⁴ m.s⁻² ; t_A ≈ 4,7.10⁻⁹ s ; v_A ≈ 4,2.10³ km.s⁻¹.)
+  q = 8e ; a ≈ 9,0.10¹³ m.s⁻² ; t_A ≈ 1,5.10⁻⁸ s ; v_A ≈ 1,3.10³ km.s⁻¹.)
 - **Ex-3** (p.214) — Boule électrisée ponctuelle, m = 0,05 g, q < 0, en équilibre en O (0 mm ; 0 mm) entre
   deux plaques horizontales (A₁) (haut) et (A₂) (bas) distantes de d = 4 cm, sous U₀ = 4 kV (Doc.23).
   1-a Représenter P⃗ et F⃗ ; b représenter E⃗ ; c comparer V(A₁) et V(A₂). 2- Décrire ce que l'on
@@ -4053,7 +4055,7 @@ la plaque photographique sensible et forment deux tâches, l'une à 9,3 cm et l'
 d'admission O₂. On donne : U = 1000 V, ‖B⃗‖ = 0,12 T, la masse d'un proton est sensiblement égale à la masse
 d'un neutron m_p = m_n = 1,67.10⁻²⁷ kg. a - Calculer les masses m₁ et m₂. b - En déduire les valeurs des
 nombres de masse A₁ et A₂ des deux particules. » (Schéma : ions sortant de O₂ vers la droite ; plaque
-photographique sous la chambre de déviation, taches T₁ et T₂.)
+photographique dans le plan de (P₂), sous O₂ (bord gauche de la chambre de déviation), taches T₁ (plus près de O₂) et T₂.)
 Solution : 1-a F⃗e dirigée de O₁ vers O₂ ; F⃗e = e E⃗ donc E⃗ de même sens. 1-b E⃗ vers les potentiels
 décroissants : V(P₁) > V(P₂), **U = U_P₁P₂ > 0**. 1-c Théorème de l'énergie cinétique de O₁ à O₂ :
 ½ m₁ v₁² − 0 = eU ⇒ **‖v⃗₁‖ = √(2eU/m₁)** ; de même ‖v⃗₂‖ = √(2eU/m₂). 2-a Règle des trois doigts : pouce
@@ -4984,7 +4986,7 @@ l'infini », « B₂ rejeté à l'infini ».)
   (= 2,5 cm ; la suite du manuel utilise 2,5·10⁻²).
 - Solution 1-b : « Schéma permettant de déterminer le diamètre apparent de la spore lorsqu'elle est observée
   à l'œil nu à une distance dm = 25 cm. » α = tan α = AB/dm ; « α = 2.10⁻⁵ / 2,5.10⁻² = 8.10⁻⁶ rad »
-  **[sic]** → dm = 25 cm = 2,5·10⁻¹ m, donc **α = 8·10⁻⁵ rad**.
+  **[sic]** → dm = 25 cm = 2,5·10⁻¹ m, donc **α = 8·10⁻⁵ rad** (le quotient imprimé est lui-même faux : 2·10⁻⁵/2,5·10⁻² = 8·10⁻⁴).
 - Solution 2 : constructions ; « L'image A₁B₁ doit se trouver dans le plan focal objet de l'oculaire si l'on
   veut que l'image définitive A₂B₂ soit à l'infini. »
 - Solution 3-a : O₁A₁ = O₁F'₁ + F'₁A₁ = f'₁ + F'₁F₂ = 0,4 + 16 = **16,4 cm**.
@@ -5189,6 +5191,8 @@ l'objectif · latitude de mise au point · vis micrométrique · cercle oculaire
 
 ## 6. Incertitudes, erreurs de la source, à revérifier
 
+Relecture R-7 (2026-11-28, trois auditeurs opus en contexte vierge) : 236 encadrés confrontés à l'image (100 %), calculs des exercices résolus et compléments du lecteur refaits ; pages auditées hors sondage : 41 % (ch.01–04), 58 % (ch.05–07), 42 % (ch.08–10) ; 5 écarts substantiels et 13 mineurs corrigés.
+
 Relevés des lecteurs (rubrique (d) de leurs notes), par lot. Tout ce qui est marqué `[sic]`, « valeur lue à l'œil » ou « contradiction de la source » ne devient jamais une clé ou une affirmation d'un cours sans correction explicite.
 
 ### Lot ch.01–02 (p.1–71)
@@ -5267,8 +5271,7 @@ Coquilles typographiques signalées [sic] dans la fiche : « le pus simple » (p
 
 Incohérences internes (non fautives mais à connaître) :
 - Intensité de l'interaction forte : « environ mille fois plus élevée que l'interaction électrique »
-  (Essentiel ch.04, p.102) — la fiche Bac (manuel 223433, p.272) dit « 100 fois plus intenses » ; garder la
-  valeur de chaque manuel dans son niveau.
+  (Essentiel ch.04, p.102) — la fiche Bac (manuel 223433, p.272) dit « 100 fois plus intenses » ; [sic probable : l'ordre de grandeur admis est ≈ 100 (couplage fort ≈ 1, électromagnétique α ≈ 1/137) — complément de l'auditeur R-7]. Un cours ou une clé n'affirme pas « mille fois » : écrire « beaucoup plus intense (de l'ordre de 100 fois) que l'interaction électrique ».
 - Ch.04 annonce « quatre interactions fondamentales » mais le cours n'en détaille que trois ; la faible
   n'apparaît qu'en « Pour en savoir plus ».
 - « Contrairement à l'interaction électromagnétique et gravitationnelle, l'interaction forte augmente avec
@@ -5285,7 +5288,7 @@ Pages illisibles : **aucune**. Valeurs lues sur graphique : aucune (pas de courb
 
 Erreurs imprimées :
 1. **p.125, Exercice résolu n°1, 2-b** : « ‖a⃗_T‖ = ‖a⃗‖ sin α et ‖a⃗_T‖ = ‖a⃗‖ cos α » — la seconde relation est
-   **‖a⃗_N‖ = ‖a⃗‖ cos α** (les résultats 1,11 et 2,79 m.s⁻² sont justes). Le manuel donne des valeurs : la composante
+   **‖a⃗_N‖ = ‖a⃗‖ cos α** (les résultats 1,11 et 2,79 m.s⁻² sont justes). La solution p.125 donne des normes ; le Doc.18 p.126 imprime a⃗_T = − 1,11 𝒯⃗ : la composante
    tangentielle algébrique est négative (a⃗ = −3 j⃗, v_y > 0 : mouvement retardé à t = 1 s).
 2. **p.132, QCM ch.05** : numérotation 1, 3, 4, … 9 — **la question n°2 manque** (non imprimée).
 3. **p.152, Ex-5 ch.06 (appontage)** : question 1 « Tracer x en fonction de t² » puis exploiter ce graphe pour
@@ -5297,7 +5300,7 @@ Erreurs imprimées :
 4. **p.144, Doc.3** (exercice résolu ch.06) : la flèche f⃗ semble dessinée verticale vers le bas sous le skieur
    [?] alors que f⃗ est horizontale opposée au mouvement (correctement dessinée sur Doc.4 p.145). Défaut de figure,
    sans effet sur le calcul.
-5. Coquilles d'orthographe sans portée scientifique (gardées dans le verbatim) : « se garde » (p.116),
+5. Coquilles d'orthographe sans portée scientifique (gardées dans le verbatim) :
    « accélérération instantanné » (p.116), « instantannée » (p.111, 118, 121), « se retouve » (p.120),
    « Sytème » (p.142, 145), « mase » (p.141), « précicera » (p.124), « emplace » (p.125), « grandeur grandeur »
    (objectifs p.107), « dérivé » pour « dérivée » (p.113), « appelé » pour « appelée » (p.146).
@@ -5314,7 +5317,7 @@ Incertitudes de lecture :
 - **Ex-9 ch.05 (Doc.28)** : la date de fin du palier à 200 m.s⁻¹ n'est pas graduée (entre 30 et 40 s, ≈ 35 s à la
   lecture) [?]. La valeur 200 m.s⁻¹ est bien imprimée.
 - **Ex-8 ch.05 (Doc.27)** : v(0) ≈ 1,7 cm.s⁻¹ lu sur le graphe (non coté) ; zéros à t ≈ 2 s et 5 s.
-- **Ex-10 ch.05** : « bille lancée dans le sens Ox » alors que v₀ = −6 m.s⁻¹ et que Doc.29 oriente i⃗ vers x' :
+- **Ex-10 ch.05** : « bille lancée dans le sens Ox » alors que v₀ = −6 m.s⁻¹ (Doc.29 : i⃗ orienté vers x, bille lancée vers O, en sens inverse de i⃗) :
   formulation ambiguë mais données cohérentes (bille lancée vers O).
 - **Ex-3 et Ex-5 ch.06** : positions de Doc.8 et Doc.10 lues sur image agrandie (± 0,5 m et ± 0,2 m).
 - Aucune page illisible.
@@ -5349,6 +5352,9 @@ Incertitudes de lecture :
    (A) et (B) sont les plaques].
 15. p.170 : « de l'ordre du tonne » [sic : de la tonne].
 16. p.165 TP : longueur notée l dans le matériel, L dans l'exploitation.
+17. p.170 Ex-6 (ch.07, météorites) : « vitesses de l'ordre de 100 kilomètres par seconde » [sic : la vitesse d'entrée d'une
+   météorite est comprise entre ≈ 11 et ≈ 72 km.s⁻¹, typiquement 15 à 30] — relevé R-7 ; donnée gardée pour l'ordre de
+   grandeur de 2-b, jamais enseignée comme valeur réelle.
 **Incertitudes de données** :
 - p.168–169 Ex-4 (ch.07) : le rayon r des portions AB et CD n'est jamais chiffré, alors que le calcul de
   ‖f⃗‖ à partir de b (= −17 m².s⁻² d'après Doc.10-b) l'exige. Exercice non résoluble numériquement tel
