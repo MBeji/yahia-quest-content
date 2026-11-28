@@ -12,6 +12,12 @@
 
 ## 3. Programme officiel, avant-propos et sommaire (verbatim, relevés par les lecteurs)
 
+### Préface (p.2), résumé fidèle
+
+« Le contenu de ce manuel est conforme au nouveau programme officiel de chimie destiné aux élèves de 3ème année Sciences expérimentales applicable à partir de la rentrée scolaire 2009 - 2010. » Cinq thèmes : les réactions d'oxydoréduction ; les acides et les bases de Bronsted ; la chimie organique ; la mesure en chimie ; l'évolution d'un système chimique. Chaque chapitre comporte des prérequis, un contenu de savoir et de savoir-faire (travaux pratiques), un exercice résolu, un résumé du cours, des exercices variés (« Des réponses courtes, aux questions proposées dans ces exercices, sont données à la fin de ce manuel » : p.323–335), un document et des adresses de sites Web. « © Tous droits réservés au Centre National Pédagogique ».
+
+### Sommaire (p.3)
+
 > **Sommaire**
 >
 > **THEME I : LES REACTIONS D'OXYDOREDUCTION**
@@ -41,9 +47,9 @@
 Remarques : les numéros du sommaire désignent la **page d'ouverture** du chapitre (ch.1 : p.6 ; ch.2 :
 p.31 ; ch.3 : p.46 — vérifiés). Les pages de thème (p.5 thème I, p.73 thème II) précèdent la page
 d'ouverture du premier chapitre du thème. Les pages de début des chapitres 4–14 ne sont pas vérifiées
-ici (hors plage), sauf ch.4 dont la page de thème p.73 est cohérente avec un début p.74.
+ici par les lecteurs ; l'auditeur R-7 les a toutes vérifiées (74, 96, 112, 132, 165, 192, 212, 234, 254, 281, 303 : conformes au sommaire ; pages de thème p.73, 111, 253, 302).
 
-**Page « Programme officiel »** : absente de la plage 1–73 (la préface p.2 se réfère au programme officiel
+**Page « Programme officiel »** : absente du manuel (aucune page de programme sur les 336 p.) (la préface p.2 se réfère au programme officiel
 de 2009-2010 sans le reproduire ; ses cinq thèmes sont ceux du sommaire).
 
 ---
@@ -58,7 +64,7 @@ de 2009-2010 sans le reproduire ; ses cinq thèmes sont ceux du sommaire).
      « (g) » = gaz, « (lq) » = liquide, notation du manuel. Les n.o. sont écrits en chiffres romains
      (+II, −III…), convention du manuel.
      Les réponses courtes aux exercices sont « données à la fin de ce manuel » (préface p.2) : hors de
-     cette plage, non lues. Les réponses marquées « (complément du lecteur) » sont de moi. -->
+     cette plage ; corrigé imprimé p.323–335 (exercices numérotés seulement), confronté par l'auditeur R-7. Les réponses marquées « (complément du lecteur) » sont de moi. -->
 
 ## T1 Chapitre 01 — Les réactions d'oxydoréduction (p.6–30, transcrit à profondeur de génération)
 
@@ -367,8 +373,7 @@ données dans le tableau périodique à la fin du manuel. »
 **Utiliser ses acquis pour une synthèse (p.27–28)**
 - **Ex. 6** : solution d'acide sulfurique 2 M sur 5 g de limaille de fer ; dégagement gazeux. 1. équation
   (seulement les entités qui ont réagi) ; 2. volume minimal V₁ d'acide pour oxyder tout le fer ; 3. volume
-  V₂ du gaz. Donnée : volume molaire 24 L.mol⁻¹. [Ambiguïté : « 2 M » d'acide sulfurique — [H₃O⁺] = 2 ou
-  4 mol.L⁻¹ selon qu'on considère le diacide ; voir notes (d).]
+  V₂ du gaz. Donnée : volume molaire 24 L.mol⁻¹. [Corrigé du manuel p.323 : V₁ = 0,044 L et V₂ = 2,14 L, soit [H₃O⁺] = 4 mol.L⁻¹ (2 H₃O⁺ par H₂SO₄) — complément de l'auditeur R-7.]
 - **Ex. 7** : « l'argenture au pouce » : frotter l'objet avec un chiffon imbibé d'une bouillie contenant
   du chlorure d'argent AgCl récemment précipité. 1. équation bilan du dépôt d'argent sur un objet en
   cuivre ; 2. couples redox et équations formelles.
@@ -430,7 +435,7 @@ propipette ; ions « bichromate » (= dichromate) ; image latente, révélateur,
   oxydée en premier).
 - Équations formelles (⇆) de couples simples (Cu²⁺/Cu, Fe²⁺/Fe, Zn²⁺/Zn, Ag⁺/Ag, Al³⁺/Al, Fe³⁺/Fe²⁺,
   Hg²⁺/Hg, Sn²⁺/Sn, Cl₂/Cl⁻, Br₂/Br⁻, Ni²⁺/Ni, Pb²⁺/Pb, Cd²⁺/Cd) et complexes en milieu acide (H₃O⁺/H₂,
-  Cr₂O₇²⁻/Cr³⁺, MnO₄⁻/Mn²⁺ ; en exercice : S₄O₆²⁻/S₂O₃²⁻, ClO⁻/Cl₂, ClO⁻/Cl⁻, NO₃⁻/NH₄⁺, I₂/I⁻) par la
+  Cr₂O₇²⁻/Cr³⁺, MnO₄⁻/Mn²⁺ ; en exercice : S₄O₆²⁻/S₂O₃²⁻, ClO⁻/Cl₂, ClO⁻/Cl⁻, NO₃⁻/NH₄⁺, I₂/I⁻, AgCl/Ag [corrigé de l'Ex.7 : AgCl (sd) + e⁻ ⇆ Ag (sd) + Cl⁻]) par la
   méthode des six étapes.
 - Combinaison de deux équations formelles ; stœchiométrie simple (n = m/M, n = V/V_M, n = C.V),
   pourcentage massique d'un alliage.
@@ -902,7 +907,7 @@ humide. - Appliquer les règles relatives à la détermination du nombre d'oxyda
   4. a) n_O₂ = V_O₂/V_m = 10/22,4 = **0,446 mol** ✓. b) n(H₂O₂) = 2 x n_O₂ = 2 . 0,446 = **0,892 mol**.
   c) [H₂O₂] = n/V = 0,892/1 = **0,892 mol.L⁻¹**.
   5. m(H₂O₂) = n x M = 0,892 x 34 = **30,35 g** (calcul exact : 0,892 × 34 = 30,33 g ; 30,35 provient de
-  0,8929 non arrondi — écart d'arrondi, sans conséquence) ; m' = ρ x V = 1,01 x 1000 = **1010 g** ;
+  0,8929 × 34 = 30,357, tronqué — écart d'arrondi, sans conséquence) ; m' = ρ x V = 1,01 x 1000 = **1010 g** ;
   % = 30,35/1010 x 100 = **3 %** ✓ (3,005).
 
 ### L'essentiel du cours (p.66) — verbatim
@@ -973,7 +978,7 @@ H₂O/H₂ n'est pas présenté dans le chapitre, réponse à confronter au corr
 Al = 27 ; Cl = 35,5 ; Ti = 47,9 et Cr = 52 g.mol⁻¹.
 - **Ex. 7** : définition imprimée : « Une dismutation est une réaction redox conduisant à la formation d'un
   produit qui est en même temps l'oxydant d'un couple redox et le réducteur d'un autre couple redox. »
-  [Formulation du manuel ; voir notes (d).] KIO₃ ajouté en milieu acide à KI : il se forme I₂. 1. n.o de
+  [Formulation du manuel, suivie par le corrigé p.326 ; voir §6, lot ch.01–03, n°10.] KIO₃ ajouté en milieu acide à KI : il se forme I₂. 1. n.o de
   l'iode dans IO₃⁻, I⁻ et I₂ ; 2. (l'iode est le seul élément dont le n.o varie) a) couples ; b) équations
   formelles ; c) équation bilan ; d) montrer qu'il s'agit d'une dismutation.
 - **Ex. 8** : préparation industrielle du chrome par aluminothermie à partir de Cr₂O₃ et d'aluminium ; on
@@ -1631,7 +1636,7 @@ a) H₂S ⇆ HS⁻ + H⁺ ; b) HS⁻ ⇆ S²⁻ + H⁺ ; c) HS⁻ + H⁺ ⇆ H�
 dont le symbole est : a) NO₂⁻/HNO₂ ; b) HNO₂/NO₂⁻ ; c) (HNO₂, NO₂⁻). 5. Une réaction acide base met en
 jeu : a) un seul couple acide base ; b) deux couples acide base ; c) au moins deux couples acide base.
 (Clé attendue — complément du lecteur : 1c ; 2b ; 3a — mais c est la même équation formelle écrite dans
-l'autre sens : ambiguïté, voir notes ; 4b ; 5b.)
+l'autre sens : ambiguïté, voir §6, lot ch.04–06 ; 4b ; 5b.)
 
 **Utiliser ses acquis dans des situations simples**
 - **Ex. 1** — 1. Parmi (CH₃CO₂H, CH₃CO₂⁻) ; (H₂PO₄⁻, H₃PO₄) ; (NH₃, NH₂⁻) et (Mn²⁺, MnO₄⁻), lesquels forment
@@ -2094,7 +2099,7 @@ chaîne d'un isomère de position. »
   solvants organiques, de ce fait ils sont très utilisés pour la dissolution de plusieurs substances
   organiques. Certains alcools sont toxiques, en particulier le méthanol peut provoquer la cécité. »
 - **C. Structure des alcools (p.135)** : « La caractéristique structurale commune à tous les alcools est la
-  présence du groupe hydroxyle -OH. » Fig.1 (Structure du groupe hydroxyle). « Le carbone fonctionnel est
+  présence du groupe hydroxyle -OH. » Fig.1 (Structure du groupe hydroxyle : angle C–O–H = 105° ; angle de liaison autour du carbone fonctionnel = 109°). « Le carbone fonctionnel est
   tétragonal, il occupe le centre d'un tétraèdre ; de ce fait les quatre atomes qui lui sont directement
   liés ne sont pas dans un même plan. La longueur de la liaison C-O est de **1,43 Å** et celle de la
   liaison simple O-H est de **0,96 Å** (1 Angstrom = 1Å = 10⁻¹⁰ m). »
@@ -2264,7 +2269,7 @@ la chaîne principale. »
     secondaires ou tertiaires. »
   - *C.2 intramoléculaire — 2-méthylpropan-2-ol (p.153–154)* : ballon chauffé (chauffe-ballon) ; vapeurs
     d'alcool sur alumine Al₂O₃ chauffée vers 350°C par une résistance ; gaz barboté dans l'eau de brome
-    (dibrome toxique, sous la hotte) : l'eau de brome se décolore (fig.20). Produit : **2-méthylpropène** :
+    (dibrome toxique, sous la hotte) : l'eau de brome se décolore (fig.20 ; [sic] la figure est légendée « Éthanol gazeux », « Éthanol », « Éthylène + eau » : schéma réutilisé de la déshydratation de l'éthanol, ne pas reprendre ces légendes pour le 2-méthylpropan-2-ol). Produit : **2-méthylpropène** :
     **(CH₃)₃C–OH → H₂C=C(CH₃)–CH₃ + H₂O** ; « Dans ce cas l'atome d'hydrogène et le groupe hydroxyle -OH qui
     s'éliminent se trouvent dans la même molécule. Il s'agit d'une réaction de déshydratation
     intramoléculaire. Le 2-méthylpropène appartient à la famille des éthènes car la chaîne carbonée renferme
@@ -2548,7 +2553,7 @@ l'équation de la synthèse d'un dérivé d'acide à partir de l'acide ou à par
   « Les acides carboxyliques de faible masse molaire sont miscibles à l'eau en toutes proportions; c'est le
   cas par exemple de l'acide éthanoïque CH₃CO₂H ou de l'acide propanoïque CH₃-CH₂-CO₂H. »
 - **C. Structure (p.169)** (titre répété) : « Les centres de l'atome de carbone et des trois atomes qui lui
-  sont liés sont dans un même plan. » (fig.2) ; C=O : **1,24 Å** ; C–O simple : **1,36 Å** (1 Å = 10⁻¹⁰ m).
+  sont liés sont dans un même plan. » (fig.2 : angles de liaison de 124°, 125° et 110° autour du carbone du carboxyle, somme ≈ 360°) ; C=O : **1,24 Å** ; C–O simple : **1,36 Å** (1 Å = 10⁻¹⁰ m).
 - **D. Nomenclature (p.169–171)** : « Le nom d'un acide carboxylique s'obtient en remplaçant le ''e'' final
   de l'alcane de même chaîne carbonée par le suffixe ''oïque''. Le début du nom est choisi selon le nombre
   d'atomes de carbone formant la chaîne carbonée principale. » Conventions : « a) de choisir comme chaîne
@@ -2830,7 +2835,7 @@ manuel ; V_M = 22,4 L.mol⁻¹) :
 Acide éthanoïque CH₃CO₂H (acide acétique) fabriqué industriellement, en solutions diluées (vinaigre) ou pur.
 I. Oxydation biologique de l'éthanol — obtention du vinaigre : vinaigre < 10 % d'acide acétique, obtenu par
 oxydation à l'air de solutions aqueuses d'éthanol sous l'action d'une diastase sécrétée par un
-microorganisme, le « myco derma acéti » (mot souligné dans le texte). II. « OXYDATION BIOLOGIQUE DE
+microorganisme, le « myco derma acéti » ; le mot souligné dans le texte (objet de la question 1) est « diastase ». II. « OXYDATION BIOLOGIQUE DE
 L'ÉTHANAL » : oxydation ménagée de l'éthanal CH₃CHO ; industriellement, « en faisant passer les vapeurs
 d'éthanol [sic : d'éthanal] mélangées à de l'air sur un catalyseur à base d'ions manganèse (II) Mn²⁺
 maintenu à une température voisine de 80°C » : **2 CH₃CHO + O₂ → 2 CH₃COOH** ; acide presque pur. [Le titre
@@ -3141,8 +3146,7 @@ fréquent, la classe se lit sur l'azote, pas sur le carbone.)
   V₂ = 20,5 mL. 1. masse molaire et formule brute ; 2. formules possibles. (C = 0,1025 mol.L⁻¹ ;
   M ≈ 73 g.mol⁻¹ ; C₄H₁₁N — complément du lecteur.)
 - **Ex.7** : m = 1,416 g d'amine A dans l'eau ; BBT ; HCl C = 1 mol.L⁻¹ ; changement de couleur à V = 24 mL.
-  1. couleur initiale ; 2. couleur à 24 mL ; 3. masse molaire ; 4. formules, noms, classes. (Bleu ; vert
-  (virage) ; M = 59 g.mol⁻¹, C₃H₉N — complément du lecteur.)
+  1. couleur initiale ; 2. couleur à 24 mL ; 3. masse molaire ; 4. formules, noms, classes. (Bleu ; virage bleu → vert puis jaune, la solution à l'équivalence étant légèrement acide ; M = 59 g.mol⁻¹, C₃H₉N — complément du lecteur.)
 - **Ex.8** : 18 g d'amine primaire dans un litre d'eau ; 10 mL dosés par HCl 0,1 mol.L⁻¹ avec du BBT ; virage
   à 40 mL. 1. équation, couples acide/base ; 2. concentration ; 3. masse molaire, formule brute, nom ; 4. masse
   du solide obtenu par évaporation de la solution au virage ; 5. avec l'acide nitreux : a) équation, noms des
@@ -3628,7 +3632,7 @@ acides α-aminés sont liés par : a) une liaison hydrogène ; b) une liaison pe
   bas à gauche (trait plein), NH₂ en coin vers la droite, COOH en coin vers le bas. Questions : 1. La molécule
   concernée est-elle chirale ? 2. Deux de ces molécules sont identiques : lesquelles ? 3. Deux de ces
   molécules sont images l'une de l'autre dans un miroir plan et ne sont pas superposables ; lesquelles ?
-  (Le sens exact des coins — avant/arrière — n'est pas univoque à 110 dpi : [?] pour la réponse ; à
+  (Le sens exact des coins — avant/arrière — n'est pas univoque à 110 dpi : réponse du manuel p.332 : « 1. oui, 2. a et c, 3. a et b », confirmée géométriquement (c = permutation circulaire de a ; b = échange de deux substituants) ; à
   redessiner avant usage.)
 - *Exercice n°3* : « L'hydrolyse d'un dipeptide donne la valine et la glycine. Quelles sont les formules
   possibles de ce dipeptide ? » (Complément : Val-Gly et Gly-Val.)
@@ -3650,7 +3654,7 @@ acides α-aminés sont liés par : a) une liaison hydrogène ; b) une liaison pe
   qu'il existe un isomère de l'acide α-aminé trouvé, différent par la chaîne carbonée (isomère de chaîne).
   4. Donner les formules semi développées de A et B. » (Complément du lecteur : CₙH₂ₙ₊₁–CH(NH₂)–COOH,
   %C = 12(n+2)/(14n+75) = 0,513 ⇒ n = 3, C₅H₁₁NO₂, M = 117 ; A = α-hydroxyacide (alcool secondaire), B =
-  cétone (DNPH +, Schiff −).)
+  cétone (DNPH +, Schiff −). Réponse du manuel p.332 : acide α-aminé CH₃–CH(CH₃)–CH(NH₂)–COOH (valine) ; isomère de chaîne CH₃–CH₂–CH₂–CH(NH₂)–COOH ; A = CH₃–CH(CH₃)–CH(OH)–COOH ; B = CH₃–CH(CH₃)–CO–COOH.)
 - *Exercice n°8* : « acide α-amino 3 - méthylbutanoique, noté A », CH₃–CH(CH₃)–CH(NH₂)–COOH. 1. Montrer que A
   est un acide α-aminé et donner son nom d'usage. 2. La molécule A est-elle chirale ? Justifier. 3. Les deux
   représentations de Fischer L et D de A. 4. On fait réagir A sur un acide α-aminé B, H₂N–CH(R)–COOH :
@@ -4484,7 +4488,7 @@ tableau périodique à la fin du manuel. Le volume molaire des gaz est : V_M = 2
   10 fois (fiole de 100 mL) ; 10 mL de solution diluée + 20 mL de KI C₁ = 0,10 mol.L⁻¹ + 10 mL de HCl
   1 mol.L⁻¹ ; I₂ formé dosé par Na₂S₂O₃ C₂ = 0,2 mol.L⁻¹. 1. Équation de formation du diiode (ClO⁻/Cl⁻,
   I₂/I⁻). 2. Équivalence à 21 mL : [ClO⁻] de l'eau de javel. (Complément : ClO⁻ + 2 I⁻ + 2 H₃O⁺ → Cl⁻ + I₂ +
-  3 H₂O ; voir notes (d) : données incohérentes, KI en défaut.)
+  3 H₂O ; voir notes (d) : données incohérentes, KI en défaut ; la réponse du manuel p.334, c(ClO⁻) = 2,1 mol·L⁻¹, est ce calcul « naïf » et ne doit pas être reprise.)
 - *Exercice 9* : détartrant à base d'acide sulfamique NH₂SO₃H ; sachet m = 25,0 g → 1 L de (S) ; prise
   V_A = 10,0 mL + eau → 100 mL ; dosage par NaOH C_B = 0,5 mol.L⁻¹. 1. Équation de dosage (acide fort).
   2. n(H₃O⁺) dans la prise sachant V_BE = 4,6 mL. 3. Masse d'acide sulfamique pur par sachet. (Complément :
@@ -4720,7 +4724,7 @@ au papier filtre, les plonger dans la solution ; mesurer U et I ; en déduire G.
   concentration massique 3,1·10⁻²×58,5 = 1,81 g·L⁻¹ ; 2. C₁ = C/5 ⇒ C = 5·C₁ = 1,55·10⁻¹ mol·L⁻¹, soit
   1,55·10⁻¹×58,5 = 9,07 g·L⁻¹ ; 3. « Aux erreurs expérimentales près, la valeur trouvée pour la concentration est
   égale à celle qui est indiquée sur l'étiquette par le fabricant. » (complément du lecteur : la pente du tableau
-  vaut ≈ 80,2 mS·L·mol⁻¹, d'où C₁ ≈ 3,2·10⁻² mol·L⁻¹ et C ≈ 0,16 mol·L⁻¹ ≈ 9,4 g·L⁻¹ ; la valeur 3,1·10⁻² est
+  vaut ≈ 80,2 mS·L·mol⁻¹, d'où C₁ ≈ 3,2·10⁻² mol·L⁻¹ et C ≈ 0,16 mol·L⁻¹ ≈ 9,5 g·L⁻¹ ; la valeur 3,1·10⁻² est
   une lecture graphique, l'accord avec 9 g·L⁻¹ reste valable.)
 
 ### Encadrés, définitions et relations (verbatim, vérifiés sur l'image)
@@ -4864,7 +4868,7 @@ périodique en fin de manuel ; à 25 °C, V_M = 24 L·mol⁻¹.
 - **Ex. 7** — aspirine effervescente (acide acétylsalicylique C₉H₈O₄, 500 mg par comprimé ; excipient NaHCO₃).
   1. n d'acide par comprimé ; 2. masse de deux comprimés + bécher d'eau m_i = 164,87 g ; en fin d'effervescence
   m_f = 164,17 g. a) équation entre l'hydrogénocarbonate et H₃O⁺ ; b) masse de CO₂ ; c) quantité de CO₂ ;
-  d) volume de CO₂. *Réponse* : n = 2,77·10⁻³ mol ; HCO₃⁻ + H₃O⁺ → CO₂(g) + 2 H₂O ; m = 0,7 g ; n = 1,59·10⁻² mol ;
+  d) volume de CO₂. *Réponse* : n = 2,77·10⁻³ mol (exact : 0,500/180 = 2,78·10⁻³ mol) ; HCO₃⁻ + H₃O⁺ → CO₂(g) + 2 H₂O ; m = 0,7 g ; n = 1,59·10⁻² mol ;
   V = 0,382 L. (vérifié avec V_M = 24 L·mol⁻¹)
 - **Ex. 8** — préparer V = 1 L de CuSO₄ à C = 5·10⁻³ mol·L⁻¹ à partir de :
 
@@ -4931,7 +4935,7 @@ K = l/S est nommée) ; loi de Kohlrausch ; dosage conductimétrique par titrage 
 d'état des gaz parfaits (V_M donné) ; dosages volumétriques (ch.12 « Détermination d'une quantité de matière à
 l'aide d'une réaction chimique », lot précédent) ; avancement (→ ch.14).
 
-## T14 Chapitre 14 — Avancement d'une réaction chimique, transformation totale et transformation limitée (p.302–322, transcrit à profondeur de génération)
+## T14 Chapitre 14 — Avancement d'une réaction chimique, transformation totale et transformation limitée (p.303–322 ; page de thème V p.302 en tête, transcrit à profondeur de génération)
 
 **Page de thème (p.302)** — « Thème N° 5 — EVOLUTION D'UN SYSTÈME CHIMIQUE ». Texte : « Dans la nature on trouve
 une multitude de systèmes chimiques en évolution permanente. En général, la manière d'évolution d'un système
@@ -5245,7 +5249,7 @@ Sites conseillés : ac-lyon.fr (article36) ; chimix.com (fiche avancement) ; ac-
 - **Ex. 6** — **3 OH⁻ + Fe³⁺ → Fe(OH)₃** ; 20 mL de sulfate de fer III à 0,12 mol·L⁻¹ et 2 mL de soude à
   0,5 mol·L⁻¹. 1. quantités initiales ; 2. état final ; 3. quantités quand 2·10⁻⁴ mol de Fe(OH)₃ formé. *Réponse* :
   initial Fe³⁺ 2,4·10⁻³, OH⁻ 10⁻³ ; x_M = 3,3·10⁻⁴ mol, OH⁻ limitant ; final Fe³⁺ « 2,01·10⁻³ » **[sic → 2,07·10⁻³
-  mol]**, OH⁻ 0, Fe(OH)₃ 3,3·10⁻⁴ ; à x = 2·10⁻⁴ : n(OH⁻) = 4·10⁻⁴ mol, n(Fe³⁺) = 2,2·10⁻³ mol.
+  mol]**, OH⁻ 0, Fe(OH)₃ 3,3·10⁻⁴ ; à x = 2·10⁻⁴ : n(OH⁻) = 4·10⁻⁴ mol, n(Fe³⁺) = 2,2·10⁻³ mol. **[sic / donnée ambiguë]** : le manuel prend 0,12 mol·L⁻¹ comme concentration en ions Fe³⁺ (n = 0,12 × 0,020 = 2,4·10⁻³ mol) ; pour du sulfate de fer III Fe₂(SO₄)₃ à 0,12 mol·L⁻¹ en soluté, [Fe³⁺] = 0,24 mol·L⁻¹ et n(Fe³⁺)ᵢ = 4,8·10⁻³ mol (OH⁻ reste limitant, x_M inchangé ; Fe³⁺ final 4,47·10⁻³ mol, 4,6·10⁻³ mol à x = 2·10⁻⁴ mol). Avant reprise, écrire « concentration en ions Fe³⁺ égale à 0,12 mol·L⁻¹ » (complément R-7).
 - **Ex. 7** — synthèse de l'aspirine : 3,3 g d'acide salicylique C₇H₆O₃ (s) et 7,0 mL d'anhydride éthanoïque
   C₄H₆O₃ (lq) ; **C₇H₆O₃(s) + C₄H₆O₃(lq) → C₉H₈O₄(s) + C₂H₄O₂(l)**. 1. quantités ; 2. tableau ; 3. masses finales ;
   4. masse d'acide salicylique pour un mélange stœchiométrique. Donnée imprimée : « masse volumique de l'anhydre
@@ -5330,9 +5334,11 @@ conductimétrie, pressiométrie : Bac ch.1).
 | 11 | `11-fonction-organique` | Notion de fonction organique | `224333` · p.234–252 | §T11 |
 | 12 | `12-dosage-reaction-chimique` | Détermination d'une quantité de matière à l'aide d'une réaction chimique | `224333` · p.254–280 | §T12 |
 | 13 | `13-quantite-matiere-grandeur-physique` | Détermination d'une quantité de matière par mesure d'une grandeur physique | `224333` · p.281–301 | §T13 |
-| 14 | `14-avancement-reaction` | Avancement d'une réaction chimique, transformation totale et transformation limitée | `224333` · p.302–322 | §T14 |
+| 14 | `14-avancement-reaction` | Avancement d'une réaction chimique, transformation totale et transformation limitée | `224333` · p.303–322 | §T14 |
 
 ## 6. Incertitudes, erreurs de la source, à revérifier
+
+Relecture R-7 (2026-11-28, trois auditeurs opus en contexte vierge) : 100 % des encadrés, « L'essentiel » et exercices résolus confrontés à l'image, calculs refaits, corrigé de fin de manuel (p.323–335) recoupé ; écarts substantiels et mineurs corrigés.
 
 Relevés des lecteurs (rubrique (d) de leurs notes), par lot. Tout ce qui est marqué `[sic]`, « valeur lue à l'œil » ou « contradiction de la source » ne devient jamais une clé ou une affirmation d'un cours sans correction explicite.
 
@@ -5386,14 +5392,14 @@ Relevés des lecteurs (rubrique (d) de leurs notes), par lot. Tout ce qui est ma
   conclusion 3 % inchangée. Énoncé 5 : « quotient de la masse d'un litre de H₂O₂ » (lire : masse de H₂O₂
   contenue dans un litre).
 - **Ex.6 ch.1** : « acide sulfurique 2 M » : [H₃O⁺] = 4 mol.L⁻¹ si diacide fort totalement dissocié ; le
-  manuel ne précise pas — corrigé de fin de manuel (hors plage) à consulter.
+  corrigé p.323 tranche : V₁ = 0,044 L et V₂ = 2,14 L, donc [H₃O⁺] = 4 mol.L⁻¹.
 - **Ex.10 ch.1** : 6.10⁻² mol de ClO⁻ dans 10 mL d'eau de javel (soit 6 mol.L⁻¹) — valeur élevée mais
   imprimée telle quelle.
 - **Schéma p.59** (C + CuO) : CuO est figuré « 2 Cu » sans l'O dans le schéma coloré (l'équation au-dessus
   est juste) ; **schéma p.58** : « + Fe » à droite au lieu de « 2 Fe ». Schémas didactiques, équations
   imprimées justes.
 - **Réponses aux exercices** : imprimées « à la fin de ce manuel » (préface p.2) — **hors de ma plage, non
-  lues**. Les réponses V/F et QCM de la fiche sont des compléments du lecteur ; deux restent à confronter
+  lues** [auditeur R-7 : le corrigé est p.323–335 ; il ne traite que les exercices numérotés, et tous les compléments des ch.1–3 y sont conformes ; il porte trois erreurs à ne pas reprendre : ch.1 Ex.5 « Au → Au³⁺ + 3 e⁻ » (lire Au³⁺ + 3 e⁻ → Au), ch.2 Ex.1 « … → 3 Sn²⁺ + 3 Sn » (lire 2 Al³⁺ + 3 Sn), ch.3 Ex.9 n.o(Cl) « +II » (lire +I)]. Les réponses V/F et QCM de la fiche sont des compléments du lecteur, sans corrigé imprimé ; deux restent à confronter
   au corrigé : QCM C.1 du ch.2 (une ou deux expériences pour classer deux réducteurs) et QCM C.4 du ch.3
   (H₂O/H₂ accepté ou non comme couple).
 
@@ -5417,7 +5423,7 @@ contenu de programme.
    l'analyse quantitative).
 8. **p.81** : « Johannes N. Bronsted (1849-1947) » → **1879-1947**. p.76 : « Johannes Nicaulaus » →
    **Nicolaus** (couche texte ; image 60 dpi concordante).
-9. **p.86 et p.74** : « La levure chimique … est une poudre blanche constituée de carbonate de sodium
+9. **p.86** (la p.74 dit seulement « contient une base », ce qui est exact) : « La levure chimique … est une poudre blanche constituée de carbonate de sodium
    Na₂CO₃ » → la levure chimique contient de l'**hydrogénocarbonate de sodium NaHCO₃** (avec un acide) ;
    le document p.92 du même chapitre parle d'ailleurs des ions HCO₃⁻ de la levure. Erreur de fond
    probable — à ne pas reprendre telle quelle.
@@ -5448,11 +5454,9 @@ contenu de programme.
 - **p.107, A.5 (ch.5)** : « Combien de couples acide base interviennent dans une réaction chimique ? » —
   sous-entendu « acide base ».
 - **Ch.4 V/F 1 (p.89)** : « Un acide est un corps composé qui peut libérer un ion hydrogène » — la clé F
-  (complément du lecteur) repose sur « corps composé » vs « entité » ; le corrigé du manuel n'est pas
-  dans la plage.
+  (complément du lecteur) repose sur « corps composé » vs « entité » ; le corrigé du manuel (p.327) ne traite pas les V/F.
 - Toutes les « clés attendues » et « valeurs de contrôle » des exercices sont des **compléments du
-  lecteur** (réponses du manuel en fin d'ouvrage, hors plage) ; à confronter au corrigé imprimé si un
-  autre lot le transcrit.
+  lecteur** (corrigé p.327–328 : valeurs de contrôle des exercices numérotés des ch.4–5 conformes, vérifiées par l'auditeur R-7 ; les clés V/F et QCM n'y figurent pas ; ch.6 non vérifié ici).
 - Aucune page illisible.
 
 ### Lot ch.07–09 (p.132–211)
@@ -5503,6 +5507,8 @@ Doutes :
   quel).
 - p.153 : le manuel nomme « éthènes » la famille des alcènes (vocabulaire du manuel, conservé).
 - p.188, Ex.9 1c : B1 non déterminé de façon unique par l'énoncé.
+- p.153, fig.20 : [sic] légendée « Éthanol gazeux », « Éthanol », « Éthylène + eau » alors que le texte traite du 2-méthylpropan-2-ol (schéma réutilisé) ; légendes à ne pas reprendre (R-7).
+- p.189 (ch.8, document) : le mot souligné est « diastase », non « myco derma acéti » (R-7).
 - Aucune page illisible.
 
 ### Lot ch.10–12 (p.212–280)
@@ -5542,7 +5548,7 @@ péptidique » (titres p.222), « oxytocyne » (p.222), « Verifier ses aquis »
 
 Incertitudes :
 - p.230, Exercice n°2 (trois configurations spatiales en coins) : le sens avant/arrière des coins n'est pas
-  certain à 110 dpi → description donnée, réponse non fournie ([?]).
+  certain à 110 dpi → description donnée, réponse du manuel p.332 : 1. oui ; 2. a et c ; 3. a et b (confirmée par R-7).
 - p.226 : le schéma « Structure primaire / secondaire » ne légende que deux niveaux.
 - p.212, p.254 : photos décrites d'après légendes/texte seulement.
 - Les prérequis (p.213, 235–236, 255) contiennent des affirmations **volontairement fausses** (exercice
@@ -5577,7 +5583,7 @@ Erreurs imprimées (toutes signalées `[sic]` dans la fiche avec la version just
 11. **p.315** : question 3 « entre le zinc et l'acide chlorhydrique » → aluminium.
 12. **p.316** : en-tête du tableau « … + 3 H₂O » au lieu de 6 H₂O ; « x = 10⁻³ mol < 1,1 10⁻³ mol » → 1,1·10⁻².
 13. **p.321 ex. 7** : « anhydre éthanoïque » → anhydride ; ρ = 1,08 g·L⁻¹ → g·mL⁻¹.
-14. **p.335 ex. 6 (ch.14)** : n_f(Fe³⁺) = 2,01·10⁻³ → 2,07·10⁻³ mol.
+14. **p.335 ex. 6 (ch.14)** : n_f(Fe³⁺) = 2,01·10⁻³ → 2,07·10⁻³ mol. De plus, « sulfate de fer III à 0,12 mol.L-1 » est traité comme [Fe³⁺] = 0,12 mol·L⁻¹ ; pour Fe₂(SO₄)₃ à 0,12 mol·L⁻¹, [Fe³⁺] = 0,24 mol·L⁻¹ (n = 4,8·10⁻³ mol) — préciser la donnée avant reprise (R-7).
 15. **p.319 QCM C.2.c** : fraction « 1/(2 − α) » sans sens clair [?] (sans doute une coquille de mise en page).
 
 Incohérences mineures (non [sic]) : t_f = 25 min (p.309) vs « une trentaine de minutes » (p.312) ; p.313
